@@ -14,7 +14,7 @@ HOMEPAGE="https://apps.kde.org/krdc/"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
 KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
-IUSE="activities +rdp +vnc"
+IUSE="activities +rdp +vnc X"
 
 #nx? ( >=net-misc/nxcl-0.9-r1 ) disabled upstream, last checked 2016-01-24
 DEPEND="
@@ -44,7 +44,7 @@ DEPEND="
 	)
 "
 RDEPEND="${DEPEND}
-	rdp? ( >=net-misc/freerdp-1.1.0_beta1[X] )
+	rdp? ( >=net-misc/freerdp-1.1.0_beta1[X?] )
 "
 
 src_configure() {
