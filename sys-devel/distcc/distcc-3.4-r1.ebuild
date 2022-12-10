@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit autotools flag-o-matic prefix python-single-r1 systemd
 
@@ -73,6 +73,7 @@ src_configure() {
 		$(use_enable ipv6 rfc2553)
 		$(use_with gtk)
 		--without-gnome
+		--without-libiberty
 		$(use_with gssapi auth)
 		$(use_with zeroconf avahi)
 	)
