@@ -132,7 +132,6 @@ src_configure() {
 	# is not yet implemented by sys-libs/compiler-rt (see
 	# https://reviews.llvm.org/D85044?id=287068), therefore
 	# we depend on gcc and force using libgcc as the support lib
-	tc-is-clang && append-ldflags "--rtlib=libgcc --unwindlib=libgcc"
 
 	local myconf=(
 		--shared-brotli

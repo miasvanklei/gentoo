@@ -4,7 +4,7 @@
 EAPI=8
 
 CONFIG_CHECK="~ADVISE_SYSCALLS"
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit bash-completion-r1 flag-o-matic linux-info pax-utils python-any-r1 toolchain-funcs xdg-utils
@@ -110,12 +110,6 @@ src_configure() {
 
 	# LTO compiler flags are handled by configure.py itself
 	filter-flags '-flto*'
-	# nodejs unconditionally links to libatomic #869992
-	# specifically it requires __atomic_is_lock_free which
-	# is not yet implemented by sys-libs/compiler-rt (see
-	# https://reviews.llvm.org/D85044?id=287068), therefore
-	# we depend on gcc and force using libgcc as the support lib
-	tc-is-clang && append-ldflags "--rtlib=libgcc --unwindlib=libgcc"
 
 	local myconf=(
 		--shared-brotli
