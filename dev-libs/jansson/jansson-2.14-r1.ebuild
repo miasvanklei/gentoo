@@ -21,8 +21,6 @@ BDEPEND="
 PATCHES=( "${FILESDIR}/${P}-test-symbols.patch" )
 
 src_configure() {
-	tc-ld-force-bfd
-
 	econf $(use_enable static-libs static)
 }
 
