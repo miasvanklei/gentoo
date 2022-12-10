@@ -3,7 +3,7 @@
 
 EAPI=7
 GST_ORG_MODULE="gst-plugins-bad"
-PYTHON_COMPAT=( python3_{8,9,10} )
+PYTHON_COMPAT=( python3_{8,9,11} )
 inherit gstreamer-meson python-any-r1
 
 DESCRIPTION="Less plugins for GStreamer"
