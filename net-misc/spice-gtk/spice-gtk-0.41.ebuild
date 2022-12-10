@@ -99,6 +99,7 @@ src_prepare() {
 
 src_configure() {
 	local emesonargs=(
+		-Dcoroutine=gthread
 		$(meson_feature gtk3 gtk)
 		$(meson_feature introspection)
 		$(meson_use mjpeg builtin-mjpeg)
