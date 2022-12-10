@@ -283,6 +283,10 @@ esetup_unwind_hack() {
 	export MAGIC_EXTRA_RUSTFLAGS+="${MAGIC_EXTRA_RUSTFLAGS:+ }-L${fakelib}"
 }
 
+clear_vendor_checksums() {
+	sed -i 's/\("files":{\)[^}]*/\1/' vendor/$1/.cargo-checksum.json
+}
+
 src_prepare() {
 	# this supidity is needed because patch is too large to be in filesdir
 	# and if we move it to devspace - it lacks checksum for sig verification
@@ -302,6 +306,11 @@ src_prepare() {
 		"${WORKDIR}/${rust_stage0}"/install.sh --disable-ldconfig \
 			--without=rust-docs --destdir="${rust_stage0_root}" --prefix=/ || die
 	fi
+
+	clear_vendor_checksums libc
+	clear_vendor_checksums libc-0.2.126
+	clear_vendor_checksums libc-0.2.127
+	clear_vendor_checksums libc-0.2.131
 
 	default
 }
