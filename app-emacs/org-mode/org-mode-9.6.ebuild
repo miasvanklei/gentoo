@@ -24,10 +24,10 @@ BDEPEND="doc? ( virtual/texi2dvi )"
 SITEFILE="50${PN}-gentoo.el"
 
 src_compile() {
-	emake \
+	emake -j1 \
 		ORGVERSION=${PV} \
 		datadir="${EPREFIX}${SITEETC}/${PN}"
-	use doc && emake pdf card
+	use doc && emake -j1 pdf card
 }
 
 src_install() {
