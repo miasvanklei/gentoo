@@ -13,7 +13,7 @@ SRC_URI="https://github.com/mltframework/${PN}/releases/download/v${PV}/${P}.tar
 LICENSE="GPL-3"
 SLOT="0/7"
 KEYWORDS="~amd64 arm64 ~ppc64 ~riscv x86 ~amd64-linux ~x86-linux"
-IUSE="debug ffmpeg frei0r gtk jack libsamplerate opencv opengl python qt5 rtaudio rubberband sdl test vdpau vidstab xine xml"
+IUSE="debug ffmpeg frei0r gtk jack libsamplerate opencv opengl python qt5 rtaudio rubberband sdl test vdpau vidstab xine xml X"
 
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 
@@ -59,7 +59,7 @@ DEPEND="
 	)
 	rubberband? ( media-libs/rubberband )
 	sdl? (
-		media-libs/libsdl2[X,opengl,video]
+		media-libs/libsdl2[opengl,video,X?]
 		media-libs/sdl2-image
 	)
 	vidstab? ( media-libs/vidstab )
