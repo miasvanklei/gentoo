@@ -14,9 +14,9 @@ SRC_URI="https://github.com/Genymobile/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.g
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~ppc64 ~x86"
-IUSE="lto X"
+IUSE="lto"
 
-DEPEND="media-libs/libsdl2[X?]
+DEPEND="media-libs/libsdl2
 	media-video/ffmpeg
 	virtual/libusb:1"
 # Manual install for ppc64 until bug #723528 is fixed
