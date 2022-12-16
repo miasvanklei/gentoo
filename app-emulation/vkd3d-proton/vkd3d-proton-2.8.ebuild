@@ -3,9 +3,6 @@
 
 EAPI=8
 
-# note: version 2.6 should be kept for longer given it's the
-# last version to support <wine-7.1 and <nvidia-drivers-510
-
 MULTILIB_COMPAT=( abi_x86_{32,64} )
 inherit flag-o-matic meson-multilib toolchain-funcs
 
@@ -20,10 +17,11 @@ if [[ ${PV} == 9999 ]]; then
 		subprojects/dxil-spirv/third_party/spirv-headers # skip cross/tools
 	)
 else
-	HASH_VKD3D=3e5aab6fb3e18f81a71b339be4cb5cdf55140980 # match tag on bumps
-	HASH_DXIL=b537bbb91bccdbc695cb7e5211d608f8d1c205bd
-	HASH_SPIRV=ae217c17809fadb232ec94b29304b4afcd417bb4
-	HASH_VULKAN=83e1a9ed8ce289cebb1c02c8167d663dc1befb24
+	HASH_VKD3D=a0013b78db6271b5be3fa55ae0b30222d2fbf7c9 # match tag on bumps
+	HASH_DXIL=babf511d4cc7466b970dec82db35b5cacf6acfec
+	HASH_SPIRV=1d31a100405cf8783ca7a31e31cdd727c9fc54c3
+	HASH_SPIRV_DXIL=87d5b782bec60822aa878941e6b13c0a9a954c9b
+	HASH_VULKAN=b7a86d3b2bf8fbe73fcd40df9ec62a5966e9db89
 	SRC_URI="
 		https://github.com/HansKristian-Work/vkd3d-proton/archive/refs/tags/v${PV}.tar.gz
 			-> ${P}.tar.gz
@@ -31,9 +29,11 @@ else
 			-> ${PN}-dxil-spirv-${HASH_DXIL::10}.tar.gz
 		https://github.com/KhronosGroup/SPIRV-Headers/archive/${HASH_SPIRV}.tar.gz
 			-> ${PN}-spirv-headers-${HASH_SPIRV::10}.tar.gz
+		https://github.com/KhronosGroup/SPIRV-Headers/archive/${HASH_SPIRV_DXIL}.tar.gz
+			-> ${PN}-spirv-headers-${HASH_SPIRV_DXIL::10}.tar.gz
 		https://github.com/KhronosGroup/Vulkan-Headers/archive/${HASH_VULKAN}.tar.gz
 			-> ${PN}-vulkan-headers-${HASH_VULKAN::10}.tar.gz"
-	KEYWORDS="-* amd64 x86"
+	KEYWORDS="-* ~amd64 ~x86"
 fi
 
 DESCRIPTION="Fork of VKD3D, development branches for Proton's Direct3D 12 implementation"
@@ -82,8 +82,13 @@ src_prepare() {
 		mv ../dxil-spirv-${HASH_DXIL} subprojects/dxil-spirv || die
 		mv ../SPIRV-Headers-${HASH_SPIRV} subprojects/SPIRV-Headers || die
 		mv ../Vulkan-Headers-${HASH_VULKAN} subprojects/Vulkan-Headers || die
-		ln -s ../../../SPIRV-Headers/include \
+
+		# dxil and vkd3d's spirv headers currently mismatch and incompatible
+		rmdir subprojects/dxil-spirv/third_party/spirv-headers || die
+		mv ../SPIRV-Headers-${HASH_SPIRV_DXIL} \
 			subprojects/dxil-spirv/third_party/spirv-headers || die
+#		ln -s ../../../SPIRV-Headers/include \
+#			subprojects/dxil-spirv/third_party/spirv-headers || die
 	fi
 
 	default
@@ -151,8 +156,6 @@ multilib_src_install_all() {
 	dobin setup_vkd3d_proton.sh
 	einstalldocs
 
-	# unnecesasry files, see package-release.sh
-	rm "${ED}"/usr/lib/${PN}/x*/libvkd3d-proton-utils-3.dll || die
 	find "${ED}" -type f -name '*.a' -delete || die
 }
 
@@ -163,5 +166,13 @@ pkg_postinst() {
 		elog "	WINEPREFIX=/path/to/prefix setup_vkd3d_proton.sh install --symlink"
 		elog
 		elog "See ${EROOT}/usr/share/doc/${PF}/README.md* for details."
+	fi
+
+	if [[ ! ${REPLACING_VERSIONS##* } ]] ||
+		ver_test ${REPLACING_VERSIONS##* } -lt 2.7
+	then
+		elog
+		elog ">=${PN}-2.7 requires drivers and Wine to support vulkan-1.3, meaning:"
+		elog ">=wine-*-7.1 (or >=wine-proton-7.0), and >=mesa-22.0 (or >=nvidia-drivers-510)"
 	fi
 }
