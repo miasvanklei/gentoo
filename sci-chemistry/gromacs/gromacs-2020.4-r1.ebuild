@@ -76,6 +76,7 @@ REQUIRED_USE="
 	|| ( single-precision double-precision )
 	doc? ( !build-manual )
 	cuda? ( single-precision )
+	opencl? ( single-precision )
 	cuda? ( !opencl )
 	mkl? ( !blas !fftw !lapack )
 	${PYTHON_REQUIRED_USE}"
@@ -181,11 +182,6 @@ src_configure() {
 
 	if use fftw; then
 		fft_opts=( -DGMX_FFT_LIBRARY=fftw3 )
-	elif use mkl && has_version "=sci-libs/mkl-10*"; then
-		fft_opts=( -DGMX_FFT_LIBRARY=mkl
-			-DMKL_INCLUDE_DIR="${MKLROOT}/include"
-			-DMKL_LIBRARIES="$(echo /opt/intel/mkl/10.0.5.025/lib/*/libmkl.so);$(echo /opt/intel/mkl/10.0.5.025/lib/*/libiomp*.so)"
-		)
 	elif use mkl; then
 		local bits=$(get_libdir)
 		fft_opts=( -DGMX_FFT_LIBRARY=mkl
