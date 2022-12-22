@@ -40,9 +40,9 @@ else
 	MY_PN=${PN}
 fi
 
-KEYWORDS="-* amd64"
+KEYWORDS="-* ~amd64"
 
-FFMPEG_VERSION="107.0.5304.122"
+FFMPEG_VERSION="108.0.5359.125"
 
 SRC_URI="${SRC_URI_BASE[@]/%//${PV}/linux/${MY_PN}_${PV}_amd64.${OPERA_ARCHIVE_EXT}}
 	proprietary-codecs? (
@@ -58,7 +58,6 @@ RDEPEND="
 	dev-libs/glib:2
 	dev-libs/nspr
 	dev-libs/nss
-	dev-libs/wayland
 	gnome-base/gsettings-desktop-schemas
 	media-libs/alsa-lib
 	media-libs/mesa[gbm(+)]
