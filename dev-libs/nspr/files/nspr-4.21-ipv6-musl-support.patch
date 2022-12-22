@@ -13,24 +13,23 @@ diff --git a/pr/include/md/_linux.h b/pr/include/md/_linux.h
 index 2370ab8..612184c 100644
 --- a/pr/include/md/_linux.h
 +++ b/pr/include/md/_linux.h
-@@ -289,33 +289,22 @@ static inline PRInt32 _MD_ATOMIC_SET(PRInt32 *ptr, PRInt32 nv)
+@@ -315,33 +315,18 @@
  #endif /* __arm__ */
- 
+
  #define USE_SETJMP
 -#if (defined(__GLIBC__) && __GLIBC__ >= 2) || defined(ANDROID)
  #define _PR_POLL_AVAILABLE
 -#endif
  #undef _PR_USE_POLL
  #define _PR_STAT_HAS_ONLY_ST_ATIME
- #if defined(__alpha) || defined(__ia64__)
+-#if defined(__alpha) || defined(__ia64__)
  #define _PR_HAVE_LARGE_OFF_T
 -#elif (__GLIBC__ > 2) || (__GLIBC__ == 2 && __GLIBC_MINOR__ >= 1) \
 -    || defined(ANDROID)
 -#define _PR_HAVE_OFF64_T
- #else
+-#else
 -#define _PR_NO_LARGE_FILES
-+#define _PR_HAVE_OFF64_T
- #endif
+-#endif
 -#if (__GLIBC__ > 2) || (__GLIBC__ == 2 && __GLIBC_MINOR__ >= 1) \
 -    || defined(ANDROID)
  #define _PR_INET6
