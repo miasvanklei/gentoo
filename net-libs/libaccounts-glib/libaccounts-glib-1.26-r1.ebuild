@@ -14,7 +14,7 @@ S="${WORKDIR}/${PN}-VERSION_${PV}"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="amd64 ~arm arm64 ~loong ~ppc64 ~riscv x86"
-IUSE="doc"
+IUSE="doc vala"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 # fails
@@ -29,11 +29,11 @@ RDEPEND="${PYTHON_DEPS}
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
-	$(vala_depend)
 	dev-libs/check
 	dev-util/gdbus-codegen
 	dev-util/glib-utils
 	doc? ( dev-util/gtk-doc )
+	vala? ( $(vala_depend) )
 "
 
 PATCHES=(
@@ -44,9 +44,11 @@ PATCHES=(
 
 src_prepare() {
 	default
-	vala_setup --ignore-use
 
 	use doc || sed -e "/^subdir('docs')$/d" -i meson.build || die
+
+	use vala && vala_setup --ignore-use || die
+	use vala || "${FILESDIR}/bugus-dependencies.patch" || die
 }
 
 src_configure() {
