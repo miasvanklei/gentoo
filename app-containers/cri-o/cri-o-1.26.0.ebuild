@@ -14,7 +14,7 @@ SRC_URI="https://github.com/cri-o/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="Apache-2.0 BSD BSD-2 CC-BY-SA-4.0 ISC MIT MPL-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-IUSE="btrfs +device-mapper selinux systemd"
+IUSE="btrfs +device-mapper iptables nftables selinux systemd"
 
 COMMON_DEPEND="
 	app-crypt/gpgme:=
@@ -31,6 +31,8 @@ COMMON_DEPEND="
 	sys-libs/libseccomp:=
 	btrfs? ( sys-fs/btrfs-progs )
 	device-mapper? ( sys-fs/lvm2:= )
+	iptables? ( net-firewall/iptables )
+	nftables? ( app-containers/cni-plugins-nftables )
 	selinux? ( sys-libs/libselinux:= )
 	systemd? ( sys-apps/systemd:= )"
 DEPEND="
