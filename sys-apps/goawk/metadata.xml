@@ -6,7 +6,6 @@
 		<name>Sam James</name>
 	</maintainer>
 	<upstream>
-		<changelog>https://invisible-island.net/cproto/CHANGES.html</changelog>
-		<remote-id type="github">ThomasDickey/cproto-snapshots</remote-id>
+		<remote-id type="github">benhoyt/goawk</remote-id>
 	</upstream>
 </pkgmetadata>
