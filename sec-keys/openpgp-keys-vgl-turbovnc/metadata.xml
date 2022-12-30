@@ -5,7 +5,5 @@
 		<email>ceamac@gentoo.org</email>
 		<name>Viorel Munteanu</name>
 	</maintainer>
-	<upstream>
-		<remote-id type="github">samhocevar/rinetd</remote-id>
-	</upstream>
+	<stabilize-allarches/>
 </pkgmetadata>
