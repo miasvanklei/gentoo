@@ -14,9 +14,12 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 IUSE="+nnp"
 
-DEPEND="app-arch/xz-utils
-	>=app-misc/pax-utils-0.1.19" #265376
-RDEPEND=""
+# pax-utils lower bound for bug #265376
+DEPEND=">=app-misc/pax-utils-0.1.19"
+# Avoid folks installing with older file, bug #889046. We still need the
+# >= dep in Portage but this is a safety net if people do partial upgrades.
+RDEPEND="!<sys-apps/file-5.44-r1"
+BDEPEND="app-arch/xz-utils"
 
 has sandbox_death_notice ${EBUILD_DEATH_HOOKS} || EBUILD_DEATH_HOOKS+=" sandbox_death_notice"
 
@@ -34,8 +37,7 @@ src_prepare() {
 
 	# sandbox uses `__asm__ (".symver "...` which does
 	# not play well with gcc's LTO: https://gcc.gnu.org/PR48200
-	append-flags -fno-lto
-	append-ldflags -fno-lto
+	filter-lto
 }
 
 multilib_src_configure() {
