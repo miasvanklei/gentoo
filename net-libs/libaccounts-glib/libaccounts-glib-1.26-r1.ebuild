@@ -47,8 +47,8 @@ src_prepare() {
 
 	use doc || sed -e "/^subdir('docs')$/d" -i meson.build || die
 
-	use vala && vala_setup --ignore-use || die
-	use vala || "${FILESDIR}/bugus-dependencies.patch" || die
+	use vala && vala_setup --ignore-use
+	use vala || eapply "${FILESDIR}/bugus-dependencies.patch" || die
 }
 
 src_configure() {

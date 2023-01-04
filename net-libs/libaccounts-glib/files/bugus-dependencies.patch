@@ -1,9 +1,9 @@
 --- a/meson.build	2019-10-15 16:40:57.675687135 +0200
 +++ b/meson.build	2019-10-15 16:41:03.087709870 +0200
 @@ -36,4 +36,3 @@
+ subdir('libaccounts-glib')
  subdir('tools')
  subdir('data')
- subdir('docs')
 -subdir('tests')
 --- a/libaccounts-glib/meson.build	2020-04-17 22:05:52.521988103 +0200
 +++ b/libaccounts-glib/meson.build	2020-04-17 22:06:34.750005798 +0200
