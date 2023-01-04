@@ -16,6 +16,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 IUSE="btrfs +device-mapper iptables nftables selinux systemd"
 
+REQUIRED_USE="|| ( iptables nftables )"
+
 COMMON_DEPEND="
 	app-crypt/gpgme:=
 	app-containers/conmon
@@ -24,7 +26,6 @@ COMMON_DEPEND="
 	dev-libs/libassuan:=
 	dev-libs/libgpg-error:=
 	net-firewall/conntrack-tools
-	net-firewall/iptables
 	app-containers/cni-plugins
 	net-misc/socat
 	sys-apps/iproute2
