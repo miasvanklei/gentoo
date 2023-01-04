@@ -1,10 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{8..10} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -20,11 +20,12 @@ S=${WORKDIR}/${MY_P}
 
 LICENSE="ZPL"
 SLOT="0"
-KEYWORDS="amd64 ~arm arm64 ~ppc64 ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
 
 RDEPEND="
 	dev-python/zope-event[${PYTHON_USEDEP}]
-	>=dev-python/zope-interface-4.1.0[${PYTHON_USEDEP}]
+	>=dev-python/zope-hookable-4.2.0[${PYTHON_USEDEP}]
+	>=dev-python/zope-interface-5.3.0[${PYTHON_USEDEP}]
 	!dev-python/namespace-zope
 "
 BDEPEND="
