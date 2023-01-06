@@ -12,10 +12,10 @@ SRC_URI="https://github.com/firewalld/firewalld/releases/download/v${PV}/${P}.ta
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
 IUSE="gui +nftables +iptables test"
-# Tests previously restricted for bug #650760
-RESTRICT="!test? ( test ) test? ( userpriv ) test"
+# Tests are too unreliable in sandbox environment
+RESTRICT="!test? ( test ) test"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 RDEPEND="${PYTHON_DEPS}
