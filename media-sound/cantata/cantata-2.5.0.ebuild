@@ -35,6 +35,7 @@ COMMON_DEPEND="
 	dev-qt/qtsvg:5
 	dev-qt/qtwidgets:5
 	dev-qt/qtxml:5
+	kde-frameworks/solid:5
 	sys-libs/zlib
 	virtual/libudev:=
 	cdda? ( media-sound/cdparanoia )
