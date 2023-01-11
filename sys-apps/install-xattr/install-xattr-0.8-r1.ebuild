@@ -21,6 +21,7 @@ LICENSE="GPL-3"
 SLOT="0"
 
 PATCHES=(
+	# Backports from master, drop on next release
 	"${FILESDIR}"/${PV}
 )
 
