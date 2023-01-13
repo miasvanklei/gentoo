@@ -1,21 +1,21 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
+EAPI=8
 
 MODULES_OPTIONAL_USE=modules
 MODULES_OPTIONAL_USE_IUSE_DEFAULT=1
 inherit linux-info linux-mod multilib toolchain-funcs
 
 DESCRIPTION="iptables extensions not yet accepted in the main kernel"
-HOMEPAGE="https://inai.de/projects/xtables-addons/"
+HOMEPAGE="https://inai.de/projects/xtables-addons/ https://codeberg.org/jengelh/xtables-addons"
 SRC_URI="https://inai.de/files/xtables-addons/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 
-MODULES="quota2 psd pknock lscan length2 ipv4options ipp2p iface gradm geoip fuzzy condition tarpit sysrq logmark ipmark echo dnetmap dhcpmac delude chaos account"
+MODULES="quota2 psd pknock lscan length2 ipv4options ipp2p iface gradm geoip fuzzy condition tarpit sysrq proto logmark ipmark echo dnetmap dhcpmac delude chaos account"
 
 for mod in ${MODULES}; do
 	IUSE="${IUSE} xtables_addons_${mod}"
@@ -184,6 +184,6 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" install
 	use modules && linux-mod_src_install
-	dodoc -r README doc/*
+	dodoc -r README.rst doc/*
 	find "${ED}" -type f -name '*.la' -exec rm -rf '{}' '+'
 }
