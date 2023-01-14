@@ -2,7 +2,6 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-<<<<<<< HEAD
 PYTHON_COMPAT=( python3_{9..10} )
 
 inherit gstreamer-meson python-any-r1

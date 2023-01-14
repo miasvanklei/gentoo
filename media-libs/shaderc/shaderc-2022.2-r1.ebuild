@@ -3,7 +3,6 @@
 
 EAPI=8
 
-<<<<<<< HEAD
 PYTHON_COMPAT=( python3_{9..10} )
 inherit cmake-multilib python-any-r1
 
