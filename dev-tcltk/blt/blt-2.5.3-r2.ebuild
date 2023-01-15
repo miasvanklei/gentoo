@@ -96,7 +96,7 @@ src_configure() {
 		--with-cflags="${CFLAGS}" \
 		--with-gnu-ld \
 		$(use_enable jpeg) \
-		--with-X \
+		--with-x \
 		CC="$(tc-getCC)"
 }
 
