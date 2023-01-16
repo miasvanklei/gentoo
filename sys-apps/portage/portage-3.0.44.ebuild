@@ -14,7 +14,7 @@ HOMEPAGE="https://wiki.gentoo.org/wiki/Project:Portage"
 SRC_URI="https://gitweb.gentoo.org/proj/portage.git/snapshot/${P}.tar.bz2"
 
 LICENSE="GPL-2"
-KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 SLOT="0"
 IUSE="apidoc build doc gentoo-dev +ipc +native-extensions +rsync-verify selinux test xattr"
 RESTRICT="!test? ( test )"
@@ -68,15 +68,11 @@ RDEPEND="
 	!<app-portage/repoman-2.3.10
 	!~app-portage/repoman-3.0.0
 "
-# Weird dep construct for sys-apps/file can be removed once >=file-5.44-r1 stable
 PDEPEND="
 	!build? (
 		>=net-misc/rsync-2.6.4
-		|| (
-			>=sys-apps/file-5.44-r3
-			=sys-apps/file-5.43-r3
-		)
 		>=sys-apps/coreutils-6.4
+		>=sys-apps/file-5.44-r3
 	)
 "
 # coreutils-6.4 rdep is for date format in emerge-webrsync #164532
