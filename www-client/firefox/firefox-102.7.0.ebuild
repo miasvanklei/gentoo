@@ -3,7 +3,7 @@
 
 EAPI=8
 
-FIREFOX_PATCHSET="firefox-109-patches-01j.tar.xz"
+FIREFOX_PATCHSET="firefox-102esr-patches-07j.tar.xz"
 
 LLVM_MAX_SLOT=15
 
@@ -12,9 +12,9 @@ PYTHON_REQ_USE="ncurses,sqlite,ssl"
 
 WANT_AUTOCONF="2.1"
 
-VIRTUALX_REQUIRED="manual"
+VIRTUALX_REQUIRED="pgo"
 
-MOZ_ESR=
+MOZ_ESR=yes
 
 MOZ_PV=${PV}
 MOZ_PV_SUFFIX=
@@ -59,27 +59,27 @@ HOMEPAGE="https://www.mozilla.com/firefox"
 
 KEYWORDS="~amd64 ~arm64 ~ppc64 ~x86"
 
-SLOT="rapid"
+SLOT="esr"
 LICENSE="MPL-2.0 GPL-2 LGPL-2.1"
 
 IUSE="+clang cpu_flags_arm_neon dbus debug eme-free hardened hwaccel"
 IUSE+=" jack libproxy lto +openh264 pgo pulseaudio sndio selinux"
 IUSE+=" +system-av1 +system-harfbuzz +system-icu +system-jpeg +system-libevent +system-libvpx system-png system-python-libs +system-webp"
-IUSE+=" wayland wifi +X"
+IUSE+=" wayland wifi"
 
 # Firefox-only IUSE
 IUSE+=" geckodriver +gmp-autoupdate screencast"
 
-REQUIRED_USE="|| ( X wayland )
-	debug? ( !system-av1 )
+REQUIRED_USE="debug? ( !system-av1 )
 	pgo? ( lto )
+	wayland? ( dbus )
 	wifi? ( dbus )"
 
 # Firefox-only REQUIRED_USE flags
 REQUIRED_USE+=" screencast? ( wayland )"
 
 FF_ONLY_DEPEND="!www-client/firefox:0
-	!www-client/firefox:esr
+	!www-client/firefox:rapid
 	screencast? ( media-video/pipewire:= )
 	selinux? ( sec-policy/selinux-mozilla )"
 BDEPEND="${PYTHON_DEPS}
@@ -103,33 +103,22 @@ BDEPEND="${PYTHON_DEPS}
 			)
 		)
 	)
-	app-alternatives/awk
+	!clang? ( virtual/rust )
 	app-arch/unzip
 	app-arch/zip
 	>=dev-util/cbindgen-0.24.3
 	net-libs/nodejs
 	virtual/pkgconfig
-	!clang? ( virtual/rust )
 	amd64? ( >=dev-lang/nasm-2.14 )
-	x86? ( >=dev-lang/nasm-2.14 )
-	pgo? (
-		X? (
-			sys-devel/gettext
-			x11-base/xorg-server[xvfb]
-			x11-apps/xhost
-		)
-		wayland? (
-			>=gui-libs/wlroots-0.15.1-r1[tinywl]
-			x11-misc/xkeyboard-config
-		)
-	)"
+	x86? ( >=dev-lang/nasm-2.14 )"
+
 COMMON_DEPEND="${FF_ONLY_DEPEND}
 	>=app-accessibility/at-spi2-core-2.46.0:2
 	dev-libs/expat
 	dev-libs/glib:2
 	dev-libs/libffi:=
-	>=dev-libs/nss-3.86
-	>=dev-libs/nspr-4.35
+	>=dev-libs/nss-3.79.2
+	>=dev-libs/nspr-4.34
 	media-libs/alsa-lib
 	media-libs/fontconfig
 	media-libs/freetype
@@ -137,8 +126,19 @@ COMMON_DEPEND="${FF_ONLY_DEPEND}
 	media-video/ffmpeg
 	sys-libs/zlib
 	virtual/freedesktop-icon-theme
-	x11-libs/cairo
+	virtual/opengl
+	x11-libs/cairo[X]
 	x11-libs/gdk-pixbuf
+	x11-libs/gtk+:3[X]
+	x11-libs/libX11
+	x11-libs/libXcomposite
+	x11-libs/libXdamage
+	x11-libs/libXext
+	x11-libs/libXfixes
+	x11-libs/libXrandr
+	x11-libs/libXtst
+	x11-libs/libxcb:=
+	x11-libs/libxkbcommon[X]
 	x11-libs/pango
 	x11-libs/pixman
 	dbus? (
@@ -147,9 +147,13 @@ COMMON_DEPEND="${FF_ONLY_DEPEND}
 	)
 	jack? ( virtual/jack )
 	libproxy? ( net-libs/libproxy )
-	selinux? ( sec-policy/selinux-mozilla )
+	pulseaudio? (
+		|| (
+			media-sound/pulseaudio
+			>=media-sound/apulse-0.1.12-r4
+		)
+	)
 	sndio? ( >=media-sound/sndio-1.8.0-r1 )
-	screencast? ( media-video/pipewire:= )
 	system-av1? (
 		>=media-libs/dav1d-1.0.0:=
 		>=media-libs/libaom-1.0.0:=
@@ -165,7 +169,6 @@ COMMON_DEPEND="${FF_ONLY_DEPEND}
 	system-png? ( >=media-libs/libpng-1.6.35:0=[apng] )
 	system-webp? ( >=media-libs/libwebp-1.1.0:0= )
 	wayland? (
-		>=media-libs/libepoxy-1.5.10-r1
 		x11-libs/gtk+:3[wayland]
 		x11-libs/libdrm
 		x11-libs/libxkbcommon[wayland]
@@ -176,42 +179,16 @@ COMMON_DEPEND="${FF_ONLY_DEPEND}
 			net-misc/networkmanager
 			sys-apps/dbus
 		)
-	)
-	X? (
-		virtual/opengl
-		x11-libs/cairo[X]
-		x11-libs/gtk+:3[X]
-		x11-libs/libX11
-		x11-libs/libXcomposite
-		x11-libs/libXdamage
-		x11-libs/libXext
-		x11-libs/libXfixes
-		x11-libs/libxkbcommon[X]
-		x11-libs/libXrandr
-		x11-libs/libXtst
-		x11-libs/libxcb:=
 	)"
+
 RDEPEND="${COMMON_DEPEND}
 	jack? ( virtual/jack )
-	openh264? ( media-libs/openh264:*[plugin] )
-	pulseaudio? (
-		|| (
-			media-libs/libpulse
-			>=media-sound/apulse-0.1.12-r4
-		)
-	)"
+	openh264? ( media-libs/openh264:*[plugin] )"
+
 DEPEND="${COMMON_DEPEND}
-	pulseaudio? (
-		|| (
-			media-libs/libpulse
-			>=media-sound/apulse-0.1.12-r4[sdk]
-		)
-	)
-	X? (
-		x11-base/xorg-proto
-		x11-libs/libICE
-		x11-libs/libSM
-	)"
+	x11-base/xorg-proto
+	x11-libs/libICE
+	x11-libs/libSM"
 
 S="${WORKDIR}/${PN}-${PV%_*}"
 
@@ -427,27 +404,6 @@ mozconfig_use_with() {
 	mozconfig_add_options_ac "$(use ${1} && echo +${1} || echo -${1})" "${flag}"
 }
 
-virtwl() {
-	debug-print-function ${FUNCNAME} "$@"
-
-	[[ $# -lt 1 ]] && die "${FUNCNAME} needs at least one argument"
-	[[ -n $XDG_RUNTIME_DIR ]] || die "${FUNCNAME} needs XDG_RUNTIME_DIR to be set; try xdg_environment_reset"
-	tinywl -h >/dev/null || die 'tinywl -h failed'
-
-	# TODO: don't run addpredict in utility function. WLR_RENDERER=pixman doesn't work
-	addpredict /dev/dri
-	local VIRTWL VIRTWL_PID
-	coproc VIRTWL { WLR_BACKENDS=headless exec tinywl -s 'echo $WAYLAND_DISPLAY; read _; kill $PPID'; }
-	local -x WAYLAND_DISPLAY
-	read WAYLAND_DISPLAY <&${VIRTWL[0]}
-
-	debug-print "${FUNCNAME}: $@"
-	"$@"
-
-	[[ -n $VIRTWL_PID ]] || die "tinywl exited unexpectedly"
-	exec {VIRTWL[0]}<&- {VIRTWL[1]}>&-
-}
-
 pkg_pretend() {
 	if [[ ${MERGE_TYPE} != binary ]] ; then
 		if use pgo ; then
@@ -524,14 +480,6 @@ pkg_setup() {
 		addpredict /proc/self/oom_score_adj
 
 		if use pgo ; then
-			# Update 105.0: "/proc/self/oom_score_adj" isn't enough anymore with pgo, but not sure
-			# whether that's due to better OOM handling by Firefox (bmo#1771712), or portage
-			# (PORTAGE_SCHEDULING_POLICY) update...
-			addpredict /proc
-
-			# May need a wider addpredict when using wayland+pgo.
-			addpredict /dev/dri
-
 			# Allow access to GPU during PGO run
 			local ati_cards mesa_cards nvidia_cards render_cards
 			shopt -s nullglob
@@ -610,8 +558,10 @@ src_unpack() {
 }
 
 src_prepare() {
-	use lto && rm -v "${WORKDIR}"/firefox-patches/*-LTO-Only-enable-LTO-*.patch
-	! use ppc64 && rm -v "${WORKDIR}"/firefox-patches/*bmo-1775202-ppc64*.patch
+	if use lto; then
+		rm -v "${WORKDIR}"/firefox-patches/*-LTO-Only-enable-LTO-*.patch || die
+	fi
+
 	eapply "${WORKDIR}/firefox-patches"
 
 	# Allow user to apply any additional patches without modifing ebuild
@@ -698,8 +648,7 @@ src_configure() {
 		strip-unsupported-flags
 	fi
 
-	# Ensure we use correct toolchain,
-	# AS is used in a non-standard way by upstream, #bmo1654031
+	# Ensure we use correct toolchain
 	export HOST_CC="$(tc-getBUILD_CC)"
 	export HOST_CXX="$(tc-getBUILD_CXX)"
 	export AS="$(tc-getCC) -c"
@@ -724,7 +673,6 @@ src_configure() {
 
 	# Initialize MOZCONFIG
 	mozconfig_add_options_ac '' --enable-application=browser
-	mozconfig_add_options_ac '' --enable-project=browser
 
 	# Set Gentoo defaults
 	export MOZILLA_OFFICIAL=1
@@ -736,9 +684,7 @@ src_configure() {
 		--disable-gpsd \
 		--disable-install-strip \
 		--disable-parental-controls \
-		--disable-real-time-tracing \
 		--disable-strip \
-		--disable-tests \
 		--disable-updater \
 		--enable-negotiateauth \
 		--enable-new-pass-manager \
@@ -746,7 +692,6 @@ src_configure() {
 		--enable-release \
 		--enable-system-ffi \
 		--enable-system-pixman \
-		--enable-system-policies \
 		--host="${CBUILD:-${CHOST}}" \
 		--libdir="${EPREFIX}/usr/$(get_libdir)" \
 		--prefix="${EPREFIX}/usr" \
@@ -849,10 +794,8 @@ src_configure() {
 
 	mozconfig_use_enable wifi necko-wifi
 
-	if use X && use wayland ; then
+	if use wayland ; then
 		mozconfig_add_options_ac '+x11+wayland' --enable-default-toolkit=cairo-gtk3-x11-wayland
-	elif ! use X && use wayland ; then
-		mozconfig_add_options_ac '+wayland' --enable-default-toolkit=cairo-gtk3-wayland-only
 	else
 		mozconfig_add_options_ac '+x11' --enable-default-toolkit=cairo-gtk3
 	fi
@@ -1055,26 +998,19 @@ src_configure() {
 src_compile() {
 	local virtx_cmd=
 
-	if use pgo; then
+	if use pgo ; then
+		virtx_cmd=virtx
+
 		# Reset and cleanup environment variables used by GNOME/XDG
 		gnome2_environment_reset
 
 		addpredict /root
-
-		if ! use X; then
-			virtx_cmd=virtwl
-		else
-			virtx_cmd=virtx
-		fi
 	fi
 
-	if ! use X; then
-		local -x GDK_BACKEND=wayland
-	else
-		local -x GDK_BACKEND=x11
-	fi
+	local -x GDK_BACKEND=x11
 
-	${virtx_cmd} ./mach build --verbose || die
+	${virtx_cmd} ./mach build --verbose \
+		|| die
 }
 
 src_install() {
@@ -1184,7 +1120,7 @@ src_install() {
 	# Install menu
 	local app_name="Mozilla ${MOZ_PN^}"
 	local desktop_file="${FILESDIR}/icon/${PN}-r3.desktop"
-	local desktop_filename="${PN}.desktop"
+	local desktop_filename="${PN}-esr.desktop"
 	local exec_command="${PN}"
 	local icon="${PN}"
 	local use_wayland="false"
