@@ -647,7 +647,6 @@ src_prepare() {
 
 	# Clearing crate checksums where we have applied patches
 	moz_clear_vendor_checksums bindgen
-	moz_clear_vendor_checksums libc
 
 	# Create build dir
 	BUILD_DIR="${WORKDIR}/${PN}_build"
