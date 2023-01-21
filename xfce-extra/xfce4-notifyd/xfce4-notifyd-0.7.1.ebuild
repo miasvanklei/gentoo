@@ -14,16 +14,23 @@ SRC_URI="https://archive.xfce.org/src/apps/${PN}/${PV%.*}/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
+IUSE="sound wayland X"
 
 DEPEND="
-	>=dev-libs/glib-2.56:2
-	>=x11-libs/gtk+-3.14:3
+	>=dev-libs/glib-2.56.0:2
+	>=x11-libs/gtk+-3.22:3[wayland?,X?]
 	>=x11-libs/libnotify-0.7
 	>=xfce-base/libxfce4ui-4.12:=[gtk3(+)]
 	>=xfce-base/libxfce4util-4.12:=
 	>=xfce-base/xfce4-panel-4.12:=
 	>=xfce-base/xfconf-4.10:=
+	sound? (
+		>=media-libs/libcanberra-0.30[gtk3]
+	)
+	wayland? (
+		>=gui-libs/gtk-layer-shell-0.7.0
+	)
 "
 RDEPEND="
 	${DEPEND}
@@ -34,6 +41,16 @@ BDEPEND="
 	sys-devel/gettext
 	virtual/pkgconfig
 "
+
+src_configure() {
+	local myconf=(
+		$(use_enable wayland gdk-wayland)
+		$(use_enable wayland gtk-layer-shell)
+		$(use_enable X gdk-x11)
+	)
+
+	econf "${myconf[@]}"
+}
 
 src_install() {
 	default
