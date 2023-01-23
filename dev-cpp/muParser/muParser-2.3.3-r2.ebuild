@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake
+inherit cmake toolchain-funcs
 
 # The upstream tag is v2.3.3-1 instead of v2.3.3
 suffix="-1"
@@ -21,6 +21,14 @@ RESTRICT="!test? ( test )"
 
 S="${S}${suffix}"
 
+pkg_pretend() {
+	[[ ${MERGE_TYPE} != binary ]] && use openmp && tc-check-openmp
+}
+
+pkg_setup() {
+	[[ ${MERGE_TYPE} != binary ]] && use openmp && tc-check-openmp
+}
+
 src_configure() {
 	local mycmakeargs=(
 		-DENABLE_OPENMP=$(usex openmp)
@@ -30,8 +38,4 @@ src_configure() {
 
 src_test() {
 	cmake_src_compile test
-}
-
-src_install() {
-	cmake_src_install
 }
