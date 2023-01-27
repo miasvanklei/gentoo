@@ -36,7 +36,7 @@
 # Michał Górny <mgorny@gentoo.org> (2023-01-27)
 # GKrellM and a variety of plugins.  It's unmaintained for some time.
 # Upstream homepage is gone, and the whole suite is collecting dust
-# and patches.
+# and patches.  There is no ongoing effort on porting to GTK+3.
 # Removal on 2023-02-26.  Bug #892251.
 acct-group/gkrellmd
 acct-user/gkrellmd
@@ -73,7 +73,7 @@ x11-plugins/gkwebmon
 x11-plugins/i8krellm
 x11-themes/gkrellm-themes
 
-# Florian Schmaus <flow@gentoo.org> (2013-01-27)
+# Florian Schmaus <flow@gentoo.org> (2023-01-27)
 # Previous dependencies of dev-lang/clojure, now part of the clojure
 # ebuild and no longer needed.
 # Removal on 2023-02-27.
