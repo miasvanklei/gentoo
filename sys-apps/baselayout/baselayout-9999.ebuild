@@ -192,11 +192,6 @@ multilib_layout() {
 }
 
 pkg_preinst() {
-	# This is written in src_install (so it's in CONTENTS), but punt all
-	# pending updates to avoid user having to do etc-update (and make the
-	# pkg_postinst logic simpler).
-	rm -f "${EROOT}"/etc/._cfg????_gentoo-release || die
-
 	# We need to install directories and maybe some dev nodes when building
 	# stages, but they cannot be in CONTENTS.
 	# Also, we cannot reference $S as binpkg will break so we do this.
@@ -235,7 +230,7 @@ src_prepare() {
 
 	if use prefix; then
 		hprefixify -e "/EUID/s,0,${EUID}," -q '"' etc/profile
-		hprefixify etc/shells share.Linux/passwd
+		hprefixify etc/shells share/passwd
 		hprefixify -w '/PATH=/' etc/env.d/50baselayout
 		hprefixify -w 1 etc/env.d/50baselayout
 		echo PATH=/usr/sbin:/sbin:/usr/bin:/bin >> etc/env.d/99host
@@ -316,12 +311,6 @@ pkg_postinst() {
 			chmod o-rwx "${EROOT}/etc/${x}" || die
 		fi
 	done
-
-	# Take care of the etc-update for the user
-	if [ -e "${EROOT}"/etc/._cfg0000_gentoo-release ] ; then
-		mv "${EROOT}"/etc/._cfg0000_gentoo-release "${EROOT}"/etc/gentoo-release || die
-	fi
-
 	# whine about users that lack passwords #193541
 	if [[ -e "${EROOT}"/etc/shadow ]] ; then
 		local bad_users=$(sed -n '/^[^:]*::/s|^\([^:]*\)::.*|\1|p' "${EROOT}"/etc/shadow)
