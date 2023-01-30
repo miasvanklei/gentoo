@@ -22,7 +22,7 @@ S="${WORKDIR}"/${PN}-OPENLDAP_REL_ENG_${MY_PV}
 LICENSE="OPENLDAP GPL-2"
 # Subslot added for bug #835654
 SLOT="0/$(ver_cut 1-2)"
-KEYWORDS="~alpha ~amd64 arm ~arm64 hppa ~ia64 ~loong ~mips ~ppc ~ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~x86-solaris"
+KEYWORDS="~alpha amd64 arm arm64 hppa ~ia64 ~loong ~mips ~ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~x86-solaris"
 
 IUSE_DAEMON="argon2 +cleartext crypt experimental minimal samba tcpd"
 IUSE_OVERLAY="overlays perl autoca"
@@ -325,12 +325,6 @@ src_prepare() {
 	sed -i \
 		-e "s:\$(localstatedir)/run:${EPREFIX}/run:" \
 		servers/slapd/Makefile.in || die 'adjusting slapd Makefile.in failed'
-
-	# Hack for bug #885457
-	sed -i \
-		-e "s:systemdsystemunitdir=/usr/lib/systemd/system:systemdsystemunitdir=$(systemd_get_systemunitdir):" \
-		-e "s:systemdsystemunitdir=/lib/systemd/system:systemdsystemunitdir=$(systemd_get_systemunitdir):" \
-		configure.ac || die
 
 	pushd build &>/dev/null || die "pushd build"
 	einfo "Making sure upstream build strip does not do stripping too early"
@@ -669,11 +663,15 @@ multilib_src_install() {
 		doinitd "${T}"/slapd
 		newconfd "${FILESDIR}"/slapd-confd-2.6.1 slapd
 
-		einfo "Install systemd service"
-		sed -e "s,/usr/lib/,/usr/$(get_libdir)/," "${FILESDIR}"/slapd-2.6.1.service > "${T}"/slapd.service || die
-		systemd_dounit "${T}"/slapd.service
-		systemd_install_serviced "${FILESDIR}"/slapd.service.conf
-		newtmpfiles "${FILESDIR}"/slapd.tmpfilesd slapd.conf
+		if use systemd; then
+			# The systemd unit uses Type=notify, so it is useless without USE=systemd
+			einfo "Install systemd service"
+			rm -rf "${ED}"/{,usr/}lib/systemd
+			sed -e "s,/usr/lib/,/usr/$(get_libdir)/," "${FILESDIR}"/slapd-2.6.1.service > "${T}"/slapd.service || die
+			systemd_dounit "${T}"/slapd.service
+			systemd_install_serviced "${FILESDIR}"/slapd.service.conf
+			newtmpfiles "${FILESDIR}"/slapd.tmpfilesd slapd.conf
+		fi
 
 		# if built without SLP, we don't need to be before avahi
 			sed -i \
@@ -763,7 +761,9 @@ pkg_preinst() {
 
 pkg_postinst() {
 	if ! use minimal ; then
-		tmpfiles_process slapd.conf
+		if use systemd; then
+			tmpfiles_process slapd.conf
+		fi
 
 		# You cannot build SSL certificates during src_install that will make
 		# binary packages containing your SSL key, which is both a security risk
