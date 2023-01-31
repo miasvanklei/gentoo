@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -10,7 +10,7 @@ if [[ ${PV} == 9999 ]] ; then
 	inherit git-r3
 else
 	SRC_URI="https://github.com/ngtcp2/ngtcp2/releases/download/v${PV}/${P}.tar.xz"
-	KEYWORDS="~amd64 ~hppa ~riscv"
+	KEYWORDS="~amd64 ~hppa ~riscv ~x86"
 fi
 
 DESCRIPTION="Implementation of the IETF QUIC Protocol"
@@ -18,7 +18,7 @@ HOMEPAGE="https://github.com/ngtcp2/ngtcp2/"
 
 LICENSE="MIT"
 SLOT="0/0"
-IUSE="+gnutls openssl +ssl test"
+IUSE="+gnutls openssl +ssl static-libs test"
 REQUIRED_USE="ssl? ( || ( gnutls openssl ) )"
 
 BDEPEND="virtual/pkgconfig"
@@ -35,6 +35,7 @@ RESTRICT="!test? ( test )"
 
 multilib_src_configure() {
 	local mycmakeargs=(
+		-DENABLE_STATIC_LIB=$(usex static-libs)
 		-DENABLE_GNUTLS=$(usex gnutls)
 		-DENABLE_OPENSSL=$(usex openssl)
 		-DENABLE_BORINGSSL=OFF
