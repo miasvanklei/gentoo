@@ -86,6 +86,100 @@
  s_no_extra_traits! {
      // linux/net_tstamp.h
      #[allow(missing_debug_implementations)]
+@@ -843,44 +843,6 @@
+             }
+         }
+ 
+-        impl PartialEq for dirent64 {
+-            fn eq(&self, other: &dirent64) -> bool {
+-                self.d_ino == other.d_ino
+-                    && self.d_off == other.d_off
+-                    && self.d_reclen == other.d_reclen
+-                    && self.d_type == other.d_type
+-                    && self
+-                    .d_name
+-                    .iter()
+-                    .zip(other.d_name.iter())
+-                    .all(|(a,b)| a == b)
+-            }
+-        }
+-
+-        impl Eq for dirent64 {}
+-
+-        impl ::fmt::Debug for dirent64 {
+-            fn fmt(&self, f: &mut ::fmt::Formatter) -> ::fmt::Result {
+-                f.debug_struct("dirent64")
+-                    .field("d_ino", &self.d_ino)
+-                    .field("d_off", &self.d_off)
+-                    .field("d_reclen", &self.d_reclen)
+-                    .field("d_type", &self.d_type)
+-                // FIXME: .field("d_name", &self.d_name)
+-                    .finish()
+-            }
+-        }
+-
+-        impl ::hash::Hash for dirent64 {
+-            fn hash<H: ::hash::Hasher>(&self, state: &mut H) {
+-                self.d_ino.hash(state);
+-                self.d_off.hash(state);
+-                self.d_reclen.hash(state);
+-                self.d_type.hash(state);
+-                self.d_name.hash(state);
+-            }
+-        }
+-
+         impl PartialEq for pthread_cond_t {
+             fn eq(&self, other: &pthread_cond_t) -> bool {
+                 self.size.iter().zip(other.size.iter()).all(|(a,b)| a == b)
+@@ -1149,6 +1111,48 @@
+             }
+         }
+     }
++}
++
++cfg_if! {
++    if #[cfg(all(feature = "extra_traits", not(target_env = "musl")))] {
++        impl PartialEq for dirent64 {
++            fn eq(&self, other: &dirent64) -> bool {
++                self.d_ino == other.d_ino
++                    && self.d_off == other.d_off
++                    && self.d_reclen == other.d_reclen
++                    && self.d_type == other.d_type
++                    && self
++                    .d_name
++                    .iter()
++                    .zip(other.d_name.iter())
++                    .all(|(a,b)| a == b)
++            }
++        }
++
++        impl Eq for dirent64 {}
++
++        impl ::fmt::Debug for dirent64 {
++            fn fmt(&self, f: &mut ::fmt::Formatter) -> ::fmt::Result {
++                f.debug_struct("dirent64")
++                    .field("d_ino", &self.d_ino)
++                    .field("d_off", &self.d_off)
++                    .field("d_reclen", &self.d_reclen)
++                    .field("d_type", &self.d_type)
++                // FIXME: .field("d_name", &self.d_name)
++                    .finish()
++            }
++        }
++
++        impl ::hash::Hash for dirent64 {
++            fn hash<H: ::hash::Hasher>(&self, state: &mut H) {
++                self.d_ino.hash(state);
++                self.d_off.hash(state);
++                self.d_reclen.hash(state);
++                self.d_type.hash(state);
++                self.d_name.hash(state);
++            }
++        }
++    }
+ }
+ 
+ cfg_if! {
 @@ -3764,21 +3780,8 @@ extern "C" {
      pub fn mprotect(addr: *mut ::c_void, len: ::size_t, prot: ::c_int) -> ::c_int;
      pub fn __errno_location() -> *mut ::c_int;

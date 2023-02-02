@@ -333,6 +333,6 @@
 -            }
 -        }
 -
-         if need_cmake && target.contains("msvc") {
-             // There are three builds of cmake on windows: MSVC, MinGW, and
-             // Cygwin. The Cygwin build does not have generators for Visual
+         // Some environments don't want or need these tools, such as when testing Miri.
+         // FIXME: it would be better to refactor this code to split necessary setup from pure sanity 
+         // checks, and have a regular flag for skipping the latter. Also see
