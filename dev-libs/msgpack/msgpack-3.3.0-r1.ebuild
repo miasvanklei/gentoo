@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -18,11 +18,12 @@ HOMEPAGE="https://msgpack.org/ https://github.com/msgpack/msgpack-c/"
 
 LICENSE="Boost-1.0"
 SLOT="0/2"
-IUSE="boost +cxx doc examples static-libs test"
+IUSE="boost +cxx doc examples test"
 RESTRICT="!test? ( test )"
 
 BDEPEND="doc? ( app-doc/doxygen[dot] )"
-RDEPEND="boost? ( dev-libs/boost[context,${MULTILIB_USEDEP}] )"
+RDEPEND="boost? ( dev-libs/boost[context,${MULTILIB_USEDEP}] )
+	!dev-cpp/msgpack-cxx"
 DEPEND="${RDEPEND}
 	test? (
 		>=dev-cpp/gtest-1.6.0-r2[${MULTILIB_USEDEP}]
@@ -34,7 +35,6 @@ multilib_src_configure() {
 	local mycmakeargs=(
 		-DMSGPACK_BOOST="$(usex boost)"
 		-DMSGPACK_ENABLE_CXX="$(usex cxx)"
-		-DMSGPACK_ENABLE_STATIC="$(usex static-libs)"
 		-DMSGPACK_BUILD_TESTS="$(usex test)"
 		# don't build the examples
 		-DMSGPACK_BUILD_EXAMPLES=OFF
