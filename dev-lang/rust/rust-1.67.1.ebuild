@@ -165,7 +165,6 @@ PATCHES=(
 	"${FILESDIR}"/1.62.1-musl-dynamic-linking.patch
 	"${FILESDIR}"/1.66.0-do-not-install-libunwind-source.patch
 	"${FILESDIR}"/1.66.0-aarch64-static-pie.patch
-	"${FILESDIR}"/1.67.0-bootstrap.patch
 	"${FILESDIR}"/1.67.0-remove-crt-and-musl_root-from-musl-targets.patch
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
 )
