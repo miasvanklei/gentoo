@@ -33,6 +33,27 @@
 
 #--- END OF EXAMPLES ---
 
+# Volkmar W. Pogatzki <gentoo@pogatzki.net> (2023-02-10)
+# Unused Java libraries. Removal on 2023-03-12.
+dev-java/jcip-annotations
+dev-java/jformatstring
+dev-java/jta
+dev-java/pdf-renderer
+dev-java/picocli
+
+# Florian Schmaus <flow@gentoo.org> (2023-02-10)
+# Previous dependencies of ejabberd, now no longer needed.
+# Removal on 2023-03-10.
+dev-erlang/iconv
+dev-erlang/p1_xmlrpc
+dev-erlang/riak_pb
+
+# Florian Schmaus <flow@gentoo.org> (2023-02-09)
+# Leftovers from net-im/jabber-base. Unused and obsolete.
+# Removal on 2023-03-09.
+acct-user/jabber
+acct-group/jabber
+
 # Volkmar W. Pogatzki <gentoo@pogatzki.net> (2023-02-07)
 # Unused Java libraries. Removal on 2023-03-08.
 # jspeex had last upstream activities in 2005.
