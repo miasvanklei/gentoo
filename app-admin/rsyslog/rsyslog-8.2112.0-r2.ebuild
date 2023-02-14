@@ -1,8 +1,7 @@
 # Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=8
-
+EAPI="8"
 PYTHON_COMPAT=( python3_{9..10} )
 
 inherit autotools linux-info python-any-r1 systemd
@@ -17,7 +16,7 @@ if [[ ${PV} == "9999" ]]; then
 
 	inherit git-r3
 else
-	KEYWORDS="amd64 arm arm64 ~hppa ~ia64 x86"
+	KEYWORDS="amd64 arm arm64 ~hppa x86"
 
 	SRC_URI="
 		https://www.rsyslog.com/files/download/${PN}/${P}.tar.gz
@@ -42,7 +41,6 @@ REQUIRED_USE="
 "
 
 BDEPEND=">=sys-devel/autoconf-archive-2015.02.24
-	sys-apps/lsb-release
 	virtual/pkgconfig
 	test? (
 		jemalloc? ( <sys-libs/libfaketime-0.9.7 )
@@ -81,7 +79,7 @@ RDEPEND="
 	rabbitmq? ( >=net-libs/rabbitmq-c-0.3.0:= )
 	redis? (
 		>=dev-libs/hiredis-0.11.0:=
-		dev-libs/libevent[threads]
+		dev-libs/libevent[threads(+)]
 	)
 	relp? ( >=dev-libs/librelp-1.2.17:= )
 	rfc3195? ( >=dev-libs/liblogging-1.0.1:=[rfc3195] )
@@ -116,6 +114,8 @@ fi
 
 CONFIG_CHECK="~INOTIFY_USER"
 WARNING_INOTIFY_USER="CONFIG_INOTIFY_USER isn't set. Imfile module on this system will only support polling mode!"
+
+PATCHES=( "${FILESDIR}"/${PN}-8.2112.0-pr5024-configure.patch )
 
 pkg_setup() {
 	use test && python-any-r1_pkg_setup
@@ -193,7 +193,6 @@ src_configure() {
 		# Input Plugins without dependencies
 		--enable-imbatchreport
 		--enable-imdiag
-		--enable-imdocker
 		--enable-imfile
 		--enable-improg
 		--enable-impstats

@@ -1,8 +1,9 @@
 # Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="7"
-PYTHON_COMPAT=( python3_9 )
+EAPI=8
+
+PYTHON_COMPAT=( python3_{9..10} )
 
 inherit autotools linux-info python-any-r1 systemd
 
@@ -16,7 +17,7 @@ if [[ ${PV} == "9999" ]]; then
 
 	inherit git-r3
 else
-	KEYWORDS="amd64 arm arm64 ~hppa x86"
+	KEYWORDS="amd64 arm arm64 ~hppa ~ia64 ~ppc64 ~riscv ~sparc x86"
 
 	SRC_URI="
 		https://www.rsyslog.com/files/download/${PN}/${P}.tar.gz
@@ -41,6 +42,7 @@ REQUIRED_USE="
 "
 
 BDEPEND=">=sys-devel/autoconf-archive-2015.02.24
+	sys-apps/lsb-release
 	virtual/pkgconfig
 	test? (
 		jemalloc? ( <sys-libs/libfaketime-0.9.7 )
@@ -56,7 +58,11 @@ RDEPEND="
 	dbi? ( >=dev-db/libdbi-0.8.3 )
 	elasticsearch? ( >=net-misc/curl-7.35.0 )
 	gcrypt? ( >=dev-libs/libgcrypt-1.5.3:= )
-	imhttp? ( www-servers/civetweb )
+	imhttp? (
+		dev-libs/apr-util
+		www-servers/civetweb
+		virtual/libcrypt:=
+	)
 	impcap? ( net-libs/libpcap )
 	jemalloc? ( >=dev-libs/jemalloc-3.3.1:= )
 	kafka? ( >=dev-libs/librdkafka-0.9.0.99:= )
@@ -75,7 +81,7 @@ RDEPEND="
 	rabbitmq? ( >=net-libs/rabbitmq-c-0.3.0:= )
 	redis? (
 		>=dev-libs/hiredis-0.11.0:=
-		dev-libs/libevent[threads]
+		dev-libs/libevent[threads(+)]
 	)
 	relp? ( >=dev-libs/librelp-1.2.17:= )
 	rfc3195? ( >=dev-libs/liblogging-1.0.1:=[rfc3195] )
@@ -95,11 +101,11 @@ RDEPEND="
 	zeromq? (
 		>=net-libs/czmq-4:=[drafts]
 	)"
-DEPEND="${RDEPEND}
+
+DEPEND="
+	${RDEPEND}
 	elibc_musl? ( sys-libs/queue-standalone )
-	test? (
-		>=dev-libs/liblogging-1.0.1[stdlog]
-	)"
+"
 
 if [[ ${PV} == "9999" ]]; then
 	BDEPEND+=" doc? ( >=dev-python/sphinx-1.1.3-r7 )"
@@ -110,6 +116,8 @@ fi
 
 CONFIG_CHECK="~INOTIFY_USER"
 WARNING_INOTIFY_USER="CONFIG_INOTIFY_USER isn't set. Imfile module on this system will only support polling mode!"
+
+PATCHES=( "${FILESDIR}"/${PN}-8.2112.0-pr5024-configure.patch )
 
 pkg_setup() {
 	use test && python-any-r1_pkg_setup
@@ -181,12 +189,14 @@ src_configure() {
 		--disable-generate-man-pages
 		--without-valgrind-testbench
 		--disable-liblogging-stdlog
+		--disable-imfile-tests  # Some imfile tests fail (noticed in version 8.2208.0)
 		$(use_enable test testbench)
 		$(use_enable test libfaketime)
 		$(use_enable test extended-tests)
 		# Input Plugins without dependencies
 		--enable-imbatchreport
 		--enable-imdiag
+		--enable-imdocker
 		--enable-imfile
 		--enable-improg
 		--enable-impstats
@@ -210,6 +220,7 @@ src_configure() {
 		--enable-omuxsock
 		# Misc
 		--enable-fmhash
+		--enable-fmunflatten
 		$(use_enable xxhash fmhash-xxhash)
 		--enable-pmaixforwardedfrom
 		--enable-pmciscoios
@@ -225,6 +236,7 @@ src_configure() {
 		$(use_enable mongodb ommongodb)
 		$(use_enable mysql)
 		$(use_enable postgres pgsql)
+		$(use_enable redis imhiredis)
 		$(use_enable redis omhiredis)
 		# Debug
 		$(use_enable debug)
