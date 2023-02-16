@@ -1,7 +1,7 @@
 # Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 PYTHON_COMPAT=( python3_{9..10} )
 
@@ -13,7 +13,7 @@ SRC_URI="mirror://sourceforge/asymptote/${P}.src.tgz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64 ~ppc ~riscv x86 ~amd64-linux ~x86-linux ~ppc-macos"
+KEYWORDS="~amd64 ~ppc ~riscv ~x86 ~amd64-linux ~x86-linux ~ppc-macos"
 IUSE="+boehm-gc context curl doc emacs examples fftw gsl +imagemagick latex lsp offscreen +opengl python sigsegv svg test vim-syntax X"
 RESTRICT="!test? ( test )"
 
@@ -50,7 +50,7 @@ RDEPEND="
 	)
 	latex? (
 		virtual/latex-base
-		>=dev-texlive/texlive-latexextra-2013
+		dev-texlive/texlive-latexextra
 	)
 	context? ( dev-texlive/texlive-context )
 	emacs? ( >=app-editors/emacs-23.1:* )
@@ -61,6 +61,7 @@ DEPEND="${RDEPEND}
 		media-gfx/imagemagick[png]
 		virtual/texi2dvi
 		virtual/latex-base
+		dev-texlive/texlive-latexextra
 		app-text/ghostscript-gpl )
 	test? ( app-text/ghostscript-gpl )"
 
@@ -68,7 +69,7 @@ TEXMF=/usr/share/texmf-site
 
 PATCHES=(
 	# Changing pdf, ps, image viewers to xdg-open
-	"${FILESDIR}/${PN}-2.70-xdg-utils.patch"
+	"${FILESDIR}/${PN}-2.85-xdg-utils.patch"
 
 	# Bug #322473
 	"${FILESDIR}/${PN}-2.70-info.patch"
