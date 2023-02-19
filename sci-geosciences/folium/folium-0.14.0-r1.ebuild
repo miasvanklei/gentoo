@@ -1,9 +1,10 @@
 # Copyright 2021-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{9..10} )
+PYTHON_COMPAT=( python3_{9..11} )
+DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
 DESCRIPTION="Python Data, Leaflet.js Maps"
@@ -15,13 +16,13 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
 PATCHES=(
-	"${FILESDIR}"/${P}-scm.patch
-	"${FILESDIR}"/${P}-gentoo.patch
-	"${FILESDIR}"/${P}-setup.patch
+	"${FILESDIR}"/${PN}-0.12.1-scm.patch
+	"${FILESDIR}"/${PN}-0.13.0-gentoo.patch
 )
 
-RDEPEND="sci-libs/branca[${PYTHON_USEDEP}]
+RDEPEND=">=sci-libs/branca-0.6.0[${PYTHON_USEDEP}]
 	dev-python/jinja[${PYTHON_USEDEP}]
+	dev-python/requests[${PYTHON_USEDEP}]
 	dev-python/numpy[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}
 	test? (
@@ -33,7 +34,11 @@ BDEPEND=""
 distutils_enable_tests pytest
 
 src_prepare() {
-	rm -r tests/selenium || die
+	rm -r tests/selenium || die # require chromedriver
+	rm tests/test_folium.py || die # require geopandas
+	rm tests/test_raster_layers.py || die # require xyzservices
+	rm tests/plugins/test_time_slider_choropleth.py || die # require geopandas
+	rm tests/test_repr.py || die # require geckodriver
 	default
 }
 
