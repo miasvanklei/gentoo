@@ -13,10 +13,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv"
 IUSE="hardened +nftables"
 
-RDEPEND="
-	nftables? ( app-containers/cni-plugins-nftables )
-	!nftables? ( net-firewall/iptables )
-"
+RDEPEND="net-firewall/iptables"
 
 CONFIG_CHECK="~BRIDGE_VLAN_FILTERING ~NETFILTER_XT_MATCH_COMMENT
 	~NETFILTER_XT_MATCH_MULTIPORT"
