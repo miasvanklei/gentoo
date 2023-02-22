@@ -53,7 +53,7 @@ RDEPEND="
 	taglib? ( media-libs/taglib	)
 	vaapi? (
 		>=media-video/ffmpeg-4.1.3[vaapi]
-		media-libs/libva[X]
+		media-libs/libva
 	)
 	vdpau? ( media-video/ffmpeg[vdpau] )
 	videofilters? ( dev-qt/qtconcurrent:5 )
