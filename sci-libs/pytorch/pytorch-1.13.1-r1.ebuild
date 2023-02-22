@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{9,10} )
+PYTHON_COMPAT=( python3_{9..11} )
 DISTUTILS_SINGLE_IMPL=1
 inherit distutils-r1
 
@@ -36,9 +36,9 @@ src_prepare() {
 	eapply \
 		"${FILESDIR}"/0002-Don-t-build-libtorch-again-for-PyTorch-1.7.1.patch \
 		"${FILESDIR}"/pytorch-1.9.0-Change-library-directory-according-to-CMake-build.patch \
-		"${FILESDIR}"/${PN}-1.6.0-global-dlopen.patch \
+		"${FILESDIR}"/${P}-global-dlopen.patch \
 		"${FILESDIR}"/pytorch-1.7.1-torch_shm_manager.patch \
-		"${FILESDIR}"/pytorch-1.12.0-CVE-2022-45907.patch
+		"${FILESDIR}"/${PN}-1.13.0-setup.patch \
 
 	# Set build dir for pytorch's setup
 	sed -i \
