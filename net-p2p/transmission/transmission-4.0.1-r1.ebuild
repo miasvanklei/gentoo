@@ -76,7 +76,7 @@ src_configure() {
 		-DENABLE_GTK=$(usex gtk ON OFF)
 		-DENABLE_QT=$(usex qt5 ON OFF)
 		-DENABLE_MAC=OFF
-		-DENABLE_WEB=OFF
+		-DREBUILD_WEB=OFF
 		-DENABLE_CLI=$(usex cli ON OFF)
 		-DENABLE_TESTS=$(usex test ON OFF)
 		-DENABLE_NLS=$(usex nls ON OFF)
