@@ -112,7 +112,7 @@ src_configure() {
 	./configure \
 		--target=${CTARGET} \
 		--prefix=${EPREFIX}${sysroot}/usr \
-		--syslibdir=${EPREFIX}${sysroot}/lib \
+		--syslibdir=${EPREFIX}${sysroot}/usr/lib \
 		--disable-gcc-wrapper || die
 }
 
@@ -143,8 +143,8 @@ src_install() {
 	# musl provides ldd via a sym link to its ld.so
 	local sysroot
 	is_crosscompile && sysroot=/usr/${CTARGET}
-	local ldso=$(basename "${ED}"${sysroot}/lib/ld-musl-*)
-	dosym ${EPREFIX}${sysroot}/lib/${ldso} ${sysroot}/usr/bin/ldd
+	local ldso=$(basename "${ED}"${sysroot}/usr/lib/ld-musl-*)
+	dosym ${EPREFIX}${sysroot}/usr/lib/${ldso} ${sysroot}/usr/bin/ldd
 
 	if ! use crypt ; then
 		# Allow sys-libs/libxcrypt[system] to provide it instead
@@ -164,18 +164,17 @@ src_install() {
 		# During cross or within prefix, there's no guarantee that the host is
 		# using musl so that file may not exist. Use a relative symlink within
 		# ${D} instead.
-		rm -f "${ED}"/lib/ld-musl-${arch}.so.1 || die
-		dosym8 -r /usr/lib/libc.so /lib/ld-musl-${arch}.so.1
+		rm -f "${ED}"/usr/lib/ld-musl-${arch}.so.1 || die
+		dosym8 -r /usr/lib/libc.so /usr/lib/ld-musl-${arch}.so.1
 
 		# If it's still a dead symlnk, OK, we really do need to abort.
-		[[ -e "${ED}"/lib/ld-musl-${arch}.so.1 ]] || die
+		[[ -e "${ED}"/usr/lib/ld-musl-${arch}.so.1 ]] || die
 
 		cp "${FILESDIR}"/ldconfig.in-r3 "${T}"/ldconfig.in || die
 		sed -e "s|@@ARCH@@|${arch}|" "${T}"/ldconfig.in > "${T}"/ldconfig || die
 		eprefixify "${T}"/ldconfig
-		into /
-		dosbin "${T}"/ldconfig
 		into /usr
+		dosbin "${T}"/ldconfig
 		dobin "${T}"/getconf
 		dobin "${T}"/getent
 		dobin "${T}"/iconv
