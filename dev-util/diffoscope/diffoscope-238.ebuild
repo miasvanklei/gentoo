@@ -6,11 +6,10 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..11} )
 PYTHON_REQ_USE="ncurses"
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Will try to get to the bottom of what makes files or directories different"
 HOMEPAGE="https://diffoscope.org/ https://pypi.org/project/diffoscope/"
-SRC_URI="mirror://pypi/${PN:0:1}/${PN}/${P}.tar.gz"
 
 LICENSE="GPL-3+"
 SLOT="0"
@@ -115,6 +114,7 @@ EPYTEST_DESELECT=(
 
 	# Fails on (unreleased) LLVM 16 with minor difference
 	tests/comparators/test_macho.py::test_llvm_diff
+	tests/comparators/test_elf.py::test_libmix_differences
 )
 
 distutils_enable_tests pytest
