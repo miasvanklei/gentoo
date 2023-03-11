@@ -5,11 +5,15 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..11} )
-inherit distutils-r1 virtualx
+
+inherit distutils-r1 pypi virtualx
 
 DESCRIPTION="Python library for arbitrary-precision floating-point arithmetic"
-HOMEPAGE="https://mpmath.org/"
-SRC_URI="https://github.com/fredrik-johansson/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+HOMEPAGE="
+	https://mpmath.org/
+	https://github.com/mpmath/mpmath/
+	https://pypi.org/project/mpmath/
+"
 
 LICENSE="BSD"
 SLOT="0"
