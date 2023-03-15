@@ -56,9 +56,6 @@ PATCHES=(
 )
 
 src_configure() {
-	# Bug #898156
-	append-cxxflags -std=c++17
-
 	local myeconfargs=(
 		--enable-imagefilters
 		--localstatedir="${EPREFIX}"/var
