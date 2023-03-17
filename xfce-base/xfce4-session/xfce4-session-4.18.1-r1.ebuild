@@ -10,7 +10,13 @@ HOMEPAGE="
 	https://docs.xfce.org/xfce/xfce4-session/start
 	https://gitlab.xfce.org/xfce/xfce4-session
 "
-SRC_URI="https://archive.xfce.org/src/xfce/${PN}/${PV%.*}/${P}.tar.bz2"
+SRC_URI="
+	https://archive.xfce.org/src/xfce/${PN}/${PV%.*}/${P}.tar.bz2
+	https://gitlab.xfce.org/xfce/xfce4-session/-/commit/911f5b8101dec6a6d28f7601768588a2f0fd4aaf.patch
+		-> ${P}-mem1.patch
+	https://gitlab.xfce.org/xfce/xfce4-session/-/commit/cff23d0fadd502f7db9230f9ebbc02c00853f825.patch
+		-> ${P}-mem2.patch
+"
 
 LICENSE="GPL-2+"
 SLOT="0"
@@ -24,7 +30,7 @@ DEPEND="
 	x11-libs/libwnck:3
 	x11-libs/libX11
 	>=xfce-base/libxfce4util-4.15.2:=
-	>=xfce-base/libxfce4ui-4.15.1:=
+	>=xfce-base/libxfce4ui-4.18.2:=
 	>=xfce-base/xfconf-4.12:=
 	policykit? ( >=sys-auth/polkit-0.102 )
 "
@@ -46,6 +52,11 @@ BDEPEND="
 	sys-devel/gettext
 	virtual/pkgconfig
 "
+
+PATCHES=(
+	"${DISTDIR}/${P}-mem1.patch"
+	"${DISTDIR}/${P}-mem2.patch"
+)
 
 src_configure() {
 	local myconf=(
