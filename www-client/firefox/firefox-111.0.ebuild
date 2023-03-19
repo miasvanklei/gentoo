@@ -5,7 +5,7 @@ EAPI=8
 
 FIREFOX_PATCHSET="firefox-111-patches-01j.tar.xz"
 
-LLVM_MAX_SLOT=15
+LLVM_MAX_SLOT=16
 
 PYTHON_COMPAT=( python3_{9..11} )
 PYTHON_REQ_USE="ncurses,sqlite,ssl"
@@ -80,15 +80,15 @@ FF_ONLY_DEPEND="!www-client/firefox:0
 	screencast? ( media-video/pipewire:= )
 	selinux? ( sec-policy/selinux-mozilla )"
 BDEPEND="${PYTHON_DEPS}
-	sys-devel/clang:15
-	sys-devel/llvm:15
+	sys-devel/clang:16
+	sys-devel/llvm:16
 	clang? (
 		|| (
-			sys-devel/lld:15
+			sys-devel/lld:16
 			sys-devel/mold
 		)
 		virtual/rust:0/llvm-15
-		pgo? ( =sys-libs/compiler-rt-sanitizers-15*[profile] )
+		pgo? ( =sys-libs/compiler-rt-sanitizers-16*[profile] )
 	)
 	app-alternatives/awk
 	app-arch/unzip
