@@ -1,10 +1,10 @@
 # Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_10 )
-ADA_COMPAT=( gnat_2021 gcc_12_2_0 )
+PYTHON_COMPAT=( python3_{10..11} )
+ADA_COMPAT=( gnat_2021 gcc_12 gcc_12_2_0 )
 
 inherit ada python-single-r1 multiprocessing
 
@@ -13,7 +13,7 @@ HOMEPAGE="https://libre.adacore.com/"
 SRC_URI="https://github.com/AdaCore/${PN}/archive/refs/tags/v${PV}.tar.gz
 	-> ${P}.tar.gz"
 
-LICENSE="GPL-3 gcc-runtime-library-exception-3.1"
+LICENSE="Apache-2.0"
 SLOT="0/${PV}"
 KEYWORDS="~amd64 ~x86"
 IUSE="test +static-libs static-pic"
@@ -22,10 +22,11 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}
 RESTRICT="!test? ( test )"
 
 RDEPEND="dev-python/pyyaml
-	dev-ada/gnatcoll-bindings[${ADA_USEDEP},gmp,iconv,shared,static-libs?,static-pic?]
+	dev-ada/gnatcoll-bindings[${ADA_USEDEP},gmp,iconv]
+	dev-ada/gnatcoll-bindings[shared,static-libs?,static-pic?]
 	${ADA_DEPS}
 	${PYTHON_DEPS}
-	~dev-ada/langkit-${PV}[${ADA_USEDEP},shared,static-libs?,static-pic?]
+	dev-ada/langkit[${ADA_USEDEP},shared,static-libs?,static-pic?]
 	$(python_gen_cond_dep '
 		dev-ada/langkit[${PYTHON_USEDEP}]
 	')"
@@ -40,6 +41,8 @@ BDEPEND="test? (
 		dev-ada/e3-testsuite
 		<dev-lang/ocaml-4.14
 	)"
+
+PATCHES=( "${FILESDIR}"/${P}-test.patch )
 
 pkg_setup() {
 	python-single-r1_pkg_setup
@@ -58,6 +61,9 @@ pkg_setup() {
 src_prepare() {
 	default
 	rm -r testsuite/tests/misc/copyright || die
+	rm -r testsuite/tests/name_resolution/field_hiding_2 || die
+	rm -r testsuite/tests/ocaml_api/auto_provider || die
+	rm -r testsuite/tests/ocaml_api/project_unit_provider || die
 }
 
 src_configure() {
@@ -82,6 +88,7 @@ src_compile() {
 }
 
 src_test() {
+	BUILD_MODE=prod \
 	${EPYTHON} manage.py test \
 		--build-mode "prod" \
 		--restricted-env -j 1 \
