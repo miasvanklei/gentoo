@@ -29,7 +29,7 @@ DEPEND="
 "
 BDEPEND="
 	clang? (
-		sys-devel/clang:${LLVM_MAJOR}
+		sys-devel/clang
 	)
 	!test? (
 		${PYTHON_DEPS}
@@ -109,6 +109,7 @@ multilib_src_configure() {
 
 	local libdir=$(get_libdir)
 	local mycmakeargs=(
+		-DCMAKE_POSITION_INDEPENDENT_CODE=ON
 		-DCMAKE_CXX_COMPILER_TARGET="${CHOST}"
 		-DPython3_EXECUTABLE="${PYTHON}"
 		-DLLVM_ENABLE_RUNTIMES=libcxx
