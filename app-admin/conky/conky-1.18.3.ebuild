@@ -124,7 +124,7 @@ pkg_setup() {
 
 src_prepare() {
 	# pin lua 5.4
-	sed -i -e 's|include(FindLua)|find_package(Lua "5.4" EXACT)|g' \
+	sed -i -e 's|Lua "5.3" REQUIRED|Lua "5.4" EXACT|g' \
 		cmake/ConkyPlatformChecks.cmake || die "ConkyPlatformChecks.cmake"
 
 	cmake_src_prepare
