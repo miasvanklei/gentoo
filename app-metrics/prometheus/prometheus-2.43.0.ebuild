@@ -3,7 +3,7 @@
 
 EAPI=8
 inherit go-module systemd
-GIT_COMMIT=414d31aee6586a5f29e755ae059b7d7131f1c6c8
+GIT_COMMIT=edfc3bcd025dd6fe296c167a14a216cab1e552ee
 MY_PV=v${PV/_rc/-rc.}
 
 # To create the assets tarball run the following:
