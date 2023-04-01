@@ -1,11 +1,10 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=8
 
-USE_RUBY="ruby25 ruby26 ruby27"
+USE_RUBY="ruby27 ruby30"
 
-RUBY_FAKEGEM_RECIPE_DOC="rdoc"
 RUBY_FAKEGEM_RECIPE_TEST="rspec3"
 
 RUBY_FAKEGEM_GEMSPEC="Gem.gemspec"
@@ -21,6 +20,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 IUSE=""
 
+PATCHES=( "${FILESDIR}/${P}-ruby30.patch" )
+
 ruby_add_rdepend ">=dev-ruby/forwardable-extended-2.6
 	<dev-ruby/forwardable-extended-3"
 
@@ -28,10 +29,7 @@ ruby_add_bdepend "test? ( dev-ruby/safe_yaml )"
 
 all_ruby_prepare() {
 	sed -i -e '/\(coverage\|luna\|rspec\/helpers\)/ s:^:#:' \
-		-e '1irequire "pathname"; require "tempfile"; require "tmpdir"; require "json"' \
+		-e '1irequire "pathname"; require "tempfile"; require "tmpdir"; require "json" ; gem "psych", "~> 3.0"' \
 		spec/rspec/helper.rb || die
 	rm -f spec/support/coverage.rb || die
-
-	# Avoid spec failing with newer rspec versions, bug 775383
-	sed -i -e '/should chdir before running the glob/apending' spec/tests/lib/pathutil_spec.rb || die
 }

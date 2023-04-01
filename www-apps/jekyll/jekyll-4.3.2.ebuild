@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-USE_RUBY="ruby26 ruby27"
+USE_RUBY="ruby27 ruby30"
 
 inherit ruby-fakegem
 
@@ -33,16 +33,15 @@ ruby_add_rdepend "
 	dev-ruby/liquid:4
 	>=dev-ruby/mercenary-0.4.0
 	>=dev-ruby/pathutil-0.9
-	=dev-ruby/rouge-3*
+	|| ( dev-ruby/rouge:4 dev-ruby/rouge:2 )
 	>=dev-ruby/safe_yaml-1.0
-	dev-ruby/terminal-table:2
+	|| ( dev-ruby/terminal-table:3 dev-ruby/terminal-table:2 )
 	>=www-apps/jekyll-sass-converter-2.0
 	>=www-apps/jekyll-watch-2.2.1-r1
 "
 
 ruby_add_bdepend "
 	test? (
-		>=dev-ruby/classifier-reborn-2.1.0
 		dev-ruby/httpclient
 		dev-ruby/kramdown-syntax-coderay
 		dev-ruby/launchy
@@ -58,10 +57,14 @@ ruby_add_bdepend "
 
 all_ruby_prepare() {
 	eapply "${FILESDIR}"/jekyll-3.6.0-test-helper.patch
+	eapply -R "${FILESDIR}/${P}-sass.patch"
 
 	# Drop tests requiring bundler
 	sed -i -e '/bundle_message/d' test/test_new_command.rb || die
 	rm test/test_plugin_manager.rb || die
+
+	# Drop tests requiring classifier-reborn (ruby27-only package)
+	rm -f test/test_related_posts.rb || die
 
 	# Replace git command in gemspec
 	sed -e 's/git ls-files/find -not -type d -print/' \
@@ -70,8 +73,8 @@ all_ruby_prepare() {
 
 	# FIXMEs:
 	# fails to find fixtures because this requires bundler
-	rm test/test_theme.rb || die
-	rm test/test_theme_assets_reader.rb || die
+	rm -f test/test_theme.rb || die
+	rm -f test/test_theme_{assets_reader,data_reader,drop}.rb || die
 	sed -i -e '/^    should.*theme/,/^    end$/d' \
 		-e '/^      should.*theme/,/^      end$/d' test/test_site.rb || die
 	sed -i -e '/context "with a theme"/,/^    end/ s:^:#:' test/test_layout_reader.rb || die
@@ -84,6 +87,14 @@ all_ruby_prepare() {
 
 	# Tries to use bundler and install packages.
 	rm -f test/test_new_command.rb || die
+
+	# Fails due to ordering differences in ruby 3.0
+	sed -e '/convert drop to json/askip "hash ordering with ruby 3"' \
+		-i test/test_filters.rb || die
+
+	# Avoid a test failing due to TZ differences
+	sed -e '/contain the proper page data to mimic the post liquid/askip "TZ difference"' \
+		-i test/test_excerpt.rb || die
 }
 
 src_test() {
