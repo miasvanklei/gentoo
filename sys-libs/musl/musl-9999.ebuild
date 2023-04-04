@@ -38,7 +38,7 @@ HOMEPAGE="https://musl.libc.org"
 
 LICENSE="MIT LGPL-2 GPL-2"
 SLOT="0"
-IUSE="crypt headers-only"
+IUSE="crypt headers-only split-usr"
 
 QA_SONAME="usr/lib/libc.so"
 QA_DT_NEEDED="usr/lib/libc.so"
@@ -111,8 +111,8 @@ src_configure() {
 	is_crosscompile && sysroot=/usr/${CTARGET}
 	./configure \
 		--target=${CTARGET} \
-		--prefix=${EPREFIX}${sysroot}/usr \
-		--syslibdir=${EPREFIX}${sysroot}/usr/lib \
+		--prefix="${EPREFIX}${sysroot}/usr" \
+		--syslibdir="${EPREFIX}${sysroot}/lib" \
 		--disable-gcc-wrapper || die
 }
 
@@ -141,10 +141,10 @@ src_install() {
 	just_headers && return 0
 
 	# musl provides ldd via a sym link to its ld.so
-	local sysroot
+	local sysroot=
 	is_crosscompile && sysroot=/usr/${CTARGET}
-	local ldso=$(basename "${ED}"${sysroot}/usr/lib/ld-musl-*)
-	dosym ${EPREFIX}${sysroot}/usr/lib/${ldso} ${sysroot}/usr/bin/ldd
+	local ldso=$(basename "${ED}${sysroot}"/lib/ld-musl-*)
+	dosym8 -r "${sysroot}/lib/${ldso}" "${sysroot}/usr/bin/ldd"
 
 	if ! use crypt ; then
 		# Allow sys-libs/libxcrypt[system] to provide it instead
@@ -164,11 +164,15 @@ src_install() {
 		# During cross or within prefix, there's no guarantee that the host is
 		# using musl so that file may not exist. Use a relative symlink within
 		# ${D} instead.
-		rm -f "${ED}"/usr/lib/ld-musl-${arch}.so.1 || die
-		dosym8 -r /usr/lib/libc.so /usr/lib/ld-musl-${arch}.so.1
-
-		# If it's still a dead symlnk, OK, we really do need to abort.
-		[[ -e "${ED}"/usr/lib/ld-musl-${arch}.so.1 ]] || die
+		rm "${ED}"/lib/ld-musl-${arch}.so.1 || die
+		if use split-usr; then
+			dosym ../usr/lib/libc.so /lib/ld-musl-${arch}.so.1
+			# If it's still a dead symlnk, OK, we really do need to abort.
+			[[ -e "${ED}"/lib/ld-musl-${arch}.so.1 ]] || die
+		else
+			dosym libc.so /usr/lib/ld-musl-${arch}.so.1
+			[[ -e "${ED}"/usr/lib/ld-musl-${arch}.so.1 ]] || die
+		fi
 
 		cp "${FILESDIR}"/ldconfig.in-r3 "${T}"/ldconfig.in || die
 		sed -e "s|@@ARCH@@|${arch}|" "${T}"/ldconfig.in > "${T}"/ldconfig || die
