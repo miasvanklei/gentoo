@@ -17,14 +17,14 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-RDEPEND="=sci-libs/htslib-1.16*:="
+RDEPEND="=sci-libs/htslib-1.17*:="
 DEPEND="${RDEPEND}
 	dev-python/cython[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]"
 BDEPEND="
 	test? (
-		=sci-biology/bcftools-1.16*
-		=sci-biology/samtools-1.16*
+		=sci-biology/bcftools-1.17*
+		=sci-biology/samtools-1.17*
 	)"
 
 distutils_enable_tests pytest
@@ -35,9 +35,6 @@ EPYTEST_DESELECT=(
 	# only work with bundled htslib
 	'tests/tabix_test.py::TestRemoteFileHTTP'
 	'tests/tabix_test.py::TestRemoteFileHTTPWithHeader'
-	# broken test
-	# https://github.com/pysam-developers/pysam/issues/1151#issuecomment-1365662253
-	'tests/AlignmentFilePileup_test.py::TestPileupObjects::testIteratorOutOfScope'
 )
 
 python_prepare_all() {
