@@ -17,7 +17,7 @@ HOMEPAGE="
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~ia64 ~ppc ~riscv ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ia64 ~loong ~ppc ~riscv ~x86"
 
 RDEPEND="
 	dev-python/beautifulsoup4[${PYTHON_USEDEP}]
@@ -27,7 +27,7 @@ RDEPEND="
 		>=dev-python/importlib_metadata-3.6[${PYTHON_USEDEP}]
 	' 3.9)
 	>=dev-python/jinja-3.0[${PYTHON_USEDEP}]
-	>=dev-python/jupyter_core-4.7[${PYTHON_USEDEP}]
+	>=dev-python/jupyter-core-4.7[${PYTHON_USEDEP}]
 	dev-python/jupyterlab_pygments[${PYTHON_USEDEP}]
 	>=dev-python/markupsafe-2.0[${PYTHON_USEDEP}]
 	>=dev-python/mistune-2.0.2[${PYTHON_USEDEP}]
