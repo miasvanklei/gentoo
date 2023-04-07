@@ -2,10 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
   <maintainer type="project">
-    <email>ruby@gentoo.org</email>
-    <name>Gentoo Ruby Project</name>
+    <email>java@gentoo.org</email>
+    <name>Java</name>
   </maintainer>
-  <upstream>
-    <remote-id type="github">moneta-rb/moneta</remote-id>
-  </upstream>
 </pkgmetadata>
