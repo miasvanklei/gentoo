@@ -10,11 +10,11 @@ inherit distutils-r1
 
 DESCRIPTION="Python binding to the wlroots library using cffi"
 HOMEPAGE="
-	https://github.com/flacjacket/pywlroots
+	https://github.com/flacjacket/pywlroots/
 	https://pypi.org/project/pywlroots/
 "
 SRC_URI="
-	https://github.com/flacjacket/pywlroots/archive/refs/tags/v${PV}.tar.gz
+	https://github.com/flacjacket/pywlroots/archive/v${PV}.tar.gz
 		-> ${P}.gh.tar.gz
 "
 
@@ -23,12 +23,15 @@ SLOT="0"
 KEYWORDS="~amd64 ~riscv ~x86"
 
 # See README for wlroots dep
-RDEPEND="
+DEPEND="
 	>=dev-python/pywayland-0.4.14[${PYTHON_USEDEP}]
 	>=dev-python/xkbcommon-0.2[${PYTHON_USEDEP}]
 	=gui-libs/wlroots-$(ver_cut 1-2)*:=
+	virtual/python-cffi[${PYTHON_USEDEP}]
 "
-DEPEND="${RDEPEND}"
+RDEPEND="
+	${DEPEND}
+"
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-0.15.24-no-import-version-check.patch
@@ -37,8 +40,6 @@ PATCHES=(
 distutils_enable_tests pytest
 
 python_test() {
-	# No die deliberately as sometimes it doesn't exist
-	rm -r wlroots
-
+	rm -rf wlroots || die
 	epytest
 }

@@ -6,16 +6,12 @@ EAPI=8
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{9..11} )
 
-inherit distutils-r1
+inherit distutils-r1 pypi
 
 DESCRIPTION="Python binding to the wlroots library using cffi"
 HOMEPAGE="
 	https://github.com/flacjacket/pywlroots/
 	https://pypi.org/project/pywlroots/
-"
-SRC_URI="
-	https://github.com/flacjacket/pywlroots/archive/v${PV}.tar.gz
-		-> ${P}.gh.tar.gz
 "
 
 LICENSE="BSD"
