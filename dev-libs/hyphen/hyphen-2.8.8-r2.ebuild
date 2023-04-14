@@ -1,10 +1,10 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 DESCRIPTION="ALTLinux hyphenation library"
-HOMEPAGE="http://hunspell.github.io/"
+HOMEPAGE="https://hunspell.github.io/"
 SRC_URI="mirror://sourceforge/hunspell/${P}.tar.gz"
 
 LICENSE="GPL-2 LGPL-2.1 MPL-1.1"
@@ -17,6 +17,10 @@ RDEPEND="${DEPEND}"
 BDEPEND="dev-lang/perl"
 
 DOCS=( AUTHORS ChangeLog NEWS README{,.nonstandard,.hyphen,.compound} THANKS TODO )
+
+PATCHES=(
+	"${FILESDIR}"/${P}-mawk.patch
+)
 
 src_configure() {
 	econf $(use_enable static-libs static)
