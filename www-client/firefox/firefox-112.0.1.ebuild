@@ -5,7 +5,7 @@ EAPI=8
 
 FIREFOX_PATCHSET="firefox-112-patches-03j.tar.xz"
 
-LLVM_MAX_SLOT=15
+LLVM_MAX_SLOT=16
 
 PYTHON_COMPAT=( python3_{9..11} )
 PYTHON_REQ_USE="ncurses,sqlite,ssl"
@@ -80,14 +80,14 @@ FF_ONLY_DEPEND="!www-client/firefox:0
 	screencast? ( media-video/pipewire:= )
 	selinux? ( sec-policy/selinux-mozilla )"
 BDEPEND="${PYTHON_DEPS}
-	sys-devel/clang:15
-	sys-devel/llvm:15
+	sys-devel/clang:16
+	sys-devel/llvm:16
 	clang? (
 		|| (
-			sys-devel/lld:15
+			sys-devel/lld:16
 			sys-devel/mold
 		)
-		virtual/rust:0/llvm-15
+		virtual/rust
 		pgo? ( =sys-libs/compiler-rt-sanitizers-15*[profile] )
 	)
 	app-alternatives/awk
@@ -211,11 +211,6 @@ llvm_check_deps() {
 	if use clang && tc-ld-is-lld ; then
 		if ! has_version -b "sys-devel/lld:${LLVM_SLOT}" ; then
 			einfo "sys-devel/lld:${LLVM_SLOT} is missing! Cannot use LLVM slot ${LLVM_SLOT} ..." >&2
-			return 1
-		fi
-
-		if ! has_version -b "virtual/rust:0/llvm-${LLVM_SLOT}" ; then
-			einfo "virtual/rust:0/llvm-${LLVM_SLOT} is missing! Cannot use LLVM slot ${LLVM_SLOT} ..." >&2
 			return 1
 		fi
 
@@ -663,6 +658,8 @@ src_prepare() {
 
 	einfo "Removing pre-built binaries ..."
 	find "${S}"/third_party -type f \( -name '*.so' -o -name '*.o' \) -print -delete || die
+
+	moz_clear_vendor_checksums libc
 
 	# Create build dir
 	BUILD_DIR="${WORKDIR}/${PN}_build"
