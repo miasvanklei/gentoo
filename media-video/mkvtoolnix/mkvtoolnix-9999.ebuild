@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -104,7 +104,7 @@ src_configure() {
 
 		$(use_with dvd dvdread)
 		$(use_with nls gettext)
-		$(usex nls "" --with-po4a-translate=false)
+		$(usex nls "" --with-po4a=false)
 		--disable-update-check
 		--disable-optimization
 		--with-boost="${ESYSROOT}"/usr
