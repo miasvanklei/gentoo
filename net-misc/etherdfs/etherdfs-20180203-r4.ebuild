@@ -1,4 +1,4 @@
-# Copyright 2019-2022 Gentoo Authors
+# Copyright 2019-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -35,7 +35,8 @@ src_prepare() {
 	default
 
 	# Respect users LDFLAGS
-	sed -e 's/$(CFLAGS)/& $(LDFLAGS)/' -i Makefile || die
+	# Don't redefine FORTIFY_SOURCE
+	sed -e 's/$(CFLAGS)/& $(LDFLAGS)/' -e 's/-D_FORTIFY_SOURCE=1//g' -i Makefile || die
 }
 
 src_compile() {
@@ -56,7 +57,7 @@ src_install() {
 
 	newinitd "${FILESDIR}"/etherdfs.initd etherdfs
 	newconfd "${FILESDIR}"/etherdfs.confd etherdfs
-	systemd_dounit "${FILESDIR}"/etherdfs.service
+	systemd_newunit "${FILESDIR}"/etherdfs.service-r1 etherdfs.service
 
 	einstalldocs
 }
