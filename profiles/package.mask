@@ -33,6 +33,17 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2023-04-23)
+# Upstream changed config_settings interface breaking compatibility
+# with our invocations.  Bug #904677.
+=dev-python/meson-python-0.13.0
+
+# Conrad Kostecki <conikost@gentoo.org> (2023-04-23)
+# Very old package, does not build with modern compilers.
+# It provides BOOTP support, predecessor of DHCP.
+# Removal on 2023-05-23. Bugs #894128, #884335
+sys-boot/netboot
+
 # Jakov Smolić <jsmolic@gentoo.org> (2023-04-21)
 # Does not support python 3.11, uses deprecated dev-python/future,
 # inactive upstream (last commit in 2019).
@@ -530,6 +541,7 @@ dev-qt/qtwayland:6
 dev-qt/qtwebchannel:6
 dev-qt/qtwebengine:6
 dev-qt/qtwebsockets:6
+>=games-board/tetzle-2.2.2
 >=media-video/bino-2
 >=x11-misc/albert-0.20.13
 
