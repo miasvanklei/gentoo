@@ -48,6 +48,7 @@ DEPEND="${RDEPEND}
 	dev-cpp/xsimd
 	json? ( dev-libs/rapidjson )
 	test? (
+		dev-libs/boost
 		dev-cpp/gflags
 		dev-cpp/gtest
 	)
@@ -105,4 +106,14 @@ src_test() {
 	export PARQUET_TEST_DATA="${WORKDIR}/parquet-testing-${PARQUET_DATA_GIT_HASH}/data"
 	export ARROW_TEST_DATA="${WORKDIR}/arrow-testing-${ARROW_DATA_GIT_HASH}/data"
 	cmake_src_test
+}
+
+src_install() {
+	cmake_src_install
+	if use test; then
+		cd "${D}"/usr/$(get_libdir)
+		rm -r cmake/ArrowTesting || die
+		rm libarrow_testing* || die
+		rm pkgconfig/arrow-testing.pc || die
+	fi
 }
