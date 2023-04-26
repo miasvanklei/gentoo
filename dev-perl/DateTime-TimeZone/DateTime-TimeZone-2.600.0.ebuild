@@ -7,7 +7,7 @@ EAPI=8
 # https://src.fedoraproject.org/rpms/perl-DateTime-TimeZone/blob/rawhide/f/perl-DateTime-TimeZone.spec#_148
 
 DIST_AUTHOR=DROLSKY
-DIST_VERSION=2.58
+DIST_VERSION=2.60
 inherit perl-module
 
 DESCRIPTION="Time zone object base class and factory"
