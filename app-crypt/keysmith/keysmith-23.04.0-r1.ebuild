@@ -14,10 +14,11 @@ HOMEPAGE="https://apps.kde.org/keysmith/"
 
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~ppc64"
 IUSE=""
 
 RDEPEND="
+	dev-libs/libsodium:=
 	>=dev-qt/qtdeclarative-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtquickcontrols2-${QTMIN}:5
