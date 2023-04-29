@@ -3,6 +3,9 @@
 
 EAPI=8
 
+# See https://sourceware.org/gdb/wiki/DistroAdvice for general packaging
+# tips & notes.
+
 PYTHON_COMPAT=( python3_{9..11} )
 inherit flag-o-matic python-single-r1 strip-linguas toolchain-funcs
 
@@ -23,20 +26,40 @@ case ${PV} in
 		inherit git-r3
 		SRC_URI=""
 		;;
-	*.*.50.2???????)
-		# weekly snapshots
-		SRC_URI="ftp://sourceware.org/pub/gdb/snapshots/current/gdb-weekly-${PV}.tar.xz"
+	*.*.50_p2???????|*.*.90_p2???????)
+		# Weekly snapshots
+		MY_PV="${PV/_p/.}"
+		SRC_URI="
+			https://sourceware.org/pub/gdb/snapshots/branch/gdb-weekly-${MY_PV}.tar.xz
+			https://sourceware.org/pub/gdb/snapshots/current/gdb-weekly-${MY_PV}.tar.xz
+		"
+		S="${WORKDIR}/${PN}-${MY_PV}"
+
+		# e.g. 13.1.90_p20230325 is a snapshot on the stable branch, so it's fine
+		if [[ ${PV} == *.[123456789].9?_p2??????? ]] ; then
+			REGULAR_RELEASE=1
+		fi
+		;;
+	*.*.9?)
+		# Prereleases
+		MY_PV="${PV/_p/.}"
+		SRC_URI="
+			https://sourceware.org/pub/gdb/snapshots/branch/gdb-${MY_PV}.tar.xz
+		"
+		S="${WORKDIR}/${PN}-${MY_PV}"
 		;;
 	*)
 		# Normal upstream release
-		SRC_URI="mirror://gnu/gdb/${P}.tar.xz
-			ftp://sourceware.org/pub/gdb/releases/${P}.tar.xz"
-		;;
+		SRC_URI="
+			mirror://gnu/gdb/${P}.tar.xz
+			https://sourceware.org/pub/gdb/releases/${P}.tar.xz
+		"
+
+		REGULAR_RELEASE=1
 esac
 
-PATCH_DEV="sam"
-PATCH_VER="1"
-
+PATCH_DEV=""
+PATCH_VER=""
 DESCRIPTION="GNU debugger"
 HOMEPAGE="https://sourceware.org/gdb/"
 SRC_URI="
@@ -47,20 +70,18 @@ SRC_URI="
 
 LICENSE="GPL-3+ LGPL-2.1+"
 SLOT="0"
-
-if [[ ${PV} != 9999* ]] ; then
-	KEYWORDS="~alpha ~amd64 arm arm64 ~hppa ~ia64 ~m68k ~mips ~ppc ppc64 ~riscv ~s390 sparc ~x86 ~x64-cygwin ~amd64-linux ~x86-linux ~x64-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
+IUSE="cet guile lzma multitarget nls +python +server sim source-highlight test vanilla xml xxhash zstd"
+if [[ -n ${REGULAR_RELEASE} ]] ; then
+	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~x64-cygwin ~amd64-linux ~x86-linux ~x64-macos ~sparc-solaris ~sparc64-solaris ~x64-solaris ~x86-solaris"
 fi
-
-IUSE="cet guile lzma multitarget nls +python +server sim source-highlight test vanilla xml xxhash"
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	dev-libs/mpfr:0=
+	dev-libs/mpfr:=
 	dev-libs/gmp:=
-	>=sys-libs/ncurses-5.2-r2:0=
-	>=sys-libs/readline-7:0=
+	>=sys-libs/ncurses-5.2-r2:=
+	>=sys-libs/readline-7:=
 	sys-libs/zlib
 	elibc_glibc? ( net-libs/libnsl:= )
 	lzma? ( app-arch/xz-utils )
@@ -73,6 +94,7 @@ RDEPEND="
 	xxhash? (
 		dev-libs/xxhash
 	)
+	zstd? ( app-arch/zstd:= )
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
@@ -86,9 +108,7 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-8.3.1-verbose-build.patch
-	"${FILESDIR}"/${P}-readline-8.2-build.patch
-	"${FILESDIR}"/${P}-core-file-detach.patch
-	"${FILESDIR}"/${P}-configure-clang16.patch
+	"${FILESDIR}"/${PN}-13.1-Wenum-constexpr-conversion-clang16.patch
 )
 
 pkg_setup() {
@@ -97,8 +117,6 @@ pkg_setup() {
 
 src_prepare() {
 	default
-
-	[[ -d "${WORKDIR}"/${P}-patches-${PATCH_VER} ]] && eapply "${WORKDIR}"/${P}-patches-${PATCH_VER}
 
 	strip-linguas -u bfd/po opcodes/po
 
@@ -137,7 +155,7 @@ src_configure() {
 		--with-bugurl='https://bugs.gentoo.org/'
 		--disable-werror
 		# Disable modules that are in a combined binutils/gdb tree. bug #490566
-		--disable-{binutils,etc,gas,gold,gprof,ld}
+		--disable-{binutils,etc,gas,gold,gprof,gprofng,ld}
 
 		# avoid automagic dependency on (currently prefix) systems
 		# systems with debuginfod library, bug #754753
@@ -150,21 +168,13 @@ src_configure() {
 		# But the check does not quite work on i686: bug #760926.
 		$(use_enable cet)
 
-		# We need to set both configure options, --with-sysroot and --libdir,
-		# to fix cross build issues that happen when configuring gmp.
-		# We explicitly need --libdir. Having only --with-sysroot without
-		# --libdir would not fix the build issues.
-		# For some reason, it is not enough to set only --with-sysroot,
-		# also not enough to pass --with-gmp-xxx options.
-		--with-sysroot="${ESYSROOT}"
-		--libdir="${ESYSROOT}/usr/$(get_libdir)"
+		# Helps when cross-compiling. Not to be confused with --with-sysroot.
+		--with-build-sysroot="${ESYSROOT}"
 	)
 
-	local sysroot="${EPREFIX}/usr/${CTARGET}"
-
 	is_cross && myconf+=(
-		--with-sysroot="${sysroot}"
-		--includedir="${sysroot}/usr/include"
+		--with-sysroot="\${prefix}/${CTARGET}"
+		--includedir="\${prefix}/include/${CTARGET}"
 		--with-gdb-datadir="\${datadir}/gdb/${CTARGET}"
 	)
 
@@ -200,6 +210,14 @@ src_configure() {
 		$(use_with python python "${EPYTHON}")
 		$(use_with xxhash)
 		$(use_with guile)
+		$(use_with zstd)
+
+		# Find libraries using the toolchain sysroot rather than the configured
+		# prefix. Needed when cross-compiling.
+		#
+		# Check which libraries to apply this to with:
+		# "${S}"/gdb/configure --help | grep without-lib | sort
+		--without-lib{babeltrace,expat,gmp,iconv,ipt,lzma,mpfr,xxhash}-prefix
 	)
 
 	if use sparc-solaris || use x86-solaris ; then
