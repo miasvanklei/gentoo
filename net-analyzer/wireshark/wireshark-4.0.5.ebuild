@@ -35,7 +35,9 @@ REQUIRED_USE="
 	lua? ( ${LUA_REQUIRED_USE} )
 "
 
-RESTRICT="!test? ( test )"
+# Tests restricted for now because rely on pytest internals w/ >=3.11
+# See bug #897078 and https://gitlab.com/wireshark/wireshark/-/issues/18740.
+RESTRICT="!test? ( test ) test"
 
 # bug #753062 for speexdsp
 RDEPEND="
