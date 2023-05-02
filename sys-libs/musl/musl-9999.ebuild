@@ -177,8 +177,9 @@ src_install() {
 		cp "${FILESDIR}"/ldconfig.in-r3 "${T}"/ldconfig.in || die
 		sed -e "s|@@ARCH@@|${arch}|" "${T}"/ldconfig.in > "${T}"/ldconfig || die
 		eprefixify "${T}"/ldconfig
-		into /usr
+		into /
 		dosbin "${T}"/ldconfig
+		into /usr
 		dobin "${T}"/getconf
 		dobin "${T}"/getent
 		dobin "${T}"/iconv

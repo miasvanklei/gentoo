@@ -23,12 +23,15 @@ RDEPEND="${PYTHON_DEPS}
 	gtk? ( x11-libs/gtk+:3 )
 	zeroconf? ( >=net-dns/avahi-0.6[dbus] )
 "
+DEPEND="${RDEPEND}
+	sys-libs/binutils-libs"
 BDEPEND="
 	sys-devel/autoconf-archive
 	virtual/pkgconfig"
 RDEPEND+="
 	acct-user/distcc
 	dev-util/shadowman
+	>=sys-devel/gcc-config-1.4.1
 	selinux? ( sec-policy/selinux-distcc )
 	xinetd? ( sys-apps/xinetd )"
 
@@ -70,7 +73,6 @@ src_configure() {
 		$(use_enable ipv6 rfc2553)
 		$(use_with gtk)
 		--without-gnome
-		--without-libiberty
 		$(use_with gssapi auth)
 		$(use_with zeroconf avahi)
 	)
