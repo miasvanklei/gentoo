@@ -184,8 +184,6 @@ bootstrap_rust_version_check() {
 	[[ -z "${rustc_version}" ]] && die "Failed to determine rust version, check 'eselect rust' output"
 
 	if ver_test "${rustc_version}" -lt "${rustc_wanted}" ; then
-		net-firewall/ebtables
-		>=net-firewall/iptables-1.4.10[ipv6(+)]		eerror "Rust >=${rustc_wanted} is required"
 		eerror "please run 'eselect rust' and set correct rust version"
 		die "selected rust version is too old"
 	elif ver_test "${rustc_version}" -ge "${rustc_toonew}" ; then
