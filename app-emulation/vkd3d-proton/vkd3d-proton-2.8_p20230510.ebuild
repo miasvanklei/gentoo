@@ -17,13 +17,14 @@ if [[ ${PV} == 9999 ]]; then
 		subprojects/dxil-spirv/third_party/spirv-headers # skip cross/tools
 	)
 else
-	HASH_VKD3D=f125062ee1278ac8508ab5561e289ec4ce0f406e # match tag on bumps
+	# snapshot used for d3d11on12 for use with >=dxvk-2.2, scarcely tested
+	HASH_VKD3D=f125062ee1278ac8508ab5561e289ec4ce0f406e
 	HASH_DXIL=830106bc2393ba7e7af67863e1c7cfa856432ec5
 	HASH_SPIRV=1d31a100405cf8783ca7a31e31cdd727c9fc54c3
 	HASH_SPIRV_DXIL=aa331ab0ffcb3a67021caa1a0c1c9017712f2f31
 	HASH_VULKAN=bd6443d28f2ebecedfb839b52d612011ba623d14
 	SRC_URI="
-		https://github.com/HansKristian-Work/vkd3d-proton/archive/refs/tags/v${PV}.tar.gz
+		https://github.com/HansKristian-Work/vkd3d-proton/archive/${HASH_VKD3D}.tar.gz
 			-> ${P}.tar.gz
 		https://github.com/HansKristian-Work/dxil-spirv/archive/${HASH_DXIL}.tar.gz
 			-> ${PN}-dxil-spirv-${HASH_DXIL::10}.tar.gz
@@ -33,6 +34,7 @@ else
 			-> ${PN}-spirv-headers-${HASH_SPIRV_DXIL::10}.tar.gz
 		https://github.com/KhronosGroup/Vulkan-Headers/archive/${HASH_VULKAN}.tar.gz
 			-> ${PN}-vulkan-headers-${HASH_VULKAN::10}.tar.gz"
+	S="${WORKDIR}/${PN}-${HASH_VKD3D}"
 	KEYWORDS="-* ~amd64 ~x86"
 fi
 
