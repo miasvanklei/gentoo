@@ -73,7 +73,6 @@ pkgversion() {
 }
 
 multilib_src_configure() {
-	export acx_cv_cc_gcc_supports_ada=no
 	local myconf=(
 		--enable-obsolete
 		--enable-shared
