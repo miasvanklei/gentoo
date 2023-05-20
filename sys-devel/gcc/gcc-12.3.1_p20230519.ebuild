@@ -5,9 +5,9 @@ EAPI=8
 
 TOOLCHAIN_PATCH_DEV="sam"
 PATCH_VER="2"
-PATCH_GCC_VER="13.2.0"
-MUSL_VER="2"
-MUSL_GCC_VER="13.2.0"
+PATCH_GCC_VER="12.3.0"
+MUSL_VER="1"
+MUSL_GCC_VER="12.3.0"
 
 if [[ $(ver_cut 3) == 9999 ]] ; then
 	MY_PV_2=$(ver_cut 2)
@@ -21,7 +21,9 @@ if [[ $(ver_cut 3) == 9999 ]] ; then
 	TOOLCHAIN_GCC_PV=$(ver_cut 1).${MY_PV_2}.$(($(ver_cut 3) - 9998))
 elif [[ -n ${TOOLCHAIN_GCC_RC} ]] ; then
 	# Cheesy hack for RCs
-	MY_PV=$(ver_cut 1).$((($(ver_cut 2) + 1))).$((($(ver_cut 3) - 1)))-RC-$(ver_cut 5)
+	# Sometimes the RCs are e.g. 12.3 and not 12.3.0...
+	#MY_PV=$(ver_cut 1).$((($(ver_cut 2) + 1))).$((($(ver_cut 3) - 1)))-RC-$(ver_cut 5)
+	MY_PV=$(ver_cut 1).$((($(ver_cut 2) + 1)))-RC-$(ver_cut 5)
 	MY_P=${PN}-${MY_PV}
 	GCC_TARBALL_SRC_URI="mirror://gcc/snapshots/${MY_PV}/${MY_P}.tar.xz"
 	TOOLCHAIN_SET_S=no
@@ -48,15 +50,7 @@ if [[ ${CATEGORY} != cross-* ]] ; then
 fi
 
 src_prepare() {
-	local p upstreamed_patches=(
-		# add them here
-	)
-	for p in "${upstreamed_patches[@]}"; do
-		rm -v "${WORKDIR}/patch/${p}" || die
-	done
-
 	toolchain_src_prepare
 
-	eapply "${FILESDIR}"/${PN}-13-fix-cross-fixincludes.patch
 	eapply_user
 }
