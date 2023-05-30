@@ -24,7 +24,6 @@ RDEPEND="
 	introspection? ( dev-libs/gobject-introspection:= )
 	gtk? (
 		x11-libs/gtk+:3
-		gui-libs/gtk:4
 	)
 	qt5? (
 		dev-qt/qtcore:=
@@ -55,7 +54,7 @@ src_prepare() {
 
 src_configure() {
 	local backends
-	use gtk && backends+="gtk3,gtk4,"
+	use gtk && backends+="gtk3,"
 	use qt5 && backends+="qt5,"
 
 	local emesonargs=(
