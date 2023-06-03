@@ -68,7 +68,6 @@ multilib_src_configure() {
 
 	local libdir=$(get_libdir)
 	local mycmakeargs=(
-		-DCMAKE_POSITION_INDEPENDENT_CODE=ON
 		-DCMAKE_CXX_COMPILER_TARGET="${CHOST}"
 		-DPython3_EXECUTABLE="${PYTHON}"
 		-DLLVM_ENABLE_RUNTIMES="libcxxabi;libcxx"
