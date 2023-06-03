@@ -1,17 +1,17 @@
-# Copyright 2013-2022 Gentoo Authors
+# Copyright 2013-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit systemd toolchain-funcs
 
 DESCRIPTION="Shows and sets processor power related values"
 HOMEPAGE="https://www.kernel.org/"
-SRC_URI="https://cdn.kernel.org/pub/linux/kernel/v${PV%%.*}.x/linux-${PV}.tar.xz"
+SRC_URI="https://dev.gentoo.org/~floppym/dist/${P}.tar.xz"
 
 LICENSE="GPL-2"
 SLOT="0/0"
-KEYWORDS="amd64 arm arm64 ~ppc ~ppc64 ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~x86"
 IUSE="nls"
 
 # File collision w/ headers of the deprecated cpufrequtils
@@ -23,8 +23,6 @@ DEPEND="${RDEPEND}
 PATCHES=(
 	"${FILESDIR}/cpupower-5.4-cflags.patch"
 )
-
-S="${WORKDIR}/linux-${PV}"
 
 src_configure() {
 	export bindir="${EPREFIX}/usr/bin"
@@ -45,11 +43,8 @@ src_compile() {
 		AR="$(tc-getAR)"
 		CC="$(tc-getCC)"
 		LD="$(tc-getCC)"
-		VERSION=${PV}
 	)
-
-	cd tools/power/cpupower || die
-	emake "${myemakeargs[@]}"
+	emake -C tools/power/cpupower "${myemakeargs[@]}"
 }
 
 src_install() {
