@@ -283,10 +283,6 @@ esetup_unwind_hack() {
 	export MAGIC_EXTRA_RUSTFLAGS+="${MAGIC_EXTRA_RUSTFLAGS:+ }-L${fakelib}"
 }
 
-clear_vendor_checksums() {
-	sed -i 's/\("files":{\)[^}]*/\1/' vendor/$1/.cargo-checksum.json
-}
-
 src_prepare() {
 	if ! use system-bootstrap; then
 		has_version sys-devel/gcc || esetup_unwind_hack
@@ -296,15 +292,6 @@ src_prepare() {
 		"${WORKDIR}/${rust_stage0}"/install.sh --disable-ldconfig \
 			--without=rust-docs-json-preview,rust-docs --destdir="${rust_stage0_root}" --prefix=/ || die
 	fi
-
-	# patch all available libcs to remove lfs64 symbols
-	local libcs=( libc libc-0.2.137 libc-0.2.138 )
-	for i in "${libcs[@]}"; do
-		pushd vendor/$i>/dev/null || die
-		eapply ${FILESDIR}/libc-lfs64.patch
-		popd>/dev/null
-		clear_vendor_checksums $i
-	done
 
 	default
 }
