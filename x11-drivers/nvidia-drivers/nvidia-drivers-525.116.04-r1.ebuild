@@ -3,7 +3,7 @@
 
 EAPI=8
 
-MODULES_OPTIONAL_IUSE="+modules"
+MODULES_OPTIONAL_IUSE=+modules
 inherit desktop flag-o-matic linux-mod-r1 multilib readme.gentoo-r1
 inherit systemd toolchain-funcs unpacker user-info
 
@@ -21,21 +21,15 @@ SRC_URI="
 # nvidia-installer is unused but here for GPL-2's "distribute sources"
 S="${WORKDIR}"
 
-LICENSE="NVIDIA-r2 Apache-2.0 BSD BSD-2 GPL-2 MIT ZLIB curl openssl"
+LICENSE="NVIDIA-r2 BSD BSD-2 GPL-2 MIT ZLIB curl openssl"
 SLOT="0/${PV%%.*}"
-# unkeyworded due to being a beta release
-#KEYWORDS="-* ~amd64 ~arm64"
+KEYWORDS="-* amd64 ~arm64"
 IUSE="+X abi_x86_32 abi_x86_64 kernel-open persistenced +static-libs +tools wayland"
 REQUIRED_USE="kernel-open? ( modules )"
 
 COMMON_DEPEND="
 	acct-group/video
 	sys-libs/glibc
-	dev-libs/openssl:=
-	|| (
-		dev-libs/openssl:0/3
-		dev-libs/openssl:0/1.1
-	)
 	X? ( x11-libs/libpciaccess )
 	persistenced? (
 		acct-user/nvpd
@@ -89,8 +83,8 @@ QA_PREBUILT="lib/firmware/* opt/bin/* usr/lib*"
 PATCHES=(
 	"${FILESDIR}"/nvidia-kernel-module-source-515.86.01-raw-ldflags.patch
 	"${FILESDIR}"/nvidia-modprobe-390.141-uvm-perms.patch
+	"${FILESDIR}"/nvidia-settings-390.144-desktop.patch
 	"${FILESDIR}"/nvidia-settings-390.144-raw-ldflags.patch
-	"${FILESDIR}"/nvidia-settings-530.30.02-desktop.patch
 )
 
 pkg_setup() {
@@ -291,7 +285,6 @@ src_install() {
 		[FIRMWARE]=/lib/firmware/nvidia/${PV}
 		[GBM_BACKEND_LIB_SYMLINK]=/usr/${libdir}/gbm
 		[GLVND_EGL_ICD_JSON]=/usr/share/glvnd/egl_vendor.d
-		[OPENGL_DATA]=/usr/share/nvidia
 		[VULKAN_ICD_JSON]=/usr/share/vulkan
 		[WINE_LIB]=/usr/${libdir}/nvidia/wine
 		[XORG_OUTPUTCLASS_CONFIG]=/usr/share/X11/xorg.conf.d
@@ -437,27 +430,15 @@ https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers"
 			dosym ${m[4]} ${into}/${m[0]}
 			continue
 		fi
-
-		case ${m[0]} in
-			libnvidia-ngx.so*|libnvidia-egl-gbm.so*)
-				# soname is missing from the manifest
-				dosym ${m[0]} ${into}/${m[0]%.so*}.so.1
-			;;
-			libnvidia-pkcs11.so*)
-				# TODO: always skip when can reasonably depend only on 3
-				# (currently relies on subslot rebuilds to pick)
-				has_version 'dev-libs/openssl:0/1.1' || continue
-			;;
-			libnvidia-pkcs11-openssl3.so*)
-				has_version 'dev-libs/openssl:0/3' || continue
-			;;
-		esac
+		[[ ${m[0]} =~ ^libnvidia-ngx.so|^libnvidia-egl-gbm.so ]] &&
+			dosym ${m[0]} ${into}/${m[0]%.so*}.so.1 # soname not in .manifest
 
 		printf -v m[1] %o $((m[1] | 0200)) # 444->644
 		insopts -m${m[1]}
 		insinto ${into}
 		doins ${m[0]}
 	done < .manifest || die
+	insopts -m0644 # reset
 
 	# MODULE:installer non-skipped extras
 	: "$(systemd_get_sleepdir)"
@@ -482,6 +463,13 @@ https://wiki.gentoo.org/wiki/NVIDIA/nvidia-drivers"
 
 	# don't attempt to strip firmware files (silences errors)
 	dostrip -x ${paths[FIRMWARE]}
+
+	# sandbox issues with /dev/nvidiactl (and /dev/char wrt bug #904292)
+	# are widespread and sometime affect revdeps of packages built with
+	# USE=opencl/cuda making it hard to manage in ebuilds (minimal set,
+	# ebuilds should handle manually if need others or addwrite)
+	insinto /etc/sandbox.d
+	newins - 20nvidia <<<'SANDBOX_PREDICT="/dev/nvidiactl:/dev/char"'
 }
 
 pkg_preinst() {
