@@ -4,7 +4,7 @@
 EAPI=8
 
 MY_P="${P/resource-}"
-inherit autotools
+inherit autotools tmpfiles
 
 DESCRIPTION="Resources pack for Heartbeat / Pacemaker"
 HOMEPAGE="http://www.linux-ha.org/wiki/Resource_Agents"
@@ -12,7 +12,7 @@ SRC_URI="https://github.com/ClusterLabs/resource-agents/archive/v${PV}.tar.gz ->
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~hppa x86"
+KEYWORDS="~amd64 ~hppa ~x86"
 IUSE="doc libnet rgmanager systemd"
 
 RDEPEND="
@@ -24,6 +24,7 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 BDEPEND="
 	doc? (
+		dev-libs/libxml2
 		dev-libs/libxslt
 		app-text/docbook-xsl-stylesheets
 	)
@@ -60,6 +61,8 @@ src_install() {
 }
 
 pkg_postinst() {
+	tmpfiles_process resource-agents.conf
+
 	elog "To use Resource Agents installed in ${EROOT}/usr/lib/ocf/resource.d"
 	elog "you have to emerge required runtime dependencies manually."
 	elog ""
