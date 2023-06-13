@@ -25,7 +25,7 @@ KEYWORDS="~amd64"
 RDEPEND="
 	>=dev-python/pathable-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-5.1[${PYTHON_USEDEP}]
-	>=dev-python/referencing-0.24.4[${PYTHON_USEDEP}]
+	>=dev-python/referencing-0.28.1[${PYTHON_USEDEP}]
 	>=dev-python/jsonschema-specifications-2023.3.4[${PYTHON_USEDEP}]
 "
 
@@ -40,6 +40,6 @@ distutils_enable_tests pytest
 src_prepare() {
 	sed -i -e '/--cov/d' pyproject.toml || die
 	# remove random pins due to caret operator
-	sed -i -e 's:\^:>=:' pyproject.toml || die
+	sed -i -e 's:\^:>=:' -e 's:,<[0-9.]*::' pyproject.toml || die
 	distutils-r1_src_prepare
 }
