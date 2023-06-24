@@ -95,7 +95,7 @@ src_configure() {
 	xdg_environment_reset
 
 	# LTO compiler flags are handled by configure.py itself
-	filter-flags '-flto*'
+	filter-lto
 
 	local myconf=(
 		--shared-brotli
