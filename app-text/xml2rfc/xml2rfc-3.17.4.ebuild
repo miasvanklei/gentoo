@@ -28,10 +28,10 @@ BDEPEND="
 "
 
 RDEPEND="
-	dev-python/appdirs[${PYTHON_USEDEP}]
+	>=dev-python/platformdirs-3.6.0[${PYTHON_USEDEP}]
 	dev-python/ConfigArgParse[${PYTHON_USEDEP}]
 	dev-python/intervaltree[${PYTHON_USEDEP}]
-	dev-python/google-i18n-address[${PYTHON_USEDEP}]
+	>=dev-python/google-i18n-address-3.0.0[${PYTHON_USEDEP}]
 	>=dev-python/html5lib-1.0.1[${PYTHON_USEDEP}]
 	>=dev-python/jinja-3.1.2[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]
