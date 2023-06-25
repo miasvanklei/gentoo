@@ -17,7 +17,7 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="Apache-2.0 GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 arm ~arm64 ~hppa ~ia64 ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ia64 ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux"
 IUSE="berkdb cron ipv6 ldap mysql postgres qmail sqlite ssl test"
 RESTRICT="!test? ( test )"
 
@@ -93,6 +93,7 @@ PATCHES=(
 	"${FILESDIR}/4.0.0-tests-dnsbl_subtests.t.patch"
 	"${FILESDIR}/4.0.0-tests-strip2.t.patch"
 	"${FILESDIR}/4.0.0-DnsResolver-udpsize.patch"
+	"${FILESDIR}/4.0.0-sa-update-rdatastr.patch"
 )
 
 # There are a few renames and use-dependent ones in src_install as well.
