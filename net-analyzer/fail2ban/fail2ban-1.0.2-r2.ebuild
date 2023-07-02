@@ -16,7 +16,7 @@ if [[ ${PV} == *9999 ]] ; then
 	inherit git-r3
 else
 	SRC_URI="https://github.com/fail2ban/fail2ban/archive/${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~alpha amd64 arm arm64 hppa ~loong ppc ppc64 ~riscv sparc x86"
+	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 fi
 
 LICENSE="GPL-2"
@@ -29,10 +29,8 @@ RDEPEND="
 	selinux? ( sec-policy/selinux-fail2ban )
 	systemd? (
 		$(python_gen_cond_dep '
-			|| (
-				dev-python/python-systemd[${PYTHON_USEDEP}]
-				sys-apps/systemd[python(-),${PYTHON_USEDEP}]
-			)' 'python*' )
+			dev-python/python-systemd[${PYTHON_USEDEP}]
+		')
 	)
 "
 
@@ -40,6 +38,7 @@ DOCS=( ChangeLog DEVELOP README.md THANKS TODO doc/run-rootless.txt )
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-0.11.2-adjust-apache-logs-paths.patch
+	"${FILESDIR}"/${PN}-1.0.2-umask-tests.patch
 	"${FILESDIR}"/${P}-configreader-warning.patch
 )
 
@@ -103,7 +102,7 @@ pkg_preinst() {
 pkg_postinst() {
 	tmpfiles_process ${PN}-tmpfiles.conf
 
-	if [[ ${previous_less_than_0_7} = 0 ]] ; then
+	if [[ ${previous_less_than_0_7} == 0 ]] ; then
 		elog
 		elog "Configuration files are now in /etc/fail2ban/"
 		elog "You probably have to manually update your configuration"
@@ -116,10 +115,9 @@ pkg_postinst() {
 		elog "http://www.fail2ban.org/wiki/index.php/HOWTO_Upgrade_from_0.6_to_0.8"
 	fi
 
-	if ! has_version dev-python/pyinotify && ! has_version app-admin/gamin ; then
-		elog "For most jail.conf configurations, it is recommended you install either"
-		elog "dev-python/pyinotify or app-admin/gamin (in order of preference)"
-		elog "to control how log file modifications are detected"
+	if ! has_version dev-python/pyinotify ; then
+		elog "For most jail.conf configurations, it is recommended you install"
+		elog "dev-python/pyinotify to control how log file modifications are detected"
 	fi
 
 	if ! has_version dev-lang/python[sqlite] ; then
@@ -127,10 +125,5 @@ pkg_postinst() {
 		elog "dev-lang/python with USE=sqlite. If you do not use the"
 		elog "persistent database feature, then you should set"
 		elog "dbfile = :memory: in fail2ban.conf accordingly."
-	fi
-
-	if has_version sys-apps/systemd[-python] ; then
-		elog "If you want to track logins through sys-apps/systemd's"
-		elog "journal backend, then reinstall sys-apps/systemd with USE=python"
 	fi
 }
