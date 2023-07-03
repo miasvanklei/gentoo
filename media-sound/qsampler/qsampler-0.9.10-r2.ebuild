@@ -18,40 +18,39 @@ HOMEPAGE="https://qsampler.sourceforge.io/ https://www.linuxsampler.org/"
 
 LICENSE="GPL-2"
 SLOT="0"
-IUSE="debug +libgig"
+IUSE="debug +libgig qt6"
 
 DEPEND="
-	dev-qt/qtcore:5
-	dev-qt/qtgui:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtwidgets:5
-	dev-qt/qtx11extras:5
 	media-libs/alsa-lib
 	media-libs/liblscp:=
 	x11-libs/libX11
 	libgig? ( media-libs/libgig:= )
+	qt6? (
+		dev-qt/qtbase:6[gui,network,widgets]
+		dev-qt/qtsvg:6
+	)
+	!qt6? (
+		dev-qt/qtcore:5
+		dev-qt/qtgui:5
+		dev-qt/qtnetwork:5
+		dev-qt/qtwidgets:5
+	)
 "
 RDEPEND="${DEPEND}
 	media-sound/linuxsampler
 "
-BDEPEND="dev-qt/linguist-tools:5"
-
-PATCHES=(
-	"${FILESDIR}/${PN}-0.9.1-cmake-no-git.patch"
-)
+BDEPEND="
+	qt6? ( dev-qt/qttools:6[linguist] )
+	!qt6? ( dev-qt/linguist-tools:5 )
+"
 
 DOCS=( ChangeLog README TRANSLATORS )
-
-src_prepare() {
-	cmake_src_prepare
-
-	sed -e "/^find_package.*QT/s/Qt6 //" -i CMakeLists.txt || die
-}
 
 src_configure() {
 	local mycmakeargs=(
 		-DCONFIG_DEBUG=$(usex debug 1 0)
 		-DCONFIG_LIBGIG=$(usex libgig 1 0)
+		-DCONFIG_QT6=$(usex qt6 1 0)
 	)
 	cmake_src_configure
 }
