@@ -19,7 +19,7 @@ HOMEPAGE="https://github.com/sddm/sddm"
 
 LICENSE="GPL-2+ MIT CC-BY-3.0 CC-BY-SA-3.0 public-domain"
 SLOT="0"
-IUSE="+elogind systemd test"
+IUSE="+elogind systemd test X"
 
 REQUIRED_USE="^^ ( elogind systemd )"
 RESTRICT="!test? ( test )"
@@ -43,7 +43,7 @@ DEPEND="${COMMON_DEPEND}
 	test? ( >=dev-qt/qttest-${QTMIN}:5 )
 "
 RDEPEND="${COMMON_DEPEND}
-	x11-base/xorg-server
+	X? ( x11-base/xorg-server )
 	!systemd? ( gui-libs/display-manager-init )
 "
 BDEPEND="
