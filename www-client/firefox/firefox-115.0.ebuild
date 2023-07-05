@@ -704,6 +704,8 @@ src_prepare() {
 			die "Failed to adjust FILES_PER_UNIFIED_FILE in js/src/moz.build"
 	fi
 
+	moz_clear_vendor_checksums libc
+
 	# Create build dir
 	BUILD_DIR="${WORKDIR}/${PN}_build"
 	mkdir -p "${BUILD_DIR}" || die
