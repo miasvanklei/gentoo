@@ -17,6 +17,7 @@ RDEPEND="
 	dev-perl/Clone
 	dev-perl/Date-Calc
 	dev-perl/DateTime
+	dev-perl/DateTime-HiRes
 	dev-perl/DateTime-TimeZone
 	virtual/perl-Exporter
 	virtual/perl-Getopt-Long
@@ -32,7 +33,7 @@ BDEPEND="
 	>=dev-perl/Module-Build-0.420.0
 	test? (
 		dev-perl/Module-Util
-		dev-perl/Test-MockTime
+		dev-perl/Test-MockTime-HiRes
 		virtual/perl-Test-Simple
 	)
 "
