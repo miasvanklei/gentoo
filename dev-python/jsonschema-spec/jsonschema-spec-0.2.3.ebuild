@@ -20,19 +20,25 @@ SRC_URI="
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ~ppc64 ~riscv x86"
+KEYWORDS="~amd64 ~riscv"
 
 RDEPEND="
-	<dev-python/jsonschema-4.18[${PYTHON_USEDEP}]
-	>=dev-python/jsonschema-4.0.0[${PYTHON_USEDEP}]
-	dev-python/pathable[${PYTHON_USEDEP}]
+	>=dev-python/pathable-0.4.1[${PYTHON_USEDEP}]
 	>=dev-python/pyyaml-5.1[${PYTHON_USEDEP}]
-	dev-python/pathable[${PYTHON_USEDEP}]
+	>=dev-python/referencing-0.28.1[${PYTHON_USEDEP}]
+"
+
+BDEPEND="
+	test? (
+		dev-python/responses[${PYTHON_USEDEP}]
+	)
 "
 
 distutils_enable_tests pytest
 
 src_prepare() {
-	sed -e '/--cov/d' -i pyproject.toml || die
+	sed -i -e '/--cov/d' pyproject.toml || die
+	# remove random pins due to caret operator
+	sed -i -e 's:\^:>=:' -e 's:,<[0-9.]*::' pyproject.toml || die
 	distutils-r1_src_prepare
 }
