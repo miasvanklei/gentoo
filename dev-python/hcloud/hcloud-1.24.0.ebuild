@@ -24,7 +24,7 @@ S=${WORKDIR}/${MY_P}
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="amd64"
 IUSE="examples"
 
 RDEPEND="
@@ -33,6 +33,7 @@ RDEPEND="
 "
 
 distutils_enable_sphinx docs \
+	dev-python/myst-parser \
 	dev-python/sphinx-rtd-theme
 distutils_enable_tests pytest
 
