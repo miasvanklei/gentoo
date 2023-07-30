@@ -49,7 +49,7 @@ IUSE="big-endian clippy cpu_flags_x86_sse2 debug dist doc llvm-libunwind +lto mi
 
 # How to use it:
 # List all the working slots in LLVM_VALID_SLOTS, newest first.
-LLVM_VALID_SLOTS=( 16 )
+LLVM_VALID_SLOTS=( 17 16 )
 LLVM_MAX_SLOT="${LLVM_VALID_SLOTS[0]}"
 
 # splitting usedeps needed to avoid CI/pkgcheck's UncheckableDep limitation
@@ -170,6 +170,7 @@ PATCHES=(
 	"${FILESDIR}"/1.66.0-do-not-install-libunwind-source.patch
 	"${FILESDIR}"/1.71.0-aarch64-static-pie.patch
 	"${FILESDIR}"/1.71.0-remove-crt-and-musl_root-from-musl-targets.patch
+	"${FILESDIR}"/1.71.0-llvm-17.patch
 )
 
 S="${WORKDIR}/${MY_P}-src"
