@@ -82,18 +82,6 @@ FF_ONLY_DEPEND="!www-client/firefox:0
 BDEPEND="${PYTHON_DEPS}
 	|| (
 		(
-			sys-devel/clang:17
-			sys-devel/llvm:17
-			clang? (
-				|| (
-					sys-devel/lld:17
-					sys-devel/mold
-				)
-				virtual/rust:0/llvm-17
-				pgo? ( =sys-libs/compiler-rt-sanitizers-17*[profile] )
-			)
-		)
-		(
 			sys-devel/clang:16
 			sys-devel/llvm:16
 			clang? (
