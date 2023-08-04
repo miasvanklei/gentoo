@@ -4,7 +4,7 @@
 EAPI=8
 
 COMMIT="6092368aabdd0dbb0fbceb2766a37b98e0ff6911"
-PYTHON_COMPAT=( python3_{9..11} pypy3 )
+PYTHON_COMPAT=( python3_{9..10} pypy3 )
 
 inherit autotools distutils-r1
 
