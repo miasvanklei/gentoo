@@ -49,7 +49,7 @@ IUSE="big-endian clippy cpu_flags_x86_sse2 debug dist doc llvm-libunwind miri ni
 
 # How to use it:
 # List all the working slots in LLVM_VALID_SLOTS, newest first.
-LLVM_VALID_SLOTS=( 16 )
+LLVM_VALID_SLOTS=( 15 )
 LLVM_MAX_SLOT="${LLVM_VALID_SLOTS[0]}"
 
 # splitting usedeps needed to avoid CI/pkgcheck's UncheckableDep limitation
@@ -164,9 +164,6 @@ VERIFY_SIG_OPENPGP_KEY_PATH=${BROOT}/usr/share/openpgp-keys/rust.asc
 PATCHES=(
 	"${FILESDIR}"/1.68.0-ignore-broken-and-non-applicable-tests.patch
 	"${FILESDIR}"/1.62.1-musl-dynamic-linking.patch
-	"${FILESDIR}"/1.66.0-do-not-install-libunwind-source.patch
-	"${FILESDIR}"/1.66.0-aarch64-static-pie.patch
-	"${FILESDIR}"/1.67.0-remove-crt-and-musl_root-from-musl-targets.patch
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
 )
 
