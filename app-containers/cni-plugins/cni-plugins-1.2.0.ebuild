@@ -10,13 +10,10 @@ SRC_URI="https://github.com/containernetworking/plugins/archive/v${PV}.tar.gz ->
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv"
-IUSE="hardened +nftables"
+KEYWORDS="amd64 arm64 ~ppc64 ~riscv"
+IUSE="hardened"
 
-RDEPEND="
-	nftables? ( app-containers/cni-plugins-nftables )
-        !nftables? ( net-firewall/iptables )
-"
+RDEPEND="net-firewall/iptables"
 
 CONFIG_CHECK="~BRIDGE_VLAN_FILTERING ~NETFILTER_XT_MATCH_COMMENT
 	~NETFILTER_XT_MATCH_MULTIPORT"
