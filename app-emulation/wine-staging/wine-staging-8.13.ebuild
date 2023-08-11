@@ -5,6 +5,7 @@ EAPI=8
 
 MULTILIB_COMPAT=( abi_x86_{32,64} )
 PYTHON_COMPAT=( python3_{10..12} )
+# note: multilib+wrapper are not unused, currently a pkgcheck false positive
 inherit autotools edo flag-o-matic multilib multilib-build
 inherit prefix python-any-r1 toolchain-funcs wrapper
 
@@ -137,8 +138,11 @@ BDEPEND="
 			sys-apps/util-linux
 		)
 	)
+	|| (
+		sys-devel/binutils
+		sys-devel/lld
+	)
 	dev-lang/perl
-	sys-devel/binutils
 	sys-devel/bison
 	sys-devel/flex
 	virtual/pkgconfig
@@ -160,6 +164,7 @@ QA_TEXTRELS="usr/lib/*/wine/i386-unix/*.so" # uses -fno-PIC -Wl,-z,notext
 PATCHES=(
 	"${FILESDIR}"/${PN}-7.17-noexecstack.patch
 	"${FILESDIR}"/${PN}-7.20-unwind.patch
+	"${FILESDIR}"/${PN}-8.13-rpath.patch
 )
 
 pkg_pretend() {
@@ -220,6 +225,18 @@ src_prepare() {
 	fi
 
 	default
+
+	if tc-is-clang; then
+		if use mingw; then
+			# -mabi=ms was ignored by <clang:16 then turned error in :17
+			# and it still gets used in install phase despite USE=mingw,
+			# drop as a quick fix for now which hopefully should be safe
+			sed -i '/MSVCRTFLAGS=/s/-mabi=ms//' configure.ac || die
+		else
+			# ./configure will abort looking for -mabi=ms, so do it early
+			die "building ${PN} with clang requires USE=mingw to be enabled"
+		fi
+	fi
 
 	# ensure .desktop calls this variant + slot
 	sed -i "/^Exec=/s/wine /${P} /" loader/wine.desktop || die
@@ -283,18 +300,18 @@ src_configure() {
 		$(use_with xinerama)
 	)
 
-	# builds with non-bfd but broken at runtime (bug #867097)
-	# TODO: retest mold and lld, and figure out what's wrong if
-	# still broken given (at least) lld is supposed to work
-	tc-ld-force-bfd
-
 	filter-lto # build failure
 	use custom-cflags || strip-flags # can break in obscure ways at runtime
 
-	# temporary workaround for tc-ld-force-bfd not yet enforcing with mold
-	# https://github.com/gentoo/gentoo/pull/28355
-	[[ $($(tc-getCC) ${LDFLAGS} -Wl,--version 2>/dev/null) == mold* ]] &&
-		append-ldflags -fuse-ld=bfd
+	# wine uses linker tricks unlikely to work with non-bfd/lld (bug #867097)
+	# (do self test until https://github.com/gentoo/gentoo/pull/28355)
+	if [[ $(LC_ALL=C $(tc-getCC) ${LDFLAGS} -Wl,--version 2>/dev/null) != @(LLD|GNU\ ld)* ]]
+	then
+		has_version -b sys-devel/binutils &&
+			append-ldflags -fuse-ld=bfd ||
+			append-ldflags -fuse-ld=lld
+		strip-unsupported-flags
+	fi
 
 	if use mingw; then
 		use crossdev-mingw || PATH=${BROOT}/usr/lib/mingw64-toolchain/bin:${PATH}
@@ -311,7 +328,7 @@ src_configure() {
 			ac_cv_prog_x86_64_CC="${mingwcc_amd64}"
 			ac_cv_prog_i386_CC="${mingwcc_x86}"
 
-			CROSSCFLAGS="$(
+			CROSSCFLAGS="${CROSSCFLAGS:-$(
 				filter-flags '-fstack-protector*' #870136
 				filter-flags '-mfunction-return=thunk*' #878849
 
@@ -322,13 +339,13 @@ src_configure() {
 				use custom-cflags || append-cflags -mno-avx
 
 				CC=${mingwcc} test-flags-CC ${CFLAGS:--O2}
-			)"
+			)}"
 
-			CROSSLDFLAGS="$(
+			CROSSLDFLAGS="${CROSSLDFLAGS:-$(
 				filter-flags '-fuse-ld=*'
 
 				CC=${mingwcc} test-flags-CCLD ${LDFLAGS}
-			)"
+			)}"
 		)
 	fi
 
@@ -414,7 +431,7 @@ pkg_postinst() {
 		ewarn "32bit support is disabled. While 64bit applications themselves will"
 		ewarn "work, be warned that it is not unusual that installers or other helpers"
 		ewarn "will attempt to use 32bit and fail. If do not want full USE=abi_x86_32,"
-		ewarn "note that the experimental USE=wow64 can allow 32bit without multilib."
+		ewarn "note the experimental/WIP USE=wow64 can allow 32bit without multilib."
 	fi
 
 	eselect wine update --if-unset || die
