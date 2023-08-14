@@ -22,7 +22,7 @@ SRC_URI="
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ppc ppc64 ~riscv ~sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~ppc ~ppc64 ~riscv ~sparc ~x86"
 IUSE="examples opengl test X"
 RESTRICT="!test? ( test )"
 
@@ -57,10 +57,6 @@ BDEPEND="
 		sys-apps/util-linux
 	)
 "
-
-PATCHES=(
-	"${FILESDIR}"/${P}-cython-3.patch
-)
 
 python_configure() {
 	PORTMIDI_INC_PORTTIME=1 LOCALBASE="${EPREFIX}/usr" \
