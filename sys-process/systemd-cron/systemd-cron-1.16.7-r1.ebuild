@@ -12,7 +12,7 @@ SRC_URI="https://github.com/systemd-cron/${PN}/archive/v${PV}.tar.gz -> systemd-
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ia64 ~ppc ~ppc64 ~riscv ~sparc ~x86"
-IUSE="cron-boot etc-crontab-systemd minutely +runparts setgid test yearly"
+IUSE="cron-boot etc-crontab-systemd minutely +runparts setgid split-usr test yearly"
 RESTRICT="!test? ( test )"
 
 RDEPEND=">=sys-apps/systemd-217
@@ -29,6 +29,14 @@ DEPEND="sys-process/cronbase
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
+pkg_pretend() {
+	if use split-usr; then
+			eerror "Please complete the migration to merged-usr."
+			eerror "https://wiki.gentoo.org/wiki/Merge-usr"
+			die "systemd no longer supports split-usr"
+	fi
+}
+
 src_prepare() {
 	python_fix_shebang --force "${S}/src/bin"
 
@@ -36,12 +44,6 @@ src_prepare() {
 		-e 's/^crontab/crontab-systemd/' \
 		-e 's/^CRONTAB/CRONTAB-SYSTEMD/' \
 		-- "${S}/src/man/crontab."{1,5}".in" || die
-
-	sed -i \
-		-e 's!/crontab$!/crontab-systemd!' \
-		-e 's!/crontab\(\.[15]\)$!/crontab-systemd\1!' \
-		-e 's/pyflakes3/pyflakes/' \
-		-- "${S}/Makefile.in" || die
 
 	if use etc-crontab-systemd
 	then	sed -i \
@@ -65,7 +67,6 @@ src_configure() {
 	./configure \
 		--prefix="${EPREFIX}/usr" \
 		--confdir="${EPREFIX}/etc" \
-		--runparts="${EPREFIX}/bin/run-parts" \
 		--mandir="${EPREFIX}/usr/share/man" \
 		--unitdir="$(systemd_get_systemunitdir)" \
 		--generatordir="$(systemd_get_systemgeneratordir)" \
@@ -75,8 +76,9 @@ src_configure() {
 		$(my_use_enable yearly) \
 		$(my_use_enable yearly quarterly) \
 		$(my_use_enable yearly semi_annually) \
-		$(my_use_enable setgid) \
-		--enable-persistent=yes
+		$(my_use_enable setgid)
+
+		export CRONTAB=crontab-systemd
 }
 
 src_install() {
