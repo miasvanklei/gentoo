@@ -95,6 +95,7 @@ src_prepare() {
 
 	if use widevine && use prefix; then
 		# hack: QtWebEngine knows Gentoo's widevine, but not with ${EPREFIX}
+		# TODO: prefixify QtWebEngine itself
 		local widevine=${EPREFIX}/usr/$(get_libdir)/chromium-browser/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so
 		sed -e "/yield from _qtwebengine_settings_args/a\    yield '--widevine-path=${widevine}'" \
 			-i ${PN}/config/qtargs.py || die
@@ -125,7 +126,7 @@ src_prepare() {
 			# likewise, needs vulture
 			rm tests/unit/scripts/test_run_vulture.py || die
 		else
-			# needs dev scripts not included in release tarballs
+			# https://github.com/qutebrowser/qutebrowser/issues/7620
 			rm tests/unit/scripts/test_problemmatchers.py || die
 		fi
 	fi
