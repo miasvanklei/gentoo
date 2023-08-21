@@ -5,8 +5,8 @@
 		<email>marecki@gentoo.org</email>
 		<name>Marek Szuba</name>
 	</maintainer>
+	<stabilize-allarches/>
 	<upstream>
-		<remote-id type="github">borgbackup/borg</remote-id>
-		<remote-id type="pypi">borgbackup</remote-id>
+		<remote-id type="github">kk7ds/chirp</remote-id>
 	</upstream>
 </pkgmetadata>
