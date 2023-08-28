@@ -166,10 +166,6 @@ PATCHES=(
 	"${FILESDIR}"/1.70.0-ignore-broken-and-non-applicable-tests.patch
 	"${FILESDIR}"/1.62.1-musl-dynamic-linking.patch
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
-	"${FILESDIR}"/1.66.0-do-not-install-libunwind-source.patch
-	"${FILESDIR}"/1.71.0-aarch64-static-pie.patch
-	"${FILESDIR}"/1.71.0-remove-crt-and-musl_root-from-musl-targets.patch
-	"${FILESDIR}"/1.71.0-llvm-17.patch
 )
 
 S="${WORKDIR}/${MY_P}-src"
@@ -286,10 +282,6 @@ esetup_unwind_hack() {
 	export MAGIC_EXTRA_RUSTFLAGS+="${MAGIC_EXTRA_RUSTFLAGS:+ }-L${fakelib}"
 }
 
-clear_vendor_checksums() {
-        sed -i 's/\("files":{\)[^}]*/\1/' vendor/$1/.cargo-checksum.json
-}
-
 src_prepare() {
 	if ! use system-bootstrap; then
 		has_version sys-devel/gcc || esetup_unwind_hack
@@ -299,15 +291,6 @@ src_prepare() {
 		"${WORKDIR}/${rust_stage0}"/install.sh --disable-ldconfig \
 			--without=rust-docs-json-preview,rust-docs --destdir="${rust_stage0_root}" --prefix=/ || die
 	fi
-
-        # patch all available libcs to remove lfs64 symbols
-	local libcs=( libc libc-0.2.138 libc-0.2.139 libc-0.2.140 libc-0.2.143 )
-        for i in "${libcs[@]}"; do
-                pushd vendor/$i>/dev/null || die
-                eapply ${FILESDIR}/libc-lfs64.patch
-                popd>/dev/null
-                clear_vendor_checksums $i
-        done
 
 	default
 }

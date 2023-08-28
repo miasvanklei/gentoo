@@ -65,24 +65,24 @@
  # create a `[target.wasm32-wasi]` section and move this field there.
 --- a/src/bootstrap/cc_detect.rs	2020-08-27 22:57:54.722286935 +0200
 +++ b/src/bootstrap/cc_detect.rs	2020-08-27 22:59:36.731230131 +0200
-@@ -99,7 +99,7 @@
-         if let Some(cc) = config.and_then(|c| c.cc.as_ref()) {
-             cfg.compiler(cc);
-         } else {
--            set_compiler(&mut cfg, Language::C, target, config, build);
-+            set_compiler(&mut cfg, Language::C, target, config);
-         }
+@@ -110,7 +110,7 @@
+     if let Some(cc) = config.and_then(|c| c.cc.as_ref()) {
+         cfg.compiler(cc);
+     } else {
+-        set_compiler(&mut cfg, Language::C, target, config, build);
++        set_compiler(&mut cfg, Language::C, target, config);
+     }
  
-         let compiler = cfg.get_compiler();
-@@ -127,7 +127,7 @@
-             cfg.compiler(cxx);
-             true
-         } else if build.hosts.contains(&target) || build.build == target {
--            set_compiler(&mut cfg, Language::CPlusPlus, target, config, build);
-+            set_compiler(&mut cfg, Language::CPlusPlus, target, config);
-             true
-         } else {
-             false
+     let compiler = cfg.get_compiler();
+@@ -131,7 +131,7 @@
+         cfg.compiler(cxx);
+         true
+     } else if build.hosts.contains(&target) || build.build == target {
+-        set_compiler(&mut cfg, Language::CPlusPlus, target, config, build);
++        set_compiler(&mut cfg, Language::CPlusPlus, target, config);
+         true
+     } else {
+         // Use an auto-detected compiler (or one configured via `CXX_target_triple` env vars).
 @@ -156,7 +156,6 @@
      compiler: Language,
      target: Interned<String>,
