@@ -188,6 +188,14 @@ src_install() {
 				@gentoo-common.cfg
 			EOF
 		done
+
+		local abi_novendor_chost="${abi_chost/gentoo/unknown}"
+		for tool in ${abi_novendor_chost}-clang{,++,-cpp}; do
+			newins - "${tool}.cfg" <<-EOF
+				# This configuration file is used by ${tool} driver.
+				@gentoo-common.cfg
+			EOF
+		done
 	done
 }
 
