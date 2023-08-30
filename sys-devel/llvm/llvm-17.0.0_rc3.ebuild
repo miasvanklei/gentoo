@@ -130,7 +130,7 @@ check_distribution_components() {
 					LLVM|LLVMgold)
 						;;
 					# TableGen lib + deps
-					LLVMDemangle|LLVMSupport|LLVMTableGen)
+					LLVMDemangle|LLVMSupport|LLVMTableGen|LLVMCodeGenTypes)
 						;;
 					# testing libraries
 					LLVMTestingAnnotations|LLVMTestingSupport)
@@ -211,6 +211,7 @@ get_distribution_components() {
 		LLVMDemangle
 		LLVMSupport
 		LLVMTableGen
+		LLVMCodeGenTypes
 
 		# testing libraries
 		llvm_gtest
@@ -251,6 +252,7 @@ get_distribution_components() {
 			llvm-cxxfilt
 			llvm-cxxmap
 			llvm-debuginfo-analyzer
+			llvm-debuginfod
 			llvm-debuginfod-find
 			llvm-diff
 			llvm-dis
