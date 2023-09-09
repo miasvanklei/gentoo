@@ -170,13 +170,11 @@ BDEPEND="
 	sys-devel/flex
 	virtual/pkgconfig
 	$(python_gen_any_dep ">=dev-python/mako-0.8.0[\${PYTHON_USEDEP}]")
-	llvm? (
-		vulkan? (
-			dev-util/glslang
-			video_cards_intel? (
-				amd64? (
-					$(python_gen_any_dep "dev-python/ply[\${PYTHON_USEDEP}]")
-				)
+	vulkan? (
+		dev-util/glslang
+		video_cards_intel? (
+			amd64? (
+				$(python_gen_any_dep "dev-python/ply[\${PYTHON_USEDEP}]")
 			)
 		)
 	)
@@ -200,7 +198,10 @@ llvm_check_deps() {
 	if use opencl || { use vulkan && use video_cards_intel && use amd64; }; then
 		has_version "dev-util/spirv-llvm-translator:${LLVM_SLOT}" || return 1
 	fi
-	has_version "sys-devel/llvm:${LLVM_SLOT}[${LLVM_USE_DEPS}]"
+
+	if use llvm; then
+		has_version "sys-devel/llvm:${LLVM_SLOT}[${LLVM_USE_DEPS}]"
+	fi
 }
 
 PATCHES=(
