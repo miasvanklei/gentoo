@@ -14,7 +14,7 @@ SRC_URI="
 	https://download.ceph.com/tarballs/${P}.tar.gz
 	parquet? ( https://github.com/xtensor-stack/xsimd/archive/${XSIMD_HASH}.tar.gz -> ceph-xsimd-${PV}.tar.gz )
 "
-KEYWORDS="~amd64 ~arm64"
+KEYWORDS="amd64 ~arm64"
 
 DESCRIPTION="Ceph distributed filesystem"
 HOMEPAGE="https://ceph.com/"
@@ -87,10 +87,7 @@ DEPEND="
 	ldap? ( net-nds/openldap:= )
 	lttng? ( dev-util/lttng-ust:= )
 	parquet? ( dev-libs/re2:= )
-	pmdk? (
-		>=dev-libs/pmdk-1.10.0:=
-		sys-block/ndctl:=
-	)
+	pmdk? ( >=dev-libs/pmdk-1.10.0:= )
 	rabbitmq? ( net-libs/rabbitmq-c:= )
 	radosgw? (
 		dev-libs/icu:=
@@ -112,7 +109,7 @@ BDEPEND="
 	x86? ( dev-lang/yasm )
 	app-arch/cpio
 	>=dev-util/cmake-3.5.0
-	dev-python/cython[${PYTHON_USEDEP}]
+	<dev-python/cython-3[${PYTHON_USEDEP}]
 	dev-python/setuptools[${PYTHON_USEDEP}]
 	dev-python/sphinx
 	dev-util/gperf
@@ -199,6 +196,7 @@ PATCHES=(
 	"${FILESDIR}/ceph-12.2.0-use-provided-cpu-flag-values.patch"
 	"${FILESDIR}/ceph-14.2.0-cflags.patch"
 	"${FILESDIR}/ceph-12.2.4-boost-build-none-options.patch"
+	"${FILESDIR}/ceph-16.2.2-cflags.patch"
 	"${FILESDIR}/ceph-17.2.1-no-virtualenvs.patch"
 	"${FILESDIR}/ceph-13.2.2-dont-install-sysvinit-script.patch"
 	"${FILESDIR}/ceph-14.2.0-dpdk-cflags.patch"
@@ -206,12 +204,17 @@ PATCHES=(
 	"${FILESDIR}/ceph-16.2.0-spdk-tinfo.patch"
 	"${FILESDIR}/ceph-16.2.0-jaeger-system-boost.patch"
 	"${FILESDIR}/ceph-16.2.0-liburing.patch"
+	"${FILESDIR}/ceph-17.2.0-cyclic-deps.patch"
 	"${FILESDIR}/ceph-17.2.0-pybind-boost-1.74.patch"
 	"${FILESDIR}/ceph-17.2.0-findre2.patch"
-	"${FILESDIR}/ceph-18.2.0-system-opentelemetry.patch"
+	"${FILESDIR}/ceph-17.2.0-install-dbstore.patch"
+	"${FILESDIR}/ceph-17.2.0-deprecated-boost.patch"
+	"${FILESDIR}/ceph-17.2.0-system-opentelemetry.patch"
+	"${FILESDIR}/ceph-17.2.0-fuse3.patch"
 	"${FILESDIR}/ceph-17.2.0-osd_class_dir.patch"
 	"${FILESDIR}/ceph-17.2.0-gcc12-header.patch"
 	"${FILESDIR}/ceph-17.2.3-flags.patch"
+	"${FILESDIR}/ceph-17.2.4-cyclic-deps.patch"
 	# https://bugs.gentoo.org/866165
 	"${FILESDIR}/ceph-17.2.5-suppress-cmake-warning.patch"
 	"${FILESDIR}/ceph-17.2.5-gcc13-deux.patch"
@@ -222,7 +225,6 @@ PATCHES=(
 	"${FILESDIR}/ceph-17.2.6-arrow-flatbuffers-c++14.patch"
 	# https://bugs.gentoo.org/868891
 	"${FILESDIR}/ceph-17.2.6-cmake.patch"
-	"${FILESDIR}/ceph-18.2.0-cyclic-deps.patch"
 )
 
 check-reqs_export_vars() {
@@ -466,6 +468,10 @@ src_install() {
 python_install() {
 	local CMAKE_USE_DIR="${S}"
 	DESTDIR="${ED}" cmake_build src/pybind/install
+	DESTDIR="${ED}" cmake_build src/cephadm/install
+
+	python_scriptinto /usr/sbin
+	python_doscript src/cephadm/cephadm
 
 	python_optimize
 }
