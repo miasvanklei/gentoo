@@ -5,7 +5,7 @@ EAPI=8
 
 FIREFOX_PATCHSET="firefox-117-patches-04.tar.xz"
 
-LLVM_MAX_SLOT=17
+LLVM_MAX_SLOT=16
 
 PYTHON_COMPAT=( python3_{10..11} )
 PYTHON_REQ_USE="ncurses,sqlite,ssl"
@@ -81,15 +81,6 @@ FF_ONLY_DEPEND="!www-client/firefox:0
 	selinux? ( sec-policy/selinux-mozilla )"
 BDEPEND="${PYTHON_DEPS}
 	|| (
-		(
-			sys-devel/clang:17
-			sys-devel/llvm:17
-			clang? (
-				sys-devel/lld:17
-				virtual/rust:0/llvm-17
-				pgo? ( =sys-libs/compiler-rt-sanitizers-17*[profile] )
-			)
-		)
 		(
 			sys-devel/clang:16
 			sys-devel/llvm:16
@@ -714,8 +705,6 @@ src_prepare() {
 		sed -i -e "s/FILES_PER_UNIFIED_FILE = 6/FILES_PER_UNIFIED_FILE = "${my_files_per_unified_file}"/" js/src/moz.build ||
 			die "Failed to adjust FILES_PER_UNIFIED_FILE in js/src/moz.build"
 	fi
-
-	moz_clear_vendor_checksums libc
 
 	# Create build dir
 	BUILD_DIR="${WORKDIR}/${PN}_build"
