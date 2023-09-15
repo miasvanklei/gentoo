@@ -17,7 +17,6 @@ KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
 IUSE=""
 
 DEPEND="
-	dev-cpp/glibmm:2
 	dev-libs/glib:2
 	>=dev-qt/qtdbus-${QTMIN}:5
 	>=dev-qt/qtgui-${QTMIN}:5
