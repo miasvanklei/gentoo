@@ -1,10 +1,10 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 2021-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit go-module
+inherit bash-completion-r1 go-module systemd
 
-DESCRIPTION="Kubernetes Controller Manager"
+DESCRIPTION="Kubernetes API server"
 HOMEPAGE="https://kubernetes.io"
 SRC_URI="https://github.com/kubernetes/kubernetes/archive/v${PV}.tar.gz -> kubernetes-${PV}.tar.gz"
 
@@ -13,8 +13,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 IUSE="hardened"
 
-COMMON_DEPEND="acct-group/kube-controller-manager
-	acct-user/kube-controller-manager"
+COMMON_DEPEND="
+	acct-group/kube-apiserver
+	acct-user/kube-apiserver"
 DEPEND="${COMMON_DEPEND}"
 RDEPEND="${COMMON_DEPEND}"
 BDEPEND=">=dev-lang/go-1.20"
@@ -22,12 +23,8 @@ BDEPEND=">=dev-lang/go-1.20"
 RESTRICT+=" test"
 S="${WORKDIR}/kubernetes-${PV}"
 
-PATCHES=(
-	"${FILESDIR}"/${P}-make-gomaxprocs-install-optional.patch
-	)
-
 src_compile() {
-	CGO_LDFLAGS="$(usex hardened '-fno-PIC ' '')" \
+	CGO_LDFLAGS="$(usex hardened '-fNO-PIC ' '')" FORCE_HOST_GO="yes" \
 		emake -j1 GOFLAGS=-v GOLDFLAGS="" LDFLAGS="" WHAT=cmd/${PN}
 }
 
