@@ -14,23 +14,25 @@ SRC_URI="https://github.com/flatpak/${PN}/releases/download/${PV}/${P}.tar.xz"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~x86"
-IUSE="geolocation man systemd test"
+IUSE="geolocation flatpak seccomp systemd test"
 RESTRICT="!test? ( test )"
+# Upstream expect flatpak to be used w/ seccomp and flatpak needs bwrap anyway
+REQUIRED_USE="flatpak? ( seccomp )"
 
 DEPEND="
 	>=dev-libs/glib-2.66:2
 	dev-libs/json-glib
+	dev-python/docutils
+	>=media-video/pipewire-0.3:=
 	>=sys-fs/fuse-3.10.0:3[suid]
 	x11-libs/gdk-pixbuf
 	geolocation? ( >=app-misc/geoclue-2.5.3:2.0 )
-	>=media-video/pipewire-0.3:=
+	flatpak? ( sys-apps/flatpak )
+	seccomp? ( sys-apps/bubblewrap )
 	systemd? ( sys-apps/systemd )
-	test? (
-		dev-libs/libportal
-	)
-	man? ( dev-python/docutils )
 "
-RDEPEND="${DEPEND}
+RDEPEND="
+	${DEPEND}
 	sys-apps/dbus
 "
 BDEPEND="
@@ -39,8 +41,10 @@ BDEPEND="
 	virtual/pkgconfig
 	test? (
 		${PYTHON_DEPS}
+		dev-libs/libportal
 		$(python_gen_any_dep '
 			dev-python/pytest[${PYTHON_USEDEP}]
+			dev-python/pytest-xdist[${PYTHON_USEDEP}]
 			dev-python/python-dbusmock[${PYTHON_USEDEP}]
 		')
 	)
@@ -49,28 +53,44 @@ BDEPEND="
 PATCHES=(
 	# These tests require connections to pipewire, internet, /dev/fuse
 	"${FILESDIR}/${P}-sandbox-disable-failing-tests.patch"
+
+	# https://github.com/flatpak/xdg-desktop-portal/pull/1100
+	"${FILESDIR}/0001-meson.build-allow-linux-to-build-without-flatpak-ins.patch"
+	"${FILESDIR}/0002-meson.build-allow-linux-to-build-without-bubblewrap.patch"
+	"${FILESDIR}/0003-Make-flatpak-bwrap-optional.patch"
 )
+
+pkg_setup() {
+	use test && python-any-r1_pkg_setup
+}
 
 python_check_deps() {
 	python_has_version "dev-python/pytest[${PYTHON_USEDEP}]" &&
+	python_has_version "dev-python/pytest-xdist[${PYTHON_USEDEP}]" &&
 	python_has_version "dev-python/python-dbusmock[${PYTHON_USEDEP}]"
 }
 
 src_configure() {
 	local emesonargs=(
 		-Ddbus-service-dir="${EPREFIX}/usr/share/dbus-1/services"
-		-Dflatpak-interfaces-dir="${EPREFIX}/usr/share/dbus-1/interfaces"
 		-Dsystemd-user-unit-dir="$(systemd_get_userunitdir)"
-		$(meson_feature test libportal)     # Only used for tests
+		$(meson_feature flatpak)
+		# Only used for tests
+		$(meson_feature test libportal)
 		$(meson_feature geolocation geoclue)
+		$(meson_feature seccomp bwrap)
 		$(meson_feature systemd)
-		-Ddocbook-docs=disabled  # requires flatpak
+		# Requires flatpak
+		-Ddocbook-docs=disabled
 		# -Dxmlto-flags=
 		-Ddatarootdir="${EPREFIX}/usr/share"
+		-Dman-pages=enabled
 		-Dinstalled-tests=false
 		$(meson_feature test pytest)
-		$(meson_feature man man-pages)
 	)
+
+	use flatpak && emesonargs+=( -Dflatpak-interfaces-dir="${EPREFIX}/usr/share/dbus-1/interfaces" )
+
 	meson_src_configure
 }
 
