@@ -31,7 +31,6 @@ BDEPEND="
 RDEPEND+="
 	acct-user/distcc
 	dev-util/shadowman
-	>=sys-devel/gcc-config-1.4.1
 	selinux? ( sec-policy/selinux-distcc )
 	xinetd? ( sys-apps/xinetd )"
 
