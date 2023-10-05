@@ -117,8 +117,6 @@ src_install() {
 		@gentoo-runtimes.cfg
 		@gentoo-gcc-install.cfg
 		@gentoo-hardened.cfg
-		# distcc
-		-Wno-gnu-line-marker
 		# bug #870001
 		-include "${EPREFIX}/usr/include/gentoo/maybe-stddefs.h"
 	EOF
@@ -235,10 +233,8 @@ src_install() {
 	local abi
 	for abi in $(get_all_abis); do
 		local abi_chost=$(get_abi_CHOST "${abi}")
-		local abi_novendor_chost="${abi_chost/gentoo/unknown}"
 
 		doclang_cfg "${abi_chost}"
-		doclang_cfg "${abi_novendor_chost}"
 	done
 }
 
