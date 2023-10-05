@@ -45,4 +45,10 @@ src_install() {
 			dosym "llvm-${t}" "${dest}/${chost}-${t}"
 		done
 	done
+
+	# special case c++filt
+	dosym "llvm-cxxfilt" "${dest}/c++filt"
+	for chost in "${chosts[@]}"; do
+		dosym "llvm-cxxfilt" "${dest}/${chost}-c++filt"
+	done
 }
