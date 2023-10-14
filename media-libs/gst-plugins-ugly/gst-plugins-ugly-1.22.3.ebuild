@@ -3,7 +3,7 @@
 
 EAPI=7
 GST_ORG_MODULE="gst-plugins-ugly"
-PYTHON_COMPAT=( python3_{8,9,10,11} )
+PYTHON_COMPAT=( python3_{8,9,10,12} )
 inherit gstreamer-meson python-any-r1
 
 DESCRIPTION="Basepack of plugins for gstreamer"

@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 inherit meson python-any-r1 udev
 
 DESCRIPTION="Library for identifying Wacom tablets and their model-specific features"

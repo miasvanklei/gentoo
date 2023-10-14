@@ -4,7 +4,7 @@
 EAPI=8
 
 LUA_COMPAT=( lua5-{1..2} )
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit fcaps flag-o-matic readme.gentoo-r1 lua-single python-any-r1 qmake-utils xdg cmake
 

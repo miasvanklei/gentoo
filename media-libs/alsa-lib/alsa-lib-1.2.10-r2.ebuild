@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 inherit autotools multilib-minimal flag-o-matic python-single-r1
 
 DESCRIPTION="Advanced Linux Sound Architecture Library"

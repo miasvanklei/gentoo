@@ -4,7 +4,7 @@
 EAPI=8
 
 # py3.12 blocked by the massive dependency tree of dev-python/pocketlint
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit autotools python-r1
 

@@ -5,7 +5,7 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 COMMIT="6092368aabdd0dbb0fbceb2766a37b98e0ff6911"
-PYTHON_COMPAT=( python3_{8..11} pypy3 )
+PYTHON_COMPAT=( python3_{8..12} pypy3 )
 DISTUTILS_OPTIONAL=1
 
 inherit autotools distutils-r1
