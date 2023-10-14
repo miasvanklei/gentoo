@@ -120,7 +120,7 @@
  }
 --- a/src/bootstrap/compile.rs	2020-08-27 22:57:42.818176881 +0200
 +++ b/src/bootstrap/compile.rs	2020-08-27 23:00:19.487625539 +0200
-@@ -176,40 +176,7 @@
+@@ -255,40 +255,7 @@
      t!(fs::create_dir_all(&libdir_self_contained));
      let mut target_deps = vec![];
  
@@ -131,7 +131,7 @@
 -    // to using gcc from a glibc-targeting toolchain for linking.
 -    // To do that we have to distribute musl startup objects as a part of Rust toolchain
 -    // and link with them manually in the self-contained mode.
--    if target.contains("musl") {
+-    if target.contains("musl") && !target.contains("unikraft") {
 -        let srcdir = builder.musl_libdir(target).unwrap_or_else(|| {
 -            panic!("Target {:?} does not have a \"musl-libdir\" key", target.triple)
 -        });
@@ -157,14 +157,14 @@
 -            let libunwind_path = copy_llvm_libunwind(builder, target, &libdir_self_contained);
 -            target_deps.push((libunwind_path, DependencyType::TargetSelfContained));
 -        }
--    } else if target.ends_with("-wasi") {
-+    if target.ends_with("-wasi") {
+-    } else if target.contains("-wasi") {
++    if target.contains("-wasi") {
          let srcdir = builder
              .wasi_root(target)
              .unwrap_or_else(|| {
-@@ -263,15 +244,6 @@
+@@ -390,15 +357,6 @@
              .arg("--manifest-path")
-             .arg(builder.src.join("src/libtest/Cargo.toml"));
+             .arg(builder.src.join("library/sysroot/Cargo.toml"));
  
 -        // Help the libc crate compile by assisting it in finding various
 -        // sysroot native libraries.
@@ -175,9 +175,9 @@
 -            }
 -        }
 -
-         if target.ends_with("-wasi") {
+         if target.contains("-wasi") {
              if let Some(p) = builder.wasi_root(target) {
-                 let root = format!("native={}/lib/wasm32-wasi", p.to_str().unwrap());
+                 let root = format!(
 --- a/src/bootstrap/config.rs	2020-08-27 22:57:33.209088049 +0200
 +++ b/src/bootstrap/config.rs	2020-08-27 23:01:06.156057160 +0200
 @@ -135,8 +135,6 @@
@@ -316,7 +316,7 @@
          }
  
 -        // Make sure musl-root is valid
--        if target.contains("musl") {
+-        if target.contains("musl") && !target.contains("unikraft") {
 -            // If this is a native target (host is also musl) and no musl-root is given,
 -            // fall back to the system toolchain in /usr before giving up
 -            if build.musl_root(*target).is_none() && build.config.build == *target {
