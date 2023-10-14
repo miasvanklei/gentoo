@@ -7,7 +7,7 @@ FIREFOX_PATCHSET="firefox-118-patches-04.tar.xz"
 
 LLVM_MAX_SLOT=17
 
-PYTHON_COMPAT=( python3_{10..11} )
+PYTHON_COMPAT=( python3_{10..12} )
 PYTHON_REQ_USE="ncurses,sqlite,ssl"
 
 WANT_AUTOCONF="2.1"
@@ -697,6 +697,7 @@ src_prepare() {
 	# Clear checksums from cargo crates we've manually patched.
 	# moz_clear_vendor_checksums xyz
 	moz_clear_vendor_checksums proc-macro2
+	moz_clear_vendor_checksums libc
 
 	# Respect choice for "jumbo-build"
 	# Changing the value for FILES_PER_UNIFIED_FILE may not work, see #905431
