@@ -233,7 +233,6 @@ src_install() {
 	local abi
 	for abi in $(get_all_abis); do
 		local abi_chost=$(get_abi_CHOST "${abi}")
-
 		doclang_cfg "${abi_chost}"
 	done
 }

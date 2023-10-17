@@ -117,6 +117,8 @@ src_install() {
 		@gentoo-runtimes.cfg
 		@gentoo-gcc-install.cfg
 		@gentoo-hardened.cfg
+		# distcc
+		-Wno-gnu-line-marker
 		# bug #870001
 		-include "${EPREFIX}/usr/include/gentoo/maybe-stddefs.h"
 	EOF
