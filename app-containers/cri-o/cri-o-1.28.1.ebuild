@@ -14,26 +14,23 @@ SRC_URI="https://github.com/${PN}/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 LICENSE="Apache-2.0 BSD BSD-2 CC-BY-SA-4.0 ISC MIT MPL-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64"
-IUSE="btrfs +device-mapper iptables nftables selinux systemd"
-
-REQUIRED_USE="|| ( iptables nftables )"
+IUSE="btrfs +device-mapper selinux systemd"
 
 COMMON_DEPEND="
 	app-crypt/gpgme:=
 	app-containers/conmon
-	app-containers/crun
+	app-containers/runc
 	dev-libs/glib:=
 	dev-libs/libassuan:=
 	dev-libs/libgpg-error:=
 	net-firewall/conntrack-tools
+	net-firewall/iptables
 	app-containers/cni-plugins
 	net-misc/socat
 	sys-apps/iproute2
 	sys-libs/libseccomp:=
 	btrfs? ( sys-fs/btrfs-progs )
 	device-mapper? ( sys-fs/lvm2:= )
-	iptables? ( net-firewall/iptables )
-	nftables? ( app-containers/cni-plugins-nftables )
 	selinux? ( sys-libs/libselinux:= )
 	systemd? ( sys-apps/systemd:= )"
 DEPEND="
