@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{9..11} )
 
 inherit flag-o-matic gnome.org gnome2-utils meson python-any-r1 systemd xdg
 
@@ -18,11 +18,10 @@ RESTRICT="!test? ( test )"
 
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 
-# tracker-2.1.7 currently always depends on ICU (theoretically could be libunistring instead);
-# so choose ICU over enca always here for the time being (ICU is preferred)
+# tracker-2.1.7 currently always depends on ICU (theoretically could be libunistring instead); so choose ICU over enca always here for the time being (ICU is preferred)
 RDEPEND="
 	>=dev-libs/glib-2.70:2
-	>=app-misc/tracker-3.6_rc:3
+	>=app-misc/tracker-3.5.0:3
 
 	>=sys-apps/dbus-1.3.1
 	xmp? ( >=media-libs/exempi-2.1.0:= )
@@ -96,8 +95,7 @@ pkg_setup() {
 src_prepare() {
 	default
 
-	# Avoid gst-inspect calls that may trigger sandbox;
-	# instead assume the detection will succeed and add the needed test deps for that
+	# Avoid gst-inspect calls that may trigger sandbox; instead assume the detection will succeed and add the needed test deps for that
 	if use gstreamer; then
 		sed -i -e 's:detect-h264-codec.sh:/bin/true:' tests/functional-tests/meson.build || die
 	else
@@ -151,8 +149,7 @@ src_configure() {
 		$(meson_feature xps)
 
 		-Dbattery_detection=$(usex upower upower none)
-		# enca is a possibility, but right now we have tracker core always dep on icu and icu is preferred over enca
-		-Dcharset_detection=icu
+		-Dcharset_detection=icu # enca is a possibility, but right now we have tracker core always dep on icu and icu is preferred over enca
 		-Dgeneric_media_extractor=${media_extractor}
 		# gupnp gstreamer_backend is in bad state, upstream suggests to use discoverer, which is the default
 		-Dsystemd_user_services_dir="$(systemd_get_userunitdir)"
@@ -162,7 +159,6 @@ src_configure() {
 
 src_test() {
 	export GSETTINGS_BACKEND="dconf" # Tests require dconf and explicitly check for it (env_reset set it to "memory")
-	export PYTHONPATH="${EROOT}"/usr/$(get_libdir)/tracker-3.0
 	dbus-run-session meson test -C "${BUILD_DIR}" || die 'tests failed'
 }
 
