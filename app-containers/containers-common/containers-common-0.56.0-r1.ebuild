@@ -23,8 +23,6 @@ RDEPEND="
 	app-containers/containers-storage
 	app-containers/containers-shortnames
 	!<app-containers/podman-4.5.0-r1
-	net-firewall/nftables
-	net-firewall/iptables[nftables]
 	|| ( app-containers/crun app-containers/runc )
 	|| (
 		( >=app-containers/netavark-1.6.0 >=app-containers/aardvark-dns-1.6.0 )
