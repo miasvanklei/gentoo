@@ -24,10 +24,6 @@ RDEPEND="${DEPEND}"
 
 CONFIG_CHECK="~KSM"
 
-PATCHES=(
-	"${FILESDIR}"/${PN}-6.4.1-systemd-automagic.patch
-)
-
 src_configure() {
 	local emesonargs=(
 		$(meson_feature systemd)

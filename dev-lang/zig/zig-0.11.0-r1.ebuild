@@ -58,6 +58,10 @@ QA_FLAGS_IGNORED="usr/.*/zig/${PV}/bin/zig"
 # Zig uses self-hosted compiler only
 CHECKREQS_MEMORY="4G"
 
+PATCHES=(
+	"${FILESDIR}/zig-0.11.0-first-try-getconf.patch"
+)
+
 llvm_check_deps() {
 	has_version "sys-devel/clang:${LLVM_SLOT}"
 }
@@ -108,6 +112,10 @@ pkg_setup() {
 }
 
 src_configure() {
+	# Useful for debugging and a little bit more deterministic.
+	export ZIG_LOCAL_CACHE_DIR="${T}/zig-local-cache"
+	export ZIG_GLOBAL_CACHE_DIR="${T}/zig-global-cache"
+
 	local mycmakeargs=(
 		-DZIG_USE_CCACHE=OFF
 		-DZIG_SHARED_LLVM=ON
@@ -123,6 +131,8 @@ src_configure() {
 
 src_compile() {
 	cmake_src_compile
+
+	"${BUILD_DIR}/stage3/bin/zig" env || die "Zig compilation failed"
 
 	if use doc; then
 		cd "${BUILD_DIR}" || die

@@ -4,24 +4,23 @@
 EAPI=8
 
 LUA_COMPAT=( lua5-1 )
-LUA_REQ_USE="deprecated"
 
-inherit flag-o-matic lua-single
+inherit autotools lua-single
 
 DESCRIPTION="A collection of different plugins for Geany"
 HOMEPAGE="https://plugins.geany.org"
-SRC_URI="https://plugins.geany.org/${PN}/${P}.tar.gz"
+SRC_URI="https://plugins.geany.org/${PN}/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 arm ppc ppc64 ~riscv ~sparc x86"
+KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~riscv ~sparc ~x86"
 
-IUSE="ctags debugger enchant git gpg gtkspell lua markdown nls pretty-printer scope soup workbench"
+IUSE="ctags debugger enchant git gpg gtkspell lua markdown nls pretty-printer scope webhelper workbench"
 REQUIRED_USE="lua? ( ${LUA_REQUIRED_USE} )"
 
 DEPEND="
 	dev-libs/glib:2
-	>=dev-util/geany-1.37[-gtk2(-)]
+	>=dev-util/geany-2.0
 	x11-libs/gtk+:3
 	ctags? ( dev-util/ctags )
 	debugger? ( x11-libs/vte:2.91 )
@@ -32,11 +31,11 @@ DEPEND="
 	lua? ( ${LUA_DEPS} )
 	markdown? (
 		app-text/discount:=
-		net-libs/webkit-gtk:4
+		net-libs/webkit-gtk:4.1
 		)
 	pretty-printer? ( dev-libs/libxml2:2 )
 	scope? ( x11-libs/vte:2.91 )
-	soup? ( net-libs/libsoup:2.4 )
+	webhelper? ( net-libs/webkit-gtk:4.1 )
 	workbench? ( dev-libs/libgit2:= )
 "
 RDEPEND="${DEPEND}
@@ -46,17 +45,18 @@ BDEPEND="virtual/pkgconfig
 	nls? ( sys-devel/gettext )
 "
 
-PATCHES=( "${FILESDIR}/${P}-libgit2-1.4.patch" )
+PATCHES=( "${FILESDIR}/${P}-webkit2gtk-4.1.patch" )
 
 pkg_setup() {
 	use lua && lua-single_pkg_setup
 }
 
-src_configure() {
-	# -DLUA_COMPAT_OPENLIB=1 is required to enable the
-	# deprecated (in 5.1) luaL_openlib API (#878529)
-	use lua_single_target_lua5-1 && append-cppflags -DLUA_COMPAT_OPENLIB=1
+src_prepare() {
+	default
+	eautoreconf
+}
 
+src_configure() {
 	local myeconfargs=(
 		--disable-cppcheck
 		--disable-extra-c-warnings
@@ -95,23 +95,18 @@ src_configure() {
 		$(use_enable ctags geanyctags)
 		$(use_enable lua geanylua)
 		$(use_enable gpg geanypg)
-		$(use_enable soup geniuspaste)
 		$(use_enable git gitchangebar)
 		$(use_enable markdown) --disable-peg-markdown # using app-text/discount instead
 		$(use_enable pretty-printer)
 		$(use_enable scope)
 		$(use_enable enchant spellcheck)
-		# Having updatechecker… when you’re using a package manager?
-		$(use_enable soup updatechecker)
+		$(use_enable webhelper)
 		$(use_enable workbench)
 		# GeanyGenDoc requires ctpl which isn’t yet in portage
 		--disable-geanygendoc
-		# Require obsolete and vulnerable webkit-gtk versions
-		--disable-devhelp
-		--disable-webhelper
-		# GTK 2 only
-		--disable-geanypy
-		--disable-multiterm
+		# Require libsoup-2.4 which conflicts with webkit2gtk-4.1
+		--disable-geniuspaste
+		--disable-updatechecker
 	)
 
 	econf "${myeconfargs[@]}"

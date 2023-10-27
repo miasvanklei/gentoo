@@ -11,7 +11,7 @@ SRC_URI="https://github.com/xdp-project/${PN}/archive/refs/tags/v${PV}.tar.gz ->
 
 LICENSE="GPL-2 LGPL-2.1 BSD-2"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~riscv ~x86"
 IUSE="+tools"
 
 DEPEND="
@@ -33,14 +33,12 @@ QA_PREBUILT="usr/lib/bpf/*.o"
 MAKEOPTS+=" V=1"
 
 PATCHES=(
-	"${FILESDIR}"/1.3.1-disable-stack-protector.patch
-	"${FILESDIR}"/1.3.1-fix-btf__type_cnt-detection.patch
-	"${FILESDIR}"/1.3.1-no-Werror.patch
-	"${FILESDIR}"/1.3.1-xdpdump-clang.patch
-	"${FILESDIR}"/1.3.1-musl.patch
+	"${FILESDIR}"/1.4.1-no-Werror.patch
 )
 
 src_configure() {
+	export CC="$(tc-getCC)"
+	export LD="$(tc-getLD)"
 	export PREFIX="${EPREFIX}/usr"
 	export LIBDIR="${PREFIX}/$(get_libdir)"
 	export BPF_OBJECT_DIR="${PREFIX}/lib/bpf"
