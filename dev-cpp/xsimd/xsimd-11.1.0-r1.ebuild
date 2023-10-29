@@ -25,7 +25,10 @@ BDEPEND="
 	)
 	test? ( dev-cpp/doctest )"
 
-PATCHES=( "${FILESDIR}"/${P}-c++17.patch )
+PATCHES=(
+	"${FILESDIR}"/${P}-c++17.patch
+	"${FILESDIR}"/${PN}-11.1.0-no-march.patch
+)
 
 src_prepare() {
 	sed -i \
