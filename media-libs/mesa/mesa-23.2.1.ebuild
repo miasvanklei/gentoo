@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..11} )
 
 inherit llvm meson-multilib python-any-r1 linux-info
 
@@ -125,7 +125,7 @@ RDEPEND="${RDEPEND}
 # How to use it:
 # 1. Specify LLVM_MAX_SLOT (inclusive), e.g. 16.
 # 2. Specify LLVM_MIN_SLOT (inclusive), e.g. 15.
-LLVM_MAX_SLOT="17"
+LLVM_MAX_SLOT="16"
 LLVM_MIN_SLOT="15"
 LLVM_USE_DEPS="llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}"
 PER_SLOT_DEPSTR="
@@ -177,11 +177,13 @@ BDEPEND="
 	sys-devel/flex
 	virtual/pkgconfig
 	$(python_gen_any_dep ">=dev-python/mako-0.8.0[\${PYTHON_USEDEP}]")
-	vulkan? (
-		dev-util/glslang
-		video_cards_intel? (
-			amd64? (
-				$(python_gen_any_dep "dev-python/ply[\${PYTHON_USEDEP}]")
+	llvm? (
+		vulkan? (
+			dev-util/glslang
+			video_cards_intel? (
+				amd64? (
+					$(python_gen_any_dep "dev-python/ply[\${PYTHON_USEDEP}]")
+				)
 			)
 		)
 	)
@@ -210,10 +212,7 @@ llvm_check_deps() {
 	if use opencl || { use vulkan && use video_cards_intel && use amd64; }; then
 		has_version "dev-util/spirv-llvm-translator:${LLVM_SLOT}" || return 1
 	fi
-
-	if use llvm; then
-		has_version "sys-devel/llvm:${LLVM_SLOT}[${LLVM_USE_DEPS}]"
-	fi
+	has_version "sys-devel/llvm:${LLVM_SLOT}[${LLVM_USE_DEPS}]"
 }
 
 pkg_pretend() {
