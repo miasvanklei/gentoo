@@ -117,7 +117,7 @@ RDEPEND="${RDEPEND}
 # How to use it:
 # 1. Specify LLVM_MAX_SLOT (inclusive), e.g. 16.
 # 2. Specify LLVM_MIN_SLOT (inclusive), e.g. 15.
-LLVM_MAX_SLOT="16"
+LLVM_MAX_SLOT="17"
 LLVM_MIN_SLOT="15"
 LLVM_USE_DEPS="llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}"
 PER_SLOT_DEPSTR="
@@ -190,7 +190,10 @@ llvm_check_deps() {
 		has_version "sys-devel/clang:${LLVM_SLOT}[${LLVM_USE_DEPS}]" || return 1
 		has_version "dev-util/spirv-llvm-translator:${LLVM_SLOT}" || return 1
 	fi
-	has_version "sys-devel/llvm:${LLVM_SLOT}[${LLVM_USE_DEPS}]"
+
+	if use llvm; then
+		has_version "sys-devel/llvm:${LLVM_SLOT}[${LLVM_USE_DEPS}]"
+	fi
 }
 
 pkg_pretend() {
