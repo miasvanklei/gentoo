@@ -224,7 +224,7 @@ dotnet-pkg-base_get-runtime() {
 dotnet-pkg-base_setup() {
 	local dotnet_compat_impl
 	local dotnet_compat_impl_path
-	for dotnet_compat_impl in dotnet{,-bin}-${DOTNET_PKG_COMPAT} ; do
+	for dotnet_compat_impl in dotnet{,-bin} ; do
 		dotnet_compat_impl_path="$(type -P "${dotnet_compat_impl}")"
 
 		if [[ -n ${dotnet_compat_impl_path} ]] ; then
