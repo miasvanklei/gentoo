@@ -3,7 +3,7 @@
 
 EAPI=8
 
-DOTNET_PKG_COMPAT=7.0
+DOTNET_PKG_COMPAT=8.0
 NUGETS="
 microsoft.dotnet.platformabstractions@3.1.6
 system.commandline@2.0.0-beta4.22272.1
