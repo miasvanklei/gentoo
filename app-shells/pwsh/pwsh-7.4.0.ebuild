@@ -272,10 +272,6 @@ RESTRICT="test"  # TODO: "LibraryImports.g.cs" not found.
 RDEPEND="
 	>=dev-libs/libpsl-native-7.4.0:=
 	sys-libs/pam:0/0
-	|| (
-		dev-libs/openssl-compat:1.0.0
-		=dev-libs/openssl-1.0*:0/0
-	)
 "
 DEPEND="
 	${RDEPEND}
@@ -359,6 +355,7 @@ src_install() {
 
 	# Remove "libpsl-native.so" provided by "microsoft.powershell.native".
 	rm "${ED}/${dest_root}/libpsl-native.so" || die
+	rm "${ED}/${dest_root}/libSystem.IO.Ports.Native.so" || die
 	dosym -r "/usr/$(get_libdir)/libpsl-native.so" "${dest_root}/libpsl-native.so"
 
 	newicon assets/ps_black_128.svg "powershell-${SLOT}.svg"
