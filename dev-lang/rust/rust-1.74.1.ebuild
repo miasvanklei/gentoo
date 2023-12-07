@@ -168,7 +168,7 @@ PATCHES=(
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
 	"${FILESDIR}"/1.66.0-do-not-install-libunwind-source.patch
 	"${FILESDIR}"/1.71.0-aarch64-static-pie.patch
-	"${FILESDIR}"/1.73.0-remove-crt-and-musl_root-from-musl-targets.patch
+	"${FILESDIR}"/1.74.0-remove-crt-and-musl_root-from-musl-targets.patch
 )
 
 S="${WORKDIR}/${MY_P}-src"
