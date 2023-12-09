@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( pypy3 python3_{10..12} )
 PYTHON_REQ_USE='sqlite?,threads(+)'
 
 inherit bash-completion-r1 distutils-r1 multiprocessing optfeature verify-sig
@@ -17,6 +17,7 @@ HOMEPAGE="
 "
 SRC_URI="
 	https://media.djangoproject.com/releases/$(ver_cut 1-2)/${P^}.tar.gz
+	https://dev.gentoo.org/~mgorny/dist/python/django-4.2.8-pypy3.patch.xz
 	verify-sig? ( https://media.djangoproject.com/pgp/${P^}.checksum.txt )
 "
 S="${WORKDIR}/${P^}"
@@ -32,20 +33,21 @@ IUSE="doc sqlite test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
-	>=dev-python/asgiref-3.7.0[${PYTHON_USEDEP}]
+	<dev-python/asgiref-4[${PYTHON_USEDEP}]
+	>=dev-python/asgiref-3.6.0[${PYTHON_USEDEP}]
 	>=dev-python/sqlparse-0.3.1[${PYTHON_USEDEP}]
 "
 BDEPEND="
 	test? (
 		$(python_gen_impl_dep sqlite)
 		${RDEPEND}
-		>=dev-python/docutils-0.19[${PYTHON_USEDEP}]
-		>=dev-python/jinja-2.11.0[${PYTHON_USEDEP}]
+		dev-python/docutils[${PYTHON_USEDEP}]
+		dev-python/jinja[${PYTHON_USEDEP}]
 		dev-python/numpy[${PYTHON_USEDEP}]
 		dev-python/pillow[webp,${PYTHON_USEDEP}]
 		dev-python/pyyaml[${PYTHON_USEDEP}]
-		>=dev-python/selenium-4.8.0[${PYTHON_USEDEP}]
-		>=dev-python/tblib-1.5.0[${PYTHON_USEDEP}]
+		dev-python/selenium[${PYTHON_USEDEP}]
+		dev-python/tblib[${PYTHON_USEDEP}]
 		sys-devel/gettext
 	)
 	verify-sig? ( >=sec-keys/openpgp-keys-django-20230606 )
@@ -53,6 +55,7 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/django-4.0-bashcomp.patch
+	"${WORKDIR}"/django-4.2.8-pypy3.patch
 )
 
 distutils_enable_sphinx docs --no-autodoc
