@@ -23,7 +23,9 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 
 RDEPEND="
-	dev-python/tomli[${PYTHON_USEDEP}]
+	$(python_gen_cond_dep '
+		dev-python/tomli[${PYTHON_USEDEP}]
+	' 3.10)
 "
 BDEPEND="
 	test? (
@@ -39,6 +41,12 @@ BDEPEND="
 distutils_enable_tests pytest
 
 src_prepare() {
+	local PATCHES=(
+		# sigh, can't people just stop using poetry?!
+		# https://github.com/PyCQA/isort/commit/f7a6b0eea57e87155a367e2490b49b40f83c3944
+		"${FILESDIR}/${P}-poetry.patch"
+	)
+
 	# unbundle tomli
 	sed -i -e 's:from ._vendored ::' isort/settings.py || die
 	rm -r isort/_vendored || die
