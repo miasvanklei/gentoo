@@ -33,6 +33,12 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2023-12-16)
+# This package is completely broken upstream: it installs locales
+# into an incorrect subdirectory:
+# https://github.com/breezy-team/setuptools-gettext/issues/30
+=dev-python/setuptools-gettext-0.1.8
+
 # Michał Górny <mgorny@gentoo.org> (2023-12-15)
 # Superseded by dev-python/pypy3_10-exe{,-bin}.
 # Removal on 2024-01-14.  Bug #920036.
@@ -142,11 +148,6 @@ dev-python/backcall
 # up to Python 3.10.  No revdeps left.
 # Removal on 2023-12-30.  Bug #918899.
 dev-python/frozendict
-
-# Sam James <sam@gentoo.org> (2023-11-29)
-# Breaks dev-python/passlib (bug #918708). This release has also now been
-# yanked from pypi: https://github.com/pyca/bcrypt/issues/677.
-=dev-python/bcrypt-4.1.0
 
 # John Helmert III <ajak@gentoo.org> (2023-11-25)
 # Multiple vulnerabilities, unmaintained upstream and in Gentoo.
