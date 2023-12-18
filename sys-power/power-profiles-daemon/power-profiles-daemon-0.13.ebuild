@@ -2,8 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-PYTHON_COMPAT=( python3_{9..12} )
 
+PYTHON_COMPAT=( python3_{10..12} )
 inherit meson python-single-r1 systemd
 
 DESCRIPTION="Makes power profiles handling available over D-Bus"
