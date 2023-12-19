@@ -10,7 +10,7 @@ SRC_URI="https://github.com/OpenPrinting/libcupsfilters/releases/download/${PV}/
 LICENSE="Apache-2.0"
 SLOT="0"
 IUSE="dbus exif jpeg pdf +poppler +postscript png test tiff"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~loong"
 
 RESTRICT="!test? ( test )"
 
@@ -45,7 +45,7 @@ src_configure() {
 		$(use_enable exif)
 		$(use_enable dbus)
 		$(use_enable poppler)
-		$(use_enable postscript)
+		$(use_enable postscript ghostscript)
 		$(use_enable pdf mutool)
 		$(use_with jpeg)
 		$(use_with png)
