@@ -278,40 +278,43 @@ src_prepare() {
 }
 
 src_install() {
-	! use deduplicate && LINUX_FIRMWARE_DEDUPE_ARG="--ignore-duplicates"
-	./copy-firmware.sh -v "${LINUX_FIRMWARE_DEDUPE_ARG}" "${ED}/lib/firmware" || die
+	if use savedconfig && [[ -s "${S}/${PN}.conf" ]]; then
+		mkdir -p "${ED}/lib/firmware" || die
+		local files_to_keep="${T}/files_to_keep.lst"
+		grep -v '^#' "${S}/${PN}.conf" 2>/dev/null > "${files_to_keep}" || die
+		[[ -s "${files_to_keep}" ]] || die "grep failed, empty config file?"
 
-	pushd "${ED}/lib/firmware" &>/dev/null || die
+		einfo "Applying USE=savedconfig; Removing all files not listed in config ..."
+		find ! -type d -printf "%P\n" \
+			| grep -Fvx -f "${files_to_keep}" \
+			| xargs -d '\n' --no-run-if-empty cp -v --parents -t "${ED}/lib/firmware"
 
-	# especially use !redistributable will cause some broken symlinks
-	einfo "Removing broken symlinks ..."
-	find * -xtype l -print -delete || die
-
-	if use savedconfig; then
-		if [[ -s "${S}/${PN}.conf" ]]; then
-			local files_to_keep="${T}/files_to_keep.lst"
-			grep -v '^#' "${S}/${PN}.conf" 2>/dev/null > "${files_to_keep}" || die
-			[[ -s "${files_to_keep}" ]] || die "grep failed, empty config file?"
-
-			einfo "Applying USE=savedconfig; Removing all files not listed in config ..."
-			find ! -type d -printf "%P\n" \
-				| grep -Fvx -f "${files_to_keep}" \
-				| xargs -d '\n' --no-run-if-empty rm -v
-
-			if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
-				die "Find failed to print installed files"
-			elif [[ ${PIPESTATUS[1]} -eq 2 ]]; then
-				# grep returns exit status 1 if no lines were selected
-				# which is the case when we want to keep all files
-				die "Grep failed to select files to keep"
-			elif [[ ${PIPESTATUS[2]} -ne 0 ]]; then
-				die "Failed to remove files not listed in config"
-			fi
+		if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
+			die "Find failed to print installed files"
+		elif [[ ${PIPESTATUS[1]} -eq 2 ]]; then
+			# grep returns exit status 1 if no lines were selected
+			# which is the case when we want to keep all files
+			die "Grep failed to select files to keep"
+		elif [[ ${PIPESTATUS[2]} -ne 0 ]]; then
+			die "Failed to remove files not listed in config"
 		fi
+	else
+		! use deduplicate && LINUX_FIRMWARE_DEDUPE_ARG="--ignore-duplicates"
+		./copy-firmware.sh -v "${LINUX_FIRMWARE_DEDUPE_ARG}" "${ED}/lib/firmware" || die
+
+		pushd "${ED}/lib/firmware" &>/dev/null || die
+
+		# especially use !redistributable will cause some broken symlinks
+		einfo "Removing broken symlinks ..."
+		find * -xtype l -print -delete || die
+
+		# remove empty directories, bug #396073
+		find -type d -empty -delete || die
+
+		popd &>/dev/null
 	fi
 
-	# remove empty directories, bug #396073
-	find -type d -empty -delete || die
+	pushd "${ED}/lib/firmware" &>/dev/null || die
 
 	# sanity check
 	if ! ( shopt -s failglob; : * ) 2>/dev/null; then

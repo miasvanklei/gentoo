@@ -1,7 +1,7 @@
 # Copyright 1999-2023 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=8
+EAPI=7
 inherit linux-info mount-boot savedconfig multiprocessing
 
 # In case this is a real snapshot, fill in commit below.
@@ -19,7 +19,7 @@ else
 		SRC_URI="https://mirrors.edge.kernel.org/pub/linux/kernel/firmware/${P}.tar.xz"
 	fi
 
-	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ia64 ~m68k ~mips ~ppc ~riscv ~s390 ~sparc ~x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~riscv ~s390 ~sparc ~x86"
 fi
 
 DESCRIPTION="Linux firmware files"
@@ -29,10 +29,9 @@ LICENSE="GPL-2 GPL-2+ GPL-3 BSD MIT || ( MPL-1.1 GPL-2 )
 	redistributable? ( linux-fw-redistributable BSD-2 BSD BSD-4 ISC MIT )
 	unknown-license? ( all-rights-reserved )"
 SLOT="0"
-IUSE="compress-xz compress-zstd deduplicate initramfs +redistributable savedconfig unknown-license"
+IUSE="compress-xz compress-zstd initramfs +redistributable savedconfig unknown-license"
 REQUIRED_USE="initramfs? ( redistributable )
-	?? ( compress-xz compress-zstd )
-	savedconfig? ( !deduplicate )"
+	?? ( compress-xz compress-zstd )"
 
 RESTRICT="binchecks strip test
 	unknown-license? ( bindist )"
@@ -40,7 +39,7 @@ RESTRICT="binchecks strip test
 BDEPEND="initramfs? ( app-arch/cpio )
 	compress-xz? ( app-arch/xz-utils )
 	compress-zstd? ( app-arch/zstd )
-	deduplicate? ( app-misc/rdfind )"
+	app-misc/rdfind"
 
 #add anything else that collides to this
 RDEPEND="!savedconfig? (
@@ -64,7 +63,6 @@ RDEPEND="!savedconfig? (
 	)"
 
 QA_PREBUILT="*"
-PATCHES=( "${FILESDIR}/${PN}-remove-rdfind-dep-and-use.patch" )
 
 pkg_setup() {
 	if use compress-xz || use compress-zstd ; then
@@ -100,8 +98,6 @@ src_unpack() {
 }
 
 src_prepare() {
-
-	use deduplicate && export LINUX_FIRMWARE_DO_DEDUPE=1
 	default
 
 	find . -type f -not -perm 0644 -print0 \
@@ -280,43 +276,39 @@ src_prepare() {
 }
 
 src_install() {
-	if use savedconfig && [[ -s "${S}/${PN}.conf" ]]; then
-		mkdir -p "${ED}/lib/firmware" || die
-		local files_to_keep="${T}/files_to_keep.lst"
-		grep -v '^#' "${S}/${PN}.conf" 2>/dev/null > "${files_to_keep}" || die
-		[[ -s "${files_to_keep}" ]] || die "grep failed, empty config file?"
-
-		einfo "Applying USE=savedconfig; Removing all files not listed in config ..."
-		find ! -type d -printf "%P\n" \
-			| grep -Fx -f "${files_to_keep}" \
-			| xargs -d '\n' --no-run-if-empty cp -v --parents -t "${ED}/lib/firmware"
-
-		if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
-			die "Find failed to print installed files"
-		elif [[ ${PIPESTATUS[1]} -eq 2 ]]; then
-			# grep returns exit status 1 if no lines were selected
-			# which is the case when we want to keep all files
-			die "Grep failed to select files to keep"
-		elif [[ ${PIPESTATUS[2]} -ne 0 ]]; then
-			die "Failed to remove files not listed in config"
-		fi
-	else
-		./copy-firmware.sh -v "${ED}/lib/firmware" || die
-
-		pushd "${ED}/lib/firmware" &>/dev/null || die
-
-		# especially use !redistributable will cause some broken symlinks
-		einfo "Removing broken symlinks ..."
-		find * -xtype l -print -delete || die
-
-
-		# remove empty directories, bug #396073
-		find -type d -empty -delete || die
-
-		popd
-	fi
+	./copy-firmware.sh -v "${ED}/lib/firmware" || die
 
 	pushd "${ED}/lib/firmware" &>/dev/null || die
+
+	# especially use !redistributable will cause some broken symlinks
+	einfo "Removing broken symlinks ..."
+	find * -xtype l -print -delete || die
+
+	if use savedconfig; then
+		if [[ -s "${S}/${PN}.conf" ]]; then
+			local files_to_keep="${T}/files_to_keep.lst"
+			grep -v '^#' "${S}/${PN}.conf" 2>/dev/null > "${files_to_keep}" || die
+			[[ -s "${files_to_keep}" ]] || die "grep failed, empty config file?"
+
+			einfo "Applying USE=savedconfig; Removing all files not listed in config ..."
+			find ! -type d -printf "%P\n" \
+				| grep -Fvx -f "${files_to_keep}" \
+				| xargs -d '\n' --no-run-if-empty rm -v
+
+			if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
+				die "Find failed to print installed files"
+			elif [[ ${PIPESTATUS[1]} -eq 2 ]]; then
+				# grep returns exit status 1 if no lines were selected
+				# which is the case when we want to keep all files
+				die "Grep failed to select files to keep"
+			elif [[ ${PIPESTATUS[2]} -ne 0 ]]; then
+				die "Failed to remove files not listed in config"
+			fi
+		fi
+	fi
+
+	# remove empty directories, bug #396073
+	find -type d -empty -delete || die
 
 	# sanity check
 	if ! ( shopt -s failglob; : * ) 2>/dev/null; then
