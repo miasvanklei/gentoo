@@ -116,6 +116,7 @@ src_prepare() {
 	eapply     "${FILESDIR}"/exim-4.69-r1.27021.patch
 	eapply     "${FILESDIR}"/exim-4.97-localscan_dlopen.patch
 	eapply     "${FILESDIR}"/exim-4.97-no-exim_id_update.patch
+	eapply -p2 "${FILESDIR}"/exim-4.97-CVE-2023-51766.patch # 3063
 
 	# oddity, they disable berkdb as hack, and then throw an error when
 	# berkdb isn't enabled
@@ -620,10 +621,6 @@ pkg_postinst() {
 		einfo "DCC support is experimental, you can find some limited"
 		einfo "documentation at the bottom of this prerelease message:"
 		einfo "  http://article.gmane.org/gmane.mail.exim.devel/3579"
-	fi
-	if use srs; then
-		einfo "SRS support using libsrs_alt was dropped in this"
-		einfo "release of Exim, you are now using the native SRS implementation"
 	fi
 	use dsn && einfo "extra information in fail DSN message is experimental"
 	einfo
