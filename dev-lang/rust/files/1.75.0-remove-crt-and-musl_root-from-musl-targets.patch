@@ -29,19 +29,20 @@
  pub(super) fn pre_mingw_self_contained() -> CrtObjects {
      new(&[
          (LinkOutputKind::DynamicNoPicExe, &["crt2.o", "rsbegin.o"]),
---- a/compiler/rustc_target/src/spec/linux_musl_base.rs	2020-12-31 19:07:19.216270236 +0100
-+++ b/compiler/rustc_target/src/spec/linux_musl_base.rs	2020-12-31 19:07:53.639438587 +0100
+--- a/compiler/rustc_target/src/spec/base/linux_musl.rs	2020-12-31 19:07:19.216270236 +0100
++++ b/compiler/rustc_target/src/spec/base/linux_musl.rs	2020-12-31 19:07:53.639438587 +0100
 @@ -1,13 +1,9 @@
--use crate::spec::crt_objects::{self, LinkSelfContainedDefault};
- use crate::spec::TargetOptions;
+-use crate::spec::crt_objects;
+-use crate::spec::{base, LinkSelfContainedDefault, TargetOptions};
++use crate::spec::{base, TargetOptions};
  
  pub fn opts() -> TargetOptions {
-     let mut base = super::linux_base::opts();
+     let mut base = base::linux::opts();
  
      base.env = "musl".into();
 -    base.pre_link_objects_self_contained = crt_objects::pre_musl_self_contained();
 -    base.post_link_objects_self_contained = crt_objects::post_musl_self_contained();
--    base.link_self_contained = LinkSelfContainedDefault::Musl;
+-    base.link_self_contained = LinkSelfContainedDefault::InferredForMusl;
  
      // These targets statically link libc by default
      base.crt_static_default = false;
@@ -63,63 +64,41 @@
  # The root location of the `wasm32-wasi` sysroot. Only used for the
  # `wasm32-wasi` target. If you are building wasm32-wasi target, make sure to
  # create a `[target.wasm32-wasi]` section and move this field there.
---- a/src/bootstrap/cc_detect.rs	2020-08-27 22:57:54.722286935 +0200
-+++ b/src/bootstrap/cc_detect.rs	2020-08-27 22:59:36.731230131 +0200
-@@ -110,7 +110,7 @@
-     if let Some(cc) = config.and_then(|c| c.cc.as_ref()) {
-         cfg.compiler(cc);
-     } else {
--        set_compiler(&mut cfg, Language::C, target, config, build);
-+        set_compiler(&mut cfg, Language::C, target, config);
-     }
- 
-     let compiler = cfg.get_compiler();
-@@ -131,7 +131,7 @@
-         cfg.compiler(cxx);
-         true
-     } else if build.hosts.contains(&target) || build.build == target {
--        set_compiler(&mut cfg, Language::CPlusPlus, target, config, build);
-+        set_compiler(&mut cfg, Language::CPlusPlus, target, config);
-         true
-     } else {
-         // Use an auto-detected compiler (or one configured via `CXX_target_triple` env vars).
-@@ -156,7 +156,6 @@
-     compiler: Language,
-     target: Interned<String>,
-     config: Option<&Target>,
--    build: &Build,
- ) {
-     match &*target {
-         // When compiling for android we may have the NDK configured in the
-@@ -198,26 +197,6 @@
+--- a/src/bootstrap/src/utils/cc_detect.rs	2020-08-27 22:57:54.722286935 +0200
++++ b/src/bootstrap/src/utils/cc_detect.rs	2020-08-27 22:59:36.731230131 +0200
+@@ -201,30 +201,6 @@
              }
          }
  
--        "mips-unknown-linux-musl" => {
+-        "mips-unknown-linux-musl" if compiler == Language::C => {
 -            if cfg.get_compiler().path().to_str() == Some("gcc") {
--                cfg.compiler("mips-linux-musl-gcc");
+-                Some(PathBuf::from("mips-linux-musl-gcc"))
+-            } else {
+-                None
 -            }
 -        }
--        "mipsel-unknown-linux-musl" => {
+-        "mipsel-unknown-linux-musl" if compiler == Language::C => {
 -            if cfg.get_compiler().path().to_str() == Some("gcc") {
--                cfg.compiler("mipsel-linux-musl-gcc");
+-                Some(PathBuf::from("mipsel-linux-musl-gcc"))
+-            } else {
+-                None
 -            }
 -        }
 -
--        t if t.contains("musl") => {
+-        t if t.contains("musl") && compiler == Language::C => {
 -            if let Some(root) = build.musl_root(target) {
 -                let guess = root.join("bin/musl-gcc");
--                if guess.exists() {
--                    cfg.compiler(guess);
--                }
+-                if guess.exists() { Some(guess) } else { None }
+-            } else {
+-                None
 -            }
 -        }
 -
-         _ => {}
+         _ => None,
      }
  }
---- a/src/bootstrap/compile.rs	2020-08-27 22:57:42.818176881 +0200
-+++ b/src/bootstrap/compile.rs	2020-08-27 23:00:19.487625539 +0200
+--- a/src/bootstrap/src/core/build_steps/compile.rs	2020-08-27 22:57:42.818176881 +0200
++++ b/src/bootstrap/src/core/build_steps/compile.rs	2020-08-27 23:00:19.487625539 +0200
 @@ -255,40 +255,7 @@
      t!(fs::create_dir_all(&libdir_self_contained));
      let mut target_deps = vec![];
@@ -178,8 +157,8 @@
          if target.contains("-wasi") {
              if let Some(p) = builder.wasi_root(target) {
                  let root = format!(
---- a/src/bootstrap/config.rs	2020-08-27 22:57:33.209088049 +0200
-+++ b/src/bootstrap/config.rs	2020-08-27 23:01:06.156057160 +0200
+--- a/src/bootstrap/src/core/config/config.rs	2020-08-27 22:57:33.209088049 +0200
++++ b/src/bootstrap/src/core/config/config.rs	2020-08-27 23:01:06.156057160 +0200
 @@ -135,8 +135,6 @@
      pub print_step_timings: bool,
      pub missing_tools: bool,
@@ -234,10 +213,10 @@
  
 --- a/src/bootstrap/configure.py	2020-08-27 22:57:19.567961941 +0200
 +++ b/src/bootstrap/configure.py	2020-08-27 23:01:28.342262372 +0200
-@@ -109,38 +109,6 @@
-   "aarch64-linux-android NDK standalone path")
- v("x86_64-linux-android-ndk", "target.x86_64-linux-android.android-ndk",
-   "x86_64-linux-android NDK standalone path")
+@@ -99,38 +99,6 @@
+ v("llvm-filecheck", None, "set path to LLVM's FileCheck utility")
+ v("python", "build.python", "set path to python")
+ v("android-ndk", "build.android-ndk", "set path to Android NDK")
 -v("musl-root", "target.x86_64-unknown-linux-musl.musl-root",
 -  "MUSL root installation directory (deprecated)")
 -v("musl-root-x86_64", "target.x86_64-unknown-linux-musl.musl-root",
@@ -273,8 +252,8 @@
  v("qemu-armhf-rootfs", "target.arm-unknown-linux-gnueabihf.qemu-rootfs",
    "rootfs in qemu testing, you probably don't want to use this")
  v("qemu-aarch64-rootfs", "target.aarch64-unknown-linux-gnu.qemu-rootfs",
---- a/src/bootstrap/lib.rs	2020-08-27 22:57:09.462868531 +0200
-+++ b/src/bootstrap/lib.rs	2020-08-27 23:01:42.231390843 +0200
+--- a/src/bootstrap/src/lib.rs	2020-08-27 22:57:09.462868531 +0200
++++ b/src/bootstrap/src/lib.rs	2020-08-27 23:01:42.231390843 +0200
 @@ -881,25 +881,6 @@
          }
      }
@@ -301,8 +280,8 @@
      /// Returns the sysroot for the wasi target, if defined
      fn wasi_root(&self, target: Interned<String>) -> Option<&Path> {
          self.config.target_config.get(&target).and_then(|t| t.wasi_root.as_ref()).map(|p| &**p)
---- a/src/bootstrap/sanity.rs	2020-08-27 22:57:00.213783033 +0200
-+++ b/src/bootstrap/sanity.rs	2020-08-27 23:02:21.531754386 +0200
+--- a/src/bootstrap/src/core/sanity.rs	2020-08-27 22:57:00.213783033 +0200
++++ b/src/bootstrap/src/core/sanity.rs	2020-08-27 23:02:21.531754386 +0200
 @@ -11,7 +11,6 @@
  use std::collections::HashMap;
  use std::env;
