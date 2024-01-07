@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..11} )
 inherit bash-completion-r1 gnome2-utils linux-info optfeature
 inherit plocale python-single-r1 systemd xdg-utils
 
@@ -13,7 +13,7 @@ SRC_URI="https://github.com/firewalld/firewalld/releases/download/v${PV}/${P}.ta
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="~amd64 arm arm64 ~loong ~ppc64 ~riscv ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
 IUSE="gui +nftables +iptables test"
 # Tests are too unreliable in sandbox environment
 RESTRICT="!test? ( test ) test"
@@ -53,7 +53,7 @@ BDEPEND="
 # Needs more investigation: https://www.gnu.org/software/autoconf/manual/autoconf-2.67/html_node/autom4te-Invocation.html
 QA_AM_MAINTAINER_MODE=".*--run autom4te --language=autotest.*"
 
-PLOCALES="ar as ast bg bn_IN ca cs da de el en_GB en_US es et eu fa fi fr gl gu hi hr hu ia id it ja ka kn ko lt ml mr nl or pa pl pt pt_BR ru si sk sq sr sr@latin sv ta te tr uk zh_CN zh_TW"
+PLOCALES="ar as ast bg bn_IN ca cs da de el en_GB en_US es et eu fa fi fr gl gu hi hr hu ia id it ja ka kn ko lt ml mr nl or pa pl pt pt_BR ro ru si sk sl sq sr sr@latin sv ta te tr uk zh_CN zh_TW"
 
 pkg_setup() {
 	# See bug #830132 for the huge list
