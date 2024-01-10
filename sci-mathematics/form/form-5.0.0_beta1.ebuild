@@ -1,13 +1,13 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit autotools flag-o-matic toolchain-funcs elisp-common
-
 DESCRIPTION="Symbolic Manipulation System"
 HOMEPAGE="https://www.nikhef.nl/~form/ https://github.com/vermaseren/form/"
-SRC_URI="https://github.com/vermaseren/${PN}/releases/download/v${PV}/${P}.tar.gz
+MY_PV=${PV/_beta/-beta.}
+SRC_URI="https://github.com/vermaseren/${PN}/archive/refs/tags/v${PV/_beta/-beta.}.tar.gz -> ${P}.tar.gz
 	emacs? ( https://dev.gentoo.org/~grozin/form-mode.el.gz )"
 
 LICENSE="GPL-3"
@@ -26,6 +26,8 @@ DEPEND="${RDEPEND}
 	emacs? ( app-editors/emacs:* )"
 
 SITEFILE="64${PN}-gentoo.el"
+PATCHES=( "${FILESDIR}"/5.0.0_beta1-manual.patch )
+S="${WORKDIR}"/${PN}-${MY_PV}
 
 src_prepare() {
 	default
