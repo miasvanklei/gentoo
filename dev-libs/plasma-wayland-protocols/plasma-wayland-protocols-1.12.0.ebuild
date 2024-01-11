@@ -3,8 +3,7 @@
 
 EAPI=8
 
-ECM_NONGUI=true
-inherit ecm kde.org
+inherit cmake flag-o-matic toolchain-funcs kde.org
 
 DESCRIPTION="Plasma Specific Protocols for Wayland"
 HOMEPAGE="https://invent.kde.org/libraries/plasma-wayland-protocols"
@@ -16,3 +15,5 @@ fi
 
 LICENSE="LGPL-2.1"
 SLOT="0"
+
+BDEPEND=">=kde-frameworks/extra-cmake-modules-5.82"
