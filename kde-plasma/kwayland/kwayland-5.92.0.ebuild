@@ -5,6 +5,7 @@ EAPI=8
 
 ECM_TEST="true"
 QTMIN=6.6.0
+KFMIN=5.248
 inherit ecm plasma.kde.org
 
 DESCRIPTION="Qt-style API to interact with the wayland-client API"
