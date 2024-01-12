@@ -286,7 +286,7 @@ src_install() {
 
 		einfo "Applying USE=savedconfig; Removing all files not listed in config ..."
 		find ! -type d -printf "%P\n" \
-			| grep -Fvx -f "${files_to_keep}" \
+			| grep -Fx -f "${files_to_keep}" \
 			| xargs -d '\n' --no-run-if-empty cp -v --parents -t "${ED}/lib/firmware"
 
 		if [[ ${PIPESTATUS[0]} -ne 0 ]]; then
