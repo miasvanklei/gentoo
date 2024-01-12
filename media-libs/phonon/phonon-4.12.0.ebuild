@@ -3,6 +3,7 @@
 
 EAPI=8
 
+KFMIN=5.248
 inherit desktop ecm kde.org
 
 DESCRIPTION="KDE multimedia abstraction library"
@@ -15,7 +16,7 @@ fi
 
 LICENSE="|| ( LGPL-2.1 LGPL-3 ) !pulseaudio? ( || ( GPL-2 GPL-3 ) )"
 SLOT="0"
-IUSE="designer pulseaudio +qt5 qt6 +vlc"
+IUSE="designer gstreamer pulseaudio +qt5 qt6 +vlc"
 REQUIRED_USE="|| ( qt5 qt6 )"
 
 DEPEND="
@@ -42,6 +43,7 @@ BDEPEND="
 "
 PDEPEND="
 	vlc? ( >=media-libs/phonon-vlc-0.12.0[qt5?,qt6?] )
+	gstreamer? ( >=media-libs/phonon-gstreamer-9999 )
 "
 
 src_configure() {
