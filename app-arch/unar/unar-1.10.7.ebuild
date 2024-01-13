@@ -47,7 +47,7 @@ src_compile() {
 		OBJCC="$(tc-getCC)" \
 		CFLAGS="${CFLAGS}" \
 		CXXFLAGS="${CXXFLAGS}" \
-		OBJCFLAGS="${OBJCFLAGS}" \
+		OBJCFLAGS="${CFLAGS}" \
 		LD="$(tc-getCXX)" \
 		LDFLAGS="-Wl,--whole-archive -fexceptions -fgnu-runtime ${LDFLAGS}"
 }
