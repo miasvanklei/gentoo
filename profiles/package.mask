@@ -112,11 +112,6 @@ app-misc/utimer
 sys-block/noflushd
 
 # Michał Górny <mgorny@gentoo.org> (2023-12-31)
-# Buggy code that carries local patches already.  Last release in 2011.
-# Removal on 2024-01-30.  Bug #878629.
-net-proxy/tayga
-
-# Michał Górny <mgorny@gentoo.org> (2023-12-31)
 # Buggy code that carries local patches already.  The ebuild installs
 # junk files.  No upstream activity since 2009.
 # Removal on 2024-01-30.  Bug #874087.
@@ -463,12 +458,6 @@ dev-ruby/http:4
 <sys-kernel/gentoo-kernel-5.10
 <virtual/dist-kernel-5.10
 
-# Hans de Graaff <graaff@gentoo.org> (2023-12-10)
-# Test failures that seem to indicate this package no longer works
-# correctly. Last release 6 years ago. No reverse dependencies.
-# Masked for removal on 2024-01-10.
-dev-ruby/sinatra-partial
-
 # Sam James <sam@gentoo.org> (2023-12-09)
 # ext4 corruption bug: https://lore.kernel.org/stable/20231205122122.dfhhoaswsfscuhc3@quack3/ (bug #919675)
 # Please update immediately to the latest versions in each series.
@@ -482,13 +471,6 @@ dev-ruby/sinatra-partial
 =sys-kernel/vanilla-sources-6.1.65
 =sys-kernel/vanilla-kernel-6.1.64
 =sys-kernel/vanilla-kernel-6.1.65
-
-# Hans de Graaff <graaff@gentoo.org> (2023-12-09)
-# Old slots that are not ruby32-compatible. No reverse dependencies
-# left. Please use the newer slot instead. Masked for removal on
-# 2024-01-09.
-dev-ruby/gettext-setup:0
-dev-ruby/fast_gettext:0
 
 # Michał Górny <mgorny@gentoo.org> (2023-12-08)
 # The both remaining virtuals are deprecated in favor of using
@@ -507,7 +489,7 @@ virtual/python-greenlet
 # Eli Schwartz <eschwartz93@gmail.com> (2023-12-02)
 # Has a bug that breaks sys-apps/portage. Upgrade to 1.3.0-r1 instead.
 # Bug #919072.
-=dev-util/meson-1.3.0
+=dev-build/meson-1.3.0
 
 # Michał Górny <mgorny@gentoo.org> (2023-11-30)
 # Last commit in 2020.  It was used exclusively by dev-python/ipython,
