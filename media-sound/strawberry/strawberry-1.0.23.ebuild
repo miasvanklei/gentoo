@@ -19,10 +19,10 @@ fi
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="cdda debug +gstreamer icu ipod moodbar mtp pulseaudio +udisks vlc"
+IUSE="cdda debug +gstreamer icu ipod moodbar mtp qt5 qt6 pulseaudio +udisks vlc"
 
 BDEPEND="
-	dev-qt/linguist-tools:5
+	qt5? ( dev-qt/linguist-tools:5 )
 	sys-devel/gettext
 	virtual/pkgconfig
 "
@@ -30,14 +30,6 @@ COMMON_DEPEND="
 	dev-db/sqlite:=
 	dev-libs/glib:2
 	dev-libs/protobuf:=
-	dev-qt/qtconcurrent:5
-	dev-qt/qtcore:5
-	dev-qt/qtdbus:5
-	dev-qt/qtgui:5
-	dev-qt/qtnetwork:5[ssl]
-	dev-qt/qtsql:5[sqlite]
-	dev-qt/qtwidgets:5
-	dev-qt/qtx11extras:5
 	media-libs/alsa-lib
 	media-libs/taglib
 	x11-libs/libX11
@@ -51,6 +43,19 @@ COMMON_DEPEND="
 	ipod? ( media-libs/libgpod )
 	moodbar? ( sci-libs/fftw:3.0 )
 	mtp? ( media-libs/libmtp )
+	qt5? (
+		dev-qt/qtconcurrent:5
+		dev-qt/qtcore:5
+		dev-qt/qtdbus:5
+		dev-qt/qtgui:5
+		dev-qt/qtnetwork:5[ssl]
+		dev-qt/qtsql:5[sqlite]
+		dev-qt/qtwidgets:5
+		dev-qt/qtx11extras:5
+	)
+	qt6? (
+		dev-qt/qtbase:6[concurrent,dbus,gui,sql,network,sql,widgets]
+	)
 	pulseaudio? ( media-libs/libpulse )
 	vlc? ( media-video/vlc )
 "
@@ -75,6 +80,7 @@ DOCS=( Changelog README.md )
 REQUIRED_USE="
 	cdda? ( gstreamer )
 	|| ( gstreamer vlc )
+	|| ( qt5 qt6 )
 "
 
 src_prepare() {
@@ -102,7 +108,8 @@ src_configure() {
 		-DENABLE_SONGFINGERPRINTING="$(usex gstreamer)"
 		-DENABLE_UDISKS2="$(usex udisks)"
 		-DENABLE_VLC="$(usex vlc)"
-		-DQT_VERSION_MAJOR=5
+		-DBUILD_WITH_QT5="$(usex qt5)"
+		-DBUILD_WITH_QT6="$(usex qt6)"
 	)
 
 	use !debug && append-cppflags -DQT_NO_DEBUG_OUTPUT
