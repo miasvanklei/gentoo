@@ -72,7 +72,7 @@ RDEPEND="${COMMON_DEPEND}
 DEPEND="${COMMON_DEPEND}
 	dev-cpp/gtest
 	dev-libs/boost
-	dev-qt/qttest:5
+	qt5? ( dev-qt/qttest:5 )
 "
 
 DOCS=( Changelog README.md )
