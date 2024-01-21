@@ -119,6 +119,7 @@ src_configure() {
 	# specifically it requires __atomic_is_lock_free which
 	# is not yet implemented by sys-libs/compiler-rt (see
 	# https://reviews.llvm.org/D85044?id=287068), therefore
+	tc-is-clang && append-ldflags "--rtlib=libgcc --unwindlib=libgcc"
 
 	local myconf=(
 		--shared-brotli
