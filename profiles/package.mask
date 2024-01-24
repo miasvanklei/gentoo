@@ -33,6 +33,16 @@
 
 #--- END OF EXAMPLES ---
 
+# Andrew Ammerlaan <andrewammerlaan@gentoo.org> (2024-01-24)
+# The functionality of sys-kernel/installkernel-systemd has been
+# integrated into sys-kernel/installkernel[systemd].
+# Please install sys-kernel/installkernel and remove
+# sys-kernel/installkernel-systemd. See the news item entitled
+# "Merging of installkernel-gentoo and installkernel-systemd" for details.
+#
+# Removal on 2024-02-24
+sys-kernel/installkernel-systemd
+
 # Michał Górny <mgorny@gentoo.org> (2024-01-24)
 # Unmaintained, tests fail, requires discontinued dev-python/bsddb3.
 # No commits since 2022.  No reverse dependencies.
@@ -46,8 +56,8 @@ net-wireless/crda
 
 # Mike Pagano <mpagano@gentoo.org> (2024-01-20)
 # Masked for testing. Modifications to USE=savedconfig
-# to only install files from there instead of 
-# deleting them afterwards. 
+# to only install files from there instead of
+# deleting them afterwards.
 # bug #913049.
 =sys-kernel/linux-firmware-20240115-r1
 
