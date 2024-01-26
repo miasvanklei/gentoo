@@ -551,6 +551,7 @@ arm		default/linux/arm/23.0/armv6j_hf/musl/hardened			exp
 arm		default/linux/arm/23.0/armv6j_hf/musl/hardened/selinux		exp
 arm		default/linux/arm/23.0/armv7a_hf/musl				exp
 arm		default/linux/arm/23.0/armv7a_hf/musl/hardened			exp
+arm		default/linux/arm/23.0/armv7a_hf/musl/hardened/llvm		exp
 arm		default/linux/arm/23.0/armv7a_hf/musl/hardened/selinux		exp
 arm		default/linux/arm/23.0/split-usr/armv6j_hf/musl			exp
 arm		default/linux/arm/23.0/split-usr/armv6j_hf/musl/hardened	exp
@@ -563,7 +564,7 @@ arm64		default/linux/arm64/17.0/musl/llvm				exp
 arm64		default/linux/arm64/17.0/musl/hardened				exp
 arm64		default/linux/arm64/17.0/musl/hardened/selinux			exp
 # arm64		default/linux/arm64/23.0/musl					exp
-# arm64		default/linux/arm64/23.0/musl/llvm				exp
+arm64		default/linux/arm64/23.0/musl/llvm				exp
 # arm64		default/linux/arm64/23.0/musl/hardened				exp
 # arm64		default/linux/arm64/23.0/musl/hardened/selinux			exp
 # arm64		default/linux/arm64/23.0/split-usr/musl				exp
