@@ -17,6 +17,7 @@ SLOT="0"
 KEYWORDS="amd64"
 
 BDEPEND="
+	sys-devel/gcc[objc]
 "
 RDEPEND="
 	app-arch/bzip2:=

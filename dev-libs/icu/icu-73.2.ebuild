@@ -5,7 +5,7 @@ EAPI=8
 
 # Please bump with dev-libs/icu-layoutex
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..11} )
 VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/icu.asc
 inherit autotools flag-o-matic multilib-minimal python-any-r1 toolchain-funcs verify-sig
 

@@ -86,6 +86,11 @@ src_prepare() {
 }
 
 src_configure() {
+	# Bug #910487
+	if tc-ld-is-lld; then
+		tc-ld-force-bfd
+	fi
+
 	local myeconfargs=(
 		--with-btrfs
 		--with-fs

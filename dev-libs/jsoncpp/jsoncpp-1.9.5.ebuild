@@ -4,6 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
+
 inherit meson python-any-r1
 
 DESCRIPTION="C++ JSON reader and writer"

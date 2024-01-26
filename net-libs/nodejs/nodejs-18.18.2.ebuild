@@ -119,6 +119,7 @@ src_configure() {
 	# specifically it requires __atomic_is_lock_free which
 	# is not yet implemented by sys-libs/compiler-rt (see
 	# https://reviews.llvm.org/D85044?id=287068), therefore
+	# we depend on gcc and force using libgcc as the support lib
 	tc-is-clang && append-ldflags "--rtlib=libgcc --unwindlib=libgcc"
 
 	local myconf=(
