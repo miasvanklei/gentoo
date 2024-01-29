@@ -13,9 +13,7 @@ if [[ ${PV} == *9999 ]]; then
 	EGIT_REPO_URI="https://github.com/streambinder/vpnc.git"
 else
 	inherit vcs-snapshot
-	SRC_URI="
-		https://api.github.com/repos/streambinder/vpnc/tarball/fdd0de7 -> ${P}.tar.gz
-		https://dev.gentoo.org/~soap/distfiles/${PN}-0.5.3-docs.tar.xz"
+	SRC_URI="https://api.github.com/repos/streambinder/vpnc/tarball/64468ff -> ${P}.tar.gz"
 	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 fi
 
@@ -43,7 +41,6 @@ src_unpack() {
 		git-r3_src_unpack
 	else
 		vcs-snapshot_src_unpack
-		mv vpnc-0.5.3-docs/src/doc/*.md "${S}"/src/doc/ || die
 	fi
 }
 

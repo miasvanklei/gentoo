@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -6,7 +6,7 @@ EAPI=8
 PYTHON_COMPAT=( python3_{9..12} )
 CMAKE_WARN_UNUSED_CLI=no
 
-inherit python-any-r1 systemd cmake tmpfiles
+inherit python-any-r1 systemd cmake tmpfiles flag-o-matic
 
 if [[ ${PV} == *9999 ]] ; then
 	inherit git-r3
@@ -30,7 +30,7 @@ RESTRICT="mirror test"
 
 LICENSE="AGPL-3"
 SLOT="0"
-IUSE="X acl ceph clientonly +director glusterfs ipv6 lmdb
+IUSE="X acl ceph clientonly cpu_flags_x86_avx +director glusterfs ipv6 lmdb
 	logwatch ndmp readline scsi-crypto split-usr
 	static +storage-daemon systemd tcpd test vim-syntax vmware xattr"
 
@@ -99,6 +99,13 @@ REQUIRED_USE="
 	x86? ( !ceph )
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}-21-cmake-gentoo.patch"
+	"${FILESDIR}/${PN}-22.0.2-werror.patch"
+	"${FILESDIR}/${PN}-21.1.2-no-automagic-ccache.patch"
+	"${FILESDIR}/${PN}-22.1.2-include-algorithm.patch"
+)
+
 pkg_pretend() {
 	local active_removed_backend=""
 	if has_version "<app-backup/bareos-21[director,mysql]"; then
@@ -149,11 +156,6 @@ src_test() {
 }
 
 src_prepare() {
-	# fix gentoo platform support
-	eapply -p1 "${FILESDIR}/${PN}-21-cmake-gentoo.patch"
-	eapply "${FILESDIR}/${PN}-22.0.2-werror.patch"
-	eapply "${FILESDIR}/${PN}-21.1.2-no-automagic-ccache.patch"
-
 	# fix missing DESTDIR in symlink creation
 	sed -i '/bareos-symlink-default-db-backend.cmake/d' "${S}/core/src/cats/CMakeLists.txt"
 
@@ -223,6 +225,8 @@ src_configure() {
 		-Dworkingdir=/var/lib/bareos
 		-Dx=$(usex X)
 		)
+
+		use cpu_flags_x86_avx && append-flags "-DXXH_X86DISPATCH_ALLOW_AVX"
 
 		# disable droplet support for now as it does not build with gcc 10
 		# ... and this is a bundled lib, which should have its own package
