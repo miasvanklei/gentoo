@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,8 +12,8 @@ SRC_URI="https://linuxcontainers.org/downloads/incus/${P}.tar.xz
 
 LICENSE="Apache-2.0 BSD LGPL-3 MIT"
 SLOT="0"
-KEYWORDS="~amd64"
-IUSE="apparmor nls"
+KEYWORDS="~amd64 ~arm64"
+IUSE="apparmor fuidshift nls"
 
 DEPEND="acct-group/incus
 	acct-group/incus-admin
@@ -22,12 +22,13 @@ DEPEND="acct-group/incus
 	dev-db/sqlite:3
 	dev-libs/cowsql
 	dev-libs/lzo
-	>=dev-libs/raft-0.17.1:=[lz4]
+	>=dev-libs/raft-0.18.3:=[lz4]
 	>=dev-util/xdelta-3.0[lzma(+)]
 	net-dns/dnsmasq[dhcp]
 	sys-libs/libcap
 	virtual/udev"
 RDEPEND="${DEPEND}
+	fuidshift? ( !app-containers/lxd )
 	net-firewall/ebtables
 	net-firewall/iptables
 	sys-apps/iproute2
@@ -70,6 +71,7 @@ QA_PREBUILT="/usr/bin/incus
 	/usr/bin/incus-agent
 	/usr/bin/incus-benchmark
 	/usr/bin/incus-migrate
+	/usr/sbin/fuidshift
 	/usr/sbin/lxd-to-incus
 	/usr/sbin/incusd"
 
@@ -81,7 +83,7 @@ RESTRICT="test"
 
 GOPATH="${S}/_dist"
 
-PATCHES=( "${FILESDIR}"/incus-0.3-lxd-5.20-compatibility.patch )
+PATCHES=( "${FILESDIR}"/incus-0.5.1-handle-legacy-lxd-agent-loader.patch )
 
 src_prepare() {
 	export GOPATH="${S}/_dist"
@@ -107,7 +109,7 @@ src_prepare() {
 		-e "s:/usr/lib/qemu/virtfs-proxy-helper:/usr/libexec/virtfs-proxy-helper:g" \
 		internal/server/device/device_utils_disk.go || die "Failed to fix virtfs-proxy-helper path."
 
-	cp "${FILESDIR}"/incus-0.1.service "${T}"/incus.service || die
+	cp "${FILESDIR}"/incus-0.4.service "${T}"/incus.service || die
 	if use apparmor; then
 		sed -i \
 			'/^EnvironmentFile=.*/a ExecStartPre=\/usr\/libexec\/lxc\/lxc-apparmor-load' \
@@ -124,10 +126,13 @@ src_compile() {
 	export GOPATH="${S}/_dist"
 	export CGO_LDFLAGS_ALLOW="-Wl,-z,now"
 
-	# fuidshift should be packaged for incus-lts, making it conflict with lxd.
 	for k in incus-benchmark incus-user incus lxc-to-incus ; do
 		ego install -v -x "${S}/cmd/${k}"
 	done
+
+	if use fuidshift ; then
+		ego install -v -x "${S}/cmd/fuidshift"
+	fi
 
 	ego install -v -x -tags libsqlite3 "${S}"/cmd/incusd
 
@@ -150,21 +155,35 @@ src_install() {
 	export GOPATH="${S}/_dist"
 	local bindir="_dist/bin"
 
-	dosbin ${bindir}/incusd
+	newsbin "${FILESDIR}"/incus-startup-0.4.sh incus-startup
+
+	# Admin tools
+	for l in incusd incus-user ; do
+		dosbin ${bindir}/${l}
+	done
 	dosbin cmd/lxd-to-incus/lxd-to-incus
 
-	for l in incus-agent incus-benchmark incus-migrate incus-user incus lxc-to-incus ; do
-		dobin ${bindir}/${l}
+	# User tools
+	for m in incus-agent incus-benchmark incus-migrate incus lxc-to-incus ; do
+		dobin ${bindir}/${m}
 	done
 
-	dobashcomp scripts/bash/incus
+	# fuidshift, should be moved under admin tools at some point
+	if use fuidshift ; then
+		dosbin ${bindir}/fuidshift
+	fi
 
-	newconfd "${FILESDIR}"/incus-0.1.confd incus
-	newinitd "${FILESDIR}"/incus-0.1.initd incus
+	newconfd "${FILESDIR}"/incus-0.4.confd incus
+	newinitd "${FILESDIR}"/incus-0.4.initd incus
+	newinitd "${FILESDIR}"/incus-user-0.4.initd incus-user
 
 	systemd_dounit "${T}"/incus.service
-	systemd_newunit "${FILESDIR}"/incus-containers-0.1.service incus-containers.service
-	systemd_newunit "${FILESDIR}"/incus-0.1.socket incus.socket
+	systemd_newunit "${FILESDIR}"/incus-0.4.socket incus.socket
+	systemd_newunit "${FILESDIR}"/incus-startup-0.4.service incus-startup.service
+	systemd_newunit "${FILESDIR}"/incus-user-0.4.service incus-user.service
+	systemd_newunit "${FILESDIR}"/incus-user-0.4.socket incus-user.socket
+
+	dobashcomp scripts/bash/incus
 
 	dodoc AUTHORS
 	dodoc -r doc/*
@@ -174,10 +193,8 @@ src_install() {
 pkg_postinst() {
 	elog
 	elog "Please see"
-	elog "  https://linuxcontainers.org/incus/introduction/"
-	elog "  https://linuxcontainers.org/incus/docs/main/tutorial/first_steps/"
-	elog "  https://linuxcontainers.org/incus/docs/main/howto/server_migrate_lxd/"
-	elog "before a Gentoo Wiki page is made."
+	elog "  https://wiki.gentoo.org/wiki/Incus"
+	elog "  https://wiki.gentoo.org/wiki/Incus#Migrating_from_LXD"
 	elog
 	optfeature "virtual machine support" app-emulation/qemu[spice,usbredir,virtfs]
 	optfeature "btrfs storage backend" sys-fs/btrfs-progs
