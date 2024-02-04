@@ -7,12 +7,11 @@ inherit qmake-utils xdg
 
 DESCRIPTION="Cloth patternmaking software"
 HOMEPAGE="https://smart-pattern.com.ua/"
-SRC_URI="https://gitlab.com/smart-pattern/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.bz2
-	https://dev.gentoo.org/~fordfrog/distfiles/valentina-5858.patch.bz2"
+SRC_URI="https://gitlab.com/smart-pattern/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.bz2"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 
 LANGS="cs de el en en es fi fr he id it nl pt-BR ro ru uk zh-CN"
 
@@ -41,12 +40,6 @@ BDEPEND="
 "
 
 S=${WORKDIR}/${PN}-v${PV}
-
-PATCHES=(
-	"${FILESDIR}/5823.patch"
-	"${FILESDIR}/${P}-disable-vcs-version.patch"
-	"${WORKDIR}/valentina-5858.patch"
-)
 
 src_configure() {
 	local locales=""
@@ -118,6 +111,7 @@ src_install() {
 	dodoc AUTHORS.txt ChangeLog.txt README.txt
 
 	doman dist/debian/${PN}.1
+	doman dist/debian/puzzle.1
 	doman dist/debian/tape.1
 
 	cp dist/debian/valentina.sharedmimeinfo dist/debian/${PN}.xml || die
