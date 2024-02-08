@@ -20,14 +20,14 @@ if [[ -z ${PV%%*9999} ]]; then
 else
 	MY_P="${P/_/.}"
 	SRC_URI="mirror://sourceforge/gnuplot/${MY_P}.tar.gz"
-	KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~loong ~ppc ~ppc64 ~riscv ~s390 sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
 fi
 
 S="${WORKDIR}/${MY_P}"
 
 LICENSE="gnuplot"
 SLOT="0"
-IUSE="aqua bitmap cairo doc examples +gd ggi latex libcaca libcerf lua qt5 readline regis wxwidgets X"
+IUSE="aqua bitmap cairo doc examples +gd latex libcaca libcerf lua qt5 readline regis wxwidgets X"
 REQUIRED_USE="
 	doc? ( gd )
 	lua? ( ${LUA_REQUIRED_USE} )"
@@ -37,7 +37,6 @@ RDEPEND="
 		x11-libs/cairo
 		x11-libs/pango )
 	gd? ( >=media-libs/gd-2.0.35-r3:2=[png] )
-	ggi? ( media-libs/libggi )
 	latex? (
 		virtual/latex-base
 		lua? (
@@ -79,7 +78,8 @@ GP_VERSION="${PV%.*}"
 TEXMF="${EPREFIX}/usr/share/texmf-site"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-5.0.6-no-picins.patch
+	"${FILESDIR}"/${PN}-6.1-no-picins.patch
+	"${FILESDIR}"/${PN}-6.0.0-configure.patch
 )
 
 pkg_setup() {
@@ -128,7 +128,6 @@ src_configure() {
 		$(use_with bitmap bitmap-terminals) \
 		$(use_with cairo) \
 		$(use_with gd) \
-		"$(use_with ggi ggi "${EPREFIX}/usr/$(get_libdir)")" \
 		"$(use_with libcaca caca "${EPREFIX}/usr/$(get_libdir)")" \
 		$(use_with libcerf) \
 		$(use_with lua) \
@@ -186,7 +185,7 @@ src_install() {
 
 	if use doc; then
 		# Manual, FAQ
-		dodoc docs/gnuplot.pdf FAQ.pdf
+		dodoc docs/gnuplot.pdf #FAQ.pdf
 		# Documentation for making PostScript files
 		docinto psdoc
 		dodoc docs/psdoc/{*.doc,*.tex,*.ps,*.gpi,README}
