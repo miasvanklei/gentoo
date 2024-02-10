@@ -172,6 +172,10 @@ PATCHES=(
 
 S="${WORKDIR}/${MY_P}-src"
 
+clear_vendor_checksums() {
+	sed -i 's/\("files":{\)[^}]*/\1/' vendor/$1/.cargo-checksum.json
+}
+
 toml_usex() {
 	usex "${1}" true false
 }
@@ -294,10 +298,6 @@ esetup_unwind_hack() {
 	# crates ignore RUSTFLAGS.
 	# this variable can not contain leading space.
 	export MAGIC_EXTRA_RUSTFLAGS+="${MAGIC_EXTRA_RUSTFLAGS:+ }-L${fakelib}"
-}
-
-clear_vendor_checksums() {
-	sed -i 's/\("files":{\)[^}]*/\1/' vendor/$1/.cargo-checksum.json
 }
 
 src_prepare() {
