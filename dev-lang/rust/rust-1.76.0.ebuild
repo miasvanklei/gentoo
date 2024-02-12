@@ -30,7 +30,6 @@ HOMEPAGE="https://www.rust-lang.org/"
 SRC_URI="
 	https://static.rust-lang.org/dist/${SRC}
 	verify-sig? ( https://static.rust-lang.org/dist/${SRC}.asc )
-	!system-bootstrap? ( $(rust_all_arch_uris rust-${RUST_STAGE0_VERSION}) )
 "
 
 # keep in sync with llvm ebuild of the same version as bundled one.
@@ -165,9 +164,11 @@ VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/rust.asc
 PATCHES=(
 	"${FILESDIR}"/1.75.0-musl-dynamic-linking.patch
 	"${FILESDIR}"/1.74.1-cross-compile-libz.patch
-	#"${FILESDIR}"/1.72.0-bump-libc-deps-to-0.2.146.patch  # pending refresh
 	"${FILESDIR}"/1.70.0-ignore-broken-and-non-applicable-tests.patch
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
+	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
+	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
+	"${FILESDIR}"/1.75.0-remove-crt-and-musl_root-from-musl-targets.patch
 	# This patch shouldn't be necessary for later versions of Rust because its
 	# code was backported from master.
 	"${FILESDIR}"/1.75.0-handle-vendored-sources.patch

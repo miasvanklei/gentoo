@@ -1,9 +1,9 @@
 --- a/compiler/rustc_target/src/spec/targets/aarch64_unknown_linux_musl.rs	2020-12-29 04:03:08.000000000 +0100
 +++ b/compiler/rustc_target/src/spec/targets/aarch64_unknown_linux_musl.rs	2020-12-31 19:13:13.588052924 +0100
 @@ -3,6 +3,7 @@
-     base.max_atomic_width = Some(128);
      base.supports_xray = true;
      base.features = "+v8a".into();
+     base.stack_probes = StackProbeType::Inline;
 +    base.static_position_independent_executables = true;
      base.supported_sanitizers = SanitizerSet::ADDRESS
          | SanitizerSet::CFI

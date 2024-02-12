@@ -173,7 +173,7 @@ PATCHES=(
 S="${WORKDIR}/${MY_P}-src"
 
 clear_vendor_checksums() {
-	sed -i 's/\("files":{\)[^}]*/\1/' vendor/$1/.cargo-checksum.json
+	sed -i 's/\("files":{\)[^}]*/\1/' "vendor/${1}/.cargo-checksum.json" || die
 }
 
 toml_usex() {
