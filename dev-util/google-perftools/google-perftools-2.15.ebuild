@@ -17,9 +17,10 @@ SLOT="0/4"
 # linux amd64/arm/arm64/ppc/ppc64/riscv/x86
 # OSX ppc/amd64
 # AIX ppc/ppc64
-KEYWORDS="-* amd64 arm arm64 ~ppc ~ppc64 ~riscv x86 ~amd64-linux ~x86-linux"
+KEYWORDS="-* ~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86 ~amd64-linux ~x86-linux"
 
-IUSE="largepages largepages64k +debug llvm-libunwind minimal optimisememory test static-libs"
+IUSE="pagesize-16k pagesize-32k pagesize-64k pagesize-128k pagesize-256k +debug llvm-libunwind minimal optimisememory test static-libs"
+REQUIRED_USE="?? ( pagesize-16k pagesize-32k pagesize-64k pagesize-128k pagesize-256k )"
 
 RESTRICT="!test? ( test )"
 
@@ -57,9 +58,12 @@ src_prepare() {
 }
 
 multilib_src_configure() {
-	use largepages && append-cppflags -DTCMALLOC_LARGE_PAGES
-	use largepages64k && append-cppflags -DTCMALLOC_LARGE_PAGES64K
 	use optimisememory && append-cppflags -DTCMALLOC_SMALL_BUT_SLOW
+	use pagesize-16k && append-cppflags -DTCMALLOC_PAGE_SIZE_SHIFT=14
+	use pagesize-32k && append-cppflags -DTCMALLOC_PAGE_SIZE_SHIFT=15
+	use pagesize-64k && append-cppflags -DTCMALLOC_PAGE_SIZE_SHIFT=16
+	use pagesize-128k && append-cppflags -DTCMALLOC_PAGE_SIZE_SHIFT=17
+	use pagesize-256k && append-cppflags -DTCMALLOC_PAGE_SIZE_SHIFT=18
 	append-flags -fno-strict-aliasing -fno-omit-frame-pointer
 
 	local myeconfargs=(

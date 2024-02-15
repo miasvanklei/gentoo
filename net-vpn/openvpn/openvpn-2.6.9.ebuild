@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -31,7 +31,7 @@ REQUIRED_USE="
 	dco? ( !iproute2 )
 "
 
-CDEPEND="
+COMMON_DEPEND="
 	kernel_linux? (
 		iproute2? ( sys-apps/iproute2[-minimal] )
 	)
@@ -51,11 +51,11 @@ BDEPEND="
 "
 
 DEPEND="
-	${CDEPEND}
+	${COMMON_DEPEND}
 	test? ( dev-util/cmocka )
 "
 RDEPEND="
-	${CDEPEND}
+	${COMMON_DEPEND}
 	acct-group/openvpn
 	acct-user/openvpn
 	selinux? ( sec-policy/selinux-openvpn )
