@@ -16,7 +16,11 @@ LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~x86-linux"
 IUSE="dracut grub refind systemd systemd-boot uki ukify"
-REQUIRED_USE="systemd-boot? ( systemd )"
+REQUIRED_USE="
+	systemd-boot? ( systemd )
+	ukify? ( uki )
+	?? ( grub refind systemd-boot )
+"
 
 RDEPEND="
 	!<=sys-kernel/installkernel-systemd-3
@@ -89,10 +93,10 @@ src_install() {
 	echo "# This file is managed by ${CATEGORY}/${PN}" >> "${T}/install.conf" || die
 	if use uki; then
 		echo "layout=uki" >> "${T}/install.conf" || die
-	elif use systemd-boot; then
-		echo "layout=bls" >> "${T}/install.conf" || die
 	elif use grub; then
 		echo "layout=grub" >> "${T}/install.conf" || die
+	elif use systemd-boot; then
+		echo "layout=bls" >> "${T}/install.conf" || die
 	else
 		echo "layout=compat" >> "${T}/install.conf" || die
 	fi
