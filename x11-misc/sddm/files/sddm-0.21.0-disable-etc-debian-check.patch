@@ -1,7 +1,7 @@
-From 20adb0eb3462e79ec76f93f2a622b99956145424 Mon Sep 17 00:00:00 2001
+From cef0ad9776d9349e85020b529d20dcc88113015a Mon Sep 17 00:00:00 2001
 From: Andreas Sturmlechner <asturm@gentoo.org>
 Date: Tue, 13 Oct 2020 01:04:44 +0200
-Subject: [PATCH] Disable /etc/debian_version check
+Subject: [PATCH 4/5] Disable /etc/debian_version check
 
 Signed-off-by: Andreas Sturmlechner <asturm@gentoo.org>
 ---
@@ -9,10 +9,10 @@ Signed-off-by: Andreas Sturmlechner <asturm@gentoo.org>
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/services/CMakeLists.txt b/services/CMakeLists.txt
-index 5032f33..afa5fd5 100644
+index 5158e87..441e46a 100644
 --- a/services/CMakeLists.txt
 +++ b/services/CMakeLists.txt
-@@ -23,7 +23,7 @@
+@@ -20,7 +20,7 @@ endif()
  configure_file("${CMAKE_CURRENT_SOURCE_DIR}/sddm-greeter.pam.in" "${CMAKE_CURRENT_BINARY_DIR}/sddm-greeter.pam")
  
  if(INSTALL_PAM_CONFIGURATION)
@@ -22,5 +22,4 @@ index 5032f33..afa5fd5 100644
          install(FILES debian.sddm-greeter.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm-greeter)
          install(FILES debian.sddm.pam DESTINATION ${CMAKE_INSTALL_FULL_SYSCONFDIR}/pam.d RENAME sddm)
 -- 
-2.39.1
-
+2.43.0

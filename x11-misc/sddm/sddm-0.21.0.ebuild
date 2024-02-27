@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -8,10 +8,10 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/${PN}/${PN}.git"
 else
 	SRC_URI="https://github.com/${PN}/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="amd64 ~arm arm64 ~loong ~ppc64 ~riscv x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
 fi
 
-QTMIN=5.15.2
+QTMIN=5.15.12
 inherit cmake linux-info optfeature systemd tmpfiles
 
 DESCRIPTION="Simple Desktop Display Manager"
@@ -19,7 +19,7 @@ HOMEPAGE="https://github.com/sddm/sddm"
 
 LICENSE="GPL-2+ MIT CC-BY-3.0 CC-BY-SA-3.0 public-domain"
 SLOT="0"
-IUSE="+elogind systemd test qt6 X"
+IUSE="+elogind systemd test"
 
 REQUIRED_USE="^^ ( elogind systemd )"
 RESTRICT="!test? ( test )"
@@ -27,17 +27,11 @@ RESTRICT="!test? ( test )"
 COMMON_DEPEND="
 	acct-group/sddm
 	acct-user/sddm
-	!qt6? (
-		>=dev-qt/qtcore-${QTMIN}:5
-		>=dev-qt/qtdbus-${QTMIN}:5
-		>=dev-qt/qtdeclarative-${QTMIN}:5
-		>=dev-qt/qtgui-${QTMIN}:5
-		>=dev-qt/qtnetwork-${QTMIN}:5
-	)
-	qt6? (
-		>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network]
-		>=dev-qt/qtdeclarative-${QTMIN}:6
-	)
+	>=dev-qt/qtcore-${QTMIN}:5
+	>=dev-qt/qtdbus-${QTMIN}:5
+	>=dev-qt/qtdeclarative-${QTMIN}:5
+	>=dev-qt/qtgui-${QTMIN}:5
+	>=dev-qt/qtnetwork-${QTMIN}:5
 	sys-libs/pam
 	x11-libs/libXau
 	x11-libs/libxcb:=
@@ -49,13 +43,12 @@ DEPEND="${COMMON_DEPEND}
 	test? ( >=dev-qt/qttest-${QTMIN}:5 )
 "
 RDEPEND="${COMMON_DEPEND}
-	X? ( x11-base/xorg-server )
+	x11-base/xorg-server
 	!systemd? ( gui-libs/display-manager-init )
 "
 BDEPEND="
 	dev-python/docutils
-	!qt6? ( >=dev-qt/linguist-tools-${QTMIN}:5 )
-	qt6? ( dev-qt/qttools[linguist] )
+	>=dev-qt/linguist-tools-${QTMIN}:5
 	kde-frameworks/extra-cmake-modules:0
 	virtual/pkgconfig
 "
@@ -63,10 +56,10 @@ BDEPEND="
 PATCHES=(
 	# Downstream patches
 	"${FILESDIR}/${PN}-0.20.0-respect-user-flags.patch"
-	"${FILESDIR}/${PN}-0.18.1-Xsession.patch" # bug 611210
+	"${FILESDIR}/${P}-Xsession.patch" # bug 611210
 	"${FILESDIR}/${PN}-0.20.0-sddm.pam-use-substack.patch" # bug 728550
-	"${FILESDIR}/${PN}-0.20.0-no-default-pam_systemd-module.patch" # bug 669980
-	"${FILESDIR}/${PN}-0.21.0-disable-etc-debian-check.patch"
+	"${FILESDIR}/${P}-disable-etc-debian-check.patch"
+	"${FILESDIR}/${P}-no-default-pam_systemd-module.patch" # bug 669980
 )
 
 pkg_setup() {
@@ -94,12 +87,12 @@ EOF
 src_configure() {
 	local mycmakeargs=(
 		-DBUILD_MAN_PAGES=ON
+		-DBUILD_WITH_QT6=OFF # default theme  (and others) not yet compatible
 		-DDBUS_CONFIG_FILENAME="org.freedesktop.sddm.conf"
 		-DRUNTIME_DIR=/run/sddm
 		-DSYSTEMD_TMPFILES_DIR="/usr/lib/tmpfiles.d"
 		-DNO_SYSTEMD=$(usex !systemd)
 		-DUSE_ELOGIND=$(usex elogind)
-		-DBUILD_WITH_QT6=$(usex qt6)
 	)
 	cmake_src_configure
 }
@@ -109,6 +102,12 @@ src_install() {
 
 	insinto /etc/sddm.conf.d/
 	doins "${S}"/01gentoo.conf
+
+	# with systemd logs are sent to journald, so no point to bother in that case
+	if ! use systemd; then
+		insinto /etc/logrotate.d
+		newins "${FILESDIR}/sddm.logrotate" sddm
+	fi
 }
 
 pkg_postinst() {
