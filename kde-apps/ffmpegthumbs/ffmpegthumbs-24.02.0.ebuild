@@ -11,7 +11,7 @@ DESCRIPTION="FFmpeg based thumbnail generator for video files"
 
 LICENSE="GPL-2+"
 SLOT="6"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE=""
 
 DEPEND="
