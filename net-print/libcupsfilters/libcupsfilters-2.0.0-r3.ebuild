@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit libtool
+inherit autotools
 
 DESCRIPTION="library for developing printing features, split out of cups-filters"
 HOMEPAGE="https://github.com/OpenPrinting/libcupsfilters"
@@ -42,8 +42,7 @@ BDEPEND="
 src_prepare() {
 	default
 
-	# respect --as-needed
-	elibtoolize
+	eautoreconf
 }
 
 src_configure() {
