@@ -3,8 +3,8 @@
 
 EAPI=8
 
-KFMIN=5.248.0
-QTMIN=6.6.0
+KFMIN=6.0.0
+QTMIN=6.6.2
 inherit ecm gear.kde.org
 
 DESCRIPTION="FFmpeg based thumbnail generator for video files"
