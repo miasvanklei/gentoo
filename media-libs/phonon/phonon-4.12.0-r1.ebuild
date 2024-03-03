@@ -15,7 +15,7 @@ fi
 
 LICENSE="|| ( LGPL-2.1 LGPL-3 ) !pulseaudio? ( || ( GPL-2 GPL-3 ) )"
 SLOT="0"
-IUSE="debug designer pulseaudio +qt5 qt6 +vlc"
+IUSE="debug designer gstreamer pulseaudio +qt5 qt6 +vlc"
 REQUIRED_USE="|| ( qt5 qt6 )"
 
 DEPEND="
@@ -55,6 +55,7 @@ BDEPEND="
 "
 PDEPEND="
 	vlc? ( >=media-libs/phonon-vlc-0.12.0[qt5?,qt6?] )
+	gstreamer? ( >=media-libs/phonon-gstreamer-9999 )
 "
 
 pkg_setup() {
