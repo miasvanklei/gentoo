@@ -12,12 +12,12 @@ HOMEPAGE="https://apps.kde.org/kdenetwork_filesharing/"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="5"
-KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
+KEYWORDS="amd64 arm64 ~ppc64 ~riscv ~x86"
 IUSE=""
 
 DEPEND="
 	dev-libs/qcoro5
-	>=dev-qt/qtdeclarative-${QTMIN}:5
+	>=dev-qt/qtdeclarative-${QTMIN}:5[widgets]
 	>=dev-qt/qtgui-${QTMIN}:5
 	>=dev-qt/qtwidgets-${QTMIN}:5
 	>=kde-frameworks/kcompletion-${KFMIN}:5
