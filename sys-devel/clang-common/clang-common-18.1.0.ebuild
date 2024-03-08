@@ -89,7 +89,7 @@ _doclang_cfg() {
 	# Install symlinks for triples with other vendor strings since some
 	# programs insist on mangling the triple.
 	local vendor
-	for vendor in gentoo pc unknown; do
+	for vendor in unknown; do
 		local vendor_triple="${triple%%-*}-${vendor}-${triple#*-*-}"
 		for tool in clang{,++,-cpp}; do
 			if [[ ! -f "${ED}/etc/clang/${vendor_triple}-${tool}.cfg" ]]; then
