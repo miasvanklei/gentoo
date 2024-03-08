@@ -207,7 +207,7 @@ multilib_src_configure() {
 		$(meson_native_use_bool tools nmtui)
 		$(meson_native_use_bool tools nm_cloud_setup)
 		$(meson_native_use_bool bluetooth bluez5_dun)
-		-Debpf=true
+		-Debpf=false
 
 		-Dconfig_wifi_backend_default=$(multilib_native_usex iwd iwd default)
 		-Dconfig_plugins_default=keyfile
