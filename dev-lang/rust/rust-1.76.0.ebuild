@@ -4,9 +4,8 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-LLVM_COMPAT=( 17 18 )
 
-inherit bash-completion-r1 check-reqs estack flag-o-matic llvm-r1 multiprocessing \
+inherit bash-completion-r1 check-reqs estack flag-o-matic llvm multiprocessing \
 	multilib multilib-build python-any-r1 rust-toolchain toolchain-funcs verify-sig
 
 if [[ ${PV} = *beta* ]]; then
@@ -45,21 +44,31 @@ LICENSE="|| ( MIT Apache-2.0 ) BSD BSD-1 BSD-2 BSD-4"
 
 IUSE="big-endian clippy cpu_flags_x86_sse2 debug dist doc llvm-libunwind +lto miri nightly parallel-compiler profiler rustfmt rust-analyzer rust-src system-bootstrap system-llvm test wasm ${ALL_LLVM_TARGETS[*]}"
 
+# Please keep the LLVM dependency block separate. Since LLVM is slotted,
+# we need to *really* make sure we're not pulling more than one slot
+# simultaneously.
+
+# How to use it:
+# List all the working slots in LLVM_VALID_SLOTS, newest first.
+LLVM_VALID_SLOTS=( 18 )
+LLVM_MAX_SLOT="${LLVM_VALID_SLOTS[0]}"
+
 # splitting usedeps needed to avoid CI/pkgcheck's UncheckableDep limitation
 # (-) usedep needed because we may build with older llvm without that target
-llvm_gen_target_dep() {
-        debug-print-function ${FUNCNAME} "${@}"
-
-        local slot
-        for slot in "${_LLVM_SLOTS[@]}"; do
-		echo "llvm_slot_${slot}? ("
-		for target in ${ALL_LLVM_TARGETS[@]}; do
-			echo "	${target}? ( sys-devel/llvm:${slot}[${target}(-)] )"
-		done
-		echo "	wasm? ( sys-devel/lld:${slot} )"
-		echo ")"
-        done
-}
+LLVM_DEPEND="|| ( "
+for _s in ${LLVM_VALID_SLOTS[@]}; do
+	LLVM_DEPEND+=" ( "
+	for _x in ${ALL_LLVM_TARGETS[@]}; do
+		LLVM_DEPEND+="
+			${_x}? ( sys-devel/llvm:${_s}[${_x}(-)] )
+			wasm? ( sys-devel/lld:${_s} )"
+	done
+	LLVM_DEPEND+=" )"
+done
+unset _s _x
+LLVM_DEPEND+=" )
+	<sys-devel/llvm-$(( LLVM_MAX_SLOT + 1 )):=
+"
 
 # to bootstrap we need at least exactly previous version, or same.
 # most of the time previous versions fail to bootstrap with newer
@@ -98,7 +107,7 @@ DEPEND="
 	sys-libs/zlib:=
 	dev-libs/openssl:0=
 	system-llvm? (
-		$(llvm_gen_target_dep)
+		${LLVM_DEPEND}
 		llvm-libunwind? ( sys-libs/llvm-libunwind:= )
 	)
 	!system-llvm? (
@@ -155,11 +164,11 @@ VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/rust.asc
 PATCHES=(
 	"${FILESDIR}"/1.75.0-musl-dynamic-linking.patch
 	"${FILESDIR}"/1.74.1-cross-compile-libz.patch
+	"${FILESDIR}"/1.70.0-ignore-broken-and-non-applicable-tests.patch
+	"${FILESDIR}"/1.67.0-doc-wasm.patch
 	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
 	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
 	"${FILESDIR}"/1.75.0-remove-crt-and-musl_root-from-musl-targets.patch
-	"${FILESDIR}"/1.70.0-ignore-broken-and-non-applicable-tests.patch
-	"${FILESDIR}"/1.67.0-doc-wasm.patch
 	"${FILESDIR}"/1.75.0-handle-vendored-sources.patch  # remove for >=1.77.0
 	"${FILESDIR}"/1.76.0-loong-code-model.patch  # remove for >=1.78.0
 )
@@ -267,7 +276,9 @@ pkg_setup() {
 	use system-bootstrap && bootstrap_rust_version_check
 
 	if use system-llvm; then
-		local llvm_config="$(get_llvm_prefix)/bin/llvm-config"
+		llvm_pkg_setup
+
+		local llvm_config="$(get_llvm_prefix "${LLVM_MAX_SLOT}")/bin/llvm-config"
 		export LLVM_LINK_SHARED=1
 		export RUSTFLAGS="${RUSTFLAGS} -Lnative=$("${llvm_config}" --libdir)"
 	fi
@@ -483,7 +494,7 @@ src_configure() {
 		_EOF_
 		if use system-llvm; then
 			cat <<- _EOF_ >> "${S}"/config.toml
-				llvm-config = "$(get_llvm_prefix)/bin/llvm-config"
+				llvm-config = "$(get_llvm_prefix "${LLVM_MAX_SLOT}")/bin/llvm-config"
 			_EOF_
 		fi
 		# by default librustc_target/spec/linux_musl_base.rs sets base.crt_static_default = true;
@@ -553,7 +564,7 @@ src_configure() {
 		_EOF_
 		if use system-llvm; then
 			cat <<- _EOF_ >> "${S}"/config.toml
-				llvm-config = "$(get_llvm_prefix)/bin/llvm-config"
+				llvm-config = "$(get_llvm_prefix "${LLVM_MAX_SLOT}")/bin/llvm-config"
 			_EOF_
 		fi
 		if [[ "${cross_toolchain}" == *-musl* ]]; then
