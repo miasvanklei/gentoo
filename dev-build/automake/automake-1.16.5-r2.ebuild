@@ -69,6 +69,7 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-1.16.5-fix-py-compile-basedir.sh-test.patch
 	"${FILESDIR}"/${PN}-1.16.5-apostrophe-in-tests.patch
 	"${FILESDIR}"/${PN}-1.16.5-parallel-build.patch
+	"${FILESDIR}"/${PN}-1.16.5-py312.patch
 	"${WORKDIR}"/${PN}-1.16.5-tests-c99.patch
 )
 
