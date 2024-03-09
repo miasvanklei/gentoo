@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+\# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -86,7 +86,7 @@ BDEPEND="${PYTHON_DEPS}
 		sys-devel/llvm:${LLVM_SLOT}
 		clang? (
 			sys-devel/lld:${LLVM_SLOT}
-			virtual/rust:0/llvm-${LLVM_SLOT}
+			lto? ( virtual/rust:0/llvm-${LLVM_SLOT} )
 		)
 		pgo? ( sys-libs/compiler-rt-sanitizers:${LLVM_SLOT}[profile] )
 	')
@@ -221,7 +221,7 @@ llvm_check_deps() {
 			return 1
 		fi
 
-		if ! has_version -b "virtual/rust:0/llvm-${LLVM_SLOT}" ; then
+		if use lto && ! has_version -b "virtual/rust:0/llvm-${LLVM_SLOT}" ; then
 			einfo "virtual/rust:0/llvm-${LLVM_SLOT} is missing! Cannot use LLVM slot ${LLVM_SLOT} ..." >&2
 			return 1
 		fi
