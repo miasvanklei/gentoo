@@ -3,9 +3,9 @@
 
 EAPI=8
 
-FIREFOX_PATCHSET="firefox-123-patches-03.tar.xz"
+FIREFOX_PATCHSET="firefox-123-patches-07.tar.xz"
 
-LLVM_COMPAT=( 16 17 )
+LLVM_COMPAT=( 16 17 18 )
 
 PYTHON_COMPAT=( python3_{10..12} )
 PYTHON_REQ_USE="ncurses,sqlite,ssl"
@@ -86,7 +86,7 @@ BDEPEND="${PYTHON_DEPS}
 		sys-devel/llvm:${LLVM_SLOT}
 		clang? (
 			sys-devel/lld:${LLVM_SLOT}
-			virtual/rust:0/llvm-${LLVM_SLOT}
+			lto? ( virtual/rust:0/llvm-${LLVM_SLOT} )
 		)
 		pgo? ( sys-libs/compiler-rt-sanitizers:${LLVM_SLOT}[profile] )
 	')
@@ -221,7 +221,7 @@ llvm_check_deps() {
 			return 1
 		fi
 
-		if ! has_version -b "virtual/rust:0/llvm-${LLVM_SLOT}" ; then
+		if use lto && ! has_version -b "virtual/rust:0/llvm-${LLVM_SLOT}" ; then
 			einfo "virtual/rust:0/llvm-${LLVM_SLOT} is missing! Cannot use LLVM slot ${LLVM_SLOT} ..." >&2
 			return 1
 		fi
@@ -1120,6 +1120,9 @@ src_configure() {
 	if use valgrind; then
 		mozconfig_add_options_ac 'valgrind requirement' --disable-jemalloc
 	fi
+
+	# System-av1 fix
+	use system-av1 && append-ldflags "-Wl,--undefined-version"
 
 	# Allow elfhack to work in combination with unstripped binaries
 	# when they would normally be larger than 2GiB.
