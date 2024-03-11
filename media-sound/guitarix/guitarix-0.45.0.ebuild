@@ -6,18 +6,16 @@ EAPI=8
 PYTHON_COMPAT=( python3_{9..12} )
 PYTHON_REQ_USE='threads(+)'
 
-EGIT_OVERRIDE_REPO_ENYOJS_BOOTPLATE="https://github.com/enyojs/bootplate.git"
-EGIT_OVERRIDE_BRANCH_ENYOJS_BOOTPLATE="master"
-
-inherit multiprocessing python-any-r1 waf-utils xdg git-r3
+inherit multiprocessing python-any-r1 waf-utils xdg
 
 DESCRIPTION="Virtual guitar amplifier for Linux"
 HOMEPAGE="https://guitarix.org/"
-EGIT_REPO_URI="https://github.com/brummer10/${PN}.git"
-S="${WORKDIR}/${P}/trunk"
+SRC_URI="https://github.com/brummer10/${PN}/releases/download/V${PV}/guitarix2-${PV}.tar.xz"
+S="${WORKDIR}"
 
 LICENSE="GPL-2"
 SLOT="0"
+KEYWORDS="~amd64"
 IUSE="bluetooth debug lv2 nls nsm +standalone zeroconf"
 REQUIRED_USE="|| ( lv2 standalone )"
 
@@ -63,6 +61,11 @@ BDEPEND="
 "
 
 DOCS=( changelog README )
+
+PATCHES=(
+	"${FILESDIR}"/${PN}-0.45.0-nostrip.patch
+	"${FILESDIR}"/${PN}-0.45.0-fix-flto.patch
+)
 
 src_configure() {
 	export -n {CXX,LD}FLAGS
