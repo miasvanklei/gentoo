@@ -13,13 +13,15 @@ LICENSE="BSD MIT"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~x86"
 
-IUSE="doc examples test qt6"
+IUSE="doc examples test qt5 qt6"
 RESTRICT="!test? ( test )"
 
 DEPEND="
-	dev-qt/qtcore:5
-	dev-qt/qtnetwork:5
-	dev-qt/qtwidgets:5
+	qt5? (
+		dev-qt/qtcore:5
+		dev-qt/qtnetwork:5
+		dev-qt/qtwidgets:5
+	)
 	qt6? (
 		dev-qt/qtbase:6[network,widgets]
 	)
@@ -28,7 +30,7 @@ RDEPEND="${DEPEND}"
 BDEPEND="
 	doc? (
 		app-text/doxygen[dot]
-		dev-qt/qthelp:5
+		qt5? ( dev-qt/qthelp:5 )
 		qt6? (
 			dev-qt/qttools:6[assistant]
 		)
@@ -36,11 +38,11 @@ BDEPEND="
 	examples? (
 		dev-util/patchelf
 	)
-	dev-qt/qttest:5
+	qt5? ( dev-qt/qttest:5 )
 "
 
 pkg_setup() {
-	MULTIBUILD_VARIANTS=( qt5 $(usev qt6) )
+	MULTIBUILD_VARIANTS=( $(usev qt5) $(usev qt6) )
 }
 
 src_configure() {
