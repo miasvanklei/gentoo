@@ -65,7 +65,7 @@ src_prepare() {
 	rm ../libcxx/test/std/atomics/atomics.types.generic/atomics.types.float/fetch_* || die
 	rm ../libcxx/test/std/atomics/atomics.types.generic/atomics.types.float/operator.*_equals* || die
 
-	llvm.org_src_prepare
+	cmake_src_prepare
 }
 
 test_compiler() {
