@@ -136,6 +136,9 @@ check_distribution_components() {
 					# used by lldb
 					LLVMDebuginfod)
 						;;
+					# used by mlir-tblgen
+					LLVMCodeGenTypes)
+						;;
 					# testing libraries
 					LLVMTestingAnnotations|LLVMTestingSupport)
 						;;
@@ -227,6 +230,9 @@ get_distribution_components() {
 		out+=(
 			# library used by lldb
 			LLVMDebuginfod
+
+			# library used by mlir-tblgen
+			LLVMCodeGenTypes
 
 			# utilities
 			llvm-tblgen
