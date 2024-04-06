@@ -1,147 +1,184 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
-PYTHON_REQ_USE="threads(+)"
-DISTUTILS_USE_SETUPTOOLS=no
 CARGO_OPTIONAL=1
+DISTUTILS_USE_PEP517="setuptools"
+DISTUTILS_EXT=1
+PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_REQ_USE="threads(+)"
 
 CRATES="
-	Inflector-0.11.4
-	adler-0.2.3
-	ahash-0.4.7
-	aho-corasick-0.7.18
-	aliasable-0.1.3
-	ansi_term-0.12.1
-	atty-0.2.14
-	autocfg-1.0.1
-	bitflags-1.3.2
-	bitmaps-2.1.0
-	block-buffer-0.9.0
-	block-buffer-0.10.2
-	byteorder-1.4.3
-	bytes-cast-0.2.0
-	bytes-cast-derive-0.1.0
-	cc-1.0.66
-	cfg-if-0.1.10
-	cfg-if-1.0.0
-	chrono-0.4.19
-	clap-2.34.0
-	const_fn-0.4.4
-	convert_case-0.4.0
-	cpufeatures-0.1.4
-	cpufeatures-0.2.1
-	cpython-0.7.0
-	crc32fast-1.2.1
-	crossbeam-channel-0.5.2
-	crossbeam-deque-0.8.0
-	crossbeam-epoch-0.9.1
-	crossbeam-utils-0.8.1
-	crypto-common-0.1.2
-	ctor-0.1.16
-	derive_more-0.99.17
-	diff-0.1.12
-	digest-0.9.0
-	digest-0.10.2
-	either-1.6.1
-	env_logger-0.9.0
-	fastrand-1.7.0
-	flate2-1.0.22
-	format-bytes-0.3.0
-	format-bytes-macros-0.4.0
-	generic-array-0.14.4
-	getrandom-0.1.15
-	getrandom-0.2.4
-	glob-0.3.0
-	hashbrown-0.9.1
-	hermit-abi-0.1.17
-	hex-0.4.3
-	home-0.5.3
-	humantime-2.1.0
-	im-rc-15.0.0
-	instant-0.1.12
-	itertools-0.9.0
-	itertools-0.10.3
-	jobserver-0.1.21
-	lazy_static-1.4.0
-	libc-0.2.124
-	libm-0.2.1
-	libz-sys-1.1.2
-	log-0.4.14
-	memchr-2.4.1
-	memmap2-0.5.7
-	memoffset-0.6.1
-	micro-timer-0.4.0
-	micro-timer-macros-0.4.0
-	miniz_oxide-0.4.3
-	num-integer-0.1.44
-	num-traits-0.2.14
-	num_cpus-1.13.0
-	opaque-debug-0.3.0
-	ouroboros-0.15.0
-	ouroboros_macro-0.15.0
-	output_vt100-0.1.2
-	paste-1.0.5
-	pkg-config-0.3.19
-	ppv-lite86-0.2.10
-	pretty_assertions-1.1.0
-	proc-macro-error-1.0.4
-	proc-macro-error-attr-1.0.4
-	proc-macro2-1.0.24
-	python3-sys-0.7.0
-	quote-1.0.7
-	rand-0.7.3
-	rand-0.8.5
-	rand_chacha-0.2.2
-	rand_chacha-0.3.1
-	rand_core-0.5.1
-	rand_core-0.6.3
-	rand_distr-0.4.3
-	rand_hc-0.2.0
-	rand_pcg-0.3.1
-	rand_xoshiro-0.4.0
-	rayon-1.5.1
-	rayon-core-1.9.1
-	redox_syscall-0.2.11
-	regex-1.5.5
-	regex-syntax-0.6.25
-	remove_dir_all-0.5.3
-	rustc_version-0.4.0
-	same-file-1.0.6
-	scopeguard-1.1.0
-	semver-1.0.6
-	sha-1-0.9.6
-	sha-1-0.10.0
-	sized-chunks-0.6.2
-	stable_deref_trait-1.2.0
-	static_assertions-1.1.0
-	strsim-0.8.0
-	syn-1.0.54
-	tempfile-3.3.0
-	termcolor-1.1.2
-	textwrap-0.11.0
-	time-0.1.44
-	twox-hash-1.6.2
-	typenum-1.12.0
-	unicode-width-0.1.9
-	unicode-xid-0.2.1
-	users-0.11.0
-	vcpkg-0.2.11
-	vcsgraph-0.2.0
-	vec_map-0.8.2
-	version_check-0.9.2
-	wasi-0.9.0+wasi-snapshot-preview1
-	wasi-0.10.0+wasi-snapshot-preview1
-	which-4.2.5
-	winapi-0.3.9
-	winapi-i686-pc-windows-gnu-0.4.0
-	winapi-util-0.1.5
-	winapi-x86_64-pc-windows-gnu-0.4.0
-	zstd-0.5.4+zstd.1.4.7
-	zstd-safe-2.0.6+zstd.1.4.7
-	zstd-sys-1.4.18+zstd.1.4.7
+	adler@1.0.2
+	ahash@0.8.2
+	aho-corasick@0.7.19
+	android-tzdata@0.1.1
+	android_system_properties@0.1.5
+	atty@0.2.14
+	autocfg@1.1.0
+	bitflags@1.3.2
+	bitmaps@2.1.0
+	bitvec@1.0.1
+	block-buffer@0.9.0
+	block-buffer@0.10.3
+	bumpalo@3.11.1
+	byteorder@1.4.3
+	bytes-cast@0.3.0
+	bytes-cast-derive@0.2.0
+	cc@1.0.76
+	cfg-if@1.0.0
+	chrono@0.4.34
+	clap@4.0.24
+	clap_derive@4.0.21
+	clap_lex@0.3.0
+	codespan-reporting@0.11.1
+	convert_case@0.4.0
+	core-foundation-sys@0.8.3
+	cpufeatures@0.2.5
+	cpython@0.7.1
+	crc32fast@1.3.2
+	crossbeam-channel@0.5.6
+	crossbeam-deque@0.8.2
+	crossbeam-epoch@0.9.11
+	crossbeam-utils@0.8.12
+	crypto-common@0.1.6
+	ctor@0.1.26
+	cxx@1.0.81
+	cxx-build@1.0.81
+	cxxbridge-flags@1.0.81
+	cxxbridge-macro@1.0.81
+	derive_more@0.99.17
+	diff@0.1.13
+	digest@0.9.0
+	digest@0.10.5
+	either@1.8.0
+	env_logger@0.9.3
+	fastrand@1.8.0
+	flate2@1.0.24
+	format-bytes@0.3.0
+	format-bytes-macros@0.4.0
+	funty@2.0.0
+	generic-array@0.14.6
+	getrandom@0.1.16
+	getrandom@0.2.8
+	hashbrown@0.12.3
+	hashbrown@0.13.1
+	heck@0.4.0
+	hermit-abi@0.1.19
+	hex@0.4.3
+	home@0.5.4
+	humantime@2.1.0
+	iana-time-zone@0.1.53
+	iana-time-zone-haiku@0.1.1
+	im-rc@15.1.0
+	indexmap@1.9.2
+	instant@0.1.12
+	itertools@0.10.5
+	jobserver@0.1.25
+	js-sys@0.3.60
+	lazy_static@1.4.0
+	libc@0.2.137
+	libm@0.2.6
+	libz-sys@1.1.8
+	link-cplusplus@1.0.7
+	log@0.4.17
+	logging_timer@1.1.0
+	logging_timer_proc_macros@1.1.0
+	memchr@2.5.0
+	memmap2@0.5.8
+	memoffset@0.6.5
+	miniz_oxide@0.5.4
+	nom8@0.2.0
+	num-traits@0.2.15
+	num_cpus@1.14.0
+	once_cell@1.16.0
+	opaque-debug@0.3.0
+	os_str_bytes@6.4.0
+	output_vt100@0.1.3
+	paste@1.0.9
+	pkg-config@0.3.26
+	ppv-lite86@0.2.17
+	pretty_assertions@1.3.0
+	proc-macro-error@1.0.4
+	proc-macro-error-attr@1.0.4
+	proc-macro2@1.0.47
+	python3-sys@0.7.1
+	quote@1.0.21
+	radium@0.7.0
+	rand@0.7.3
+	rand@0.8.5
+	rand_chacha@0.2.2
+	rand_chacha@0.3.1
+	rand_core@0.5.1
+	rand_core@0.6.4
+	rand_distr@0.4.3
+	rand_hc@0.2.0
+	rand_pcg@0.3.1
+	rand_xoshiro@0.6.0
+	rayon@1.7.0
+	rayon-core@1.11.0
+	redox_syscall@0.2.16
+	regex@1.7.0
+	regex-syntax@0.6.28
+	remove_dir_all@0.5.3
+	rustc_version@0.4.0
+	same-file@1.0.6
+	scopeguard@1.1.0
+	scratch@1.0.2
+	self_cell@1.0.0
+	semver@1.0.14
+	serde@1.0.152
+	serde_derive@1.0.152
+	serde_spanned@0.6.1
+	sha-1@0.9.8
+	sha-1@0.10.0
+	sized-chunks@0.6.5
+	stable_deref_trait@1.2.0
+	static_assertions@1.1.0
+	strsim@0.10.0
+	syn@1.0.109
+	tap@1.0.1
+	tempfile@3.3.0
+	termcolor@1.1.3
+	thread_local@1.1.4
+	toml@0.6.0
+	toml_datetime@0.5.1
+	toml_edit@0.18.1
+	twox-hash@1.6.3
+	typenum@1.15.0
+	unicode-ident@1.0.5
+	unicode-width@0.1.10
+	vcpkg@0.2.15
+	vcsgraph@0.2.0
+	version_check@0.9.4
+	wasi@0.9.0+wasi-snapshot-preview1
+	wasi@0.11.0+wasi-snapshot-preview1
+	wasm-bindgen@0.2.83
+	wasm-bindgen-backend@0.2.83
+	wasm-bindgen-macro@0.2.83
+	wasm-bindgen-macro-support@0.2.83
+	wasm-bindgen-shared@0.2.83
+	web-sys@0.3.60
+	which@4.3.0
+	whoami@1.4.0
+	winapi@0.3.9
+	winapi-i686-pc-windows-gnu@0.4.0
+	winapi-util@0.1.5
+	winapi-x86_64-pc-windows-gnu@0.4.0
+	windows-targets@0.52.0
+	windows_aarch64_gnullvm@0.52.0
+	windows_aarch64_msvc@0.52.0
+	windows_i686_gnu@0.52.0
+	windows_i686_msvc@0.52.0
+	windows_x86_64_gnu@0.52.0
+	windows_x86_64_gnullvm@0.52.0
+	windows_x86_64_msvc@0.52.0
+	wyz@0.5.1
+	yansi@0.5.1
+	zstd@0.12.3+zstd.1.5.2
+	zstd-safe@6.0.4+zstd.1.5.4
+	zstd-sys@2.0.7+zstd.1.5.4
 "
 
 inherit bash-completion-r1 cargo elisp-common distutils-r1 flag-o-matic multiprocessing
@@ -149,12 +186,13 @@ inherit bash-completion-r1 cargo elisp-common distutils-r1 flag-o-matic multipro
 DESCRIPTION="Scalable distributed SCM"
 HOMEPAGE="https://www.mercurial-scm.org/"
 SRC_URI="https://www.mercurial-scm.org/release/${P}.tar.gz
-	rust? ( $(cargo_crate_uris ${CRATES}) )"
+	rust? ( ${CARGO_CRATE_URIS} )"
 
 LICENSE="GPL-2+
-	rust? ( BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD-2 ISC MIT MPL-2.0 PSF-2 Unlicense ZLIB )"
+	rust? (
+		0BSD Apache-2.0 Apache-2.0-with-LLVM-exceptions BSD Boost-1.0 MIT MPL-2.0 PSF-2 Unicode-DFS-2016 Unlicense ZLIB )"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~ia64 ~loong ~m68k ~mips ppc ppc64 ~riscv x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~x86 ~amd64-linux ~x86-linux ~arm64-macos ~ppc-macos ~x64-macos ~x64-solaris"
 IUSE="+chg emacs gpg test tk rust"
 
 BDEPEND="rust? ( ${RUST_DEPEND} )"
@@ -212,6 +250,11 @@ python_compile_all() {
 	if use chg; then
 		emake -C contrib/chg
 	fi
+	if use rust; then
+		pushd rust/rhg || die
+		cargo_src_compile --no-default-features --jobs $(makeopts_jobs)
+		popd || die
+	fi
 	if use emacs; then
 		cd contrib || die
 		elisp-compile mercurial.el || die "elisp-compile failed!"
@@ -256,6 +299,9 @@ python_install_all() {
 		doman contrib/chg/chg.1
 		RM_CONTRIB+=( chg )
 	fi
+	if use rust; then
+		dobin rust/target/release/rhg
+	fi
 
 	for f in ${RM_CONTRIB[@]}; do
 		rm -rf contrib/${f} || die
@@ -298,11 +344,6 @@ src_test() {
 }
 
 python_test() {
-	if [[ ${EPYTHON} == python3.10 ]]; then
-		einfo "Skipping tests for unsupported Python 3.10"
-		return
-	fi
-	distutils_install_for_testing
 	cd tests || die
 	PYTHONWARNINGS=ignore "${PYTHON}" run-tests.py \
 		--jobs $(makeopts_jobs) \
