@@ -1,21 +1,24 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_9 python3_10 python3_11 )
+PYTHON_COMPAT=( python{3_10,3_11,3_12} )
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1
 
-MY_PN="check_openvpn"
-DESCRIPTION="A Nagios plugin to check whether an OpenVPN server is alive"
-HOMEPAGE="https://github.com/liquidat/nagios-icinga-openvpn"
-SRC_URI="https://github.com/liquidat/nagios-icinga-openvpn/archive/${PV}.tar.gz -> ${P}.tar.gz"
+MY_PN="check_multiple"
+DESCRIPTION="A Nagios plugin to execute multiple checks in parallel"
+HOMEPAGE="https://github.com/clarkbox/check_multiple"
+SRC_URI="https://github.com/clarkbox/check_multiple/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
-IUSE=""
+IUSE="test"
+RESTRICT="!test? ( test )"
+
+S="${WORKDIR}/${MY_PN}-${PV}"
 
 src_install() {
 	distutils-r1_src_install
@@ -35,4 +38,9 @@ src_install() {
 	# outside of that chroot.
 	#
 	dosym "../../../bin/${MY_PN}" "${nagiosplugindir}/${MY_PN}"
+}
+
+python_test() {
+	"${EPYTHON}" -m unittest -v lib/check_multiple/check_multiple.py \
+		|| die "test suite failed"
 }
