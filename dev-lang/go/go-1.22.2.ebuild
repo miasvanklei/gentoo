@@ -36,8 +36,7 @@ SLOT="0/${PV}"
 IUSE="abi_mips_o32 abi_mips_n64 cpu_flags_x86_sse2"
 
 RDEPEND="
-arm? ( sys-devel/binutils[gold] )
-arm64? ( sys-devel/binutils[gold] )"
+arm? ( sys-devel/binutils[gold] )"
 BDEPEND="|| (
 		>=dev-lang/go-${GO_BOOTSTRAP_MIN}
 		>=dev-lang/go-bootstrap-${GO_BOOTSTRAP_MIN} )"
