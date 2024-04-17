@@ -112,6 +112,8 @@ src_configure() {
 	# LTO compiler flags are handled by configure.py itself
 	filter-lto
 
+	append-cxxflags	-Wno-error=enum-constexpr-conversion
+
 	local myconf=(
 		--shared-brotli
 		--shared-cares
