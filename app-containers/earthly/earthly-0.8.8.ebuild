@@ -4,13 +4,13 @@
 EAPI=8
 
 # Git commit SHA is needed at runtime by earthly to pull and bootstrap images.
-if [[ "${PV}" == 0.8.5 ]] ; then
-	COMMIT_SHA=a6b5b8dca64fdae64f089ac48cefa60ab39974c4
+if [[ "${PV}" == 0.8.8 ]] ; then
+	COMMIT_SHA=2718b793272cf8f80fa61071b41fec8469a7427b
 else
 	die 'Could not detect "COMMIT_SHA", please update the ebuild.'
 fi
 
-inherit go-module
+inherit go-module unpacker
 
 DESCRIPTION="Build automation tool that executes in containers"
 HOMEPAGE="https://earthly.dev/
@@ -18,12 +18,12 @@ HOMEPAGE="https://earthly.dev/
 SRC_URI="
 	https://github.com/${PN}/${PN}/archive/v${PV}.tar.gz
 		-> ${P}.tar.gz
-	https://dev.gentoo.org/~xgqt/distfiles/deps/${P}-deps.tar.xz
+	https://dev.gentoo.org/~xgqt/distfiles/deps/${P}-deps.tar.zst
 "
 
 LICENSE="MPL-2.0"
 SLOT="0"
-KEYWORDS="amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
 	|| (
@@ -33,6 +33,12 @@ RDEPEND="
 "
 
 DOCS=( CHANGELOG.md CONTRIBUTING.md README.md )
+
+src_unpack() {
+	unpacker "${P}-deps.tar.zst"
+
+	go-module_src_unpack
+}
 
 src_compile() {
 	local go_tags="dfrunmount,dfrunsecurity,dfsecrets,dfssh,dfrunnetwork,dfheredoc,forceposix"
