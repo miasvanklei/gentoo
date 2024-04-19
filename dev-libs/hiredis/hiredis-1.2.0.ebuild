@@ -13,7 +13,7 @@ LICENSE="BSD"
 # Always check "Upgrading from ..." in README
 # e.g. https://github.com/redis/hiredis#upgrading-to-110
 SLOT="0/$(ver_cut 1-2)"
-KEYWORDS="~alpha ~amd64 ~arm arm64 ~hppa ~ia64 ~loong ~ppc ppc64 ~riscv ~s390 sparc ~x86 ~x64-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~x64-solaris"
 IUSE="examples ssl static-libs test"
 RESTRICT="!test? ( test )"
 
@@ -29,13 +29,6 @@ BDEPEND="
 PATCHES=(
 	"${FILESDIR}"/${PN}-1.1.0-disable-network-tests.patch
 )
-
-src_prepare() {
-	default
-
-	# use GNU ld syntax on Solaris
-	sed -i -e '/DYLIB_MAKE_CMD=.* -G/d' Makefile || die
-}
 
 _build() {
 	emake \
