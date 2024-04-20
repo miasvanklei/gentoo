@@ -136,6 +136,7 @@ CMAKE_WARN_UNUSED_CLI=no
 
 QA_FLAGS_IGNORED="
 	usr/lib/${PN}/${PV}/bin/.*
+	usr/lib/${PN}/${PV}/libexec/.*
 	usr/lib/${PN}/${PV}/lib/lib.*.so
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/bin/.*
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/lib/lib.*.so
@@ -164,11 +165,9 @@ VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/rust.asc
 PATCHES=(
 	"${FILESDIR}"/1.75.0-musl-dynamic-linking.patch
 	"${FILESDIR}"/1.74.1-cross-compile-libz.patch
+	#"${FILESDIR}"/1.72.0-bump-libc-deps-to-0.2.146.patch  # pending refresh
 	"${FILESDIR}"/1.70.0-ignore-broken-and-non-applicable-tests.patch
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
-	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
-	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
-	"${FILESDIR}"/1.75.0-remove-crt-and-musl_root-from-musl-targets.patch
 	"${FILESDIR}"/1.75.0-handle-vendored-sources.patch  # remove for >=1.77.0
 	"${FILESDIR}"/1.76.0-loong-code-model.patch  # remove for >=1.78.0
 )
@@ -710,6 +709,7 @@ src_install() {
 
 	# symlinks to switch components to active rust in eselect
 	dosym "${PV}/lib" "/usr/lib/${PN}/lib-${PV}"
+	dosym "${PV}/libexec" "/usr/lib/${PN}/libexec-${PV}"
 	dosym "${PV}/share/man" "/usr/lib/${PN}/man-${PV}"
 	dosym "rust/${PV}/lib/rustlib" "/usr/lib/rustlib-${PV}"
 	dosym "../../lib/${PN}/${PV}/share/doc/rust" "/usr/share/doc/${P}"
@@ -732,6 +732,7 @@ src_install() {
 		/usr/bin/rust-lldb
 		/usr/lib/rustlib
 		/usr/lib/rust/lib
+		/usr/lib/rust/libexec
 		/usr/lib/rust/man
 		/usr/share/doc/rust
 	_EOF_

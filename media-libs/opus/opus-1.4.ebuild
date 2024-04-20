@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..12} )
+PYTHON_COMPAT=( python3_{9..11} )
 inherit flag-o-matic meson-multilib python-any-r1
 
 DESCRIPTION="Open codec for interactive speech and music transmission over the Internet"
