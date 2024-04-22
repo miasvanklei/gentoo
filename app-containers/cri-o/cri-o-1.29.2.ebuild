@@ -1,9 +1,9 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-EGIT_COMMIT=214b77367c48acd75a08610ac8d0941540347691
+EGIT_COMMIT=d317b5dc918bbfbc78481072a0d93e572aa8d0e8
 
 inherit go-module
 
