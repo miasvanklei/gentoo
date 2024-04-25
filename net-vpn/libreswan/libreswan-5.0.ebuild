@@ -11,8 +11,8 @@ SRC_URI="https://download.libreswan.org/${P}.tar.gz"
 
 LICENSE="GPL-2 BSD-4 RSA DES"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ~ppc x86"
-IUSE="caps curl dnssec ldap networkmanager pam seccomp selinux systemd test"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~x86"
+IUSE="caps curl dnssec +ikev1 ldap networkmanager pam seccomp selinux systemd test"
 RESTRICT="!test? ( test )"
 
 DEPEND="
@@ -52,8 +52,6 @@ usetf() {
 	usex "$1" true false
 }
 
-PATCHES=( "${FILESDIR}/${PN}-4.2-ip-path.patch" )
-
 src_prepare() {
 	sed -i -e 's:/sbin/runscript:/sbin/openrc-run:' initsystems/openrc/ipsec.init.in || die
 	sed -i -e '/^install/ s/postcheck//' -e '/^doinstall/ s/oldinitdcheck//' initsystems/systemd/Makefile || die
@@ -67,14 +65,15 @@ src_configure() {
 
 	export PREFIX=/usr
 	export DEFAULT_DNSSEC_ROOTKEY_FILE=/etc/dnssec/icannbundle.pem
+	export EXAMPLE_IPSEC_SYSCONFDIR=/usr/share/doc/${PF}
 	export FINALEXAMPLECONFDIR=/usr/share/doc/${PF}
-	export FINALDOCDIR=/usr/share/doc/${PF}/html
 	export INITSYSTEM=$(usex systemd systemd openrc)
 	export INITDDIRS=
 	export INITDDIR_DEFAULT=/etc/init.d
 	export USERCOMPILE=${CFLAGS}
 	export USERLINK=${LDFLAGS}
 	export USE_DNSSEC=$(usetf dnssec)
+	export USE_IKEV1=$(usetf ikev1)
 	export USE_LABELED_IPSEC=$(usetf selinux)
 	export USE_LIBCAP_NG=$(usetf caps)
 	export USE_LIBCURL=$(usetf curl)
