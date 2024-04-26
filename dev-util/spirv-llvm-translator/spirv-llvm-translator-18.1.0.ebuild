@@ -16,7 +16,7 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="UoI-NCSA"
 SLOT="$(ver_cut 1)"
-KEYWORDS="amd64 ~arm64 ~riscv ~x86"
+KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -25,7 +25,7 @@ RDEPEND="
 	sys-devel/llvm:${SLOT}=
 "
 DEPEND="${RDEPEND}
-	>=dev-util/spirv-headers-1.3.275
+	>=dev-util/spirv-headers-1.3.280
 "
 BDEPEND="
 	virtual/pkgconfig
@@ -34,10 +34,6 @@ BDEPEND="
 		sys-devel/clang:${SLOT}
 	)
 "
-
-PATCHES=(
-	"${FILESDIR}"/${P}-revert_support_SPV_INTEL_maximum_registers_extension.patch
-)
 
 src_prepare() {
 	append-flags -fPIC
