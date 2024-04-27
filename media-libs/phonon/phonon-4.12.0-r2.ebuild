@@ -36,7 +36,6 @@ DEPEND="
 	)
 "
 RDEPEND="${DEPEND}
-	!media-libs/phonon-gstreamer
 	|| (
 		kde-frameworks/breeze-icons:*
 		kde-frameworks/oxygen-icons:*
