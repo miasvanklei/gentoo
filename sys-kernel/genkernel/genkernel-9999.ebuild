@@ -32,7 +32,7 @@ VERSION_HWIDS="20210613"
 VERSION_ISCSI="2.1.8"
 # json-c-0.17 needs gkbuild ported to meson
 VERSION_JSON_C="0.13.1"
-VERSION_KMOD="30"
+VERSION_KMOD="31"
 VERSION_LIBAIO="0.3.113"
 VERSION_LIBGCRYPT="1.10.3"
 VERSION_LIBGPGERROR="1.47"
@@ -48,13 +48,13 @@ VERSION_UNIONFS_FUSE="2.0"
 VERSION_USERSPACE_RCU="0.14.0"
 VERSION_UTIL_LINUX="2.39.3"
 VERSION_XFSPROGS="6.4.0"
-VERSION_XZ="5.4.3"
+VERSION_XZ="5.4.2"
 VERSION_ZLIB="1.3.1"
 VERSION_ZSTD="1.5.5"
 VERSION_KEYUTILS="1.6.3"
 
 COMMON_URI="
-	https://github.com/g2p/bcache-tools/archive/399021549984ad27bf4a13ae85e458833fe003d7.tar.gz -> bcache-tools-${VERSION_BCACHE_TOOLS}.tar.gz
+	https://git.kernel.org/pub/scm/linux/kernel/git/colyli/bcache-tools.git/snapshot/a5e3753516bd39c431def86c8dfec8a9cea1ddd4.tar.gz -> bcache-tools-${VERSION_BCACHE_TOOLS}.tar.gz
 	https://boostorg.jfrog.io/artifactory/main/release/${VERSION_BOOST}/source/boost_${VERSION_BOOST//./_}.tar.bz2
 	https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-v${VERSION_BTRFS_PROGS}.tar.xz
 	https://www.busybox.net/downloads/busybox-${VERSION_BUSYBOX}.tar.bz2
