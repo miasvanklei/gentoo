@@ -4,7 +4,7 @@
 EAPI=8
 
 CONFIG_CHECK="~ADVISE_SYSCALLS"
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..11} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit bash-completion-r1 check-reqs flag-o-matic linux-info pax-utils python-any-r1 toolchain-funcs xdg-utils
@@ -39,7 +39,8 @@ RDEPEND=">=app-arch/brotli-1.0.9:=
 	sys-libs/zlib
 	corepack? ( !sys-apps/yarn )
 	system-icu? ( >=dev-libs/icu-67:= )
-	system-ssl? ( >=dev-libs/openssl-1.1.1:0= )"
+	system-ssl? ( >=dev-libs/openssl-1.1.1:0= )
+	sys-devel/gcc:*"
 BDEPEND="${PYTHON_DEPS}
 	sys-apps/coreutils
 	virtual/pkgconfig
@@ -111,8 +112,12 @@ src_configure() {
 
 	# LTO compiler flags are handled by configure.py itself
 	filter-lto
-
-	append-cxxflags	-Wno-error=enum-constexpr-conversion
+	# nodejs unconditionally links to libatomic #869992
+	# specifically it requires __atomic_is_lock_free which
+	# is not yet implemented by sys-libs/compiler-rt (see
+	# https://reviews.llvm.org/D85044?id=287068), therefore
+	# we depend on gcc and force using libgcc as the support lib
+	tc-is-clang && append-ldflags "--rtlib=libgcc --unwindlib=libgcc"
 
 	local myconf=(
 		--shared-brotli
