@@ -61,9 +61,9 @@
 -# The full path to the musl libdir.
 -#musl-libdir = musl-root/lib
 -
- # The root location of the `wasm32-wasi` sysroot. Only used for the
- # `wasm32-wasi` target. If you are building wasm32-wasi target, make sure to
- # create a `[target.wasm32-wasi]` section and move this field there.
+ # The root location of the `wasm32-wasip1` sysroot. Only used for WASI
+ # related targets. Make sure to create a `[target.wasm32-wasip1]`
+ # section and move this field there (or equivalent for the target being built).
 --- a/src/bootstrap/src/utils/cc_detect.rs	2020-08-27 22:57:54.722286935 +0200
 +++ b/src/bootstrap/src/utils/cc_detect.rs	2020-08-27 22:59:36.731230131 +0200
 @@ -201,30 +201,6 @@
@@ -99,7 +99,7 @@
  }
 --- a/src/bootstrap/src/core/build_steps/compile.rs	2020-08-27 22:57:42.818176881 +0200
 +++ b/src/bootstrap/src/core/build_steps/compile.rs	2020-08-27 23:00:19.487625539 +0200
-@@ -255,40 +255,7 @@
+@@ -360,40 +360,7 @@
      t!(fs::create_dir_all(&libdir_self_contained));
      let mut target_deps = vec![];
  
@@ -128,7 +128,7 @@
 -        for &obj in &["crtbegin.o", "crtbeginS.o", "crtend.o", "crtendS.o"] {
 -            let src = crt_path.join(obj);
 -            let target = libdir_self_contained.join(obj);
--            builder.copy(&src, &target);
+-            builder.copy_link(&src, &target);
 -            target_deps.push((target, DependencyType::TargetSelfContained));
 -        }
 -
@@ -221,7 +221,7 @@
                  target.sanitizers = cfg.sanitizers;
 --- a/src/bootstrap/configure.py	2020-08-27 22:57:19.567961941 +0200
 +++ b/src/bootstrap/configure.py	2020-08-27 23:01:28.342262372 +0200
-@@ -99,38 +99,6 @@
+@@ -99,38 +99,4 @@
  v("llvm-filecheck", None, "set path to LLVM's FileCheck utility")
  v("python", "build.python", "set path to python")
  v("android-ndk", "build.android-ndk", "set path to Android NDK")
@@ -257,12 +257,14 @@
 -  "riscv32gc-unknown-linux-musl install directory")
 -v("musl-root-riscv64gc", "target.riscv64gc-unknown-linux-musl.musl-root",
 -  "riscv64gc-unknown-linux-musl install directory")
+-v("musl-root-loongarch64", "target.loongarch64-unknown-linux-musl.musl-root",
+-  "loongarch64-unknown-linux-musl install directory")
  v("qemu-armhf-rootfs", "target.arm-unknown-linux-gnueabihf.qemu-rootfs",
    "rootfs in qemu testing, you probably don't want to use this")
  v("qemu-aarch64-rootfs", "target.aarch64-unknown-linux-gnu.qemu-rootfs",
 --- a/src/bootstrap/src/lib.rs	2020-08-27 22:57:09.462868531 +0200
 +++ b/src/bootstrap/src/lib.rs	2020-08-27 23:01:42.231390843 +0200
-@@ -881,25 +881,6 @@
+@@ -1319,25 +1319,6 @@
          }
      }
  
@@ -272,7 +274,7 @@
 -            .target_config
 -            .get(&target)
 -            .and_then(|t| t.musl_root.as_ref())
--            .or_else(|| self.config.musl_root.as_ref())
+-            .or(self.config.musl_root.as_ref())
 -            .map(|p| &**p)
 -    }
 -
@@ -286,7 +288,7 @@
 -    }
 -
      /// Returns the sysroot for the wasi target, if defined
-     fn wasi_root(&self, target: Interned<String>) -> Option<&Path> {
+     fn wasi_root(&self, target: TargetSelection) -> Option<&Path> {
          self.config.target_config.get(&target).and_then(|t| t.wasi_root.as_ref()).map(|p| &**p)
 --- a/src/bootstrap/src/core/sanity.rs	2020-08-27 22:57:00.213783033 +0200
 +++ b/src/bootstrap/src/core/sanity.rs	2020-08-27 23:02:21.531754386 +0200
