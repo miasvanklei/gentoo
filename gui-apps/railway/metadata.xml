@@ -2,10 +2,10 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>ceamac@gentoo.org</email>
-		<name>Viorel Munteanu</name>
+		<email>mgorny@gentoo.org</email>
+		<name>Michał Górny</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="github">WayfireWM/wayfire-plugins-extra</remote-id>
+		<remote-id type="gitlab">schmiddi-on-mobile/railway</remote-id>
 	</upstream>
 </pkgmetadata>
