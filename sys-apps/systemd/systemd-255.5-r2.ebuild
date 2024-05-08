@@ -340,7 +340,6 @@ multilib_src_configure() {
 		$(meson_native_true firstboot)
 		$(meson_native_true hibernate)
 		$(meson_native_true hostnamed)
-		$(meson_native_true ldconfig)
 		$(meson_native_true localed)
 		$(meson_native_true man)
 		$(meson_native_true networkd)
@@ -353,6 +352,18 @@ multilib_src_configure() {
 		$(meson_native_true tmpfiles)
 		$(meson_native_true vconsole)
 		$(meson_native_enabled vmspawn)
+
+		# not musl compatible
+		-Dlibidn=false
+		-Dlibidn2=false
+		-Dgshadow=false
+		-Dnss-myhostname=false
+		-Dnss-mymachines=false
+		-Dnss-resolve=false
+		-Dnss-systemd=false
+		-Dutmp=false
+		-Dldconfig=false
+		-Duserdb=false
 	)
 
 	meson_src_configure "${myconf[@]}"
