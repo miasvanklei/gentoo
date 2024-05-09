@@ -3,12 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10,11,12} )
-LLVM_MAX_SLOT=17
+PYTHON_COMPAT=( python3_{10,11,12,13} )
+LLVM_COMPAT=( {15..18} )
 
-inherit flag-o-matic linux-info llvm pam python-single-r1 systemd tmpfiles
+inherit flag-o-matic linux-info llvm-r1 pam python-single-r1 systemd tmpfiles
 
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
 
 SLOT=$(ver_cut 1)
 
@@ -21,7 +21,7 @@ LICENSE="POSTGRESQL GPL-2"
 DESCRIPTION="PostgreSQL RDBMS"
 HOMEPAGE="https://www.postgresql.org/"
 
-IUSE="debug doc icu kerberos ldap llvm nls pam perl python +readline
+IUSE="debug doc icu kerberos ldap llvm +lz4 nls pam perl python +readline
 	  selinux +server systemd ssl static-libs tcl uuid xml zlib"
 
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
@@ -35,10 +35,11 @@ virtual/libintl
 icu? ( dev-libs/icu:= )
 kerberos? ( virtual/krb5 )
 ldap? ( net-nds/openldap:= )
-llvm? (
-	<sys-devel/llvm-18:=
-	<sys-devel/clang-18:=
-)
+llvm? ( $(llvm_gen_dep '
+	sys-devel/clang:${LLVM_SLOT}
+	sys-devel/llvm:${LLVM_SLOT}
+	') )
+lz4? ( app-arch/lz4 )
 pam? ( sys-libs/pam )
 perl? ( >=dev-lang/perl-5.8:= )
 python? ( ${PYTHON_DEPS} )
@@ -83,7 +84,7 @@ selinux? ( sec-policy/selinux-postgresql )
 "
 
 pkg_setup() {
-	use llvm && llvm_pkg_setup
+	use llvm && llvm-r1_pkg_setup
 
 	use server && CONFIG_CHECK="~SYSVIPC" linux-info_pkg_setup
 
@@ -100,7 +101,7 @@ src_prepare() {
 	# hardened and non-hardened environments. (Bug #528786)
 	sed 's/@install_bin@/install -c/' -i src/Makefile.global.in || die
 
-	use server || eapply "${FILESDIR}/${PN}-12.1-no-server.patch"
+	use server || eapply "${FILESDIR}/${PN}-14.5-no-server.patch"
 
 	if use pam ; then
 		sed "s/\(#define PGSQL_PAM_SERVICE \"postgresql\)/\1-${SLOT}/" \
@@ -131,19 +132,19 @@ src_configure() {
 		[[ -z $uuid_config ]] && uuid_config="--with-uuid=ossp"
 	fi
 
-	econf \
+	local myconf="\
 		--prefix="${PO}/usr/$(get_libdir)/postgresql-${SLOT}" \
 		--datadir="${PO}/usr/share/postgresql-${SLOT}" \
 		--includedir="${PO}/usr/include/postgresql-${SLOT}" \
 		--mandir="${PO}/usr/share/postgresql-${SLOT}/man" \
 		--sysconfdir="${PO}/etc/postgresql-${SLOT}" \
 		--with-system-tzdata="${PO}/usr/share/zoneinfo" \
-		$(use_enable !alpha spinlocks) \
 		$(use_enable debug) \
 		$(use_with icu) \
 		$(use_with kerberos gssapi) \
 		$(use_with ldap) \
 		$(use_with llvm) \
+		$(use_with lz4) \
 		$(use_with pam) \
 		$(use_with perl) \
 		$(use_with python) \
@@ -155,7 +156,14 @@ src_configure() {
 		$(use_with xml libxml) \
 		$(use_with xml libxslt) \
 		$(use_with zlib) \
-		$(use_enable nls)
+		$(use_enable nls)"
+	if use alpha; then
+		myconf+=" --disable-spinlocks"
+	else
+		# Should be the default but just in case
+		myconf+=" --enable-spinlocks"
+	fi
+	econf ${myconf}
 }
 
 src_compile() {
@@ -436,8 +444,12 @@ pkg_config() {
 
 src_test() {
 	if use server && [[ ${UID} -ne 0 ]] ; then
+		# Some ICU tests fail if LC_CTYPE and LC_COLLATE aren't the same. We set
+		# LC_CTYPE to be equal to LC_COLLATE since LC_COLLATE is set by Portage.
+		local old_ctype=${LC_CTYPE}
+		export LC_CTYPE=${LC_COLLATE}
 		emake check
-
+		export LC_CTYPE=${old_ctype}
 		einfo "If you think other tests besides the regression tests are necessary, please"
 		einfo "submit a bug including a patch for this ebuild to enable them."
 	else
