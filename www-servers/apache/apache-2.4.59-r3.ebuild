@@ -4,9 +4,9 @@
 EAPI=7
 
 # latest gentoo apache files
-GENTOO_PATCHSTAMP="20240405"
+GENTOO_PATCHSTAMP="20240511"
 GENTOO_DEVELOPER="graaff"
-GENTOO_PATCHNAME="gentoo-apache-2.4.59"
+GENTOO_PATCHNAME="gentoo-apache-2.4.59-r3"
 
 # IUSE/USE_EXPAND magic
 IUSE_MPMS_FORK="prefork"
@@ -147,6 +147,11 @@ HOMEPAGE="https://httpd.apache.org/"
 LICENSE="Apache-2.0 Apache-1.1"
 SLOT="2"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x64-macos ~x64-solaris"
+
+RDEPEND="
+	apache2_modules_tls? ( >=net-libs/rustls-ffi-0.13.0:= )
+"
+DEPEND="${RDEPEND}"
 
 pkg_setup() {
 	# dependent critical modules which are not allowed in global scope due
