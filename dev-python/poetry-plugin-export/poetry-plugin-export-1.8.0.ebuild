@@ -19,12 +19,12 @@ SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-	>=dev-python/poetry-core-1.8.0[${PYTHON_USEDEP}]
+	>=dev-python/poetry-core-1.7.0[${PYTHON_USEDEP}]
 "
 
 DEPEND="
 	test? (
-		dev-python/poetry[${PYTHON_USEDEP}]
+		>=dev-python/poetry-1.7.0[${PYTHON_USEDEP}]
 		>=dev-python/pytest-mock-3.9[${PYTHON_USEDEP}]
 		>=dev-python/pytest-xdist-3.1[${PYTHON_USEDEP}]
 	)
