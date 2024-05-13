@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{9..11} )
-DISTUTILS_USE_SETUPTOOLS=no
+DISTUTILS_USE_PEP517="setuptools"
 DISTUTILS_EXT=1
 
 inherit desktop flag-o-matic xdg distutils-r1
@@ -41,6 +41,10 @@ RDEPEND="${DEPEND}
 
 S="${WORKDIR}"/${PN}-open-source-${PV}
 
+PATCHES=(
+	"${FILESDIR}/${PN}-2.5.0-format-security.patch"
+)
+
 python_prepare_all() {
 	sed \
 		-e "s:\"/usr:\"${EPREFIX}/usr:g" \
@@ -76,6 +80,10 @@ python_install() {
 
 python_install_all() {
 	distutils-r1_python_install_all
+
+	# Move data to correct location
+	dodir /usr/share/pymol
+	mv "${D}/$(python_get_sitedir)"/pymol/pymol_path/* "${ED}/usr/share/pymol" || die
 
 	# These environment variables should not go in the wrapper script, or else
 	# it will be impossible to use the PyMOL libraries from Python.

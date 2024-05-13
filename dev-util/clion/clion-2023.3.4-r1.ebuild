@@ -58,17 +58,19 @@ src_prepare() {
 	default
 
 	local remove_me=(
+		Install-Linux-tar.txt
 		help/ReferenceCardForMac.pdf
 		bin/cmake
 		bin/gdb/linux
 		bin/lldb/linux
 		bin/ninja
-		license/CMake*
+		lib/async-profiler/aarch64/libasyncProfiler.so
 		plugins/cwm-plugin/quiche-native/darwin-aarch64
 		plugins/cwm-plugin/quiche-native/darwin-x86-64
 		plugins/cwm-plugin/quiche-native/linux-aarch64
 		plugins/cwm-plugin/quiche-native/win32-x86-64
 		plugins/remote-dev-server/selfcontained
+		plugins/python-ce/helpers/pydev/pydevd_attach_to_process/attach_linux_aarch64.so
 	)
 
 	rm -rv "${remove_me[@]}" || die
@@ -86,10 +88,10 @@ src_install() {
 
 	insinto "${dir}"
 	doins -r *
-	fperms 755 "${dir}"/bin/{clion.sh,fsnotifier,inspect.sh,ltedit.sh,repair,restart.py,clang/linux/x64/{clangd,clang-tidy,clazy-standalone,llvm-symbolizer}}
+	fperms 755 "${dir}"/bin/{clion.sh,format.sh,fsnotifier,inspect.sh,jetbrains_client.sh,ltedit.sh,remote-dev-server.sh,repair,restarter,clang/linux/x64/{clangd,clang-tidy,clazy-standalone,llvm-symbolizer}}
 
 	if [[ -d jbr ]]; then
-		fperms 755 "${dir}"/jbr/bin/{java,javac,jdb,jrunscript,keytool,rmiregistry,serialver}
+		fperms 755 "${dir}"/jbr/bin/{java,javac,javadoc,jcmd,jdb,jfr,jhsdb,jinfo,jmap,jps,jrunscript,jstack,jstat,keytool,rmiregistry,serialver}
 		# Fix #763582
 		fperms 755 "${dir}"/jbr/lib/{chrome-sandbox,jcef_helper,jexec,jspawnhelper}
 	fi
