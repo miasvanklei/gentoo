@@ -33,6 +33,11 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2024-05-17)
+# A Python < 3.3 backport of shutil.which().  No revdeps left.
+# Removal on 2024-06-16.  Bug #932088.
+dev-python/whichcraft
+
 # Eli Schwartz <eschwartz93@gmail.com> (2024-05-17)
 # Last updated in 2007, has no reverse dependencies, is unmaintained upstream
 # (in 2010 a version 4 alpha was released using cmake, the project has seen no
@@ -328,12 +333,6 @@ dev-go/twofactor
 # Upstream gone, unfetchable, stuck on EAPI 6. Bug 605796
 # Removal on 2024-05-18
 sci-visualization/spectromatic
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2024-04-12)
-# EAPI6. Fails to compile with go versions in tree. Upstream is archived.
-# Uses deprecated go eclasses. Maintainer needed, no rev deps.
-# Removal: 2024-05-12.  Bugs #794913, #679348, #771072, #844607.
-app-emulation/runv
 
 # Michał Górny <mgorny@gentoo.org> (2024-04-11)
 # Contains a bug that could render the kernel fail to boot.
