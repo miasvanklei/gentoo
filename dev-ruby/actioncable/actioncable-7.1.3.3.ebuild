@@ -1,9 +1,9 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-USE_RUBY="ruby31 ruby32"
+USE_RUBY="ruby31 ruby32 ruby33"
 
 RUBY_FAKEGEM_RECIPE_DOC=""
 RUBY_FAKEGEM_DOCDIR=""
@@ -24,7 +24,7 @@ SRC_URI="https://github.com/rails/rails/archive/v${PV}.tar.gz -> rails-${PV}.tgz
 LICENSE="MIT"
 SLOT="$(ver_cut 1-2)"
 KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
-IUSE=""
+IUSE="test"
 
 RUBY_S="rails-${PV}/${PN}"
 
@@ -36,11 +36,12 @@ ruby_add_rdepend "
 	~dev-ruby/activesupport-${PV}:*
 	dev-ruby/nio4r:2
 	>=dev-ruby/websocket-driver-0.6.1:*
+	>=dev-ruby/zeitwerk-2.6:2
 "
 
 ruby_add_bdepend "
 	test? (
 		>=dev-ruby/railties-4.2.0
 		dev-ruby/test-unit:2
-		>=dev-ruby/mocha-0.14.0:0.14
+		dev-ruby/mocha
 	)"

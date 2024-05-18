@@ -1,8 +1,8 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-USE_RUBY="ruby31 ruby32"
+USE_RUBY="ruby31 ruby32 ruby33"
 
 # this is not null so that the dependencies will actually be filled
 RUBY_FAKEGEM_TASK_TEST="test"
@@ -29,6 +29,7 @@ RUBY_S="rails-${PV}/${PN}"
 
 ruby_add_rdepend "~dev-ruby/activesupport-${PV}
 	~dev-ruby/activemodel-${PV}
+	>=dev-ruby/timeout-0.4.0
 	sqlite? ( >=dev-ruby/sqlite3-1.4 )
 	mysql? ( dev-ruby/mysql2:0.5 )
 	postgres? ( >=dev-ruby/pg-1.1:1 )"
@@ -38,10 +39,11 @@ ruby_add_bdepend "
 		dev-ruby/benchmark-ips
 		dev-ruby/bundler
 		~dev-ruby/actionpack-${PV}
+		~dev-ruby/activejob-${PV}
 		~dev-ruby/railties-${PV}
 		>=dev-ruby/sqlite3-1.4.0
 		dev-ruby/mocha
-		<dev-ruby/minitest-5.16:*
+		dev-ruby/minitest:5
 	)"
 
 DEPEND+=" test? ( >=dev-db/sqlite-3.12.1 )"
@@ -62,12 +64,10 @@ all_ruby_prepare() {
 	# earlier that implicitly required it.
 	sed -i -e '$agem "json"' ../Gemfile || die
 
-	sed -i -e '3igem "rack", "<3"; gem "minitest", "<5.16"' test/cases/helper.rb || die
-
 	# Avoid single tests using mysql or postgres dependencies.
 	rm test/cases/invalid_connection_test.rb || die
 	sed -e '/test_switching_connections_with_database_url/askip "postgres"' \
-		-i test/cases/connection_adapters/{,legacy_}connection_handlers_multi_db_test.rb || die
+		-i test/cases/connection_adapters/connection_handlers_multi_db_test.rb || die
 
 	# Avoid failing test that makes bad assumptions on database state.
 	sed -i -e '/test_do_not_call_callbacks_for_delete_all/,/^  end/ s:^:#:' \
@@ -77,8 +77,8 @@ all_ruby_prepare() {
 	sed -i -e '/test_too_many_binds/askip "Fails on Gentoo"' test/cases/bind_parameter_test.rb || die
 
 	# Avoid test failing related to rubygems
-	sed -e '/test_generates_absolute_path_with_given_root/askip "rubygems actiovation monitor"' \
-		-i test/cases/tasks/sqlite_rake_test.rb || die
+	#sed -e '/test_generates_absolute_path_with_given_root/askip "rubygems actiovation monitor"' \
+	#	-i test/cases/tasks/sqlite_rake_test.rb || die
 
 	# Avoid test requiring specific locales
 	sed -i -e '/test_unicode_input_casting/askip "Requires specific locales"' test/cases/binary_test.rb || die
@@ -86,6 +86,9 @@ all_ruby_prepare() {
 	# Avoid test not compatible with sqlite 3.43
 	sed -e '/test_should_return_float_average_if_db_returns_such/askip "Fails with sqlite 3.43"' \
 		-i test/cases/calculations_test.rb || die
+
+	# Avoid tests requiring a full Rails setup
+	rm -f test/cases/adapters/sqlite3/dbconsole_test.rb || die
 }
 
 each_ruby_test() {

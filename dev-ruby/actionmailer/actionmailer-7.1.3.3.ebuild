@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-USE_RUBY="ruby31 ruby32"
+USE_RUBY="ruby31 ruby32 ruby33"
 
 RUBY_FAKEGEM_RECIPE_DOC="none"
 RUBY_FAKEGEM_EXTRADOC="CHANGELOG.md README.rdoc"
@@ -42,7 +42,9 @@ ruby_add_bdepend "test? (
 all_ruby_prepare() {
 	# Set test environment to our hand.
 	rm "${S}/../Gemfile" || die "Unable to remove Gemfile"
-	sed -i -e '/\/load_paths/d' test/abstract_unit.rb || die "Unable to remove load paths"
+	sed -e '/\/load_paths/d' \
+		-e '3irequire "ostruct"' \
+		-i test/abstract_unit.rb || die "Unable to remove load paths"
 
 	# Avoid a test failing only on attachment ordering, since this is a
 	# security release.
