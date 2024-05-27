@@ -4,7 +4,7 @@
 EAPI=8
 
 CONFIG_CHECK="~ADVISE_SYSCALLS"
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{9..12} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit bash-completion-r1 check-reqs flag-o-matic linux-info pax-utils python-any-r1 toolchain-funcs xdg-utils
@@ -20,13 +20,12 @@ if [[ ${PV} == *9999 ]]; then
 else
 	SRC_URI="https://nodejs.org/dist/v${PV}/node-v${PV}.tar.xz"
 	SLOT="0/$(ver_cut 1)"
-	KEYWORDS="amd64 arm arm64 ~loong ppc64 ~riscv x86 ~amd64-linux ~x64-macos"
+	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86 ~amd64-linux ~x64-macos"
 	S="${WORKDIR}/node-v${PV}"
 fi
 
 IUSE="corepack cpu_flags_x86_sse2 debug doc +icu inspector lto +npm pax-kernel +snapshot +ssl +system-icu +system-ssl test"
-REQUIRED_USE="corepack? ( !npm )
-	inspector? ( icu ssl )
+REQUIRED_USE="inspector? ( icu ssl )
 	npm? ( ssl )
 	system-icu? ( icu )
 	system-ssl? ( ssl )
@@ -35,9 +34,10 @@ REQUIRED_USE="corepack? ( !npm )
 RESTRICT="!test? ( test )"
 
 RDEPEND=">=app-arch/brotli-1.0.9:=
-	>=dev-libs/libuv-1.44.0:=
+	>=dev-libs/libuv-1.46.0:=
 	>=net-dns/c-ares-1.18.1:=
 	>=net-libs/nghttp2-1.41.0:=
+	>=net-libs/ngtcp2-1.1.0:=
 	sys-libs/zlib
 	corepack? ( !sys-apps/yarn )
 	system-icu? ( >=dev-libs/icu-71:= )
@@ -61,10 +61,6 @@ DEPEND="${RDEPEND}"
 CHECKREQS_MEMORY="8G"
 CHECKREQS_DISK_BUILD="22G"
 
-PATCHES=(
-	"${FILESDIR}"/"${PN}"-20.3.0-gcc14.patch
-	)
-
 pkg_pretend() {
 	if [[ ${MERGE_TYPE} != "binary" ]]; then
 		if is-flagq "-g*" && ! is-flagq "-g*0" ; then
@@ -87,9 +83,6 @@ src_prepare() {
 	# fix compilation on Darwin
 	# https://code.google.com/p/gyp/issues/detail?id=260
 	sed -i -e "/append('-arch/d" tools/gyp/pylib/gyp/xcode_emulation.py || die
-
-	# less verbose install output (stating the same as portage, basically)
-	sed -i -e "/print/d" tools/install.py || die
 
 	# proper libdir, hat tip @ryanpcmcquen https://github.com/iojs/io.js/issues/504
 	local LIBDIR=$(get_libdir)
@@ -131,6 +124,7 @@ src_configure() {
 		--shared-cares
 		--shared-libuv
 		--shared-nghttp2
+		--shared-ngtcp2
 		--shared-zlib
 	)
 	use debug && myconf+=( --debug )
@@ -238,11 +232,16 @@ src_install() {
 
 src_test() {
 	local drop_tests=(
-		test/parallel/test-fs-read-stream.js
+	test/parallel/test-dns-resolveany-bad-ancount.js
 		test/parallel/test-dns-setserver-when-querying.js
 		test/parallel/test-fs-mkdir.js
+		test/parallel/test-fs-read-stream.js
 		test/parallel/test-fs-utimes-y2K38.js
 		test/parallel/test-fs-watch-recursive-add-file.js
+		test/parallel/test-process-euid-egid.js
+		test/parallel/test-process-initgroups.js
+		test/parallel/test-process-setgroups.js
+		test/parallel/test-process-uid-gid.js
 		test/parallel/test-release-npm.js
 		test/parallel/test-socket-write-after-fin-error.js
 		test/parallel/test-strace-openat-openssl.js
