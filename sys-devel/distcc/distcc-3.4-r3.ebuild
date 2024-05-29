@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..11} )
 
 inherit autotools flag-o-matic prefix python-single-r1 systemd
 
@@ -31,6 +31,7 @@ BDEPEND="
 RDEPEND+="
 	acct-user/distcc
 	dev-util/shadowman
+	>=sys-devel/gcc-config-1.4.1
 	selinux? ( sec-policy/selinux-distcc )
 	xinetd? ( sys-apps/xinetd )"
 
