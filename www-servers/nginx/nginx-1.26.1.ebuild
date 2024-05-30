@@ -11,6 +11,7 @@ EAPI=8
 #	* sane packaging
 #	* builds cleanly
 #	* does not need a patch for nginx core
+# - Update NGINX_TESTS_REV to the current available revision and run tests.
 # - TODO: test the google-perftools module (included in vanilla tarball)
 
 # prevent perl-module from adding automagic perl DEPENDs
@@ -59,9 +60,9 @@ HTTP_FANCYINDEX_MODULE_URI="https://github.com/aperezdc/ngx-fancyindex/archive/v
 HTTP_FANCYINDEX_MODULE_WD="${WORKDIR}/ngx-fancyindex-${HTTP_FANCYINDEX_MODULE_PV}"
 
 # http_lua (https://github.com/openresty/lua-nginx-module, BSD license)
-HTTP_LUA_MODULE_PV="b6d167cf1a93c0c885c28db5a439f2404874cb26"
+HTTP_LUA_MODULE_PV="0.10.25"
 HTTP_LUA_MODULE_P="ngx_http_lua-${HTTP_LUA_MODULE_PV}"
-HTTP_LUA_MODULE_URI="https://github.com/openresty/lua-nginx-module/archive/${HTTP_LUA_MODULE_PV}.tar.gz"
+HTTP_LUA_MODULE_URI="https://github.com/openresty/lua-nginx-module/archive/v${HTTP_LUA_MODULE_PV}.tar.gz"
 HTTP_LUA_MODULE_WD="${WORKDIR}/lua-nginx-module-${HTTP_LUA_MODULE_PV}"
 LUA_COMPAT=( luajit )
 
@@ -152,6 +153,12 @@ HTTP_LDAP_MODULE_P="nginx-auth-ldap-${HTTP_LDAP_MODULE_PV}"
 HTTP_LDAP_MODULE_URI="https://github.com/kvspb/nginx-auth-ldap/archive/${HTTP_LDAP_MODULE_PV}.tar.gz"
 HTTP_LDAP_MODULE_WD="${WORKDIR}/nginx-auth-ldap-${HTTP_LDAP_MODULE_PV}"
 
+# nginx-vod-module (https://github.com/kaltura/nginx-vod-module, AGPL-3+)
+HTTP_VOD_MODULE_PV="1.33"
+HTTP_VOD_MODULE_P="nginx-vod-module-${HTTP_VOD_MODULE_PV}"
+HTTP_VOD_MODULE_URI="https://github.com/kaltura/nginx-vod-module/archive/${HTTP_VOD_MODULE_PV}.tar.gz"
+HTTP_VOD_MODULE_WD="${WORKDIR}/nginx-vod-module-${HTTP_VOD_MODULE_PV}"
+
 # geoip2 (https://github.com/leev/ngx_http_geoip2_module, BSD-2)
 GEOIP2_MODULE_PV="3.4"
 GEOIP2_MODULE_P="ngx_http_geoip2_module-${GEOIP2_MODULE_PV}"
@@ -164,11 +171,14 @@ NJS_MODULE_P="njs-${NJS_MODULE_PV}"
 NJS_MODULE_URI="https://github.com/nginx/njs/archive/${NJS_MODULE_PV}.tar.gz"
 NJS_MODULE_WD="${WORKDIR}/njs-${NJS_MODULE_PV}"
 
+# nginx-tests (http://hg.nginx.org/nginx-tests, BSD-2)
+NGINX_TESTS_REV="0b5ec15c62ed"
+
 # We handle deps below ourselves
 SSL_DEPS_SKIP=1
 AUTOTOOLS_AUTO_DEPEND="no"
 
-inherit autotools lua-single ssl-cert toolchain-funcs perl-module systemd pax-utils
+inherit autotools lua-single multiprocessing ssl-cert toolchain-funcs perl-module systemd pax-utils
 
 DESCRIPTION="Robust, small and high performance http and reverse proxy server"
 HOMEPAGE="https://nginx.org"
@@ -199,19 +209,20 @@ SRC_URI="https://nginx.org/download/${P}.tar.gz
 	nginx_modules_http_upload_progress? ( ${HTTP_UPLOAD_PROGRESS_MODULE_URI} -> ${HTTP_UPLOAD_PROGRESS_MODULE_P}.tar.gz )
 	nginx_modules_http_upstream_check? ( ${HTTP_UPSTREAM_CHECK_MODULE_URI} -> ${HTTP_UPSTREAM_CHECK_MODULE_P}.tar.gz )
 	nginx_modules_http_vhost_traffic_status? ( ${HTTP_VHOST_TRAFFIC_STATUS_MODULE_URI} -> ${HTTP_VHOST_TRAFFIC_STATUS_MODULE_P}.tar.gz )
+	nginx_modules_http_vod? ( ${HTTP_VOD_MODULE_URI} -> ${HTTP_VOD_MODULE_P}.tar.gz )
 	nginx_modules_stream_geoip2? ( ${GEOIP2_MODULE_URI} -> ${GEOIP2_MODULE_P}.tar.gz )
 	nginx_modules_stream_javascript? ( ${NJS_MODULE_URI} -> ${NJS_MODULE_P}.tar.gz )
-	rtmp? ( ${RTMP_MODULE_URI} -> ${RTMP_MODULE_P}.tar.gz )"
+	rtmp? ( ${RTMP_MODULE_URI} -> ${RTMP_MODULE_P}.tar.gz )
+	test? ( https://hg.nginx.org/nginx-tests/archive/${NGINX_TESTS_REV}.tar.gz -> nginx-tests-${NGINX_TESTS_REV}.tar.gz )"
 
 LICENSE="BSD-2 BSD SSLeay MIT GPL-2 GPL-2+
 	nginx_modules_http_security? ( Apache-2.0 )
 	nginx_modules_http_push_stream? ( GPL-3 )"
 
 SLOT="0"
-KEYWORDS="amd64 arm arm64 ~ppc ~ppc64 ~riscv x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 arm arm64 ~loong ~ppc ~ppc64 ~riscv ~x86 ~amd64-linux ~x86-linux"
 
-# Package doesn't provide a real test suite
-RESTRICT="test"
+RESTRICT="!test? ( test )"
 
 NGINX_MODULES_STD="access auth_basic autoindex browser charset empty_gif
 	fastcgi geo grpc gzip limit_req limit_conn map memcached mirror
@@ -248,11 +259,12 @@ NGINX_MODULES_3RD="
 	http_upload_progress
 	http_upstream_check
 	http_vhost_traffic_status
+	http_vod
 	stream_geoip2
 	stream_javascript
 "
 
-IUSE="aio debug +http +http2 +http-cache libatomic pcre +pcre2 pcre-jit rtmp selinux ssl threads vim-syntax"
+IUSE="aio debug +http +http2 http3 +http-cache ktls libatomic pcre +pcre2 pcre-jit rtmp selinux ssl test threads vim-syntax"
 
 for mod in $NGINX_MODULES_STD; do
 	IUSE="${IUSE} +nginx_modules_http_${mod}"
@@ -298,6 +310,9 @@ CDEPEND="
 	http-cache? (
 		dev-libs/openssl:0=
 	)
+	ktls? (
+		>=dev-libs/openssl-3:0=[ktls]
+	)
 	nginx_modules_http_brotli? ( app-arch/brotli:= )
 	nginx_modules_http_geoip? ( dev-libs/geoip )
 	nginx_modules_http_geoip2? ( dev-libs/libmaxminddb:= )
@@ -315,6 +330,7 @@ CDEPEND="
 	nginx_modules_http_dav_ext? ( dev-libs/libxml2 )
 	nginx_modules_http_security? ( dev-libs/modsecurity )
 	nginx_modules_http_auth_ldap? ( net-nds/openldap:=[ssl?] )
+	nginx_modules_http_vod? ( media-video/ffmpeg:0= )
 	nginx_modules_stream_geoip? ( dev-libs/geoip )
 	nginx_modules_stream_geoip2? ( dev-libs/libmaxminddb:= )"
 RDEPEND="${CDEPEND}
@@ -324,10 +340,28 @@ RDEPEND="${CDEPEND}
 DEPEND="${CDEPEND}
 	arm? ( dev-libs/libatomic_ops )
 	libatomic? ( dev-libs/libatomic_ops )"
-BDEPEND="nginx_modules_http_brotli? ( virtual/pkgconfig )"
+BDEPEND="
+	nginx_modules_http_brotli? ( virtual/pkgconfig )
+	test? (
+		dev-lang/perl
+		dev-perl/Cache-Memcached
+		dev-perl/Cache-Memcached-Fast
+		dev-perl/CryptX
+		dev-perl/FCGI
+		dev-perl/GD
+		dev-perl/Net-SSLeay
+	)"
+# Unpackaged perl modules which would be used by tests
+# Protocol::WebSocket
+# SCGI
+
+# Uwsgi doesn't start in tests
+# www-servers/uwsgi
+
 PDEPEND="vim-syntax? ( app-vim/nginx-syntax )"
 
 REQUIRED_USE="pcre-jit? ( pcre )
+	ktls? ( ssl )
 	nginx_modules_http_fancyindex? ( nginx_modules_http_addition )
 	nginx_modules_http_grpc? ( http2 )
 	nginx_modules_http_lua? (
@@ -340,7 +374,8 @@ REQUIRED_USE="pcre-jit? ( pcre )
 	nginx_modules_http_dav_ext? ( nginx_modules_http_dav nginx_modules_http_xslt )
 	nginx_modules_http_metrics? ( nginx_modules_http_stub_status )
 	nginx_modules_http_security? ( pcre )
-	nginx_modules_http_push_stream? ( ssl )"
+	nginx_modules_http_push_stream? ( ssl )
+	nginx_modules_http_vod? ( threads )"
 
 pkg_setup() {
 	NGINX_HOME="/var/lib/nginx"
@@ -380,6 +415,12 @@ src_prepare() {
 	if use nginx_modules_http_auth_ldap; then
 		cd "${HTTP_LDAP_MODULE_WD}" || die
 		eapply "${FILESDIR}/${PN}-1.23.2-mod_auth_ldap-fix.patch"
+		cd "${S}" || die
+	fi
+
+	if use nginx_modules_http_javascript; then
+		cd "${NJS_MODULE_WD}" || die
+		sed -e 's/-Werror//g' -i auto/cc || die
 		cd "${S}" || die
 	fi
 
@@ -441,6 +482,8 @@ src_configure() {
 	use aio       && myconf+=( --with-file-aio )
 	use debug     && myconf+=( --with-debug )
 	use http2     && myconf+=( --with-http_v2_module )
+	use http3     && myconf+=( --with-http_v3_module )
+	use ktls      && myconf+=( --with-openssl-opt=enable-ktls )
 	use libatomic && myconf+=( --with-libatomic )
 	use pcre      && myconf+=( --with-pcre --without-pcre2 )
 	use pcre-jit  && myconf+=( --with-pcre-jit )
@@ -583,8 +626,14 @@ src_configure() {
 		myconf+=( --add-module=${HTTP_BROTLI_MODULE_WD} )
 	fi
 
-	if use http || use http-cache || use http2 || use nginx_modules_http_javascript; then
+	if use http || use http-cache || use http2 || use http3 || use nginx_modules_http_javascript; then
 		http_enabled=1
+	fi
+
+	if use nginx_modules_http_vod; then
+		http_enabled=1
+		export HTTP_POSTPONE=no
+		myconf+=( --add-module=${HTTP_VOD_MODULE_WD} )
 	fi
 
 	if [ $http_enabled ]; then
@@ -813,6 +862,24 @@ src_install() {
 		docinto ${HTTP_LDAP_MODULE_P}
 		dodoc "${HTTP_LDAP_MODULE_WD}"/example.conf
 	fi
+
+	if use nginx_modules_http_vod; then
+		docinto ${HTTP_VOD_MODULE_P}
+		dodoc "${HTTP_VOD_MODULE_WD}"/{CHANGELOG,README}.md
+	fi
+}
+
+src_test() {
+	pushd "${WORKDIR}"/nginx-tests-"${NGINX_TESTS_REV}" > /dev/null || die
+
+	# FIXME: unsure why uwsgi fails to start
+	rm uwsgi*.t || die
+
+	local -x TEST_NGINX_BINARY="${S}/objs/nginx"
+	local -x TEST_NGINX_VERBOSE=1
+
+	prove -v -j $(makeopts_jobs) . || die
+	popd > /dev/null || die
 }
 
 pkg_postinst() {
