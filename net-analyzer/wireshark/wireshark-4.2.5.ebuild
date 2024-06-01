@@ -24,7 +24,7 @@ else
 	S="${WORKDIR}/${P/_/}"
 
 	if [[ ${PV} != *_rc* ]] ; then
-		KEYWORDS="~amd64 ~arm64 ~hppa"
+		KEYWORDS="amd64 ~arm arm64 ~hppa ~x86"
 	fi
 fi
 
@@ -141,6 +141,7 @@ fi
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-2.6.0-redhat.patch
+	"${FILESDIR}"/${PN}-4.2.5-http2-test.patch
 )
 
 python_check_deps() {
@@ -268,11 +269,6 @@ src_configure() {
 
 src_test() {
 	cmake_build test-programs
-
-	EPYTEST_DESELECT=(
-		# TODO: investigate
-		suite_follow_multistream.py::case_follow_multistream::test_follow_http2_multistream
-	)
 
 	# https://www.wireshark.org/docs/wsdg_html_chunked/ChTestsRunPytest.html
 	epytest \
