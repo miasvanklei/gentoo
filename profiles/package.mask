@@ -33,6 +33,13 @@
 
 #--- END OF EXAMPLES ---
 
+# Mike Gilbert <floppym@gentoo.org> (2024-06-01)
+# Abandoned upstream. No Gentoo maintainer since 2021.
+# Plugin system seems quite broken (bug 887119).
+# Removal on 2024-07-01.
+sys-fs/reiser4progs
+sys-libs/libaal
+
 # Hans de Graaff <graaff@gentoo.org> (2024-06-01)
 # Old ruby31-only slots. Please use a newer slot of these
 # packages. Masked for removal on 2024-07-01.
@@ -801,10 +808,6 @@ sec-keys/openpgp-keys-jiatan
 # for catalyst-4. Questions or bug reports about catalyst-3
 # may or may not lead to useful results.
 <dev-util/catalyst-4
-
-# Matt Turner <mattst88@gentoo.org> (2023-07-06)
-# GNOME 45 mask
->=gnome-extra/gnome-logs-45_alpha
 
 # Michał Górny <mgorny@gentoo.org> (2023-06-21)
 # suitesparseconfig-7.0.0 fails to build with multilib enabled
