@@ -44,6 +44,7 @@ DOCS=(
 PATCHES=(
 	"${FILESDIR}"/${P}-meson-tests.patch
 	"${FILESDIR}"/${P}-meson-macos.patch
+	"${FILESDIR}"/fix-tests-for-Python3.12.patch
 )
 
 pkg_setup() {
