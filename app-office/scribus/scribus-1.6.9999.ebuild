@@ -9,12 +9,19 @@ inherit cmake desktop flag-o-matic optfeature python-single-r1 xdg
 
 DESCRIPTION="Desktop publishing (DTP) and layout program"
 HOMEPAGE="https://www.scribus.net/"
-SRC_URI="https://downloads.sourceforge.net/project/${PN}/${PN}/${PV}/${P}.tar.xz"
-S="${WORKDIR}/${P}"
+
+if [[ "${PV}" == *9999* ]] ; then
+	EGIT_REPO_URI="https://github.com/scribusproject/scribus"
+	EGIT_BRANCH="Version16x"
+	inherit git-r3
+else
+	SRC_URI="https://downloads.sourceforge.net/project/${PN}/${PN}/${PV}/${P}.tar.xz"
+	S="${WORKDIR}/${P}"
+	KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
+fi
 
 LICENSE="GPL-2"
 SLOT="$(ver_cut 1-2)"
-KEYWORDS="amd64 ppc ppc64 x86"
 IUSE="+boost debug examples graphicsmagick hunspell +minimal osg +pdf scripts +templates tk"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
@@ -76,10 +83,6 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-1.5.3-fpic.patch
 	"${FILESDIR}"/${PN}-1.6.1-findhyphen.patch
 	"${FILESDIR}"/${PN}-1.7.0-fix-icon-version.patch
-	"${FILESDIR}"/${PN}-1.6.1-poppler-24.03.patch
-	"${FILESDIR}"/${PN}-1.6.1-poppler-24.05.patch
-	"${FILESDIR}"/${PN}-1.6.1-boost-1.85.patch
-	"${FILESDIR}"/${PN}-1.6.1-boost-1.85-2.patch
 )
 
 src_prepare() {
