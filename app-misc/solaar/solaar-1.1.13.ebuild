@@ -27,6 +27,7 @@ IUSE="doc appindicator libnotify"
 RDEPEND="
 	acct-group/plugdev
 	$(python_gen_cond_dep '
+		dev-python/dbus-python[${PYTHON_USEDEP}]
 		dev-python/evdev[${PYTHON_USEDEP}]
 		dev-python/psutil[${PYTHON_USEDEP}]
 		dev-python/pygobject:3[${PYTHON_USEDEP}]
