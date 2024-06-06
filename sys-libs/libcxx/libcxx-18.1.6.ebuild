@@ -131,6 +131,8 @@ multilib_src_configure() {
 		-DLIBCXX_USE_COMPILER_RT=${use_compiler_rt}
 		# this is broken with standalone builds, and also meaningless
 		-DLIBCXXABI_USE_LLVM_UNWINDER=OFF
+		# ....
+		-DLIBCXX_TYPEINFO_COMPARISON_IMPLEMENTATION=2
 	)
 
 	if use test; then
