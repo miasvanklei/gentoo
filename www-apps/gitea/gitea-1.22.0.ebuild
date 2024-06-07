@@ -8,19 +8,12 @@ inherit fcaps go-module tmpfiles systemd flag-o-matic user-info
 DESCRIPTION="A painless self-hosted Git service"
 HOMEPAGE="https://gitea.com https://github.com/go-gitea/gitea"
 
-if [[ ${PV} == *9999 ]]; then
-	inherit git-r3
-	EGIT_REPO_URI="https://github.com/go-gitea/gitea.git"
-else
-	SRC_URI="https://github.com/go-gitea/gitea/releases/download/v${PV}/gitea-src-${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~x86"
-fi
-
+SRC_URI="https://github.com/go-gitea/gitea/releases/download/v${PV}/gitea-src-${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/${PN}-src-${PV}"
-
 LICENSE="Apache-2.0 BSD BSD-2 CC0-1.0 ISC MIT MPL-2.0"
 SLOT="0"
-IUSE="+acct pam sqlite pie"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~riscv ~x86"
+IUSE="+acct gogit pam sqlite pie"
 
 DEPEND="
 	acct? (
@@ -28,8 +21,8 @@ DEPEND="
 		acct-user/git[gitea] )
 	pam? ( sys-libs/pam )"
 RDEPEND="${DEPEND}
-	dev-vcs/git"
-BDEPEND=">=dev-lang/go-1.21:="
+	!gogit? ( dev-vcs/git )"
+BDEPEND=">=dev-lang/go-1.22:="
 
 DOCS=(
 	custom/conf/app.example.ini CHANGELOG.md CONTRIBUTING.md README.md
@@ -39,6 +32,14 @@ FILECAPS=(
 )
 
 RESTRICT="test"
+
+# The problems that can be fixed by the following patches has been fixed
+# upstream, so these ALL patches should be removed in the next release.
+PATCHES=(
+	"${FILESDIR}/${P}-go-chi-memcache-package.diff"
+	"${FILESDIR}/${P}-fix-missing-memcache-import.diff"
+	"${FILESDIR}/${P}-ignore-findrecentlypushednewbranches-err.diff"
+)
 
 src_prepare() {
 	default
@@ -59,6 +60,7 @@ src_compile() {
 	# The space-separated list of the -tags flag is deprecated, please
 	# always use the comma-separated list in the future.
 	gitea_tags="bindata"
+	gitea_tags+="$(usex gogit ',gogit' '')"
 	gitea_tags+="$(usex pam ',pam' '')"
 	gitea_tags+="$(usex sqlite ',sqlite,sqlite_unlock_notify' '')"
 
@@ -72,12 +74,6 @@ src_compile() {
 		LDFLAGS="-extldflags \"${LDFLAGS}\" ${gitea_settings[*]}"
 		TAGS="${gitea_tags}"
 	)
-
-	if [[ ${PV} != *9999 ]]; then
-		# Use variable STORED_VERSION_FILE (the "${S}/VERSION" file) to set version,
-		# and prevent executing git command when it's not a live version.
-		makeenv+=( GITHUB_REF_NAME="" )
-	fi
 
 	if use pie ; then
 		# Please check the supported platforms when a new keyword request opened,
@@ -136,12 +132,27 @@ pkg_postinst() {
 		eerror "to install it."
 	fi
 
-	if [[ -n ${REPLACING_VERSIONS} ]] && ver_test "${REPLACING_VERSIONS}" -lt 1.21; then
-		ewarn "Since 1.21.0:"
-		ewarn "  1. The built-in SSH server will now only accept SSH user"
-		ewarn "     certificates, not server certificates. This behaviour matches OpenSSH."
-		ewarn "  2. The options of the subcommand must follow the subcommand now."
-		ewarn "  3. Remove 'CHARSET' config option for MySQL, always use 'utf8mb4'."
-		ewarn "For other breaking changes, see <https://github.com/go-gitea/gitea/releases/tag/v1.21.0>."
+	if [[ -n ${REPLACING_VERSIONS} ]]; then
+		if ver_test "${REPLACING_VERSIONS}" -lt 1.21; then
+			ewarn "Since version 1.21.0:"
+			ewarn "  1. The built-in SSH server will now only accept SSH user"
+			ewarn "     certificates, not server certificates. This behaviour matches OpenSSH."
+			ewarn "  2. The options of the subcommand must follow the subcommand now."
+			ewarn "  3. Remove 'CHARSET' config option for MySQL, always use 'utf8mb4'."
+			ewarn "For other breaking changes, see <https://github.com/go-gitea/gitea/releases/tag/v1.21.0>."
+		fi
+		if ver_test "${REPLACING_VERSIONS}" -lt 1.22; then
+			ewarn "Since version 1.22.0:"
+			ewarn "  1. Minimum database requirements updated to MySQL 8.0, PostgreSQL 12, and MSSQL 2012."
+			ewarn "  2. There are a lot of refactoring changes related to customizing templates."
+			ewarn "  3. The default duration of the 'Remember login' feature has been"
+			ewarn "     changed from one week to one month."
+			ewarn "  4. Enhanced auth token/remember me, the obsolete setting"
+			ewarn "     '[security].COOKIE_USERNAME' has been removed."
+			ewarn "  5. For MinIO storage, adds a prefix path for all MinIO storage"
+			ewarn "     and override base path will override the path."
+			ewarn "  6. Now use a more restricted sanitizer for the repository description."
+			ewarn "For more details, see <https://github.com/go-gitea/gitea/releases/tag/v1.22.0>."
+		fi
 	fi
 }
