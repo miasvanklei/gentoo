@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit dune multiprocessing
+inherit dune
 
 DESCRIPTION="Helper library for gathering system configuration"
 HOMEPAGE="https://github.com/ocaml/dune"
@@ -12,7 +12,7 @@ S="${WORKDIR}/dune-${PV}"
 
 LICENSE="Apache-2.0"
 SLOT="0/${PV}"
-KEYWORDS="amd64 ~arm ~arm64 ~ppc ppc64 ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
 IUSE="+ocamlopt"
 RESTRICT="test"
 
@@ -35,5 +35,5 @@ src_configure() {
 }
 
 src_compile() {
-	dune build -p "${PN}" @install -j $(makeopts_jobs) --profile release || die
+	dune-compile ${PN}
 }
