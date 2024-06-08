@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit dune multiprocessing
+inherit dune
 
 DESCRIPTION="Embed locations informations inside executable and libraries"
 HOMEPAGE="https://github.com/ocaml/dune"
@@ -13,7 +13,7 @@ S="${WORKDIR}/dune-${PV}"
 
 LICENSE="MIT"
 SLOT="0/${PV}"
-KEYWORDS="amd64 arm ~arm64 ~ppc ppc64 x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~x86"
 IUSE="+ocamlopt"
 RESTRICT="test"
 
@@ -27,5 +27,5 @@ src_configure() {
 }
 
 src_compile() {
-	dune build -p ${PN} @install -j $(makeopts_jobs) --display short || die
+	dune-compile ${PN}
 }
