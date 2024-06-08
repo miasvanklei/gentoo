@@ -38,6 +38,9 @@ BDEPEND="
 src_prepare() {
 	append-flags -fPIC
 	cmake_src_prepare
+
+	# https://github.com/KhronosGroup/SPIRV-LLVM-Translator/pull/2555
+	sed -i -e 's/%triple/x86_64-unknown-linux-gnu/' test/DebugInfo/X86/*.ll || die
 }
 
 src_configure() {
