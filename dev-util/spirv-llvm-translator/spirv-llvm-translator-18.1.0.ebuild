@@ -35,6 +35,9 @@ BDEPEND="
 	)
 "
 
+PATCHES=(
+)
+
 src_prepare() {
 	append-flags -fPIC
 	cmake_src_prepare

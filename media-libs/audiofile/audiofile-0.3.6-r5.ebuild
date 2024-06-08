@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit autotools flag-o-matic gnome.org multilib-minimal
+inherit autotools gnome.org multilib-minimal
 
 DESCRIPTION="An elegant API for accessing audio files"
 HOMEPAGE="https://audiofile.68k.org/"
@@ -32,8 +32,6 @@ src_prepare() {
 }
 
 multilib_src_configure() {
-	# unary_function removed in c++17
-	append-cxxflags -std=c++14
 	# Tests depend on statically compiled binaries to work, so we'll have to
 	# delete them later rather than not compile them at all
 	local myconf=(
