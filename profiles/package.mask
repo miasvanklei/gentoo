@@ -71,6 +71,7 @@ dev-ml/base:0/0.17
 dev-ml/fieldslib:0/0.17
 dev-ml/stdio:0/0.17
 >=dev-ml/ocaml-compiler-libs-0.17
+>=dev-ml/ppxlib-0.32.1
 
 # Arthur Zamarin <arthurzam@gentoo.org> (2024-06-08)
 # EAPI=6, waiting for a version bump, not maintained for many years.
@@ -81,7 +82,6 @@ www-apps/wiliki
 # Various apache modules with no reverse dependencies, EAPI=6,
 # some maintainer-needed.
 # Removal on 2024-07-08.  Bugs #933847, #742452.
-www-apache/mod_maxminddb
 www-apache/mod_vdbh
 www-apache/modsec-flameeyes
 
