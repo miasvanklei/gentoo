@@ -184,6 +184,9 @@ dev-ml/ppxlib_jane
 dev-ml/ppx_compare:0/0.17
 dev-ml/ppx_enumerate:0/0.17
 dev-ml/ppx_globalize:0/0.17
+dev-ml/ppx_sexp_conv:0/0.17
+dev-ml/ppx_hash:0/0.17
+dev-ml/ppx_base:0/0.17
 
 # Arthur Zamarin <arthurzam@gentoo.org> (2024-06-08)
 # EAPI=6, waiting for a version bump, not maintained for many years.
@@ -460,28 +463,6 @@ sci-libs/cifparse-obj
 # EAPI=6, fails to compile, no reverse dependencies.
 # Removal: 2024-06-12.  Bugs #931860, #891895.
 sci-libs/libghemical
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2024-05-11)
-# EAPI=6, uses deprecated go eclass, archived upstream. Update to
-# usage of go-module.eclass isn't simple.
-# Removal: 2024-06-10.  Bugs #931745, #844598.
-app-emulation/docker-machine
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2024-05-11)
-# EAPI=6, library only without any reverse dependencies, uses
-# deprecated go eclasses.
-# Removal: 2024-06-10.  Bug #931725.
-dev-go/fuzzy
-dev-go/go-bindata-assetfs
-dev-go/godebug-pretty
-dev-go/sanitized-anchor-name
-
-# Eli Schwartz <eschwartz93@gmail.com> (2024-05-08)
-# Fails to configure with GCC 14, fails to install with older
-# gcc, unmaintained, upstream website vanished.
-# Bug #731180, #861461, #888577, #889930.
-# Removal on 2024-06-08.
-net-irc/ninja
 
 # Sam James <sam@gentoo.org> (2024-04-28)
 # Masked for testing. Tracker bug: bug #930805.
