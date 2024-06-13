@@ -94,9 +94,9 @@
 -            }
 -        }
 -
-         _ => None,
-     }
- }
+         t if t.contains("-wasi") => {
+             let root = PathBuf::from(std::env::var_os("WASI_SDK_PATH")?);
+             let compiler = match compiler {
 --- a/src/bootstrap/src/core/build_steps/compile.rs	2020-08-27 22:57:42.818176881 +0200
 +++ b/src/bootstrap/src/core/build_steps/compile.rs	2020-08-27 23:00:19.487625539 +0200
 @@ -360,40 +360,7 @@
@@ -138,9 +138,9 @@
 -        }
 -    } else if target.contains("-wasi") {
 +    if target.contains("-wasi") {
-         let srcdir = builder
-             .wasi_root(target)
-             .unwrap_or_else(|| {
+         let srcdir = builder.wasi_libdir(target).unwrap_or_else(|| {
+             panic!(
+                 "Target {:?} does not have a \"wasi-root\" key in Config.toml \
 @@ -390,15 +357,6 @@
              .arg("--manifest-path")
              .arg(builder.src.join("library/sysroot/Cargo.toml"));
@@ -287,9 +287,9 @@
 -        self.musl_root(target).map(|root| root.join("lib"))
 -    }
 -
-     /// Returns the sysroot for the wasi target, if defined
-     fn wasi_root(&self, target: TargetSelection) -> Option<&Path> {
-         self.config.target_config.get(&target).and_then(|t| t.wasi_root.as_ref()).map(|p| &**p)
+     /// Returns the `lib` directory for the WASI target specified, if
+     /// configured.
+     ///
 --- a/src/bootstrap/src/core/sanity.rs	2020-08-27 22:57:00.213783033 +0200
 +++ b/src/bootstrap/src/core/sanity.rs	2020-08-27 23:02:21.531754386 +0200
 @@ -11,7 +11,6 @@

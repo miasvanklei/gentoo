@@ -30,7 +30,6 @@ HOMEPAGE="https://www.rust-lang.org/"
 SRC_URI="
 	https://static.rust-lang.org/dist/${SRC}
 	verify-sig? ( https://static.rust-lang.org/dist/${SRC}.asc )
-	!system-bootstrap? ( $(rust_all_arch_uris rust-${RUST_STAGE0_VERSION}) )
 "
 
 # keep in sync with llvm ebuild of the same version as bundled one.
@@ -136,7 +135,6 @@ CMAKE_WARN_UNUSED_CLI=no
 
 QA_FLAGS_IGNORED="
 	usr/lib/${PN}/${PV}/bin/.*
-	usr/lib/${PN}/${PV}/libexec/.*
 	usr/lib/${PN}/${PV}/lib/lib.*.so
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/bin/.*
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/lib/lib.*.so
@@ -170,6 +168,9 @@ PATCHES=(
 	#"${FILESDIR}"/1.72.0-bump-libc-deps-to-0.2.146.patch  # pending refresh
 	"${FILESDIR}"/1.78.0-ignore-broken-and-non-applicable-tests.patch
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
+	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
+	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
+	"${FILESDIR}"/1.78.0-remove-crt-and-musl_root-from-musl-targets.patch
 )
 
 clear_vendor_checksums() {
@@ -709,7 +710,6 @@ src_install() {
 
 	# symlinks to switch components to active rust in eselect
 	dosym "${PV}/lib" "/usr/lib/${PN}/lib-${PV}"
-	dosym "${PV}/libexec" "/usr/lib/${PN}/libexec-${PV}"
 	dosym "${PV}/share/man" "/usr/lib/${PN}/man-${PV}"
 	dosym "rust/${PV}/lib/rustlib" "/usr/lib/rustlib-${PV}"
 	dosym "../../lib/${PN}/${PV}/share/doc/rust" "/usr/share/doc/${P}"
@@ -732,7 +732,6 @@ src_install() {
 		/usr/bin/rust-lldb
 		/usr/lib/rustlib
 		/usr/lib/rust/lib
-		/usr/lib/rust/libexec
 		/usr/lib/rust/man
 		/usr/share/doc/rust
 	_EOF_
