@@ -6,7 +6,6 @@ EAPI=8
 KFMIN=6.0
 PVCUT=$(ver_cut 1-3)
 PYTHON_COMPAT=( python3_{10..12} )
-KFMIN=5.248
 inherit ecm plasma.kde.org python-any-r1
 
 DESCRIPTION="Official GTK+ port of Plasma's Breeze widget style"
