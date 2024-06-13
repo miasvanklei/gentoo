@@ -446,7 +446,7 @@ multilib_src_configure() {
 		-DCMAKE_POLICY_DEFAULT_CMP0148="OLD" # FindPythonInterp
 
 		# for protobuf
-		-DCMAKE_CXX_STANDARD=14
+		-DCMAKE_CXX_STANDARD=17
 
 	# Optional 3rd party components
 	# ===================================================
