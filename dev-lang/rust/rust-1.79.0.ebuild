@@ -170,7 +170,7 @@ PATCHES=(
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
 	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
 	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
-	"${FILESDIR}"/1.78.0-remove-crt-and-musl_root-from-musl-targets.patch
+	"${FILESDIR}"/1.79.0-remove-crt-and-musl_root-from-musl-targets.patch
 )
 
 clear_vendor_checksums() {
@@ -366,7 +366,7 @@ src_configure() {
 
 	local cm_btype="$(usex debug DEBUG RELEASE)"
 	cat <<- _EOF_ > "${S}"/config.toml
-		changelog-seen = 2
+		change-id = 999999
 		[llvm]
 		download-ci-llvm = false
 		optimize = $(toml_usex !debug)
