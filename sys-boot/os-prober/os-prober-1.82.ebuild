@@ -1,4 +1,4 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,7 +12,7 @@ if [[ ${PV} == 9999 ]]; then
 	EGIT_REPO_URI="https://salsa.debian.org/installer-team/${PN}.git"
 else
 	SRC_URI="mirror://debian/pool/main/${PN::1}/${PN}/${PN}_${PV}.tar.xz"
-	KEYWORDS="amd64 x86"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 LICENSE="GPL-3"
@@ -31,6 +31,7 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-1.79-mounted-boot-partition-fix.patch
 	"${FILESDIR}"/${PN}-1.79-fix-busy-umount-message.patch
 	"${FILESDIR}"/${PN}-1.79-efi-chroot-blkid-fallback.patch
+	"${FILESDIR}"/${PN}-1.81-boot-detected-twice-v3.patch
 )
 
 DOC_CONTENTS="
