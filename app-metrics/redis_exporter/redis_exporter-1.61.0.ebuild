@@ -1,24 +1,23 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 inherit go-module systemd
-EGIT_COMMIT=3a743038c6c5a80d10ce45a3fbd49412262c300b
+EGIT_COMMIT=e9871c1465679cd3543953f57bd4d015bc73c990
 
 DESCRIPTION="Prometheus Exporter for Redis Metrics. Supports Redis 2.x, 3.x and 4.x"
 HOMEPAGE="https://github.com/oliver006/redis_exporter"
-SRC_URI="https://github.com/oliver006/redis_exporter/archive/v${PV}.tar.gz -> ${P}.tar.gz
-	https://dev.gentoo.org/~zmedico/dist/redis_exporter-1.38.0-deps.tar.xz"
+SRC_URI="https://github.com/oliver006/redis_exporter/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+SRC_URI+=" https://dev.gentoo.org/~zmedico/dist/${P}-deps.tar.xz"
 
 LICENSE="MIT Apache-2.0 BSD"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
 RDEPEND="
 	acct-user/redis_exporter
 	acct-group/redis_exporter"
 DEPEND="${RDEPEND}"
-RESTRICT+=" test"
+RESTRICT="test"
 
 src_prepare() {
 	default
