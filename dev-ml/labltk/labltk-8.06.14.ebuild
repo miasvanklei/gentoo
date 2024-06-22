@@ -1,7 +1,7 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit findlib toolchain-funcs
 
@@ -11,19 +11,18 @@ SRC_URI="https://github.com/garrigue/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="QPL-1.0 LGPL-2"
 SLOT="0/${PV}"
-KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~mips ~ppc ~ppc64 ~riscv ~x86 ~amd64-linux ~x86-linux"
 IUSE="+ocamlopt X"
 
 RDEPEND="dev-lang/tk:=
-	<dev-lang/ocaml-4.12
-	>=dev-lang/ocaml-4.11:=[ocamlopt?,X(+)?]"
+	>=dev-lang/ocaml-4.14:=[ocamlopt?,X(+)?]"
 DEPEND="${RDEPEND}
 	dev-ml/findlib
 "
 
 PATCHES=(
-	"${FILESDIR}/findlib.patch"
-	"${FILESDIR}"/${PN}-8.06.9-configure-clang16.patch
+	"${FILESDIR}"/${P}-findlib.patch
+	"${FILESDIR}"/${P}-shuffle.patch
 )
 
 src_prepare() {
@@ -39,7 +38,7 @@ src_configure() {
 }
 
 src_compile() {
-	emake -j1
+	emake -j1 all
 	use ocamlopt && emake -j1 opt
 }
 
@@ -49,6 +48,7 @@ src_install() {
 	emake \
 		INSTALLDIR="${D}/$(ocamlc -where)/labltk" \
 		INSTALLBINDIR="${ED}/usr/bin/" \
+		RANLIB=$(tc-getRANLIB) \
 		install
 	dodoc Changes README.mlTk
 }
