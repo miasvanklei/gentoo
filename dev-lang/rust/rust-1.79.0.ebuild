@@ -30,6 +30,7 @@ HOMEPAGE="https://www.rust-lang.org/"
 SRC_URI="
 	https://static.rust-lang.org/dist/${SRC}
 	verify-sig? ( https://static.rust-lang.org/dist/${SRC}.asc )
+	!system-bootstrap? ( $(rust_all_arch_uris rust-${RUST_STAGE0_VERSION}) )
 "
 
 # keep in sync with llvm ebuild of the same version as bundled one.
@@ -366,7 +367,7 @@ src_configure() {
 
 	local cm_btype="$(usex debug DEBUG RELEASE)"
 	cat <<- _EOF_ > "${S}"/config.toml
-		change-id = 999999
+		change-id = 99999
 		[llvm]
 		download-ci-llvm = false
 		optimize = $(toml_usex !debug)
