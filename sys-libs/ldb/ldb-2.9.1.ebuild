@@ -43,10 +43,10 @@ RDEPEND="
 DEPEND="
 	${RDEPEND}
 	virtual/libcrypt
-	test? ( >=dev-util/cmocka-1.1.3[${MULTILIB_USEDEP}] )
 "
 BDEPEND="${PYTHON_DEPS}
 	dev-libs/libxslt
+	>=dev-util/cmocka-1.1.3[${MULTILIB_USEDEP}]
 	virtual/pkgconfig
 	doc? ( app-text/doxygen )
 "
@@ -64,7 +64,6 @@ PATCHES=(
 
 pkg_setup() {
 	# Package fails to build with distcc
-	export DISTCC_DISABLE=1
 	export PYTHONHASHSEED=1
 
 	# waf requires a python interpreter
@@ -112,13 +111,6 @@ multilib_src_configure() {
 	# When specifying libs for samba build you must append NONE to the end to
 	# stop it automatically including things
 	local bundled_libs="NONE"
-
-	# We "use" bundled cmocka when we're not running tests as we're
-	# not using it anyway. Means we avoid making users install it for
-	# no reason. bug #802531
-	if ! use test; then
-		bundled_libs="cmocka,${bundled_libs}"
-	fi
 
 	local myconf=(
 		$(usex ldap '' --disable-ldap)
