@@ -33,6 +33,13 @@
 
 #--- END OF EXAMPLES ---
 
+# James Le Cuirot <chewi@gentoo.org> (2024-07-01)
+# Ancient, dead upstream, generally awful.
+# Removal on 2024-08-01.  Bugs #935307, #935308, #935309.
+games-arcade/spacerider
+games-arcade/tuxdash
+games-arcade/xsfcave
+
 # NHOrus <jy6x2b32pie9@yahoo.com> (2024-06-28)
 # games-puzzle/seatris: last rites
 # Twenty-year-old tetris clone with upstream that wasn't touched since,
@@ -40,11 +47,6 @@
 # Removed after 2024-08-01
 # Bug: https://bugs.gentoo.org/935057
 games-puzzle/seatris
-
-# Michał Górny <mgorny@gentoo.org> (2024-07-01)
-# Refuses to boot if initramfs was built with an older systemd version
-# that enabled "cgroups v1".  Bug #935261.
->=sys-apps/systemd-256
 
 # Sam James <sam@gentoo.org> (2024-06-25)
 # Subvolume printing is broken: https://github.com/kdave/btrfs-progs/issues/829
@@ -493,12 +495,6 @@ sci-libs/coinhsl
 >=xfce-base/xfce4-settings-4.19
 >=xfce-base/xfconf-4.19
 >=xfce-base/xfdesktop-4.19
-
-# David Seifert <soap@gentoo.org> (2024-06-08)
-# Last release 12 years ago, clearly abandoned upstream, EAPI 6, no
-# other major distro still carries this.
-# Removal on 2024-07-08. Bug #933825.
-app-i18n/imhangul
 
 # Arthur Zamarin <arthurzam@gentoo.org> (2024-06-08)
 # EAPI=6, not maintained since cvs days. Keyworded for x86 and ppc

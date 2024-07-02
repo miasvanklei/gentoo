@@ -11,7 +11,7 @@ else
 	COMMIT=ae072f901671b68861da9577e3e12e350a9053d5
 	SRC_URI="https://github.com/${PN}/${PN}/archive/${COMMIT}.tar.gz -> ${P}.tar.gz"
 	S="${WORKDIR}/${PN}-${COMMIT}"
-	KEYWORDS="~amd64 ~arm64"
+	KEYWORDS="~amd64 ~arm64 ~riscv"
 fi
 
 QTMIN=6.7.1
@@ -36,12 +36,14 @@ COMMON_DEPEND="
 	sys-libs/pam
 	x11-libs/libXau
 	x11-libs/libxcb:=
-	elogind? ( sys-auth/elogind[pam] )
+	elogind? (
+		sys-auth/elogind[pam]
+		sys-power/upower
+	)
 	systemd? ( sys-apps/systemd:=[pam] )
-	!systemd? ( sys-power/upower )
 "
 DEPEND="${COMMON_DEPEND}
-	test? ( >=dev-qt/qtbase-${QTMIN}:6[network,test] )
+	test? ( >=dev-qt/qtbase-${QTMIN}:6 )
 "
 RDEPEND="${COMMON_DEPEND}
 	X? ( x11-base/xorg-server )
