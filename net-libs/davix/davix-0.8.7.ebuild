@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{9..13} )
 
 inherit cmake python-any-r1
 
@@ -13,13 +13,14 @@ SRC_URI="https://github.com/cern-fts/${PN}/releases/download/R_${PV//./_}/${P}.t
 
 LICENSE="LGPL-2.1"
 SLOT="0"
-KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="doc test tools"
 RESTRICT="!test? ( test )"
 
 CDEPEND="
 		dev-libs/libxml2:2=
 		dev-libs/openssl:0=
+		dev-libs/rapidjson:0=
 		net-libs/gsoap[ssl,-gnutls]
 		net-misc/curl:0=
 		kernel_linux? ( sys-apps/util-linux )
