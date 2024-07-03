@@ -1,13 +1,16 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DESCRIPTION="Full-featured & carefully designed adaptive prompt for Bash & Zsh"
-HOMEPAGE="https://github.com/nojhan/liquidprompt"
+HOMEPAGE="https://github.com/nojhan/liquidprompt https://liquidprompt.readthedocs.io/"
 SRC_URI="
 	https://github.com/nojhan/liquidprompt/releases/download/v${PV}/${PN}-v${PV}.tar.gz
 		-> ${P}.tar.gz
+	test? (
+		https://raw.githubusercontent.com/rcaloras/bash-preexec/0.4.1/bash-preexec.sh
+	)
 "
 S="${WORKDIR}/${PN}"
 
@@ -22,8 +25,9 @@ BDEPEND="test? ( dev-util/shunit2 )"
 DOCS=( CHANGELOG.md example.bashrc README.md )
 
 src_test() {
+	cp "${DISTDIR}/bash-preexec.sh" tests/ || die
 	cp "$(type -P shunit2)" tests/shunit2 || die
-	./tests.sh || die
+	./tests.sh bash || die
 }
 
 src_install() {
@@ -31,10 +35,9 @@ src_install() {
 	dobin liquidprompt
 
 	insinto /usr/share/${PN}
-	doins liquid.theme
-	doins liquid.ps1
-	doins -r themes
+	doins -r themes templates tools
 
 	insinto /etc/
-	newins liquidpromptrc-dist liquidpromptrc
+	./tools/config-from-doc.sh > "${T}/liquidpromptrc" || die
+	newins "${T}/liquidpromptrc" liquidpromptrc
 }
