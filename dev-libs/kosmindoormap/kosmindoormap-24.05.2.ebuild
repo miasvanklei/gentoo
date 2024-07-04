@@ -40,7 +40,7 @@ BDEPEND="
 "
 
 # Pending: https://invent.kde.org/libraries/kosmindoormap/-/merge_requests/40
-PATCHES=( "${FILESDIR}/${P}-cmake.patch" )
+PATCHES=( "${FILESDIR}/${PN}-24.05.1-cmake.patch" )
 
 src_configure() {
 	local mycmakeargs=(
