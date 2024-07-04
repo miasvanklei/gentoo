@@ -9,7 +9,7 @@ PYTHON_COMPAT=( python3_{10..12} )
 
 CRATES="
 	aho-corasick@1.1.3
-	anyhow@1.0.83
+	anyhow@1.0.86
 	arc-swap@1.7.1
 	autocfg@1.3.0
 	base64@0.21.7
@@ -64,8 +64,8 @@ CRATES="
 	regex@1.10.4
 	ryu@1.0.18
 	scopeguard@1.2.0
-	serde@1.0.201
-	serde_derive@1.0.201
+	serde@1.0.203
+	serde_derive@1.0.203
 	serde_json@1.0.117
 	sha1@0.10.6
 	sha2@0.10.8
@@ -116,7 +116,7 @@ LICENSE+="
 	|| ( Apache-2.0 Boost-1.0 )
 "
 SLOT="0"
-KEYWORDS="amd64 ~arm64 ~ppc64"
+KEYWORDS="~amd64 ~arm64 ~ppc64"
 IUSE="postgres systemd test"
 RESTRICT="!test? ( test )"
 
@@ -124,6 +124,9 @@ DEPEND="
 	acct-user/synapse
 	acct-group/synapse
 "
+# The dev-python/twisted-24.3.0_p20240628 snapshot available in our tree
+# introduces some breaking changes for synapse,
+# see https://github.com/element-hq/synapse/issues/17075
 RDEPEND="
 	${DEPEND}
 	dev-python/attrs[${PYTHON_USEDEP}]
@@ -152,7 +155,7 @@ RDEPEND="
 	dev-python/signedjson[${PYTHON_USEDEP}]
 	dev-python/sortedcontainers[${PYTHON_USEDEP}]
 	dev-python/treq[${PYTHON_USEDEP}]
-	dev-python/twisted[${PYTHON_USEDEP}]
+	<dev-python/twisted-24.3.0_p20240628[${PYTHON_USEDEP}]
 	dev-python/typing-extensions[${PYTHON_USEDEP}]
 	dev-python/unpaddedbase64[${PYTHON_USEDEP}]
 	postgres? ( dev-python/psycopg:2[${PYTHON_USEDEP}] )

@@ -1,10 +1,10 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit bash-completion-r1 go-module
-GIT_COMMIT=912ebc1cd10d38d340f048efaf0abda047c3468e
-GIT_SHA=912ebc1c
+inherit shell-completion go-module
+GIT_COMMIT=1a500d5625419a524fdae4b33de351cc4f58ec35
+GIT_SHA=1a500d56
 MY_PV=${PV/_rc/-rc.}
 
 DESCRIPTION="Kubernetes Package Manager"
@@ -14,7 +14,7 @@ SRC_URI+=" https://dev.gentoo.org/~williamh/dist/${P}-deps.tar.xz"
 
 LICENSE="Apache-2.0 BSD BSD-2 CC-BY-4.0 CC-BY-SA-4.0 ISC MIT ZLIB"
 SLOT="0"
-KEYWORDS="amd64 ~arm64 ~loong ~riscv"
+KEYWORDS="~amd64 ~arm64 ~loong ~riscv"
 
 RESTRICT=" test"
 
@@ -33,8 +33,7 @@ src_compile() {
 
 src_install() {
 	newbashcomp ${PN}.bash ${PN}
-	insinto /usr/share/zsh/site-functions
-	newins ${PN}.zsh _${PN}
+	newzshcomp ${PN}.zsh _${PN}
 
 	dobin bin/${PN}
 	dodoc README.md
