@@ -13,12 +13,18 @@ KEYWORDS="amd64 ~x86"
 IUSE="+alsa oss pulseaudio"
 
 BDEPEND="virtual/pkgconfig"
-RDEPEND="
+CDEPEND="
 	media-libs/libsidplayfp
 	alsa? ( media-libs/alsa-lib )
-	pulseaudio? ( media-libs/libpulse )"
-DEPEND="${RDEPEND}
-	oss? ( virtual/os-headers )"
+	pulseaudio? ( media-libs/libpulse )
+"
+RDEPEND="
+	${CDEPEND}
+	media-plugins/mpg123-output-plugins
+"
+DEPEND="${CDEPEND}
+	oss? ( virtual/os-headers )
+"
 
 DOCS=( AUTHORS README TODO )
 
