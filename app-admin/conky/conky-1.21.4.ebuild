@@ -17,9 +17,9 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~sparc ~x86"
 IUSE="apcupsd bundled-toluapp cmus colour-name-map curl doc extras hddtemp ical
 	iconv imlib intel-backlight iostats irc lua-cairo lua-cairo-xlib
-	lua-imlib lua-rsvg math moc mpd mysql ncurses nvidia +portmon
-	pulseaudio rss systemd test thinkpad truetype wayland webserver wifi X
-	xinerama xmms2"
+	lua-imlib lua-rsvg math moc mouse-events mpd mysql ncurses nvidia
+	+portmon pulseaudio rss systemd test thinkpad truetype wayland webserver
+	wifi X xinerama xinput xmms2"
 RESTRICT="!test? ( test )"
 
 # Note: toluapp is bundled in conky since 1.11.2
@@ -116,10 +116,12 @@ REQUIRED_USE="
 	lua-cairo-xlib? ( X  bundled-toluapp )
 	lua-imlib? ( X bundled-toluapp )
 	lua-rsvg? ( || ( X wayland ) bundled-toluapp )
+	mouse-events? ( X wayland )
 	nvidia? ( X )
 	rss? ( curl )
 	truetype? ( X )
 	xinerama? ( X )
+	xinput? ( X )
 "
 
 CONFIG_CHECK="~IPV6"
@@ -162,8 +164,6 @@ src_configure() {
 			-DBUILD_ARGB=yes
 			-DBUILD_XDBE=yes
 			-DBUILD_XSHAPE=yes
-			-DBUILD_XINPUT=yes
-			-DBUILD_MOUSE_EVENTS=yes
 			-DBUILD_X11=yes
 		)
 	else
@@ -199,6 +199,7 @@ src_configure() {
 		-DBUILD_LUA_RSVG=$(usex lua-rsvg)
 		-DBUILD_MATH=$(usex math)
 		-DBUILD_MOC=$(usex moc)
+		-DBUILD_MOUSE_EVENTS=$(usex mouse-events)
 		-DBUILD_MPD=$(usex mpd)
 		-DBUILD_MYSQL=$(usex mysql)
 		-DBUILD_NCURSES=$(usex ncurses)
@@ -212,6 +213,7 @@ src_configure() {
 		-DBUILD_WLAN=$(usex wifi)
 		-DBUILD_XFT=$(usex truetype)
 		-DBUILD_XINERAMA=$(usex xinerama)
+		-DBUILD_XINPUT=$(usex xinput)
 		-DBUILD_XMMS2=$(usex xmms2)
 		-DDOC_PATH=/usr/share/doc/${PF}
 		-DMAINTAINER_MODE=no
