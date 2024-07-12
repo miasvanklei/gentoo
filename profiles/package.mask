@@ -282,18 +282,6 @@ sci-chemistry/procheck
 # Removal on 2024-07-14.  Bugs #934227, #898840.
 www-misc/log-toolkit
 
-# Arthur Zamarin <arthurzam@gentoo.org> (2024-06-12)
-# EAPI=6, maintainer needed, no reverse dependencies. Not maintained in
-# gentoo for a long time.
-# Removal on 2024-07-12.  Bugs #934156, #636422.
-net-misc/bfgminer
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2024-06-12)
-# EAPI=6, library with no reverse dependencies, fails tests, has
-# issues with modern C.
-# Removal on 2024-07-12.  Bugs #934133, #725622, #813240.
-sci-libs/o2scl
-
 # Viorel Munteanu <ceamac@gentoo.org> (2024-06-11)
 # dev-php/pear, dev-php/PEAR-* and their reverse dependencies: mask for removal
 # in 30 days.
@@ -301,26 +289,6 @@ sci-libs/o2scl
 # they have around 40 bugs.
 # Removal: 2024-08-11.  Bug #933998.
 dev-php/PEAR-Mail_mimeDecode
-
-# Michał Górny <mgorny@gentoo.org> (2024-06-10)
-# Merged into dev-python/rapidfuzz.  No revdeps left.
-# Removal on 2024-07-10.  Bug #934002.
-dev-python/rapidfuzz-capi
-
-# James Le Cuirot <chewi@gentoo.org> (2024-06-09)
-# Long dead upstream. Probably broken. Use games-emulation/dolphin instead.
-# Removal on 2024-07-09.  Bug #739140.
-games-emulation/gcube
-
-# James Le Cuirot <chewi@gentoo.org> (2024-06-09)
-# Super ancient and broken 32-bit only port. Package ECWolf instead.
-# Removal on 2024-07-09.  Bug #926467.
-games-fps/wolfgl
-
-# James Le Cuirot <chewi@gentoo.org> (2024-06-09)
-# Download no longer available, license prevents mirroring.
-# Removal on 2024-07-09.  Bug #791115.
-games-strategy/darwinia-demo
 
 # Alfredo Tupone <tupone@gentoo.org> (2024-06-09)
 # Not ready for testing
@@ -418,12 +386,6 @@ dev-ml/patience_diff:0/0.17
 >=xfce-base/xfce4-settings-4.19
 >=xfce-base/xfconf-4.19
 >=xfce-base/xfdesktop-4.19
-
-# Arthur Zamarin <arthurzam@gentoo.org> (2024-05-31)
-# EAPI=6, maintainer-needed, incorrect LICENSE, fails to compile with
-# clang.
-# Removal on 2024-07-09.  Bugs #933241, #889912, #880267, #562822, #930500.
-net-mail/gnubiff
 
 # Sam James <sam@gentoo.org> (2024-04-28)
 # Masked for testing. Tracker bug: bug #930805.
