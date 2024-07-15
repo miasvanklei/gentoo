@@ -1,12 +1,12 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 # Disabled for now: bug #850628
-# https://bugs.launchpad.net/cloud-init/+bug/1978328
 #DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_10 python3_11 )
+# https://bugs.launchpad.net/cloud-init/+bug/1978328
+PYTHON_COMPAT=( python3_10 python3_11 python3_12 )
 
 inherit distutils-r1 udev
 
@@ -15,7 +15,7 @@ if [[ ${PV} == *9999 ]]; then
 	EGIT_REPO_URI="https://git.launchpad.net/cloud-init"
 else
 	SRC_URI="https://launchpad.net/${PN}/trunk/${PV}/+download/${P}.tar.gz"
-	KEYWORDS="amd64 arm64 ppc64 x86"
+	KEYWORDS="~amd64 ~arm64 ~ppc64 ~x86"
 fi
 
 DESCRIPTION="Cloud instance initialisation magic"
@@ -23,8 +23,7 @@ HOMEPAGE="https://launchpad.net/cloud-init"
 
 LICENSE="GPL-3"
 SLOT="0"
-IUSE="selinux test"
-RESTRICT="!test? ( test )"
+IUSE="selinux"
 
 CDEPEND="
 	dev-python/jinja[${PYTHON_USEDEP}]
@@ -40,8 +39,8 @@ CDEPEND="
 BDEPEND="
 	${CDEPEND}
 	test? (
-		>=dev-python/httpretty-0.7.1[${PYTHON_USEDEP}]
 		dev-python/mock[${PYTHON_USEDEP}]
+		dev-python/passlib[${PYTHON_USEDEP}]
 		dev-python/pytest-mock[${PYTHON_USEDEP}]
 		dev-python/responses[${PYTHON_USEDEP}]
 		dev-python/setuptools[${PYTHON_USEDEP}]
@@ -56,6 +55,12 @@ RDEPEND="
 	selinux? ( sec-policy/selinux-cloudinit )
 "
 
+EPYTEST_IGNORE=(
+	# Can't find file
+	tests/unittests/config/test_apt_configure_sources_list_v1.py
+	tests/unittests/config/test_apt_configure_sources_list_v3.py
+)
+
 distutils_enable_tests pytest
 
 python_prepare_all() {
@@ -65,6 +70,7 @@ python_prepare_all() {
 	if [[ ${PV} == *9999 ]] ; then
 		sed -i 's/version=get_version(),/version=9999,/g' setup.py || die
 	fi
+
 	distutils-r1_python_prepare_all
 }
 
