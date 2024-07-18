@@ -25,7 +25,6 @@ KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ia64 ~loong ~m68k ~mips ~ppc ~ppc64 ~
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-# check */_vendor/vendored.txt
 RDEPEND="
 	!!<dev-python/setuptools-rust-1.8.0
 	>=dev-python/jaraco-text-3.7.0-r1[${PYTHON_USEDEP}]
@@ -87,10 +86,7 @@ src_prepare() {
 	# remove bundled dependencies
 	rm -r */_vendor setuptools/_distutils/_vendor || die
 
-	# remove the ugly */extern hack that breaks on unvendored deps
-	rm -r */extern || die
 	find -name '*.py' -exec sed \
-		-e 's:from \w*[.]\+extern ::' -e 's:\w*[.]\+extern[.]::' \
 		-e 's:from [.]_vendor[.]:from :' \
 		-i {} + || die
 }
