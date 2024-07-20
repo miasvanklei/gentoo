@@ -1,0 +1,22 @@
+--- a/llvm-18.1.8.ebuild	2024-07-20 19:20:44.386148567 +0200
++++ b/llvm-18.1.8.ebuild	2024-06-25 16:21:17.984143702 +0200
+@@ -137,6 +136,9 @@
+ 					# used by lldb
+ 					LLVMDebuginfod)
+ 						;;
++					# used by mlir-tblgen
++					LLVMCodeGenTypes)
++						;;
+ 					# testing libraries
+ 					LLVMTestingAnnotations|LLVMTestingSupport)
+ 						;;
+@@ -229,6 +231,9 @@
+ 			# library used by lldb
+ 			LLVMDebuginfod
+ 
++			# library used by mlir-tblgen
++			LLVMCodeGenTypes
++
+ 			# utilities
+ 			llvm-tblgen
+ 			FileCheck
