@@ -11,13 +11,13 @@ HOMEPAGE="https://www.xpdfreader.com"
 SRC_URI="https://dl.xpdfreader.com/${P}.tar.gz
 	i18n? (
 		https://dl.xpdfreader.com/xpdf-arabic.tar.gz
-		https://dl.xpdfreader.com/xpdf-chinese-simplified.tar.gz -> xpdf-chinese-simplified-20201222.tar.gz
+		https://dl.xpdfreader.com/xpdf-chinese-simplified.tar.gz -> xpdf-chinese-simplified-20231205.tar.gz
 		https://dl.xpdfreader.com/xpdf-chinese-traditional.tar.gz -> xpdf-chinese-traditional-20201222.tar.gz
 		https://dl.xpdfreader.com/xpdf-cyrillic.tar.gz
 		https://dl.xpdfreader.com/xpdf-greek.tar.gz
 		https://dl.xpdfreader.com/xpdf-hebrew.tar.gz
 		https://dl.xpdfreader.com/xpdf-japanese.tar.gz -> xpdf-japanese-20201222.tar.gz
-		https://dl.xpdfreader.com/xpdf-korean.tar.gz -> xpdf-korean-20201222.tar.gz
+		https://dl.xpdfreader.com/xpdf-korean.tar.gz -> xpdf-korean-20231205.tar.gz
 		https://dl.xpdfreader.com/xpdf-latin2.tar.gz
 		https://dl.xpdfreader.com/xpdf-thai.tar.gz
 		https://dl.xpdfreader.com/xpdf-turkish.tar.gz
@@ -26,8 +26,8 @@ SRC_URI="https://dl.xpdfreader.com/${P}.tar.gz
 
 LICENSE="|| ( GPL-2 GPL-3 ) i18n? ( BSD )"
 SLOT="0"
-KEYWORDS="amd64 x86"
-IUSE="cmyk cups +fontconfig i18n icons +libpaper metric opi png +textselect utils"
+KEYWORDS="~amd64 ~x86"
+IUSE="cmyk cups +fontconfig i18n icons +libpaper metric opi png +textselect utils qt6"
 
 BDEPEND="
 	icons? ( gnome-base/librsvg )
@@ -35,19 +35,22 @@ BDEPEND="
 "
 DEPEND="
 	cups? (
+		qt6? ( dev-qt/qtbase:6[gui,widgets] )
+		!qt6? ( dev-qt/qtprintsupport:5[cups] )
 		dev-qt/qtprintsupport:5[cups]
 		net-print/cups
 	)
 	fontconfig? ( media-libs/fontconfig )
 	libpaper? ( app-text/libpaper:= )
 	utils? ( png? ( media-libs/libpng:0 ) )
-	dev-qt/qtnetwork:5
-	dev-qt/qtwidgets:5
+	qt6? ( dev-qt/qtbase:6[network,concurrent,widgets] )
+	!qt6? ( dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 )
 	media-libs/freetype
 	sys-libs/zlib
 "
 RDEPEND="${DEPEND}
-	dev-qt/qtsvg:5
+	qt6? ( dev-qt/qtsvg:6 )
+	!qt6? ( dev-qt/qtsvg:5 )
 	media-fonts/urw-fonts
 "
 
@@ -55,8 +58,7 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-automagic.patch
 	"${FILESDIR}"/${PN}-visibility.patch
 	"${FILESDIR}"/${PN}-shared-libs.patch
-	"${FILESDIR}"/${PN}-4.04-libpaper-2.patch
-	"${FILESDIR}"/${PN}-4.04-font-paths.patch
+	"${FILESDIR}"/${PN}-4.05-font-paths.patch
 )
 
 DOCS=( ANNOUNCE CHANGES README )
@@ -93,10 +95,7 @@ src_configure() {
 		-DWITH_LIBPNG=$(usex png)
 		-DXPDFWIDGET_PRINTING=$(usex cups)
 		-DSYSTEM_XPDFRC="${EPREFIX}/etc/xpdfrc"
-		# Bug 910166
-		# https://forum.xpdfreader.com/viewtopic.php?p=45052#p45052
-		# Likely fixed in 4.05
-		-DCMAKE_DISABLE_FIND_PACKAGE_Qt6Widgets=ON
+		-DCMAKE_DISABLE_FIND_PACKAGE_Qt6Widgets=$(usex !qt6)
 	)
 	cmake_src_configure
 }
