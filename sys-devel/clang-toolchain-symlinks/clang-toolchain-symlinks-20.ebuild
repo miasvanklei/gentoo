@@ -5,26 +5,37 @@ EAPI=8
 
 inherit multilib
 
-DESCRIPTION="Symlinks to use LLVM on binutils-free system"
+DESCRIPTION="Symlinks to use Clang on GCC-free system"
 HOMEPAGE="https://wiki.gentoo.org/wiki/Project:LLVM"
 S=${WORKDIR}
 
 LICENSE="public-domain"
 SLOT="${PV}"
-KEYWORDS="amd64 arm arm64 ~loong ppc ppc64 ~riscv sparc x86 ~amd64-linux ~arm64-macos ~ppc-macos ~x64-macos"
-IUSE="multilib-symlinks +native-symlinks"
+IUSE="gcc-symlinks multilib-symlinks +native-symlinks"
 
+# Blocker for bug #872416
 RDEPEND="
-	sys-devel/llvm:${SLOT}
+	!<sys-devel/gcc-config-2.6
+	sys-devel/clang:${SLOT}
 "
 
 src_install() {
-	use native-symlinks || return
+	local tools=()
 
-	local tools=(
-		addr2line ar dlltool nm objcopy objdump ranlib readelf size
-		strings strip windres
-	)
+	if use native-symlinks; then
+		tools+=(
+			cc:clang
+			cpp:clang-cpp
+			c++:clang++
+		)
+	fi
+	if use gcc-symlinks; then
+		tools+=(
+			gcc:clang
+			g++:clang++
+		)
+	fi
+
 	local chosts=( "${CHOST}" )
 	if use multilib-symlinks; then
 		local abi
@@ -37,17 +48,11 @@ src_install() {
 	local dest=/usr/lib/llvm/${SLOT}/bin
 	dodir "${dest}"
 	for t in "${tools[@]}"; do
-		dosym "llvm-${t}" "${dest}/${t}"
+		dosym "${t#*:}" "${dest}/${t%:*}"
 	done
 	for chost in "${chosts[@]}"; do
 		for t in "${tools[@]}"; do
-			dosym "llvm-${t}" "${dest}/${chost}-${t}"
+			dosym "${t#*:}" "${dest}/${chost}-${t%:*}"
 		done
-	done
-
-	# special case c++filt
-	dosym "llvm-cxxfilt" "${dest}/c++filt"
-	for chost in "${chosts[@]}"; do
-		dosym "llvm-cxxfilt" "${dest}/${chost}-c++filt"
 	done
 }
