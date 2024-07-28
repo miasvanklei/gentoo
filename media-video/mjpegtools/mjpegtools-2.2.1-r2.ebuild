@@ -1,7 +1,7 @@
 # Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit autotools multilib-minimal
 
@@ -42,6 +42,9 @@ src_prepare() {
 
 	eapply "${FILESDIR}/${P}-c++17-register-fix.patch"
 	eapply "${FILESDIR}/${P}-c++17-no-auto_ptr-fix.patch"
+	eapply "${FILESDIR}/${P}-gcc15-template.patch"
+	eapply "${FILESDIR}/${P}-lto.patch"
+	eapply "${FILESDIR}/${P}-puts-c99-configure.patch"
 
 	eautoreconf
 	sed -i -e '/ARCHFLAGS=/s:=.*:=:' configure
