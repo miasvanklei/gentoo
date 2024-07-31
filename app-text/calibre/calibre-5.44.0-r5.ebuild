@@ -36,8 +36,8 @@ LICENSE="
 	PSF-2
 "
 SLOT="0"
-KEYWORDS="amd64 ~arm64"
-IUSE="+font-subsetting ios speech +system-mathjax test +udisks unrar"
+KEYWORDS="~amd64"
+IUSE="ios speech +system-mathjax test +udisks unrar"
 
 RESTRICT="!test? ( test )"
 
@@ -46,9 +46,9 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 # Qt slotted dependencies are used because the libheadless.so plugin links to
 # QT_*_PRIVATE_ABI. It only uses core/gui/dbus.
 COMMON_DEPEND="${PYTHON_DEPS}
-	app-i18n/uchardet
 	>=app-text/hunspell-1.7:=
-	>=app-text/podofo-0.10.0:=
+	>=app-text/podofo-0.9.6_pre20171027:=
+	<app-text/podofo-0.10:=
 	app-text/poppler[utils]
 	dev-libs/hyphen:=
 	>=dev-libs/icu-57.1:=
@@ -57,6 +57,7 @@ COMMON_DEPEND="${PYTHON_DEPS}
 	$(python_gen_cond_dep '
 		>=dev-python/apsw-3.25.2_p1[${PYTHON_USEDEP}]
 		dev-python/beautifulsoup4[${PYTHON_USEDEP}]
+		dev-python/cchardet[${PYTHON_USEDEP}]
 		>=dev-python/css-parser-1.0.4[${PYTHON_USEDEP}]
 		dev-python/dnspython[${PYTHON_USEDEP}]
 		>=dev-python/feedparser-5.2.1[${PYTHON_USEDEP}]
@@ -74,14 +75,16 @@ COMMON_DEPEND="${PYTHON_DEPS}
 		>=dev-python/pychm-0.8.6[${PYTHON_USEDEP}]
 		>=dev-python/pygments-2.3.1[${PYTHON_USEDEP}]
 		>=dev-python/python-dateutil-2.5.3[${PYTHON_USEDEP}]
-		dev-python/PyQt6[gui,network,opengl,printsupport,quick,svg,widgets,${PYTHON_USEDEP}]
-		dev-python/PyQt6-WebEngine[widgets,${PYTHON_USEDEP}]
+		>=dev-python/PyQt5-5.15.5_pre2107091435[gui,widgets,network,printsupport,svg,${PYTHON_USEDEP}]
+		>=dev-python/PyQtWebEngine-5.15.5_pre2108100905[${PYTHON_USEDEP}]
 		dev-python/regex[${PYTHON_USEDEP}]
-		dev-python/xxhash[${PYTHON_USEDEP}]
-		>=dev-python/zeroconf-0.75.0[${PYTHON_USEDEP}]
+		dev-python/zeroconf[${PYTHON_USEDEP}]
 	')
-	dev-qt/qtbase:6=[gui,widgets]
-	dev-qt/qtimageformats:6
+	dev-qt/qtimageformats:5
+	dev-qt/qtcore:5=
+	dev-qt/qtdbus:5=
+	dev-qt/qtgui:5=[jpeg,png]
+	dev-qt/qtwidgets:5
 	dev-util/desktop-file-utils
 	dev-util/gtk-update-icon-cache
 	media-fonts/liberation-fonts
@@ -92,7 +95,6 @@ COMMON_DEPEND="${PYTHON_DEPS}
 	virtual/libusb:1=
 	x11-misc/shared-mime-info
 	>=x11-misc/xdg-utils-1.0.2-r2
-	font-subsetting? ( $(python_gen_cond_dep 'dev-python/fonttools[${PYTHON_USEDEP}]') )
 	ios? (
 		>=app-pda/usbmuxd-1.0.8
 		>=app-pda/libimobiledevice-1.2.0
@@ -111,6 +113,8 @@ BDEPEND="$(python_gen_cond_dep '
 		>=dev-python/PyQt-builder-1.10.3[${PYTHON_USEDEP}]
 		>=dev-python/sip-5[${PYTHON_USEDEP}]
 	')
+	>=virtual/podofo-build-0.9.6_pre20171027
+	<virtual/podofo-build-0.10
 	virtual/pkgconfig
 	system-mathjax? ( dev-lang/rapydscript-ng )
 	verify-sig? ( sec-keys/openpgp-keys-kovidgoyal )
@@ -120,7 +124,19 @@ PATCHES=(
 	# Skip calling a binary (JxrDecApp) from libjxr which is used for tests
 	# We don't (yet?) package libjxr and it seems to be dead upstream
 	# (last commit in 2017)
-	"${FILESDIR}/${PN}-7.0.0-jxr-test.patch"
+	"${FILESDIR}/${PN}-5.35.0-jxr-test.patch"
+
+	# fix compatibility with recent versions of zeroconf
+	"${FILESDIR}"/${PN}-5.44.0-Fix-compatibility-with-zeroconf-0.73.patch
+
+	# Security backport for CVE-2023-46303
+	"${FILESDIR}"/0001-HTML-Input-Dont-add-resources-that-exist-outside-the.patch
+	# bug #936270
+	"${FILESDIR}"/${P}-icu75.patch
+	# backport test-only fix for lxml 5
+	"${FILESDIR}"/e9cc00560a28f56a303cca97630ab58e519dd9c8.patch
+	# Security backport for CVE-2024-7008
+	"${FILESDIR}"/${P}-xss-backport.patch
 )
 
 src_prepare() {
@@ -139,6 +155,14 @@ src_prepare() {
 	# Disable unnecessary privilege dropping for bug #287067.
 	sed -e "s:if os.geteuid() == 0:if False and os.geteuid() == 0:" \
 		-i setup/install.py || die "sed failed to patch install.py"
+	sed -e "/^            os.chdir(os.path.join(src_dir, 'build'))$/a\
+\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ self.check_call(['sed', \
+'-e', 's|^CFLAGS .*|\\\\\\\\0 ${CFLAGS}|', \
+'-e', 's|^CXXFLAGS .*|\\\\\\\\0 ${CXXFLAGS}|', \
+'-e', 's|^LFLAGS .*|\\\\\\\\0 ${LDFLAGS}|', \
+'-i', os.path.join(os.path.basename(src_dir), 'Makefile')])" \
+		-e "s|open(self.j(bdir, '.qmake.conf'), 'wb').close()|open(self.j(bdir, '.qmake.conf'), 'wb').write(b'QMAKE_LFLAGS += ${LDFLAGS}')|" \
+		-i setup/build.py || die "sed failed to patch build.py"
 
 	# This is only ever used at build time. It contains a small embedded copy
 	# of the rapydscript-ng compiler usable inside of qtwebengine, if you don't
@@ -162,7 +186,7 @@ src_compile() {
 	# bug 821871
 	local MY_LIBDIR="${ESYSROOT}/usr/$(get_libdir)"
 	export FT_LIB_DIR="${MY_LIBDIR}" HUNSPELL_LIB_DIR="${MY_LIBDIR}" PODOFO_LIB_DIR="${MY_LIBDIR}"
-	export QMAKE="$(qt6_get_bindir)/qmake"
+	export QMAKE="$(qt5_get_bindir)/qmake"
 
 	edo ${EPYTHON} setup.py build
 	edo ${EPYTHON} setup.py gui
@@ -186,8 +210,6 @@ src_test() {
 	local _test_excludes=(
 		# unpackaged Python dependency: py7zr
 		7z
-		# unpackaged Python dependency: pyzstd
-		test_zstd
 		# tests if a completely unused module is bundled
 		pycryptodome
 
