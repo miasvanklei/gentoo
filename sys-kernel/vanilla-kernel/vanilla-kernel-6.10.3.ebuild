@@ -3,12 +3,13 @@
 
 EAPI=8
 
+KERNEL_IUSE_MODULES_SIGN=1
 inherit kernel-build toolchain-funcs verify-sig
 
 MY_P=linux-${PV}
 # https://koji.fedoraproject.org/koji/packageinfo?packageID=8
 # forked to https://github.com/projg2/fedora-kernel-config-for-gentoo
-CONFIG_VER=6.1.7-gentoo
+CONFIG_VER=6.10.1-gentoo
 GENTOO_CONFIG_VER=g13
 
 DESCRIPTION="Linux kernel built from vanilla upstream sources"
@@ -43,7 +44,7 @@ SRC_URI+="
 S=${WORKDIR}/${MY_P}
 
 LICENSE="GPL-2"
-KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~x86"
 IUSE="debug hardened"
 REQUIRED_USE="arm? ( savedconfig )"
 
@@ -89,6 +90,9 @@ src_prepare() {
 		hppa)
 			return
 			;;
+		loong)
+			return
+			;;
 		ppc)
 			# assume powermac/powerbook defconfig
 			# we still package.use.force savedconfig
@@ -132,6 +136,8 @@ src_prepare() {
 	if [[ ${biendian} == true && $(tc-endian) == big ]]; then
 		merge_configs+=( "${dist_conf_path}/big-endian.config" )
 	fi
+
+	use secureboot && merge_configs+=( "${dist_conf_path}/secureboot.config" )
 
 	kernel-build_merge_configs "${merge_configs[@]}"
 }
