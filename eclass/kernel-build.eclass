@@ -357,7 +357,8 @@ kernel-build_src_install() {
 
 	emake O="${WORKDIR}"/build "${MAKEARGS[@]}" \
 		INSTALL_MOD_PATH="${ED}" INSTALL_MOD_STRIP="${strip_args}" \
-		INSTALL_PATH="${ED}/boot" "${compress[@]}" "${targets[@]}"
+		INSTALL_PATH="${ED}/boot" INSTALL_DTBS_PATH="${ED}/lib/modules/${KV_FULL}/dtb" \
+		"${compress[@]}" "${targets[@]}"
 
 	# note: we're using mv rather than doins to save space and time
 	# install main and arch-specific headers first, and scripts
