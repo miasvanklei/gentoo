@@ -71,7 +71,7 @@ DEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-4.2.0-uncompressed-man-pages.patch"
-	"${FILESDIR}/${PN}-4.2.0-unbundle-deps.patch"
+	"${FILESDIR}/${PN}-4.3.2-unbundle-deps.patch"
 	"${FILESDIR}/${PN}-4.2.0-dynamic_cast-crash.patch"
 	"${FILESDIR}/${PN}-4.2.1-missing-headers.patch"
 )
@@ -114,7 +114,10 @@ src_configure() {
 		-DMUE_BUILD_UPDATE_MODULE=OFF
 		-DMUE_BUILD_VIDEOEXPORT_MODULE="$(usex video)"
 		-DMUE_COMPILE_USE_CCACHE=OFF
+		-DMUE_COMPILE_USE_SYSTEM_FLAC=ON
 		-DMUE_COMPILE_USE_SYSTEM_FREETYPE=ON
+		-DMUE_COMPILE_USE_SYSTEM_OPUSENC=ON
+		-DMUE_COMPILE_USE_SYSTEM_TINYXML=ON
 		-DMUE_DOWNLOAD_SOUNDFONT=OFF
 		-DMUE_ENABLE_AUDIO_JACK=$(usex jack)
 		-DMUSESCORE_BUILD_MODE=release
