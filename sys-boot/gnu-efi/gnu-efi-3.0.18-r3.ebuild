@@ -23,9 +23,6 @@ REQUIRED_USE="
 	x86? ( || ( abi_x86_32 abi_x86_64 ) )
 "
 
-# for ld.bfd and objcopy
-BDEPEND="sys-devel/binutils"
-
 # These objects get run early boot (i.e. not inside of Linux),
 # so doing these QA checks on them doesn't make sense.
 QA_EXECSTACK="usr/*/lib*efi.a:* usr/*/crt*.o"
@@ -35,24 +32,6 @@ PATCHES=(
 	"${FILESDIR}"/${P}-clang.patch
 	"${FILESDIR}"/${PN}-3.0.18-remove-linux-headers.patch
 )
-
-check_and_set_objcopy() {
-	if [[ ${MERGE_TYPE} != "binary" ]]; then
-		# bug #931792
-		# llvm-objcopy does not support EFI target, try to use binutils objcopy or fail
-		tc-export OBJCOPY
-		OBJCOPY="${OBJCOPY/llvm-/}"
-		LANG=C LC_ALL=C "${OBJCOPY}" --help | grep -q '\<pei-' || die "${OBJCOPY} (objcopy) does not support EFI target"
-	fi
-}
-
-pkg_pretend() {
-	check_and_set_objcopy
-}
-
-pkg_setup() {
-	check_and_set_objcopy
-}
 
 src_prepare() {
 	default
