@@ -1,10 +1,10 @@
-# Copyright 2008-2023 Gentoo Authors
+# Copyright 2008-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 JAVA_PKG_IUSE="doc source test"
-MAVEN_ID="com.google.protobuf:protobuf-java:3.23.0"
+MAVEN_ID="com.google.protobuf:protobuf-java:3.23.3"
 JAVA_TESTING_FRAMEWORKS="junit-4"
 
 inherit java-pkg-2 java-pkg-simple cmake
@@ -12,7 +12,7 @@ inherit java-pkg-2 java-pkg-simple cmake
 DESCRIPTION="Core Protocol Buffers library"
 HOMEPAGE="https://protobuf.dev"
 # Currently we bundle the binary version of truth.jar used only for tests, we don't install it.
-# And we build artifact 3.23.0 from the 23.0 tarball in order to allow sharing the tarball with
+# And we build artifact 3.23.4 from the 23.4 tarball in order to allow sharing the tarball with
 # dev-libs/protobuf.
 SRC_URI="https://github.com/protocolbuffers/protobuf/archive/v${PV#3.}.tar.gz -> protobuf-${PV#3.}.tar.gz
 	test? ( https://repo1.maven.org/maven2/com/google/truth/truth/1.1.3/truth-1.1.3.jar )"
@@ -20,22 +20,24 @@ S="${WORKDIR}/protobuf-${PV#3.}"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ppc64 x86 ~amd64-linux ~x86-linux ~x64-macos"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~x86 ~amd64-linux ~x86-linux ~x64-macos"
 IUSE="system-protoc"
 
+BDEPEND="
+	system-protoc? ( ~dev-libs/protobuf-${PV#3.}:0  )
+	!system-protoc? (
+		>=dev-cpp/abseil-cpp-20230125.3
+		<dev-cpp/abseil-cpp-20240116.2
+	)
+"
 DEPEND="
 	>=virtual/jdk-1.8:*
 	test? (
 		dev-java/guava:0
 		dev-java/mockito:4
-		)
+	)
 "
 RDEPEND=">=virtual/jre-1.8:*"
-
-BDEPEND="
-	system-protoc? ( ~dev-libs/protobuf-${PV#3.}:0  )
-	!system-protoc? ( >=dev-cpp/abseil-cpp-20230125.2 )
-"
 
 PATCHES=(
 	"${FILESDIR}/protobuf-java-3.23.0-unittest_retention.proto.patch"
@@ -60,14 +62,14 @@ run-protoc() {
 src_prepare() {
 	# If the corrsponding version of system-protoc is not available we build protoc locally
 	if use system-protoc; then
-		:
+		default # apply patches
 	else
 		cmake_src_prepare
 	fi
 	java-pkg-2_src_prepare
 
 	mkdir "${JAVA_RESOURCE_DIRS}" || die
-	# https://github.com/protocolbuffers/protobuf/blob/v23.0/java/core/pom.xml#L43-L62
+	# https://github.com/protocolbuffers/protobuf/blob/v23.4/java/core/pom.xml#L43-L62
 	PROTOS=(  $(sed \
 		-n '/google\/protobuf.*\.proto/s:.*<include>\(.*\)</include>:\1:p' \
 		"${S}/java/core/pom.xml") ) || die
@@ -75,7 +77,7 @@ src_prepare() {
 		cp --parents -v "${PROTOS[@]}" ../"${JAVA_RESOURCE_DIRS}" || die
 	popd > /dev/null || die
 
-	# https://github.com/protocolbuffers/protobuf/blob/v23.0/java/core/generate-sources-build.xml
+	# https://github.com/protocolbuffers/protobuf/blob/v23.4/java/core/generate-sources-build.xml
 	einfo "Replace variables in generate-sources-build.xml"
 	sed \
 		-e 's:${generated.sources.dir}:java/core/src/main/java:' \
@@ -84,7 +86,7 @@ src_prepare() {
 		-e '/project\|echo\|mkdir\|exec/d' \
 		-i java/core/generate-sources-build.xml || die "sed to sources failed"
 
-	# https://github.com/protocolbuffers/protobuf/blob/v23.0/java/core/generate-test-sources-build.xml
+	# https://github.com/protocolbuffers/protobuf/blob/v23.4/java/core/generate-test-sources-build.xml
 	einfo "Replace variables in generate-test-sources-build.xml"
 	sed \
 		-e 's:${generated.testsources.dir}:java/core/src/test/java:' \
@@ -127,7 +129,7 @@ src_compile() {
 }
 
 src_test() {
-	# https://github.com/protocolbuffers/protobuf/blob/v23.0/java/core/pom.xml#L63-L71
+	# https://github.com/protocolbuffers/protobuf/blob/v23.4/java/core/pom.xml#L63-L71
 	jar cvf testdata.jar \
 		-C src google/protobuf/testdata/golden_message_oneof_implemented \
 		-C src google/protobuf/testdata/golden_packed_fields_message || die
