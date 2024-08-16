@@ -3,13 +3,14 @@
 
 EAPI=8
 
+DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{10..12} )
+
 inherit distutils-r1
 
 DESCRIPTION="Quickly rewrite git repository history (filter-branch replacement)"
 HOMEPAGE="https://github.com/newren/git-filter-repo/"
 SRC_URI="https://github.com/newren/git-filter-repo/releases/download/v${PV}/${P}.tar.xz"
-S="${S}/release"
 
 LICENSE="MIT"
 SLOT="0"
@@ -27,17 +28,9 @@ BDEPEND="
 # requires a valid source of version info, this one is for distros
 export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
 
-python_prepare_all() {
-	cd .. || die
-	eapply "${FILESDIR}"/git-filter-repo-2.38.0-new-git.patch
-	cd "${S}" || die
-
-	distutils-r1_python_prepare_all
-}
-
 python_test() {
 	cd .. || die
-	bash t/run_tests || die
+	bash "${S}"/t/run_tests || die
 }
 
 python_install_all() {
