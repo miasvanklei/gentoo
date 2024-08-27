@@ -142,6 +142,7 @@ RESTRICT="
 
 PATCHES=(
 	"${FILESDIR}/salt-3003-gentoolkit-revdep.patch"
+	"${FILESDIR}/salt-3006.9-pam-module.patch"
 )
 
 python_prepare_all() {
