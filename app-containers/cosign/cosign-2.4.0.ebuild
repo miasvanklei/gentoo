@@ -1,9 +1,10 @@
-# Copyright 2022-2023 Gentoo Authors
+# Copyright 2022-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 inherit go-module
-GIT_HASH=546f1c5b91ef58d6b034a402d0211d980184a0e5
+GIT_HASH=b5e7dc123a272080f4af4554054797296271e902
+SOURCE_DATE_EPOCH=1722980393
 
 DESCRIPTION="container signing utility"
 HOMEPAGE="https://sigstore.dev"
@@ -20,7 +21,8 @@ src_compile() {
 	emake \
 		GIT_HASH=${GIT_HASH} \
 		GIT_VERSION=v${PV} \
-		GIT_TREESTATE=clean
+		GIT_TREESTATE=clean \
+		SOURCE_DATE_EPOCH=${SOURCE_DATE_EPOCH}
 }
 
 src_install() {
