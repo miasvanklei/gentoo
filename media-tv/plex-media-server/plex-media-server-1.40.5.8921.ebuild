@@ -5,7 +5,7 @@ EAPI=8
 
 inherit readme.gentoo-r1 systemd unpacker pax-utils
 
-MY_PV="${PV}-c67dce28e"
+MY_PV="${PV}-836b34c27"
 MY_URI="https://downloads.plex.tv/plex-media-server-new"
 
 DESCRIPTION="Free media library that is intended for use with a plex client"
@@ -20,7 +20,7 @@ S="${WORKDIR}"
 
 LICENSE="Plex"
 SLOT="0"
-KEYWORDS="-* amd64 ~arm arm64 ~x86"
+KEYWORDS="-* ~amd64 ~arm ~arm64 ~x86"
 RESTRICT="bindist"
 
 DEPEND="
@@ -38,11 +38,6 @@ QA_MULTILIB_PATHS=(
 	"usr/lib/plexmediaserver/lib/.*"
 	"usr/lib/plexmediaserver/Resources/Python/lib/python2.7/.*"
 	"usr/lib/plexmediaserver/Resources/Python/lib/python2.7/lib-dynload/_hashlib.so"
-)
-
-BINS_TO_PAX_MARK=(
-	"${ED}/usr/lib/plexmediaserver/Plex Script Host"
-	"${ED}/usr/lib/plexmediaserver/Plex Media Scanner"
 )
 
 src_install() {
@@ -67,6 +62,11 @@ src_install() {
 	systemd_newunit "${ED}"/usr/lib/plexmediaserver/lib/plexmediaserver.service "${PN}.service"
 
 	# Add pax markings to some binaries so that they work on hardened setup
+	BINS_TO_PAX_MARK=(
+		"${ED}/usr/lib/plexmediaserver/Plex Script Host"
+		"${ED}/usr/lib/plexmediaserver/Plex Media Scanner"
+	)
+
 	local f
 	for f in "${BINS_TO_PAX_MARK[@]}"; do
 		pax-mark m "${f}"
@@ -82,10 +82,4 @@ src_install() {
 
 pkg_postinst() {
 	readme.gentoo_print_elog
-
-	einfo
-	ewarn "IMPORTANT: This version makes changes to the database which will require 1.31.2 or higher to start"
-	ewarn "Please also be patient when updating to this version, initial run may take time as database is upgraded"
-	ewarn "Full release announcement, including instructions for rollback: https://forums.plex.tv/t/plex-media-server/30447/612"
-
 }
