@@ -2,12 +2,10 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="project">
-		<email>python@gentoo.org</email>
-		<name>Python</name>
+		<email>toolchain@gentoo.org</email>
+		<name>Gentoo Toolchain Project</name>
 	</maintainer>
-	<stabilize-allarches/>
 	<upstream>
-		<remote-id type="pypi">pysmi</remote-id>
-		<remote-id type="github">lextudio/pysmi</remote-id>
+		<remote-id type="savannah">gprofng-gui</remote-id>
 	</upstream>
 </pkgmetadata>
