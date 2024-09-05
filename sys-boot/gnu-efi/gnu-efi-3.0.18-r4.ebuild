@@ -54,11 +54,6 @@ check_comppiler() {
 
 pkg_pretend() {
 	check_comppiler
-	check_and_set_objcopy
-}
-
-pkg_setup() {
-	check_and_set_objcopy
 }
 
 src_prepare() {
