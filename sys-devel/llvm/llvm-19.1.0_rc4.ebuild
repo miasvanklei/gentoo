@@ -131,6 +131,9 @@ check_distribution_components() {
 					# TableGen lib + deps
 					LLVMDemangle|LLVMSupport|LLVMTableGen)
 						;;
+					# used by mlir-tblgen
+					LLVMCodeGenTypes)
+						;;
 					# used by lldb
 					LLVMDebuginfod)
 						;;
@@ -228,6 +231,9 @@ get_distribution_components() {
 
 	if multilib_is_native_abi; then
 		out+=(
+			# library used by mlir-tblgen
+			LLVMCodeGenTypes
+
 			# library used by lldb
 			LLVMDebuginfod
 
