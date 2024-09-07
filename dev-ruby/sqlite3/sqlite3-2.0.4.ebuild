@@ -1,33 +1,36 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2024 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-USE_RUBY="ruby31 ruby32"
+USE_RUBY="ruby31 ruby32 ruby33"
 
 RUBY_FAKEGEM_TASK_DOC="faq"
 RUBY_FAKEGEM_DOCDIR="doc faq"
-RUBY_FAKEGEM_EXTRADOC="API_CHANGES.md README.md ChangeLog.cvs CHANGELOG.md"
+RUBY_FAKEGEM_EXTRADOC="CHANGELOG.md README.md"
 
 RUBY_FAKEGEM_EXTENSIONS=(ext/sqlite3/extconf.rb)
 RUBY_FAKEGEM_EXTENSION_LIBDIR=lib/sqlite3
+RUBY_FAKEGEM_GEMSPEC="sqlite3.gemspec"
 
 inherit ruby-fakegem
 
 DESCRIPTION="An extension library to access a SQLite database from Ruby"
 HOMEPAGE="https://github.com/sparklemotion/sqlite3-ruby"
+SRC_URI="https://github.com/sparklemotion/sqlite3-ruby/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+RUBY_S="sqlite3-ruby-${PV}"
 LICENSE="BSD"
 
-KEYWORDS="amd64 ~arm ~arm64 ~hppa ppc ppc64 ~riscv ~sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
-SLOT="0"
-IUSE=""
+SLOT="$(ver_cut 1)"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~riscv ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+IUSE="doc test"
 
 # We track the bundled sqlite version here
-RDEPEND+=" >=dev-db/sqlite-3.43.2:3"
-DEPEND+=" >=dev-db/sqlite-3.43.2:3"
+RDEPEND=" >=dev-db/sqlite-3.46.1:3"
+DEPEND=" >=dev-db/sqlite-3.46.1:3"
 
 ruby_add_bdepend "
-	doc? ( dev-ruby/rdoc dev-ruby/redcloth )
+	doc? ( dev-ruby/rdoc )
 	test? ( dev-ruby/minitest:5 )
 "
 
@@ -36,7 +39,13 @@ all_ruby_prepare() {
 
 	# Remove the runtime dependency on mini_portile2. We build without
 	# it and it is not a runtime dependency for us.
-	sed -i -e '/^dependencies:/,/force_ruby_platform/d' ../metadata || die
+	sed -i -e '/mini_portile2/ s:^:#:' ${RUBY_FAKEGEM_GEMSPEC} || die
+
+	# Avoid a failing spec for reprepares stats. Upstream indicates that
+	# the stats data should not be relied on other than for human
+	# debugging.
+	sed -e '/def test_stat_reprepares/askip "Fails on Gentoo"' \
+		-i test/test_statement.rb || die
 }
 
 all_ruby_compile() {
