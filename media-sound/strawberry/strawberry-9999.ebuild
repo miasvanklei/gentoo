@@ -5,7 +5,7 @@ EAPI=8
 
 inherit cmake flag-o-matic plocale xdg
 
-PLOCALES="ca cs de es es_AR es_ES es_MX et fi fr hu id it ja ko nb nl pl pt_BR ru sv uk zh_CN"
+PLOCALES="ca_ES cs_CZ de_DE es_AR es_ES es_MX et_EE fi_FI fr_FR hu_HU id_ID it_IT ja_JP ko_KR nb_NO nl_NL pl_PL pt_BR ru_RU sv_SE tr_CY tr_TR uk_UA zh_CN zh_TW"
 
 DESCRIPTION="Modern music player and library organizer based on Clementine and Qt"
 HOMEPAGE="https://www.strawberrymusicplayer.org/"
@@ -105,6 +105,7 @@ src_configure() {
 		-DENABLE_MOODBAR="$(usex moodbar)"
 		-DENABLE_MUSICBRAINZ="$(usex gstreamer)"
 		-DENABLE_SONGFINGERPRINTING="$(usex gstreamer)"
+		-DENABLE_SPOTIFY="$(usex gstreamer)"
 		-DENABLE_UDISKS2="$(usex udisks)"
 		-DENABLE_VLC="$(usex vlc)"
 		-DBUILD_WITH_QT6="$(usex qt6)"

@@ -16,11 +16,11 @@ S="${WORKDIR}/JCTools-${PV}/jctools-core"
 
 LICENSE="Apache-2.0"
 SLOT="3"
-KEYWORDS="amd64 ~arm arm64 ppc64 x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~x86"
 
 DEPEND="
 	dev-java/osgi-annotation:0
-	>=virtual/jdk-1.8:*
+	>=virtual/jdk-11:*
 	test? (
 		dev-java/guava-testlib:0
 		dev-java/hamcrest:0
@@ -31,12 +31,24 @@ RDEPEND=">=virtual/jre-1.8:*"
 DOCS=( ../{README,RELEASE-NOTES}.md )
 PATCHES=( "${FILESDIR}/jctools-core-4.0.3-increase-TEST_TIMEOUT.patch" )
 
-JAVA_AUTOMATIC_MODULE_NAME="org.jctools.core"
 JAVA_CLASSPATH_EXTRA="osgi-annotation"
 JAVA_SRC_DIR="src/main/java"
 
 JAVA_TEST_GENTOO_CLASSPATH="guava-testlib,hamcrest,junit-4"
 JAVA_TEST_SRC_DIR="src/test/java"
+
+src_compile() {
+	JAVA_JAR_FILENAME="org.${PN}.jar"
+	java-pkg-simple_src_compile	# creates a legacy jar file without module-info
+
+	jdeps --generate-module-info \
+		src/main/java \
+		--multi-release 9 \
+		"${JAVA_JAR_FILENAME}" || die
+
+	JAVA_JAR_FILENAME="${PN}.jar"
+	java-pkg-simple_src_compile	# creates the final jar file including module-info
+}
 
 src_prepare() {
 	default #780585

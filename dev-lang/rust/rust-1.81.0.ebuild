@@ -5,7 +5,7 @@ EAPI=8
 
 PYTHON_COMPAT=( python3_{10..13} )
 
-inherit bash-completion-r1 check-reqs estack flag-o-matic llvm multiprocessing \
+inherit bash-completion-r1 check-reqs estack flag-o-matic llvm multiprocessing optfeature \
 	multilib multilib-build python-any-r1 rust-toolchain toolchain-funcs verify-sig
 
 if [[ ${PV} = *beta* ]]; then
@@ -22,7 +22,7 @@ else
 	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
 fi
 
-RUST_STAGE0_VERSION="1.$(($(ver_cut 2) - 1)).0"
+RUST_STAGE0_VERSION="1.$(($(ver_cut 2) - 1)).1"
 
 DESCRIPTION="Systems programming language from Mozilla"
 HOMEPAGE="https://www.rust-lang.org/"
@@ -30,6 +30,7 @@ HOMEPAGE="https://www.rust-lang.org/"
 SRC_URI="
 	https://static.rust-lang.org/dist/${SRC}
 	verify-sig? ( https://static.rust-lang.org/dist/${SRC}.asc )
+	!system-bootstrap? ( $(rust_all_arch_uris rust-${RUST_STAGE0_VERSION}) )
 "
 S="${WORKDIR}/${MY_P}-src"
 
@@ -771,11 +772,11 @@ pkg_postinst() {
 	fi
 
 	if has_version app-editors/emacs; then
-		elog "install app-emacs/rust-mode to get emacs support for rust."
+		optfeature "emacs support for rust" app-emacs/rust-mode
 	fi
 
 	if has_version app-editors/gvim || has_version app-editors/vim; then
-		elog "install app-vim/rust-vim to get vim support for rust."
+		optfeature "vim support for rust" app-vim/rust-vim
 	fi
 }
 
