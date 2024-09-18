@@ -65,7 +65,7 @@ src_prepare() {
 	rm ../libcxx/test/std/atomics/atomics.types.generic/atomics.types.float/fetch_* || die
 	rm ../libcxx/test/std/atomics/atomics.types.generic/atomics.types.float/operator.*_equals* || die
 
-	llvm.org_src_prepare
+	cmake_src_prepare
 }
 
 test_compiler() {
@@ -131,8 +131,6 @@ multilib_src_configure() {
 		-DLIBCXX_USE_COMPILER_RT=${use_compiler_rt}
 		# this is broken with standalone builds, and also meaningless
 		-DLIBCXXABI_USE_LLVM_UNWINDER=OFF
-		# ..
-		-DLIBCXX_TYPEINFO_COMPARISON_IMPLEMENTATION=2
 	)
 
 	if use test; then
