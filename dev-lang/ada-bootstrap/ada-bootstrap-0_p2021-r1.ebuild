@@ -85,7 +85,7 @@ src_prepare() {
 
 	gnatbase=$(basename ${GCC})
 	gnatpath=$(dirname ${GCC})
-	GNATMAKE=${gnatbase/gcc/gnatmake}
+	export GNATMAKE=${gnatbase/gcc/gnatmake}
 	if [[ ${gnatpath} != "." ]] ; then
 		GNATMAKE="${gnatpath}/${GNATMAKE}"
 	fi
@@ -133,12 +133,15 @@ src_prepare() {
 src_configure() {
 	local adabdir=/usr/lib/${PN}
 	local prefix=${EPREFIX}${adabdir}
-	local -x PATH=${PWD}/bin:${PATH}
+
+	export PATH="${WORKDIR}"/${BTSTRP}/bin:"${WORKDIR}"/${GNATDIR}/bin:${PWD}/bin:${PATH}
 
 	# This version is GCC 4.7.4 with a bolted-on newer GNAT; be very
 	# conservative, we just want it to build for bootstrapping proper
 	# sys-devel/gcc[ada]. We don't need it to be fast.
 	strip-flags
+	CC="${WORKDIR}"/${BTSTRP}/bin/gcc strip-unsupported-flags
+	CC="${WORKDIR}"/${GNATDIR}/bin/gcc strip-unsupported-flags
 	strip-unsupported-flags
 	filter-lto
 	append-flags -O2
@@ -148,16 +151,21 @@ src_configure() {
 		--{doc,info,man}dir=/.skip # let the real gcc handle docs
 		MAKEINFO=: #922230
 		--prefix="${prefix}"
+		--disable-analyzer
 		--disable-bootstrap
 		--disable-cc1
 		--disable-cet
 		--disable-gcov #843989
 		--disable-gomp
+		--disable-objc-gc
 		--disable-nls # filename collisions
 		--disable-libcc1
+		--disable-libgomp
+		--disable-libitm
 		--disable-libquadmath
 		--disable-libsanitizer
 		--disable-libssp
+		--disable-libstdcxx-pch
 		--disable-libvtv
 		--disable-shared
 		--disable-werror
@@ -165,6 +173,7 @@ src_configure() {
 		--with-gcc-major-version-only
 		--with-system-zlib
 		--without-isl
+		--without-python-dir
 		--without-zstd
 		--disable-multilib
 	)
