@@ -132,9 +132,6 @@ check_distribution_components() {
 					# TableGen lib + deps
 					LLVMDemangle|LLVMSupport|LLVMTableGen)
 						;;
-					# used by mlir-tblgen
-					LLVMCodeGenTypes)
-						;;
 					# used by lldb
 					LLVMDebuginfod)
 						;;
@@ -234,9 +231,6 @@ get_distribution_components() {
 		out+=(
 			# library used by lldb
 			LLVMDebuginfod
-
-			# library used by mlir-tblgen
-			LLVMCodeGenTypes
 
 			# utilities
 			llvm-tblgen
