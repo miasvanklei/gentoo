@@ -21,16 +21,19 @@ REQUIRED_USE="|| ( wayland X )"
 
 DEPEND="
 	>=x11-libs/cairo-1.16
-	>=dev-libs/glib-2.66.0
+	>=dev-libs/glib-2.74.0
 	>=x11-libs/gtk+-3.24.0:3[wayland?,X?]
 	>=xfce-base/exo-0.11:=
 	>=xfce-base/garcon-0.6:=
-	>=xfce-base/libxfce4ui-4.13:=
+	>=xfce-base/libxfce4ui-4.18.0:=
 	>=xfce-base/libxfce4util-4.13:=
-	>=xfce-base/libxfce4windowing-4.19.3:=[X?]
+	>=xfce-base/libxfce4windowing-4.19.5:0/0[X?]
 	>=xfce-base/xfconf-4.18.0:=
 	libnotify? ( >=x11-libs/libnotify-0.7:= )
-	thunar? ( >=xfce-base/thunar-4.17.10:= )
+	thunar? (
+		>=dev-libs/libyaml-0.2.5:=
+		>=xfce-base/thunar-4.17.10:=
+	)
 	wayland? ( >=gui-libs/gtk-layer-shell-0.7.0 )
 	X? ( >=x11-libs/libX11-1.6.7 )
 "
@@ -52,6 +55,8 @@ src_configure() {
 		$(use_enable thunar file-icons)
 		$(use_enable thunar thunarx)
 		$(use_enable libnotify notifications)
+		# these aren't run via make check, they are only for manual use
+		--disable-tests
 	)
 
 	econf "${myconf[@]}"
