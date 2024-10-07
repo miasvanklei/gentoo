@@ -4,16 +4,16 @@
 EAPI=8
 
 ECM_TEST="forceoptional"
-PYTHON_COMPAT=( python3_{11..12} )
-KFMIN=6.3.0
-QTMIN=6.7.1
+PYTHON_COMPAT=( python3_{11..13} )
+KFMIN=6.5.0
+QTMIN=6.7.2
 inherit ecm plasma.kde.org python-single-r1 systemd
 
 DESCRIPTION="Plasma crash handler, gives the user feedback if a program crashed"
 
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="6"
-KEYWORDS="amd64 arm64 ~ppc64 ~riscv ~x86"
+KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
 IUSE="systemd"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
@@ -39,7 +39,7 @@ COMMON_DEPEND="${PYTHON_DEPS}
 		>=dev-qt/qtbase-${QTMIN}:6[network]
 		>=kde-frameworks/kservice-${KFMIN}:6
 		sys-apps/systemd:=
-		>=sys-auth/polkit-qt-0.175.0[qt6]
+		>=sys-auth/polkit-qt-0.175.0[qt6(+)]
 	)
 "
 DEPEND="${COMMON_DEPEND}
@@ -52,7 +52,6 @@ RDEPEND="${COMMON_DEPEND}
 	$(python_gen_cond_dep '
 		dev-python/psutil[${PYTHON_USEDEP}]
 		dev-python/pygdbmi[${PYTHON_USEDEP}]
-		dev-python/sentry-sdk[${PYTHON_USEDEP}]
 	')
 	|| (
 		dev-debug/gdb
