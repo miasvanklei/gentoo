@@ -22,7 +22,7 @@ S="${WORKDIR}/${MY_P}"
 LICENSE="|| ( BSD GPL-2 )"
 SLOT="0"
 KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux"
-IUSE="audit berkdb examples debug nis selinux"
+IUSE="audit berkdb examples debug nis selinux systemd"
 
 BDEPEND="
 	app-alternatives/yacc
@@ -37,6 +37,7 @@ DEPEND="
 	audit? ( >=sys-process/audit-2.2.2[${MULTILIB_USEDEP}] )
 	berkdb? ( >=sys-libs/db-4.8.30-r1:=[${MULTILIB_USEDEP}] )
 	selinux? ( >=sys-libs/libselinux-2.2.2-r4[${MULTILIB_USEDEP}] )
+	systemd? ( sys-apps/systemd )
 	nis? (
 		net-libs/libnsl:=[${MULTILIB_USEDEP}]
 		>=net-libs/libtirpc-0.2.4-r2:=[${MULTILIB_USEDEP}]
@@ -84,19 +85,13 @@ multilib_src_configure() {
 		# TODO: wire this up now it's more useful as of 1.5.3 (bug #931117)
 		--disable-econf
 
-		# TODO: add elogind support (bug #931115)
-		# lastlog is enabled again for now by us until logind support
-		# is handled. Even then, disabling lastlog will probably need
-		# a news item.
-		--disable-logind
-		--enable-lastlog
-
 		$(use_enable audit)
 		$(multilib_native_use_enable examples)
 		$(use_enable berkdb db)
 		$(use_enable debug)
 		$(use_enable nis)
 		$(use_enable selinux)
+		$(use_enable systemd logind)
 		--enable-isadir='.' # bug #464016
 	)
 	ECONF_SOURCE="${S}" econf "${myconf[@]}"
