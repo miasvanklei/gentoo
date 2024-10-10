@@ -69,10 +69,11 @@ if [[ ${CATEGORY}/${PN} != dev-dotnet/dotnet-runtime-nugets ]] ; then
 	fi
 
 	DOTNET_PKG_RDEPS+="
-		virtual/dotnet-sdk:${DOTNET_PKG_COMPAT}
+		dev-dotnet/aspnetcore-runtime:${DOTNET_PKG_COMPAT}
 	"
 	DOTNET_PKG_BDEPS+="
 		${DOTNET_PKG_RDEPS}
+		virtual/dotnet-sdk:${DOTNET_PKG_COMPAT}
 	"
 
 	# Special package "dev-dotnet/csharp-gentoodotnetinfo" used for information
@@ -230,7 +231,7 @@ dotnet-pkg-base_get-runtime() {
 # Used by "dotnet-pkg_pkg_setup" from the "dotnet-pkg" eclass.
 dotnet-pkg-base_setup() {
 	local -a impl_dirs=(
-		"${EPREFIX}/usr/$(get_libdir)/dotnet-sdk-${DOTNET_PKG_COMPAT}"
+		"${EPREFIX}/usr/$(get_libdir)/dotnet-sdk"
 		"${EPREFIX}/opt/dotnet-sdk-bin-${DOTNET_PKG_COMPAT}"
 	)
 	local impl_exe
