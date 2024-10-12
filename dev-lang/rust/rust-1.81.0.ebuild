@@ -169,6 +169,9 @@ PATCHES=(
 	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
 	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
 	"${FILESDIR}"/1.79.0-revert-8c40426.patch
+	"${FILESDIR}/1.81.0-backport-bug937164.patch"
+	"${FILESDIR}/1.81.0-backport-llvm-pr101761.patch"
+	"${FILESDIR}/1.81.0-backport-llvm-pr101766.patch"
 	"${FILESDIR}"/1.80.0-use-system-libffi.patch
 	"${FILESDIR}"/1.81.0-remove-crt-and-musl_root-from-musl-targets.patch
 	"${FILESDIR}"/1.81.0-llvm19.patch
