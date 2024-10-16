@@ -15,16 +15,20 @@ if [[ ${KDE_BUILD_TYPE} != live ]]; then
 fi
 
 LICENSE="GPL-2+"
-SLOT="6"
+SLOT="5"
 IUSE="acoustid flac kde mp3 mp4 +mpris +taglib test vorbis"
 
 REQUIRED_USE="flac? ( vorbis )"
 RESTRICT="!test? ( test )"
 
-DEPEND="
-	dev-qt/qtbase:6[gui,network,widgets,xml]
-	dev-qt/qtdeclarative:6
-	dev-qt/qtmultimedia:6
+RDEPEND="
+	dev-qt/qtcore:5
+	dev-qt/qtdeclarative:5
+	dev-qt/qtgui:5
+	dev-qt/qtmultimedia:5
+	dev-qt/qtnetwork:5
+	dev-qt/qtwidgets:5
+	dev-qt/qtxml:5
 	sys-libs/readline:=
 	acoustid? (
 		media-libs/chromaprint:=
@@ -35,27 +39,27 @@ DEPEND="
 		media-libs/libvorbis
 	)
 	kde? (
-		kde-frameworks/kconfig:6
-		kde-frameworks/kconfigwidgets:6
-		kde-frameworks/kcoreaddons:6
-		kde-frameworks/kio:6
-		kde-frameworks/kwidgetsaddons:6
-		kde-frameworks/kxmlgui:6
+		kde-frameworks/kconfig:5
+		kde-frameworks/kconfigwidgets:5
+		kde-frameworks/kcoreaddons:5
+		kde-frameworks/kio:5
+		kde-frameworks/kwidgetsaddons:5
+		kde-frameworks/kxmlgui:5
 	)
 	mp3? ( media-libs/id3lib )
 	mp4? ( media-libs/libmp4v2 )
 	mpris? ( dev-qt/qtdbus:5 )
-	taglib? ( >=media-libs/taglib-1.9.1:= )
+	taglib? ( >=media-libs/taglib-1.9.1 )
 	vorbis? (
 		media-libs/libogg
 		media-libs/libvorbis
 	)
 "
-RDEPEND="${DEPEND}
-	!media-sound/kid3:5
+DEPEND="${RDEPEND}
+	test? ( dev-qt/qttest:5 )
 "
 BDEPEND="${PYTHON_DEPS}
-	dev-qt/qttools:6[linguist]
+	dev-qt/linguist-tools:5
 	kde? ( kde-frameworks/extra-cmake-modules:0 )
 "
 
@@ -68,11 +72,14 @@ src_prepare() {
 	cmake_src_prepare
 	# applies broken python hacks, bug #614950
 	cmake_comment_add_subdirectory doc
+
+	sed -e "/^ *find_package.*QT NAMES/s/Qt6 //" \
+		-i CMakeLists.txt || die # ensure Qt5 build
 }
 
 src_configure() {
 	local mycmakeargs=(
-		-DBUILD_WITH_QT6=ON
+		-DBUILD_WITH_QT6=OFF
 		-DWITH_QAUDIODECODER=ON # bug 855281
 		-DWITH_CHROMAPRINT=$(usex acoustid)
 		-DWITH_DBUS=$(usex mpris)
