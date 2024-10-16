@@ -26,9 +26,8 @@ fi
 
 LICENSE="MIT"
 SLOT="0/$(ver_cut 1-2)"
-IUSE="test"
 
-BDEPEND="test? ( dev-cpp/gtest )"
+BDEPEND="dev-cpp/gtest"
 
 PATCHES=(
 	"${FILESDIR}/${PN}-7.4.0-cmake.patch"
