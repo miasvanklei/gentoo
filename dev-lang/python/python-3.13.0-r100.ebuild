@@ -513,6 +513,7 @@ src_compile() {
 		# bug 660358
 		local -x COLUMNS=80
 		local -x PYTHONDONTWRITEBYTECODE=
+		local -x TMPDIR=/tmp
 	fi
 
 	# also need to clear the flags explicitly here or they end up
@@ -552,6 +553,7 @@ src_test() {
 	# bug 660358
 	local -x COLUMNS=80
 	local -x PYTHONDONTWRITEBYTECODE=
+	local -x TMPDIR=/tmp
 
 	nonfatal emake -Onone test EXTRATESTOPTS="${test_opts[*]}" \
 		CPPFLAGS= CFLAGS= LDFLAGS= < /dev/tty
@@ -569,7 +571,7 @@ src_install() {
 	# Fix collisions between different slots of Python.
 	rm "${ED}/usr/$(get_libdir)/libpython3.so" || die
 	# Fix collision with GIL-enabled build.
-	rm "${ED}/usr/bin/python3.13" || die
+	rm "${ED}/usr/bin/python${PYVER%t}" || die
 	mv "${ED}"/usr/bin/pydoc{${PYVER%t},${PYVER}} || die
 	mv "${ED}"/usr/share/man/man1/python{${PYVER%t},${PYVER}}.1 || die
 
