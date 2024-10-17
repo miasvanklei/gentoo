@@ -45,8 +45,7 @@ SRC_URI="
 S="${WORKDIR}/jdk${SLOT}u-jdk-${MY_PV//+/-}"
 
 LICENSE="GPL-2-with-classpath-exception"
-#	SLOT="${MY_PV%%[.+]*}"
-SLOT="23"
+SLOT="${MY_PV%%[.+]*}"
 #	KEYWORDS="" # not LTS
 
 # lto temporarily disabled due to https://bugs.gentoo.org/916735
@@ -93,14 +92,6 @@ DEPEND="
 	app-arch/zip
 	media-libs/alsa-lib
 	net-print/cups
-	x11-base/xorg-proto
-	x11-libs/libX11
-	x11-libs/libXext
-	x11-libs/libXi
-	x11-libs/libXrandr
-	x11-libs/libXrender
-	x11-libs/libXt
-	x11-libs/libXtst
 	javafx? ( dev-java/openjfx:${SLOT}= )
 	system-bootstrap? (
 		|| (
