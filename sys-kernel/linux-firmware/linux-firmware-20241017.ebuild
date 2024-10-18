@@ -14,11 +14,10 @@ if [[ ${PV} == 99999999* ]]; then
 	EGIT_REPO_URI="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/${PN}.git"
 else
 	if [[ -n "${MY_COMMIT}" ]]; then
-		SRC_URI="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/snapshot/${MY_COMMIT}.tar.gz -> ${P}.tar.gz"
+		SRC_URI="https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/snapshot/${MY_COMMIT}.tar.gz -> ${P}.tar.gz"
 		S="${WORKDIR}/${MY_COMMIT}"
 	else
-		EGIT_REPO_URI="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/${PN}.git"
-		EGIT_BRANCH="${PV}"
+		SRC_URI="https://mirrors.edge.kernel.org/pub/linux/kernel/firmware/${P}.tar.xz"
 	fi
 
 	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
@@ -74,7 +73,10 @@ IDEPEND="
 "
 
 QA_PREBUILT="*"
-PATCHES=( "${FILESDIR}"/${PN}-copy-firmware-r5.patch )
+PATCHES=(
+	"${FILESDIR}"/${PN}-copy-firmware-r5.patch
+	"${FILESDIR}"/${PN}-check-whence.patch
+)
 
 pkg_pretend() {
 	if use initramfs; then
@@ -89,9 +91,6 @@ pkg_pretend() {
 }
 
 pkg_setup() {
-
-	python_setup
-
 	if use compress-xz || use compress-zstd ; then
 		local CONFIG_CHECK
 
@@ -146,11 +145,11 @@ src_prepare() {
 	# whitelist of misc files
 	local misc_files=(
 		copy-firmware.sh
-		dedup-firmware.sh
 		check_whence.py
-		WHENCE
-		README
+		dedup-firmware.sh
 		LICEN[CS]E.*
+		README.md
+		WHENCE
 	)
 
 	# whitelist of images with a free software license
@@ -292,7 +291,6 @@ src_install() {
 
 	local FW_OPTIONS=( "-v" )
 	local files_to_keep=
-	git config --global --add safe.directory "${S}" || die
 
 	if use savedconfig; then
 		if [[ -s "${S}/${PN}.conf" ]]; then
@@ -308,7 +306,6 @@ src_install() {
 	elif use compress-zstd; then
 		FW_OPTIONS+=( "--zstd" )
 	fi
-	! use deduplicate && FW_OPTIONS+=( "--ignore-duplicates" )
 	FW_OPTIONS+=( "${ED}/lib/firmware" )
 	./copy-firmware.sh "${FW_OPTIONS[@]}" || die
 	use deduplicate && { ./dedup-firmware.sh "${ED}/lib/firmware" || die; }
@@ -406,6 +403,7 @@ pkg_prerm() {
 	# Make sure /boot is mounted so that we can remove /boot/amd-uc.img!
 	use initramfs && ! use dist-kernel && mount-boot_pkg_prerm
 }
+
 pkg_postrm() {
 	# Don't forget to umount /boot if it was previously mounted by us.
 	use initramfs && ! use dist-kernel && mount-boot_pkg_postrm
