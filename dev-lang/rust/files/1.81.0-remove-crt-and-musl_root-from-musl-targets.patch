@@ -31,19 +31,18 @@
          (LinkOutputKind::DynamicNoPicExe, &["crt2.o", "rsbegin.o"]),
 --- a/compiler/rustc_target/src/spec/base/linux_musl.rs	2020-12-31 19:07:19.216270236 +0100
 +++ b/compiler/rustc_target/src/spec/base/linux_musl.rs	2020-12-31 19:07:53.639438587 +0100
-@@ -1,13 +1,9 @@
--use crate::spec::crt_objects;
--use crate::spec::{base, LinkSelfContainedDefault, TargetOptions};
+@@ -1,12 +1,9 @@
+-use crate::spec::{base, crt_objects, LinkSelfContainedDefault, TargetOptions};
 +use crate::spec::{base, TargetOptions};
- 
+
  pub fn opts() -> TargetOptions {
      let mut base = base::linux::opts();
- 
+
      base.env = "musl".into();
 -    base.pre_link_objects_self_contained = crt_objects::pre_musl_self_contained();
 -    base.post_link_objects_self_contained = crt_objects::post_musl_self_contained();
 -    base.link_self_contained = LinkSelfContainedDefault::InferredForMusl;
- 
+
      // These targets statically link libc by default
      base.crt_static_default = false;
 --- a/config.example.toml
@@ -300,14 +299,15 @@
      ///
 --- a/src/bootstrap/src/core/sanity.rs	2020-08-27 22:57:00.213783033 +0200
 +++ b/src/bootstrap/src/core/sanity.rs	2020-08-27 23:02:21.531754386 +0200
-@@ -11,7 +11,6 @@
- use std::collections::HashMap;
- use std::env;
+@@ -11,7 +11,7 @@
+ use std::collections::{HashMap, HashSet};
  use std::ffi::{OsStr, OsString};
--use std::fs;
  use std::path::PathBuf;
- use std::process::Command;
- 
+-use std::{env, fs};
++use std::env;
+
+ #[cfg(not(feature = "bootstrap-self-test"))]
+ use crate::builder::Builder;
 @@ -215,28 +215,6 @@
              continue;
          }
