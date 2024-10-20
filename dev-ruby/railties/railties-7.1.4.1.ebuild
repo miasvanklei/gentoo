@@ -31,7 +31,7 @@ RUBY_S="rails-${PV}/${PN}"
 # investigation.
 RESTRICT="test"
 
-RDEPEND+=">=app-eselect/eselect-rails-0.25"
+RDEPEND=">=app-eselect/eselect-rails-0.27"
 
 ruby_add_rdepend "
 	~dev-ruby/actionpack-${PV}

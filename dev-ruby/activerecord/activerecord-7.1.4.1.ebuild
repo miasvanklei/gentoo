@@ -52,13 +52,17 @@ all_ruby_prepare() {
 	# Remove items from the common Gemfile that we don't need for this
 	# test run. This also requires handling some gemspecs.
 	rm ../Gemfile.lock || die
-	sed -i -e "/\(uglifier\|system_timer\|sdoc\|w3c_validators\|pg\|jquery-rails\|execjs\|'mysql'\|journey\|ruby-prof\|stackprof\|benchmark-ips\|kindlerb\|turbolinks\|coffee-rails\|debugger\|redcarpet\|minitest\|sprockets\|stackprof\)/ s:^:#:" \
+	sed -e "/\(uglifier\|system_timer\|sdoc\|w3c_validators\|pg\|jquery-rails\|execjs\|'mysql'\|journey\|ruby-prof\|stackprof\|benchmark-ips\|kindlerb\|turbolinks\|coffee-rails\|debugger\|redcarpet\|minitest\|sprockets\|stackprof\)/ s:^:#:" \
 		-e '/:job/,/end/ s:^:#:' \
-		-e '/group :doc/,/^end/ s:^:#:' ../Gemfile || die
+		-e '/group :doc/,/^end/ s:^:#:' \
+		-i ../Gemfile || die
 	sed -i -e '/rack-ssl/d' -e 's/~> 3.4/>= 3.4/' ../railties/railties.gemspec || die
 	sed -e '/bcrypt/ s/3.0.0/3.0/' \
 		-i ../Gemfile || die
 	sed -i -e '/byebug/ s:^:#:' test/cases/base_prevent_writes_test.rb || die
+
+	sed -e '3igem "activejob", "~> 7.1.0"; gem "activemodel", "~> 7.1.0"; gem "railties", "~> 7.1.0"' \
+		-i test/cases/helper.rb || die
 
 	# Add back json in the Gemfile because we dropped some dependencies
 	# earlier that implicitly required it.
@@ -76,16 +80,12 @@ all_ruby_prepare() {
 	# Avoid test failing to bind limit length in favor of security release
 	sed -i -e '/test_too_many_binds/askip "Fails on Gentoo"' test/cases/bind_parameter_test.rb || die
 
-	# Avoid test failing related to rubygems
-	#sed -e '/test_generates_absolute_path_with_given_root/askip "rubygems actiovation monitor"' \
-	#	-i test/cases/tasks/sqlite_rake_test.rb || die
-
 	# Avoid test requiring specific locales
 	sed -i -e '/test_unicode_input_casting/askip "Requires specific locales"' test/cases/binary_test.rb || die
 
-	# Avoid test not compatible with sqlite 3.43
-	sed -e '/test_should_return_float_average_if_db_returns_such/askip "Fails with sqlite 3.43"' \
-		-i test/cases/calculations_test.rb || die
+	# Avoid test not compatible with new sqlite versions
+	sed -e '/test_strict_strings_by_default/askip "Fails with newer sqlite"' \
+		-i test/cases/adapters/sqlite3/sqlite3_adapter_test.rb || die
 
 	# Avoid tests requiring a full Rails setup
 	rm -f test/cases/adapters/sqlite3/dbconsole_test.rb || die

@@ -36,7 +36,7 @@ ruby_add_rdepend "
 
 ruby_add_bdepend "test? (
 	dev-ruby/bundler
-	dev-ruby/importmap-rails
+	>=dev-ruby/importmap-rails-1.2.3
 	dev-ruby/minitest:5
 	dev-ruby/mocha
 	dev-ruby/propshaft

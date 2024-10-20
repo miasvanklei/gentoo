@@ -64,6 +64,7 @@ all_ruby_prepare() {
 		-i test/active_record_unit.rb || die
 
 	sed -e '3irequire "ostruct"' \
+		-e '3igem "railties", "~> 7.1.0"; gem "activerecord", "~> 7.1.0"' \
 		-i test/abstract_unit.rb || die
 
 	# Avoid test failing on capitalization difference

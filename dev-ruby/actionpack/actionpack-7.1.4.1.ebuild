@@ -59,7 +59,9 @@ all_ruby_prepare() {
 	rm ../Gemfile.lock || die
 
 	# Fix errors loading rack/session with rack 3.0 and missing OpenStruct
-	sed -i -e '2igem "rack-session"; require "ostruct"' test/abstract_unit.rb || die
+	sed -e '2igem "rack-session"; require "ostruct"' \
+		-e '3igem "railties", "~> 7.1.0"; gem "activemodel", "~> 7.1.0"' \
+		-i test/abstract_unit.rb || die
 
 	# Use different timezone notation, this changed at some point due to an external dependency changing.
 	sed -e 's/-0000/GMT/' \
