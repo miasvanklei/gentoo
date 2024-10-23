@@ -3,17 +3,14 @@
 
 EAPI=8
 
-KERNEL_IUSE_GENERIC_UKI=1
-KERNEL_IUSE_MODULES_SIGN=1
-
 inherit kernel-build toolchain-funcs
 
 MY_P=linux-${PV%.*}
-GENPATCHES_P=genpatches-${PV%.*}-$(( ${PV##*.} + 7 ))
+GENPATCHES_P=genpatches-${PV%.*}-$(( ${PV##*.} + 10 ))
 # https://koji.fedoraproject.org/koji/packageinfo?packageID=8
 # forked to https://github.com/projg2/fedora-kernel-config-for-gentoo
-CONFIG_VER=6.6.12-gentoo
-GENTOO_CONFIG_VER=g13
+CONFIG_VER=6.1.102-gentoo
+GENTOO_CONFIG_VER=g14
 
 DESCRIPTION="Linux kernel built with Gentoo patches"
 HOMEPAGE="
@@ -24,9 +21,6 @@ SRC_URI+="
 	https://cdn.kernel.org/pub/linux/kernel/v$(ver_cut 1).x/${MY_P}.tar.xz
 	https://dev.gentoo.org/~mpagano/dist/genpatches/${GENPATCHES_P}.base.tar.xz
 	https://dev.gentoo.org/~mpagano/dist/genpatches/${GENPATCHES_P}.extras.tar.xz
-	experimental? (
-		https://dev.gentoo.org/~mpagano/dist/genpatches/${GENPATCHES_P}.experimental.tar.xz
-	)
 	https://github.com/projg2/gentoo-kernel-config/archive/${GENTOO_CONFIG_VER}.tar.gz
 		-> gentoo-kernel-config-${GENTOO_CONFIG_VER}.tar.gz
 	amd64? (
@@ -48,8 +42,9 @@ SRC_URI+="
 "
 S=${WORKDIR}/${MY_P}
 
-KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
-IUSE="debug experimental hardened"
+LICENSE="GPL-2"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~riscv ~sparc ~x86"
+IUSE="debug hardened"
 REQUIRED_USE="
 	arm? ( savedconfig )
 	hppa? ( savedconfig )
@@ -84,7 +79,7 @@ src_prepare() {
 
 	# prepare the default config
 	case ${ARCH} in
-		arm | hppa | loong | riscv | sparc)
+		arm | hppa | riscv | sparc)
 			> .config || die
 		;;
 		amd64)
@@ -137,8 +132,6 @@ src_prepare() {
 	if [[ ${biendian} == true && $(tc-endian) == big ]]; then
 		merge_configs+=( "${dist_conf_path}/big-endian.config" )
 	fi
-
-	use secureboot && merge_configs+=( "${dist_conf_path}/secureboot.config" )
 
 	kernel-build_merge_configs "${merge_configs[@]}"
 }

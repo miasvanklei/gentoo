@@ -10,7 +10,7 @@ KERNEL_IUSE_SECUREBOOT=1
 inherit kernel-install toolchain-funcs unpacker
 
 MY_P=linux-${PV%.*}
-GENPATCHES_P=genpatches-${PV%.*}-$(( ${PV##*.} + 7 ))
+GENPATCHES_P=genpatches-${PV%.*}-$(( ${PV##*.} + 1 ))
 BINPKG=${PF/-bin}-1
 
 DESCRIPTION="Pre-built Linux kernel with Gentoo patches"
@@ -21,7 +21,7 @@ SRC_URI+="
 	https://dev.gentoo.org/~mpagano/dist/genpatches/${GENPATCHES_P}.extras.tar.xz
 	amd64? (
 		https://dev.gentoo.org/~mgorny/binpkg/amd64/kernel/sys-kernel/gentoo-kernel/${BINPKG}.gpkg.tar
-			-> ${BINPKG}.amd64.gpkg.tar
+			-> ${BINPKG/-2/-1}.amd64.gpkg.tar
 	)
 	arm64? (
 		https://dev.gentoo.org/~mgorny/binpkg/arm64/kernel/sys-kernel/gentoo-kernel/${BINPKG}.gpkg.tar
@@ -38,7 +38,8 @@ SRC_URI+="
 "
 S=${WORKDIR}
 
-KEYWORDS="amd64 arm64 ppc64 x86"
+KEYWORDS="~amd64 ~arm64 ~ppc64 ~x86"
+IUSE="debug"
 
 RDEPEND="
 	!sys-kernel/gentoo-kernel:${SLOT}
@@ -49,6 +50,7 @@ PDEPEND="
 BDEPEND="
 	app-alternatives/bc
 	app-alternatives/lex
+	dev-util/pahole
 	virtual/libelf
 	app-alternatives/yacc
 "
@@ -127,7 +129,8 @@ src_test() {
 }
 
 src_install() {
-	local kernel_dir="${BINPKG}/image/usr/src/linux-${KPV}"
+	local rel_kernel_dir=/usr/src/linux-${KPV}
+	local kernel_dir="${BINPKG}/image${rel_kernel_dir}"
 	local image="${kernel_dir}/$(dist-kernel_get_image_path)"
 	local uki="${image%/*}/uki.efi"
 	if [[ -s ${uki} ]]; then
@@ -158,7 +161,7 @@ src_install() {
 			'(' -name '.*' -a -not -name '.config' ')' \
 		')' -delete || die
 	rm modprep/source || die
-	cp -p -R modprep/. "${ED}/usr/src/linux-${KPV}"/ || die
+	cp -p -R modprep/. "${ED}${rel_kernel_dir}"/ || die
 
 	# Update timestamps on all modules to ensure cleanup works correctly
 	# when switching USE=modules-compress.
@@ -167,4 +170,13 @@ src_install() {
 	# Modules were already stripped before signing
 	dostrip -x /lib/modules
 	kernel-install_compress_modules
+
+	# Mirror the logic from kernel-build_src_install, for architectures
+	# where USE=debug is used.
+	if use ppc64; then
+		dostrip -x "${rel_kernel_dir}/$(dist-kernel_get_image_path)"
+	elif use debug && { use amd64 || use arm64; }; then
+		dostrip -x "${rel_kernel_dir}/vmlinux"
+		dostrip -x "${rel_kernel_dir}/vmlinux.ctfa"
+	fi
 }
