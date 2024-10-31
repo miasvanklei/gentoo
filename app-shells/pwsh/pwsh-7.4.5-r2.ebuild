@@ -276,7 +276,7 @@ RDEPEND="
 	|| (
 		dev-libs/openssl-compat:1.0.0
 		=dev-libs/openssl-1.0*:0/0
-        )
+	)
 	gui? (
 		dev-util/desktop-file-utils
 		x11-misc/shared-mime-info
