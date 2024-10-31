@@ -21,7 +21,7 @@ else
 fi
 
 LICENSE="GPL-2"
-SLOT="9"
+SLOT="8"
 IUSE="doc jack nls phonehome pulseaudio cpu_flags_ppc_altivec cpu_flags_x86_sse cpu_flags_x86_mmx cpu_flags_x86_3dnow"
 
 RDEPEND="
@@ -58,7 +58,7 @@ RDEPEND="
 	media-libs/sratom
 	dev-libs/sord
 	media-libs/lv2"
-#	media-libs/suil[X,gtk2] bundled suil is used, maybe probably because of ytk
+#	media-libs/suil[X,gtk2] bundled suil is now used, probably because of ytk
 #	!bundled-libs? ( media-sound/fluidsynth ) at least libltc is missing to be able to unbundle...
 
 DEPEND="${RDEPEND}
@@ -76,6 +76,13 @@ PATCHES=(
 pkg_pretend() {
 	[[ $(tc-getLD) == *gold* ]] && (has_version sci-libs/fftw[openmp] || has_version sci-libs/fftw[threads]) && \
 		ewarn "Linking with gold linker might produce broken executable, see bug #733972"
+}
+
+pkg_setup() {
+	if has_version \>=dev-libs/libsigc++-2.6 ; then
+		append-cxxflags -std=c++11
+	fi
+	python-any-r1_pkg_setup
 }
 
 src_prepare() {
