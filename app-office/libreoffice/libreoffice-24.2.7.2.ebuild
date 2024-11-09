@@ -285,6 +285,9 @@ BDEPEND="
 	virtual/pkgconfig
 	clang? (
 		|| (
+			(	sys-devel/clang:19
+				sys-devel/llvm:19
+				=sys-devel/lld-19*	)
 			(	sys-devel/clang:18
 				sys-devel/llvm:18
 				=sys-devel/lld-18*	)
