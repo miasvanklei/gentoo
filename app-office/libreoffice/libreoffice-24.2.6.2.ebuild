@@ -54,7 +54,7 @@ ADDONS_SRC=(
 	# not packaged in Gentoo, https://skia.org/
 	"${ADDONS_URI}/skia-m116-2ddcf183eb260f63698aa74d1bb380f247ad7ccd.tar.xz"
 	# not packaged in Gentoo, https://github.com/tsyrogit/zxcvbn-c
-	"https://github.com/tsyrogit/zxcvbn-c/archive/b8a3d0b5992d1f50aa7559886f7e2ffc6740e2b7.tar.gz -> zxcvbn-c-b8a3d0b5992d1f50aa7559886f7e2ffc6740e2b7.tar.gz"
+	"${ADDONS_URI}/zxcvbn-c-2.5.tar.gz"
 	"base? (
 		${ADDONS_URI}/commons-logging-1.2-src.tar.gz
 		${ADDONS_URI}/ba2930200c9f019c2d93a8c88c651a0f-flow-engine-0.9.4.zip
@@ -285,9 +285,6 @@ BDEPEND="
 	virtual/pkgconfig
 	clang? (
 		|| (
-			(	sys-devel/clang:19
-				sys-devel/llvm:19
-				=sys-devel/lld-19*	)
 			(	sys-devel/clang:18
 				sys-devel/llvm:18
 				=sys-devel/lld-18*	)
@@ -328,8 +325,6 @@ PATCHES=(
 	"${WORKDIR}/${PN}-24.2.3.2-icu-74/${PN}-24.2.3.2-icu-74.2-reviewed-breakIterator-customizations.patch"
 	"${WORKDIR}/${PN}-24.2.3.2-icu-74/${PN}-24.2.3.2-icu-74.2-breakiterator-updates.patch"
 	"${WORKDIR}/${PN}-24.2.3.2-icu-74/${PN}-24.2.3.2-icu-74-unicode.patch"
-
-	"${FILESDIR}/${PN}-24.2-zxcvbn-c.patch"
 )
 
 S="${WORKDIR}/${PN}-${MY_PV}"
