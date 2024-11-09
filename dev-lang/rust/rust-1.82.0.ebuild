@@ -136,6 +136,7 @@ CMAKE_WARN_UNUSED_CLI=no
 
 QA_FLAGS_IGNORED="
 	usr/lib/${PN}/${PV}/bin/.*
+	usr/lib/${PN}/${PV}/libexec/.*
 	usr/lib/${PN}/${PV}/lib/lib.*.so
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/bin/.*
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/lib/lib.*.so
@@ -164,12 +165,9 @@ VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/rust.asc
 PATCHES=(
 	"${FILESDIR}"/1.78.0-musl-dynamic-linking.patch
 	"${FILESDIR}"/1.74.1-cross-compile-libz.patch
+	#"${FILESDIR}"/1.72.0-bump-libc-deps-to-0.2.146.patch  # pending refresh
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
-	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
-	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
 	"${FILESDIR}"/1.79.0-revert-8c40426.patch
-	"${FILESDIR}"/1.80.0-use-system-libffi.patch
-	"${FILESDIR}"/1.81.0-remove-crt-and-musl_root-from-musl-targets.patch
 )
 
 clear_vendor_checksums() {
@@ -301,10 +299,12 @@ esetup_unwind_hack() {
 }
 
 src_prepare() {
-	# fix libffi-sys: use system libffi
-	for i in libffi-sys-2.3.0; do
-		clear_vendor_checksums "${i}"
-	done
+	# Clear vendor checksums for crates that we patched to bump libc.
+	# NOTE: refresh this on each bump.
+	#for i in addr2line-0.20.0 bstr cranelift-jit crossbeam-channel elasticlunr-rs handlebars icu_locid libffi \
+	#	terminal_size tracing-tree; do
+	#	clear_vendor_checksums "${i}"
+	#done
 
 	# Rust baselines to Pentium4 on x86, this patch lowers the baseline to i586 when sse2 is not set.
 	if use x86; then
@@ -505,6 +505,7 @@ src_configure() {
 		if use elibc_musl; then
 			cat <<- _EOF_ >> "${S}"/config.toml
 				crt-static = false
+				musl-root = "$($(tc-getCC) -print-sysroot)/usr"
 			_EOF_
 		fi
 	done
@@ -715,6 +716,7 @@ src_install() {
 
 	# symlinks to switch components to active rust in eselect
 	dosym "${PV}/lib" "/usr/lib/${PN}/lib-${PV}"
+	dosym "${PV}/libexec" "/usr/lib/${PN}/libexec-${PV}"
 	dosym "${PV}/share/man" "/usr/lib/${PN}/man-${PV}"
 	dosym "rust/${PV}/lib/rustlib" "/usr/lib/rustlib-${PV}"
 	dosym "../../lib/${PN}/${PV}/share/doc/rust" "/usr/share/doc/${P}"
@@ -737,6 +739,7 @@ src_install() {
 		/usr/bin/rust-lldb
 		/usr/lib/rustlib
 		/usr/lib/rust/lib
+		/usr/lib/rust/libexec
 		/usr/lib/rust/man
 		/usr/share/doc/rust
 	_EOF_
