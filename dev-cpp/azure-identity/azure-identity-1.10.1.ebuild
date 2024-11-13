@@ -5,20 +5,21 @@ EAPI=8
 
 inherit cmake
 
-COMMIT="1d22b9bc578fec09364f7271ff7bd679d713e1f2"
+COMMIT="c7d19e283278af1eb9e8a8eb8375c7ce65956195"
 MY_P="azure-sdk-for-cpp-${COMMIT}"
 DESCRIPTION="Azure SDK for C++"
 HOMEPAGE="https://azure.github.io/azure-sdk-for-cpp/"
 SRC_URI="https://github.com/Azure/azure-sdk-for-cpp/archive/${COMMIT}.tar.gz -> ${MY_P}.tar.gz"
-S="${WORKDIR}/${MY_P}/sdk/keyvault/${PN}"
+S="${WORKDIR}/${MY_P}/sdk/identity/${PN}"
 LICENSE="MIT"
 SLOT="0/${PV}"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE="doc"
 RESTRICT="test" # Too many online tests.
 
 RDEPEND="
 	dev-cpp/azure-core:=
+	dev-libs/openssl:=
 	net-misc/curl[ssl]
 "
 DEPEND="
@@ -28,13 +29,6 @@ BDEPEND="
 	virtual/pkgconfig
 	doc? ( app-text/doxygen )
 "
-
-src_prepare() {
-	cmake_src_prepare
-	cd ../../.. || die
-	eapply "${FILESDIR}"/azure-sdk-for-cpp-doc-assets-dir.patch
-	eapply "${FILESDIR}"/azure-sdk-for-cpp-soversion.patch
-}
 
 src_configure() {
 	local mycmakeargs=(
