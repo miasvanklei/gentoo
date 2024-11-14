@@ -125,6 +125,7 @@ DEPEND="${COMMON_DEPEND}
 	spotlight? ( dev-libs/glib )
 	test? (
 		$(python_gen_cond_dep "dev-python/subunit[\${PYTHON_USEDEP},${MULTILIB_USEDEP}]" )
+		>=dev-util/cmocka-1.1.3[${MULTILIB_USEDEP}]
 		!system-mitkrb5? (
 			>=net-dns/resolv_wrapper-1.1.4
 			>=net-libs/socket_wrapper-1.1.9
