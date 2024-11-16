@@ -1,0 +1,122 @@
+diff --git a/meson_options.txt b/meson_options.txt
+index 8232461788464d6d974390e0fb9344064f0dd754..18a4b01b32488c4578fbc4718d10d47d0fbbd157 100644
+--- a/meson_options.txt
++++ b/meson_options.txt
+@@ -160,6 +160,14 @@ option(
+   description : 'build gallium "rusticl" OpenCL frontend.',
+ )
+ 
++option(
++  'gallium-rusticl-enable-drivers',
++  type : 'array',
++  value : ['auto'],
++  description : 'List of gallium drivers for which rusticl will be enabled ' +
++                'by default',
++)
++
+ option(
+   'gallium-wgl-dll-name',
+   type : 'string',
+diff --git a/src/gallium/frontends/rusticl/mesa/pipe/device.rs b/src/gallium/frontends/rusticl/mesa/pipe/device.rs
+index e41ca59dc9aac5a87c5a25127f1b38cccc24132f..010943c9ea9d8af6cebfacada429366554b45daa 100644
+--- a/src/gallium/frontends/rusticl/mesa/pipe/device.rs
++++ b/src/gallium/frontends/rusticl/mesa/pipe/device.rs
+@@ -55,45 +55,48 @@ fn load_devs() -> impl Iterator<Item = PipeLoaderDevice> {
+ fn get_enabled_devs() -> HashMap<String, u32> {
+     let mut res = HashMap::new();
+ 
+-    if let Ok(enabled_devs) = env::var("RUSTICL_ENABLE") {
+-        let mut last_driver = None;
+-        for driver_str in enabled_devs.split(',') {
+-            if driver_str.is_empty() {
+-                continue;
++    // we require the type here as this list can be empty depending on the build options
++    let default_devs: &[&str] = &[];
++
++    // I wished we could use different iterators, but that's not really working out.
++    let enabled_devs = env::var("RUSTICL_ENABLE").unwrap_or(default_devs.join(","));
++    let mut last_driver = None;
++    for driver_str in enabled_devs.split(',') {
++        if driver_str.is_empty() {
++            continue;
++        }
++
++        // if the string parses to a number, just updated the device bitset
++        if let Ok(dev_id) = driver_str.parse::<u8>() {
++            if let Some(last_driver) = last_driver {
++                *res.get_mut(last_driver).unwrap() |= 1 << dev_id;
+             }
++            continue;
++        } else {
++            let driver_str: Vec<_> = driver_str.split(':').collect();
++            let mut devices = 0;
+ 
+-            // if the string parses to a number, just updated the device bitset
+-            if let Ok(dev_id) = driver_str.parse::<u8>() {
+-                if let Some(last_driver) = last_driver {
+-                    *res.get_mut(last_driver).unwrap() |= 1 << dev_id;
+-                }
+-                continue;
+-            } else {
+-                let driver_str: Vec<_> = driver_str.split(':').collect();
+-                let mut devices = 0;
+-
+-                if driver_str.len() == 1 {
+-                    devices = !0;
+-                } else if let Ok(dev_id) = driver_str[1].parse::<u8>() {
+-                    devices |= 1 << dev_id;
+-                }
+-
+-                let driver_str = match driver_str[0] {
+-                    "llvmpipe" | "lp" => "swrast",
+-                    "freedreno" => "msm",
+-                    a => a,
+-                };
+-
+-                res.insert(driver_str.to_owned(), devices);
+-                last_driver = Some(driver_str);
++            if driver_str.len() == 1 {
++                devices = !0;
++            } else if let Ok(dev_id) = driver_str[1].parse::<u8>() {
++                devices |= 1 << dev_id;
+             }
+-        }
+ 
+-        if res.contains_key("panfrost") {
+-            res.insert("panthor".to_owned(), res["panfrost"]);
++            let driver_str = match driver_str[0] {
++                "llvmpipe" | "lp" => "swrast",
++                "freedreno" => "msm",
++                a => a,
++            };
++
++            res.insert(driver_str.to_owned(), devices);
++            last_driver = Some(driver_str);
+         }
+     }
+ 
++    if res.contains_key("panfrost") {
++        res.insert("panthor".to_owned(), res["panfrost"]);
++    }
++
+     res
+ }
+ 
+diff --git a/src/gallium/frontends/rusticl/meson.build b/src/gallium/frontends/rusticl/meson.build
+index 1fe75a611444d527bf5c0b9c1911ace7de9f7b13..cba6bb7ae00176fa9689475741ae4cc009d688fa 100644
+--- a/src/gallium/frontends/rusticl/meson.build
++++ b/src/gallium/frontends/rusticl/meson.build
+@@ -75,6 +75,13 @@ rusticl_args = [
+   '-Aclippy::type_complexity',
+ ]
+ 
++rusticl_drivers_enable = get_option('gallium-rusticl-enable-drivers')
++foreach driver : rusticl_drivers_enable
++  rusticl_args += [
++    '--cfg', 'rusticl_enable_' + driver,
++  ]
++endforeach
++
+ if with_platform_x11
+   rusticl_args += [
+     '--cfg', 'glx',
