@@ -17,6 +17,8 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~s390 ~sparc ~x86"
 IUSE="berkdb debug dovecot gdbm ldap mysql postgres static-libs authlib +tools trashquota"
 
+RESTRICT="test" # No more working
+
 CDEPEND="!mail-mta/courier
 	net-mail/mailbase
 	dev-libs/libpcre2
@@ -30,12 +32,10 @@ CDEPEND="!mail-mta/courier
 	!gdbm? (
 		berkdb? ( sys-libs/db:= )
 	)
-	gdbm? ( net-mail/courier-imap[gdbm?,berkdb?] )
-	berkdb? ( net-mail/courier-imap[gdbm?,berkdb?] )
 	tools? (
 		!mail-mta/netqmail
 		!<net-mail/courier-imap-5.2.6
-		net-mail/courier-common
+		net-mail/courier-common[gdbm?,berkdb?]
 	)"
 DEPEND="${CDEPEND}"
 RDEPEND="${CDEPEND}
@@ -49,8 +49,8 @@ REQUIRED_USE="
 	ldap? ( authlib )"
 
 PATCHES=(
-	"${FILESDIR}"/${P}-testsuite.patch
-	"${FILESDIR}"/${P}-valgrind.patch
+	"${FILESDIR}"/${PN}-3.1.7-testsuite.patch
+	"${FILESDIR}"/${PN}-3.1.7-valgrind.patch
 	"${FILESDIR}"/${PN}-3.1.6-test.patch
 )
 
