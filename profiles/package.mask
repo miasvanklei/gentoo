@@ -34,6 +34,10 @@
 #--- END OF EXAMPLES ---
 
 # Alfredo Tupone <tupone@gentoo.org> (2024-11-17)
+# Masked for testing
+>=dev-ml/findlib-1.9.7
+
+# Alfredo Tupone <tupone@gentoo.org> (2024-11-17)
 # Included in dev-ml/odoc, the only rdep
 # Removal on 2024-12-17.
 dev-ml/odoc-parser
@@ -42,6 +46,12 @@ dev-ml/odoc-parser
 # Masked for testing
 =dev-util/intel_clc-24.3*
 =media-libs/mesa-24.3*
+
+# Andreas K. Hüttel <dilfridge@gentoo.org> (2024-11-17)
+# Needs a header from libusb that doesnt exist anymore. Will never build.
+# Furthermore, modern C problems. Bug 874645. No maintainer.
+# Removal in 30 days.
+dev-util/usb-robot
 
 # Andreas K. Hüttel <dilfridge@gentoo.org> (2024-11-17)
 # Fails to build on modern compilers, bug 874291. Various open bugs.
