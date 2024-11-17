@@ -57,8 +57,6 @@ QA_CONFIG_IMPL_DECL_SKIP=( closefrom )
 
 DOCS=( {CHANGES,README}.md )
 
-PATCHES=( "${FILESDIR}/${PN}-7.4.0-missing-include.patch" )
-
 src_unpack() {
 	if use verify-sig; then
 		# Too many levels of symbolic links
@@ -83,6 +81,7 @@ src_configure() {
 		--with-group-queue=smtpq
 		--with-libevent="${EPREFIX}"/usr/$(get_libdir)
 		--with-libssl="${EPREFIX}"/usr/$(get_libdir)
+		--with-libz=="${EPREFIX}"/usr/$(get_libdir)
 		$(use_with berkdb table-db)
 		$(use_with pam auth-pam)
 	)
