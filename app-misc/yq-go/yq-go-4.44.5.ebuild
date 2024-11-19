@@ -10,13 +10,21 @@ SRC_URI="https://github.com/mikefarah/yq/archive/refs/tags/v${PV}.tar.gz -> ${P/
 	https://dev.gentoo.org/~zmedico/dist/${P/-go/}-deps.tar.xz"
 
 S=${WORKDIR}/${P/-go/}
-LICENSE="MIT"
 LICENSE+=" Apache-2.0 BSD BSD-2"
 SLOT="0"
 KEYWORDS="~amd64 ~loong"
 IUSE="+yq-symlink"
 DOCS=(README.md)
 RDEPEND="yq-symlink? ( !app-misc/yq[yq-symlink(+)] )"
+
+src_unpack() {
+	default
+}
+
+src_prepare() {
+	ln -sv ../vendor ./ || die
+	default
+}
 
 src_compile() {
 	CGO_ENABLED=0 ego build -ldflags "-X main.GitDescribe=v${PV} -s -w"
