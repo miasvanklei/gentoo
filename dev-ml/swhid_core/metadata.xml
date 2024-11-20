@@ -5,7 +5,11 @@
 		<email>ml@gentoo.org</email>
 		<name>ML</name>
 	</maintainer>
+	<longdescription lang="en">
+		swhid_core is an OCaml library to with with Software Heritage
+		persistent identifiers (swhids).
+	</longdescription>
 	<upstream>
-		<remote-id type="github">xavierleroy/cryptokit</remote-id>
+		<remote-id type="github">ocamlpro/swhid_core</remote-id>
 	</upstream>
 </pkgmetadata>
