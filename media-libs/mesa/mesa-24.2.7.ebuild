@@ -3,7 +3,7 @@
 
 EAPI=8
 
-LLVM_COMPAT=( {15..19} )
+LLVM_COMPAT=( {15..18} )
 LLVM_OPTIONAL=1
 CARGO_OPTIONAL=1
 PYTHON_COMPAT=( python3_{10..13} )
@@ -98,10 +98,10 @@ RDEPEND="
 	unwind? ( sys-libs/libunwind[${MULTILIB_USEDEP}] )
 	llvm? (
 		$(llvm_gen_dep "
-			sys-devel/llvm:\${LLVM_SLOT}[${MULTILIB_USEDEP}]
+			sys-devel/llvm:\${LLVM_SLOT}[llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}]
 			opencl? (
 				dev-util/spirv-llvm-translator:\${LLVM_SLOT}
-				sys-devel/clang:\${LLVM_SLOT}[${MULTILIB_USEDEP}]
+				sys-devel/clang:\${LLVM_SLOT}[llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}]
 			)
 		")
 		video_cards_r600? (
@@ -186,10 +186,6 @@ BDEPEND="
 	)
 	wayland? ( dev-util/wayland-scanner )
 "
-
-PATCHES=(
-	"${FILESDIR}"/mesa-24.2.7-add-gallium-rusticl-enable-drivers.patch
-)
 
 QA_WX_LOAD="
 x86? (
@@ -396,18 +392,12 @@ multilib_src_configure() {
 		gallium_enable video_cards_radeon r300 r600
 	fi
 
-	driver_list() {
-		local drivers="$(sort -u <<< "${1// /$'\n'}")"
-		echo "${drivers//$'\n'/,}"
-	}
-
 	if use llvm && use opencl; then
 		PKG_CONFIG_PATH="$(get_llvm_prefix)/$(get_libdir)/pkgconfig"
 		# See https://gitlab.freedesktop.org/mesa/mesa/-/blob/main/docs/rusticl.rst
 		emesonargs+=(
 			$(meson_native_true gallium-rusticl)
 			-Drust_std=2021
-			-Dgallium-rusticl-enable-drivers=$(driver_list "${GALLIUM_DRIVERS[*]}")
 		)
 	fi
 
@@ -431,6 +421,11 @@ multilib_src_configure() {
 			fi
 		fi
 	fi
+
+	driver_list() {
+		local drivers="$(sort -u <<< "${1// /$'\n'}")"
+		echo "${drivers//$'\n'/,}"
+	}
 
 	local vulkan_layers
 	use vulkan && vulkan_layers+="device-select"
