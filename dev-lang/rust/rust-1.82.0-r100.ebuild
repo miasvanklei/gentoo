@@ -135,7 +135,6 @@ PATCHES=(
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
 	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
 	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
-	"${FILESDIR}"/1.79.0-revert-8c40426.patch
 	"${FILESDIR}"/1.80.0-use-system-libffi.patch
 	"${FILESDIR}"/1.81.0-remove-crt-and-musl_root-from-musl-targets.patch
 )
@@ -201,11 +200,6 @@ pkg_setup() {
 
 	export LIBGIT2_NO_PKG_CONFIG=1 #749381
 	if tc-is-cross-compiler; then
-		export PKG_CONFIG_ALLOW_CROSS=1
-		export PKG_CONFIG_PATH="${ROOT}/usr/$(get_libdir)/pkgconfig"
-		export OPENSSL_INCLUDE_DIR="${ROOT}/usr/include"
-		export OPENSSL_LIB_DIR="${ROOT}/usr/$(get_libdir)"
-
 		use system-llvm && die "USE=system-llvm not allowed when cross-compiling"
 		local cross_llvm_target="$(llvm_tuple_to_target "${CBUILD}")"
 		use "llvm_targets_${cross_llvm_target}" || \
@@ -241,6 +235,13 @@ src_prepare() {
 }
 
 src_configure() {
+	if tc-is-cross-compiler; then
+		export PKG_CONFIG_ALLOW_CROSS=1
+		export PKG_CONFIG_PATH="${ESYSROOT}/usr/$(get_libdir)/pkgconfig"
+		export OPENSSL_INCLUDE_DIR="${ESYSROOT}/usr/include"
+		export OPENSSL_LIB_DIR="${ESYSROOT}/usr/$(get_libdir)"
+	fi
+
 	filter-lto # https://bugs.gentoo.org/862109 https://bugs.gentoo.org/866231
 
 	local rust_target="" rust_targets="" arch_cflags
