@@ -6,7 +6,7 @@ EAPI=8
 ECM_TEST="true"
 KFMIN=6.6.0
 QTMIN=6.7.2
-inherit ecm plasma.kde.org
+inherit ecm fcaps plasma.kde.org
 
 DESCRIPTION="Task management and system monitoring library"
 
@@ -15,7 +15,7 @@ SLOT="6/9"
 KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
 IUSE=""
 
-RDEPEND="
+DEPEND="
 	dev-libs/libnl:3
 	>=dev-qt/qtbase-${QTMIN}:6[dbus,gui,network,widgets]
 	>=dev-qt/qtdeclarative-${QTMIN}:6
@@ -31,8 +31,19 @@ RDEPEND="
 	sys-apps/lm-sensors:=
 	sys-libs/zlib
 "
-DEPEND="${RDEPEND}"
-BDEPEND="sys-libs/libcap"
+RDEPEND="${DEPEND}
+	>=dev-qt/qt5compat-${QTMIN}:6[qml]
+"
+
+# -m 0755 to avoid suid with USE="-filecaps"
+FILECAPS=( -m 0755 cap_sys_nice=ep usr/libexec/ksysguard/ksgrd_network_helper )
+
+src_configure() {
+	local mycmakeargs=(
+		-DCMAKE_DISABLE_FIND_PACKAGE_Libcap=ON
+	)
+	ecm_src_configure
+}
 
 src_test() {
 	# bugs 797898, 889942: flaky test
@@ -40,4 +51,9 @@ src_test() {
 		-E "(sensortreemodeltest)"
 	)
 	LC_NUMERIC="C" ecm_src_test # bug 695514
+}
+
+pkg_postinst() {
+	ecm_pkg_postinst
+	fcaps_pkg_postinst
 }
