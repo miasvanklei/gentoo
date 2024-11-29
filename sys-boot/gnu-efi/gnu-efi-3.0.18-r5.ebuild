@@ -73,6 +73,7 @@ pkg_pretend() {
 
 pkg_setup() {
 	check_compiler
+	check_and_set_objcopy
 }
 
 src_prepare() {
