@@ -104,6 +104,7 @@ CMAKE_WARN_UNUSED_CLI=no
 
 QA_FLAGS_IGNORED="
 	usr/lib/${PN}/${PV}/bin/.*
+	usr/lib/${PN}/${PV}/libexec/.*
 	usr/lib/${PN}/${PV}/lib/lib.*.so
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/bin/.*
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/lib/lib.*.so
@@ -132,7 +133,6 @@ VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/rust.asc
 PATCHES=(
 	"${FILESDIR}"/1.78.0-musl-dynamic-linking.patch
 	"${FILESDIR}"/1.74.1-cross-compile-libz.patch
-	"${FILESDIR}"/1.67.0-doc-wasm.patch
 	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
 	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
 	"${FILESDIR}"/1.80.0-use-system-libffi.patch
