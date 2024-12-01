@@ -14,11 +14,12 @@ SRC_URI="https://github.com/brndnmtthws/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.
 
 LICENSE="GPL-3 BSD LGPL-2.1 MIT"
 SLOT="0"
-KEYWORDS="~alpha amd64 ~arm ~arm64 ~ppc ppc64 ~riscv sparc x86"
-IUSE="apcupsd bundled-toluapp cmus curl doc extras hddtemp ical iconv imlib
-	intel-backlight iostats irc lua-cairo lua-imlib lua-rsvg math moc mpd
-	mysql ncurses nvidia +portmon pulseaudio rss systemd test thinkpad
-	truetype wayland webserver wifi X xinerama xmms2"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~sparc ~x86"
+IUSE="apcupsd bundled-toluapp cmus colour-name-map curl doc extras hddtemp ical
+	iconv imlib intel-backlight iostats irc lua-cairo lua-cairo-xlib
+	lua-imlib lua-rsvg math moc mouse-events mpd mysql ncurses nvidia
+	+portmon pulseaudio rss systemd test thinkpad truetype wayland webserver
+	wifi X xinerama xinput xmms2"
 RESTRICT="!test? ( test )"
 
 # Note: toluapp is bundled in conky since 1.11.2
@@ -32,7 +33,8 @@ COMMON_DEPEND="
 	iconv? ( virtual/libiconv )
 	imlib? ( >=media-libs/imlib2-1.11.0[X] )
 	irc? ( net-libs/libircclient )
-	lua-cairo? ( x11-libs/cairo[X] )
+	lua-cairo? ( x11-libs/cairo[X?] )
+	lua-cairo-xlib? ( x11-libs/cairo[X] )
 	lua-imlib? ( >=media-libs/imlib2-1.11.0[X] )
 	lua-rsvg? ( gnome-base/librsvg )
 	mysql? ( dev-db/mysql-connector-c )
@@ -41,7 +43,6 @@ COMMON_DEPEND="
 	pulseaudio? ( media-libs/libpulse )
 	rss? (
 		dev-libs/libxml2
-		net-misc/curl
 		dev-libs/glib:2
 	)
 	systemd? ( sys-apps/systemd )
@@ -56,10 +57,11 @@ COMMON_DEPEND="
 	wifi? ( net-wireless/wireless-tools )
 	webserver? ( net-libs/libmicrohttpd:= )
 	X? (
-		x11-libs/libX11
 		x11-libs/libXdamage
 		x11-libs/libXfixes
 		x11-libs/libXext
+		x11-libs/libXi
+		x11-libs/libX11
 	)
 	xinerama? ( x11-libs/libXinerama )
 	xmms2? ( media-sound/xmms2 )
@@ -82,6 +84,9 @@ DEPEND="
 	)
 "
 BDEPEND="
+	colour-name-map? (
+		dev-util/gperf
+	)
 	doc? (
 		virtual/pandoc
 		$(python_gen_any_dep '
@@ -107,12 +112,16 @@ python_check_deps() {
 REQUIRED_USE="
 	${LUA_REQUIRED_USE}
 	imlib? ( X )
-	lua-cairo? ( X  bundled-toluapp )
-	lua-imlib? ( X  bundled-toluapp )
-	lua-rsvg? ( X  bundled-toluapp )
+	lua-cairo? ( || ( X wayland ) bundled-toluapp )
+	lua-cairo-xlib? ( X  bundled-toluapp )
+	lua-imlib? ( X bundled-toluapp )
+	lua-rsvg? ( || ( X wayland ) bundled-toluapp )
+	mouse-events? ( X wayland )
 	nvidia? ( X )
+	rss? ( curl )
 	truetype? ( X )
 	xinerama? ( X )
+	xinput? ( X )
 "
 
 CONFIG_CHECK="~IPV6"
@@ -149,15 +158,13 @@ src_configure() {
 
 	if use X; then
 		mycmakeargs+=(
-			-DBUILD_ARGB=yes
-			-DBUILD_X11=yes
-			-DBUILD_XDAMAGE=yes
-			-DBUILD_XDBE=yes
-			-DBUILD_XFIXES=yes
-			-DBUILD_XSHAPE=yes
-			-DBUILD_XINPUT=yes
-			-DBUILD_MOUSE_EVENTS=yes
 			-DOWN_WINDOW=yes
+			-DBUILD_XDAMAGE=yes
+			-DBUILD_XFIXES=yes
+			-DBUILD_ARGB=yes
+			-DBUILD_XDBE=yes
+			-DBUILD_XSHAPE=yes
+			-DBUILD_X11=yes
 		)
 	else
 		mycmakeargs+=(
@@ -170,6 +177,7 @@ src_configure() {
 		-DBUILD_AUDACIOUS=no
 		-DBUILD_BUILTIN_CONFIG=yes
 		-DBUILD_CMUS=$(usex cmus)
+		-DBUILD_COLOUR_NAME_MAP=$(usex colour-name-map)
 		-DBUILD_CURL=$(usex curl)
 		-DBUILD_DOCS=$(usex doc)
 		-DBUILD_EXTRAS=$(usex extras)
@@ -186,10 +194,12 @@ src_configure() {
 		-DBUILD_IRC=$(usex irc)
 		-DBUILD_JOURNAL=$(usex systemd)
 		-DBUILD_LUA_CAIRO=$(usex lua-cairo)
+		-DBUILD_LUA_CAIRO_XLIB=$(usex lua-cairo-xlib)
 		-DBUILD_LUA_IMLIB2=$(usex lua-imlib)
 		-DBUILD_LUA_RSVG=$(usex lua-rsvg)
 		-DBUILD_MATH=$(usex math)
 		-DBUILD_MOC=$(usex moc)
+		-DBUILD_MOUSE_EVENTS=$(usex mouse-events)
 		-DBUILD_MPD=$(usex mpd)
 		-DBUILD_MYSQL=$(usex mysql)
 		-DBUILD_NCURSES=$(usex ncurses)
@@ -203,6 +213,7 @@ src_configure() {
 		-DBUILD_WLAN=$(usex wifi)
 		-DBUILD_XFT=$(usex truetype)
 		-DBUILD_XINERAMA=$(usex xinerama)
+		-DBUILD_XINPUT=$(usex xinput)
 		-DBUILD_XMMS2=$(usex xmms2)
 		-DDOC_PATH=/usr/share/doc/${PF}
 		-DMAINTAINER_MODE=no
