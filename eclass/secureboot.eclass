@@ -46,7 +46,7 @@ esac
 IUSE="secureboot"
 BDEPEND="
 	secureboot? (
-		app-crypt/sbsigntools
+		app-crypt/osslsigncode
 		dev-libs/openssl
 	)
 "
@@ -86,11 +86,7 @@ _secureboot_die_if_unset() {
 		-inform PEM -in "${SECUREBOOT_SIGN_CERT}"
 		-noout -nocert
 	)
-	if [[ ${SECUREBOOT_SIGN_KEY} == pkcs11:* ]]; then
-		openssl_args+=( -engine pkcs11 -keyform ENGINE -key "${SECUREBOOT_SIGN_KEY}" )
-	else
-		openssl_args+=( -keyform PEM -key "${SECUREBOOT_SIGN_KEY}" )
-	fi
+	openssl_args+=( -keyform PEM -key "${SECUREBOOT_SIGN_KEY}" )
 	openssl x509 "${openssl_args[@]}" ||
 		die "Secure Boot signing certificate or key not found or not PEM format."
 }
@@ -127,19 +123,17 @@ secureboot_sign_efi_file() {
 
 	ebegin "Signing ${input_file}"
 	local return=1
-	if sbverify "${input_file}" --cert "${SECUREBOOT_SIGN_CERT}" &> /dev/null; then
+	if osslsigncode verify -in "${input_file}" -CAfile "${SECUREBOOT_SIGN_CERT}" &> /dev/null; then
 		ewarn "${input_file} already signed, skipping"
 		return=0
 	else
 		local args=(
-			"--key=${SECUREBOOT_SIGN_KEY}"
-			"--cert=${SECUREBOOT_SIGN_CERT}"
+			"-key" "${SECUREBOOT_SIGN_KEY}"
+			"-certs" "${SECUREBOOT_SIGN_CERT}"
 		)
-		if [[ ${SECUREBOOT_SIGN_KEY} == pkcs11:* ]]; then
-			args+=( --engine=pkcs11 )
-		fi
 
-		sbsign "${args[@]}" "${input_file}" --output "${output_file}"
+		osslsigncode sign "${args[@]}" "${input_file}" "${input_file}.tmp"
+		mv "${input_file}.tmp" "${output_file}"
 		return=${?}
 	fi
 	eend ${return} || die "Signing ${input_file} failed"
