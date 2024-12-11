@@ -54,7 +54,7 @@ RDEPEND="${COMMON_DEPEND}
 	')
 	|| (
 		dev-debug/gdb
-		dev-debug/lldb
+		llvm-core/lldb
 	)
 "
 
