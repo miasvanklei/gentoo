@@ -17,12 +17,12 @@ SRC_URI="
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~arm64 ~x86"
+KEYWORDS="~amd64 ~arm64 ~x86"
 
 RDEPEND="
 	$(llvm_gen_dep '
-		llvm-core/clang:${LLVM_SLOT}
-		llvm-core/llvm:${LLVM_SLOT}
+		llvm-core/clang:${LLVM_SLOT}=
+		llvm-core/llvm:${LLVM_SLOT}=
 	')
 	${PYTHON_DEPS}
 "
@@ -38,8 +38,6 @@ pkg_setup() {
 src_prepare() {
 	cmake_src_prepare
 	python_fix_shebang .
-
-	rm tests/cxx/stdint.cc || die
 }
 
 src_configure() {
@@ -51,33 +49,14 @@ src_configure() {
 		# Thus as a hack we install it to the same directory
 		# as llvm/clang itself.
 		-DCMAKE_INSTALL_PREFIX="$(get_llvm_prefix)"
+		# Relative path to the clang library
+		# https://github.com/include-what-you-use/include-what-you-use/commit/e046d23571876e72719ef96a36ff0cb1cb2e64b6
+		-DIWYU_RESOURCE_DIR="../../../clang/${LLVM_SLOT}"
 	)
 	cmake_src_configure
 }
 
 src_test() {
-	local clang_version=$(best_version llvm-core/clang:${LLVM_SLOT})
-	clang_version=${clang_version#*/*-} # reduce it to ${PV}-${PR}
-	clang_version=${clang_version%%[_-]*} # main version without beta/pre/patch/revision
-
-	local clang_include_dir_candidates=(
-		"${ESYSROOT}/usr/lib/clang/${clang_version}/include"
-		"${ESYSROOT}/usr/lib/clang/${LLVM_SLOT}/include"
-	)
-
-	local candidate_dir
-	for candidate_dir in "${clang_include_dir_candidates[@]}"; do
-		if [[ -d "${candidate_dir}" ]]; then
-			local clang_include_dir="${candidate_dir}"
-			break
-		fi
-	done
-
-	if [[ ! -v clang_include_dir ]]; then
-		die "Could not infer clang include directory. Candidates: ${clang_include_dir_candidates[*]}"
-	fi
-
-	local -x IWYU_EXTRA_ARGS="-I ${clang_include_dir}"
 	"${EPYTHON}" run_iwyu_tests.py \
 				 -- "${BUILD_DIR}"/bin/${PN} \
 		|| die "Tests failed with $? (using ${EPYTHON})"
