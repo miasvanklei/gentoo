@@ -3,13 +3,13 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..11} )
 
-inherit autotools gnome2-utils python-single-r1 xdg virtualx
+inherit gnome2-utils python-single-r1 xdg virtualx
 
 DESCRIPTION="Korean Hangul engine for IBus"
 HOMEPAGE="https://github.com/libhangul/ibus-hangul/wiki"
-SRC_URI="https://github.com/libhangul/${PN}/releases/download/${PV}/${P}.tar.xz"
+SRC_URI="https://github.com/libhangul/${PN}/releases/download/${PV}/${P}.tar.gz"
 
 LICENSE="GPL-2+"
 SLOT="0"
@@ -28,12 +28,10 @@ DEPEND="${RDEPEND}"
 BDEPEND="sys-devel/gettext
 	virtual/pkgconfig"
 
-PATCHES=( "${FILESDIR}"/${PN}-test.patch )
-
-src_prepare() {
-	default
-	eautoreconf
-}
+PATCHES=(
+	"${FILESDIR}"/${PN}-test.patch
+	"${FILESDIR}"/${PN}-1.5.4-gcc14-fix.patch
+)
 
 src_configure() {
 	econf \
