@@ -49,6 +49,7 @@ BDEPEND="
 RDEPEND="
 	${CDEPEND}
 	net-analyzer/macchanger
+	net-analyzer/openbsd-netcat
 	sys-apps/iproute2
 	sys-fs/growpart
 	virtual/logger
@@ -63,6 +64,7 @@ EPYTEST_IGNORE=(
 
 PATCHES=(
 	"${FILESDIR}/${PN}-24.2-systemd.patch"
+	"${FILESDIR}/${PN}-24.4-netcat.patch"
 )
 
 distutils_enable_tests pytest
