@@ -246,6 +246,11 @@ multilib_src_configure() {
 		ORIG_SOURCE_DIR=${EMESON_SOURCE}
 		EMESON_SOURCE=${INTROSPECTION_SOURCE_DIR}
 
+		# g-ir-scanner has some relocatable logic but it searches
+		# for 'lib', not 'lib64', so it can't find itself and eventually
+		# falls back to the system installation. See bug #946221.
+		sed -i -e "/^pylibdir =/s:'lib:'$(get_libdir):" "${EMESON_SOURCE}"/tools/g-ir-tool-template.in || die
+
 		ORIG_BUILD_DIR=${BUILD_DIR}
 		BUILD_DIR=${INTROSPECTION_BUILD_DIR}
 
@@ -282,11 +287,13 @@ multilib_src_configure() {
 		export PYTHONPATH="${INTROSPECTION_LIB_DIR}/gobject-introspection:${PYTHONPATH}"
 	fi
 
+	# TODO: Can this be cleaned up now we have -Dglib_debug? (bug #946485)
 	use debug && EMESON_BUILD_TYPE=debug
 
 	local emesonargs=(
 		-Ddefault_library=$(usex static-libs both shared)
 		-Druntime_dir="${EPREFIX}"/run
+		$(meson_feature debug glib_debug)
 		$(meson_feature selinux)
 		$(meson_use xattr)
 		-Dlibmount=enabled # only used if host_system == 'linux'

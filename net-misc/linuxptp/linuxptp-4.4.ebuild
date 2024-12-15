@@ -7,19 +7,21 @@ inherit linux-info systemd toolchain-funcs
 
 DESCRIPTION="The Linux Precision Time Protocol (PTP) implementation"
 HOMEPAGE="https://linuxptp.nwtime.org/"
-SRC_URI="https://downloads.sourceforge.net/project/${PN}/v$(ver_cut 1-2)/${P}.tgz"
+SRC_URI="https://downloads.nwtime.org/${PN}//${P}.tgz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~arm64 ~riscv ~x86"
+KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
 
-DEPEND="elibc_musl? ( sys-libs/queue-standalone )"
+RDEPEND="dev-libs/nettle"
+
+DEPEND="${RDEPEND} \
+	elibc_musl? ( sys-libs/queue-standalone )"
 
 CONFIG_CHECK="~NETWORK_PHY_TIMESTAMPING ~PPS ~PTP_1588_CLOCK"
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-3.1.1-user_cpp.patch
-	"${FILESDIR}"/${PN}-3.1.1-string-include.patch
+	"${FILESDIR}"/${PN}-4.4-user_cpp.patch
 )
 
 pkg_setup() {
@@ -36,7 +38,7 @@ src_compile() {
 src_install() {
 	emake \
 		prefix="${D}"/usr \
-		mandir="${D}"/usr/share/man \
+		mandir="${D}"/usr/share/man
 		infodir="${D}"/usr/share/info \
 		libdir="${D}"/usr/$(get_libdir) \
 		install
