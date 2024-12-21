@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-USE_RUBY="ruby31 ruby32"
+USE_RUBY="ruby32 ruby33"
 
 RUBY_FAKEGEM_BINWRAP=""
 
@@ -17,7 +17,7 @@ HOMEPAGE="https://rubyonrails.org"
 
 LICENSE="MIT"
 SLOT="$(ver_cut 1-2)"
-KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc64 ~riscv ~x86"
 
 ruby_add_rdepend "
 	~dev-ruby/actioncable-${PV}
@@ -31,6 +31,6 @@ ruby_add_rdepend "
 	~dev-ruby/activerecord-${PV}
 	~dev-ruby/activestorage-${PV}
 	~dev-ruby/activesupport-${PV}
-	~dev-ruby/railties-${PV}
 	>=dev-ruby/bundler-1.15.0:*
+	~dev-ruby/railties-${PV}
 "
