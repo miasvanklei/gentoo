@@ -1,0 +1,48 @@
+--- a/Makefile.linux	2025-01-03 13:57:24.659793436 +0100
++++ b/Makefile.linux	2025-01-03 13:59:14.726471258 +0100
+@@ -31,9 +31,9 @@
+ 
+ AUTODEPENDENCY_CFLAGS=-MMD -MF$(@:.o=.d) -MT$@
+ 
+-ALL_OBJCFLAGS = $(OBJC_OPTS) $(GCC_OPTS) $(GNUSTEP_OPTS) $(CFLAGS) $(OBJCFLAGS)
+-ALL_CFLAGS = $(C_OPTS) $(GCC_OPTS) $(CFLAGS)
+-ALL_CXXFLAGS = $(CXX_OPTS) $(GCC_OPTS) $(CXXFLAGS)
++ALL_OBJCFLAGS = $(CFLAGS) $(OBJCFLAGS) -fobjc-runtime=gnustep-2.0
++ALL_CFLAGS = $(CFLAGS)
++ALL_CXXFLAGS = $(CXXFLAGS)
+ 
+ # Options for linking
+ 
+@@ -47,8 +47,6 @@
+ 	-lm
+ 
+ ALL_LDFLAGS =	-Wl,--whole-archive \
+-		-fexceptions \
+-		-fgnu-runtime \
+ 		$(LDFLAGS)
+ 
+ # Paths
+--- a/UniversalDetector/Makefile.linux	2025-01-03 13:57:24.659793436 +0100
++++ b/UniversalDetector/Makefile.linux	2025-01-03 13:59:14.726471258 +0100
+@@ -31,9 +31,9 @@
+ 
+ AUTODEPENDENCY_CFLAGS=-MMD -MF$(@:.o=.d) -MT$@
+ 
+-ALL_OBJCFLAGS = $(OBJC_OPTS) $(GCC_OPTS) $(GNUSTEP_OPTS) $(OBJCFLAGS)
+-ALL_CFLAGS = $(C_OPTS) $(GCC_OPTS) $(CFLAGS)
+-ALL_CXXFLAGS = $(CXX_OPTS) $(GCC_OPTS) $(CXXFLAGS)
++ALL_OBJCFLAGS = $(CFLAGS) $(OBJCFLAGS) -fobjc-runtime=gnustep-2.0
++ALL_CFLAGS = $(CFLAGS)
++ALL_CXXFLAGS = $(CXXFLAGS)
+ 
+ # Options for linking
+ 
+@@ -47,8 +47,6 @@
+ 	-lm
+ 
+ ALL_LDFLAGS =	-Wl,--whole-archive \
+-		-fexceptions \
+-		-fgnu-runtime \
+ 		$(LDFLAGS)
+ 
+ # Paths

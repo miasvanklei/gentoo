@@ -10,7 +10,6 @@ HOMEPAGE="https://unarchiver.c3.cx/"
 SRC_URI="
 	https://github.com/MacPaw/XADMaster/archive/v${PV}/XADMaster-${PV}.tar.gz
 	https://github.com/MacPaw/universal-detector/archive/1.1/universal-detector-1.1.tar.gz"
-S="${WORKDIR}/XADMaster-${PV}"
 
 LICENSE="LGPL-2.1"
 SLOT="0"
@@ -31,7 +30,13 @@ BDEPEND="
 		gnustep-base/gnustep-make[libobjc2]
 	)"
 
-PATCHES=( "${FILESDIR}"/${P}-Wint-conversion.patch )
+S="${WORKDIR}/XADMaster-${PV}"
+
+PATCHES=(
+	"${FILESDIR}"/${P}-Wint-conversion.patch
+	"${FILESDIR}"/${P}-fix-compiler-flags.patch
+	"${FILESDIR}"/${P}-REG_STARTEND-unavailable.patch
+)
 
 check_objc_toolchain() {
 	if tc-is-gcc; then
@@ -50,10 +55,12 @@ pkg_setup() {
 }
 
 src_prepare() {
-	default
 	# avoid jobserver warning "make[1]: warning: jobserver unavailable: using -j1"
 	sed -i -e 's:make:$(MAKE):g' Makefile.linux || die
-	mv "${WORKDIR}/universal-detector-1.1" "${WORKDIR}/UniversalDetector" || die
+	mv "${WORKDIR}/universal-detector-1.1" "${S}/UniversalDetector" || die
+	sed -i -e 's:../UniversalDetector:UniversalDetector:g' Makefile.linux XADString.m || die
+
+	default
 }
 
 src_compile() {
@@ -66,7 +73,7 @@ src_compile() {
 		CXXFLAGS="${CXXFLAGS}" \
 		OBJCFLAGS="${OBJCFLAGS}" \
 		LD="$(tc-getCXX)" \
-		LDFLAGS="-Wl,--whole-archive -fexceptions -fgnu-runtime ${LDFLAGS}"
+		LDFLAGS="${LDFLAGS}"
 }
 
 src_install() {
