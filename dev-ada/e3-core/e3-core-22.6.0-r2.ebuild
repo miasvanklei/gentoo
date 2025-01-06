@@ -14,7 +14,7 @@ SRC_URI="https://github.com/AdaCore/${PN}/archive/refs/tags/v${PV}.tar.gz
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS="~amd64 ~arm64 ~x86"
 RESTRICT="test" #require pytest-socket
 
 RDEPEND="dev-python/colorama[${PYTHON_USEDEP}]
@@ -28,18 +28,18 @@ RDEPEND="dev-python/colorama[${PYTHON_USEDEP}]
 	dev-python/tomlkit[${PYTHON_USEDEP}]
 	!app-editors/e3"
 DEPEND="${RDEPEND}"
-BDEPEND="
-	test? (
-		dev-python/httpretty[${PYTHON_USEDEP}]
-		dev-vcs/subversion
-		dev-python/mock[${PYTHON_USEDEP}]
-	)"
+BDEPEND="test? (
+	dev-python/httpretty[${PYTHON_USEDEP}]
+	dev-vcs/subversion
+	dev-python/mock[${PYTHON_USEDEP}]
+)"
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-22.1.0-test.patch
 )
 
 distutils_enable_tests pytest
+distutils_enable_sphinx docs/source dev-python/sphinx-rtd-theme dev-python/sphinx-autoapi
 
 python_compile() {
 	distutils-r1_python_compile
@@ -47,8 +47,19 @@ python_compile() {
 }
 
 src_compile() {
-	local PLATFORM=x86_64-linux
+	local PLATFORM
+	if use amd64; then
+		PLATFORM=x86_64
+	elif use x86; then
+		PLATFORM=x86
+	elif use arm64; then
+		PLATFORM=aarch64
+	else
+		die "Not a recognized platform"
+	fi
+	PLATFORM+="-linux"
 	rm src/e3/os/data/rlimit* || die
-	$(tc-getCC) ${CFLAGS} -o src/e3/os/data/rlimit-${PLATFORM} tools/rlimit/rlimit.c ${LDFLAGS}
+	$(tc-getCC) ${CFLAGS} -o src/e3/os/data/rlimit-${PLATFORM} \
+		tools/rlimit/rlimit.c ${LDFLAGS}
 	distutils-r1_src_compile
 }
