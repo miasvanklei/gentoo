@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -33,8 +33,8 @@ RESTRICT="!test? ( test )"
 # this ensures have_enable_ei_portal is always there in xwayland.pc, which affects how Xwayland is launched, thus if it were toggled off
 # in Xwayland after mutter is installed, Xwayland would fail to be started by mutter. mutter already hard-depends on libei, so there's
 # really no extra deps here (besides xdg-desktop-portal, but we want that too, anyhow).
-# v3.32.2 has many excessive or unused *_req variables declared, thus currently the dep order ignores those and goes via dependency() call order
-DEPEND="
+# v3.32.2 has many excessive or unused *_req variables declared, thus currently the dep order ignores those and goes via wdependency() call order
+RDEPEND="
 	>=media-libs/graphene-1.10.2[introspection?]
 	x11-libs/gdk-pixbuf:2
 	>=x11-libs/pango-1.46[introspection?]
@@ -52,6 +52,7 @@ DEPEND="
 	>=media-libs/lcms-2.6:2
 	>=media-libs/harfbuzz-2.6.0:=
 	>=dev-libs/libei-1.0.901
+	media-libs/libdisplay-info:=
 
 	gnome? ( gnome-base/gnome-desktop:4= )
 
@@ -89,7 +90,7 @@ DEPEND="
 "
 # for now upstream has "have_x11 = true" in the meson.build, but sooner or later upstream is going to make X optional.
 #	X? (
-DEPEND+="
+RDEPEND+="
 		>=gui-libs/gtk-4.0.0:4[X,introspection?]
 		>=x11-libs/libX11-1.7.0
 		>=x11-libs/libXcomposite-0.4
@@ -109,8 +110,7 @@ DEPEND+="
 		x11-libs/libXau
 "
 #	)"
-
-DEPEND="${DEPEND}
+DEPEND="${RDEPEND}
 	x11-base/xorg-proto
 	sysprof? ( >=dev-util/sysprof-common-3.38.0 )
 "
