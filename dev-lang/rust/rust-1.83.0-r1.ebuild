@@ -104,6 +104,7 @@ CMAKE_WARN_UNUSED_CLI=no
 
 QA_FLAGS_IGNORED="
 	usr/lib/${PN}/${PV}/bin/.*
+	usr/lib/${PN}/${PV}/libexec/.*
 	usr/lib/${PN}/${PV}/lib/lib.*.so
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/bin/.*
 	usr/lib/${PN}/${PV}/lib/rustlib/.*/lib/lib.*.so
@@ -130,12 +131,10 @@ RESTRICT="test"
 VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/rust.asc
 
 PATCHES=(
-	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
-	"${FILESDIR}"/1.75.0-aarch64-static-pie.patch
 	"${FILESDIR}"/1.78.0-musl-dynamic-linking.patch
-	"${FILESDIR}"/1.80.0-use-system-libffi.patch
 	"${FILESDIR}"/1.83.0-cross-compile-libz.patch
-	"${FILESDIR}"/1.83.0-remove-crt-and-musl_root-from-musl-targets.patch
+	#"${FILESDIR}"/1.72.0-bump-libc-deps-to-0.2.146.patch  # pending refresh
+	"${FILESDIR}"/1.67.0-doc-wasm.patch
 	"${FILESDIR}"/1.83.0-dwarf-llvm-assertion.patch
 )
 
@@ -218,11 +217,6 @@ pkg_setup() {
 }
 
 src_prepare() {
-	# fix libffi-sys: use system libffi
-	for i in libffi-sys-2.3.0; do
-		clear_vendor_checksums "${i}"
-	done
-
 	# Rust baselines to Pentium4 on x86, this patch lowers the baseline to i586 when sse2 is not set.
 	if use x86; then
 		if ! use cpu_flags_x86_sse2; then
@@ -412,6 +406,7 @@ src_configure() {
 		if use elibc_musl; then
 			cat <<- _EOF_ >> "${S}"/config.toml
 				crt-static = false
+				musl-root = "$($(tc-getCC) -print-sysroot)/usr"
 			_EOF_
 		fi
 	done
