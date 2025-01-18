@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -19,32 +19,22 @@ IUSE="doc source"
 
 RDEPEND="dev-texlive/texlive-latexrecommended"
 
+# ADJUST ON BUMPS: The date of the according release tag. See also
+# upstream's build.lua
+PGF_VERSION_DATE="2023-01-15"
+
 src_install() {
 	einstalldocs
 
 	insinto "${TEXMF}"
 	doins -r tex
 	insinto "${TEXMF}"/tex/generic/${PN}
-	# Here is one of the rare examples where you want to quote the label
-	# of the heredoc to prevent the backticks from being evaluated.
-	newins - pgf.revision.tex <<"EOF"
-\begingroup
-\catcode`\-=12
-\catcode`\/=12
-\catcode`\.=12
-\catcode`\:=12
-\catcode`\+=12
-\catcode`\-=12
-\gdef\pgfrevision{@PVR@}
-\gdef\pgfversion{@PVR@}
-\gdef\pgfversiondatetime{2024-02-09 00:00:00 +0000}
-\gdef\pgfrevisiondatetime{2024-02-09 00:00:00 +0000}
-\gdef\pgf@glob@TMPa#1-#2-#3 #4\relax{#1/#2/#3}
-\xdef\pgfversiondate{\expandafter\pgf@glob@TMPa\pgfversiondatetime\relax}
-\xdef\pgfrevisiondate{\expandafter\pgf@glob@TMPa\pgfrevisiondatetime\relax}
-\endgroup
+	newins - pgf.revision.tex <<EOF
+\\def\\pgfrevision{${PV}}
+\\def\\pgfversion{${PV}}
+\\def\\pgfrevisiondate{${PGF_VERSION_DATE}}
+\\def\\pgfversiondate{${PGF_VERSION_DATE}}
 EOF
-	sed -i s/@PVR@/${PVR}/ "${ED}/${TEXMF}"/tex/generic/${PN}/pgf.revision.tex || die
 
 	if use source ; then
 		doins -r source
