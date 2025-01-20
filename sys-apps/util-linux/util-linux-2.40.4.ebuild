@@ -262,10 +262,8 @@ multilib_src_configure() {
 		# TODO: Wire this up (bug #931118)
 		--without-econf
 
-		# TODO: Wire this up (bug #931297)
-		# TODO: investigate build failure w/ 2.40.1_rc1
-		--disable-liblastlog2
-		--disable-pam-lastlog2
+                $(use_enable pam liblastlog2)
+                $(use_enable pam pam-lastlog2)
 	)
 
 	if use build ; then

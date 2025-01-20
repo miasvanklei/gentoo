@@ -262,8 +262,8 @@ multilib_src_configure() {
 		# TODO: Wire this up (bug #931118)
 		--without-econf
 
-		$(use_enable pam liblastlog2)
-		$(use_enable pam pam-lastlog2)
+		--disable-liblastlog2
+		--disable-pam-lastlog2
 	)
 
 	if use build ; then
