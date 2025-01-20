@@ -40,7 +40,7 @@ SRC_URI+=" !vanilla? ( https://dev.gentoo.org/~sam/distfiles/${CATEGORY}/${PN}/$
 
 LICENSE="GPL-3+"
 SLOT="0"
-IUSE="acl caps gmp hostname kill multicall nls +openssl selinux +split-usr static systemd test vanilla xattr"
+IUSE="acl caps gmp hostname kill multicall nls +openssl selinux +split-usr static test vanilla xattr"
 RESTRICT="!test? ( test )"
 
 LIB_DEPEND="
@@ -76,7 +76,6 @@ RDEPEND+="
 		!sys-apps/util-linux[kill]
 		!sys-process/procps[kill]
 	)
-	systemd? ( sys-apps/systemd )
 	!<sys-apps/util-linux-2.13
 	!<sys-apps/sandbox-2.10-r4
 	!sys-apps/stat
@@ -163,7 +162,6 @@ src_configure() {
 		$(use_enable nls)
 		$(use_enable acl)
 		$(use_enable multicall single-binary)
-		$(use_enable systemd)
 		$(use_enable xattr)
 		$(use_with gmp libgmp)
 		$(use_with openssl)
