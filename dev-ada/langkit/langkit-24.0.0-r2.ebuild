@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{10..12} )
-ADA_COMPAT=( gcc_12 gcc_13 )
+ADA_COMPAT=( gcc_12 gcc_13 gcc_14 )
 
 DISTUTILS_USE_PEP517=setuptools
 inherit distutils-r1 ada multiprocessing
@@ -16,7 +16,7 @@ SRC_URI="https://github.com/AdaCore/${PN}/archive/refs/tags/v${PV}.tar.gz
 
 LICENSE="Apache-2.0"
 SLOT="0/${PV}"
-KEYWORDS="amd64 x86"
+KEYWORDS="amd64 ~arm64 x86"
 IUSE="+shared static-libs static-pic"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
 	${ADA_REQUIRED_USE}
