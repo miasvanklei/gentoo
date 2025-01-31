@@ -37,6 +37,7 @@ RDEPEND="
 "
 BDEPEND="
 	${PYTHON_DEPS}
+	dev-cpp/fast_float
 	dev-libs/libxml2:2
 	dev-util/glib-utils
 	>=sys-devel/gettext-0.19.8
@@ -46,6 +47,7 @@ BDEPEND="
 src_prepare() {
 	default
 	use elibc_musl && eapply "${FILESDIR}"/${PN}-0.70.0-musl-W_EXITCODE.patch
+	eapply "${FILESDIR}"/${PN}-0.78.0-use-fast_float.patch
 }
 
 src_configure() {
