@@ -39,6 +39,7 @@ RDEPEND="${DEPEND}
 "
 BDEPEND="
 	${PYTHON_DEPS}
+	dev-cpp/fast_float
 	dev-libs/libxml2:2
 	dev-util/glib-utils
 	gtk-doc? ( dev-util/gi-docgen )
@@ -53,6 +54,7 @@ src_prepare() {
 	xdg_environment_reset
 
 	use elibc_musl && eapply "${FILESDIR}"/${PN}-0.66.2-musl-W_EXITCODE.patch
+	eapply "${FILESDIR}"/${PN}-0.78.0-use-fast_float.patch
 
 	# -Ddebugg option enables various debug support via VTE_DEBUG, but also ggdb3; strip the latter
 	sed -e '/ggdb3/d' -i meson.build || die
