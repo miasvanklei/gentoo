@@ -197,6 +197,8 @@ BDEPEND="
 		>=dev-libs/libxml2-2.6.32
 		>=dev-libs/libxslt-1.1.19
 		media-gfx/graphviz
+		dev-python/sphinx[${PYTHON_USEDEP}]
+		dev-python/myst-parser[${PYTHON_USEDEP}]
 	)
 	numpy? ( dev-python/numpy[${PYTHON_USEDEP}] )
 "
@@ -482,4 +484,10 @@ python_test() {
 
 	virtx ${EPYTHON} testrunner.py test --projects=shiboken6 $(usev core '--projects=pyside6')  ||
 		die "Tests failed with ${EPYTHON}"
+}
+
+pkg_preinst() {
+	# Avoid symlinks being blocked by directories
+	rm -rf "${EROOT}/usr/include/"{PySide6,shiboken6} || die
+	rm -rf "${EROOT}/usr/share/PySide6" || die
 }
