@@ -4,9 +4,9 @@
 EAPI=7
 
 # latest gentoo apache files
-GENTOO_PATCHSTAMP="20240719"
+GENTOO_PATCHSTAMP="20250207"
 GENTOO_DEVELOPER="graaff"
-GENTOO_PATCHNAME="gentoo-apache-2.4.62"
+GENTOO_PATCHNAME="gentoo-apache-2.4.63"
 
 # IUSE/USE_EXPAND magic
 IUSE_MPMS_FORK="prefork"
@@ -40,7 +40,7 @@ lbmethod_heartbeat log_config log_forensic logio lua macro md mime mime_magic ne
 proxy proxy_ajp proxy_balancer proxy_connect proxy_ftp proxy_hcheck proxy_html proxy_http proxy_scgi
 proxy_http2 proxy_fcgi proxy_uwsgi proxy_wstunnel rewrite ratelimit remoteip reqtimeout
 session session_cookie session_crypto session_dbd setenvif slotmem_shm socache_memcache
-socache_shmcb speling status substitute systemd tls unique_id userdir usertrack
+socache_shmcb speling status substitute systemd unique_id userdir usertrack
 unixd version vhost_alias watchdog xml2enc"
 # The following are also in the source as of this version, but are not available
 # for user selection:
@@ -146,11 +146,8 @@ HOMEPAGE="https://httpd.apache.org/"
 # some helper scripts are Apache-1.1, thus both are here
 LICENSE="Apache-2.0 Apache-1.1"
 SLOT="2"
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x64-macos ~x64-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x64-macos ~x64-solaris"
 
-RDEPEND="
-	apache2_modules_tls? ( =net-libs/rustls-ffi-0.13*:= )
-"
 DEPEND="${RDEPEND}"
 
 pkg_setup() {
@@ -254,4 +251,8 @@ pkg_postinst() {
 			echo
 		fi
 	fi
+
+	# removed in 2.4.63
+	ewarn "Attention: The tls module based on rustls-ffi has been moved to its own package."
+	ewarn "emerge www-apache/mod_tls to continue using the tls module."
 }
