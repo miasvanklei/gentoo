@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -27,7 +27,7 @@ VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/openldap.asc
 LICENSE="OPENLDAP GPL-2"
 # Subslot added for bug #835654
 SLOT="0/$(ver_cut 1-2)"
-KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux"
 
 IUSE_DAEMON="argon2 +cleartext crypt experimental minimal samba tcpd"
 IUSE_OVERLAY="overlays perl autoca"
@@ -148,8 +148,7 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-2.6.1-system-mdb.patch
 	"${FILESDIR}"/${PN}-2.6.1-cloak.patch
 	"${FILESDIR}"/${PN}-2.6.1-flags.patch
-	#"${FILESDIR}"/${PN}-2.6.x-gnutls-pointer-error.patch # fixed upstream
-	#"${FILESDIR}"/${PN}-2.6.x-slapd-pointer-types.patch # needs backport
+	"${FILESDIR}"/${PN}-2.5.19-gcc14-SDWORD-vs-SQLINTEGER.patch
 )
 
 openldap_filecount() {
@@ -425,17 +424,6 @@ multilib_src_configure() {
 	myconf+=(
 		--without-fetch
 	)
-
-	# The configure scripts make some assumptions that aren't valid in newer GCC.
-	# https://bugs.gentoo.org/920380
-	append-flags $(test-flags-CC -Wno-error=implicit-int)
-	# conftest.c:113:16: error: passing argument 1 of 'pthread_detach' makes
-	# integer from pointer without a cast [-Wint-conversion]
-	append-flags $(test-flags-CC -Wno-error=int-conversion)
-	# error: passing argument 3 of ‘ldap_bv2rdn’ from incompatible pointer type
-	# [-Wincompatible-pointer-types]
-	# expected ‘char **’ but argument is of type ‘const char **’
-	#append-flags $(test-flags-CC -Wno-error=incompatible-pointer-types)
 
 	if use experimental ; then
 		# connectionless ldap per bug #342439
