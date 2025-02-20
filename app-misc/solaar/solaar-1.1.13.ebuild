@@ -5,7 +5,7 @@ EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
 DISTUTILS_SINGLE_IMPL=1
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{10..12} )
 
 inherit linux-info udev xdg distutils-r1
 
@@ -27,7 +27,6 @@ IUSE="doc appindicator libnotify"
 RDEPEND="
 	acct-group/plugdev
 	$(python_gen_cond_dep '
-		dev-python/dbus-python[${PYTHON_USEDEP}]
 		dev-python/evdev[${PYTHON_USEDEP}]
 		dev-python/psutil[${PYTHON_USEDEP}]
 		dev-python/pygobject:3[${PYTHON_USEDEP}]
