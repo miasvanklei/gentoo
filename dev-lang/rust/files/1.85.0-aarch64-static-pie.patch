@@ -1,6 +1,6 @@
---- a/compiler/rustc_target/src/spec/targets/aarch64_unknown_linux_musl.rs	2020-12-29 04:03:08.000000000 +0100
-+++ b/compiler/rustc_target/src/spec/targets/aarch64_unknown_linux_musl.rs	2020-12-31 19:13:13.588052924 +0100
-@@ -3,6 +3,7 @@
+--- a/compiler/rustc_target/src/spec/targets/aarch64_unknown_linux_musl.rs	2025-02-21 10:09:22.256865952 +0100
++++ b/compiler/rustc_target/src/spec/targets/aarch64_unknown_linux_musl.rs	2025-02-21 10:08:54.341173464 +0100
+@@ -6,6 +6,7 @@
      base.supports_xray = true;
      base.features = "+v8a".into();
      base.stack_probes = StackProbeType::Inline;

@@ -1,0 +1,23 @@
+--- a/compiler/rustc_target/src/spec/targets/x86_64_unknown_linux_musl.rs	2025-02-21 10:06:16.158924193 +0100
++++ b/compiler/rustc_target/src/spec/targets/x86_64_unknown_linux_musl.rs	2025-02-21 10:07:14.482276914 +0100
+@@ -14,8 +14,6 @@
+         | SanitizerSet::MEMORY
+         | SanitizerSet::THREAD;
+     base.supports_xray = true;
+-    // FIXME(compiler-team#422): musl targets should be dynamically linked by default.
+-    base.crt_static_default = true;
+ 
+     Target {
+         llvm_target: "x86_64-unknown-linux-musl".into(),
+--- a/compiler/rustc_target/src/spec/targets/aarch64_unknown_linux_musl.rs	2025-02-21 10:05:51.083203200 +0100
++++ b/compiler/rustc_target/src/spec/targets/aarch64_unknown_linux_musl.rs	2025-02-21 10:06:43.018625822 +0100
+@@ -12,9 +12,6 @@
+         | SanitizerSet::MEMORY
+         | SanitizerSet::THREAD;
+ 
+-    // FIXME(compiler-team#422): musl targets should be dynamically linked by default.
+-    base.crt_static_default = true;
+-
+     Target {
+         llvm_target: "aarch64-unknown-linux-musl".into(),
+         metadata: crate::spec::TargetMetadata {
