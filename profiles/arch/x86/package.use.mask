@@ -88,10 +88,6 @@ net-libs/xrootd xrdec
 # Unmask only where grub is keyworded
 sys-kernel/installkernel -grub
 
-# Ionen Wolkens <ionen@gentoo.org> (2023-10-09)
-# media-libs/shaderc is keyworded here.
-media-libs/libplacebo -shaderc
-
 # Jon Janzen <jon@jonjanzen.com> (2023-09-11)
 # librttopo has not been tested on this arch
 dev-db/spatialite rttopo
@@ -270,11 +266,6 @@ net-vpn/strongswan -strongswan_plugins_aesni -strongswan_plugins_rdrand -strongs
 # Guile only supports JIT on some arches
 # (See 9.3.8 in the Guile manual)
 dev-scheme/guile -jit
-
-# Sam James <sam@gentoo.org> (2020-07-03)
-# Rust is available here
-# Bug #728558
-media-video/ffmpeg -rav1e
 
 # Robin H. Johnson <robbat2@gentoo.org> (2020-07-02)
 # Mask io-uring & zbc pending keywording
