@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="person">
-		<email>robbat2@gentoo.org</email>
+	<maintainer type="project">
+		<email>llvm@gentoo.org</email>
 	</maintainer>
 	<upstream>
-		<bugs-to>https://gitlab.com/esr/reposurgeon/-/issues</bugs-to>
+		<remote-id type="github">llvm/llvm-project</remote-id>
 	</upstream>
 </pkgmetadata>
