@@ -3,7 +3,7 @@
 
 EAPI=8
 
-LLVM_COMPAT=( 19 )
+LLVM_COMPAT=( 20 )
 PYTHON_COMPAT=( python3_{10..13} )
 
 RUST_MAX_VER=${PV%%_*}
@@ -166,8 +166,11 @@ VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/rust.asc
 
 PATCHES=(
 	"${FILESDIR}"/1.85.0-cross-compile-libz.patch
-	"${FILESDIR}"/1.85.0-musl-dynamic-linking.patch
 	"${FILESDIR}"/1.67.0-doc-wasm.patch
+	"${FILESDIR}"/1.75.0-do-not-install-libunwind-source.patch
+	"${FILESDIR}"/1.85.0-remove-crt-and-musl_root-from-musl-targets.patch
+	"${FILESDIR}"/1.85.0-aarch64-static-pie.patch
+	"${FILESDIR}"/1.85.0-musl-dynamic-linking.patch
 )
 
 clear_vendor_checksums() {
@@ -512,7 +515,6 @@ src_configure() {
 		if use elibc_musl; then
 			cat <<- _EOF_ >> "${S}"/config.toml
 				crt-static = false
-				musl-root = "$($(tc-getCC) -print-sysroot)/usr"
 			_EOF_
 		fi
 	done
