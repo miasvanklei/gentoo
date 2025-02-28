@@ -22,7 +22,6 @@ TALLOC_VERSION="2.4.2"
 
 RDEPEND="
 	dev-libs/libbsd[${MULTILIB_USEDEP}]
-	>=dev-util/cmocka-1.1.3
 	>=sys-libs/talloc-${TALLOC_VERSION}[${MULTILIB_USEDEP}]
 	python? (
 		${PYTHON_DEPS}
@@ -35,6 +34,7 @@ DEPEND="
 		net-libs/libtirpc[${MULTILIB_USEDEP}]
 		net-libs/rpcsvc-proto
 	)
+	test? ( >=dev-util/cmocka-1.1.3 )
 "
 BDEPEND="
 	${PYTHON_DEPS}
@@ -70,6 +70,13 @@ multilib_src_configure() {
 	# When specifying libs for samba build you must append NONE to the end to
 	# stop it automatically including things
 	local bundled_libs="NONE"
+
+	# We "use" bundled cmocka when we're not running tests as we're
+	# not using it anyway. Means we avoid making users install it for
+	# no reason. bug #802531
+	if ! use test ; then
+		bundled_libs="cmocka,${bundled_libs}"
+	fi
 
 	waf-utils_src_configure \
 		--libdir="${EPREFIX}/usr/$(get_libdir)" \
