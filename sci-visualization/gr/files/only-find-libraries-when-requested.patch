@@ -1,0 +1,20 @@
+--- a/CMakeLists.txt	2025-02-28 11:09:49.828946749 +0100
++++ b/CMakeLists.txt	2025-02-28 11:16:04.249138139 +0100
+@@ -85,10 +85,14 @@
+ 
+ # Find the following packages always in system locations even if `GR_USE_BUNDLED_LIBRARIES` is set, because they are not
+ # located in 3rdparty
+-find_package(X11)
++if(WITH_X11)
++  find_package(X11)
++endif()
+ find_package(Fontconfig)
+-find_package(OpenGL OPTIONAL_COMPONENTS OpenGL)
+-if(${CMAKE_VERSION} VERSION_GREATER "3.16.0")
++if(WITH_OPENGL)
++  find_package(OpenGL OPTIONAL_COMPONENTS GLX)
++endif()
++if(WITH_QT6)
+   find_package(
+     Qt6
+     OPTIONAL_COMPONENTS
