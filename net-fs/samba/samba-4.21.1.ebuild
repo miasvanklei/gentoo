@@ -67,7 +67,6 @@ COMMON_DEPEND="
 	dev-libs/libtasn1:=[${MULTILIB_USEDEP}]
 	dev-libs/popt[${MULTILIB_USEDEP}]
 	dev-perl/Parse-Yapp
-	>=dev-util/cmocka-1.1.3[${MULTILIB_USEDEP}]
 	>=net-libs/gnutls-3.4.7:=[${MULTILIB_USEDEP}]
 	>=sys-fs/e2fsprogs-1.46.4-r51[${MULTILIB_USEDEP}]
 	!sys-libs/ldb
@@ -124,7 +123,7 @@ DEPEND="${COMMON_DEPEND}
 	net-libs/rpcsvc-proto
 	spotlight? ( dev-libs/glib )
 	test? (
-		$(python_gen_cond_dep "dev-python/subunit[\${PYTHON_USEDEP},${MULTILIB_USEDEP}]" )
+		$(python_gen_cond_dep "dev-python/python-subunit[\${PYTHON_USEDEP},${MULTILIB_USEDEP}]" )
 		>=dev-util/cmocka-1.1.3[${MULTILIB_USEDEP}]
 		!system-mitkrb5? (
 			>=net-dns/resolv_wrapper-1.1.4
@@ -224,6 +223,13 @@ multilib_src_configure() {
 	local bundled_libs="NONE"
 	if ! use system-heimdal && ! use system-mitkrb5 ; then
 		bundled_libs="heimbase,heimntlm,hdb,kdc,krb5,wind,gssapi,hcrypto,hx509,roken,asn1,com_err,NONE"
+	fi
+
+	# We "use" bundled cmocka when we're not running tests as we're
+	# not using it anyway. Means we avoid making users install it for
+	# no reason. bug #802531
+	if ! use test ; then
+		bundled_libs="cmocka,${bundled_libs}"
 	fi
 
 	# bug #874633
