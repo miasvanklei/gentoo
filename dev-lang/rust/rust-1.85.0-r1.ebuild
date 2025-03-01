@@ -171,6 +171,7 @@ PATCHES=(
 	"${FILESDIR}"/1.85.0-remove-crt-and-musl_root-from-musl-targets.patch
 	"${FILESDIR}"/1.85.0-aarch64-static-pie.patch
 	"${FILESDIR}"/1.85.0-musl-dynamic-linking.patch
+	"${FILESDIR}"/1.85.0-llvm20.patch
 )
 
 clear_vendor_checksums() {
