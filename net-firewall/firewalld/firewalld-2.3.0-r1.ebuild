@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -13,8 +13,8 @@ SRC_URI="https://github.com/firewalld/firewalld/releases/download/v${PV}/${P}.ta
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64 arm arm64 ppc64 ~riscv x86"
-IUSE="gui selinux test"
+KEYWORDS="amd64 arm arm64 ~loong ppc64 ~riscv x86"
+IUSE="gui selinux test xtables"
 # Tests are too unreliable in sandbox environment
 RESTRICT="!test? ( test ) test"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
@@ -28,10 +28,11 @@ RDEPEND="
 		>=net-firewall/nftables-0.9.4[python,json,${PYTHON_USEDEP}]
 		gui? (
 			x11-libs/gtk+:3
+			x11-libs/libnotify[introspection]
 			dev-python/pyqt6[gui,widgets,${PYTHON_USEDEP}]
 		)
 	')
-	net-firewall/nftables[xtables(+)]
+	net-firewall/nftables[xtables(+)?]
 	selinux? ( sec-policy/selinux-firewalld )
 "
 DEPEND="
