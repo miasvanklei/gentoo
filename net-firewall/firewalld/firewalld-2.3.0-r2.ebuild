@@ -27,9 +27,9 @@ RDEPEND="
 		dev-python/pygobject:3[${PYTHON_USEDEP}]
 		>=net-firewall/nftables-0.9.4[python,json,${PYTHON_USEDEP}]
 		gui? (
+			dev-python/pyqt6[gui,widgets,${PYTHON_USEDEP}]
 			x11-libs/gtk+:3
 			x11-libs/libnotify[introspection]
-			dev-python/pyqt6[gui,widgets,${PYTHON_USEDEP}]
 		)
 	')
 	net-firewall/nftables[xtables(+)?]
