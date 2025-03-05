@@ -4,18 +4,15 @@
 EAPI=8
 
 LLVM_COMPAT=( 20 )
+MY_PN="SPIRV-LLVM-Translator"
+MY_P="${MY_PN}-${PV}"
 
-inherit cmake-multilib flag-o-matic llvm-r1 multiprocessing
+inherit cmake-multilib flag-o-matic llvm-r2 multiprocessing
 
-EGIT_COMMIT=781d0790ea4dc6238eabe44fc39e49b6b27fbcbe
-MY_P=SPIRV-LLVM-Translator-${EGIT_COMMIT}
 DESCRIPTION="Bi-directional translator between SPIR-V and LLVM IR"
 HOMEPAGE="https://github.com/KhronosGroup/SPIRV-LLVM-Translator"
-SRC_URI="
-	https://github.com/KhronosGroup/SPIRV-LLVM-Translator/archive/${EGIT_COMMIT}.tar.gz
-		-> ${MY_P}.tar.gz
-"
-S=${WORKDIR}/${MY_P}
+SRC_URI="https://github.com/KhronosGroup/${MY_PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="UoI-NCSA"
 SLOT="$(ver_cut 1)"
