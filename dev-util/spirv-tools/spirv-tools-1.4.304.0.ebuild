@@ -31,6 +31,10 @@ DEPEND="~dev-util/spirv-headers-${PV}"
 # RDEPEND=""
 BDEPEND="${PYTHON_DEPS}"
 
+PATCHES=(
+	"${FILESDIR}/${PN}-1.4.304.0-add-subgroupmatrixmultiplyaccumulateintel.patch"
+)
+
 multilib_src_configure() {
 	local mycmakeargs=(
 		-DSPIRV-Headers_SOURCE_DIR="${ESYSROOT}"/usr/
