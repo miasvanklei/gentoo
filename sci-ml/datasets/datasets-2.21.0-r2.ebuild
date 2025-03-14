@@ -21,7 +21,7 @@ IUSE="test"
 
 RDEPEND="
 	${PYTHON_DEPS}
-	sci-libs/pytorch[${PYTHON_SINGLE_USEDEP}]
+	sci-ml/pytorch[${PYTHON_SINGLE_USEDEP}]
 	sci-libs/caffe2[${PYTHON_SINGLE_USEDEP},numpy]
 	$(python_gen_cond_dep '
 		dev-python/aiohttp[${PYTHON_USEDEP}]
@@ -37,7 +37,7 @@ RDEPEND="
 		dev-python/requests[${PYTHON_USEDEP}]
 		dev-python/tqdm[${PYTHON_USEDEP}]
 		dev-python/xxhash[${PYTHON_USEDEP}]
-		sci-libs/huggingface_hub[${PYTHON_USEDEP}]
+		sci-ml/huggingface_hub[${PYTHON_USEDEP}]
 	')
 "
 DEPEND="${RDEPEND}"
@@ -52,7 +52,7 @@ BDEPEND="test? (
 		sci-libs/jiwer[${PYTHON_USEDEP}]
 		sci-libs/seqeval[${PYTHON_USEDEP}]
 	')
-	sci-libs/torchvision[${PYTHON_SINGLE_USEDEP}]
+	sci-ml/torchvision[${PYTHON_SINGLE_USEDEP}]
 )"
 
 PATCHES=(

@@ -10,12 +10,20 @@ MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="Similar to dd but can copy from source with errors"
 HOMEPAGE="http://www.garloff.de/kurt/linux/ddrescue/"
-SRC_URI="http://www.garloff.de/kurt/linux/ddrescue/${MY_P}.tar.bz2"
-S="${WORKDIR}/${MY_P}"
+
+if [[ ${PV} == 9999 ]] ; then
+	EGIT_REPO_URI="https://git.code.sf.net/p/ddrescue/code"
+	EGIT_BRANCH=DD_RESCUE_1_99_BRANCH
+	inherit git-r3
+else
+	SRC_URI="http://www.garloff.de/kurt/linux/ddrescue/${MY_P}.tar.bz2"
+	S="${WORKDIR}/${MY_P}"
+
+	KEYWORDS="~amd64 ~arm ~arm64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos"
+fi
 
 LICENSE="|| ( GPL-2 GPL-3 )"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64 ~mips ppc ppc64 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos"
 IUSE="cpu_flags_x86_avx2 lzo lzma cpu_flags_x86_sse4_2 static test xattr"
 RESTRICT="!test? ( test )"
 
