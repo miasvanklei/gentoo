@@ -50,14 +50,14 @@ RDEPEND="
 	dev-libs/sleef[cpu_flags_x86_sse4_1(+),cpu_flags_x86_sse4_2(+)]
 	virtual/lapack
 	sci-libs/onnx
-	sci-libs/foxi
+	sci-ml/foxi
 	cuda? (
 		dev-libs/cudnn
 		>=dev-libs/cudnn-frontend-1.0.3:0/8
 		<dev-util/nvidia-cuda-toolkit-12.5:=[profiler]
 	)
 	fbgemm? ( >=dev-libs/FBGEMM-2023.12.01 )
-	gloo? ( sci-libs/gloo[cuda?] )
+	gloo? ( sci-ml/gloo[cuda?] )
 	mpi? ( virtual/mpi )
 	nnpack? ( sci-libs/NNPACK )
 	numpy? ( $(python_gen_cond_dep '
@@ -101,13 +101,13 @@ DEPEND="
 	${RDEPEND}
 	dev-libs/clog
 	cuda? ( <=dev-libs/cutlass-3.4.1 )
-	onednn? ( sci-libs/ideep )
+	onednn? ( sci-ml/ideep )
 	dev-libs/psimd
 	dev-libs/FP16
 	dev-libs/FXdiv
 	dev-libs/pocketfft
 	dev-libs/flatbuffers
-	>=sci-libs/kineto-0.4.0_p20240525
+	sci-ml/kineto
 	$(python_gen_cond_dep '
 		dev-python/pyyaml[${PYTHON_USEDEP}]
 		dev-python/pybind11[${PYTHON_USEDEP}]
