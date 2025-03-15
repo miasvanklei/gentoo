@@ -63,7 +63,7 @@ DEPEND="
 	)
 	rubberband? ( media-libs/rubberband:= )
 	sdl? (
-		media-libs/libsdl2[opengl,video]
+		media-libs/libsdl2[X,opengl,video]
 		media-libs/sdl2-image
 	)
 	vidstab? ( media-libs/vidstab )
