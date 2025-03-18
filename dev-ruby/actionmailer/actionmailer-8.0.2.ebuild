@@ -1,8 +1,8 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-USE_RUBY="ruby31 ruby32 ruby33"
+USE_RUBY="ruby32 ruby33"
 
 RUBY_FAKEGEM_RECIPE_DOC="none"
 RUBY_FAKEGEM_EXTRADOC="CHANGELOG.md README.rdoc"
@@ -30,9 +30,6 @@ ruby_add_rdepend "
 	~dev-ruby/activejob-${PV}
 	~dev-ruby/activesupport-${PV}
 	>=dev-ruby/mail-2.8.0
-	dev-ruby/net-imap
-	dev-ruby/net-pop
-	dev-ruby/net-smtp
 	>=dev-ruby/rails-dom-testing-2.2:2"
 
 ruby_add_bdepend "test? (
@@ -43,8 +40,7 @@ all_ruby_prepare() {
 	# Set test environment to our hand.
 	rm "${S}/../Gemfile" || die "Unable to remove Gemfile"
 	sed -e '/\/load_paths/d' \
-		-e '3irequire "ostruct"' \
-		-e '3igem "actionpack", "~> 7.2.0"; gem "activejob", "~> 7.2.0"' \
+		-e '3igem "actionpack", "~> 8.0.0"; gem "activejob", "~> 8.0.0"' \
 		-i test/abstract_unit.rb || die "Unable to remove load paths"
 
 	# Avoid a test failing only on attachment ordering, since this is a

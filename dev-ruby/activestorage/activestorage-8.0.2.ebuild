@@ -1,9 +1,9 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-USE_RUBY="ruby31 ruby32 ruby33"
+USE_RUBY="ruby32 ruby33"
 
 RUBY_FAKEGEM_RECIPE_DOC=""
 RUBY_FAKEGEM_DOCDIR=""
@@ -53,7 +53,7 @@ ruby_add_bdepend "
 all_ruby_prepare() {
 	# Remove items from the common Gemfile that we don't need for this
 	# test run. This also requires handling some gemspecs.
-	sed -e "/\(system_timer\|pg\|execjs\|jquery-rails\|'mysql'\|journey\|ruby-prof\|stackprof\|benchmark-ips\|kindlerb\|turbolinks\|coffee-rails\|debugger\|bcrypt\|uglifier\|aws-sdk-s3\|aws-sdk-sns\|google-cloud-storage\|azure-storage\|blade\|bootsnap\|hiredis\|qunit-selenium\|chromedriver-helper\|rb-inotify\|libxml-ruby\|sass-rails\|capybara\|rack-cache\|selenium\|dalli\|listen\|connection_pool\|mysql2\|webdrivers\|webpacker\|rexml\|webmock\|webrick\|propshaft\|sprockets-export\|rack-test\|terser\|cookiejar\|cgi\|web-console\|trilogy\|error_highlight\|jbuilder\|httpclient\|prism\)/ s:^:#:" \
+	sed -e "/\(system_timer\|pg\|execjs\|jquery-rails\|'mysql'\|journey\|ruby-prof\|stackprof\|benchmark-ips\|kindlerb\|turbolinks\|coffee-rails\|debugger\|bcrypt\|uglifier\|aws-sdk-s3\|aws-sdk-sns\|google-cloud-storage\|azure-storage\|blade\|bootsnap\|hiredis\|qunit-selenium\|chromedriver-helper\|rb-inotify\|libxml-ruby\|sass-rails\|capybara\|rack-cache\|selenium\|dalli\|listen\|connection_pool\|mysql2\|webdrivers\|webpacker\|rexml\|webmock\|webrick\|propshaft\|sprockets-export\|rack-test\|terser\|cookiejar\|cgi\|web-console\|trilogy\|error_highlight\|jbuilder\|httpclient\|prism\|solid\|kamal\|thruster\)/ s:^:#:" \
 		-e '/stimulus-rails/,/tailwindcss-rails/ s:^:#:' \
 		-e '/group :\(cable\|doc\|job\|lint\|mdl\|rubocop\|test\)/,/^end/ s:^:#:' \
 		-e '/sqlite/ s/1.6.4/99/' \
@@ -71,4 +71,12 @@ all_ruby_prepare() {
 
 	# Avoid failing test depending on yarn
 	rm -f test/javascript_package_test.rb || die
+
+	# Avoid unimportant asset configuration. This most likely fails due
+	# to some kind of dependency issue.
+	rm -f test/dummy/config/initializers/assets.rb || die
+
+	# Avoid test failing due to missing (and unpackaged) AzureStorage service.
+	sed -e '/azure service is deprecated/askip "Not packaged in Gentoo."' \
+		-i test/service/configurator_test.rb || die
 }
