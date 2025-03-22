@@ -33,6 +33,11 @@
 
 #--- END OF EXAMPLES ---
 
+# Michał Górny <mgorny@gentoo.org> (2025-03-22)
+# Stuck on Python 3.10, no reply from maintainer.  No revdeps.
+# Removal on 2025-04-21.  Bug #896608.
+app-office/gtg
+
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-03-20)
 # Upstream have made clear that they are not going to port to Qt6 and
 # recommend sys-apps/qdirstat (from original k4dirstat author) instead.
@@ -55,6 +60,7 @@ dev-python/simplebayes
 # Xfce 4.22 prereleases.  Masked because they tend to be quite unstable.
 >=xfce-base/exo-4.21
 >=xfce-base/libxfce4ui-4.21
+>=xfce-base/xfce4-panel-4.21
 
 # Michał Górny <mgorny@gentoo.org> (2025-03-17)
 # A "forever beta" wrapper over dev-python/requests, with no tests,
