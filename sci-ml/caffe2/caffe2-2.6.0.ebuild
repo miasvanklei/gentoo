@@ -151,10 +151,6 @@ src_prepare() {
 		c10/hip/CMakeLists.txt \
 		|| die
 	sed -i \
-		-e 's:pocketfft_hdronly.h:pocketfft/pocketfft_hdronly.h:' \
-		aten/src/ATen/native/mkl/SpectralOps.cpp \
-		die
-	sed -i \
 		-e '/Using pocketfft in directory:/d' \
 		cmake/Dependencies.cmake \
 		|| die
@@ -327,9 +323,9 @@ src_install() {
 	ln -s ../../../../../include/torch \
 		"${D}$(python_get_sitedir)"/torch/include/torch || die # bug 923269
 
-	mv "${D}"/usr/bin/torch_shm_manager \
+	mv "${ED}"/usr/bin/torch_shm_manager \
 		"${D}"/$(python_get_sitedir)/torch/bin/ || die
 
-	mv "${D}"/usr/$(get_libdir)/libtorch_global_deps.so \
+	mv "${ED}"/usr/$(get_libdir)/libtorch_global_deps.so \
 		"${D}"/$(python_get_sitedir)/torch/lib/ || die
 }
