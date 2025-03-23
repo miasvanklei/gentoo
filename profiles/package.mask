@@ -33,6 +33,24 @@
 
 #--- END OF EXAMPLES ---
 
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-03-23)
+# No revdeps after net-im/psi treecleaning. Depends on Qt5.
+# Removal on 2025-04-22. Bug #951936
+dev-build/qconf
+
+# Michał Górny <mgorny@gentoo.org> (2025-03-23)
+# dev-python/pip-run is a NIH package with significant number of NIH
+# deps.  New versions require "coherent" build system that's designed
+# to be completely incompatible with downstream packaging.
+# No revdeps left.
+#
+# Includes a number of NIH dependencies, some of them abandoned.
+#
+# Removal on 2025-04-22.  Bug #951933.
+dev-python/autocommand
+dev-python/jaraco-env
+dev-python/pip-run
+
 # Arthur Zamarin <arthurzam@gentoo.org> (2025-03-22)
 # EAPI=7, uses legacy distutils non-PEP517 build, no reverse
 # dependencies, missing python compat bumps. Unmaintained in
@@ -73,11 +91,16 @@ dev-python/simplebayes
 # Michał Górny <mgorny@gentoo.org> (2025-03-17)
 # Xfce 4.22 prereleases.  Masked because they tend to be quite unstable.
 >=xfce-base/exo-4.21
+>=xfce-base/garcon-4.21
 >=xfce-base/libxfce4ui-4.21
+>=xfce-base/thunar-4.21
+>=xfce-base/tumbler-4.21
+>=xfce-base/xfce4-appfinder-4.21
 >=xfce-base/xfce4-panel-4.21
 >=xfce-base/xfce4-power-manager-4.21
 >=xfce-base/xfce4-session-4.21
 >=xfce-base/xfce4-settings-4.21
+>=xfce-base/xfconf-4.21
 
 # Michał Górny <mgorny@gentoo.org> (2025-03-17)
 # A "forever beta" wrapper over dev-python/requests, with no tests,
