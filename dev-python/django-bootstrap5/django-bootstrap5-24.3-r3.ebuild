@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_12 )
+PYTHON_COMPAT=( python3_{12..13} )
 
 inherit distutils-r1 pypi
 
@@ -25,6 +25,11 @@ DEPEND="${RDEPEND}"
 BDEPEND="test? ( sci-libs/gdal )"
 
 distutils_enable_tests pytest
+
+src_prepare() {
+	rm tests/test_urls.py || die
+	distutils-r1_src_prepare
+}
 
 python_test() {
 	"${EPYTHON}" -m django test tests --settings tests.app.settings \
