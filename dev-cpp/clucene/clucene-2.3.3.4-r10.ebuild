@@ -52,6 +52,7 @@ src_configure() {
 	# https://sourceforge.net/p/clucene/bugs/197/
 	local mycmakeargs=(
 		-DENABLE_ASCII_MODE=OFF
+		-DENABLE_ANSI_MODE=OFF
 		-DENABLE_PACKAGING=OFF
 		-DDISABLE_MULTITHREADING=OFF
 		-DBUILD_CONTRIBS_LIB=ON
