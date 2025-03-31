@@ -17,7 +17,7 @@ else
 	S="${WORKDIR}/${MY_P}"
 	SRC_URI="https://pub.freerdp.com/releases/${MY_P}.tar.gz
 		verify-sig? ( https://pub.freerdp.com/releases/${MY_P}.tar.gz.asc )"
-	KEYWORDS="~alpha amd64 arm arm64 ~loong ppc ppc64 ~riscv x86"
+	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~x86"
 	BDEPEND="verify-sig? ( sec-keys/openpgp-keys-akallabeth )"
 	VERIFY_SIG_OPENPGP_KEY_PATH="/usr/share/openpgp-keys/akallabeth.asc"
 fi
@@ -108,10 +108,6 @@ RDEPEND="${COMMON_DEPEND}
 	smartcard? ( app-crypt/p11-kit )
 "
 
-PATCHES=(
-	"${FILESDIR}/freerdp-3.6.3-backports.patch"
-)
-
 option() {
 	usex "$1" ON OFF
 }
@@ -124,17 +120,26 @@ option_client() {
 	fi
 }
 
-src_configure() {
-	# bug #881695
-	filter-lto
+run_for_testing() {
+	if use test; then
+		local BUILD_DIR="${WORKDIR}/${P}_testing"
+		"$@"
+	fi
+}
 
+src_configure() {
+	use debug || append-cppflags -DNDEBUG
+	freerdp_configure -DBUILD_TESTING=OFF
+	run_for_testing freerdp_configure -DBUILD_TESTING=ON
+}
+
+freerdp_configure() {
 	local mycmakeargs=(
 		-Wno-dev
 
 		# https://bugs.gentoo.org/927037
 		-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=OFF
 
-		-DBUILD_TESTING=$(option test)
 		-DCHANNEL_URBDRC=$(option usb)
 		-DWITH_AAD=$(option aad)
 		-DWITH_ALSA=$(option alsa)
@@ -148,6 +153,7 @@ src_configure() {
 		-DWITH_SAMPLE=OFF
 		-DWITH_CUPS=$(option cups)
 		-DWITH_DEBUG_ALL=$(option debug)
+		-DWITH_VERBOSE_WINPR_ASSERT=$(option debug)
 		-DWITH_MANPAGES=ON
 		-DWITH_FFMPEG=$(option ffmpeg)
 		-DWITH_FREERDP_DEPRECATED_COMMANDLINE=ON
@@ -174,14 +180,23 @@ src_configure() {
 		-DWITH_WAYLAND=$(option_client wayland)
 		-DWITH_WEBVIEW=OFF
 		-DWITH_WINPR_TOOLS=$(option server)
+
+		"$@"
 	)
 	cmake_src_configure
 }
 
+src_compile() {
+	cmake_src_compile
+	run_for_testing cmake_src_compile
+}
+
 src_test() {
-	local myctestargs=( -E TestBacktrace )
-	has network-sandbox ${FEATURES} && myctestargs+=( -E TestConnect )
-	cmake_src_test
+	local CMAKE_SKIP_TESTS=( TestBacktrace )
+	if has network-sandbox ${FEATURES}; then
+		CMAKE_SKIP_TESTS+=( TestConnect )
+	fi
+	run_for_testing cmake_src_test
 }
 
 src_install() {
