@@ -37,7 +37,7 @@ SRC_URI="
 
 LICENSE="GPL-2+ SGI-B-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~riscv ~x86"
 IUSE="debug deep-sky doc gps +lens-distortion libcxx media nls +scripting +show-my-sky stars telescope test webengine +xlsx"
 
 # Python interpreter is used while building RemoteControl plugin
@@ -87,6 +87,7 @@ RESTRICT="!test? ( test )"
 PATCHES=(
 	"${FILESDIR}/stellarium-0.25.1-md4c.patch"
 	"${FILESDIR}/stellarium-0.25.1-astrometry.patch"
+	"${FILESDIR}/stellarium-0.25.1-qt69.patch"
 )
 
 VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/stellarium.asc
