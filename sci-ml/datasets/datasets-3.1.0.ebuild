@@ -56,7 +56,7 @@ BDEPEND="test? (
 )"
 
 PATCHES=(
-	"${FILESDIR}"/${P}-tests.patch
+	"${FILESDIR}"/${PN}-3.0.2-tests.patch
 )
 
 distutils_enable_tests pytest
