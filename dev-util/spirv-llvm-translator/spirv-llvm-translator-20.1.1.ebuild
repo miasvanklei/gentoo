@@ -16,6 +16,7 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="UoI-NCSA"
 SLOT="$(ver_cut 1)"
+KEYWORDS="~amd64 ~arm64 ~loong ~riscv ~x86"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
@@ -24,7 +25,7 @@ RDEPEND="
 	llvm-core/llvm:${SLOT}=[${MULTILIB_USEDEP}]
 "
 DEPEND="${RDEPEND}
-	>=dev-util/spirv-headers-1.3.280
+	>=dev-util/spirv-headers-1.4.309.0
 "
 BDEPEND="
 	virtual/pkgconfig
