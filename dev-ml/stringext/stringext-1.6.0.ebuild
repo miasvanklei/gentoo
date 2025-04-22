@@ -10,8 +10,8 @@ SRC_URI="https://github.com/rgrinberg/${PN}/releases/download/${PV}/${P}.tbz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
-IUSE="ocamlopt test"
+KEYWORDS="~amd64 ~arm64 ~x86"
+IUSE="+ocamlopt test"
 RESTRICT="!test? ( test )"
 
 BDEPEND="test? ( dev-ml/qcheck )"
