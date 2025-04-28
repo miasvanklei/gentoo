@@ -3,6 +3,10 @@
 
 EAPI=8
 
+# It's critical that we use RelWithDebInfo and not Release (which a user
+# may set) because the upstream CMake sets a different library name (!)
+# with Release.
+CMAKE_BUILD_TYPE=RelWithDebInfo
 PYTHON_COMPAT=( python3_{10..13} )
 # Needed for docs, bug #8357553
 PYTHON_REQ_USE="xml(+)"
@@ -19,7 +23,7 @@ SRC_URI="
 
 LICENSE="|| ( LGPL-2.1 MPL-1.1 )"
 SLOT="0/13"
-KEYWORDS="~alpha amd64 arm arm64 hppa ~loong ~mips ppc ppc64 ~riscv ~s390 sparc x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
 IUSE="sdl test"
 RESTRICT="!test? ( test )"
 
@@ -36,9 +40,13 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
+PATCHES=(
+	"${FILESDIR}"/${PN}-0.13.79-cmake-pkgconfig-libdir.patch
+)
+
 src_prepare() {
 	# This test assumes being built with automake (checks for .libs/x).
-	sed -i -e 's/test_91000_zzshowme_check_sfx/skip_&/' test/zziptests.py || die
+	sed -i -e 's/test_81000_zzshowme_check_sfx/skip_&/' test/zziptests.py || die
 	cmake_src_prepare
 }
 
