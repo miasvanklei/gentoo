@@ -1,19 +1,19 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{9..11} )
+PYTHON_COMPAT=( python3_{9..13} )
 
 inherit python-any-r1
 
 DESCRIPTION="C++ library and tools for symbolic calculations"
-SRC_URI="http://www.ginac.de/${P}.tar.bz2"
 HOMEPAGE="https://www.ginac.de/"
+SRC_URI="http://www.ginac.de/${P}.tar.bz2"
 
 LICENSE="GPL-2+"
 SLOT="0"
-KEYWORDS="amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
+KEYWORDS="~amd64 ~ppc ~x86 ~amd64-linux ~x86-linux"
 IUSE="doc examples"
 
 RDEPEND=">=sci-libs/cln-1.2.2"
@@ -24,7 +24,7 @@ BDEPEND="
 	doc? (
 		app-text/doxygen
 		dev-texlive/texlive-fontsrecommended
-		>=media-gfx/fig2dev-3.2.9-r1
+		>=media-gfx/fig2dev-3.2.9-r3[ghostscript]
 		dev-texlive/texlive-latexextra
 		virtual/texi2dvi
 	)"
