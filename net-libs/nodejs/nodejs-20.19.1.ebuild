@@ -41,7 +41,11 @@ RDEPEND=">=app-arch/brotli-1.0.9:=
 	sys-libs/zlib
 	corepack? ( !sys-apps/yarn )
 	system-icu? ( >=dev-libs/icu-73:= )
-	system-ssl? ( >=dev-libs/openssl-1.1.1:0= )"
+	system-ssl? ( >=dev-libs/openssl-1.1.1:0= )
+	|| (
+		llvm-runtimes/libatomic-stub
+		sys-devel/gcc:*
+	)"
 BDEPEND="${PYTHON_DEPS}
 	app-alternatives/ninja
 	sys-apps/coreutils
