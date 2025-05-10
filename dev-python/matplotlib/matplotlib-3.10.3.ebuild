@@ -1,11 +1,11 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=meson-python
-PYTHON_COMPAT=( pypy3 python3_{10..13} )
+PYTHON_COMPAT=( pypy3_11 python3_{11..13} )
 PYTHON_REQ_USE='tk?,threads(+)'
 
 inherit distutils-r1 pypi virtualx
@@ -29,8 +29,8 @@ SRC_URI+="
 # Fonts: BitstreamVera, OFL-1.1
 LICENSE="BitstreamVera BSD matplotlib MIT OFL-1.1"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ppc ppc64 ~riscv ~s390 sparc x86 ~arm64-macos ~x64-macos"
-IUSE="cairo excel gtk3 latex qt5 tk webagg wxwidgets"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~arm64-macos ~x64-macos"
+IUSE="cairo excel gtk3 latex qt6 tk webagg wxwidgets"
 
 DEPEND="
 	media-libs/freetype:2
@@ -74,9 +74,12 @@ RDEPEND="
 		dev-texlive/texlive-luatex
 		dev-texlive/texlive-xetex
 	)
-	qt5? (
+	qt6? (
 		$(python_gen_cond_dep '
-			dev-python/pyqt5[gui,widgets,${PYTHON_USEDEP}]
+			|| (
+				dev-python/pyqt6[gui,widgets,${PYTHON_USEDEP}]
+				dev-python/pyside:6[gui,widgets,${PYTHON_USEDEP}]
+			)
 		' 'python3*')
 	)
 	webagg? (
@@ -95,6 +98,7 @@ BDEPEND="
 	>=dev-python/setuptools-scm-7[${PYTHON_USEDEP}]
 	virtual/pkgconfig
 	test? (
+		$(python_gen_impl_dep 'tk')
 		dev-python/psutil[${PYTHON_USEDEP}]
 		dev-python/pytest-rerunfailures[${PYTHON_USEDEP}]
 		>=dev-python/tornado-6.0.4[${PYTHON_USEDEP}]
@@ -116,7 +120,7 @@ distutils_enable_tests pytest
 
 src_unpack() {
 	# do not unpack freetype
-	unpack "${P}.tar.gz"
+	unpack "${P//_/}.tar.gz"
 }
 
 python_prepare_all() {
@@ -124,7 +128,7 @@ python_prepare_all() {
 	export SETUPTOOLS_SCM_PRETEND_VERSION=${PV}
 
 	local PATCHES=(
-		"${FILESDIR}"/matplotlib-3.9.0-test.patch
+		"${FILESDIR}"/matplotlib-3.10.3-test.patch
 	)
 
 	# increase lock timeout to 30 s
@@ -170,38 +174,43 @@ python_test() {
 		# "no warnings"
 		tests/test_backend_pdf.py::test_invalid_metadata
 		tests/test_figure.py::test_too_many_figures
+		# Requires qt5
+		tests/test_backends_interactive.py::test_qt5backends_uses_qt5
+		'tests/test_backends_interactive.py::test_interactive_backend[toolbar2-MPLBACKEND=qtagg-QT_API=PyQt5-BACKEND_DEPS=PyQt5]'
+		'tests/test_backends_interactive.py::test_interactive_backend[toolbar2-MPLBACKEND=qtcairo-QT_API=PyQt5-BACKEND_DEPS=PyQt5,cairocffi]'
+		'tests/test_backends_interactive.py::test_interactive_backend[toolmanager-MPLBACKEND=qtagg-QT_API=PyQt5-BACKEND_DEPS=PyQt5]'
+		'tests/test_backends_interactive.py::test_blitting_events[MPLBACKEND=qtagg-QT_API=PyQt5-BACKEND_DEPS=PyQt5]'
+		'tests/test_backends_interactive.py::test_blitting_events[MPLBACKEND=qtcairo-QT_API=PyQt5-BACKEND_DEPS=PyQt5,cairocffi]'
+		'tests/test_backends_interactive.py::test_interactive_thread_safety[MPLBACKEND=qtagg-QT_API=PyQt5-BACKEND_DEPS=PyQt5]'
+		'tests/test_backends_interactive.py::test_interactive_timers[MPLBACKEND=qtagg-QT_API=PyQt5-BACKEND_DEPS=PyQt5]'
+		'tests/test_backends_interactive.py::test_interactive_timers[MPLBACKEND=qtcairo-QT_API=PyQt5-BACKEND_DEPS=PyQt5,cairocffi]'
+		# Tests mixing qt5 and qt6, requires installing all Qt4Py impl.
+		tests/test_backends_interactive.py::test_cross_Qt_imports
 	)
 
 	case ${EPYTHON} in
 		pypy3)
 			EPYTEST_DESELECT+=(
+				# TODO
+				tests/test_widgets.py::test_check_buttons
+				tests/test_widgets.py::test_check_buttons_lines
+				tests/test_widgets.py::test_check_radio_buttons_image
+				tests/test_widgets.py::test_radio_buttons
+			)
+			;&
+		pypy3.11)
+			EPYTEST_DESELECT+=(
 				# TODO: warning isn't passed through
 				tests/test_image.py::test_large_image
+				# TODO: regression in 7.3.18+
+				tests/test_axes.py::test_axes_clear_reference_cycle
 				# TODO
 				tests/test_pickle.py::test_complete
 				tests/test_pickle.py::test_no_pyplot
 				tests/test_pickle.py::test_pickle_load_from_subprocess
 				tests/test_pickle.py::test_simple
 				tests/test_texmanager.py::test_openin_any_paranoid
-				tests/test_widgets.py::test_check_buttons
-				tests/test_widgets.py::test_check_buttons_lines
-				tests/test_widgets.py::test_check_radio_buttons_image
-				tests/test_widgets.py::test_radio_buttons
 			)
-			if has_version "<dev-python/pypy3_10-exe-7.3.13_p2" ||
-				has_version "<dev-python/pypy3_10-exe-bin-7.3.13_p2"
-			then
-				EPYTEST_DESELECT+=(
-					# TypeError is raised when exception is raised in a starred
-					# expression referencing a generator that uses "yield from"
-					# and raises -- non-critical, since some exception is raised
-					# after all
-					# https://foss.heptapod.net/pypy/pypy/-/issues/4032
-					tests/test_axes.py::test_bad_plot_args
-					tests/test_axes.py::test_plot_errors
-					tests/test_axes.py::test_plot_format_errors
-				)
-			fi
 			;;
 		python3.11)
 			EPYTEST_DESELECT+=(
@@ -252,7 +261,20 @@ python_test() {
 				'tests/test_text.py::test_parse_math'
 				'tests/test_text.py::test_parse_math_rcparams'
 			)
-			;&
+			;;
+		arm)
+			EPYTEST_DESELECT+=(
+				tests/test_backend_ps.py::test_savefig_to_stringio
+				# too large for 32-bit platforms
+				'tests/test_axes.py::test_psd_csd[png]'
+			)
+			;;
+		sparc64)
+			EPYTEST_DESELECT+=(
+				tests/test_backend_pgf.py::test_pdf_pages_metadata_check
+				tests/test_backend_pgf.py::test_minus_signs_with_tex
+			)
+			;;
 		alpha|arm|m68k|o32|ppc|s390|sh|sparc|x86)
 			EPYTEST_DESELECT+=(
 				# too large for 32-bit platforms
@@ -263,19 +285,25 @@ python_test() {
 			;;
 	esac
 
+	# override BUILD_DIR used by meson, so that mpl is actually rebuilt
+	# against bundled freetype
+	local orig_build_dir=${BUILD_DIR}
+	local BUILD_DIR=${BUILD_DIR}-test
+
 	# we need to rebuild mpl against bundled freetype, otherwise
 	# over 1000 tests will fail because of mismatched font rendering
 	local DISTUTILS_ARGS=(
 		"${DISTUTILS_ARGS[@]}"
 		-Dsystem-freetype=false
 	)
-	distutils_pep517_install "${BUILD_DIR}"/test
-	cp -r "${BUILD_DIR}"/{install,test}"${EPREFIX}/usr/bin" || die
-	local -x PATH=${BUILD_DIR}/test${EPREFIX}/usr/bin:${PATH}
+	distutils_pep517_install "${BUILD_DIR}"/install
+	cp -r {"${orig_build_dir}","${BUILD_DIR}"}/install"${EPREFIX}/usr/bin" || die
+	cp -r {"${orig_build_dir}","${BUILD_DIR}"}/install"${EPREFIX}/usr/pyvenv.cfg" || die
+	local -x PATH=${BUILD_DIR}/install${EPREFIX}/usr/bin:${PATH}
 
 	pushd lib >/dev/null || die
 	local path
-	local sitedir=${BUILD_DIR}/test$(python_get_sitedir)
+	local sitedir=${BUILD_DIR}/install$(python_get_sitedir)
 	# sigh, upstream doesn't install these
 	while IFS= read -d '' path; do
 		cp -r "${path}" "${sitedir}/${path}" || die
