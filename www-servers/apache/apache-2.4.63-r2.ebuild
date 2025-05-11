@@ -38,7 +38,7 @@ dbd deflate dir dumpio env expires ext_filter file_cache filter headers http2
 ident imagemap include info lbmethod_byrequests lbmethod_bytraffic lbmethod_bybusyness
 lbmethod_heartbeat log_config log_forensic logio lua macro md mime mime_magic negotiation
 proxy proxy_ajp proxy_balancer proxy_connect proxy_ftp proxy_hcheck proxy_html proxy_http proxy_scgi
-proxy_http2 proxy_fcgi proxy_uwsgi proxy_wstunnel rewrite ratelimit remoteip reqtimeout
+proxy_http2 proxy_fcgi proxy_uwsgi proxy_wstunnel request rewrite ratelimit remoteip reqtimeout
 session session_cookie session_crypto session_dbd setenvif slotmem_shm socache_memcache
 socache_shmcb speling status substitute systemd unique_id userdir usertrack
 unixd version vhost_alias watchdog xml2enc"
@@ -50,6 +50,7 @@ unixd version vhost_alias watchdog xml2enc"
 # inter-module dependencies
 # TODO: this may still be incomplete
 MODULE_DEPENDS="
+	auth_form:request
 	auth_form:session
 	brotli:filter
 	dav_fs:dav
@@ -146,7 +147,7 @@ HOMEPAGE="https://httpd.apache.org/"
 # some helper scripts are Apache-1.1, thus both are here
 LICENSE="Apache-2.0 Apache-1.1"
 SLOT="2"
-KEYWORDS="~alpha ~amd64 arm arm64 ~hppa ~loong ~mips ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x64-macos ~x64-solaris"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x64-macos ~x64-solaris"
 
 DEPEND="${RDEPEND}"
 
