@@ -186,10 +186,7 @@ RESTRICT="test"
 RDEPEND="
 	>=dev-libs/libpsl-native-7.4.0:=
 	sys-libs/pam:0/0
-	|| (
-		dev-libs/openssl-compat:1.0.0
-		=dev-libs/openssl-1.0*:0/0
-	)
+	dev-libs/openssl
 	gui? (
 		dev-util/desktop-file-utils
 		x11-misc/shared-mime-info
