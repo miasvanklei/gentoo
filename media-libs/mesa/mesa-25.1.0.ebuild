@@ -99,10 +99,10 @@ RDEPEND="
 	unwind? ( sys-libs/libunwind[${MULTILIB_USEDEP}] )
 	llvm? (
 		$(llvm_gen_dep "
-			llvm-core/llvm:\${LLVM_SLOT}[llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}]
+			llvm-core/llvm:\${LLVM_SLOT}[${MULTILIB_USEDEP}]
 			opencl? (
 				dev-util/spirv-llvm-translator:\${LLVM_SLOT}
-				llvm-core/clang:\${LLVM_SLOT}[llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}]
+				llvm-core/clang:\${LLVM_SLOT}[${MULTILIB_USEDEP}]
 				=llvm-core/libclc-\${LLVM_SLOT}*[spirv(-)]
 			)
 		")
@@ -391,12 +391,18 @@ multilib_src_configure() {
 		gallium_enable video_cards_radeon r300 r600
 	fi
 
+	driver_list() {
+		local drivers="$(sort -u <<< "${1// /$'\n'}")"
+		echo "${drivers//$'\n'/,}"
+	}
+
 	if use llvm && use opencl; then
 		PKG_CONFIG_PATH="$(get_llvm_prefix)/$(get_libdir)/pkgconfig"
 		# See https://gitlab.freedesktop.org/mesa/mesa/-/blob/main/docs/rusticl.rst
 		emesonargs+=(
 			$(meson_native_true gallium-rusticl)
 			-Drust_std=2021
+			-Dgallium-rusticl-enable-drivers=$(driver_list "${GALLIUM_DRIVERS[*]}")
 		)
 	fi
 
@@ -423,11 +429,6 @@ multilib_src_configure() {
 
 		emesonargs+=(-Dvulkan-layers=device-select,overlay)
 	fi
-
-	driver_list() {
-		local drivers="$(sort -u <<< "${1// /$'\n'}")"
-		echo "${drivers//$'\n'/,}"
-	}
 
 	if use opengl && use X; then
 		emesonargs+=(-Dglx=dri)
