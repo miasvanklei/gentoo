@@ -36,12 +36,16 @@
 
 #--- END OF EXAMPLES ---
 
-# Mike Pagano <mpagano@gentoo.org> (2025-05-20)
-# Persistant issues with this release of the kernel
-# You mileage may vary, use at your own risk and
-# discretion 
-=sys-kernel/gentoo-sources-6.14.7
-=sys-kernel/vanilla-sources-6.14.7
+# Andreas Sturmlechner <asturm@gentoo.org> (2025-05-20)
+# Unaddressed pending version bumps for almost 2 years, stuck on EAPI-7.
+# Bugs #908094, #908095, #908096, #908097, #908427, #908428
+# Removal on 2025-06-19.
+dev-libs/aws-c-cal
+dev-libs/aws-checksums
+dev-libs/aws-c-common
+dev-libs/aws-c-event-stream
+dev-libs/aws-c-io
+dev-libs/s2n
 
 # Andreas Sturmlechner <asturm@gentoo.org> (2025-05-19)
 # Dead upstream (last commit >4 years ago), not ported to Qt6 and broken w/
