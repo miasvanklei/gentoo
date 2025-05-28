@@ -3,12 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_14t )
+PYTHON_COMPAT=( python3_11 )
 
 inherit git-r3 python-r1
 
-PYVER=$(ver_cut 1-2)t
-PATCHSET="python-gentoo-patches-3.14.0b1"
+PYVER=$(ver_cut 1-2)
+PATCHSET="python-gentoo-patches-3.11.11"
 
 DESCRIPTION="Test modules from dev-lang/python"
 HOMEPAGE="
@@ -19,7 +19,7 @@ SRC_URI="
 	https://dev.gentoo.org/~mgorny/dist/python/${PATCHSET}.tar.xz
 "
 EGIT_REPO_URI="https://github.com/python/cpython.git"
-EGIT_BRANCH=${PYVER%t}
+EGIT_BRANCH=${PYVER}
 S="${WORKDIR}/${P}/Lib"
 
 LICENSE="PSF-2"
@@ -31,6 +31,7 @@ REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 RDEPEND="
 	${PYTHON_DEPS}
 	~dev-lang/python-${PV}:${PYVER}
+	!<dev-lang/python-3.11.9_p2-r1:${PYVER}
 "
 BDEPEND="
 	${PYTHON_DEPS}
@@ -53,8 +54,13 @@ src_prepare() {
 src_install() {
 	python_setup
 	# keep in sync with TESTSUBDIRS in Makefile.pre.in
-	python_moduleinto "/usr/lib/python${PYVER}"
-	python_domodule test
-	python_moduleinto "/usr/lib/python${PYVER}/idlelib"
-	python_domodule idlelib/idle_test
+	local dirs=(
+		ctypes/test distutils/tests idlelib/idle_test lib2to3/tests
+		./test tkinter/test unittest/test
+	)
+	local dir
+	for dir in "${dirs[@]}"; do
+		python_moduleinto "/usr/lib/python${PYVER}/${dir%/*}"
+		python_domodule "${dir}"
+	done
 }
