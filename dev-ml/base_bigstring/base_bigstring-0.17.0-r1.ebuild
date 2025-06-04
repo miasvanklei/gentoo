@@ -5,20 +5,23 @@ EAPI=8
 
 inherit dune
 
-DESCRIPTION="Code style checker for Jane Street Packages"
-HOMEPAGE="https://github.com/janestreet/ppx_js_style"
+DESCRIPTION="String type based on Bigarray, for use in I/O and C-bindings"
+HOMEPAGE="https://github.com/janestreet/base_bigstring"
 SRC_URI="https://github.com/janestreet/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
-LICENSE="Apache-2.0"
+LICENSE="MIT"
 SLOT="0/$(ver_cut 1-2)"
 KEYWORDS="~amd64 ~arm64 ~ppc ~ppc64"
 IUSE="+ocamlopt"
 
-DEPEND="
+# Jane Street Minor
+JSM=$(ver_cut 1-2)*
+
+RDEPEND="
 	>=dev-lang/ocaml-5
-	dev-ml/base:${SLOT}
-	dev-ml/octavius:=
-	>=dev-ml/ppxlib-0.28.0:=
+	=dev-ml/base-${JSM}:=[ocamlopt?]
+	=dev-ml/int_repr-${JSM}:=[ocamlopt?]
+	=dev-ml/ppx_jane-${JSM}:=[ocamlopt?]
 "
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
 BDEPEND=">=dev-ml/dune-3.11"
