@@ -17,7 +17,7 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="LGPL-2+ BSD"
 SLOT="6/0" # soname version of libwebkit2gtk-6.0
-KEYWORDS="amd64 ~arm arm64 ppc ppc64 ~sparc x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc ~ppc64 ~riscv ~sparc ~x86"
 
 IUSE="aqua avif examples gamepad keyring +gstreamer +introspection pdf jpegxl +jumbo-build lcms seccomp spell systemd wayland X"
 REQUIRED_USE="|| ( aqua wayland X )"
@@ -157,8 +157,8 @@ src_prepare() {
 	cmake_src_prepare
 	gnome2_src_prepare
 
-	# https://bugs.gentoo.org/943213
-	eapply "${FILESDIR}"/2.44.4-fix-icu76.1.patch
+	# https://bugs.gentoo.org/938162, see also mycmakeargs
+	eapply "${FILESDIR}"/2.48.3-fix-ftbfs-riscv64.patch
 
 	# We don't want -Werror for gobject-introspection (bug #947761)
 	sed -i -e "s:--warn-error::" Source/cmake/FindGI.cmake || die
@@ -213,11 +213,14 @@ src_configure() {
 		# Source/cmake/WebKitFeatures.cmake
 		-DENABLE_API_TESTS=OFF
 		-DENABLE_BUBBLEWRAP_SANDBOX=$(usex seccomp)
+		-DENABLE_DRAG_SUPPORT=OFF
 		-DENABLE_GAMEPAD=$(usex gamepad)
 		-DENABLE_GEOLOCATION=ON # Runtime optional (talks over dbus service)
 		-DENABLE_MINIBROWSER=$(usex examples)
 		-DENABLE_PDFJS=$(usex pdf)
+		-DENABLE_SPEECH_SYNTHESIS=OFF
 		-DENABLE_SPELLCHECK=$(usex spell)
+		-DENABLE_TOUCH_EVENTS=ON # temp, 2.48.3-r600 build fails without it
 		-DENABLE_UNIFIED_BUILDS=$(usex jumbo-build)
 		-DENABLE_VIDEO=$(usex gstreamer)
 		-DENABLE_WEB_AUDIO=$(usex gstreamer)
@@ -247,10 +250,14 @@ src_configure() {
 		-DUSE_WOFF2=ON
 	)
 
-	# Temporary workaround for bug 938162 (upstream bug 271371).
-	# The idea to disable WebAssembly and the FTL JIT instead
-	# of using ENABLE_JIT=OFF was stolen from OpenBSD.
-	use riscv && mycmakeargs+=( -DENABLE_WEBASSEMBLY=OFF -DENABLE_FTL_JIT=OFF )
+	# Temporary workaround for bug 938162 (upstream bug 271371)
+	# in concert with our Debian patch. The idea to enable C_LOOP
+	# is also stolen from Debian's build.
+	use riscv && mycmakeargs+=(
+		-DENABLE_WEBASSEMBLY=OFF
+		-DENABLE_JIT=OFF
+		-DENABLE_C_LOOP=ON
+	)
 
 	# https://bugs.gentoo.org/761238
 	append-cppflags -DNDEBUG
