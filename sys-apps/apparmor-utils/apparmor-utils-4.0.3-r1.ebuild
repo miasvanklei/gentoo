@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..12} )
 inherit distutils-r1 toolchain-funcs desktop
 
 MY_PV="$(ver_cut 1-2)"
@@ -35,6 +35,7 @@ RDEPEND="${COMMON_DEPEND}
 
 PATCHES=(
 	"${FILESDIR}/${PN}-4.0.3-binutils-Fix-missing-include-limits.h.patch"
+	"${FILESDIR}/${PN}-4.0.3-py3.13.patch"
 )
 
 src_prepare() {
