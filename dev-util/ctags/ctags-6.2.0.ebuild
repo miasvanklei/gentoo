@@ -3,25 +3,44 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 inherit autotools python-any-r1
 
 DESCRIPTION="Exuberant Ctags creates tags files for code browsing in editors"
 HOMEPAGE="https://ctags.io/ https://github.com/universal-ctags/ctags"
 
-if [[ ${PV} == *99999999* ]] ; then
+if [[ ${PV} == 9999 ]] ; then
 	EGIT_REPO_URI="https://github.com/universal-ctags/ctags"
 	inherit git-r3
-else
-	SRC_URI="https://github.com/universal-ctags/ctags/archive/refs/tags/p6.1.${PV}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}"/${PN}-p6.1.${PV}
+elif [[ ${PV} == *.*_p*_p* ]] ; then
+	# 6.0_p20230423_p0
+	#
+	# 6.0
+	MY_PV_BASE=${PV/_p/.}
+	MY_PV_BASE=${MY_PV_BASE%*.*}
+	# 20230423_p0
+	MY_PV_PATCH=${PV#*_p}
+	# 20230423
+	MY_PV_PATCH_DATE=${MY_PV_PATCH%_p*}
+	# 0
+	MY_PV_PATCH_DATE_SUFFIX=${MY_PV_PATCH##*_p}
+	# p6.0.20230423.0
+	MY_PV=p${MY_PV_BASE}.${MY_PV_PATCH_DATE}.${MY_PV_PATCH_DATE_SUFFIX}
+	MY_P=${PN}-${MY_PV}
 
-	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+	SRC_URI="https://github.com/universal-ctags/ctags/archive/refs/tags/${MY_PV}.tar.gz -> ${P}.tar.gz"
+	S="${WORKDIR}"/${MY_P}
+else
+	SRC_URI="https://github.com/universal-ctags/ctags/releases/download/v${PV}/universal-${P}.tar.gz"
+	S="${WORKDIR}"/universal-${P}
 fi
 
 LICENSE="GPL-2+"
 SLOT="0"
 IUSE="json pcre seccomp test xml yaml"
+if [[ ${PV} != 9999 ]] ; then
+	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x64-solaris"
+fi
 RESTRICT="!test? ( test )"
 
 DEPEND="
@@ -50,10 +69,10 @@ pkg_setup() {
 }
 
 src_prepare() {
+	default
+
 	# Ignore check-genfile test (calls git which errors out)
 	sed -i 's/man-test check-genfile/man-test/' makefiles/testing.mak || die
-
-	default
 
 	# Don't automagically use Valgrind
 	sed -i -e '/if type valgrind/s:valgrind:valgrind-falseified:' Tmain/optscript.d/run.sh || die
@@ -63,14 +82,17 @@ src_prepare() {
 }
 
 src_configure() {
-	econf \
-		$(use_enable json) \
-		$(use_enable pcre pcre2) \
-		$(use_enable seccomp) \
-		$(use_enable xml) \
-		$(use_enable yaml) \
-		--disable-etags \
+	local myeconfargs=(
+		$(use_enable json)
+		$(use_enable pcre pcre2)
+		$(use_enable seccomp)
+		$(use_enable xml)
+		$(use_enable yaml)
+		--disable-etags
 		--enable-tmpdir="${EPREFIX}"/tmp
+	)
+
+	econf "${myeconfargs[@]}"
 }
 
 src_install() {
