@@ -9,7 +9,7 @@ inherit bash-completion-r1 gnome2 meson-multilib python-any-r1 vala virtualx
 DESCRIPTION="GObject library for accessing the freedesktop.org Secret Service API"
 HOMEPAGE="https://gnome.pages.gitlab.gnome.org/libsecret"
 
-LICENSE="LGPL-2.1+ Apache-2.0" # Apache-2.0 license is used for tests only
+LICENSE="LGPL-2.1+ test? ( || ( GPL-2+ Apache-2.0 ) )"
 SLOT="0"
 
 KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~loong ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
@@ -23,6 +23,7 @@ REQUIRED_USE="
 "
 
 DEPEND="
+	!<app-shells/bash-completion-2.16.0-r1
 	>=dev-libs/glib-2.44:2[${MULTILIB_USEDEP}]
 	gcrypt? ( >=dev-libs/libgcrypt-1.2.2:0=[${MULTILIB_USEDEP}] )
 	gnutls? ( >=net-libs/gnutls-3.8.2:0=[${MULTILIB_USEDEP}] )
@@ -140,7 +141,7 @@ multilib_src_configure() {
 		$(meson_native_use_bool gtk-doc gtk_doc)
 		$(meson_native_use_bool introspection)
 		-Dbashcompdir="$(get_bashcompdir)"
-		-Dbash_completion=true
+		-Dbash_completion=enabled
 		$(meson_native_use_bool tpm tpm2)
 		$(meson_native_use_bool pam)
 	)
