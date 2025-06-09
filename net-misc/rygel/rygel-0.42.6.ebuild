@@ -1,4 +1,4 @@
-# Copyright 1999-2024 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -37,7 +37,7 @@ DEPEND="
 	>=sys-apps/util-linux-2.20
 	x11-misc/shared-mime-info
 	introspection? ( >=dev-libs/gobject-introspection-1.33.4:= )
-	tracker? ( app-misc/tracker:3=[vala(+)] )
+	tracker? ( app-misc/tinysparql:3=[vala(+)] )
 	transcode? (
 		media-libs/gst-plugins-bad:1.0
 		media-plugins/gst-plugins-twolame:1.0

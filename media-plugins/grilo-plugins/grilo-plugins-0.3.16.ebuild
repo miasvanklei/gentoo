@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -36,7 +36,7 @@ RDEPEND="
 	flickr? ( net-libs/liboauth )
 	dev-db/sqlite:3
 	>=dev-libs/totem-pl-parser-3.4.1:=
-	tracker? ( app-misc/tracker:3= )
+	tracker? ( app-misc/tinysparql:3= )
 	upnp-av? ( net-libs/dleyna:1.0= )
 	lua? (
 		${LUA_DEPS}
