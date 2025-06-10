@@ -64,3 +64,18 @@ src_configure() {
 	)
 	meson_src_configure
 }
+
+src_install() {
+	meson_src_install
+
+	# Workaround for portage's collision checks, see pkg_preinst (bug #957712)
+	mv "${ED}"/usr/share/X11/xkb{,.workaround} || die
+}
+
+pkg_preinst() {
+	# Avoid touching EROOT if not needed, and use -f just-in-case anyway
+	if [[ -d ${EROOT}/usr/share/X11/xkb && ! -L ${EROOT}/usr/share/X11/xkb ]]; then
+		rm -rf "${EROOT}"/usr/share/X11/xkb || die
+	fi
+	mv "${ED}"/usr/share/X11/xkb{.workaround,} || die
+}
