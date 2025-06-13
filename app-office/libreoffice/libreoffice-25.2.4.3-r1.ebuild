@@ -301,6 +301,7 @@ PATCHES=(
 	# git master:
 	"${FILESDIR}/${PN}-25.2-unused-qt6network.patch"
 	"${FILESDIR}/${PN}-25.2.3.2-poppler-25.05.patch"
+	"${FILESDIR}/${PN}-25.2.4.3-gcc16.patch"
 )
 
 _check_reqs() {
@@ -476,6 +477,9 @@ src_configure() {
 	# System python enablement:
 	export PYTHON_CFLAGS=$(python_get_CFLAGS)
 	export PYTHON_LIBS=$(python_get_LIBS)
+
+	# doesn't respect CPPFLAGS
+	append-flags "-I${ESYSROOT}/usr/include/zxcvbn"
 
 	if use qt6; then
 		export QT6DIR="$(qt6_get_bindir)/.."
