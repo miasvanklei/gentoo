@@ -18,7 +18,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~ppc64 ~x86"
 
 DEPEND="
-	media-libs/libsdl2
+	media-libs/libsdl2[X]
 	media-video/ffmpeg:=
 	virtual/libusb:1
 "
