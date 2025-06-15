@@ -51,6 +51,7 @@ RDEPEND="${COMMON_DEPEND}
 	>=kde-frameworks/kitemmodels-${KFMIN}:6
 	$(python_gen_cond_dep '
 		dev-python/psutil[${PYTHON_USEDEP}]
+		dev-python/pygdbmi[${PYTHON_USEDEP}]
 	')
 	|| (
 		dev-debug/gdb
