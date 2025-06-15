@@ -42,10 +42,7 @@ RDEPEND=">=app-arch/brotli-1.0.9:=
 	corepack? ( !sys-apps/yarn )
 	system-icu? ( >=dev-libs/icu-73:= )
 	system-ssl? ( >=dev-libs/openssl-1.1.1:0= )
-	|| (
-		llvm-runtimes/libatomic-stub
-		sys-devel/gcc:*
-	)"
+	sys-devel/gcc:*"
 BDEPEND="${PYTHON_DEPS}
 	app-alternatives/ninja
 	sys-apps/coreutils
@@ -114,6 +111,12 @@ src_configure() {
 
 	# LTO compiler flags are handled by configure.py itself
 	filter-lto
+	# nodejs unconditionally links to libatomic #869992
+	# specifically it requires __atomic_is_lock_free which
+	# is not yet implemented by llvm-runtimes/compiler-rt (see
+	# https://reviews.llvm.org/D85044?id=287068), therefore
+	# we depend on gcc and force using libgcc as the support lib
+	tc-is-clang && append-ldflags "--rtlib=libgcc --unwindlib=libgcc"
 
 	local myconf=(
 		--ninja
