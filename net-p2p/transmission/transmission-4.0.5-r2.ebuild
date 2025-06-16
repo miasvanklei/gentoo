@@ -12,8 +12,7 @@ else
 	MY_PV="${PV/_beta/-beta.}"
 	MY_P="${PN}-${MY_PV}"
 	S="${WORKDIR}/${MY_P}"
-	#SRC_URI="https://github.com/transmission/transmission/releases/download/${MY_PV}/${MY_P}.tar.xz"
-	SRC_URI="https://dev.gentoo.org/~floppym/dist/${P}-gentoo.tar.xz"
+	SRC_URI="https://github.com/transmission/transmission/releases/download/${MY_PV}/${MY_P}.tar.xz"
 	KEYWORDS="amd64 ~arm ~arm64 ppc ppc64 ~riscv x86"
 fi
 
@@ -76,6 +75,7 @@ src_prepare() {
 	# Remove files which trigger <cmake-4 compat in cmake.eclass
 	rm -r third-party/{lib{deflate,event,natpmp,psl},miniupnpc} || die
 	rm third-party/utfcpp/CMakeLists.txt || die
+	rm third-party/utfcpp/extern/ftest/tests/CMakeLists.txt || die
 
 	cd third-party/dht || die
 	eapply "${FILESDIR}"/transmission-4.0.6-dht-cmake-4.patch
