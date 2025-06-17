@@ -1,4 +1,4 @@
-# Copyright 2011-2024 Gentoo Authors
+# Copyright 2011-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -17,7 +17,7 @@ else
 	S="${WORKDIR}/${MY_P}"
 	SRC_URI="https://pub.freerdp.com/releases/${MY_P}.tar.gz
 		verify-sig? ( https://pub.freerdp.com/releases/${MY_P}.tar.gz.asc )"
-	KEYWORDS="~alpha amd64 arm arm64 ~loong ppc ppc64 ~riscv x86"
+	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~x86"
 	BDEPEND="verify-sig? ( sec-keys/openpgp-keys-akallabeth )"
 	VERIFY_SIG_OPENPGP_KEY_PATH="/usr/share/openpgp-keys/akallabeth.asc"
 fi
@@ -26,19 +26,19 @@ DESCRIPTION="Free implementation of the Remote Desktop Protocol"
 HOMEPAGE="https://www.freerdp.com/"
 
 LICENSE="Apache-2.0"
-SLOT="2"
-IUSE="alsa cpu_flags_arm_neon client cups debug +ffmpeg gstreamer icu jpeg kerberos openh264 pulseaudio server smartcard systemd test usb valgrind wayland X xinerama xv"
+SLOT="3"
+IUSE="aad alsa cpu_flags_arm_neon +client cups debug +ffmpeg +fuse gstreamer +icu jpeg kerberos openh264 pulseaudio sdl server smartcard systemd test usb valgrind wayland X xinerama xv"
 RESTRICT="!test? ( test )"
 
 BDEPEND+="
 	virtual/pkgconfig
-	app-text/docbook-xml-dtd:4.1.2
-	app-text/xmlto
+	app-text/docbook-xsl-stylesheets
+	dev-libs/libxslt
 "
-
 COMMON_DEPEND="
 	dev-libs/openssl:0=
 	sys-libs/zlib:0
+	aad? ( dev-libs/cJSON )
 	alsa? ( media-libs/alsa-lib )
 	cups? ( net-print/cups )
 	usb? (
@@ -59,6 +59,7 @@ COMMON_DEPEND="
 	!ffmpeg? (
 		x11-libs/cairo:0=
 	)
+	fuse? ( sys-fs/fuse:3= )
 	gstreamer? (
 		media-libs/gstreamer:1.0
 		media-libs/gst-plugins-base:1.0
@@ -83,6 +84,10 @@ COMMON_DEPEND="
 	smartcard? ( sys-apps/pcsc-lite )
 	systemd? ( sys-apps/systemd:0= )
 	client? (
+		sdl? (
+			media-libs/libsdl3
+			media-libs/sdl3-ttf
+		)
 		wayland? (
 			dev-libs/wayland
 			x11-libs/libxkbcommon
@@ -98,18 +103,10 @@ DEPEND="${COMMON_DEPEND}
 "
 RDEPEND="${COMMON_DEPEND}
 	!net-misc/freerdp:0
-	client? ( !net-misc/freerdp:3[client] )
-	server? ( !net-misc/freerdp:3[server] )
+	client? ( !net-misc/freerdp:2[client] )
+	server? ( !net-misc/freerdp:2[server] )
+	smartcard? ( app-crypt/p11-kit )
 "
-
-src_prepare() {
-	local PATCHES=(
-		"${FILESDIR}/freerdp-2.11.2-clang.patch"
-		"${FILESDIR}/freerdp-2.11-Revert-codec-encode-messages-considering-endianness.patch"
-		"${FILESDIR}/freerdp-2.11.7-type-mismatch.patch"
-	)
-	cmake_src_prepare
-}
 
 option() {
 	usex "$1" ON OFF
@@ -123,54 +120,87 @@ option_client() {
 	fi
 }
 
+run_for_testing() {
+	if use test; then
+		local BUILD_DIR="${WORKDIR}/${P}_testing"
+		"$@"
+	fi
+}
+
 src_configure() {
-	# bug #881695
-	filter-lto
+	use debug || append-cppflags -DNDEBUG
+	freerdp_configure -DBUILD_TESTING=OFF
+	run_for_testing freerdp_configure -DBUILD_TESTING=ON
+}
 
-	# https://bugs.gentoo.org/927731
-	append-cflags $(test-flags-CC -Wno-error=incompatible-pointer-types)
-
+freerdp_configure() {
 	local mycmakeargs=(
 		-Wno-dev
-		-DBUILD_TESTING=$(option test)
+
+		# https://bugs.gentoo.org/927037
+		-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=OFF
+
 		-DCHANNEL_URBDRC=$(option usb)
+		-DWITH_AAD=$(option aad)
 		-DWITH_ALSA=$(option alsa)
 		-DWITH_CCACHE=OFF
-		-DWITH_CUPS=$(option cups)
+
 		-DWITH_CLIENT=$(option client)
+		-DWITH_CLIENT_SDL2=OFF
+		-DWITH_CLIENT_SDL3=$(option_client sdl)
+
+		-DWITH_SAMPLE=OFF
+		-DWITH_CUPS=$(option cups)
 		-DWITH_DEBUG_ALL=$(option debug)
+		-DWITH_VERBOSE_WINPR_ASSERT=$(option debug)
 		-DWITH_MANPAGES=ON
 		-DWITH_FFMPEG=$(option ffmpeg)
+		-DWITH_FREERDP_DEPRECATED_COMMANDLINE=ON
 		-DWITH_SWSCALE=$(option ffmpeg)
 		-DWITH_CAIRO=$(option !ffmpeg)
 		-DWITH_DSP_FFMPEG=$(option ffmpeg)
+		-DWITH_FUSE=$(option fuse)
 		-DWITH_GSTREAMER_1_0=$(option gstreamer)
-		-DWITH_ICU=$(option icu)
 		-DWITH_JPEG=$(option jpeg)
-		-DWITH_GSSAPI=$(option kerberos)
+		-DWITH_KRB5=$(option kerberos)
 		-DWITH_NEON=$(option cpu_flags_arm_neon)
 		-DWITH_OPENH264=$(option openh264)
 		-DWITH_OSS=OFF
+		-DWITH_PCSC=$(option smartcard)
+		-DWITH_PKCS11=$(option smartcard)
 		-DWITH_PULSE=$(option pulseaudio)
 		-DWITH_SERVER=$(option server)
-		-DWITH_PCSC=$(option smartcard)
 		-DWITH_LIBSYSTEMD=$(option systemd)
+		-DWITH_UNICODE_BUILTIN=$(option !icu)
 		-DWITH_VALGRIND_MEMCHECK=$(option valgrind)
 		-DWITH_X11=$(option X)
 		-DWITH_XINERAMA=$(option xinerama)
 		-DWITH_XV=$(option xv)
 		-DWITH_WAYLAND=$(option_client wayland)
+		-DWITH_WEBVIEW=OFF
 		-DWITH_WINPR_TOOLS=$(option server)
+
+		"$@"
 	)
 	cmake_src_configure
 }
 
+src_compile() {
+	cmake_src_compile
+	run_for_testing cmake_src_compile
+}
+
 src_test() {
-	local myctestargs=( -E TestBacktrace )
-	cmake_src_test
+	# TestBacktrace: bug 930636
+	# TestSynchCritical, TestSynchMultipleThreads: bug 951301
+	local CMAKE_SKIP_TESTS=( TestBacktrace TestSynchCritical TestSynchMultipleThreads )
+	if has network-sandbox ${FEATURES}; then
+		CMAKE_SKIP_TESTS+=( TestConnect )
+	fi
+	run_for_testing cmake_src_test
 }
 
 src_install() {
 	cmake_src_install
-	mv "${ED}"/usr/share/man/man7/wlog{,2}.7 || die
+	mv "${ED}"/usr/share/man/man7/wlog{,3}.7 || die
 }
