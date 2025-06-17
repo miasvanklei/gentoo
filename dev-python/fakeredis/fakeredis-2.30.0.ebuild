@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=hatchling
-PYTHON_COMPAT=( pypy3_11 python3_{11..13} )
+PYTHON_COMPAT=( pypy3_11 python3_{11..14} )
 
 inherit distutils-r1 pypi
 
@@ -34,6 +34,13 @@ BDEPEND="
 
 # pytest-xdist: tests are not parallel-safe
 distutils_enable_tests pytest
+
+src_prepare() {
+	distutils-r1_src_prepare
+
+	# https://github.com/cunla/fakeredis-py/issues/395
+	sed -i -e '/LICENSE/d' pyproject.toml || die
+}
 
 python_test() {
 	local EPYTEST_DESELECT=(
