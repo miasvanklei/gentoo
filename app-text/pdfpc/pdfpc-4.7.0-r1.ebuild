@@ -38,8 +38,7 @@ RDEPEND="
 	x11-libs/gdk-pixbuf:2
 	x11-libs/libX11
 	x11-libs/pango
-	X? ( x11-libs/gtk+:3[X] )
-	wayland? ( x11-libs/gtk+:3[wayland] )
+	x11-libs/gtk+:3[X?,wayland?]
 	!X? ( !wayland? ( x11-libs/gtk+:3[X] ) )
 	gstreamer? (
 		media-libs/gstreamer:1.0
@@ -68,6 +67,7 @@ src_prepare() {
 	if ! use wayland; then  #958395
 		sed -i -e 's/GDK_WINDOWING_WAYLAND/GdK_nO_wAyLaNd/' \
 			src/display_backend.c || die
+		use X || ewarn 'Neither "X" nor "wayland" USE flag set - enabling X11'
 	elif ! use X; then
 		sed -i -e 's/GDK_WINDOWING_X11/GdK_nO_xElEvEn/' \
 			src/display_backend.c || die
