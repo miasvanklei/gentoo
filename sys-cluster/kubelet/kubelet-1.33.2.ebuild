@@ -2,27 +2,29 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
+
 inherit go-module systemd
 
 DESCRIPTION="Kubernetes Node Agent"
 HOMEPAGE="https://kubernetes.io"
 SRC_URI="https://github.com/kubernetes/kubernetes/archive/v${PV}.tar.gz -> kubernetes-${PV}.tar.gz"
+S=${WORKDIR}/kubernetes-${PV}
 
 LICENSE="Apache-2.0"
+# Dependent licenses
+LICENSE+=" Apache-2.0 BSD BSD-2 ISC MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm64"
+KEYWORDS="~amd64 ~arm64"
 IUSE="hardened selinux"
+RESTRICT="test"
 
-BDEPEND=">=dev-lang/go-1.21.6"
 RDEPEND="selinux? ( sec-policy/selinux-kubernetes )"
-
-RESTRICT+=" test "
-S="${WORKDIR}/kubernetes-${PV}"
+BDEPEND=">=dev-lang/go-1.24.0"
 
 src_compile() {
 	CGO_LDFLAGS="$(usex hardened '-fno-PIC ' '')" \
-	emake -j1 GOFLAGS="" GOLDFLAGS="" LDFLAGS="" FORCE_HOST_GO=yes \
-	WHAT=cmd/${PN}
+		emake -j1 GOFLAGS="${GOFLAGS}" GOLDFLAGS="" LDFLAGS="" FORCE_HOST_GO=yes \
+		WHAT=cmd/${PN}
 }
 
 src_install() {
