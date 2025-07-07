@@ -1,16 +1,14 @@
-# Copyright 1999-2022 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-ETYPE="sources"
-K_NOUSENAME=1
-inherit autotools kernel-2
+inherit autotools
 
 DESCRIPTION="Userspace utilities for a general USB device sharing system over IP networks"
 HOMEPAGE="https://www.kernel.org/"
-SRC_URI="${KERNEL_URI}"
-S="${WORKDIR}/linux-${PV}/tools/usb/${PN}"
+SRC_URI="https://www.kernel.org/pub/linux/kernel/v${PV%%.*}.x/linux-${PV}.tar.xz"
+S="${WORKDIR}/linux-${PV}/tools/usb/usbip"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -25,10 +23,6 @@ RDEPEND="
 	tcpd? ( sys-apps/tcp-wrappers )"
 DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig"
-
-src_unpack() {
-	tar xJf "${DISTDIR}"/${A} linux-${PV}/tools/usb/${PN} || die
-}
 
 src_prepare() {
 	default
