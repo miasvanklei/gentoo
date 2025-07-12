@@ -1,12 +1,12 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 2024-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
 inherit dune
 
-DESCRIPTION="Stable types conversions generator"
-HOMEPAGE="https://github.com/janestreet/ppx_stable"
+DESCRIPTION="A PPX rewriter that genreates the implementation of [Ldiffable.S]."
+HOMEPAGE="https://github.com/janestreet/ppx_diff"
 SRC_URI="https://github.com/janestreet/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
@@ -20,7 +20,13 @@ JSM=$(ver_cut 1-2)*
 RDEPEND="
 	>=dev-lang/ocaml-5
 	=dev-ml/base-${JSM}:=[ocamlopt?]
+	=dev-ml/gel-${JSM}:=[ocamlopt?]
+	=dev-ml/ppx_compare-${JSM}:=[ocamlopt?]
+	=dev-ml/ppx_enumerate-${JSM}:=[ocamlopt?]
+	=dev-ml/ppx_jane-${JSM}:=[ocamlopt?]
+	=dev-ml/ppxlib_jane-${JSM}:=[ocamlopt?]
 	>=dev-ml/ppxlib-0.32.1:=[ocamlopt?]
+	<dev-ml/ppxlib-0.36.0
 "
 DEPEND="${RDEPEND}"
 BDEPEND=">=dev-ml/dune-3.11"
