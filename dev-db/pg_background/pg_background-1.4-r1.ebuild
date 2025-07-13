@@ -21,6 +21,13 @@ RESTRICT="test"
 DEPEND="${POSTGRES_DEP}"
 RDEPEND="${DEPEND}"
 
+PATCHES=( "${FILESDIR}/${P}-fix-install.patch" )
+
+src_prepare() {
+	default
+	postgres-multi_src_prepare
+}
+
 src_compile() {
 	postgres-multi_foreach emake || die "emake failed"
 }
