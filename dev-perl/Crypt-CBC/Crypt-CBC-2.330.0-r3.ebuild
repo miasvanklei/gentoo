@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -15,11 +15,7 @@ KEYWORDS="~alpha amd64 arm arm64 ~hppa ~mips ppc ppc64 sparc x86 ~amd64-linux ~x
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-RDEPEND="
-	>=virtual/perl-Digest-MD5-2.0.0
-"
-BDEPEND="${RDEPEND}
-	virtual/perl-ExtUtils-MakeMaker
+BDEPEND="
 	test? (
 		dev-perl/Crypt-Blowfish
 		dev-perl/Crypt-DES
