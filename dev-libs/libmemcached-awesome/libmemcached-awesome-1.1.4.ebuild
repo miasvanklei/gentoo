@@ -6,13 +6,13 @@ EAPI=8
 inherit cmake
 
 DESCRIPTION="a C/C++ memcached client library"
-HOMEPAGE="https://github.com/awesomized/libmemcached"
+HOMEPAGE="https://awesomized.github.io/libmemcached/ https://github.com/awesomized/libmemcached"
 SRC_URI="https://github.com/awesomized/libmemcached/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
 S="${WORKDIR}/libmemcached-${PV}"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~ppc ~ppc64 ~s390 x86"
+KEYWORDS="~alpha amd64 arm arm64 ~ppc ~ppc64 ~riscv ~s390 x86"
 IUSE="+libevent sasl test"
 RESTRICT="!test? ( test )"
 
