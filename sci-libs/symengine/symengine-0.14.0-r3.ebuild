@@ -17,7 +17,7 @@ SRC_URI="
 
 LICENSE="MIT"
 SLOT="0/$(ver_cut 1-2)"
-KEYWORDS="amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
 IUSE="
 	boost debug ecm +flint llvm +mpc +mpfr openmp primesieve tcmalloc
 	test
@@ -47,10 +47,11 @@ DEPEND="
 "
 
 PATCHES=(
-	# TODO: upstream
-	"${FILESDIR}"/${PN}-0.7.0-cmake-build-type.patch
-	# TODO: make a proper patch for upstream
-	"${FILESDIR}"/${PN}-0.8.1-fix_llvm.patch
+	# bug 957803, in git master
+	"${FILESDIR}/${P}-cmake4.patch"
+	# https://github.com/symengine/symengine/pull/2103
+	# https://github.com/symengine/symengine/pull/2119
+	"${FILESDIR}/${P}-llvm.patch"
 )
 
 pkg_pretend() {
