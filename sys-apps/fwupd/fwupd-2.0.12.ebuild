@@ -13,12 +13,14 @@ SRC_URI="https://github.com/${PN}/${PN}/releases/download/${PV}/${P}.tar.xz"
 
 LICENSE="LGPL-2.1+"
 SLOT="0"
-KEYWORDS="amd64 ~arm ~arm64 ~loong ppc64 ~riscv x86"
-IUSE="amdgpu +archive bash-completion bluetooth cbor flashrom gnutls gtk-doc introspection minimal modemmanager policykit protobuf seccomp systemd test uefi"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
+IUSE="amdgpu +archive bash-completion bluetooth cbor flashrom gnutls gtk-doc introspection lzma minimal modemmanager nvme policykit protobuf seccomp spi synaptics systemd test tpm uefi"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
 	^^ ( minimal systemd )
 	minimal? ( !introspection )
+	spi? ( lzma )
 	seccomp? ( systemd )
+	synaptics? ( gnutls )
 	test? ( archive )
 	uefi? ( gnutls )
 "
@@ -51,8 +53,6 @@ BDEPEND="$(vala_depend)
 COMMON_DEPEND="${PYTHON_DEPS}
 	>=app-arch/gcab-1.0
 	app-arch/xz-utils
-	app-crypt/tpm2-tss:=
-	dev-db/sqlite
 	>=dev-libs/glib-2.72:2
 	>=dev-libs/json-glib-1.6.0
 	>=dev-libs/libjcat-0.2.0[gpg,pkcs7]
@@ -61,16 +61,18 @@ COMMON_DEPEND="${PYTHON_DEPS}
 		dev-python/pygobject:3[${PYTHON_USEDEP}]
 	')
 	>=net-misc/curl-7.62.0
-	virtual/libusb:1
 	archive? ( app-arch/libarchive:= )
 	cbor? ( >=dev-libs/libcbor-0.7.0:= )
 	flashrom? ( >=sys-apps/flashrom-1.2-r3 )
 	gnutls? ( >=net-libs/gnutls-3.6.0 )
+	virtual/libusb:1
+	protobuf? ( dev-libs/protobuf-c:= )
+	lzma? ( app-arch/xz-utils )
 	modemmanager? ( net-misc/modemmanager[mbim,qmi] )
 	policykit? ( >=sys-auth/polkit-0.114 )
-	protobuf? ( dev-libs/protobuf-c:= )
 	seccomp? ( sys-apps/systemd[seccomp] )
-	systemd? ( >=sys-apps/systemd-211 )
+	dev-db/sqlite
+	systemd? ( >=sys-apps/systemd-249 )
 	uefi? (
 		sys-apps/fwupd-efi
 		sys-boot/efibootmgr
@@ -86,15 +88,11 @@ RDEPEND="
 DEPEND="
 	${COMMON_DEPEND}
 	x11-libs/pango[introspection]
+	sys-kernel/linux-headers
 	amdgpu? (
-		sys-kernel/linux-headers
 		x11-libs/libdrm[video_cards_amdgpu]
 	)
 "
-
-PATCHES=(
-	"${FILESDIR}"/${PN}-2.0.3-pango.patch
-)
 
 src_prepare() {
 	default
@@ -109,19 +107,17 @@ src_prepare() {
 
 src_configure() {
 	local plugins=(
-		-Dplugin_gpio="enabled"
-		-Dplugin_uf2="enabled"
 		$(meson_feature flashrom plugin_flashrom)
+		$(meson_feature protobuf protobuf)
 		$(meson_feature modemmanager plugin_modem_manager)
-		$(meson_feature uefi plugin_uefi_capsule)
+		$(meson_use uefi plugin_uefi_capsule_splash)
 	)
 
 	local emesonargs=(
 		--localstatedir "${EPREFIX}"/var
 		-Dbuild="$(usex minimal standalone all)"
-		-Dconsolekit="disabled"
-		-Dcurl="enabled"
 		-Defi_binary="false"
+		-Defi_os_dir="gentoo"
 		-Dman="true"
 		-Dsupported_build="enabled"
 		-Dsystemd_unit_user=""
@@ -133,14 +129,11 @@ src_configure() {
 		$(meson_feature gtk-doc docs)
 		$(meson_feature introspection)
 		$(meson_feature policykit polkit)
-		$(meson_feature protobuf)
 		$(meson_feature systemd)
-		$(meson_use seccomp systemd_syscall_filter)
 		$(meson_use test tests)
 
 		${plugins[@]}
 	)
-	use uefi && emesonargs+=( -Defi_os_dir="gentoo" )
 	export CACHE_DIRECTORY="${T}"
 	meson_src_configure
 }
