@@ -12,7 +12,8 @@ inherit qmake-utils readme.gentoo-r1 systemd toolchain-funcs user-info
 DESCRIPTION="Open Source DVR and media center hub"
 HOMEPAGE="https://www.mythtv.org https://github.com/MythTV/mythtv"
 if [[ ${PV} == *_p* ]] ; then
-	MY_COMMIT=
+	# https://github.com/MythTV/mythtv/tree/fixes/35
+	MY_COMMIT="0a868b015e7346a9156a389acbbe395ec2e1aa24"
 	SRC_URI="https://github.com/MythTV/mythtv/archive/${MY_COMMIT}.tar.gz -> ${P}.tar.gz"
 	# mythtv and mythplugins are separate builds in the github MythTV project
 	S="${WORKDIR}/mythtv-${MY_COMMIT}/mythtv"
@@ -137,7 +138,6 @@ BDEPEND="
 PATCHES=(
 	"${FILESDIR}"/${PN}-33.1-libva.patch
 	"${FILESDIR}"/${PN}-35.no-ant-java-required-if-use-system-libblur.patch
-	"${FILESDIR}"/${PN}-35.Fix-Qt6-compilation-on-Fedora-rawhide.patch
 	"${FILESDIR}"/${PN}-35.freemheg-update-visibility-of-MHCreateEngine-MHSetLo.patch
 )
 
@@ -273,6 +273,13 @@ src_configure() {
 	myconf+=( --enable-symbol-visibility )
 	myconf+=( --enable-pic )
 
+	# libavformat/format.c:37:22: error: type of 'ff_mythtv_mpegtsraw_demuxer' does not match original declaration [-Werror=lto-type-mismatch]
+	# libavformat/mpegts-mythtv.c:3731:21: note: type 'const struct FFInputFormat' should match type 'struct AVInputFormat'
+	filter-lto
+
+	# Needed just like ffmpeg (bug #860987)
+	tc-is-lto && myconf+=( --enable-lto )
+
 	if tc-is-cross-compiler ; then
 		myconf+=( --enable-cross-compile --arch=$(tc-arch-kernel) )
 		myconf+=( --cross-prefix="${CHOST}"- )
@@ -294,8 +301,12 @@ src_configure() {
 		"${myconf[@]}"
 }
 
+src_compile() {
+	emake V=1
+}
+
 src_install() {
-	emake STRIP="true" INSTALL_ROOT="${D}" install
+	emake V=1 STRIP="true" INSTALL_ROOT="${D}" install
 	use python && python_optimize  # does all packages by default
 	dodoc AUTHORS README
 	readme.gentoo_create_doc
