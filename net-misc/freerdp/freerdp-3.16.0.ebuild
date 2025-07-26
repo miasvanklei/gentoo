@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit cmake flag-o-matic
+inherit cmake git-r3 flag-o-matic
 
 if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
@@ -27,7 +27,7 @@ HOMEPAGE="https://www.freerdp.com/"
 
 LICENSE="Apache-2.0"
 SLOT="3"
-IUSE="aad alsa cpu_flags_arm_neon +client cups debug +ffmpeg +fuse gstreamer +icu jpeg kerberos openh264 pulseaudio sdl server smartcard systemd test usb valgrind wayland X xinerama xv"
+IUSE="aad alsa cpu_flags_arm_neon +client cups debug +ffmpeg +fuse gstreamer +icu jpeg kerberos openh264 pulseaudio sdl server smartcard systemd test usb v4l2 valgrind wayland webview X xinerama xv"
 RESTRICT="!test? ( test )"
 
 BDEPEND+="
@@ -93,10 +93,12 @@ COMMON_DEPEND="
 			x11-libs/libxkbcommon
 		)
 	)
+	v4l2? ( media-libs/libv4l )
 	X? (
 		x11-libs/libX11
 		x11-libs/libxkbfile
 	)
+	webview? ( net-libs/webkit-gtk )
 "
 DEPEND="${COMMON_DEPEND}
 	valgrind? ( dev-debug/valgrind )
@@ -127,6 +129,13 @@ run_for_testing() {
 	fi
 }
 
+src_unpack() {
+	default
+
+	git-r3_fetch "https://github.com/akallabeth/webview" "refs/heads/navigation-listener"
+	git-r3_checkout "https://github.com/akallabeth/webview" "${P}/external/webview"
+}
+
 src_configure() {
 	use debug || append-cppflags -DNDEBUG
 	freerdp_configure -DBUILD_TESTING=OFF
@@ -150,6 +159,7 @@ freerdp_configure() {
 		-DWITH_CLIENT_SDL3=$(option_client sdl)
 
 		-DWITH_SAMPLE=OFF
+		-DCHANNEL_RDPECAM_CLIENT=$(option v4l2)
 		-DWITH_CUPS=$(option cups)
 		-DWITH_DEBUG_ALL=$(option debug)
 		-DWITH_VERBOSE_WINPR_ASSERT=$(option debug)
@@ -177,7 +187,7 @@ freerdp_configure() {
 		-DWITH_XINERAMA=$(option xinerama)
 		-DWITH_XV=$(option xv)
 		-DWITH_WAYLAND=$(option_client wayland)
-		-DWITH_WEBVIEW=OFF
+		-DWITH_WEBVIEW=$(option webview)
 		-DWITH_WINPR_TOOLS=$(option server)
 
 		"$@"
