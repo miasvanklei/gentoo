@@ -2,10 +2,10 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
-inherit go-module systemd tmpfiles
+inherit eapi9-ver go-module systemd tmpfiles
 
 # make sure this gets updated for every bump
-GIT_COMMIT=ef334dcc
+GIT_COMMIT=a2f2305f
 
 DESCRIPTION="The official GitLab Runner, written in Go"
 HOMEPAGE="https://gitlab.com/gitlab-org/gitlab-runner"
@@ -24,15 +24,13 @@ DEPEND="${COMMON_DEPEND}"
 RDEPEND="${COMMON_DEPEND}"
 BDEPEND="dev-go/gox"
 
-DOCS=( docs CHANGELOG.md README.md config.toml.example )
-
 src_compile() {
 	emake \
 		BUILT="$(date -u '+%Y-%m-%dT%H:%M:%S%:z')" \
 		GOX="${EPREFIX}/usr/bin/gox" \
 		REVISION=${GIT_COMMIT} \
 		VERSION=${PV} \
-		runner-bin-host
+		runner-and-helper-bin-host
 }
 
 src_test() {
@@ -41,19 +39,27 @@ src_test() {
 
 src_install() {
 	newbin out/binaries/gitlab-runner-linux-* gitlab-runner
+	newbin out/binaries/gitlab-runner-helper/gitlab-runner-helper.linux-* gitlab-runner-helper
+	DOCS=( docs CHANGELOG.md README.md )
 	einstalldocs
+	insinto /usr/share/${PN}
+	doins config.toml.example
 
-	newconfd "${FILESDIR}/${PN}.confd" "${PN}"
-	newinitd "${FILESDIR}/${PN}.initd" "${PN}"
+	newconfd "${FILESDIR}/${PN}-18.confd" "${PN}"
+	newinitd "${FILESDIR}/${PN}-18.initd" "${PN}"
 	systemd_dounit "${FILESDIR}/${PN}.service"
 	newtmpfiles "${FILESDIR}"/${PN}.tmpfile ${PN}.conf
-	keepdir /{etc,var/log}/${PN}
-	fperms 0700 /{etc,var/log}/gitlab-runner
-	fowners gitlab-runner:gitlab-runner /{etc,var/log}/${PN}
+	keepdir /etc/${PN}
+	fperms 0700 /etc/${PN}
+	fowners gitlab-runner:gitlab-runner /etc/${PN}
 }
 
 pkg_postinst() {
 	tmpfiles_process gitlab-runner.conf
+	if ver_replacing -lt 18.0.0; then
+		ewarn "The logs are now redirected to syslog instead of being stored in /var/log/gitlab-runner"
+		ewarn
+	fi
 	[[ -f ${EROOT}/etc/gitlab-runner/config.toml ]] && return
 	elog
 	elog "To use the runner, you need to register it with this command:"
