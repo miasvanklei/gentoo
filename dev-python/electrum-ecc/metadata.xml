@@ -2,10 +2,11 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="project">
-		<email>cluster@gentoo.org</email>
-		<name>Gentoo Cluster Project</name>
+		<email>python@gentoo.org</email>
 	</maintainer>
+	<!-- no ALLARCHES: ctypes -->
 	<upstream>
-		<remote-id type="github">openucx/ucx</remote-id>
+		<remote-id type="github">spesmilo/electrum-ecc</remote-id>
+		<remote-id type="pypi">electrum-ecc</remote-id>
 	</upstream>
 </pkgmetadata>
