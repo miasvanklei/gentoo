@@ -14,7 +14,7 @@ SRC_URI="https://github.com/firewalld/firewalld/releases/download/v${PV}/${P}.ta
 LICENSE="GPL-2+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
-IUSE="gui selinux test"
+IUSE="iptables gui selinux test"
 # Tests are too unreliable in sandbox environment
 RESTRICT="!test? ( test ) test"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
@@ -32,8 +32,10 @@ RDEPEND="
 			x11-libs/libnotify[introspection]
 		)
 	')
-	net-firewall/ipset
-	net-firewall/nftables[xtables(+)]
+	iptables? (
+		net-firewall/ipset
+		net-firewall/nftables[xtables(+)]
+	)
 	selinux? ( sec-policy/selinux-firewalld )
 "
 DEPEND="
