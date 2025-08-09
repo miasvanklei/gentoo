@@ -16,13 +16,6 @@ KEYWORDS="~amd64"
 # standalone, so pull in vaultwarden to run it
 PDEPEND="app-admin/vaultwarden[web]"
 
-src_prepare() {
-	default
-	# although following is optional in upstream's build process
-	# it reduced install dir size from 74M to 38M
-	find -name "*.map" -delete || die
-}
-
 src_install() {
 	insinto /usr/share/webapps/"${PN}"
 	doins -r *
