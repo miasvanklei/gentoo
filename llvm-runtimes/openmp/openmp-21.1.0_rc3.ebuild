@@ -11,7 +11,7 @@ HOMEPAGE="https://openmp.llvm.org"
 
 LICENSE="Apache-2.0-with-LLVM-exceptions || ( UoI-NCSA MIT )"
 SLOT="0/${LLVM_SOABI}"
-IUSE="+debug gdb-plugin hwloc ompt test"
+IUSE="+debug fortran gdb-plugin hwloc ompt test"
 REQUIRED_USE="
 	gdb-plugin? ( ${PYTHON_REQUIRED_USE} )
 "
@@ -30,6 +30,9 @@ DEPEND="
 "
 BDEPEND="
 	dev-lang/perl
+	fortran? (
+		virtual/fortran
+	)
 	test? (
 		${PYTHON_DEPS}
 		$(python_gen_cond_dep '
@@ -62,6 +65,7 @@ multilib_src_configure() {
 		-DLIBOMP_USE_HWLOC=$(usex hwloc)
 		-DLIBOMP_OMPD_GDB_SUPPORT=$(multilib_native_usex gdb-plugin)
 		-DLIBOMP_OMPT_SUPPORT=$(usex ompt)
+		-DLIBOMP_FORTRAN_MODULES=$(usex fortran)
 
 		# do not install libgomp.so & libiomp5.so aliases
 		-DLIBOMP_INSTALL_ALIASES=OFF
