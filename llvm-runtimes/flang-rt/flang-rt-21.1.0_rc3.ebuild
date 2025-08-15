@@ -11,7 +11,7 @@ HOMEPAGE="https://flang.llvm.org/"
 
 LICENSE="Apache-2.0-with-LLVM-exceptions"
 SLOT="${LLVM_MAJOR}"
-IUSE="+debug test"
+IUSE="+debug openmp test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
@@ -20,6 +20,7 @@ RDEPEND="
 BDEPEND="
 	llvm-core/llvm:${LLVM_MAJOR}
 	llvm-core/flang
+	openmp? ( llvm-runtimes/openmp[fortran] )
 	test? (
 		$(python_gen_any_dep 'dev-python/lit[${PYTHON_USEDEP}]')
 	)
@@ -64,6 +65,16 @@ src_configure() {
 	# LLVM_ENABLE_ASSERTIONS=NO does not guarantee this for us, #614844
 	use debug || local -x CPPFLAGS="${CPPFLAGS} -DNDEBUG"
 	cmake_src_configure
+}
+
+src_install() {
+	cmake_src_install
+
+	if use openmp; then
+		insinto "${ESYSROOT}/usr/lib/llvm/${LLVM_MAJOR}/include/flang"
+		doins "${ESYSROOT}/usr/include/omp_lib.mod"
+		doins "${ESYSROOT}/usr/include/omp_lib_kinds.mod"
+	fi
 }
 
 src_test() {
