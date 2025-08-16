@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..13} )
 DISTUTILS_SINGLE_IMPL=1
 DISTUTILS_EXT=1
 inherit distutils-r1 prefix
@@ -16,7 +16,7 @@ SRC_URI="https://github.com/pytorch/${PN}/archive/refs/tags/v${PV}.tar.gz
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 RESTRICT="test"
 
 REQUIRED_USE=${PYTHON_REQUIRED_USE}
@@ -34,16 +34,25 @@ DEPEND="${RDEPEND}
 	')
 "
 
+PATCHES=(
+	"${FILESDIR}"/${PN}-2.6.0-dontbuildagain.patch
+	"${FILESDIR}"/${PN}-2.7.1-cpp-extension-libcxx.patch
+	"${FILESDIR}"/${PN}-2.7.1-cpp-extension-multilib.patch
+)
+
 src_prepare() {
-	eapply \
-		"${FILESDIR}"/${P}-dontbuildagain.patch \
-		"${FILESDIR}"/${P}-setup.patch
+	# Replace placeholders added by cpp-extension.patch
+	sed -e "s|%LIB_DIR%|$(get_libdir)|g" \
+		-i torch/utils/cpp_extension.py || die
 
 	# Set build dir for pytorch's setup
-	sed -i \
-		-e "/BUILD_DIR/s|build|/var/lib/caffe2/|" \
-		tools/setup_helpers/env.py \
-		|| die
+	sed -e "/BUILD_DIR/s|build|/var/lib/caffe2/|" \
+		-i tools/setup_helpers/env.py || die
+
+	# Drop legacy from pyproject.toml
+	sed -e "/build-backend/s|:__legacy__||" \
+		-i pyproject.toml || die
+
 	distutils-r1_src_prepare
 
 	# Get object file from caffe2
