@@ -13,7 +13,7 @@ HOMEPAGE="https://llvm.org/"
 
 LICENSE="Apache-2.0-with-LLVM-exceptions || ( UoI-NCSA MIT )"
 SLOT="0"
-IUSE="debug test"
+IUSE="clang debug test"
 
 DEPEND="
 	~llvm-runtimes/libunwind-${PV}[static-libs]
