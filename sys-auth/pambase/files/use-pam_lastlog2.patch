@@ -1,11 +1,11 @@
---- a/templates/system-login.tpl	2024-01-28 09:14:35.000000000 +0100
-+++ b/templates/system-login.tpl	2024-09-29 16:59:49.690261543 +0200
-@@ -15,7 +15,7 @@
+--- a/templates/system-login.tpl	2025-05-25 19:04:21.000000000 +0200
++++ b/templates/system-login.tpl	2025-08-27 19:18:11.884901176 +0200
+@@ -24,7 +24,7 @@
  
- session		required	pam_env.so envfile=/etc/profile.env {{ debug|default('', true) }}
  {% if not minimal %}
--session		optional	pam_lastlog.so silent {{ debug|default('', true) }}
-+session		optional	pam_lastlog2.so silent {{ debug|default('', true) }}
+ session		optional	pam_motd.so motd=/etc/motd
+-session		optional	pam_lastlog.so never showfailed {{ debug }}
++session		optional	pam_lastlog2.so never showfailed {{ debug }}
+ session		optional	pam_mail.so
  {% endif %}
- session		include		system-auth
- {% if selinux %}
+ 
