@@ -201,8 +201,8 @@ src_install() {
 		newins - gentoo-hardened-ld.cfg <<-EOF
 			# Some of these options are added unconditionally, regardless of
 			# USE=hardened, for parity with sys-devel/gcc.
-			$-Wl,-z,relro
-			$-Wl,-z,now
+			\$-Wl,-z,relro
+			\$-Wl,-z,now
 		EOF
 	fi
 
