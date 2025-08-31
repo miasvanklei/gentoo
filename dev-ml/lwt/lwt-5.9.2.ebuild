@@ -21,13 +21,14 @@ DEPEND="
 	dev-ml/mmap:=[ocamlopt?]
 	dev-ml/ocplib-endian:=[ocamlopt?]
 	dev-ml/ppx_let:=[ocamlopt?]
-	dev-ml/ppxlib:=[ocamlopt?]
+	>=dev-ml/ppxlib-0.36:=[ocamlopt?]
 	dev-ml/react:=
 	dev-ml/result:=[ocamlopt?]
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
 	dev-ml/cppo
+	>=dev-ml/dune-3.15
 	dev-ml/findlib
 	test? ( dev-ml/ppx_here )
 "
@@ -39,14 +40,6 @@ OCAML_SUBPACKAGES=(
 	lwt_react
 	lwt_retry
 )
-
-src_prepare() {
-	sed -i "s| seq||" "${S}"/src/core/dune || die
-	if has_version ">=dev-ml/ppxlib-0.36.0"; then
-		eapply "${FILESDIR}"/${P}-ppxlib.patch
-	fi
-	default
-}
 
 src_compile() {
 	dune-compile ${OCAML_SUBPACKAGES[@]}
