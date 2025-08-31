@@ -10,8 +10,8 @@ MY_P="${MY_PN}-${PV}"
 
 DESCRIPTION="Serves Proton Mail to IMAP/SMTP clients"
 HOMEPAGE="https://proton.me/mail/bridge https://github.com/ProtonMail/proton-bridge/"
-SRC_URI="https://github.com/ProtonMail/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://dev.gentoo.org/~expeditioneer/distfiles/${CATEGORY}/${PN}/${P}-vendor.tar.xz"
+SRC_URI="https://github.com/ProtonMail/${MY_PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+	https://dev.gentoo.org/~expeditioneer/distfiles/${CATEGORY}/${PN}/${P}-vendor.tar.xz"
 S="${WORKDIR}"/${MY_P}
 
 LICENSE="GPL-3+ Apache-2.0 BSD BSD-2 ISC LGPL-3+ MIT MPL-2.0 Unlicense"
