@@ -119,7 +119,7 @@ src_configure() {
 		-DSDL_KMSDRM=$(usex kms)
 		-DSDL_OPENGL=$(usex opengl)
 		-DSDL_OPENGLES=$(usex opengl)
-		-DSDL_OPENVR=$(usex opengl) # only dependency is libglvnd
+		-DSDL_OPENVR=no # not packaged, note needs opengl REQUIRED_USE if added
 		-DSDL_ROCKCHIP=no
 		-DSDL_RPI=no
 		-DSDL_VIVANTE=no
