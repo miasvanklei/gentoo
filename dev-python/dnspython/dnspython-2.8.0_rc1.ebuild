@@ -23,13 +23,18 @@ S=${WORKDIR}/${MY_P}
 
 LICENSE="ISC"
 SLOT="0"
-IUSE="dnssec examples"
+IUSE="dnssec examples https quic"
 
 RDEPEND="
 	dnssec? (
 		>=dev-python/cryptography-45[${PYTHON_USEDEP}]
 	)
 	>=dev-python/idna-2.1[${PYTHON_USEDEP}]
+	https? (
+		>=dev-python/httpx-0.26.0[${PYTHON_USEDEP}]
+		>=dev-python/h2-4.1.0[${PYTHON_USEDEP}]
+	)
+	quic? ( >=dev-python/aioquic-0.9.25[${PYTHON_USEDEP}] )
 "
 # note: skipping DoH test deps because they require Internet anyway
 BDEPEND="
