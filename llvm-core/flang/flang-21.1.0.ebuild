@@ -22,7 +22,7 @@ DEPEND="
 "
 RDEPEND="
 	${DEPEND}
-	>=llvm-core/flang-runtime-${PV}
+	>=llvm-runtimes/flang-runtime-${PV}
 "
 PDEPEND="
 	>=llvm-runtimes/flang-rt-${PV}:${LLVM_MAJOR}
