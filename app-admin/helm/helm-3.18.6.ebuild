@@ -5,18 +5,18 @@ EAPI=8
 
 inherit go-module toolchain-funcs shell-completion
 
-GIT_COMMIT=980d8ac1939e39138101364400756af2bdee1da5
+GIT_COMMIT=b76a950f6835474e0906b96c9ec68a2eff3a6430
 
 DESCRIPTION="Kubernetes Package Manager"
-HOMEPAGE="https://github.com/helm/helm https://helm.sh"
+HOMEPAGE="https://helm.sh https://github.com/helm/helm"
 SRC_URI="https://github.com/helm/helm/archive/v${PV}.tar.gz -> k8s-${P}.tar.gz"
-SRC_URI+=" https://dev.gentoo.org/~arthurzam/distfiles/app-admin/${PN}/${P}-deps.tar.xz"
+SRC_URI+=" https://dev.gentoo.org/~williamh/dist/${P}-deps.tar.xz"
 
 LICENSE="Apache-2.0"
 # Dependent licenses
-LICENSE+=" Apache-2.0 BSD BSD-2 ISC MIT MPL-2.0 ZLIB"
+LICENSE+="  Apache-2.0 BSD BSD-2 ISC MIT MPL-2.0 ZLIB"
 SLOT="0"
-KEYWORDS="amd64 ~arm64 ~loong ~riscv"
+KEYWORDS="~amd64 ~arm64 ~loong ~riscv"
 RESTRICT="test"
 
 src_compile() {
