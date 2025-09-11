@@ -22,9 +22,11 @@ DEPEND="
 "
 RDEPEND="
 	${DEPEND}
+	>=llvm-runtimes/flang-runtime-${PV}
 "
 PDEPEND="
 	>=llvm-runtimes/flang-rt-${PV}:${LLVM_MAJOR}
+	>=llvm-core/flang-toolchain-symlinks-21:${LLVM_MAJOR}
 "
 BDEPEND="
 	clang? ( llvm-core/clang )
@@ -71,6 +73,8 @@ src_configure() {
 
 		-DLLVM_ROOT="${ESYSROOT}/usr/lib/llvm/${LLVM_MAJOR}"
 		-DCLANG_RESOURCE_DIR="../../../clang/${LLVM_MAJOR}"
+		-DCLANG_DIR="${EPREFIX}/usr/lib/llvm/${LLVM_MAJOR}/lib/cmake/clang"
+		-DMLIR_DIR="${EPREFIX}/usr/lib/llvm/${LLVM_MAJOR}/lib/cmake/mlir"
 
 		-DBUILD_SHARED_LIBS=OFF
 		-DMLIR_LINK_MLIR_DYLIB=ON
@@ -79,6 +83,9 @@ src_configure() {
 		-DLLVM_INSTALL_TOOLCHAIN_ONLY=ON
 		# installed by llvm-runtimes/flang-rt
 		-DFLANG_INCLUDE_RUNTIME=OFF
+
+		# Use precompiled headers
+		-DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF
 
 		# TODO: always enable to obtain reproducible tools
 		-DFLANG_INCLUDE_TESTS=$(usex test)
