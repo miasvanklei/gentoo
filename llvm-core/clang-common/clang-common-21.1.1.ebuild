@@ -168,7 +168,7 @@ src_install() {
 		@gentoo-gcc-install.cfg
 		@gentoo-hardened.cfg
 		# bug #870001
-		-include "${EPREFIX}/usr/include/gentoo/maybe-stddefs.h"
+		%-include"${EPREFIX}/usr/include/gentoo/maybe-stddefs.h"
 	EOF
 
 	# clang-cpp does not like link args being passed to it when directly
@@ -185,7 +185,7 @@ src_install() {
 		-Xarch_host -fstack-clash-protection
 		-Xarch_host -fstack-protector-strong
 		-fPIE
-		-include "${EPREFIX}/usr/include/gentoo/fortify.h"
+		%-include"${EPREFIX}/usr/include/gentoo/fortify.h"
 	EOF
 
 	newins - gentoo-cet.cfg <<-EOF
@@ -201,8 +201,8 @@ src_install() {
 		newins - gentoo-hardened-ld.cfg <<-EOF
 			# Some of these options are added unconditionally, regardless of
 			# USE=hardened, for parity with sys-devel/gcc.
-			-Wl,-z,relro
-			-Wl,-z,now
+			\$-Wl,-z,relro
+			\$-Wl,-z,now
 		EOF
 	fi
 
