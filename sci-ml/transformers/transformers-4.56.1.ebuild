@@ -13,7 +13,7 @@ HOMEPAGE="
 	https://pypi.org/project/transformers/
 	https://huggingface.co/
 "
-SRC_URI="https://github.com/huggingface/${PN}/archive/refs/tags/${PV}.tar.gz
+SRC_URI="https://github.com/huggingface/${PN}/archive/refs/tags/v${PV}.tar.gz
 	-> ${P}.gh.tar.gz"
 
 LICENSE="Apache-2.0"
@@ -24,7 +24,7 @@ RESTRICT="test" # Need network, too long to execute
 
 RDEPEND="
 	>=sci-ml/huggingface_hub-0.34.0[${PYTHON_SINGLE_USEDEP}]
-	=sci-ml/tokenizers-0.21*[${PYTHON_SINGLE_USEDEP}]
+	=sci-ml/tokenizers-0.22*[${PYTHON_SINGLE_USEDEP}]
 	$(python_gen_cond_dep '
 		dev-python/filelock[${PYTHON_USEDEP}]
 		dev-python/numpy[${PYTHON_USEDEP}]

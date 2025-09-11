@@ -10,9 +10,9 @@ inherit kernel-install toolchain-funcs unpacker verify-sig
 
 BASE_P=linux-${PV%.*}
 PATCH_PV=${PV%_p*}
-PATCHSET=linux-gentoo-patches-6.6.105
+PATCHSET=linux-gentoo-patches-6.12.46
 BINPKG=${P/-bin}-1
-SHA256SUM_DATE=20250909
+SHA256SUM_DATE=20250911
 
 DESCRIPTION="Pre-built Linux kernel with Gentoo patches"
 HOMEPAGE="
@@ -157,14 +157,6 @@ src_configure() {
 
 	local image="${kernel_dir}/$(dist-kernel_get_image_path)"
 	local uki="${image%/*}/uki.efi"
-
-	# Override user variable with the cert used during build
-	openssl x509 \
-		-inform DER -in "${kernel_dir}/certs/signing_key.x509" \
-		-outform PEM -out "${T}/cert.pem" ||
-			die "Failed to convert pcrpkey to PEM format"
-	export SECUREBOOT_SIGN_CERT=${T}/cert.pem
-
 	if [[ -s ${uki} ]]; then
 		# We need to extract the plain image for the test phase
 		# and USE=-generic-uki.

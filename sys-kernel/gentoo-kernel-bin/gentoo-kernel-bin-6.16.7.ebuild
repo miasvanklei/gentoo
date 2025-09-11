@@ -10,9 +10,9 @@ inherit kernel-install toolchain-funcs unpacker verify-sig
 
 BASE_P=linux-${PV%.*}
 PATCH_PV=${PV%_p*}
-PATCHSET=linux-gentoo-patches-6.6.105
+PATCHSET=linux-gentoo-patches-6.16.6
 BINPKG=${P/-bin}-1
-SHA256SUM_DATE=20250909
+SHA256SUM_DATE=20250911
 
 DESCRIPTION="Pre-built Linux kernel with Gentoo patches"
 HOMEPAGE="
