@@ -21,7 +21,6 @@ RDEPEND="
         ~llvm-core/clang-linker-config-${SLOT}[default-lld(-)?]
         ~llvm-runtimes/clang-rtlib-config-${SLOT}[default-compiler-rt(-)?]
         ~llvm-runtimes/clang-unwindlib-config-${SLOT}[default-compiler-rt(-)?,llvm-libunwind(-)?]
-        ~llvm-runtimes/clang-stdlib-config-${SLOT}[default-libcxx(-)?]
 
 "
 
@@ -36,7 +35,6 @@ _doflang_cfg() {
 		@gentoo-rtlib.cfg
 		@gentoo-unwindlib.cfg
 		@gentoo-stdlib.cfg
-		@gentoo-linker.cfg
 	EOF
 
 	local tool
