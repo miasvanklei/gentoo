@@ -1,4 +1,5 @@
 move dev-python/pixelmatch-py dev-python/pixelmatch
 move app-text/qtikz app-text/ktikz
+move llvm-core/flang-runtime llvm-runtimes/flang-runtime
 move llvm-core/clang-runtime llvm-runtimes/clang-runtime
-move llvm-core/flang-runtime llvm-runtimes/flanh-runtime
+slotmove media-libs/glycin-loaders 0 1
