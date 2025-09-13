@@ -110,6 +110,12 @@ RESTRICT+=" strip "
 # Everything is built by "dotnet".
 QA_PREBUILT=".*"
 
+# for remove sdk target
+BDEPEND="
+	${BDEPEND}
+	app-misc/jq
+"
+
 # Special .NET SDK environment variables.
 # Setting them either prevents annoying information from being generated
 # or stops services that may interfere with a clean package build.
@@ -295,9 +301,10 @@ dotnet-pkg-base_remove-global-json() {
 	local file="${1:-.}"/global.json
 
 	if [[ -f "${file}" ]] ; then
-		ebegin "Removing the global.json file"
-		rm "${file}"
-		eend ${?} || die "${FUNCNAME[0]}: failed to remove ${file}"
+		ebegin "Removing Sdk target from global.json file"
+		jq 'del(.sdk)' "${file}" > "${file}.tmp"
+		mv "${file}.tmp" "${file}"
+		eend ${?} || die "${FUNCNAME[0]}: failed to adjust ${file}"
 	fi
 }
 
