@@ -1,0 +1,11 @@
+--- a/.globalconfig	2025-09-13 23:08:00.105035066 +0200
++++ b/.globalconfig	2025-09-13 23:08:10.228933630 +0200
+@@ -1254,7 +1254,7 @@
+ 
+ # IDE0031: UseNullPropagation
+ # https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0031
+-dotnet_diagnostic.IDE0031.severity = warning
++dotnet_diagnostic.IDE0031.severity = silent
+ 
+ # IDE0032: UseAutoProperty
+ # https://learn.microsoft.com/dotnet/fundamentals/code-analysis/style-rules/ide0032

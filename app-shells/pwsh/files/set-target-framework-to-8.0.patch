@@ -1,0 +1,117 @@
+diff --color -ur a/PowerShell.Common.props b/PowerShell.Common.props
+--- a/PowerShell.Common.props	2025-09-13 22:39:12.226446759 +0200
++++ b/PowerShell.Common.props	2025-09-13 22:41:38.184956520 +0200
+@@ -144,7 +144,7 @@
+     <Copyright>(c) Microsoft Corporation.</Copyright>
+     <AssemblyTitle>PowerShell 7</AssemblyTitle>
+ 
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+     <LangVersion>11.0</LangVersion>
+ 
+     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+diff --color -ur a/src/GlobalTools/PowerShell.Windows.x64/PowerShell.Windows.x64.csproj b/src/GlobalTools/PowerShell.Windows.x64/PowerShell.Windows.x64.csproj
+--- a/src/GlobalTools/PowerShell.Windows.x64/PowerShell.Windows.x64.csproj	2025-09-13 22:39:12.222446800 +0200
++++ b/src/GlobalTools/PowerShell.Windows.x64/PowerShell.Windows.x64.csproj	2025-09-13 22:41:23.853102497 +0200
+@@ -2,7 +2,7 @@
+ 
+   <PropertyGroup>
+     <OutputType>Exe</OutputType>
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+     <ImplicitUsings>enable</ImplicitUsings>
+     <Nullable>enable</Nullable>
+     <PackAsTool>true</PackAsTool>
+diff --color -ur a/src/Modules/PSGalleryModules.csproj b/src/Modules/PSGalleryModules.csproj
+--- a/src/Modules/PSGalleryModules.csproj	2025-09-13 22:39:12.194447087 +0200
++++ b/src/Modules/PSGalleryModules.csproj	2025-09-13 22:41:03.717307710 +0200
+@@ -5,7 +5,7 @@
+     <Company>Microsoft Corporation</Company>
+     <Copyright>(c) Microsoft Corporation.</Copyright>
+ 
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+ 
+     <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+   </PropertyGroup>
+diff --color -ur a/src/ResGen/ResGen.csproj b/src/ResGen/ResGen.csproj
+--- a/src/ResGen/ResGen.csproj	2025-09-13 22:39:12.198447046 +0200
++++ b/src/ResGen/ResGen.csproj	2025-09-13 22:40:54.149405272 +0200
+@@ -2,7 +2,7 @@
+ 
+   <PropertyGroup>
+     <Description>Generates C# typed bindings for .resx files</Description>
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+     <AssemblyName>resgen</AssemblyName>
+     <OutputType>Exe</OutputType>
+     <TieredCompilation>true</TieredCompilation>
+diff --color -ur a/src/TypeCatalogGen/TypeCatalogGen.csproj b/src/TypeCatalogGen/TypeCatalogGen.csproj
+--- a/src/TypeCatalogGen/TypeCatalogGen.csproj	2025-09-13 22:39:12.194447087 +0200
++++ b/src/TypeCatalogGen/TypeCatalogGen.csproj	2025-09-13 22:41:55.436780893 +0200
+@@ -2,7 +2,7 @@
+ 
+   <PropertyGroup>
+     <Description>Generates CorePsTypeCatalog.cs given powershell.inc</Description>
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+     <AssemblyName>TypeCatalogGen</AssemblyName>
+     <OutputType>Exe</OutputType>
+diff --color -ur a/test/Test.Common.props b/test/Test.Common.props
+--- a/test/Test.Common.props	2025-09-13 22:39:12.150447537 +0200
++++ b/test/Test.Common.props	2025-09-13 22:40:18.877765221 +0200
+@@ -6,7 +6,7 @@
+     <Company>Microsoft Corporation</Company>
+     <Copyright>(c) Microsoft Corporation.</Copyright>
+ 
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+     <LangVersion>11.0</LangVersion>
+ 
+     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+diff --color -ur a/test/tools/NamedPipeConnection/src/code/Microsoft.PowerShell.NamedPipeConnection.csproj b/test/tools/NamedPipeConnection/src/code/Microsoft.PowerShell.NamedPipeConnection.csproj
+--- a/test/tools/NamedPipeConnection/src/code/Microsoft.PowerShell.NamedPipeConnection.csproj	2025-09-13 22:39:12.122447824 +0200
++++ b/test/tools/NamedPipeConnection/src/code/Microsoft.PowerShell.NamedPipeConnection.csproj	2025-09-13 22:42:16.720564352 +0200
+@@ -8,7 +8,7 @@
+     <AssemblyVersion>1.0.0.0</AssemblyVersion>
+     <FileVersion>1.0.0</FileVersion>
+     <InformationalVersion>1.0.0</InformationalVersion>
+-    <TargetFrameworks>net9.0</TargetFrameworks>
++    <TargetFrameworks>net8.0</TargetFrameworks>
+     <SuppressNETCoreSdkPreviewMessage>true</SuppressNETCoreSdkPreviewMessage>
+     <LangVersion>11.0</LangVersion>
+   </PropertyGroup>
+diff --color -ur a/tools/packaging/projects/reference/Microsoft.PowerShell.Commands.Utility/Microsoft.PowerShell.Commands.Utility.csproj b/tools/packaging/projects/reference/Microsoft.PowerShell.Commands.Utility/Microsoft.PowerShell.Commands.Utility.csproj
+--- a/tools/packaging/projects/reference/Microsoft.PowerShell.Commands.Utility/Microsoft.PowerShell.Commands.Utility.csproj	2025-09-13 22:39:12.110447947 +0200
++++ b/tools/packaging/projects/reference/Microsoft.PowerShell.Commands.Utility/Microsoft.PowerShell.Commands.Utility.csproj	2025-09-13 22:40:05.821898579 +0200
+@@ -1,6 +1,6 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+     <Version>$(RefAsmVersion)</Version>
+     <DelaySign>true</DelaySign>
+     <AssemblyOriginatorKeyFile>$(SnkFile)</AssemblyOriginatorKeyFile>
+diff --color -ur a/tools/packaging/projects/reference/Microsoft.PowerShell.ConsoleHost/Microsoft.PowerShell.ConsoleHost.csproj b/tools/packaging/projects/reference/Microsoft.PowerShell.ConsoleHost/Microsoft.PowerShell.ConsoleHost.csproj
+--- a/tools/packaging/projects/reference/Microsoft.PowerShell.ConsoleHost/Microsoft.PowerShell.ConsoleHost.csproj	2025-09-13 22:39:12.110447947 +0200
++++ b/tools/packaging/projects/reference/Microsoft.PowerShell.ConsoleHost/Microsoft.PowerShell.ConsoleHost.csproj	2025-09-13 22:39:46.302098090 +0200
+@@ -1,6 +1,6 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+     <Version>$(RefAsmVersion)</Version>
+     <DelaySign>true</DelaySign>
+     <AssemblyOriginatorKeyFile>$(SnkFile)</AssemblyOriginatorKeyFile>
+diff --color -ur a/tools/packaging/projects/reference/System.Management.Automation/System.Management.Automation.csproj b/tools/packaging/projects/reference/System.Management.Automation/System.Management.Automation.csproj
+--- a/tools/packaging/projects/reference/System.Management.Automation/System.Management.Automation.csproj	2025-09-13 22:39:12.106447988 +0200
++++ b/tools/packaging/projects/reference/System.Management.Automation/System.Management.Automation.csproj	2025-09-13 22:39:39.686165746 +0200
+@@ -1,6 +1,6 @@
+ <Project Sdk="Microsoft.NET.Sdk">
+   <PropertyGroup>
+-    <TargetFramework>net9.0</TargetFramework>
++    <TargetFramework>net8.0</TargetFramework>
+     <Version>$(RefAsmVersion)</Version>
+     <DelaySign>true</DelaySign>
+     <AssemblyOriginatorKeyFile>$(SnkFile)</AssemblyOriginatorKeyFile>

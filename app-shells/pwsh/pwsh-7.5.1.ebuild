@@ -26,6 +26,7 @@ markdig.signed@0.38.0
 microsoft.applicationinsights@2.22.0
 microsoft.bcl.asyncinterfaces@5.0.0
 microsoft.bcl.asyncinterfaces@8.0.0
+microsoft.bcl.cryptography@9.0.4
 microsoft.codeanalysis.analyzers@3.11.0
 microsoft.codeanalysis.analyzers@3.3.4
 microsoft.codeanalysis.common@4.11.0
@@ -92,6 +93,7 @@ system.directoryservices.accountmanagement@9.0.4
 system.directoryservices.protocols@9.0.4
 system.directoryservices@9.0.4
 system.drawing.common@9.0.4
+system.formats.asn1@9.0.4
 system.io.packaging@9.0.4
 system.io.ports@9.0.4
 system.management@9.0.4
@@ -210,6 +212,8 @@ DOTNET_PKG_BAD_PROJECTS=(
 
 PATCHES=(
 	"${FILESDIR}/pwsh-7.3.3-disable-update-check.patch"
+	"${FILESDIR}/set-target-framework-to-8.0.patch"
+	"${FILESDIR}/silent-ide0031.patch"
 )
 
 DOCS=( CHANGELOG CHANGELOG.md CODE_OF_CONDUCT.md README.md docs )
