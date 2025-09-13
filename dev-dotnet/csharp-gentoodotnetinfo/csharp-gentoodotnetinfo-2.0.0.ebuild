@@ -5,7 +5,7 @@ EAPI=8
 
 MAJOR="$(ver_cut 1)"
 
-DOTNET_PKG_COMPAT="9.0"
+DOTNET_PKG_COMPAT="8.0"
 NUGETS="
 coverlet.collector@6.0.2
 microsoft.codecoverage@17.12.0
@@ -41,6 +41,10 @@ S="${WORKDIR}/${P}/Source/v${MAJOR}"
 
 LICENSE="GPL-2+"
 SLOT="0/${MAJOR}"
+
+PATCHES=(
+	"${FILESDIR}/update-target-framework.patch"
+)
 
 DOTNET_PKG_PROJECTS=( gentoo-dotnet-info-app/src/main/csharp/GentooDotnetInfo )
 
