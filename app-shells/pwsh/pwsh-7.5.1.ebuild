@@ -7,7 +7,7 @@
 
 EAPI=8
 
-DOTNET_PKG_COMPAT="9.0"
+DOTNET_PKG_COMPAT="8.0"
 NUGET_APIS=(
 	"https://api.nuget.org/v3-flatcontainer"
 	"https://www.powershellgallery.com/api/v2"
