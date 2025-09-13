@@ -1,5 +1,5 @@
---- a/Source/v2/Directory.Build.props	2025-09-13 19:55:38.448826903 +0200
-+++ b/Source/v2/Directory.Build.props	2025-09-13 19:55:47.332737429 +0200
+--- a/Directory.Build.props	2025-09-13 19:55:38.448826903 +0200
++++ b/Directory.Build.props	2025-09-13 19:55:47.332737429 +0200
 @@ -12,7 +12,7 @@
      <RepositoryBranch>master</RepositoryBranch>
  
