@@ -3,29 +3,21 @@
 
 EAPI=8
 
-inherit go-env go-module
+inherit go-env go-module eapi9-ver
 
 DESCRIPTION="Pager designed to do the right thing without any configuration"
-HOMEPAGE="https://github.com/walles/moar"
-SRC_URI="https://github.com/walles/moar/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://dev.gentoo.org/~sam/distfiles/${CATEGORY}/${PN}/${P}-deps.tar.xz"
+HOMEPAGE="https://github.com/walles/moor"
+SRC_URI="https://github.com/walles/moor/archive/refs/tags/v${PV}.tar.gz -> moor-${PV}.tar.gz"
+SRC_URI+=" https://dev.gentoo.org/~sam/distfiles/${CATEGORY}/moor/moor-${PV}-deps.tar.xz"
 
 LICENSE="BSD-2 BSD MIT"
 # Dependent licenses
 LICENSE+="  Apache-2.0 BSD BSD-2 MIT"
-# Dependent licenses
-LICENSE+="  Apache-2.0 BSD BSD-2 MIT"
-# Dependent licenses
-LICENSE+="  Apache-2.0 BSD BSD-2 MIT"
-# Dependent licenses
-LICENSE+="  Apache-2.0 BSD BSD-2 MIT"
 SLOT="0"
-KEYWORDS="amd64 ~arm arm64 ~ppc64"
+KEYWORDS="~amd64 ~arm ~arm64 ~ppc64"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
-# moarvm: https://github.com/walles/moar/issues/143
-RDEPEND="!dev-lang/moarvm"
 BDEPEND="
 	test? (
 		app-arch/bzip2
@@ -43,8 +35,8 @@ src_unpack() {
 }
 
 src_compile() {
-	# https://github.com/walles/moar/blob/master/build.sh#L28
-	ego build -ldflags="-w -X main.versionString=${PV}" -o moar
+	# https://github.com/walles/moor/blob/master/build.sh#L28
+	ego build -ldflags="-w -X main.versionString=${PV}" -o moor ./cmd/moor
 }
 
 src_test() {
@@ -53,7 +45,13 @@ src_test() {
 }
 
 src_install() {
-	dobin moar
-	doman moar.1
+	dobin moor
+	doman moor.1
 	einstalldocs
+}
+
+pkg_postinst() {
+	if ver_replacing -lt 2 ; then
+		ewarn "moar has been renamed to moor, please update any scripts."
+	fi
 }
