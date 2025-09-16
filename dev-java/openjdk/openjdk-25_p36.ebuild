@@ -71,7 +71,6 @@ S="${WORKDIR}/${JDK_REPO}-jdk-${MY_PV//+/-}"
 
 LICENSE="GPL-2-with-classpath-exception"
 SLOT="$(ver_cut 1)"
-#	KEYWORDS="" # LTS but not yet released
 
 IUSE="alsa big-endian cups debug doc examples headless-awt javafx +jbootstrap selinux source +system-bootstrap systemtap"
 
