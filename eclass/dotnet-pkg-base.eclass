@@ -86,7 +86,7 @@ if [[ ${CATEGORY}/${PN} != dev-dotnet/dotnet-runtime-nugets ]] ; then
 	fi
 
 	DOTNET_PKG_RDEPS+="
-		dev-dotnet/aspnetcore-runtime:${DOTNET_PKG_COMPAT}=
+		virtual/dotnet:${DOTNET_PKG_COMPAT}=
 	"
 	DOTNET_PKG_BDEPS+="
 		${DOTNET_PKG_RDEPS}
