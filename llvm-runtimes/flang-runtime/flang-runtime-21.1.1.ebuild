@@ -34,7 +34,7 @@ _doflang_cfg() {
 
 		@gentoo-rtlib.cfg
 		@gentoo-unwindlib.cfg
-		@gentoo-stdlib.cfg
+		@gentoo-linker.cfg
 	EOF
 
 	local tool
