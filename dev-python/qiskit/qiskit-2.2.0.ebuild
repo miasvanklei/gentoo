@@ -7,21 +7,20 @@ DISTUTILS_EXT=1
 DISTUTILS_USE_PEP517=setuptools
 PYTHON_COMPAT=( python3_{11..13} )
 
-CRATES="
-"
+CRATES=""
 RUST_MIN_VER="1.84.0"
 
 inherit cargo distutils-r1
 
-MY_P=${P/_beta/b}
-CRATE_PV=2.2.0b1
+MY_P=${P/_}
+CRATE_PV=${PV}
 DESCRIPTION="An open-source SDK for working with quantum computers"
 HOMEPAGE="
 	https://github.com/Qiskit/qiskit/
 	https://pypi.org/project/qiskit/
 "
 SRC_URI="
-	https://github.com/Qiskit/qiskit/archive/${PV/_beta/b}.tar.gz
+	https://github.com/Qiskit/qiskit/archive/${PV/_}.tar.gz
 		-> ${MY_P}.gh.tar.gz
 	${CARGO_CRATE_URIS}
 	https://github.com/gentoo-crate-dist/qiskit/releases/download/${CRATE_PV/_}/${PN}-${CRATE_PV}-crates.tar.xz
@@ -35,6 +34,7 @@ LICENSE+="
 	Unicode-3.0 ZLIB
 "
 SLOT="0"
+KEYWORDS="~amd64"
 IUSE="+visualization"
 
 RDEPEND="
