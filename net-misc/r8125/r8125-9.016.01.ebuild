@@ -12,12 +12,12 @@ SRC_URI="https://github.com/Karlson2k/r8125/releases/download/${PV}/${P}.tar.bz2
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="amd64 ~x86"
+KEYWORDS="~amd64 ~x86"
 
-IUSE="down-speed-100 fiber hw-acceleration hw-optim-tx +eee +giga-lite +multi-tx-q ptp +rss s5-keep-mac use-firmware +wol-s5 +wol"
+IUSE="dash down-speed-100 fiber hw-acceleration hw-optim-tx +eee +giga-lite +multi-tx-q ptp +rss s5-keep-mac use-firmware +wol-s5 +wol"
 
 PATCHES=(
-	"${FILESDIR}/${P}-fix-build-with-firmware.patch"
+	"${FILESDIR}/${PN}-9.016.00-fix-build-with-firmware.patch"
 )
 
 CONFIG_CHECK="~!R8169"
@@ -40,6 +40,7 @@ src_compile() {
 		# Build parameters
 		KERNELDIR="${KV_OUT_DIR}"
 		# Code build options
+		ENABLE_DASH_SUPPORT=$(usex dash y n)
 		ENABLE_FIBER_SUPPORT=$(usex fiber y n)
 		ENABLE_RSS_SUPPORT=$(usex rss y n)
 		ENABLE_MULTIPLE_TX_QUEUE=$(usex multi-tx-q y n)
