@@ -25,6 +25,8 @@ RDEPEND="
 "
 PDEPEND="
 	>=llvm-runtimes/flang-rt-${PV}:${LLVM_MAJOR}
+	~llvm-runtimes/flang-runtime-${PV}
+	llvm-core/flang-toolchain-symlinks:${LLVM_MAJOR}
 "
 BDEPEND="
 	clang? ( llvm-core/clang )
