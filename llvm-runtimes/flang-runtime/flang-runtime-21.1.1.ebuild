@@ -13,7 +13,7 @@ S="${WORKDIR}"
 LICENSE="metapackage"
 SLOT="${PV%%.*}"
 KEYWORDS="~arm64 ~amd64"
-IUSE="default-compiler-rt default-libcxx default-lld llvm-libunwind"
+IUSE="default-compiler-rt default-lld llvm-libunwind"
 
 RDEPEND="
         llvm-core/clang-common
