@@ -82,6 +82,9 @@ src_configure() {
 		# installed by llvm-runtimes/flang-rt
 		-DFLANG_INCLUDE_RUNTIME=OFF
 
+		# Use precompiled headers
+		-DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF
+
 		# TODO: always enable to obtain reproducible tools
 		-DFLANG_INCLUDE_TESTS=$(usex test)
 
