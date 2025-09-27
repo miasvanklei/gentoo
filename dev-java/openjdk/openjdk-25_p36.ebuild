@@ -71,7 +71,7 @@ S="${WORKDIR}/${JDK_REPO}-jdk-${MY_PV//+/-}"
 
 LICENSE="GPL-2-with-classpath-exception"
 SLOT="$(ver_cut 1)"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~arm64"
 
 IUSE="alsa big-endian cups debug doc examples headless-awt javafx +jbootstrap selinux source +system-bootstrap systemtap"
 
@@ -116,14 +116,6 @@ DEPEND="
 	app-arch/zip
 	media-libs/alsa-lib
 	net-print/cups
-	x11-base/xorg-proto
-	x11-libs/libX11
-	x11-libs/libXext
-	x11-libs/libXi
-	x11-libs/libXrandr
-	x11-libs/libXrender
-	x11-libs/libXt
-	x11-libs/libXtst
 	javafx? ( dev-java/openjfx:${SLOT}= )
 	system-bootstrap? (
 		|| (
