@@ -41,6 +41,7 @@ ruby_add_rdepend "
 	>=dev-ruby/rackup-1.0.0
 	>=dev-ruby/rake-12.2
 	>=dev-ruby/thor-1.2.2:1
+	>=dev-ruby/tsort-0.2
 	>=dev-ruby/zeitwerk-2.6:2
 "
 

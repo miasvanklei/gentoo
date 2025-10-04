@@ -70,6 +70,10 @@ all_ruby_prepare() {
 	sed -e '/test_session_store_with_all_domains/askip "Fails with fixed cgi.rb"' \
 		-i test/dispatch/session/cookie_store_test.rb || die
 
+	# Avoid tests failing with rails-dom-testing 2.3 (fixed upstream)
+	sed -e '/test_preserves_order_when_reading_from_cache_plus_rendering/askip "Fails with rails-dom-testing 2.3"' \
+		-i test/controller/caching_test.rb || die
+
 	# Avoid tests requiring chrome
 	sed -e '/DrivenBySeleniumWith/,/^end/ s:^:#:' \
 		-i test/abstract_unit.rb || die
