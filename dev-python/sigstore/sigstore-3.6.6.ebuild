@@ -37,7 +37,7 @@ RDEPEND="
 	~dev-python/rfc3161-client-1.0.3[${PYTHON_USEDEP}]
 	>=dev-python/rfc8785-0.1.2[${PYTHON_USEDEP}]
 	>=dev-python/rich-13[${PYTHON_USEDEP}]
-	~dev-python/sigstore-models-0.0.5[${PYTHON_USEDEP}]
+	~dev-python/sigstore-protobuf-specs-0.3.2[${PYTHON_USEDEP}]
 	~dev-python/sigstore-rekor-types-0.0.18[${PYTHON_USEDEP}]
 	>=dev-python/tuf-6.0[${PYTHON_USEDEP}]
 "
