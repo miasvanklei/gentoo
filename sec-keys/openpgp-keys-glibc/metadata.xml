@@ -2,10 +2,8 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="project">
-		<email>sound@gentoo.org</email>
-		<name>Gentoo Sound project</name>
+		<email>toolchain@gentoo.org</email>
+		<name>Gentoo Toolchain Team</name>
 	</maintainer>
-	<use>
-		<flag name="mpv">Enable video support via <pkg>media-video/mpv</pkg>(experimental)</flag>
-	</use>
+	<stabilize-allarches/>
 </pkgmetadata>
