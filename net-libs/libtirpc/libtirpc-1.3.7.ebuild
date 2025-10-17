@@ -41,6 +41,7 @@ multilib_src_configure() {
 	local myeconfargs=(
 		$(use_enable kerberos gssapi)
 		$(use_enable static-libs static)
+		$(use_enable elibc_musl rpcdb)
 		KRB5_CONFIG="${ESYSROOT}"/usr/bin/krb5-config
 	)
 
