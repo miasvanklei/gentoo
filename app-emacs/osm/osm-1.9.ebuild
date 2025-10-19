@@ -3,12 +3,12 @@
 
 EAPI=8
 
-NEED_EMACS="27.1"
+NEED_EMACS="29.1"
 
 inherit elisp
 
-DESCRIPTION="Templates with in-buffer field editing for GNU Emacs"
-HOMEPAGE="https://github.com/minad/tempel/"
+DESCRIPTION="OpenStreetMap tile-based viewer for GNU Emacs"
+HOMEPAGE="https://github.com/minad/osm/"
 
 if [[ "${PV}" == *9999* ]] ; then
 	inherit git-r3
@@ -18,20 +18,22 @@ else
 	SRC_URI="https://github.com/minad/${PN}/archive/${PV}.tar.gz
 		-> ${P}.gh.tar.gz"
 
-	KEYWORDS="amd64 ~x86"
+	KEYWORDS="~amd64 ~x86"
 fi
 
 LICENSE="GPL-3+"
 SLOT="0"
 
-RDEPEND="
-	>=app-emacs/compat-30.1.0.0
-"
 BDEPEND="
-	${RDEPEND}
+	>=app-editors/emacs-${NEED_EMACS}:*[jpeg,json(+),libxml2,png,svg]
+	app-emacs/compat
+"
+RDEPEND="
+	${BDEPEND}
+	net-misc/curl[ssl]
 "
 
-DOCS=( README.org )
+DOCS=( CHANGELOG.org README.org )
 SITEFILE="50${PN}-gentoo.el"
 
 src_compile() {
