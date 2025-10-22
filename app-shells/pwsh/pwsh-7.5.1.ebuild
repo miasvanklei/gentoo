@@ -26,7 +26,6 @@ markdig.signed@0.38.0
 microsoft.applicationinsights@2.22.0
 microsoft.bcl.asyncinterfaces@5.0.0
 microsoft.bcl.asyncinterfaces@8.0.0
-microsoft.bcl.cryptography@9.0.4
 microsoft.codeanalysis.analyzers@3.11.0
 microsoft.codeanalysis.analyzers@3.3.4
 microsoft.codeanalysis.common@4.11.0
@@ -93,7 +92,6 @@ system.directoryservices.accountmanagement@9.0.4
 system.directoryservices.protocols@9.0.4
 system.directoryservices@9.0.4
 system.drawing.common@9.0.4
-system.formats.asn1@9.0.4
 system.io.packaging@9.0.4
 system.io.ports@9.0.4
 system.management@9.0.4
@@ -188,7 +186,10 @@ RESTRICT="test"
 RDEPEND="
 	>=dev-libs/libpsl-native-7.4.0:=
 	sys-libs/pam:0/0
-	dev-libs/openssl
+	|| (
+		dev-libs/openssl-compat:1.0.0
+		=dev-libs/openssl-1.0*:0/0
+	)
 	gui? (
 		dev-util/desktop-file-utils
 		x11-misc/shared-mime-info
@@ -210,7 +211,9 @@ DOTNET_PKG_BAD_PROJECTS=(
 	test/xUnit/xUnit.tests.csproj  # Fails to restore.
 )
 
-PATCHES=( "${FILESDIR}/pwsh-7.3.3-disable-update-check.patch" )
+PATCHES=(
+	"${FILESDIR}/pwsh-7.3.3-disable-update-check.patch"
+)
 
 DOCS=( CHANGELOG CHANGELOG.md CODE_OF_CONDUCT.md README.md docs )
 
