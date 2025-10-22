@@ -39,9 +39,10 @@ DEPEND="
 RDEPEND="${DEPEND}"
 
 PATCHES=(
-	"${FILESDIR}/${PN}-0.73.6-musl.patch"
+	"${FILESDIR}/${PN}-0.73.17-musl.patch"
 	"${FILESDIR}/only-find-libraries-when-requested.patch"
 	"${FILESDIR}/fix-fonts-path.patch"
+	"${FILESDIR}/ffmpeg-8.0.patch"
 )
 
 REQUIRED_USE="cairo? ( truetype )"

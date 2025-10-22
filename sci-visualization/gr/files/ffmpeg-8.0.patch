@@ -1,0 +1,13 @@
+diff --git a/lib/gks/plugin/vc.c b/lib/gks/plugin/vc.c
+index 09844a8bc..874d5aed7 100644
+--- a/lib/gks/plugin/vc.c
++++ b/lib/gks/plugin/vc.c
+@@ -312,8 +312,6 @@ void vc_movie_finish(movie_t movie)
+ 
+   if (movie->fmt_ctx && movie->cdc_ctx)
+     {
+-      avcodec_close(movie->cdc_ctx);
+-
+       if (!(movie->out_fmt->flags & AVFMT_NOFILE))
+         {
+           avio_closep(&movie->fmt_ctx->pb);
