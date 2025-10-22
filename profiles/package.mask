@@ -107,6 +107,8 @@ net-libs/NativeThread
 #
 # A common issue with 6.10 is builds failing to find Qt private headers
 # as it (now) requires searching for e.g. GuiPrivate in CMakeLists.txt.
+=dev-python/pyqt6-6.10*
+=dev-python/pyqt6-webengine-6.10*
 =dev-python/pyside-6.10.0*
 =dev-qt/qt-docs-6.10.0*
 =dev-qt/qt3d-6.10.0*
@@ -277,12 +279,6 @@ net-misc/ytfzf
 # not just network. See bug #963106.
 =sys-kernel/linux-firmware-20250917
 =sys-kernel/linux-firmware-20251011
-
-# Viorel Munteanu <ceamac@gentoo.org> (2025-09-16)
-# Masked for testing.  This package is supposed to be installed in the livecd,
-# not on user's system.  We need a few more reports of it working before
-# unmasking.
-app-misc/calamares-gentoo-livecd
 
 # Viorel Munteanu <ceamac@gentoo.org> (2025-09-16)
 # Unmaintained upstream, last release more than 7 years old.
