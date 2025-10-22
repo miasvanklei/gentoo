@@ -7,7 +7,7 @@
 
 EAPI=8
 
-DOTNET_PKG_COMPAT="8.0"
+DOTNET_PKG_COMPAT="9.0"
 NUGET_APIS=(
 	"https://api.nuget.org/v3-flatcontainer"
 	"https://www.powershellgallery.com/api/v2"
@@ -210,11 +210,7 @@ DOTNET_PKG_BAD_PROJECTS=(
 	test/xUnit/xUnit.tests.csproj  # Fails to restore.
 )
 
-PATCHES=(
-	"${FILESDIR}/pwsh-7.3.3-disable-update-check.patch"
-	"${FILESDIR}/set-target-framework-to-8.0.patch"
-	"${FILESDIR}/silent-ide0031.patch"
-)
+PATCHES=( "${FILESDIR}/pwsh-7.3.3-disable-update-check.patch" )
 
 DOCS=( CHANGELOG CHANGELOG.md CODE_OF_CONDUCT.md README.md docs )
 
