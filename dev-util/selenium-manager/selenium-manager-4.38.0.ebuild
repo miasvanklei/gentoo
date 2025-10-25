@@ -3,14 +3,15 @@
 
 EAPI=8
 
-CRATES=""
-RUST_MIN_VER="1.82.0"
+CRATES="
+"
+RUST_MIN_VER="1.85.0"
 
 inherit cargo
 
 TAG=selenium-${PV}
 MY_P=selenium-${TAG}
-CRATES_P=selenium-4.35.0
+CRATES_P=selenium-4.37.0
 DESCRIPTION="CLI tool that manages the browser/driver infrastructure required by Selenium"
 HOMEPAGE="
 	https://www.selenium.dev/
@@ -30,11 +31,11 @@ S="${WORKDIR}/${MY_P}/rust"
 LICENSE="Apache-2.0"
 # Dependent crate licenses
 LICENSE+="
-	Apache-2.0 BSD CDLA-Permissive-2.0 ISC MIT MPL-2.0 Unicode-3.0
-	Unicode-DFS-2016 ZLIB BZIP2
+	Apache-2.0 BSD CDLA-Permissive-2.0 ISC MIT MPL-2.0 Unicode-3.0 ZLIB
+	BZIP2
 "
 SLOT="0"
-KEYWORDS="amd64 ~arm64 ~ppc64 ~riscv x86"
+KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
 IUSE="telemetry test"
 RESTRICT="!test? ( test )"
 
