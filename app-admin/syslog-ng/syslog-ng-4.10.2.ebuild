@@ -4,7 +4,7 @@
 EAPI=8
 
 PYTHON_COMPAT=( python3_{11..14} )
-inherit autotools dot-a python-single-r1 systemd
+inherit autotools dot-a flag-o-matic python-single-r1 systemd
 
 DESCRIPTION="syslog replacement with advanced filtering features"
 HOMEPAGE="https://www.syslog-ng.com/products/open-source-log-management/"
@@ -113,6 +113,8 @@ src_prepare() {
 }
 
 src_configure() {
+	# Type mismatches in tests
+	filter-lto
 	lto-guarantee-fat
 
 	# Needs bison/flex.
