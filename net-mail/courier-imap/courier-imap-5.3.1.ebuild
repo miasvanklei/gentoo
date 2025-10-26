@@ -1,18 +1,19 @@
 # Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 inherit autotools readme.gentoo-r1 systemd
 
 DESCRIPTION="An IMAP daemon designed specifically for maildirs"
 HOMEPAGE="https://www.courier-mta.org/imap/"
-SRC_URI="https://downloads.sourceforge.net/courier/${P}.tar.bz2"
+SRC_URI="https://sourceforge.net/projects/courier/files/imap/${PV}/${P}.tar.bz2/download
+	-> ${P}.tar.bz2"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~mips ~ppc ppc64 ~s390 ~sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~mips ~ppc ~ppc64 ~s390 ~sparc ~x86"
 
-IUSE="berkdb debug fam +gdbm gnutls ipv6 selinux trashquota"
+IUSE="berkdb debug +gdbm gnutls ipv6 selinux trashquota"
 REQUIRED_USE="|| ( berkdb gdbm )"
 
 CDEPEND="
@@ -20,27 +21,26 @@ CDEPEND="
 	!gnutls? (
 		dev-libs/openssl:0=
 	)
-	>=net-libs/courier-authlib-0.71
-	<net-libs/courier-unicode-2.4:=
-	>=net-mail/mailbase-0.00-r8
+	net-libs/courier-authlib
+	>=net-libs/courier-unicode-2.4:=
+	net-mail/mailbase
 	net-dns/libidn:=
 	berkdb? ( sys-libs/db:= )
-	fam? ( virtual/fam )
-	gdbm? ( >=sys-libs/gdbm-1.8.0:= )
+	gdbm? ( sys-libs/gdbm:= )
+	!mail-mta/courier
 "
 DEPEND="${CDEPEND}
 	dev-lang/perl
-	!mail-mta/courier
 	sys-process/procps
+	net-mail/courier-common
 "
 RDEPEND="${CDEPEND}
 	selinux? ( sec-policy/selinux-courier )
 "
 
-# get rid of old style virtual - bug 350792
 RDEPEND="${RDEPEND}
-	!mail-mta/courier
 	!net-mail/cyrus-imapd
+	!net-mail/courier-makedat
 "
 
 RC_VER="4.0.6-r1"
@@ -63,20 +63,12 @@ and rerun mkdhparams if needed. Location has changed
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}-4.17-aclocal-fix.patch"
+	"${FILESDIR}/${PN}-5.1.8-aclocal-fix.patch"
 	"${FILESDIR}/${PN}-5.0.8-ar-fix.patch"
 )
 
 src_prepare() {
 	default
-
-	# These patches should fix problems detecting BerkeleyDB.
-	# We now can compile with db4 support.
-	if use berkdb ; then
-		eapply "${FILESDIR}/${PN}-4.17-db4-bdbobj_configure.ac.patch"
-		eapply "${FILESDIR}/${PN}-4.17-db4-configure.ac.patch"
-	fi
-
 	eautoreconf
 }
 
@@ -97,8 +89,6 @@ src_configure() {
 		myconf="${myconf} --with-trashquota"
 	fi
 
-	use debug && myconf="${myconf} debug=true"
-
 	econf \
 		--with-notice=unicode \
 		--disable-root-check \
@@ -106,21 +96,14 @@ src_configure() {
 		--sysconfdir="/etc/${PN}" \
 		--libexecdir="/usr/$(get_libdir)/${PN}" \
 		--localstatedir="/var/lib/${PN}" \
-		--with-authdaemonvar="/var/lib/${PN}/authdaemon" \
 		--enable-workarounds-for-imap-client-bugs \
 		--with-mailuser=mail \
 		--with-mailgroup=mail \
 		--with-certsdir="/etc/courier-imap" \
-		$(use_with fam) \
 		$(use_with ipv6) \
 		$(use_with gnutls) \
 		${myconf}
 }
-
-#src_compile() {
-	# spurious failures with parallel compiles, bug #????
-#	emake -j1
-#}
 
 src_install() {
 	dodir "/var/lib/${PN}" /etc/pam.d
@@ -134,6 +117,13 @@ src_install() {
 		mv "${D}/usr/sbin/"{,courier-}${name} \
 			|| die "failed to rename ${name} to courier-${name}"
 	done
+
+	#  Moved to courier-common
+	rm "${D}"/usr/sbin/deliverquota || die
+	rm "${D}"/usr/sbin/maildirkw || die
+	rm "${D}"/usr/sbin/makedat || die
+	rm "${D}"/usr/share/man/man1/maildirkw.1 || die
+	rm "${D}"/usr/share/man/man8/deliverquota.8 || die
 
 	# Hack /usr/lib/courier-imap/foo.rc to use ${MAILDIR} instead of
 	# 'Maildir', and to use /usr/sbin/courier-foo names.
@@ -219,6 +209,8 @@ src_install() {
 		|| die "failed to rename maildirmake to courier-maildirmake"
 	mv "${D}/usr/share/man/man1/"{,courier-}maildirmake.1 \
 		|| die "failed to rename maildirmake.1 to courier-maildirmake.1"
+
+	rm -rf "${D}"/usr/sbin/doc
 
 	dodoc AUTHORS INSTALL NEWS README ChangeLog
 	readme.gentoo_create_doc
