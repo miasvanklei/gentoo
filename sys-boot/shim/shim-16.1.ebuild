@@ -7,16 +7,14 @@ inherit rpm secureboot
 
 DESCRIPTION="Fedora's signed UEFI shim"
 HOMEPAGE="https://src.fedoraproject.org/rpms/shim"
-SRC_URI="amd64? ( https://kojipkgs.fedoraproject.org/packages/shim/${PV}/3/x86_64/shim-x64-${PV}-3.x86_64.rpm
-				https://kojipkgs.fedoraproject.org/packages/shim/${PV}/3/x86_64/shim-ia32-${PV}-3.x86_64.rpm )
-		x86? ( https://kojipkgs.fedoraproject.org/packages/shim/${PV}/3/x86_64/shim-x64-${PV}-3.x86_64.rpm
-				https://kojipkgs.fedoraproject.org/packages/shim/${PV}/3/x86_64/shim-ia32-${PV}-3.x86_64.rpm )
-		arm64? ( https://kojipkgs.fedoraproject.org/packages/shim/${PV}/3/aarch64/shim-aa64-${PV}-3.aarch64.rpm )"
+SRC_URI="amd64? ( https://kojipkgs.fedoraproject.org/packages/shim/${PV}/1/x86_64/shim-x64-${PV}-1.x86_64.rpm
+				https://kojipkgs.fedoraproject.org/packages/shim/${PV}/1/x86_64/shim-ia32-${PV}-1.x86_64.rpm )
+		arm64? ( https://kojipkgs.fedoraproject.org/packages/shim/${PV}/1/aarch64/shim-aa64-${PV}-1.aarch64.rpm )"
 S="${WORKDIR}/boot/efi/EFI"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="amd64 arm64 x86"
+KEYWORDS="~amd64 ~arm64"
 
 src_install() {
 	insinto /usr/share/${PN}
