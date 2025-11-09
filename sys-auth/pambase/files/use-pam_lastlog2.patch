@@ -1,0 +1,11 @@
+--- a/templates/system-login.tpl	2025-05-25 19:04:21.000000000 +0200
++++ b/templates/system-login.tpl	2025-08-27 19:18:11.884901176 +0200
+@@ -24,7 +24,7 @@
+ 
+ {% if not minimal %}
+ session		optional	pam_motd.so motd=/etc/motd
+-session		optional	pam_lastlog.so never showfailed {{ debug }}
++session		optional	pam_lastlog2.so never showfailed {{ debug }}
+ session		optional	pam_mail.so
+ {% endif %}
+ 
