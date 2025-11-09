@@ -1,0 +1,27 @@
+--- a/lib/gks/ft.c	2025-02-13 11:46:03.000000000 +0100
++++ b/lib/gks/ft.c	2025-02-28 12:26:00.507847509 +0100
+@@ -741,9 +741,9 @@
+       prefix = GRDIR;
+     }
+ 
+-  font_path = (char *)gks_malloc(strlen(prefix) + 7 + strlen(font_name) + strlen(font_file_extension) + 1);
++  font_path = (char *)gks_malloc(strlen(prefix) + 17 + strlen(font_name) + strlen(font_file_extension) + 1);
+   strcpy(font_path, prefix);
+-  strcat(font_path, "/fonts/");
++  strcat(font_path, "/share/fonts/gks/");
+   strcat(font_path, font_name);
+   strcat(font_path, font_file_extension);
+ #endif
+--- a/CMakeLists.txt	2025-02-28 12:34:09.906511126 +0100
++++ b/CMakeLists.txt	2025-02-28 12:34:43.358147981 +0100
+@@ -1692,8 +1692,8 @@
+     install(FILES ${QTTERM_HEADERS} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/grplotWidget/qtterm)
+   endif()
+   install(
+-    DIRECTORY lib/gks/fonts
+-    DESTINATION ${CMAKE_INSTALL_PREFIX}/
++    DIRECTORY lib/gks/fonts/
++    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/fonts/gks/
+     USE_SOURCE_PERMISSIONS
+   )
+ endif()
