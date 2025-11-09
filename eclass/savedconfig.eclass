@@ -55,7 +55,7 @@ save_config() {
 	fi
 	[[ $# -eq 0 ]] && die "Usage: save_config <files>"
 
-	local configfile="/etc/portage/savedconfig/${CATEGORY}/${PF}"
+	local configfile="/etc/portage/savedconfig/${CATEGORY}/${PN}"
 
 	if [[ $# -eq 1 && -f $1 ]] ; then
 		# Just one file, so have the ${configfile} be that config file
@@ -68,7 +68,7 @@ save_config() {
 		treecopy "$@" "${ED}/${configfile}" || die "failed to save $*"
 	fi
 
-	elog "Your configuration for ${CATEGORY}/${PF} has been saved in "
+	elog "Your configuration for ${CATEGORY}/${PN} has been saved in "
 	elog "\"${configfile}\" for your editing pleasure."
 	elog "You can edit these files by hand and remerge this package with"
 	elog "USE=savedconfig to customise the configuration."
@@ -150,7 +150,7 @@ savedconfig_pkg_postinst() {
 	# are worse :/.
 
 	if use savedconfig ; then
-		find "${EROOT}/etc/portage/savedconfig/${CATEGORY}/${PF}" \
+		find "${EROOT}/etc/portage/savedconfig/${CATEGORY}/${PN}" \
 			-exec touch {} + 2>/dev/null
 	fi
 }
