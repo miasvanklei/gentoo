@@ -86,10 +86,11 @@ if [[ ${CATEGORY}/${PN} != dev-dotnet/dotnet-runtime-nugets ]] ; then
 	fi
 
 	DOTNET_PKG_RDEPS+="
-		virtual/dotnet-sdk:${DOTNET_PKG_COMPAT}
+		virtual/dotnet:${DOTNET_PKG_COMPAT}=
 	"
 	DOTNET_PKG_BDEPS+="
 		${DOTNET_PKG_RDEPS}
+		virtual/dotnet-sdk:${DOTNET_PKG_COMPAT}
 	"
 
 	# Special package "dev-dotnet/csharp-gentoodotnetinfo" used for information
@@ -108,6 +109,12 @@ RESTRICT+=" strip "
 
 # Everything is built by "dotnet".
 QA_PREBUILT=".*"
+
+# for remove sdk target
+BDEPEND="
+	${BDEPEND}
+	app-misc/jq
+"
 
 # Special .NET SDK environment variables.
 # Setting them either prevents annoying information from being generated
@@ -252,7 +259,7 @@ dotnet-pkg-base_get-runtime() {
 # Used by "dotnet-pkg_pkg_setup" from the "dotnet-pkg" eclass.
 dotnet-pkg-base_setup() {
 	local -a impl_dirs=(
-		"${EPREFIX}/usr/$(get_libdir)/dotnet-sdk-${DOTNET_PKG_COMPAT}"
+		"${EPREFIX}/usr/$(get_libdir)/dotnet-sdk"
 		"${EPREFIX}/opt/dotnet-sdk-bin-${DOTNET_PKG_COMPAT}"
 	)
 	local impl_exe
@@ -294,9 +301,10 @@ dotnet-pkg-base_remove-global-json() {
 	local file="${1:-.}"/global.json
 
 	if [[ -f "${file}" ]] ; then
-		ebegin "Removing the global.json file"
-		rm "${file}"
-		eend ${?} || die "${FUNCNAME[0]}: failed to remove ${file}"
+		ebegin "Removing Sdk target from global.json file"
+		jq 'del(.sdk)' "${file}" > "${file}.tmp"
+		mv "${file}.tmp" "${file}"
+		eend ${?} || die "${FUNCNAME[0]}: failed to adjust ${file}"
 	fi
 }
 
