@@ -13,11 +13,21 @@ for x in /etc/X11/Sessions/* ; do
 	fi
 done
 
+# Find a match for $XSESSION in /usr/share/xsessions
+DESKTOP_XSESSION=""
+for y in /usr/share/xsessions/*.desktop ; do
+	if [ "`echo ${y##*/} | awk '{ print toupper($1) }'`" \
+		= "`echo ${XSESSION}.desktop | awk '{ print toupper($1) }'`" ]; then
+		DESKTOP_XSESSION=${y}
+		break
+	fi
+done
+
 GENTOO_EXEC=""
 
 if [ -n "${XSESSION}" ]; then
-	if [ -f /etc/X11/Sessions/${XSESSION} ]; then
-		if [ -x /etc/X11/Sessions/${XSESSION} ]; then
+	if [ -f "/etc/X11/Sessions/${XSESSION}" ]; then
+		if [ -x "/etc/X11/Sessions/${XSESSION}" ]; then
 			GENTOO_EXEC="/etc/X11/Sessions/${XSESSION}"
 		else
 			GENTOO_EXEC="/bin/sh /etc/X11/Sessions/${XSESSION}"
@@ -28,10 +38,12 @@ if [ -n "${XSESSION}" ]; then
 		else
 			GENTOO_EXEC="/bin/sh ${GENTOO_SESSION}"
 		fi
-	else
+	elif [ -n "${DESKTOP_XSESSION}" ]; then
+		EXEC="`sed -n -e 's/^Exec=//p' <${DESKTOP_XSESSION}`"
+	elif [ "${XSESSION}" = "`echo ${XSESSION} | tr -d ' '`" ]; then 
 		x=""
 		y=""
-		
+
 		for x in "${XSESSION}" \
 			"`echo ${XSESSION} | awk '{ print toupper($1) }'`" \
 			"`echo ${XSESSION} | awk '{ print tolower($1) }'`"
@@ -42,10 +54,26 @@ if [ -n "${XSESSION}" ]; then
 				break
 			fi
 		done
+	else # XSESSION contains spaces
+		EXEC="${XSESSION}"
+	fi
+	if [ -n "${EXEC}" ]; then
+		x="${EXEC%% *}"
+		if [ "${x}" = "${EXEC}" ]; then
+			y=""
+		else
+			y="${EXEC#* }"
+		fi
+
+		if [ -x "`which ${x} 2>/dev/null`" ]; then
+			GENTOO_EXEC="`which ${x} 2>/dev/null`"
+			if [ -n "${y}" ]; then
+				GENTOO_EXEC="${GENTOO_EXEC} ${y}"
+			fi
+		fi
 	fi
 fi
 
-echo "${GENTOO_EXEC}"
-
+echo ${GENTOO_EXEC}
 
 # vim:ts=4
