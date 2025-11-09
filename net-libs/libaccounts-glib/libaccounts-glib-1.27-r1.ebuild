@@ -14,7 +14,7 @@ S="${WORKDIR}/${PN}-VERSION_${PV}"
 LICENSE="LGPL-2.1"
 SLOT="0"
 KEYWORDS="amd64 ~arm arm64 ~loong ~ppc64 ~riscv x86"
-IUSE="doc test"
+IUSE="doc vala test"
 
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
@@ -29,11 +29,11 @@ RDEPEND="${PYTHON_DEPS}
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
-	$(vala_depend)
 	dev-util/gdbus-codegen
 	dev-util/glib-utils
 	virtual/pkgconfig
 	doc? ( dev-util/gtk-doc )
+	vala? ( $(vala_depend) )
 	test? (
 		dev-libs/check
 		dev-util/dbus-test-runner
@@ -42,7 +42,8 @@ BDEPEND="
 
 src_prepare() {
 	default
-	vala_setup --ignore-use
+	use vala && vala_setup --ignore-use
+	use vala || eapply "${FILESDIR}/bugus-dependencies.patch" || die
 
 	use doc || sed -e "/^subdir('docs')$/d" -i meson.build || die
 	use test || sed -e "/^subdir('tests')$/d" -i meson.build || die
