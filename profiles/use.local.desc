@@ -6734,6 +6734,7 @@ net-misc/sunshine:x265 - Enable software HEVC encoding via media-libs/x265
 net-misc/tigervnc:dri3 - Build with DRI3 support
 net-misc/tigervnc:drm - Build with DRM support
 net-misc/tigervnc:java - Build TigerVNC Java viewer
+net-misc/tigervnc:pwquality - Use dev-libs/libpwquality for password quality checking in vncpasswd
 net-misc/tigervnc:server - Build TigerVNC server
 net-misc/tigervnc:viewer - Build TigerVNC viewer
 net-misc/turbovnc:dri3 - Build with DRI3 support
@@ -7721,6 +7722,7 @@ sci-ml/evaluate:template - Enable template
 sci-ml/evaluate:torch - Support pytorch
 sci-ml/gloo:libuv - Enable libuv support
 sci-ml/gloo:redis - Enable Redis backend for storage via dev-libs/hiredis
+sci-ml/gloo:rocm - Enable ROCm gpu computing support
 sci-ml/oneDNN:cblas - Use virtual/cblas for sgemm routines
 sci-ml/oneDNN:mkl - Use sci-libs/mkl for sgemm routines
 sci-ml/onnx:disableStaticReg - Disable Static Registration
