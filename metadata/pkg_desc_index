@@ -3992,7 +3992,7 @@ dev-db/mysql-connector-c 8.0.36 8.0.41: C client library for MariaDB/MySQL
 dev-db/mysql-connector-c++ 9.4.0: MySQL database connector for C++ (mimics JDBC 4.0 API)
 dev-db/mysql-init-scripts 2.3-r8: Gentoo MySQL init scripts
 dev-db/mysql-workbench 8.0.42-r1 8.0.43 8.0.44: MySQL Workbench
-dev-db/mysqltuner 2.6.0-r1: Makes recommendations for increased performance and stability for MySQL
+dev-db/mysqltuner 2.6.0-r1 2.7.0: Makes recommendations for increased performance and stability for MySQL
 dev-db/mytop 1.9.1-r2: Clone of top for MySQL
 dev-db/ocp 0.3 9999: Oracle copy tool
 dev-db/opendbx 1.4.6-r6: OpenDBX - A database abstraction layer
@@ -5767,7 +5767,7 @@ dev-libs/redland 1.0.17-r3: High-level interface for the Resource Description Fr
 dev-libs/redland-bindings 1.0.17.1-r101 1.0.17.1-r102: Language bindings for Redland
 dev-libs/rinutils 0.10.2-r1 0.10.3: Set of C headers containing macros and static functions
 dev-libs/rlog 1.4: A C++ logging library
-dev-libs/rocdbgapi 6.3.3 6.4.3 7.0.2 7.1.0: AMD Debugger API
+dev-libs/rocdbgapi 6.3.3 6.4.3 7.0.2 7.1.0-r1: AMD Debugger API
 dev-libs/rocksdb 7.9.2-r1 8.11.3 9.10.0 10.5.1: Embeddable, persistent key-value store for fast storage
 dev-libs/rocm-comgr 6.3.3 6.4.3 7.0.2 7.1.0: Radeon Open Compute Code Object Manager
 dev-libs/rocm-core 7.0.2 7.1.0: Library that provides ROCm release version and install path information
@@ -12856,7 +12856,7 @@ media-fonts/mplus-fonts 2.2.4-r1: M+ Japanese bitmap fonts
 media-fonts/mplus-outline-fonts 0_pre063_p1: M+ Japanese outline fonts
 media-fonts/nanum 3.0: Korean fonts distributed by Naver
 media-fonts/nanumfont 2.5: Korean monospace font distributed by Naver
-media-fonts/noto 20250801 20250901 20251001: Google's font family that aims to support all the world's languages
+media-fonts/noto 20250901 20251001 20251101: Google's font family that aims to support all the world's languages
 media-fonts/noto-cjk 20190416: Google's CJK font family
 media-fonts/noto-emoji 20241003 20250618 20250912: Google Noto Emoji fonts
 media-fonts/nunito 1.0-r1: Sans Serif font with rounded terminals
@@ -12949,7 +12949,7 @@ media-gfx/blender-bin 3.6.21 3.6.22 4.2.7 4.2.9 4.4.1 4.4.3 9999: 3D Creation/An
 media-gfx/brscan4 0.4.11.1-r1: Brother scanner driver
 media-gfx/cairosvg 2.8.2 2.8.2-r1: CLI and library to export SVG to PDF, PostScript, and PNG
 media-gfx/cellwriter 1.3.6-r1: Grid-entry natural handwriting input panel
-media-gfx/chafa 1.16.1 1.16.2: versatile and fast Unicode/ASCII/ANSI graphics renderer
+media-gfx/chafa 1.16.1 1.16.2 1.18.0: versatile and fast Unicode/ASCII/ANSI graphics renderer
 media-gfx/clockphoto 1.2-r1: Adjusts photo timestamps based on clock photos
 media-gfx/converseen 0.12.2.4 0.15.0.3: Batch image converter and resizer based on ImageMagick
 media-gfx/cropgui 0.9: GUI for lossless cropping of jpeg images
@@ -15135,7 +15135,7 @@ net-mail/ytnef 2.1.2: Yeraze's TNEF Stream Reader - for winmail.dat files
 net-misc/adjtimex 1.29-r3 1.29-r4: Display or set the kernel time variables
 net-misc/aget 0.4.1-r2: multithreaded HTTP download accelerator
 net-misc/aggregate 1.6: Perform two optimisations on a list of prefixes to reduce the length of the list
-net-misc/anydesk 6.4.3 7.0.0: Feature rich multi-platform remote desktop application
+net-misc/anydesk 7.0.0 7.1.1: Feature rich multi-platform remote desktop application
 net-misc/apt-cacher-ng 3.7.4_p1-r2 9999: Yet another caching HTTP proxy for Debian/Ubuntu software packages
 net-misc/aria2 1.37.0: A download utility with segmented downloading with BitTorrent support
 net-misc/arpsponge 3.17.11-r1: Sweeps up stray ARP queries from a peering LAN
@@ -15913,7 +15913,7 @@ sci-chemistry/autodock_vina 1.1.2-r1 1.2.5: Program for drug discovery, molecula
 sci-chemistry/avogadro2 1.101.0 1.102.1: Advanced molecule editor and visualizer 2
 sci-chemistry/bodr 10: The Blue Obelisk Data Repository listing element and isotope properties
 sci-chemistry/cara-bin 1.8.4-r2: Analysis of NMR spectra and Computer Aided Resonance Assignment
-sci-chemistry/chemex 2024.09.25 2025.4.0: Program to fit chemical exchange induced shift and relaxation data
+sci-chemistry/chemex 2025.4.0 2025.10.0: Program to fit chemical exchange induced shift and relaxation data
 sci-chemistry/chemical-mime-data 0.1.95_pre20171122: A collection of data files to add support for chemical MIME types
 sci-chemistry/chemtool 1.6.14-r1: A GTK program for drawing organic molecules
 sci-chemistry/clashlist 3.17-r1: Build lists of van der Waals clashes from an input PDB file
@@ -16132,7 +16132,7 @@ sci-libs/hdf5 1.12.2-r6 1.14.4_p3-r1 1.14.6-r1 1.14.6-r2: General purpose librar
 sci-libs/highfive 2.8.0 2.10.1: Header-only C++ interface for libhdf5
 sci-libs/hipBLAS 6.3.3 6.4.3-r1 7.0.2 7.1.0: ROCm BLAS marshalling library
 sci-libs/hipBLAS-common 6.3.2 6.3.3 6.4.1 6.4.3 7.0.2 7.1.0: Common files shared by hipBLAS and hipBLASLt
-sci-libs/hipBLASLt 6.3.3 6.4.3 7.0.2-r2 7.1.0: General matrix-matrix operations library for AMD Instinct accelerators
+sci-libs/hipBLASLt 6.3.3 6.4.3 7.0.2-r2 7.1.0-r1: General matrix-matrix operations library for AMD Instinct accelerators
 sci-libs/hipCUB 6.3.3 6.4.3 7.0.2 7.1.0: Wrapper of rocPRIM or CUB for GPU parallel primitives
 sci-libs/hipFFT 6.3.3 6.4.3 7.0.2 7.1.0: CU / ROCM agnostic hip FFT implementation
 sci-libs/hipRAND 6.3.3 6.4.3 7.0.2 7.1.0: CU / ROCM agnostic hip RAND implementation
@@ -16158,7 +16158,7 @@ sci-libs/levmar 2.6-r1: Levenberg-Marquardt nonlinear least squares C library
 sci-libs/libaec 1.0.6 1.1.3 1.1.4: Adaptive Entropy Coding library
 sci-libs/libbraiding 1.3.1: Expose the functionality of cbraid as a shared library
 sci-libs/libcerf 1.17 2.5: Efficient and accurate implementation of complex error functions
-sci-libs/libcifpp 8.0.1 9.0.3: Code to work with mmCIF and PDB files
+sci-libs/libcifpp 8.0.1 9.0.3 9.0.5: Code to work with mmCIF and PDB files
 sci-libs/libdap 3.20.9-r1 3.21.1: Implementation of a C++ SDK for DAP 2.0 and 3.2
 sci-libs/libecpint 1.0.6-r1: Efficient evaluation of integrals over ab initio effective core potentials
 sci-libs/libexcelformat 101016-r1: reading, writing, and editing of XLS (BIFF8 format) files using C++
