@@ -13,5 +13,5 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v2.0.10
         with:
-          base: master
-          head: master
+          base: stable
+          head: stable
