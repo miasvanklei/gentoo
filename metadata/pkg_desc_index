@@ -1174,7 +1174,7 @@ app-arch/ncompress 5.0-r2: Classic compress & uncompress programs for .Z (LZW) f
 app-arch/p7zip 17.05-r2: Port of 7-Zip archiver for Unix
 app-arch/pack 0.0.0.1: Haskell implementation of pack compression from the early 1980s
 app-arch/par2cmdline 0.8.1-r2: A PAR-2.0 file verification and repair tool
-app-arch/par2cmdline-turbo 1.2.0 1.3.0 9999: par2cmdline x ParPar: speed focused par2cmdline fork
+app-arch/par2cmdline-turbo 1.3.0 9999: par2cmdline x ParPar: speed focused par2cmdline fork
 app-arch/patool 4.0.1 4.0.2: Portable archive file manager
 app-arch/pax 20201030: pax (Portable Archive eXchange) is the POSIX standard archive tool
 app-arch/pbzip2 1.1.13: Parallel bzip2 (de)compressor using libbz2
@@ -14781,7 +14781,7 @@ net-im/centerim 5.0.1-r2: Ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/Liv
 net-im/coturn 4.6.2 9999: coturn TURN server project
 net-im/cpop 0.0.4-r2: GTK+ network popup message client. Compatible with the jpop protocol
 net-im/dino 0.5.0 9999: Modern Jabber/XMPP Client using GTK+/Vala
-net-im/discord 0.0.113: All-in-one voice and text chat for gamers
+net-im/discord 0.0.114: All-in-one voice and text chat for gamers
 net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
 net-im/element-desktop-bin 1.12.2: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
@@ -18121,7 +18121,7 @@ www-client/epiphany 47.7-r1 48.3 48.5: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.2 25.08.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.3.1 140.4.0 143.0 143.0.3 144.0-r1 144.0.2: Firefox Web Browser
-www-client/firefox-bin 140.3.1 140.4.0 143.0.3 143.0.4 144.0 144.0.2: Firefox Web Browser
+www-client/firefox-bin 140.3.1 140.4.0 143.0.3 143.0.4 144.0 144.0.2 145.0: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.134: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.4: The web browser from Google
 www-client/google-chrome-unstable 144.0.7500.2: The web browser from Google
