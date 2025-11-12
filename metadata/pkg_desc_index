@@ -79,6 +79,7 @@ acct-group/dictd 0-r2: gid for app-text/dictd
 acct-group/dirsrv 0-r2: Group for net-nds/389-ds-base
 acct-group/disk 0-r3: System group: disk
 acct-group/distcc 1-r2: System group: distcc
+acct-group/dkimpy-milter 0: System group: dkimpy-milter
 acct-group/dnrd 0-r2: Group for net-dns/dnrd
 acct-group/dnscrypt-proxy 0-r2: Group for net-dns/dnscrypt-proxy
 acct-group/dnsdist 0-r3: A group for net-dns/dnsdist
@@ -527,6 +528,7 @@ acct-user/dhcpcd 0-r3: user for dhcpcd client
 acct-user/dictd 0-r2: uid for app-text/dictd
 acct-user/dirsrv 0-r2: User for net-nds/389-ds-base
 acct-user/distcc 1-r2: User used to run distcc daemon
+acct-user/dkimpy-milter 0: user for dkimpy-milter
 acct-user/dnrd 0-r2: User for net-dns/dnrd
 acct-user/dnscache 0-r2: System user: dnscache
 acct-user/dnscrypt-proxy 0-r2: User for net-dns/dnscrypt-proxy
@@ -1067,7 +1069,7 @@ app-admin/stow 2.4.1: GNU Stow is a symlink farm manager
 app-admin/su-exec 0.2: Switch user and group id and exec
 app-admin/sud 1.3-r2 1.3-r3: A daemon to execute processes with special privileges in a nosuid environment
 app-admin/sudo 1.9.17_p1 1.9.17_p2 9999: Allows users or groups to run commands as other users
-app-admin/sudo-rs 0.2.8-r4 0.2.9 0.2.10: A memory safe implementation of sudo and su.
+app-admin/sudo-rs 0.2.10: A memory safe implementation of sudo and su.
 app-admin/superadduser 1.15: Interactive adduser script from Slackware
 app-admin/supervisor 4.2.5-r1 4.2.5_p20250125 4.3.0: A system for controlling process state under UNIX
 app-admin/sxid 4.2-r3 4.20130802: suid, sgid file and directory checking
@@ -1346,7 +1348,7 @@ app-containers/aardvark-dns 1.14.0 1.15.0 9999: A container-focused DNS server
 app-containers/amazon-ecr-credential-helper 0.10.1 0.11.0: Automatically gets credentials for Amazon ECR on docker push/docker pull
 app-containers/apptainer 1.4.2 1.4.3: The container system for secure high-performance computing
 app-containers/buildah 1.40.0 1.40.1 1.41.0 9999: A tool that facilitates building OCI images
-app-containers/cadvisor 0.49.2: Analyzes resource usage and performance characteristics of running containers
+app-containers/cadvisor 0.49.2 0.53.0: Analyzes resource usage and performance characteristics of running containers
 app-containers/catatonit 0.2.0 0.2.1 9999: A container init that is so simple it's effectively brain-dead
 app-containers/cni-plugins 1.3.0 1.5.1 1.6.1 1.6.2: Standard networking plugins for container networking
 app-containers/conmon 2.1.11 2.1.13 9999: An OCI container runtime monitor
@@ -8361,6 +8363,7 @@ dev-python/django-template-partials 25.2: Reusable named inline partials for the
 dev-python/django-timezone-field 7.1-r1: A Django app providing database and form fields for timezone objects
 dev-python/djangorestframework 3.16.1: Web APIs with django made easy
 dev-python/dkimpy 1.1.8: DKIM and ARC email signing and verification library
+dev-python/dkimpy-milter 1.2.3: Domain Keys Identified Mail (DKIM) signing/verifying milter for Postfix/Sendmail
 dev-python/dns-lexicon 3.21.1 3.23.0: Manipulate DNS records on various DNS providers in a standardized/agnostic way
 dev-python/dnspython 2.7.0 2.7.0-r1 2.8.0_rc1 2.8.0: DNS toolkit for Python
 dev-python/doc8 2.0.0: Style checker for Sphinx (or other) RST documentation
@@ -9109,6 +9112,7 @@ dev-python/pymdown-lexers 0_pre20210902: Additional lexers for use in Pygments
 dev-python/pymdstat 0.4.3: Python library to parse Linux /proc/mdstat
 dev-python/pymediainfo 7.0.1: A Python wrapper for the MediaInfo library
 dev-python/pymetar 1.4-r2: Downloads and decodes to the weather report for a given station ID
+dev-python/pymilter 1.0.7_pre20251111 9999: module to enable python scripts to attach to Sendmail's libmilter API
 dev-python/pymongo 4.13.1 4.13.2 4.14.1 4.15.0 4.15.1 4.15.2 4.15.2-r1 4.15.3 4.15.4: Python driver for MongoDB
 dev-python/pymountboot 0.2.3-r2: Python extension module to (re)mount /boot
 dev-python/pymysql 1.1.1 1.1.2: Pure-Python MySQL Driver
@@ -11100,7 +11104,7 @@ dev-util/wiggle 1.0 1.2: Tool for applying patches that patch cannot apply becau
 dev-util/woke 0.19.0: check source code for non-inclusive language
 dev-util/xdelta 1.1.4-r4 3.0.11-r1: Computes changes between binary or text files and creates deltas
 dev-util/xmlindent 0.2.17-r3: XML stream reformatter for ASCII text, but not UTF-8, written in ANSI C
-dev-util/xxd 2025.08.24: Standalone version of Vim's xxd
+dev-util/xxd 2025.08.24-r1: Standalone version of Vim's xxd
 dev-util/xxdi 1.0.0: Simple alternative to vim's 'xxd -i' mode
 dev-util/xxdiff 5.1_p20250320: Graphical file and directories comparator and merge tool
 dev-util/yacc 1.9.1-r8: Yacc: Yet Another Compiler-Compiler
@@ -12028,7 +12032,7 @@ gnome-extra/nemo 6.4.5: A file manager for Cinnamon, forked from Nautilus
 gnome-extra/nemo-fileroller 6.4.0: Nemo file-roller integration
 gnome-extra/nm-applet 1.36.0: NetworkManager connection editor and applet
 gnome-extra/office-runner 1.0.3: Lighthearted tool to temporarily inhibit GNOME's suspend on lid close behavior
-gnome-extra/pch-session 47.1 48.0: Unofficial gnome based session with different default settings and extensions
+gnome-extra/pch-session 47.1-r1 48.0-r1: Unofficial gnome based session with different default settings and extensions
 gnome-extra/polkit-gnome 0.105-r2: A dbus session bus service that is used to bring up authentication dialogs
 gnome-extra/sushi 46.0: A quick previewer for Nautilus, the GNOME file manager
 gnome-extra/tecla 47.0 48.0.2: Tecla is a keyboard layout viewer
@@ -12539,7 +12543,7 @@ kde-plasma/plasma-workspace-wallpapers 6.4.5 6.5.2: Wallpapers for the Plasma wo
 kde-plasma/plasma5support 6.4.5 6.5.2: Support components for porting from KF5/Qt5 to KF6/Qt6
 kde-plasma/plymouth-kcm 6.4.5 6.5.2: KDE Plasma control module for Plymouth
 kde-plasma/polkit-kde-agent 6.4.5 6.5.2: PolKit agent module for KDE Plasma
-kde-plasma/powerdevil 6.4.5 6.5.2: Power management for KDE Plasma Shell
+kde-plasma/powerdevil 6.4.5-r1 6.5.2-r1: Power management for KDE Plasma Shell
 kde-plasma/print-manager 6.4.5 6.5.2: Manage CUPS print jobs and printers in Plasma
 kde-plasma/qqc2-breeze-style 6.4.5 6.5.2: Breeze inspired QQC2 Style
 kde-plasma/sddm-kcm 6.4.5-r1 6.5.2: KDE Plasma control module for SDDM
@@ -14999,7 +15003,7 @@ net-libs/libsrtp 1.6.0-r1 2.4.2 2.6.0: Open-source implementation of the Secure 
 net-libs/libssh 0.11.2 0.11.3 9999: Access a working SSH implementation by means of a library
 net-libs/libssh2 1.11.1 9999: Library implementing the SSH2 protocol
 net-libs/libtelnet 0.23-r2: Simple RFC-compliant TELNET implementation as a C library
-net-libs/libtirpc 1.3.6 1.3.7 1.3.7-r1: Transport Independent RPC library (SunRPC replacement)
+net-libs/libtirpc 1.3.6 1.3.7 1.3.7-r2: Transport Independent RPC library (SunRPC replacement)
 net-libs/libtlsrpt 0.5.0 9999: library to implement TLSRPT
 net-libs/libtorrent 0.13.8-r3 0.15.1 0.15.5 0.15.7 0.16.1 9999: BitTorrent library written in C++ for *nix
 net-libs/libtorrent-rasterbar 2.0.10: C++ BitTorrent implementation focusing on efficiency and scalability
@@ -17220,7 +17224,7 @@ sys-apps/texinfo 7.2-r3 7.2-r4 9999: The GNU info program and utilities
 sys-apps/the_silver_searcher 2.2.0_p20201217-r4: A code-searching tool similar to ack, but faster
 sys-apps/tomoyo-tools 2.5.0_p20130214-r1: TOMOYO Linux tools
 sys-apps/toybox 0.8.12 0.8.13 9999: Common linux commands in a multicall binary
-sys-apps/tuned 2.25.1 2.26.0: Daemon for monitoring and adaptive tuning of system devices
+sys-apps/tuned 2.25.1-r1 2.26.0-r1: Daemon for monitoring and adaptive tuning of system devices
 sys-apps/uam 0.3.2-r2: Simple udev-based automounter for removable USB media
 sys-apps/ucspi-proxy 1.1-r1: Proxy program for two connections set up by a UCSPI server and a UCSPI client
 sys-apps/ucspi-tcp 0.88-r20: Collection of tools for managing UNIX services
@@ -17518,7 +17522,7 @@ sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
 sys-firmware/edk2 202202 202408 202411 202502-r1: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/edk2-bin 202202 202408 202411: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.18: NXP i.MX firmware
-sys-firmware/intel-microcode 20250211_p20250211 20250512_p20250513 20250812_p20250813: Intel IA32/IA64 microcode update data
+sys-firmware/intel-microcode 20250512_p20250513 20250812_p20250813 20251111_p20251112: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3-r1: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
 sys-firmware/ipw2200-firmware 3.1-r1: Firmware for the Intel PRO/Wireless 2200BG/2915ABG miniPCI and 2225BG PCI
 sys-firmware/ipxe 1.21.1 1.21.1_p20230601 1.21.1_p20230601-r1: Open source network boot (PXE) firmware
@@ -18070,7 +18074,7 @@ www-apps/dokuwiki 20250514b: DokuWiki is a simple to use Wiki aimed at a small c
 www-apps/drupal 7.102 10.3.14 10.4.5 11.0.13 11.1.5: PHP-based open-source platform and content management system
 www-apps/element 1.11.106 1.11.109 1.12.0: A glossy Matrix collaboration client for the web
 www-apps/gitea 1.23.8 1.24.6 1.24.7: A painless self-hosted Git service
-www-apps/grafana-bin 11.4.8 11.5.10 12.0.6 12.1.1: Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
+www-apps/grafana-bin 11.4.8 11.5.10 12.0.6 12.1.1 12.2.1: Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
 www-apps/haunt 0.3.0: Haunt is a simple, functional, hackable static site generator
 www-apps/hugo 0.147.7 0.148.2: Fast static HTML and CSS website generator
 www-apps/icingadb-web 1.1.3 1.2.2: UI for Icinga DB
@@ -18138,8 +18142,8 @@ www-client/elinks 0.17.1.1 0.18.0 9999: Advanced and well-established text-mode 
 www-client/epiphany 47.7-r1 48.3 48.5: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.2 25.08.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.3.1 140.4.0 143.0 143.0.3 144.0-r1 144.0.2 145.0: Firefox Web Browser
-www-client/firefox-bin 140.3.1 140.4.0 143.0.3 143.0.4 144.0 144.0.2 145.0: Firefox Web Browser
+www-client/firefox 140.3.1 140.4.0 140.5.0 143.0 143.0.3 144.0-r1 144.0.2 145.0: Firefox Web Browser
+www-client/firefox-bin 140.3.1 140.4.0 140.5.0 143.0.3 143.0.4 144.0 144.0.2 145.0: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.134: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.4: The web browser from Google
 www-client/google-chrome-unstable 144.0.7500.2: The web browser from Google
