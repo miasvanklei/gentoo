@@ -8,7 +8,7 @@ inherit go-module shell-completion
 DESCRIPTION=" Terminal JSON viewer & processor"
 HOMEPAGE="https://fx.wtf/ https://github.com/antonmedv/fx"
 SRC_URI="https://github.com/antonmedv/fx/archive/${PV}.tar.gz -> ${P}.tar.gz"
-SRC_URI+=" https://dev.gentoo.org/~arthurzam/distfiles/app-misc/${PN}/${P}-deps.tar.xz"
+SRC_URI+=" https://github.com/gentoo-golang-dist/fx/releases/download/${PV}/${P}-vendor.tar.xz"
 
 LICENSE="MIT"
 # Dependent licenses
