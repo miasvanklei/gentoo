@@ -9759,7 +9759,7 @@ dev-python/yarl 1.20.1 1.21.0 1.22.0: Yet another URL library
 dev-python/yattag 1.16.1: Python library to generate HTML or XML in a readable, concise and pythonic way
 dev-python/yaxmldiff 0.2.0: Yet Another XML Differ
 dev-python/youtube-search-python 1.6.6-r2: Get YouTube video information using link WITHOUT YouTube Data API v3
-dev-python/yt-dlp-ejs 0.3.0 0.3.1: External JavaScript for yt-dlp supporting many runtimes
+dev-python/yt-dlp-ejs 0.3.1: External JavaScript for yt-dlp supporting many runtimes
 dev-python/ytmusicapi 1.11.0 1.11.1: Unofficial API for YouTube Music
 dev-python/zc-lockfile 3.0_p1-r1 4.0: Basic inter-process locks
 dev-python/zconfig 4.2: Configuration library supporting a hierarchical schema-driven model
@@ -15462,7 +15462,7 @@ net-misc/xmrig 6.21.1 6.21.3 6.22.0 6.22.1 6.22.2 6.22.3 6.23.0 6.24.0 9999: Ran
 net-misc/yandex-disk 0.1.6.1080_p1: CLI to access Yandex Disk file storage service
 net-misc/you-get 0.4.1650-r1 0.4.1700: Utility to download media contents from the web
 net-misc/youtube-viewer 3.11.2-r1 3.11.3-r1 9999: A command line utility for viewing youtube-videos in Mplayer
-net-misc/yt-dlp 2025.09.26 2025.10.14 2025.10.22 2025.11.02_pre 9999: youtube-dl fork with additional features and fixes
+net-misc/yt-dlp 2025.09.26 2025.10.14 2025.10.22 2025.11.12 9999: youtube-dl fork with additional features and fixes
 net-misc/ytmdl 2024.08.15.1-r1: Simple app to get songs from youtube in mp3 format
 net-misc/zerotier 1.14.2-r2 1.16.0: A software-based managed Ethernet switch for planet Earth
 net-misc/zssh 1.5c-r3: SSH wrapper enabling zmodem up/download in ssh
@@ -16419,7 +16419,7 @@ sci-ml/FP16 2024.05.27-r1 2024.06.20: conversion to/from half-precision floating
 sci-ml/NNPACK 2020.12.22-r4: acceleration package for neural network computations
 sci-ml/XNNPACK 2024.11.08-r1 2024.12.03: library of floating-point neural network inference operators
 sci-ml/accelerate 1.7.0-r1: Run your *raw* PyTorch training script on any kind of device
-sci-ml/caffe2 2.8.0-r1 2.9.0-r1: A deep learning framework
+sci-ml/caffe2 2.8.0-r1 2.9.0-r2: A deep learning framework
 sci-ml/clearml 1.18.0: Auto-Magical CI/CD to streamline your AI workload
 sci-ml/cudnn-frontend 1.10.0 1.11.0 1.12.1: A c++ wrapper for the cudnn backend API
 sci-ml/datasets 3.5.0: Access and share datasets for Audio, Computer Vision, and NLP tasks
@@ -16431,7 +16431,7 @@ sci-ml/fastprogress 1.0.3: Simple and flexible progress bar for Jupyter Notebook
 sci-ml/foxi 2021.05.27: ONNXIFI with Facebook Extension
 sci-ml/gemmlowp 2021.12.20: Low-precision matrix multiplication
 sci-ml/gloo 2023.12.03 2025.06.04-r2: library of floating-point neural network inference operators
-sci-ml/huggingface_hub 0.34.4: a client library to interact with the Hugging Face Hub
+sci-ml/huggingface_hub 0.34.4 0.34.6: a client library to interact with the Hugging Face Hub
 sci-ml/ideep 3.5.3_p2 3.5.3_p3: Intel Optimization for Chainer
 sci-ml/jiwer 3.0.3-r1: Evaluate an automatic speech recognition system
 sci-ml/kineto 0.4.0_p20250214-r2 0.4.0_p20250617-r2: part of the PyTorch Profiler
@@ -17754,7 +17754,7 @@ sys-libs/libxcrypt 4.4.38: Extended crypt library for descrypt, md5crypt, bcrypt
 sys-libs/lwp 2.8-r1: Light-weight process library (used by Coda)
 sys-libs/minizip-ng 4.0.10 4.0.10-r1: Fork of the popular zip manipulation library found in the zlib distribution
 sys-libs/mtdev 1.1.7: Multitouch Protocol Translation Library
-sys-libs/musl 1.2.3-r10 1.2.4-r4 1.2.5-r3 1.2.5-r5 9999: Light, fast and, simple C library focused on standards-conformance and safety
+sys-libs/musl 1.2.3-r10 1.2.4-r4 1.2.5-r3 1.2.5-r5 1.2.5-r6 9999: Light, fast and, simple C library focused on standards-conformance and safety
 sys-libs/musl-nscd 1.1.1-r1 9999: musl-nscd is an implementation of the NSCD protocol for the musl libc
 sys-libs/native-uuid 1.0-r1: .pc file for uuid
 sys-libs/ncurses 6.5_p20250329 6.5_p20250531-r1 6.5_p20250802: Console display library
