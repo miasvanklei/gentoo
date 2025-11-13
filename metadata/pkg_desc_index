@@ -588,7 +588,7 @@ acct-user/gopherd 0-r2: A user for net-misc/geomyidae
 acct-user/gpsd 0-r4: user for gpsd
 acct-user/grafana 0-r3: grafana program user
 acct-user/graylog 0-r3: Graylog program user
-acct-user/greetd 0-r3: User for gui-libs/greetd
+acct-user/greetd 0-r4: User for gui-libs/greetd
 acct-user/grok_exporter 0-r2: A user for app-metrics/grok_exporter
 acct-user/groonga 0-r2: User for app-text/groonga
 acct-user/gvm 0-r3: Greenbone vulnerability management program user
@@ -4078,21 +4078,21 @@ dev-debug/systemtap 5.1-r2 5.2-r1 5.3-r1 9999: Linux trace/probe tool
 dev-debug/valgrind 3.24.0_p3 3.25.1 3.26.0 9999: An open-source memory debugger for GNU/Linux
 dev-dotnet/avalonia-ilspy 7.2_rc-r2: Avalonia-based .NET Decompiler, port of ILSpy
 dev-dotnet/cake 5.0.0 5.1.0: Cake (C# Make) is a cross platform build automation system with a C# DSL
-dev-dotnet/coco 2014.12.24-r4 2014.12.25: The compiler generator Coco/R for C#
+dev-dotnet/coco 2014.12.25 2014.12.25-r1: The compiler generator Coco/R for C#
 dev-dotnet/csharp-gentoodotnetinfo 2.0.0 2.9999: .NET information tool for Gentoo
 dev-dotnet/csharp-language-server 0.18.0 0.19.0: Roslyn-based LSP language server for C#
 dev-dotnet/csharprepl 0.6.7: A command line C# REPL with syntax highlighting
 dev-dotnet/dotnet-outdated 4.6.4-r1: Display and update outdated NuGet packages in a project
-dev-dotnet/dotnet-runtime-nugets 6.0.25-r1 6.0.32 6.0.33 6.0.36 7.0.14-r1 7.0.20 8.0.7 8.0.8 8.0.18 8.0.21 9.0.7 9.0.10: .NET runtime nugets
+dev-dotnet/dotnet-runtime-nugets 6.0.25-r1 6.0.32 6.0.33 6.0.36 7.0.14-r1 7.0.20 8.0.7 8.0.8 8.0.18 8.0.21 8.0.22 9.0.7 9.0.10 9.0.11 10.0.0: .NET runtime nugets
 dev-dotnet/dotnet-script 1.6.0: Run C# scripts from the CLI
-dev-dotnet/dotnet-sdk 8.0.107-r2 9.0.108 9.0.111: .NET is a free, cross-platform, open-source developer platform
-dev-dotnet/dotnet-sdk-bin 6.0.417-r5 7.0.404-r5 8.0.108-r1 9.0.108-r1 9.0.111 9.0.306: .NET is a free, cross-platform, open-source developer platform
+dev-dotnet/dotnet-sdk 9.0.108 9.0.111: .NET is a free, cross-platform, open-source developer platform
+dev-dotnet/dotnet-sdk-bin 6.0.417-r5 7.0.404-r5 8.0.108-r1 9.0.108-r1 9.0.111 9.0.306 10.0.100: .NET is a free, cross-platform, open-source developer platform
 dev-dotnet/fable 4.25.0 4.26.0: F# to JavaScript, TypeScript, Python, Rust and Dart Compiler
 dev-dotnet/fantomas 7.0.2 7.0.3: FSharp source code formatter
-dev-dotnet/fsautocomplete 0.78.5 0.79.2 0.80.0 0.80.1: F# language server using the Language Server Protocol
+dev-dotnet/fsautocomplete 0.79.2 0.80.0 0.80.1 0.81.0: F# language server using the Language Server Protocol
 dev-dotnet/gentoo-dotnet-maintainer-tools 3.0.0 3.9999: Gentoo tools for .NET packages maintenance
 dev-dotnet/libgdiplus 6.0.2-r4 6.2: C-based implementation of the GDI+ API
-dev-dotnet/nake 3.0.0-r1: C# scripting build automation task runner
+dev-dotnet/nake 3.0.0-r1 3.0.0-r2: C# scripting build automation task runner
 dev-dotnet/netcoredbg 3.1.0.1031 3.1.2.1054: NetCoreDbg is a managed code debugger with MI interface for CoreCLR
 dev-dotnet/nuget-license 3.0.0: .NET Core tool to print or save all the licenses of a project
 dev-dotnet/omnisharp-roslyn 1.39.13: OmniSharp server (HTTP, STDIO) based on Roslyn workspaces
@@ -15026,7 +15026,7 @@ net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP
 net-libs/nghttp2 1.65.0-r2 1.66.0 1.67.1 9999: HTTP/2 C Library
 net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 9999: HTTP/3 library written in C
 net-libs/ngtcp2 1.11.0 1.11.0-r1 1.12.0 1.13.0 1.14.0 1.15.0 1.15.1 1.16.0 1.17.0 9999: Implementation of the IETF QUIC Protocol
-net-libs/nodejs 20.18.2 20.19.2 20.19.5 22.13.1 22.16.0 22.19.0 22.20.0 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
+net-libs/nodejs 20.18.2 20.19.2 20.19.5 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5: Library to parse proxy auto-config files
 net-libs/paho-mqtt-c 1.3.14-r1 1.3.15: An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS.
@@ -15323,7 +15323,7 @@ net-misc/netpipes 4.2-r2: Tools to manipulate BSD TCP/IP stream sockets
 net-misc/netsed 1.4: Small tool for altering forwarded network data in real time
 net-misc/netstat-nat 1.4.10-r1: Display NAT connections
 net-misc/networkmanager 1.48.16 1.52.0 1.52.1 1.54.1: A set of co-operative tools that make networking simple and straightforward
-net-misc/nextcloud-client 3.14.4 3.16.5 3.16.6 3.17.2: Desktop Syncing Client for Nextcloud
+net-misc/nextcloud-client 3.14.4 3.16.5 3.16.6 3.17.2 4.0.1: Desktop Syncing Client for Nextcloud
 net-misc/nicstat 1.95: Network traffic statics utility for Solaris and Linux
 net-misc/ntp 4.2.8_p17-r1 4.2.8_p17-r2 4.2.8_p18-r1 4.2.8_p18-r2: Network Time Protocol suite/programs
 net-misc/ntpsec 1.2.3-r1 1.2.4 9999: The NTP reference implementation, refactored
@@ -15649,7 +15649,7 @@ net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10: Anonymous encrypted VPN client powered
 net-vpn/strongswan 5.9.13 5.9.14 5.9.14-r2 6.0.1 6.0.1-r1 6.0.1-r2 6.0.2: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
-net-vpn/tor 0.4.8.16 0.4.8.17 0.4.8.18 0.4.8.19 0.4.8.20 9999: Anonymizing overlay network for TCP
+net-vpn/tor 0.4.8.16 0.4.8.17 0.4.8.18 0.4.8.19 0.4.8.20 0.4.8.20-r1 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 0.10.13 0.10.14 0.10.15: Launch applications via VPN tunnels using temporary network namespaces
 net-vpn/vpnc 0.5.3_p20240129 9999: IPsec (Cisco/Juniper) VPN concentrator client
 net-vpn/vpnc-scripts 20220510 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
@@ -17179,7 +17179,7 @@ sys-apps/renameutils 0.12.0: Use your favorite text editor to rename files
 sys-apps/restartd 0.2.2-r1: A daemon for checking your running and not running processes
 sys-apps/restorecond 3.6 3.7 3.8.1 9999: Daemon to watch for creation and set default SELinux fcontexts
 sys-apps/ripgrep 14.1.1-r1 15.0.0 15.1.0: Search tool that combines the usability of ag with the raw speed of grep
-sys-apps/ripgrep-all 0.10.9-r1: Like ripgrep, but also search in PDFs, E-Books, Office documents, archives, etc.
+sys-apps/ripgrep-all 0.10.9-r1 0.10.10: Like ripgrep, but also search in PDFs, E-Books, Office documents, archives, etc.
 sys-apps/rkflashtool 6.1: Tool for flashing Rockchip devices
 sys-apps/rng-tools 6.16-r2 6.17-r1: Daemon to use hardware random number generators
 sys-apps/roccat-tools 5.9.0-r102: Utility for advanced configuration of Roccat devices
@@ -17885,7 +17885,7 @@ virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
 virtual/dist-kernel 5.10.245 5.10.246 5.15.195 5.15.196 6.1.157 6.1.158 6.6.113 6.6.116 6.12.54 6.12.57 6.17.7: Virtual to depend on any Distribution Kernel
-virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0: Virtual for .NET SDK
+virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0: Virtual for .NET SDK
 virtual/editor 0-r7: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
 virtual/fortran 0-r1: Virtual for Fortran Compiler
@@ -18226,7 +18226,7 @@ www-servers/kore 4.2.3 4.3.0_rc4: Web application platform for writing scalable,
 www-servers/lighttpd 1.4.79-r1 1.4.82 9999: Lightweight high-performance web server
 www-servers/mongrel2 1.11.0-r3: A language agnostic web server focused on web applications
 www-servers/moonbridge 1.1.3-r1: Network Server for Lua Applications
-www-servers/nginx 1.26.3-r2 1.27.5-r1 1.28.0-r2 1.29.1-r2 1.29.3 9999: Robust, small and high performance HTTP and reverse proxy server
+www-servers/nginx 1.26.3-r2 1.27.5-r1 1.28.0-r3 1.29.1-r3 1.29.3-r1 9999: Robust, small and high performance HTTP and reverse proxy server
 www-servers/nginx-unit 1.34.2 1.34.2-r1 1.35.0: Dynamic web and application server
 www-servers/pound 4.16 4.17: A http/https reverse-proxy and load-balancer
 www-servers/pshs 0.4.3: Pretty small HTTP server -- a command-line tool to share files

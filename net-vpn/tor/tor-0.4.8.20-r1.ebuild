@@ -75,6 +75,7 @@ DOCS=()
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-0.2.7.4-torrc.sample.patch
+	"${FILESDIR}"/${PN}-0.4.8.20-openrc-startup.patch
 )
 
 QA_CONFIG_IMPL_DECL_SKIP=(
@@ -119,6 +120,8 @@ src_configure() {
 
 	export ac_cv_lib_cap_cap_init=$(usex caps)
 	export tor_cv_PYTHON="${EPYTHON}"
+	# Already set by default in profiles for our toolchain
+	export tor_cv_cflags__fcf_protection_full=no
 
 	local myeconfargs=(
 		--localstatedir="${EPREFIX}/var"
