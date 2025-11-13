@@ -1097,7 +1097,7 @@ app-admin/watchfolder 0.3.3-r2: Watches directories and processes files
 app-admin/webalizer 2.23.08-r1: Webserver log file analyzer
 app-admin/webapp-config 1.55-r4 9999: Gentoo's installer for web-based applications
 app-admin/whowatch 1.8.6-r2: Displays information about users currently logged on in real time
-app-admin/winbox 4.0_beta39: Management Software for MikroTik RouterOS
+app-admin/winbox 4.0_beta41: Management Software for MikroTik RouterOS
 app-admin/xkcdpass 1.20.0: Password generator inspired by XKCD 936
 app-admin/xstow 1.1.1: Replacement for GNU stow with extensions
 app-admin/xtail 2.1_p8: Tail multiple logfiles at once, even if rotated
@@ -1248,7 +1248,7 @@ app-backup/dar 2.8.1-r1: A full featured backup tool, aimed for disks
 app-backup/deja-dup 44.2: Simple backup tool using duplicity back-end
 app-backup/dirvish 1.2.1-r1: Dirvish is a fast, disk based, rotating network backup system
 app-backup/duplicati 2.1.0.103_p20241221-r1 2.2.0.0.2025.10.23: Backup client that securely stores encrypted, incremental, compressed backups
-app-backup/duplicity 3.0.5-r1 3.0.6-r1: Secure backup system using gnupg to encrypt data
+app-backup/duplicity 3.0.5-r1 3.0.6-r1 9999: Secure backup system using gnupg to encrypt data
 app-backup/duply 2.5.2 2.5.5 2.5.6: Shell frontend for duplicity
 app-backup/fsarchiver 0.8.8 0.8.8-r1: Flexible filesystem archiver for backup and deployment tool
 app-backup/hdup 2.0.14-r2: Hdup is backup program using tar, find, gzip/bzip2, mcrypt and ssh
@@ -3936,7 +3936,7 @@ dev-cpp/robin-map 1.3.0 1.4.0-r1 9999: C++ fast hash map and hash set using robi
 dev-cpp/scitokens-cpp 1.1.0-r1 1.1.1 1.1.2 1.1.3: C++ implementation of the SciTokens library with a C library interface
 dev-cpp/sdbus-c++ 2.1.0: High-level C++ D-Bus library
 dev-cpp/simdutf 7.3.4: Unicode validation and transcoding at billions of characters per second
-dev-cpp/simpleini 4.22-r1 4.23: C++ library providing a simple API to read and write INI-style files
+dev-cpp/simpleini 4.22-r1 4.23 4.24: C++ library providing a simple API to read and write INI-style files
 dev-cpp/sol2 3.3.1-r1 3.5.0-r1: Header-only C++ <-> Lua API wrapper
 dev-cpp/sparsehash 2.0.4-r1: An extremely memory-efficient hash_map implementation
 dev-cpp/string-theory 3.9: A flexible modern C++ library for string manipulation and storage
@@ -5739,7 +5739,7 @@ dev-libs/openobex 1.7.2-r3: Implementation of the OBEX protocol used for transfe
 dev-libs/openpace 1.1.3: Cryptographic library for EAC version 2
 dev-libs/opensc 0.26.1 9999: Libraries and applications to access smartcards
 dev-libs/openspecfun 0.5.3 0.5.5: A collection of special mathematical functions
-dev-libs/openssl 1.0.2u-r1 1.1.1w 3.0.16 3.0.17 3.0.18 3.0.9999 3.2.4 3.2.5 3.2.6 3.2.9999 3.3.3 3.3.4 3.3.5 3.3.9999 3.4.1 3.4.2 3.4.3 3.4.9999 3.5.2 3.5.3 3.5.4 3.5.9999 3.6.0 3.6.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
+dev-libs/openssl 1.0.2u-r1 1.1.1w 3.0.18 3.0.9999 3.2.6 3.2.9999 3.3.5 3.3.9999 3.4.3 3.4.9999 3.5.4 3.5.9999 3.6.0 3.6.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
 dev-libs/openssl-compat 1.0.2u-r2 1.1.1u: Full-strength general purpose cryptography library (including SSL and TLS)
 dev-libs/optix 7.4.0 7.5.0 8.1.0-r1 9.0.0-r1: NVIDIA Ray Tracing Engine
 dev-libs/ossp-uuid 1.6.2-r7 1.6.2-r8: An ISO-C:1999 API with CLI for generating DCE, ISO/IEC and RFC compliant UUID
@@ -11595,7 +11595,7 @@ games-fps/ut2004-data 3186-r5: Unreal Tournament 2004 - This is the data portion
 games-fps/ut2004-demo 3334-r3: Demo for the critically-acclaimed first-person shooter
 games-fps/worldofpadman 1.6-r4 1.7.0-r1: Cartoon style multiplayer first-person shooter
 games-fps/xonotic 0.8.6: Fork of Nexuiz, Deathmatch FPS based on DarkPlaces, an advanced Quake 1 engine
-games-fps/yamagi-quake2 8.41 8.51: Quake 2 engine focused on single player
+games-fps/yamagi-quake2 8.51 8.60: Quake 2 engine focused on single player
 games-kids/gcompris 25.1.1: Full featured educational application for children from 2 to 10
 games-kids/gmult 14.0: Multiplication Puzzle emulates the multiplication game found in Emacs
 games-kids/lletters 0.1.95-r5: Game that helps young kids learn their letters and numbers
@@ -17486,7 +17486,7 @@ sys-devel/cproc 0_pre20240413 9999: C11 compiler using QBE as backend
 sys-devel/crossdev 20250410 20250622 20251008 99999999: Gentoo Cross-toolchain generator
 sys-devel/crosstool-ng 1.27.0 1.28.0 9999: Versatile (cross-)toolchain generator
 sys-devel/dev86 1.0.1: Bruce's C compiler - Simple C compiler to generate 8086 code
-sys-devel/distcc 3.4-r4 3.4-r6: Distribute compilation of C code across several machines on a network
+sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across several machines on a network
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
