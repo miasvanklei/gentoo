@@ -3982,7 +3982,7 @@ dev-db/litedb 5.0.17-r4 5.0.21: .NET NoSQL Document Store in a single data file
 dev-db/lmdb 0.9.33: An ultra-fast, ultra-compact key-value embedded data store
 dev-db/lmdb++ 1.0.0-r1: C++11 wrapper for the LMDB database library
 dev-db/m17n-db 1.8.5 1.8.10: Database for the m17n library
-dev-db/mariadb 10.6.22 10.6.23-r1 10.6.24 10.11.13 10.11.14-r1 10.11.15 11.4.7-r1 11.4.8-r1 11.4.8-r2 11.4.9 11.8.3-r2 11.8.3-r3 11.8.4 12.0.2-r1: An enhanced, drop-in replacement for MySQL
+dev-db/mariadb 10.6.22 10.6.23-r1 10.6.24 10.11.13 10.11.14-r1 10.11.15 11.4.7-r1 11.4.8-r1 11.4.8-r2 11.4.9 11.8.3-r2 11.8.3-r3 11.8.5 12.0.2-r1: An enhanced, drop-in replacement for MySQL
 dev-db/mariadb-connector-c 3.3.8 3.3.15 3.3.17 3.4.5-r1 3.4.7 9999: C client library for MariaDB/MySQL
 dev-db/mariadb-connector-odbc 3.1.18: MariaDB Connector/ODBC
 dev-db/mongodb 5.0.30 5.0.31 6.0.22 6.0.25 7.0.18 7.0.23 8.0.8 8.0.12: A high-performance, open source, schema-free document-oriented database
@@ -9640,7 +9640,7 @@ dev-python/treq 25.5.0: A requests-like API built on top of twisted.web's Agent
 dev-python/trimesh 4.8.2 4.8.3 4.9.0: Python library for loading and using triangular meshes
 dev-python/trio 0.31.0 0.32.0: Python library for async concurrency and I/O
 dev-python/trio-websocket 0.12.2: WebSocket client and server implementation for Python Trio
-dev-python/trove-classifiers 2025.8.26.11 2025.9.8.13 2025.9.9.12 2025.9.11.17: Canonical source for classifiers on PyPI (pypi.org)
+dev-python/trove-classifiers 2025.9.11.17 2025.11.14.15: Canonical source for classifiers on PyPI (pypi.org)
 dev-python/trustme 1.2.1: #1 quality TLS certs while you wait, for the discerning tester
 dev-python/truststore 0.10.1 0.10.3 0.10.4: Verify certificates using native system trust stores
 dev-python/tubes 0.2.1: Flow control and backpressure for event-driven applications
@@ -14340,7 +14340,7 @@ media-video/mplay-sh 0.5.3-r1: mplayer wrapper script as backend for vdr-mplayer
 media-video/mplayer 1.5_p20241125-r2 9999: Media Player for Linux
 media-video/mpv 0.40.0-r3 9999: Media player for the command line
 media-video/noad 0.8.8 0.8.8-r1: Mark commercial breaks in VDR recordings
-media-video/obs-studio 31.1.2 32.0.1 32.0.2 9999: Software for Recording and Streaming Live Video Content
+media-video/obs-studio 32.0.1 32.0.2 32.0.2-r1 9999: Software for Recording and Streaming Live Video Content
 media-video/oxine 0.7.1-r6: OSD frontend for Xine
 media-video/parole 4.18.2 4.20.0: A simple Xfce4 media player using GStreamer
 media-video/peek 1.5.1-r2: Simple animated Gif screen recorder
@@ -14810,7 +14810,7 @@ net-im/gajim 2.2.0 2.3.6 2.4.0: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
 net-im/kaidan 0.13.0: Modern XMPP chat app for every device
 net-im/libcommuni 3.7.0-r2: A cross-platform IRC framework written with Qt
-net-im/mattermost-desktop-bin 5.13.2 6.0.0: Mattermost Desktop application
+net-im/mattermost-desktop-bin 5.13.2 6.0.0 6.0.1_rc1: Mattermost Desktop application
 net-im/neochat 25.08.2 25.08.3: Client for Matrix, the decentralized communication protocol
 net-im/openmittsu 0.10.2.0 0.10.3.0: Open source chat client for Threema-style end-to-end encrypted chat networks
 net-im/pidgin 2.14.14-r2 2.14.14-r3: GTK Instant Messenger client
