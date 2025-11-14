@@ -1248,7 +1248,7 @@ app-backup/dar 2.8.1-r1: A full featured backup tool, aimed for disks
 app-backup/deja-dup 44.2: Simple backup tool using duplicity back-end
 app-backup/dirvish 1.2.1-r1: Dirvish is a fast, disk based, rotating network backup system
 app-backup/duplicati 2.1.0.103_p20241221-r1 2.2.0.0.2025.10.23: Backup client that securely stores encrypted, incremental, compressed backups
-app-backup/duplicity 3.0.5-r1 3.0.6-r1 9999: Secure backup system using gnupg to encrypt data
+app-backup/duplicity 3.0.5-r1 3.0.6-r1 3.0.6.1 9999: Secure backup system using gnupg to encrypt data
 app-backup/duply 2.5.2 2.5.5 2.5.6: Shell frontend for duplicity
 app-backup/fsarchiver 0.8.8 0.8.8-r1: Flexible filesystem archiver for backup and deployment tool
 app-backup/hdup 2.0.14-r2: Hdup is backup program using tar, find, gzip/bzip2, mcrypt and ssh
@@ -5094,7 +5094,7 @@ dev-java/sax 2.2.1-r5: SAX: Simple API for XML in Java
 dev-java/saxon 9.2.0.6-r5: A XSLT and XQuery Processor
 dev-java/sbt 0.13.18-r1: sbt is a build tool for Scala and Java projects that aims to do the basics well
 dev-java/sbt-bin 1.8.0: sbt, a build tool for Scala
-dev-java/scala-cli-bin 1.6.1 1.8.0 1.9.1: CLI to interact with Scala and Java
+dev-java/scala-cli-bin 1.8.0 1.9.1 1.10.1: CLI to interact with Scala and Java
 dev-java/scram 3.1: SCRAM (RFC 5802) Java implementation
 dev-java/shrinkwrap-api 1.2.6: Client View of the ShrinkWrap Project
 dev-java/shrinkwrap-impl-base 1.2.6: Common Base for Implementations of the ShrinkWrap Project
@@ -9147,7 +9147,7 @@ dev-python/pypy-exe 7.3.20: PyPy executable (build from source)
 dev-python/pypy-exe-bin 7.3.20: PyPy executable (pre-built version)
 dev-python/pyqt-builder 1.19.0: The PEP 517 compliant PyQt build system
 dev-python/pyqt5 5.15.11: Python bindings for the Qt framework
-dev-python/pyqt5-sip 12.17.0 12.17.1: sip extension module for PyQt5
+dev-python/pyqt5-sip 12.17.1: sip extension module for PyQt5
 dev-python/pyqt6 6.9.1 6.10.0: Python bindings for the Qt framework
 dev-python/pyqt6-sip 13.10.2: sip module support for PyQt6
 dev-python/pyqt6-webengine 6.9.0 6.10.0: Python bindings for QtWebEngine
@@ -9164,7 +9164,7 @@ dev-python/pyscard 2.3.0 2.3.1: Smart card support in python
 dev-python/pyscreenshot 3.1: Python screenshot library
 dev-python/pysdl2 0.9.17: Python (ctypes) bindings for SDL2 libraries
 dev-python/pyserial 3.5-r2: Python Serial Port extension
-dev-python/pyside 6.9.3 6.9999: Python bindings for the Qt framework
+dev-python/pyside 6.9.3 6.10.0 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.0 7.0.1 7.0.2: Python bindings for simdjson
 dev-python/pysmi 1.6.2: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
 dev-python/pysnmp 7.1.21 7.1.22: Python SNMP library
@@ -11158,7 +11158,7 @@ dev-vcs/hg-git 1.2.0-r1: push to and pull from a Git repository using Mercurial
 dev-vcs/hub 2.14.2-r1: Command-line wrapper for git that makes you better at GitHub
 dev-vcs/kdesvn 2.1.0_p20250525: Frontend to the subversion vcs
 dev-vcs/lab 0.25.1: Lab wraps Git or Hub, making it simple to interact with repositories on GitLab
-dev-vcs/mercurial 6.7.4-r2 6.7.4-r3 6.8.2 6.9.4 7.0.3 7.1.1 9999: Scalable distributed SCM
+dev-vcs/mercurial 6.7.4-r2 6.7.4-r3 6.8.2 6.9.4 7.0.3 7.1.2 9999: Scalable distributed SCM
 dev-vcs/mr 1.20180726: Multiple Repository management tool
 dev-vcs/pkgcruft-git 0.0.3 9999: QA support for verifying git commits via pkgcruft
 dev-vcs/pre-commit 4.1.0 4.2.0: A framework for managing and maintaining multi-language Git pre-commit hooks
@@ -12166,7 +12166,7 @@ gui-wm/gamescope 3.16.17: Efficient micro-compositor for running games
 gui-wm/hyprland 0.49.0 0.50.1 0.51.1 9999: A dynamic tiling Wayland compositor that doesn't sacrifice on its looks
 gui-wm/sway 1.9-r1 1.10 1.10.1 1.11 9999: i3-compatible Wayland window manager
 gui-wm/tinywl 0.17.4 0.18.0 0.18.1 9999: "minimum viable product" Wayland compositor based on wlroots
-gui-wm/wayfire 0.10.0 9999: compiz like 3D wayland compositor
+gui-wm/wayfire 0.10.0-r1 9999: compiz like 3D wayland compositor
 kde-apps/akonadi 25.08.2 25.08.3-r1: Storage service for PIM data and libraries for PIM apps
 kde-apps/akonadi-calendar 25.08.2 25.08.3: Library for akonadi calendar integration
 kde-apps/akonadi-calendar-tools-common 25.08.2 25.08.3: Common files for akonadi-calendar-tools
@@ -12379,84 +12379,84 @@ kde-apps/sweeper 25.08.2 25.08.3: Privacy settings widget to clean unwanted trac
 kde-apps/thumbnailers 25.08.2 25.08.3: Metapackage for KIO thumbnail generators
 kde-apps/umbrello 25.11.70_pre20250830: KDE UML Modeller
 kde-apps/yakuake 25.08.2 25.08.3: Quake-style terminal emulator based on konsole
-kde-frameworks/attica 5.116.0 6.18.0 6.19.0: Framework providing access to Open Collaboration Services
-kde-frameworks/baloo 6.18.0 6.19.0: Framework for searching and managing metadata
-kde-frameworks/bluez-qt 6.18.0 6.19.0: Qt wrapper for Bluez 5 DBus API
-kde-frameworks/breeze-icons 6.18.0 6.19.0: Breeze SVG icon theme
-kde-frameworks/extra-cmake-modules 6.18.0-r1 6.19.0: Extra modules and scripts for CMake
-kde-frameworks/frameworkintegration 5.116.0 6.18.0 6.19.0: Framework for integrating Qt applications with KDE Plasma workspaces
-kde-frameworks/kapidox 6.18.0 6.19.0: Framework for building KDE API documentation in a standard format and style
-kde-frameworks/karchive 5.116.0 6.18.0 6.19.0: Framework for reading, creation, and manipulation of various archive formats
-kde-frameworks/kauth 5.116.0 6.18.0 6.19.0: Framework to let applications perform actions as a privileged user
-kde-frameworks/kbookmarks 5.116.0 6.18.0 6.19.0: Framework for managing bookmarks stored in XBEL format
-kde-frameworks/kcalendarcore 6.18.0 6.19.0: Library for interfacing with calendars
-kde-frameworks/kcmutils 5.116.0 6.18.0 6.19.0: Framework to work with KDE System Settings modules
-kde-frameworks/kcodecs 5.116.0 6.18.0 6.19.0: Framework for manipulating strings using various encodings
-kde-frameworks/kcolorscheme 6.18.0 6.19.0: Framework for downloading and sharing additional application data
-kde-frameworks/kcompletion 5.116.0 6.18.0 6.19.0: Framework for common completion tasks such as filename or URL completion
-kde-frameworks/kconfig 5.116.0 6.18.0 6.19.0: Framework for reading and writing configuration
-kde-frameworks/kconfigwidgets 5.116.0 6.18.0 6.19.0: Framework providing an assortment of configuration-related widgets
-kde-frameworks/kcontacts 6.18.0 6.19.0: Address book API based on KDE Frameworks
-kde-frameworks/kcoreaddons 5.116.0 6.18.0 6.19.0: Framework for solving common problems such as caching, randomisation, and more
-kde-frameworks/kcrash 5.116.0 6.18.0 6.19.0: Framework for intercepting and handling application crashes
-kde-frameworks/kdav 6.18.0 6.19.0: DAV protocol implemention with KJobs
-kde-frameworks/kdbusaddons 5.116.0 6.18.0 6.19.0: Framework for registering services and applications per freedesktop standards
-kde-frameworks/kdeclarative 5.116.0 6.18.0 6.19.0: Framework providing integration of QML and KDE work spaces
-kde-frameworks/kded 5.116.0 6.18.0 6.19.0: Central daemon of KDE workspaces
-kde-frameworks/kdesu 6.18.0 6.19.0: Framework to handle super user actions
-kde-frameworks/kdnssd 6.18.0 6.19.0: Framework for network service discovery using Zeroconf
-kde-frameworks/kdoctools 5.116.0-r1 6.18.0 6.19.0: Tools to generate documentation in various formats from DocBook files
+kde-frameworks/attica 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing access to Open Collaboration Services
+kde-frameworks/baloo 6.18.0 6.19.0 6.20.0: Framework for searching and managing metadata
+kde-frameworks/bluez-qt 6.18.0 6.19.0 6.20.0: Qt wrapper for Bluez 5 DBus API
+kde-frameworks/breeze-icons 6.18.0 6.19.0 6.20.0: Breeze SVG icon theme
+kde-frameworks/extra-cmake-modules 6.18.0-r1 6.19.0 6.20.0: Extra modules and scripts for CMake
+kde-frameworks/frameworkintegration 5.116.0 6.18.0 6.19.0 6.20.0: Framework for integrating Qt applications with KDE Plasma workspaces
+kde-frameworks/kapidox 6.18.0 6.19.0 6.20.0: Framework for building KDE API documentation in a standard format and style
+kde-frameworks/karchive 5.116.0 6.18.0 6.19.0 6.20.0: Framework for reading, creation, and manipulation of various archive formats
+kde-frameworks/kauth 5.116.0 6.18.0 6.19.0 6.20.0: Framework to let applications perform actions as a privileged user
+kde-frameworks/kbookmarks 5.116.0 6.18.0 6.19.0 6.20.0: Framework for managing bookmarks stored in XBEL format
+kde-frameworks/kcalendarcore 6.18.0 6.19.0 6.20.0: Library for interfacing with calendars
+kde-frameworks/kcmutils 5.116.0 6.18.0 6.19.0 6.20.0: Framework to work with KDE System Settings modules
+kde-frameworks/kcodecs 5.116.0 6.18.0 6.19.0 6.20.0: Framework for manipulating strings using various encodings
+kde-frameworks/kcolorscheme 6.18.0 6.19.0 6.20.0: Framework for downloading and sharing additional application data
+kde-frameworks/kcompletion 5.116.0 6.18.0 6.19.0 6.20.0: Framework for common completion tasks such as filename or URL completion
+kde-frameworks/kconfig 5.116.0 6.18.0 6.19.0 6.20.0: Framework for reading and writing configuration
+kde-frameworks/kconfigwidgets 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing an assortment of configuration-related widgets
+kde-frameworks/kcontacts 6.18.0 6.19.0 6.20.0: Address book API based on KDE Frameworks
+kde-frameworks/kcoreaddons 5.116.0 6.18.0 6.19.0 6.20.0: Framework for solving common problems such as caching, randomisation, and more
+kde-frameworks/kcrash 5.116.0 6.18.0 6.19.0 6.20.0: Framework for intercepting and handling application crashes
+kde-frameworks/kdav 6.18.0 6.19.0 6.20.0: DAV protocol implemention with KJobs
+kde-frameworks/kdbusaddons 5.116.0 6.18.0 6.19.0 6.20.0: Framework for registering services and applications per freedesktop standards
+kde-frameworks/kdeclarative 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing integration of QML and KDE work spaces
+kde-frameworks/kded 5.116.0 6.18.0 6.19.0 6.20.0: Central daemon of KDE workspaces
+kde-frameworks/kdesu 6.18.0 6.19.0 6.20.0: Framework to handle super user actions
+kde-frameworks/kdnssd 6.18.0 6.19.0 6.20.0: Framework for network service discovery using Zeroconf
+kde-frameworks/kdoctools 5.116.0-r1 6.18.0 6.19.0 6.20.0: Tools to generate documentation in various formats from DocBook files
 kde-frameworks/kf-env 6: Environment setting required for all KDE Frameworks apps to run
-kde-frameworks/kfilemetadata 6.18.0 6.19.0: Library for extracting file metadata
-kde-frameworks/kglobalaccel 5.116.0-r2 6.18.0 6.19.0: Framework to handle global shortcuts
-kde-frameworks/kguiaddons 5.116.0-r2 6.18.0 6.19.0: Framework providing assorted high-level user interface components
-kde-frameworks/kholidays 6.18.0 6.19.0: Library to determine holidays and other special events for a geographical region
-kde-frameworks/ki18n 5.116.0 6.18.0 6.19.0: Framework based on Gettext for internationalizing user interface text
-kde-frameworks/kiconthemes 5.116.0 6.18.0 6.19.0: Framework for icon theming and configuration
-kde-frameworks/kidletime 6.18.0 6.19.0: Framework for detection and notification of device idle time
-kde-frameworks/kimageformats 5.116.0-r1 6.18.0 6.19.0: Framework providing additional format plugins for Qt's image I/O system
-kde-frameworks/kio 5.116.0-r5 6.18.0 6.19.1: Framework providing transparent file and data management
+kde-frameworks/kfilemetadata 6.18.0 6.19.0 6.20.0: Library for extracting file metadata
+kde-frameworks/kglobalaccel 5.116.0-r2 6.18.0 6.19.0 6.20.0: Framework to handle global shortcuts
+kde-frameworks/kguiaddons 5.116.0-r2 6.18.0 6.19.0 6.20.0: Framework providing assorted high-level user interface components
+kde-frameworks/kholidays 6.18.0 6.19.0 6.20.0: Library to determine holidays and other special events for a geographical region
+kde-frameworks/ki18n 5.116.0 6.18.0 6.19.0 6.20.0: Framework based on Gettext for internationalizing user interface text
+kde-frameworks/kiconthemes 5.116.0 6.18.0 6.19.0 6.20.0: Framework for icon theming and configuration
+kde-frameworks/kidletime 6.18.0 6.19.0 6.20.0: Framework for detection and notification of device idle time
+kde-frameworks/kimageformats 5.116.0-r1 6.18.0 6.19.0 6.20.0: Framework providing additional format plugins for Qt's image I/O system
+kde-frameworks/kio 5.116.0-r5 6.18.0 6.19.1 6.20.0: Framework providing transparent file and data management
 kde-frameworks/kio-trash-desktop-file 5.116.0: KIO Trash KCM service desktop file
-kde-frameworks/kirigami 5.116.0-r2 6.18.0 6.19.0: Lightweight user interface framework for mobile and convergent applications
-kde-frameworks/kitemmodels 5.116.0 6.18.0 6.19.0: Framework providing data models to help with tasks such as sorting and filtering
-kde-frameworks/kitemviews 5.116.0 6.18.0 6.19.0: Framework providing additional widgets for item models
-kde-frameworks/kjobwidgets 5.116.0 6.18.0 6.19.0: Framework providing assorted widgets for showing the progress of jobs
-kde-frameworks/knewstuff 5.116.0 6.18.0 6.19.0: Framework for downloading and sharing additional application data
-kde-frameworks/knotifications 5.116.0-r2 6.18.0 6.19.0: Framework for notifying the user of an event
-kde-frameworks/knotifyconfig 6.18.0 6.19.0: Framework for configuring desktop notifications
-kde-frameworks/kpackage 5.116.0 6.18.0 6.19.0: Framework to install and load packages of non binary content
-kde-frameworks/kparts 6.18.0 6.19.0: Framework providing elaborate user-interface components
-kde-frameworks/kpeople 6.18.0 6.19.0: KDE contact person abstraction library
-kde-frameworks/kplotting 6.18.0 6.19.0: Framework providing easy data-plotting functions
-kde-frameworks/kpty 6.18.0 6.19.0: Framework for pseudo terminal devices and running child processes
-kde-frameworks/kquickcharts 6.18.0 6.19.0: QtQuick plugin providing high-performance charts
-kde-frameworks/krunner 6.18.0 6.19.0: Framework for providing different actions given a string query
-kde-frameworks/ksecretd-services 6.18.0 6.19.0: D-Bus service files for ksecretd kwallet runtime component
-kde-frameworks/kservice 5.116.0-r1 6.18.0 6.19.0: Advanced plugin and service introspection
-kde-frameworks/kstatusnotifieritem 6.18.0 6.19.0: Implementation of Status Notifier Items
-kde-frameworks/ksvg 6.18.0 6.19.0: Components for handling SVGs
-kde-frameworks/ktexteditor 6.18.0 6.19.0: Framework providing a full text editor component
-kde-frameworks/ktexttemplate 6.18.0 6.19.0: Library to allow separating the structure of documents from data they contain
-kde-frameworks/ktextwidgets 6.18.0 6.19.0: Framework providing an assortment of widgets for displaying and editing text
-kde-frameworks/kunitconversion 6.18.0 6.19.0: Framework for converting units
-kde-frameworks/kuserfeedback 6.18.0 6.19.0: Framework to collect user feedback for applications via telemetry and surveys
-kde-frameworks/kwallet 5.116.0-r3 6.18.0 6.19.0: Interface to KWallet Framework providing desktop-wide storage for passwords
-kde-frameworks/kwallet-runtime 6.18.0-r1 6.19.0: Framework providing desktop-wide storage for passwords
-kde-frameworks/kwidgetsaddons 5.116.0 6.18.0 6.19.0: An assortment of high-level widgets for common tasks
-kde-frameworks/kwindowsystem 5.116.0 6.18.0 6.19.0: Framework providing access to properties and features of the window manager
-kde-frameworks/kxmlgui 5.116.0 6.18.0 6.19.0: Framework for managing menu and toolbar actions in an abstract way
-kde-frameworks/modemmanager-qt 6.18.0 6.19.0: ModemManager bindings for Qt
-kde-frameworks/networkmanager-qt 6.18.0 6.19.0: NetworkManager bindings for Qt
+kde-frameworks/kirigami 5.116.0-r2 6.18.0 6.19.0 6.20.0: Lightweight user interface framework for mobile and convergent applications
+kde-frameworks/kitemmodels 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing data models to help with tasks such as sorting and filtering
+kde-frameworks/kitemviews 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing additional widgets for item models
+kde-frameworks/kjobwidgets 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing assorted widgets for showing the progress of jobs
+kde-frameworks/knewstuff 5.116.0 6.18.0 6.19.0 6.20.0: Framework for downloading and sharing additional application data
+kde-frameworks/knotifications 5.116.0-r2 6.18.0 6.19.0 6.20.0: Framework for notifying the user of an event
+kde-frameworks/knotifyconfig 6.18.0 6.19.0 6.20.0: Framework for configuring desktop notifications
+kde-frameworks/kpackage 5.116.0 6.18.0 6.19.0 6.20.0: Framework to install and load packages of non binary content
+kde-frameworks/kparts 6.18.0 6.19.0 6.20.0: Framework providing elaborate user-interface components
+kde-frameworks/kpeople 6.18.0 6.19.0 6.20.0: KDE contact person abstraction library
+kde-frameworks/kplotting 6.18.0 6.19.0 6.20.0: Framework providing easy data-plotting functions
+kde-frameworks/kpty 6.18.0 6.19.0 6.20.0: Framework for pseudo terminal devices and running child processes
+kde-frameworks/kquickcharts 6.18.0 6.19.0 6.20.0: QtQuick plugin providing high-performance charts
+kde-frameworks/krunner 6.18.0 6.19.0 6.20.0: Framework for providing different actions given a string query
+kde-frameworks/ksecretd-services 6.18.0 6.19.0 6.20.0: D-Bus service files for ksecretd kwallet runtime component
+kde-frameworks/kservice 5.116.0-r1 6.18.0 6.19.0 6.20.0: Advanced plugin and service introspection
+kde-frameworks/kstatusnotifieritem 6.18.0 6.19.0 6.20.0: Implementation of Status Notifier Items
+kde-frameworks/ksvg 6.18.0 6.19.0 6.20.0: Components for handling SVGs
+kde-frameworks/ktexteditor 6.18.0 6.19.0 6.20.0: Framework providing a full text editor component
+kde-frameworks/ktexttemplate 6.18.0 6.19.0 6.20.0: Library to allow separating the structure of documents from data they contain
+kde-frameworks/ktextwidgets 6.18.0 6.19.0 6.20.0: Framework providing an assortment of widgets for displaying and editing text
+kde-frameworks/kunitconversion 6.18.0 6.19.0 6.20.0: Framework for converting units
+kde-frameworks/kuserfeedback 6.18.0 6.19.0 6.20.0: Framework to collect user feedback for applications via telemetry and surveys
+kde-frameworks/kwallet 5.116.0-r3 6.18.0 6.19.0 6.20.0: Interface to KWallet Framework providing desktop-wide storage for passwords
+kde-frameworks/kwallet-runtime 6.18.0-r1 6.19.0 6.20.0: Framework providing desktop-wide storage for passwords
+kde-frameworks/kwidgetsaddons 5.116.0 6.18.0 6.19.0 6.20.0: An assortment of high-level widgets for common tasks
+kde-frameworks/kwindowsystem 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing access to properties and features of the window manager
+kde-frameworks/kxmlgui 5.116.0 6.18.0 6.19.0 6.20.0: Framework for managing menu and toolbar actions in an abstract way
+kde-frameworks/modemmanager-qt 6.18.0 6.19.0 6.20.0: ModemManager bindings for Qt
+kde-frameworks/networkmanager-qt 6.18.0 6.19.0 6.20.0: NetworkManager bindings for Qt
 kde-frameworks/oxygen-icons 6.1.0: Oxygen SVG icon theme
-kde-frameworks/prison 6.18.0 6.19.0: QRCode and data matrix barcode library
-kde-frameworks/purpose 6.18.0 6.19.0: Library for providing abstractions to get the developer's purposes fulfilled
-kde-frameworks/purpose-kaccounts-services 6.18.0 6.19.0: KAccounts generated service files for nextcloud and google services
-kde-frameworks/qqc2-desktop-style 6.18.0 6.19.0: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
-kde-frameworks/solid 5.116.0-r1 6.18.0 6.19.0: Provider for platform independent hardware discovery, abstraction and management
-kde-frameworks/sonnet 6.18.0 6.19.0: Framework for providing spell-checking through abstraction of popular backends
-kde-frameworks/syndication 6.18.0 6.19.0: Library for parsing RSS and Atom feeds
-kde-frameworks/syntax-highlighting 6.18.0 6.19.0: Framework for syntax highlighting
-kde-frameworks/threadweaver 6.18.0 6.19.0: Framework for managing threads using job and queue-based interfaces
+kde-frameworks/prison 6.18.0 6.19.0 6.20.0: QRCode and data matrix barcode library
+kde-frameworks/purpose 6.18.0 6.19.0 6.20.0: Library for providing abstractions to get the developer's purposes fulfilled
+kde-frameworks/purpose-kaccounts-services 6.18.0 6.19.0 6.20.0: KAccounts generated service files for nextcloud and google services
+kde-frameworks/qqc2-desktop-style 6.18.0 6.19.0 6.20.0: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
+kde-frameworks/solid 5.116.0-r1 6.18.0 6.19.0 6.20.0: Provider for platform independent hardware discovery, abstraction and management
+kde-frameworks/sonnet 6.18.0 6.19.0 6.20.0: Framework for providing spell-checking through abstraction of popular backends
+kde-frameworks/syndication 6.18.0 6.19.0 6.20.0: Library for parsing RSS and Atom feeds
+kde-frameworks/syntax-highlighting 6.18.0 6.19.0 6.20.0: Framework for syntax highlighting
+kde-frameworks/threadweaver 6.18.0 6.19.0 6.20.0: Framework for managing threads using job and queue-based interfaces
 kde-misc/basket 2.49b_p20250902: Multiple information organizer - a DropDrawers clone
 kde-misc/colord-kde 25.08.2 25.08.3: Provides interfaces and session daemon to colord
 kde-misc/kclock 25.08.2 25.08.3: Convergent clock application for Plasma
@@ -12630,8 +12630,8 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20250905 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.7 1.6.7-r1 1.6.10 1.6.11 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 140.3.1 140.4.0 143.0.1 144.0-r1 144.0.1: Thunderbird Mail Client
-mail-client/thunderbird-bin 140.4.0 144.0.1: Thunderbird Mail Client
+mail-client/thunderbird 140.3.1 140.4.0 143.0.1 144.0-r1 144.0.1 145.0: Thunderbird Mail Client
+mail-client/thunderbird-bin 140.4.0 144.0.1 145.0: Thunderbird Mail Client
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.12.2 2.13.0 2.13.1: High-performance interface between the MTA and content checkers
