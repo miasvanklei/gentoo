@@ -4024,7 +4024,7 @@ dev-db/phpmyadmin 5.2.1 5.2.3: Web-based administration for MySQL database in PH
 dev-db/phppgadmin 7.14.7: Web-based administration for Postgres database in php
 dev-db/plr 8.4.5 8.4.6: R language extension for postgresql database
 dev-db/postgis 3.3.7-r2 3.3.8-r1 3.4.4-r1 3.5.2-r1 3.5.3-r2 3.6.0: Geographic Objects for PostgreSQL
-dev-db/postgresql 14.19-r2 15.14-r2 16.10-r2 17.6-r2 18.0 9999: PostgreSQL RDBMS
+dev-db/postgresql 14.19-r2 14.20 15.14-r2 15.15 16.10-r2 16.11 17.6-r2 17.7 18.0 18.1 9999: PostgreSQL RDBMS
 dev-db/pspg 5.5.4 5.5.8 5.8.1 5.8.5 5.8.7: A better pager for CLI database clients and can be used in place of psql
 dev-db/psqlodbc 16.00.0000: Official ODBC driver for PostgreSQL
 dev-db/qdbm 1.8.78-r5: Quick Database Manager
@@ -14810,7 +14810,7 @@ net-im/gajim 2.2.0 2.3.6 2.4.0: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
 net-im/kaidan 0.13.0: Modern XMPP chat app for every device
 net-im/libcommuni 3.7.0-r2: A cross-platform IRC framework written with Qt
-net-im/mattermost-desktop-bin 5.13.2 6.0.0_rc2: Mattermost Desktop application
+net-im/mattermost-desktop-bin 5.13.2 6.0.0: Mattermost Desktop application
 net-im/neochat 25.08.2 25.08.3: Client for Matrix, the decentralized communication protocol
 net-im/openmittsu 0.10.2.0 0.10.3.0: Open source chat client for Threema-style end-to-end encrypted chat networks
 net-im/pidgin 2.14.14-r2 2.14.14-r3: GTK Instant Messenger client
