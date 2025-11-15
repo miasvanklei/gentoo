@@ -14053,7 +14053,7 @@ media-sound/litestream 1.3_rc3: Litstream is a lightweight and robust shoutcast-
 media-sound/lltag 0.14.6: Automatic command-line mp3/ogg/flac file tagger and renamer
 media-sound/lollypop 1.4.42 1.4.44: Modern music player for GNOME
 media-sound/lxmusic 0.4.7-r2: Simple GUI XMMS2 client with minimal functionality
-media-sound/mac 4.11.4.5.7-r1 11.38 11.54 11.62: Monkey's Audio Codecs
+media-sound/mac 4.11.4.5.7-r1 11.38 11.62 11.82: Monkey's Audio Codecs
 media-sound/madplay 0.15.2b-r2: The MAD audio player
 media-sound/mangler 1.2.5-r5: Open source VOIP client capable of connecting to Ventrilo 3.x servers
 media-sound/mcdp 0.4b: Very small console cd player
@@ -17214,9 +17214,9 @@ sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
 sys-apps/system-monitoring-center 2.26.0-r1 9999: Multi-featured system monitor GUI written in Python
 sys-apps/systemctl-tui 0.4.0: A simple TUI for interacting with systemd services and their logs
-sys-apps/systemd 257.9 257.10 258-r1 258.1 258.2 9999: System and service manager for Linux
+sys-apps/systemd 257.9 257.10 258.2 9999: System and service manager for Linux
 sys-apps/systemd-readahead 216: Split of readahead systemd implementation
-sys-apps/systemd-utils 254.22 254.24 254.26 255.15-r1 255.18 255.21 256.12 256.13 256.16 256.17: Utilities split out from systemd for OpenRC users
+sys-apps/systemd-utils 254.24 254.26 255.18 255.21 256.17: Utilities split out from systemd for OpenRC users
 sys-apps/sysvinit 3.09 3.14 3.15: /sbin/init - parent of all processes
 sys-apps/tas 1.9.0.240925: Supermicro Thin-Agent Service for monitoring through the BMC/IPMI
 sys-apps/tcp-wrappers 7.6.31-r1: TCP Wrappers
@@ -17522,7 +17522,7 @@ sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
 sys-firmware/edk2 202202 202408 202411 202502-r1: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/edk2-bin 202202 202408 202411: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.18: NXP i.MX firmware
-sys-firmware/intel-microcode 20250512_p20250513 20250812_p20250813 20251111_p20251112: Intel IA32/IA64 microcode update data
+sys-firmware/intel-microcode 20250812_p20250813 20251111_p20251112: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3-r1: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
 sys-firmware/ipw2200-firmware 3.1-r1: Firmware for the Intel PRO/Wireless 2200BG/2915ABG miniPCI and 2225BG PCI
 sys-firmware/ipxe 1.21.1 1.21.1_p20230601 1.21.1_p20230601-r1: Open source network boot (PXE) firmware
@@ -17587,7 +17587,7 @@ sys-fs/extundelete 0.2.4-r2: A utility to undelete files from an ext3 or ext4 pa
 sys-fs/f2fs-tools 1.16.0-r1 1.16.0-r2 9999: Tools for Flash-Friendly File System (F2FS)
 sys-fs/fatcat 1.1.1-r2: FAT filesystems explore, extract, repair, and forensic tool
 sys-fs/fatresize 1.1.0: Resize FAT partitions using libparted
-sys-fs/fatsort 1.6.5.640: Sorts files on FAT16/32 partitions, ideal for basic audio players
+sys-fs/fatsort 1.6.5.640 1.7.679: Sorts files on FAT16/32 partitions, ideal for basic audio players
 sys-fs/fragview 0.1.1-r1 0.1.2 9999: Disk fragmentation visualizer based on FIEMAP and FIBMAP ioctls
 sys-fs/fscrypt 0.3.4: Tool for managing Linux filesystem encryption
 sys-fs/fswatch 1.18.0 1.18.3: cross-platform file change monitor with multiple backends
