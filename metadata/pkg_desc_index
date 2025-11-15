@@ -1161,7 +1161,7 @@ app-arch/libpar2 0.4-r1: A library for par2, extracted from par2cmdline
 app-arch/lrzip 0.651 0.651-r1: Long Range ZIP or Lzma RZIP optimized for compressing large files
 app-arch/lrzip-next 0.14.1 9999: Fork of Con Kolivas' lrzip program for compressing large files
 app-arch/lunzip 1.15: Decompressor for the lzip format, written in C
-app-arch/lxqt-archiver 1.0.0 1.1.0 1.2.0 1.3.0-r1: Qt GUI File Archiver
+app-arch/lxqt-archiver 1.2.0 1.3.0-r1: Qt GUI File Archiver
 app-arch/lz4 1.9.4 1.10.0 1.10.0-r1: Extremely Fast Compression algorithm
 app-arch/lz5 2.0-r1: An efficient compressor with very fast decompression
 app-arch/lzip 1.25: Lossless data compressor based on the LZMA algorithm
@@ -2874,7 +2874,7 @@ app-misc/prog-express 3.8.9: A modern and intuitive control software for the Bat
 app-misc/ps3pf_utils 2.3: Utilities to set the ps3 specific features
 app-misc/pwsafe 0.2.0-r6: A Password Safe compatible command-line password manager
 app-misc/qlcplus 4.14.3: A software to control DMX or analog lighting systems
-app-misc/qtxdg-tools 4.0.0 4.1.0 4.2.0 4.3.0: User Tools from libqtxdg
+app-misc/qtxdg-tools 4.2.0 4.3.0: User Tools from libqtxdg
 app-misc/race64 1.0.0: High performance base64 encoder and decoder
 app-misc/radeontop 1.4 9999: Utility to view Radeon GPU utilization
 app-misc/ranger 1.9.4-r1 9999: Vim-inspired file manager for the console
@@ -3830,7 +3830,7 @@ dev-build/kas 4.5-r2 4.8.2: Setup tool for bitbake based projects
 dev-build/kbuild 0.1.9998.3499-r4 0.1.9998.3592 0.1.9998.3660-r1 9999: A makefile framework for writing simple makefiles for complex tasks
 dev-build/libtool 2.5.4 2.6.0 9999: A shared library tool for developers
 dev-build/mage 1.13.0 1.15.0: make/rake like tool using go
-dev-build/make 4.4.1-r100 4.4.1-r101 9999: Standard tool to compile source trees
+dev-build/make 4.4.1-r100 4.4.1-r101 4.4.1-r102 9999: Standard tool to compile source trees
 dev-build/melange 0.18.3: Build APK packages from source code using declarative pipelines
 dev-build/meson 1.1.1 1.2.3 1.3.2 1.4.2 1.5.2 1.6.1 1.7.2 1.8.5 1.9.1 9999: Open source build system
 dev-build/meson-format-array 0: Format shell expressions into a meson array
@@ -4058,7 +4058,7 @@ dev-debug/cgdb 0.8.0 9999: A curses front-end for GDB, the GNU debugger
 dev-debug/d-feet 0.3.16-r1: D-Feet is a powerful D-Bus debugger
 dev-debug/d-spy 47.0 48.0: D-Spy is a simple tool to explore D-Bus connections
 dev-debug/ddd 3.3.12-r5 3.4.1: Graphical front-end for command-line debuggers
-dev-debug/drgn 0.0.31 0.0.32 0.0.33: Programmable debugger
+dev-debug/drgn 0.0.33: Programmable debugger
 dev-debug/dtrace 2.0.3-r2 2.0.4 9999: Dynamic BPF-based system-wide tracing tool
 dev-debug/duma 2.5.15-r3: DUMA (Detect Unintended Memory Access) is a memory debugging library
 dev-debug/gdb 16.3 9999: GNU debugger
@@ -5242,7 +5242,7 @@ dev-lang/orc 0.4.38 0.4.40 0.4.40-r1 0.4.41: The Oil Runtime Compiler, a just-in
 dev-lang/parrot 8.1.0-r4: Virtual machine designed to compile and execute bytecode for dynamic languages
 dev-lang/pcc 1.1.0-r1 1.1.0-r2: pcc portable c compiler
 dev-lang/perl 5.40.0-r1 5.40.1 5.40.2 5.42.0: Larry Wall's Practical Extraction and Report Language
-dev-lang/php 8.2.28-r1 8.2.29 8.3.21 8.3.26 8.3.27 8.4.14: The PHP language runtime engine
+dev-lang/php 8.2.29 8.3.26 8.3.27 8.4.14: The PHP language runtime engine
 dev-lang/pico8 0.2.6b 0.2.7: Fantasy console for making and playing tiny games and other computer programs
 dev-lang/polyml 5.9.1 5.9.2-r1: Poly/ML is a full implementation of Standard ML
 dev-lang/pypy 2.7.7.3.20 3.11.7.3.20_p2: A fast, compliant alternative implementation of the Python (3.11) language
@@ -5498,7 +5498,7 @@ dev-libs/libdaemon 0.14-r4: Simple library for creating daemon processes in C
 dev-libs/libdazzle 3.44.0: Experimental new features for GTK+ and GLib
 dev-libs/libdbh 5.0.22: A small library to create and manage 64-bit disk based hash tables
 dev-libs/libdbusmenu 16.04.0-r4: Library to pass menu structure across DBus
-dev-libs/libdbusmenu-lxqt 0.1.0 0.2.0 0.3.0: LXQt DBusMenu Implementation
+dev-libs/libdbusmenu-lxqt 0.3.0: LXQt DBusMenu Implementation
 dev-libs/libdex 0.6.1 0.8.1 0.10.0 0.10.1: Dex provides Future-based programming for GLib-based applications
 dev-libs/libdispatch 5.8 6.1.1: A library for concurrent code execution on multicore hardware
 dev-libs/libdivecomputer 0.6.0-r1 9999: Library for communication with dive computers from various manufacturers
@@ -5613,7 +5613,7 @@ dev-libs/libptytty 2.0-r1: A library for mostly OS-independent handling of pty/t
 dev-libs/libpwquality 1.4.5-r1 1.4.5-r2: Library for password quality checking and generating random passwords
 dev-libs/libpy 0.2.5-r3: Utilities for writing C++ extension modules
 dev-libs/libqt6pas 6.2.7: Free Pascal Qt6 bindings library updated by lazarus IDE
-dev-libs/libqtxdg 4.0.0 4.0.1 4.1.0 4.2.0 4.3.0: Qt Implementation of XDG Standards
+dev-libs/libqtxdg 4.2.0 4.3.0: Qt Implementation of XDG Standards
 dev-libs/libratbag 0.17-r2 0.18 9999: Library to configure gaming mice
 dev-libs/librdkafka 2.10.0 2.11.1 2.12.1: Apache Kafka C/C++ client library
 dev-libs/librelp 1.11.0: An easy to use library for the RELP protocol
@@ -10954,7 +10954,7 @@ dev-util/lttng-tools 2.12.17-r1 2.12.17-r2 2.13.14-r1 2.13.15 2.13.15-r2 2.14.0-
 dev-util/lttng-ust 2.12.10 2.13.9 2.14.0: Linux Trace Toolkit - UST library
 dev-util/lttng-ust-compat 2.12.10: Linux Trace Toolkit - UST library
 dev-util/lv2lint 0.16.2: Check whether a given LV2 plugin is up to the specification
-dev-util/lxqt-build-tools 2.0.0-r1 2.1.0 2.2.1 2.3.0: LXQt Build Tools
+dev-util/lxqt-build-tools 2.2.1 2.3.0: LXQt Build Tools
 dev-util/makeheaders 0_p20240823: Tool that automatically generates .h files for a C or C++ programming project
 dev-util/makepp 2.0.99.2: GNU make replacement
 dev-util/marksman 2024.12.18: LSP language server for editing Markdown files
@@ -12159,7 +12159,7 @@ gui-libs/wayfire-plugins-extra 0.10.0 9999: extra plugins for wayfire
 gui-libs/wf-config 0.10.0 9999: library for managing wayfire configuration files
 gui-libs/wlroots 0.17.4-r1 0.18.2 0.19.0 0.19.1 0.19.2 9999: Pluggable, composable, unopinionated modules for building a Wayland compositor
 gui-libs/wpebackend-fdo 1.14.2-r1 1.14.3 1.14.4 1.16.0: WPE backend designed for Linux desktop systems
-gui-libs/xdg-desktop-portal-lxqt 1.0.2 1.1.0 1.2.0 1.3.0: Backend implementation for xdg-desktop-portal using Qt/KF5/libfm-qt
+gui-libs/xdg-desktop-portal-lxqt 1.2.0 1.3.0: Backend implementation for xdg-desktop-portal using Qt/KF5/libfm-qt
 gui-libs/xdg-desktop-portal-wlr 0.7.1-r1 0.7.1-r2 9999: xdg-desktop-portal backend for wlroots
 gui-wm/dwl 0.5-r1 0.6 0.7 9999: dwm for Wayland
 gui-wm/gamescope 3.16.17: Efficient micro-compositor for running games
@@ -12595,24 +12595,24 @@ lxde-base/lxsession 0.5.6: LXDE session manager
 lxde-base/lxtask 0.1.10: LXDE Task manager
 lxde-base/lxterminal 0.4.0_p20230917: Lightweight vte-based tabbed terminal emulator for LXDE
 lxde-base/menu-cache 1.1.0-r1: Library to create and utilize caches to speed up freedesktop application menus
-lxqt-base/liblxqt 2.0.0-r1 2.1.0 2.2.0 2.3.0: Common base library for the LXQt desktop environment
+lxqt-base/liblxqt 2.2.0 2.3.0: Common base library for the LXQt desktop environment
 lxqt-base/libsysstat 1.0.0 1.1.0: Qt GUI for System Statistics
-lxqt-base/lxqt-about 2.0.0 2.1.0 2.2.0 2.3.0: LXQt about dialog
-lxqt-base/lxqt-admin 2.0.0-r1 2.1.0 2.2.0 2.3.0: LXQt system administration tool
-lxqt-base/lxqt-config 2.0.0 2.1.0 2.1.1 2.2.0 2.3.0: LXQt system configuration control center
-lxqt-base/lxqt-globalkeys 2.0.0 2.1.0 2.2.0 2.3.0: Daemon and library for global keyboard shortcuts registration
-lxqt-base/lxqt-menu-data 2.0.0 2.1.0 2.2.0 2.3.0: LXQt Menu Files and Translations for Menu Categories
-lxqt-base/lxqt-meta 2.0.0 2.1.0 2.2.0 2.3.0: Meta ebuild for LXQt, the Lightweight Desktop Environment
-lxqt-base/lxqt-notificationd 2.0.1 2.1.1 2.2.0 2.3.0: LXQt notification daemon and library
-lxqt-base/lxqt-openssh-askpass 2.0.1 2.1.0 2.2.0 2.3.0: LXQt OpenSSH user password prompt tool
-lxqt-base/lxqt-panel 2.0.1 2.1.4 2.2.1 2.2.2 2.3.0: LXQt desktop panel and plugins
-lxqt-base/lxqt-policykit 2.0.0 2.1.0 2.2.0 2.3.0: LXQt PolKit authentication agent
-lxqt-base/lxqt-powermanagement 2.0.0 2.1.0 2.2.0 2.2.0-r1 2.2.1 2.3.0: LXQt daemon for power management and auto-suspend
-lxqt-base/lxqt-qtplugin 2.0.0 2.1.0-r1 2.2.0 2.3.0: LXQt system integration plugin for Qt
-lxqt-base/lxqt-runner 2.0.0 2.1.1 2.1.2 2.2.0 2.3.0: LXQt quick launcher
-lxqt-base/lxqt-session 2.0.0 2.1.1 2.2.0 2.3.0: LXQt Session Manager
-lxqt-base/lxqt-sudo 2.0.0 2.1.0 2.2.0 2.3.0: LXQt GUI frontend for sudo
-lxqt-base/lxqt-wayland-session 0.2.0 0.2.1 0.3.0: LXQt Wayland Session Support
+lxqt-base/lxqt-about 2.2.0 2.3.0: LXQt about dialog
+lxqt-base/lxqt-admin 2.2.0 2.3.0: LXQt system administration tool
+lxqt-base/lxqt-config 2.2.0 2.3.0: LXQt system configuration control center
+lxqt-base/lxqt-globalkeys 2.2.0 2.3.0: Daemon and library for global keyboard shortcuts registration
+lxqt-base/lxqt-menu-data 2.2.0 2.3.0: LXQt Menu Files and Translations for Menu Categories
+lxqt-base/lxqt-meta 2.2.0 2.3.0: Meta ebuild for LXQt, the Lightweight Desktop Environment
+lxqt-base/lxqt-notificationd 2.2.0 2.3.0: LXQt notification daemon and library
+lxqt-base/lxqt-openssh-askpass 2.2.0 2.3.0: LXQt OpenSSH user password prompt tool
+lxqt-base/lxqt-panel 2.2.1 2.2.2 2.3.0: LXQt desktop panel and plugins
+lxqt-base/lxqt-policykit 2.2.0 2.3.0: LXQt PolKit authentication agent
+lxqt-base/lxqt-powermanagement 2.2.1 2.3.0: LXQt daemon for power management and auto-suspend
+lxqt-base/lxqt-qtplugin 2.2.0 2.3.0: LXQt system integration plugin for Qt
+lxqt-base/lxqt-runner 2.2.0 2.3.0: LXQt quick launcher
+lxqt-base/lxqt-session 2.2.0 2.3.0: LXQt Session Manager
+lxqt-base/lxqt-sudo 2.2.0 2.3.0: LXQt GUI frontend for sudo
+lxqt-base/lxqt-wayland-session 0.2.1 0.3.0: LXQt Wayland Session Support
 mail-client/aerc 0.20.1 0.21.0 9999: Email client for your terminal
 mail-client/alot 0.11-r1 9999: Experimental terminal UI for net-mail/notmuch written in Python
 mail-client/alpine 2.26-r4 2.26-r5: An easy to use text-based based mail and news client
@@ -12630,8 +12630,8 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20250905 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.7 1.6.7-r1 1.6.10 1.6.11 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 140.3.1 140.4.0 143.0.1 144.0-r1 144.0.1 145.0: Thunderbird Mail Client
-mail-client/thunderbird-bin 140.4.0 144.0.1 145.0: Thunderbird Mail Client
+mail-client/thunderbird 140.3.1 140.4.0 140.5.0 143.0.1 144.0-r1 144.0.1 145.0: Thunderbird Mail Client
+mail-client/thunderbird-bin 140.4.0 140.5.0 144.0.1 145.0: Thunderbird Mail Client
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.12.2 2.13.0 2.13.1: High-performance interface between the MTA and content checkers
@@ -13072,7 +13072,7 @@ media-gfx/libredwg 0.13 0.13.2 0.13.3: C library to handle DWG files
 media-gfx/llgal 0.13.19-r2: Command-line static web gallery generator
 media-gfx/loupe 48.1-r2: View images
 media-gfx/luminance-hdr 2.6.1.1-r2: Graphical user interface that provides a workflow for HDR imaging
-media-gfx/lximage-qt 2.0.1 2.1.0 2.1.1 2.2.0 2.3.0: Qt Image Viewer
+media-gfx/lximage-qt 2.2.0 2.3.0: Qt Image Viewer
 media-gfx/maim 5.8.1 5.8.1-r1: Commandline tool to take screenshots of the desktop
 media-gfx/mandelbulber 2.33: Tool to render 3D fractals
 media-gfx/mcomix 3.1.0 3.1.1 9999: GTK image viewer for comic book archives
@@ -14118,7 +14118,7 @@ media-sound/paprefs 1.2-r3: PulseAudio Preferences, configuration dialog for Pul
 media-sound/pasystray 0.8.2: PulseAudio system tray
 media-sound/patchage 1.0.10 9999: Modular patch bay for JACK-based audio and MIDI systems
 media-sound/pavucontrol 5.0-r4 6.1 6.1-r1: Pulseaudio Volume Control, GTK based mixer for Pulseaudio
-media-sound/pavucontrol-qt 2.0.0 2.1.0 2.2.0 2.3.0: Qt GUI Pulseaudio Mixer
+media-sound/pavucontrol-qt 2.2.0 2.3.0: Qt GUI Pulseaudio Mixer
 media-sound/pavumeter 0.9.3-r2: PulseAudio Volume Meter, simple GTK volume meter for PulseAudio
 media-sound/peercast 0.1218-r2: A client and server for Peercast P2P-radio network
 media-sound/pianobar 2022.04.01 2022.04.01-r1 9999: A console-based replacement for Pandora's flash player
@@ -15057,7 +15057,7 @@ net-libs/udns 0.6: Async-capable DNS stub resolver library
 net-libs/uhttpmock 0.5.5-r1 0.9.0 0.11.0: HTTP web service mocking library
 net-libs/usrsctp 0.9.5.0_p20250331: A cross-platform userland SCTP stack
 net-libs/wandio 4.2.3_p1-r1 4.2.3_p1-r2 4.2.4 4.2.6: C library for simple and efficient file IO
-net-libs/webkit-gtk 2.44.4-r411 2.44.4-r601 2.46.5-r411 2.46.5-r601 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.50.1-r411 2.50.1-r601: Open source web browser engine
+net-libs/webkit-gtk 2.44.4-r411 2.44.4-r601 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.50.1-r411 2.50.1-r601: Open source web browser engine
 net-libs/wslay 1.1.1_p20210115: WebSocket library in C
 net-libs/wvstreams 4.6.1_p14-r2: A network programming library in C++
 net-libs/xdp-tools 1.5.3 1.5.4 1.5.6 1.5.7: The libxdp library and various tools for use with XDP
@@ -15259,7 +15259,7 @@ net-misc/igmpproxy 0.4: A multicast routing daemon which uses IGMP forwarding
 net-misc/inetutils 2.6-r1: Collection of common network programs
 net-misc/ip-sentinel 0.12-r2: Prevent unauthorized usage of IP addresses
 net-misc/ipcalc 0.42_p2 0.51: IP Calculator prints broadcast/network/etc for an IP address and netmask
-net-misc/iperf 2.2.1 2.9999 3.19.1 3.19.1-r1: TCP, UDP, and SCTP network bandwidth measurement tool
+net-misc/iperf 2.2.1 2.9999 3.19.1 3.19.1-r1 3.20: TCP, UDP, and SCTP network bandwidth measurement tool
 net-misc/ipmiview 2.22.0.241017 2.23.0.250519: A GUI application that allows to manage multiple target systems through BMC
 net-misc/iprange 1.0.4: A tool capable of managing sets of IPs
 net-misc/ipsorcery 2.0.9-r2: Ipsorcery allows you to generate IP, TCP, UDP, ICMP, and IGMP packets
@@ -16172,7 +16172,7 @@ sci-libs/lapack 3.12.0-r1 3.12.1-r1 3.12.1-r2: BLAS, CBLAS, LAPACK, LAPACKE refe
 sci-libs/ldl 2.2.6 3.0.3: Simple but educational LDL^T matrix factorization algorithm
 sci-libs/lemon 1.3.1-r2: C++ template static library of common data structures and algorithms
 sci-libs/levmar 2.6-r1: Levenberg-Marquardt nonlinear least squares C library
-sci-libs/libaec 1.0.6 1.1.3 1.1.4: Adaptive Entropy Coding library
+sci-libs/libaec 1.1.4: Adaptive Entropy Coding library
 sci-libs/libbraiding 1.3.1: Expose the functionality of cbraid as a shared library
 sci-libs/libcerf 1.17 2.5: Efficient and accurate implementation of complex error functions
 sci-libs/libcifpp 8.0.1 9.0.3 9.0.5: Code to work with mmCIF and PDB files
@@ -16220,7 +16220,7 @@ sci-libs/mkl 2025.2.0.628-r1 2025.3.0.461: Intel Math Kernel Library
 sci-libs/mpfi 1.5.4_p20220401: Multiple precision interval arithmetic library based on MPFR
 sci-libs/mumps 5.3.5-r1: MUltifrontal Massively Parallel sparse direct matrix Solver
 sci-libs/nanoflann 1.7.1 9999: C++ header-only library for Nearest Neighbor (NN) search wih KD-trees
-sci-libs/netcdf 4.9.2 4.9.2-r1 4.9.3-r1: Scientific library and interface for array oriented data access
+sci-libs/netcdf 4.9.2 4.9.2-r1 4.9.3-r2: Scientific library and interface for array oriented data access
 sci-libs/netcdf-cxx 4.2-r301 4.3.1 4.3.1-r1: C++ library for netCDF
 sci-libs/netcdf-fortran 4.5.4 4.5.4-r1 4.6.1: Scientific library and interface for array oriented data access
 sci-libs/nfft 3.5.3: library for nonequispaced discrete Fourier transformations
@@ -17123,7 +17123,7 @@ sys-apps/minised 1.16: a smaller, cheaper and faster sed implementation
 sys-apps/miscfiles 1.5-r4: Miscellaneous files
 sys-apps/mlocate 0.26-r3: Merging locate is an utility to index and quickly search for files
 sys-apps/mlxup-bin 4.13.0: Mellanox Update and Query Utility
-sys-apps/moor 1.33.0 2.4.1 2.8.2-r1: Pager designed to do the right thing without any configuration
+sys-apps/moor 1.33.0 2.4.1 2.8.2-r1 2.9.1: Pager designed to do the right thing without any configuration
 sys-apps/moreutils 0.70: Collection of tools that nobody thought to write when Unix was young
 sys-apps/most 5.2.0 5.2.0-r1: Paging program that displays, one windowful at a time, the contents of a file
 sys-apps/mount-gtk 1.4.5.1: GTK+ based UDisks2 frontend
@@ -17367,7 +17367,7 @@ sys-block/storcli 7.2405: MegaRAID StorCLI (successor of the MegaCLI)
 sys-block/tapecat 1.0.0-r1: tapecat is a tape utility used to describe the physical content of a tape
 sys-block/targetcli-fb 2.1.58-r1 3.0.1: Command shell for managing Linux LIO kernel target
 sys-block/tgt 1.0.91 1.0.92: Linux SCSI target framework (tgt)
-sys-block/thin-provisioning-tools 0.9.0-r4 1.0.10-r1 1.0.13-r1 1.0.14-r2 1.1.0-r2 1.1.0-r3: A suite of tools for thin provisioning on Linux
+sys-block/thin-provisioning-tools 1.1.0-r3 1.3.0: A suite of tools for thin provisioning on Linux
 sys-block/tw_cli 10.2.2.1-r2: 3ware SATA/PATA/SAS RAID controller Command Line Interface tool
 sys-block/vblade 25: vblade exports a block device using AoE
 sys-block/viaideinfo 0.5-r1: Query VIA IDE controllers for various information
@@ -17490,7 +17490,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.4.9999 15.2.1_p20251108-r1 15.3.9999 16.0.0_p20251109-r1 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.4.1_p20251113 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.3.1_p20251114 14.4.9999 15.2.1_p20251108-r1 15.3.9999 16.0.0_p20251109-r1 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-apple 4.2.1_p5666-r3: Apple branch of the GNU Compiler Collection, Developer Tools 4.0
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
@@ -17688,7 +17688,7 @@ sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
 sys-kernel/kergen 0.1.5-r1: Kernel config generator
 sys-kernel/kpatch 0.9.7 0.9.8 0.9.10 9999: Dynamic kernel patching for Linux
 sys-kernel/linux-docs 6.16.4-r1: Developer documentation generated from the Linux kernel
-sys-kernel/linux-firmware 20250211 20250311 20250410 20250613-r1 20250613_p20250624 20250627 20250708 20250808 20250917 20251011 20251021 99999999: Linux firmware files
+sys-kernel/linux-firmware 20250211 20250311 20250410 20250613-r1 20250613_p20250624 20250627 20250708 20250808 20250917 20251011 20251021 20251111 99999999: Linux firmware files
 sys-kernel/linux-headers 3.18-r1 4.4-r1 4.9-r1 4.14-r2 4.19-r1 5.4-r2 5.10-r2 5.15-r3 6.1 6.6-r1 6.8-r1 6.9 6.10 6.11 6.12 6.13 6.14 6.15 6.16 6.16-r2 6.17-r1: Linux system headers
 sys-kernel/linux-next 9999: Linux kernel and patches aimed at the next kernel merge window
 sys-kernel/mips-sources 4.19.325 5.4.294: Kernel.org sources for MIPS-based machines
@@ -18413,7 +18413,7 @@ x11-libs/libfakeXinerama 0.1.0: Fake library to override default libXinerama and
 x11-libs/libfakekey 0.3-r1: Helper library for the x11-misc/matchbox-keyboard package
 x11-libs/libfm 1.3.2-r1: Library for file management
 x11-libs/libfm-extra 1.3.2: Library for file management
-x11-libs/libfm-qt 2.0.2-r1 2.1.0 2.2.0 2.3.0: Qt Library for Building File Managers
+x11-libs/libfm-qt 2.2.0 2.3.0: Qt Library for Building File Managers
 x11-libs/libfontenc 1.1.8: X.Org fontenc library
 x11-libs/libgxim 0.5.0-r1: GObject-based XIM protocol library
 x11-libs/libnotify 0.8.6: A library for sending desktop notifications
@@ -18434,7 +18434,7 @@ x11-libs/neXtaw 0.15.1-r5: Athena Widgets with N*XTSTEP appearance
 x11-libs/pango 1.52.2 1.54.0 1.56.3 1.56.4 1.56.4-r1 1.56.4-r2 1.57.0: Internationalized text layout and rendering library
 x11-libs/pixman 0.46.0 0.46.4 9999: Low-level pixel manipulation routines
 x11-libs/qscintilla 2.14.1-r2: Qt port of Neil Hodgson's Scintilla C++ editor control
-x11-libs/qtermwidget 2.0.1 2.1.0 2.2.0 2.3.0 9999: Qt terminal emulator widget
+x11-libs/qtermwidget 2.2.0 2.3.0 9999: Qt terminal emulator widget
 x11-libs/qwt 6.2.0-r3 6.2.0-r4: 2D plotting library for Qt
 x11-libs/spread-sheet-widget 0.8 0.10: GNU Spread Sheet Widget
 x11-libs/startup-notification 0.12-r2: Application startup notification and feedback library
@@ -18575,7 +18575,7 @@ x11-misc/oroborus-deskmenu 1.4.5-r2: root menu program for Oroborus
 x11-misc/oroborus-keylaunch 1.3.9-r2: utility for binding keys in Oroborus
 x11-misc/parcellite 1.2.1: Lightweight GTK+ based clipboard manager
 x11-misc/pcmanfm 1.3.2-r2: Fast lightweight tabbed filemanager
-x11-misc/pcmanfm-qt 2.0.0 2.1.0 2.2.0 2.3.0: Qt GUI Tabbed Filemanager
+x11-misc/pcmanfm-qt 2.2.0 2.3.0: Qt GUI Tabbed Filemanager
 x11-misc/peksystray 0.4.0-r1: System tray dockapp for window managers supporting docking
 x11-misc/picom 12.5 9999: A lightweight compositor for X11 (previously a compton fork)
 x11-misc/piedock 1.6.9-r1: A little bit like the famous OS X dock but in shape of a pie menu
@@ -18586,7 +18586,7 @@ x11-misc/projecteur 0.10: Linux Desktop Application for the Logitech Spotlight d
 x11-misc/py3status 3.61-r1: py3status is an extensible i3status wrapper written in python
 x11-misc/qarma 1.0.0-r1: Zenity Clone for Qt
 x11-misc/qlipper 5.1.2_p20241029: Lightweight and cross-platform clipboard history applet
-x11-misc/qps 2.10.0 2.11.1 2.11.1-r1 2.12.0: Qt GUI Process Manager
+x11-misc/qps 2.11.1-r1 2.12.0: Qt GUI Process Manager
 x11-misc/qt5ct 1.9: Qt5 configuration tool, similar to qtconfig for Qt4
 x11-misc/qterm 0.8.2: BBS client based on Qt
 x11-misc/quitcount 3.1.4: A simple applet that shows what you saved since you quit smoking
@@ -18600,7 +18600,7 @@ x11-misc/rofi-file-browser-extended 1.3.1-r2: A file browser for rofi
 x11-misc/rss-glx 0.9.1-r4: Really Slick OpenGL Screensavers for XScreenSaver
 x11-misc/safeeyes 2.2.2 2.2.3 2.2.3-r1 3.0.0 3.0.1 3.1.0 3.2.0: Linux alternative to EyeLeo
 x11-misc/screen-message 0.28 0.29: Display a multi-line message large, fullscreen, black on white
-x11-misc/screengrab 2.9.0 2.10.0 3.0.0 3.1.0: Qt GUI Screenshot Utility
+x11-misc/screengrab 3.0.0 3.1.0: Qt GUI Screenshot Utility
 x11-misc/screenkey 1.5_p20230109-r3 9999: A screencast tool to display your keys inspired by Screenflick
 x11-misc/sct 0.5-r1: Set color temperature of the screen
 x11-misc/sddm 0.21.0_p20240723-r10 0.21.0_p20250502-r1: Simple Desktop Display Manager
@@ -18892,7 +18892,7 @@ x11-terms/kterm 6.2.0-r7: Japanese Kanji X Terminal
 x11-terms/mate-terminal 1.28.1: The MATE Terminal
 x11-terms/mlterm 3.9.4: A multi-lingual terminal emulator
 x11-terms/ptyxis 47.13-r1 48.5: A terminal for a container-oriented desktop
-x11-terms/qterminal 2.0.1-r1 2.1.0-r1 2.2.0 2.2.0-r1 2.3.0 9999: Qt-based multitab terminal emulator
+x11-terms/qterminal 2.2.0-r1 2.3.0 9999: Qt-based multitab terminal emulator
 x11-terms/root-tail 1.2-r4: Terminal to display (multiple) log files on the root window
 x11-terms/rxvt-unicode 9.31-r3 9.31-r4: rxvt clone with xft and unicode support
 x11-terms/sakura 3.8.9: GTK/VTE based terminal emulator
@@ -18976,7 +18976,7 @@ x11-themes/laughlin-backgrounds 14.1.0.3-r2: Fedora 14 official background artwo
 x11-themes/leonidas-backgrounds 11.0.0.2-r2: Fedora 11 official background artwork
 x11-themes/light-themes 24.04: GTK2/GTK3 Ambiance and Radiance themes from Ubuntu
 x11-themes/lovelock-backgrounds 14.91.1.1-r2: Fedora 15 official background artwork
-x11-themes/lxqt-themes 2.0.0 2.1.0 2.2.0 2.3.0: LXQt Themes
+x11-themes/lxqt-themes 2.2.0 2.3.0: LXQt Themes
 x11-themes/mate-backgrounds 1.28.0: A set of backgrounds packaged with the MATE desktop
 x11-themes/mate-icon-theme 1.28.0: MATE default icon themes
 x11-themes/mate-icon-theme-faenza 1.20.0: Faenza icon theme that was adapted for MATE desktop
@@ -19055,7 +19055,7 @@ x11-wm/muffin 6.4.1: Compositing window manager forked from Mutter for use with 
 x11-wm/musca 0.9.24_p20100226-r4: A simple dynamic window manager, with features nicked from ratpoison and dwm
 x11-wm/mutter 47.8.1 47.9 48.4 48.5 48.6 9999: GNOME compositing window manager based on Clutter
 x11-wm/notion 4.0.3 4.0.4 9999: Notion is a tiling, tabbed window manager for the X window system
-x11-wm/openbox 3.6.1-r9 3.6.1-r11 9999: Standards compliant, fast, light-weight, extensible window manager
+x11-wm/openbox 3.6.1-r11 9999: Standards compliant, fast, light-weight, extensible window manager
 x11-wm/oroborus 2.0.20-r2: Small and fast window manager
 x11-wm/page 1.9.10 1.9.10-r1: A mouse friendly tiling window manager
 x11-wm/pekwm 0.3.0 0.3.2: A lightweight window manager initially based on aewm++
