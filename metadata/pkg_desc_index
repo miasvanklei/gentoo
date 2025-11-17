@@ -2749,7 +2749,7 @@ app-misc/enum 1.1-r1: Replacement for GNU seq and BSD jot
 app-misc/esekeyd 1.2.7-r2: Multimedia key daemon that uses the Linux event interface
 app-misc/evtest 1.35 1.36: Test program for capturing input device events
 app-misc/faq 0.0.7: Format agnostic jQ
-app-misc/fastfetch 0.1.9999 0.2.9999 2.53.0 2.54.0 2.55.0: Fast neofetch-like system information tool
+app-misc/fastfetch 0.1.9999 0.2.9999 2.53.0 2.54.0 2.55.1: Fast neofetch-like system information tool
 app-misc/fdupes 2.3.2 2.4.0 9999: Identify/delete duplicate files residing within specified directories
 app-misc/fdutils 5.6_p2: Utilities for configuring and debugging the Linux floppy driver
 app-misc/fhem 6.3: A GPL'd perl server for house automation
@@ -4020,7 +4020,7 @@ dev-db/pgpool2 4.4.7 4.4.7-r1: Connection pool server for PostgreSQL
 dev-db/pgrouting 3.6.2 3.7.0 3.7.3 3.8.0: pgRouting extends PostGIS and PostgreSQL with geospatial routing functionality
 dev-db/pgtap 1.3.3: Unit testing for PostgreSQL
 dev-db/pgxnclient 1.3.2-r1: PostgreSQL Extension Network Client
-dev-db/phpmyadmin 5.2.1 5.2.3: Web-based administration for MySQL database in PHP
+dev-db/phpmyadmin 5.2.3: Web-based administration for MySQL database in PHP
 dev-db/phppgadmin 7.14.7: Web-based administration for Postgres database in php
 dev-db/plr 8.4.5 8.4.6: R language extension for postgresql database
 dev-db/postgis 3.3.7-r2 3.3.8-r1 3.4.4-r1 3.5.2-r1 3.5.3-r2 3.6.0: Geographic Objects for PostgreSQL
@@ -4107,7 +4107,7 @@ dev-embedded/avra 1.4.2-r1: Atmel AVR Assembler
 dev-embedded/avrdude 7.2: AVR Downloader/UploaDEr
 dev-embedded/cpik 0.7.4_p4: C compiler for PIC18 devices
 dev-embedded/dc-tool-ip 1.0.4-r1: Ethernet program loader for the Dreamcast
-dev-embedded/dfu-programmer 1.0.0 1.1.0: A Device Firmware Update based USB programmer for Atmel chips
+dev-embedded/dfu-programmer 1.1.0: A Device Firmware Update based USB programmer for Atmel chips
 dev-embedded/esptool 4.8.1 4.9.1 4.10.0 5.0.2 5.1.0: Serial utility for flashing and interacting with Espressif ESP8266 and ESP32
 dev-embedded/freaklabs-boards 1.0.0: Arduino hardware definitions for freaklabs boards
 dev-embedded/gnusim8085 1.4.1: A GTK 8085 Simulator
@@ -10050,7 +10050,7 @@ dev-ruby/forwardable-extended 2.6.0-r2: Forwardable with hash, and instance vari
 dev-ruby/fuubar 2.5.1-r1: Instafailing RSpec progress bar formatter
 dev-ruby/getoptlong 0.2.1: Allows you to parse command line options similarly to getopt_long()
 dev-ruby/gettext-setup 1.1.0: A gem to ease i18n
-dev-ruby/gettext_i18n_rails 1.13.0: FastGettext / Rails integration
+dev-ruby/gettext_i18n_rails 1.13.0 2.1.0: FastGettext / Rails integration
 dev-ruby/gist 6.0.0-r1: Potentially the best command line gister
 dev-ruby/git 1.19.1 2.3.3 3.1.1 4.0.1 4.0.4 4.0.5 4.0.6: Library for using Git in Ruby
 dev-ruby/globalid 1.2.1 1.2.1-r1 1.3.0: Reference models by URI
@@ -11126,7 +11126,7 @@ dev-vcs/cvsutils 0.2.6: A small bundle of utilities to work with CVS repositorie
 dev-vcs/darcs 2.16.5-r5: a distributed, interactive, smart revision control system
 dev-vcs/easygit 1.7.5.2-r1: Easy GIT (eg), a frontend for git designed for former cvs and svn users
 dev-vcs/fossil 2.21 2.22 2.24-r1 2.26: Simple, high-reliability, source control management, and more
-dev-vcs/git 2.49.1 2.50.1 2.51.0 2.51.1 2.51.2-r1 9999 9999-r1 9999-r2 9999-r3: Stupid content tracker: distributed VCS designed for speed and efficiency
+dev-vcs/git 2.49.1 2.50.1 2.51.0 2.51.1 2.51.2-r1 2.51.2-r2 9999 9999-r1 9999-r2 9999-r3: Stupid content tracker: distributed VCS designed for speed and efficiency
 dev-vcs/git-absorb 0.7.0 0.8.0: Automatically absorb staged changes into git current branch
 dev-vcs/git-annex 10.20220624 10.20230802: manage files with git, without checking their contents into git
 dev-vcs/git-big-picture 1.3.0 1.3.0-r1: Visualization tool for Git repositories
@@ -13480,7 +13480,7 @@ media-libs/musicbrainz 5.1.0-r2: Client Library for accessing the latest XML bas
 media-libs/mutagen 1.47.0: Audio metadata tag reader and writer implemented in pure Python
 media-libs/nanosvg 20231202: NanoSVG is a simple stupid single-header-file SVG parse.
 media-libs/nas 1.9.5-r2: Network Audio System
-media-libs/netpbm 11.2.17-r1 11.2.19 11.12.0 9999: A set of utilities for converting to/from the netpbm (and related) formats
+media-libs/netpbm 11.2.19 11.12.0 9999: A set of utilities for converting to/from the netpbm (and related) formats
 media-libs/noise-suppression-for-voice 1.10-r2 9999: A real-time noise suppression plugin for voice
 media-libs/nv-codec-headers 12.1.14.0 12.2.72.0 13.0.19.0: FFmpeg version of headers required to interface with Nvidias codec APIs
 media-libs/nvidia-vaapi-driver 0.0.14: A VA-API implemention using NVIDIA's NVDEC
@@ -13568,7 +13568,7 @@ media-libs/svt-av1 2.1.2 3.0.2 3.1.0 3.1.2 9999: Scalable Video Technology for A
 media-libs/svt-hevc 1.5.1 1.5.1-r1 9999: Scalable Video Technology for HEVC (SVT-HEVC Encoder)
 media-libs/t1lib 5.1.2-r5: Type 1 Font Rasterizer Library for UNIX/X11
 media-libs/taglib 1.13.1 2.1.1: Library for reading and editing audio meta data
-media-libs/tg_owt 0_pre20241202 0_pre20250515 0_pre20250515-r2: WebRTC build for Telegram
+media-libs/tg_owt 0_pre20241202 0_pre20250515-r2: WebRTC build for Telegram
 media-libs/theoraplay 0_pre20180524-r2: Simple library to make decoding of Ogg Theora videos easier
 media-libs/tiff 4.5.1 4.6.0 4.6.0-r1 4.7.0 4.7.0-r1: Tag Image File Format (TIFF) library
 media-libs/tiff-compat 4.4.0-r3 4.4.0-r4: Tag Image File Format (TIFF) library (compat package for libtiff.so.5)
@@ -13878,7 +13878,7 @@ media-radio/ax25-tools 0.0.10_rc5-r1: Basic AX.25 (Amateur Radio) administrative
 media-radio/chirp 20240311 20240606 20240606-r1: A free, open-source tool for programming your radio
 media-radio/cqrlog 2.5.2: CQRLOG is an advanced ham radio logger based on MySQL database
 media-radio/cwdaemon 0.13.0: A morse daemon for the parallel or serial port
-media-radio/direwolf 1.7-r1 1.8: Decoded Information from Radio Emissions for Windows Or Linux Fans
+media-radio/direwolf 1.7-r1 1.8 1.8.1: Decoded Information from Radio Emissions for Windows Or Linux Fans
 media-radio/dxcc 20191204-r1: A ham radio callsign DXCC lookup utility
 media-radio/flamp 2.2.07 2.2.14: Fldigi helper for transferring files
 media-radio/fldigi 4.2.07 4.2.09: Sound card based multimode software modem for Amateur Radio use
@@ -14786,7 +14786,7 @@ net-ftp/ftpbase 0.01-r6: File Transfer Protocol (FTP) base layout
 net-ftp/gftp 2.9.1b 2.9.1b-r1: a free multithreaded file transfer client
 net-ftp/lftp 4.9.3 9999: A sophisticated ftp/sftp/http/https/torrent client and file transfer program
 net-ftp/linksys-tftp 1.2.1-r4: TFTP client suitable for uploading to the Linksys WRT54G Wireless Router
-net-ftp/ncftp 3.2.8 3.3.0: An extremely configurable ftp client
+net-ftp/ncftp 3.3.0: An extremely configurable ftp client
 net-ftp/proftpd 1.3.8b-r1 1.3.9-r1 1.3.9-r2 1.3.9-r3: An advanced and very configurable FTP server
 net-ftp/pure-ftpd 1.0.52 9999: Fast, production-quality, standard-conformant FTP server
 net-ftp/pureadmin 0.4-r3: GUI tool used to make the management of Pure-FTPd a little easier
@@ -14812,7 +14812,7 @@ net-im/gajim 2.2.0 2.3.6 2.4.0: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
 net-im/kaidan 0.13.0: Modern XMPP chat app for every device
 net-im/libcommuni 3.7.0-r2: A cross-platform IRC framework written with Qt
-net-im/mattermost-desktop-bin 5.13.2 6.0.0 6.0.1_rc1: Mattermost Desktop application
+net-im/mattermost-desktop-bin 5.13.2 6.0.0 6.0.1_rc2: Mattermost Desktop application
 net-im/neochat 25.08.2 25.08.3: Client for Matrix, the decentralized communication protocol
 net-im/openmittsu 0.10.2.0 0.10.3.0: Open source chat client for Threema-style end-to-end encrypted chat networks
 net-im/pidgin 2.14.14-r2 2.14.14-r3: GTK Instant Messenger client
@@ -15337,7 +15337,7 @@ net-misc/oidentd 3.0.0-r1 3.1.0: Another (RFC1413 compliant) ident daemon
 net-misc/olsrd 0.9.8_p20241102: An implementation of the Optimized Link State Routing protocol
 net-misc/omniORB 4.3.0: A robust, high-performance CORBA 2 ORB
 net-misc/omnisync 1.0_p20200130-r1: A driver for NTPd for people who are firewall-challenged
-net-misc/onedrive 2.5.6 2.5.7-r1: Free Client for OneDrive on Linux
+net-misc/onedrive 2.5.6 2.5.7-r1 2.5.9: Free Client for OneDrive on Linux
 net-misc/openntpd 6.2_p3-r2 6.2_p3-r3 6.8_p1-r2: Lightweight NTP server ported from OpenBSD
 net-misc/openrdap 0.9.1: RDAP command line client
 net-misc/openrsync 0.5.0_p20220508: BSD-licensed implementation of rsync
@@ -17160,7 +17160,7 @@ sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives
 sys-apps/pnputils 0.1-r1: Plug and Play BIOS utilities
 sys-apps/policycoreutils 3.8.1 9999: SELinux core utilities
 sys-apps/polychromatic 0.9.5 9999: RGB lighting management software for GNU/Linux powered by OpenRazer
-sys-apps/portage 3.0.67-r1 3.0.68 3.0.69.3-r2 3.0.70 3.0.71 9999: The package management and distribution system for Gentoo
+sys-apps/portage 3.0.67-r1 3.0.68 3.0.69.3-r2 3.0.70 3.0.71 3.0.72 9999: The package management and distribution system for Gentoo
 sys-apps/powerpc-utils 1.1.3.18-r4: PowerPC utilities and additional OldWorld apps
 sys-apps/ppc64-diag 2.7.9: Diagnostic tools for PowerLinux
 sys-apps/prctl 1.6-r1: Tool to query and modify process behavior
