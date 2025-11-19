@@ -3305,7 +3305,7 @@ app-text/libxmlpatch 0.3.3-r1: A set of tools to create and apply patch to XML f
 app-text/linuxdoc-tools 0.9.86: Toolset for processing LinuxDoc DTD SGML files
 app-text/llpp 33: Graphical PDF viewer which aims to superficially resemble less(1)
 app-text/logmerge 0.5.2b-r1: Small and powerful script to merge two or more logfiles
-app-text/lowdown 1.1.1 1.3.2 1.4.0 2.0.0 2.0.2: Markdown translator producing HTML5, roff documents in the ms and man formats
+app-text/lowdown 1.1.1 1.3.2 1.4.0 2.0.0 2.0.2 2.0.4: Markdown translator producing HTML5, roff documents in the ms and man formats
 app-text/lv 4.51-r5: Powerful Multilingual File Viewer
 app-text/mandoc 1.14.6: Suite of tools compiling mdoc and man
 app-text/manpager 1: Enable colorization of man pages
@@ -6205,7 +6205,7 @@ dev-ml/uucp 16.0.0 17.0.0: Unicode character properties for OCaml
 dev-ml/uuidm 0.9.7 0.9.8 0.9.9 0.9.10: Universally unique identifiers (UUIDs) for OCaml
 dev-ml/uunf 15.1.0-r1 16.0.0 17.0.0: Unicode text normalization
 dev-ml/uuseg 15.0.0 16.0.0 17.0.0: Unicode text segmentation for OCaml
-dev-ml/uutf 1.0.3-r2 1.0.4: Non-blocking streaming Unicode codec for OCaml
+dev-ml/uutf 1.0.3-r2 1.0.4-r1: Non-blocking streaming Unicode codec for OCaml
 dev-ml/variantslib 0.15.0 0.16.0 0.17.0-r1: OCaml variants as first class values
 dev-ml/xdg 3.16.1 3.20.2: XDG Base Directory Specification
 dev-ml/xml-light 2.5: Minimal Xml parser and printer for OCaml
@@ -7981,7 +7981,7 @@ dev-perl/syntax 0.4.0-r2: Activate syntax extensions
 dev-perl/tkispell 0.200.0: Perl/Tk user interface for ispell
 dev-perl/txt2html 2.530.0: Convert a plain text file to HTML
 dev-php/File_Iterator 3.0.6: FilterIterator implementation that filters files based on criteria
-dev-php/PEAR-Archive_Tar 1.5.0: Tar file management class
+dev-php/PEAR-Archive_Tar 1.5.0 1.6.0: Tar file management class
 dev-php/PEAR-Auth_SASL 1.2.0: Abstraction of various SASL mechanism responses
 dev-php/PEAR-Console_CommandLine 1.2.6: A full-featured command-line options and arguments parser
 dev-php/PEAR-Console_Getopt 1.4.3: Command-line option parser
@@ -7993,7 +7993,7 @@ dev-php/PEAR-Net_IMAP 1.1.4: Provides an implementation of the IMAP protocol
 dev-php/PEAR-Net_SMTP 1.12.1: A PHP implementation of the SMTP protocol
 dev-php/PEAR-Net_Sieve 1.4.7: An API for talking to sieve (RFC 3028) servers
 dev-php/PEAR-Net_Socket 1.2.2-r1: PHP class interface to TCP sockets
-dev-php/PEAR-PEAR 1.10.15: PEAR Base System
+dev-php/PEAR-PEAR 1.10.15 1.10.16: PEAR Base System
 dev-php/PEAR-Structures_Graph 1.2.0: Graph datastructure manipulation library
 dev-php/PEAR-XML_Util 1.4.5: XML utility class
 dev-php/PHPMailer 6.9.1: Full-featured email creation and transfer class for PHP
@@ -10846,7 +10846,7 @@ dev-util/diff-cover 9.6.0: Find diff lines that do not have test coverage
 dev-util/diffball 1.0.1-r2: Delta compression suite for using/generating binary patches
 dev-util/diffoscope 303 306 308: Will try to get to the bottom of what makes files or directories different
 dev-util/diffstat 1.67 1.68: Display a histogram of diff changes
-dev-util/difftastic 0.63.0 0.64.0: A structural diff that understands syntax.
+dev-util/difftastic 0.63.0 0.64.0 0.67.0: A structural diff that understands syntax.
 dev-util/diffuse 0.9.0-r1 0.10.0: A graphical tool to compare and merge text files
 dev-util/dirdiff 2.1-r4: A tool for differing and merging directories
 dev-util/directx-headers 1.616.0 9999: DirectX header files and WSL stubs
@@ -11192,7 +11192,7 @@ games-action/assault-android-cactus+ 200507: Arcade style twin stick shooter set
 games-action/astromenace 1.4.2-r1 1.4.3: Hardcore 3D space scroll-shooter with spaceship upgrade possibilities
 games-action/atanks 6.6: Worms and Scorched Earth-like game
 games-action/badland 121-r2: Atmospheric side-scrolling action adventure platformer set in a gorgeous forest
-games-action/barrage 1.0.7: Violent point-and-click shooting game
+games-action/barrage 1.0.7-r1: Violent point-and-click shooting game
 games-action/battalion 1.4b-r2: Be a rampaging monster and destroy the city
 games-action/beathazardultra 20130308-r2: Intense music-driven arcade shooter powered by your music
 games-action/bomberclone 0.11.9: Bomberman clone with network game support
@@ -11512,7 +11512,7 @@ games-engines/box2d 2.4.2 2.4.2-r1: C++ engine for simulating rigid bodies in 2D
 games-engines/dMagnetic 0.37: A Magnetic Scrolls Interpreter for playing a collection of old text adventures
 games-engines/devilutionx 1.5.4-r1 1.5.5: Diablo engine for modern operating systems
 games-engines/exult 1.12.0: Ultima 7 game engine that runs on modern operating systems
-games-engines/fheroes2 1.1.11: Recreation of HoMM2 game engine
+games-engines/fheroes2 1.1.11 1.1.12: Recreation of HoMM2 game engine
 games-engines/frotz 2.55-r1: Interpreter for Z-code based text games
 games-engines/gargoyle 2019.1.1: An Interactive Fiction (IF) player supporting all major formats
 games-engines/love 0.7.2-r100 0.8.0-r100 11.4 11.5-r1 9999: A framework for 2D games in Lua
@@ -12380,84 +12380,84 @@ kde-apps/sweeper 25.08.2 25.08.3: Privacy settings widget to clean unwanted trac
 kde-apps/thumbnailers 25.08.2 25.08.3: Metapackage for KIO thumbnail generators
 kde-apps/umbrello 25.11.70_pre20250830: KDE UML Modeller
 kde-apps/yakuake 25.08.2 25.08.3: Quake-style terminal emulator based on konsole
-kde-frameworks/attica 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing access to Open Collaboration Services
-kde-frameworks/baloo 6.18.0 6.19.0 6.20.0: Framework for searching and managing metadata
-kde-frameworks/bluez-qt 6.18.0 6.19.0 6.20.0: Qt wrapper for Bluez 5 DBus API
-kde-frameworks/breeze-icons 6.18.0 6.19.0 6.20.0: Breeze SVG icon theme
-kde-frameworks/extra-cmake-modules 6.18.0-r1 6.19.0 6.20.0: Extra modules and scripts for CMake
-kde-frameworks/frameworkintegration 5.116.0 6.18.0 6.19.0 6.20.0: Framework for integrating Qt applications with KDE Plasma workspaces
-kde-frameworks/kapidox 6.18.0 6.19.0 6.20.0: Framework for building KDE API documentation in a standard format and style
-kde-frameworks/karchive 5.116.0 6.18.0 6.19.0 6.20.0: Framework for reading, creation, and manipulation of various archive formats
-kde-frameworks/kauth 5.116.0 6.18.0 6.19.0 6.20.0: Framework to let applications perform actions as a privileged user
-kde-frameworks/kbookmarks 5.116.0 6.18.0 6.19.0 6.20.0: Framework for managing bookmarks stored in XBEL format
-kde-frameworks/kcalendarcore 6.18.0 6.19.0 6.20.0: Library for interfacing with calendars
-kde-frameworks/kcmutils 5.116.0 6.18.0 6.19.0 6.20.0: Framework to work with KDE System Settings modules
-kde-frameworks/kcodecs 5.116.0 6.18.0 6.19.0 6.20.0: Framework for manipulating strings using various encodings
-kde-frameworks/kcolorscheme 6.18.0 6.19.0 6.20.0: Framework for downloading and sharing additional application data
-kde-frameworks/kcompletion 5.116.0 6.18.0 6.19.0 6.20.0: Framework for common completion tasks such as filename or URL completion
-kde-frameworks/kconfig 5.116.0 6.18.0 6.19.0 6.20.0: Framework for reading and writing configuration
-kde-frameworks/kconfigwidgets 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing an assortment of configuration-related widgets
-kde-frameworks/kcontacts 6.18.0 6.19.0 6.20.0: Address book API based on KDE Frameworks
-kde-frameworks/kcoreaddons 5.116.0 6.18.0 6.19.0 6.20.0: Framework for solving common problems such as caching, randomisation, and more
-kde-frameworks/kcrash 5.116.0 6.18.0 6.19.0 6.20.0: Framework for intercepting and handling application crashes
-kde-frameworks/kdav 6.18.0 6.19.0 6.20.0: DAV protocol implemention with KJobs
-kde-frameworks/kdbusaddons 5.116.0 6.18.0 6.19.0 6.20.0: Framework for registering services and applications per freedesktop standards
-kde-frameworks/kdeclarative 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing integration of QML and KDE work spaces
-kde-frameworks/kded 5.116.0 6.18.0 6.19.0 6.20.0: Central daemon of KDE workspaces
-kde-frameworks/kdesu 6.18.0 6.19.0 6.20.0: Framework to handle super user actions
-kde-frameworks/kdnssd 6.18.0 6.19.0 6.20.0: Framework for network service discovery using Zeroconf
-kde-frameworks/kdoctools 5.116.0-r1 6.18.0 6.19.0 6.20.0: Tools to generate documentation in various formats from DocBook files
+kde-frameworks/attica 5.116.0 6.18.0 6.20.0: Framework providing access to Open Collaboration Services
+kde-frameworks/baloo 6.18.0 6.20.0: Framework for searching and managing metadata
+kde-frameworks/bluez-qt 6.18.0 6.20.0: Qt wrapper for Bluez 5 DBus API
+kde-frameworks/breeze-icons 6.18.0 6.20.0: Breeze SVG icon theme
+kde-frameworks/extra-cmake-modules 6.18.0-r1 6.20.0: Extra modules and scripts for CMake
+kde-frameworks/frameworkintegration 5.116.0 6.18.0 6.20.0: Framework for integrating Qt applications with KDE Plasma workspaces
+kde-frameworks/kapidox 6.18.0 6.20.0: Framework for building KDE API documentation in a standard format and style
+kde-frameworks/karchive 5.116.0 6.18.0 6.20.0: Framework for reading, creation, and manipulation of various archive formats
+kde-frameworks/kauth 5.116.0 6.18.0 6.20.0: Framework to let applications perform actions as a privileged user
+kde-frameworks/kbookmarks 5.116.0 6.18.0 6.20.0: Framework for managing bookmarks stored in XBEL format
+kde-frameworks/kcalendarcore 6.18.0 6.20.0: Library for interfacing with calendars
+kde-frameworks/kcmutils 5.116.0 6.18.0 6.20.0: Framework to work with KDE System Settings modules
+kde-frameworks/kcodecs 5.116.0 6.18.0 6.20.0: Framework for manipulating strings using various encodings
+kde-frameworks/kcolorscheme 6.18.0 6.20.0: Framework for downloading and sharing additional application data
+kde-frameworks/kcompletion 5.116.0 6.18.0 6.20.0: Framework for common completion tasks such as filename or URL completion
+kde-frameworks/kconfig 5.116.0 6.18.0 6.20.0: Framework for reading and writing configuration
+kde-frameworks/kconfigwidgets 5.116.0 6.18.0 6.20.0: Framework providing an assortment of configuration-related widgets
+kde-frameworks/kcontacts 6.18.0 6.20.0: Address book API based on KDE Frameworks
+kde-frameworks/kcoreaddons 5.116.0 6.18.0 6.20.0: Framework for solving common problems such as caching, randomisation, and more
+kde-frameworks/kcrash 5.116.0 6.18.0 6.20.0: Framework for intercepting and handling application crashes
+kde-frameworks/kdav 6.18.0 6.20.0: DAV protocol implemention with KJobs
+kde-frameworks/kdbusaddons 5.116.0 6.18.0 6.20.0: Framework for registering services and applications per freedesktop standards
+kde-frameworks/kdeclarative 5.116.0 6.18.0 6.20.0: Framework providing integration of QML and KDE work spaces
+kde-frameworks/kded 5.116.0 6.18.0 6.20.0: Central daemon of KDE workspaces
+kde-frameworks/kdesu 6.18.0 6.20.0: Framework to handle super user actions
+kde-frameworks/kdnssd 6.18.0 6.20.0: Framework for network service discovery using Zeroconf
+kde-frameworks/kdoctools 5.116.0-r1 6.18.0 6.20.0: Tools to generate documentation in various formats from DocBook files
 kde-frameworks/kf-env 6: Environment setting required for all KDE Frameworks apps to run
-kde-frameworks/kfilemetadata 6.18.0 6.19.0 6.20.0: Library for extracting file metadata
-kde-frameworks/kglobalaccel 5.116.0-r2 6.18.0 6.19.0 6.20.0: Framework to handle global shortcuts
-kde-frameworks/kguiaddons 5.116.0-r2 6.18.0 6.19.0 6.20.0: Framework providing assorted high-level user interface components
-kde-frameworks/kholidays 6.18.0 6.19.0 6.20.0: Library to determine holidays and other special events for a geographical region
-kde-frameworks/ki18n 5.116.0 6.18.0 6.19.0 6.20.0: Framework based on Gettext for internationalizing user interface text
-kde-frameworks/kiconthemes 5.116.0 6.18.0 6.19.0 6.20.0: Framework for icon theming and configuration
-kde-frameworks/kidletime 6.18.0 6.19.0 6.20.0: Framework for detection and notification of device idle time
-kde-frameworks/kimageformats 5.116.0-r1 6.18.0 6.19.0 6.20.0: Framework providing additional format plugins for Qt's image I/O system
-kde-frameworks/kio 5.116.0-r5 6.18.0 6.19.1 6.20.0: Framework providing transparent file and data management
+kde-frameworks/kfilemetadata 6.18.0 6.20.0: Library for extracting file metadata
+kde-frameworks/kglobalaccel 5.116.0-r2 6.18.0 6.20.0: Framework to handle global shortcuts
+kde-frameworks/kguiaddons 5.116.0-r2 6.18.0 6.20.0: Framework providing assorted high-level user interface components
+kde-frameworks/kholidays 6.18.0 6.20.0: Library to determine holidays and other special events for a geographical region
+kde-frameworks/ki18n 5.116.0 6.18.0 6.20.0: Framework based on Gettext for internationalizing user interface text
+kde-frameworks/kiconthemes 5.116.0 6.18.0 6.20.0: Framework for icon theming and configuration
+kde-frameworks/kidletime 6.18.0 6.20.0: Framework for detection and notification of device idle time
+kde-frameworks/kimageformats 5.116.0-r1 6.18.0 6.20.0: Framework providing additional format plugins for Qt's image I/O system
+kde-frameworks/kio 5.116.0-r5 6.18.0 6.20.0: Framework providing transparent file and data management
 kde-frameworks/kio-trash-desktop-file 5.116.0: KIO Trash KCM service desktop file
-kde-frameworks/kirigami 5.116.0-r2 6.18.0 6.19.0 6.20.0: Lightweight user interface framework for mobile and convergent applications
-kde-frameworks/kitemmodels 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing data models to help with tasks such as sorting and filtering
-kde-frameworks/kitemviews 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing additional widgets for item models
-kde-frameworks/kjobwidgets 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing assorted widgets for showing the progress of jobs
-kde-frameworks/knewstuff 5.116.0 6.18.0 6.19.0 6.20.0: Framework for downloading and sharing additional application data
-kde-frameworks/knotifications 5.116.0-r2 6.18.0 6.19.0 6.20.0: Framework for notifying the user of an event
-kde-frameworks/knotifyconfig 6.18.0 6.19.0 6.20.0: Framework for configuring desktop notifications
-kde-frameworks/kpackage 5.116.0 6.18.0 6.19.0 6.20.0: Framework to install and load packages of non binary content
-kde-frameworks/kparts 6.18.0 6.19.0 6.20.0: Framework providing elaborate user-interface components
-kde-frameworks/kpeople 6.18.0 6.19.0 6.20.0: KDE contact person abstraction library
-kde-frameworks/kplotting 6.18.0 6.19.0 6.20.0: Framework providing easy data-plotting functions
-kde-frameworks/kpty 6.18.0 6.19.0 6.20.0: Framework for pseudo terminal devices and running child processes
-kde-frameworks/kquickcharts 6.18.0 6.19.0 6.20.0: QtQuick plugin providing high-performance charts
-kde-frameworks/krunner 6.18.0 6.19.0 6.20.0: Framework for providing different actions given a string query
-kde-frameworks/ksecretd-services 6.18.0 6.19.0 6.20.0: D-Bus service files for ksecretd kwallet runtime component
-kde-frameworks/kservice 5.116.0-r1 6.18.0 6.19.0 6.20.0: Advanced plugin and service introspection
-kde-frameworks/kstatusnotifieritem 6.18.0 6.19.0 6.20.0: Implementation of Status Notifier Items
-kde-frameworks/ksvg 6.18.0 6.19.0 6.20.0: Components for handling SVGs
-kde-frameworks/ktexteditor 6.18.0 6.19.0 6.20.0: Framework providing a full text editor component
-kde-frameworks/ktexttemplate 6.18.0 6.19.0 6.20.0: Library to allow separating the structure of documents from data they contain
-kde-frameworks/ktextwidgets 6.18.0 6.19.0 6.20.0: Framework providing an assortment of widgets for displaying and editing text
-kde-frameworks/kunitconversion 6.18.0 6.19.0 6.20.0: Framework for converting units
-kde-frameworks/kuserfeedback 6.18.0 6.19.0 6.20.0: Framework to collect user feedback for applications via telemetry and surveys
-kde-frameworks/kwallet 5.116.0-r3 6.18.0 6.19.0 6.20.0: Interface to KWallet Framework providing desktop-wide storage for passwords
-kde-frameworks/kwallet-runtime 6.18.0-r1 6.19.0 6.20.0: Framework providing desktop-wide storage for passwords
-kde-frameworks/kwidgetsaddons 5.116.0 6.18.0 6.19.0 6.20.0: An assortment of high-level widgets for common tasks
-kde-frameworks/kwindowsystem 5.116.0 6.18.0 6.19.0 6.20.0: Framework providing access to properties and features of the window manager
-kde-frameworks/kxmlgui 5.116.0 6.18.0 6.19.0 6.20.0: Framework for managing menu and toolbar actions in an abstract way
-kde-frameworks/modemmanager-qt 6.18.0 6.19.0 6.20.0: ModemManager bindings for Qt
-kde-frameworks/networkmanager-qt 6.18.0 6.19.0 6.20.0: NetworkManager bindings for Qt
+kde-frameworks/kirigami 5.116.0-r2 6.18.0 6.20.0: Lightweight user interface framework for mobile and convergent applications
+kde-frameworks/kitemmodels 5.116.0 6.18.0 6.20.0: Framework providing data models to help with tasks such as sorting and filtering
+kde-frameworks/kitemviews 5.116.0 6.18.0 6.20.0: Framework providing additional widgets for item models
+kde-frameworks/kjobwidgets 5.116.0 6.18.0 6.20.0: Framework providing assorted widgets for showing the progress of jobs
+kde-frameworks/knewstuff 5.116.0 6.18.0 6.20.0: Framework for downloading and sharing additional application data
+kde-frameworks/knotifications 5.116.0-r2 6.18.0 6.20.0: Framework for notifying the user of an event
+kde-frameworks/knotifyconfig 6.18.0 6.20.0: Framework for configuring desktop notifications
+kde-frameworks/kpackage 5.116.0 6.18.0 6.20.0: Framework to install and load packages of non binary content
+kde-frameworks/kparts 6.18.0 6.20.0: Framework providing elaborate user-interface components
+kde-frameworks/kpeople 6.18.0 6.20.0: KDE contact person abstraction library
+kde-frameworks/kplotting 6.18.0 6.20.0: Framework providing easy data-plotting functions
+kde-frameworks/kpty 6.18.0 6.20.0: Framework for pseudo terminal devices and running child processes
+kde-frameworks/kquickcharts 6.18.0 6.20.0: QtQuick plugin providing high-performance charts
+kde-frameworks/krunner 6.18.0 6.20.0: Framework for providing different actions given a string query
+kde-frameworks/ksecretd-services 6.18.0 6.20.0: D-Bus service files for ksecretd kwallet runtime component
+kde-frameworks/kservice 5.116.0-r1 6.18.0 6.20.0: Advanced plugin and service introspection
+kde-frameworks/kstatusnotifieritem 6.18.0 6.20.0: Implementation of Status Notifier Items
+kde-frameworks/ksvg 6.18.0 6.20.0: Components for handling SVGs
+kde-frameworks/ktexteditor 6.18.0 6.20.0: Framework providing a full text editor component
+kde-frameworks/ktexttemplate 6.18.0 6.20.0: Library to allow separating the structure of documents from data they contain
+kde-frameworks/ktextwidgets 6.18.0 6.20.0: Framework providing an assortment of widgets for displaying and editing text
+kde-frameworks/kunitconversion 6.18.0 6.20.0: Framework for converting units
+kde-frameworks/kuserfeedback 6.18.0 6.20.0: Framework to collect user feedback for applications via telemetry and surveys
+kde-frameworks/kwallet 5.116.0-r3 6.18.0 6.20.0: Interface to KWallet Framework providing desktop-wide storage for passwords
+kde-frameworks/kwallet-runtime 6.18.0-r1 6.20.0: Framework providing desktop-wide storage for passwords
+kde-frameworks/kwidgetsaddons 5.116.0 6.18.0 6.20.0: An assortment of high-level widgets for common tasks
+kde-frameworks/kwindowsystem 5.116.0 6.18.0 6.20.0: Framework providing access to properties and features of the window manager
+kde-frameworks/kxmlgui 5.116.0 6.18.0 6.20.0: Framework for managing menu and toolbar actions in an abstract way
+kde-frameworks/modemmanager-qt 6.18.0 6.20.0: ModemManager bindings for Qt
+kde-frameworks/networkmanager-qt 6.18.0 6.20.0: NetworkManager bindings for Qt
 kde-frameworks/oxygen-icons 6.1.0: Oxygen SVG icon theme
-kde-frameworks/prison 6.18.0 6.19.0 6.20.0: QRCode and data matrix barcode library
-kde-frameworks/purpose 6.18.0 6.19.0 6.20.0: Library for providing abstractions to get the developer's purposes fulfilled
-kde-frameworks/purpose-kaccounts-services 6.18.0 6.19.0 6.20.0: KAccounts generated service files for nextcloud and google services
-kde-frameworks/qqc2-desktop-style 6.18.0 6.19.0 6.20.0: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
-kde-frameworks/solid 5.116.0-r1 6.18.0 6.19.0 6.20.0: Provider for platform independent hardware discovery, abstraction and management
-kde-frameworks/sonnet 6.18.0 6.19.0 6.20.0: Framework for providing spell-checking through abstraction of popular backends
-kde-frameworks/syndication 6.18.0 6.19.0 6.20.0: Library for parsing RSS and Atom feeds
-kde-frameworks/syntax-highlighting 6.18.0 6.19.0 6.20.0: Framework for syntax highlighting
-kde-frameworks/threadweaver 6.18.0 6.19.0 6.20.0: Framework for managing threads using job and queue-based interfaces
+kde-frameworks/prison 6.18.0 6.20.0: QRCode and data matrix barcode library
+kde-frameworks/purpose 6.18.0 6.20.0: Library for providing abstractions to get the developer's purposes fulfilled
+kde-frameworks/purpose-kaccounts-services 6.18.0 6.20.0: KAccounts generated service files for nextcloud and google services
+kde-frameworks/qqc2-desktop-style 6.18.0 6.20.0: Style for QtQuickControls 2 that uses QWidget's QStyle for painting
+kde-frameworks/solid 5.116.0-r1 6.18.0 6.20.0: Provider for platform independent hardware discovery, abstraction and management
+kde-frameworks/sonnet 6.18.0 6.20.0: Framework for providing spell-checking through abstraction of popular backends
+kde-frameworks/syndication 6.18.0 6.20.0: Library for parsing RSS and Atom feeds
+kde-frameworks/syntax-highlighting 6.18.0 6.20.0: Framework for syntax highlighting
+kde-frameworks/threadweaver 6.18.0 6.20.0: Framework for managing threads using job and queue-based interfaces
 kde-misc/basket 2.49b_p20250902: Multiple information organizer - a DropDrawers clone
 kde-misc/colord-kde 25.08.2 25.08.3: Provides interfaces and session daemon to colord
 kde-misc/kclock 25.08.2 25.08.3: Convergent clock application for Plasma
@@ -12479,79 +12479,79 @@ kde-misc/rsibreak 0.12.15_p20250320 0.13.0: Small utility which bothers you at c
 kde-misc/skanlite 25.08.2 25.08.3: Simple image scanning application based on libksane and KDE Frameworks
 kde-misc/tellico 4.1.3 4.1.4: Collection manager based on KDE Frameworks
 kde-misc/zanshin 25.08.2 25.08.3: Getting things done application by KDE
-kde-plasma/aurorae 6.4.5 6.5.2: Themeable window decoration for KWin
-kde-plasma/bluedevil 6.4.5 6.5.2: Bluetooth stack for KDE Plasma
-kde-plasma/breeze 6.4.5 6.5.2: Breeze visual style for the Plasma desktop
-kde-plasma/breeze-grub 6.4.5 6.5.2: Breeze theme for GRUB
-kde-plasma/breeze-gtk 6.4.5 6.5.2: Official GTK+ port of Plasma's Breeze widget style
-kde-plasma/breeze-plymouth 6.4.5 6.5.2: Breeze theme for Plymouth
-kde-plasma/discover 6.4.5 6.5.2: KDE Plasma resources management GUI
-kde-plasma/drkonqi 6.4.5 6.5.2: Plasma crash handler, gives the user feedback if a program crashed
+kde-plasma/aurorae 6.4.5 6.5.3: Themeable window decoration for KWin
+kde-plasma/bluedevil 6.4.5 6.5.3: Bluetooth stack for KDE Plasma
+kde-plasma/breeze 6.4.5 6.5.0 6.5.3: Breeze visual style for the Plasma desktop
+kde-plasma/breeze-grub 6.4.5 6.5.3: Breeze theme for GRUB
+kde-plasma/breeze-gtk 6.4.5 6.5.3: Official GTK+ port of Plasma's Breeze widget style
+kde-plasma/breeze-plymouth 6.4.5 6.5.3: Breeze theme for Plymouth
+kde-plasma/discover 6.4.5 6.5.3: KDE Plasma resources management GUI
+kde-plasma/drkonqi 6.4.5 6.5.3: Plasma crash handler, gives the user feedback if a program crashed
 kde-plasma/drkonqi-legacy 6.3.80_p20250417: Plasma crash handler, gives the user feedback if a program crashed
-kde-plasma/flatpak-kcm 6.4.5 6.5.2: Flatpak Permissions Management KCM
-kde-plasma/kactivitymanagerd 6.4.5 6.5.2: System service to manage user's activities, track the usage patterns etc.
-kde-plasma/kde-cli-tools 6.4.5 6.5.2: Tools based on KDE Frameworks 6 to better interact with the system
-kde-plasma/kde-cli-tools-common 6.4.5 6.5.2: Common files for kde-cli-tools
-kde-plasma/kde-gtk-config 6.4.5 6.5.2: Syncs KDE Plasma theme settings to GTK applications
-kde-plasma/kdecoration 6.4.5 6.5.2: Plugin based library to create window decorations
-kde-plasma/kdeplasma-addons 6.4.5 6.5.2: Extra Plasma applets and engines
-kde-plasma/kdesu-gui 6.4.5 6.5.2: Graphical frontend for KDE Frameworks' kdesu
-kde-plasma/keditfiletype 6.4.5 6.5.2: File Type Editor
-kde-plasma/kgamma 6.4.5 6.5.2: Screen gamma values kcontrol module
-kde-plasma/kglobalacceld 6.4.5 6.5.2: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
-kde-plasma/kinfocenter 6.4.5 6.5.2: Utility providing information about the computer hardware
-kde-plasma/kmenuedit 6.4.5 6.5.2: KDE Plasma menu editor
-kde-plasma/knighttime 6.5.2: Helpers for scheduling the dark-light cycle
-kde-plasma/kpipewire 6.4.5 6.5.2: Components relating to Flatpak pipewire use in Plasma
-kde-plasma/krdp 6.4.5 6.5.2: Library and examples for creating an RDP server
-kde-plasma/kscreen 6.4.5 6.5.2: KDE Plasma screen management
-kde-plasma/kscreenlocker 6.4.5 6.5.2: Library and components for secure lock screen architecture
-kde-plasma/ksshaskpass 6.4.5 6.5.2: Implementation of ssh-askpass with KDE Wallet integration
-kde-plasma/ksystemstats 6.4.5 6.5.2: Plugin-based system monitoring daemon
-kde-plasma/kwallet-pam 6.4.5 6.5.2: PAM module to not enter KWallet password again after login
-kde-plasma/kwayland 5.116.0-r1 6.4.5 6.5.2: Qt-style API to interact with the wayland-client API
-kde-plasma/kwayland-integration 6.4.5 6.5.2: Provides KWindowSystem integration plugin for Wayland
-kde-plasma/kwin 6.4.5-r1 6.5.2: Flexible, composited Window Manager for windowing systems on Linux
-kde-plasma/kwin-x11 6.4.5 6.5.2: Flexible, composited X window manager
-kde-plasma/kwrited 6.4.5 6.5.2: KDE Plasma daemon listening for wall and write messages
-kde-plasma/layer-shell-qt 6.4.5 6.5.2: Qt component to allow applications make use of Wayland wl-layer-shell protocol
-kde-plasma/libkscreen 6.4.5 6.5.2: Plasma screen management library
-kde-plasma/libksysguard 6.4.5 6.5.2: Task management and system monitoring library
-kde-plasma/libplasma 6.4.5 6.5.2: Plasma library and runtime components based upon KF6 and Qt6
-kde-plasma/milou 6.4.5 6.5.2: Dedicated search application built on top of Baloo
-kde-plasma/ocean-sound-theme 6.4.5 6.5.2: Ocean Sound Theme for Plasma
-kde-plasma/oxygen 6.4.5 6.5.2: Oxygen visual style for the Plasma desktop
-kde-plasma/oxygen-sounds 6.4.5 6.5.2: Oxygen sound theme for the Plasma desktop
-kde-plasma/plasma-activities 6.4.5 6.5.2: Core components for KDE's Activities System
-kde-plasma/plasma-activities-stats 6.4.5 6.5.2: Library for accessing usage data collected by the activities system
-kde-plasma/plasma-browser-integration 6.4.5 6.5.2: Integrate Chrome/Firefox better into Plasma through browser extensions
-kde-plasma/plasma-desktop 6.4.5-r1 6.5.2: KDE Plasma desktop
-kde-plasma/plasma-disks 6.4.5 6.5.2: Monitors S.M.A.R.T. capable devices for imminent failure
-kde-plasma/plasma-firewall 6.4.5 6.5.2: Plasma frontend for Firewalld or UFW
-kde-plasma/plasma-integration 6.4.5 6.5.2: Qt Platform Theme integration plugins for the Plasma workspaces
-kde-plasma/plasma-login-sessions 6.4.5 6.5.2: KDE Plasma login sessions
-kde-plasma/plasma-meta 6.4.5-r1 6.5.2: Merge this to pull in all Plasma 6 packages
+kde-plasma/flatpak-kcm 6.4.5 6.5.3: Flatpak Permissions Management KCM
+kde-plasma/kactivitymanagerd 6.4.5 6.5.3: System service to manage user's activities, track the usage patterns etc.
+kde-plasma/kde-cli-tools 6.4.5 6.5.3: Tools based on KDE Frameworks 6 to better interact with the system
+kde-plasma/kde-cli-tools-common 6.4.5 6.5.3: Common files for kde-cli-tools
+kde-plasma/kde-gtk-config 6.4.5 6.5.3: Syncs KDE Plasma theme settings to GTK applications
+kde-plasma/kdecoration 6.4.5 6.5.3: Plugin based library to create window decorations
+kde-plasma/kdeplasma-addons 6.4.5 6.5.3: Extra Plasma applets and engines
+kde-plasma/kdesu-gui 6.4.5 6.5.3: Graphical frontend for KDE Frameworks' kdesu
+kde-plasma/keditfiletype 6.4.5 6.5.3: File Type Editor
+kde-plasma/kgamma 6.4.5 6.5.3: Screen gamma values kcontrol module
+kde-plasma/kglobalacceld 6.4.5 6.5.3: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
+kde-plasma/kinfocenter 6.4.5 6.5.3: Utility providing information about the computer hardware
+kde-plasma/kmenuedit 6.4.5 6.5.3: KDE Plasma menu editor
+kde-plasma/knighttime 6.5.3: Helpers for scheduling the dark-light cycle
+kde-plasma/kpipewire 6.4.5 6.5.3: Components relating to Flatpak pipewire use in Plasma
+kde-plasma/krdp 6.4.5 6.5.3: Library and examples for creating an RDP server
+kde-plasma/kscreen 6.4.5 6.5.3: KDE Plasma screen management
+kde-plasma/kscreenlocker 6.4.5 6.5.3: Library and components for secure lock screen architecture
+kde-plasma/ksshaskpass 6.4.5 6.5.3: Implementation of ssh-askpass with KDE Wallet integration
+kde-plasma/ksystemstats 6.4.5 6.5.3: Plugin-based system monitoring daemon
+kde-plasma/kwallet-pam 6.4.5 6.5.3: PAM module to not enter KWallet password again after login
+kde-plasma/kwayland 5.116.0-r1 6.4.5 6.5.3: Qt-style API to interact with the wayland-client API
+kde-plasma/kwayland-integration 6.4.5 6.5.3: Provides KWindowSystem integration plugin for Wayland
+kde-plasma/kwin 6.4.5-r1 6.5.3: Flexible, composited Window Manager for windowing systems on Linux
+kde-plasma/kwin-x11 6.4.5 6.5.3: Flexible, composited X window manager
+kde-plasma/kwrited 6.4.5 6.5.3: KDE Plasma daemon listening for wall and write messages
+kde-plasma/layer-shell-qt 6.4.5 6.5.3: Qt component to allow applications make use of Wayland wl-layer-shell protocol
+kde-plasma/libkscreen 6.4.5 6.5.3: Plasma screen management library
+kde-plasma/libksysguard 6.4.5 6.5.3: Task management and system monitoring library
+kde-plasma/libplasma 6.4.5 6.5.3: Plasma library and runtime components based upon KF6 and Qt6
+kde-plasma/milou 6.4.5 6.5.3: Dedicated search application built on top of Baloo
+kde-plasma/ocean-sound-theme 6.4.5 6.5.3: Ocean Sound Theme for Plasma
+kde-plasma/oxygen 6.4.5 6.5.0 6.5.3: Oxygen visual style for the Plasma desktop
+kde-plasma/oxygen-sounds 6.4.5 6.5.3: Oxygen sound theme for the Plasma desktop
+kde-plasma/plasma-activities 6.4.5 6.5.3: Core components for KDE's Activities System
+kde-plasma/plasma-activities-stats 6.4.5 6.5.3: Library for accessing usage data collected by the activities system
+kde-plasma/plasma-browser-integration 6.4.5 6.5.3: Integrate Chrome/Firefox better into Plasma through browser extensions
+kde-plasma/plasma-desktop 6.4.5-r1 6.5.3: KDE Plasma desktop
+kde-plasma/plasma-disks 6.4.5 6.5.3: Monitors S.M.A.R.T. capable devices for imminent failure
+kde-plasma/plasma-firewall 6.4.5 6.5.3: Plasma frontend for Firewalld or UFW
+kde-plasma/plasma-integration 6.4.5 6.5.0 6.5.3: Qt Platform Theme integration plugins for the Plasma workspaces
+kde-plasma/plasma-login-sessions 6.4.5 6.5.3: KDE Plasma login sessions
+kde-plasma/plasma-meta 6.4.5-r2 6.5.3: Merge this to pull in all Plasma 6 packages
 kde-plasma/plasma-mimeapps-list 3: Gentoo curated mimeapps list for KDE Plasma
-kde-plasma/plasma-nm 6.4.5 6.5.2: KDE Plasma applet for NetworkManager
-kde-plasma/plasma-pa 6.4.5 6.5.2: Plasma applet for audio volume management using PulseAudio
-kde-plasma/plasma-sdk 6.4.5 6.5.2: Useful applications for Plasma development
-kde-plasma/plasma-systemmonitor 6.4.5 6.5.2: Monitor system sensors, process information and other system resources
-kde-plasma/plasma-thunderbolt 6.4.5 6.5.2: Plasma integration for controlling Thunderbolt devices
-kde-plasma/plasma-vault 6.4.5 6.5.2: Plasma applet and services for creating encrypted vaults
-kde-plasma/plasma-welcome 6.4.5 6.5.2: Friendly onboarding wizard for Plasma
-kde-plasma/plasma-workspace 6.4.5-r3 6.5.2: KDE Plasma workspace
-kde-plasma/plasma-workspace-wallpapers 6.4.5 6.5.2: Wallpapers for the Plasma workspace
-kde-plasma/plasma5support 6.4.5 6.5.2: Support components for porting from KF5/Qt5 to KF6/Qt6
-kde-plasma/plymouth-kcm 6.4.5 6.5.2: KDE Plasma control module for Plymouth
-kde-plasma/polkit-kde-agent 6.4.5 6.5.2: PolKit agent module for KDE Plasma
-kde-plasma/powerdevil 6.4.5-r1 6.5.2-r1: Power management for KDE Plasma Shell
-kde-plasma/print-manager 6.4.5 6.5.2: Manage CUPS print jobs and printers in Plasma
-kde-plasma/qqc2-breeze-style 6.4.5 6.5.2: Breeze inspired QQC2 Style
-kde-plasma/sddm-kcm 6.4.5-r1 6.5.2: KDE Plasma control module for SDDM
-kde-plasma/spectacle 6.4.5 6.5.2: Screenshot capture utility
-kde-plasma/systemsettings 6.4.5 6.5.2: Control Center to configure KDE Plasma desktop
-kde-plasma/wacomtablet 6.4.5 6.5.2: Wacom system settings module that supports different button/pen layout profiles
-kde-plasma/xdg-desktop-portal-kde 6.4.5 6.5.2: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
+kde-plasma/plasma-nm 6.4.5 6.5.3: KDE Plasma applet for NetworkManager
+kde-plasma/plasma-pa 6.4.5 6.5.3: Plasma applet for audio volume management using PulseAudio
+kde-plasma/plasma-sdk 6.4.5 6.5.3: Useful applications for Plasma development
+kde-plasma/plasma-systemmonitor 6.4.5 6.5.3: Monitor system sensors, process information and other system resources
+kde-plasma/plasma-thunderbolt 6.4.5 6.5.3: Plasma integration for controlling Thunderbolt devices
+kde-plasma/plasma-vault 6.4.5 6.5.3: Plasma applet and services for creating encrypted vaults
+kde-plasma/plasma-welcome 6.4.5 6.5.3: Friendly onboarding wizard for Plasma
+kde-plasma/plasma-workspace 6.4.5-r3 6.5.3: KDE Plasma workspace
+kde-plasma/plasma-workspace-wallpapers 6.4.5 6.5.3: Wallpapers for the Plasma workspace
+kde-plasma/plasma5support 6.4.5 6.5.3: Support components for porting from KF5/Qt5 to KF6/Qt6
+kde-plasma/plymouth-kcm 6.4.5 6.5.3: KDE Plasma control module for Plymouth
+kde-plasma/polkit-kde-agent 6.4.5 6.5.3: PolKit agent module for KDE Plasma
+kde-plasma/powerdevil 6.4.5-r1 6.5.3: Power management for KDE Plasma Shell
+kde-plasma/print-manager 6.4.5 6.5.3: Manage CUPS print jobs and printers in Plasma
+kde-plasma/qqc2-breeze-style 6.4.5 6.5.3: Breeze inspired QQC2 Style
+kde-plasma/sddm-kcm 6.4.5-r1 6.5.3: KDE Plasma control module for SDDM
+kde-plasma/spectacle 6.4.5 6.5.3: Screenshot capture utility
+kde-plasma/systemsettings 6.4.5 6.5.3: Control Center to configure KDE Plasma desktop
+kde-plasma/wacomtablet 6.4.5 6.5.3: Wacom system settings module that supports different button/pen layout profiles
+kde-plasma/xdg-desktop-portal-kde 6.4.5 6.5.3: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 llvm-core/clang 15.0.7-r3 16.0.6 17.0.6 18.1.8-r6 19.1.7 20.1.8 21.1.5 22.0.0_pre20251108 22.0.0.9999: C language family frontend for LLVM
 llvm-core/clang-common 15.0.7-r10 16.0.6-r6 17.0.6-r9 17.0.6-r10 18.1.8-r3 19.1.7 20.1.8 20.1.8-r1 21.1.5 22.0.0_pre20251108 22.0.0.9999: Common files shared between multiple slots of clang
 llvm-core/clang-linker-config 20 21 22: Default linker configuration for clang
@@ -14830,7 +14830,7 @@ net-im/signal-desktop-bin 7.72.1 7.79.0: Allows you to send and receive messages
 net-im/slack 4.46.104 4.47.59: Team collaboration tool
 net-im/spectrum2 2.2.1 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
-net-im/synapse 1.138.4 1.139.2 1.140.0 1.141.0 1.142.0: Reference implementation of Matrix homeserver
+net-im/synapse 1.138.4 1.139.2 1.140.0 1.141.0 1.142.1: Reference implementation of Matrix homeserver
 net-im/telegram-desktop 5.12.3-r6 6.0.2-r1 6.1.3 6.2.4: Official desktop client for Telegram
 net-im/telegram-desktop-bin 6.2.4-r1 6.3.0 6.3.1: Official desktop client for Telegram (binary package)
 net-im/telepathy-logger 0.8.2-r2 0.8.2_p4-r1: Daemon that centralizes the communication logging within the Telepathy framework
@@ -18169,7 +18169,7 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.3 3.4: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 7.6.3797.63 7.7.3851.48: A browser for our friends
+www-client/vivaldi 7.7.3851.48 7.7.3851.52: A browser for our friends
 www-client/vivaldi-snapshot 7.7.3851.30 7.7.3851.44: A browser for our friends
 www-client/w3m 0.5.3_p20230121 0.5.3_p20240916: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
