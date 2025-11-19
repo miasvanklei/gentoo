@@ -3239,7 +3239,7 @@ app-text/fblog 4.10.0-r1: Small command-line JSON Log viewer
 app-text/fbpdf 0_p20250124: Framebuffer pdf and djvu viewer
 app-text/feathernotes 1.3.0 1.3.1 1.3.2 9999: Lightweight Qt Notes-Manager for Linux
 app-text/flpsed 0.7.3-r1: Pseudo PostScript editor
-app-text/foliate 3.2.1 3.3.0-r1: gtk ebook reader built with gjs
+app-text/foliate 3.3.0-r1: gtk ebook reader built with gjs
 app-text/fzy 1.0-r1 9999: Fuzzy text selector (interactive grep) for console
 app-text/gentoo-dtd 20230914 99999999: Document Type Definition for Gentoo-related XML files
 app-text/ghostscript-gpl 10.05.1 10.06.0: Interpreter for the PostScript language and PDF
@@ -10652,7 +10652,7 @@ dev-tex/html2latex 1.1-r3: Perl script to convert HTML files into formatted LaTe
 dev-tex/hyphen_show 20000425-r1: Show hyphenations in DVI files
 dev-tex/ivritex 1.1.2: Hebrew support for TeX
 dev-tex/jlcode 6.1.2: LaTeX package, language definition for Julia source code syntax highlighting
-dev-tex/latex-beamer 3.75 3.76: LaTeX class for creating presentations using a video projector
+dev-tex/latex-beamer 3.76: LaTeX class for creating presentations using a video projector
 dev-tex/latex-calendar 3.1: LaTeX package used to create Calendars. Very flexible and robust
 dev-tex/latex2html 2021.2-r2 2022: Convertor written in Perl that converts LaTeX documents to HTML
 dev-tex/latex2pydata 0.4.1: Allows LaTeX to save data to files using Python
@@ -10960,7 +10960,7 @@ dev-util/makeheaders 0_p20240823: Tool that automatically generates .h files for
 dev-util/makepp 2.0.99.2: GNU make replacement
 dev-util/marksman 2024.12.18: LSP language server for editing Markdown files
 dev-util/massif-visualizer 25.08.2 25.08.3: Tool visualising massif data
-dev-util/maturin 1.9.6 1.10.1: Build and publish crates with pyo3, rust-cpython and cffi bindings
+dev-util/maturin 1.9.6 1.10.1 1.10.2: Build and publish crates with pyo3, rust-cpython and cffi bindings
 dev-util/maxcso 1.13.0 9999: Fast cso compressor
 dev-util/mdds 2.1.1-r1 3.0.0 9999: Collection of multi-dimensional data structure and indexing algorithm
 dev-util/meld 3.22.2-r1: A graphical diff and merge tool
@@ -16030,7 +16030,7 @@ sci-geosciences/gpscorrelate 2.0-r1 2.3: Tool for adjusting EXIF tags of your ph
 sci-geosciences/gpsd 3.26.1-r1 9999: GPS daemon and library for USB/serial GPS devices and GPS/mapping clients
 sci-geosciences/gpsprune-bin 23.2: An application for viewing, editing and converting GPS data
 sci-geosciences/gpx-viewer 0.4.0-r2: Simple program to visualize a gpx file
-sci-geosciences/gpxsee 13.46 15.0 15.3: Viewer and analyzer that supports gpx, tcx, kml, fit, igc and nmea files
+sci-geosciences/gpxsee 13.46 15.0 15.3 15.4: Viewer and analyzer that supports gpx, tcx, kml, fit, igc and nmea files
 sci-geosciences/grass 8.4.1-r1 9999: Free GIS with raster and vector functionality, as well as 3D vizualization
 sci-geosciences/gshhg-gmt 2.3.7: Global Self-consistent, Hierarchical, High-resolution Geography Database
 sci-geosciences/gshhs 1.13-r1: Global Self-consistent, Hierarchical, High-resolution Shoreline programs
@@ -16051,7 +16051,7 @@ sci-geosciences/osmctools 0.9-r2: A few really fast tools to convert, filter and
 sci-geosciences/owntracks-recorder 1.0.1: Stores and accesses location data published by the OwnTracks apps
 sci-geosciences/pymap3d 3.1.0: Python 3-D coordinate conversions
 sci-geosciences/qgis 3.42.3-r1 3.44.3 9999: User friendly Geographic Information System
-sci-geosciences/qmapshack 1.18.0 1.18.1: GPS mapping utility
+sci-geosciences/qmapshack 1.18.0 1.18.1 1.18.2: GPS mapping utility
 sci-geosciences/readosm 1.1.0a: Library to extract valid data from an Open Street Map input file
 sci-geosciences/routino 3.4.3: Routing application based on openstreetmap data
 sci-geosciences/tcd-utils 20240222: Utilities for working with Tidal Constituent Databases
@@ -17243,7 +17243,7 @@ sys-apps/usermode-utilities 20070815-r6: Tools for use with Usermode Linux virtu
 sys-apps/uswid 0.4.7: Pure-Python library and CLI tool for processing SBoM metadata
 sys-apps/utempter 0.5.5.6-r2: App that allows non-privileged apps to write utmp (login) info
 sys-apps/util-linux 2.40.4 2.41.1-r1 2.41.2 9999: Various useful Linux utilities
-sys-apps/uutils-coreutils 0.2.2-r1 0.3.0 9999: GNU coreutils rewritten in Rust
+sys-apps/uutils-coreutils 0.2.2-r1 0.3.0 0.4.0 9999: GNU coreutils rewritten in Rust
 sys-apps/uutils-findutils 0.8.0 9999: GNU findutils rewritten in Rust
 sys-apps/vbetool 1.2.2: Run real-mode video BIOS code to alter hw state (i.e. reinitialize video card)
 sys-apps/watchdog 5.16 5.16-r1: A software watchdog and /dev/watchdog daemon
@@ -18144,7 +18144,7 @@ www-client/elinks 0.18.0 9999: Advanced and well-established text-mode web brows
 www-client/epiphany 47.7-r1 48.3 48.5: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.2 25.08.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.3.1 140.4.0 140.5.0 143.0 143.0.3 144.0-r1 144.0.2 145.0: Firefox Web Browser
+www-client/firefox 140.3.1 140.4.0 140.5.0 143.0 143.0.3 144.0-r1 144.0.2 145.0 145.0.1: Firefox Web Browser
 www-client/firefox-bin 140.5.0-r1 145.0-r1 145.0.1: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.25: The web browser from Google
