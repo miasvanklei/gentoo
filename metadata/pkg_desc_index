@@ -996,7 +996,7 @@ app-admin/kpcli 4.1: Command line interface to KeePass database files
 app-admin/kube-bench 0.6.8: Kubernetes Bench for Security runs the CIS Kubernetes Benchmark
 app-admin/kubectx 0.9.5: Fast way to switch between clusters and namespaces in kubectl
 app-admin/lib_users 0.15 0.15-r1 0.15-r2: Check for mapped libs and open files that are marked as deleted
-app-admin/linode-cli 5.62.0 5.63.0: Official command-line interface for interacting with the Linode API
+app-admin/linode-cli 5.63.0 5.64.0: Official command-line interface for interacting with the Linode API
 app-admin/lnav 0.11.2: A curses-based tool for viewing and analyzing log files
 app-admin/logcheck 1.4.3-r2 1.4.3-r5: Mails anomalies in the system logfiles to the administrator
 app-admin/logmon 0.4.4-r2: Split-screen terminal/ncurses based log viewer
@@ -5192,7 +5192,7 @@ dev-lang/ghc 9.0.2-r4 9.2.8: The Glasgow Haskell Compiler
 dev-lang/gleam 1.4.1-r1: A friendly language for building type-safe, scalable systems!
 dev-lang/gnucobol 3.2-r2: A free/libre COBOL compiler
 dev-lang/gnuprologjava 0.2.6-r2: GNU Prolog for Java is an implementation of ISO Prolog as a Java library
-dev-lang/go 1.24.9 1.24.10 1.25.3 1.25.4 9999: A concurrent garbage collected and typesafe programming language
+dev-lang/go 1.24.9 1.24.10 1.25.3 1.25.4 1.25.4-r1 9999: A concurrent garbage collected and typesafe programming language
 dev-lang/go-bootstrap 1.20.14 1.22.12: Bootstrap package for dev-lang/go
 dev-lang/gprolog 1.5.0-r1: Native Prolog compiler with constraint solving over finite domains (FD)
 dev-lang/grass 0.13.4: A Sass compiler written purely in Rust
@@ -5666,7 +5666,7 @@ dev-libs/libverto 0.3.2: Main event loop abstraction library
 dev-libs/libvformat 1.13-r3: Library to read and write vcard files
 dev-libs/libvoikko 4.3.3: Spell checking, hyphenation and morphological analysis tool for Finnish language
 dev-libs/libvterm 0.1.4 0.1.4-r1 0.3 0.3.1 0.3.2 0.3.2-r1 0.3.3: An abstract library implementation of a VT220/xterm/ECMA-48 terminal emulator
-dev-libs/libwacom 2.15.0 2.16.1: Library for identifying Wacom tablets and their model-specific features
+dev-libs/libwacom 2.15.0 2.16.1 2.17.0: Library for identifying Wacom tablets and their model-specific features
 dev-libs/libwapcaplet 0.4.3-r1: string internment library, written in C
 dev-libs/libwbxml 0.11.8 0.11.10: Library and tools to parse, encode and handle WBXML documents
 dev-libs/libx86 1.1-r6: A hardware-independent library for executing real-mode x86 code
@@ -10849,7 +10849,7 @@ dev-util/diffstat 1.67 1.68: Display a histogram of diff changes
 dev-util/difftastic 0.63.0 0.64.0 0.67.0: A structural diff that understands syntax.
 dev-util/diffuse 0.9.0-r1 0.10.0: A graphical tool to compare and merge text files
 dev-util/dirdiff 2.1-r4: A tool for differing and merging directories
-dev-util/directx-headers 1.616.0 9999: DirectX header files and WSL stubs
+dev-util/directx-headers 1.616.0 1.618.2 9999: DirectX header files and WSL stubs
 dev-util/dissembler 0.9-r2: polymorphs bytecode to a printable ASCII string
 dev-util/docker-distribution-pruner 0.2.0: Clean all old container revisions from registry
 dev-util/dogtail 0.9.11-r1: GUI test tool and automation framework using accessibility framework
@@ -16011,7 +16011,7 @@ sci-electronics/sigrok-cli 0.7.2-r1 9999: Command-line client for the sigrok log
 sci-electronics/spice 3.5.5-r4: general-purpose circuit simulation program
 sci-electronics/splat 1.4.2 1.4.2-r1: RF Signal Propagation, Loss, And Terrain analysis tool
 sci-electronics/systemc 2.3.4-r2: A C++ based modeling platform for VLSI and system-level co-design
-sci-electronics/voacapl 0.7.6-r2: HF propagation prediction tool
+sci-electronics/voacapl 0.7.6-r3: HF propagation prediction tool
 sci-electronics/xcircuit 3.10.30-r2: Circuit drawing and schematic capture program
 sci-electronics/xnec2c 4.4.16 4.4.17: A GTK+ graphical interactive version of nec2c
 sci-electronics/xnecview 1.37: A program for visualizing NEC2 input and output data
@@ -18331,7 +18331,7 @@ x11-base/xorg-proto 2024.1 9999: X.Org combined protocol headers
 x11-base/xorg-server 21.1.20 9999: X.Org X servers
 x11-base/xorg-sgml-doctools 1.12.1: SGML entities and XML/CSS stylesheets used in X.Org docs
 x11-base/xwayland 24.1.9 9999: Standalone X server running under Wayland
-x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.274.02 570.195.03 580.94.10 580.95.05 580.105.08: NVIDIA Accelerated Graphics Driver
+x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.274.02 570.195.03 570.207 580.94.10 580.95.05 580.105.08: NVIDIA Accelerated Graphics Driver
 x11-drivers/xf86-input-elographics 1.4.4: Elographics input driver
 x11-drivers/xf86-input-evdev 2.11.0: Generic Linux input driver
 x11-drivers/xf86-input-joystick 1.6.4: X.Org driver for joystick input devices
@@ -18340,7 +18340,7 @@ x11-drivers/xf86-input-mtrack 0.5.0-r1: Xorg Driver for Multitouch Trackpads
 x11-drivers/xf86-input-synaptics 1.10.0: Driver for Synaptics touchpads
 x11-drivers/xf86-input-vmmouse 13.2.0 9999: VMWare mouse input driver
 x11-drivers/xf86-input-void 1.4.2: null input driver
-x11-drivers/xf86-input-wacom 1.2.3: Driver for Wacom tablets and drawing devices
+x11-drivers/xf86-input-wacom 1.2.3 1.2.4: Driver for Wacom tablets and drawing devices
 x11-drivers/xf86-video-amdgpu 23.0.0 25.0.0-r1 9999: Accelerated Open Source driver for AMDGPU cards
 x11-drivers/xf86-video-ast 1.2.1: X.Org driver for ASpeedTech cards
 x11-drivers/xf86-video-ati 22.0.0 9999: ATI video driver
@@ -18410,7 +18410,7 @@ x11-libs/libXxf86vm 1.1.6: X.Org Xxf86vm library
 x11-libs/libclxclient 3.9.2-r1: C++ wrapper library around the X Window System API
 x11-libs/libdlo 0.1.2-r2: A fully open source driver which supports all DisplayLink devices
 x11-libs/libdockapp 0.7.3: Window Maker Dock Applet Library
-x11-libs/libdrm 2.4.125 2.4.127 2.4.128 9999: X.Org libdrm library
+x11-libs/libdrm 2.4.125 2.4.127 2.4.128 2.4.129 9999: X.Org libdrm library
 x11-libs/libfakeXinerama 0.1.0: Fake library to override default libXinerama and expose custom screen dimensions
 x11-libs/libfakekey 0.3-r1: Helper library for the x11-misc/matchbox-keyboard package
 x11-libs/libfm 1.3.2-r1: Library for file management
