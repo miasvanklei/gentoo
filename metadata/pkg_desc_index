@@ -918,7 +918,7 @@ app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.707.0: AWS Session Manager Plugin for aws-cli
 app-admin/awscli 1.42.50 1.42.55 1.42.59 1.42.64 1.42.69 1.42.74 1.42.75 1.42.76 1.43.0 1.43.1: Universal Command Line Environment for AWS
-app-admin/awscli-bin 2.11.17 2.12.0 2.13.11 2.17.35 2.23.2 2.31.37: command line interface for Amazon Web Services
+app-admin/awscli-bin 2.23.2 2.31.37: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.8.2 2025.9.0 2025.10.0: Bitwarden password manager desktop client
 app-admin/btrfs-assistant 2.2: GUI management tool to make managing a Btrfs filesystem easier
@@ -983,7 +983,7 @@ app-admin/hardinfo 0.6_alpha_pre20240320: System information and benchmark tool 
 app-admin/haskell-updater 1.3.2-r1 1.3.3 1.4.0.0 1.4.1.0 9999: Rebuild Haskell dependencies in Gentoo
 app-admin/hcloud 1.51.0: A command-line interface for Hetzner Cloud
 app-admin/hddtemp 0.3_beta15-r29: A simple utility to read the temperature of SMART capable hard drives
-app-admin/helm 3.17.2 3.18.6 3.19.0: Kubernetes Package Manager
+app-admin/helm 3.17.2 3.18.6 3.19.0 3.19.2: Kubernetes Package Manager
 app-admin/ide-smart 1.4-r3: A tool to read SMART information from harddiscs
 app-admin/ig 0.46.0: Tools and framework for data collection and system inspection using eBPF
 app-admin/integrit 4.2_rc1: file integrity verification program
@@ -1862,7 +1862,7 @@ app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clo
 app-editors/vim 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r1 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.105.1 1.106.0 1.106.1: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscode 1.105.1 1.106.1 1.106.2: Multiplatform Visual Studio Code from Microsoft
 app-editors/vscodium 1.104.26450 1.105.16954 1.105.17075: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
@@ -2014,7 +2014,7 @@ app-emacs/elscreen 20180321: Frame configuration management for GNU Emacs modell
 app-emacs/emacs-aio 1.0_p20200610: Async and await functions for Emacs Lisp
 app-emacs/emacs-ansilove 2.0.0 9999: Display buffers as PNG images using ansilove in GNU Emacs
 app-emacs/emacs-bazel-mode 0_p20230919: Emacs major modes for the Bazel build system support
-app-emacs/emacs-ccls 0_pre20230311: Emacs client for ccls, a C/C++ language server
+app-emacs/emacs-ccls 0_pre20230311 0_pre20250825: Emacs client for ccls, a C/C++ language server
 app-emacs/emacs-common 1.13: Common files needed by all GNU Emacs versions
 app-emacs/emacs-crystal-mode 0.1.0_p20221008: GNU Emacs major mode for editing Crystal programming language files
 app-emacs/emacs-daemon 0.26: Gentoo support for Emacs running as a server in the background
@@ -2941,7 +2941,7 @@ app-misc/ttyload 0.5.3-r1: color-coded graph of load averages over time
 app-misc/ttyrec 1.0.8-r3 1.1.7.1: ttyrec provides tools to record and replay a terminal session
 app-misc/tzupdate 3.1.0-r1: Set the system timezone based on IP geolocation.
 app-misc/unfoo 1.0.8-r2: Simple bash driven frontend to simplify decompression of files
-app-misc/upterm 0.15.3 0.17.0 0.18.0: Instant Terminal Sharing
+app-misc/upterm 0.17.0 0.18.0: Instant Terminal Sharing
 app-misc/uptimed 0.4.7: System uptime record daemon that keeps track of your highest uptimes
 app-misc/vcontrold 0.98.11-r1: Daemon for communication with Viessmann Vito heatings
 app-misc/vcp 2.2-r2: Copy files/directories in a curses interface
@@ -3961,7 +3961,7 @@ dev-db/cdb 0.75-r4 0.75-r5: Fast, reliable, simple package for creating and read
 dev-db/citus 12.1.9 12.1.10 13.0.4 13.0.5 13.1.0 13.1.1 13.2.0 9999: Open-source postgresql extension for clustering/multi-node setups
 dev-db/cockroach 2.1.5-r1 19.1.1-r1: open source database for building cloud services
 dev-db/datadraw 3.1.1 3.1.1-r1: feature rich database generator for high performance C applications
-dev-db/dbeaver-bin 25.2.3 25.2.4: Free universal database tool (community edition)
+dev-db/dbeaver-bin 25.2.4 25.2.5: Free universal database tool (community edition)
 dev-db/duckdb 1.4.0 1.4.1 1.4.2: high-performance analytical database system
 dev-db/etcd 3.4.31 3.5.12 3.5.15 3.5.17 3.5.18: Highly-available key value store for shared configuration and service discovery
 dev-db/freetds 1.5 1.5.6: Tabular Datastream Library
@@ -5917,7 +5917,7 @@ dev-lua/basexx 0.4.1: A base2, base16, base32, base64 and base85 library for Lua
 dev-lua/binaryheap 0.4: Binary heap implementation in pure Lua
 dev-lua/busted 2.2.0: Elegant Lua unit testing
 dev-lua/busted-htest 1.0.0-r1: Pretty output handler for Busted
-dev-lua/compat53 0.14.4: Compatibility module providing Lua-5.3-style APIs for Lua 5.2 and 5.1
+dev-lua/compat53 0.14.4-r1: Compatibility module providing Lua-5.3-style APIs for Lua 5.2 and 5.1
 dev-lua/cqueues 20200726_p20241204: Stackable Continuation Queues
 dev-lua/dkjson 2.8: David Kolf's JSON module for Lua
 dev-lua/fifo 0.2: Fifo library for Lua
@@ -13495,7 +13495,7 @@ media-libs/openexr 3.3.2-r1 3.3.3 3.3.4: ILM's OpenEXR high dynamic-range image 
 media-libs/openfec 1.4.2.11-r1 1.4.2.12: Library of various AL-FEC codecs
 media-libs/openglide 0.09_rc9_p20191120: Glide to OpenGL wrapper
 media-libs/openh264 2.3.1-r3 2.5.0 2.6.0: Cisco OpenH264 library and Gecko Media Plugin for Mozilla packages
-media-libs/openimageio 2.5.18.0 2.5.19.0 3.0.6.1 3.0.8.1 3.0.8.1-r1: A library for reading and writing images
+media-libs/openimageio 2.5.18.0 2.5.19.0 3.0.6.1 3.0.8.1 3.0.8.1-r1 3.1.7.0: A library for reading and writing images
 media-libs/openjpeg 2.5.0-r5 2.5.0-r6 2.5.2 2.5.3 2.5.3-r1 2.5.4: Open-source JPEG 2000 library
 media-libs/openpgl 0.5.0-r1 0.6.0 0.7.0: Intel Open Path Guiding Library
 media-libs/opensubdiv 3.6.0-r4 3.6.1: An Open-Source subdivision surface library
@@ -14299,9 +14299,9 @@ media-video/dvdimagecmp 0.3-r1: Tool to compare a burned DVD with an image to ch
 media-video/dvdstyler 3.2.1-r2 3.2.1-r3: A cross-platform free DVD authoring application
 media-video/dvgrab 3.5-r2: Digital Video (DV) grabber for GNU/Linux
 media-video/ffcast 2.4.8: Record screencasts using ffmpeg
-media-video/ffmpeg 4.4.5-r4 4.4.6-r1 6.1.3 7.1.2 8.0 8.0.1 9999: Complete solution to record/convert/stream audio and video
+media-video/ffmpeg 4.4.5-r4 4.4.6-r1 6.1.3 7.1.2 7.1.3 8.0 8.0.1 9999: Complete solution to record/convert/stream audio and video
 media-video/ffmpeg-chromium 137 138 139 140 141 142 143: FFmpeg built specifically for codec support in Chromium-based browsers
-media-video/ffmpeg-compat 4.4.5-r2 4.4.6-r1 6.1.3 7.1.2: Complete solution to record/convert/stream audio and video
+media-video/ffmpeg-compat 4.4.5-r2 4.4.6-r1 6.1.3 7.1.2 7.1.3: Complete solution to record/convert/stream audio and video
 media-video/ffmpegthumbnailer 2.2.2-r2 2.2.3: Lightweight video thumbnailer that can be used by file managers
 media-video/flvstreamer 2.1c: Open source command-line RTMP client to stream audio or video flash content
 media-video/frameworks 0.3.7-r1: A small v4l frame capture utility especially suited for stop motion animation
@@ -15578,7 +15578,7 @@ net-proxy/adzapper 20110915-r2: Redirector for squid to intercept advertising, p
 net-proxy/cntlm 0.93_beta5-r4: Cntlm is an NTLM/NTLMv2 authenticating HTTP proxy
 net-proxy/dante 1.4.1-r6 1.4.3: A free socks4,5 and msproxy implementation
 net-proxy/dnsproxy 1.17-r1: The dnsproxy daemon is a proxy for DNS queries
-net-proxy/haproxy 2.8.11 2.8.15 2.8.16 2.8.9999 3.0.5 3.0.11 3.0.12 3.0.9999 3.1.7 3.1.8 3.1.9 3.1.10 3.1.9999 3.2.3 3.2.5 3.2.6 3.2.7 3.2.8 3.2.8-r1 3.2.9999 9999: A TCP/HTTP reverse proxy for high availability environments
+net-proxy/haproxy 2.8.11 2.8.15 2.8.16 2.8.9999 3.0.5 3.0.11 3.0.12 3.0.9999 3.1.7 3.1.8 3.1.9 3.1.10 3.1.9999 3.2.3 3.2.5 3.2.6 3.2.7 3.2.8 3.2.8-r1 3.2.9 3.2.9999 9999: A TCP/HTTP reverse proxy for high availability environments
 net-proxy/haproxy-dataplaneapi 3.0.3 3.1.5: haproxy dataplane api / sidecar
 net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying of HAProxy status
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
@@ -17432,7 +17432,7 @@ sys-cluster/hpl 2.0-r4 2.3: Portable Implementation of the Linpack Benchmark for
 sys-cluster/hpx 1.11.0 9999: C++ runtime system for parallel and distributed applications
 sys-cluster/hubble 0.10.0 1.17.5: Network, Service & Security Observability for Kubernetes using eBPF
 sys-cluster/ipvsadm 1.31-r1: utility to administer the IP virtual server services
-sys-cluster/k9scli 0.32.4 0.40.10 0.50.6 0.50.12 0.50.14: terminal based UI to manage kubernetes clusters
+sys-cluster/k9scli 0.40.10 0.50.6 0.50.12 0.50.14 0.50.16: terminal based UI to manage kubernetes clusters
 sys-cluster/keepalived 2.2.7 2.2.8 2.3.3: A strong & robust keepalive facility to the Linux Virtual Server project
 sys-cluster/knem 1.1.4_p20250126 9999: High-Performance Intra-Node MPI Communication
 sys-cluster/kops 1.28.2 1.30.0: Kubernetes Operations
