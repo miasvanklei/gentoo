@@ -1097,7 +1097,7 @@ app-admin/watchfolder 0.3.3-r2: Watches directories and processes files
 app-admin/webalizer 2.23.08-r1: Webserver log file analyzer
 app-admin/webapp-config 1.55-r4 9999: Gentoo's installer for web-based applications
 app-admin/whowatch 1.8.6-r2: Displays information about users currently logged on in real time
-app-admin/winbox 4.0_beta41: Management Software for MikroTik RouterOS
+app-admin/winbox 4.0_beta42: Management Software for MikroTik RouterOS
 app-admin/xkcdpass 1.20.0: Password generator inspired by XKCD 936
 app-admin/xstow 1.1.1: Replacement for GNU stow with extensions
 app-admin/xtail 2.1_p8: Tail multiple logfiles at once, even if rotated
@@ -4063,7 +4063,7 @@ dev-debug/dtrace 2.0.3-r2 2.0.4 9999: Dynamic BPF-based system-wide tracing tool
 dev-debug/duma 2.5.15-r3: DUMA (Detect Unintended Memory Access) is a memory debugging library
 dev-debug/gdb 16.3 9999: GNU debugger
 dev-debug/gef 2023.08 2024.06 2025.01 9999: GDB Enhanced Features for exploit devs & reversers
-dev-debug/gfxreconstruct 1.4.321.0 9999: Graphics API Capture and Replay Tools
+dev-debug/gfxreconstruct 1.4.321.0 1.4.328.0 9999: Graphics API Capture and Replay Tools
 dev-debug/gprofng-gui 2.0 2.1 2.2 9999: Full-fledged graphical interface to operate gprofng
 dev-debug/kdbg 3.1.0_p20250406 3.1.0_p20250406-r1 3.2.0: Graphical debugger interface
 dev-debug/leaktracer 2.4-r3: Trace and analyze memory leaks in C++ programs
@@ -10814,7 +10814,7 @@ dev-util/cpputest 4.0-r1: Unit testing and mocking framework for C/C++
 dev-util/cproto 4.7x 4.7y: Generate C function prototypes from C source code
 dev-util/cpuinfo-collection 20101114: huge collection of /proc/cpuinfo files
 dev-util/cram 0.7-r2: Functional testing framework for command line applications
-dev-util/crash 8.0.6 9.0.0 9999: Red Hat crash utility; used for analyzing kernel core dumps
+dev-util/crash 8.0.6 9.0.0 9.0.1 9999: Red Hat crash utility; used for analyzing kernel core dumps
 dev-util/cscope 15.9 15.9-r1: Interactively examine a C program
 dev-util/csup 20060318-r1: A rewrite of CVSup
 dev-util/ctags 6.0_p20230423_p0-r2 6.1_p20240609_p0-r1 6.2.0-r1 9999: Exuberant Ctags creates tags files for code browsing in editors
@@ -12461,7 +12461,7 @@ kde-frameworks/threadweaver 6.18.0 6.20.0: Framework for managing threads using 
 kde-misc/basket 2.49b_p20250902: Multiple information organizer - a DropDrawers clone
 kde-misc/colord-kde 25.08.3: Provides interfaces and session daemon to colord
 kde-misc/kclock 25.08.3: Convergent clock application for Plasma
-kde-misc/kdeconnect 25.08.3-r1: Adds communication between KDE Plasma and your smartphone
+kde-misc/kdeconnect 25.08.3-r1 25.08.3-r2: Adds communication between KDE Plasma and your smartphone
 kde-misc/kdiff3 1.12.3: Frontend to diff3 based on KDE Frameworks
 kde-misc/kio-fuse 5.1.1: FUSE interface for KIO
 kde-misc/kio-gdrive 25.08.3: KIO worker for Google Drive service
@@ -14190,7 +14190,7 @@ media-sound/sox 14.4.2_p20210509-r3 14.4.4.1 14.6.0.4: The swiss army knife of s
 media-sound/spek 0.8.5-r2 0.8.5-r3: Analyse your audio files by showing their spectrogram
 media-sound/splay 0.9.5.2-r2: An audio player, primarily for the console
 media-sound/split2flac 122 9999: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
-media-sound/spotify 1.2.63: Spotify is a social music platform
+media-sound/spotify 1.2.63-r1: Spotify is a social music platform
 media-sound/strawberry 1.2.11 1.2.13 1.2.14 9999: Modern music player and library organizer based on Clementine and Qt
 media-sound/streamripper 1.64.6-r1: Extracts and records individual MP3 file tracks from shoutcast streams
 media-sound/streamtranscoder 3.1.11-r2: Commandline program to transcode shoutcast/icecast streams to different bitrates
@@ -14731,7 +14731,7 @@ net-dns/redis-knot 3.5.0 3.5.1: Redis module for Knot DNS
 net-dns/resolv_wrapper 1.1.8: Wrapper for DNS name resolving or DNS faking
 net-dns/resolvconf-symlink 0: Make /etc/resolv.conf a symlink to a runtime-writable location
 net-dns/s6-dns 2.4.1.0: Suite of DNS client programs and libraries for Unix systems
-net-dns/smartdns 46.1 47: A local DNS server returns the fastest access results
+net-dns/smartdns 47 47.1: A local DNS server returns the fastest access results
 net-dns/unbound 1.20.0 1.22.0 1.22.0-r1 1.23.0-r1 1.24.1-r1: A validating, recursive and caching DNS resolver
 net-dns/updatedd 2.6-r8: Dynamic DNS client with plugins for several dynamic dns services
 net-dns/valtz 0.8: Validation tool for tinydns-data zone files
