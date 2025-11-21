@@ -23,11 +23,13 @@ RDEPEND="
 	$(python_gen_cond_dep '
 		dev-python/filelock[${PYTHON_USEDEP}]
 		dev-python/fsspec[${PYTHON_USEDEP}]
+		dev-python/httpx[${PYTHON_USEDEP}]
 		dev-python/packaging[${PYTHON_USEDEP}]
 		dev-python/pyyaml[${PYTHON_USEDEP}]
-		dev-python/requests[${PYTHON_USEDEP}]
 		dev-python/tqdm[${PYTHON_USEDEP}]
+		dev-python/typer[${PYTHON_USEDEP}]
 		dev-python/typing-extensions[${PYTHON_USEDEP}]
+		sci-ml/hf_xet[${PYTHON_USEDEP}]
 	')
 "
 
@@ -43,16 +45,15 @@ src_test() {
 		contrib
 		tests/test_cache_layout.py
 		tests/test_cache_no_symlinks.py
-		tests/test_command_delete_cache.py
 		tests/test_commit_scheduler.py
 		tests/test_file_download.py
 		tests/test_hf_api.py
 		tests/test_hf_file_system.py
-		tests/test_inference_api.py
+		tests/test_hub_mixin.py
+		tests/test_hub_mixin_pytorch.py
 		tests/test_inference_client.py
 		tests/test_oauth.py
 		tests/test_repocard.py
-		tests/test_repository.py
 		tests/test_snapshot_download.py
 		tests/test_utils_telemetry.py
 		tests/test_xet_download.py
@@ -63,9 +64,6 @@ src_test() {
 	)
 
 	local EPYTEST_DESELECT=(
-		tests/test_cli.py::TestJobsCommand::test_uv_local_script
-		tests/test_hub_mixin.py::HubMixinTest::test_push_to_hub
-		tests/test_hub_mixin_pytorch.py::PytorchHubMixinTest::test_push_to_hub
 		tests/test_inference_async_client.py::test_async_generate_timeout_error
 		tests/test_inference_providers.py::TestHFInferenceProvider::test_prepare_mapping_info_unknown_task
 		tests/test_offline_utils.py::test_offline_with_timeout

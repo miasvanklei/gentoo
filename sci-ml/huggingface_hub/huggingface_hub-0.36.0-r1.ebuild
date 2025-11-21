@@ -28,6 +28,7 @@ RDEPEND="
 		dev-python/requests[${PYTHON_USEDEP}]
 		dev-python/tqdm[${PYTHON_USEDEP}]
 		dev-python/typing-extensions[${PYTHON_USEDEP}]
+		sci-ml/hf_xet[${PYTHON_USEDEP}]
 	')
 "
 
@@ -63,13 +64,12 @@ src_test() {
 	)
 
 	local EPYTEST_DESELECT=(
-		tests/test_commit_scheduler.py::TestCommitScheduler::test_sync_local_folder
+		tests/test_cli.py::TestJobsCommand::test_uv_local_script
 		tests/test_hub_mixin.py::HubMixinTest::test_push_to_hub
 		tests/test_hub_mixin_pytorch.py::PytorchHubMixinTest::test_push_to_hub
 		tests/test_inference_async_client.py::test_async_generate_timeout_error
 		tests/test_inference_providers.py::TestHFInferenceProvider::test_prepare_mapping_info_unknown_task
 		tests/test_offline_utils.py::test_offline_with_timeout
-		tests/test_utils_pagination.py::TestPagination::test_paginate_github_api
 		tests/test_utils_pagination.py::TestPagination::test_paginate_hf_api
 	)
 

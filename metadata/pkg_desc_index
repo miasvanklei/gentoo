@@ -5592,6 +5592,7 @@ dev-libs/libnsfb 0.2.2-r1: C library for framebuffer abstraction
 dev-libs/libnsutils 0.1.1 9999: C library for base64 and time
 dev-libs/libofx 0.10.9: Library to support the Open Financial eXchange XML format
 dev-libs/liboil 0.3.17-r5: Library of simple functions that are optimized for various CPUs
+dev-libs/libopenrazer 0.4.0: Qt wrapper around the D-Bus API from OpenRazer
 dev-libs/liborcus 0.19.2-r1 0.20.0 9999: Standalone file import filter library for spreadsheet documents
 dev-libs/libotf 0.9.16-r1: Library for handling OpenType fonts (OTF)
 dev-libs/libowfat 0.32-r1 0.32-r5 0.33-r1 0.34: reimplement libdjb - excellent libraries from Dan Bernstein
@@ -16439,7 +16440,7 @@ sci-ml/foxi 2021.05.27: ONNXIFI with Facebook Extension
 sci-ml/gemmlowp 2021.12.20: Low-precision matrix multiplication
 sci-ml/gloo 2023.12.03 2025.06.04-r2: library of floating-point neural network inference operators
 sci-ml/hf_xet 1.2.0: xet client tech, used in huggingface_hub
-sci-ml/huggingface_hub 0.34.6 0.35.3 0.36.0: a client library to interact with the Hugging Face Hub
+sci-ml/huggingface_hub 0.36.0-r1 1.0.1: a client library to interact with the Hugging Face Hub
 sci-ml/ideep 3.5.3_p2 3.5.3_p3: Intel Optimization for Chainer
 sci-ml/jiwer 3.0.3-r1: Evaluate an automatic speech recognition system
 sci-ml/kineto 0.4.0_p20250214-r2 0.4.0_p20250617-r2: part of the PyTorch Profiler
@@ -16450,7 +16451,7 @@ sci-ml/safetensors 0.5.3 0.6.2: Simple, safe way to store and distribute tensors
 sci-ml/sentencepiece 0.2.0-r3: Text tokenizer for Neural Network-based text generation
 sci-ml/seqeval 1.2.2-r4: Python framework for sequence labeling evaluation
 sci-ml/tensorpipe 2022.05.13-r1: provides a tensor-aware channel
-sci-ml/tokenizers 0.21.4 0.22.1: Implementation of today's most used tokenizers
+sci-ml/tokenizers 0.22.1: Implementation of today's most used tokenizers
 sci-ml/torchdata 0.11.0: A repo for data loading and utilities on PyTorch domain libraries.
 sci-ml/torchvision 0.23.0-r1 0.24.0-r1: Datasets, transforms and models to specific to computer vision
 sci-ml/transformers 4.56.2 4.57.0: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
@@ -17178,6 +17179,7 @@ sys-apps/radeontool 1.6.3_p20181127-r1: Utility to get/set registers and control
 sys-apps/razer-cli 2.3.0: Command line interface for controlling Razer devices on Linux
 sys-apps/razercfg 0.43: Utility for advanced configuration of Razer mice
 sys-apps/razercommander 1.2.1.2-r4: GTK contol center for managing Razer peripherals on Linux
+sys-apps/razergenie 1.3.0: Razer devices configurator
 sys-apps/readahead-list 1.20060421.1016-r4: Preloads files into the page cache to accelerate program loading
 sys-apps/rename 1.3-r3: Easily rename files
 sys-apps/renameutils 0.12.0: Use your favorite text editor to rename files
