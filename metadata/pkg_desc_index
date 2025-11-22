@@ -5240,7 +5240,7 @@ dev-lang/oorexx 5.1.0_beta12932: Open source implementation of Object Rexx
 dev-lang/orc 0.4.38 0.4.40 0.4.40-r1 0.4.41: The Oil Runtime Compiler, a just-in-time compiler for array operations
 dev-lang/parrot 8.1.0-r4: Virtual machine designed to compile and execute bytecode for dynamic languages
 dev-lang/pcc 1.1.0-r1 1.1.0-r2: pcc portable c compiler
-dev-lang/perl 5.40.0-r1 5.40.1 5.40.2 5.42.0: Larry Wall's Practical Extraction and Report Language
+dev-lang/perl 5.40.0-r1 5.40.1 5.40.2 5.42.0 5.42.0-r1: Larry Wall's Practical Extraction and Report Language
 dev-lang/php 8.2.29 8.3.26 8.3.27 8.4.14: The PHP language runtime engine
 dev-lang/pico8 0.2.6b 0.2.7: Fantasy console for making and playing tiny games and other computer programs
 dev-lang/polyml 5.9.1 5.9.2-r1: Poly/ML is a full implementation of Standard ML
@@ -6160,7 +6160,7 @@ dev-ml/ppx_tools 6.6-r1: Tools for authors of ppx rewriters
 dev-ml/ppx_tydi 0.16.0 0.17.0-r2 0.17.1: Let expressions, inferring pattern type from expression
 dev-ml/ppx_typerep_conv 0.15.0 0.16.0 0.17.0-r2 0.17.1: Generation of runtime types from type declarations
 dev-ml/ppx_variants_conv 0.15.0 0.16.0 0.17.0-r2 0.17.1: Generation of accessor and iteration functions for ocaml variant types
-dev-ml/ppxlib 0.22.2-r4 0.24.0-r2 0.30.0-r2 0.33.0-r2 0.36.2-r1 0.37.0: Base library and tools for ppx rewriters
+dev-ml/ppxlib 0.22.2-r4 0.24.0-r2 0.30.0-r2 0.33.0-r2 0.36.2-r1 0.37.0-r1: Base library and tools for ppx rewriters
 dev-ml/ppxlib_jane 0.17.0-r1 0.17.2-r1 0.17.4: Utilities for working with Jane Street AST constructs
 dev-ml/protocol_version_header 0.15.0 0.16.0 0.17.0: Protocol aware version negotiation for OCaml
 dev-ml/ptime 1.1.0 1.2.0: POSIX time for OCaml
@@ -13410,7 +13410,7 @@ media-libs/libpagemaker 0.0.4-r1 9999: C++ Library that parses the file format o
 media-libs/libpano13 2.9.22 2.9.22-r1 2.9.23: Helmut Dersch's panorama toolbox library
 media-libs/libpgf 7.21.7-r2: Library to load, handle and manipulate images in the PGF format
 media-libs/libplacebo 7.351.0 9999: Reusable library for GPU-accelerated image processing primitives
-media-libs/libpng 1.6.47 1.6.50-r1: Portable Network Graphics library
+media-libs/libpng 1.6.47 1.6.50-r1 1.6.51: Portable Network Graphics library
 media-libs/libpng-compat 1.2.59-r1 1.5.30-r1: Portable Network Graphics library
 media-libs/libpqstego 0.0.1-r2: Library for Perturbed Quantization Steganography
 media-libs/libprojectm 3.1.12-r4 4.1.2 4.1.4 9999: A graphical music visualization plugin similar to milkdrop
