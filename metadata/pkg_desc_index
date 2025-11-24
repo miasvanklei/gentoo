@@ -5877,7 +5877,7 @@ dev-libs/vectorscan 5.4.11 5.4.12: A portable fork of the high-performance regul
 dev-libs/voikko-fi 2.5-r2: Finnish dictionary for libvoikko based spell checkers (vvfst format)
 dev-libs/volume_key 0.3.12-r4: Library for manipulating and storing storage volume encryption keys
 dev-libs/wayland 1.24.0 9999: Wayland protocol libraries
-dev-libs/wayland-protocols 1.45 9999: Wayland protocol files
+dev-libs/wayland-protocols 1.45 1.46 9999: Wayland protocol files
 dev-libs/weston 14.0.1-r2 14.0.2-r1 9999: Wayland reference compositor
 dev-libs/xalan-c 1.12-r4: XSLT processor for transforming XML into HTML, text, or other XML types
 dev-libs/xapian 1.4.29 1.4.30: Xapian Probabilistic Information Retrieval library
@@ -12692,7 +12692,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, sim
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.10.4 3.10.5 3.11_pre20251105: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.10.4 3.10.5 3.11_pre20251122: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.17.1.9 8.18.1 8.18.1-r1 8.18.1.10 8.18.1.10-r1: Widely-used Mail Transport Agent (MTA)
@@ -13474,7 +13474,7 @@ media-libs/lsp-plugins 1.2.3-r1 1.2.6 1.2.14 9999: Linux Studio Plugins
 media-libs/lv2 1.18.10-r1 1.18.10-r2: A simple but extensible successor of LADSPA
 media-libs/lvtk 1.2.0-r3 1.2.0-r4: A set of C++ wrappers around the LV2 C API
 media-libs/mesa 24.1.7-r1 25.0.7 25.1.9 25.2.5 25.2.6 25.2.7 25.3.0 9999: OpenGL-like graphic library for Linux
-media-libs/mesa-amber 21.3.9-r2: OpenGL-like graphic library for Linux
+media-libs/mesa-amber 21.3.9-r2 21.3.9-r3: OpenGL-like graphic library for Linux
 media-libs/mlt 7.32.0 7.34.1: Open source multimedia framework for television broadcasting
 media-libs/mpvqt 1.0.1 1.1.1: libmpv wrapper for QtQuick2 and QML
 media-libs/munt-mt32emu 2.7.0 2.7.2: Library for emulating the Roland MT-32, CM-32L, CM-64 and LAPC-I
