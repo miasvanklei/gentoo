@@ -917,7 +917,7 @@ app-admin/apg 2.3.0b_p20150129-r1 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.707.0 1.2.764.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.42.50 1.42.55 1.42.59 1.42.64 1.42.69 1.42.74 1.43.2: Universal Command Line Environment for AWS
+app-admin/awscli 1.42.50 1.42.55 1.42.59 1.42.64 1.42.69 1.42.74 1.43.2 1.43.3: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.8.2 2025.9.0 2025.10.0: Bitwarden password manager desktop client
@@ -8156,7 +8156,7 @@ dev-python/audioop-lts 0.2.1 0.2.2: An LTS port of Python's audioop module
 dev-python/audioread 3.0.1-r1: Wrapper for audio file decoding using FFmpeg or GStreamer
 dev-python/authlib 1.6.4 1.6.5: A Python library in building OAuth and OpenID Connect servers and clients
 dev-python/authres 1.2.0-r1: Parse and generate Authentication-Results headers
-dev-python/autobahn 24.4.2 25.10.2: WebSocket and WAMP for Twisted and Asyncio
+dev-python/autobahn 24.4.2 25.10.2 25.11.1: WebSocket and WAMP for Twisted and Asyncio
 dev-python/automat 25.4.16: Self-service finite-state machines for the programmer on the go
 dev-python/autopage 0.5.2: A library to provide automatic paging for console output
 dev-python/autopep8 2.3.2: Automatically formats Python code to conform to the PEP 8 style guide
@@ -8200,8 +8200,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.40.50 1.40.55 1.40.59 1.40.64 1.40.69 1.40.74 1.41.2: The AWS SDK for Python
-dev-python/botocore 1.40.50 1.40.55 1.40.59 1.40.64 1.40.69 1.40.74 1.41.2: Low-level, data-driven core of boto 3
+dev-python/boto3 1.40.50 1.40.55 1.40.59 1.40.64 1.40.69 1.40.74 1.41.2 1.41.3: The AWS SDK for Python
+dev-python/botocore 1.40.50 1.40.55 1.40.59 1.40.64 1.40.69 1.40.74 1.41.2 1.41.3: Low-level, data-driven core of boto 3
 dev-python/bottle 0.12.25-r1 0.13.3 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.5.0 1.6.0_rc1 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.25 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8817,7 +8817,7 @@ dev-python/mpi4py 3.1.5 4.0.1: Message Passing Interface for Python
 dev-python/mpmath 1.4.0_alpha6 1.4.0_alpha7 1.4.0_beta1 1.4.0_beta2: Python library for arbitrary-precision floating-point arithmetic
 dev-python/mrcfile 1.5.4: MRC2014 file format I/O library
 dev-python/msgpack 1.1.1 1.1.2: MessagePack (de)serializer for Python
-dev-python/msgspec 0.19.0: Fast serialization and validation library, with builtin support for many formats
+dev-python/msgspec 0.19.0 0.20.0: Fast serialization and validation library, with builtin support for many formats
 dev-python/mss 10.0.0 10.1.0: An ultra fast cross-platform multiple screenshots module in python using ctypes
 dev-python/multidict 6.6.4 6.7.0: multidict implementation
 dev-python/multipart 1.3.0: Parser for multipart/form-data
@@ -8850,7 +8850,7 @@ dev-python/netaddr 0.10.1 1.3.0: Network address representation and manipulation
 dev-python/netcdf4 1.7.2 1.7.3: Python/numpy interface to the netCDF C library
 dev-python/netifaces 0.11.0-r2: Portable network interface information
 dev-python/netlink 0.1: Pure-Python client for the Linux NetLink interface
-dev-python/networkx 3.5-r1: Python tools to manipulate graphs and complex networks
+dev-python/networkx 3.5-r1 3.6: Python tools to manipulate graphs and complex networks
 dev-python/nextinspace 3.0.1 9999: A command-line tool for seeing the latest in space
 dev-python/nh3 0.3.0 0.3.1 0.3.2: Ammonia HTML sanitizer Python binding
 dev-python/nnpy 1.4.2-r1: cffi-based Python bindings for nanomsg
@@ -8939,7 +8939,7 @@ dev-python/pbkdf2 1.3-r2: Implementation of PBKDF2, specified in RSA PKCS#5 v2.0
 dev-python/pbr 7.0.1 7.0.2 7.0.3: Inject some useful and sensible default behaviors into setuptools
 dev-python/pbs-installer 2025.10.07 2025.10.14 2025.10.31 2025.11.20: Installer for Python Build Standalone
 dev-python/pdfrw 0.4_p1-r1: PDF file reader/writer library
-dev-python/pdm 2.26.1: Python package and dependency manager supporting the latest PEP standards
+dev-python/pdm 2.26.1 2.26.2: Python package and dependency manager supporting the latest PEP standards
 dev-python/pdm-backend 2.4.5 2.4.6: A PEP 517 backend for PDM that supports PEP 621 metadata
 dev-python/pdoc3 0.11.6: Auto-generate API documentation for Python projects
 dev-python/peachpy 2022.11.13-r3: Portable Efficient Assembly Code-generator in Higher-level Python
@@ -9215,7 +9215,7 @@ dev-python/pytest-import-check 0.0.4: pytest plugin to check whether Python modu
 dev-python/pytest-jupyter 0.10.1 0.11.0: Pytest plugin for testing Jupyter libraries and extensions
 dev-python/pytest-lazy-fixtures 1.3.2 1.3.3 1.3.4 1.4.0: Allows you to use fixtures in @pytest.mark.parametrize
 dev-python/pytest-localftpserver 1.3.2 1.4.0 1.5.0: A PyTest plugin which provides an FTP fixture for your tests
-dev-python/pytest-localserver 0.9.0_p0: Pytest plugin to test server connections locally
+dev-python/pytest-localserver 0.9.0_p0 0.10.0: Pytest plugin to test server connections locally
 dev-python/pytest-markdown 1.0.2-r1: Run tests in your markdown
 dev-python/pytest-metadata 3.1.1: A plugin for pytest that provides access to test session metadata
 dev-python/pytest-mock 3.14.1 3.15.0 3.15.1: Thin-wrapper around the mock package for easier use with pytest
@@ -9609,7 +9609,7 @@ dev-python/text-unidecode 1.3-r1: The most basic port of the Text::Unidecode Per
 dev-python/textdistance 4.6.3: Compute distance between the two texts
 dev-python/textile 4.0.3-r1: A Python port of Textile, A humane web text generator
 dev-python/texttable 1.7.0: Module to create simple ASCII tables
-dev-python/textx 4.2.2 4.2.3: Meta-language for DSL implementation inspired by Xtext
+dev-python/textx 4.2.3 4.3.0: Meta-language for DSL implementation inspired by Xtext
 dev-python/threadpoolctl 3.6.0: Limit the number of threads used in native libs that have their own threadpool
 dev-python/three-merge 0.1.1-r1: Simple Python library to perform a 3-way merge between strings
 dev-python/thrift 0.22.0: Python implementation of Thrift
@@ -9638,7 +9638,7 @@ dev-python/transitions 0.9.3: A lightweight, object-oriented state machine imple
 dev-python/translate-toolkit 3.15.6 3.16.2 3.16.3: Toolkit to convert between many translation formats
 dev-python/tree-sitter 0.24.0 0.25.1-r1 0.25.2: Python bindings to the Tree-sitter parsing library
 dev-python/treq 25.5.0: A requests-like API built on top of twisted.web's Agent
-dev-python/trimesh 4.8.2 4.8.3 4.9.0: Python library for loading and using triangular meshes
+dev-python/trimesh 4.8.3 4.9.0 4.10.0: Python library for loading and using triangular meshes
 dev-python/trio 0.31.0 0.32.0: Python library for async concurrency and I/O
 dev-python/trio-websocket 0.12.2: WebSocket client and server implementation for Python Trio
 dev-python/trove-classifiers 2025.9.11.17 2025.11.14.15: Canonical source for classifiers on PyPI (pypi.org)
@@ -9658,7 +9658,7 @@ dev-python/typeguard 4.4.4: Run-time type checker for Python
 dev-python/typer 0.19.2 0.20.0: Build great CLIs. Easy to code. Based on Python type hints
 dev-python/types-docutils 0.22.2.20251006 0.22.3.20251115: Typing stubs for docutils
 dev-python/types-gdb 15.0.0.20250809 16.3.0.20250812 16.3.0.20250915 16.3.0.20250920: Typing stubs for gdb
-dev-python/types-psutil 7.0.0.20251001 7.0.0.20251111 7.0.0.20251115 7.0.0.20251116 7.1.1.20251122: Typing stubs for psutil
+dev-python/types-psutil 7.0.0.20251001 7.0.0.20251111 7.0.0.20251115 7.0.0.20251116 7.1.1.20251122 7.1.3.20251125: Typing stubs for psutil
 dev-python/types-setuptools 80.9.0.20250529 80.9.0.20250801 80.9.0.20250809 80.9.0.20250822: Typing stubs for setuptools
 dev-python/typing-extensions 4.14.1 4.15.0: Backported and Experimental Type Hints for Python 3.7+
 dev-python/typing-inspection 0.4.1 0.4.2: Runtime typing introspection tools
@@ -12692,7 +12692,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, sim
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.10.4 3.10.5 3.11_pre20251122: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.10.4 3.10.5 3.11_pre20251124: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.17.1.9 8.18.1 8.18.1-r1 8.18.1.10 8.18.1.10-r1: Widely-used Mail Transport Agent (MTA)
@@ -14805,7 +14805,7 @@ net-im/centerim 5.0.1-r2: Ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/Liv
 net-im/coturn 4.6.2 9999: coturn TURN server project
 net-im/cpop 0.0.4-r2: GTK+ network popup message client. Compatible with the jpop protocol
 net-im/dino 0.5.0 9999: Modern Jabber/XMPP Client using GTK+/Vala
-net-im/discord 0.0.115 0.0.115-r1: All-in-one voice and text chat for gamers
+net-im/discord 0.0.115 0.0.116: All-in-one voice and text chat for gamers
 net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
 net-im/element-desktop-bin 1.12.2: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
@@ -15077,7 +15077,7 @@ net-mail/checkpassword-pam 0.99-r3: checkpassword-compatible authentication prog
 net-mail/courier-common 3.1.5: Mail delivery agent/filter
 net-mail/courier-imap 5.2.11-r2 5.3.1: An IMAP daemon designed specifically for maildirs
 net-mail/cyrus-imapd 3.4.5-r3 3.4.9: The Cyrus IMAP Server
-net-mail/dbmail 3.2.3-r5 3.2.5-r2 3.3.1 3.4.1 3.5.4: Fast and scalable sql based email services
+net-mail/dbmail 3.2.3-r5 3.2.5-r2 3.3.1 3.4.1 3.5.4 3.5.5: Fast and scalable sql based email services
 net-mail/dot-forward 0.71-r5: Reads sendmail's .forward files under qmail
 net-mail/dovecot 2.3.21.1-r1 2.4.2: An IMAP and POP3 server written with security primarily in mind
 net-mail/email 3.1.3-r2: Advanced CLI tool for sending email
@@ -15585,9 +15585,9 @@ net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
 net-proxy/lyrebird 0.6.0: An obfuscating proxy supporting Tor's pluggable transport protocol obfs4
 net-proxy/microsocks 1.0.2 1.0.3: Multithreaded, small, efficient SOCKS5 server
-net-proxy/mitmproxy 12.1.2: An interactive, SSL-capable, man-in-the-middle HTTP proxy
-net-proxy/mitmproxy-linux 0.12.7: mitmproxy's Rust bits
-net-proxy/mitmproxy-rs 0.12.7: mitmproxy's Rust bits
+net-proxy/mitmproxy 12.1.2 12.2.1: An interactive, SSL-capable, man-in-the-middle HTTP proxy
+net-proxy/mitmproxy-linux 0.12.7 0.12.8: mitmproxy's Rust bits
+net-proxy/mitmproxy-rs 0.12.7 0.12.8: mitmproxy's Rust bits
 net-proxy/nutcracker 0.4.1-r1 0.5.0: A fast, light-weight proxy for Memcached and Redis. (Twitter's Twemproxy)
 net-proxy/pingtunnel 0.72: Tunnel TCP over ICMP
 net-proxy/piper 1.14-r1: Tool for manipulating SOCKS5 servers
@@ -17734,7 +17734,7 @@ sys-libs/libcap 2.71 2.76 2.77 9999: POSIX 1003.1e capabilities
 sys-libs/libcap-ng 0.8.5: POSIX 1003.1e capabilities
 sys-libs/libchipcard 5.1.6-r1: Library for accessing chip cards via chip card readers (terminals)
 sys-libs/libfaketime 0.9.6-r4 0.9.10 0.9.11 0.9.12: Report faked system time to programs
-sys-libs/libhx 4.27 5.0 5.1: Platform independent library providing basic system functions
+sys-libs/libhx 4.27 5.0 5.1 5.2: Platform independent library providing basic system functions
 sys-libs/libieee1284 0.2.11-r9: Library to query devices using IEEE1284
 sys-libs/libixp 0.5_p20110208-r3: A stand-alone client/server 9P library including ixpc client
 sys-libs/libmodulemd 2.15.0-r1 2.15.2 9999: C Library for manipulating Fedora Modularity metadata files
