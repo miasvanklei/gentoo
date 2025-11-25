@@ -28,6 +28,7 @@ acct-group/bacula 0-r3: A group for the bacula backup system
 acct-group/bareos 0-r3: Group for the bareos network backup suite
 acct-group/beanstalk 0-r2: A group for app-misc/beanstalkd
 acct-group/bedrock 0-r3: A group for the Minecraft Bedrock server
+acct-group/beep 0: System group: beep
 acct-group/biboumi 0-r1: System group: biboumi
 acct-group/bind_exporter 0-r3: System group: bind_exporter
 acct-group/bird 0-r2: System group: bird
@@ -2061,7 +2062,7 @@ app-emacs/flashcard 2.3.3: An Emacs Lisp package for drilling on questions and a
 app-emacs/flim 1.14.9_p20231218: A library to provide basic features about message representation or encoding
 app-emacs/flycheck 35.0: Modern on-the-fly syntax checking extension for GNU Emacs
 app-emacs/flycheck-clang-tidy 0.3.0_p20201116: Flycheck syntax checker using clang-tidy
-app-emacs/flycheck-guile 0.5-r100: Flycheck checker for the GNU Guile Scheme implementation
+app-emacs/flycheck-guile 0.5-r101: Flycheck checker for the GNU Guile Scheme implementation
 app-emacs/flycheck-inline 0_pre20200808: Display Flycheck errors inline
 app-emacs/flycheck-nimsuggest 0.8.1_p20171027-r1: Emacs Flycheck backend for Nim language using nimsuggest
 app-emacs/flycheck-package 0.14: Flycheck checker for Emacs Lisp package metadata
@@ -2359,7 +2360,7 @@ app-emulation/firecracker-bin 1.10.1 1.12.0 1.13.1: Secure and fast microVMs for
 app-emulation/free42 3.1.9 3.3.3 3.3.6 3.3.8: An HP-42S Calculator Simulator
 app-emulation/fs-uae 3.1.66 3.2.35 9999: Integrates the most accurate Amiga emulation code available from WinUAE
 app-emulation/fs-uae-launcher 3.1.70-r1 3.2.35: PyQt-based launcher for FS-UAE
-app-emulation/fuse 1.6.0-r3: Free Unix Spectrum Emulator by Philip Kendall
+app-emulation/fuse 1.6.0-r4: Free Unix Spectrum Emulator by Philip Kendall
 app-emulation/fuse-utils 1.4.3-r2: Utils for the Free Unix Spectrum Emulator by Philip Kendall
 app-emulation/ganeti-os-noop 0.2: Dummy OS provider for Ganeti
 app-emulation/ganeti-os-simpleimage 0_p20221113: Ganeti OS provider for simple images
@@ -2680,7 +2681,7 @@ app-misc/battop 0.2.4_p1-r1: Interactive batteries viewer
 app-misc/bb 1.3.0_rc1-r7: Lightweight ASCII art demo using media-libs/aalib
 app-misc/beancounter 0.8.10-r2: Finance performance calculation engine with full data acquisition, SQL support
 app-misc/beanstalkd 1.13 1.13-r1: A simple, fast work queue
-app-misc/beep 1.4.12-r2: Advanced PC speaker beeper
+app-misc/beep 1.4.12-r2 1.4.12-r3: Advanced PC speaker beeper
 app-misc/bfr 1.6-r5 1.6-r6: General-purpose command-line pipe buffer
 app-misc/bgrep 0.2_p20250205: Grep-like tool to search for binary strings
 app-misc/bijiben 40.1-r3: Note editor designed to remain simple to use
@@ -6006,7 +6007,7 @@ dev-ml/charinfo_width 1.1.0-r1 2.0.0: Determine column width for a character
 dev-ml/cinaps 0.15.1-r2: Trivial metaprogramming tool
 dev-ml/cmdliner 1.3.0 2.0.0: Declarative definition of command line interfaces for OCaml
 dev-ml/coq-menhirlib 20240715: A support library for verified Coq parsers produced by Menhir
-dev-ml/core 0.15.0 0.15.1-r3 0.16.1 0.17.1-r1: Jane Street's alternative to the standard library
+dev-ml/core 0.15.1-r3 0.16.1 0.17.1-r1: Jane Street's alternative to the standard library
 dev-ml/core_bench 0.15.0 0.16.0 0.17.0: Micro-benchmarking library for OCaml
 dev-ml/core_extended 0.17.0: Extra components that are not as closely vetted or as stable as Core
 dev-ml/core_kernel 0.15.0 0.16.0 0.17.0-r1: System-independent part of Core
@@ -6132,7 +6133,7 @@ dev-ml/ppx_deriving_yojson 3.9.0 3.10.0: JSON codec generator for OCaml
 dev-ml/ppx_diff 0.17.0-r2 0.17.1: A PPX rewriter that genreates the implementation of [Ldiffable.S].
 dev-ml/ppx_disable_unused_warnings 0.15.0-r1 0.16.0 0.17.0-r1: Expands [@disable_unused_warnings]
 dev-ml/ppx_enumerate 0.15.0 0.16.0 0.17.0-r1: Generate a list containing all values of a finite type
-dev-ml/ppx_expect 0.15.0-r1 0.15.1-r1 0.16.0 0.17.2-r2 0.17.3: Cram like framework for OCaml
+dev-ml/ppx_expect 0.15.1-r1 0.16.0 0.17.2-r2 0.17.3: Cram like framework for OCaml
 dev-ml/ppx_fields_conv 0.15.0 0.16.0 0.17.0-r1: Generation of accessor and iteration functions for ocaml records
 dev-ml/ppx_fixed_literal 0.15.0 0.16.0 0.17.0-r1: Simpler notation for fixed point literals
 dev-ml/ppx_globalize 0.16.0 0.17.0-r2 0.17.2: Generates functions to copy local values to the global heap
@@ -6140,7 +6141,7 @@ dev-ml/ppx_hash 0.15.0-r1 0.16.0 0.17.0-r1: PPX rewriter that generates hash fun
 dev-ml/ppx_here 0.15.0 0.16.0 0.17.0-r1: Expands [%here] into its location
 dev-ml/ppx_ignore_instrumentation 0.15.0-r1 0.16.0 0.17.0: Ignore Jane Street specific instrumentation extensions
 dev-ml/ppx_import 1.9.1-r1 1.10.0 1.11.0: A syntax extension for importing declarations from interface files
-dev-ml/ppx_inline_test 0.15.0-r2 0.15.0-r3 0.16.0 0.17.0-r2 0.17.1: Syntax extension for writing in-line tests in ocaml code
+dev-ml/ppx_inline_test 0.15.0-r3 0.16.0 0.17.0-r2 0.17.1: Syntax extension for writing in-line tests in ocaml code
 dev-ml/ppx_jane 0.15.0 0.16.0-r1 0.17.0: Standard Jane Street ppx rewriters
 dev-ml/ppx_js_style 0.15.0 0.16.0 0.17.0-r2: Code style checker for Jane Street Packages
 dev-ml/ppx_let 0.15.0 0.16.0-r1 0.17.0-r2 0.17.1: Monadic let-bindings
@@ -6176,7 +6177,7 @@ dev-ml/result 1.5: Compat result type
 dev-ml/rresult 0.7.0: Result value combinators for OCaml
 dev-ml/sedlex 3.3-r1 3.6: An OCaml lexer generator for Unicode
 dev-ml/seq 0.3.1-r1: Compatibility package for the standard OCaml iterator type
-dev-ml/sexp_pretty 0.15.0-r1 0.15.1-r1 0.16.0 0.17.0-r1: S-expression pretty-printer
+dev-ml/sexp_pretty 0.15.1-r1 0.16.0 0.17.0-r1: S-expression pretty-printer
 dev-ml/sexplib 0.15.1-r2 0.16.0-r1 0.17.0: Library for automated conversion of OCaml-values to and from S-expressions
 dev-ml/sexplib0 0.15.0-r2 0.15.1-r1 0.16.0 0.17.0-r1: Library for automated conversion of OCaml-values to and from S-expressions
 dev-ml/spawn 0.13.0 0.15.0-r1 0.15.1 0.17.0: Spawning sub-processes
@@ -13971,7 +13972,7 @@ media-sound/dcd 0.95: A simple command-line based CD Player
 media-sound/deadbeef 1.10.0: DeaDBeeF is a modular audio player similar to foobar2000
 media-sound/deadbeef-mpris2-plugin 1.16: MPRISv2 plugin for the DeaDBeeF music player
 media-sound/declick 0.6.5-r1: Dynamic digital declicker for audio sample files
-media-sound/denemo 2.6.0-r101: A music notation editor
+media-sound/denemo 2.6.0-r102: A music notation editor
 media-sound/denonavr-cli 3 4: A simple CLI for Denon AV receivers
 media-sound/din 58.1: a software musical instrument and audio synthesizer
 media-sound/dir2ogg 0.13-r2: Converts mp3, m4a, wma, and wav files to Ogg Vorbis format
@@ -14831,7 +14832,7 @@ net-im/signal-desktop-bin 7.72.1 7.80.0: Allows you to send and receive messages
 net-im/slack 4.46.104 4.47.59: Team collaboration tool
 net-im/spectrum2 2.2.1 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
-net-im/synapse 1.138.4 1.139.2 1.140.0 1.141.0 1.142.1: Reference implementation of Matrix homeserver
+net-im/synapse 1.139.2 1.140.0 1.141.0 1.142.1 1.143.0: Reference implementation of Matrix homeserver
 net-im/telegram-desktop 6.0.2-r1 6.2.4 6.3.3: Official desktop client for Telegram
 net-im/telegram-desktop-bin 6.2.4-r1 6.3.0 6.3.1: Official desktop client for Telegram (binary package)
 net-im/telepathy-logger 0.8.2-r2 0.8.2_p4-r1: Daemon that centralizes the communication logging within the Telepathy framework
@@ -17161,7 +17162,7 @@ sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives
 sys-apps/pnputils 0.1-r1: Plug and Play BIOS utilities
 sys-apps/policycoreutils 3.8.1 9999: SELinux core utilities
 sys-apps/polychromatic 0.9.5 9999: RGB lighting management software for GNU/Linux powered by OpenRazer
-sys-apps/portage 3.0.67-r1 3.0.68 3.0.69.3-r2 3.0.70 3.0.71 3.0.72 9999: The package management and distribution system for Gentoo
+sys-apps/portage 3.0.69.3-r2 3.0.72 9999: The package management and distribution system for Gentoo
 sys-apps/powerpc-utils 1.1.3.18-r4: PowerPC utilities and additional OldWorld apps
 sys-apps/ppc64-diag 2.7.9: Diagnostic tools for PowerLinux
 sys-apps/prctl 1.6-r1: Tool to query and modify process behavior
