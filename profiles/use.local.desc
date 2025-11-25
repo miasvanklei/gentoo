@@ -5702,7 +5702,6 @@ net-dns/avahi:bookmarks - Install the avahi-bookmarks application (requires dev-
 net-dns/avahi:gtk - Use gtk3 for the avahi utilities to build the avahi-ui-gtk3 library
 net-dns/avahi:howl-compat - Enable compat libraries for howl
 net-dns/avahi:mdnsresponder-compat - Enable compat libraries for mDNSResponder
-net-dns/bind:dnsrps - Enable the DNS Response Policy Service (DNSRPS) API, a mechanism to allow an external response policy provider
 net-dns/bind:dnstap - Enables dnstap packet logging
 net-dns/bind:doh - Enables dns-over-https
 net-dns/bind:fixed-rrset - Enables fixed rrset-order option
@@ -8467,9 +8466,8 @@ sys-fs/squashfs-tools-ng:tools - Build the gensquashfs, rdsquashfs, sqfs2tar, sq
 sys-fs/udiskie:autostart - Enable XDG-compatible autostart of udiskie
 sys-fs/udisks:daemon - Build the system daemon, not just the client tool
 sys-fs/udisks:lvm - Add support for Logical Volume Management via sys-fs/lvm2
+sys-fs/udisks:smart - Support SMART via sys-libs/libblockdev
 sys-fs/udisks:systemd - Support sys-apps/systemd's logind
-sys-fs/udisks:vdo - Enable Virtual Data Optimizer support.
-sys-fs/udisks:zram - Enable ZRAM support (requires sys-apps/systemd)
 sys-fs/zfs:dist-kernel-cap - Prevents upgrading to an unsupported kernel version when combined with USE=dist-kernel
 sys-fs/zfs:kernel-builtin - Disable dependency on sys-fs/zfs-kmod under the assumption that ZFS is part of the kernel source tree
 sys-fs/zfs:minimal - Don't install python scripts (arcstat, dbufstat etc) and avoid dependency on dev-lang/python
@@ -8542,17 +8540,13 @@ sys-libs/ldb:doc - Builds documentation
 sys-libs/ldb:ldap - Enable LDAP support
 sys-libs/ldb:lmdb - Enable LMDB backend
 sys-libs/ldb:python - Enable Python support
-sys-libs/libblockdev:bcache - Enable block device cache support.
 sys-libs/libblockdev:cryptsetup - Enable sys-fs/cryptsetup support
 sys-libs/libblockdev:device-mapper - Enable support for device-mapper from sys-fs/lvm2
-sys-libs/libblockdev:dmraid - Support for dmraid devices, also known as ATA-RAID, or Fake RAID.
 sys-libs/libblockdev:escrow - Support for building crypto plugin with escrow device support
-sys-libs/libblockdev:kbd - Enable kernel block device support.
 sys-libs/libblockdev:lvm - Enable support for Logical Volume Management via sys-fs/lvm2.
 sys-libs/libblockdev:nvme - Add nvme support via sys-libs/libnvme
 sys-libs/libblockdev:smart - Add SMART support via sys-apps/smartmontools
 sys-libs/libblockdev:tools - Build tools
-sys-libs/libblockdev:vdo - Enable Virtual Data Optimizer support.
 sys-libs/libcap:tools - Install captree, which requires dev-lang/go
 sys-libs/libnbd:fuse - Install the sys-fs/fuse powered nbdfuse.
 sys-libs/libnbd:go - Build bindings for dev-lang/go
