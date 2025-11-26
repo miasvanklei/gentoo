@@ -989,7 +989,7 @@ app-admin/ide-smart 1.4-r3: A tool to read SMART information from harddiscs
 app-admin/ig 0.46.0: Tools and framework for data collection and system inspection using eBPF
 app-admin/integrit 4.2_rc1: file integrity verification program
 app-admin/keepass 2.57: A free, open source, light-weight and easy-to-use password manager
-app-admin/keepassxc 2.7.10-r2 9999: KeePassXC - KeePass Cross-platform Community Edition
+app-admin/keepassxc 2.7.10-r2 2.7.11 9999: KeePassXC - KeePass Cross-platform Community Edition
 app-admin/kernel-hardening-checker 0.6.10.2: A tool for checking the security hardening options of the Linux kernel
 app-admin/killproc 2.13-r2: killproc and assorted tools for boot scripts
 app-admin/kio-admin 25.08.3: Manage files as administrator using the admin:// KIO protocol
@@ -1363,7 +1363,7 @@ app-containers/cri-o 1.31.2 1.31.4: OCI-based implementation of Kubernetes Conta
 app-containers/cri-tools 1.27.0 1.32.0 1.33.0: CLI and validation tools for Kubelet Container Runtime (CRI)
 app-containers/crun 1.19.1 1.20 1.21: Fast and low-memory footprint OCI Container Runtime fully written in C
 app-containers/devcontainer 0.80.1 0.80.2: Reference implementation of the Development Containers specification
-app-containers/distrobox 1.8.1.2-r1 1.8.2.1 9999: Use any Linux distribution inside your terminal (powered by docker/podman)
+app-containers/distrobox 1.8.1.2-r1 1.8.2.1 1.8.2.2 9999: Use any Linux distribution inside your terminal (powered by docker/podman)
 app-containers/distrobuilder 2.1 3.0-r1 3.1 3.2: System container image builder for LXC and incus
 app-containers/dive 0.13.1: terminal based UI to manage kubernetes clusters
 app-containers/docker 28.0.1 28.0.4 28.1.1 28.2.2 28.4.0: The core functions you need to create Docker images and run Docker containers
@@ -1867,7 +1867,7 @@ app-editors/vscode 1.105.1 1.106.1 1.106.2 1.106.3: Multiplatform Visual Studio 
 app-editors/vscodium 1.105.17075 1.106.27818: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
-app-editors/xemacs 21.5.36-r3 21.5.9999: highly customizable open source text editor and application development system
+app-editors/xemacs 21.5.36-r3 21.5.36-r4 21.5.9999: highly customizable open source text editor and application development system
 app-editors/xmlcopyeditor 1.3.1.0-r4: XML Copy Editor is a fast, free, validating XML editor
 app-editors/xvile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clone
 app-editors/yudit 3.1.0: Free (Y)unicode text editor for all unices
@@ -2406,7 +2406,7 @@ app-emulation/uxn 0_p20250122 9999: An assembler and emulator for the Uxn stack-
 app-emulation/vagrant 2.4.0-r1 2.4.1: A tool for building and distributing development environments
 app-emulation/vendor-reset 0.1.1_pre20221205-r1 0.1.1_pre20221205-r2 9999: Linux kernel vendor specific hardware reset module
 app-emulation/vice 3.9: Versatile Commodore Emulator
-app-emulation/virt-firmware 24.11 25.4.1: Tools for ovmf/armvirt firmware volumes
+app-emulation/virt-firmware 24.11 25.4.1 25.10: Tools for ovmf/armvirt firmware volumes
 app-emulation/virt-manager 5.0.0-r2 5.1.0 5.1.0-r1 9999: Desktop tool for managing libvirt virtual machines
 app-emulation/virt-v2v 2.6.0 2.7.7: Tool to convert guests from foreign hypervisors to run on KVM
 app-emulation/virt-viewer 11.0-r1: Graphical console client for connecting to virtual machines
@@ -3455,7 +3455,7 @@ app-text/zathura-pdf-mupdf 0.4.3 0.4.4 9999: PDF support for zathura using the m
 app-text/zathura-pdf-poppler 0.3.3 9999: PDF plug-in for zathura
 app-text/zathura-ps 0.2.7 0.2.8 9999: PostScript plug-in for zathura
 app-text/zeal 0.7.2: Offline documentation browser inspired by Dash
-app-text/zotero-bin 7.0.24: Helps you collect, organize, cite, and share your research sources
+app-text/zotero-bin 7.0.24 7.0.30: Helps you collect, organize, cite, and share your research sources
 app-vim/Vim-Jinja2-Syntax 0.0_pre20210604: vim plugin: Jinja2 syntax highlighting
 app-vim/ackvim 1.0.9-r2: vim plugin: run ack from vim
 app-vim/airline 0.11 9999: vim plugin: lean & mean statusline for vim that's light as air
@@ -5974,12 +5974,11 @@ dev-ml/ANSITerminal 0.8.5: Basic control of ANSI compliant terminals and the win
 dev-ml/alcotest 1.7.0-r1 1.8.0 1.9.0: A lightweight and colourful test framework
 dev-ml/angstrom 0.16.1: Parser combinators built for speed and memory-efficiency
 dev-ml/astring 0.8.5: Alternative String module for OCaml
-dev-ml/async 0.15.0 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library
-dev-ml/async_extra 0.15.0: Jane Street Capital's asynchronous execution library (extra)
+dev-ml/async 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library
 dev-ml/async_kernel 0.15.0 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library (core)
 dev-ml/async_log 0.17.0: Logging library built on top of Async_unix
-dev-ml/async_rpc_kernel 0.15.0 0.16.0 0.17.0: Platform-independent core of Async RPC library
-dev-ml/async_unix 0.15.0 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library (unix)
+dev-ml/async_rpc_kernel 0.16.0 0.17.0: Platform-independent core of Async RPC library
+dev-ml/async_unix 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library (unix)
 dev-ml/atd 2.15.0 2.16.0-r1: Static types for JSON APIs
 dev-ml/base 0.15.1-r2 0.16.3-r1 0.17.3: Standard library for OCaml
 dev-ml/base_bigstring 0.15.0-r1 0.16.0 0.17.0-r1: String type based on Bigarray, for use in I/O and C-bindings
@@ -9546,10 +9545,10 @@ dev-python/sphinxemoji 0.3.1: Extension to use emoji codes in your Sphinx docume
 dev-python/sphinxygen 1.0.10 1.0.12: Python module/script that generates Sphinx markup to describe a C API
 dev-python/sphobjinv 2.3.1.3: Sphinx objects.inv Inspection/Manipulation Tool
 dev-python/spotipy 2.25.1: A lightweight Python library for the Spotify Web API
-dev-python/spyder 6.0.8 6.1.0: The Scientific Python Development Environment
+dev-python/spyder 6.0.8 6.1.0 6.1.1: The Scientific Python Development Environment
 dev-python/spyder-kernels 3.0.5 3.1.1 3.1.2: Kernels used by spyder on its ipython console
 dev-python/spyder-line-profiler 0.4.1 0.4.2: Plugin to run the python line profiler from within the spyder editor
-dev-python/spyder-notebook 0.6.2 0.7.0: Jupyter notebook integration with Spyder
+dev-python/spyder-notebook 0.6.2 0.7.0 0.7.1: Jupyter notebook integration with Spyder
 dev-python/spyder-unittest 0.7.0 0.7.1: Plugin for Spyder to run tests and view the results
 dev-python/sqlalchemy 1.4.54 2.0.43 2.0.44: Python SQL toolkit and Object Relational Mapper
 dev-python/sqlalchemy-rqlite 2.0: A SQLAlchemy dialect for rqlite
@@ -9765,7 +9764,7 @@ dev-python/yattag 1.16.1: Python library to generate HTML or XML in a readable, 
 dev-python/yaxmldiff 0.2.0: Yet Another XML Differ
 dev-python/youtube-search-python 1.6.6-r2: Get YouTube video information using link WITHOUT YouTube Data API v3
 dev-python/yt-dlp-ejs 0.3.1: External JavaScript for yt-dlp supporting many runtimes
-dev-python/ytmusicapi 1.11.0 1.11.1: Unofficial API for YouTube Music
+dev-python/ytmusicapi 1.11.1 1.11.2: Unofficial API for YouTube Music
 dev-python/zc-lockfile 3.0_p1-r1 4.0: Basic inter-process locks
 dev-python/zconfig 4.2 4.3: Configuration library supporting a hierarchical schema-driven model
 dev-python/zeep 4.3.1-r1 4.3.2: A modern/fast Python SOAP client based on lxml / requests
@@ -10987,7 +10986,7 @@ dev-util/packer 1.14.1: A tool to create identical machine images for multiple p
 dev-util/pahole 1.27-r1 1.29 1.30 9999: pahole (Poke-a-Hole) and other DWARF utilities
 dev-util/patchelf 0.17.2-r1 0.18.0: Small utility to modify the dynamic linker and RPATH of ELF executables
 dev-util/patchutils 0.4.2 0.4.4-r1: Collection of tools that operate on patch files
-dev-util/patdiff 0.15.0 0.16.0 0.17.0: Colored patience diffs with word-level refinement
+dev-util/patdiff 0.16.0 0.17.0: Colored patience diffs with word-level refinement
 dev-util/peg 0.1.19 0.1.20: Recursive-descent parser generators for C
 dev-util/perf 6.14 6.16 6.16-r1 6.17: Userland tools for Linux Performance Counters
 dev-util/pixi 0.58.0 0.59.0: A package management and workflow tool
@@ -13497,7 +13496,7 @@ media-libs/openexr 3.3.2-r1 3.3.3 3.3.4: ILM's OpenEXR high dynamic-range image 
 media-libs/openfec 1.4.2.11-r1 1.4.2.12: Library of various AL-FEC codecs
 media-libs/openglide 0.09_rc9_p20191120: Glide to OpenGL wrapper
 media-libs/openh264 2.3.1-r3 2.5.0 2.6.0: Cisco OpenH264 library and Gecko Media Plugin for Mozilla packages
-media-libs/openimageio 2.5.18.0 2.5.19.0 3.0.6.1 3.0.8.1 3.0.8.1-r1 3.1.7.0: A library for reading and writing images
+media-libs/openimageio 2.5.18.0 2.5.19.0 3.0.6.1 3.0.8.1 3.0.8.1-r1 3.0.8.1-r2 3.1.7.0: A library for reading and writing images
 media-libs/openjpeg 2.5.0-r5 2.5.0-r6 2.5.2 2.5.3 2.5.3-r1 2.5.4: Open-source JPEG 2000 library
 media-libs/openpgl 0.5.0-r1 0.6.0 0.7.0: Intel Open Path Guiding Library
 media-libs/opensubdiv 3.6.0-r4 3.6.1: An Open-Source subdivision surface library
@@ -13587,7 +13586,7 @@ media-libs/vkroots 0_p20240430: Simple framework for writing Vulkan layers
 media-libs/vo-aacenc 0.1.3 9999: VisualOn AAC encoder library
 media-libs/vo-amrwbenc 0.1.3 9999: VisualOn AMR-WB encoder library
 media-libs/volpack 1.0_p7-r2: Volume rendering library
-media-libs/vpl-gpu-rt 24.4.4 25.2.2: Intel Video Processing Library GPU Runtime
+media-libs/vpl-gpu-rt 25.2.2 25.4.3: Intel Video Processing Library GPU Runtime
 media-libs/vulkan-layers 1.4.321.0 1.4.328.0 9999: Vulkan Validation Layers
 media-libs/vulkan-loader 1.4.321.0 1.4.328.0 9999: Vulkan Installable Client Driver (ICD) Loader
 media-libs/waffle 1.8.1 9999: Library that allows selection of GL API and of window system at runtime
@@ -17686,7 +17685,7 @@ sys-kernel/dracut-crypt-ssh 1.0.8-r1: Early unlocking of encrypted systems via s
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r2 9999: Gentoo automatic kernel building scripts
 sys-kernel/gentoo-kernel 5.10.245 5.10.246 5.15.195 5.15.196 6.1.157 6.1.158 6.6.113 6.6.116 6.6.117 6.12.54 6.12.57 6.12.58 6.12.59 6.17.7 6.17.8 6.17.9: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.245 5.10.246 5.15.195 5.15.196 6.1.157 6.1.158 6.6.113 6.6.116 6.6.117 6.12.54 6.12.57 6.12.58 6.12.59 6.17.7 6.17.8 6.17.9: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-sources 5.10.233 5.10.237 5.10.238 5.10.239 5.10.240 5.10.241 5.10.241-r1 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.15.177 5.15.184 5.15.185 5.15.186 5.15.187 5.15.188 5.15.189 5.15.190 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 6.1.132 6.1.140 6.1.141 6.1.142 6.1.143 6.1.144 6.1.145 6.1.146 6.1.147 6.1.148 6.1.149 6.1.150 6.1.151 6.1.152 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.6.85 6.6.92 6.6.93 6.6.94 6.6.95 6.6.96 6.6.97 6.6.98 6.6.99 6.6.100 6.6.101 6.6.102 6.6.103 6.6.104 6.6.105 6.6.106 6.6.107 6.6.108 6.6.109 6.6.110 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.12.21 6.12.31 6.12.33 6.12.34 6.12.35 6.12.36 6.12.37 6.12.38 6.12.39 6.12.40 6.12.41 6.12.42 6.12.43 6.12.44 6.12.45 6.12.45-r1 6.12.46 6.12.47 6.12.48 6.12.49 6.12.50 6.12.51 6.12.52 6.12.53 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.17.0 6.17.0-r1 6.17.1 6.17.2 6.17.3 6.17.4 6.17.5 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9: Full sources including the Gentoo patchset for the 6.17 kernel tree
+sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9: Full sources including the Gentoo patchset for the 6.17 kernel tree
 sys-kernel/git-sources 6.18_rc1 6.18_rc2 6.18_rc3 6.18_rc4 6.18_rc5 6.18_rc6 6.18_rc7: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 50 60 62 63 65 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
