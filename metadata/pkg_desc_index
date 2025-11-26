@@ -1249,7 +1249,7 @@ app-backup/dar 2.8.1-r1: A full featured backup tool, aimed for disks
 app-backup/deja-dup 44.2: Simple backup tool using duplicity back-end
 app-backup/dirvish 1.2.1-r1: Dirvish is a fast, disk based, rotating network backup system
 app-backup/duplicati 2.1.0.103_p20241221-r1 2.2.0.0.2025.10.23: Backup client that securely stores encrypted, incremental, compressed backups
-app-backup/duplicity 3.0.5-r1 3.0.6.1 3.0.6.2 9999: Secure backup system using gnupg to encrypt data
+app-backup/duplicity 3.0.5-r1 3.0.6.2 9999: Secure backup system using gnupg to encrypt data
 app-backup/duply 2.5.2 2.5.5 2.5.6: Shell frontend for duplicity
 app-backup/fsarchiver 0.8.8 0.8.8-r1: Flexible filesystem archiver for backup and deployment tool
 app-backup/hdup 2.0.14-r2: Hdup is backup program using tar, find, gzip/bzip2, mcrypt and ssh
@@ -6160,7 +6160,7 @@ dev-ml/ppx_string_conv 0.17.0-r1: Ppx extension for generating of_string & to_st
 dev-ml/ppx_tools 6.6-r1: Tools for authors of ppx rewriters
 dev-ml/ppx_tydi 0.16.0 0.17.0-r2 0.17.1: Let expressions, inferring pattern type from expression
 dev-ml/ppx_typerep_conv 0.15.0 0.16.0 0.17.0-r2 0.17.1: Generation of runtime types from type declarations
-dev-ml/ppx_variants_conv 0.15.0 0.16.0 0.17.0-r2 0.17.1: Generation of accessor and iteration functions for ocaml variant types
+dev-ml/ppx_variants_conv 0.15.0 0.16.0-r1 0.17.0-r2 0.17.1: Generation of accessor and iteration functions for ocaml variant types
 dev-ml/ppxlib 0.22.2-r4 0.24.0-r2 0.30.0-r2 0.33.0-r2 0.36.2-r1 0.37.0-r1: Base library and tools for ppx rewriters
 dev-ml/ppxlib_jane 0.17.0-r1 0.17.2-r1 0.17.4: Utilities for working with Jane Street AST constructs
 dev-ml/protocol_version_header 0.15.0 0.16.0 0.17.0: Protocol aware version negotiation for OCaml
@@ -12692,7 +12692,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, sim
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.10.4 3.10.5 3.11_pre20251124: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.10.4 3.10.5 3.10.6 3.11_pre20251125: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.17.1.9 8.18.1 8.18.1-r1 8.18.1.10 8.18.1.10-r1: Widely-used Mail Transport Agent (MTA)
@@ -14016,7 +14016,7 @@ media-sound/gst123 0.3.5 0.4.1: GStreamer based command line media player
 media-sound/gstreamripper 0.2-r2: A GTK+ toolkit based frontend for streamripper
 media-sound/gtick 0.5.5-r1: Metronome application supporting different meters and speeds ranging
 media-sound/gtkguitune 0.8: A guitar tuning program that uses Schmitt-triggering for quick feedback
-media-sound/guitarix 0.47.0 9999: Virtual guitar amplifier for Linux
+media-sound/guitarix 0.47.0 0.47.0-r1 9999: Virtual guitar amplifier for Linux
 media-sound/headsetcontrol 3.1.0-r1: A tool to control certain aspects of USB-connected headsets on Linux
 media-sound/helm 0.9.0-r2: Open source polyphonic software synthesizer with lots of modulation
 media-sound/helvum 0.5.1-r4: A GTK patchbay for pipewire
@@ -15652,7 +15652,7 @@ net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10: Anonymous encrypted VPN client powered
 net-vpn/strongswan 5.9.13 5.9.14 5.9.14-r2 6.0.1 6.0.1-r1 6.0.1-r2 6.0.2 6.0.3: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
-net-vpn/tor 0.4.8.16 0.4.8.17 0.4.8.18 0.4.8.19 0.4.8.20 0.4.8.20-r1 0.4.8.21 9999: Anonymizing overlay network for TCP
+net-vpn/tor 0.4.8.21 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 0.10.13 0.10.14 0.10.15: Launch applications via VPN tunnels using temporary network namespaces
 net-vpn/vpnc 0.5.3_p20240129 9999: IPsec (Cisco/Juniper) VPN concentrator client
 net-vpn/vpnc-scripts 20220510 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
