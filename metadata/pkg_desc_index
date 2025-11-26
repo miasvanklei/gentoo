@@ -2074,7 +2074,7 @@ app-emacs/geiser 0.32: Generic interaction mode between Emacs and different Sche
 app-emacs/geiser-chez 0.18: Chez Scheme's implementation of the Geiser protocols
 app-emacs/geiser-chicken 0.17: Chicken Scheme's implementation of the Geiser protocols
 app-emacs/geiser-gambit 0.18.1: Gambit Scheme's implementation of the Geiser protocols
-app-emacs/geiser-guile 0.28.3-r100: Guile's implementation of the Geiser protocols
+app-emacs/geiser-guile 0.28.3-r101: Guile's implementation of the Geiser protocols
 app-emacs/geiser-mit 0.15: MIT/GNU Scheme's implementation of the Geiser protocols
 app-emacs/ghub 5.0.0 5.0.1 5.0.2: Minuscule client library for the Git forge APIs
 app-emacs/git-modes 1.4.6 1.4.7 9999: Emacs major modes for editing Git configuration files
@@ -3016,7 +3016,7 @@ app-office/sc-im 0.8.3-r2 0.8.5: Ncurses based, vim-like spreadsheet calculator
 app-office/scribus 1.7.1_pre20250929 1.7.1_pre20251119 9999: Desktop publishing (DTP) and layout program
 app-office/skrooge 25.4.0-r1 25.10.0: Personal finances manager, aiming at being simple and intuitive
 app-office/texmaker 6.0.0 6.0.1: Powerful LaTeX-IDE
-app-office/texstudio 4.8.9-r1: Free cross-platform LaTeX editor (fork from texmakerX)
+app-office/texstudio 4.8.9-r1 4.9.0: Free cross-platform LaTeX editor (fork from texmakerX)
 app-office/unoconv 0.9.0-r1: Convert between document formats supported by LibreOffice
 app-office/worklog-assistant-bin 2.3.3900: Hassle-free time tracking for JIRA self-hosted and OnDemand
 app-office/wps-office 11.1.0.11723 11.1.0.11723-r1: WPS Office is an office productivity suite
@@ -3222,7 +3222,7 @@ app-text/docbook-xsl-stylesheets 1.79.1-r4: XSL Stylesheets for Docbook
 app-text/docbook2X 0.8.8-r5: Tools to convert docbook to man and info
 app-text/docx2txt 1.4: Convert MS Office docx files to plain text
 app-text/dos2unix 7.5.0 7.5.1 7.5.2: Convert DOS or MAC text files to UNIX format or vice versa
-app-text/doxygen 1.13.0-r1 1.13.2 1.14.0 9999: Documentation system for most programming languages
+app-text/doxygen 1.13.2 1.14.0 1.15.0 9999: Documentation system for most programming languages
 app-text/dvipng 1.18: Translate DVI files into PNG or GIF graphics
 app-text/dvipsk 2023.03.11_p66203 2024.03.11_p70015: DVI-to-PostScript translator
 app-text/dvisvgm 2.14-r1 3.0.4 3.1 3.1.2 3.2 3.3 3.4: Converts DVI files to SVG
@@ -3306,7 +3306,7 @@ app-text/libxmlpatch 0.3.3-r1: A set of tools to create and apply patch to XML f
 app-text/linuxdoc-tools 0.9.86: Toolset for processing LinuxDoc DTD SGML files
 app-text/llpp 33: Graphical PDF viewer which aims to superficially resemble less(1)
 app-text/logmerge 0.5.2b-r1: Small and powerful script to merge two or more logfiles
-app-text/lowdown 1.1.1 1.3.2 1.4.0 2.0.0 2.0.2 2.0.4: Markdown translator producing HTML5, roff documents in the ms and man formats
+app-text/lowdown 2.0.2 2.0.2-r1 2.0.4: Markdown translator producing HTML5, roff documents in the ms and man formats
 app-text/lv 4.51-r5: Powerful Multilingual File Viewer
 app-text/mandoc 1.14.6: Suite of tools compiling mdoc and man
 app-text/manpager 1: Enable colorization of man pages
@@ -3988,7 +3988,7 @@ dev-db/mariadb-connector-c 3.3.8 3.3.15 3.3.17 3.4.5-r1 3.4.7 9999: C client lib
 dev-db/mariadb-connector-odbc 3.1.18: MariaDB Connector/ODBC
 dev-db/mongodb 5.0.30 5.0.31 6.0.22 6.0.25 7.0.18 7.0.23 8.0.8 8.0.12: A high-performance, open source, schema-free document-oriented database
 dev-db/mongodb-compass-bin 1.48.1 1.48.2: GUI for MongoDB
-dev-db/mycli 1.37.0 1.41.0 1.41.1: CLI for MySQL Database with auto-completion and syntax highlighting
+dev-db/mycli 1.37.0 1.41.1 1.41.2: CLI for MySQL Database with auto-completion and syntax highlighting
 dev-db/mydumper 0.18.2.7-r1 0.19.3.3 0.20.1.2: A high-performance multi-threaded backup (and restore) toolset for MySQL
 dev-db/myodbc 8.0.32: ODBC driver for MySQL
 dev-db/mysql 8.0.42 8.0.43 8.0.44 8.4.6 8.4.7: Fast, multi-threaded, multi-user SQL database server
@@ -6276,7 +6276,7 @@ dev-perl/Audio-DSP 0.20.0-r4: Perl interface to *NIX digital audio device
 dev-perl/Audio-FLAC-Header 2.400.0-r5: Access to FLAC audio metadata
 dev-perl/Audio-Mixer 0.700.0-r5: Perl extension for Sound Mixer control
 dev-perl/Audio-Musepack 1.0.1-r1: An OO interface to Musepack file information and APE tag fields
-dev-perl/Audio-Scan 1.10.0-r3: Fast C metadata and tag reader for all common audio file formats
+dev-perl/Audio-Scan 1.10.0-r3 1.10.0-r4: Fast C metadata and tag reader for all common audio file formats
 dev-perl/Audio-WMA 1.300.0-r1: Extension for reading WMA/ASF metadata
 dev-perl/Audio-Wav 0.140.0-r2: Modules for reading & writing Microsoft WAV files
 dev-perl/Authen-DigestMD5 0.40.0-r2: SASL DIGEST-MD5 authentication (RFC2831)
@@ -7327,7 +7327,7 @@ dev-perl/Object-Event 1.230.0-r1: A class that provides an event callback interf
 dev-perl/Object-MultiType 0.50.0-r1: Perl Objects as Hash, Array, Scalar, Code and Glob at the same time
 dev-perl/Object-Pad 0.820.0 0.821.0: Simple syntax for lexical field-based objects
 dev-perl/Object-Realize-Later 0.210.0: Delayed creation of objects
-dev-perl/Ogg-Vorbis-Header 0.110.0: An object-oriented interface to Ogg Vorbis information and comment fields
+dev-perl/Ogg-Vorbis-Header 0.110.0-r1: An object-oriented interface to Ogg Vorbis information and comment fields
 dev-perl/Ogg-Vorbis-Header-PurePerl 1.50.0: Object-oriented interface to Ogg Vorbis information and comment fields
 dev-perl/Olson-Abbreviations 0.40.0-r1: Globally unique timezones abbreviation handling
 dev-perl/OpenGL 0.700.200: Perl interface providing graphics display using OpenGL
@@ -13204,7 +13204,7 @@ media-libs/bcg729 1.1.1-r1: Encoder and decoder of the ITU G729 Annex A/B speech
 media-libs/bio2jack 0.9-r2: Library for porting blocked I/O OSS/ALSA audio applications to JACK
 media-libs/blib 1.1.7-r3 1.1.7-r4: Library full of useful things to hack the Blinkenlights
 media-libs/cal3d 0.11.0-r1: Cal3D is a skeletal based character animation library
-media-libs/chromaprint 1.5.1-r4 1.6.0: Library implementing a custom algorithm for extracting audio fingerprints
+media-libs/chromaprint 1.5.1-r4 1.6.0-r1: Library implementing a custom algorithm for extracting audio fingerprints
 media-libs/cimg 3.4.3: C++ template image processing toolkit
 media-libs/clutter 1.26.4-r2: Clutter is a library for creating graphical user interfaces
 media-libs/clutter-gst 3.0.27-r2: GStreamer integration library for Clutter
@@ -14193,7 +14193,7 @@ media-sound/spek 0.8.5-r2 0.8.5-r3: Analyse your audio files by showing their sp
 media-sound/splay 0.9.5.2-r2: An audio player, primarily for the console
 media-sound/split2flac 122 9999: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
 media-sound/spotify 1.2.74-r1: Spotify is a social music platform
-media-sound/strawberry 1.2.11 1.2.13 1.2.14 9999: Modern music player and library organizer based on Clementine and Qt
+media-sound/strawberry 1.2.11 1.2.13 1.2.14 1.2.15 9999: Modern music player and library organizer based on Clementine and Qt
 media-sound/streamripper 1.64.6-r1: Extracts and records individual MP3 file tracks from shoutcast streams
 media-sound/streamtranscoder 3.1.11-r2: Commandline program to transcode shoutcast/icecast streams to different bitrates
 media-sound/subsonic-bin 6.1.6: Subsonic is a complete, personal media streaming solution
@@ -15007,7 +15007,7 @@ net-libs/libssh2 1.11.1 9999: Library implementing the SSH2 protocol
 net-libs/libtelnet 0.23-r2: Simple RFC-compliant TELNET implementation as a C library
 net-libs/libtirpc 1.3.6 1.3.7 1.3.7-r2: Transport Independent RPC library (SunRPC replacement)
 net-libs/libtlsrpt 0.5.0 9999: library to implement TLSRPT
-net-libs/libtorrent 0.13.8-r3 0.15.1 0.15.5 0.15.7 0.16.1 9999: BitTorrent library written in C++ for *nix
+net-libs/libtorrent 0.15.7 0.16.4 9999: BitTorrent library written in C++ for *nix
 net-libs/libtorrent-rasterbar 2.0.10: C++ BitTorrent implementation focusing on efficiency and scalability
 net-libs/libtrace 4.0.21 4.0.22 4.0.26 4.0.28: A library and tools for trace processing
 net-libs/libupnp 1.14.24 1.14.25: An Portable Open Source UPnP Development Kit
@@ -15470,7 +15470,7 @@ net-misc/you-get 0.4.1650-r1 0.4.1700: Utility to download media contents from t
 net-misc/youtube-viewer 3.11.2-r1 3.11.3-r1 9999: A command line utility for viewing youtube-videos in Mplayer
 net-misc/yt-dlp 2025.10.22 2025.11.12 9999: youtube-dl fork with additional features and fixes
 net-misc/ytmdl 2024.08.15.1-r1: Simple app to get songs from youtube in mp3 format
-net-misc/zerotier 1.14.2-r2 1.16.0: A software-based managed Ethernet switch for planet Earth
+net-misc/zerotier 1.14.2-r2 1.16.0 1.16.0-r1: A software-based managed Ethernet switch for planet Earth
 net-misc/zssh 1.5c-r3: SSH wrapper enabling zmodem up/download in ssh
 net-misc/zsync 0.6.2-r4 0.6.2-r5: Partial/differential file download client over HTTP using the rsync algorithm
 net-nds/389-ds-base 3.0.6: 389 Directory Server (core libraries and daemons)
@@ -15529,7 +15529,7 @@ net-p2p/nicotine+ 3.3.7 3.3.10: Graphical client for the Soulseek peer to peer n
 net-p2p/qbittorrent 5.0.5 5.1.2 9999: BitTorrent client in C++ and Qt
 net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable file synchronization tool
 net-p2p/retroshare 0.6.7-r4: Friend to Friend secure communication and sharing application
-net-p2p/rtorrent 0.9.8-r3 0.15.1 0.15.5 0.15.7 0.16.1 9999: BitTorrent Client using libtorrent
+net-p2p/rtorrent 0.15.7 0.16.4 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.13.0a_p0 0.14.0a_p0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/syncthing 1.27.12 1.29.5 2.0.8-r1 2.0.10 2.0.11: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
@@ -15649,7 +15649,7 @@ net-vpn/openvpn 2.6.12-r1 2.6.14 9999: Robust and highly flexible tunneling appl
 net-vpn/ovpn-dco 0.2.20230426 0.2.20231117 0.2.20241216 9999: OpenVPN Data Channel Offload in the linux kernel
 net-vpn/pptpd 1.4.0-r5: Linux Point-to-Point Tunnelling Protocol Server
 net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10: Anonymous encrypted VPN client powered by Bitmask
-net-vpn/strongswan 5.9.13 5.9.14 5.9.14-r2 6.0.1 6.0.1-r1 6.0.1-r2 6.0.2: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
+net-vpn/strongswan 5.9.13 5.9.14 5.9.14-r2 6.0.1 6.0.1-r1 6.0.1-r2 6.0.2 6.0.3: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
 net-vpn/tor 0.4.8.16 0.4.8.17 0.4.8.18 0.4.8.19 0.4.8.20 0.4.8.20-r1 0.4.8.21 9999: Anonymizing overlay network for TCP
