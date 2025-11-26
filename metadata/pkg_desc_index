@@ -1271,7 +1271,7 @@ app-backup/snapper 0.12.1-r1 0.12.2-r1 0.13.0: Command-line program for btrfs an
 app-backup/spideroak-bin 7.5.0-r3: Secure free online backup, storage, and sharing system
 app-backup/synology-cloud-station-backup 4469: Back up your files from multiple client computers to a centralized Synology NAS
 app-backup/tarsnap 1.0.41: Online backups for the truly paranoid
-app-backup/tsm 8.1.22.0-r1 8.1.27.0-r2: IBM Storage Protect (former Tivoli Storage Manager) Backup/Archive Client, API
+app-backup/tsm 8.1.22.0-r1 8.1.27.0-r2 8.1.27.1: IBM Storage Protect (former Tivoli Storage Manager) Backup/Archive Client, API
 app-backup/untangle-https-backup 0.1.0-r3: Back up Untangle configurations via the web admin UI
 app-benchmarks/bashmark 0.6.2: Geno's cross platform benchmarking suite
 app-benchmarks/bonnie 2.0.6-r3: Performance Test of Filesystem I/O using standard C library calls
@@ -3825,7 +3825,7 @@ dev-build/gn 0.2122 0.2217 0.2227 0.2235 0.2289 9999: GN is a meta-build system 
 dev-build/gtk-doc-am 1.33.2 1.34.0: Automake files from gtk-doc
 dev-build/gyp 20200512145953-r1 99999999999999: GYP (Generate Your Projects) meta-build system
 dev-build/icmake 9.03.01-r1: Hybrid between a make utility and a shell scripting language
-dev-build/just 1.41.0 1.42.4 1.43.0: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.43.0 1.43.1: Just a command runner (with syntax inspired by 'make')
 dev-build/kas 4.5-r2 4.8.2: Setup tool for bitbake based projects
 dev-build/kbuild 0.1.9998.3499-r4 0.1.9998.3592 0.1.9998.3660-r1 9999: A makefile framework for writing simple makefiles for complex tasks
 dev-build/libtool 2.5.4 2.6.0 9999: A shared library tool for developers
@@ -3845,7 +3845,7 @@ dev-build/rocm-cmake 6.3.3 6.4.3 7.0.2 7.1.0: Radeon Open Compute CMake Modules
 dev-build/samurai 1.2-r3 9999: ninja-compatible build tool written in C
 dev-build/scons 4.9.1 4.10.0 4.10.1: Extensible Python-based build utility
 dev-build/slibtool 0.6.1 0.7.0 0.7.1 0.7.2 0.7.3 0.7.4 9999: A strong libtool implementation, written in C
-dev-build/steve 9999: A simple jobserver for Gentoo
+dev-build/steve 1.0.0 9999: A simple jobserver for Gentoo
 dev-build/tinycmmc 0.1.0 9999: Tiny CMake Module Collections
 dev-build/xfce4-dev-tools 4.20.0 4.21.0: A set of scripts and m4/autoconf macros that ease build system maintenance
 dev-cpp/ETL 1.4.1: Multi-platform class and template library
@@ -5975,18 +5975,18 @@ dev-ml/alcotest 1.7.0-r1 1.8.0 1.9.0: A lightweight and colourful test framework
 dev-ml/angstrom 0.16.1: Parser combinators built for speed and memory-efficiency
 dev-ml/astring 0.8.5: Alternative String module for OCaml
 dev-ml/async 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library
-dev-ml/async_kernel 0.15.0 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library (core)
+dev-ml/async_kernel 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library (core)
 dev-ml/async_log 0.17.0: Logging library built on top of Async_unix
 dev-ml/async_rpc_kernel 0.16.0 0.17.0: Platform-independent core of Async RPC library
 dev-ml/async_unix 0.16.0 0.17.0: Jane Street Capital's asynchronous execution library (unix)
 dev-ml/atd 2.15.0 2.16.0-r1: Static types for JSON APIs
-dev-ml/base 0.15.1-r2 0.16.3-r1 0.17.3: Standard library for OCaml
-dev-ml/base_bigstring 0.15.0-r1 0.16.0 0.17.0-r1: String type based on Bigarray, for use in I/O and C-bindings
-dev-ml/base_quickcheck 0.15.0-r3 0.16.0 0.17.0-r2 0.17.1: Randomized testing framework, designed for compatibility with Base
+dev-ml/base 0.16.3-r1 0.17.3: Standard library for OCaml
+dev-ml/base_bigstring 0.16.0 0.17.0-r1: String type based on Bigarray, for use in I/O and C-bindings
+dev-ml/base_quickcheck 0.16.0 0.17.0-r2 0.17.1: Randomized testing framework, designed for compatibility with Base
 dev-ml/batteries 3.9.0 3.10.0: A community-maintained standard library extension
 dev-ml/bigarray-compat 1.0.0 1.1.0: Compatibility library to use Stdlib.Bigarray when possible
 dev-ml/bigstringaf 0.10.0: Bigstring intrinsics and fast blits based on memcpy/memmove
-dev-ml/bin_prot 0.15.0-r3 0.16.0 0.17.0-r1: Binary protocol generator
+dev-ml/bin_prot 0.16.0 0.17.0-r1: Binary protocol generator
 dev-ml/biniou 1.2.2-r1: A binary data serialization format inspired by JSON for OCaml
 dev-ml/bos 0.2.1: Basic OS interaction for OCaml
 dev-ml/cairo2 0.6.4 0.6.5: Binding to Cairo, a 2D Vector Graphics Library
@@ -6006,11 +6006,11 @@ dev-ml/charinfo_width 1.1.0-r1 2.0.0: Determine column width for a character
 dev-ml/cinaps 0.15.1-r2: Trivial metaprogramming tool
 dev-ml/cmdliner 1.3.0 2.0.0: Declarative definition of command line interfaces for OCaml
 dev-ml/coq-menhirlib 20240715: A support library for verified Coq parsers produced by Menhir
-dev-ml/core 0.15.1-r3 0.16.1 0.17.1-r1: Jane Street's alternative to the standard library
-dev-ml/core_bench 0.15.0 0.16.0 0.17.0: Micro-benchmarking library for OCaml
+dev-ml/core 0.16.1 0.17.1-r1: Jane Street's alternative to the standard library
+dev-ml/core_bench 0.16.0 0.17.0: Micro-benchmarking library for OCaml
 dev-ml/core_extended 0.17.0: Extra components that are not as closely vetted or as stable as Core
-dev-ml/core_kernel 0.15.0 0.16.0 0.17.0-r1: System-independent part of Core
-dev-ml/core_unix 0.15.2-r2 0.16.0-r1 0.17.0 0.17.1: Unix-specific portions of Core
+dev-ml/core_kernel 0.16.0 0.17.0-r1: System-independent part of Core
+dev-ml/core_unix 0.16.0-r1 0.17.0 0.17.1: Unix-specific portions of Core
 dev-ml/cppo 1.6.7-r1 1.6.8-r1 1.6.9-r1 1.7.0 1.8.0: An equivalent of the C preprocessor for OCaml programs
 dev-ml/cryptokit 1.16.1-r2 1.19 1.20.1: Cryptographic primitives library for Objective Caml
 dev-ml/csexp 1.5.2-r1: Parsing and printing of S-expressions in Canonical form
@@ -6026,7 +6026,7 @@ dev-ml/dune-private-libs 3.16.0-r4 3.18.1 3.19.0: Private libraries of Dune
 dev-ml/dune-site 3.16.0 3.16.1 3.18.1 3.19.1 3.20.2: Embed locations informations inside executable and libraries
 dev-ml/duration 0.1.3 0.2.1: Duration - conversions to various time units
 dev-ml/easy-format 1.2.0-r1 1.3.4: Pretty-printing library for OCaml
-dev-ml/expect_test_helpers_core 0.15.0-r1 0.16.0 0.17.0-r1: Helpers for writing expectation tests
+dev-ml/expect_test_helpers_core 0.16.0 0.17.0-r1: Helpers for writing expectation tests
 dev-ml/extlib 1.7.9-r1 1.8.0: Standard library extensions for O'Caml
 dev-ml/facile 1.1.4: OCaml constraint programming library on integer & integer set finite domains
 dev-ml/fieldslib 0.15.0 0.16.0 0.17.0-r1: Folding over record fields
@@ -6040,13 +6040,13 @@ dev-ml/gen 1.1: Iterators for OCaml, both restartable and consumable
 dev-ml/graphics 5.1.2-r1 5.2.0-r1: The OCaml graphics library
 dev-ml/gsl-ocaml 1.24.3-r2 1.25.1: OCaml bindings for the GSL library (successor of dev-ml/ocamlgsl)
 dev-ml/hmap 0.8.1: Heterogeneous value maps for OCaml
-dev-ml/int_repr 0.15.0 0.16.0 0.17.0-r1: Integers of various widths
+dev-ml/int_repr 0.16.0 0.17.0-r1: Integers of various widths
 dev-ml/integers 0.7.0: Various signed and unsigned integer types for OCaml
 dev-ml/iostream 0.3: Generic, composable IO input and output streams
 dev-ml/jane-street-headers 0.15.0-r1 0.16.0 0.17.0: Jane Street header files
 dev-ml/jingoo 1.5.0 1.5.1: OCaml template engine almost compatible with Jinja2
 dev-ml/jsonm 1.0.2: Non-blocking streaming JSON codec for OCaml
-dev-ml/jst-config 0.15.0-r1 0.15.1-r1 0.16.0 0.17.0-r1: Compile-time configuration for Jane Street libraries
+dev-ml/jst-config 0.16.0 0.17.0-r1: Compile-time configuration for Jane Street libraries
 dev-ml/lablgl 1.06-r2 1.07: Objective CAML interface for OpenGL
 dev-ml/lablgtk 3.1.5-r2: OCaml bindings to GTK-3
 dev-ml/lablgtk-sourceview 3.1.5: OCaml bindings to GTK-3
@@ -6111,58 +6111,58 @@ dev-ml/opam-file-format 2.1.3 2.1.5 2.1.6 2.2.0-r1: Parser and printer for the o
 dev-ml/opam-installer 2.1.6 2.2.1-r1: Core installer for opam packages
 dev-ml/ounit2 2.2.6 2.2.7-r1: Unit testing framework for OCaml
 dev-ml/parmap 1.2.5: Library to exploit multicore architectures for OCaml programs
-dev-ml/parsexp 0.15.0 0.16.0 0.17.0: S-expression parsing library
+dev-ml/parsexp 0.16.0 0.17.0: S-expression parsing library
 dev-ml/patch 3.0.1: Patch library purely in OCaml
-dev-ml/patience_diff 0.15.0 0.16.0 0.17.0-r1: Tool and library implementing patience diff
+dev-ml/patience_diff 0.16.0 0.17.0-r1: Tool and library implementing patience diff
 dev-ml/pcre-ocaml 7.4.6-r2 7.5.0: Perl Compatibility Regular Expressions for O'Caml
 dev-ml/pcre2-ocaml 8.0.3-r1: OCaml bindings to PCRE (Perl Compatibility Regular Expressions)
 dev-ml/pp 2.0.0: Pretty-printing library
 dev-ml/pprint 20220103 20230830: A pretty-printing combinator library and rendering engine
-dev-ml/ppx_assert 0.15.0-r1 0.16.0 0.17.0-r1: Assert-like extension nodes that raise useful errors on failure
-dev-ml/ppx_base 0.15.0 0.16.0-r1 0.17.0: Base set of ppx rewriters
-dev-ml/ppx_bench 0.15.0-r1 0.16.0 0.17.0-r1 0.17.1: Syntax extension for writing in-line benchmarks in ocaml code
-dev-ml/ppx_bin_prot 0.15.0-r1 0.16.0 0.17.0-r2 0.17.1: Generation of bin_prot readers and writers from types
+dev-ml/ppx_assert 0.16.0 0.17.0-r1: Assert-like extension nodes that raise useful errors on failure
+dev-ml/ppx_base 0.16.0-r1 0.17.0: Base set of ppx rewriters
+dev-ml/ppx_bench 0.16.0 0.17.0-r1 0.17.1: Syntax extension for writing in-line benchmarks in ocaml code
+dev-ml/ppx_bin_prot 0.16.0 0.17.0-r2 0.17.1: Generation of bin_prot readers and writers from types
 dev-ml/ppx_blob 0.7.2 0.8.0 0.9.0: Include a file as a string at compile time
-dev-ml/ppx_cold 0.15.0 0.16.0 0.17.0-r1: Expands [@cold] into [@inline never][@specialise never][@local never]
-dev-ml/ppx_compare 0.15.0 0.16.0 0.17.0-r1: Generation of comparison functions from types
-dev-ml/ppx_custom_printf 0.15.0-r1 0.16.0 0.17.0-r1: Printf-style format-strings for user-defined string conversion
+dev-ml/ppx_cold 0.16.0 0.17.0-r1: Expands [@cold] into [@inline never][@specialise never][@local never]
+dev-ml/ppx_compare 0.16.0 0.17.0-r1: Generation of comparison functions from types
+dev-ml/ppx_custom_printf 0.16.0 0.17.0-r1: Printf-style format-strings for user-defined string conversion
 dev-ml/ppx_derivers 1.2.1: Shared [@@deriving] plugin registry
 dev-ml/ppx_deriving 5.2.1-r2 6.0.3-r1 6.1.0 6.1.1: Type-driven code generation for OCaml
 dev-ml/ppx_deriving_yojson 3.9.0 3.10.0: JSON codec generator for OCaml
 dev-ml/ppx_diff 0.17.0-r2 0.17.1: A PPX rewriter that genreates the implementation of [Ldiffable.S].
-dev-ml/ppx_disable_unused_warnings 0.15.0-r1 0.16.0 0.17.0-r1: Expands [@disable_unused_warnings]
-dev-ml/ppx_enumerate 0.15.0 0.16.0 0.17.0-r1: Generate a list containing all values of a finite type
-dev-ml/ppx_expect 0.15.1-r1 0.16.0 0.17.2-r2 0.17.3: Cram like framework for OCaml
-dev-ml/ppx_fields_conv 0.15.0 0.16.0 0.17.0-r1: Generation of accessor and iteration functions for ocaml records
-dev-ml/ppx_fixed_literal 0.15.0 0.16.0 0.17.0-r1: Simpler notation for fixed point literals
+dev-ml/ppx_disable_unused_warnings 0.16.0 0.17.0-r1: Expands [@disable_unused_warnings]
+dev-ml/ppx_enumerate 0.16.0 0.17.0-r1: Generate a list containing all values of a finite type
+dev-ml/ppx_expect 0.16.0 0.17.2-r2 0.17.3: Cram like framework for OCaml
+dev-ml/ppx_fields_conv 0.16.0 0.17.0-r1: Generation of accessor and iteration functions for ocaml records
+dev-ml/ppx_fixed_literal 0.16.0 0.17.0-r1: Simpler notation for fixed point literals
 dev-ml/ppx_globalize 0.16.0 0.17.0-r2 0.17.2: Generates functions to copy local values to the global heap
-dev-ml/ppx_hash 0.15.0-r1 0.16.0 0.17.0-r1: PPX rewriter that generates hash functions from type expressions and definitions
-dev-ml/ppx_here 0.15.0 0.16.0 0.17.0-r1: Expands [%here] into its location
+dev-ml/ppx_hash 0.16.0 0.17.0-r1: PPX rewriter that generates hash functions from type expressions and definitions
+dev-ml/ppx_here 0.16.0 0.17.0-r1: Expands [%here] into its location
 dev-ml/ppx_ignore_instrumentation 0.15.0-r1 0.16.0 0.17.0: Ignore Jane Street specific instrumentation extensions
 dev-ml/ppx_import 1.9.1-r1 1.10.0 1.11.0: A syntax extension for importing declarations from interface files
-dev-ml/ppx_inline_test 0.15.0-r3 0.16.0 0.17.0-r2 0.17.1: Syntax extension for writing in-line tests in ocaml code
-dev-ml/ppx_jane 0.15.0 0.16.0-r1 0.17.0: Standard Jane Street ppx rewriters
-dev-ml/ppx_js_style 0.15.0 0.16.0 0.17.0-r2: Code style checker for Jane Street Packages
-dev-ml/ppx_let 0.15.0 0.16.0-r1 0.17.0-r2 0.17.1: Monadic let-bindings
-dev-ml/ppx_log 0.15.0-r1 0.16.0 0.17.0-r1: Lazily rendering log messages
-dev-ml/ppx_module_timer 0.15.0-r1 0.16.0 0.17.0-r1: Ppx rewriter that records top-level module startup times
-dev-ml/ppx_optcomp 0.15.0 0.16.0 0.17.0-r2 0.17.1: Optional compilation for OCaml
-dev-ml/ppx_optional 0.15.0 0.16.0 0.17.0-r1: Pattern matching on flat options
+dev-ml/ppx_inline_test 0.16.0 0.17.0-r2 0.17.1: Syntax extension for writing in-line tests in ocaml code
+dev-ml/ppx_jane 0.16.0-r1 0.17.0: Standard Jane Street ppx rewriters
+dev-ml/ppx_js_style 0.16.0 0.17.0-r2: Code style checker for Jane Street Packages
+dev-ml/ppx_let 0.16.0-r1 0.17.0-r2 0.17.1: Monadic let-bindings
+dev-ml/ppx_log 0.16.0 0.17.0-r1: Lazily rendering log messages
+dev-ml/ppx_module_timer 0.16.0 0.17.0-r1: Ppx rewriter that records top-level module startup times
+dev-ml/ppx_optcomp 0.16.0 0.17.0-r2 0.17.1: Optional compilation for OCaml
+dev-ml/ppx_optional 0.16.0 0.17.0-r1: Pattern matching on flat options
 dev-ml/ppx_pipebang 0.15.0-r1 0.16.0 0.17.0: A ppx rewriter that inlines reverse application operators |> and |!
-dev-ml/ppx_sexp_conv 0.15.1-r1 0.16.0-r2 0.17.0-r2 0.17.1: Support Library for type-driven code generators
-dev-ml/ppx_sexp_message 0.15.0-r1 0.16.0 0.17.0-r1: A ppx rewriter for easy construction of s-expressions
-dev-ml/ppx_sexp_value 0.15.0-r1 0.16.0 0.17.0-r1: Standard library for ppx rewriters
-dev-ml/ppx_stable 0.15.0 0.16.0 0.17.0-r2 0.17.1: Stable types conversions generator
+dev-ml/ppx_sexp_conv 0.16.0-r2 0.17.0-r2 0.17.1: Support Library for type-driven code generators
+dev-ml/ppx_sexp_message 0.16.0 0.17.0-r1: A ppx rewriter for easy construction of s-expressions
+dev-ml/ppx_sexp_value 0.16.0 0.17.0-r1: Standard library for ppx rewriters
+dev-ml/ppx_stable 0.16.0 0.17.0-r2 0.17.1: Stable types conversions generator
 dev-ml/ppx_stable_witness 0.16.0 0.17.0-r1: Ppx extension for deriving a witness that a type is intended to be stable
-dev-ml/ppx_string 0.15.0-r1 0.16.0 0.17.0-r1: Ppx extension for string interpolation
+dev-ml/ppx_string 0.16.0 0.17.0-r1: Ppx extension for string interpolation
 dev-ml/ppx_string_conv 0.17.0-r1: Ppx extension for generating of_string & to_string
 dev-ml/ppx_tools 6.6-r1: Tools for authors of ppx rewriters
 dev-ml/ppx_tydi 0.16.0 0.17.0-r2 0.17.1: Let expressions, inferring pattern type from expression
-dev-ml/ppx_typerep_conv 0.15.0 0.16.0 0.17.0-r2 0.17.1: Generation of runtime types from type declarations
-dev-ml/ppx_variants_conv 0.15.0 0.16.0-r1 0.17.0-r2 0.17.1: Generation of accessor and iteration functions for ocaml variant types
+dev-ml/ppx_typerep_conv 0.16.0 0.17.0-r2 0.17.1: Generation of runtime types from type declarations
+dev-ml/ppx_variants_conv 0.16.0-r1 0.17.0-r2 0.17.1: Generation of accessor and iteration functions for ocaml variant types
 dev-ml/ppxlib 0.22.2-r4 0.24.0-r2 0.30.0-r2 0.33.0-r2 0.36.2-r1 0.37.0-r1: Base library and tools for ppx rewriters
 dev-ml/ppxlib_jane 0.17.0-r1 0.17.2-r1 0.17.4: Utilities for working with Jane Street AST constructs
-dev-ml/protocol_version_header 0.15.0 0.16.0 0.17.0: Protocol aware version negotiation for OCaml
+dev-ml/protocol_version_header 0.16.0 0.17.0: Protocol aware version negotiation for OCaml
 dev-ml/ptime 1.1.0 1.2.0: POSIX time for OCaml
 dev-ml/ptmap 2.0.5-r2: Maps of integers implemented as Patricia trees
 dev-ml/qcheck 0.22 0.26: QuickCheck inspired property-based testing for OCaml
@@ -6176,25 +6176,25 @@ dev-ml/result 1.5: Compat result type
 dev-ml/rresult 0.7.0: Result value combinators for OCaml
 dev-ml/sedlex 3.3-r1 3.6: An OCaml lexer generator for Unicode
 dev-ml/seq 0.3.1-r1: Compatibility package for the standard OCaml iterator type
-dev-ml/sexp_pretty 0.15.1-r1 0.16.0 0.17.0-r1: S-expression pretty-printer
-dev-ml/sexplib 0.15.1-r2 0.16.0-r1 0.17.0: Library for automated conversion of OCaml-values to and from S-expressions
+dev-ml/sexp_pretty 0.16.0 0.17.0-r1: S-expression pretty-printer
+dev-ml/sexplib 0.16.0-r1 0.17.0: Library for automated conversion of OCaml-values to and from S-expressions
 dev-ml/sexplib0 0.15.0-r2 0.15.1-r1 0.16.0 0.17.0-r1: Library for automated conversion of OCaml-values to and from S-expressions
 dev-ml/spawn 0.13.0 0.15.0-r1 0.15.1 0.17.0: Spawning sub-processes
 dev-ml/spdx_licenses 1.2.0 1.4.0: A library providing a strict SPDX License Expression parser
-dev-ml/splittable_random 0.15.0 0.16.0 0.17.0-r1: PRNG that can be split into independent streams
+dev-ml/splittable_random 0.16.0 0.17.0-r1: PRNG that can be split into independent streams
 dev-ml/stdcompat 19-r2 21.1-r1: Compatibility module for OCaml standard library
-dev-ml/stdio 0.15.0-r1 0.16.0 0.17.0-r1: Standard IO Library for OCaml
+dev-ml/stdio 0.16.0 0.17.0-r1: Standard IO Library for OCaml
 dev-ml/stdlib-shims 0.2.0 0.3.0: Pure OCaml library that allows replacing Pervasives with Stdlib before 4.08
 dev-ml/stringext 1.6.0: Extra string functions for OCaml
 dev-ml/swhid_core 0.1: OCaml library to work with swhids
-dev-ml/textutils 0.15.0 0.16.0 0.17.0: Text output utilities
-dev-ml/textutils_kernel 0.15.0 0.16.0 0.17.0: Text output utilities
-dev-ml/time_now 0.15.0 0.16.0 0.17.0-r1: Reports the current time
-dev-ml/timezone 0.15.0 0.16.0-r1 0.17.0: Time-zone handling for OCaml
+dev-ml/textutils 0.16.0 0.17.0: Text output utilities
+dev-ml/textutils_kernel 0.16.0 0.17.0: Text output utilities
+dev-ml/time_now 0.16.0 0.17.0-r1: Reports the current time
+dev-ml/timezone 0.16.0-r1 0.17.0: Time-zone handling for OCaml
 dev-ml/tiny_httpd 0.16-r1 0.17.0 0.19: Minimal HTTP server with a small request router
 dev-ml/topkg 1.0.7 1.0.8 1.1.0: The transitory OCaml software packager
 dev-ml/trie 1.0.0: Strict impure trie tree
-dev-ml/typerep 0.15.0-r1 0.16.0-r1 0.17.1-r1: Library for creating runtime representation of OCaml types
+dev-ml/typerep 0.16.0-r1 0.17.1-r1: Library for creating runtime representation of OCaml types
 dev-ml/tyxml 4.5.0 4.6.0: A library for building correct HTML and SVG documents
 dev-ml/uchar 0.0.2-r1: Uchar compatibility library
 dev-ml/unidecode 0.4.0: Convert unicode strings into its ASCII representation
@@ -6206,7 +6206,7 @@ dev-ml/uuidm 0.9.7 0.9.8 0.9.9 0.9.10: Universally unique identifiers (UUIDs) fo
 dev-ml/uunf 15.1.0-r1 16.0.0 17.0.0: Unicode text normalization
 dev-ml/uuseg 15.0.0 16.0.0 17.0.0: Unicode text segmentation for OCaml
 dev-ml/uutf 1.0.3-r2 1.0.4-r1: Non-blocking streaming Unicode codec for OCaml
-dev-ml/variantslib 0.15.0 0.16.0 0.17.0-r1: OCaml variants as first class values
+dev-ml/variantslib 0.16.0 0.17.0-r1: OCaml variants as first class values
 dev-ml/xdg 3.16.1 3.20.2: XDG Base Directory Specification
 dev-ml/xml-light 2.5: Minimal Xml parser and printer for OCaml
 dev-ml/xmlm 1.4.0: Streaming XML codec for OCaml
@@ -14806,7 +14806,7 @@ net-im/cpop 0.0.4-r2: GTK+ network popup message client. Compatible with the jpo
 net-im/dino 0.5.0 9999: Modern Jabber/XMPP Client using GTK+/Vala
 net-im/discord 0.0.116 0.0.116-r1: All-in-one voice and text chat for gamers
 net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
-net-im/element-desktop-bin 1.12.2: A glossy Matrix collaboration client for desktop (binary package)
+net-im/element-desktop-bin 1.12.4: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
 net-im/fractal 12.1-r1: Matrix messaging app for GNOME written in Rust
 net-im/gajim 2.2.0 2.3.6 2.4.0: GTK XMPP Client
@@ -15647,7 +15647,7 @@ net-vpn/openfortivpn 1.22.1 1.23.1: Fortinet compatible VPN client
 net-vpn/openvpn 2.6.12-r1 2.6.14 9999: Robust and highly flexible tunneling application compatible with many OSes
 net-vpn/ovpn-dco 0.2.20230426 0.2.20231117 0.2.20241216 9999: OpenVPN Data Channel Offload in the linux kernel
 net-vpn/pptpd 1.4.0-r5: Linux Point-to-Point Tunnelling Protocol Server
-net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10: Anonymous encrypted VPN client powered by Bitmask
+net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client powered by Bitmask
 net-vpn/strongswan 5.9.13 5.9.14 5.9.14-r2 6.0.1 6.0.1-r1 6.0.1-r2 6.0.2 6.0.3: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
@@ -17267,7 +17267,7 @@ sys-auth/elogind 252.9-r3 255.17-r1 255.22 255.22-r1: The systemd project's logi
 sys-auth/fprintd 1.94.2-r1 1.94.3-r1 1.94.5: D-Bus service to access fingerprint readers
 sys-auth/google-authenticator 1.11 9999: PAM Module for two step verification via mobile platform
 sys-auth/libfprint 1.94.4 1.94.7 1.94.9 1.94.9-r1: Library to add support for consumer fingerprint readers
-sys-auth/libfprint-2-tod1-broadcom 5.12.018: Proprietary driver for the fingerprint reader on the Dell Latitude
+sys-auth/libfprint-2-tod1-broadcom 5.12.018 5.15.285: Proprietary driver for the fingerprint reader on the Dell Latitude
 sys-auth/libnss-cache 0.10.2: libnss-cache is a library that serves nss lookups
 sys-auth/libnss-mysql 1.5_p20060915-r5 1.7.1: NSS MySQL Library
 sys-auth/libnss-nis 3.1 3.2: NSS module to provide NIS support
@@ -17390,7 +17390,7 @@ sys-boot/elilo 3.16-r6: Linux boot loader for EFI-based systems such as IA-64
 sys-boot/gnu-efi 3.0.15 3.0.17 3.0.18-r5 3.0.19 4.0.2: Library for build EFI Applications
 sys-boot/grub 2.12-r7 2.14_rc1-r1 9999: GNU GRUB boot loader
 sys-boot/lilo 24.2-r2 24.2-r3: LInux LOader, the original Linux bootloader
-sys-boot/limine 10.3.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 10.3.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/makebootfat 1.4: Command line utility able to create bootable USB disks
 sys-boot/mbr 1.1.11-r2: A replacement master boot record for IBM-PC compatible computers
 sys-boot/milo 2.4.18: The Alpha MIniLOader, for Alpha Machines without SRM
