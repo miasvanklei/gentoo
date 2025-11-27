@@ -835,7 +835,6 @@ app-i18n/im-chooser:xfce - Enable support for XFCE panel
 app-i18n/imsettings:xfconf - Enable support for xfce-base/xfconf
 app-i18n/libime:data - Build data
 app-i18n/librime:debug - Enable debugging (including logging of input of RIME input methods)
-app-i18n/mozc:fcitx4 - Enable support for app-i18n/fcitx 4
 app-i18n/mozc:fcitx5 - Enable support for app-i18n/fcitx 5
 app-i18n/mozc:gui - Install graphical user interface tool (mozc_tool)
 app-i18n/mozc:ibus - Enable support for app-i18n/ibus
@@ -4361,6 +4360,7 @@ media-libs/imlib2:y4m - Y4M image loader support
 media-libs/imlib2:zlib - Zlib loader support
 media-libs/intel-mediasdk:tools - Build analyse and inspect tools
 media-libs/jasper:heif - Enable experimental support for HEIF/HEIC, unsupported by upstream
+media-libs/kquickimageeditor:opencv - Enable better blur performance using media-libs/opencv
 media-libs/leptonica:utils - Install command-line utilities
 media-libs/libafterimage:shaping - Use MIT shaped X windows extention.
 media-libs/libafterimage:shm - Use MIT shared memory extention for X image transfer.
@@ -5401,7 +5401,6 @@ media-video/vlc:gstreamer - Enable GStreamer based decoding support (currently s
 media-video/vlc:kate - Adds support for Ogg Kate subtitles via libkate
 media-video/vlc:kms - Enable kernel mode setting video output plugin via x11-libs/libdrm
 media-video/vlc:libplacebo - Enable support for GPU accelerated video rendering with media-libs/libplacebo
-media-video/vlc:libtar - Uses libtar instead of the built-in tar reader for reading custom skins
 media-video/vlc:libtiger - Enable Ogg Kate subtitles rendering using libtiger
 media-video/vlc:linsys - Enable support for Linux Linear Systems Ltd. SDI and HD-SDI input cards
 media-video/vlc:live - Enable live555 streaming media support (client support for rtsp)
@@ -8807,6 +8806,7 @@ www-misc/litmus:libproxy - Support for automatic proxy configuration management 
 www-misc/litmus:libxml2 - Use dev-libs/libxml2 to parse XML
 www-misc/litmus:pkcs11 - Support for PKCS #11 through PaKChoiS (dev-libs/pakchois).
 www-nginx/ngx-set-misc:hmac - Enable support for generating HMAC digests using dev-libs/openssl
+www-nginx/njs:tools - Build the command-line utility njs
 www-plugins/lightspark:ppapi - Install the PPAPI plugin (for Chromium)
 www-plugins/lightspark:rtmp - Enable Real Time Messaging Protocol using librtmp
 www-plugins/passff-host:chrome - Install plugin for chrome (which also includes opera)
