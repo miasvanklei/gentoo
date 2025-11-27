@@ -1237,7 +1237,7 @@ app-backup/backuppc 3.3.1-r6 4.4.0-r1 4.4.0-r2 4.4.0-r3: High-performance backup
 app-backup/bacula 15.0.3-r1: Featureful client/server network backup suite
 app-backup/bareos 21.1.11 22.1.7 23.1.3-r1 23.1.4 24.0.5 24.0.7 9999: Featureful client/server network backup suite
 app-backup/borgbackup 1.4.1-r1 1.4.2-r1: Deduplicating backup program with compression and authenticated encryption
-app-backup/borgmatic 2.0.7 2.0.10 2.0.11: Automatically create, prune and verify backups with borgbackup
+app-backup/borgmatic 2.0.7 2.0.11 2.0.12: Automatically create, prune and verify backups with borgbackup
 app-backup/btrbk 0.32.6-r1 0.32.6-r2 9999: Tool for creating snapshots and remote backups of btrfs subvolumes
 app-backup/burp 3.1.4 3.1.4-r1: Network backup and restore client and server for Unix and Windows
 app-backup/ccollect 0.8-r2 2.10: Pseudo incremental backup with different exclude lists using hardlinks and rsync
@@ -17789,7 +17789,7 @@ sys-libs/tevent 0.16.1 0.16.2 0.17.1: Samba tevent library
 sys-libs/timezone-data 2025a-r1 2025b: Timezone data (/usr/share/zoneinfo) and utilities (tzselect/zic/zdump)
 sys-libs/uid_wrapper 1.3.0 1.3.2: Wrapper to fake privilege separation
 sys-libs/zlib 1.3.1-r1: Standard (de)compression library
-sys-libs/zlib-ng 2.2.5 2.2.5-r1: Fork of the zlib data compression library
+sys-libs/zlib-ng 2.2.5 2.2.5-r1 2.3.1: Fork of the zlib data compression library
 sys-power/RyzenAdj 0.16.0: The power management tool for mobile and desktop Ryzen APUs
 sys-power/acpi 1.8: Displays information about ACPI devices
 sys-power/acpi_call 1.2.2-r1 9999: A linux kernel module that enables calls to ACPI
@@ -18494,7 +18494,7 @@ x11-misc/clipmenu 6.2.0-r1 9999: Clipboard management
 x11-misc/clipnotify 1.0.2: Notify on new X clipboard events
 x11-misc/colord 1.4.7-r1 1.4.8: System service to accurately color manage input and output devices
 x11-misc/compose-tables 1.8.12: X.Org Compose Key tables from libX11
-x11-misc/copyq 9.1.0 9.1.0-r1: Clipboard manager with advanced features
+x11-misc/copyq 9.1.0-r1 13.0.0: Clipboard manager with advanced features
 x11-misc/dclock 2.2.2_p12: Digital clock for the X window system
 x11-misc/devilspie 0.23-r2: Window matching utility similar to Sawfish's Matched Windows
 x11-misc/devilspie2 0.45-r1: Window matching utility with Lua scripting
