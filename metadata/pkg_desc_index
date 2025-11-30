@@ -3833,7 +3833,7 @@ dev-build/libtool 2.5.4 2.6.0 9999: A shared library tool for developers
 dev-build/mage 1.13.0 1.15.0: make/rake like tool using go
 dev-build/make 4.4.1-r100 4.4.1-r101 4.4.1-r102 9999: Standard tool to compile source trees
 dev-build/melange 0.18.3: Build APK packages from source code using declarative pipelines
-dev-build/meson 1.1.1 1.2.3 1.3.2 1.4.2 1.5.2 1.6.1 1.7.2 1.8.5 1.9.1 9999: Open source build system
+dev-build/meson 1.1.1 1.2.3 1.3.2 1.4.2 1.5.2 1.6.1 1.7.2 1.8.5 1.9.1 1.10.0_rc1 9999: Open source build system
 dev-build/meson-format-array 0: Format shell expressions into a meson array
 dev-build/muon 0.2.0-r2 0.3.0 0.4.0 0.5.0: A meson-compatible build system
 dev-build/netsurf-buildsystem 1.10: Build system used for netsurf and its libraries
@@ -8180,7 +8180,7 @@ dev-python/basho-erlastic 2.1.1-r1: Erlang binary term codec and port interface
 dev-python/bcrypt 4.3.0 5.0.0: Modern password hashing for software and servers
 dev-python/beartype 0.22.2 0.22.3 0.22.4 0.22.5 0.22.6 0.22.7: Unbearably fast runtime type checking in pure Python
 dev-python/beautifulsoup4 4.13.5 4.14.0 4.14.2: Pythonic idioms for iterating, searching, and modifying an HTML/XML parse tree
-dev-python/beniget 0.4.2_p1: Extract semantic information about static Python code
+dev-python/beniget 0.4.2_p1 0.5.0: Extract semantic information about static Python code
 dev-python/berkeleydb 18.1.15: Python bindings for Oracle Berkeley DB
 dev-python/betamax 0.9.0: python-requests HTTP exchanges recorder
 dev-python/betamax-matchers 0.4.0-r1: A group of experimental matchers for Betamax
@@ -15473,7 +15473,7 @@ net-misc/you-get 0.4.1650-r1 0.4.1700: Utility to download media contents from t
 net-misc/youtube-viewer 3.11.2-r1 3.11.3-r1 9999: A command line utility for viewing youtube-videos in Mplayer
 net-misc/yt-dlp 2025.10.22 2025.11.12 9999: youtube-dl fork with additional features and fixes
 net-misc/ytmdl 2024.08.15.1-r1: Simple app to get songs from youtube in mp3 format
-net-misc/zerotier 1.14.2-r2 1.16.0 1.16.0-r1: A software-based managed Ethernet switch for planet Earth
+net-misc/zerotier 1.14.2-r2 1.16.0-r2: A software-based managed Ethernet switch for planet Earth
 net-misc/zssh 1.5c-r3: SSH wrapper enabling zmodem up/download in ssh
 net-misc/zsync 0.6.2-r4 0.6.2-r5: Partial/differential file download client over HTTP using the rsync algorithm
 net-nds/389-ds-base 3.0.6: 389 Directory Server (core libraries and daemons)
@@ -17088,7 +17088,7 @@ sys-apps/ipmicfg 1.36.0.250225: An in-band utility for configuring Supermicro IP
 sys-apps/ipmitool 1.8.19 1.8.19-r1: Utility for controlling IPMI enabled devices
 sys-apps/ipmiutil 3.1.9 3.2.1: IPMI Management Utilities
 sys-apps/iproute2 6.15.0 6.16.0 6.17.0 9999: kernel routing and traffic control utilities
-sys-apps/irqbalance 1.9.3-r1 1.9.4-r2: Distribute hardware interrupts across processors on a multiprocessor system
+sys-apps/irqbalance 1.9.4-r3: Distribute hardware interrupts across processors on a multiprocessor system
 sys-apps/isapnptools 1.27-r1: Tools for configuring ISA PnP devices
 sys-apps/iucode_tool 2.3.1-r1: tool to manipulate Intel X86 and X86-64 processor microcode update collections
 sys-apps/kbd 2.7.1 2.8.0 2.9.0 9999: Keyboard and console utilities
@@ -17322,7 +17322,7 @@ sys-block/arcconf 2.01.22270-r2 3.07.23980 4.23.00.27147 4.26.00.27449: Microsem
 sys-block/blktrace 1.3.0-r1: show detailed info about what is happening on a block device io queue
 sys-block/bmap-tools 3.6-r1: Flashing tool using block maps and sparse files
 sys-block/bmaptool 3.9.0: The better dd for embedded projects, based on block maps
-sys-block/buffer 1.19-r4: A tapedrive tool for speeding up reading from and writing to tape
+sys-block/buffer 1.19-r5: A tapedrive tool for speeding up reading from and writing to tape
 sys-block/cec 14-r2: Coraid Ethernet Console client
 sys-block/devio 1.2-r1: Correctly read (or write) a region of a block device
 sys-block/di 4.51 4.52: Disk Information Utility
@@ -17682,7 +17682,7 @@ sys-fs/zfs-auto-snapshot 1.2.4-r2 1.2.4-r3 9999: ZFS Automatic Snapshot Service 
 sys-fs/zfs-kmod 2.1.16 2.2.7 2.2.8 2.2.9 2.3.2 2.3.3 2.3.4 2.3.5 2.4.0_rc1 2.4.0_rc2 2.4.0_rc2-r1: Linux ZFS kernel module for sys-fs/zfs
 sys-kernel/asahi-sources 6.15.7_p1 6.16.4_p2: Asahi Linux kernel sources
 sys-kernel/bliss-initramfs 9.3.0: Boot your system's rootfs from Encrypted/OpenZFS
-sys-kernel/cryptodev 1.12 1.13-r1 9999: device that allows access to Linux kernel cryptographic drivers
+sys-kernel/cryptodev 1.12 1.13-r1 1.14 9999: device that allows access to Linux kernel cryptographic drivers
 sys-kernel/dkms 3.2.2 3.3.0 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 060_pre20240104-r4 103-r4 106-r2 108-r4 109 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r1: Early unlocking of encrypted systems via ssh for dracut
@@ -18127,7 +18127,7 @@ www-apps/piwigo 15.6.0 15.7.0: a photo gallery software for the web
 www-apps/postfixadmin 3.3.15 3.3.16: Web Based Management tool for Postfix style virtual domains and users
 www-apps/prowlarr-bin 2.3.1.5238: An indexer manager/proxy to integrate with your various PVR apps
 www-apps/radarr-bin 6.1.0.10293: A fork of Sonarr to work with movies a la Couchpotato
-www-apps/radicale 3.5.7 3.5.8: A simple CalDAV calendar server
+www-apps/radicale 3.5.8 3.5.9: A simple CalDAV calendar server
 www-apps/readarr-bin 0.4.18.2805: An ebook and audiobook collection manager for Usenet and BitTorrent users
 www-apps/redmine 6.0.2: Flexible project management web application using the Ruby on Rails framework
 www-apps/roundup 2.3.0: Issue-tracking system with command-line, web, and e-mail interfaces
