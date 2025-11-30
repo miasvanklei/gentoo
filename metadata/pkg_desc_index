@@ -2953,14 +2953,14 @@ app-misc/vlock 2.2.3-r2: Allows to lock one or all of the sessions of your conso
 app-misc/votrify 5-r1: Tool for community verification of Gentoo elections
 app-misc/wally-cli 2.0.1-r1: Flash your ZSA Keyboard the EZ way
 app-misc/wayland-utils 1.2.0 1.3.0: Display information about supported Wayland protocols and current compositor
-app-misc/wcd 6.0.4 6.0.5: Wherever Change Directory
+app-misc/wcd 6.0.4 6.0.5 6.0.6: Wherever Change Directory
 app-misc/weggli 0.2.4-r1: a fast and robust semantic search tool for C and C++ codebases
 app-misc/when 1.1.45: Minimalistic personal calendar program
 app-misc/wipe 2.3.1: Secure file wiping utility based on Peter Gutman's patterns
 app-misc/worker 4.6.1-r100: Worker Filemanager: Amiga Directory Opus 4 clone
 app-misc/xmind 3.7.6_p201801311814: Brainstorming and mind mapping software tool
 app-misc/yq 3.4.3: Command-line YAML processor - jq wrapper for YAML documents
-app-misc/yq-go 4.44.3 4.44.5 4.45.1 4.48.2: yq is a lightweight and portable command-line YAML, JSON and XML processor
+app-misc/yq-go 4.48.2 4.49.2: yq is a lightweight and portable command-line YAML, JSON and XML processor
 app-misc/ytree 2.09 2.10: Curses-based file manager
 app-misc/zellij 0.42.2 0.43.1: A terminal workspace with batteries included
 app-misc/zisofs-tools 1.0.8-r1: User utilities for zisofs
@@ -3221,7 +3221,7 @@ app-text/docbook-xsl-ns-stylesheets 1.79.1: XSL Stylesheets for Docbook
 app-text/docbook-xsl-stylesheets 1.79.1-r4: XSL Stylesheets for Docbook
 app-text/docbook2X 0.8.8-r5: Tools to convert docbook to man and info
 app-text/docx2txt 1.4: Convert MS Office docx files to plain text
-app-text/dos2unix 7.5.0 7.5.1 7.5.2: Convert DOS or MAC text files to UNIX format or vice versa
+app-text/dos2unix 7.5.2 7.5.3: Convert DOS or MAC text files to UNIX format or vice versa
 app-text/doxygen 1.13.2 1.14.0 1.15.0 9999: Documentation system for most programming languages
 app-text/dvipng 1.18: Translate DVI files into PNG or GIF graphics
 app-text/dvipsk 2023.03.11_p66203 2024.03.11_p70015: DVI-to-PostScript translator
@@ -3241,7 +3241,7 @@ app-text/fbpdf 0_p20250124: Framebuffer pdf and djvu viewer
 app-text/feathernotes 1.3.0 1.3.1 1.3.2 9999: Lightweight Qt Notes-Manager for Linux
 app-text/flpsed 0.7.3-r1: Pseudo PostScript editor
 app-text/foliate 3.3.0-r1: gtk ebook reader built with gjs
-app-text/fzy 1.0-r1 9999: Fuzzy text selector (interactive grep) for console
+app-text/fzy 1.0-r1 1.1 9999: Fuzzy text selector (interactive grep) for console
 app-text/gentoo-dtd 20230914 99999999: Document Type Definition for Gentoo-related XML files
 app-text/ghostscript-gpl 10.05.1 10.06.0: Interpreter for the PostScript language and PDF
 app-text/grip 4.6.2: Preview GitHub Markdown files like Readme locally before committing them
@@ -13032,7 +13032,7 @@ media-gfx/gphotofs 0.5-r1 0.5-r2: FUSE file system for interfacing with digital 
 media-gfx/gpicview 0.3.1: Lightweight image viewer
 media-gfx/graphicsmagick 1.3.45-r2 1.3.45-r3 1.3.46 9999: Collection of tools and libraries for many image formats
 media-gfx/graphite2 1.3.14_p20210810-r3 1.3.14_p20210810-r5: Library providing rendering capabilities for complex non-Roman writing systems
-media-gfx/graphviz 12.2.1-r1 14.0.5: Open Source Graph Visualization Software
+media-gfx/graphviz 12.2.1-r1 14.0.5-r1: Open Source Graph Visualization Software
 media-gfx/gscan2pdf 2.13.2-r2 2.13.4-r1 2.13.5: Scan documents, perform OCR, produce PDFs and DjVus
 media-gfx/gthumb 3.12.6 3.12.7: Image viewer and browser for Gnome
 media-gfx/gtkimageview 1.6.4: A simple image viewer widget for GTK
@@ -14807,7 +14807,7 @@ net-im/bitlbee-steam 1.4.2 9999: Steam protocol plugin for BitlBee
 net-im/centerim 5.0.1-r2: Ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/LiveJournal client
 net-im/coturn 4.6.2 9999: coturn TURN server project
 net-im/cpop 0.0.4-r2: GTK+ network popup message client. Compatible with the jpop protocol
-net-im/dino 0.5.0 9999: Modern Jabber/XMPP Client using GTK+/Vala
+net-im/dino 0.5.0 0.5.1 9999: Modern Jabber/XMPP Client using GTK+/Vala
 net-im/discord 0.0.116 0.0.116-r1: All-in-one voice and text chat for gamers
 net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
 net-im/element-desktop-bin 1.12.4: A glossy Matrix collaboration client for desktop (binary package)
@@ -15885,7 +15885,7 @@ sci-biology/probcons 1.12-r1: Probabilistic Consistency-based Multiple Alignment
 sci-biology/prodigal 2.6.3-r1: Prokaryotic Dynamic Programming Genefinding Algorithm
 sci-biology/profphd 1.0.40: Secondary structure and solvent accessibility predictor
 sci-biology/prosite 2017.02-r1: A protein families and domains database
-sci-biology/pysam 0.23.0 0.23.3 9999: Python interface for the SAM/BAM sequence alignment and mapping format
+sci-biology/pysam 0.23.3 9999: Python interface for the SAM/BAM sequence alignment and mapping format
 sci-biology/qrna 2.0.3c-r3 2.0.4: Prototype ncRNA genefinder
 sci-biology/raxml 8.2.13: Sequential, Parallel & Distributed Inference of Large Phylogenetic Trees
 sci-biology/rebase 1901-r2: A restriction enzyme database
@@ -16004,7 +16004,7 @@ sci-electronics/labone 21.08.20515-r2 23.02.42414: Platform independent instrume
 sci-electronics/librepcb 1.2.0 1.3.0: Free EDA software to develop printed circuit boards
 sci-electronics/magic 8.3.365: The VLSI design CAD tool
 sci-electronics/netgen 1.4.52: LVS tool (layout versus schematic comparison)
-sci-electronics/ngspice 40 43: The Next Generation Spice (Electronic Circuit Simulator)
+sci-electronics/ngspice 43: The Next Generation Spice (Electronic Circuit Simulator)
 sci-electronics/nvc 1.18.0: NVC is a VHDL compiler and simulator
 sci-electronics/pcb 4.3.0: GPL Electronic Design Automation: Printed Circuit Board editor
 sci-electronics/petrify 4.2-r1: Synthesize Petri nets into asynchronous circuits
@@ -18170,7 +18170,7 @@ www-client/opera 124.0.5705.65: A fast and secure web browser
 www-client/opera-beta 123.0.5669.18 124.0.5705.12 124.0.5705.51: A fast and secure web browser
 www-client/opera-developer 125.0.5707.0 125.0.5720.0 125.0.5727.1: A fast and secure web browser
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
-www-client/qutebrowser 3.6.1-r1 3.6.2 9999: Keyboard-driven, vim-like browser based on Python and Qt
+www-client/qutebrowser 3.6.1-r1 3.6.2 3.6.3 9999: Keyboard-driven, vim-like browser based on Python and Qt
 www-client/seamonkey 2.53.20 2.53.21 2.53.22: Seamonkey Web Browser
 www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
