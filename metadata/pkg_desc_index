@@ -4107,7 +4107,7 @@ dev-embedded/avarice 2.14-r1: Interface for GDB to Atmel AVR JTAGICE in circuit 
 dev-embedded/avr-libc 2.1.0: C library for Atmel AVR microcontrollers
 dev-embedded/avra 1.4.2-r1: Atmel AVR Assembler
 dev-embedded/avrdude 7.2: AVR Downloader/UploaDEr
-dev-embedded/cpik 0.7.4_p4: C compiler for PIC18 devices
+dev-embedded/cpik 0.7.4_p4-r1: C compiler for PIC18 devices
 dev-embedded/dc-tool-ip 1.0.4-r1: Ethernet program loader for the Dreamcast
 dev-embedded/dfu-programmer 1.1.0: A Device Firmware Update based USB programmer for Atmel chips
 dev-embedded/esptool 4.8.1 4.9.1 4.10.0 5.0.2 5.1.0: Serial utility for flashing and interacting with Espressif ESP8266 and ESP32
@@ -11987,8 +11987,8 @@ gnome-extra/cinnamon-settings-daemon 6.4.3-r1 6.4.3-r2: Cinnamon's settings daem
 gnome-extra/cinnamon-translations 6.4.2: Translation data for Cinnamon
 gnome-extra/cjs 6.4.0 128.0: Linux Mint's fork of gjs for Cinnamon
 gnome-extra/eiciel 0.10.0: ACL editor for GNOME, with Nautilus extension
-gnome-extra/evolution-data-server 3.56.2-r1: Evolution groupware backend
-gnome-extra/evolution-ews 3.52.4-r1 3.54.3.0-r1 3.56.1 3.56.2: Evolution module for connecting to Microsoft Exchange Web Services
+gnome-extra/evolution-data-server 3.56.2-r1 3.58.2: Evolution groupware backend
+gnome-extra/evolution-ews 3.56.2-r1 3.58.2: Evolution module for connecting to Microsoft Exchange Web Services
 gnome-extra/gnome-boxes 47.0-r1 48.0: Simple GNOME application to access remote or virtual systems
 gnome-extra/gnome-browser-connector 42.1 42.1-r1: OS-native connector counterpart for GNOME Shell browser extension
 gnome-extra/gnome-calculator 47.3-r1 48.1: A calculator application for GNOME
@@ -12626,7 +12626,7 @@ mail-client/balsa 2.6.4-r2 2.6.4-r3 2.6.5: Email client for GNOME
 mail-client/bower 1.0: Curses terminal client for the Notmuch email system
 mail-client/claws-mail 3.21.0-r2 4.3.0-r3 4.3.1-r1 4.3.1-r2 9999: An email client (and news reader) based on GTK+
 mail-client/clawsker 1.4.0 1.4.1: Applet to edit Claws Mail's hidden preferences
-mail-client/evolution 3.52.4-r4 3.54.3-r2 3.56.1-r1 3.56.2-r1: Integrated mail, addressbook and calendaring functionality
+mail-client/evolution 3.56.2-r1 3.58.2: Integrated mail, addressbook and calendaring functionality
 mail-client/geary 44.1-r2 46.0-r1: A lightweight, easy-to-use, feature-rich email client
 mail-client/hap 3.7-r1: A terminal mail notification program (replacement for biff)
 mail-client/mailx 8.1.2.20220412: The $ mail program, which is used to send mail via shell scripts
@@ -13134,7 +13134,7 @@ media-gfx/quat 1.20-r4: A 3D quaternionic fractal generator
 media-gfx/rawtherapee 5.11-r2 5.12 5.12-r1: A powerful cross-platform raw image processing program
 media-gfx/realesrgan-ncnn-vulkan 0.2.0-r1: NCNN implementation of Real-ESRGAN
 media-gfx/recoverjpeg 2.6.3: Recover JPEG pictures from a possibly corrupted disk image
-media-gfx/renderdoc 1.36: Stand-alone graphics debugging tool
+media-gfx/renderdoc 1.36-r1: Standalone graphics debugging tool
 media-gfx/ristretto 0.13.4: A fast and lightweight picture viewer for Xfce
 media-gfx/rotoscope 0.2-r2: Graphics program that can be used to give photos a cartoon-like appearance
 media-gfx/sam2p 0.49.4_p20190718-r1: Utility to convert raster images to EPS, PDF and many others
@@ -15289,7 +15289,7 @@ net-misc/linuxptp 4.2 4.4-r1: The Linux Precision Time Protocol (PTP) implementa
 net-misc/liveice 2000530-r3: Live Source Client For IceCast
 net-misc/lksctp-tools 1.0.19-r1 1.0.21: Tools for Linux Kernel Stream Control Transmission Protocol implementation
 net-misc/lldpd 1.0.18 1.0.19 1.0.20: Implementation of IEEE 802.1ab (LLDP)
-net-misc/mcproxy 1.1.1-r2: A multicast proxy for IGMP/MLD
+net-misc/mcproxy 1.1.1-r2: Multicast proxy for IGMP/MLD
 net-misc/megatools 1.11.4 1.11.5: Command line tools and C library for accessing Mega cloud storage
 net-misc/memcached 1.6.31 1.6.38 1.6.39: High-performance, distributed memory object caching system
 net-misc/mico 2.3.13-r14: A freely available and fully compliant implementation of the CORBA standard
@@ -17222,7 +17222,7 @@ sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
 sys-apps/system-monitoring-center 2.26.0-r1 9999: Multi-featured system monitor GUI written in Python
 sys-apps/systemctl-tui 0.4.0: A simple TUI for interacting with systemd services and their logs
-sys-apps/systemd 257.9 257.10 258.2 9999: System and service manager for Linux
+sys-apps/systemd 257.9 257.10 258.2 259_rc2 9999: System and service manager for Linux
 sys-apps/systemd-readahead 216: Split of readahead systemd implementation
 sys-apps/systemd-utils 254.24 254.26 255.18 255.21 256.17: Utilities split out from systemd for OpenRC users
 sys-apps/sysvinit 3.09 3.14 3.15: /sbin/init - parent of all processes
@@ -17442,14 +17442,14 @@ sys-cluster/keepalived 2.2.7 2.2.8 2.3.3: A strong & robust keepalive facility t
 sys-cluster/knem 1.1.4_p20250126 9999: High-Performance Intra-Node MPI Communication
 sys-cluster/kops 1.28.2 1.30.0: Kubernetes Operations
 sys-cluster/kronosnet 1.19 1.19-r1 1.23 1.25: Network abstraction layer designed for High Availability use cases
-sys-cluster/kube-apiserver 1.32.8 1.32.9 1.33.4 1.33.5 1.34.1: Kubernetes API server
-sys-cluster/kube-controller-manager 1.32.8 1.32.9 1.33.4 1.33.5 1.34.1: Kubernetes Controller Manager
-sys-cluster/kube-proxy 1.32.8 1.32.9 1.33.4 1.33.5 1.34.1: Kubernetes Proxy service
+sys-cluster/kube-apiserver 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes API server
+sys-cluster/kube-controller-manager 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Controller Manager
+sys-cluster/kube-proxy 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Proxy service
 sys-cluster/kube-router 1.5.0 1.6.0: A turnkey solution for Kubernetes networking
-sys-cluster/kube-scheduler 1.32.8 1.32.9 1.33.4 1.33.5 1.34.1: Kubernetes Scheduler
-sys-cluster/kubeadm 1.32.8 1.32.9 1.33.4 1.33.5 1.34.1: CLI to Easily bootstrap a secure Kubernetes cluster
-sys-cluster/kubectl 1.32.8 1.32.9 1.33.4 1.33.5 1.34.1 1.34.2: CLI to run commands against Kubernetes clusters
-sys-cluster/kubelet 1.32.8 1.32.9 1.33.4 1.33.5 1.34.1: Kubernetes Node Agent
+sys-cluster/kube-scheduler 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Scheduler
+sys-cluster/kubeadm 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: CLI to Easily bootstrap a secure Kubernetes cluster
+sys-cluster/kubectl 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: CLI to run commands against Kubernetes clusters
+sys-cluster/kubelet 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Node Agent
 sys-cluster/kubeletctl 1.12 1.13: A client for kubelet
 sys-cluster/kubelogin 1.34.0 1.34.2: kubectl plugin for Kubernetes OpenID Connect authentication
 sys-cluster/kubeseal 0.30.0 0.32.2: Client-side utility for one-way encrypted secrets in kubernetes
@@ -17498,7 +17498,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.4.1_p20251113 13.4.1_p20251120 13.4.1_p20251127 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.3.1_p20251114 14.3.1_p20251121 14.3.1_p20251128 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.3.9999 16.0.0_p20251109-r1 16.0.0_p20251116 16.0.0_p20251116-r1 16.0.0_p20251123 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.4.1_p20251113 13.4.1_p20251120 13.4.1_p20251127 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.3.1_p20251114 14.3.1_p20251121 14.3.1_p20251128 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.3.9999 16.0.0_p20251109-r1 16.0.0_p20251116 16.0.0_p20251116-r1 16.0.0_p20251123 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-apple 4.2.1_p5666-r3: Apple branch of the GNU Compiler Collection, Developer Tools 4.0
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
@@ -18176,8 +18176,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.3 3.4: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 7.7.3851.48 7.7.3851.52: A browser for our friends
-www-client/vivaldi-snapshot 7.7.3851.44 7.8.3872.3: A browser for our friends
+www-client/vivaldi 7.7.3851.52 7.7.3851.56: A browser for our friends
+www-client/vivaldi-snapshot 7.8.3872.3 7.8.3879.3: A browser for our friends
 www-client/w3m 0.5.3_p20230121 0.5.3_p20240916: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
