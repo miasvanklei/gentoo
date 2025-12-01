@@ -7,7 +7,7 @@ inherit flag-o-matic pax-utils toolchain-funcs
 
 #same order as http://www.sbcl.org/platform-table.html
 BV_X86=1.4.3
-BV_AMD64=2.5.8
+BV_AMD64=2.5.11
 BV_PPC=1.2.7
 BV_PPC64LE=1.5.8
 BV_SPARC=1.0.28
@@ -50,7 +50,7 @@ CDEPEND=">=dev-lisp/asdf-3.3:= \
 BDEPEND="${CDEPEND}
 		dev-debug/strace
 		doc? ( sys-apps/texinfo >=media-gfx/graphviz-2.26.0 )
-		system-bootstrap? ( || ( dev-lisp/clisp dev-lisp/sbcl ) )"
+		system-bootstrap? ( || ( >=dev-lisp/ecl-24.5.10 dev-lisp/clisp dev-lisp/sbcl ) )"
 RDEPEND="${CDEPEND}
 		zstd? ( app-arch/zstd )
 		!prefix? ( elibc_glibc? ( >=sys-libs/glibc-2.6 ) )"
@@ -104,7 +104,7 @@ src_unpack() {
 
 src_prepare() {
 	# bug #468482
-	eapply "${FILESDIR}"/concurrency-test-2.0.1.patch
+	eapply "${FILESDIR}"/concurrency-test-2.5.10.patch
 	# bugs #486552, #527666, #517004
 	eapply "${WORKDIR}"/${BSD_SOCKETS_TEST_PATCH}
 	# bugs #560276, #561018
@@ -178,8 +178,12 @@ src_compile() {
 	if use system-bootstrap ; then
 		if has_version "dev-lisp/sbcl" ; then
 			bootstrap_lisp="sbcl --no-sysinit --no-userinit --disable-debugger"
-		else
+		elif has_version "dev-lisp/ecl" ; then
+			bootstrap_lisp="ecl"
+		elif has_version "dev-lisp/clisp" ; then
 			bootstrap_lisp="clisp"
+		else
+			die "could not find a bootstrap_lisp"
 		fi
 	fi
 
