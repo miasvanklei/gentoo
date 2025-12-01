@@ -3,9 +3,9 @@
 
 EAPI=8
 
-DESCRIPTION="AWS C Compression cross-platform algorithms."
-HOMEPAGE="https://github.com/awslabs/aws-c-compression"
-SRC_URI="https://github.com/awslabs/aws-c-compression/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+DESCRIPTION="Crypto Abstraction Layer: Cross-Platform C99 wrapper for cryptography primitives"
+HOMEPAGE="https://github.com/awslabs/aws-c-cal"
+SRC_URI="https://github.com/awslabs/aws-c-cal/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 inherit cmake
 
@@ -16,12 +16,15 @@ IUSE="test"
 
 RESTRICT="!test? ( test )"
 
-DEPEND="dev-libs/aws-c-common:="
+DEPEND="dev-libs/aws-c-common:=
+	dev-libs/openssl:="
 RDEPEND="${DEPEND}"
 BDEPEND="dev-libs/aws-c-common"
 
-src_configure() {
+src_configure()
+{
 	local mycmakeargs=(
+		-DUSE_OPENSSL=ON
 		-DBUILD_TESTING=$(usex test)
 	)
 	cmake_src_configure
