@@ -1063,7 +1063,7 @@ app-admin/salt 3007.0-r1 3007.1-r1 3007.1-r2: Salt is a remote execution and con
 app-admin/selint 1.2.1 9999: Static code analysis of refpolicy style SELinux policy
 app-admin/serf 0.10.1-r1: Service orchestration and management tool
 app-admin/setools 4.5.1 9999: Policy Analysis Tools for SELinux
-app-admin/socklog 2.1.1: Small secure replacement for syslogd with automatic log rotation
+app-admin/socklog 2.1.1 2.1.2: Small secure replacement for syslogd with automatic log rotation
 app-admin/spectre-meltdown-checker 0.45 0.46 9999: Spectre & Meltdown vulnerability/mitigation checker for Linux
 app-admin/sshguard 2.5.1 99999: protects hosts from brute force attacks against ssh
 app-admin/stow 2.4.1: GNU Stow is a symlink farm manager
@@ -1451,7 +1451,7 @@ app-crypt/gnupg 2.2.45-r1 2.4.8-r1 2.4.8-r2 2.5.12-r1 2.5.13-r1 2.5.13-r2 2.5.14
 app-crypt/gnupg-pkcs11-scd 0.11.0 9999: PKCS#11 support for GnuPG
 app-crypt/gocryptfs 2.6.1 2.6.1-r1: Encrypted overlay filesystem written in Go
 app-crypt/gorilla 1.4-r2: Password Safe in secure way with GUI interface
-app-crypt/gpa 0.11.0-r1: GNU Privacy Assistant (GPA): a graphical user interface for GnuPG
+app-crypt/gpa 0.11.0-r2: GNU Privacy Assistant (GPA): a graphical user interface for GnuPG
 app-crypt/gpg-ringmgr 1.12-r1: GPG Keyring Manager to handle large GPG keyrings more easily
 app-crypt/gpgme 2.0.0 2.0.1-r1: GnuPG Made Easy is a library for making GnuPG easier to use
 app-crypt/gpgstats 0.5-r2: GPGstats calculates statistics on the keys in your key-ring
@@ -2175,7 +2175,7 @@ app-emacs/no-littering 1.8.1 1.8.2: ELisp library that helps keeping Emacs confi
 app-emacs/noflet 0.0.15_p20141102-r1: Dynamic, local advice for Emacs-Lisp code
 app-emacs/nxml-docbook5-schemas 5.1: Add support for DocBook 5 schemas to NXML
 app-emacs/nxml-gentoo-schemas 20241116: Extension for nxml-mode with Gentoo-specific schemas
-app-emacs/nxml-libvirt-schemas 11.8.0: Extension for nxml-mode with libvirt schemas
+app-emacs/nxml-libvirt-schemas 11.8.0 11.9.0: Extension for nxml-mode with libvirt schemas
 app-emacs/nxml-svg-schemas 1.1.20081123-r1: Extension for nxml-mode with SVG 1.1 schemas
 app-emacs/oauth2 0.18.3: OAuth 2.0 authorization protocol
 app-emacs/ocaml-mode 4.05.0: Emacs mode for OCaml
@@ -2380,7 +2380,7 @@ app-emulation/libdsk 1.5.21: Library for accessing discs and disc image files
 app-emulation/libguestfs 1.54.1-r1 1.56.2 1.57.2: Tools for accessing, inspecting, and modifying virtual machine (VM) disk images
 app-emulation/libguestfs-appliance 1.54.0 1.56.0: VM appliance disk image used in libguestfs package
 app-emulation/libspectrum 1.5.0: Spectrum emulation library
-app-emulation/libvirt 11.6.0-r2 11.8.0 9999: C toolkit to manipulate virtual machines
+app-emulation/libvirt 11.6.0-r2 11.8.0 11.9.0 9999: C toolkit to manipulate virtual machines
 app-emulation/libvirt-glib 4.0.0-r1 5.0.0-r1: GLib and GObject mappings for libvirt
 app-emulation/nemu 3.1.0-r1 3.3.0-r1: Ncurses interface for QEMU
 app-emulation/open-vm-tools 12.4.5-r1 12.4.5-r2 12.5.0 12.5.0-r1 12.5.0-r3 12.5.0-r4 13.0.5: Tools for VMware guests
@@ -2885,7 +2885,7 @@ app-misc/rdfind 1.6.0: Find duplicate files based on their content
 app-misc/recoll 1.40.3-r1 1.43.0-r1 1.43.2 1.43.5 1.43.6: Personal full text search package
 app-misc/regex-markup 0.10.0-r3: A tool to color syslog files as well
 app-misc/regionset 0.2: Sets the region on DVD drives
-app-misc/remind 05.00.06 05.00.07 05.03.02: Ridiculously functional reminder program
+app-misc/remind 05.03.02 06.02.01: Ridiculously functional reminder program
 app-misc/reptyr 0.9.0 0.10.0: A utility to attach a running program to a new terminal
 app-misc/resolve-march-native 2.2.0 3.0.0-r1 4.1.0 5.0.2 5.1.0 5.1.0-r1 6.0.1: Resolve GCC flag -march=native
 app-misc/rioutil 1.5.4-r1: A utility for accessing various Rio media players
@@ -8713,7 +8713,7 @@ dev-python/librt 0.6.2 0.6.3: Mypyc runtime library
 dev-python/libsass 0.23.0: A straightforward binding of libsass for Python
 dev-python/libtmux 0.36.0 0.46.2 0.47.0 0.48.0_p0 0.49.0: Typed library that provides an ORM wrapper for tmux, a terminal multiplexer
 dev-python/libusb1 3.3.1: Python ctype-based wrapper around libusb1
-dev-python/libvirt-python 11.6.0 11.8.0 9999: libvirt Python bindings
+dev-python/libvirt-python 11.6.0 11.8.0 11.9.0 9999: libvirt Python bindings
 dev-python/license-expression 30.4.4: Parse, compare, simplify and normalize license expressions
 dev-python/line-profiler 4.2.0 5.0.0: Line-by-line profiler
 dev-python/linkify-it-py 2.0.3: Links recognition library with full unicode support
@@ -10724,7 +10724,7 @@ dev-util/abi-compliance-checker 2.3-r1 9999: A tool for checking backward compat
 dev-util/abi-dumper 1.4: Dump ABI of an ELF object containing DWARF debug info
 dev-util/abootimg 20150323-r1: Manipulate Android boot images
 dev-util/act 0.2.59 0.2.64: run github workflows locally
-dev-util/amdsmi 7.0.2: AMD System Management Interface for managing and monitoring GPUs
+dev-util/amdsmi 7.0.2 7.1.0: AMD System Management Interface for managing and monitoring GPUs
 dev-util/amtterm 1.6-r1: A nice tool to manage amt-enabled machines
 dev-util/android-sdk-cmdline-tools 0_p11076708: Open Handset Alliance's Android SDK
 dev-util/android-studio 2025.2.1.8: Android development environment based on IntelliJ IDEA
@@ -15044,7 +15044,7 @@ net-libs/qxmpp 1.11.3: Cross-platform C++ XMPP client and server library
 net-libs/rabbitmq-c 0.13.0: RabbitMQ C client
 net-libs/radcli 1.4.0: A simple RADIUS client library
 net-libs/rest 0.9.1-r2: Helper library for RESTful services
-net-libs/rpc2 2.14-r1 2.37: Remote procedure call package for IP/UDP (used by Coda)
+net-libs/rpc2 2.37: Remote procedure call package for IP/UDP (used by Coda)
 net-libs/rpcsvc-proto 0-r1 1.4.4 1.4.4-r1: rpcsvc protocol definitions from glibc
 net-libs/rtrlib 0.8.0-r1: An open-source C implementation of the RPKI/Router Protocol client
 net-libs/rustls-ffi 0.9.1-r2 0.10.0-r2 0.12.1-r3 0.12.2-r1 0.13.0-r1 0.14.0 0.15.0 9999: C-to-rustls bindings
@@ -17298,7 +17298,7 @@ sys-auth/pam_require 0.7-r2: Allows you to require a special group or user to ac
 sys-auth/pam_skey 1.1.5-r7: PAM interface for the S/Key authentication system
 sys-auth/pam_smb 2.0.0_rc6-r3: PAM module for authenticating against an SMB (such as the Win_x families) server
 sys-auth/pam_ssh_agent_auth 0.10.4-r1 9999: Simple module to authenticate users against their ssh-agent keys
-sys-auth/pam_u2f 1.3.2 1.4.0: PAM module for FIDO2 and U2F keys
+sys-auth/pam_u2f 1.4.0: PAM module for FIDO2 and U2F keys
 sys-auth/pam_yubico 2.27: Library for authenticating against PAM with a Yubikey
 sys-auth/pambase 20250826 20250906 20251013 20251104 999999999: PAM base configuration files
 sys-auth/passwdqc 2.0.3-r1: Password strength checking library (and PAM module)
@@ -17349,7 +17349,7 @@ sys-block/megarc 1.11-r3: LSI Logic MegaRAID Text User Interface management tool
 sys-block/mmc-utils 0_p20240402 1.0: Userspace tools for MMC/SD devices
 sys-block/mpt-status 1.2.0-r2: Query tool to access the running configuration and status of LSI SCSI HBAs
 sys-block/ms-sys 2.7.0: A command-line program for writing Microsoft compatible boot records
-sys-block/mtx 1.3.12: Utilities for controlling SCSI media changers and tape drives
+sys-block/mtx 1.3.12-r1: Utilities for controlling SCSI media changers and tape drives
 sys-block/nbd 3.25-r1 9999: Userland client/server for kernel network block device
 sys-block/nbdkit 1.32.4 1.36.1 1.42.0 1.44.1 1.44.3: NBD server with stable plugin ABI and permissive license
 sys-block/ndctl 71.1-r2 76.1 77-r2: Helper tools and libraries for managing non-volatile memory on Linux
@@ -17498,7 +17498,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.4.1_p20251113 13.4.1_p20251120 13.4.1_p20251127 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.3.1_p20251114 14.3.1_p20251121 14.3.1_p20251128 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.3.9999 16.0.0_p20251109-r1 16.0.0_p20251116 16.0.0_p20251116-r1 16.0.0_p20251123 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.4.1_p20251113 13.4.1_p20251120 13.4.1_p20251127 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.3.1_p20251114 14.3.1_p20251121 14.3.1_p20251128 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.3.9999 16.0.0_p20251109-r1 16.0.0_p20251116 16.0.0_p20251116-r1 16.0.0_p20251123 16.0.0_p20251130 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-apple 4.2.1_p5666-r3: Apple branch of the GNU Compiler Collection, Developer Tools 4.0
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
@@ -17516,6 +17516,7 @@ sys-devel/reflex 20241231: This is a variant of the flex fast lexical scanner
 sys-devel/rust-std 1.74.1 1.75.0 1.77.1 1.79.0 1.80.1 1.81.0 1.82.0 1.83.0 1.84.1 1.85.0 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0: Rust standard library, standalone (for crossdev)
 sys-devel/smatch 1.72-r2 1.73-r1 9999: Static analysis tool for C
 sys-devel/sparse 0.6.4-r3 9999: C semantic parser
+sys-devel/wild 0.7.0: A very fast linker for Linux
 sys-fabric/mstflint 4.23.0_p1 4.29.0_p1 4.30.0_p1: Mstflint - an open source version of MFT (Mellanox Firmware Tools)
 sys-fabric/opensm 3.3.23-r2 3.3.24-r1: OpenSM - InfiniBand Subnet Manager and Administration for OpenIB
 sys-fabric/perftest 4.4.0.37-r1 4.5.0.17: OpenIB uverbs micro-benchmarks
