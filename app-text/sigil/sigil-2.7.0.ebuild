@@ -3,11 +3,11 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 
 inherit xdg cmake python-single-r1
 
-DOC_VERSION="2024.08.15"
+DOC_VERSION="20250912"
 DOC_FILE="Sigil_User_Guide_${DOC_VERSION}.epub"
 
 DESCRIPTION="Multi-platform WYSIWYG ebook editor for ePub format"
@@ -18,7 +18,7 @@ S=${WORKDIR}/${P^}
 
 LICENSE="GPL-3+ Apache-2.0"
 SLOT="0"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 IUSE="doc +plugins +system-mathjax"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
