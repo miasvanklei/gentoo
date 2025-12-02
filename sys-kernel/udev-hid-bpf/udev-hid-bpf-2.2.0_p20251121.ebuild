@@ -157,6 +157,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 BDEPEND="
+	>=dev-util/bpftool-7.0.0
 	llvm-core/clang[llvm_targets_BPF]
 	test? (
 		$(python_gen_any_dep '
@@ -181,7 +182,12 @@ python_check_deps() {
 }
 
 pkg_pretend() {
-	local CONFIG_CHECK="~BPF ~DEBUG_INFO_BTF ~HID_BPF ~HIDRAW"
+	local CONFIG_CHECK="~BPF ~DEBUG_INFO_BTF ~DEBUG_INFO_BTF_MODULES"
+	# hidraw: https://docs.kernel.org/hid/hid-bpf.html#tracing
+	CONFIG_CHECK+=" ~HID_BPF ~HIDRAW"
+	CONFIG_CHECK+=" ~BPF_EVENTS ~TRACING"
+	CONFIG_CHECK+=" ~BPF_SYSCALL"
+
 	check_extra_config
 }
 
