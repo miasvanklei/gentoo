@@ -1236,7 +1236,7 @@ app-backup/backupninja 1.2.2: lightweight, extensible meta-backup system
 app-backup/backuppc 3.3.1-r6 4.4.0-r1 4.4.0-r2 4.4.0-r3: High-performance backups to a server's disk
 app-backup/bacula 15.0.3-r1: Featureful client/server network backup suite
 app-backup/bareos 21.1.11 22.1.7 23.1.3-r1 23.1.4 24.0.5 24.0.7 9999: Featureful client/server network backup suite
-app-backup/borgbackup 1.4.1-r1 1.4.2-r1: Deduplicating backup program with compression and authenticated encryption
+app-backup/borgbackup 1.4.1-r1 1.4.2-r1 1.4.3: Deduplicating backup program with compression and authenticated encryption
 app-backup/borgmatic 2.0.7 2.0.11 2.0.12: Automatically create, prune and verify backups with borgbackup
 app-backup/btrbk 0.32.6-r1 0.32.6-r2 9999: Tool for creating snapshots and remote backups of btrfs subvolumes
 app-backup/burp 3.1.4 3.1.4-r1: Network backup and restore client and server for Unix and Windows
@@ -2930,7 +2930,7 @@ app-misc/tmux 3.4-r1 3.5a 9999: Terminal multiplexer
 app-misc/tmux-mem-cpu-load 3.8.1 9999: CPU, RAM memory, and load monitor for use with tmux
 app-misc/tmux-xpanes 4.2.0: tmux-based terminal divider
 app-misc/tmux2html 0.1.11-r1: Render full tmux windows or individual panes as HTML
-app-misc/tmuxp 1.46.0 1.54.0 1.55.0 1.56.0: tmux session manager. built on libtmux
+app-misc/tmuxp 1.46.0 1.54.0 1.55.0 1.56.0 1.59.0: tmux session manager. built on libtmux
 app-misc/todo 2.12.0-r2 2.13.0: A CLI-based TODO list manager
 app-misc/toilet 0.3-r1: The Other Implementations letters. Figlet replacement
 app-misc/tpipe 1.6-r2: Command to duplicate standard input to more than one program
@@ -11036,7 +11036,7 @@ dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0: Callback/Activity Library for Perfor
 dev-util/ropper 1.13.10 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rpmdevtools 9.6: Collection of rpm packaging related utilities
 dev-util/rt-tests 2.8 2.9: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.13.1 0.13.3 0.14.2 0.14.3 0.14.4 0.14.5 0.14.6: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.13.1 0.14.4 0.14.5 0.14.6 0.14.7: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -13430,8 +13430,8 @@ media-libs/librtprocess 0.12.0-r1: Algorithms for RAW processing from RawTherape
 media-libs/libsamplerate 0.2.2 9999: Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for audio
 media-libs/libsbsms 2.3.0: A library for high quality time and pitch scale modification
 media-libs/libsdl 1.2.68: Simple Direct Media Layer 1.2 compatibility wrapper around SDL2
-media-libs/libsdl2 2.30.7-r1 2.30.11 2.32.0 2.32.2 2.32.4 2.32.6 2.32.8 2.32.58: Simple Direct Media Layer
-media-libs/libsdl3 3.2.22 3.2.24 3.2.26: Simple Direct Media Layer
+media-libs/libsdl2 2.30.7-r1 2.30.11 2.32.0 2.32.2 2.32.4 2.32.6 2.32.8 2.32.58 2.32.60: Simple Direct Media Layer
+media-libs/libsdl3 3.2.26 3.2.28: Simple Direct Media Layer
 media-libs/libsfml 2.6.2 3.0.1: Simple and Fast Multimedia Library (SFML)
 media-libs/libshout 2.4.6-r1: library for connecting and sending data to icecast servers
 media-libs/libshumate 1.3.2 1.4.0: Shumate is a GTK toolkit providing widgets for embedded maps
@@ -15533,7 +15533,7 @@ net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable fi
 net-p2p/retroshare 0.6.7-r4: Friend to Friend secure communication and sharing application
 net-p2p/rtorrent 0.15.7 0.16.4 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.13.0a_p0 0.14.0a_p0: TUI and CLI for the BitTorrent client Transmission
-net-p2p/syncthing 1.27.12 1.29.5 2.0.8-r1 2.0.10 2.0.11: Open Source Continuous File Synchronization
+net-p2p/syncthing 1.27.12 1.29.5 2.0.8-r1 2.0.10 2.0.11 2.0.12: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
 net-p2p/transmission 4.0.5-r2 4.0.6-r6 4.1.0_beta2-r1 4.1.0_beta3 9999: A fast, easy, and free BitTorrent client
 net-p2p/transmission-remote-gtk 1.5.1-r1 1.6.0: GTK+ client for management of the Transmission BitTorrent client, over HTTP RPC
@@ -17695,7 +17695,7 @@ sys-kernel/installkernel 50 60 62 63 65 9999: Gentoo fork of installkernel scrip
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
 sys-kernel/kergen 0.1.5-r1: Kernel config generator
 sys-kernel/kpatch 0.9.7 0.9.8 0.9.10 9999: Dynamic kernel patching for Linux
-sys-kernel/linux-docs 6.16.4-r1: Developer documentation generated from the Linux kernel
+sys-kernel/linux-docs 6.18: Developer documentation generated from the Linux kernel
 sys-kernel/linux-firmware 20250211 20250311 20250410 20250613-r1 20250613_p20250624 20250627 20250708 20250808 20250917 20251011 20251021 20251111 20251125 99999999: Linux firmware files
 sys-kernel/linux-headers 3.18-r1 4.4-r1 4.9-r1 4.14-r2 4.19-r1 5.4-r2 5.10-r2 5.15-r3 6.1 6.6-r1 6.8-r1 6.9 6.10 6.11 6.12 6.13 6.14 6.15 6.16 6.16-r2 6.17-r1: Linux system headers
 sys-kernel/linux-next 9999: Linux kernel and patches aimed at the next kernel merge window
