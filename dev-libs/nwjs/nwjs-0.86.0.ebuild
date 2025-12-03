@@ -3,7 +3,6 @@
 
 EAPI=8
 
-CHROMIUM_VERSION="141"
 CHROMIUM_LANGS="
 	af
 	am
@@ -67,13 +66,15 @@ inherit chromium-2
 MY_P="${PN}-v${PV}"
 DESCRIPTION="Framework that lets you call all Node.js modules directly from the DOM"
 HOMEPAGE="https://nwjs.io"
-SRC_URI="amd64? ( https://dl.nwjs.io/v${PV}/${MY_P}-linux-x64.tar.gz )"
-S="${WORKDIR}/${MY_P}-linux-x64"
+SRC_URI="
+	amd64? ( https://dl.nwjs.io/v${PV}/${MY_P}-linux-x64.tar.gz )
+	x86? ( https://dl.nwjs.io/v${PV}/${MY_P}-linux-ia32.tar.gz )
+"
+S="${WORKDIR}/${MY_P}"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="-* ~amd64"
-IUSE="ffmpeg-chromium"
+KEYWORDS="-* ~amd64 ~x86"
 
 RDEPEND="
 	app-accessibility/at-spi2-core:2
@@ -82,7 +83,7 @@ RDEPEND="
 	dev-libs/nspr
 	dev-libs/nss
 	media-libs/alsa-lib
-	media-libs/mesa
+	media-libs/mesa[opengl]
 	net-print/cups
 	sys-apps/dbus
 	sys-apps/util-linux
@@ -101,19 +102,28 @@ RDEPEND="
 	virtual/libudev
 	|| ( gui-libs/gtk:4 x11-libs/gtk+:3 )
 	!<games-rpg/crosscode-1.4.2.2-r1
-	!ffmpeg-chromium? ( >=media-video/ffmpeg-7.1:0/59.61.61[chromium] )
-	ffmpeg-chromium? ( media-video/ffmpeg-chromium:${CHROMIUM_VERSION} )
 "
 
 DIR="/opt/${PN}"
 QA_PREBUILT="${DIR#/}/*"
+
+src_unpack() {
+	default
+	if use amd64; then
+		mv "${WORKDIR}/${MY_P}-linux-x64" "${WORKDIR}/${MY_P}" || die
+	elif use x86; then
+		mv "${WORKDIR}/${MY_P}-linux-ia32" "${WORKDIR}/${MY_P}" || die
+	else
+		die "Unsupported architecture"
+	fi
+}
 
 src_prepare() {
 	default
 
 	# Unbundle some libraries. We used to unbundle libEGL, libGLESv2, and
 	# libvulkan, but that now causes CrossCode to crash.
-	rm -r lib/libffmpeg.so swiftshader/ || die
+	rm -r swiftshader/ || die
 
 	cd locales || die
 	rm {ar-XB,en-XA}*.pak* || die # No flags for pseudo locales.
@@ -132,9 +142,6 @@ src_install() {
 
 	exeinto "${DIR}"/lib
 	doexe lib/*.so*
-
-	dosym ../../../usr/$(get_libdir)/chromium/libffmpeg.so$(usex ffmpeg-chromium .${CHROMIUM_VERSION} "") \
-		"${DIR}"/lib/libffmpeg.so
 
 	dosym ../.."${DIR}"/nw /usr/bin/${PN}
 }
