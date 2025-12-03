@@ -2856,7 +2856,7 @@ app-misc/nut 20.1: Record what you eat and analyze your nutrient levels
 app-misc/ola 0.10.9-r2: Open Lighting Architecture, a framework for lighting control information
 app-misc/ondir 0.2.4: Automatically execute scripts as you traverse directories
 app-misc/oneko 1.2_p6_p14-r1: A cat, dog and others which chase the mouse or windows around the screen
-app-misc/openhab-bin 4.3.5 5.0.0 5.0.1 5.0.2 5.0.3: An open-source automation software for your home
+app-misc/openhab-bin 5.0.1 5.0.2-r1 5.0.3-r1: An open-source automation software for your home
 app-misc/openrgb 1.0_rc2 9999: Open source RGB lighting control
 app-misc/openrgb-plugin-effects 1.0_rc2: Plugin for OpenRGB with various Effects that can be synced across devices
 app-misc/openrgb-plugin-skin 1.0_rc2: Plugin for OpenRGB that allows you to customize the look and feel of OpenRGB
@@ -9167,7 +9167,7 @@ dev-python/pyscard 2.3.0 2.3.1: Smart card support in python
 dev-python/pyscreenshot 3.1: Python screenshot library
 dev-python/pysdl2 0.9.17: Python (ctypes) bindings for SDL2 libraries
 dev-python/pyserial 3.5-r2: Python Serial Port extension
-dev-python/pyside 6.9.3 6.10.1 6.9999: Python bindings for the Qt framework
+dev-python/pyside 6.9.3 6.10.1-r1 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.0 7.0.1 7.0.2: Python bindings for simdjson
 dev-python/pysmi 1.6.2: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
 dev-python/pysnmp 7.1.21 7.1.22: Python SNMP library
