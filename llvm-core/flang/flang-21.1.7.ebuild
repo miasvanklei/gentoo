@@ -25,6 +25,8 @@ RDEPEND="
 "
 PDEPEND="
 	>=llvm-runtimes/flang-rt-${PV}:${LLVM_MAJOR}
+	~llvm-runtimes/flang-runtime-${PV}
+	llvm-core/flang-toolchain-symlinks:${LLVM_MAJOR}
 "
 BDEPEND="
 	clang? ( llvm-core/clang )
@@ -79,6 +81,9 @@ src_configure() {
 		-DLLVM_INSTALL_TOOLCHAIN_ONLY=ON
 		# installed by llvm-runtimes/flang-rt
 		-DFLANG_INCLUDE_RUNTIME=OFF
+
+		# Use precompiled headers
+		-DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF
 
 		# TODO: always enable to obtain reproducible tools
 		-DFLANG_INCLUDE_TESTS=$(usex test)
