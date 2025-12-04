@@ -1766,7 +1766,7 @@ app-doc/gnu-c-intro-ref 0_pre20240831 0.1 9999: GNU C Language Intro and Referen
 app-doc/gnucash-docs 5.10 5.11 5.12: Documentation package for GnuCash
 app-doc/info-manual 30.2: Manual for the Info reader in GNU Emacs
 app-doc/jargon 4.4.7-r2: A compendium of hacker slang illuminating many aspects of hackish tradition
-app-doc/kicad-doc 8.0.9 9.0.0 9.0.2 9.0.4 9.0.5: Electronic Schematic and PCB design tools manuals
+app-doc/kicad-doc 8.0.9 9.0.0 9.0.5 9.0.6: Electronic Schematic and PCB design tools manuals
 app-doc/lapack-docs 3.1.1: Documentation reference and man pages for lapack implementations
 app-doc/linkers-and-loaders 1-r1: The Linkers and Loaders book
 app-doc/linux-device-drivers 2-r1 3-r1: Howto write linux device drivers (updated for Linux 2.6)
@@ -3097,7 +3097,7 @@ app-portage/ufed 0.96 9999: Gentoo Linux USE flags editor
 app-portage/unsymlink-lib 20: Convert your system to SYMLINK_LIB=no
 app-shells/atuin 18.6.1-r2 18.7.1-r2 18.8.0 18.10.0: Shell history manager supporting encrypted synchronisation
 app-shells/autojump 22.5.3-r4: change directory command that learns
-app-shells/bash 2.05b_p13 3.0_p22 3.1_p23 3.2_p57 4.0_p44 4.1_p17 4.2_p53 4.3_p48-r2 4.4_p23-r2 5.0_p18-r3 5.1_p16-r14 5.2_p37-r5 5.3_p3-r3 5.3_p8 5.4_alpha_pre20251027 5.4_alpha_pre20251119 5.4_alpha_pre20251124 9999: The standard GNU Bourne again shell
+app-shells/bash 2.05b_p13 3.0_p22 3.1_p23 3.2_p57 4.0_p44 4.1_p17 4.2_p53 4.3_p48-r2 4.4_p23-r2 5.0_p18-r3 5.1_p16-r14 5.2_p37-r5 5.3_p3-r3 5.3_p8 5.4_alpha_pre20251027 5.4_alpha_pre20251119 5.4_alpha_pre20251124 5.4_alpha_pre20251202 9999: The standard GNU Bourne again shell
 app-shells/bash-completion 2.14.0-r1 2.15.0 2.16.0 2.16.0-r1 2.16.0-r2 2.16.0-r3 2.17.0 9999: Programmable Completion for bash
 app-shells/bashdb 5.0.1.1.2-r1 5.1_pre20240617: bash source code debugging
 app-shells/bashish 2.2.4: Text console theme engine
@@ -7755,7 +7755,7 @@ dev-perl/Text-Unidecode 1.300.0-r1: Plain ASCII transliterations of Unicode text
 dev-perl/Text-VimColor 0.290.0-r2: Syntax highlighting using vim
 dev-perl/Text-WikiFormat 0.810.0-r1: Translate Wiki formatted text into other formats
 dev-perl/Text-WordDiff 0.90.0: Track changes between documents
-dev-perl/Text-WrapI18N 0.60.0-r2: Internationalized substitute of Text::Wrap
+dev-perl/Text-WrapI18N 0.60.0-r2 0.60.0-r3: Internationalized substitute of Text::Wrap
 dev-perl/Text-Wrapper 1.50.0-r1: Word wrap text by breaking long lines
 dev-perl/Text-vFile-asData 0.80.0-r1: Perl module to parse vFile formatted files into data structures
 dev-perl/TheSchwartz 1.170.0 1.180.0: Reliable job queue
@@ -9851,7 +9851,7 @@ dev-qt/qtxmlpatterns 5.15.18: XPath, XQuery, XSLT, and XML Schema validation lib
 dev-ruby/GeoRuby 2.5.2-r2: Ruby data holder for OGC Simple Features
 dev-ruby/abbrev 0.1.2: Calculates a set of unique abbreviations for a given set of strings
 dev-ruby/abstract 1.0.0-r5: Library which enable you to define abstract method in Ruby
-dev-ruby/acme-client 2.0.24 2.0.25 2.0.26 2.0.27: A Ruby client for the letsencrypt's ACME protocol
+dev-ruby/acme-client 2.0.24 2.0.25 2.0.26 2.0.27 2.0.28: A Ruby client for the letsencrypt's ACME protocol
 dev-ruby/action_text-trix 2.1.15: A rich text editor for everyday writing
 dev-ruby/actioncable 7.0.8.7 7.1.5.1 7.1.5.2 7.1.6 7.2.2.2 7.2.3 8.0.2.1 8.0.3 8.0.4 8.1.0 8.1.1: Integrated WebSockets for Rails
 dev-ruby/actionmailbox 7.0.8.7 7.1.5.1 7.1.5.2 7.1.6 7.2.2.2 7.2.3 8.0.2.1 8.0.3 8.0.4 8.1.0 8.1.1: Framework for designing email-service layers
@@ -9868,10 +9868,10 @@ dev-ruby/activerecord 7.0.8.7 7.1.5.1 7.1.5.2 7.1.6 7.2.2.2 7.2.3 8.0.2.1 8.0.3 
 dev-ruby/activestorage 7.0.8.7 7.1.5.1 7.1.5.2 7.1.6 7.2.2.2 7.2.3 8.0.2.1 8.0.3 8.0.4 8.1.0 8.1.1: Attach cloud and local files in Rails applications
 dev-ruby/activesupport 7.0.8.7-r1 7.1.5.1 7.1.5.2 7.1.6 7.2.2.2 7.2.3 8.0.2.1 8.0.3 8.0.4 8.1.0 8.1.1: Utility Classes and Extension to the Standard Library
 dev-ruby/acts_as_list 1.2.4 1.2.6: Capabilities for sorting and reordering a number of objects in a list
-dev-ruby/addressable 2.8.7: A replacement for the URI implementation that is part of Ruby's standard library
+dev-ruby/addressable 2.8.7 2.8.8: A replacement for the URI implementation that is part of Ruby's standard library
 dev-ruby/ae 1.8.2-r1: Assertive Expressive is an assertions library designed for reuse
 dev-ruby/afm 0.2.2-r2 1.0.0: A very simple library to read Adobe Font Metrics files
-dev-ruby/airbrussh 1.5.3: A replacement log formatter for SSHKit
+dev-ruby/airbrussh 1.5.3 1.6.0: A replacement log formatter for SSHKit
 dev-ruby/amatch 0.4.1 0.4.2 0.5.0: Approximate Matching Extension for Ruby
 dev-ruby/ammeter 1.1.7: Write specs for your Rails 3+ generators
 dev-ruby/amq-client 1.0.4-r1: A fully-featured, low-level AMQP 0.9.1 client
@@ -9918,7 +9918,7 @@ dev-ruby/bson 5.0.0 5.1.1 5.2.0: A Ruby BSON implementation for MongoDB. (Includ
 dev-ruby/buftok 0.3.0-r1: Statefully split input data by a specifiable token
 dev-ruby/builder 3.2.4-r1 3.3.0: A builder to facilitate programmatic generation of XML markup
 dev-ruby/bundler 2.4.22 2.5.23 2.6.7 2.6.8 2.6.9 2.7.0 2.7.1 2.7.2: An easy way to vendor gem dependencies
-dev-ruby/bundler-audit 0.9.2: Provides patch-level verification for Bundled apps
+dev-ruby/bundler-audit 0.9.2 0.9.3: Provides patch-level verification for Bundled apps
 dev-ruby/bunny 2.24.0: Another synchronous Ruby AMQP client
 dev-ruby/capistrano 2.15.11 3.19.2: A distributed application deployment system
 dev-ruby/capybara 3.40.0 3.40.0-r1: Capybara aims to simplify the process of integration testing Rack applications
@@ -9949,7 +9949,7 @@ dev-ruby/combustion 1.5.0: Elegant Rails Engine Testing
 dev-ruby/commander 5.0.0: The complete solution for Ruby command-line executables
 dev-ruby/commonmarker 0.23.10 0.23.11 2.1.1 2.3.0 2.3.1 2.3.2: A fast, safe, extensible parser for CommonMark, wrapping the comrak Rust crate
 dev-ruby/concurrent-ruby 1.3.5: Modern concurrency tools including agents, futures, promises, thread pools, more
-dev-ruby/connection_pool 2.4.1 2.5.0 2.5.2 2.5.3 2.5.4: Generic connection pooling for Ruby
+dev-ruby/connection_pool 2.4.1 2.5.0 2.5.4 2.5.5: Generic connection pooling for Ruby
 dev-ruby/console 1.30.2: Beautiful logging for Ruby
 dev-ruby/contracts 0.17.2: provides contracts for Ruby
 dev-ruby/coolio 1.9.0: A high performance event framework for Ruby which uses the libev C library
@@ -10113,7 +10113,7 @@ dev-ruby/jmespath 1.6.2: Implements JMESPath for Ruby
 dev-ruby/jquery-rails 4.6.0 4.6.1: jQuery! For Rails! So great
 dev-ruby/jquery-ui-rails 7.0.0 8.0.0 8.0.0-r1: The jQuery UI assets for the Rails 3.2+ asset pipeline
 dev-ruby/jsobfu 0.4.2-r1: A Javascript code obfuscator
-dev-ruby/json 2.10.2 2.12.2 2.13.2 2.14.1 2.15.2 2.16.0: A JSON implementation as a Ruby extension
+dev-ruby/json 2.10.2 2.12.2 2.13.2 2.14.1 2.15.2 2.16.0 2.17.1: A JSON implementation as a Ruby extension
 dev-ruby/json_schema 0.21.0: A JSON Schema V4 and Hyperschema V4 parser and validator
 dev-ruby/jwt 2.10.1 3.0.0 3.1.0 3.1.1 3.1.2: A Ruby implementation of JSON Web Token draft 06
 dev-ruby/kissfft 0.0.2-r1: ruby interface to kissfft
@@ -10184,7 +10184,7 @@ dev-ruby/mocha 0.14.0-r1 2.4.5 2.6.1 2.7.1 2.8.2: Mocking and stubbing using a s
 dev-ruby/moneta 1.6.0-r1: A unified interface to key/value stores
 dev-ruby/mqtt 0.6.0: Pure Ruby gem that implements the MQTT protocol
 dev-ruby/msgpack 1.7.3 1.7.5 1.8.0: Binary-based efficient data interchange format for ruby binding
-dev-ruby/multi_json 1.15.0-r1 1.17.0: A gem to provide swappable JSON backends
+dev-ruby/multi_json 1.15.0-r1 1.17.0 1.18.0: A gem to provide swappable JSON backends
 dev-ruby/multi_test 1.1.0: A uniform interface for Ruby testing libraries
 dev-ruby/multi_xml 0.7.1 0.7.2: A generic swappable back-end for XML parsing
 dev-ruby/multipart-parser 0.1.1: A multipart parser written in Ruby
@@ -13346,7 +13346,7 @@ media-libs/libffado 2.4.9 2.4.9-r1: Driver for IEEE1394 (Firewire) audio interfa
 media-libs/libfishsound 1.0.1: Simple programming interface to decode and encode audio with vorbis or speex
 media-libs/libfpx 1.3.1_p10-r1: Library for manipulating FlashPIX images
 media-libs/libfreeaptx 0.1.1-r1 9999: Reverse-engineered aptX and aptX HD library (fork of libopenaptx)
-media-libs/libfreehand 0.1.2-r1 9999-r1: Library for import of FreeHand drawings
+media-libs/libfreehand 0.1.2-r2 9999-r1: Library for import of FreeHand drawings
 media-libs/libggi 2.2.2-r2: Provides an opaque interface to the display's acceleration function
 media-libs/libggigcp 1.0.2-r1 1.0.2-r2: Libggi extension for advanced color and palette handling
 media-libs/libggimisc 2.2.2-r1 2.2.2-r2: Adds support for some special graphical target features
@@ -15183,7 +15183,7 @@ net-misc/bopm 3.1.3-r7: Blitzed Open Proxy Monitor
 net-misc/bridge-utils 1.7.1-r1: Tools for configuring the Linux kernel 802.1d Ethernet Bridge
 net-misc/bsdwhois 1.43.2.1-r1: FreeBSD Whois Client
 net-misc/cadaver 0.23.3-r1 0.24 0.26: Command-line WebDAV client
-net-misc/casync 2_p20190407: Content-Addressable Data Synchronization Tool
+net-misc/casync 2_p20250922: Content-Addressable Data Synchronization Tool
 net-misc/cbqinit 0.7.3-r3: Sets up class-based queue traffic control (QoS) with iproute2
 net-misc/cgminer 4.10.0-r1: Bitcoin CPU/GPU/FPGA/ASIC miner in C
 net-misc/chrome-remote-desktop 118.0.5993.9: access remote computers via Chrome!
@@ -15991,12 +15991,12 @@ sci-electronics/gtkwave 3.3.106 3.3.111 3.3.121 3.3.125: Wave viewer for LXT, LX
 sci-electronics/gwave 20190116-r100: Analog waveform viewer for SPICE-like simulations
 sci-electronics/irsim 9.7.93 9.7.93-r1: IRSIM is a "switch-level" simulator
 sci-electronics/iverilog 10.3 11.0 12.0 9999: A Verilog simulation and synthesis tool
-sci-electronics/kicad 8.0.9-r1 9.0.0-r3 9.0.2-r1 9.0.4 9.0.5 9999: Electronic Schematic and PCB design tools
-sci-electronics/kicad-footprints 8.0.9 9.0.0 9.0.2 9.0.4 9.0.5 9999: Electronic Schematic and PCB design tools footprint libraries
-sci-electronics/kicad-meta 8.0.9 9.0.0 9.0.2 9.0.4 9.0.5: Electronic Schematic and PCB design tools (meta package)
-sci-electronics/kicad-packages3d 8.0.9 9.0.0 9.0.2 9.0.4 9.0.5 9999: Electronic Schematic and PCB design tools 3D package libraries
-sci-electronics/kicad-symbols 8.0.9 9.0.0 9.0.2 9.0.4 9.0.5 9999: Electronic Schematic and PCB design tools symbol libraries
-sci-electronics/kicad-templates 8.0.9 9.0.0 9.0.2 9.0.4 9.0.5 9999: Electronic Schematic and PCB design tools project templates
+sci-electronics/kicad 8.0.9-r1 9.0.0-r3 9.0.5 9.0.6 9999: Electronic Schematic and PCB design tools
+sci-electronics/kicad-footprints 8.0.9 9.0.0 9.0.5 9.0.6 9999: Electronic Schematic and PCB design tools footprint libraries
+sci-electronics/kicad-meta 8.0.9 9.0.0 9.0.5 9.0.6: Electronic Schematic and PCB design tools (meta package)
+sci-electronics/kicad-packages3d 8.0.9 9.0.0 9.0.5 9.0.6 9999: Electronic Schematic and PCB design tools 3D package libraries
+sci-electronics/kicad-symbols 8.0.9 9.0.0 9.0.5 9.0.6 9999: Electronic Schematic and PCB design tools symbol libraries
+sci-electronics/kicad-templates 8.0.9 9.0.0 9.0.5 9.0.6 9999: Electronic Schematic and PCB design tools project templates
 sci-electronics/klayout 0.30.4 9999: Viewer and editor for GDS and OASIS integrated circuit layouts
 sci-electronics/ktechlab 0.51.0_p20251122: IDE for microcontrollers and electronics
 sci-electronics/labone 21.08.20515-r2 23.02.42414: Platform independent instrument control for Zurich Instruments devices
@@ -17049,7 +17049,7 @@ sys-apps/gentoo-functions 0.19 1.7.4 9999: Base functions required by all Gentoo
 sys-apps/gentoo-systemd-integration 9 9-r1 9999: systemd integration files for Gentoo
 sys-apps/gentoo-wsl-config 0.1.14: WSL2 configuration for Gentoo Linux
 sys-apps/gnome-disk-utility 45.1-r1 46.1-r1: Disk Utility for GNOME using udisks
-sys-apps/goawk 1.29.1 1.30.0: POSIX-compliant AWK interpreter written in Go, with CSV support
+sys-apps/goawk 1.29.1 1.30.0 1.30.1: POSIX-compliant AWK interpreter written in Go, with CSV support
 sys-apps/gptfdisk 1.0.10-r1: GPT partition table manipulator for Linux
 sys-apps/gradm 3.1.201903191516: Administrative interface for the grsecurity Role Based Access Control system
 sys-apps/grep 3.11-r1 3.12: GNU regular expression matcher
@@ -18124,7 +18124,7 @@ www-apps/nikola 8.3.1-r1 8.3.3: A static website and blog generator
 www-apps/novnc 1.4.0 1.6.0 9999: noVNC is a VNC client implemented using HTML5 technologies
 www-apps/phpBB 3.3.15: An open-source PHP-based bulletin board package
 www-apps/phpsysinfo 3.4.4: A customizable PHP script that displays information about your system nicely
-www-apps/piwigo 15.6.0 15.7.0 16.0.0: a photo gallery software for the web
+www-apps/piwigo 15.6.0 15.7.0 16.0.0 16.1.0: a photo gallery software for the web
 www-apps/postfixadmin 3.3.15 3.3.16: Web Based Management tool for Postfix style virtual domains and users
 www-apps/prowlarr-bin 2.3.1.5238: An indexer manager/proxy to integrate with your various PVR apps
 www-apps/radarr-bin 6.1.0.10293: A fork of Sonarr to work with movies a la Couchpotato
