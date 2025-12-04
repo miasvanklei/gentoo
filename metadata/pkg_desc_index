@@ -1438,7 +1438,7 @@ app-crypt/dehydrated 0.7.1-r1 0.7.1-r2 0.7.2: A client for signing certificates 
 app-crypt/dieharder 3.31.1-r4: An advanced suite for testing the randomness of RNGs
 app-crypt/easy-rsa 3.2.1 3.2.2 3.2.3 3.2.4: Small RSA key management package, based on OpenSSL
 app-crypt/efitools 1.9.2-r1: Tools for manipulating UEFI secure boot platforms
-app-crypt/eid-mw 5.1.23 9999: Electronic Identity Card middleware supplied by the Belgian Federal Government
+app-crypt/eid-mw 5.1.26 9999: Electronic Identity Card middleware supplied by the Belgian Federal Government
 app-crypt/ekeyd 1.1.5-r101: Entropy Key userspace daemon
 app-crypt/elettra 1.0: Plausible deniable file cryptography
 app-crypt/envchain 1.0.1: Save environment variables in a secret vault
@@ -11036,7 +11036,7 @@ dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0: Callback/Activity Library for Perfor
 dev-util/ropper 1.13.10 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rpmdevtools 9.6: Collection of rpm packaging related utilities
 dev-util/rt-tests 2.8 2.9: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.13.1 0.14.4 0.14.5 0.14.6 0.14.7: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.13.1 0.14.4 0.14.5 0.14.6 0.14.7 0.14.8: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -11160,6 +11160,7 @@ dev-vcs/guilt 0.36-r1: A series of bash scripts which add a quilt-like interface
 dev-vcs/hg-evolve 11.1.9: enables the changeset evolution feature of Mercurial
 dev-vcs/hg-git 1.2.0-r1: push to and pull from a Git repository using Mercurial
 dev-vcs/hub 2.14.2-r1: Command-line wrapper for git that makes you better at GitHub
+dev-vcs/jj 0.36.0: Jujutsu - an experimental version control system
 dev-vcs/kdesvn 2.1.0_p20250525: Frontend to the subversion vcs
 dev-vcs/lab 0.25.1: Lab wraps Git or Hub, making it simple to interact with repositories on GitLab
 dev-vcs/mercurial 6.7.4-r2 6.7.4-r3 6.8.2 6.9.4 7.0.3 7.1.2 9999: Scalable distributed SCM
@@ -16071,7 +16072,7 @@ sci-libs/arpack 3.9.1 9999: Arnoldi package library to solve large scale eigenva
 sci-libs/arprec 2.2.19-r1: Arbitrary precision float arithmetics and functions
 sci-libs/atlas 3.10.2-r1 3.10.3 3.11.41: Automatically Tuned Linear Algebra Software
 sci-libs/avogadrolibs 1.101.0 1.102.1: Advanced molecule editor and visualizer 2 - libraries
-sci-libs/blas-lapack-aux-wrapper 0-r1 1: BLAS/LAPACK wrappers for FlexiBLAS
+sci-libs/blas-lapack-aux-wrapper 0-r1 1 2: BLAS/LAPACK wrappers for FlexiBLAS
 sci-libs/blis 1.0 1.0-r1 2.0: BLAS-like Library Instantiation Software Framework
 sci-libs/bliss 0.77 0.77-r1: Compute Automorphism Groups and Canonical Labelings of Graphs
 sci-libs/branca 0.8.2: spinoff from folium, host the non-map-specific features
