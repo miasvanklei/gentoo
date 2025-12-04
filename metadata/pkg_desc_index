@@ -1965,7 +1965,7 @@ app-emacs/ddskk 17.1-r1: One Japanese input methods on Emacs
 app-emacs/deferred 0.5.1: Deferred and Concurrent - simple asynchronous functions for Emacs Lisp
 app-emacs/deft 08_p20210707: Quickly browse, filter and edit directories of plain text notes
 app-emacs/demap 1.4.0: Detachable minimap for Emacs
-app-emacs/denote 4.1.1 4.1.2: Simple notes for Emacs with an efficient file-naming scheme
+app-emacs/denote 4.1.2 4.1.3: Simple notes for Emacs with an efficient file-naming scheme
 app-emacs/desktop+ 0.2-r2: desktop+ extends standard desktop module
 app-emacs/desktop-entry-mode 0.27-r1: GNU Emacs mode for handling freedesktop.org desktop entry files
 app-emacs/develock 0.47: An Emacs minor mode for highlighting broken formatting rules
@@ -2182,12 +2182,12 @@ app-emacs/ocaml-mode 4.05.0: Emacs mode for OCaml
 app-emacs/orderless 1.4 1.5: Completion style that matches multiple regexps in any order
 app-emacs/org-appear 0.3.1: Toggle Org mode element visibility upon entering and leaving
 app-emacs/org-contrib 0.6 0.7: Contributed packages to Org
-app-emacs/org-mode 9.7.34 9.7.35 9.7.36 9.7.37 9.7.38 9999: An Emacs mode for notes and project planning
+app-emacs/org-mode 9.7.34 9.7.35 9.7.36 9.7.37 9.7.38 9.7.39 9999: An Emacs mode for notes and project planning
 app-emacs/org-modern 1.10 9999: Modern style for your GNU Emacs Org buffers
 app-emacs/org-roam 2.2.2-r3 2.3.0 2.3.1 9999: Rudimentary Roam replica with Org-mode
 app-emacs/org-static-blog 1.6.0 1.7.0 9999: Static site generator using Emacs's org-mode
 app-emacs/org-superstar-mode 1.5.0: Prettify headings and plain lists in Org mode (use UTF8 bullets)
-app-emacs/osm 1.8 1.9 9999: OpenStreetMap tile-based viewer for GNU Emacs
+app-emacs/osm 1.9 1.10 9999: OpenStreetMap tile-based viewer for GNU Emacs
 app-emacs/outline-magic 0.9: Outline mode extensions for Emacs
 app-emacs/package-build 4.0.0: Tools for assembling a package archive
 app-emacs/package-lint 0.26: Linting library for Emacs Lisp package metadata
@@ -2212,7 +2212,7 @@ app-emacs/polymode 0.2.2_p20220322: Framework for Multiple Major Modes in Emacs
 app-emacs/popup 0.5.9: Visual popup interface library for Emacs
 app-emacs/popwin 1.0.0 1.0.2: Popup window manager for Emacs
 app-emacs/pos-tip 0.4.7: Show tooltip at point
-app-emacs/posframe 1.4.4: Pop up a frame at point
+app-emacs/posframe 1.4.4 1.5.0: Pop up a frame at point
 app-emacs/pov-mode 3.3-r1: Major mode for Povray scene files
 app-emacs/powerline 2.5_p20221110: GNU Emacs version of the Vim powerline
 app-emacs/powershell 0.3_pre20220402 0.3_pre20220805: GNU Emacs mode for editing and running PowerShell code
@@ -2286,7 +2286,7 @@ app-emacs/system-packages 1.1.1: Manage your installed packages with Emacs
 app-emacs/systemd-mode 1.6: Major mode for editing systemd units in GNU Emacs
 app-emacs/tablist 1.1: Extended tabulated-list mode fro Emacs
 app-emacs/teco 7-r2: TECO interpreter for GNU Emacs
-app-emacs/tempel 1.7 1.8 9999: Templates with in-buffer field editing for GNU Emacs
+app-emacs/tempel 1.7 1.8 1.9 9999: Templates with in-buffer field editing for GNU Emacs
 app-emacs/template 3.3b: Use templates, decorate comments, auto-update buffers
 app-emacs/tempo-snippets 0.1.5: Visual insertion of tempo templates
 app-emacs/thinks 1.12: Insert text in a think bubble
@@ -5155,7 +5155,7 @@ dev-java/zxing-javase 3.5.1: Core barcode encoding/decoding library
 dev-lang/R 4.4.1 4.4.3 4.5.0: Language and environment for statistical computing and graphics
 dev-lang/abs 2.6.0: The ABS programing language
 dev-lang/ada-bootstrap 0_p2021-r1 11 12 13 14: Binary bootstrap compiler for GNAT (Ada compiler)
-dev-lang/algol68g 3.9.5 3.10.2 3.10.5 3.10.7: Algol 68 Genie compiler-interpreter
+dev-lang/algol68g 3.10.2 3.10.5 3.10.7 3.10.8: Algol 68 Genie compiler-interpreter
 dev-lang/ammonite-repl-bin 2.5.11 3.0.0 3.0.2: Scala language-based scripting and REPL
 dev-lang/arc 3.2-r1: New dialect of Lisp, works well for web applications
 dev-lang/ats2 0.4.2-r1: Functional programming language with dependent types
@@ -8343,7 +8343,7 @@ dev-python/distro 1.9.0: Reliable machine-readable Linux distribution informatio
 dev-python/dj-database-url 3.0.1: Use Database URLs in your Django Application
 dev-python/dj-email-url 1.0.6: Use an URL to configure email backend settings in your Django Application
 dev-python/dj-search-url 0.1-r1: Use Search URLs in your Django Haystack Application
-dev-python/django 4.2.26 4.2.27 5.1.14 5.1.15 5.2.8 5.2.9 6.0_beta1 6.0_rc1: High-level Python web framework
+dev-python/django 4.2.26 4.2.27 5.1.14 5.1.15 5.2.8 5.2.9 6.0_beta1 6.0_rc1 6.0: High-level Python web framework
 dev-python/django-auth-ldap 5.2.0: Django LDAP authentication backend
 dev-python/django-cache-url 3.4.5: Use Cache URLs in your Django application
 dev-python/django-cacheops 7.2: ORM cache with automatic granular event-driven invalidation for Django
@@ -8867,7 +8867,7 @@ dev-python/nox 2025.10.16 2025.11.12: Flexible test automation for Python
 dev-python/ntplib 0.4.0-r1: Python NTP library
 dev-python/nuitka 2.8.6 2.8.7 2.8.9: Python to native compiler
 dev-python/numexpr 2.11.0 2.12.1 2.13.1 2.14.1: Fast numerical array expression evaluator for Python and NumPy
-dev-python/numpy 1.26.4 2.2.6 2.3.1 2.3.2 2.3.2-r1 2.3.3 2.3.4 2.3.5: Fast array and numerical python library
+dev-python/numpy 1.26.4 2.2.6 2.3.1 2.3.2 2.3.2-r1 2.3.3 2.3.4 2.3.5 2.4.0_rc1: Fast array and numerical python library
 dev-python/numpydoc 1.9.0-r1 1.10.0: Sphinx extension to support docstrings in Numpy format
 dev-python/nvidia-ml-py 12.575.51: Python bindings to the NVIDIA Management Library
 dev-python/oauthlib 3.3.1: Spec-compliant and thorough implementation of the OAuth request-signing logic
@@ -10227,8 +10227,8 @@ dev-ruby/observer 0.1.2: Implementation of the Observer object-oriented design p
 dev-ruby/octokit 10.0.0: Ruby toolkit for the Github API
 dev-ruby/omniauth 2.1.3 2.1.4: A generalized Rack framework for multiple-provider authentication
 dev-ruby/open4 1.3.4-r1: Open3::popen3 with exit status
-dev-ruby/openssl-ccm 1.2.3: OpenSSL CBC-MAC (CCM) ruby gem
-dev-ruby/openssl-cmac 2.0.2: Gem for RFC 4493, 4494, 4615 - The AES-CMAC Algorithm
+dev-ruby/openssl-ccm 1.2.3 1.3.0: OpenSSL CBC-MAC (CCM) ruby gem
+dev-ruby/openssl-cmac 2.0.2 2.1.0: Gem for RFC 4493, 4494, 4615 - The AES-CMAC Algorithm
 dev-ruby/optimist 3.2.0 3.2.1: A commandline option parser for Ruby that just gets out of your way
 dev-ruby/optionable 0.2.0-r1: Robust options validation for Ruby methods
 dev-ruby/org-ruby 0.9.12_p20200519: Ruby routines for parsing org-mode files
@@ -10793,7 +10793,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.0.55 2.0.56: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.0.58: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.2 2025.2.4: A complete toolset for C and C++ development
@@ -14353,7 +14353,7 @@ media-video/peek 1.5.1-r2: Simple animated Gif screen recorder
 media-video/pgmfindclip 1.13: automatically find a clipping border for a sequence of pgm images
 media-video/pipewire 1.4.7-r3 1.4.8-r3 1.4.9-r1 1.4.9999 9999: Multimedia processing graphs
 media-video/pitivi 2023.03-r2: A non-linear video editor using the GStreamer multimedia framework
-media-video/popcorntime-bin 0.5.1-r3: BitTorrent client that includes an integrated media player
+media-video/popcorntime-bin 0.5.1-r4: BitTorrent client that includes an integrated media player
 media-video/projectx 0.91.0.10-r5: Converts, splits and demuxes DVB and other MPEG recordings
 media-video/qmplay2 25.06.27 25.09.03 25.09.11 9999: A Qt-based video player, which can play most formats and codecs
 media-video/rage 0.4.0-r1: Video and audio player written using EFL
@@ -14717,7 +14717,7 @@ net-dns/https_dns_proxy 0_pre20200925 9999: Lightweight DNS-over-HTTPS proxy
 net-dns/idnkit 2.3-r2: Toolkit for Internationalized Domain Names (IDN)
 net-dns/inadyn 2.13.0: Dynamic DNS client with multiple SSL/TLS library support
 net-dns/knot 3.4.8 3.4.9 3.5.1 3.5.2: High-performance authoritative-only DNS server
-net-dns/knot-resolver 5.7.6 6.0.16: A scaleable caching DNS resolver
+net-dns/knot-resolver 5.7.6 6.0.17: Scaleable caching DNS resolver
 net-dns/ldns-tools 0.1 0.2: ldns tools: host, nslookup
 net-dns/libidn 1.42 1.43: Internationalized Domain Names (IDN) implementation
 net-dns/libidn2 2.3.7 2.3.8: An implementation of the IDNA2008 specifications (RFCs 5890, 5891, 5892, 5893)
@@ -14807,7 +14807,7 @@ net-im/centerim 5.0.1-r2: Ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/Liv
 net-im/coturn 4.6.2 9999: coturn TURN server project
 net-im/cpop 0.0.4-r2: GTK+ network popup message client. Compatible with the jpop protocol
 net-im/dino 0.5.0 0.5.1 9999: Modern Jabber/XMPP Client using GTK+/Vala
-net-im/discord 0.0.116 0.0.116-r1: All-in-one voice and text chat for gamers
+net-im/discord 0.0.116-r1 0.0.117 0.0.117-r1: All-in-one voice and text chat for gamers
 net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
 net-im/element-desktop-bin 1.12.4: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
@@ -15946,7 +15946,7 @@ sci-chemistry/elem 1.0.3-r3: periodic table of the elements
 sci-chemistry/gelemental 2.0.0-r1 2.0.2: Periodic table viewer with detailed information on the chemical elements
 sci-chemistry/gnome-chemistry-utils 0.14.17_p6-r4: Programs and library containing GTK widgets and C++ classes related to chemistry
 sci-chemistry/gperiodic 3.0.3 3.0.3-r1: Periodic table application for Linux
-sci-chemistry/gromacs 2023.5 2024.6 2024.9999 2025.3 2025.9999 9999: The ultimate molecular dynamics simulation package
+sci-chemistry/gromacs 2023.5 2024.6 2025.3 2025.4 2025.9999 2026_beta 2026.9999 9999: The ultimate molecular dynamics simulation package
 sci-chemistry/ksdssp 040728-r1: An open source implementation of sci-chemistry/dssp
 sci-chemistry/mdtraj 1.10.3: Read, write and analyze MD trajectories with only a few lines of Python code
 sci-chemistry/moldy 2.16e-r2: Molecular dynamics simulations platform
@@ -16606,7 +16606,7 @@ sec-keys/openpgp-keys-karlberry 20250528: OpenPGP keys used by Karl Berry
 sec-keys/openpgp-keys-kentoverstreet 20241012: OpenPGP keys used by Kent Overstreet
 sec-keys/openpgp-keys-kernel 20250702: OpenPGP keys used to sign Linux kernel releases
 sec-keys/openpgp-keys-knot 20170710-r1: OpenPGP keys used by the Knot DNS developers
-sec-keys/openpgp-keys-knot-resolver 20240304: OpenPGP keys used by the Knot Resolver developers
+sec-keys/openpgp-keys-knot-resolver 20240304 20251203: OpenPGP keys used by the Knot Resolver developers
 sec-keys/openpgp-keys-kovidgoyal 20220106: OpenPGP keys used by Kovid Goyal
 sec-keys/openpgp-keys-lassecollin 20230213 20240529 20250313-r1: OpenPGP keys used by Lasse Collin
 sec-keys/openpgp-keys-libarchive 20221209 20251118: OpenPGP keys used by the libarchive project
@@ -18301,7 +18301,7 @@ x11-apps/xinit 1.4.4: X Window System initializer
 x11-apps/xinput 1.6.4: Utility to set XInput device parameters
 x11-apps/xinput_calibrator 0.8.0: A generic touchscreen calibration program for X.Org
 x11-apps/xisxwayland 2 9999: Tool to determine whether the X server in use is Xwayland
-x11-apps/xkbcomp 1.4.7 1.5.0: XKB keyboard description compiler
+x11-apps/xkbcomp 1.4.7 1.5.0-r1: XKB keyboard description compiler
 x11-apps/xkbevd 1.1.6: XKB event daemon
 x11-apps/xkbprint 1.0.7: Print an XKB keyboard description
 x11-apps/xkbutils 1.0.6: X.Org xkbutils application
