@@ -1871,7 +1871,7 @@ app-editors/xemacs 21.5.36-r3 21.5.36-r4 21.5.9999: highly customizable open sou
 app-editors/xmlcopyeditor 1.3.1.0-r4: XML Copy Editor is a fast, free, validating XML editor
 app-editors/xvile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clone
 app-editors/yudit 3.1.0: Free (Y)unicode text editor for all unices
-app-editors/zed 0.205.9 0.208.4 0.210.4 0.211.6 0.213.8: The fast, collaborative code editor
+app-editors/zed 0.205.9 0.208.4 0.211.6 0.213.8 0.215.3: The fast, collaborative code editor
 app-editors/zile 2.6.2-r2 2.6.4: Zile is a small Emacs clone
 app-emacs/a 1.0.0: Associative data structure functions for Emacs Lisp
 app-emacs/a68-mode 1.2_p20250524: Algol68 major mode for GNU Emacs
@@ -16072,7 +16072,7 @@ sci-libs/arpack 3.9.1 9999: Arnoldi package library to solve large scale eigenva
 sci-libs/arprec 2.2.19-r1: Arbitrary precision float arithmetics and functions
 sci-libs/atlas 3.10.2-r1 3.10.3 3.11.41: Automatically Tuned Linear Algebra Software
 sci-libs/avogadrolibs 1.101.0 1.102.1: Advanced molecule editor and visualizer 2 - libraries
-sci-libs/blas-lapack-aux-wrapper 0-r1 1 2: BLAS/LAPACK wrappers for FlexiBLAS
+sci-libs/blas-lapack-aux-wrapper 0-r1 1 2 3: BLAS/LAPACK wrappers for FlexiBLAS
 sci-libs/blis 1.0 1.0-r1 2.0: BLAS-like Library Instantiation Software Framework
 sci-libs/bliss 0.77 0.77-r1: Compute Automorphism Groups and Canonical Labelings of Graphs
 sci-libs/branca 0.8.2: spinoff from folium, host the non-map-specific features
@@ -16455,7 +16455,7 @@ sci-ml/tensorpipe 2022.05.13-r1: provides a tensor-aware channel
 sci-ml/tokenizers 0.22.1: Implementation of today's most used tokenizers
 sci-ml/torchdata 0.11.0: A repo for data loading and utilities on PyTorch domain libraries.
 sci-ml/torchvision 0.23.0-r1 0.24.0-r1: Datasets, transforms and models to specific to computer vision
-sci-ml/transformers 4.56.2 4.57.0: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
+sci-ml/transformers 4.56.2 4.57.3: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
 sci-physics/bullet 3.21 3.22b: Continuous Collision Detection and Physics Library
 sci-physics/clhep 2.4.7.1-r1 2.4.7.2: High Energy Physics C++ library
 sci-physics/espresso 4.2.2 9999: Extensible Simulation Package for Research on Soft matter
