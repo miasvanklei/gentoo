@@ -10727,7 +10727,7 @@ dev-util/act 0.2.59 0.2.64: run github workflows locally
 dev-util/amdsmi 7.0.2 7.1.0: AMD System Management Interface for managing and monitoring GPUs
 dev-util/amtterm 1.6-r1: A nice tool to manage amt-enabled machines
 dev-util/android-sdk-cmdline-tools 0_p11076708: Open Handset Alliance's Android SDK
-dev-util/android-studio 2025.2.1.8: Android development environment based on IntelliJ IDEA
+dev-util/android-studio 2025.2.2.7: Android development environment based on IntelliJ IDEA
 dev-util/android-tools 33.0.3-r1 34.0.5 35.0.1 35.0.2: Android platform tools (adb, fastboot, and mkbootimg)
 dev-util/android-udev-rules 20250314 20250525: Android udev rules list aimed to be the most comprehensive on the net
 dev-util/anjuta 3.34.0-r3: Base library of defunct IDE for GNOME to run applications
@@ -15536,7 +15536,7 @@ net-p2p/rtorrent 0.15.7 0.16.5 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.13.0a_p0 0.14.0a_p0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/syncthing 1.27.12 1.29.5 2.0.8-r1 2.0.10 2.0.11 2.0.12: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
-net-p2p/transmission 4.0.5-r2 4.0.6-r6 4.1.0_beta2-r1 4.1.0_beta3 9999: A fast, easy, and free BitTorrent client
+net-p2p/transmission 4.0.5-r2 4.0.6-r6 4.1.0_beta2-r1 4.1.0_beta3 4.1.0_beta4 9999: A fast, easy, and free BitTorrent client
 net-p2p/transmission-remote-gtk 1.5.1-r1 1.6.0: GTK+ client for management of the Transmission BitTorrent client, over HTTP RPC
 net-p2p/tremc 0.9.3_p20230506: Ncurses interface for the Transmission BitTorrent client
 net-p2p/tvrss 1.8_beta: TV RSS is a tool for automating torrent downloads
