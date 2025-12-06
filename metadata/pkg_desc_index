@@ -5352,7 +5352,7 @@ dev-libs/cl 1.2.4-r2: OpenCL bindings for Erlang
 dev-libs/clog 2023.11.04: C-style (a-la printf) logging library
 dev-libs/collada-dom 2.5.0-r2: COLLADA Document Object Model (DOM) C++ Library
 dev-libs/concurrencykit 0.7.2-r1: A library with concurrency related algorithms and data structures in C
-dev-libs/confuse 3.3-r2 3.3-r3: a configuration file parser library
+dev-libs/confuse 3.3-r3: a configuration file parser library
 dev-libs/cowsql 1.15.8 1.15.9: Embeddable, replicated and fault tolerant SQL engine (fork of dqlite)
 dev-libs/cpuinfo 2025.03.21: CPU INFOrmation library
 dev-libs/crc32c 1.1.2-r2: CRC32C implementation with support for CPU-specific acceleration instructions
@@ -5394,7 +5394,7 @@ dev-libs/ffcall 2.4 2.4-r1 2.4-r2 2.5: Build foreign function call interfaces in
 dev-libs/flatbuffers 25.2.10 25.9.23: Memory efficient serialization library
 dev-libs/folks 0.15.9-r1 0.15.9-r2: Library for aggregating people from multiple sources
 dev-libs/foma 0.10.0_p20220612-r2: Multi-purpose finite-state toolkit
-dev-libs/freexl 1.0.5 1.0.6 2.0.0-r1: Simple XLS data extraction library
+dev-libs/freexl 2.0.0-r1: Simple XLS data extraction library
 dev-libs/fribidi 1.0.13 1.0.16: A free implementation of the unicode bidirectional algorithm
 dev-libs/fstrm 0.6.1-r1: Frame Streams implementation in C
 dev-libs/gdl 3.40.0-r2: GNOME docking library
@@ -5448,7 +5448,7 @@ dev-libs/jemalloc 5.3.0-r1: Jemalloc is a general-purpose scalable concurrent al
 dev-libs/jerasure 2.0.0_p20170410: Library in C facilitating Erasure Coding for storage applications
 dev-libs/jose 14: C-language implementation of Javascript Object Signing and Encryption
 dev-libs/json-c 0.18 9999: A JSON implementation in C
-dev-libs/json-glib 1.8.0 1.10.0 1.10.6 1.10.8: Library providing GLib serialization and deserialization for the JSON format
+dev-libs/json-glib 1.10.0 1.10.6 1.10.8: Library providing GLib serialization and deserialization for the JSON format
 dev-libs/json-parser 1.1.0_p20211208: Very low footprint JSON parser written in portable ANSI C
 dev-libs/jsoncpp 1.9.6-r2: C++ JSON reader and writer
 dev-libs/jsonrpc-glib 3.44.0 3.44.1 3.44.2: JSON-RPC library for GLib
@@ -5827,10 +5827,10 @@ dev-libs/tomsfastmath 0.13.1-r1: Fast public domain large integer arithmetic lib
 dev-libs/totem-pl-parser 3.26.6-r2: Playlist parsing library
 dev-libs/tre 0.8.0_p20210321-r4 0.9.0-r1: Lightweight, robust, and efficient POSIX compliant regexp matching library
 dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 9999: Tree-sitter is a parser generator tool and an incremental parsing library
-dev-libs/tree-sitter-bash 0.21.0-r1 0.23.3 0.25.0: Bash grammar for Tree-sitter
+dev-libs/tree-sitter-bash 0.21.0-r1 0.23.3 0.25.0 0.25.1: Bash grammar for Tree-sitter
 dev-libs/tree-sitter-c 0.23.3 0.23.4 0.23.5 0.24.1: C grammar for Tree-sitter
 dev-libs/tree-sitter-c-sharp 0.23.0 0.23.1: C# grammar for Tree-sitter
-dev-libs/tree-sitter-cmake 0.7.1: CMake grammar for tree-sitter
+dev-libs/tree-sitter-cmake 0.7.1 0.7.2: CMake grammar for tree-sitter
 dev-libs/tree-sitter-cpp 0.23.0 0.23.1 0.23.4: C++ grammar for Tree-sitter
 dev-libs/tree-sitter-css 0.23.0 0.23.2 0.25.0: CSS grammar for Tree-sitter
 dev-libs/tree-sitter-embedded-template 0.20.0 0.23.2: Embedded template languages (like ERB, EJS) grammar for Tree-sitter
@@ -5851,7 +5851,7 @@ dev-libs/tree-sitter-ocaml 0.20.4 0.23.2 0.24.0: OCaml grammar for Tree-sitter
 dev-libs/tree-sitter-php 0.23.2 0.23.12 0.24.2: PHP grammar for Tree-sitter
 dev-libs/tree-sitter-python 0.23.6 0.25.0: Python grammar for Tree-sitter
 dev-libs/tree-sitter-ql 0.19.0 0.23.1: Semmle QL grammar for Tree-sitter
-dev-libs/tree-sitter-query 0.4.0 0.5.0 0.6.2 0.7.0: Tree-sitter query grammar for Tree-sitter
+dev-libs/tree-sitter-query 0.4.0 0.5.0 0.6.2 0.7.0 0.8.0: Tree-sitter query grammar for Tree-sitter
 dev-libs/tree-sitter-regex 0.21.0 1.0.0: Regular Expressions grammar for Tree-sitter
 dev-libs/tree-sitter-ruby 0.23.0 0.23.1: Ruby grammar for Tree-sitter
 dev-libs/tree-sitter-rust 0.23.0 0.23.2 0.24.0: Rust grammar for Tree-sitter
@@ -9215,6 +9215,7 @@ dev-python/pytest-httpbin 2.1.0: Easily test your HTTP library against a local c
 dev-python/pytest-httpserver 1.1.3: HTTP server for pytest to test HTTP clients
 dev-python/pytest-httpx 0.35.0-r1 0.36.0: Send responses to HTTPX using pytest
 dev-python/pytest-import-check 0.0.4: pytest plugin to check whether Python modules can be imported
+dev-python/pytest-jobserver 1.0.0: Limit parallel tests with POSIX jobserver
 dev-python/pytest-jupyter 0.10.1 0.11.0: Pytest plugin for testing Jupyter libraries and extensions
 dev-python/pytest-lazy-fixtures 1.3.2 1.3.3 1.3.4 1.4.0: Allows you to use fixtures in @pytest.mark.parametrize
 dev-python/pytest-localftpserver 1.3.2 1.4.0 1.5.0: A PyTest plugin which provides an FTP fixture for your tests
@@ -14718,7 +14719,7 @@ net-dns/hash-slinger 3.4: Various tools to generate DNS records like SSHFP, TLSA
 net-dns/https_dns_proxy 0_pre20200925 9999: Lightweight DNS-over-HTTPS proxy
 net-dns/idnkit 2.3-r2: Toolkit for Internationalized Domain Names (IDN)
 net-dns/inadyn 2.13.0: Dynamic DNS client with multiple SSL/TLS library support
-net-dns/knot 3.4.8 3.4.9 3.5.1 3.5.2: High-performance authoritative-only DNS server
+net-dns/knot 3.4.8 3.4.9-r1 3.5.1 3.5.2-r1: High-performance authoritative-only DNS server
 net-dns/knot-resolver 5.7.6 6.0.17: Scaleable caching DNS resolver
 net-dns/ldns-tools 0.1 0.2: ldns tools: host, nslookup
 net-dns/libidn 1.42 1.43: Internationalized Domain Names (IDN) implementation
@@ -16236,7 +16237,7 @@ sci-libs/oc 2.0-r1: Network Data Access Protocol client C library
 sci-libs/octomap 1.10.0 1.10.0-r1: Efficient Probabilistic 3D Mapping Framework Based on Octrees
 sci-libs/ogdi 4.1.0-r1: Open Geographical Datastore Interface, a GIS support library
 sci-libs/ondselsolver 1.0.1_p20241024 1.0.1_p20241127-r1: Assembly Constraints and Multibody Dynamics code
-sci-libs/openblas 0.3.29 0.3.30-r3: Optimized BLAS library based on GotoBLAS2
+sci-libs/openblas 0.3.29 0.3.30-r4: Optimized BLAS library based on GotoBLAS2
 sci-libs/opencascade 7.8.1 9999: Development platform for CAD/CAE, 3D surface/solid modeling and data exchange
 sci-libs/openlibm 0.8.3: High quality system independent, open source libm
 sci-libs/orocos-bfl 0.8.0: Bayesian Filtering Library
