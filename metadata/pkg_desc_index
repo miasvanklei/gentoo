@@ -2182,7 +2182,7 @@ app-emacs/ocaml-mode 4.05.0: Emacs mode for OCaml
 app-emacs/orderless 1.4 1.5: Completion style that matches multiple regexps in any order
 app-emacs/org-appear 0.3.1: Toggle Org mode element visibility upon entering and leaving
 app-emacs/org-contrib 0.6 0.7: Contributed packages to Org
-app-emacs/org-mode 9.7.34 9.7.35 9.7.36 9.7.37 9.7.38 9.7.39 9999: An Emacs mode for notes and project planning
+app-emacs/org-mode 9.7.34 9.7.37 9.7.38 9.7.39 9999: An Emacs mode for notes and project planning
 app-emacs/org-modern 1.10 9999: Modern style for your GNU Emacs Org buffers
 app-emacs/org-roam 2.2.2-r3 2.3.0 2.3.1 9999: Rudimentary Roam replica with Org-mode
 app-emacs/org-static-blog 1.6.0 1.7.0 9999: Static site generator using Emacs's org-mode
@@ -2750,7 +2750,7 @@ app-misc/enum 1.1-r1: Replacement for GNU seq and BSD jot
 app-misc/esekeyd 1.2.7-r2: Multimedia key daemon that uses the Linux event interface
 app-misc/evtest 1.35 1.36: Test program for capturing input device events
 app-misc/faq 0.0.7: Format agnostic jQ
-app-misc/fastfetch 0.1.9999 0.2.9999 2.54.0 2.55.1: Fast neofetch-like system information tool
+app-misc/fastfetch 0.1.9999 0.2.9999 2.54.0 2.55.1 2.56.0: Fast neofetch-like system information tool
 app-misc/fdupes 2.3.2 2.4.0 9999: Identify/delete duplicate files residing within specified directories
 app-misc/fdutils 5.6_p2: Utilities for configuring and debugging the Linux floppy driver
 app-misc/fhem 6.3: A GPL'd perl server for house automation
@@ -4067,6 +4067,7 @@ dev-debug/gdb 16.3 9999: GNU debugger
 dev-debug/gef 2023.08 2024.06 2025.01 9999: GDB Enhanced Features for exploit devs & reversers
 dev-debug/gfxreconstruct 1.4.321.0 1.4.328.0 9999: Graphics API Capture and Replay Tools
 dev-debug/gprofng-gui 2.0 2.1 2.2 9999: Full-fledged graphical interface to operate gprofng
+dev-debug/hotspot 1.5.1_p20250907 9999: Linux perf GUI for performance analysis
 dev-debug/kdbg 3.1.0_p20250406 3.1.0_p20250406-r1 3.2.0: Graphical debugger interface
 dev-debug/leaktracer 2.4-r3: Trace and analyze memory leaks in C++ programs
 dev-debug/ltrace 0.7.91_pre20221216-r1: trace library calls made at runtime
@@ -9151,7 +9152,7 @@ dev-python/pypy-exe-bin 7.3.20: PyPy executable (pre-built version)
 dev-python/pyqt-builder 1.19.0 1.19.1: The PEP 517 compliant PyQt build system
 dev-python/pyqt5 5.15.11: Python bindings for the Qt framework
 dev-python/pyqt5-sip 12.17.1: sip extension module for PyQt5
-dev-python/pyqt6 6.9.1 6.10.0: Python bindings for the Qt framework
+dev-python/pyqt6 6.9.1 6.10.0 6.10.1: Python bindings for the Qt framework
 dev-python/pyqt6-sip 13.10.2: sip module support for PyQt6
 dev-python/pyqt6-webengine 6.9.0 6.10.0: Python bindings for QtWebEngine
 dev-python/pyqtgraph 0.13.7-r2 0.14.0: A pure-python graphics and GUI library built on PyQt and numpy
@@ -10305,9 +10306,9 @@ dev-ruby/rbtree 0.4.6: A sorted associative collection that is implemented with 
 dev-ruby/rcairo 1.18.4: Ruby bindings for cairo
 dev-ruby/rchardet 1.8.0-r1 1.9.0 1.10.0: Character encoding auto-detection in Ruby
 dev-ruby/rdiscount 2.2.7.3: Implementation of John Gruber's Markdown
-dev-ruby/rdoc 6.8.1 6.11.0 6.13.1 6.14.0 6.14.1 6.14.1-r1 6.14.2-r1 6.15.0 6.15.1: An extended version of the RDoc library from Ruby 1.8
+dev-ruby/rdoc 6.8.1 6.11.0 6.13.1 6.14.0 6.14.1 6.14.1-r1 6.14.2-r1 6.15.0 6.15.1 6.16.1: An extended version of the RDoc library from Ruby 1.8
 dev-ruby/rdtool 0.6.38-r3: A multipurpose documentation format for Ruby
-dev-ruby/recog 3.1.17 3.1.18 3.1.21 3.1.23: Pattern recognition for hosts, services, and content
+dev-ruby/recog 3.1.21 3.1.23 3.1.24: Pattern recognition for hosts, services, and content
 dev-ruby/red-colors 0.4.0: Color features for Ruby
 dev-ruby/redcarpet 3.6.0 3.6.1: A Ruby wrapper for Upskirt
 dev-ruby/redcloth 4.3.4: A module for using Textile in Ruby
@@ -10466,9 +10467,9 @@ dev-ruby/tdiff 0.4.0: Calculates the differences between two tree-like structure
 dev-ruby/temple 0.10.3 0.10.4: An abstraction and a framework for compiling templates to pure Ruby
 dev-ruby/term-ansicolor 1.11.2 1.11.3: Small Ruby library that colors strings using ANSI escape sequences
 dev-ruby/terminal-table 3.0.2 4.0.0: Simple, feature rich ascii table generation library
-dev-ruby/test-unit 3.6.7 3.6.8 3.6.9 3.7.0 3.7.1: An xUnit family unit testing framework for Ruby
+dev-ruby/test-unit 3.6.7 3.6.8 3.6.9 3.7.0 3.7.1 3.7.3: An xUnit family unit testing framework for Ruby
 dev-ruby/test-unit-rr 1.0.5-r2: RR adapter for Test::Unit
-dev-ruby/test-unit-ruby-core 1.0.6 1.0.7 1.0.8 1.0.9 1.0.10 1.0.13: Additional test assertions for Ruby standard libraries
+dev-ruby/test-unit-ruby-core 1.0.6 1.0.10 1.0.13 1.0.14: Additional test assertions for Ruby standard libraries
 dev-ruby/test_construct 2.0.2-r1: Creates temporary files and directories for testing
 dev-ruby/test_declarative 0.0.6-r1: Simply adds a declarative test method syntax to test/unit
 dev-ruby/text 1.3.1-r1: A collection of text algorithms
@@ -10741,7 +10742,7 @@ dev-util/azuredatastudio 1.52.0-r1: Data management and development tool from Mi
 dev-util/babeltrace 1.5.11 2.1.1-r1 2.1.2: Command-line tool and library to read and convert trace files
 dev-util/bats 1.12.0 1.13.0: Bats-core: Bash Automated Testing System
 dev-util/bbe 0.2.2-r1: Sed-like editor for binary files
-dev-util/bcc 0.31.0-r3 0.32.0-r1 0.34.0-r1 0.35.0-r1: Tools for BPF-based Linux IO analysis, networking, monitoring, and more
+dev-util/bcc 0.31.0-r3 0.32.0-r1 0.34.0-r1 0.35.0-r1 0.35.0-r2: Tools for BPF-based Linux IO analysis, networking, monitoring, and more
 dev-util/bcpp 20240917: Indents C/C++ source code
 dev-util/bdelta 0.3.1-r1: Binary Delta - Efficient difference algorithm and format
 dev-util/bear 3.1.5 3.1.6: Build EAR generates a compilation database for clang tooling
@@ -12696,7 +12697,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, sim
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.10.4 3.10.6 3.11_pre20251201: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.10.4 3.10.6 3.11_pre20251205: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.17.1.9 8.18.1 8.18.1-r1 8.18.1.10 8.18.1.10-r1: Widely-used Mail Transport Agent (MTA)
@@ -17498,7 +17499,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.4.1_p20251113 13.4.1_p20251120 13.4.1_p20251127 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.3.1_p20251114 14.3.1_p20251121 14.3.1_p20251128 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.3.9999 16.0.0_p20251109-r1 16.0.0_p20251116 16.0.0_p20251116-r1 16.0.0_p20251123 16.0.0_p20251130 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.4.1_p20251113 13.4.1_p20251120 13.4.1_p20251127 13.4.1_p20251204 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.3.1_p20251114 14.3.1_p20251121 14.3.1_p20251128 14.3.1_p20251205 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.3.9999 16.0.0_p20251109-r1 16.0.0_p20251116 16.0.0_p20251116-r1 16.0.0_p20251123 16.0.0_p20251130 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-apple 4.2.1_p5666-r3: Apple branch of the GNU Compiler Collection, Developer Tools 4.0
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
