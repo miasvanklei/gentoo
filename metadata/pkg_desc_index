@@ -1418,7 +1418,7 @@ app-crypt/bcwipe 1.9.13: Secure file removal utility
 app-crypt/bsign 0.4.5-r1: embed secure hashes (SHA1) and digital signatures (GNU Privacy Guard) into files
 app-crypt/ccid 1.5.5 1.6.1: CCID free software driver
 app-crypt/ccrypt 1.11-r4: Encryption and decryption
-app-crypt/certbot 4.0.0-r2 4.1.1 4.2.0 5.0.0 5.1.0 9999: Let's Encrypt client to automate deployment of X.509 certificates
+app-crypt/certbot 4.0.0-r2 4.1.1 4.2.0 5.0.0 5.1.0 5.2.1 9999: Let's Encrypt client to automate deployment of X.509 certificates
 app-crypt/certbot-apache 3.2.0-r100: Apache plugin for Certbot (Let's Encrypt client)
 app-crypt/certbot-dns-dnsimple 3.2.0-r100: DNSimple Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-nsone 3.2.0-r100: NS1 DNS Authenticator plugin for Certbot (Let's Encrypt Client)
@@ -1522,7 +1522,7 @@ app-crypt/scute 1.7.0-r2: A PKCS #11 module for OpenPGP smartcards
 app-crypt/seahorse 47.0.1-r1: Manage your passwords and encryption keys
 app-crypt/sequoia-chameleon-gnupg 0.13.1-r1 0.13.1-r3: Sequoia's reimplementation of the GnuPG interface
 app-crypt/sequoia-sop 0.37.2: Implementation of the Stateless OpenPGP Command Line Interface using Sequoia
-app-crypt/sequoia-sq 1.3.1 1.3.1-r1: CLI of the Sequoia OpenPGP implementation
+app-crypt/sequoia-sq 1.3.1-r1: CLI of the Sequoia OpenPGP implementation
 app-crypt/sequoia-sqv 1.3.0 1.3.0-r1: A simple OpenPGP signature verification program
 app-crypt/shash 0.2.6-r4: Generate or check digests or MACs of files
 app-crypt/signify 31: Cryptographically sign and verify files
@@ -5726,7 +5726,7 @@ dev-libs/nng 1.10.1 1.11: Light-weight brokerless messaging
 dev-libs/npth 1.7-r1 1.8: New GNU Portable Threads Library
 dev-libs/nsgenbind 0.9: Generate Javascript-to-DOM bindings from w3c webidl files
 dev-libs/nspr 4.36 4.37 4.38 4.38.2: Netscape Portable Runtime
-dev-libs/nss 3.112.1 3.112.2 3.116 3.117 3.118.1: Mozilla's Network Security Services library that implements PKI support
+dev-libs/nss 3.112.1 3.112.2 3.116 3.117 3.118.1 3.119: Mozilla's Network Security Services library that implements PKI support
 dev-libs/nss-pem 1.1.0 1.1.1: PEM file reader for Network Security Services (NSS)
 dev-libs/nsync 1.25.0 1.26.0: C library that exports various synchronization primitives, such as mutexes
 dev-libs/ntl 11.5.1-r4 11.6.0: High-performance and portable C++ number theory library
@@ -10994,7 +10994,7 @@ dev-util/patchelf 0.17.2-r1 0.18.0: Small utility to modify the dynamic linker a
 dev-util/patchutils 0.4.2 0.4.4-r1: Collection of tools that operate on patch files
 dev-util/patdiff 0.16.0 0.17.0: Colored patience diffs with word-level refinement
 dev-util/peg 0.1.19 0.1.20: Recursive-descent parser generators for C
-dev-util/perf 6.14 6.16 6.16-r1 6.17: Userland tools for Linux Performance Counters
+dev-util/perf 6.14 6.16 6.16-r1 6.17 6.18: Userland tools for Linux Performance Counters
 dev-util/pixi 0.59.0 0.60.0: A package management and workflow tool
 dev-util/pkgcheck 0.10.34 0.10.36-r1 0.10.37 9999: pkgcore-based QA utility for ebuild repos
 dev-util/pkgconf 2.3.0 2.4.3 2.5.1 9999: pkg-config compatible replacement with no dependencies other than C99
@@ -11084,7 +11084,7 @@ dev-util/trace-cmd 3.3.2 3.3.3: User-space front-end for Ftrace
 dev-util/tree-sitter-cli 0.24.3-r1 0.25.6 0.25.8 0.25.10: Command-line tool for creating and testing tree-sitter grammars
 dev-util/treecc 0.3.10-r2 0.3.10-r3: Compiler-compiler tool for aspect-oriented programming
 dev-util/txt2regex 0.9: A Regular Expression wizard that converts human sentences to regexs
-dev-util/uftrace 0.17 0.18: Function (graph) tracer for user-space
+dev-util/uftrace 0.17 0.18 0.18.1: Function (graph) tracer for user-space
 dev-util/uglifyjs 3.16.1 3.19.3: JavaScript parser, minifier, compressor and beautifier toolkit
 dev-util/umockdev 0.19.1 0.19.3 9999: Mock hardware devices for creating unit tests
 dev-util/uncrustify 0.76.0 0.81.0 9999: C/C++/C#/D/Java/Pawn code indenter and beautifier
@@ -15036,7 +15036,7 @@ net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 9999: HTTP/3 l
 net-libs/ngtcp2 1.11.0 1.11.0-r1 1.12.0 1.13.0 1.14.0 1.15.0 1.15.1 1.16.0 1.17.0 1.18.0 9999: Implementation of the IETF QUIC Protocol
 net-libs/nodejs 20.18.2 20.19.2 20.19.5 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
-net-libs/pacparser 1.4.3 1.4.5: Library to parse proxy auto-config files
+net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
 net-libs/paho-mqtt-c 1.3.14-r1 1.3.15: An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS.
 net-libs/phodav 3.0-r1: WebDav server implementation using libsoup
 net-libs/pjproject 2.13.1-r1 2.15.1 2.15.1-r1: Open source SIP, Media, and NAT Traversal Library
@@ -17689,8 +17689,8 @@ sys-kernel/dkms 3.2.2 3.3.0 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 060_pre20240104-r4 103-r4 106-r2 108-r4 109 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r1: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r2 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 5.10.246 5.15.196 6.1.158 6.6.116 6.6.117 6.6.118 6.12.58 6.12.59 6.12.60 6.17.9 6.17.10: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 5.10.246 5.15.196 6.1.158 6.6.116 6.6.117 6.6.118 6.12.58 6.12.59 6.12.60 6.17.9 6.17.10: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-kernel 5.10.246 5.10.247 5.15.196 5.15.197 6.1.158 6.1.159 6.6.116 6.6.117 6.6.118 6.6.119 6.12.58 6.12.59 6.12.60 6.12.61 6.17.9 6.17.10 6.17.11: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 5.10.246 5.10.247 5.15.196 5.15.197 6.1.158 6.1.159 6.6.116 6.6.117 6.6.118 6.6.119 6.12.58 6.12.59 6.12.60 6.12.61 6.17.9 6.17.10 6.17.11: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.18.0: Full sources including the Gentoo patchset for the 6.18 kernel tree
 sys-kernel/git-sources 6.18_rc1 6.18_rc2 6.18_rc3 6.18_rc4 6.18_rc5 6.18_rc6 6.18_rc7: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 50 60 62 63 65 9999: Gentoo fork of installkernel script from debianutils
@@ -17711,7 +17711,7 @@ sys-kernel/scx 1.0.15 1.0.16 1.0.18: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.0.18: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 5.10.246 5.10.9999 5.15.196 5.15.9999 6.1.158 6.1.9999 6.6.116 6.6.117 6.6.118 6.6.9999 6.12.58 6.12.59 6.12.60 6.12.9999 6.17.9 6.17.10: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 5.10.246 5.10.247 5.10.9999 5.15.196 5.15.197 5.15.9999 6.1.158 6.1.159 6.1.9999 6.6.116 6.6.117 6.6.118 6.6.119 6.6.9999 6.12.58 6.12.59 6.12.60 6.12.61 6.12.9999 6.17.9 6.17.10 6.17.11: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 5.4.302 5.10.247 5.15.197 6.1.159 6.6.119 6.12.61 6.16.12 6.17.11 6.18.0: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.17.8 6.17.9 6.18: The Zen Kernel Live Sources
@@ -17897,7 +17897,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 5.10.246 5.15.196 6.1.158 6.6.116 6.6.117 6.6.118 6.12.58 6.12.59 6.12.60 6.17.9 6.17.10: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 5.10.246 5.10.247 5.15.196 5.15.197 6.1.158 6.1.159 6.6.116 6.6.117 6.6.118 6.6.119 6.12.58 6.12.59 6.12.60 6.12.61 6.17.9 6.17.10 6.17.11: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0: Virtual for .NET SDK
 virtual/editor 0-r7: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
