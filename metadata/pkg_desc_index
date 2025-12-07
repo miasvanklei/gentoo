@@ -1867,7 +1867,7 @@ app-editors/vscode 1.105.1 1.106.3: Multiplatform Visual Studio Code from Micros
 app-editors/vscodium 1.105.17075 1.106.27818 1.106.37943: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
-app-editors/xemacs 21.5.36-r3 21.5.36-r4 21.5.9999: highly customizable open source text editor and application development system
+app-editors/xemacs 21.5.36-r3 21.5.36-r5 21.5.9999: highly customizable open source text editor and application development system
 app-editors/xmlcopyeditor 1.3.1.0-r4: XML Copy Editor is a fast, free, validating XML editor
 app-editors/xvile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clone
 app-editors/yudit 3.1.0: Free (Y)unicode text editor for all unices
@@ -3833,7 +3833,7 @@ dev-build/libtool 2.5.4 2.6.0 9999: A shared library tool for developers
 dev-build/mage 1.13.0 1.15.0: make/rake like tool using go
 dev-build/make 4.4.1-r100 4.4.1-r101 4.4.1-r102 9999: Standard tool to compile source trees
 dev-build/melange 0.18.3: Build APK packages from source code using declarative pipelines
-dev-build/meson 1.1.1 1.2.3 1.3.2 1.4.2 1.5.2 1.6.1 1.7.2 1.8.5 1.9.1 1.10.0_rc2 9999: Open source build system
+dev-build/meson 1.1.1 1.2.3 1.3.2 1.4.2 1.5.2 1.6.1 1.7.2 1.8.5 1.9.1 1.9.2 1.10.0_rc2 9999: Open source build system
 dev-build/meson-format-array 0: Format shell expressions into a meson array
 dev-build/muon 0.2.0-r2 0.3.0 0.4.0 0.5.0: A meson-compatible build system
 dev-build/netsurf-buildsystem 1.10: Build system used for netsurf and its libraries
@@ -12629,7 +12629,7 @@ mail-client/balsa 2.6.4-r2 2.6.4-r3 2.6.5: Email client for GNOME
 mail-client/bower 1.0: Curses terminal client for the Notmuch email system
 mail-client/claws-mail 3.21.0-r2 4.3.0-r3 4.3.1-r1 4.3.1-r2 9999: An email client (and news reader) based on GTK+
 mail-client/clawsker 1.4.0 1.4.1: Applet to edit Claws Mail's hidden preferences
-mail-client/evolution 3.56.2-r1 3.58.2: Integrated mail, addressbook and calendaring functionality
+mail-client/evolution 3.56.2-r1 3.58.2-r1: Integrated mail, addressbook and calendaring functionality
 mail-client/geary 44.1-r2 46.0-r1: A lightweight, easy-to-use, feature-rich email client
 mail-client/hap 3.7-r1: A terminal mail notification program (replacement for biff)
 mail-client/mailx 8.1.2.20220412: The $ mail program, which is used to send mail via shell scripts
@@ -17499,7 +17499,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251106 13.4.1_p20251113 13.4.1_p20251120 13.4.1_p20251127 13.4.1_p20251204 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251107 14.3.1_p20251114 14.3.1_p20251121 14.3.1_p20251128 14.3.1_p20251205 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.3.9999 16.0.0_p20251109-r1 16.0.0_p20251116 16.0.0_p20251116-r1 16.0.0_p20251123 16.0.0_p20251130 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251204 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251205 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.2.1_p20251206 15.3.9999 16.0.0_p20251123 16.0.0_p20251130 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-apple 4.2.1_p5666-r3: Apple branch of the GNU Compiler Collection, Developer Tools 4.0
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
