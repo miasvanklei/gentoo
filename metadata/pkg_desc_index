@@ -4075,7 +4075,7 @@ dev-debug/peda 1.2 9999: Python Exploit Development Assistance for GDB
 dev-debug/pwndbg 20250418-r1 20250530-r1 20251010 20251020 99999999: A GDB plug-in that makes debugging with GDB suck less
 dev-debug/rr 5.8.0 5.9.0-r1 9999: Record and Replay Framework
 dev-debug/scap-driver 0.20.0: Kernel module for dev-debug/sysdig
-dev-debug/strace 6.13 6.14 6.15 6.16 6.17 9999: Useful diagnostic, instructional, and debugging tool
+dev-debug/strace 6.16 6.17 9999: Useful diagnostic, instructional, and debugging tool
 dev-debug/sysdig 0.40.1-r1: A system exploration and troubleshooting tool
 dev-debug/systemtap 5.3-r1 5.4 9999: Linux trace/probe tool
 dev-debug/valgrind 3.24.0_p3 3.25.1 3.26.0 9999: An open-source memory debugger for GNU/Linux
@@ -13191,10 +13191,10 @@ media-libs/a52dec 0.7.4-r9: Library for decoding ATSC A/52 streams used in DVD
 media-libs/aalib 1.4_rc5-r10 1.4_rc5-r11: A ASCII-Graphics Library
 media-libs/aften 0.0.8-r3: A/52 (AC-3) audio encoder
 media-libs/allegro 4.4.3.1-r1 5.2.10.1: Cross-platform library aimed at video game and multimedia programming
-media-libs/alsa-lib 1.2.13-r3 1.2.14: Advanced Linux Sound Architecture Library
+media-libs/alsa-lib 1.2.13-r3 1.2.14 1.2.15: Advanced Linux Sound Architecture Library
 media-libs/alsa-oss 1.1.8: Advanced Linux Sound Architecture OSS compatibility layer
 media-libs/alsa-topology-conf 1.2.5.1: ALSA topology configuration files
-media-libs/alsa-ucm-conf 1.2.14: ALSA ucm configuration files
+media-libs/alsa-ucm-conf 1.2.14 1.2.15: ALSA ucm configuration files
 media-libs/alure 1.2-r4: The OpenAL Utility Toolkit
 media-libs/amdgpu-pro-vulkan 22.40.6.1580631-r1 23.40.0.1741713 24.30.2125445 25.10.2194696: AMD's closed source vulkan driver, from Radeon Software for Linux
 media-libs/amf-headers 1.4.33 1.4.34 1.4.35 1.4.36 1.4.36-r1: The Advanced Media Framework (AMF) SDK
@@ -13919,8 +13919,8 @@ media-sound/aeolus 0.10.4: A synthesised pipe organ emulator
 media-sound/alac_decoder 0.2.0-r2: Basic decoder for Apple Lossless Audio Codec files (ALAC)
 media-sound/alacenc 0.4.1: Encodes audio into the Apple Lossless Audio Codec (ALAC) format
 media-sound/alsa-scarlett-gui 0.5.1: A UI for Focusrite Scarlett and Clarett audio interfaces
-media-sound/alsa-tools 1.2.11-r1 1.2.14: Advanced Linux Sound Architecture tools
-media-sound/alsa-utils 1.2.13-r2 1.2.14: Advanced Linux Sound Architecture Utils (alsactl, alsamixer, etc.)
+media-sound/alsa-tools 1.2.11-r1 1.2.14 1.2.15: Advanced Linux Sound Architecture tools
+media-sound/alsa-utils 1.2.13-r2 1.2.14 1.2.15: Advanced Linux Sound Architecture Utils (alsactl, alsamixer, etc.)
 media-sound/alsamixer-app 0.1-r1: simple alsa mixer dockapp
 media-sound/alsamixergui 0.9.0.1.2-r5: FLTK based amixer Frontend
 media-sound/alsaplayer 0.99.82-r1: A heavily multi-threaded pluggable audio player
@@ -14810,7 +14810,7 @@ net-im/centerim 5.0.1-r2: Ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/Liv
 net-im/coturn 4.6.2 9999: coturn TURN server project
 net-im/cpop 0.0.4-r2: GTK+ network popup message client. Compatible with the jpop protocol
 net-im/dino 0.5.0 0.5.1 9999: Modern Jabber/XMPP Client using GTK+/Vala
-net-im/discord 0.0.116-r1 0.0.117 0.0.117-r1: All-in-one voice and text chat for gamers
+net-im/discord 0.0.116-r1 0.0.117-r1 0.0.118 0.0.118-r1: All-in-one voice and text chat for gamers
 net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
 net-im/element-desktop-bin 1.12.4: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
@@ -15335,7 +15335,7 @@ net-misc/nextcloud-client 3.14.4 3.16.5 3.16.6 3.17.2 4.0.1: Desktop Syncing Cli
 net-misc/nicstat 1.95: Network traffic statics utility for Solaris and Linux
 net-misc/ntp 4.2.8_p17-r1 4.2.8_p17-r2 4.2.8_p18-r1 4.2.8_p18-r2: Network Time Protocol suite/programs
 net-misc/ntpsec 1.2.4 9999: The NTP reference implementation, refactored
-net-misc/nx 3.5.99.27-r2: NX compression technology core libraries
+net-misc/nx 3.5.99.27-r2 3.5.99.27-r3: NX compression technology core libraries
 net-misc/nxplayer 7.6.2.4-r1: Client for NoMachine remote servers
 net-misc/ofono 2.14 2.18: Open Source mobile telephony (GSM/UMTS) daemon
 net-misc/oidc-agent 4.5.2 5.0.1 5.1.0 5.2.2 5.2.3: Agent and tools for managing OpenID Connect tokens on the command line
@@ -16430,7 +16430,7 @@ sci-ml/FP16 2024.05.27-r1 2024.06.20: conversion to/from half-precision floating
 sci-ml/NNPACK 2020.12.22-r4: acceleration package for neural network computations
 sci-ml/XNNPACK 2024.11.08-r1 2024.12.03: library of floating-point neural network inference operators
 sci-ml/accelerate 1.7.0-r1: Run your *raw* PyTorch training script on any kind of device
-sci-ml/caffe2 2.8.0-r1 2.9.0-r2 2.9.1: A deep learning framework
+sci-ml/caffe2 2.8.0-r2 2.9.0-r3 2.9.1-r1: A deep learning framework
 sci-ml/clearml 1.18.0: Auto-Magical CI/CD to streamline your AI workload
 sci-ml/cudnn-frontend 1.10.0 1.11.0 1.12.1: A c++ wrapper for the cudnn backend API
 sci-ml/datasets 3.5.0: Access and share datasets for Audio, Computer Vision, and NLP tasks
@@ -16448,7 +16448,7 @@ sci-ml/ideep 3.5.3_p2 3.5.3_p3: Intel Optimization for Chainer
 sci-ml/jiwer 3.0.3-r1: Evaluate an automatic speech recognition system
 sci-ml/kineto 0.4.0_p20250214-r2 0.4.0_p20250617-r2: part of the PyTorch Profiler
 sci-ml/oneDNN 3.5.3 3.6.2 3.7.1: oneAPI Deep Neural Network Library
-sci-ml/onnx 1.17.0-r1 1.18.0: Open Neural Network Exchange (ONNX)
+sci-ml/onnx 1.17.0-r1 1.18.0-r1: Open Neural Network Exchange (ONNX)
 sci-ml/pytorch 2.8.0 2.9.0 2.9.1: Tensors and Dynamic neural networks in Python
 sci-ml/safetensors 0.6.2 0.7.0: Simple, safe way to store and distribute tensors
 sci-ml/sentencepiece 0.2.0-r3: Text tokenizer for Neural Network-based text generation
@@ -17089,7 +17089,7 @@ sys-apps/ipmicfg 1.36.0.250225: An in-band utility for configuring Supermicro IP
 sys-apps/ipmitool 1.8.19 1.8.19-r1: Utility for controlling IPMI enabled devices
 sys-apps/ipmiutil 3.1.9 3.2.1: IPMI Management Utilities
 sys-apps/iproute2 6.15.0 6.16.0 6.17.0 9999: kernel routing and traffic control utilities
-sys-apps/irqbalance 1.9.4-r3: Distribute hardware interrupts across processors on a multiprocessor system
+sys-apps/irqbalance 1.9.4-r3 1.9.5: Distribute hardware interrupts across processors on a multiprocessor system
 sys-apps/isapnptools 1.27-r1: Tools for configuring ISA PnP devices
 sys-apps/iucode_tool 2.3.1-r1: tool to manipulate Intel X86 and X86-64 processor microcode update collections
 sys-apps/kbd 2.7.1 2.8.0 2.9.0 9999: Keyboard and console utilities
@@ -18154,7 +18154,7 @@ www-client/elinks 0.18.0 9999: Advanced and well-established text-mode web brows
 www-client/epiphany 47.7-r1 48.3 48.5: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.3.1 140.4.0 140.5.0 143.0 143.0.3 144.0-r1 144.0.2 145.0 145.0.1: Firefox Web Browser
+www-client/firefox 140.3.1 140.4.0 140.5.0 143.0 143.0.3 144.0-r1 144.0.2 145.0 145.0.1 146.0: Firefox Web Browser
 www-client/firefox-bin 140.5.0-r1 145.0-r1 145.0.1 145.0.2 146.0-r1: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.40: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.3: The web browser from Google
