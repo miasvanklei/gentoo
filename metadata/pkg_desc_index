@@ -1462,7 +1462,7 @@ app-crypt/heimdal 7.8.0-r3: Kerberos 5 implementation from KTH
 app-crypt/ima-evm-utils 1.4-r1 9999: Supporting tools for IMA and EVM
 app-crypt/jacksum 3.7.0: Java utility for working with checksums, CRCs, and message digests (hashes)
 app-crypt/jetring 0.31 0.32: GPG keyring maintenance using changesets
-app-crypt/jitterentropy 3.6.0: Hardware RNG based on CPU timing jitter
+app-crypt/jitterentropy 3.6.0 3.6.3: Hardware RNG based on CPU timing jitter
 app-crypt/jitterentropy-rngd 1.2.8: Jitter RNG daemon
 app-crypt/johntheripper 1.8.0-r2 1.9.0: fast password cracker
 app-crypt/johntheripper-jumbo 1.9.0_p20240102 1.9.0_p20250216-r1 1.9.0_p20250703 9999: Fast password cracker, community enhanced version
@@ -2029,7 +2029,7 @@ app-emacs/emacs-openrc 1.0.0 9999: OpenRC integration for GNU Emacs
 app-emacs/emacs-w3m 1.4.632_p20230801: emacs-w3m is an interface program of w3m on Emacs
 app-emacs/emacs-websearch 2.1.0 9999: Query search engines from Emacs
 app-emacs/emacs-wget 0.5.0-r1: Wget interface for Emacs
-app-emacs/emacsql 4.3.0 4.3.1: A high-level Emacs Lisp RDBMS front-end
+app-emacs/emacsql 4.3.1 4.3.3: A high-level Emacs Lisp RDBMS front-end
 app-emacs/embark 1.1 9999: Conveniently act on minibuffer completions inside GNU Emacs
 app-emacs/embark-consult 1.1 9999: Consult integration for Embark
 app-emacs/emhacks 20070920-r2: Useful Emacs Lisp libraries, including gdiff, jjar, jmaker, swbuff, and tabbar
@@ -3047,7 +3047,7 @@ app-portage/diffmask 0.3.3-r5: A utility to maintain package.unmask entries up-t
 app-portage/eix 0.36.9: Search and query ebuilds
 app-portage/elicense 1.0.2-r2: Tool to find installed packages in Gentoo with non-accepted license(s)
 app-portage/elogv 0.8.3 0.8.4: Curses based utility to parse the contents of elogs created by Portage
-app-portage/elogviewer 3.2-r1: Elog viewer for Gentoo
+app-portage/elogviewer 3.2-r1 3.3_pre20251208: Elog viewer for Gentoo
 app-portage/elsw 1.0.1 9999: Tool providing a nice way to view the Portage world file
 app-portage/elt-patches 20240912 20241121 20250306 20250718 99999999: Collection of patches for libtool.eclass
 app-portage/emerge-delta-webrsync 3.7.7 3.7.8 3.7.9: emerge-webrsync using patches to minimize bandwidth
@@ -5179,7 +5179,7 @@ dev-lang/dafny-bin 4.10.0-r1 4.11.0-r1: Verification-aware programming language
 dev-lang/deno-bin 2.5.6: Modern runtime for JavaScript and TypeScript
 dev-lang/duktape 2.7.0-r3: Embeddable Javascript engine
 dev-lang/dzaima-bqn 0.2.1 9999: A BQN language implementation written in Java, also know as dbqn
-dev-lang/eisl 5.56 5.57 5.58: Interpreter and compiler compatible with the ISLisp standard
+dev-lang/eisl 5.56 5.58 5.61: Interpreter and compiler compatible with the ISLisp standard
 dev-lang/elixir 1.15.7 1.15.8 1.16.2 1.16.3 1.17.2 1.17.3 1.18.4 1.19.0: Elixir programming language
 dev-lang/elpi 1.19.6-r1 2.0.7: Embeddable Lambda Prolog Interpreter in OCaml
 dev-lang/erlang 26.2.1-r1 26.2.5.14 26.2.5.15 27.3.4.2 27.3.4.3 28.0.2 28.0.4 28.1: Erlang programming language, runtime environment and libraries (OTP)
@@ -5549,7 +5549,7 @@ dev-libs/libhid 0.2.17-r1: Provides a generic and flexible way to access and int
 dev-libs/libical 3.0.20-r2: Implementation of basic iCAL protocols
 dev-libs/libiconv 1.17 1.18: GNU charset conversion library for libc which doesn't implement it
 dev-libs/libinjection 3.10.0_p20250228: A SQL/SQLI tokenizer parser analyzer
-dev-libs/libinput 1.28.1 1.29.1 1.29.2 1.30.0: Library to handle input devices in Wayland
+dev-libs/libinput 1.28.1 1.29.1 1.29.2 1.30.0 1.30.1: Library to handle input devices in Wayland
 dev-libs/libintl 0.21.1 0.22.5 0.23.1 0.23.2 0.25.1 0.26: the GNU international library (split out of gettext)
 dev-libs/libisoburn 1.5.6-r2: Creation/expansion of ISO-9660 filesystems on CD/DVD media supported by libburn
 dev-libs/libisofs 1.5.6_p1-r2: Open-source library for reading, mastering and writing optical discs
@@ -10795,7 +10795,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.0.58: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.0.61: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.4 2025.2.5: A complete toolset for C and C++ development
@@ -14731,7 +14731,7 @@ net-dns/nsd 4.11.1 4.12.0 9999: An authoritative only, high performance, open so
 net-dns/opendnssec 2.1.13-r2: An open-source turn-key solution for DNSSEC
 net-dns/openresolv 3.16.5 3.17.0: A framework for managing DNS information
 net-dns/pdns 4.9.11 5.0.1: The PowerDNS Daemon
-net-dns/pdns-recursor 5.2.6 5.3.1: The PowerDNS Recursor
+net-dns/pdns-recursor 5.2.6 5.3.1 5.3.3: The PowerDNS Recursor
 net-dns/pdnsd 1.2.9a-r2: Proxy DNS server with permanent caching
 net-dns/rbldnsd 0.998b-r3 0.998b-r4: DNS server designed to serve blacklist zones
 net-dns/redis-knot 3.5.1 3.5.2: Redis module for Knot DNS
@@ -14758,7 +14758,7 @@ net-firewall/ipt_netflow 2.6-r1 2.6_p20250317 9999: Netflow iptables module
 net-firewall/iptables 1.8.11 1.8.11-r1: Linux kernel (2.4+) firewall, NAT and packet mangling tools
 net-firewall/lutelwall 0.99-r1: IPTables firewall setup script
 net-firewall/nfacct 1.0.2-r2: Command line tool to create/retrieve/delete accounting objects in NetFilter
-net-firewall/nftables 1.1.1 1.1.1-r1 1.1.3 1.1.4 1.1.5 9999: Linux kernel firewall, NAT and packet mangling tools
+net-firewall/nftables 1.1.1 1.1.1-r1 1.1.3 1.1.4 1.1.5 1.1.6 9999: Linux kernel firewall, NAT and packet mangling tools
 net-firewall/nftlb 1.0.7-r1 1.0.8-r1 1.1.0: nftables load balancer
 net-firewall/psad 2.4.6-r1: Port Scanning Attack Detection daemon
 net-firewall/rtsp-conntrack 5.3-r2: RTSP conntrack module for Netfilter
@@ -18421,7 +18421,7 @@ x11-libs/libXxf86vm 1.1.6: X.Org Xxf86vm library
 x11-libs/libclxclient 3.9.2-r1: C++ wrapper library around the X Window System API
 x11-libs/libdlo 0.1.2-r2: A fully open source driver which supports all DisplayLink devices
 x11-libs/libdockapp 0.7.3: Window Maker Dock Applet Library
-x11-libs/libdrm 2.4.125 2.4.127 2.4.128 2.4.129 9999: X.Org libdrm library
+x11-libs/libdrm 2.4.125 2.4.127 2.4.128 2.4.129 2.4.130 9999: X.Org libdrm library
 x11-libs/libfakeXinerama 0.1.0: Fake library to override default libXinerama and expose custom screen dimensions
 x11-libs/libfakekey 0.3-r1: Helper library for the x11-misc/matchbox-keyboard package
 x11-libs/libfm 1.3.2-r1: Library for file management
