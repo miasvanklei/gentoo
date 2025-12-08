@@ -1379,7 +1379,7 @@ app-containers/earthly 0.8.16: Build automation tool that executes in containers
 app-containers/flannel 0.26.3: An etcd backed network fabric for containers
 app-containers/grype 0.59.1 0.61.0 0.72.0 0.73.0 0.79.3 0.86.1: A vulnerability scanner for container images and filesystems
 app-containers/img 0.5.11: Standalone daemon-less unprivileged Dockerfile and OCI container image builder
-app-containers/incus 6.0.3-r1 6.0.4-r1 6.0.5 6.14-r1 6.14-r2 6.14-r4 6.15 6.17 6.18 9999: Modern, secure and powerful system container and virtual machine manager
+app-containers/incus 6.0.3-r1 6.0.4-r1 6.0.5 6.14-r1 6.14-r2 6.14-r4 6.15 6.17 6.18 6.19.1 9999: Modern, secure and powerful system container and virtual machine manager
 app-containers/k3d 5.8.3: k3d creates k3s clusters in docker
 app-containers/kompose 1.35.0: Tool to move from docker-compose to Kubernetes
 app-containers/lxc 5.0.3 6.0.3 6.0.4-r1 6.0.5: A userspace interface for the Linux kernel containment features
@@ -3801,7 +3801,7 @@ dev-ada/libadalang-tools 25.0.0-r2: Libadalang-based tools: gnatpp, gnatmetric a
 dev-ada/libgpr 25.0.0-r3: Ada library to handle GPRbuild project files
 dev-ada/markdown 25.0.0-r2: Provides a markdown parser written in Ada
 dev-ada/prettier-ada 25.0.0-r2: Port of the Prettier formatter to the Ada programming language
-dev-ada/spawn 25.0.0-r3: Simple API to spawn processes
+dev-ada/spawn 25.0.0-r4: Simple API to spawn processes
 dev-ada/templates-parser 24.0.0-r1 25.0.0-r4: A template engine
 dev-ada/xmlada 25.0.0-r5: Set of modules that provide a simple manipulation of XML streams
 dev-build/autoconf 2.13-r8 2.69-r10 2.71-r6 2.71-r8 2.72-r1 2.72-r4 2.72-r5 9999: Used to create autoconfiguration files
@@ -3823,7 +3823,7 @@ dev-build/dagger 0.9.8: ci/cd as code that runs anywhere
 dev-build/dolphin-plugins-makefileactions 25.08.3: Dolphin plugin for Makefile targets integration
 dev-build/gn 0.2122 0.2217 0.2227 0.2235 0.2289 9999: GN is a meta-build system that generates build files for Ninja
 dev-build/gtk-doc-am 1.33.2 1.34.0: Automake files from gtk-doc
-dev-build/guildmaster 0_pre20251122 9999: FIFO-like jobserver node via CUSE
+dev-build/guildmaster 0_pre20250712 9999: FIFO-like jobserver node via CUSE
 dev-build/gyp 20200512145953-r1 99999999999999: GYP (Generate Your Projects) meta-build system
 dev-build/icmake 9.03.01-r1: Hybrid between a make utility and a shell scripting language
 dev-build/just 1.43.0 1.43.1: Just a command runner (with syntax inspired by 'make')
@@ -9769,7 +9769,7 @@ dev-python/yarl 1.20.1 1.21.0 1.22.0: Yet another URL library
 dev-python/yattag 1.16.1: Python library to generate HTML or XML in a readable, concise and pythonic way
 dev-python/yaxmldiff 0.2.0: Yet Another XML Differ
 dev-python/youtube-search-python 1.6.6-r2: Get YouTube video information using link WITHOUT YouTube Data API v3
-dev-python/yt-dlp-ejs 0.3.1: External JavaScript for yt-dlp supporting many runtimes
+dev-python/yt-dlp-ejs 0.3.1 0.3.2: External JavaScript for yt-dlp supporting many runtimes
 dev-python/ytmusicapi 1.11.1 1.11.2 1.11.3: Unofficial API for YouTube Music
 dev-python/zc-lockfile 3.0_p1-r1 4.0: Basic inter-process locks
 dev-python/zconfig 4.2 4.3: Configuration library supporting a hierarchical schema-driven model
@@ -15473,7 +15473,7 @@ net-misc/xmrig 6.21.1 6.21.3 6.22.0 6.22.1 6.22.2 6.22.3 6.23.0 6.24.0 9999: Ran
 net-misc/yandex-disk 0.1.6.1080_p1: CLI to access Yandex Disk file storage service
 net-misc/you-get 0.4.1650-r1 0.4.1700: Utility to download media contents from the web
 net-misc/youtube-viewer 3.11.2-r1 3.11.3-r1 9999: A command line utility for viewing youtube-videos in Mplayer
-net-misc/yt-dlp 2025.10.22 2025.11.12 9999: youtube-dl fork with additional features and fixes
+net-misc/yt-dlp 2025.10.22 2025.11.12 2025.12.08 9999: youtube-dl fork with additional features and fixes
 net-misc/ytmdl 2024.08.15.1-r1: Simple app to get songs from youtube in mp3 format
 net-misc/zerotier 1.14.2-r2 1.16.0-r2: A software-based managed Ethernet switch for planet Earth
 net-misc/zssh 1.5c-r3: SSH wrapper enabling zmodem up/download in ssh
@@ -17499,7 +17499,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251204 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251205 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.2.1_p20251206 15.3.9999 16.0.0_p20251123 16.0.0_p20251130 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251204 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251205 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.2.1_p20251206 15.3.9999 16.0.0_p20251123 16.0.0_p20251130 16.0.0_p20251207 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-apple 4.2.1_p5666-r3: Apple branch of the GNU Compiler Collection, Developer Tools 4.0
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
@@ -18916,7 +18916,7 @@ x11-terms/terminology 1.14.0: Feature rich terminal emulator using the Enlighten
 x11-terms/tilda 1.5.4 2.0.0: A drop down terminal, similar to the consoles found in first person shooters
 x11-terms/wezterm 20240203.110809-r2: A GPU-accelerated cross-platform terminal emulator and multiplexer
 x11-terms/xfce4-terminal 1.1.4 1.1.5: A terminal emulator for the Xfce desktop environment
-x11-terms/xterm 401 402 403: Terminal Emulator for X Windows
+x11-terms/xterm 401 402 403 404: Terminal Emulator for X Windows
 x11-terms/yeahconsole 0.3.4-r2: yeahconsole turns an xterm or rxvt-unicode into a game-like console
 x11-terms/zutty 0.15 0.16: X terminal emulator rendering through OpenGL ES Compute Shaders
 x11-themes/QAdwaitaDecorations 0.1.7: Qt decoration plugin implementing Adwaita-like client-side decorations
