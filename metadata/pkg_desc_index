@@ -15699,7 +15699,7 @@ net-wireless/hidclient 20120728: Use your machine as a bluetooh keyboard/mouse
 net-wireless/horst 5.1 9999: Small 802.11 wireless LAN analyzer
 net-wireless/hostap-utils 0.4.7-r1: Utilities for Intersil Prism2/2.5/3 based IEEE 802.11b wireless LAN products
 net-wireless/hostapd 2.10-r3 2.11 9999: IEEE 802.11 wireless LAN Host AP daemon
-net-wireless/inspectrum 0.3.1_p20251130 9999: Tool for analysing captured signals from software-defined radio receivers
+net-wireless/inspectrum 0.3.1_p20251130 0.4.0 9999: Tool for analysing captured signals from software-defined radio receivers
 net-wireless/iw 6.9 6.17: nl80211 configuration utility for wireless devices using the mac80211 stack
 net-wireless/iwd 3.8 3.9 3.10 9999: Wireless daemon for linux
 net-wireless/iwgtk 0.9: Lightweight, graphical wifi management utility for Linux
@@ -18154,8 +18154,8 @@ www-client/elinks 0.18.0 9999: Advanced and well-established text-mode web brows
 www-client/epiphany 47.7-r1 48.3 48.5: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.3.1 140.4.0 140.5.0 143.0 143.0.3 144.0-r1 144.0.2 145.0 145.0.1 146.0: Firefox Web Browser
-www-client/firefox-bin 140.5.0-r1 145.0-r1 145.0.1 145.0.2 146.0-r1: Firefox Web Browser
+www-client/firefox 140.3.1 140.4.0 140.5.0 140.6.0 143.0 143.0.3 144.0-r1 144.0.2 145.0 145.0.1 146.0: Firefox Web Browser
+www-client/firefox-bin 140.5.0-r1 140.6.0 145.0-r1 145.0.1 145.0.2 146.0-r1: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.40: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.3: The web browser from Google
 www-client/google-chrome-unstable 144.0.7559.3: The web browser from Google
