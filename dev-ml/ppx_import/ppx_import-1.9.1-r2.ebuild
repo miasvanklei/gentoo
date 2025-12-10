@@ -1,4 +1,4 @@
-# Copyright 1999-2023 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -19,6 +19,7 @@ RESTRICT="!test? ( test )"
 RDEPEND="
 	>=dev-ml/ppxlib-0.24:=
 	<dev-ml/ppxlib-0.26
+	<dev-lang/ocaml-5.4
 "
 DEPEND="${RDEPEND}"
 BDEPEND="
