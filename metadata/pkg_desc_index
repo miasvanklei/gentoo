@@ -1829,7 +1829,7 @@ app-editors/kakoune 2022.10.31 2023.08.05 2024.05.18: Modal editor inspired by v
 app-editors/kile 2.9.94: Latex Editor and TeX shell based on KDE Frameworks
 app-editors/leafpad 0.8.18.1-r1: Simple GTK2 text editor
 app-editors/levee 4.0: Really tiny vi clone, for things like rescue disks
-app-editors/logseq-desktop-bin 0.10.14 0.10.15: A privacy-first, open-source platform for knowledge sharing and management.
+app-editors/logseq-desktop-bin 0.10.15-r1: A privacy-first, open-source platform for knowledge sharing and management.
 app-editors/lpe 1.2.8_p20210401: A lightweight programmers editor
 app-editors/mg 20230501 20240709: MicroGnuEmacs, a port from the BSDs
 app-editors/micro 2.0.13-r1: Modern and intuitive terminal-based text editor
@@ -1863,7 +1863,7 @@ app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clo
 app-editors/vim 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r1 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.105.1 1.106.3: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscode 1.105.1 1.106.3 1.107.0: Multiplatform Visual Studio Code from Microsoft
 app-editors/vscodium 1.105.17075 1.106.27818 1.106.37943: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
@@ -2907,7 +2907,7 @@ app-misc/skim 0.20.5: Command-line fuzzy finder
 app-misc/sl 5.02-r1: Sophisticated graphical program which corrects your miss typing
 app-misc/smtm 1.6.10-r2: Stock ticker, profit/loss calculator and chart tool
 app-misc/socnetv 3.2: Qt Social Network Visualizer
-app-misc/solaar 1.1.9 1.1.13 1.1.14-r1 1.1.16 9999: Linux Device Manager for Logitech Unifying Receivers and Paired Devices
+app-misc/solaar 1.1.14-r1 1.1.16 1.1.17 9999: Linux Device Manager for Logitech Unifying Receivers and Paired Devices
 app-misc/sonypid 1.9.1: Tool to use the Sony Vaios jog-dial as a mouse-wheel
 app-misc/spacenavd 1.2 1.3 1.3-r1 1.3.1: The spacenavd daemon provides free alternative to the 3dxserv daemon
 app-misc/sphinx 2.2.11-r5: Full-text search engine with support for MySQL and PostgreSQL
@@ -3001,7 +3001,7 @@ app-office/libreoffice 25.2.7.2-r1 9999: A full office productivity suite
 app-office/libreoffice-bin 24.8.4-r6 25.2.0-r6: A full office productivity suite. Binary package
 app-office/libreoffice-l10n 25.2.7.2: Translations for the Libreoffice suite
 app-office/libreoffice-voikko 5.0-r1: Free Finnish spell checking and hyphenation for LibreOffice
-app-office/lyx 2.4.3 2.4.4: WYSIWYM (What You See Is What You Mean) document processor based on LaTeX
+app-office/lyx 2.4.4: WYSIWYM (What You See Is What You Mean) document processor based on LaTeX
 app-office/magicpoint 1.13a_p20121015-r2: X11 based presentation tool
 app-office/mdbtools 1.0.1: Set of libraries and utilities for reading Microsoft Access database (MDB) files
 app-office/merkuro 25.08.3: Calendar application using Akonadi
@@ -3208,7 +3208,7 @@ app-text/delta 20060803-r1: Heuristically minimizes interesting files
 app-text/dictd 1.13.3: Dictionary Client/Server for the DICT protocol
 app-text/diction 1.14: Diction and style checkers for english and german texts
 app-text/diff-pdf 0.5.1-r1: A simple tool for visually comparing two PDF files
-app-text/diffpdf 2.1.3-r3: Program that textually or visually compares two PDF files
+app-text/diffpdf 2.1.3-r4: Program that textually or visually compares two PDF files
 app-text/ding 1.9: Tk based dictionary (German-English) (incl. dictionary itself)
 app-text/discount 2.2.7c-r1 3.0.0a 3.0.0d 3.0.1.1 3.0.1.2: A Markdown-to HTML translator written in C
 app-text/djvu 3.5.29: DjVu viewers, encoders and utilities
@@ -9953,7 +9953,7 @@ dev-ruby/commander 5.0.0: The complete solution for Ruby command-line executable
 dev-ruby/commonmarker 0.23.10 0.23.11 2.1.1 2.3.0 2.3.1 2.3.2: A fast, safe, extensible parser for CommonMark, wrapping the comrak Rust crate
 dev-ruby/concurrent-ruby 1.3.5: Modern concurrency tools including agents, futures, promises, thread pools, more
 dev-ruby/connection_pool 2.4.1 2.5.0 2.5.4 2.5.5: Generic connection pooling for Ruby
-dev-ruby/console 1.30.2: Beautiful logging for Ruby
+dev-ruby/console 1.30.2 1.34.2: Beautiful logging for Ruby
 dev-ruby/contracts 0.17.2: provides contracts for Ruby
 dev-ruby/coolio 1.9.0 1.9.1: A high performance event framework for Ruby which uses the libev C library
 dev-ruby/countdownlatch 1.0.0-r2: Synchronization aid to allow threads to wait for operations in other threads
@@ -10796,7 +10796,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.0.62: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.0.64: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.4 2025.2.5: A complete toolset for C and C++ development
@@ -10931,7 +10931,7 @@ dev-util/intltool 0.51.0-r3: Internationalization Tool Collection
 dev-util/its4 1.1.1-r2: ITS4: Software Security Tool
 dev-util/itstool 2.0.7-r2 2.0.7_p20250326: Translation tool for XML documents that uses gettext files and ITS rules
 dev-util/japi-compliance-checker 2.4 9999: Java API compliance checker
-dev-util/jenkins-bin 2.504.3 2.516.3 2.528 2.528.1 2.528.2: The leading open source automation server
+dev-util/jenkins-bin 2.516.3 2.528 2.528.1 2.528.2 2.528.3 2.541: The leading open source automation server
 dev-util/jfrog-cli 1.54.1 2.54.0 2.72.1 2.72.2 2.72.3 2.73.2: Command line utility for operations on container images and image repositories
 dev-util/kafkactl 5.5.0 5.7.0 5.9.0: CLI for interacting with Kafka
 dev-util/kcov 43 9999: Kcov is a code coverage tester for compiled languages, Python and Bash
@@ -12640,8 +12640,8 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20250905 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.7 1.6.7-r1 1.6.10 1.6.11 1.7_beta2 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 140.3.1 140.4.0 140.5.0 143.0.1 144.0-r1 144.0.1 145.0: Thunderbird Mail Client
-mail-client/thunderbird-bin 140.4.0 140.5.0 144.0.1 145.0: Thunderbird Mail Client
+mail-client/thunderbird 140.3.1 140.4.0 140.5.0 143.0.1 144.0-r1 144.0.1 145.0 146.0: Thunderbird Mail Client
+mail-client/thunderbird-bin 140.4.0 140.5.0 144.0.1 145.0 146.0: Thunderbird Mail Client
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.12.2 2.13.0 2.13.1: High-performance interface between the MTA and content checkers
@@ -14190,7 +14190,7 @@ media-sound/sndio 1.10.0 9999: Small audio and MIDI framework part of the OpenBS
 media-sound/sndpeek 1.41-r1: real-time audio visualization
 media-sound/solfege 3.23.4: GNU program to help practicing ear training
 media-sound/sonata 1.7.0-r1 1.7.2: Elegant GTK+ music client for the Music Player Daemon (MPD)
-media-sound/sonic-visualiser 5.0.1-r1: Music audio files viewer and analiser
+media-sound/sonic-visualiser 5.0.1-r1 5.2.1: Music audio files viewer and analyser
 media-sound/sooperlooper 1.7.8_p2-r2 1.7.8_p3: Live looping sampler with immediate loop recording
 media-sound/sound-juicer 3.40.0-r1: CD ripper for GNOME
 media-sound/soundconverter 4.0.3 4.0.5: A simple audiofile converter application for the GNOME environment
