@@ -3222,7 +3222,7 @@ app-text/docbook-xsl-stylesheets 1.79.1-r4: XSL Stylesheets for Docbook
 app-text/docbook2X 0.8.8-r5: Tools to convert docbook to man and info
 app-text/docx2txt 1.4: Convert MS Office docx files to plain text
 app-text/dos2unix 7.5.2 7.5.3: Convert DOS or MAC text files to UNIX format or vice versa
-app-text/doxygen 1.13.2 1.14.0 1.15.0 9999: Documentation system for most programming languages
+app-text/doxygen 1.13.2 1.14.0 1.15.0 1.15.0-r1 9999: Documentation system for most programming languages
 app-text/dvipng 1.18: Translate DVI files into PNG or GIF graphics
 app-text/dvipsk 2023.03.11_p66203 2024.03.11_p70015: DVI-to-PostScript translator
 app-text/dvisvgm 2.14-r1 3.0.4 3.1 3.1.2 3.2 3.3 3.4: Converts DVI files to SVG
@@ -3313,7 +3313,7 @@ app-text/manpager 1: Enable colorization of man pages
 app-text/marknote 1.3.0: Markdown editor with a wide range of formating options for everyday notes
 app-text/master-pdf-editor 5.9.94: A complete solution for viewing and editing PDF files
 app-text/mathtex 1.05: Lets you easily embed LaTeX math in your own html pages, blogs, wikis, etc
-app-text/mdbook 0.4.52 0.5.0 0.5.1: Create a book from markdown files
+app-text/mdbook 0.4.52 0.5.1 0.5.2: Create a book from markdown files
 app-text/mecab 0.996-r1 0.996-r2: Yet Another Part-of-Speech and Morphological Analyzer
 app-text/mpage 2.5.6-r1: Many to one page printing utility
 app-text/msort 8.53-r3: A program for sorting files in sophisticated ways
@@ -3818,7 +3818,7 @@ dev-build/bazel-buildtools 8.2.1: Tools for working with Google's Bazel BUILD fi
 dev-build/bazelisk 1.25.0 1.27.0: A user-friendly launcher for Bazel written in Go
 dev-build/bmake 20250414 20250618 20250804 20251111: NetBSD's portable make
 dev-build/boost-m4 0.4_p20221019: Another set of autoconf macros for compiling against boost
-dev-build/cmake 3.31.9-r1 3.31.10 4.1.2-r1 4.1.3 9999: Cross platform Make
+dev-build/cmake 3.31.9-r1 3.31.10 4.1.2-r1 4.1.3 4.1.4 4.2.1 9999: Cross platform Make
 dev-build/corrosion 0.5.2: Marrying Rust and CMake - Easy Rust and C/C++ Integration!
 dev-build/dagger 0.9.8: ci/cd as code that runs anywhere
 dev-build/dolphin-plugins-makefileactions 25.08.3 25.12.0: Dolphin plugin for Makefile targets integration
@@ -5540,7 +5540,7 @@ dev-libs/libgit2-glib 1.2.1-r1: Git library for GLib
 dev-libs/libglib-testing 0.1.1: Libglib-testing is a test library providing test harnesses and mock classes
 dev-libs/libgnome-games-support 1.8.2 2.0.1 2.0.2: Library for code common to GNOME games
 dev-libs/libgnt 2.14.3-r1: Pidgin's GLib Ncurses Toolkit
-dev-libs/libgpg-error 1.51 1.53 1.55 1.56: Contains error handling functions used by GnuPG software
+dev-libs/libgpg-error 1.56 1.57: Contains error handling functions used by GnuPG software
 dev-libs/libgpiod 1.6.4 2.2.1-r1 2.2.2: C library and tools for interacting with the linux GPIO character device
 dev-libs/libgrapheme 2.0.2: Unicode string library
 dev-libs/libgudev 238-r1 238-r2: GObject bindings for libudev
@@ -9169,7 +9169,7 @@ dev-python/pyscard 2.3.0 2.3.1: Smart card support in python
 dev-python/pyscreenshot 3.1: Python screenshot library
 dev-python/pysdl2 0.9.17: Python (ctypes) bindings for SDL2 libraries
 dev-python/pyserial 3.5-r2: Python Serial Port extension
-dev-python/pyside 6.9.3 6.10.1-r1 6.9999: Python bindings for the Qt framework
+dev-python/pyside 6.9.3 6.10.1-r2 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.0 7.0.1 7.0.2: Python bindings for simdjson
 dev-python/pysmi 1.6.2: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
 dev-python/pysnmp 7.1.21 7.1.22: Python SNMP library
@@ -9794,7 +9794,7 @@ dev-python/zope-testing 5.1 6.0: Zope testing helpers
 dev-python/zstandard 0.23.0-r3 0.24.0 0.25.0: Zstandard Bindings for Python
 dev-qt/designer 5.15.18-r1: WYSIWYG tool for designing and building graphical user interfaces with QtWidgets
 dev-qt/linguist-tools 5.15.18: Tools for working with Qt translation data files
-dev-qt/qt-creator 17.0.2 18.0.0 9999: Lightweight IDE for C++/QML development centering around Qt
+dev-qt/qt-creator 18.0.0 18.0.1 9999: Lightweight IDE for C++/QML development centering around Qt
 dev-qt/qt-docs 5.15.2_p202011130614 6.9.3_p202509261208 6.10.1_p202511161843: Qt6 documentation and examples for Qt Creator and other tools
 dev-qt/qt3d 6.9.3 6.10.1 6.10.9999 6.11.9999 6.9999: 3D rendering module for the Qt6 framework
 dev-qt/qt5compat 6.9.3 6.10.1 6.10.9999 6.11.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
@@ -10851,7 +10851,7 @@ dev-util/devhelp 43.0: An API documentation browser for GNOME
 dev-util/dialog 1.3.20250116-r1 1.3.20250817: Tool to display dialog boxes from a shell
 dev-util/diff-cover 9.6.0: Find diff lines that do not have test coverage
 dev-util/diffball 1.0.1-r2: Delta compression suite for using/generating binary patches
-dev-util/diffoscope 303 306 308: Will try to get to the bottom of what makes files or directories different
+dev-util/diffoscope 303 306 308 309: Will try to get to the bottom of what makes files or directories different
 dev-util/diffstat 1.67 1.68: Display a histogram of diff changes
 dev-util/difftastic 0.63.0 0.64.0 0.67.0: A structural diff that understands syntax.
 dev-util/diffuse 0.9.0-r1 0.10.0: A graphical tool to compare and merge text files
@@ -11016,7 +11016,7 @@ dev-util/pwntools 4.14.1 4.15.0_beta1-r1 4.15.0 9999: CTF framework and exploit 
 dev-util/py-spy 0.4.0: Sampling profiler for Python programs
 dev-util/pycharm-community 2024.2.1 2024.3.2 2024.3.5 2025.1 2025.1.3 2025.2.4 2025.2.5: Intelligent Python IDE with unique code assistance and analysis
 dev-util/pycharm-professional 2024.3.2 2024.3.5 2025.1 2025.1.3 2025.1.4 2025.2.4 2025.2.5: Intelligent Python IDE with unique code assistance and analysis
-dev-util/qbs 3.0.3 3.1.1: Modern build tool for software projects
+dev-util/qbs 3.0.3 3.1.1 3.1.2: Modern build tool for software projects
 dev-util/qdevicemonitor 1.0.1-r3 9999: Crossplatform log viewer for Android, iOS and text files
 dev-util/quilt 0.69 9999: quilt patch manager
 dev-util/radare2 5.9.6 6.0.4: unix-like reverse engineering framework and commandline tools
@@ -13093,7 +13093,7 @@ media-gfx/mkbold-mkitalic 0.11: Make BDF fonts bold and/or italic
 media-gfx/mkgallery 1.1-r1: Creates thumbnails and a HTML index file for a directory of jpg files
 media-gfx/monica 3.7-r2: Monica is a Monitor Calibration Tool
 media-gfx/mscgen 0.20-r1: Message sequence chart generator
-media-gfx/mypaint 2.0.1-r4 2.0.1-r5 2.0.1-r6: Fast and easy graphics application for digital painters
+media-gfx/mypaint 2.0.1-r4 2.0.1-r7: Fast and easy graphics application for digital painters
 media-gfx/mypaint-brushes 1.3.1 2.0.2-r2: Default MyPaint brushes
 media-gfx/netgen 6.2.2406-r1 6.2.2501-r1 6.2.2505: Automatic 3d tetrahedral mesh generator
 media-gfx/nomacs 3.19.1-r1 3.21.0 3.21.1: Qt-based image viewer
@@ -13178,7 +13178,7 @@ media-gfx/w3mimgfb 0.9.1: Image viewer for w3m under frame buffer environment
 media-gfx/waifu2x-ncnn-vulkan 20250504: waifu2x converter using ncnn and vulkan
 media-gfx/wings 2.2.6.1 2.3 2.4: Wings 3D is an advanced subdivision modeler
 media-gfx/word_cloud 1.9.3 1.9.4: A little word cloud generator in Python
-media-gfx/xdot 1.4 9999: Interactive viewer for Graphviz dot files
+media-gfx/xdot 1.4 1.6 9999: Interactive viewer for Graphviz dot files
 media-gfx/xfig 3.2.9 3.2.9a 3.2.9a-r1 9999: A menu-driven tool to draw and manipulate objects interactively in an X window
 media-gfx/xli 1.17.0-r6: X Load Image: view images or load them to root window
 media-gfx/xpaint 3.1.4-r5: Image editor with tiff, jpeg and png support
@@ -13372,7 +13372,7 @@ media-libs/libilbc 3.0.4: Packaged version of iLBC codec from the WebRTC project
 media-libs/libinsane 1.0.9 1.0.10: Crossplatform access to image scanners
 media-libs/libiptcdata 1.0.5-r1: Library for International Press Telecommunications Council (IPTC) metadata
 media-libs/libirman 0.4.5: library for Irman control of Unix software
-media-libs/libjpeg-turbo 2.1.5.1 3.0.3-r1 3.0.4 3.1.0 3.1.1 3.1.2: MMX, SSE, and SSE2 SIMD accelerated JPEG library
+media-libs/libjpeg-turbo 3.1.1 3.1.2 3.1.3: MMX, SSE, and SSE2 SIMD accelerated JPEG library
 media-libs/libjsw 1.5.8: provide a uniform API and user configuration for joysticks and game controllers
 media-libs/libjxl 0.11.1 9999: JPEG XL image format reference implementation
 media-libs/libkate 0.4.1-r4: Codec for karaoke and text encapsulation for Ogg
@@ -14659,7 +14659,7 @@ net-analyzer/ttcp 1.12-r3: Tool to test TCP and UDP throughput
 net-analyzer/upnpscan 0.4-r3: Scans the network for UPnP capable devices
 net-analyzer/vnstat 2.13 2.13-r2 9999: Console-based network traffic monitor that keeps statistics of network usage
 net-analyzer/webfuzzer 0.2.0-r2: Poor man's web vulnerability scanner
-net-analyzer/wireshark 4.4.9 4.4.10 4.4.11 4.6.0 4.6.2-r1 9999: Network protocol analyzer (sniffer)
+net-analyzer/wireshark 4.4.9 4.4.10 4.4.11 4.6.0-r1 4.6.2-r2 9999: Network protocol analyzer (sniffer)
 net-analyzer/wtfis 0.11.0 0.13.0 9999: Passive hostname, domain and IP lookup tool for non-robots
 net-analyzer/xnetload 1.11.3-r1: Displays a count and a graph of the traffic over a specified network connection
 net-analyzer/xprobe 0.3-r1 0.3-r2: Active OS fingerprinting tool - this is Xprobe2
@@ -14699,7 +14699,7 @@ net-dialup/xl2tpd 1.3.18-r2 1.3.18-r3: A modern version of the Layer 2 Tunneling
 net-dns/avahi 0.9_rc2-r3: System which facilitates service discovery on a local network
 net-dns/bind 9.18.38 9.18.39 9.18.42 9.20.13 9.20.16: Berkeley Internet Name Domain - Name Server
 net-dns/bind-tools 9.18.0-r1: bind tools: dig, nslookup, host, nsupdate, dnssec-keygen
-net-dns/c-ares 1.34.5: C library that resolves names asynchronously
+net-dns/c-ares 1.34.5 1.34.6: C library that resolves names asynchronously
 net-dns/coredns 1.12.1 1.12.2 9999: CoreDNS is a DNS server that chains plugins
 net-dns/ddclient 4.0.0: Perl client used to update dynamic DNS entries
 net-dns/djbdns 1.05-r40 1.05-r42: Collection of DNS client/server software
@@ -15422,7 +15422,7 @@ net-misc/sshpass 1.10: Tool for non-interactively performing password authentica
 net-misc/sshrc 0.6.2: Bring your .bashrc, .vimrc, etc. from your local machine when you ssh
 net-misc/sslh 2.1.4 2.3.0 9999: Port multiplexer - accept both HTTPS and SSH connections on the same port
 net-misc/sstp-client 1.0.18-r2: Client implementation of Secure Socket Tunneling Protocol (SSTP)
-net-misc/streamlink 7.5.0 7.6.0 9999: CLI for extracting streams from websites to a video player of your choice
+net-misc/streamlink 7.6.0 9999: CLI for extracting streams from websites to a video player of your choice
 net-misc/streamtuner 0.99.99-r8: Stream directory browser for browsing internet radio streams
 net-misc/stunnel 5.71-r1 5.74 5.75 5.76: TLS/SSL - Port Wrapper
 net-misc/stuntman 1.2.16: Open source implementation of the STUN protocol
@@ -17090,7 +17090,7 @@ sys-apps/ipmi-fan-control 0.4.0-r1 9999: SuperMicro IPMI fan control daemon
 sys-apps/ipmicfg 1.36.0.250225: An in-band utility for configuring Supermicro IPMI devices
 sys-apps/ipmitool 1.8.19 1.8.19-r1: Utility for controlling IPMI enabled devices
 sys-apps/ipmiutil 3.1.9 3.2.1: IPMI Management Utilities
-sys-apps/iproute2 6.15.0 6.16.0 6.17.0 9999: kernel routing and traffic control utilities
+sys-apps/iproute2 6.16.0 6.17.0 9999: kernel routing and traffic control utilities
 sys-apps/irqbalance 1.9.4-r3 1.9.5: Distribute hardware interrupts across processors on a multiprocessor system
 sys-apps/isapnptools 1.27-r1: Tools for configuring ISA PnP devices
 sys-apps/iucode_tool 2.3.1-r1: tool to manipulate Intel X86 and X86-64 processor microcode update collections
@@ -17132,7 +17132,7 @@ sys-apps/minised 1.16: a smaller, cheaper and faster sed implementation
 sys-apps/miscfiles 1.5-r4: Miscellaneous files
 sys-apps/mlocate 0.26-r3: Merging locate is an utility to index and quickly search for files
 sys-apps/mlxup-bin 4.13.0: Mellanox Update and Query Utility
-sys-apps/moor 1.33.0 2.4.1 2.8.2-r1 2.9.1: Pager designed to do the right thing without any configuration
+sys-apps/moor 2.4.1 2.9.1: Pager designed to do the right thing without any configuration
 sys-apps/moreutils 0.70: Collection of tools that nobody thought to write when Unix was young
 sys-apps/most 5.2.0 5.2.0-r1: Paging program that displays, one windowful at a time, the contents of a file
 sys-apps/mount-gtk 1.4.5.1: GTK+ based UDisks2 frontend
@@ -17157,7 +17157,7 @@ sys-apps/paxctl 0.9: Manages various PaX related program header flags for Elf32,
 sys-apps/paxctld 1.2.5-r1: PaX flags maintenance daemon
 sys-apps/pciutils 3.13.0 3.14.0: Various utilities dealing with the PCI bus
 sys-apps/pcmciautils 018_p18: PCMCIA userspace utilities for Linux
-sys-apps/pcsc-lite 2.3.3 2.4.0: PC/SC Architecture smartcard middleware library
+sys-apps/pcsc-lite 2.3.3 2.4.0-r1: PC/SC Architecture smartcard middleware library
 sys-apps/pcsc-slb-rf72-drv 1.1.0-r2: Schlumberger Reflex 72 Serial Smartcard Reader
 sys-apps/pcsc-tools 1.7.3-r1: PC/SC Architecture smartcard tools
 sys-apps/pick 4.0.0-r1: A fuzzy search tool for the command-line
@@ -17677,7 +17677,7 @@ sys-fs/unionfs-fuse 3.6-r1 3.6-r2 3.7 9999: Self-syncing tree-merging file syste
 sys-fs/vhba 20240202 20240917 20250329: Virtual (SCSI) Host Bus Adapter kernel module for the CDEmu suite
 sys-fs/vzquota 3.1: OpenVZ VPS disk quota utility
 sys-fs/xfsdump 3.1.12 3.2.0: XFS dump/restore utilities
-sys-fs/xfsprogs 6.12.0 6.13.0-r1 6.14.0 6.15.0 6.16.0 6.17.0: XFS filesystem utilities
+sys-fs/xfsprogs 6.12.0 6.13.0-r1 6.14.0 6.15.0 6.16.0 6.17.0 6.17.0-r1: XFS filesystem utilities
 sys-fs/xwmfs 0.92: FUSE-based X11 Window-Manager file system
 sys-fs/yaffs2utils 0.2.9-r1: tools for generating YAFFS images
 sys-fs/zerofree 1.1.1-r1: Zeroes out all free space on a filesystem
@@ -18423,7 +18423,7 @@ x11-libs/libXxf86vm 1.1.6: X.Org Xxf86vm library
 x11-libs/libclxclient 3.9.2-r1: C++ wrapper library around the X Window System API
 x11-libs/libdlo 0.1.2-r2: A fully open source driver which supports all DisplayLink devices
 x11-libs/libdockapp 0.7.3: Window Maker Dock Applet Library
-x11-libs/libdrm 2.4.127 2.4.130 9999: X.Org libdrm library
+x11-libs/libdrm 2.4.127 2.4.130 2.4.131 9999: X.Org libdrm library
 x11-libs/libfakeXinerama 0.1.0: Fake library to override default libXinerama and expose custom screen dimensions
 x11-libs/libfakekey 0.3-r1: Helper library for the x11-misc/matchbox-keyboard package
 x11-libs/libfm 1.3.2-r1: Library for file management
