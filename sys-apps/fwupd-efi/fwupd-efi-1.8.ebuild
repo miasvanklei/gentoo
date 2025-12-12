@@ -25,6 +25,7 @@ SLOT="0"
 BDEPEND="
 	$(python_gen_any_dep '
 		dev-python/pefile[${PYTHON_USEDEP}]
+		dev-python/pyelftools[${PYTHON_USEDEP}]
 	')
 	sys-apps/uswid
 	virtual/pkgconfig
@@ -33,6 +34,7 @@ DEPEND=">=sys-boot/gnu-efi-3.0.18"
 
 python_check_deps() {
 	python_has_version "dev-python/pefile[${PYTHON_USEDEP}]"
+	python_has_version "dev-python/pyelftools[${PYTHON_USEDEP}]"
 }
 
 pkg_setup() {
@@ -41,6 +43,8 @@ pkg_setup() {
 }
 
 src_prepare() {
+	eapply "${FILESDIR}"/use-elf2efi.patch
+
 	default
 
 	python_fix_shebang "${S}/efi"
