@@ -9952,7 +9952,7 @@ dev-ruby/columnize 0.9.0-r2: Sorts an array in column order
 dev-ruby/combustion 1.5.0: Elegant Rails Engine Testing
 dev-ruby/commander 5.0.0: The complete solution for Ruby command-line executables
 dev-ruby/commonmarker 0.23.10 0.23.11 2.1.1 2.3.0 2.3.1 2.3.2: A fast, safe, extensible parser for CommonMark, wrapping the comrak Rust crate
-dev-ruby/concurrent-ruby 1.3.5: Modern concurrency tools including agents, futures, promises, thread pools, more
+dev-ruby/concurrent-ruby 1.3.5 1.3.6: Modern concurrency tools including agents, futures, promises, thread pools, more
 dev-ruby/connection_pool 2.5.0 2.5.4 2.5.5 3.0.2: Generic connection pooling for Ruby
 dev-ruby/console 1.30.2 1.34.2: Beautiful logging for Ruby
 dev-ruby/contracts 0.17.2: provides contracts for Ruby
@@ -10049,7 +10049,7 @@ dev-ruby/filesize 0.2.0-r1: Small class for handling filesizes with both the SI 
 dev-ruby/fileutils 1.7.3 1.8.0: Several file utility methods for copying, moving, removing, etc
 dev-ruby/filigree 0.4.1-r1: New classes and extensions to core library classes
 dev-ruby/flexmock 2.4.2 3.0.2: Simple mock object library for Ruby unit testing
-dev-ruby/flog 4.8.0: Flog reports the most tortured code in an easy to read pain report
+dev-ruby/flog 4.8.0 4.9.0: Flog reports the most tortured code in an easy to read pain report
 dev-ruby/font-awesome-rails 4.7.0.9: Font-awesome for the asset pipeline
 dev-ruby/forgery 0.8.1-r1: Easy and customizable generation of forged data
 dev-ruby/forwardable 1.3.3: Provides delegation of specified methods to a designated object
@@ -11649,7 +11649,7 @@ games-misc/opengfx 7.1-r1: OpenGFX data files for OpenTTD
 games-misc/openmsx 0.4.2: Open source music base set for OpenTTD
 games-misc/opensfx 1.0.3-r1: OpenSFX data files for OpenTTD
 games-misc/papers-please 1.1.65: Dystopian Document Thriller
-games-misc/ponysay 3.0.3-r1: cowsay reimplemention for ponies
+games-misc/ponysay 3.0.3-r2: cowsay reimplemention for ponies
 games-misc/rfksay 0.1-r1: Like cowsay, but different because it involves robots and kittens
 games-misc/robotfindskitten 2.7182818.701-r1 2.8284271.702: Help robot find kitten
 games-misc/sdljoytest 11102003: SDL app to test joysticks and game controllers
@@ -13165,7 +13165,7 @@ media-gfx/termtosvg 1.1.0-r1: Record terminal sessions as SVG animations
 media-gfx/tgif 4.2.5-r3: Xlib base 2-D drawing facility under X11
 media-gfx/tif22pnm 0.14-r1: tif22pnm and png22pnm command-line converters
 media-gfx/tintii 2.10.0-r3: Photo editor for selective color, saturation, and hue shift adjustments
-media-gfx/ttfautohint 1.8.4-r3: Application and libary for hinting TrueType fonts
+media-gfx/ttfautohint 1.8.4-r4: Application and libary for hinting TrueType fonts
 media-gfx/ttygif 1.6.0: Convert terminal recordings to animated gifs
 media-gfx/tuxpaint 0.9.31 0.9.31-r1 0.9.31-r2: Drawing program designed for young children
 media-gfx/tuxpaint-stamps 20090628-r1 20211125 20220604 20230402: Set of 'Rubber Stamp' images which can be used within Tux Paint
@@ -17397,6 +17397,7 @@ sys-boot/efibootmgr 17-r1 18-r2: User-space application to modify the EFI boot m
 sys-boot/elilo 3.16-r6: Linux boot loader for EFI-based systems such as IA-64
 sys-boot/gnu-efi 3.0.15 3.0.17 3.0.18-r5 3.0.19 4.0.2 4.0.4: Library for build EFI Applications
 sys-boot/grub 2.12-r7 2.14_rc1-r1 9999: GNU GRUB boot loader
+sys-boot/grub-themes-gentoo 1.0: Grub2 Themes for Gentoo
 sys-boot/lilo 24.2-r2 24.2-r3: LInux LOader, the original Linux bootloader
 sys-boot/limine 10.4.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/makebootfat 1.4: Command line utility able to create bootable USB disks
