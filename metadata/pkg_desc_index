@@ -1245,7 +1245,7 @@ app-backup/cdbackup 0.7.1-r2: Allows streaming backup utilities to dump/restore 
 app-backup/cdbkup 1.0-r5: Performs full/incremental backups of local/remote filesystems onto CD-R(W)s
 app-backup/consul-backinator 1.6.6: consul backup and restore utility
 app-backup/cpdup 1.18-r1: Comprehensive filesystem mirroring program
-app-backup/dar 2.8.1-r1: A full featured backup tool, aimed for disks
+app-backup/dar 2.8.1-r1 2.8.2: A full featured backup tool, aimed for disks
 app-backup/deja-dup 44.2: Simple backup tool using duplicity back-end
 app-backup/dirvish 1.2.1-r1: Dirvish is a fast, disk based, rotating network backup system
 app-backup/duplicati 2.1.0.103_p20241221-r1 2.2.0.0.2025.10.23: Backup client that securely stores encrypted, incremental, compressed backups
@@ -3847,7 +3847,7 @@ dev-build/rocm-cmake 6.3.3 6.4.3 7.0.2 7.1.0: Radeon Open Compute CMake Modules
 dev-build/samurai 1.2-r3 9999: ninja-compatible build tool written in C
 dev-build/scons 4.9.1 4.10.0 4.10.1: Extensible Python-based build utility
 dev-build/slibtool 0.6.1 0.7.0 0.7.1 0.7.2 0.7.3 0.7.4 9999: A strong libtool implementation, written in C
-dev-build/steve 1.0.2 1.1.0 9999: A load-balancing jobserver for Gentoo
+dev-build/steve 1.1.0 1.2.0 9999: A load-balancing jobserver for Gentoo
 dev-build/tinycmmc 0.1.0 9999: Tiny CMake Module Collections
 dev-build/xfce4-dev-tools 4.20.0 4.21.0: A set of scripts and m4/autoconf macros that ease build system maintenance
 dev-cpp/ETL 1.4.1: Multi-platform class and template library
@@ -14064,7 +14064,7 @@ media-sound/litestream 1.3_rc3: Litstream is a lightweight and robust shoutcast-
 media-sound/lltag 0.14.6: Automatic command-line mp3/ogg/flac file tagger and renamer
 media-sound/lollypop 1.4.42 1.4.44: Modern music player for GNOME
 media-sound/lxmusic 0.4.7-r2: Simple GUI XMMS2 client with minimal functionality
-media-sound/mac 4.11.4.5.7-r1 11.62 11.82 11.88: Monkey's Audio Codecs
+media-sound/mac 4.11.4.5.7-r1 11.82 11.88 11.90: Monkey's Audio Codecs
 media-sound/madplay 0.15.2b-r2: The MAD audio player
 media-sound/mangler 1.2.5-r5: Open source VOIP client capable of connecting to Ventrilo 3.x servers
 media-sound/mcdp 0.4b: Very small console cd player
@@ -19097,7 +19097,7 @@ xfce-base/exo 4.20.0-r1 4.21.0-r1: Extensions, widgets and framework library wit
 xfce-base/garcon 4.20.0 4.21.0: Xfce's freedesktop.org specification compatible menu implementation library
 xfce-base/libxfce4ui 4.20.2 4.21.2 4.21.3: Unified widget and session management libs for Xfce
 xfce-base/libxfce4util 4.20.1: A basic utility library for the Xfce desktop environment
-xfce-base/libxfce4windowing 4.20.3 4.20.4: Unified widget and session management libs for Xfce
+xfce-base/libxfce4windowing 4.20.4: Unified widget and session management libs for Xfce
 xfce-base/thunar 4.20.5 4.20.6 4.21.2 4.21.3: File manager for the Xfce desktop environment
 xfce-base/thunar-volman 4.20.0: Daemon that enforces volume-related policies
 xfce-base/tumbler 4.20.0 4.20.1 4.21.0: A thumbnail service for Thunar
