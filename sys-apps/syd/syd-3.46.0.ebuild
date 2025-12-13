@@ -34,12 +34,12 @@ CRATES="
 	bumpalo@3.19.0
 	bytes@1.11.0
 	caps@0.5.6
-	cc@1.2.46
+	cc@1.2.49
 	cfg-if@1.0.4
 	cfg_aliases@0.2.1
 	chrono@0.4.42
-	clap@4.5.51
-	clap_builder@4.5.51
+	clap@4.5.53
+	clap_builder@4.5.53
 	clap_derive@4.5.49
 	clap_lex@0.7.6
 	colorchoice@1.0.4
@@ -50,7 +50,7 @@ CRATES="
 	cpufeatures@0.2.17
 	crc-catalog@2.4.0
 	crc32fast@1.5.0
-	crc@3.3.0
+	crc@3.4.0
 	crossbeam-utils@0.8.21
 	crypto-common@0.1.7
 	dactyl@0.9.1
@@ -86,8 +86,10 @@ CRATES="
 	gimli@0.32.3
 	goblin@0.9.3
 	gperftools@0.2.0
+	hardened-malloc-sys@13.0.0
+	hardened-malloc@13.0.0
 	hashbrown@0.12.3
-	hashbrown@0.16.0
+	hashbrown@0.16.1
 	heck@0.5.0
 	hermit-abi@0.5.2
 	hex@0.4.3
@@ -97,23 +99,22 @@ CRATES="
 	iced-x86@1.21.0
 	ident_case@1.0.1
 	indexmap@1.9.3
-	indexmap@2.12.0
+	indexmap@2.12.1
 	io-uring@0.6.4
 	ipnet@2.11.0
 	iprange@0.6.7
 	is_terminal_polyfill@1.70.2
 	itertools@0.14.0
 	itoa@1.0.15
-	js-sys@0.3.82
+	js-sys@0.3.83
 	keccak@0.1.5
 	lazy_static@1.5.0
 	lexis@0.2.3
 	lexopt@0.3.1
-	libc@0.2.177
+	libc@0.2.178
 	libcgroups@0.5.7
 	libcontainer@0.5.7
 	libloading@0.8.9
-	libmimalloc-sys@0.1.44
 	liboci-cli@0.5.7
 	libredox@0.1.10
 	libseccomp-sys@0.3.0
@@ -121,15 +122,14 @@ CRATES="
 	linefeed@0.6.0
 	linux-raw-sys@0.11.0
 	linux-raw-sys@0.4.15
-	log@0.4.28
+	log@0.4.29
 	md5@0.8.0
 	memchr@2.7.6
 	memoffset@0.9.1
-	mimalloc@0.1.48
 	minimal-lexical@0.2.1
 	miniz_oxide@0.8.9
 	mortal@0.2.4
-	nc@0.9.6
+	nc@0.9.7
 	netlink-sys@0.8.7
 	nix@0.26.4
 	nix@0.29.0
@@ -145,7 +145,7 @@ CRATES="
 	once_cell_polyfill@1.70.2
 	option-ext@0.2.0
 	parse-size@1.1.0
-	pathrs@0.2.1
+	pathrs@0.2.2
 	phf@0.11.3
 	phf_codegen@0.11.3
 	phf_generator@0.11.3
@@ -180,6 +180,7 @@ CRATES="
 	regex-automata@0.4.13
 	regex-syntax@0.8.8
 	regex@1.12.2
+	retry@2.1.0
 	ringbuf@0.4.8
 	rpassword@7.4.0
 	rtoolbox@0.0.3
@@ -212,7 +213,7 @@ CRATES="
 	strum@0.27.2
 	strum_macros@0.27.2
 	subtle@2.6.1
-	syn@2.0.110
+	syn@2.0.111
 	tabwriter@1.4.1
 	tap@1.0.1
 	tcmalloc@0.3.0
@@ -226,11 +227,11 @@ CRATES="
 	tick_counter@0.4.5
 	tinyvec@1.10.0
 	tinyvec_macros@0.1.1
-	tracing-attributes@0.1.30
-	tracing-core@0.1.34
+	tracing-attributes@0.1.31
+	tracing-core@0.1.35
 	tracing-log@0.2.0
-	tracing-subscriber@0.3.20
-	tracing@0.1.41
+	tracing-subscriber@0.3.22
+	tracing@0.1.43
 	typenum@1.19.0
 	unicode-ident@1.0.22
 	unicode-normalization@0.1.25
@@ -243,10 +244,10 @@ CRATES="
 	wasi@0.11.1+wasi-snapshot-preview1
 	wasi@0.9.0+wasi-snapshot-preview1
 	wasip2@1.0.1+wasi-0.2.4
-	wasm-bindgen-macro-support@0.2.105
-	wasm-bindgen-macro@0.2.105
-	wasm-bindgen-shared@0.2.105
-	wasm-bindgen@0.2.105
+	wasm-bindgen-macro-support@0.2.106
+	wasm-bindgen-macro@0.2.106
+	wasm-bindgen-shared@0.2.106
+	wasm-bindgen@0.2.106
 	which@4.4.2
 	winapi-i686-pc-windows-gnu@0.4.0
 	winapi-x86_64-pc-windows-gnu@0.4.0
@@ -273,8 +274,8 @@ CRATES="
 	wyz@0.5.1
 	yaxpeax-arch@0.3.2
 	yaxpeax-arm@0.4.0
-	zerocopy-derive@0.8.27
-	zerocopy@0.8.27
+	zerocopy-derive@0.8.31
+	zerocopy@0.8.31
 	zeroize@1.8.2
 "
 
