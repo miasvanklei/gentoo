@@ -1144,7 +1144,7 @@ app-arch/dtrx 8.5.3-r2 8.7.0 8.7.1 9999: Do The Right eXtraction - extracts arch
 app-arch/duff 0.5.2: Command-line utility for quickly finding duplicates in a given set of files
 app-arch/dump 0.4.47-r2 0.4.47-r3: Dump/restore ext2fs backup utilities
 app-arch/engrampa 1.28.1 1.28.2: Engrampa archive manager for MATE
-app-arch/file-roller 44.4 44.5: Archive manager for GNOME
+app-arch/file-roller 44.5 44.6: Archive manager for GNOME
 app-arch/funzix 1.0-r1: Unpacker for the bogus ZIX format
 app-arch/gcab 1.6: Library and tool for working with Microsoft Cabinet (CAB) files
 app-arch/gnome-autoar 0.4.5: Automatic archives creating and extracting library
@@ -1808,10 +1808,10 @@ app-editors/featherpad 1.6.2 9999: Lightweight Qt5 Plain-Text Editor for Linux
 app-editors/focuswriter 1.8.10: Fullscreen and distraction-free word processor
 app-editors/gedit 46.2 48.1: A text editor for the GNOME desktop
 app-editors/gedit-plugins 46.0-r1 48.1: Collection of extra plugins for the gedit Text Editor
-app-editors/ghex 46.2 46.3 48.1 9999: GNOME hexadecimal editor
+app-editors/ghex 48.1 48.3 9999: GNOME hexadecimal editor
 app-editors/ghostwriter 25.08.3 25.12.0: Cross-platform, aesthetic, distraction-free markdown editor
 app-editors/gnome-latex 3.46.0-r1: Integrated LaTeX environment for GNOME
-app-editors/gnome-text-editor 46.3 47.4 48.3: A simple text editor for the GNOME desktop
+app-editors/gnome-text-editor 48.3 49.0: A simple text editor for the GNOME desktop
 app-editors/gummi 0.8.3: Simple LaTeX editor for GTK+ users
 app-editors/gvim 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9999: GUI version of the Vim text editor
 app-editors/helix 25.01.1 25.07.1: A post-modern text editor
@@ -2769,10 +2769,10 @@ app-misc/geekcode 1.7.3-r1: Geek code generator
 app-misc/geneweb 7.1_beta: Genealogy software program with a Web interface
 app-misc/gentoo 0.20.7-r1: Graphical file manager for Unix-like systems, using GTK+
 app-misc/gentoo-elections 0_p20240831: Gentoo election control data and scripts
-app-misc/geoclue 2.7.1 2.7.2: Location information D-Bus service
+app-misc/geoclue 2.7.2 2.8.0: Location information D-Bus service
 app-misc/getopt 1.1.6-r1: getopt(1) replacement supporting GNU-style long options
 app-misc/glcdprocdriver 0.1.2-r1: A glue between the graphlcd-base library from the GraphLCD project
-app-misc/gnote 47.2-r1 48.1 48.2: Desktop note-taking application
+app-misc/gnote 48.2 49.1: Desktop note-taking application
 app-misc/gnuit 4.9.5-r2: GNU Interactive Tools - increase speed and efficiency of most daily tasks
 app-misc/go-jira 1.0.28-r1: A simple JIRA commandline client in Go
 app-misc/gojq 0.12.16 0.12.17: Pure Go implementation of jq with yaml support
@@ -2988,7 +2988,7 @@ app-office/endeavour 43.0-r1 9999: Personal task manager
 app-office/glabels 3.4.1-r2: Program for creating labels and business cards
 app-office/gnucash 5.10-r1 5.11 5.12: Personal finance manager
 app-office/gnumeric 1.12.59-r1: The GNOME Spreadsheet
-app-office/grisbi 3.0.3-r1 3.0.4-r1: Grisbi is a personal accounting application for Linux
+app-office/grisbi 3.0.4-r1: Grisbi is a personal accounting application for Linux
 app-office/homebank 5.9.5: Free, easy, personal accounting for everyone
 app-office/impressive 0.13.1 0.13.2: Stylish way of giving presentations with Python
 app-office/joplin-desktop 3.5.5 3.5.6 3.5.7: Secure note taking and to-do app with synchronization capabilities
@@ -3229,7 +3229,7 @@ app-text/dvisvgm 2.14-r1 3.0.4 3.1 3.1.2 3.2 3.3 3.4: Converts DVI files to SVG
 app-text/ebook-tools 0.2.2-r4: Tools for accessing and converting various ebook file formats
 app-text/ebook2cw 0.8.5: Convert ebooks to Morse MP3s/OGGs
 app-text/editorconfig-core-c 0.12.6 0.12.9: EditorConfig core library written in C
-app-text/enchant 1.6.1-r2 2.6.1-r1 2.8.11-r1 2.8.12: Spellchecker wrapping library
+app-text/enchant 1.6.1-r2 2.6.1-r1 2.8.12 2.8.14: Spellchecker wrapping library
 app-text/enscript 1.6.6-r1 1.6.6-r2: Powerful text-to-postscript converter
 app-text/epspdf 0.6.5.1: GUI and command-line converter for [e]ps and pdf
 app-text/epstool 3.09: Creates or extracts preview images in EPS files, fixes bounding boxes
@@ -3248,7 +3248,7 @@ app-text/grip 4.6.2: Preview GitHub Markdown files like Readme locally before co
 app-text/groonga 13.0.1 14.0.4 14.0.9 14.1.2: An Embeddable Fulltext Search Engine
 app-text/groonga-normalizer-mysql 1.1.1-r1: Groonga plugin that provides MySQL compatible normalizers
 app-text/grutatxt 2.200.0: A converter from plain text to HTML and other markup languages
-app-text/gspell 1.12.2 1.14.0-r1: Spell check library for GTK+ applications
+app-text/gspell 1.14.0-r1 1.14.2: Spell check library for GTK+ applications
 app-text/gtkspell 2.0.16-r2 3.0.10-r1: Spell checking widget for GTK
 app-text/gtranslator 47.1-r1 48.0: GNOME Translation Editor
 app-text/gv 3.7.4: Viewer for PostScript and PDF documents using Ghostscript
@@ -3269,7 +3269,7 @@ app-text/htp 1.19-r1: An HTML preprocessor
 app-text/hunspell 1.7.2 1.7.2-r1: Spell checker, morphological analyzer library and command-line tool
 app-text/hyperestraier 1.4.13-r2: a full-text search system for communities
 app-text/idnits 2.17.1: A tool to check internet-drafts (IDs) for submission nits
-app-text/iso-codes 4.17.0 4.18.0: ISO language, territory, currency, script codes and their translations
+app-text/iso-codes 4.18.0 4.19.0: ISO language, territory, currency, script codes and their translations
 app-text/itex2mml 1.6.1: LaTeX to XHTML/MathML converter
 app-text/jabref 5.15: Graphical Java application for managing BibTeX and biblatex (.bib) databases
 app-text/jabref-bin 3.8.2-r1 4.3.1-r1: Java GUI for managing BibTeX and other bibliographies
@@ -3858,7 +3858,7 @@ dev-cpp/amqp-cpp 4.3.27: AMQP-CPP is a C++ library for communicating with a Rabb
 dev-cpp/antlr-cpp 2.7.7-r2 4.11.1 4.13.2-r1: The ANTLR 4 C++ Runtime
 dev-cpp/argparse 2.9 3.0 3.2: Argument Parser for Modern C++
 dev-cpp/asio 1.30.2 1.34.2 1.36.0: Asynchronous Network Library
-dev-cpp/atkmm 2.28.3 2.28.4: C++ interface for the ATK library
+dev-cpp/atkmm 2.28.4 2.36.3: C++ interface for the ATK library
 dev-cpp/aws-crt-cpp 0.35.2: C++ wrapper around the aws-c-* libraries
 dev-cpp/aws-sdk-cpp 1.11.686: AWS SDK for C++
 dev-cpp/azure-core 1.16.1: Azure SDK for C++
@@ -3896,7 +3896,7 @@ dev-cpp/frugally-deep 0.15.30: Header-only library for using Keras models in C++
 dev-cpp/functional-plus 0.2.22: Functional Programming Library for C++
 dev-cpp/gflags 2.2.2-r1 9999: Google's C++ argument parsing library
 dev-cpp/glaze 5.2.1 5.5.4: Extremely fast, in memory, JSON and interface library for modern C++
-dev-cpp/glibmm 2.66.7 2.66.8 2.78.1 2.84.0: C++ interface for glib2
+dev-cpp/glibmm 2.66.8 2.84.0: C++ interface for glib2
 dev-cpp/glog 0.5.0 0.6.0 0.6.0-r1 0.7.1: Google Logging library
 dev-cpp/gpgmepp 2.0.0-r1: GnuPG Made Easy is a library for making GnuPG easier to use (C++ bindings)
 dev-cpp/gstreamermm 1.10.0-r3: C++ interface for GStreamer
@@ -3913,7 +3913,7 @@ dev-cpp/kokkos 4.0.1-r1 4.3.1-r1 4.6.2-r1 4.6.2-r2 9999: C++ Performance Portabi
 dev-cpp/libcmis 0.6.2-r2 9999: C++ client library for the CMIS interface
 dev-cpp/libjson-rpc-cpp 1.4.0 1.4.0-r1: JSON-RPC (1.0 & 2.0) framework for C++
 dev-cpp/libmcpp 2.7.2_p5-r2: A portable C++ preprocessor
-dev-cpp/libxmlpp 2.42.2-r1 2.42.3 5.0.3-r1 5.0.4: C++ wrapper for the libxml2 XML parser library
+dev-cpp/libxmlpp 2.42.3 5.0.4 5.4.0: C++ wrapper for the libxml2 XML parser library
 dev-cpp/lucene++ 3.0.9 3.0.9-r1: C++ port of Lucene library, a high-performance, full-featured text search engine
 dev-cpp/magic_enum 0.9.6 0.9.7: Static reflection for enums in header-only C++
 dev-cpp/mm-common 1.0.6 1.0.7: Build infrastructure and utilities for GNOME C++ bindings
@@ -3925,7 +3925,7 @@ dev-cpp/mvfst 2024.11.04.00-r1 2025.04.14.00 2025.04.14.00-r1: An implementation
 dev-cpp/nlohmann_json 3.10.2 3.12.0-r1: JSON for Modern C++
 dev-cpp/notcurses 3.0.5-r1 3.0.8 3.0.8-r1: Blingful TUIs and character graphics
 dev-cpp/opentelemetry-cpp 1.6.0-r1 1.6.0-r3 1.20.0-r1 1.22.0 1.24.0: The OpenTelemetry C++ Client
-dev-cpp/pangomm 2.46.3 2.46.4 2.50.1 2.50.2: C++ interface for pango
+dev-cpp/pangomm 2.46.4 2.50.2 2.56.1: C++ interface for pango
 dev-cpp/pcg-cpp 0.98.1_p20220408: Family of better random number generators
 dev-cpp/picojson 1.3.0: Header-file-only, JSON parser serializer in C++
 dev-cpp/popl 1.2.0-r1: Header-only C++ program options parser library
@@ -3938,7 +3938,7 @@ dev-cpp/rapidyaml 0.9.0 0.10.0: Library to parse and emit YAML, and do it fast
 dev-cpp/robin-map 1.3.0 1.4.0-r1 9999: C++ fast hash map and hash set using robin hood hashing
 dev-cpp/scitokens-cpp 1.1.0-r1 1.1.1 1.1.2 1.1.3: C++ implementation of the SciTokens library with a C library interface
 dev-cpp/sdbus-c++ 2.1.0: High-level C++ D-Bus library
-dev-cpp/simdutf 7.3.4: Unicode validation and transcoding at billions of characters per second
+dev-cpp/simdutf 7.3.4 7.7.0: Unicode validation and transcoding at billions of characters per second
 dev-cpp/simpleini 4.22-r1 4.25: C++ library providing a simple API to read and write INI-style files
 dev-cpp/sol2 3.3.1-r1 3.5.0-r1: Header-only C++ <-> Lua API wrapper
 dev-cpp/sparsehash 2.0.4-r1: An extremely memory-efficient hash_map implementation
@@ -4049,7 +4049,7 @@ dev-db/sqlitebrowser 3.13.1_p20250502-r1 9999: Light GUI editor for SQLite datab
 dev-db/sqlitestudio 3.4.17 4.0.0_pre20251207: Powerful cross-platform SQLite database manager
 dev-db/sqlmap 1.9.8 1.9.9 1.9.10 9999: An automatic SQL injection and database takeover tool
 dev-db/textsearch_ja 9.0.0: Integrated Full-Text-Search for Japanese language using morphological analyze
-dev-db/timescaledb 2.21.4 2.22.1 2.23.1: Open-source time-series SQL database
+dev-db/timescaledb 2.21.4 2.22.1 2.23.1 2.24.0: Open-source time-series SQL database
 dev-db/tinycdb 0.81: A very fast and simple package for creating and reading constant data bases
 dev-db/tokyocabinet 1.4.48-r3: A library of routines for managing a database
 dev-db/unixODBC 2.3.12-r1 2.3.12-r2 2.3.14: Complete ODBC driver manager
@@ -4059,7 +4059,7 @@ dev-debug/apitrace 13.0: Tool for tracing, analyzing, and debugging graphics API
 dev-debug/bpftrace 0.24.1 0.24.2 9999: High-level tracing language for eBPF
 dev-debug/cgdb 0.8.0 9999: A curses front-end for GDB, the GNU debugger
 dev-debug/d-feet 0.3.16-r1: D-Feet is a powerful D-Bus debugger
-dev-debug/d-spy 47.0 48.0: D-Spy is a simple tool to explore D-Bus connections
+dev-debug/d-spy 48.0 49.2: D-Spy is a simple tool to explore D-Bus connections
 dev-debug/ddd 3.3.12-r5 3.4.1: Graphical front-end for command-line debuggers
 dev-debug/drgn 0.0.33: Programmable debugger
 dev-debug/dtrace 2.0.3-r2 2.0.4 9999: Dynamic BPF-based system-wide tracing tool
@@ -4877,9 +4877,9 @@ dev-java/conversant-disruptor 1.2.20: Conversant Disruptor - very high throughpu
 dev-java/cortado 0.6.0-r3: Multimedia framework for Java written by Fluendo
 dev-java/coursier-bin 2.1.14 2.1.24: Java/Scala artifact fetching, bundling and deploying
 dev-java/cpptasks 1.0_beta5-r3: Ant-tasks to compile various source languages and produce executables
-dev-java/dom4j 2.1.4 2.2.0: flexible XML framework for Java
+dev-java/dom4j 2.2.0: flexible XML framework for Java
 dev-java/easymock 2.5.2 3.3.1-r2 5.6.0: Mock Objects for interfaces in JUnit tests by generating them on the fly
-dev-java/eclipse-ecj 4.20 4.26-r2 4.37-r1: Eclipse Compiler for Java
+dev-java/eclipse-ecj 4.20 4.26-r2 4.37-r1 4.38: Eclipse Compiler for Java
 dev-java/eclipse-jdt-annotation 4.37: JDT Annotations for Enhanced Null Analysis
 dev-java/emma 2.0.5312-r6: Free Java code coverage tool
 dev-java/error-prone-annotations 2.42.0: Java annotations for the Error Prone static analysis tool
@@ -4976,7 +4976,7 @@ dev-java/jax-rpc-api 1.1.4: Eclipse Project for Stable EE4J APIs
 dev-java/jaxb-api 2.3.3-r2 3.0.1-r1 4.0.2: Jakarta XML Binding API
 dev-java/jaxb-runtime 2.3.8 4.0.0-r1: JAXB (JSR 222) Reference Implementation
 dev-java/jaxb-stax-ex 1.8.3 2.1.0-r1: Extensions to JSR-173 StAX API.
-dev-java/jaxen 2.0.0: Jaxen is a universal XPath engine for Java
+dev-java/jaxen 2.0.0-r1: Jaxen is a universal XPath engine for Java
 dev-java/jaxrs-api 2.1.6-r1: Jakarta RESTful Web Services API
 dev-java/jaxws-api 2.3.3: JAX-WS (JSR 224) API (Eclipse Project for JAX-WS)
 dev-java/jbcrypt 0.4: Java implementation of OpenBSD's Blowfish password hashing code
@@ -5069,8 +5069,8 @@ dev-java/objenesis 3.4: A library for instantiating Java objects
 dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
-dev-java/openjdk 8.472_p08 11.0.29_p7 17.0.17_p10 21.0.9_p10 25.0.1_p8 26_alpha20: Open source implementation of the Java programming language
-dev-java/openjdk-bin 8.462_p08 11.0.28_p6 17.0.16_p8 21.0.8_p9 25_p36 26_alpha20: Prebuilt Java JDK binaries provided by Eclipse Temurin
+dev-java/openjdk 8.472_p08 11.0.29_p7 17.0.17_p10 21.0.9_p10 25.0.1_p8 26_alpha28 27_alpha2: Open source implementation of the Java programming language
+dev-java/openjdk-bin 8.462_p08 8.472_p08 11.0.28_p6 11.0.29_p7 17.0.16_p8 17.0.17_p10 21.0.8_p9 21.0.9_p10 25_p36 25.0.1_p8 26_alpha25: Prebuilt Java JDK binaries provided by Eclipse Temurin
 dev-java/openjdk-jre-bin 8.462_p08 11.0.28_p6 17.0.16_p8 21.0.8_p9: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 8.1000-r2 11.0.11_p1-r5: Java OpenJFX client application platform
 dev-java/opentelemetry-java 1.49.0: OpenTelemetry Context (Incubator)
@@ -5090,13 +5090,13 @@ dev-java/poi 5.2.5: Maven build of Apache POI for Sonar checks
 dev-java/protobuf-java 4.33.0: Core Protocol Buffers library
 dev-java/qdox 1.12.1-r8 2.2.0: Parser for extracting class/interface/method definitions
 dev-java/randomized-runner 2.8.3: JUnit test runner and plugins for running JUnit tests with pseudo-randomness
-dev-java/reflections 0.9.12-r6: Reflections - a Java runtime metadata analysis
+dev-java/reflections 0.9.12-r7: Reflections - a Java runtime metadata analysis
 dev-java/relaxng-datatype 20020414: Interface between RELAX NG validators and datatype libraries
 dev-java/reload4j 1.2.22: Reload4j revives EOLed log4j 1.x
 dev-java/rhino 1.8.0: Rhino JavaScript runtime jar, excludes XML, tools, and ScriptEngine wrapper
 dev-java/rome 0.9-r4: Java framework for RSS and Atom feeds
 dev-java/sax 2.2.1-r5: SAX: Simple API for XML in Java
-dev-java/saxon 9.2.0.6-r5: A XSLT and XQuery Processor
+dev-java/saxon 9.2.0.6-r6: A XSLT and XQuery Processor
 dev-java/sbt 0.13.18-r1: sbt is a build tool for Scala and Java projects that aims to do the basics well
 dev-java/sbt-bin 1.8.0: sbt, a build tool for Scala
 dev-java/scala-cli-bin 1.8.0 1.9.1 1.10.1: CLI to interact with Scala and Java
@@ -5411,7 +5411,7 @@ dev-libs/gmp 6.3.0-r1: Library for arbitrary-precision arithmetic on different t
 dev-libs/gnulib 2024.01.01.10.31.48 2025.08.27.16.03.17 9999-r1: Gnulib is a library of common routines intended to be shared at the source level
 dev-libs/gobject-introspection 1.82.0-r2 1.84.0-r1 1.86.0: Introspection system for GObject-based libraries
 dev-libs/gobject-introspection-common 1.82.0 1.84.0 1.86.0: Build infrastructure for GObject Introspection
-dev-libs/gom 0.5.3 0.5.4: GObject to SQLite object mapper library
+dev-libs/gom 0.5.4 0.5.5: GObject to SQLite object mapper library
 dev-libs/gost-engine 3.0.1 3.0.1-r1 3.0.2 3.0.3 9999: A reference implementation of the Russian GOST crypto algorithms for OpenSSL
 dev-libs/granite 6.2.0 7.6.0: Elementary OS library that extends GTK+
 dev-libs/gumbo 0.13.1 0.13.2-r1: The HTML5 parsing algorithm implemented as a pure C99 library
@@ -5503,7 +5503,7 @@ dev-libs/libdazzle 3.44.0: Experimental new features for GTK+ and GLib
 dev-libs/libdbh 5.0.22: A small library to create and manage 64-bit disk based hash tables
 dev-libs/libdbusmenu 16.04.0-r4: Library to pass menu structure across DBus
 dev-libs/libdbusmenu-lxqt 0.3.0: LXQt DBusMenu Implementation
-dev-libs/libdex 0.6.1 0.8.1 0.10.0 0.10.1: Dex provides Future-based programming for GLib-based applications
+dev-libs/libdex 0.10.1 1.0.0: Dex provides Future-based programming for GLib-based applications
 dev-libs/libdispatch 5.8 6.1.1: A library for concurrent code execution on multicore hardware
 dev-libs/libdivecomputer 0.6.0-r1 9999: Library for communication with dive computers from various manufacturers
 dev-libs/libdivsufsort 2.0.1-r2: Suffix-sorting library (for BWT)
@@ -10226,7 +10226,7 @@ dev-ruby/nkf 0.2.0: Ruby extension for Network Kanji Filter
 dev-ruby/nokogiri 1.18.7-r1 1.18.8-r1 1.18.9 1.18.10: Nokogiri is an HTML, XML, SAX, and Reader parser
 dev-ruby/nokogiri-diff 0.3.0: Calculate the differences between two XML/HTML documents
 dev-ruby/oauth 0.6.2-r2 1.1.0: A RubyGem for implementing both OAuth clients and servers
-dev-ruby/oauth-tty 1.0.5: OAuth 1.0 TTY Command Line Interface
+dev-ruby/oauth-tty 1.0.5 1.0.6: OAuth 1.0 TTY Command Line Interface
 dev-ruby/oauth2 1.4.11 2.0.11 2.0.12: Wrapper for the OAuth 2.0 protocol with a similar style to the OAuth gem
 dev-ruby/observer 0.1.2: Implementation of the Observer object-oriented design pattern
 dev-ruby/octokit 10.0.0: Ruby toolkit for the Github API
@@ -13115,7 +13115,7 @@ media-gfx/photoqt 4.9.2: Simple but powerful Qt-based image viewer
 media-gfx/phototonic 3.0.0 3.1.0: Image viewer and organizer
 media-gfx/pinta 3.0: Pinta is a free, open source program for drawing and image editing
 media-gfx/pixels2pgf 0.1-r1 9999: Convert pixel images (e.g. QRCode) to PGF/Tikz rectangles
-media-gfx/plantuml 1.2025.8 1.2025.9: Draw UML diagrams using a simple and human readable text description
+media-gfx/plantuml 1.2025.9 1.2025.10: Draw UML diagrams using a simple and human readable text description
 media-gfx/png2ico 2002.12.08: PNG to icon converter
 media-gfx/pngcheck 3.0.3: Verifies the integrity of PNG, JNG, and MNG files with internal checksums
 media-gfx/pngcrush 1.8.13: Portable Network Graphics (PNG) optimizing utility
@@ -13939,7 +13939,7 @@ media-sound/asunder 3.0.1-r1: Graphical Audio CD ripper and encoder with support
 media-sound/aucatctl 0.1: A tool for controlling aucat and/or sndiod volume through MIDI
 media-sound/aucdtect 0.8.2-r1: Commandline FLAC CDDA authenticity verifier
 media-sound/audacious 4.4.2 4.5.1: Lightweight and versatile audio player
-media-sound/audacity 3.3.3-r1 3.4.2-r2 3.7.2-r1 3.7.3-r1 3.7.5-r1 9999: Free crossplatform audio editor
+media-sound/audacity 3.3.3-r1 3.4.2-r2 3.7.2-r1 3.7.3-r1 3.7.5-r1 3.7.7 9999: Free crossplatform audio editor
 media-sound/audex 25.08.3 25.12.0: Tool for ripping compact discs
 media-sound/audiocompress 2.0: Very gentle 1-band dynamic range compressor
 media-sound/audiotag 0.19-r1: Command-line tool for mass tagging/renaming of audio files
@@ -15539,7 +15539,7 @@ net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable fi
 net-p2p/retroshare 0.6.7-r4: Friend to Friend secure communication and sharing application
 net-p2p/rtorrent 0.15.7 0.16.5 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.13.0a_p0 0.14.0a_p0: TUI and CLI for the BitTorrent client Transmission
-net-p2p/syncthing 1.27.12 1.29.5 2.0.8-r1 2.0.10 2.0.11 2.0.12: Open Source Continuous File Synchronization
+net-p2p/syncthing 1.29.5 2.0.10 2.0.11 2.0.12 2.0.12-r1: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
 net-p2p/transmission 4.0.5-r2 4.0.6-r6 4.1.0_beta2-r1 4.1.0_beta3 4.1.0_beta4 9999: A fast, easy, and free BitTorrent client
 net-p2p/transmission-remote-gtk 1.5.1-r1 1.6.0: GTK+ client for management of the Transmission BitTorrent client, over HTTP RPC
@@ -18253,7 +18253,7 @@ www-servers/servefile 0.5.4 0.5.4-r1 0.5.4-r2: Serve a single file via HTTP
 www-servers/sniproxy 0.6.1: Proxies incoming HTTP and TLS connections based on the hostname
 www-servers/spawn-fcgi 1.6.5 1.6.6: A FCGI spawner for lighttpd and cherokee and other webservers
 www-servers/thin 1.8.2 2.0.0 2.0.1: A fast and very simple Ruby web server
-www-servers/tomcat 9.0.109 9.0.111 10.1.46 10.1.48 11.0.11 11.0.13: Tomcat Servlet-6.1/JSP-4.0/EL-6.0/WebSocket-2.2/JASPIC-3.1 Container
+www-servers/tomcat 9.0.111 9.0.113 10.1.48 10.1.50 11.0.13 11.0.15: Tomcat Servlet-6.1/JSP-4.0/EL-6.0/WebSocket-2.2/JASPIC-3.1 Container
 www-servers/uwsgi 2.0.23-r1 2.0.27-r1: uWSGI server for Python web applications
 www-servers/varnish 7.5.0 7.7.1 7.7.3 8.0.0: Varnish is a state-of-the-art, high-performance HTTP accelerator
 www-servers/webfs 1.21: Lightweight HTTP server for static content
