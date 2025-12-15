@@ -11,9 +11,9 @@ inherit kernel-build toolchain-funcs verify-sig
 BASE_P=linux-${PV%.*}
 # https://koji.fedoraproject.org/koji/packageinfo?packageID=8
 # forked to https://github.com/projg2/fedora-kernel-config-for-gentoo
-CONFIG_VER=6.17.3-gentoo
-GENTOO_CONFIG_VER=g17
-SHA256SUM_DATE=20251124
+CONFIG_VER=6.18.1-gentoo
+GENTOO_CONFIG_VER=g18
+SHA256SUM_DATE=20251212
 
 DESCRIPTION="Linux kernel built from vanilla upstream sources"
 HOMEPAGE="
