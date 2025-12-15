@@ -6090,7 +6090,7 @@ dev-ml/ocaml-gettext-camomile 0.4.2-r1: Support for internationalization of OCam
 dev-ml/ocaml-gettext-stub 0.4.2-r2 0.4.2.1: Support for internationalization of OCaml programs using native gettext library
 dev-ml/ocaml-hashcons 1.3: OCaml hash-consing library
 dev-ml/ocaml-inifiles 1.2: A small OCaml library to read and write .ini files
-dev-ml/ocaml-migrate-parsetree 2.1.0 2.2.0 2.3.0 2.4.0-r1: Convert OCaml parsetrees between different major versions
+dev-ml/ocaml-migrate-parsetree 2.1.0 2.2.0 2.3.0-r1 2.4.0-r1: Convert OCaml parsetrees between different major versions
 dev-ml/ocaml-process 0.2.1-r1: Easy process control for OCaml
 dev-ml/ocaml-sha 1.15.1 1.15.2 1.15.4: Binding to the SHA cryptographic functions
 dev-ml/ocaml-sqlite3 5.0.2: SQLite3 bindings for OCaml
@@ -9556,6 +9556,7 @@ dev-python/spyder 6.0.8 6.1.0 6.1.1: The Scientific Python Development Environme
 dev-python/spyder-kernels 3.0.5 3.1.1 3.1.2: Kernels used by spyder on its ipython console
 dev-python/spyder-line-profiler 0.4.1 0.4.2: Plugin to run the python line profiler from within the spyder editor
 dev-python/spyder-notebook 0.6.2 0.7.0 0.7.1: Jupyter notebook integration with Spyder
+dev-python/spyder-terminal 1.3.0: Run system terminals inside Spyder
 dev-python/spyder-unittest 0.7.0 0.7.1: Plugin for Spyder to run tests and view the results
 dev-python/sqlalchemy 1.4.54 2.0.44 2.0.45: Python SQL toolkit and Object Relational Mapper
 dev-python/sqlalchemy-rqlite 2.0: A SQLAlchemy dialect for rqlite
@@ -10185,7 +10186,7 @@ dev-ruby/mixlib-config 3.0.27: A class based configuration library
 dev-ruby/mixlib-shellout 3.3.9: Run external commands on Unix or Windows
 dev-ruby/mize 0.6.1: Library that provides memoziation for methods and functions for Ruby
 dev-ruby/mkmf-lite 0.7.3: light version of the the mkmf library designed for use as a library
-dev-ruby/mocha 0.14.0-r1 2.4.5 2.6.1 2.7.1 2.8.2: Mocking and stubbing using a syntax like that of JMock and SchMock
+dev-ruby/mocha 0.14.0-r1 2.4.5 2.6.1 2.7.1 2.8.2 3.0.0: Mocking and stubbing using a syntax like that of JMock and SchMock
 dev-ruby/moneta 1.6.0-r1: A unified interface to key/value stores
 dev-ruby/mqtt 0.6.0: Pure Ruby gem that implements the MQTT protocol
 dev-ruby/msgpack 1.7.3 1.7.5 1.8.0: Binary-based efficient data interchange format for ruby binding
@@ -10209,7 +10210,7 @@ dev-ruby/net-http 0.6.0 0.7.0 0.8.0: HTTP client api for Ruby
 dev-ruby/net-http-digest_auth 1.4.1-r2: An implementation of RFC 2617 - Digest Access Authentication
 dev-ruby/net-http-persistent 4.0.5 4.0.6: Manages persistent connections using Net::HTTP plus a speed fix for Ruby 1.8
 dev-ruby/net-http-pipeline 1.0.1-r1: An HTTP/1.1 pipelining implementation atop Net::HTTP
-dev-ruby/net-imap 0.4.20 0.4.22 0.5.10 0.5.11 0.5.12: Ruby client api for Internet Message Access Protocol
+dev-ruby/net-imap 0.4.22 0.5.12 0.6.0: Ruby client api for Internet Message Access Protocol
 dev-ruby/net-pop 0.1.2: Ruby client library for POP3
 dev-ruby/net-protocol 0.2.2: The abstruct interface for net-* client
 dev-ruby/net-scp 4.1.0: A pure Ruby implementation of the SCP client protocol
