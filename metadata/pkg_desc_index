@@ -928,7 +928,7 @@ app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarde
 app-admin/bitwarden-desktop-bin 2025.8.2 2025.9.0 2025.10.0: Bitwarden password manager desktop client
 app-admin/bpftune 0.4_p2: BPF driven auto-tuning
 app-admin/btrfs-assistant 2.2: GUI management tool to make managing a Btrfs filesystem easier
-app-admin/calamares 3.3.13 3.3.14-r1 3.3.14-r3 3.3.14-r4: Distribution-independent installer framework
+app-admin/calamares 3.3.14-r1 3.3.14-r3 3.3.14-r4: Distribution-independent installer framework
 app-admin/cancd 0.1.0-r6: CA NetConsole Daemon receives output from the Linux netconsole driver
 app-admin/ccze 0.2.1-r5: A flexible and fast logfile colorizer
 app-admin/cdist 7.0.0-r1: A usable configuration management system
@@ -1226,7 +1226,7 @@ app-arch/wimlib 1.14.4-r1: The open source Windows Imaging (WIM) library
 app-arch/xar 1.8.0.0.498-r1: An easily extensible archive format
 app-arch/xarchiver 0.5.4.26: A GTK+ archive manager that can be used with Thunar
 app-arch/xdms 1.3.2-r2: xDMS - Amiga DMS disk image decompressor
-app-arch/xz-utils 5.6.4-r2 5.8.1-r1 9999: Utils for managing LZMA compressed files
+app-arch/xz-utils 5.6.4-r2 5.8.1-r1 5.8.2 9999: Utils for managing LZMA compressed files
 app-arch/zchunk 1.3.2 1.4.0 1.5.1 9999: File format designed for highly efficient deltas with good compression
 app-arch/zip 3.0-r7: Info ZIP (encryption support)
 app-arch/zoo 2.10-r6: Manipulate archives of files in compressed form
@@ -1240,7 +1240,7 @@ app-backup/backup-manager 0.7.14-r1: Backup Manager is a command line backup too
 app-backup/backupninja 1.2.2: lightweight, extensible meta-backup system
 app-backup/backuppc 3.3.1-r6 4.4.0-r1 4.4.0-r2 4.4.0-r3: High-performance backups to a server's disk
 app-backup/bacula 15.0.3-r1 15.0.3-r2: Featureful client/server network backup suite
-app-backup/bareos 21.1.11 22.1.7 23.1.3-r1 23.1.4 24.0.5 24.0.7 9999: Featureful client/server network backup suite
+app-backup/bareos 21.1.11 22.1.7 22.1.8 23.1.3-r1 23.1.4 23.1.5 24.0.5 24.0.7 9999: Featureful client/server network backup suite
 app-backup/borgbackup 1.4.1-r1 1.4.2-r1 1.4.3: Deduplicating backup program with compression and authenticated encryption
 app-backup/borgmatic 2.0.7 2.0.11 2.0.12: Automatically create, prune and verify backups with borgbackup
 app-backup/btrbk 0.32.6-r1 0.32.6-r2 9999: Tool for creating snapshots and remote backups of btrfs subvolumes
@@ -3785,7 +3785,7 @@ dev-ada/ada_language_server 25.0.20241014-r4: a Language Server Protocol for Ada
 dev-ada/ada_libfswatch 2024.07.09-r1: Ada binding to the libfswatch library
 dev-ada/adareducer 0.20250402: Ada Reducer
 dev-ada/aunit 25.0.0-r3 26.0.0: Ada unit testing framework
-dev-ada/aws 25.1.0-r3: A complete Web development framework
+dev-ada/aws 25.1.0-r3 25.2.0 26.0.0: A complete Web development framework
 dev-ada/e3-core 22.6.0-r3 22.6.0-r5: Ease the development of portable automated build systems
 dev-ada/e3-testsuite 26.0-r2: Generic testsuite framework in Python
 dev-ada/gnatcoll-bindings 25.0.0-r1 26.0.0: GNAT Component Collection
@@ -14852,7 +14852,7 @@ net-im/spectrum2 2.2.1 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
 net-im/synapse 1.141.0 1.142.1 1.143.0 1.144.0: Reference implementation of Matrix homeserver
 net-im/telegram-desktop 6.2.4 6.3.8: Official desktop client for Telegram
-net-im/telegram-desktop-bin 6.3.0 6.3.1 6.3.4: Official desktop client for Telegram (binary package)
+net-im/telegram-desktop-bin 6.3.4 6.3.9: Official desktop client for Telegram (binary package)
 net-im/telepathy-logger 0.8.2-r2 0.8.2_p4-r1: Daemon that centralizes the communication logging within the Telepathy framework
 net-im/telepathy-mission-control 5.16.6: An account manager and channel dispatcher for the Telepathy framework
 net-im/tkabber 1.1.2: A jabber client written in Tcl/Tk
@@ -15329,7 +15329,7 @@ net-misc/ndppd 0.2.6: Proxies NDP messages between interfaces
 net-misc/nemesis 1.8: A commandline-based, portable human IP stack for UNIX/Linux
 net-misc/netdate 1.2-r2: Utility to set date and time by ARPA Internet RFC 868
 net-misc/netevent 2.2.2: Tool to share Linux event devices with other machines
-net-misc/netifrc 0.7.7 0.7.8-r1 0.7.9 0.7.11 0.7.12 9999: Gentoo Network Interface Management Scripts
+net-misc/netifrc 0.7.7 0.7.8-r1 0.7.9 0.7.11 0.7.12 0.7.13 9999: Gentoo Network Interface Management Scripts
 net-misc/netkit-bootparamd 0.17-r5: Netkit - bootparamd: Net-boot support daemon
 net-misc/netkit-bootpd 2.4-r2: Netkit - bootp
 net-misc/netkit-fingerd 0.17-r3: Netkit - fingerd and finger client
@@ -16118,9 +16118,9 @@ sci-libs/coinor-bcp 1.4.4: COIN-OR Branch-Cut-Price Framework
 sci-libs/coinor-bcps 0.94.5: COIN-OR BiCePS data handling library
 sci-libs/coinor-blis 0.94.8: COIN-OR BiCePS Linear Integer Solver
 sci-libs/coinor-bonmin 1.8.8: COIN-OR Basic Open-source Nonlinear Mixed INteger programming
-sci-libs/coinor-cbc 2.10.5: COIN-OR branch-and-cut mixed integer program solver
-sci-libs/coinor-cgl 0.60.3: COIN-OR cut-generation library
-sci-libs/coinor-clp 1.17.6 1.17.6-r1: COIN-OR linear programming solver
+sci-libs/coinor-cbc 2.10.5 2.10.12: COIN-OR branch-and-cut mixed integer program solver
+sci-libs/coinor-cgl 0.60.3 0.60.9: COIN-OR cut-generation library
+sci-libs/coinor-clp 1.17.6 1.17.6-r1 1.17.10: COIN-OR linear programming solver
 sci-libs/coinor-couenne 0.5.8-r1: COIN-OR Convex Over and Under ENvelopes for Nonlinear Estimation
 sci-libs/coinor-csdp 6.2.0: COIN-OR C Library for Semi-Definite Programming
 sci-libs/coinor-dip 0.95.0-r2: COIN-OR Decomposition in Integer Programming library
@@ -16128,11 +16128,11 @@ sci-libs/coinor-dylp 1.10.4-r1: COIN-OR dynamic simplex linear program solver
 sci-libs/coinor-flopcpp 1.2.5: COIN-OR algebraic modeling language for linear optimization
 sci-libs/coinor-mp 1.8.4: COIN-OR lightweight API for COIN-OR libraries CLP, CBC, and CGL
 sci-libs/coinor-netlib 1.2.9: COIN-OR netlib models
-sci-libs/coinor-osi 0.108.6: COIN-OR Open Solver Interface
+sci-libs/coinor-osi 0.108.6 0.108.11: COIN-OR Open Solver Interface
 sci-libs/coinor-sample 1.2.12: COIN-OR Sample models
 sci-libs/coinor-smi 0.96.1: COIN-OR Stochastic modelling interface
 sci-libs/coinor-symphony 5.6.17: COIN-OR solver for mixed-integer linear programs
-sci-libs/coinor-utils 2.11.4 2.11.9: COIN-OR Matrix, Vector and other utility classes
+sci-libs/coinor-utils 2.11.4 2.11.9 2.11.12: COIN-OR Matrix, Vector and other utility classes
 sci-libs/coinor-vol 1.5.4: COIN-OR volume algorithm linear program solver
 sci-libs/colamd 2.9.6 3.0.3: Column approximate minimum degree ordering algorithm
 sci-libs/colpack 1.0.10: C++ algorithms for specialized vertex coloring problems
@@ -17100,7 +17100,7 @@ sys-apps/ipmi-fan-control 0.4.0-r1 9999: SuperMicro IPMI fan control daemon
 sys-apps/ipmicfg 1.36.0.250225: An in-band utility for configuring Supermicro IPMI devices
 sys-apps/ipmitool 1.8.19 1.8.19-r1: Utility for controlling IPMI enabled devices
 sys-apps/ipmiutil 3.1.9 3.2.1: IPMI Management Utilities
-sys-apps/iproute2 6.16.0 6.17.0 9999: kernel routing and traffic control utilities
+sys-apps/iproute2 6.16.0 6.17.0 6.18.0 9999: kernel routing and traffic control utilities
 sys-apps/irqbalance 1.9.4-r3 1.9.5: Distribute hardware interrupts across processors on a multiprocessor system
 sys-apps/isapnptools 1.27-r1: Tools for configuring ISA PnP devices
 sys-apps/iucode_tool 2.3.1-r1: tool to manipulate Intel X86 and X86-64 processor microcode update collections
@@ -17317,7 +17317,7 @@ sys-auth/pambase 20250826 20250906 20251013 20251104 20251104-r1 999999999: PAM 
 sys-auth/passwdqc 2.0.3-r1: Password strength checking library (and PAM module)
 sys-auth/polkit 123-r1 126-r1 126-r2 9999: Policy framework for controlling privileges for system-wide services
 sys-auth/polkit-pkla-compat 0.1-r2: Rules for polkit to add compatibility with pklocalauthority
-sys-auth/polkit-qt 0.200.0: Qt wrapper around polkit-1 client libraries
+sys-auth/polkit-qt 0.200.0 0.200.0-r1: Qt wrapper around polkit-1 client libraries
 sys-auth/realtime-base 0.1-r1: Sets up realtime scheduling
 sys-auth/rtkit 0.13-r2: Realtime Policy and Watchdog Daemon
 sys-auth/seatd 0.9.1 9999: Minimal seat management daemon and universal library
