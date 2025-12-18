@@ -15,7 +15,7 @@ if [[ ${PV} == *9999 ]]; then
 	[[ "${EGIT_BRANCH}" == "" ]] && die "Please set a git branch"
 else
 	SRC_URI="https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="amd64 ~arm arm64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
+	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 fi
 
 LICENSE="MIT"
@@ -67,14 +67,8 @@ REQUIRED_USE="
 	chafa? ( imagemagick )
 "
 
-pkg_pretend() {
-	if use X && ! use opengl; then
-		einfo 'USE="X" adds GLX support for USE="opengl"'
-		einfo 'This build with USE="X -opengl" will not include any extra X support.'
-	fi
-}
-
 src_configure() {
+
 	local fastfetch_enable_imagemagick7=no
 	local fastfetch_enable_imagemagick6=no
 	if use imagemagick; then
@@ -83,8 +77,13 @@ src_configure() {
 	fi
 
 	local glx=no
-	if use opengl && use X; then
-		glx=yes
+	if use X; then
+		if use opengl; then
+			glx=yes
+		else
+			ewarn 'USE="X" adds GLX support for USE="opengl"'
+			ewarn 'This build with USE="X -opengl" will not include any extra X support.'
+		fi
 	fi
 
 	local mycmakeargs=(
