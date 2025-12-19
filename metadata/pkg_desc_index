@@ -10495,7 +10495,7 @@ dev-ruby/time 0.4.1 0.4.2: Extends the Time class with methods for parsing and c
 dev-ruby/timecop 0.9.6 0.9.10 0.9.10-r1: A gem providing 'time travel' and 'time freezing' capabilities
 dev-ruby/timeout 0.4.3 0.4.4 0.5.0 0.6.0: Provides a framework for message digest libraries
 dev-ruby/timers 4.4.0: Pure Ruby one-shot and periodic timers
-dev-ruby/tins 1.38.0 1.43.0 1.44.1 1.45.0 1.47.0 1.48.0: All the stuff that isn't good enough for a real library
+dev-ruby/tins 1.43.0 1.47.0 1.48.0 1.49.0: All the stuff that isn't good enough for a real library
 dev-ruby/tokyocabinet 1.32.0-r2: Ruby bindings for Tokyo Cabinet
 dev-ruby/tomlrb 2.0.3: A racc based toml parser
 dev-ruby/traces 0.15.2 0.16.2 0.17.0 0.18.1 0.18.2: Application instrumentation and tracing
@@ -12361,7 +12361,6 @@ kde-apps/kwrite 25.08.3 25.12.0: Simple text editor based on KDE Frameworks
 kde-apps/libgravatar 25.08.3 25.12.0: Library for gravatar integration
 kde-apps/libkcddb 25.08.3 25.12.0: KDE library for CDDB
 kde-apps/libkcddb-common 25.08.3 25.12.0: Common files for libkcddb
-kde-apps/libkcompactdisc 25.08.3: Library for playing & ripping CDs
 kde-apps/libkdcraw 23.08.5 25.08.3 25.12.0: Digital camera raw image library wrapper
 kde-apps/libkdegames 25.08.3 25.12.0: Base library common to many KDE games
 kde-apps/libkdepim 25.08.3 25.12.0: Common PIM libraries
@@ -12392,13 +12391,13 @@ kde-apps/pim-data-exporter 25.08.3 25.12.0: Assistant to backup and archive PIM 
 kde-apps/pim-sieve-editor 25.08.3 25.12.0: Assistant for editing IMAP Sieve filters
 kde-apps/pimcommon 25.08.3 25.12.0: Common PIM libraries
 kde-apps/poxml 25.08.3 25.12.0: KDE utility to translate DocBook XML files using gettext po files
-kde-apps/rocs 25.11.70_pre20250830 25.12.0: Interface to work with Graph Theory
+kde-apps/rocs 25.12.0: Interface to work with Graph Theory
 kde-apps/signon-kwallet-extension 25.08.3 25.12.0: KWallet extension for signond
 kde-apps/step 25.08.3 25.12.0: Interactive physics simulator
 kde-apps/svgpart 25.08.3 25.12.0: Kpart for viewing SVGs
 kde-apps/sweeper 25.08.3 25.12.0: Privacy settings widget to clean unwanted traces on the system
 kde-apps/thumbnailers 25.08.3 25.12.0: Metapackage for KIO thumbnail generators
-kde-apps/umbrello 25.11.70_pre20250830 25.12.0: KDE UML Modeller
+kde-apps/umbrello 25.12.0: KDE UML Modeller
 kde-apps/yakuake 25.08.3 25.12.0: Quake-style terminal emulator based on konsole
 kde-frameworks/attica 5.116.0 6.20.0 6.21.0: Framework providing access to Open Collaboration Services
 kde-frameworks/baloo 6.20.0 6.21.0: Framework for searching and managing metadata
@@ -17690,7 +17689,7 @@ sys-fs/xfsprogs 6.12.0 6.13.0-r1 6.14.0 6.15.0 6.16.0 6.17.0 6.17.0-r1: XFS file
 sys-fs/xwmfs 0.92: FUSE-based X11 Window-Manager file system
 sys-fs/yaffs2utils 0.2.9-r1: tools for generating YAFFS images
 sys-fs/zerofree 1.1.1-r1: Zeroes out all free space on a filesystem
-sys-fs/zfs 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.4.0_rc4 2.4.0_rc5 9999: Linux kernel module and userland utilities for ZFS
+sys-fs/zfs 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.4.0 9999: Linux kernel module and userland utilities for ZFS
 sys-fs/zfs-auto-snapshot 1.2.4-r2 1.2.4-r3 9999: ZFS Automatic Snapshot Service for Linux
 sys-fs/zfs-kmod 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.4.0_rc2-r1: Linux ZFS kernel module for sys-fs/zfs
 sys-kernel/asahi-sources 6.15.7_p1 6.16.4_p2: Asahi Linux kernel sources
