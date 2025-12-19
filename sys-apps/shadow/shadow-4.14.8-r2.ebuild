@@ -71,8 +71,7 @@ src_prepare() {
 
 src_configure() {
 	local myeconfargs=(
-		# Negate new upstream default of disabling for now
-		--enable-lastlog
+		--disable-lastlog
 		--disable-account-tools-setuid
 		--disable-static
 		--with-btrfs
