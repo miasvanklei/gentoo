@@ -2689,7 +2689,7 @@ app-misc/beanstalkd 1.13 1.13-r1: A simple, fast work queue
 app-misc/beep 1.4.12-r2 1.4.12-r3: Advanced PC speaker beeper
 app-misc/bfr 1.6-r5 1.6-r6: General-purpose command-line pipe buffer
 app-misc/bgrep 0.2_p20250205: Grep-like tool to search for binary strings
-app-misc/bijiben 40.1-r3: Note editor designed to remain simple to use
+app-misc/bijiben 40.1-r3 40.2: Note editor designed to remain simple to use
 app-misc/binclock 1.5-r1: Displays a binary clock in your terminal
 app-misc/binwalk 2.4.3 3.1.0-r1 9999: Analyzes data for embedded file types
 app-misc/birthday 1.6.2-r2: Displays a list of events happening in the near future
@@ -3839,7 +3839,7 @@ dev-build/libtool 2.5.4 2.6.0 9999: A shared library tool for developers
 dev-build/mage 1.13.0 1.15.0: make/rake like tool using go
 dev-build/make 4.4.1-r100 4.4.1-r101 4.4.1-r102 9999: Standard tool to compile source trees
 dev-build/melange 0.18.3: Build APK packages from source code using declarative pipelines
-dev-build/meson 1.1.1 1.2.3 1.3.2 1.4.2 1.5.2 1.6.1 1.7.2 1.8.5 1.9.1 1.9.2 1.10.0_rc2 9999: Open source build system
+dev-build/meson 1.1.1 1.2.3 1.3.2 1.4.2 1.5.2 1.6.1 1.7.2 1.8.5 1.9.1 1.9.2 1.10.0 9999: Open source build system
 dev-build/meson-format-array 0: Format shell expressions into a meson array
 dev-build/muon 0.2.0-r2 0.3.0 0.4.0 0.5.0: A meson-compatible build system
 dev-build/netsurf-buildsystem 1.10: Build system used for netsurf and its libraries
@@ -4069,7 +4069,7 @@ dev-debug/ddd 3.3.12-r5 3.4.1: Graphical front-end for command-line debuggers
 dev-debug/drgn 0.0.33: Programmable debugger
 dev-debug/dtrace 2.0.3-r2 2.0.4 9999: Dynamic BPF-based system-wide tracing tool
 dev-debug/duma 2.5.15-r3: DUMA (Detect Unintended Memory Access) is a memory debugging library
-dev-debug/gdb 16.3 9999: GNU debugger
+dev-debug/gdb 16.3 17.1 9999: GNU debugger
 dev-debug/gef 2023.08 2024.06 2025.01 9999: GDB Enhanced Features for exploit devs & reversers
 dev-debug/gfxreconstruct 1.4.321.0 1.4.328.0 1.4.335.0 9999: Graphics API Capture and Replay Tools
 dev-debug/gprofng-gui 2.0 2.1 2.2 9999: Full-fledged graphical interface to operate gprofng
@@ -5824,7 +5824,7 @@ dev-libs/starpu 1.3.9: Unified runtime system for heterogeneous multicore archit
 dev-libs/stb 20240201-r1: single-file public domain (or MIT licensed) libraries for C/C++
 dev-libs/stfl 0.24-r5 0.24-r6: Library which implements a curses-based widget set for text terminals
 dev-libs/teakra 20220224-r1: Emulator, assembler, etc for XpertTeak, the DSP used by DSi/3DS
-dev-libs/template-glib 3.36.2 3.36.3: Templating library for GLib
+dev-libs/template-glib 3.36.3: Templating library for GLib
 dev-libs/thrift 0.21.0 0.21.0-r1: C++ bindings for Apache Thrift
 dev-libs/tinyxml 2.6.2-r5: Simple and small C++ XML parser
 dev-libs/tinyxml2 10.0.0 11.0.0: A simple, small, efficient, C++ XML parser
@@ -9884,7 +9884,7 @@ dev-ruby/addressable 2.8.7 2.8.8: A replacement for the URI implementation that 
 dev-ruby/ae 1.8.2-r1: Assertive Expressive is an assertions library designed for reuse
 dev-ruby/afm 0.2.2-r2 1.0.0: A very simple library to read Adobe Font Metrics files
 dev-ruby/airbrussh 1.5.3 1.6.0: A replacement log formatter for SSHKit
-dev-ruby/amatch 0.4.1 0.4.2 0.5.0: Approximate Matching Extension for Ruby
+dev-ruby/amatch 0.4.1 0.4.2 0.5.0 0.6.0: Approximate Matching Extension for Ruby
 dev-ruby/ammeter 1.1.7: Write specs for your Rails 3+ generators
 dev-ruby/amq-client 1.0.4-r1: A fully-featured, low-level AMQP 0.9.1 client
 dev-ruby/amq-protocol 2.3.3 2.3.4: An AMQP 0.9.1 serialization library for Ruby
@@ -9963,7 +9963,7 @@ dev-ruby/commonmarker 0.23.10 0.23.11 2.1.1 2.3.0 2.3.1 2.3.2: A fast, safe, ext
 dev-ruby/concurrent-ruby 1.3.5 1.3.6: Modern concurrency tools including agents, futures, promises, thread pools, more
 dev-ruby/connection_pool 2.5.0 2.5.4 2.5.5 3.0.2: Generic connection pooling for Ruby
 dev-ruby/console 1.30.2 1.34.2: Beautiful logging for Ruby
-dev-ruby/contracts 0.17.2: provides contracts for Ruby
+dev-ruby/contracts 0.17.2 0.17.3: provides contracts for Ruby
 dev-ruby/coolio 1.9.0 1.9.1: A high performance event framework for Ruby which uses the libev C library
 dev-ruby/countdownlatch 1.0.0-r2: Synchronization aid to allow threads to wait for operations in other threads
 dev-ruby/crack 0.4.6 1.0.0 1.0.1: Really simple JSON and XML parsing, ripped from Merb and Rails
@@ -10318,7 +10318,7 @@ dev-ruby/rbtree 0.4.6: A sorted associative collection that is implemented with 
 dev-ruby/rcairo 1.18.4: Ruby bindings for cairo
 dev-ruby/rchardet 1.8.0-r1 1.9.0 1.10.0: Character encoding auto-detection in Ruby
 dev-ruby/rdiscount 2.2.7.3: Implementation of John Gruber's Markdown
-dev-ruby/rdoc 6.8.1 6.11.0 6.13.1 6.14.0 6.14.1 6.14.1-r1 6.14.2-r1 6.15.0 6.15.1 6.16.1: An extended version of the RDoc library from Ruby 1.8
+dev-ruby/rdoc 6.8.1 6.11.0 6.13.1 6.14.2-r1 6.15.0 6.15.1 6.16.1 7.0.1: An extended version of the RDoc library from Ruby 1.8
 dev-ruby/rdtool 0.6.38-r3: A multipurpose documentation format for Ruby
 dev-ruby/recog 3.1.21 3.1.23 3.1.24: Pattern recognition for hosts, services, and content
 dev-ruby/red-colors 0.4.0: Color features for Ruby
@@ -10904,7 +10904,7 @@ dev-util/glade 3.40.0-r3: A user interface designer for GTK+ and GNOME
 dev-util/glib-utils 2.82.5 2.84.4 2.86.1: Build utilities for GLib using projects
 dev-util/global 6.6.10 6.6.13 6.6.14: Tag system to find an object location in various sources
 dev-util/glslang 1.4.321.0 1.4.328.0-r1 1.4.335.0 9999: Khronos reference front-end for GLSL and ESSL, and sample SPIR-V generator
-dev-util/gnome-builder 47.2-r1 47.2-r2 48.2-r1: An IDE for writing GNOME-based software
+dev-util/gnome-builder 48.2-r1: An IDE for writing GNOME-based software
 dev-util/gnome-devel-docs 40.3: Documentation for developing for the GNOME desktop environment
 dev-util/gob 2.0.20-r1: Preprocessor for making GTK+ objects with inline C code
 dev-util/goland 2024.3.5 2025.1.2 2025.1.4 2025.2 2025.2.4 2025.2.5: Golang IDE by JetBrains
@@ -12018,7 +12018,7 @@ gnome-extra/gnome-firmware 47.0-r1 49.0: Install firmware on devices
 gnome-extra/gnome-getting-started-docs 3.38.1: Help a new user get started in GNOME
 gnome-extra/gnome-integration-spotify 20140907-r2: GNOME integration for Spotify
 gnome-extra/gnome-logs 43.0 45.0: Log viewer for the systemd journal
-gnome-extra/gnome-network-displays 0.97.0 0.97.0-r1: Stream the desktop to Wi-Fi Display capable devices
+gnome-extra/gnome-network-displays 0.97.0-r1 0.98.0: Stream the desktop to Wi-Fi Display capable devices
 gnome-extra/gnome-power-manager 43.0: GNOME power statistics
 gnome-extra/gnome-shell-extension-alphabetical-grid 42.0 43.0: Restore the alphabetical ordering of the app grid
 gnome-extra/gnome-shell-extension-appindicator 60 61: Support legacy, AppIndicators and KStatusNotifierItems in Gnome
@@ -17553,7 +17553,7 @@ sys-firmware/seabios 1.14.0-r2 1.16.0 1.16.3: Open Source implementation of a 16
 sys-firmware/seabios-bin 1.16.0 1.16.3: Open Source implementation of a 16-bit x86 BIOS
 sys-firmware/sgabios 0.1_pre10: serial graphics adapter bios option rom for x86
 sys-firmware/sigrok-firmware-fx2lafw 0.1.7-r2 9999: Firmware for Cypress FX2 chips for use as simple logic analyzer hardware
-sys-firmware/sof-firmware 2025.01.1 2025.05.1: Sound Open Firmware (SOF) binary files
+sys-firmware/sof-firmware 2025.05.1 2025.12: Sound Open Firmware (SOF) binary files
 sys-firmware/tt-s2-6400-firmware 0.5.1: Firmware for the Technotrend S2-6400 DVB Card
 sys-firmware/vgabios 0.7a 0.7a-r1 0.8a 0.8a-r1: VGA BIOS implementation
 sys-firmware/zd1201-firmware 0.14-r1: Firmware for ZyDAS 1201 based USB 802.11b Network WiFi devices
