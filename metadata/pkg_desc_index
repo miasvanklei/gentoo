@@ -5510,7 +5510,7 @@ dev-libs/libdbh 5.0.22: A small library to create and manage 64-bit disk based h
 dev-libs/libdbusmenu 16.04.0-r4: Library to pass menu structure across DBus
 dev-libs/libdbusmenu-lxqt 0.3.0: LXQt DBusMenu Implementation
 dev-libs/libdex 0.10.1 1.0.0: Dex provides Future-based programming for GLib-based applications
-dev-libs/libdispatch 5.8 6.1.1: A library for concurrent code execution on multicore hardware
+dev-libs/libdispatch 5.8 6.1.1: Library for concurrent code execution on multicore hardware
 dev-libs/libdivecomputer 0.6.0-r1 9999: Library for communication with dive computers from various manufacturers
 dev-libs/libdivsufsort 2.0.1-r2: Suffix-sorting library (for BWT)
 dev-libs/libdnet 1.18.0-r1 1.18.0-r2 1.18.0-r3: Simplified, portable interface to several low-level networking routines
@@ -14142,7 +14142,7 @@ media-sound/pavucontrol-qt 2.2.0 2.3.0: Qt GUI Pulseaudio Mixer
 media-sound/pavumeter 0.9.3-r2: PulseAudio Volume Meter, simple GTK volume meter for PulseAudio
 media-sound/peercast 0.1218-r2: A client and server for Peercast P2P-radio network
 media-sound/pianobar 2022.04.01 2022.04.01-r1 9999: A console-based replacement for Pandora's flash player
-media-sound/picard 2.13.3-r1 3.0_pre20251117 9999: Cross-platform music tagger
+media-sound/picard 2.13.3-r1 3.0_pre20251219 9999: Cross-platform music tagger
 media-sound/picoxine 0.0.7: Very small xine frontend for playing audio events
 media-sound/pithos 1.6.1-r1 1.6.2: Pandora.com client for the GNOME desktop
 media-sound/playerctl 2.3.1 2.4.1-r1: A CLI utility to control media players over MPRIS
@@ -17203,7 +17203,7 @@ sys-apps/rkflashtool 6.1: Tool for flashing Rockchip devices
 sys-apps/rng-tools 6.16-r2 6.17-r1: Daemon to use hardware random number generators
 sys-apps/roccat-tools 5.9.0-r102: Utility for advanced configuration of Roccat devices
 sys-apps/rootlesskit 2.0.2: Linux-native "fake root" for implementing rootless containers
-sys-apps/s390-tools 2.9.0 2.12.0-r1 2.27.0-r1 2.40.0: User space utilities for the zSeries (s390) Linux kernel and device drivers
+sys-apps/s390-tools 2.9.0 2.12.0-r1 2.27.0-r1 2.40.0-r1: User space utilities for the zSeries (s390) Linux kernel and device drivers
 sys-apps/s6 2.13.0.0 2.13.2.0: skarnet.org's small and secure supervision software suite
 sys-apps/s6-linux-init 1.1.2.0 1.1.3.0: Generates an init binary for s6-based init systems
 sys-apps/s6-linux-utils 2.6.2.0 2.6.3.0: Set of tiny linux utilities
@@ -17581,10 +17581,10 @@ sys-fs/copyfs 1.0.1-r1: fuse-based filesystem for maintaining configuration file
 sys-fs/cramfs 2.1: Linux filesystem designed to be simple, small, and to compress things well
 sys-fs/cryfs 1.0.1-r1 1.0.1-r2: Encrypted FUSE filesystem that conceals metadata
 sys-fs/cryptmount 6.3.0: A utility for management and user-mode mounting of encrypted filesystems
-sys-fs/cryptsetup 2.8.1-r1 2.8.2: Tool to setup encrypted devices with dm-crypt
+sys-fs/cryptsetup 2.8.1-r1 2.8.3: Tool to setup encrypted devices with dm-crypt
 sys-fs/ctmg 1.2: Simple wrapper around cryptsetup for encrypted containers
 sys-fs/davl 1.2.4-r2: Visualizes the fragmentation status of ext2/3 filesystems
-sys-fs/dd-rescue 1.99.13-r1 1.99.17 1.99.20 1.99.21 9999: Similar to dd but can copy from source with errors
+sys-fs/dd-rescue 1.99.13-r1 1.99.17 1.99.20 1.99.21 1.99.22 9999: Similar to dd but can copy from source with errors
 sys-fs/ddrescue 1.29.1: Copy data from one file or block device to another with read-error recovery
 sys-fs/dfc 3.1.1: A simple CLI tool that display file system usage, with colors
 sys-fs/diskdev_cmds 332.14_p1-r4: HFS and HFS+ utils ported from OSX, supplies mkfs and fsck
@@ -18271,7 +18271,7 @@ x11-apps/fslsfonts 1.0.7: list fonts served by X font server
 x11-apps/fstobdf 1.0.7: generate BDF font from X font server
 x11-apps/iceauth 1.0.10: ICE authority file utility
 x11-apps/ico 1.0.6: animate an icosahedron or other polyhedron
-x11-apps/igt-gpu-tools 2.2 9999: Intel GPU userland tools
+x11-apps/igt-gpu-tools 2.2 2.3 9999: Intel GPU userland tools
 x11-apps/listres 1.0.6: list resources in widgets
 x11-apps/luit 20240910: Locale and ISO 2022 support for Unicode terminals
 x11-apps/mesa-progs 9.0.0 9999: Mesa's OpenGL utility and demo programs (glxgears and glxinfo)
@@ -18346,7 +18346,7 @@ x11-base/xcb-proto 1.17.0: X C-language Bindings protocol headers
 x11-base/xorg-apps 3: X11 Applications (meta package)
 x11-base/xorg-drivers 21.1-r2 9999: Meta package containing deps on all xorg drivers
 x11-base/xorg-fonts 3: X11 fonts (meta package)
-x11-base/xorg-proto 2024.1 9999: X.Org combined protocol headers
+x11-base/xorg-proto 2024.1 2025.1 9999: X.Org combined protocol headers
 x11-base/xorg-server 21.1.20 21.1.21 9999: X.Org X servers
 x11-base/xorg-sgml-doctools 1.12.1: SGML entities and XML/CSS stylesheets used in X.Org docs
 x11-base/xwayland 24.1.9 9999: Standalone X server running under Wayland
