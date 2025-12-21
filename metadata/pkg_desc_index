@@ -9494,7 +9494,7 @@ dev-python/simplejson 3.20.1 3.20.2: Simple, fast, extensible JSON encoder/decod
 dev-python/simplekml 1.3.6: Enables you to generate KML with as little effort as possible
 dev-python/simpy 4.1.1: Object-oriented, process-based discrete-event simulation language
 dev-python/simsimd 6.5.3 6.5.8 6.5.12: Fastest SIMD-Accelerated Vector Similarity Functions for x86 and Arm
-dev-python/sip 6.14.0 6.15.0: Python bindings generator for C/C++ libraries
+dev-python/sip 6.14.0 6.15.1: Python bindings generator for C/C++ libraries
 dev-python/siphash24 1.7 1.8: Streaming-capable SipHash-1-3 and SipHash-2-4 Implementation
 dev-python/six 1.17.0: Python 2 and 3 compatibility library
 dev-python/slixmpp 1.11.0 1.12.0: Python 3 library for XMPP
@@ -10882,7 +10882,7 @@ dev-util/elfkickers 3.2-r1: Collection of programs to manipulate ELF files: sstr
 dev-util/elfshaker 0.9.0_p20250803: Stores binary objects efficiently
 dev-util/flatpak-builder 1.4.4 1.4.6-r3: Tool to build flatpaks from source
 dev-util/flawfinder 2.0.19-r2: Examines C/C++ source code for security flaws
-dev-util/fq 0.13.0 0.14.0 0.15.0 0.15.1: Tool for working with binary data (app-misc/jq for binary formats)
+dev-util/fq 0.15.1 0.16.0: Tool for working with binary data (app-misc/jq for binary formats)
 dev-util/ftjam 2.5.3_rc2-r3: A 100% compatible, enhanced implementation of the make alternative Jam
 dev-util/ftnchek 3.3.1-r2: Static analyzer a la 'lint' for Fortran 77
 dev-util/fuzz 0.6-r4: Stress-tests programs by giving them random input
@@ -11919,7 +11919,7 @@ games-strategy/wargus 3.3.2: Warcraft II for the Stratagus game engine
 games-strategy/warmux 11.04.1-r3: A free Worms clone
 games-strategy/warzone2100 4.4.2 4.5.5-r1 4.6.1: 3D real-time strategy game
 games-strategy/wesnoth 1.18.5 1.19.13 1.19.18: Battle for Wesnoth - A fantasy turn-based strategy game
-games-strategy/widelands 1.2.1 9999: Game similar to Settlers 2
+games-strategy/widelands 1.2.1 1.3 9999: Game similar to Settlers 2
 games-strategy/xbattleai 1.2.2-r3: A multi-player game of strategy and coordination
 games-util/acc 1.60: ACS script compiler for use with ZDoom and Hexen
 games-util/antimicrox 3.5.1: Graphical program used to map keyboard buttons and mouse controls to a gamepad
@@ -12167,10 +12167,10 @@ gui-libs/libgedit-gfls 0.2.1 0.3.1: A module dedicated to file loading and savin
 gui-libs/libgedit-gtksourceview 299.4.0-r1 299.5.0: Gedit Technology - Source code editing widget
 gui-libs/libgedit-tepl 6.12.0-r1 6.13.0: GtkSourceView-based text editors and IDE helper library
 gui-libs/libhandy 1.8.3: Building blocks for modern adaptive GNOME apps
-gui-libs/libpanel 1.10.0 1.10.2: A dock/panel library for GTK 4
+gui-libs/libpanel 1.10.2 1.10.3: A dock/panel library for GTK 4
 gui-libs/libsfdo 0.1.4: Collection of libraries which implement some freedesktop.org specifications
 gui-libs/libwlembed 0.0.0_pre20250715 9999: A library for easily adding embedded Wayland compositor functionality
-gui-libs/libwpe 1.14.2 1.16.2: Platform-agnostic interfaces for WPE WebKit
+gui-libs/libwpe 1.16.2 1.16.3: Platform-agnostic interfaces for WPE WebKit
 gui-libs/neatvnc 0.8.1 0.9.2 0.9.4 9999: Liberally licensed VNC server library with a clean interface
 gui-libs/tepl 5.0.1-r1 6.8.0: GtkSourceView-based text editors and IDE helper library
 gui-libs/vte 0.78.5-r1 0.80.3-r1 0.80.4: Library providing a virtual terminal emulator widget
@@ -12178,13 +12178,13 @@ gui-libs/vte-common 0.76.3 0.78.5 0.80.3 0.80.4: Library providing a virtual ter
 gui-libs/wayfire-plugins-extra 0.10.0 9999: extra plugins for wayfire
 gui-libs/wf-config 0.10.0 9999: library for managing wayfire configuration files
 gui-libs/wlroots 0.17.4-r1 0.18.2 0.19.0 0.19.1 0.19.2 9999: Pluggable, composable, unopinionated modules for building a Wayland compositor
-gui-libs/wpebackend-fdo 1.14.2-r1 1.14.3 1.14.4 1.16.0: WPE backend designed for Linux desktop systems
+gui-libs/wpebackend-fdo 1.16.0 1.16.1: WPE backend designed for Linux desktop systems
 gui-libs/xdg-desktop-portal-lxqt 1.2.0 1.3.0: Backend implementation for xdg-desktop-portal using Qt/KF5/libfm-qt
 gui-libs/xdg-desktop-portal-wlr 0.7.1-r1 0.7.1-r2 9999: xdg-desktop-portal backend for wlroots
 gui-wm/dwl 0.5-r1 0.6 0.7 9999: dwm for Wayland
 gui-wm/gamescope 3.16.17: Efficient micro-compositor for running games
 gui-wm/hyprland 0.49.0 0.50.1 0.51.1 9999: A dynamic tiling Wayland compositor that doesn't sacrifice on its looks
-gui-wm/labwc 0.9.2 0.9.3 9999: Openbox alternative for wayland
+gui-wm/labwc 0.9.2-r1 0.9.3-r1 9999: Openbox alternative for wayland
 gui-wm/sway 1.9-r1 1.10 1.10.1 1.11 9999: i3-compatible Wayland window manager
 gui-wm/tinywl 0.17.4 0.18.0 0.18.1 0.19.2 9999: "minimum viable product" Wayland compositor based on wlroots
 gui-wm/wayfire 0.10.0-r1 0.10.1 9999: compiz like 3D wayland compositor
@@ -13036,12 +13036,12 @@ media-gfx/gifsicle 1.93 1.94 1.95: Create, manipulate, and optimize GIF images a
 media-gfx/gimp 2.10.38-r3 3.0.6 3.2.0_rc1 9999: GNU Image Manipulation Program
 media-gfx/gimp-arrow-brushes 20190407: Brushes for GIMP with the styles arrow, handpointer, button arrow and cursor
 media-gfx/gnofract4d 4.4: A program for drawing beautiful mathematically-based images known as fractals
-media-gfx/gnome-font-viewer 47.0 48.0: Font viewer utility for GNOME
+media-gfx/gnome-font-viewer 48.0 49.0: Font viewer utility for GNOME
 media-gfx/gnome-photos 44.0: Access, organize and share your photos on GNOME
 media-gfx/gnome-screenshot 41.0-r1: Screenshot utility for GNOME
 media-gfx/gnuclad 0.2.4-r1: Cladogram tree generator mainly used by the GNU/Linux distro timeline project
 media-gfx/gozer 0.7-r5: tool for rendering arbitrary text as graphics, using ttfs and styles
-media-gfx/gphoto2 2.5.28-r2: Free, redistributable digital camera software application
+media-gfx/gphoto2 2.5.28-r2 2.5.32: Free, redistributable digital camera software application
 media-gfx/gphotofs 0.5-r1 0.5-r2: FUSE file system for interfacing with digital cameras using gphoto2
 media-gfx/gpicview 0.3.1: Lightweight image viewer
 media-gfx/graphicsmagick 1.3.45-r2 1.3.45-r3 1.3.46 9999: Collection of tools and libraries for many image formats
@@ -13159,7 +13159,7 @@ media-gfx/scantailor-advanced 1.0.19: Interactive post-processing tool for scann
 media-gfx/scour 0.38.2-r1: Take an SVG file and produce a cleaner and more concise file
 media-gfx/scrot 1.11.1 1.12.1 9999: Screen capture utility using imlib2 library
 media-gfx/sfftobmp 3.1.2-r3: sff to bmp converter
-media-gfx/shotwell 0.32.10-r1 0.32.13: Open source photo manager for GNOME
+media-gfx/shotwell 0.32.13 0.32.14: Open source photo manager for GNOME
 media-gfx/simple-scan 46.0 49.1: Simple document scanning utility
 media-gfx/skanpage 25.08.3 25.12.0: Multi-page scanning application supporting image and pdf files
 media-gfx/solvespace 3.1-r1: Parametric 2d/3d CAD
@@ -13368,7 +13368,7 @@ media-libs/libggiwmh 0.3.2-r1 0.3.2-r2: Window manager hints extensions for libg
 media-libs/libgig 4.3.0 4.4.1 9999: C++ library for loading Gigasampler and DLS level 1/2 files
 media-libs/libgii 1.0.2-r4: Easy to use, but yet powerful, API for all possible input sources
 media-libs/libglvnd 1.7.0 9999: The GL Vendor-Neutral Dispatch library
-media-libs/libgphoto2 2.5.31-r3 2.5.32: Library that implements support for numerous digital cameras
+media-libs/libgphoto2 2.5.32 2.5.33: Library that implements support for numerous digital cameras
 media-libs/libgpod 0.8.3-r9: Shared library to access the contents of an iPod
 media-libs/libharu 2.4.2-r1 2.4.5: C/C++ library for PDF generation
 media-libs/libhdhomerun 20190621 20200521: SiliconDust HDHomeRun Utilties
@@ -14020,7 +14020,7 @@ media-sound/glurp 0.12.3: Glurp is a GTK2 based graphical client for the Music P
 media-sound/gmorgan 0.79-r4: Opensource software rhythm station
 media-sound/gmtp 1.3.11-r3 1.3.11-r4: Simple MTP client for MP3 players
 media-sound/gnomad 2.9.6-r3: GTK+ music manager for the Portable Digital Entertainment (PDE) protocol
-media-sound/gnome-music 47.1-r1 48.0-r1 48.2-r1: Music management for Gnome
+media-sound/gnome-music 48.2-r1 49.1: Music management for Gnome
 media-sound/gnome-sound-recorder 42.0: A simple, modern sound recorder for GNOME
 media-sound/gnump3d 3.0-r6: Streaming server for MP3, OGG vorbis and other streamable files
 media-sound/gogglesmm 1.2.5 1.2.5-r1: Fast and light music player
@@ -14177,7 +14177,7 @@ media-sound/reaper-bin 7.53: Digital audio workstation
 media-sound/redoflacs 0.30: Bash commandline flac compressor, verifier, organizer, analyzer, retagger
 media-sound/rescrobbled 0.7.2 0.8.0: MPRIS music scrobbler daemon
 media-sound/rexima 1.4-r2: A curses-based interactive mixer which can also be used from the command-line
-media-sound/rhythmbox 3.4.7-r6 3.4.8-r2: Music management and playback software for GNOME
+media-sound/rhythmbox 3.4.8-r2 3.4.9: Music management and playback software for GNOME
 media-sound/rip 1.07-r3: Command-line based audio CD ripper and mp3 encoder
 media-sound/ripperx 2.7.3: GTK program to rip CD audio tracks to Ogg, MP3 or FLAC
 media-sound/rosegarden 24.12.1 25.06-r1: MIDI and audio sequencer and notation editor
@@ -14390,7 +14390,7 @@ media-video/subliminal 2.4.0 9999: Python library to search and download subtitl
 media-video/submux-dvd 0.5.2-r1: A subtitle multiplexer, muxes subtitles into .vob
 media-video/subsync 0.0.1: subsync is an program that synchronizes srt subtitle files
 media-video/subtitlecomposer 0.8.2-r1: Text-based subtitles editor
-media-video/subtitleeditor 0.54.0_p5-r1: GTK+3 subtitle editing tool
+media-video/subtitleeditor 0.54.0_p5-r1 0.55.0: GTK+3 subtitle editing tool
 media-video/subtitler-yuv 0.6.5: for mjpegtools for adding subtitles, pictures & effects embedded in the picture
 media-video/super_demux 0.3: DVB transport stream TS to ES demultiplexer
 media-video/tcmplex-panteltje 0.4.7-r2: Audio video multiplexer for 8 audio channels
@@ -14896,7 +14896,7 @@ net-irc/rhapsody 0.28b-r1: IRC client intended to be displayed on a text console
 net-irc/scrollz 2.3.1: Advanced IRC client based on ircII
 net-irc/senpai 0.3.0 0.4.1: Modern terminal IRC client. NOTICE me :senpai!
 net-irc/sic 1.3: An extremely simple IRC client
-net-irc/soju 0.8.2-r1 0.9.0: soju is a user-friendly IRC bouncer
+net-irc/soju 0.9.0 0.10.1: soju is a user-friendly IRC bouncer
 net-irc/telepathy-idle 0.2.2: Full-featured IRC connection manager for Telepathy
 net-irc/unrealircd 6.0.4.2 6.0.4.2-r1: An advanced Internet Relay Chat daemon
 net-irc/weechat 4.5.2 4.5.2-r1 4.7.2 9999: Portable and multi-interface IRC client
@@ -14925,7 +14925,7 @@ net-libs/farstream 0.2.9-r2: Audio/video conferencing framework specifically des
 net-libs/freaklabs-chibiarduino 1.0.8_p20190329 9999: freaklabs fork of the lightweight wireless sensor library for Arduino
 net-libs/glib-networking 2.80.1: Network-related giomodules for glib
 net-libs/gloox 1.0.24-r1 1.0.28: A portable high-level Jabber/XMPP client library for C++
-net-libs/gnome-online-accounts 3.48.1-r1 3.54.4 3.54.5 3.54.6: GNOME framework for accessing online accounts
+net-libs/gnome-online-accounts 3.54.6 3.54.8 3.56.2: GNOME framework for accessing online accounts
 net-libs/gnutls 3.8.9-r1 3.8.10 3.8.10-r1 3.8.11: Secure communications library implementing the SSL, TLS and DTLS protocols
 net-libs/google-cloud-cpp 2.19.0 2.30.0: Google Cloud Client Library for C++
 net-libs/grpc 1.71.0 1.72.0 1.75.1: Modern open source high performance RPC framework
@@ -17736,7 +17736,7 @@ sys-libs/fortify-headers 1.1 9999: Standalone implementation of fortify source
 sys-libs/freeipmi 1.6.15 1.6.16: Provides Remote-Console and System Management Software as per IPMI v1.5/2.0
 sys-libs/fts-standalone 1.2.7 1.2.7-r1: Standalone fts library for use with musl
 sys-libs/gdbm 1.24 1.25 1.26: Standard GNU database libraries
-sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r6 2.41-r7 2.41-r8 2.42-r2 2.42-r3 9999: GNU libc C library
+sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r6 2.41-r8 2.42-r2 2.42-r3 9999: GNU libc C library
 sys-libs/gpm 1.20.7-r6: Console-based mouse driver
 sys-libs/gwenhywfar 5.12.1-r2: Multi-platform helper library for other libraries
 sys-libs/kpmcore 25.08.3 25.12.0: Library for managing partitions
@@ -18619,7 +18619,7 @@ x11-misc/rofi 1.7.9.1 2.0.0 9999: A window switcher, run dialog and dmenu replac
 x11-misc/rofi-calc 2.4.0 2.5.0: Do live calculations in rofi!
 x11-misc/rofi-file-browser-extended 1.3.1-r2: A file browser for rofi
 x11-misc/rss-glx 0.9.1-r4: Really Slick OpenGL Screensavers for XScreenSaver
-x11-misc/safeeyes 2.2.2 2.2.3 2.2.3-r1 3.0.0 3.0.1 3.1.0 3.2.0: Linux alternative to EyeLeo
+x11-misc/safeeyes 3.2.0 3.3.0: Linux alternative to EyeLeo
 x11-misc/screen-message 0.28 0.29: Display a multi-line message large, fullscreen, black on white
 x11-misc/screengrab 3.0.0 3.1.0: Qt GUI Screenshot Utility
 x11-misc/screenkey 1.5_p20230109-r3 9999: A screencast tool to display your keys inspired by Screenflick
