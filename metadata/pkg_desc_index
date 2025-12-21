@@ -3790,7 +3790,7 @@ dev-ada/e3-core 22.6.0-r3 22.6.0-r5 22.8.0 22.10.0: Ease the development of port
 dev-ada/e3-testsuite 26.0-r2: Generic testsuite framework in Python
 dev-ada/gnatcoll-bindings 25.0.0-r1 26.0.0: GNAT Component Collection
 dev-ada/gnatcoll-core 25.0.0-r2 26.0.0: GNAT Component Collection Core packages
-dev-ada/gnatcoll-db 25.0.0-r2: GNAT Component Collection
+dev-ada/gnatcoll-db 25.0.0-r2 26.0.0: GNAT Component Collection
 dev-ada/gnatdoc 25.0.0-r4: GNAT Documentation Generation Tool
 dev-ada/gnatformat 25.0.0-r1: Opinionated code formatter for the Ada language
 dev-ada/gnatmem 2021-r6: Monitors dynamic allocation and deallocation activity in a program
@@ -8020,7 +8020,7 @@ dev-php/doctrine 2.6.4: An object relational mapper for PHP
 dev-php/doctrine-instantiator 1.4.0: Utility to instantiate objects in PHP without invoking their constructors
 dev-php/fedora-autoloader 1.0.1: Fedora's Static PSR-4, PSR-0, and classmap autoloader
 dev-php/geos-php 1.0.0_p20220909: A PHP interface to GEOS - Geometry Engine, Open Source
-dev-php/igbinary 3.2.9 3.2.15 3.2.15_p20251017: A fast drop-in replacement for the standard PHP serialize
+dev-php/igbinary 3.2.9 3.2.15 3.2.15_p20251126: A fast drop-in replacement for the standard PHP serialize
 dev-php/jpgraph 4.3.5: Object-oriented graphing library for PHP
 dev-php/json-schema 5.2.11: PHP implementation of JSON schema
 dev-php/jsonlint 1.8.3-r1: JSON Lint for PHP
@@ -8037,14 +8037,14 @@ dev-php/pecl-brotli 0.15.0 0.16.0 9999: Brotli compression extension for PHP
 dev-php/pecl-dio 0.2.1: Direct I/O functions for PHP
 dev-php/pecl-event 3.1.4: PHP wrapper for libevent2
 dev-php/pecl-http 4.2.6: Extended HTTP Support for PHP
-dev-php/pecl-imagick 3.7.0-r3 3.7.0-r4 3.8.0: PHP wrapper for the ImageMagick library
+dev-php/pecl-imagick 3.7.0-r3 3.7.0-r4 3.8.1: PHP wrapper for the ImageMagick library
 dev-php/pecl-mailparse 3.1.6: PHP extension for parsing and working with RFC822 and MIME compliant messages
 dev-php/pecl-memcached 3.3.0 3.4.0: Interface PHP with memcached via libmemcached library
 dev-php/pecl-mongodb 1.16.2-r1: MongoDB database driver for PHP
 dev-php/pecl-parallel 1.2.5 1.2.6 1.2.7 1.2.7-r1: A succint parallel concurrency API for PHP
 dev-php/pecl-radius 1.4.0_beta1-r4: Provides support for RADIUS authentication (RFC 2865) and accounting (RFC 2866)
 dev-php/pecl-raphf 2.0.1-r3: A reusable, persistent handle and resource factory API
-dev-php/pecl-redis 6.1.0 6.2.0: PHP extension for interfacing with Redis
+dev-php/pecl-redis 6.1.0 6.3.0: PHP extension for interfacing with Redis
 dev-php/pecl-rrd 2.0.3: RRDtool bindings for PHP
 dev-php/pecl-ssh2 1.4.1-r1 9999: PHP bindings for the libssh2 library
 dev-php/pecl-stomp 2.0.3-r2: PHP extension to communicate with Stomp message brokers
@@ -17736,7 +17736,7 @@ sys-libs/fortify-headers 1.1 9999: Standalone implementation of fortify source
 sys-libs/freeipmi 1.6.15 1.6.16: Provides Remote-Console and System Management Software as per IPMI v1.5/2.0
 sys-libs/fts-standalone 1.2.7 1.2.7-r1: Standalone fts library for use with musl
 sys-libs/gdbm 1.24 1.25 1.26: Standard GNU database libraries
-sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r6 2.41-r7 2.42-r2 9999: GNU libc C library
+sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r6 2.41-r7 2.41-r8 2.42-r2 2.42-r3 9999: GNU libc C library
 sys-libs/gpm 1.20.7-r6: Console-based mouse driver
 sys-libs/gwenhywfar 5.12.1-r2: Multi-platform helper library for other libraries
 sys-libs/kpmcore 25.08.3 25.12.0: Library for managing partitions
@@ -18530,7 +18530,7 @@ x11-misc/fluxter 0.1.0-r1: Workspace pager dockapp, particularly useful with the
 x11-misc/fpm2 0.90.1 0.90.2: GUI password manager utility with password generator
 x11-misc/fraqtive 0.4.8.1: Open source, multi-platform generator of the Mandelbrot family fractals
 x11-misc/ftmenu 0.4.0-r2: Tray menu for the Fluxbox toolbar
-x11-misc/gammastep 2.0.11: A screen color temperature adjusting software
+x11-misc/gammastep 2.0.11 2.0.11-r1: A screen color temperature adjusting software
 x11-misc/gbase 0.5-r2: A convert program for decimal, hexadecimal, octal and binary values
 x11-misc/gbdfed 1.6 1.6-r1: gbdfed Bitmap Font Editor
 x11-misc/gccmakedep 1.0.4: create dependencies in makefiles using 'gcc -M'
@@ -18612,7 +18612,7 @@ x11-misc/qt5ct 1.9: Qt5 configuration tool, similar to qtconfig for Qt4
 x11-misc/qterm 0.8.2: BBS client based on Qt
 x11-misc/quitcount 3.1.4: A simple applet that shows what you saved since you quit smoking
 x11-misc/read-edid 3.0.2-r2: Program that can get information from a PnP monitor
-x11-misc/redshift 1.12-r13: A screen color temperature adjusting software
+x11-misc/redshift 1.12-r13 1.12-r14: A screen color temperature adjusting software
 x11-misc/rendercheck 1.6 9999: Tests for compliance with X RENDER extension
 x11-misc/revelation 0.5.5: A password manager for GNOME
 x11-misc/rofi 1.7.9.1 2.0.0 9999: A window switcher, run dialog and dmenu replacement
