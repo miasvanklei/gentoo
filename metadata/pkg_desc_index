@@ -1242,7 +1242,7 @@ app-backup/backuppc 3.3.1-r6 4.4.0-r1 4.4.0-r2 4.4.0-r3: High-performance backup
 app-backup/bacula 15.0.3-r1 15.0.3-r2 15.0.3-r3: Featureful client/server network backup suite
 app-backup/bareos 21.1.11 22.1.7 22.1.8 23.1.3-r1 23.1.4 23.1.5 24.0.5 24.0.7 9999: Featureful client/server network backup suite
 app-backup/borgbackup 1.4.1-r1 1.4.2-r1 1.4.3: Deduplicating backup program with compression and authenticated encryption
-app-backup/borgmatic 2.0.7 2.0.11 2.0.12: Automatically create, prune and verify backups with borgbackup
+app-backup/borgmatic 2.0.7 2.0.12 2.0.13: Automatically create, prune and verify backups with borgbackup
 app-backup/btrbk 0.32.6-r1 0.32.6-r2 9999: Tool for creating snapshots and remote backups of btrfs subvolumes
 app-backup/burp 3.1.4 3.1.4-r1: Network backup and restore client and server for Unix and Windows
 app-backup/ccollect 0.8-r2 2.10: Pseudo incremental backup with different exclude lists using hardlinks and rsync
@@ -5889,7 +5889,7 @@ dev-libs/voikko-fi 2.5-r2: Finnish dictionary for libvoikko based spell checkers
 dev-libs/volume_key 0.3.12-r4: Library for manipulating and storing storage volume encryption keys
 dev-libs/wayland 1.24.0 9999: Wayland protocol libraries
 dev-libs/wayland-protocols 1.45 1.46 1.47 9999: Wayland protocol files
-dev-libs/weston 14.0.1-r2 14.0.2-r1 9999: Wayland reference compositor
+dev-libs/weston 14.0.2-r1 9999: Wayland reference compositor
 dev-libs/xalan-c 1.12-r4: XSLT processor for transforming XML into HTML, text, or other XML types
 dev-libs/xapian 1.4.29 1.4.30: Xapian Probabilistic Information Retrieval library
 dev-libs/xapian-bindings 1.4.29 1.4.29-r1 1.4.30: SWIG and JNI bindings for Xapian
@@ -11009,7 +11009,7 @@ dev-util/perf 6.14 6.16 6.16-r1 6.17 6.18-r1: Userland tools for Linux Performan
 dev-util/pixi 0.60.0 0.62.0 0.62.1: A package management and workflow tool
 dev-util/pkgcheck 0.10.34 0.10.36-r1 0.10.37 9999: pkgcore-based QA utility for ebuild repos
 dev-util/pkgconf 2.3.0 2.4.3 2.5.1 9999: pkg-config compatible replacement with no dependencies other than C99
-dev-util/pkgcruft 0.0.16 9999: QA library and tools based on pkgcraft
+dev-util/pkgcruft 0.0.16 0.0.18 9999: QA library and tools based on pkgcraft
 dev-util/pkgdev 0.2.11 0.2.12 9999: Collection of tools for Gentoo development
 dev-util/pkgdiff 1.8 9999: Package Changes Analyzer (pkgdiff)
 dev-util/plan9port 0_pre20240617: Port of many Plan 9 programs and libraries
@@ -11147,7 +11147,7 @@ dev-vcs/git-absorb 0.7.0 0.8.0: Automatically absorb staged changes into git cur
 dev-vcs/git-annex 10.20220624 10.20230802: manage files with git, without checking their contents into git
 dev-vcs/git-big-picture 1.3.0 1.3.0-r1: Visualization tool for Git repositories
 dev-vcs/git-cliff 2.10.1: A highly customizable changelog generator
-dev-vcs/git-cola 4.13.0 4.14.0 4.15.0: The highly caffeinated git GUI
+dev-vcs/git-cola 4.14.0 4.15.0 4.16.1: The highly caffeinated git GUI
 dev-vcs/git-credential-manager 2.6.1: Secure Git credential storage supporing GitHub, Azure Repos, and other services
 dev-vcs/git-crypt 0.7.0 0.8.0: Transparent file encryption in git
 dev-vcs/git-delete-merged-branches 7.4.1 7.4.1-r1 7.4.2 7.5.0: Command-line tool to delete merged Git branches
@@ -11179,7 +11179,7 @@ dev-vcs/kdesvn 2.1.0_p20250525: Frontend to the subversion vcs
 dev-vcs/lab 0.25.1: Lab wraps Git or Hub, making it simple to interact with repositories on GitLab
 dev-vcs/mercurial 6.7.4-r2 6.7.4-r3 6.8.2 6.9.4 7.0.3 7.1.2 9999: Scalable distributed SCM
 dev-vcs/mr 1.20180726: Multiple Repository management tool
-dev-vcs/pkgcruft-git 0.0.3 9999: QA support for verifying git commits via pkgcruft
+dev-vcs/pkgcruft-git 0.0.3 0.0.5 9999: QA support for verifying git commits via pkgcruft
 dev-vcs/pre-commit 4.1.0 4.2.0: A framework for managing and maintaining multi-language Git pre-commit hooks
 dev-vcs/pwclient 2.6.2: The command-line client for the patchwork patch tracking tool
 dev-vcs/python-gitlab 5.6.0: Python command line interface to gitlab API
@@ -11726,7 +11726,7 @@ games-puzzle/lightsoff 46.0 48.1: Turn off all the lights
 games-puzzle/lmarbles 1.0.8-r2: Puzzle game inspired by Atomix and written in SDL
 games-puzzle/lpairs 1.0.5: Classic memory game
 games-puzzle/ltris 1.0.19-r2: Very polished Tetris clone
-games-puzzle/magiccube4d 4.3.343: Four-dimensional analog of Rubik's cube
+games-puzzle/magiccube4d 4.3.343-r1: Four-dimensional analog of Rubik's cube
 games-puzzle/mirrormagic 3.3.1: A game like Deflektor (C 64) or Mindbender (Amiga)
 games-puzzle/monsterz 0.7.1_p12-r1: Puzzle game similar to the famous Bejeweled or Zookeeper
 games-puzzle/mures 0.5-r2: Clone of Sega's Chu Chu Rocket
@@ -13340,7 +13340,7 @@ media-libs/libdc1394 2.2.6: Library to interface with IEEE 1394 cameras followin
 media-libs/libdca 0.0.7 0.0.7-r1: Library for decoding DTS Coherent Acoustics streams used in DVD
 media-libs/libde265 1.0.15 1.0.16 9999: Open h.265 video codec implementation
 media-libs/libdiscid 0.6.4: Client library to create MusicBrainz enabled tagging applications
-media-libs/libdisplay-info 0.2.0-r1 0.3.0: EDID and DisplayID library
+media-libs/libdisplay-info 0.3.0: EDID and DisplayID library
 media-libs/libdmtx 0.7.8: Barcode data matrix reading and writing library
 media-libs/libdovi 3.3.2: Dolby Vision metadata parsing and writing
 media-libs/libdv 1.0.0-r5 1.0.0-r6: Software codec for dv-format video (camcorders etc)
@@ -17171,7 +17171,7 @@ sys-apps/pcsc-slb-rf72-drv 1.1.0-r2: Schlumberger Reflex 72 Serial Smartcard Rea
 sys-apps/pcsc-tools 1.7.3-r1: PC/SC Architecture smartcard tools
 sys-apps/pick 4.0.0-r1: A fuzzy search tool for the command-line
 sys-apps/pkgcore 0.12.29 0.12.30 9999: a framework for package management
-sys-apps/pkgcraft-tools 0.0.29 9999: pkgcraft-based tools for Gentoo
+sys-apps/pkgcraft-tools 0.0.29 0.0.31 9999: pkgcraft-based tools for Gentoo
 sys-apps/plocate 1.1.23: Posting locate is a much faster locate
 sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives the ability to mount removable devices as a user
 sys-apps/pnputils 0.1-r1: Plug and Play BIOS utilities
@@ -18093,7 +18093,7 @@ www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20250514b: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
 www-apps/drupal 7.102 10.3.14 10.4.5 11.0.13 11.1.5: PHP-based open-source platform and content management system
 www-apps/element 1.12.0 1.12.6: A glossy Matrix collaboration client for the web
-www-apps/gitea 1.23.8 1.24.7 1.25.1: A painless self-hosted Git service
+www-apps/gitea 1.25.1 1.25.3: A painless self-hosted Git service
 www-apps/grafana-bin 11.4.8 11.5.10 12.0.7 12.1.4 12.2.2 12.3.0: Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
 www-apps/haunt 0.3.0: Haunt is a simple, functional, hackable static site generator
 www-apps/hugo 0.147.7 0.148.2: Fast static HTML and CSS website generator
@@ -18138,7 +18138,7 @@ www-apps/piwigo 15.6.0 15.7.0 16.0.0 16.1.0: a photo gallery software for the we
 www-apps/postfixadmin 3.3.15 3.3.16: Web Based Management tool for Postfix style virtual domains and users
 www-apps/prowlarr-bin 2.3.1.5238: An indexer manager/proxy to integrate with your various PVR apps
 www-apps/radarr-bin 6.1.0.10309: A fork of Sonarr to work with movies a la Couchpotato
-www-apps/radicale 3.5.8 3.5.9: A simple CalDAV calendar server
+www-apps/radicale 3.5.9 3.5.10: A simple CalDAV calendar server
 www-apps/readarr-bin 0.4.18.2805: An ebook and audiobook collection manager for Usenet and BitTorrent users
 www-apps/redmine 6.0.2: Flexible project management web application using the Ruby on Rails framework
 www-apps/roundup 2.3.0: Issue-tracking system with command-line, web, and e-mail interfaces
