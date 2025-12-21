@@ -3800,7 +3800,7 @@ dev-ada/gprbuild 25.0.0-r5 26.0.0: Multi-Language Management
 dev-ada/gprconfig_kb 25.0.0-r3 26.0.0: GPR configuration knowledge base
 dev-ada/gtkada 25.0.1-r2: A complete Ada graphical toolkit
 dev-ada/lal-refactor 25.0.0-r2: Refactoring tools for the Ada programming language
-dev-ada/langkit 24.0.0-r2 25.0.0-r5: A Python framework to generate language parsers
+dev-ada/langkit 24.0.0-r2 25.0.0-r6: A Python framework to generate language parsers
 dev-ada/langkit-contrib 25.0.0-r2: A Python framework to generate language parsers - Contrib
 dev-ada/libadalang 25.0.0-r1: high performance semantic engine for the Ada programming language
 dev-ada/libadalang-tools 25.0.0-r2: Libadalang-based tools: gnatpp, gnatmetric and gnatstub
@@ -8594,7 +8594,7 @@ dev-python/ini2toml 0.15: Automatically conversion of .ini/.cfg files to TOML eq
 dev-python/iniconfig 2.1.0 2.3.0: Brain-dead simple config-ini parsing
 dev-python/iniparse 0.5.1_p20250425: Better INI parser for Python
 dev-python/inline-snapshot 0.28.0 0.29.4 0.30.1 0.31.0 0.31.1: Create and update inline snapshots in your Python tests
-dev-python/insipid-sphinx-theme 0.4.3 0.4.4: Insipid Sphinx theme
+dev-python/insipid-sphinx-theme 0.4.4: Insipid Sphinx theme
 dev-python/installer 0.7.0: A library for installing Python wheels
 dev-python/intelhex 2.3.0-r1: Python library for Intel HEX files manipulations
 dev-python/intervaltree 3.1.0-r1 3.2.0: Editable interval tree data structure for Python 2 and 3
@@ -9167,7 +9167,7 @@ dev-python/pyqtgraph 0.13.7-r2 0.14.0: A pure-python graphics and GUI library bu
 dev-python/pyquery 2.0.1: A jQuery-like library for python
 dev-python/pyrate-limiter 3.7.1 3.8.1 3.9.0: Python Rate-Limiter using Leaky-Bucket Algorimth Family
 dev-python/pyrfc3339 2.0.1 2.1.0: Generates and parses RFC 3339 timestamps
-dev-python/pyro5 5.15-r1: Distributed object middleware for Python (RPC)
+dev-python/pyro5 5.15-r1 5.16: Distributed object middleware for Python (RPC)
 dev-python/pyroute2 0.9.4 0.9.5: A pure Python netlink and Linux network configuration library
 dev-python/pyrqlite 2.2.3: Python client for rqlite
 dev-python/pyrsistent 0.20.0: Persistent/Functional/Immutable data structures
@@ -9513,7 +9513,7 @@ dev-python/soundfile 0.13.1: audio library based on libsndfile, CFFI and NumPy
 dev-python/soupsieve 2.8 2.8.1: A modern CSS selector implementation for BeautifulSoup
 dev-python/spake2 0.8-r1 0.9: python implementation of SPAKE2 password-authenticated key exchange algorithm
 dev-python/speg 0.3_p20180819-r2: A PEG-based parser interpreter with memoization
-dev-python/sphinx 8.2.3-r2 9.0.3 9.0.4 9.0.4-r1 9.1.0_rc1: Python documentation generator
+dev-python/sphinx 8.2.3-r2 9.0.4-r1 9.1.0_rc1: Python documentation generator
 dev-python/sphinx-argparse 0.5.2: Sphinx extension that automatically documents argparse commands and options
 dev-python/sphinx-autoapi 3.6.0 3.6.1: A new approach to API documentation in Sphinx
 dev-python/sphinx-autodoc-typehints 3.5.2 3.6.0: Type hints support for the Sphinx autodoc extension
@@ -9536,25 +9536,25 @@ dev-python/sphinx-rtd-theme 3.0.2: ReadTheDocs.org theme for Sphinx
 dev-python/sphinx-selective-exclude 1.0.3-r2: Sphinx selective rendition extensions
 dev-python/sphinx-tabs 3.4.7-r1 3.4.7-r2: Tabbed views for Sphinx
 dev-python/sphinxcontrib-apidoc 0.6.0: Sphinx extension for running sphinx-apidoc on each build
-dev-python/sphinxcontrib-applehelp 2.0.0 2.0.0-r1: Sphinx extension which outputs Apple help book
+dev-python/sphinxcontrib-applehelp 2.0.0-r1: Sphinx extension which outputs Apple help book
 dev-python/sphinxcontrib-autoprogram 0.1.9: Documenting CLI programs
 dev-python/sphinxcontrib-bibtex 2.6.3 2.6.5: Sphinx extensions for BibTeX style citations
-dev-python/sphinxcontrib-devhelp 2.0.0 2.0.0-r1: Sphinx extension which outputs Devhelp documents
+dev-python/sphinxcontrib-devhelp 2.0.0-r1: Sphinx extension which outputs Devhelp documents
 dev-python/sphinxcontrib-doxylink 1.13.0: Extension to link to external Doxygen API documentation
 dev-python/sphinxcontrib-github-alt 1.2-r3: Link to GitHub issues, pull requests, commits and users from Sphinx docs
-dev-python/sphinxcontrib-htmlhelp 2.1.0 2.1.0-r1: Sphinx extension which outputs HTML help book
+dev-python/sphinxcontrib-htmlhelp 2.1.0-r1: Sphinx extension which outputs HTML help book
 dev-python/sphinxcontrib-httpdomain 1.8.1: Sphinx domain for documenting HTTP APIs
 dev-python/sphinxcontrib-jquery 4.1: Extension to include jQuery on newer Sphinx releases
-dev-python/sphinxcontrib-jsmath 1.0.1-r3 1.0.1-r4: Sphinx extension which renders display math in HTML via JavaScript
+dev-python/sphinxcontrib-jsmath 1.0.1-r4: Sphinx extension which renders display math in HTML via JavaScript
 dev-python/sphinxcontrib-log-cabinet 1.0.1-r1: Organize changelog directives in Sphinx docs
 dev-python/sphinxcontrib-mermaid 1.0.0 1.1.0 1.2.2: Sphinx spelling extension
 dev-python/sphinxcontrib-plantuml 0.30 0.31: Sphinx extensions for PlantUML
 dev-python/sphinxcontrib-programoutput 0.18: Extension to sphinx to include program output
-dev-python/sphinxcontrib-qthelp 2.0.0 2.0.0-r1: Sphinx extension which outputs QtHelp documents
-dev-python/sphinxcontrib-serializinghtml 2.0.0 2.0.0-r1: Sphinx extension which outputs outputs serialized HTML files
+dev-python/sphinxcontrib-qthelp 2.0.0-r1: Sphinx extension which outputs QtHelp documents
+dev-python/sphinxcontrib-serializinghtml 2.0.0-r1: Sphinx extension which outputs outputs serialized HTML files
 dev-python/sphinxcontrib-spelling 8.0.1 8.0.2: Sphinx spelling extension
 dev-python/sphinxcontrib-trio 1.1.2-r1: Make Sphinx better at documenting Python functions and methods
-dev-python/sphinxcontrib-websupport 1.2.7 1.2.7-r1 2.0.0: Sphinx websupport extension
+dev-python/sphinxcontrib-websupport 2.0.0: Sphinx websupport extension
 dev-python/sphinxemoji 0.3.1 0.3.2: Extension to use emoji codes in your Sphinx documentation
 dev-python/sphinxygen 1.0.10 1.0.12: Python module/script that generates Sphinx markup to describe a C API
 dev-python/sphobjinv 2.3.1.3: Sphinx objects.inv Inspection/Manipulation Tool
@@ -10416,7 +10416,7 @@ dev-ruby/sanitize 6.1.3 7.0.0: Sanitize is a whitelist-based HTML sanitizer
 dev-ruby/sass 3.7.4-r2 3.7.4-r3: An extension of CSS3, adding nested rules, variables, mixins, and more
 dev-ruby/sass-rails 5.1.0-r1: Official Ruby-on-Rails Integration with Sass
 dev-ruby/sassc 2.4.0-r1: Use libsass with Ruby
-dev-ruby/sassc-rails 2.1.2-r3 2.1.2-r4: Integrate SassC-Ruby with Rails
+dev-ruby/sassc-rails 2.1.2-r4: Integrate SassC-Ruby with Rails
 dev-ruby/sawyer 0.9.2 0.9.3: Secret User Agent of HTTP
 dev-ruby/sdoc 1.1.0-r1 2.6.1 2.6.2 2.6.4 2.6.5: rdoc generator html with javascript search index
 dev-ruby/securerandom 0.4.1: Interface for secure random number generator
@@ -10424,14 +10424,14 @@ dev-ruby/seed-fu 2.3.9-r1: Advanced seed data handling for Rails
 dev-ruby/selenium-webdriver 4.1.0-r1 4.11.0 4.31.0 4.33.0 4.35.0 4.38.0 4.39.0: This gem provides Ruby bindings for WebDriver
 dev-ruby/semantic_puppet 1.1.1: Library of tools for working with Semantic Versions and module dependencies
 dev-ruby/sequel 5.93.0 5.95.1 5.96.0 5.97.0 5.99.0: A lightweight database toolkit for Ruby
-dev-ruby/serialport 1.3.2-r1 1.4.0: a library for serial port (rs232) access in ruby
+dev-ruby/serialport 1.4.0: a library for serial port (rs232) access in ruby
 dev-ruby/serverengine 2.4.0: A framework to implement robust multiprocess servers
 dev-ruby/set 1.1.1 1.1.2: Provides a class to deal with collections of unordered, unique values
 dev-ruby/settingslogic 2.0.9-r2: A simple configuration / settings solution that uses an ERB enabled YAML file
 dev-ruby/sexp_processor 4.17.3 4.17.4: Processor for s-expressions created as part of the ParseTree project
 dev-ruby/shoulda 4.0.0: Making tests easy on the fingers and eyes
 dev-ruby/shoulda-context 2.0.0-r1: Context framework extracted from Shoulda
-dev-ruby/shoulda-matchers 4.5.1-r1 5.3.0 6.2.0 6.4.0 6.5.0: Making tests easy on the fingers and eyes
+dev-ruby/shoulda-matchers 4.5.1-r1 5.3.0 6.4.0 6.5.0: Making tests easy on the fingers and eyes
 dev-ruby/sigdump 0.2.5: Setup signal handler which dumps backtrace of threads and allocated objects
 dev-ruby/simple-rss 1.3.3-r1: A simple, flexible, extensible, and liberal RSS and Atom reader for Ruby
 dev-ruby/simple_oauth 0.3.1-r1: Simply builds and verifies OAuth headers
@@ -10440,7 +10440,7 @@ dev-ruby/simplecov-html 0.12.3-r1 0.13.1 0.13.2: Generates a HTML report of your
 dev-ruby/simplecov_json_formatter 0.1.4: JSON formatter for SimpleCov
 dev-ruby/simpleidn 0.2.1-r1: Allows easy conversion from punycode ACE to unicode UTF-8 strings and vice-versa
 dev-ruby/sinatra 3.2.0 4.1.1 4.2.0 4.2.1: A DSL for quickly creating web applications in Ruby with minimal effort
-dev-ruby/singleton 0.2.0 0.3.0: The Singleton module implements the Singleton pattern
+dev-ruby/singleton 0.3.0: The Singleton module implements the Singleton pattern
 dev-ruby/slim 5.2.1: A template language aiming to reduce the syntax to the essential parts
 dev-ruby/slop 4.10.1: A simple option parser with an easy to remember syntax and friendly API
 dev-ruby/slow_enumerator_tools 1.1.0-r1: Transform Ruby enumerators that produce data slowly and unpredictably
@@ -10470,7 +10470,7 @@ dev-ruby/sus-fixtures-openssl 0.2.1: Test fixtures for running with OpenSSL
 dev-ruby/sus-fixtures-time 0.1.0: Test fixtures for capturing Console output
 dev-ruby/sync 0.5.0-r1: A module that provides a two-phase lock with a counter
 dev-ruby/syntax 1.2.2: Syntax highlighting for sourcecode and HTML
-dev-ruby/sys-filesystem 1.5.0 1.5.3 1.5.4 1.5.5: Cross-platform interface for filesystem information
+dev-ruby/sys-filesystem 1.5.3 1.5.4 1.5.5: Cross-platform interface for filesystem information
 dev-ruby/sys-uname 1.3.1 1.4.0 1.4.1: A Ruby interface for getting operating system information
 dev-ruby/syslog 0.2.0 0.3.0: Ruby interface for the POSIX system logging facility
 dev-ruby/syslogger 1.6.6-r2: Drop-in replacement for the standard Logger, that logs to the syslog
@@ -10746,7 +10746,7 @@ dev-util/android-udev-rules 20250314 20250525: Android udev rules list aimed to 
 dev-util/anjuta 3.34.0-r3: Base library of defunct IDE for GNOME to run applications
 dev-util/archdiff 1.1.6-r1: Utility to view the differences between two source code archives
 dev-util/argouml 0.34-r1: Modelling tool that helps you do your design using UML
-dev-util/aruba 2.2.0 2.3.0-r1 2.3.1 2.3.2 2.3.3: Cucumber steps for driving out command line applications
+dev-util/aruba 2.2.0 2.3.2 2.3.3: Cucumber steps for driving out command line applications
 dev-util/astyle 3.1-r2 3.4.9 3.4.9-r1 3.6.1 3.6.7: Artistic Style is a re-indenter and reformatter for C, C++ and Java source code
 dev-util/autodia 2.140.0-r2: Parses source code, XML or data and produces an XML document in Dia format
 dev-util/autoproject 0.20_p15: Start a programming project using autotools and a command line parser generator
@@ -10834,13 +10834,13 @@ dev-util/crash 8.0.6 9.0.0 9.0.1 9999: Red Hat crash utility; used for analyzing
 dev-util/cscope 15.9 15.9-r1: Interactively examine a C program
 dev-util/csup 20060318-r1: A rewrite of CVSup
 dev-util/ctags 6.0_p20230423_p0-r2 6.1_p20240609_p0-r1 6.2.0-r1 6.2.1 9999: Exuberant Ctags creates tags files for code browsing in editors
-dev-util/cucumber 9.2.0 9.2.1 10.0.0 10.1.0 10.1.1 10.2.0: Executable feature scenarios
+dev-util/cucumber 9.2.0 9.2.1 10.1.1 10.2.0: Executable feature scenarios
 dev-util/cucumber-ci-environment 10.0.1: Detect CI Environment from environment variables
 dev-util/cucumber-compatibility-kit 9.2.1-r1 14.1.0 18.0.3 20.1.0: Kit to check compatibility with official cucumber implementation
 dev-util/cucumber-core 13.0.2 13.0.3 15.1.0 15.2.1 15.4.0: Executable feature scenarios
 dev-util/cucumber-cucumber-expressions 15.2.0 17.1.0 18.0.1: a simpler alternative to Regular Expressions
 dev-util/cucumber-gherkin 27.0.0 30.0.4 30.1.3: Fast Gherkin lexer and parser
-dev-util/cucumber-html-formatter 19.2.0-r1 21.3.1 21.9.0 21.14.0 21.15.1 21.15.1-r1 22.2.0: HTML formatter for Cucumber
+dev-util/cucumber-html-formatter 19.2.0-r1 21.9.0 21.14.0 21.15.1 21.15.1-r1 22.2.0: HTML formatter for Cucumber
 dev-util/cucumber-messages 18.0.0 22.0.0 27.2.0: Protocol Buffer messages for Cucumber's inter-process communication
 dev-util/cucumber-rails 3.1.1 4.0.0: Executable feature scenarios for Rails
 dev-util/cucumber-tag-expressions 4.1.0 5.0.6 6.1.2: Cucumber tag expressions for ruby
@@ -10930,7 +10930,7 @@ dev-util/hxd 0.70.02-r3: Binary to hexadecimal converter
 dev-util/hxtools 20201116: A collection of tools and scripts
 dev-util/hyprwayland-scanner 0.4.4 0.4.5 9999: A Hyprland implementation of wayland-scanner, in and for C++
 dev-util/icemon 3.3_p20250520: Monitor program for use with Icecream compile clusters
-dev-util/idea-community 2025.3: A complete toolset for web, mobile and enterprise development
+dev-util/idea-community 2025.3.1: A complete toolset for web, mobile and enterprise development
 dev-util/imediff 1.1.2.1 3.4.0 3.4.1: 2-way/3-way merge tool (CLI, Ncurses)
 dev-util/include-what-you-use 0.23-r1 0.24 0.25: Find unused include directives in C/C++ programs
 dev-util/indent 2.2.13: Indent program source files
@@ -12173,8 +12173,8 @@ gui-libs/libwlembed 0.0.0_pre20250715 9999: A library for easily adding embedded
 gui-libs/libwpe 1.16.2 1.16.3: Platform-agnostic interfaces for WPE WebKit
 gui-libs/neatvnc 0.8.1 0.9.2 0.9.4 9999: Liberally licensed VNC server library with a clean interface
 gui-libs/tepl 5.0.1-r1 6.8.0: GtkSourceView-based text editors and IDE helper library
-gui-libs/vte 0.78.5-r1 0.80.3-r1 0.80.4: Library providing a virtual terminal emulator widget
-gui-libs/vte-common 0.76.3 0.78.5 0.80.3 0.80.4: Library providing a virtual terminal emulator widget
+gui-libs/vte 0.80.4-r1 0.82.2: Library providing a virtual terminal emulator widget
+gui-libs/vte-common 0.80.4 0.82.2: Library providing a virtual terminal emulator widget
 gui-libs/wayfire-plugins-extra 0.10.0 9999: extra plugins for wayfire
 gui-libs/wf-config 0.10.0 9999: library for managing wayfire configuration files
 gui-libs/wlroots 0.17.4-r1 0.18.2 0.19.0 0.19.1 0.19.2 9999: Pluggable, composable, unopinionated modules for building a Wayland compositor
@@ -12613,7 +12613,7 @@ lxde-base/lxpanel 0.10.1-r1 0.10.1-r2: Lightweight X11 desktop panel for LXDE
 lxde-base/lxrandr 0.3.2-r1: LXDE GUI interface to RandR extention
 lxde-base/lxsession 0.5.6: LXDE session manager
 lxde-base/lxtask 0.1.10: LXDE Task manager
-lxde-base/lxterminal 0.4.0_p20230917: Lightweight vte-based tabbed terminal emulator for LXDE
+lxde-base/lxterminal 0.4.0_p20230917-r1: Lightweight vte-based tabbed terminal emulator for LXDE
 lxde-base/menu-cache 1.1.0-r1: Library to create and utilize caches to speed up freedesktop application menus
 lxqt-base/liblxqt 2.2.0 2.3.0-r1: Common base library for the LXQt desktop environment
 lxqt-base/libsysstat 1.0.0 1.1.0: Qt GUI for System Statistics
@@ -13493,7 +13493,7 @@ media-libs/lvtk 1.2.0-r3 1.2.0-r4: A set of C++ wrappers around the LV2 C API
 media-libs/mesa 24.1.7-r1 25.0.7 25.1.9 25.2.5 25.2.6 25.2.7 25.2.8 25.3.0 25.3.1 25.3.2 9999: OpenGL-like graphic library for Linux
 media-libs/mesa-amber 21.3.9-r2 21.3.9-r3: OpenGL-like graphic library for Linux
 media-libs/mlt 7.32.0 7.34.1-r1: Open source multimedia framework for television broadcasting
-media-libs/mpvqt 1.1.1-r1: libmpv wrapper for QtQuick2 and QML
+media-libs/mpvqt 1.1.1-r2: libmpv wrapper for QtQuick2 and QML
 media-libs/munt-mt32emu 2.7.0 2.7.2: Library for emulating the Roland MT-32, CM-32L, CM-64 and LAPC-I
 media-libs/musicbrainz 5.1.0-r2: Client Library for accessing the latest XML based MusicBrainz web service
 media-libs/mutagen 1.47.0: Audio metadata tag reader and writer implemented in pure Python
@@ -15653,7 +15653,7 @@ net-vpn/networkmanager-fortisslvpn 1.3.90 1.4.0 1.4.0-r2: NetworkManager Fortine
 net-vpn/networkmanager-l2tp 1.20.16-r1: NetworkManager L2TP plugin
 net-vpn/networkmanager-libreswan 1.2.24: NetworkManager libreswan plugin
 net-vpn/networkmanager-openconnect 1.2.10-r3: NetworkManager OpenConnect plugin
-net-vpn/networkmanager-openvpn 1.12.0 1.12.3: NetworkManager OpenVPN plugin
+net-vpn/networkmanager-openvpn 1.12.3: NetworkManager OpenVPN plugin
 net-vpn/networkmanager-pptp 1.2.12-r1: NetworkManager PPTP VPN plugin
 net-vpn/networkmanager-sstp 1.3.0 1.3.1-r2 1.3.2: Client for the proprietary Microsoft Secure Socket Tunneling Protocol(SSTP)
 net-vpn/networkmanager-strongswan 1.6.2 1.6.3: NetworkManager StrongSwan plugin
@@ -16042,7 +16042,7 @@ sci-geosciences/geocode-glib 3.26.4-r201: GLib helper library for geocoding serv
 sci-geosciences/geopy 2.4.1-r1: Python client for several popular geocoding web services
 sci-geosciences/gmaptool 08220-r1: Program for splitting and merging maps in Garmin format
 sci-geosciences/gmt 6.4.0-r1: Powerful map generator
-sci-geosciences/gnome-maps 47.7 47.8 48.6 48.7: A map application for GNOME
+sci-geosciences/gnome-maps 48.7 49.2: A map application for GNOME
 sci-geosciences/gpsbabel 1.9.0-r1 9999: GPS waypoints, tracks and routes converter
 sci-geosciences/gpscorrelate 2.0-r1 2.3: Tool for adjusting EXIF tags of your photos with a recorded GPS trace
 sci-geosciences/gpsd 3.26.1-r1 9999: GPS daemon and library for USB/serial GPS devices and GPS/mapping clients
@@ -16068,7 +16068,7 @@ sci-geosciences/osm2pgsql 2.2.0 99999999: Converts OSM planet.osm data to a Post
 sci-geosciences/osmctools 0.9-r2: A few really fast tools to convert, filter and update OSM data files
 sci-geosciences/owntracks-recorder 1.0.1: Stores and accesses location data published by the OwnTracks apps
 sci-geosciences/pymap3d 3.1.0: Python 3-D coordinate conversions
-sci-geosciences/qgis 3.44.5 9999: User friendly Geographic Information System
+sci-geosciences/qgis 3.44.5 3.44.6 9999: User friendly Geographic Information System
 sci-geosciences/qmapshack 1.18.2 1.19.0: GPS mapping utility
 sci-geosciences/readosm 1.1.0a: Library to extract valid data from an Open Street Map input file
 sci-geosciences/routino 3.4.3: Routing application based on openstreetmap data
@@ -17159,7 +17159,7 @@ sys-apps/onerng 3.7-r1: Software for the Open Hardware Random Number Generator c
 sys-apps/opal-utils 7.0: OPAL firmware utilities
 sys-apps/openrazer 3.10.3 3.11.0: Drivers and user-space daemon to control Razer devices on GNU/Linux
 sys-apps/openrc 0.56 0.62.2 0.62.3 0.62.4 0.62.5 0.62.6 0.62.10 0.63 9999: OpenRC manages the services, startup and shutdown of a host
-sys-apps/osinfo-db 20250124 20250606: Osinfo database for virtualization provisioning tools
+sys-apps/osinfo-db 20250606 20251212: Osinfo database for virtualization provisioning tools
 sys-apps/osinfo-db-tools 1.11.0-r1 1.12.0-r1: Tools for managing the osinfo database
 sys-apps/pandora_box 0.16.0 0.17.0: Syd's log inspector & profile writer
 sys-apps/paxctl 0.9: Manages various PaX related program header flags for Elf32, Elf64, binaries
@@ -17268,7 +17268,7 @@ sys-apps/which 2.21 2.23: Prints out location of specified executables that are 
 sys-apps/x86info 1.31: Dave Jones' handy, informative x86 CPU diagnostic utility
 sys-apps/xdg-dbus-proxy 0.1.5 0.1.6: Filtering proxy for D-Bus connections
 sys-apps/xdg-desktop-portal 1.18.4-r1 1.18.4-r2 1.20.0-r2 1.20.3: Desktop integration portal
-sys-apps/xdg-desktop-portal-gnome 47.3 48.0: Backend implementation for xdg-desktop-portal using GNOME
+sys-apps/xdg-desktop-portal-gnome 48.0 49.0: Backend implementation for xdg-desktop-portal using GNOME
 sys-apps/xdg-desktop-portal-gtk 1.14.1 1.15.2 1.15.3: Backend implementation for xdg-desktop-portal using GTK+
 sys-apps/xdg-desktop-portal-xapp 1.1.1 1.1.2: Backend implementation for xdg-desktop-portal using Cinnamon/MATE/Xfce
 sys-apps/xinetd 2.3.15.4-r1: Powerful replacement for inetd
@@ -17860,7 +17860,7 @@ sys-process/evisum 0.6.4: System and process monitor written with EFL
 sys-process/fcron 3.3.3 3.4.0: A command scheduler with extended capabilities over cron and anacron
 sys-process/ftop 1.0-r2: Monitor open files and filesystems
 sys-process/glances 4.1.2.1 4.3.1: CLI curses based monitoring tool
-sys-process/gnome-usage 46.1: A nice way to view information about use of system resources
+sys-process/gnome-usage 46.1 48.0: A nice way to view information about use of system resources
 sys-process/htop 3.3.0 3.4.0 3.4.1-r2 9999: Interactive process viewer
 sys-process/incron 0.5.12_p20171113-r1: inotify based cron daemon
 sys-process/iotop 0.6_p20230124: Top-like UI used to show which process is using the I/O
@@ -18123,7 +18123,7 @@ www-apps/mirmon 2.11-r2: Simple webapp to monitor the status of mirrors
 www-apps/moodle 4.4.12 4.5.8 5.0.4: The Moodle Course Management System
 www-apps/mythweb 0.28.1-r2 34.0: PHP scripts intended to manage MythTV from a web browser
 www-apps/nanoc 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexible static site generator written in Ruby
-www-apps/nanoc-checking 1.0.5 1.0.6: Provides checking functionality for Nanoc
+www-apps/nanoc-checking 1.0.6: Provides checking functionality for Nanoc
 www-apps/nanoc-cli 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexible static site generator written in Ruby
 www-apps/nanoc-core 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexible static site generator written in Ruby
 www-apps/nanoc-deploying 1.0.2-r1 1.0.3: Provides deploying functionality for Nanoc
@@ -18159,7 +18159,7 @@ www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook laun
 www-client/chromium 138.0.7204.157 141.0.7390.107 142.0.7444.134 142.0.7444.162 142.0.7444.175 143.0.7499.4 143.0.7499.17 143.0.7499.40 143.0.7499.109: Open-source version of Google Chrome web browser
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 9999: Advanced and well-established text-mode web browser
-www-client/epiphany 47.7-r1 48.3 48.5: GNOME webbrowser based on Webkit
+www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.3 25.12.0: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.3.1 140.4.0 140.5.0 140.6.0 143.0 143.0.3 144.0-r1 144.0.2 145.0 145.0.1 146.0 146.0.1: Firefox Web Browser
@@ -18383,7 +18383,7 @@ x11-libs/dnd 1.1-r4: OffiX' Drag'n'drop library
 x11-libs/fltk 1.3.8 1.4.4-r1: Fast Light GUI Toolkit
 x11-libs/fox 1.6.57-r4 1.7.85: C++ Toolkit for developing Graphical User Interfaces easily and effectively
 x11-libs/fox-wrapper 3-r1: Wrapper for fox-config to manage multiple versions
-x11-libs/gdk-pixbuf 2.42.10-r1 2.42.12: Image loading library for GTK+
+x11-libs/gdk-pixbuf 2.42.12: Image loading library for GTK+
 x11-libs/gdk-pixbuf-xlib 2.40.2: Deprecated Xlib integration for GdkPixbuf
 x11-libs/gl2ps 1.4.2-r1: OpenGL to PostScript printing library
 x11-libs/goffice 0.10.59-r1: A library of document-centric objects and utilities
@@ -18437,7 +18437,7 @@ x11-libs/libfm-extra 1.3.2: Library for file management
 x11-libs/libfm-qt 2.2.0 2.3.0 2.3.1: Qt Library for Building File Managers
 x11-libs/libfontenc 1.1.8: X.Org fontenc library
 x11-libs/libgxim 0.5.0-r1: GObject-based XIM protocol library
-x11-libs/libnotify 0.8.6: A library for sending desktop notifications
+x11-libs/libnotify 0.8.6 0.8.7: A library for sending desktop notifications
 x11-libs/liboglappth 1.0.0-r1: Libary for OpenGL applications with easy-to-code scene setup and selection
 x11-libs/libpciaccess 0.18.1: Library providing generic access to the PCI bus and devices
 x11-libs/libtinynotify 0.2.1: A lightweight implementation of Desktop Notification Spec
@@ -18460,7 +18460,7 @@ x11-libs/qwt 6.2.0-r4 6.3.0: 2D plotting library for Qt
 x11-libs/spread-sheet-widget 0.8 0.10: GNU Spread Sheet Widget
 x11-libs/startup-notification 0.12-r2: Application startup notification and feedback library
 x11-libs/tslib 1.23-r1: Touchscreen Access Library
-x11-libs/vte 0.76.3-r1 0.78.5-r1 0.80.3-r1 0.80.4: Library providing a virtual terminal emulator widget
+x11-libs/vte 0.80.4-r1 0.82.2: Library providing a virtual terminal emulator widget
 x11-libs/wxGTK 3.2.8.1 3.2.8.1-r2: GTK version of wxWidgets, a cross-platform C++ GUI toolkit
 x11-libs/xapp 2.8.9 2.8.13: Cross-desktop libraries and common resources
 x11-libs/xbae 4.60.4-r1 4.60.4-r2: Motif-based widget to display a grid of cells as a spreadsheet
@@ -18923,14 +18923,14 @@ x11-terms/terminator 2.1.5: Multiple GNOME terminals in one window
 x11-terms/terminology 1.14.0: Feature rich terminal emulator using the Enlightenment Foundation Libraries
 x11-terms/tilda 1.5.4 2.0.0: A drop down terminal, similar to the consoles found in first person shooters
 x11-terms/wezterm 20240203.110809-r2: A GPU-accelerated cross-platform terminal emulator and multiplexer
-x11-terms/xfce4-terminal 1.1.4 1.1.5: A terminal emulator for the Xfce desktop environment
+x11-terms/xfce4-terminal 1.1.4-r1 1.1.5-r1: A terminal emulator for the Xfce desktop environment
 x11-terms/xterm 401 402 403 404 405: Terminal Emulator for X Windows
 x11-terms/yeahconsole 0.3.4-r2: yeahconsole turns an xterm or rxvt-unicode into a game-like console
 x11-terms/zutty 0.15 0.16: X terminal emulator rendering through OpenGL ES Compute Shaders
 x11-themes/QAdwaitaDecorations 0.1.7: Qt decoration plugin implementing Adwaita-like client-side decorations
 x11-themes/QGnomePlatform 0.9.2-r7: Qt Platform Theme aimed to accommodate GNOME settings
 x11-themes/adapta-gtk-theme 3.95.0.11: An adaptive Gtk+ theme based on Material Design Guidelines
-x11-themes/adwaita-icon-theme 3.32.0 47.0 48.1: GNOME default icon theme
+x11-themes/adwaita-icon-theme 3.32.0 48.1 49.0: GNOME default icon theme
 x11-themes/adwaita-icon-theme-legacy 46.2: Adwaita Icon Theme legacy
 x11-themes/adwaita-qt 1.4.2-r1: A style to bend Qt applications to look like they belong into GNOME Shell
 x11-themes/arc-icon-theme 20161122-r1: Vertex icon theme
@@ -18963,7 +18963,7 @@ x11-themes/gentoo-xcursors 0.3.2-r3: A high quality set of animated mouse cursor
 x11-themes/gentoo10-backgrounds 20110309: Gentoo - 10 Years Compiling Background Artwork
 x11-themes/geramik 0.27-r1: GTK+1 and GTK+2 Geramik Themes
 x11-themes/gkrellm-themes 0.1-r2: A pack of ~200 themes for GKrellM
-x11-themes/gnome-backgrounds 45.0 47.0 48.2.1: A set of backgrounds packaged with the GNOME desktop
+x11-themes/gnome-backgrounds 45.0 48.2.1 49.0: A set of backgrounds packaged with the GNOME desktop
 x11-themes/gnome-colors-common 5.5.1-r1: Colorized icons shared between all gnome-colors iconsets
 x11-themes/gnome-colors-themes 5.5.1: Some gnome-colors iconsets including a Gentoo one
 x11-themes/gnome-icon-theme-extras 3.12.0-r1: Extra GNOME icons for specific devices and file types
