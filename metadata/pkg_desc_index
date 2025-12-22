@@ -10104,7 +10104,7 @@ dev-ruby/http_parser_rb 0.8.0: Simple callback-based HTTP request/response parse
 dev-ruby/httparty 0.23.1 0.23.2: Makes http fun! Also, makes consuming restful web services dead easy
 dev-ruby/httpauth 0.2.1-r1: Library implementing the full HTTP Authentication protocol (RFC 2617)
 dev-ruby/httpclient 2.8.3-r3 2.9.0: 'httpclient' gives something like the functionality of libwww-perl (LWP) in Ruby
-dev-ruby/i18n 1.14.7: Add Internationalization support to your Ruby application
+dev-ruby/i18n 1.14.7 1.14.8: Add Internationalization support to your Ruby application
 dev-ruby/ice_nine 0.11.2-r2: Deep Freeze Ruby Objects
 dev-ruby/idn-ruby 0.1.5: LibIDN Ruby Bindings
 dev-ruby/image_processing 1.13.0 1.14.0: High-level image processing helper methods with libvips and ImageMagick
@@ -17378,6 +17378,7 @@ sys-block/sas3ircu 16-r1 16-r2: LSI MPT-SAS3 controller management tool
 sys-block/scsiadd 1.97-r2: Add and remove SCSI devices from your Linux system during runtime
 sys-block/scsiping 0.0.1-r2: SCSIPing pings a host on the SCSI-chain
 sys-block/scsirastools 1.6.6: Serviceability for SCSI Disks and Arrays
+sys-block/sdmon 0.9.0_p20250201: Get SD-card health data
 sys-block/sedutil 1.20.0: The Drive Trust Alliance Self Encrypting Drive Utility
 sys-block/seekwatcher 0.15-r1: Generates graphs from blktrace to help visualize IO patterns and performance
 sys-block/smp_utils 0.99-r1: Utilities for SAS management protocol (SMP)
