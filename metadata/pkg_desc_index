@@ -2977,7 +2977,7 @@ app-mobilephone/gammu 1.42.0-r1: A tool to handle your cellular phone
 app-mobilephone/gnokii 0.6.31-r5: User space driver and tools for use with mobile phones
 app-mobilephone/heimdall 2.2.2: Tool suite used to flash firmware onto Samsung devices
 app-mobilephone/scmxx 0.9.0-r1: Exchange data with Siemens phones
-app-mobilephone/scrcpy 3.3.2 3.3.3: Display and control your Android device
+app-mobilephone/scrcpy 3.3.3 3.3.4: Display and control your Android device
 app-mobilephone/smstools 3.1.21-r2: Send and receive short messages through GSM modems
 app-mobilephone/sobexsrv 1.0.1-r3: Scripting/Secure OBEX Server (for BlueZ Linux)
 app-mobilephone/vmoconv 1.0-r1: A tool that converts Siemens phones VMO and VMI audio files to gsm and wav
@@ -3854,7 +3854,7 @@ dev-build/rocm-cmake 6.3.3 6.4.3 7.0.2 7.1.0: Radeon Open Compute CMake Modules
 dev-build/samurai 1.2-r3 9999: ninja-compatible build tool written in C
 dev-build/scons 4.10.1: Extensible Python-based build utility
 dev-build/slibtool 0.6.1 0.7.0 0.7.1 0.7.2 0.7.3 0.7.4 9999: A strong libtool implementation, written in C
-dev-build/steve 1.1.0 1.2.0 1.3.0 9999: A load-balancing jobserver for Gentoo
+dev-build/steve 1.3.1 9999: A load-balancing jobserver for Gentoo
 dev-build/tinycmmc 0.1.0 9999: Tiny CMake Module Collections
 dev-build/xfce4-dev-tools 4.20.0 4.21.0: A set of scripts and m4/autoconf macros that ease build system maintenance
 dev-cpp/ETL 1.4.1: Multi-platform class and template library
@@ -5192,7 +5192,7 @@ dev-lang/dzaima-bqn 0.2.1 9999: A BQN language implementation written in Java, a
 dev-lang/eisl 5.56 5.58 5.61: Interpreter and compiler compatible with the ISLisp standard
 dev-lang/elixir 1.15.7 1.15.8 1.16.2 1.16.3 1.17.2 1.17.3 1.18.4 1.19.0: Elixir programming language
 dev-lang/elpi 1.19.6-r1 2.0.7: Embeddable Lambda Prolog Interpreter in OCaml
-dev-lang/erlang 26.2.1-r1 26.2.5.14 26.2.5.15 27.3.4.2 27.3.4.3 28.0.2 28.0.4 28.1 28.3: Erlang programming language, runtime environment and libraries (OTP)
+dev-lang/erlang 26.2.1-r1 26.2.5.16 27.3.4.6 28.1 28.2 28.3: Erlang programming language, runtime environment and libraries (OTP)
 dev-lang/esco 0.513: Combine interpreter of esoteric languages
 dev-lang/execline 2.9.6.0 2.9.7.0: A non-interactive scripting language
 dev-lang/f2c 20240312: Fortran to C converter
@@ -12694,7 +12694,7 @@ mail-filter/procmail 3.24 3.24-r1: Mail delivery agent/filter
 mail-filter/pyzor 1.1.2: A distributed, collaborative spam detection and filtering network
 mail-filter/razor 2.85-r5: Distributed, collaborative spam detection and filtering network
 mail-filter/rblcheck 1.5-r3: Perform lookups in RBL-styles services
-mail-filter/rspamd 3.12.1 3.13.2 3.14.0 3.14.1 9999: Rapid spam filtering system
+mail-filter/rspamd 3.12.1 3.13.2 3.14.0 3.14.1 3.14.2 9999: Rapid spam filtering system
 mail-filter/scmail 1.3: a mail filter written in Scheme
 mail-filter/sieve-connect 0.90: Sieve Command Line Interface
 mail-filter/spamassassin 4.0.0-r4 4.0.0-r5 4.0.1 4.0.1-r1 4.0.2: An extensible mail filter which can identify and tag spam
@@ -12712,7 +12712,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, sim
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.10.4 3.10.6 3.10.7 3.11_pre20251219: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.10.4 3.10.6 3.10.7 3.11.0_rc1 3.12_pre20251223: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.17.1.9 8.18.1 8.18.1-r3 8.18.1.10-r3 8.18.1.15-r1 8.18.1.16: Widely-used Mail Transport Agent (MTA)
@@ -13584,6 +13584,7 @@ media-libs/sratom 0.6.16 0.6.18-r1: Library for serialising LV2 atoms to/from RD
 media-libs/stimg 0.1.0-r1: Simple and tiny image loading library
 media-libs/stk 4.6.2: Synthesis ToolKit in C++
 media-libs/stops 0.4.0: Organ stops for aeolus by Fons Adriaensen <fons.adriaensen@skynet.be>
+media-libs/subrandr 1.0.0: Subtitle rendering library for rendering non-ASS subtitles
 media-libs/suil 0.10.22-r2: Lightweight C library for loading and wrapping LV2 plugin UIs
 media-libs/svgalib 1.9.25-r8: A library for running svga graphics on the console
 media-libs/svt-av1 2.1.2 3.0.2 3.1.0 3.1.2 9999: Scalable Video Technology for AV1 (SVT-AV1 Encoder)
@@ -15046,7 +15047,7 @@ net-libs/nDPI 4.2 4.4 4.6 4.8 4.14 9999: Open Source Deep Packet Inspection Soft
 net-libs/neon 0.34.0: HTTP and WebDAV client library
 net-libs/net6 1.3.14-r2: Network access framework for IPv4/IPv6 written in C++
 net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP protocols
-net-libs/nghttp2 1.65.0-r2 1.66.0 1.67.1 9999: HTTP/2 C Library
+net-libs/nghttp2 1.65.0-r2 1.66.0 1.67.1 1.68.0 9999: HTTP/2 C Library
 net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 1.14.0 9999: HTTP/3 library written in C
 net-libs/ngtcp2 1.11.0 1.11.0-r1 1.12.0 1.13.0 1.14.0 1.15.0 1.15.1 1.16.0 1.17.0 1.18.0 1.19.0 9999: Implementation of the IETF QUIC Protocol
 net-libs/nodejs 20.18.2 20.19.2 20.19.5 20.19.6 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
@@ -16662,6 +16663,7 @@ sec-keys/openpgp-keys-openssh 20220316: OpenPGP keys used by OpenSSH
 sec-keys/openpgp-keys-openssl 20220316-r1 20221101 20230207 20230801 20240424 20240920: OpenPGP keys used by OpenSSL
 sec-keys/openpgp-keys-openwall 20210107: OpenPGP keys used to sign Openwall software releases
 sec-keys/openpgp-keys-openzfs 20210419: OpenPGP keys used to sign OpenZFS releases
+sec-keys/openpgp-keys-pam 20230330: OpenPGP keys used by the linux-pam project
 sec-keys/openpgp-keys-patch 20220407 20250206: OpenPGP keys used by GNU patch
 sec-keys/openpgp-keys-philiphazel 20220416: OpenPGP keys used by Philip Hazel
 sec-keys/openpgp-keys-pottlinger 20251006: OpenPGP keys used by creadur.apache.org
@@ -18097,7 +18099,7 @@ www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20250514b: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
 www-apps/drupal 7.102 10.3.14 10.4.5 11.0.13 11.1.5: PHP-based open-source platform and content management system
-www-apps/element 1.12.0 1.12.6: A glossy Matrix collaboration client for the web
+www-apps/element 1.12.0 1.12.6 1.12.7: A glossy Matrix collaboration client for the web
 www-apps/gitea 1.25.1 1.25.3: A painless self-hosted Git service
 www-apps/grafana-bin 11.4.8 11.5.10 12.0.7 12.1.4 12.2.2 12.3.0: Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
 www-apps/haunt 0.3.0: Haunt is a simple, functional, hackable static site generator
@@ -18133,7 +18135,7 @@ www-apps/nanoc-cli 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexi
 www-apps/nanoc-core 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexible static site generator written in Ruby
 www-apps/nanoc-deploying 1.0.2-r1 1.0.3: Provides deploying functionality for Nanoc
 www-apps/nanoc-spec 0.0.2-r1: Provides Nanoc::Spec, containing functionality for writing tests for Nanoc
-www-apps/nextcloud 30.0.12 30.0.15 30.0.16 31.0.6 31.0.9 31.0.10 32.0.0 32.0.1 32.0.2: Personal cloud that runs on your own server
+www-apps/nextcloud 31.0.9 31.0.10 31.0.12 32.0.2 32.0.3: Personal cloud that runs on your own server
 www-apps/nextcloud-notify_push 1.2.0: Push daemon for Nextcloud clients
 www-apps/nikola 8.3.1-r1 8.3.3: A static website and blog generator
 www-apps/novnc 1.4.0 1.6.0 9999: noVNC is a VNC client implemented using HTML5 technologies
