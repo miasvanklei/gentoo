@@ -1876,7 +1876,7 @@ app-editors/xemacs 21.5.36-r3 21.5.36-r5 21.5.9999: highly customizable open sou
 app-editors/xmlcopyeditor 1.3.1.0-r4: XML Copy Editor is a fast, free, validating XML editor
 app-editors/xvile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clone
 app-editors/yudit 3.1.0: Free (Y)unicode text editor for all unices
-app-editors/zed 0.205.9 0.208.4 0.211.6 0.213.8 0.215.3: The fast, collaborative code editor
+app-editors/zed 0.205.9 0.211.6 0.213.8 0.215.3 0.217.3: The fast, collaborative code editor
 app-editors/zile 2.6.2-r2 2.6.4: Zile is a small Emacs clone
 app-emacs/a 1.0.0: Associative data structure functions for Emacs Lisp
 app-emacs/a68-mode 1.2_p20250524: Algol68 major mode for GNU Emacs
@@ -2503,8 +2503,8 @@ app-forensics/scalpel 2.1_pre20210326: A high performance file carver
 app-forensics/sleuthkit 4.12.1-r2: A collection of file system and media management forensic analysis tools
 app-forensics/unhide 20220611: Forensic tool to find hidden processes and TCP/UDP ports by rootkits/LKMs
 app-forensics/volatility3 2.11.0-r1 2.26.2: Framework for analyzing volatile memory
-app-forensics/yara 4.5.3 4.5.4 9999: A malware identification and classification tool
-app-forensics/yara-x 1.4.0 1.6.0 1.8.1: A malware identification and classification tool
+app-forensics/yara 4.5.4 4.5.5 9999: A malware identification and classification tool
+app-forensics/yara-x 1.4.0 1.6.0 1.8.1 1.10.0: A malware identification and classification tool
 app-forensics/zzuf 0.15_p20190208 0.15_p20220529: Transparent application input fuzzer
 app-i18n/anthy 9100h-r3: Anthy -- free and secure Japanese input system
 app-i18n/bidiv 1.5_p4: A commandline tool displaying logical Hebrew/Arabic
@@ -3800,13 +3800,13 @@ dev-ada/gprbuild 25.0.0-r5 26.0.0: Multi-Language Management
 dev-ada/gprconfig_kb 25.0.0-r3 26.0.0: GPR configuration knowledge base
 dev-ada/gtkada 25.0.1-r2: A complete Ada graphical toolkit
 dev-ada/lal-refactor 25.0.0-r2: Refactoring tools for the Ada programming language
-dev-ada/langkit 24.0.0-r2 25.0.0-r6: A Python framework to generate language parsers
+dev-ada/langkit 24.0.0-r2 25.0.0-r7: A Python framework to generate language parsers
 dev-ada/langkit-contrib 25.0.0-r2: A Python framework to generate language parsers - Contrib
 dev-ada/libadalang 25.0.0-r1: high performance semantic engine for the Ada programming language
-dev-ada/libadalang-tools 25.0.0-r2: Libadalang-based tools: gnatpp, gnatmetric and gnatstub
+dev-ada/libadalang-tools 25.0.0-r3: Libadalang-based tools: gnatpp, gnatmetric and gnatstub
 dev-ada/libgpr 25.0.0-r3 26.0.0: Ada library to handle GPRbuild project files
 dev-ada/markdown 25.0.0-r2: Provides a markdown parser written in Ada
-dev-ada/prettier-ada 25.0.0-r2: Port of the Prettier formatter to the Ada programming language
+dev-ada/prettier-ada 25.0.0-r3: Port of the Prettier formatter to the Ada programming language
 dev-ada/spawn 25.0.0-r4: Simple API to spawn processes
 dev-ada/templates-parser 24.0.0-r1 25.0.0-r4: A template engine
 dev-ada/vss-extra 26.0.0: A high level string and text processing library
@@ -3914,7 +3914,7 @@ dev-cpp/gulrak-filesystem 1.5.14: Header-only single-file std::filesystem compat
 dev-cpp/highway 1.2.0 1.3.0 9999: Performance-portable, length-agnostic SIMD with runtime dispatch
 dev-cpp/htmlcxx 0.87: A simple non-validating CSS 1 and HTML parser for C++
 dev-cpp/json11 1.0.0-r1: A tiny JSON library for C++11
-dev-cpp/jsoncons 1.4.3: C++ header-only library for JSON and JSON-like data formats
+dev-cpp/jsoncons 1.4.3 1.5.0: C++ header-only library for JSON and JSON-like data formats
 dev-cpp/jwt-cpp 0.6.0: header only library for creating and validating JSON Web Tokens in C++11
 dev-cpp/kokkos 4.0.1-r1 4.3.1-r1 4.6.2-r1 4.6.2-r2 9999: C++ Performance Portability Programming EcoSystem
 dev-cpp/libcmis 0.6.2-r2 9999: C++ client library for the CMIS interface
@@ -4054,7 +4054,7 @@ dev-db/sqldeveloper 23.1.1.345.2114: Oracle SQL Developer is a graphical tool fo
 dev-db/sqlite 3.50.4 3.51.0 3.51.1 9999: SQL database engine
 dev-db/sqlitebrowser 3.13.1_p20250502-r1 9999: Light GUI editor for SQLite databases
 dev-db/sqlitestudio 4.0.0_pre20251207: Powerful cross-platform SQLite database manager
-dev-db/sqlmap 1.9.8 1.9.9 1.9.10 9999: An automatic SQL injection and database takeover tool
+dev-db/sqlmap 1.9.10 1.9.12 9999: An automatic SQL injection and database takeover tool
 dev-db/textsearch_ja 9.0.0: Integrated Full-Text-Search for Japanese language using morphological analyze
 dev-db/timescaledb 2.21.4 2.22.1 2.23.1 2.24.0: Open-source time-series SQL database
 dev-db/tinycdb 0.81: A very fast and simple package for creating and reading constant data bases
@@ -4080,7 +4080,7 @@ dev-debug/kdbg 3.1.0_p20250406 3.1.0_p20250406-r1 3.2.0: Graphical debugger inte
 dev-debug/leaktracer 2.4-r3: Trace and analyze memory leaks in C++ programs
 dev-debug/ltrace 0.7.91_pre20221216-r1: trace library calls made at runtime
 dev-debug/peda 1.2 9999: Python Exploit Development Assistance for GDB
-dev-debug/pwndbg 20250418-r1 20250530-r1 20251010 20251020 99999999: A GDB plug-in that makes debugging with GDB suck less
+dev-debug/pwndbg 20250418-r1 20250530-r2 20251010-r2 20251020-r2 99999999: A GDB plug-in that makes debugging with GDB suck less
 dev-debug/rr 5.8.0 5.9.0-r1 9999: Record and Replay Framework
 dev-debug/scap-driver 0.20.0: Kernel module for dev-debug/sysdig
 dev-debug/strace 6.16 6.17 6.18 9999: Useful diagnostic, instructional, and debugging tool
@@ -9178,7 +9178,7 @@ dev-python/pyrss2gen 1.1-r2: RSS feed generator written in Python
 dev-python/pyscard 2.3.0 2.3.1: Smart card support in python
 dev-python/pyscreenshot 3.1: Python screenshot library
 dev-python/pysdl2 0.9.17: Python (ctypes) bindings for SDL2 libraries
-dev-python/pyserial 3.5-r2: Python Serial Port extension
+dev-python/pyserial 3.5-r2 3.5-r3: Python Serial Port extension
 dev-python/pyside 6.9.3 6.10.1-r2 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.0 7.0.1 7.0.2: Python bindings for simdjson
 dev-python/pysmi 1.6.2: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
@@ -11454,7 +11454,7 @@ games-board/stockfish 17-r1 17.1: Free UCI chess engine, claimed to be the stron
 games-board/tablebase-syzygy 0_pre20131213-r101: Syzygy chess endgame tablebases for up to 6 pieces
 games-board/tali 40.9: Beat the odds in a poker-style dice game
 games-board/tetzle 3.0.3: Jigsaw puzzle game that uses tetrominoes for the pieces
-games-board/xboard 4.9.1: GUI for gnuchess and for internet chess servers
+games-board/xboard 4.9.1-r1: GUI for gnuchess and for internet chess servers
 games-board/xfreecell 1.0.5b-r1: A freecell game for X
 games-board/xgammon 0.98-r3: very nice backgammon game for X
 games-board/xmahjongg 3.7-r2: Friendly GUI version of xmahjongg
@@ -11533,7 +11533,7 @@ games-engines/box2d 2.4.2 2.4.2-r1: C++ engine for simulating rigid bodies in 2D
 games-engines/dMagnetic 0.37: A Magnetic Scrolls Interpreter for playing a collection of old text adventures
 games-engines/devilutionx 1.5.4-r1 1.5.5: Diablo engine for modern operating systems
 games-engines/exult 1.12.0: Ultima 7 game engine that runs on modern operating systems
-games-engines/fheroes2 1.1.11 1.1.12: Recreation of HoMM2 game engine
+games-engines/fheroes2 1.1.12 1.1.13: Recreation of HoMM2 game engine
 games-engines/frotz 2.55-r1: Interpreter for Z-code based text games
 games-engines/gargoyle 2019.1.1: An Interactive Fiction (IF) player supporting all major formats
 games-engines/love 0.7.2-r100 0.8.0-r100 11.4 11.5-r1 9999: A framework for 2D games in Lua
@@ -11547,6 +11547,7 @@ games-engines/scummvm 2.9.1-r1 9999: Reimplementation of the SCUMM game engine u
 games-engines/scummvm-tools 2.7.0_p1-r1: Utilities for the SCUMM game engine
 games-engines/solarus 1.6.5 9999: An open-source Zelda-like 2D game engine
 games-engines/stratagus 3.3.2-r2: A realtime strategy game engine
+games-engines/uzdoom 4.14.3: Modder-friendly hardware-accelerated source port of the DOOM engine
 games-engines/xzip 1.8.2-r4: X interface to Z-code based text games
 games-engines/zoom 1.1.5-r2: Fast, clean, modern Z-code interpreter for X
 games-fps/alephone 20250302-r2 99999999: An enhanced version of the game engine from the classic Mac game, Marathon
@@ -11570,9 +11571,9 @@ games-fps/etqw-data 1.0-r1: Enemy Territory: Quake Wars data files
 games-fps/etqw-demo 2.0_p1-r4: Enemy Territory: Quake Wars demo
 games-fps/ezquake-bin 2.2-r3: Quakeworld client with mqwcl functionality and many more features
 games-fps/final-doom-data-gog 1.9: Data files for Final DOOM from gog.com
-games-fps/freedm 0.13.0: A 32-level game designed for competitive deathmatch play
+games-fps/freedm 0.13.0-r1: A 32-level game designed for competitive deathmatch play
 games-fps/freedm-data 0.13.0: Game resources for FreeDM
-games-fps/freedoom 0.13.0: A complete free-content single-player focused game based on the Doom engine
+games-fps/freedoom 0.13.0-r1: A complete free-content single-player focused game based on the Doom engine
 games-fps/freedoom-data 0.13.0: Game resources for Freedoom: Phase 1+2
 games-fps/glxquake-bin 0-r3: A binary that works with any 3D-graphics-card that supports the glx X-extension
 games-fps/gzdoom 4.14.1: A modder-friendly OpenGL source port based on the DOOM engine
@@ -11790,7 +11791,7 @@ games-roguelike/nethack 3.6.6-r1 3.6.7: The ultimate old-school single player du
 games-roguelike/powder 118: A game in the genre of Rogue, Nethack, and Diablo with emphasis on tactical play
 games-roguelike/scourge 0.21.1-r2: A graphical rogue-like adventure game
 games-roguelike/stone-soup 0.25.1-r103 0.26.1-r2 0.27.1-r1 0.28.0-r1 0.29.1 0.30.1 0.31.0 0.32.1 0.33.0 0.33.1: Role-playing roguelike game of exploration and treasure-hunting in dungeons
-games-roguelike/tome 2.3.5-r1 2.4.0_p20250227: Fantasy adventure game, based on the works of J.R.R. Tolkien
+games-roguelike/tome 2.4.0_p20251212: Fantasy adventure game, based on the works of J.R.R. Tolkien
 games-roguelike/tomenet 4.9.2: A MMORPG based on the works of J.R.R. Tolkien
 games-roguelike/wrogue 0.8.0b-r1: Gothic science fantasy roguelike game
 games-roguelike/zangband 2.7.4c-r1: An enhanced version of the Roguelike game Angband
@@ -13624,7 +13625,7 @@ media-libs/zint 2.15.0 2.16.0: Barcode encoding library supporting over 50 symbo
 media-libs/zita-alsa-pcmi 0.6.1: Provides easy access to ALSA PCM devices
 media-libs/zita-convolver 4.0.3: C++ library implementing a real-time convolution matrix
 media-libs/zita-resampler 1.11.2: C++ library for real-time resampling of audio signals
-media-libs/zmusic 1.1.14: GZDoom's music system as a standalone library
+media-libs/zmusic 1.3.0: UZDoom's music system as a standalone library
 media-libs/zvbi 0.2.44: VBI Decoding Library for Zapping
 media-libs/zxing-cpp 2.3.0-r1: C++ Multi-format 1D/2D barcode image processing library
 media-plugins/alsa-plugins 1.2.12: ALSA extra plugins
@@ -13902,7 +13903,7 @@ media-radio/ax25-tools 0.0.10_rc5-r1: Basic AX.25 (Amateur Radio) administrative
 media-radio/chirp 20240606-r1: A free, open-source tool for programming your radio
 media-radio/cqrlog 2.5.2: CQRLOG is an advanced ham radio logger based on MySQL database
 media-radio/cwdaemon 0.13.0: A morse daemon for the parallel or serial port
-media-radio/direwolf 1.7-r1 1.8 1.8.1: Decoded Information from Radio Emissions for Windows Or Linux Fans
+media-radio/direwolf 1.7-r2 1.8-r1 1.8.1-r1: Decoded Information from Radio Emissions for Windows Or Linux Fans
 media-radio/dxcc 20191204-r1: A ham radio callsign DXCC lookup utility
 media-radio/flamp 2.2.07 2.2.14: Fldigi helper for transferring files
 media-radio/fldigi 4.2.09 4.2.10 4.2.11: Sound card based multimode software modem for Amateur Radio use
@@ -13914,7 +13915,7 @@ media-radio/grig 0.9.0: A tool for controlling amateur radios
 media-radio/ibp 0.21-r3: Shows currently transmitting beacons of the International Beacon Project (IBP)
 media-radio/js8call 2.3.1-r2: Weak signal ham radio communication
 media-radio/kochmorse 3.5.1_p20250730: Morse-code tutor using the Koch method
-media-radio/qlog 0.46.1-r1: Amateur radio logbook software
+media-radio/qlog 0.46.1-r1 0.47.1 9999: Amateur radio logbook software
 media-radio/qrq 0.3.5-r2: Yet another CW trainer for Linux/Unix
 media-radio/qsstv 9.5.11_pre20250212: Amateur radio SSTV software
 media-radio/svxlink 25.05.1_p20250929-r1: Multi Purpose Voice Services System, including Qtel for EchoLink
@@ -14214,7 +14215,7 @@ media-sound/spek 0.8.5-r2 0.8.5-r3: Analyse your audio files by showing their sp
 media-sound/splay 0.9.5.2-r2: An audio player, primarily for the console
 media-sound/split2flac 122 9999: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
 media-sound/spotify 1.2.77: Spotify is a social music platform
-media-sound/strawberry 1.2.11 1.2.13 1.2.14 1.2.15 9999: Modern music player and library organizer based on Clementine and Qt
+media-sound/strawberry 1.2.15 1.2.16 9999: Modern music player and library organizer based on Clementine and Qt
 media-sound/streamripper 1.64.6-r1: Extracts and records individual MP3 file tracks from shoutcast streams
 media-sound/streamtranscoder 3.1.11-r2: Commandline program to transcode shoutcast/icecast streams to different bitrates
 media-sound/subsonic-bin 6.1.6: Subsonic is a complete, personal media streaming solution
@@ -14674,7 +14675,7 @@ net-analyzer/upnpscan 0.4-r3: Scans the network for UPnP capable devices
 net-analyzer/vnstat 2.13 2.13-r2 9999: Console-based network traffic monitor that keeps statistics of network usage
 net-analyzer/webfuzzer 0.2.0-r2: Poor man's web vulnerability scanner
 net-analyzer/wireshark 4.4.9 4.4.10 4.4.11 4.6.0-r1 4.6.2-r2 9999: Network protocol analyzer (sniffer)
-net-analyzer/wtfis 0.11.0 0.13.0 9999: Passive hostname, domain and IP lookup tool for non-robots
+net-analyzer/wtfis 0.13.0 0.14.0 9999: Passive hostname, domain and IP lookup tool for non-robots
 net-analyzer/xnetload 1.11.3-r1: Displays a count and a graph of the traffic over a specified network connection
 net-analyzer/xprobe 0.3-r1 0.3-r2: Active OS fingerprinting tool - this is Xprobe2
 net-analyzer/yersinia 0.8.2_p20221119: A framework for layer 2 attacks
@@ -14849,7 +14850,7 @@ net-im/rocketchat-desktop-bin 3.9.10-r1 4.1.1-r1: The Ultimate Open Source Web C
 net-im/sendxmpp 1.24: A perl-script to send xmpp (jabber), similar to what mail(1) does for mail
 net-im/sendxmpp-scala 1.2.0 1.2.1 9999: Send XMPP (Jabber) messages via command line
 net-im/signal-cli-bin 0.13.9 0.13.19: Send and receive messages of Signal Messenger over a command line interface
-net-im/signal-desktop-bin 7.72.1 7.82.0-r1: Allows you to send and receive messages of Signal Messenger on your computer
+net-im/signal-desktop-bin 7.72.1 7.83.0: Allows you to send and receive messages of Signal Messenger on your computer
 net-im/slack 4.47.59 4.47.72: Team collaboration tool
 net-im/spectrum2 2.2.1 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
@@ -15050,7 +15051,7 @@ net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP
 net-libs/nghttp2 1.65.0-r2 1.66.0 1.67.1 1.68.0 9999: HTTP/2 C Library
 net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 1.14.0 9999: HTTP/3 library written in C
 net-libs/ngtcp2 1.11.0 1.11.0-r1 1.12.0 1.13.0 1.14.0 1.15.0 1.15.1 1.16.0 1.17.0 1.18.0 1.19.0 9999: Implementation of the IETF QUIC Protocol
-net-libs/nodejs 20.18.2 20.19.2 20.19.5 20.19.6 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
+net-libs/nodejs 20.18.2 20.19.2 20.19.5 20.19.6 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1 24.11.1-r1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
 net-libs/paho-mqtt-c 1.3.14-r1 1.3.15: An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS.
@@ -15803,7 +15804,7 @@ sci-astronomy/pyephem 4.1.5: Astronomical routines for the Python programming la
 sci-astronomy/pysiril 0.0.15: Python library to interface Python to a SiriL script
 sci-astronomy/scamp 2.13.1 2.14.0: Astrometric and photometric solutions for astronomical images
 sci-astronomy/sextractor 2.19.5-r1: Extract catalogs of sources from astronomical FITS images
-sci-astronomy/siril 1.2.6 1.2.6-r1 9999: A free astronomical image processing software
+sci-astronomy/siril 1.2.6-r1 1.4.0 9999: A free astronomical image processing software
 sci-astronomy/sirilic 1.15.12: Preparing acquisition files for processing with the SiriL software
 sci-astronomy/skymaker 3.10.5: Program that simulates astronomical images
 sci-astronomy/sofa_c 20231011: Library for algorithms for models in fundamental astronomy
@@ -16157,7 +16158,7 @@ sci-libs/fplll 5.5.0: Implementations of the floating-point LLL reduction algori
 sci-libs/galib 2.4.7-r2: Library for genetic algorithms in C++ programs
 sci-libs/gamer 1.5-r2: Geometry-preserving Adaptive MeshER
 sci-libs/gaul-devel 0.1849-r2: Genetic Algorithm Utility Library
-sci-libs/gdal 3.9.3-r1 3.11.4-r1: Translator library for raster geospatial data formats (includes OGR support)
+sci-libs/gdal 3.9.3-r1 3.11.4-r1 3.12.1: Translator library for raster geospatial data formats (includes OGR support)
 sci-libs/geos 3.12.1 3.13.0 3.13.1 3.14.0: Geometry engine library for Geographic Information Systems
 sci-libs/gerris 20131206-r1: Gerris Flow Solver
 sci-libs/getdata 0.11.0 0.11.0-r2: Reference implementation of the Dirfile, format for time-ordered binary data
@@ -16995,7 +16996,7 @@ sys-apps/baobab 48.0 49.1: Disk usage browser for GNOME
 sys-apps/bar 1.11.1-r1: Console Progress Bar
 sys-apps/baselayout 2.17 2.18 9999: Filesystem baselayout and init scripts
 sys-apps/baselayout-java 0.1.0-r3: Baselayout for Java
-sys-apps/bat 0.23.0-r2 0.24.0-r2 0.25.0: cat(1) clone with syntax highlighting and Git integration
+sys-apps/bat 0.23.0-r2 0.24.0-r2 0.25.0 0.26.1: cat(1) clone with syntax highlighting and Git integration
 sys-apps/bfs 4.0.6 4.0.7 4.0.8: Breadth-first version of the UNIX find command
 sys-apps/biosdevname 0.7.3-r1: Sets BIOS-given device names instead of kernel eth* names
 sys-apps/biosdisk 1.01: FreeDOS based BIOS updating utility for Dell machines
@@ -17437,7 +17438,7 @@ sys-boot/yaboot-static 1.3.17-r2: Static yaboot ppc boot loader for machines wit
 sys-cluster/ampi 0_pre20140616: MPI library for algorithmic differentiation
 sys-cluster/c3 4.0.1: The Cluster Command and Control (C3) tool suite
 sys-cluster/ceph 19.2.2-r6 19.2.3 20.1.0-r2 20.1.1: Ceph distributed filesystem
-sys-cluster/charliecloud 0.39-r1 0.40 0.41 0.42 9999: Lightweight user-defined software stacks for high-performance computing
+sys-cluster/charliecloud 0.41 0.42 0.42-r1 9999: Lightweight user-defined software stacks for high-performance computing
 sys-cluster/charm 6.8.2: Message-passing parallel language and runtime system
 sys-cluster/charmdebug 6.2.0-r2: A debugger for Charm++ applications
 sys-cluster/cilium-cli 0.12.1 0.13.0 0.16.16 0.18.2: Next generation command line interface for cilium
@@ -18582,7 +18583,7 @@ x11-misc/lsw 0.3: list window names
 x11-misc/macopix 3.4.0-r1: MaCoPiX (Mascot Constructive Pilot for X) is a desktop mascot application
 x11-misc/makedepend 1.0.9: create dependencies in makefiles
 x11-misc/matchbox-keyboard 0.1-r2: Matchbox-keyboard is an on screen 'virtual' or 'software' keyboard
-x11-misc/mate-notification-daemon 1.28.1-r2: MATE Notification daemon
+x11-misc/mate-notification-daemon 1.28.1-r2 1.28.5: MATE Notification daemon
 x11-misc/menulibre 2.4.0: Advanced freedesktop.org compliant menu editor
 x11-misc/menumaker 0.99.14: Utility that scans through the system and generates a menu of installed programs
 x11-misc/mgm 1.2-r2: Moaning Goat Meter: load and status meter written in Perl
