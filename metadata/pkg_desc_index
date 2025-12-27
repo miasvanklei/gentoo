@@ -922,7 +922,7 @@ app-admin/apg 2.3.0b_p20150129-r1 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.707.0 1.2.764.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.42.74 1.43.2 1.43.5 1.43.10 1.43.15 1.44.4 1.44.5 1.44.6: Universal Command Line Environment for AWS
+app-admin/awscli 1.42.74 1.43.2 1.43.5 1.43.10 1.43.15 1.44.4 1.44.5 1.44.6 1.44.7: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.10.0 2025.12.0: Bitwarden password manager desktop client
@@ -1371,7 +1371,7 @@ app-containers/devcontainer 0.80.1 0.80.2 0.80.3: Reference implementation of th
 app-containers/distrobox 1.8.1.2-r1 1.8.2.1 1.8.2.2 9999: Use any Linux distribution inside your terminal (powered by docker/podman)
 app-containers/distrobuilder 2.1 3.0-r1 3.1 3.2: System container image builder for LXC and incus
 app-containers/dive 0.13.1: terminal based UI to manage kubernetes clusters
-app-containers/docker 28.0.1 28.0.4 28.1.1 28.2.2 28.4.0 29.1.3: The core functions you need to create Docker images and run Docker containers
+app-containers/docker 28.0.1 28.0.4 28.1.1 28.2.2 28.4.0 29.1.3-r1: The core functions you need to create Docker images and run Docker containers
 app-containers/docker-bench-security 1.6.0 1.6.1: Test for best practices around deploying docker containers
 app-containers/docker-buildx 0.11.2 0.14.0 0.19.1 0.20.1 0.21.2 9999: Docker CLI plugin for extended build capabilities with BuildKit
 app-containers/docker-cli 28.0.1 28.0.4 28.1.1 28.2.2 28.4.0 29.1.3: the command line binary for docker
@@ -1397,7 +1397,7 @@ app-containers/podman 5.3.2 5.4.2 5.5.2 5.7.0 5.7.1 9999: A tool for managing OC
 app-containers/podman-compose 1.5.0: A script to run docker-compose.yml using Podman
 app-containers/podman-tui 1.5.0 1.6.1 1.9.0 9999: Terminal UI frontend for Podman
 app-containers/reg 0.16.1-r1: Docker registry v2 command line client
-app-containers/runc 1.2.4 1.2.5 1.2.6 1.2.8 1.3.0 1.3.1 1.3.3 1.4.0: runc container cli tools
+app-containers/runc 1.2.4 1.2.5 1.2.6 1.2.8 1.3.0 1.3.1 1.3.3 1.4.0-r1: runc container cli tools
 app-containers/s6-overlay 2.1.0.2-r1: an s6-based init system for containers
 app-containers/sen 0.8.0: Terminal User Interface for docker engine
 app-containers/skopeo 1.18.0-r1 1.19.0 1.21.0 9999: Work with remote container images registries
@@ -2819,7 +2819,7 @@ app-misc/kanatest 0.4.8: Visual flashcard tool for memorizing the Japanese Hirag
 app-misc/khal 0.13.0: A CalDAV based calendar
 app-misc/khard 0.19.1: Console CardDAV client
 app-misc/klavaro 3.14: Another free touch typing tutor program
-app-misc/koleo-cli 0.2.137.25 0.2.137.26: A simple CLI for koleo.pl railway planner
+app-misc/koleo-cli 0.2.137.25 0.2.137.26 0.2.137.27: A simple CLI for koleo.pl railway planner
 app-misc/kryoflux-dtc 2.6-r3 3.50_p2-r2: KryoFlux Host Software
 app-misc/ktoblzcheck 1.49-r2: Library to check account numbers and bank codes of German banks
 app-misc/lcd4linux 0.11.0_pre20170527-r9: A small program that grabs information and displays it on an external LCD
@@ -8211,8 +8211,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.40.74 1.41.2 1.41.5 1.42.4 1.42.9 1.42.14 1.42.15 1.42.16: The AWS SDK for Python
-dev-python/botocore 1.40.74 1.41.2 1.41.5 1.42.4 1.42.9 1.42.14 1.42.15 1.42.16: Low-level, data-driven core of boto 3
+dev-python/boto3 1.40.74 1.41.2 1.41.5 1.42.4 1.42.9 1.42.14 1.42.15 1.42.16 1.42.17: The AWS SDK for Python
+dev-python/botocore 1.40.74 1.41.2 1.41.5 1.42.4 1.42.9 1.42.14 1.42.15 1.42.16 1.42.17: Low-level, data-driven core of boto 3
 dev-python/bottle 0.12.25-r1 0.13.3 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.5.0 1.6.0_rc1 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.25 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8355,7 +8355,7 @@ dev-python/dj-database-url 3.0.1: Use Database URLs in your Django Application
 dev-python/dj-email-url 1.0.6: Use an URL to configure email backend settings in your Django Application
 dev-python/dj-search-url 0.1-r1: Use Search URLs in your Django Haystack Application
 dev-python/django 4.2.26 4.2.27 5.1.14 5.1.15 5.2.8 5.2.9 6.0: High-level Python web framework
-dev-python/django-auth-ldap 5.2.0: Django LDAP authentication backend
+dev-python/django-auth-ldap 5.2.0 5.3.0: Django LDAP authentication backend
 dev-python/django-cache-url 3.4.5: Use Cache URLs in your Django application
 dev-python/django-cacheops 7.2: ORM cache with automatic granular event-driven invalidation for Django
 dev-python/django-configurations 2.5.1: A helper for organizing Django settings
@@ -8696,7 +8696,7 @@ dev-python/keyring 25.6.0-r1 25.7.0: Provides access to the system keyring servi
 dev-python/keyrings-alt 5.0.2: Alternate keyring implementations
 dev-python/keystoneauth1 5.11.1 5.12.0: This package contains tools for authenticating to an OpenStack-based cloud
 dev-python/keyutils 0.6-r2: A set of python bindings for keyutils
-dev-python/kgb 7.2: Python function spy support for unit tests
+dev-python/kgb 7.2 7.3: Python function spy support for unit tests
 dev-python/kiwisolver 1.4.8 1.4.9: An efficient C++ implementation of the Cassowary constraint solving algorithm
 dev-python/klein 24.8.0: Micro-framework for developing production-ready web services with Python
 dev-python/knowit 0.5.6 0.5.8 0.5.10 0.5.11: Know better your media files
@@ -9515,7 +9515,7 @@ dev-python/soundfile 0.13.1: audio library based on libsndfile, CFFI and NumPy
 dev-python/soupsieve 2.8 2.8.1: A modern CSS selector implementation for BeautifulSoup
 dev-python/spake2 0.8-r1 0.9: python implementation of SPAKE2 password-authenticated key exchange algorithm
 dev-python/speg 0.3_p20180819-r2: A PEG-based parser interpreter with memoization
-dev-python/sphinx 8.2.3-r2 9.0.4-r1 9.1.0_rc1: Python documentation generator
+dev-python/sphinx 8.2.3-r2 9.0.4-r1 9.1.0_rc1 9.1.0_rc2: Python documentation generator
 dev-python/sphinx-argparse 0.5.2: Sphinx extension that automatically documents argparse commands and options
 dev-python/sphinx-autoapi 3.6.0 3.6.1: A new approach to API documentation in Sphinx
 dev-python/sphinx-autodoc-typehints 3.5.2 3.6.0: Type hints support for the Sphinx autodoc extension
@@ -10199,7 +10199,7 @@ dev-ruby/mocha 0.14.0-r1 2.4.5 2.6.1 2.7.1 2.8.2 3.0.0 3.0.1: Mocking and stubbi
 dev-ruby/moneta 1.6.0-r1: A unified interface to key/value stores
 dev-ruby/mqtt 0.6.0: Pure Ruby gem that implements the MQTT protocol
 dev-ruby/msgpack 1.7.3 1.7.5 1.8.0: Binary-based efficient data interchange format for ruby binding
-dev-ruby/multi_json 1.15.0-r1 1.17.0 1.18.0 1.19.0: A gem to provide swappable JSON backends
+dev-ruby/multi_json 1.15.0-r1 1.17.0 1.18.0 1.19.0 1.19.1: A gem to provide swappable JSON backends
 dev-ruby/multi_test 1.1.0: A uniform interface for Ruby testing libraries
 dev-ruby/multi_xml 0.7.1 0.7.2 0.8.0: A generic swappable back-end for XML parsing
 dev-ruby/multipart-parser 0.1.1: A multipart parser written in Ruby
@@ -10278,7 +10278,7 @@ dev-ruby/prime 0.1.2-r1 0.1.3 0.1.4: Prime numbers and factorization library
 dev-ruby/prism 1.4.0 1.5.2 1.6.0 1.7.0: Prism Ruby parser
 dev-ruby/process_executer 1.3.0 2.0.0 3.2.0 3.2.4 4.0.0: An API for executing commands in a subprocess
 dev-ruby/propshaft 0.9.1 1.1.0 1.2.0 1.2.1 1.3.1: Deliver assets for Rails
-dev-ruby/pry 0.14.2 0.15.2: Pry is a powerful alternative to the standard IRB shell for Ruby
+dev-ruby/pry 0.14.2 0.15.2 0.16.0: Pry is a powerful alternative to the standard IRB shell for Ruby
 dev-ruby/psych 5.2.3 5.2.4 5.2.5 5.2.6 5.3.0 5.3.1: A YAML parser and emitter
 dev-ruby/ptools 1.5.0 1.5.2: Several handy methods to Ruby's core File class
 dev-ruby/public_suffix 6.0.1 6.0.2 7.0.0: Parse and decompose a domain name into top level domain, domain and subdomains
@@ -10304,7 +10304,7 @@ dev-ruby/railties 7.1.5.1 7.1.6 7.1.6-r1 7.2.3 7.2.3-r1 8.0.4 8.1.1: Tools for c
 dev-ruby/rainbow 3.1.1: Colorize printed text on ANSI terminals
 dev-ruby/rake 13.2.1 13.3.0 13.3.1: Make-like scripting in Ruby
 dev-ruby/rake-compiler 1.3.0 1.3.1: Provide a standard and simplified way to build and package Ruby extensions
-dev-ruby/rake-compiler-dock 1.9.1 1.10.0 1.11.0: Easy to use and reliable cross compiler environment for building binary gems
+dev-ruby/rake-compiler-dock 1.9.1 1.10.0 1.11.0 1.11.1: Easy to use and reliable cross compiler environment for building binary gems
 dev-ruby/rake-remote_task 2.4.4-r1: Extends Rake with remote task goodness
 dev-ruby/rantly 2.0.0-r1 3.0.0: Ruby Imperative Random Data Generator and Quickcheck
 dev-ruby/rash_alt 0.4.12: Rash alt version for Hashie's own Rash
@@ -12126,7 +12126,7 @@ gui-apps/liquidshell 1.10.0: Basic desktop shell using QtWidgets
 gui-apps/mako 1.8.0 1.9.0 1.10.0 9999: A lightweight notification daemon for Wayland. Works on Sway
 gui-apps/nm-tray 0.5.1: A simple Qt-based NetworkManager front-end
 gui-apps/qt6ct 0.11: Qt6 Configuration Tool (for DE/WM without Qt integration)
-gui-apps/railway 2.8.2: Travel with all your train information in one place
+gui-apps/railway 2.8.2 2.9.4: Travel with all your train information in one place
 gui-apps/slurp 1.5.0: Select a region in a Wayland compositor and print it to the standard output
 gui-apps/swappy 1.5.1 9999: A Wayland native snapshot and editor tool, inspired by Snappy on macOS
 gui-apps/swaybg 1.2.0 1.2.1 9999: A wallpaper utility for Wayland
@@ -14829,7 +14829,7 @@ net-im/discord 0.0.116-r1 0.0.117-r1 0.0.118-r1 0.0.119-r1: All-in-one voice and
 net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
 net-im/element-desktop-bin 1.12.7: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
-net-im/fractal 12.1-r1: Matrix messaging app for GNOME written in Rust
+net-im/fractal 12.1-r1 13: Matrix messaging app for GNOME written in Rust
 net-im/gajim 2.2.0 2.4.0 2.4.1: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
 net-im/kaidan 0.13.0: Modern XMPP chat app for every device
