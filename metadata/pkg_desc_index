@@ -1525,10 +1525,10 @@ app-crypt/scdrand 0.3.5: Feed kernel entropy pool from smartcard's TRNG
 app-crypt/scrypt 1.3.3: A simple password-based encryption utility using scrypt key derivation function
 app-crypt/scute 1.7.0-r2: A PKCS #11 module for OpenPGP smartcards
 app-crypt/seahorse 47.0.1-r1 47.0.1-r2: Manage your passwords and encryption keys
-app-crypt/sequoia-chameleon-gnupg 0.13.1-r1 0.13.1-r3: Sequoia's reimplementation of the GnuPG interface
+app-crypt/sequoia-chameleon-gnupg 0.13.1-r3: Sequoia's reimplementation of the GnuPG interface
 app-crypt/sequoia-sop 0.37.2: Implementation of the Stateless OpenPGP Command Line Interface using Sequoia
 app-crypt/sequoia-sq 1.3.1-r1: CLI of the Sequoia OpenPGP implementation
-app-crypt/sequoia-sqv 1.3.0 1.3.0-r1: A simple OpenPGP signature verification program
+app-crypt/sequoia-sqv 1.3.0-r1: A simple OpenPGP signature verification program
 app-crypt/shash 0.2.6-r4: Generate or check digests or MACs of files
 app-crypt/signify 31: Cryptographically sign and verify files
 app-crypt/signing-party 2.11: A collection of several tools related to OpenPGP
@@ -2806,7 +2806,7 @@ app-misc/irtrans-irclient 6.01.05-r1: ASCII Client for the IRTrans Server
 app-misc/irtrans-irserver 6.09.04-r1: Server software for IRTrans
 app-misc/jail 2.0-r4: Builds a chroot and configures all the required files, directories and libraries
 app-misc/jaq 2.2.0 2.3.0 3.0.0_beta: Just another JSON query tool
-app-misc/jdupes 1.28.0 1.30.0 9999: Identify duplicate files on the filesystem
+app-misc/jdupes 1.28.0-r1 1.30.0-r1 9999: Identify duplicate files on the filesystem
 app-misc/jf 0.6.2-r2: A small utility to safely format and print JSON objects in the commandline
 app-misc/jo 1.9: JSON output from a shell
 app-misc/jot 9.0-r2: Print out increasing, decreasing, random, or redundant data
@@ -2965,7 +2965,7 @@ app-misc/wipe 2.3.1: Secure file wiping utility based on Peter Gutman's patterns
 app-misc/worker 4.6.1-r100: Worker Filemanager: Amiga Directory Opus 4 clone
 app-misc/xmind 3.7.6_p201801311814: Brainstorming and mind mapping software tool
 app-misc/yq 3.4.3: Command-line YAML processor - jq wrapper for YAML documents
-app-misc/yq-go 4.48.2 4.49.2: yq is a lightweight and portable command-line YAML, JSON and XML processor
+app-misc/yq-go 4.48.2 4.49.2 4.50.1: yq is a lightweight and portable command-line YAML, JSON and XML processor
 app-misc/ytree 2.09 2.10: Curses-based file manager
 app-misc/zellij 0.42.2 0.43.1: A terminal workspace with batteries included
 app-misc/zisofs-tools 1.0.8-r1: User utilities for zisofs
@@ -9008,7 +9008,7 @@ dev-python/pplpy 0.8.10-r1: Python bindings for the Parma Polyhedra Library (PPL
 dev-python/precis-i18n 1.1.1 1.1.2: Internationalized Usernames and Passwords
 dev-python/pretend 1.0.9-r2: A library for stubbing in Python
 dev-python/prettytable 3.16.0 3.17.0: Easily displaying tabular data in a visually appealing ASCII table format
-dev-python/primecountpy 0.1.1 0.1.1-r1: Cython interface to sci-mathematics/primecount
+dev-python/primecountpy 0.1.1-r1: Cython interface to sci-mathematics/primecount
 dev-python/priority 1.3.0-r1 2.0.0-r1: A pure-Python implementation of the HTTP/2 priority tree
 dev-python/process-tests 3.0.0: Tools for testing processes
 dev-python/progress 1.6.1: Easy to use progress bars
@@ -10849,7 +10849,7 @@ dev-util/cucumber-tag-expressions 4.1.0 5.0.6 6.1.2: Cucumber tag expressions fo
 dev-util/cunit 2.1_p3-r1: C Unit Test Framework
 dev-util/cutils 1.6-r5: C language utilities
 dev-util/cutter 2.4.1 2.4.1-r1: A Qt and C++ GUI for rizin reverse engineering framework
-dev-util/cvise 2.11.0-r1 2.11.0-r2 2.12.0 9999: Super-parallel Python port of the C-Reduce
+dev-util/cvise 2.12.0 9999: Super-parallel Python port of the C-Reduce
 dev-util/cwdiff 0.4.0 9999: A script that wraps wdiff to support directories and colorize the output
 dev-util/datree 1.9.19-r1: Tool to ensure K8s manifests and Helm charts follow best practices
 dev-util/dbus-test-runner 19.04.0-r2: Run executables under a new DBus session for testing
@@ -13048,7 +13048,7 @@ media-gfx/gozer 0.7-r5: tool for rendering arbitrary text as graphics, using ttf
 media-gfx/gphoto2 2.5.28-r2 2.5.32: Free, redistributable digital camera software application
 media-gfx/gphotofs 0.5-r1 0.5-r2: FUSE file system for interfacing with digital cameras using gphoto2
 media-gfx/gpicview 0.3.1: Lightweight image viewer
-media-gfx/graphicsmagick 1.3.45-r2 1.3.45-r3 1.3.46 9999: Collection of tools and libraries for many image formats
+media-gfx/graphicsmagick 1.3.46 9999: Collection of tools and libraries for many image formats
 media-gfx/graphite2 1.3.14_p20210810-r3 1.3.14_p20210810-r5: Library providing rendering capabilities for complex non-Roman writing systems
 media-gfx/graphviz 12.2.1-r1 14.0.5-r1: Open Source Graph Visualization Software
 media-gfx/gscan2pdf 2.13.5: Scan documents, perform OCR, produce PDFs and DjVus
@@ -14342,7 +14342,7 @@ media-video/jellyfin-web-bin 10.8.9 10.8.10: Web Client for Jellyfin
 media-video/jellyfin-web-jmp-bin 10.8.0 10.8.1 10.8.9: Modified Jellyfin Web Client for use inside Jellyfin Media Player
 media-video/kaffeine 2.1.0_pre20241125-r1: Media player with digital TV support by KDE
 media-video/libva-utils 2.22.0 2.23.0 9999: Collection of utilities and tests for VA-API
-media-video/lossless-cut-bin 3.67.1: The swiss army knife of lossless video/audio editing
+media-video/lossless-cut-bin 3.67.2: The swiss army knife of lossless video/audio editing
 media-video/lsdvd 0.17: Utility for getting info out of DVDs
 media-video/lxdvdrip 1.77-r1 1.77-r2: Command line tool to automate the process of ripping and burning DVDs
 media-video/m2vrequantizer 0.0.2_pre20060306-r1: Tool to requantize mpeg2 videos
@@ -16034,7 +16034,7 @@ sci-electronics/splat 1.4.2 1.4.2-r1: RF Signal Propagation, Loss, And Terrain a
 sci-electronics/systemc 2.3.4-r2: A C++ based modeling platform for VLSI and system-level co-design
 sci-electronics/voacapl 0.7.6-r3: HF propagation prediction tool
 sci-electronics/xcircuit 3.10.30-r2: Circuit drawing and schematic capture program
-sci-electronics/xnec2c 4.4.16 4.4.17: A GTK+ graphical interactive version of nec2c
+sci-electronics/xnec2c 4.4.16 4.4.17 4.4.18: A GTK+ graphical interactive version of nec2c
 sci-electronics/xnecview 1.37: A program for visualizing NEC2 input and output data
 sci-electronics/xoscope 2.3: Soundcard Oscilloscope for X
 sci-geosciences/GeographicLib 2.3 2.5: C++ library for converting geographic coordinate systems
@@ -16079,7 +16079,7 @@ sci-geosciences/tcd-utils 20240222: Utilities for working with Tidal Constituent
 sci-geosciences/viking 1.10 1.10-r1: GPS data editor and analyzer
 sci-geosciences/xtide 2.15.5: XTide provides tide and current predictions in a wide variety of formats
 sci-geosciences/xyzservices 2025.4.0 2025.11.0: Source of XYZ tiles providers
-sci-libs/adolc 2.7.2 9999: Automatic differentiation system for C/C++
+sci-libs/adolc 2.7.2-r1 9999: Automatic differentiation system for C/C++
 sci-libs/alglib 3.20.0: Numerical analysis and data processing library
 sci-libs/amd 2.4.6-r1 3.0.3: Library to order a sparse matrix prior to Cholesky factorization
 sci-libs/aotriton-bin 0.9.2b 0.11.1b: Ahead of Time (AOT) Triton Math Library (binary package)
