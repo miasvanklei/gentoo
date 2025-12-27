@@ -2861,7 +2861,7 @@ app-misc/nut 20.1: Record what you eat and analyze your nutrient levels
 app-misc/ola 0.10.9-r2: Open Lighting Architecture, a framework for lighting control information
 app-misc/ondir 0.2.4: Automatically execute scripts as you traverse directories
 app-misc/oneko 1.2_p6_p14-r1: A cat, dog and others which chase the mouse or windows around the screen
-app-misc/openhab-bin 5.0.1 5.0.2-r1 5.0.3-r1 5.1.0: An open-source automation software for your home
+app-misc/openhab-bin 5.0.3-r2 5.1.0-r1: An open-source automation software for your home
 app-misc/openrgb 1.0_rc2 9999: Open source RGB lighting control
 app-misc/openrgb-plugin-effects 1.0_rc2: Plugin for OpenRGB with various Effects that can be synced across devices
 app-misc/openrgb-plugin-skin 1.0_rc2: Plugin for OpenRGB that allows you to customize the look and feel of OpenRGB
@@ -13028,7 +13028,7 @@ media-gfx/flam3 3.1.1-r1: Tools and a library for creating flame fractal images
 media-gfx/flameshot 13.1.0-r1: Powerful yet simple to use screenshot software
 media-gfx/fondu 20060102-r1: Utilities for converting between and manipulating mac fonts and unix fonts
 media-gfx/fontforge 20230101-r2: postscript font editor and converter
-media-gfx/fotema 2.3.0: Photo gallery for Linux
+media-gfx/fotema 2.3.0 2.4.0: Photo gallery for Linux
 media-gfx/fotocx 25.0 25.1 25.2 25.3 25.4 25.5: Program for improving image files made with a digital camera
 media-gfx/fotowall 1.0_p20241107: Qt tool for creating wallpapers
 media-gfx/freecad 1.0.1-r2 1.0.2-r2 9999: Qt based Computer Aided Design application
