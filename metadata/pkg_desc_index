@@ -3065,7 +3065,7 @@ app-portage/fetchcommandwrapper 0.8.4-r5 1.0.0: Wrapper integrating aria2 into p
 app-portage/flaggie 0.99.8: A smart CLI mangler for package.* files
 app-portage/g-cpan 0.18.0-r2 9999: Autogenerate and install ebuilds for CPAN modules
 app-portage/g-octave 0.4.1-r8: A tool that generates and installs ebuilds for Octave-Forge
-app-portage/gemato 20.10-r1 9999: Stand-alone Manifest generation & verification tool
+app-portage/gemato 20.10-r1 20.11 9999: Stand-alone Manifest generation & verification tool
 app-portage/genlop 0.30.12 9999: Nice emerge.log parser
 app-portage/gentle 1.0.2: Gentoo Lazy Entry - a metadata.xml generator
 app-portage/gentoolkit 0.6.8 0.6.11 9999: Collection of administration scripts for Gentoo
@@ -10938,7 +10938,7 @@ dev-util/indent 2.2.13: Indent program source files
 dev-util/intel-graphics-compiler 1.0.17791.18-r1 2.16.0 2.19.1 2.20.1 2.23.0: LLVM-based OpenCL compiler for OpenCL targetting Intel Gen graphics hardware
 dev-util/intel-graphics-system-controller 1.0.0: Intel graphics system controller firmware update library
 dev-util/intel-ocl-sdk 18.1.0.015-r1: Intel's implementation of the OpenCL standard
-dev-util/intellij-idea 2025.3.1 2025.3.1-r1: A complete toolset for web, mobile and enterprise development
+dev-util/intellij-idea 2025.3.1 2025.3.1-r1 2025.3.1-r2: A complete toolset for web, mobile and enterprise development
 dev-util/intltool 0.51.0-r3: Internationalization Tool Collection
 dev-util/its4 1.1.1-r2: ITS4: Software Security Tool
 dev-util/itstool 2.0.7-r2 2.0.7_p20250326: Translation tool for XML documents that uses gettext files and ITS rules
@@ -11538,7 +11538,7 @@ games-engines/frotz 2.55-r1: Interpreter for Z-code based text games
 games-engines/gargoyle 2019.1.1: An Interactive Fiction (IF) player supporting all major formats
 games-engines/love 0.7.2-r100 0.8.0-r100 11.4 11.5-r1 9999: A framework for 2D games in Lua
 games-engines/minetest 5.9.1 5.11.0: A free open-source voxel game engine with easy modding and game creation
-games-engines/odamex 11.0.0 11.2.0: Online multiplayer free software engine for DOOM
+games-engines/odamex 11.0.0 11.2.0 12.0.0: Online multiplayer free software engine for DOOM
 games-engines/openmw 0.49.0 0.50.0 9999: Open source reimplementation of TES III: Morrowind
 games-engines/openxcom 1.0.0_p20250905 9999: Open-source reimplementation of the popular UFO: Enemy Unknown
 games-engines/qtads 3.4.0: Multimedia interpreter for TADS text adventures
