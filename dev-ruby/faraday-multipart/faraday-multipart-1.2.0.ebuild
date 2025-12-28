@@ -15,18 +15,20 @@ RUBY_FAKEGEM_GEMSPEC="${PN}.gemspec"
 inherit ruby-fakegem
 
 DESCRIPTION="Perform multipart-post requests using Faraday"
-HOMEPAGE="https://github.com/tisba/faraday-follow-redirects"
-SRC_URI="https://github.com/tisba/faraday-follow-redirects/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
-RUBY_S="faraday-follow-redirects-${PV}"
+HOMEPAGE="https://github.com/lostisland/faraday-multipart"
+SRC_URI="https://github.com/lostisland/faraday-multipart/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
-SLOT="$(ver_cut 1-2)"
-KEYWORDS="amd64 ~arm ~x86"
+SLOT="$(ver_cut 1)"
+KEYWORDS="~amd64 ~arm ~ppc ~ppc64 ~x86"
 IUSE="test"
 
-ruby_add_rdepend "|| ( dev-ruby/faraday:2 dev-ruby/faraday:1 )"
+ruby_add_rdepend "dev-ruby/multipart-post:0"
 
-ruby_add_bdepend "test? ( dev-ruby/webmock )"
+ruby_add_bdepend "test? (
+	|| ( dev-ruby/faraday:2 dev-ruby/faraday:1 )
+	dev-ruby/multipart-parser
+)"
 
 all_ruby_prepare() {
 	sed -i -e "s:_relative ':'./:" ${RUBY_FAKEGEM_GEMSPEC} || die
