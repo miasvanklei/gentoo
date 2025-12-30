@@ -53,7 +53,7 @@ if [[ ${PV} != 9999 ]]; then
 		S=${WORKDIR}/${P%_*}
 	fi
 	BDEPEND="verify-sig? ( sec-keys/openpgp-keys-grub )"
-	KEYWORDS="amd64 ~arm arm64 ~loong ~ppc ~ppc64 ~riscv ~sparc x86"
+	KEYWORDS="amd64 arm arm64 ~loong ~ppc ~ppc64 ~riscv ~sparc x86"
 else
 	inherit git-r3
 	EGIT_REPO_URI="https://git.savannah.gnu.org/git/grub.git"
@@ -66,6 +66,7 @@ PATCHES=(
 	"${FILESDIR}"/grub-2.12-fwsetup.patch
 	"${WORKDIR}"/grub-2.12-bash-completion.patch
 	"${FILESDIR}"/grub-2.12-zfs-zstd-compression-support.patch
+	"${FILESDIR}"/grub-2.12-fix-for-bash-completion-_split_longopt.patch
 )
 
 DEJAVU=dejavu-sans-ttf-2.37
