@@ -136,6 +136,7 @@ src_configure() {
 		$(meson_feature introspection)
 		$(meson_feature policykit polkit)
 		$(meson_feature systemd)
+		$(meson_use seccomp systemd_syscall_filter)
 		$(meson_use test tests)
 
 		${plugins[@]}
