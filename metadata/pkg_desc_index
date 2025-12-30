@@ -1452,7 +1452,7 @@ app-crypt/freepg 2.5.14: Cross-distro GnuPG fork focused on OpenPGP compliance
 app-crypt/gcr 3.41.2-r2 4.2.1 4.3.0 4.3.1 4.4.0.1-r1: Libraries for cryptographic UIs and accessing PKCS#11 modules
 app-crypt/gifshuffle 2.0-r1: GIF colourmap steganography
 app-crypt/glep63-check 11-r1: GLEP 63 compliance checker for OpenPGP keys
-app-crypt/gnupg 2.2.45-r1 2.4.8-r2 2.5.14 2.5.16: The GNU Privacy Guard, a GPL OpenPGP implementation
+app-crypt/gnupg 2.2.45-r1 2.4.8-r2 2.4.9 2.5.14 2.5.16: The GNU Privacy Guard, a GPL OpenPGP implementation
 app-crypt/gnupg-pkcs11-scd 0.11.0 9999: PKCS#11 support for GnuPG
 app-crypt/gocryptfs 2.6.1 2.6.1-r1: Encrypted overlay filesystem written in Go
 app-crypt/gorilla 1.4-r2: Password Safe in secure way with GUI interface
@@ -1526,7 +1526,7 @@ app-crypt/scrypt 1.3.3: A simple password-based encryption utility using scrypt 
 app-crypt/scute 1.7.0-r2: A PKCS #11 module for OpenPGP smartcards
 app-crypt/seahorse 47.0.1-r1 47.0.1-r2: Manage your passwords and encryption keys
 app-crypt/sequoia-chameleon-gnupg 0.13.1-r3: Sequoia's reimplementation of the GnuPG interface
-app-crypt/sequoia-sop 0.37.2: Implementation of the Stateless OpenPGP Command Line Interface using Sequoia
+app-crypt/sequoia-sop 0.37.2 0.37.3: Implementation of the Stateless OpenPGP Command Line Interface using Sequoia
 app-crypt/sequoia-sq 1.3.1-r1: CLI of the Sequoia OpenPGP implementation
 app-crypt/sequoia-sqv 1.3.0-r1: A simple OpenPGP signature verification program
 app-crypt/shash 0.2.6-r4: Generate or check digests or MACs of files
@@ -5581,7 +5581,7 @@ dev-libs/liblzw 0.3-r1: small C library for reading LZW compressed files (.Z)
 dev-libs/libmaa 1.3.2-r1 1.4.7: Library with low-level data structures which are helpful for writing compilers
 dev-libs/libmacaroons 0.3.0-r2: C library for generation and use of macaroons authorization credentials
 dev-libs/libmanette 0.2.12 0.2.13: Simple GObject game controller library
-dev-libs/libmateweather 1.28.0-r1 1.28.0-r2: MATE library to access weather information from online services
+dev-libs/libmateweather 1.28.0-r1 1.28.0-r2 1.28.1: MATE library to access weather information from online services
 dev-libs/libmaxminddb 1.11.0 1.12.2 9999: C library for the MaxMind DB file format
 dev-libs/libmba 0.9.1-r5: A library of generic C modules
 dev-libs/libmcfp 1.3.5 1.4.2: A library that can collect configuration options from command line arguments
@@ -8320,7 +8320,7 @@ dev-python/cvxopt 1.3.2: Python package for convex optimization
 dev-python/cwcwidth 0.1.10 0.1.11 0.1.12: Python bindings for wc(s)width
 dev-python/cycler 0.12.1: Composable style cycles
 dev-python/cypari2 2.2.2: Cython interface to PARI
-dev-python/cysignals 1.12.4: Interrupt and signal handling for Cython
+dev-python/cysignals 1.12.4 1.12.6: Interrupt and signal handling for Cython
 dev-python/cython 3.1.4 3.1.5 3.1.6 3.1.7 3.2.0 3.2.1 3.2.2 3.2.3: A Python to C compiler
 dev-python/cython-test-exception-raiser 1.0.2-r1 25.11.1: A trivial extension that just raises an exception (for testing)
 dev-python/daemonize 2.5.0-r1: Library for writing system daemons in Python
@@ -9009,7 +9009,7 @@ dev-python/pplpy 0.8.10-r1: Python bindings for the Parma Polyhedra Library (PPL
 dev-python/precis-i18n 1.1.1 1.1.2: Internationalized Usernames and Passwords
 dev-python/pretend 1.0.9-r2: A library for stubbing in Python
 dev-python/prettytable 3.16.0 3.17.0: Easily displaying tabular data in a visually appealing ASCII table format
-dev-python/primecountpy 0.1.1-r1: Cython interface to sci-mathematics/primecount
+dev-python/primecountpy 0.1.1-r1 0.2.1: Cython interface to sci-mathematics/primecount
 dev-python/priority 1.3.0-r1 2.0.0-r1: A pure-Python implementation of the HTTP/2 priority tree
 dev-python/process-tests 3.0.0: Tools for testing processes
 dev-python/progress 1.6.1: Easy to use progress bars
@@ -11372,7 +11372,7 @@ games-arcade/pachi 1.0-r2: Platform game inspired by games like Manic Miner and 
 games-arcade/pacmanarena 0.15-r2: 3D Pacman clone with a few surprises. Rockets, bombs and explosions abound
 games-arcade/penguin-command 1.6.11-r1: Clone of the classic Missile Command game
 games-arcade/pengupop 2.2.5-r1: Networked Puzzle Bubble clone
-games-arcade/performous 1.2.0 1.3.1_p20250723: SingStar GPL clone
+games-arcade/performous 1.3.1_p20250723 1.3.1_p20251224: SingStar GPL clone
 games-arcade/primateplunge 1.1-r2: Help poor Monkey navigate his way down through treacherous areas
 games-arcade/retrobattle 1.0.0-r1: A NES-like platform arcade game
 games-arcade/ri-li 2.0.1-r2: Drive a toy wood engine and collect all the coaches
@@ -13125,7 +13125,7 @@ media-gfx/pablodraw 3.3.13_beta-r1 3.3.14_beta: Ansi/Ascii text and RIPscrip vec
 media-gfx/pdf2svg 0.2.3-r2: Convert PDF to SVG files using poppler and cairo
 media-gfx/pencil 0.7.0: 2D animation and drawing program based on Qt
 media-gfx/photopc 3.07: Utility to control digital cameras based on Sierra Imaging firmware
-media-gfx/photoqt 4.9.2: Simple but powerful Qt-based image viewer
+media-gfx/photoqt 4.9.2 5.0: Simple but powerful Qt-based image viewer
 media-gfx/phototonic 3.0.0 3.1.0: Image viewer and organizer
 media-gfx/pinta 3.0: Pinta is a free, open source program for drawing and image editing
 media-gfx/pixels2pgf 0.1-r1 9999: Convert pixel images (e.g. QRCode) to PGF/Tikz rectangles
@@ -14017,7 +14017,7 @@ media-sound/flack 2.0.6: edit FLAC tags from command line
 media-sound/flacon 11.4.0-r1 12.0.0-r1: Extracts audio tracks from an audio CD image to separate tracks
 media-sound/flake 0.11-r1: An alternative to the FLAC reference encoder
 media-sound/fluid-soundfont 3.1: The Fluid R3 soundfont
-media-sound/fluidsynth 2.4.3 2.4.6-r2 2.4.7: Software real-time synthesizer based on the Soundfont 2 specifications
+media-sound/fluidsynth 2.4.3 2.4.6-r2 2.4.7 2.4.8 2.5.2: Software real-time synthesizer based on the Soundfont 2 specifications
 media-sound/fmdrv 1.0.7: Console mode MIDI player with builtin userland OPL2 driver
 media-sound/fmtools 2.0.7: A collection of programs for controlling v4l radio card drivers
 media-sound/frescobaldi 4.0.2: A LilyPond sheet music text editor
@@ -14041,7 +14041,7 @@ media-sound/gst123 0.3.5 0.4.1: GStreamer based command line media player
 media-sound/gstreamripper 0.2-r2: A GTK+ toolkit based frontend for streamripper
 media-sound/gtick 0.5.5-r1: Metronome application supporting different meters and speeds ranging
 media-sound/gtkguitune 0.8: A guitar tuning program that uses Schmitt-triggering for quick feedback
-media-sound/guitarix 0.47.0 0.47.0-r1 9999: Virtual guitar amplifier for Linux
+media-sound/guitarix 0.47.0 0.47.0-r2 9999: Virtual guitar amplifier for Linux
 media-sound/headsetcontrol 3.1.0-r1: A tool to control certain aspects of USB-connected headsets on Linux
 media-sound/helm 0.9.0-r2: Open source polyphonic software synthesizer with lots of modulation
 media-sound/helvum 0.5.1-r4: A GTK patchbay for pipewire
@@ -14140,7 +14140,7 @@ media-sound/ogmtools 1.5-r3: Information, extraction or creation for OGG media s
 media-sound/openmpt123 0.8.3: libopenmpt-based command line player for tracked music files (modules)
 media-sound/opus-tools 0.2-r1: Royalty-free, highly versatile audio codec
 media-sound/orpheus 1.6-r4: Command line MP3 player
-media-sound/owntone 28.12: DAAP (iTunes) and MPD media server
+media-sound/owntone 28.12 29.0: DAAP (iTunes) and MPD media server
 media-sound/pamix 1.6-r3 2.0 9999: PulseAudio NCurses mixer
 media-sound/paprefs 1.2-r3: PulseAudio Preferences, configuration dialog for PulseAudio
 media-sound/pasystray 0.8.2: PulseAudio system tray
@@ -14187,7 +14187,7 @@ media-sound/rescrobbled 0.7.2 0.8.0: MPRIS music scrobbler daemon
 media-sound/rexima 1.4-r2: A curses-based interactive mixer which can also be used from the command-line
 media-sound/rhythmbox 3.4.8-r2 3.4.9: Music management and playback software for GNOME
 media-sound/rip 1.07-r3: Command-line based audio CD ripper and mp3 encoder
-media-sound/ripperx 2.7.3: GTK program to rip CD audio tracks to Ogg, MP3 or FLAC
+media-sound/ripperx 2.7.3 3.0.1: GTK program to rip CD audio tracks to Ogg, MP3 or FLAC
 media-sound/rosegarden 24.12.1 25.06-r1 25.12: MIDI and audio sequencer and notation editor
 media-sound/saydate 0.3.0: A Linux shell program that talks the date and system uptime
 media-sound/schismtracker 20250208: Free implementation of Impulse Tracker, a tool used to create high quality music
@@ -14309,7 +14309,7 @@ media-video/blinkentools 2.9-r1: Provides a set of commandline utilities related
 media-video/bluray_info 1.10: Blu-ray utilities: bluray_info, bluray_copy, bluray_player
 media-video/ccextractor 0.89: Extract closed captioning subtitles from video to SRT
 media-video/cclive 0.9.3-r2: Command line tool for extracting videos from various websites
-media-video/celluloid 0.21-r1 0.26: Simple GTK+ frontend for mpv
+media-video/celluloid 0.26 0.29: Simple GTK+ frontend for mpv
 media-video/chaplin 1.10-r3: This is a program to raw copy chapters from a dvd using libdvdread
 media-video/cheese 44.1-r1: A cheesy program to take pictures and videos from your webcam
 media-video/cpvts 1.2-r1: raw copy title sets from a DVD to your harddisc
@@ -15484,7 +15484,7 @@ net-misc/wget 1.25.0-r1: Network utility to retrieve files from the WWW
 net-misc/wget2 2.2.0 9999: GNU Wget2 is a file and recursive website downloader
 net-misc/whatmask 1.2-r1: Little C program to compute different subnet mask notations
 net-misc/whois 5.5.20 5.5.21 5.5.23 9999: Improved Whois Client
-net-misc/wol 0.7.1-r4: Implements Wake On LAN (Magic Paket) functionality in a small program
+net-misc/wol 0.7.1-r4 0.7.1-r5: Implements Wake On LAN (Magic Paket) functionality in a small program
 net-misc/wput 0.6.2_p20130413_p11-r1: Tiny program like wget, to upload files/whole directories via FTP
 net-misc/x11-ssh-askpass 1.2.4.1-r2: X11-based passphrase dialog for use with OpenSSH
 net-misc/x2goclient 4.1.2.3: The X2Go Qt client
@@ -15784,7 +15784,7 @@ perl-core/Test-Simple 1.302.196 1.302.208-r1: Basic utilities for writing tests
 perl-core/Test2-Suite 0.0.162-r1: Rich set of tools built upon the Test2 framework
 perl-core/Text-Tabs+Wrap 2023.51.100: Expand/unexpand tabs per unix expand and line wrapping
 perl-core/Unicode-Collate 1.310.0: Unicode Collate Algorithm
-sci-astronomy/calcmysky 0.3.5: Simulator of light scattering by planetary atmospheres
+sci-astronomy/calcmysky 0.3.5 0.4.0: Simulator of light scattering by planetary atmospheres
 sci-astronomy/cdsclient 3.8.4-r1: Collection of scripts to access the CDS databases
 sci-astronomy/celestia 1.7.0_pre20241231: OpenGL 3D space simulator
 sci-astronomy/cpl 7.3.2: ESO common pipeline library for astronomical data reduction
@@ -15811,7 +15811,7 @@ sci-astronomy/siril 1.2.6-r1 1.4.0 9999: A free astronomical image processing so
 sci-astronomy/sirilic 1.15.12: Preparing acquisition files for processing with the SiriL software
 sci-astronomy/skymaker 3.10.5: Program that simulates astronomical images
 sci-astronomy/sofa_c 20231011: Library for algorithms for models in fundamental astronomy
-sci-astronomy/stellarium 25.1 25.2 25.3-r1: 3D photo-realistic skies in real time
+sci-astronomy/stellarium 25.3-r1 25.4: 3D photo-realistic skies in real time
 sci-astronomy/stiff 2.4.0-r1: Converts astronomical FITS images to the TIFF format
 sci-astronomy/stuff 1.26.0: Tool for automatic generation of astronomical catalogs
 sci-astronomy/swarp 2.41.5: Resample and coadd astronomical FITS images
@@ -16149,7 +16149,7 @@ sci-libs/cxsparse 3.2.0 4.0.3: Extended sparse matrix package
 sci-libs/dcmtk 3.6.7-r2 3.6.8-r1 3.6.9-r1: The DICOM Toolkit
 sci-libs/dealii 9.6.2-r2 9.7.0 9.7.1 9999: Solving partial differential equations with the finite element method
 sci-libs/djbfft 0.76-r3: Extremely fast library for floating-point convolution
-sci-libs/dlib 19.24.2 19.24.8: Numerical and networking C++ library
+sci-libs/dlib 19.24.2 19.24.8 20.0: Numerical and networking C++ library
 sci-libs/dmlc-core 0_p20170719-r1 0.5: Common bricks library for building distributed machine learning
 sci-libs/dsdp 5.8-r4: Software for interior-point for semidefinite programming
 sci-libs/fetk 1.5: The Finite Element ToolKit - Meta package
@@ -16192,7 +16192,7 @@ sci-libs/indilib 2.1.6-r1 2.1.7: INDI Astronomical Control Protocol library
 sci-libs/ipopt 3.14.4-r1: Interior-Point Optimizer for large-scale nonlinear optimization
 sci-libs/itpp 4.3.1-r2: C++ library of mathematical, signal processing and communication
 sci-libs/jama 1.2.5-r1: Java-like matrix C++ templates
-sci-libs/jkqtplotter 5.0.0_pre20251013-r1: Extensive Qt Plotter framework
+sci-libs/jkqtplotter 5.0.0_beta1: Extensive Qt Plotter framework
 sci-libs/kissfft 131.1.0-r3 131.2.0 9999: Fast Fourier Transform (FFT) library that tries to Keep it Simple, Stupid
 sci-libs/klu 1.3.9-r2 2.0.3: Sparse LU factorization for circuit simulation
 sci-libs/lapack 3.12.0-r1 3.12.1-r1 3.12.1-r2: BLAS, CBLAS, LAPACK, LAPACKE reference implementations
@@ -17071,7 +17071,7 @@ sys-apps/gentoo-functions 0.19 1.7.4 9999: Base functions required by all Gentoo
 sys-apps/gentoo-systemd-integration 9 9-r1 9999: systemd integration files for Gentoo
 sys-apps/gentoo-wsl-config 0.1.14: WSL2 configuration for Gentoo Linux
 sys-apps/gnome-disk-utility 45.1-r1 46.1-r1: Disk Utility for GNOME using udisks
-sys-apps/goawk 1.29.1 1.30.0 1.30.1: POSIX-compliant AWK interpreter written in Go, with CSV support
+sys-apps/goawk 1.29.1 1.30.0 1.30.1 1.31.0: POSIX-compliant AWK interpreter written in Go, with CSV support
 sys-apps/gptfdisk 1.0.10-r1: GPT partition table manipulator for Linux
 sys-apps/gradm 3.1.201903191516: Administrative interface for the grsecurity Role Based Access Control system
 sys-apps/grep 3.11-r1 3.12: GNU regular expression matcher
@@ -17150,7 +17150,7 @@ sys-apps/minised 1.16: a smaller, cheaper and faster sed implementation
 sys-apps/miscfiles 1.5-r4: Miscellaneous files
 sys-apps/mlocate 0.26-r3: Merging locate is an utility to index and quickly search for files
 sys-apps/mlxup-bin 4.13.0: Mellanox Update and Query Utility
-sys-apps/moor 2.4.1 2.9.1: Pager designed to do the right thing without any configuration
+sys-apps/moor 2.4.1 2.9.1 2.9.6: Pager designed to do the right thing without any configuration
 sys-apps/moreutils 0.70: Collection of tools that nobody thought to write when Unix was young
 sys-apps/most 5.2.0 5.2.0-r1: Paging program that displays, one windowful at a time, the contents of a file
 sys-apps/mount-gtk 1.4.5.1: GTK+ based UDisks2 frontend
