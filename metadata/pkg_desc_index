@@ -922,7 +922,7 @@ app-admin/apg 2.3.0b_p20150129-r1 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.707.0 1.2.764.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.42.74 1.43.2 1.43.5 1.43.10 1.43.15 1.44.4 1.44.5 1.44.6 1.44.7: Universal Command Line Environment for AWS
+app-admin/awscli 1.42.74 1.43.2 1.43.5 1.43.10 1.43.15 1.44.4 1.44.5 1.44.6 1.44.7 1.44.8: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.10.0 2025.12.0: Bitwarden password manager desktop client
@@ -2984,7 +2984,7 @@ app-office/abiword 3.0.6-r2 3.0.7: Fully featured yet light and fast cross platf
 app-office/abiword-docs 3.0.2-r1: Fully featured yet light and fast cross platform word processor documentation
 app-office/auto-multiple-choice 1.6.0: Create and manage multiple choice questionnaries, including automated marking
 app-office/calcurse 4.8.1-r1 4.8.2: A text-based calendar and scheduling application
-app-office/calligra 25.08.2 25.12.0: KDE Office Suite
+app-office/calligra 25.12.0: KDE Office Suite
 app-office/denaro 2024.2.0: A personal finance manager
 app-office/dia 0.97.3-r4 0.98_pre20250913: Diagram/flowchart creation program
 app-office/dia2code 1.0.0-r2: Convert UML diagrams produced with Dia to various source code flavours
@@ -3087,7 +3087,7 @@ app-portage/no-distcc-env 9999: package.env files to disable distcc on a per-pac
 app-portage/overlint 0.5.3-r6: Simple tool for static analysis of overlays
 app-portage/pfl 3.5.3: Searchable online file/package database for Gentoo
 app-portage/pkg-testing-tools 0.2.6 0.2.7 0.2.8 9999: Packages testing tools for Gentoo
-app-portage/portage-utils 0.95-r1 0.96-r1 0.96.1 0.97 9999: Small and fast Portage helper tools written in C
+app-portage/portage-utils 0.97 0.98 9999: Small and fast Portage helper tools written in C
 app-portage/porticron 0.7.2: cron script to sync portage and send update mails to root
 app-portage/portpeek 3.2.6 3.2.8 3.2.8-r1 3.2.9: A helper program for maintaining the package.keyword and package.unmask files
 app-portage/pram 14 15: Tool to ease merging Pull Requests and git patches
@@ -5544,7 +5544,7 @@ dev-libs/libgcrypt 1.10.2 1.10.3-r1 1.10.3-r2 1.11.0-r1 1.11.0-r2 1.11.1 1.11.2:
 dev-libs/libgcrypt-compat 1.5.6: Old version of libgcrypt needed by some binaries
 dev-libs/libgdata 0.18.1-r2: GLib-based library for accessing online service APIs using the GData protocol
 dev-libs/libgee 0.20.6-r1 0.20.8: GObject-based interfaces and classes for commonly used data structures
-dev-libs/libgit2 1.9.1 1.9.2: A linkable library for Git
+dev-libs/libgit2 1.9.2: A linkable library for Git
 dev-libs/libgit2-glib 1.2.1-r1: Git library for GLib
 dev-libs/libglib-testing 0.1.1: Libglib-testing is a test library providing test harnesses and mock classes
 dev-libs/libgnome-games-support 1.8.2 2.0.1 2.0.2: Library for code common to GNOME games
@@ -8181,7 +8181,7 @@ dev-python/b2sdk 2.10.1 2.10.2: Library to access Backblaze B2 cloud storage
 dev-python/babel 2.17.0: Collection of tools for internationalizing Python applications
 dev-python/babelfish 0.6.1: Python library to work with countries and languages
 dev-python/backports-tarfile 1.2.0: Backport of CPython tarfile module (from Python 3.12)
-dev-python/backports-zstd 1.0.0-r1 1.1.0 1.2.0: Backport of PEP-784: adding Zstandard to the standard library
+dev-python/backports-zstd 1.0.0-r1 1.1.0 1.2.0 1.3.0: Backport of PEP-784: adding Zstandard to the standard library
 dev-python/backrefs 6.0.1 6.1: Wrapper around re or regex that adds additional back references
 dev-python/bandit 1.8.6 1.9.1 1.9.2: A security linter from OpenStack Security
 dev-python/bareos 24.0.3: python bindings for bareos network backup suite
@@ -8212,8 +8212,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.40.74 1.41.2 1.41.5 1.42.4 1.42.9 1.42.14 1.42.15 1.42.16 1.42.17: The AWS SDK for Python
-dev-python/botocore 1.40.74 1.41.2 1.41.5 1.42.4 1.42.9 1.42.14 1.42.15 1.42.16 1.42.17: Low-level, data-driven core of boto 3
+dev-python/boto3 1.40.74 1.41.2 1.41.5 1.42.4 1.42.9 1.42.14 1.42.15 1.42.16 1.42.17 1.42.18: The AWS SDK for Python
+dev-python/botocore 1.40.74 1.41.2 1.41.5 1.42.4 1.42.9 1.42.14 1.42.15 1.42.16 1.42.17 1.42.18: Low-level, data-driven core of boto 3
 dev-python/bottle 0.12.25-r1 0.13.3 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.5.0 1.6.0_rc1 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.25 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8432,7 +8432,7 @@ dev-python/expecttest 0.3.0: golden tests
 dev-python/extras 1.0.0-r2: Useful extra bits for Python that should be in the standard library
 dev-python/eyed3 0.9.8 0.9.9: Module for manipulating ID3 (v1 + v2) tags in Python
 dev-python/fake-py 0.11.10 0.11.12: Minimalistic, standalone alternative fake data generator with no dependencies
-dev-python/faker 38.0.0 38.2.0 39.0.0: A Python package that generates fake data for you
+dev-python/faker 38.2.0 39.0.0 40.1.0: A Python package that generates fake data for you
 dev-python/fakeredis 2.32.1 2.33.0: Fake implementation of redis API for testing purposes
 dev-python/fastbencode 0.3.6 0.3.7: Implementation of bencode with Rust implementation
 dev-python/fasteners 0.20: Python package that provides useful locks
@@ -8701,7 +8701,7 @@ dev-python/kgb 7.2 7.3: Python function spy support for unit tests
 dev-python/kiwisolver 1.4.8 1.4.9: An efficient C++ implementation of the Cassowary constraint solving algorithm
 dev-python/klein 24.8.0: Micro-framework for developing production-ready web services with Python
 dev-python/knowit 0.5.6 0.5.8 0.5.10 0.5.11: Know better your media files
-dev-python/kombu 5.6.0 5.6.1: AMQP Messaging Framework for Python
+dev-python/kombu 5.6.1 5.6.2: AMQP Messaging Framework for Python
 dev-python/krb5 0.8.0 0.9.0: Kerberos API bindings for Python
 dev-python/lap 0.5.12: Linear Assignment Problem solver (LAPJV/LAPMOD)
 dev-python/lark 1.3.0 1.3.1: Python module to propose a modern general-purpose parsing library for Python
@@ -8888,7 +8888,7 @@ dev-python/oct2py 5.8.0: Python to GNU Octave bridge
 dev-python/octave-kernel 0.36.0: Jupyter kernel for octave
 dev-python/odfpy 1.4.2: Python API and tools to manipulate OpenDocument files
 dev-python/olefile 0.47: Python package to parse, read and write Microsoft OLE2 files
-dev-python/omemo-dr 1.0.1 1.0.1-r1 1.1.0: OMEMO Crypto Library
+dev-python/omemo-dr 1.1.0 1.2.0: OMEMO Crypto Library
 dev-python/opcodes 0.3.14-r2: Opcodes Project
 dev-python/openapi-core 0.19.5-r1 0.21.0 0.22.0: Client-side and server-side support for the OpenAPI Specification v3
 dev-python/openapi-schema-validator 0.6.3: OpenAPI schema validation for Python
@@ -9019,7 +9019,7 @@ dev-python/prompt-toolkit 3.0.51 3.0.52: Building powerful interactive command l
 dev-python/propcache 0.3.2 0.4.0 0.4.1: Accelerated property cache
 dev-python/proto-plus 1.26.1-r1 1.27.0: Beautiful, Pythonic protocol buffers
 dev-python/protobuf 5.29.5 5.29.5-r1 6.30.2-r1 6.30.2-r2 6.31.1 6.32.0 6.32.1 6.32.1-r1 6.33.0 6.33.1 6.33.2: Google's Protocol Buffers - Python bindings
-dev-python/psutil 7.1.3 7.2.0: Retrieve information on running processes and system utilization
+dev-python/psutil 7.1.3 7.2.0 7.2.1: Retrieve information on running processes and system utilization
 dev-python/psycopg 2.9.10 2.9.11 3.2.9 3.2.10 3.2.11 3.2.12 3.2.13 3.3.0 3.3.1 3.3.2: PostgreSQL database adapter for Python
 dev-python/ptyprocess 0.7.0-r1: Run a subprocess in a pseudo terminal
 dev-python/publicsuffix2 2.20191221-r2: Get a public suffix for a domain name using the Public Suffix List
@@ -9090,7 +9090,7 @@ dev-python/pygame 2.6.1: Python bindings for SDL multimedia library
 dev-python/pygccxml 3.0.2: A specialized XML reader to navigate C++ declarations
 dev-python/pygdbmi 0.11.0.0: Library to parse gdb mi output and interact with gdb subprocesses
 dev-python/pyghmi 1.6.10: A pure python implementation of IPMI protocol
-dev-python/pygit2 1.18.2 1.19.0: Python bindings for libgit2
+dev-python/pygit2 1.19.0 1.19.1: Python bindings for libgit2
 dev-python/pygithub 2.8.1: Python library to access the Github API v3
 dev-python/pyglet 2.1.9 2.1.10 2.1.11: Cross-platform windowing and multimedia library for Python
 dev-python/pygments 2.19.2: Pygments is a syntax highlighting package written in Python
@@ -9109,7 +9109,7 @@ dev-python/pyjwt 2.10.1: JSON Web Token implementation in Python
 dev-python/pykakasi 2.3.0: Kana kanji simple inversion library
 dev-python/pykka 4.2.0 4.3.0 4.4.0: A Python implementation of the actor model
 dev-python/pykwalify 1.8.0-r3: Python lib/cli for JSON/YAML schema validation
-dev-python/pylast 6.0.0 7.0.0: Python interface to last.fm and other api-compatible websites
+dev-python/pylast 6.0.0 7.0.0 7.0.1: Python interface to last.fm and other api-compatible websites
 dev-python/pylatex 1.4.2: A Python library for creating LaTeX files and snippets
 dev-python/pylatexenc 2.10: Simple LaTeX parser providing latex-to-unicode and unicode-to-latex conversion
 dev-python/pylev 1.4.0-r1: Python Levenshtein implementation
@@ -9447,7 +9447,7 @@ dev-python/ruamel-yaml 0.18.16 0.18.17: YAML parser/emitter that supports roundt
 dev-python/ruamel-yaml-clib 0.2.14 0.2.15: C-based reader/scanner and emitter for dev-python/ruamel-yaml
 dev-python/rustworkx 0.16.0 0.17.1: A high performance Python graph library implemented in Rust
 dev-python/s3transfer 0.14.0 0.15.0 0.16.0: An Amazon S3 Transfer Manager
-dev-python/sabctools 8.2.6 9.1.0 9.2.0: Module providing raw yEnc encoding/decoding for SABnzbd
+dev-python/sabctools 8.2.6 9.1.0 9.2.0 9.2.1: Module providing raw yEnc encoding/decoding for SABnzbd
 dev-python/sarge 0.1.7_p1: Wrapper for subprocess which provides command pipeline functionality
 dev-python/sarif-om 1.0.4-r1: Classes implementing the SARIF 2.1.0 object model
 dev-python/schema 0.7.7 0.7.8: Simple data validation library
@@ -9612,7 +9612,7 @@ dev-python/tekore 6.0.0 6.1.0: Spotify Web API client
 dev-python/tempest 45.0.0 46.0.0: OpenStack Integration Testing
 dev-python/tempora 5.8.1: Objects and routines pertaining to date and time
 dev-python/tenacity 9.1.2 9.1.2-r1: General-purpose retrying library
-dev-python/termcolor 3.1.0 3.2.0: ANSI Color formatting for output in terminal
+dev-python/termcolor 3.2.0 3.3.0: ANSI Color formatting for output in terminal
 dev-python/terminado 0.18.1: Terminals served to term.js using Tornado websockets
 dev-python/terminaltables3 4.0.0: Generate simple tables in terminals from a nested list of strings
 dev-python/test 0: Virtual to install 'test' package from stdlib
@@ -9708,8 +9708,8 @@ dev-python/urwidtrees 1.0.3-r2: Tree widgets for urwid
 dev-python/userpath 1.9.2: Cross-platform tool for adding locations to the user PATH
 dev-python/utidylib 0.10: TidyLib Python wrapper
 dev-python/uuid6 2025.0.1: New time-based UUID formats which are suited for use as a database key
-dev-python/uv 0.9.4 0.9.7 0.9.8 0.9.10 0.9.13 0.9.15 0.9.17 0.9.18 9999: A Python package installer and resolver, written in Rust
-dev-python/uv-build 0.9.4 0.9.7 0.9.8 0.9.10 0.9.13 0.9.15 0.9.17 0.9.18: PEP517 uv build backend
+dev-python/uv 0.9.4 0.9.7 0.9.8 0.9.10 0.9.13 0.9.15 0.9.17 0.9.18 0.9.20 9999: A Python package installer and resolver, written in Rust
+dev-python/uv-build 0.9.4 0.9.7 0.9.8 0.9.10 0.9.13 0.9.15 0.9.17 0.9.18 0.9.20: PEP517 uv build backend
 dev-python/uvicorn 0.38.0 0.40.0: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.21.0 0.22.1: Ultra-fast implementation of asyncio event loop on top of libuv
 dev-python/validators 0.35.0: Python Data Validation for Humans
@@ -10031,7 +10031,7 @@ dev-ruby/execjs 2.10.0: ExecJS lets you run JavaScript code from Ruby
 dev-ruby/exifr 1.4.0 1.4.1 1.5.1: A library to read EXIF info from JPEG and TIFF images
 dev-ruby/facter 4.4.3-r1 4.5.0 4.5.1 4.5.2 4.7.0 4.7.0-r1 4.10.0: A cross-platform ruby library for retrieving facts from operating systems
 dev-ruby/fake_ftp 0.3.0: Testing FTP? Use this!
-dev-ruby/fakefs 2.5.0 2.7.1 3.0.3 3.0.4: A fake filesystem. Use it in your tests
+dev-ruby/fakefs 2.5.0 2.7.1 3.0.3 3.0.4 3.2.0: A fake filesystem. Use it in your tests
 dev-ruby/faker 3.5.1 3.5.2 3.5.3: A library for generating fake data such as names, addresses, and phone numbers
 dev-ruby/faraday 1.10.3 2.13.2 2.13.3 2.13.4 2.14.0: HTTP/REST API client library with pluggable components
 dev-ruby/faraday-follow_redirects 0.3.0 0.4.0 0.5.0: Perform multipart-post requests using Faraday
@@ -10050,7 +10050,7 @@ dev-ruby/fast_gettext 2.6.0 3.1.0 4.1.0 4.1.1: GetText but 3.5x faster, 560x les
 dev-ruby/fattr 2.4.0-r1: fattr.rb is a "fatter attr" for ruby
 dev-ruby/fcgi 0.9.2.2: FastCGI library for Ruby
 dev-ruby/ffaker 2.23.0 2.24.0 2.25.0: Faster Faker, generates dummy data
-dev-ruby/ffi 1.17.0 1.17.1 1.17.2: Ruby extension for programmatically loading dynamic libraries
+dev-ruby/ffi 1.17.0 1.17.1 1.17.2 1.17.3: Ruby extension for programmatically loading dynamic libraries
 dev-ruby/ffi-compiler 1.3.2: Ruby FFI Rakefile generator
 dev-ruby/fiber-annotation 0.2.0: A mechanism for annotating fibers
 dev-ruby/fiber-local 1.1.0: Provides a class-level mixin to make fiber local state easy
@@ -10071,7 +10071,7 @@ dev-ruby/getoptlong 0.2.1: Allows you to parse command line options similarly to
 dev-ruby/gettext-setup 1.1.0: A gem to ease i18n
 dev-ruby/gettext_i18n_rails 1.13.0 2.1.0: FastGettext / Rails integration
 dev-ruby/gist 6.0.0-r1: Potentially the best command line gister
-dev-ruby/git 1.19.1 2.3.3 3.1.1 4.0.1 4.0.4 4.0.5 4.0.6: Library for using Git in Ruby
+dev-ruby/git 1.19.1 2.3.3 3.1.1 4.0.1 4.0.4 4.0.5 4.0.6 4.0.7: Library for using Git in Ruby
 dev-ruby/globalid 1.2.1 1.2.1-r1 1.3.0: Reference models by URI
 dev-ruby/gnuplot 2.6.2-r4: Gnuplot drawing library - Ruby Bindings
 dev-ruby/google-protobuf 3.25.6 4.28.0 4.28.3 4.29.5 4.30.2 4.31.1 4.32.1 4.33.0 4.33.1: Protocol Buffers are Google's data interchange format
@@ -10105,7 +10105,7 @@ dev-ruby/http-cookie 1.0.8 1.1.0: A ruby library to handle HTTP cookies
 dev-ruby/http-form_data 2.3.0-r1: Utility-belt to build form data request bodies
 dev-ruby/http-parser 1.2.3-r1: A super fast http parser for ruby
 dev-ruby/http_parser_rb 0.8.0 0.8.1: Simple callback-based HTTP request/response parser
-dev-ruby/httparty 0.23.1 0.23.2: Makes http fun! Also, makes consuming restful web services dead easy
+dev-ruby/httparty 0.23.1 0.23.2 0.24.0: Makes http fun! Also, makes consuming restful web services dead easy
 dev-ruby/httpauth 0.2.1-r1: Library implementing the full HTTP Authentication protocol (RFC 2617)
 dev-ruby/httpclient 2.8.3-r3 2.9.0: 'httpclient' gives something like the functionality of libwww-perl (LWP) in Ruby
 dev-ruby/i18n 1.14.7 1.14.8: Add Internationalization support to your Ruby application
@@ -10187,7 +10187,7 @@ dev-ruby/mini_portile2 2.8.8 2.8.9: Simplistic port-like solution for developers
 dev-ruby/minispec-metadata 3.5.0: Define and access metadata in MiniTest::Spec descriptions and specs
 dev-ruby/minitar 0.12.1 1.0.2 1.1.0: Provides POSIX tarchive management from Ruby programs
 dev-ruby/minitest 5.15.0-r1 5.22.3 5.23.1 5.24.1 5.25.1 5.25.5 5.26.0 5.26.1 5.26.2 5.27.0 6.0.0 6.0.1: minitest/unit is a small and fast replacement for ruby's huge and slow test/unit
-dev-ruby/minitest-around 0.5.0-r1: Alternative for setup/teardown dance
+dev-ruby/minitest-around 0.5.0-r1 0.6.0: Alternative for setup/teardown dance
 dev-ruby/minitest-bonus-assertions 3.0-r2: Bonus assertions for minitest
 dev-ruby/minitest-global_expectations 1.0.1-r1 1.0.2: Support minitest expectation methods for all objects
 dev-ruby/minitest-hooks 1.5.0 1.5.1 1.5.2 1.5.3: Adds around and before_all/after_all/around_all hooks for Minitest
@@ -10235,7 +10235,7 @@ dev-ruby/network_interface 0.0.4: network_interface layer from metasploit pcapru
 dev-ruby/niceogiri 1.1.2-r1: Some wrappers around and helpers for XML manipulation using Nokogiri
 dev-ruby/nio4r 2.7.4 2.7.5: A high performance selector API for monitoring IO objects
 dev-ruby/nkf 0.2.0: Ruby extension for Network Kanji Filter
-dev-ruby/nokogiri 1.18.7-r1 1.18.8-r1 1.18.9 1.18.10: Nokogiri is an HTML, XML, SAX, and Reader parser
+dev-ruby/nokogiri 1.18.7-r1 1.18.8-r1 1.18.9 1.18.10 1.19.0: Nokogiri is an HTML, XML, SAX, and Reader parser
 dev-ruby/nokogiri-diff 0.3.0: Calculate the differences between two XML/HTML documents
 dev-ruby/oauth 0.6.2-r2 1.1.0 1.1.3: A RubyGem for implementing both OAuth clients and servers
 dev-ruby/oauth-tty 1.0.5 1.0.6: OAuth 1.0 TTY Command Line Interface
@@ -11971,7 +11971,7 @@ games-util/wiiload 0.5: Load homebrew apps over the network to your Wii
 games-util/wit 3.05a: command line tools to manipulate Wii/GameCube ISO images and WBFS containers
 games-util/wxchtdecoder 1.5a-r3: Program to decode .CHT files in Snes9x and ZSNES to plain text
 games-util/xboxdrv 0.8.11: Userspace Xbox 360 Controller driver
-games-util/xpadneo 0.9.7 9999: Advanced Linux Driver for Xbox One Wireless Controller
+games-util/xpadneo 0.9.7 0.9.8 9999: Advanced Linux Driver for Xbox One Wireless Controller
 games-util/xqf 1.0.6.2: A server browser for many FPS games (frontend for qstat)
 gnome-base/dconf 0.40.0: Simple low-level configuration system
 gnome-base/dconf-editor 45.0.1 49.0: Graphical tool for editing the dconf configuration database
@@ -13090,7 +13090,7 @@ media-gfx/kio-mobi-thumbnailer 25.08.3 25.12.0: KIO thumbnail generator for Mobi
 media-gfx/kio-ps-thumbnailer 25.08.3 25.12.0: KIO thumbnail generator for DVI, EPS, PDF and PS files
 media-gfx/kio-raw-thumbnailer 25.08.3 25.12.0: KIO thumbnail generator for RAW files
 media-gfx/kphotoalbum 6.1.0: Tool for indexing, searching, and viewing images
-media-gfx/krita 5.2.13 6.0.0_alpha_pre20251212: Free digital painting application. Digital Painting, Creative Freedom!
+media-gfx/krita 5.2.13 6.0.0_alpha_pre20251229: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kuickshow 0.11.0: Image viewer based on KDE Frameworks
 media-gfx/kxstitch 3.0.0_pre20250110: Program to create cross stitch patterns
 media-gfx/libbgcode 0.0.20241024: Prusa Block & Binary G-code reader / writer / converter
@@ -13112,7 +13112,7 @@ media-gfx/mscgen 0.20-r1: Message sequence chart generator
 media-gfx/mypaint 2.0.1-r4 2.0.1-r7: Fast and easy graphics application for digital painters
 media-gfx/mypaint-brushes 1.3.1 2.0.2-r2: Default MyPaint brushes
 media-gfx/netgen 6.2.2406-r1 6.2.2501-r1 6.2.2505: Automatic 3d tetrahedral mesh generator
-media-gfx/nomacs 3.19.1-r1 3.21.0 3.21.1: Qt-based image viewer
+media-gfx/nomacs 3.19.1-r1 3.21.0 3.21.1 3.22.0: Qt-based image viewer
 media-gfx/nvidia-cg-toolkit 3.1.0013-r6: NVIDIA's C graphics compiler toolkit
 media-gfx/openclipart 0.20: Open Clip Art Library (openclipart.org)
 media-gfx/opencsg 1.6.0-r1 1.8.1: The Constructive Solid Geometry rendering library
@@ -13333,6 +13333,7 @@ media-libs/libbluray 1.3.4-r3 9999: Blu-ray playback libraries
 media-libs/libbs2b 3.1.0-r2: Bauer stereophonic-to-binaural DSP library
 media-libs/libbsb 0.0.7-r2: Portable C library for reading and writing BSB format image files
 media-libs/libcaca 0.99_beta19-r12 0.99_beta20-r1: A library that creates colored ASCII-art graphics
+media-libs/libcamera 0.6.0: Complex camera support library
 media-libs/libcanberra 0.30-r8: Portable sound event library
 media-libs/libcanberra-gtk3 0.30: GTK3 bindings for libcanberra, the portable sound event library
 media-libs/libcdaudio 0.99.12-r5: Library of cd audio related routines
@@ -19118,8 +19119,8 @@ xfce-base/xfce4-appfinder 4.20.0 4.21.0: A tool to find and launch installed app
 xfce-base/xfce4-meta 4.20: The Xfce Desktop Environment (meta package)
 xfce-base/xfce4-panel 4.20.5 4.20.6 4.21.1: Panel for the Xfce desktop environment
 xfce-base/xfce4-power-manager 4.20.0 4.21.0 4.21.1: Power manager for the Xfce desktop environment
-xfce-base/xfce4-session 4.20.3 4.21.0: A session manager for the Xfce desktop environment
-xfce-base/xfce4-settings 4.20.2 4.21.0-r1 4.21.1: Configuration system for the Xfce desktop environment
+xfce-base/xfce4-session 4.20.3 4.21.0 4.21.1: A session manager for the Xfce desktop environment
+xfce-base/xfce4-settings 4.20.2 4.20.3 4.21.0-r1 4.21.1: Configuration system for the Xfce desktop environment
 xfce-base/xfconf 4.20.0 4.21.0: A configuration management system for Xfce
 xfce-base/xfdesktop 4.20.1: Desktop manager for the Xfce desktop environment
 xfce-base/xfwm4 4.20.0: Window manager for the Xfce desktop environment
