@@ -2395,7 +2395,7 @@ app-emulation/plus42 1.3.10 1.3.12: An Enhanced HP-42S Calculator Simulator
 app-emulation/protontricks 1.10.5-r1 1.12.1 1.13.0 1.13.1: app-emulation/winetricks wrapper for Proton (Steam Play) games
 app-emulation/punes 0.111-r1 0.111-r2: Nintendo Entertainment System (NES) emulator
 app-emulation/q4wine 1.4.2: Qt GUI configuration tool for Wine
-app-emulation/qemu 9.1.3-r2 9.2.3-r3 9.2.4 10.0.5 10.0.7 10.1.2 10.1.3-r1 9999: QEMU + Kernel-based Virtual Machine userland tools
+app-emulation/qemu 9.1.3-r2 9.2.3-r3 9.2.4 10.0.5 10.0.7 10.1.2 10.1.3-r1 10.2.0 9999: QEMU + Kernel-based Virtual Machine userland tools
 app-emulation/qemu-guest-agent 8.2.0 9.2.0: QEMU Guest Agent (qemu-ga) for use when running inside a VM
 app-emulation/qemu-init-scripts 0.3.0-r1: Kvm and qemu init scripts
 app-emulation/qtrvsim 0.9.8-r1: RISC-V CPU simulator for education
@@ -2429,7 +2429,7 @@ app-emulation/virtualbox-modules 7.0.26 7.0.26-r1 7.1.14 7.2.2 7.2.4: Kernel Mod
 app-emulation/vkd3d-proton 2.6-r1 2.12 2.13 2.14.1 3.0b 9999: Fork of VKD3D, development branches for Proton's Direct3D 12 implementation
 app-emulation/wine-desktop-common 20150204-r2: Various desktop menu items and icons for wine
 app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet Explorer for Wine
-app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.0: Replacement for the .NET runtime and class libraries in Wine
+app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.0 10.4.1: Replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.2d 10.0.3 9999: Valve Software's fork of Wine
 app-emulation/wine-staging 10.0 10.17 10.18 10.19 10.20 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
 app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 10.17 10.18 10.19 10.20 9999: Free implementation of Windows(tm) on Unix, without external patchsets
@@ -3110,7 +3110,7 @@ app-shells/ccsh 0.0.4-r5: UNIX Shell for people already familiar with the C lang
 app-shells/ctypes-sh 1.2-r2 1.2_p20240626: Foreign function interface for bash
 app-shells/dash 0.5.12-r1 0.5.13.1 9999: Debian Almquist Shell
 app-shells/dsh 0.25.10-r2: Distributed Shell
-app-shells/fish 3.7.1 4.0.6 4.0.8 4.1.0 4.1.1 4.1.2 4.2.0 4.2.1 9999: Friendly Interactive SHell
+app-shells/fish 3.7.1 4.0.6 4.0.8 4.1.0 4.1.1 4.1.2 4.2.0 4.2.1 4.3.0 9999: Friendly Interactive SHell
 app-shells/fsh 1.0.0_p20220816-r2: F# Shell with integrated F# scripting
 app-shells/fzf 0.65.2 0.66.1 0.67.0: General-purpose command-line fuzzy finder, written in Golang
 app-shells/gash 0.3.0-r100: POSIX-compatible shell written in Guile Scheme
@@ -10196,7 +10196,7 @@ dev-ruby/minitest-pretty_diff 0.1-r2: Pretty-print hashes and arrays before diff
 dev-ruby/mixlib-config 3.0.27: A class based configuration library
 dev-ruby/mixlib-shellout 3.3.9: Run external commands on Unix or Windows
 dev-ruby/mize 0.6.1: Library that provides memoziation for methods and functions for Ruby
-dev-ruby/mkmf-lite 0.7.3 0.7.4: light version of the the mkmf library designed for use as a library
+dev-ruby/mkmf-lite 0.7.3 0.7.4 0.7.5: light version of the the mkmf library designed for use as a library
 dev-ruby/mocha 0.14.0-r1 2.4.5 2.6.1 2.7.1 2.8.2 3.0.0 3.0.1: Mocking and stubbing using a syntax like that of JMock and SchMock
 dev-ruby/moneta 1.6.0-r1: A unified interface to key/value stores
 dev-ruby/mqtt 0.6.0: Pure Ruby gem that implements the MQTT protocol
@@ -10219,7 +10219,7 @@ dev-ruby/neovim-ruby-client 0.10.0: Ruby bindings for Neovim
 dev-ruby/net-ftp 0.3.8 0.3.9: Support for the File Transfer Protocol
 dev-ruby/net-http 0.6.0 0.7.0 0.8.0 0.9.1: HTTP client api for Ruby
 dev-ruby/net-http-digest_auth 1.4.1-r2: An implementation of RFC 2617 - Digest Access Authentication
-dev-ruby/net-http-persistent 4.0.5 4.0.6: Manages persistent connections using Net::HTTP plus a speed fix for Ruby 1.8
+dev-ruby/net-http-persistent 4.0.5 4.0.6 4.0.8: Manages persistent connections using Net::HTTP plus a speed fix for Ruby 1.8
 dev-ruby/net-http-pipeline 1.0.1-r1: An HTTP/1.1 pipelining implementation atop Net::HTTP
 dev-ruby/net-imap 0.4.22 0.5.12 0.6.0 0.6.2: Ruby client api for Internet Message Access Protocol
 dev-ruby/net-pop 0.1.2: Ruby client library for POP3
@@ -10264,7 +10264,7 @@ dev-ruby/pdf-core 0.10.0: Implements low level PDF features for Prawn
 dev-ruby/pdf-inspector 1.3.0-r1: A tool for analyzing PDF output
 dev-ruby/pdf-reader 2.15.0 2.15.1: PDF parser conforming as much as possible to the PDF specification from Adobe
 dev-ruby/permutation 0.1.8-r3: Library performing operations with permutations of sequences (strings, arrays)
-dev-ruby/pg 1.5.8 1.5.9 1.6.0 1.6.1 1.6.2: Ruby extension library providing an API to PostgreSQL
+dev-ruby/pg 1.5.9 1.6.0 1.6.1 1.6.2 1.6.3: Ruby extension library providing an API to PostgreSQL
 dev-ruby/pg_array_parser 0.0.9-r3: Simple library to parse PostgreSQL arrays into a array of strings
 dev-ruby/pkg-config 1.5.9 1.6.1 1.6.2 1.6.3 1.6.4 1.6.5: A pkg-config implementation by Ruby
 dev-ruby/plist 3.7.2: A library to manipulate Property List files, also known as plists
@@ -10278,7 +10278,7 @@ dev-ruby/prawn-table 0.2.2-r2: Provides support for tables in Prawn
 dev-ruby/prettyprint 0.2.0: Implements a pretty printing algorithm for readable structure
 dev-ruby/prime 0.1.2-r1 0.1.3 0.1.4: Prime numbers and factorization library
 dev-ruby/prism 1.4.0 1.5.2 1.6.0 1.7.0: Prism Ruby parser
-dev-ruby/process_executer 1.3.0 2.0.0 3.2.0 3.2.4 4.0.0: An API for executing commands in a subprocess
+dev-ruby/process_executer 1.3.0 2.0.0 3.2.0 3.2.4 4.0.0 4.0.1: An API for executing commands in a subprocess
 dev-ruby/propshaft 0.9.1 1.1.0 1.2.0 1.2.1 1.3.1: Deliver assets for Rails
 dev-ruby/pry 0.14.2 0.15.2 0.16.0: Pry is a powerful alternative to the standard IRB shell for Ruby
 dev-ruby/pstore 0.2.0: Transactional File Storage for Ruby Objects
@@ -10439,7 +10439,7 @@ dev-ruby/shoulda 4.0.0: Making tests easy on the fingers and eyes
 dev-ruby/shoulda-context 2.0.0-r1: Context framework extracted from Shoulda
 dev-ruby/shoulda-matchers 4.5.1-r1 5.3.0 6.4.0 6.5.0: Making tests easy on the fingers and eyes
 dev-ruby/sigdump 0.2.5: Setup signal handler which dumps backtrace of threads and allocated objects
-dev-ruby/simple-rss 1.3.3-r1: A simple, flexible, extensible, and liberal RSS and Atom reader for Ruby
+dev-ruby/simple-rss 1.3.3-r1 2.1.0: A simple, flexible, extensible, and liberal RSS and Atom reader for Ruby
 dev-ruby/simple_oauth 0.3.1-r1: Simply builds and verifies OAuth headers
 dev-ruby/simplecov 0.22.0: Code coverage with a configuration library and merging across test suites
 dev-ruby/simplecov-html 0.12.3-r1 0.13.1 0.13.2: Generates a HTML report of your SimpleCov ruby code coverage results
@@ -11388,7 +11388,7 @@ games-arcade/solarwolf 1.5_p3: Action/arcade recreation of SolarFox
 games-arcade/spout 1.3-r3: Abstract Japanese caveflier / shooter
 games-arcade/stardork 0.7-r2: ncurses-based space shooter
 games-arcade/supertransball2 1.5-r1: Thrust clone
-games-arcade/supertux 0.6.3-r2: A game similar to Super Mario Bros
+games-arcade/supertux 0.6.3-r2 0.7.0_beta1 9999: A run n' jump platforming game featuring Tux the penguin
 games-arcade/syobon 1.0.1-r1: Syobon Action (also known as Cat Mario or Neko Mario)
 games-arcade/tecnoballz 0.93.1: An exciting Brick Breaker
 games-arcade/thinktanks-demo 1.1-r4: Tank combat game with lighthearted, fast paced pandemonium
@@ -14150,7 +14150,7 @@ media-sound/pavucontrol-qt 2.2.0 2.3.0: Qt GUI Pulseaudio Mixer
 media-sound/pavumeter 0.9.3-r2: PulseAudio Volume Meter, simple GTK volume meter for PulseAudio
 media-sound/peercast 0.1218-r2: A client and server for Peercast P2P-radio network
 media-sound/pianobar 2022.04.01 2022.04.01-r1 9999: A console-based replacement for Pandora's flash player
-media-sound/picard 2.13.3-r1 3.0_pre20251219 9999: Cross-platform music tagger
+media-sound/picard 2.13.3-r1 3.0_pre20251230 9999: Cross-platform music tagger
 media-sound/picoxine 0.0.7: Very small xine frontend for playing audio events
 media-sound/pithos 1.6.2: Pandora.com client for the GNOME desktop
 media-sound/playerctl 2.3.1 2.4.1-r1: A CLI utility to control media players over MPRIS
@@ -14415,7 +14415,6 @@ media-video/vcsi 7.0.16: Create thumbnail sheets from video files
 media-video/vdr 2.2.0-r7 2.6.9 2.7.3 2.7.7: Video Disk Recorder - turns a pc into a powerful set top box for DVB
 media-video/vdrsync 0.1.3_pre050322-r2: converting vdr-recordings to mpeg2, dvd or other similar formats
 media-video/vdrtools-genindex 0.1.3-r2: VDR: genindex Script
-media-video/vidcutter 6.0.5.1_p20250419 9999: FFmpeg-based simple video cutter & joiner with a modern PyQt5 GUI
 media-video/videotrans 1.6.1-r2: A package to convert movies to DVD format and to build DVDs with
 media-video/vlc 3.0.22_rc2 3.0.22 3.0.9999 9999: Media player and framework with support for most multimedia files and streaming
 media-video/vobcopy 1.2.1: Copies DVD .vob files to harddisk, decrypting them on the way
@@ -16492,12 +16491,12 @@ sci-physics/herwig 6.5.21-r2: High Energy Physics Event Generator
 sci-physics/lammps 20230802 20230802-r1 20240829: Large-scale Atomic/Molecular Massively Parallel Simulator
 sci-physics/lhapdf 6.3.0-r2 6.5.4-r1 6.5.4-r2 6.5.5 6.5.5-r1 6.5.5-r2 9999: Les Houches Parton Density Function unified library
 sci-physics/looptools 2.15 2.15-r1 2.16: Tools for evaluation of scalar and tensor one-loop integrals
-sci-physics/pythia 6.4.28-r2 8.2.45-r2 8.3.09 8.3.11 8.3.12 8.3.13-r1 8.3.14 8.3.15 8.3.16 9999: Lund Monte Carlo high-energy physics event generator
+sci-physics/pythia 8.3.16-r1 9999: Lund Monte Carlo high-energy physics event generator
 sci-physics/reduze 2.4-r1: Program for reducing Feynman integrals
-sci-physics/rivet 3.1.11 4.0.2 4.1.0 4.1.1 4.1.2 9999: Rivet toolkit (Robust Independent Validation of Experiment and Theory)
+sci-physics/rivet 3.1.11-r1 4.1.2 9999: Robust Independent Validation of Experiment and Theory toolkit
 sci-physics/root 6.34.10 6.34.9999 6.36.04 6.36.9999 6.38.00 9999: C++ data analysis framework and interpreter from CERN
 sci-physics/siscone 3.0.6 3.1.0 3.1.2 3.1.2-r1 9999: Hadron Seedless Infrared-Safe Cone jet algorithm
-sci-physics/thepeg 2.2.2-r2 2.2.3-r3 2.3.0-r3: Toolkit for High Energy Physics Event Generation
+sci-physics/thepeg 2.2.3-r3 2.3.0-r4: Toolkit for High Energy Physics Event Generation
 sci-physics/vgm 5.2-r1 9999: Virtual Geometry Model for High Energy Physics Experiments
 sci-physics/vmc 1.1_p1-r1 2.0-r1 2.1 9999: The Virtual Monte Carlo core library
 sci-physics/xfoil 6.99-r1: Design and analysis of subsonic isolated airfoils
@@ -17694,7 +17693,7 @@ sys-fs/unionfs-fuse 3.6-r1 3.6-r2 3.7 9999: Self-syncing tree-merging file syste
 sys-fs/vhba 20240202 20240917 20250329: Virtual (SCSI) Host Bus Adapter kernel module for the CDEmu suite
 sys-fs/vzquota 3.1: OpenVZ VPS disk quota utility
 sys-fs/xfsdump 3.1.12 3.2.0: XFS dump/restore utilities
-sys-fs/xfsprogs 6.12.0 6.13.0-r1 6.14.0 6.15.0 6.16.0 6.17.0 6.17.0-r1: XFS filesystem utilities
+sys-fs/xfsprogs 6.12.0 6.13.0-r1 6.14.0 6.15.0 6.16.0 6.17.0 6.17.0-r1 6.18.0: XFS filesystem utilities
 sys-fs/xwmfs 0.92: FUSE-based X11 Window-Manager file system
 sys-fs/yaffs2utils 0.2.9-r1: tools for generating YAFFS images
 sys-fs/zerofree 1.1.1-r1: Zeroes out all free space on a filesystem
@@ -17718,7 +17717,7 @@ sys-kernel/kergen 0.1.5-r1: Kernel config generator
 sys-kernel/kpatch 0.9.7 0.9.8 0.9.10 9999: Dynamic kernel patching for Linux
 sys-kernel/linux-docs 6.18: Developer documentation generated from the Linux kernel
 sys-kernel/linux-firmware 20250211 20250311 20250410 20250613-r1 20250613_p20250624 20250627 20250708 20250808 20250917 20251011 20251021 20251111 20251125 20251125_p20251202 20251125_p20251203 99999999: Linux firmware files
-sys-kernel/linux-headers 3.18-r1 4.4-r1 4.9-r1 4.14-r2 4.19-r1 5.4-r2 5.10-r2 5.15-r3 6.1 6.6-r1 6.8-r1 6.9 6.10 6.11 6.12 6.13 6.14 6.15 6.16 6.16-r2 6.17-r1: Linux system headers
+sys-kernel/linux-headers 3.18-r1 4.4-r1 4.9-r1 4.14-r2 4.19-r1 5.4-r2 5.10-r2 5.15-r3 6.1 6.6-r1 6.8-r1 6.9 6.10 6.11 6.12 6.13 6.14 6.15 6.16 6.16-r2 6.17-r1 6.18: Linux system headers
 sys-kernel/linux-next 9999: Linux kernel and patches aimed at the next kernel merge window
 sys-kernel/mips-sources 4.19.325 5.4.294: Kernel.org sources for MIPS-based machines
 sys-kernel/modprobed-db 2.47 2.48: Keeps track of EVERY kernel module ever used - useful for make localmodconfig
