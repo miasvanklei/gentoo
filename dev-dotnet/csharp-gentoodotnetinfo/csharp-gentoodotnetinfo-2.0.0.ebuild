@@ -42,10 +42,6 @@ S="${WORKDIR}/${P}/Source/v${MAJOR}"
 LICENSE="GPL-2+"
 SLOT="0/${MAJOR}"
 
-PATCHES=(
-	"${FILESDIR}/update-target-framework.patch"
-)
-
 DOTNET_PKG_PROJECTS=( gentoo-dotnet-info-app/src/main/csharp/GentooDotnetInfo )
 
 src_unpack() {

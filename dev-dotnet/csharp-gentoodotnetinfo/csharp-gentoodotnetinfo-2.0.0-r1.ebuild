@@ -44,6 +44,10 @@ SLOT="0/${MAJOR}"
 
 DOTNET_PKG_PROJECTS=( gentoo-dotnet-info-app/src/main/csharp/GentooDotnetInfo )
 
+PATCHES=(
+	"${FILESDIR}/update-target-framework.patch"
+)
+
 src_unpack() {
 	dotnet-pkg_src_unpack
 
