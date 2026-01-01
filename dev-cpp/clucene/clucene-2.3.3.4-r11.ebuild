@@ -32,6 +32,7 @@ PATCHES=(
 	"${FILESDIR}/${P}-libcxx.patch"
 	"${FILESDIR}/${P}-fix-binary-function.patch"
 	"${FILESDIR}/${P}-cmake4.patch"
+	"${FILESDIR}/${P}-narrowing-conversions.patch"
 )
 
 src_prepare() {
