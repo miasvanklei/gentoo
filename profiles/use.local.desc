@@ -3163,10 +3163,8 @@ games-emulation/pcsx2:clang - Use Clang compiler to build (the only compiler tha
 games-emulation/pcsx2:sndio - Enable support for the media-sound/sndio backend
 games-emulation/ppsspp:discord - Enable interfacing with a locally running Discord desktop client
 games-emulation/rmg:angrylion-plugin - Enable the mupen64plus-video-angrylion-plus XMAME licensed plugin
-games-emulation/rmg:discord - Enable Discord RPC support
 games-emulation/rmg:dynarec - Enable the new dynarec for the mupen64plus-core plugin
 games-emulation/rmg:netplay - Enable Netplay
-games-emulation/rmg:rust-plugin - Enable the mupen64plus-input-gca rust plugin
 games-emulation/snes9x:libretro - Build libretro port
 games-emulation/snes9x:netplay - Enable playing ROMs over the network (not recommended)
 games-emulation/vbam:link - Enable GBA linking functionality
@@ -7633,6 +7631,7 @@ sci-mathematics/giac:glpk - Enable the use of sci-mathematics/glpk
 sci-mathematics/gmp-ecm:custom-tune - Improve performance of some operations by selecting machine-specific defaults
 sci-mathematics/gretl:R - Enable support for dev-lang/R
 sci-mathematics/gretl:extras - Build and install add-ons bundled with gretl
+sci-mathematics/highs:hipo - Build the new factorization-based interior-point solver requiring sci-libs/metis.
 sci-mathematics/lcalc:double - Use double precision (the upstream default)
 sci-mathematics/lcalc:double-double - Use sci-libs/qdfor double-double precision
 sci-mathematics/lcalc:pari - Use sci-mathematics/pari for elliptic curve L-functions
