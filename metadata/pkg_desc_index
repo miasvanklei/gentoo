@@ -1542,7 +1542,7 @@ app-crypt/tc-play 3.3: A free, pretty much fully featured and stable TrueCrypt i
 app-crypt/tpm-tools 1.3.9.2-r1: TrouSerS' support tools for the Trusted Platform Modules
 app-crypt/tpm2-abrmd 3.0.0-r2: TPM2 Access Broker & Resource Manager
 app-crypt/tpm2-openssl 1.3.0: OpenSSL Provider for TPM2 integration
-app-crypt/tpm2-pkcs11 1.9.1: A PKCS#11 interface for TPM2 hardware
+app-crypt/tpm2-pkcs11 1.9.1 1.9.2: A PKCS#11 interface for TPM2 hardware
 app-crypt/tpm2-tools 5.7: Tools for the TPM 2.0 TSS
 app-crypt/tpm2-totp 0.3.0-r1: Attest the trustworthiness of a device against a human using time-based OTP
 app-crypt/tpm2-tss 4.0.2-r2 4.1.3-r1 4.1.3-r2: TCG Trusted Platform Module 2.0 Software Stack
@@ -2894,7 +2894,7 @@ app-misc/reptyr 0.9.0 0.10.0: A utility to attach a running program to a new ter
 app-misc/resolve-march-native 6.0.1: Resolve GCC flag -march=native
 app-misc/rioutil 1.5.4-r1: A utility for accessing various Rio media players
 app-misc/rl 0.2.7-r2: Randomize lines from text files or stdin
-app-misc/rlwrap 0.46.1 0.47.1: GNU readline wrapper
+app-misc/rlwrap 0.46.1 0.47.1 0.48: GNU readline wrapper
 app-misc/rover 1.0.1 9999: simple file browser for the terminal
 app-misc/rox-filer 2.11-r1: ROX-Filer a drag and drop spatial file manager
 app-misc/rpick 0.9.1-r1: Helps you pick items from a list by various algorithms
@@ -3779,7 +3779,7 @@ app-xemacs/xslt-process 1.14: XSLT processing support
 app-xemacs/xwem 1.27: X Emacs Window Manager
 app-xemacs/zenirc 1.18: ZENIRC IRC Client
 dev-ada/AdaSAT 25.0.0: Implementation of a DPLL-based SAT solver in Ada
-dev-ada/ada_language_server 25.0.20241014-r5: a Language Server Protocol for Ada/SPARK
+dev-ada/ada_language_server 25.0.20241014-r5 26.0.202411173: a Language Server Protocol for Ada/SPARK
 dev-ada/ada_libfswatch 2024.07.09-r1: Ada binding to the libfswatch library
 dev-ada/adareducer 0.20250402: Ada Reducer
 dev-ada/aunit 25.0.0-r3 26.0.0: Ada unit testing framework
@@ -3796,7 +3796,7 @@ dev-ada/gnatsymbolize 2021-r5: Translates addresses into filename, line number, 
 dev-ada/gpr 24.0.0-r3 24.2.0-r1 25.0.0-r4 26.0.0: LibGPR2 - Parser for GPR Project files
 dev-ada/gprbuild 25.0.0-r5 26.0.0: Multi-Language Management
 dev-ada/gprconfig_kb 25.0.0-r3 26.0.0: GPR configuration knowledge base
-dev-ada/gtkada 25.0.1-r2: A complete Ada graphical toolkit
+dev-ada/gtkada 25.0.1-r2 26.0.0: A complete Ada graphical toolkit
 dev-ada/lal-refactor 25.0.0-r2 26.0.0: Refactoring tools for the Ada programming language
 dev-ada/langkit 24.0.0-r2 25.0.0-r7 26.0.0: A Python framework to generate language parsers
 dev-ada/langkit-contrib 25.0.0-r2 26.0.0: A Python framework to generate language parsers - Contrib
@@ -3804,13 +3804,13 @@ dev-ada/libadalang 25.0.0-r1 26.0.0: high performance semantic engine for the Ad
 dev-ada/libadalang-tools 25.0.0-r3 26.0.0: Libadalang-based tools: gnatpp, gnatmetric and gnatstub
 dev-ada/libgpr 25.0.0-r3 26.0.0: Ada library to handle GPRbuild project files
 dev-ada/markdown 25.0.0-r2 26.0.0: Provides a markdown parser written in Ada
-dev-ada/prettier-ada 25.0.0-r4: Port of the Prettier formatter to the Ada programming language
-dev-ada/spawn 25.0.0-r4: Simple API to spawn processes
-dev-ada/templates-parser 24.0.0-r1 25.0.0-r4: A template engine
+dev-ada/prettier-ada 25.0.0-r4 26.0.0: Port of the Prettier formatter to the Ada programming language
+dev-ada/spawn 25.0.0-r4 26.0.0: Simple API to spawn processes
+dev-ada/templates-parser 24.0.0-r1 25.0.0-r4 26.0.0: A template engine
 dev-ada/vss-extra 26.0.0: A high level string and text processing library
 dev-ada/vss-text 25.0.0-r1 26.0.0: A high level string and text processing library
 dev-ada/xmlada 25.0.0-r5 26.0.0: Set of modules that provide a simple manipulation of XML streams
-dev-build/autoconf 2.13-r8 2.69-r10 2.71-r6 2.71-r8 2.72-r1 2.72-r4 2.72-r5 9999: Used to create autoconfiguration files
+dev-build/autoconf 2.13-r8 2.69-r10 2.71-r6 2.71-r8 2.72-r1 2.72-r4 2.72-r6 9999: Used to create autoconfiguration files
 dev-build/autoconf-archive 2023.02.20 2024.10.16-r1 2024.10.16-r2: GNU Autoconf Macro Archive
 dev-build/autoconf-dickey 2.52_p20230114 2.52_p20231210 2.52_p20240618 2.52_p20250126: Fork of dev-build/autoconf for Thomas Dickey's packages
 dev-build/autoconf-vanilla 2.13 2.69-r1 2.71-r1 2.72-r1 9999: Used to create autoconfiguration files
@@ -4019,7 +4019,7 @@ dev-db/pg_activity 3.6.1-r1: Realtime PostgreSQL database server monitoring tool
 dev-db/pg_background 1.5: Postgres Background Worker
 dev-db/pg_top 4.1.3: 'top' for PostgreSQL
 dev-db/pgagent 4.2.1 4.2.3-r1: pgAgent is a job scheduler for PostgreSQL
-dev-db/pgbadger 12.4 13.1: pgBadger is a PostgreSQL log analyzer
+dev-db/pgbadger 12.4 13.1 13.2: pgBadger is a PostgreSQL log analyzer
 dev-db/pgbouncer 1.23.1 1.24.1 1.25.0: Lightweight connection pooler for PostgreSQL
 dev-db/pgcli 4.0.1-r1 4.1.0: CLI for Postgres with auto-completion and syntax highlighting
 dev-db/pglogical 2.4.4: Logical replication for PostgreSQL
@@ -4087,18 +4087,18 @@ dev-debug/sysdig 0.40.1-r1: A system exploration and troubleshooting tool
 dev-debug/systemtap 5.3-r1 5.4 9999: Linux trace/probe tool
 dev-debug/valgrind 3.25.1 3.26.0 9999: An open-source memory debugger for GNU/Linux
 dev-dotnet/avalonia-ilspy 7.2_rc-r2: Avalonia-based .NET Decompiler, port of ILSpy
-dev-dotnet/cake 5.0.0 5.1.0: Cake (C# Make) is a cross platform build automation system with a C# DSL
+dev-dotnet/cake 5.1.0: Cake (C# Make) is a cross platform build automation system with a C# DSL
 dev-dotnet/coco 2014.12.25 2014.12.25-r1: The compiler generator Coco/R for C#
 dev-dotnet/csharp-gentoodotnetinfo 2.0.0 2.0.0-r1 2.9999: .NET information tool for Gentoo
-dev-dotnet/csharp-language-server 0.19.0 0.20.0: Roslyn-based LSP language server for C#
+dev-dotnet/csharp-language-server 0.19.0 0.20.0 0.21.0: Roslyn-based LSP language server for C#
 dev-dotnet/csharprepl 0.6.7: A command line C# REPL with syntax highlighting
 dev-dotnet/dotnet-outdated 4.6.4-r1 4.6.4-r2: Display and update outdated NuGet packages in a project
-dev-dotnet/dotnet-runtime-nugets 6.0.25-r1 6.0.32 6.0.33 6.0.36 7.0.14-r1 7.0.20 8.0.7 8.0.8 8.0.18 8.0.21 8.0.22 9.0.7 9.0.10 9.0.11 10.0.0 10.0.1: .NET runtime nugets
+dev-dotnet/dotnet-runtime-nugets 6.0.25-r1 6.0.33 6.0.36 7.0.14-r1 7.0.20 8.0.8 8.0.18 8.0.21 8.0.22 9.0.10 9.0.11 10.0.1: .NET runtime nugets
 dev-dotnet/dotnet-script 1.6.0: Run C# scripts from the CLI
 dev-dotnet/dotnet-sdk 9.0.111: .NET is a free, cross-platform, open-source developer platform
-dev-dotnet/dotnet-sdk-bin 6.0.417-r5 7.0.404-r5 8.0.108-r1 9.0.108-r1 9.0.111 9.0.306 10.0.100 10.0.101: .NET is a free, cross-platform, open-source developer platform
+dev-dotnet/dotnet-sdk-bin 6.0.417-r5 7.0.404-r5 8.0.108-r1 9.0.111 10.0.101: .NET is a free, cross-platform, open-source developer platform
 dev-dotnet/fable 4.26.0 4.28.0: F# to JavaScript, TypeScript, Python, Rust and Dart Compiler
-dev-dotnet/fantomas 7.0.2 7.0.3: FSharp source code formatter
+dev-dotnet/fantomas 7.0.3: FSharp source code formatter
 dev-dotnet/fsautocomplete 0.80.1 0.81.0 0.82.0: F# language server using the Language Server Protocol
 dev-dotnet/gentoo-dotnet-maintainer-tools 3.0.0 3.9999: Gentoo tools for .NET packages maintenance
 dev-dotnet/libgdiplus 6.0.2-r4 6.2: C-based implementation of the GDI+ API
@@ -5413,7 +5413,7 @@ dev-libs/gf2x 1.3.0-r1: C/C++ routines for fast arithmetic in GF(2)[x]
 dev-libs/girara 0.4.5 0.4.5-r1 9999: UI library that focuses on simplicity and minimalism
 dev-libs/gjs 1.80.2-r1 1.82.3-r1 1.84.2-r1: Javascript bindings for GNOME
 dev-libs/glib 2.84.4 2.84.4-r1 2.86.1: The GLib library of C routines
-dev-libs/gmime 2.6.23-r2 3.2.14 3.2.15 3.2.15-r1: Library for creating and parsing MIME messages
+dev-libs/gmime 2.6.23-r2 3.2.15-r1 3.2.15-r2: Library for creating and parsing MIME messages
 dev-libs/gmp 6.3.0-r1: Library for arbitrary-precision arithmetic on different type of numbers
 dev-libs/gnulib 2024.01.01.10.31.48 2025.08.27.16.03.17 9999-r1: Gnulib is a library of common routines intended to be shared at the source level
 dev-libs/gobject-introspection 1.82.0-r2 1.84.0-r1 1.86.0: Introspection system for GObject-based libraries
@@ -8571,7 +8571,7 @@ dev-python/hvac 2.3.0 2.4.0: HashiCorp Vault API client
 dev-python/hypercorn 0.17.3 0.18.0: A ASGI Server based on Hyper libraries and inspired by Gunicorn
 dev-python/hyperframe 6.1.0: HTTP/2 framing layer for Python
 dev-python/hyperlink 21.0.0-r1: A featureful, correct URL for Python
-dev-python/hypothesis 6.147.0 6.148.5 6.148.7 6.148.8 6.148.9 6.148.11: A library for property based testing
+dev-python/hypothesis 6.147.0 6.148.5 6.148.7 6.148.8 6.148.9 6.148.11 6.148.12: A library for property based testing
 dev-python/hypothesis-gentoo 3 4: Plugin to create 'gentoo' hypothesis profile, disabling health checks
 dev-python/icalendar 6.3.1 6.3.2: Package used for parsing and generating iCalendar files (RFC 2445)
 dev-python/id 1.5.0: A tool for generating OIDC identities
@@ -8767,7 +8767,7 @@ dev-python/markdown-it-py 3.0.0 4.0.0: Python port of markdown-it, Markdown pars
 dev-python/markdown2 2.5.3 2.5.4: Python Markdown language reimplementation
 dev-python/markups 4.1.1: A wrapper around various text markups
 dev-python/markupsafe 3.0.2 3.0.3: Implements a XML/HTML/XHTML Markup safe string for Python
-dev-python/marshmallow 3.26.2 4.1.2: A library for converting to and from native Python datatypes
+dev-python/marshmallow 3.26.2 4.1.2 4.2.0: A library for converting to and from native Python datatypes
 dev-python/matplotlib 3.10.3 3.10.7-r1 3.10.8-r1: Pure python plotting library with matlab like syntax
 dev-python/matplotlib-inline 0.1.7 0.2.1: Inline Matplotlib backend for Jupyter
 dev-python/matplotlib-venn 1.1.2: Plot area-proportional two- and three-way Venn diagrams in matplotlib
@@ -8860,7 +8860,7 @@ dev-python/nbxmpp 6.4.0 7.0.0: Python library to use Jabber/XMPP networks in a n
 dev-python/neovim-remote 2.5.1 9999: A tool that helps control neovim processes
 dev-python/nest-asyncio 1.6.0 1.6.0-r1: Patch asyncio to allow nested event loops
 dev-python/netaddr 0.10.1 1.3.0: Network address representation and manipulation library
-dev-python/netcdf4 1.7.2 1.7.3: Python/numpy interface to the netCDF C library
+dev-python/netcdf4 1.7.3 1.7.4: Python/numpy interface to the netCDF C library
 dev-python/netifaces 0.11.0-r2: Portable network interface information
 dev-python/netlink 0.1: Pure-Python client for the Linux NetLink interface
 dev-python/networkx 3.5-r1 3.6 3.6.1: Python tools to manipulate graphs and complex networks
@@ -9306,13 +9306,14 @@ dev-python/python-neutronclient 11.6.0: A client for the OpenStack Quantum API
 dev-python/python-novaclient 18.10.0 18.11.0: A client for the OpenStack Nova API
 dev-python/python-openstackclient 8.1.0 8.2.0: A client for the OpenStack APIs
 dev-python/python-pam 2.0.2-r2: Python PAM module
+dev-python/python-pkcs11 0.9.3: PKCS#11/Cryptoki support for Python
 dev-python/python-ptrace 0.9.9 9999: A Python binding of ptrace library
 dev-python/python-redmine 2.5.0: Python interface to the Redmine REST API
 dev-python/python-rtmidi 1.5.8: Python bindings for media-libs/rtmidi implemented using Cython
 dev-python/python-slugify 8.0.4: A Python Slugify application that handles Unicode
 dev-python/python-snappy 0.7.3: Python library for the snappy compression library from Google
 dev-python/python-socks 2.7.2 2.7.3 2.8.0: SOCKS4, SOCKS5, HTTP tunneling functionality for Python
-dev-python/python-stdnum 2.1: A module to handle standardized numbers and codes
+dev-python/python-stdnum 2.1 2.2: A module to handle standardized numbers and codes
 dev-python/python-subunit 1.4.4 1.4.5: A streaming protocol for test results
 dev-python/python-swiftclient 4.8.0 4.9.0: Python bindings to the OpenStack Object Storage API
 dev-python/python-systemd 235: Python module for native access to the systemd facilities
@@ -9714,7 +9715,7 @@ dev-python/uvicorn 0.38.0 0.40.0: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.21.0 0.22.1: Ultra-fast implementation of asyncio event loop on top of libuv
 dev-python/validators 0.35.0: Python Data Validation for Humans
 dev-python/varlink 31.0.0: Python implementation of the Varlink protocol
-dev-python/vcrpy 7.0.0 8.0.0 8.1.0: Automatically mock your HTTP interactions to simplify and speed up testing
+dev-python/vcrpy 7.0.0 8.0.0 8.1.0 8.1.1: Automatically mock your HTTP interactions to simplify and speed up testing
 dev-python/vdf 4.0: A module for (de)serialization to and from VDF, Valve's key-value text format
 dev-python/vdirsyncer 0.19.3 0.20.0: Synchronize calendars and contacts
 dev-python/vecrec 0.3.1-r1: 2D vector and rectangle classes
@@ -10061,7 +10062,7 @@ dev-ruby/filesize 0.2.0-r1: Small class for handling filesizes with both the SI 
 dev-ruby/fileutils 1.7.3 1.8.0: Several file utility methods for copying, moving, removing, etc
 dev-ruby/filigree 0.4.1-r1: New classes and extensions to core library classes
 dev-ruby/flexmock 2.4.2 3.0.2: Simple mock object library for Ruby unit testing
-dev-ruby/flog 4.8.0 4.9.0 4.9.1: Flog reports the most tortured code in an easy to read pain report
+dev-ruby/flog 4.8.0 4.9.0 4.9.1 4.9.2: Flog reports the most tortured code in an easy to read pain report
 dev-ruby/font-awesome-rails 4.7.0.9: Font-awesome for the asset pipeline
 dev-ruby/forgery 0.8.1-r1: Easy and customizable generation of forged data
 dev-ruby/forwardable 1.3.3 1.4.0: Provides delegation of specified methods to a designated object
@@ -10284,7 +10285,7 @@ dev-ruby/pry 0.14.2 0.15.2 0.16.0: Pry is a powerful alternative to the standard
 dev-ruby/pstore 0.2.0: Transactional File Storage for Ruby Objects
 dev-ruby/psych 5.2.3 5.2.4 5.2.5 5.2.6 5.3.0 5.3.1: A YAML parser and emitter
 dev-ruby/ptools 1.5.0 1.5.2: Several handy methods to Ruby's core File class
-dev-ruby/public_suffix 6.0.2 7.0.0 7.0.1: Parse and decompose a domain name into top level domain, domain and subdomains
+dev-ruby/public_suffix 6.0.2 7.0.0 7.0.1 7.0.2: Parse and decompose a domain name into top level domain, domain and subdomains
 dev-ruby/pundit 2.5.0 2.5.1 2.5.2: Object oriented authorization for Rails applications
 dev-ruby/puppet-resource_api 1.9.0 2.0.0: This library provides a simple way to write new native resources for puppet.
 dev-ruby/puppet_forge 5.0.4 6.0.0 6.1.0: Tools to access Forge API information on Modules, Users, and Releases
@@ -10503,7 +10504,7 @@ dev-ruby/timeout 0.4.3 0.4.4 0.5.0 0.6.0: Provides a framework for message diges
 dev-ruby/timers 4.4.0: Pure Ruby one-shot and periodic timers
 dev-ruby/tins 1.43.0 1.47.0 1.48.0 1.49.0: All the stuff that isn't good enough for a real library
 dev-ruby/tokyocabinet 1.32.0-r2: Ruby bindings for Tokyo Cabinet
-dev-ruby/tomlrb 2.0.3: A racc based toml parser
+dev-ruby/tomlrb 2.0.3 2.0.4: A racc based toml parser
 dev-ruby/traces 0.15.2 0.16.2 0.17.0 0.18.1 0.18.2: Application instrumentation and tracing
 dev-ruby/track_open_instances 0.1.15: A mixin to track instances of Ruby classes that require explicit cleanup
 dev-ruby/transaction-simple 1.4.0.2-r3: Provides transaction support at the object level
@@ -11521,8 +11522,8 @@ games-emulation/mupen64plus-video-rice 2.6.0: A fork of Mupen64 Nintendo 64 emul
 games-emulation/nestopia 1.53.2: Portable Nintendo Entertainment System emulator written in C++
 games-emulation/nestopia-jg 1.53.2 9999: Jolly Good Fork of Nestopia
 games-emulation/openmsx 19.1 20.0-r2: MSX emulator that aims for perfection
-games-emulation/pcsx2 2.4.0-r1 9999: PlayStation 2 emulator
-games-emulation/pcsx2_patches 0_p20241020 9999: Collection of game patches for use with PCSX2 (e.g. widescreen hacks)
+games-emulation/pcsx2 2.4.0-r1 2.6.0 9999: PlayStation 2 emulator
+games-emulation/pcsx2_patches 0_p20241020 0_p20251228 9999: Collection of game patches for use with PCSX2 (e.g. widescreen hacks)
 games-emulation/ppsspp 1.19.3 1.19.3-r1: A PSP emulator written in C++
 games-emulation/prosystem-jg 1.5.3 9999: Jolly Good Fork of ProSystem
 games-emulation/rmg 0.8.5 0.8.7 0.8.8 9999: Rosalie's Mupen GUI
@@ -13913,7 +13914,7 @@ media-radio/fldigi 4.2.09 4.2.10 4.2.11: Sound card based multimode software mod
 media-radio/flmsg 4.0.23 4.0.24: Fldigi helper for creating radiograms
 media-radio/flrig 2.0.09 2.0.10: Transceiver control program for Amateur Radio use
 media-radio/fsync-mdc1200-decode 1.0-r1 9999: Linux Fleetsync / MDC1200 decoder
-media-radio/gpredict 2.3_p20231224 9999: Real-time satellite tracking and orbit prediction application
+media-radio/gpredict 2.3_p20231224 2.4 9999: Real-time satellite tracking and orbit prediction application
 media-radio/grig 0.9.0: A tool for controlling amateur radios
 media-radio/ibp 0.21-r3: Shows currently transmitting beacons of the International Beacon Project (IBP)
 media-radio/js8call 2.3.1-r2: Weak signal ham radio communication
@@ -14335,7 +14336,7 @@ media-video/frameworks 0.3.7-r1: A small v4l frame capture utility especially su
 media-video/gaupol 1.15-r1 1.15-r2: Editor for text-based subtitle files
 media-video/gnome-video-effects 0.5.0-r1 0.6.0: Effects for Cheese, the webcam video and picture application
 media-video/gpac 2.4.0-r1: Implementation of the MPEG-4 Systems standard developed from scratch in ANSI C
-media-video/guvcview 2.2.1: Simple Qt6 or GTK+3 interface for capturing and viewing video from v4l2 devices
+media-video/guvcview 2.2.1 2.2.2: Simple Qt6 or GTK+3 interface for capturing and viewing video from v4l2 devices
 media-video/h264enc 10.4.7-r1: Script to encode H.264/AVC/MPEG-4 Part 10 formats
 media-video/handbrake 1.9.2-r1 1.10.1 1.10.2 9999: Open-source, GPL-licensed, multiplatform, multithreaded video transcoder
 media-video/haruna 1.6.0: Video player built with Qt/QML and libmpv
@@ -14733,7 +14734,7 @@ net-dns/dnsviz 0.11.1: Tool suite for analysis and visualization of DNS and DNSS
 net-dns/doggo 1.0.5 1.1.2 1.1.3: Command-line DNS Client for Humans
 net-dns/ez-ipupdate 3.0.11.13.3_beta8-r5: Dynamic DNS client for lots of dynamic dns services
 net-dns/fpdns 20190131: Fingerprinting DNS servers
-net-dns/getdns 1.7.2-r1 1.7.3: Modern asynchronous DNS API
+net-dns/getdns 1.7.3: Modern asynchronous DNS API
 net-dns/hash-slinger 3.4: Various tools to generate DNS records like SSHFP, TLSA, OPENPGPKEY, IPSECKEY
 net-dns/https_dns_proxy 0_pre20200925 9999: Lightweight DNS-over-HTTPS proxy
 net-dns/idnkit 2.3-r2: Toolkit for Internationalized Domain Names (IDN)
@@ -14746,7 +14747,7 @@ net-dns/libidn2 2.3.7 2.3.8: An implementation of the IDNA2008 specifications (R
 net-dns/maradns 3.5.0036: A security-aware DNS server
 net-dns/mdns-repeater 1.11: Multicast DNS repeater
 net-dns/ndu 0.4-r4: DNS serial number incrementer and reverse zone builder
-net-dns/nsd 4.11.1 4.12.0 9999: An authoritative only, high performance, open source name server
+net-dns/nsd 4.12.0 4.14.0 9999: An authoritative only, high performance, open source name server
 net-dns/opendnssec 2.1.13-r2: An open-source turn-key solution for DNSSEC
 net-dns/openresolv 3.16.5 3.17.0 3.17.3 3.17.4: A framework for managing DNS information
 net-dns/pdns 5.0.1 5.0.2: The PowerDNS Daemon
@@ -14758,7 +14759,7 @@ net-dns/resolv_wrapper 1.1.8: Wrapper for DNS name resolving or DNS faking
 net-dns/resolvconf-symlink 0: Make /etc/resolv.conf a symlink to a runtime-writable location
 net-dns/s6-dns 2.4.1.0: Suite of DNS client programs and libraries for Unix systems
 net-dns/smartdns 47 47.1: A local DNS server returns the fastest access results
-net-dns/unbound 1.20.0 1.22.0 1.22.0-r1 1.23.0-r1 1.24.1-r1: A validating, recursive and caching DNS resolver
+net-dns/unbound 1.23.0-r1 1.24.1-r1: A validating, recursive and caching DNS resolver
 net-dns/updatedd 2.6-r8: Dynamic DNS client with plugins for several dynamic dns services
 net-dns/valtz 0.8: Validation tool for tinydns-data zone files
 net-firewall/arno-iptables-firewall 2.1.1a 2.1.2a: Arno's iptables firewall script
@@ -14945,7 +14946,7 @@ net-libs/gupnp-igd 1.6.0-r1: Library to handle UPnP IGD port mapping for GUPnP
 net-libs/http-parser 2.9.4-r2: HTTP request/response parser for C
 net-libs/kdsoap 2.2.0-r1: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 0.4.0-r2: WS-Discovery client library based on KDSoap
-net-libs/ldns 1.8.3-r3 1.8.4 1.8.4-r1: A library with the aim to simplify DNS programming in C
+net-libs/ldns 1.8.4-r1 1.9.0: Library that aims to simplify DNS programming in C
 net-libs/libaccounts-glib 1.27-r1: Accounts SSO (Single Sign-On) management library for GLib applications
 net-libs/libad9361-iio 0.3-r4 9999: IIO AD9361 library for filter design and handling, multi-chip sync, etc
 net-libs/libasr 1.0.4: Async Resolver Library from OpenBSD/OpenSMTPD
@@ -15603,7 +15604,7 @@ net-proxy/adzapper 20110915-r2: Redirector for squid to intercept advertising, p
 net-proxy/cntlm 0.93_beta5-r4: Cntlm is an NTLM/NTLMv2 authenticating HTTP proxy
 net-proxy/dante 1.4.1-r6 1.4.3: A free socks4,5 and msproxy implementation
 net-proxy/dnsproxy 1.17-r1: The dnsproxy daemon is a proxy for DNS queries
-net-proxy/haproxy 2.8.11 2.8.17 2.8.9999 3.0.5 3.0.13 3.0.9999 3.2.9 3.2.10 3.2.9999 3.3.0 3.3.1 3.3.9999 9999: A TCP/HTTP reverse proxy for high availability environments
+net-proxy/haproxy 2.8.11 2.8.17 2.8.18 2.8.9999 3.0.5 3.0.13 3.0.14 3.0.9999 3.2.9 3.2.10 3.2.9999 3.3.0 3.3.1 3.3.9999 9999: A TCP/HTTP reverse proxy for high availability environments
 net-proxy/haproxy-dataplaneapi 3.0.3 3.1.5: haproxy dataplane api / sidecar
 net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying of HAProxy status
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
@@ -16997,7 +16998,7 @@ sys-apps/audio-entropyd 2.0.3-r2: Audio-entropyd generates entropy-data for the 
 sys-apps/azure-vm-utils 0.6.0-r1 0.7.0: Utilities and udev rules to support Linux on Azure
 sys-apps/baobab 48.0 49.1: Disk usage browser for GNOME
 sys-apps/bar 1.11.1-r1: Console Progress Bar
-sys-apps/baselayout 2.17 2.18 9999: Filesystem baselayout and init scripts
+sys-apps/baselayout 2.17 2.18 2.18-r1 9999: Filesystem baselayout and init scripts
 sys-apps/baselayout-java 0.1.0-r3: Baselayout for Java
 sys-apps/bat 0.23.0-r2 0.24.0-r2 0.25.0 0.26.1: cat(1) clone with syntax highlighting and Git integration
 sys-apps/bfs 4.0.6 4.0.7 4.0.8: Breadth-first version of the UNIX find command
@@ -17128,7 +17129,7 @@ sys-apps/lnxhc 1.2-r2: Linux Health Checker
 sys-apps/locale-gen 3.8 3.9-r2 9999: Generate locales based upon the config file /etc/locale.gen
 sys-apps/logwatch 7.12 7.13 9999: Analyzes and Reports on system logs
 sys-apps/lsadb 0.1.3-r1: Prints out information on all devices attached to the ADB bus
-sys-apps/lsb-release 1.4-r4 3.2 3.3: LSB version query program
+sys-apps/lsb-release 3.3: LSB version query program
 sys-apps/lsd 1.1.3-r2 1.2.0: An ls command with a lot of pretty colors and some other stuff.
 sys-apps/lshw 02.19.2b_p20220831-r1 02.20.2b-r1: Hardware Lister
 sys-apps/lssbus 0.1-r1: Small utility for Linux/SPARC that list devices on SBUS
@@ -17236,7 +17237,7 @@ sys-apps/sparc-utils 1.9-r7: Various sparc utilities from Debian GNU/Linux
 sys-apps/spu-tools 2.3.0.136: CELL spu ps and top alike utilities
 sys-apps/stroke 0.1.3-r3: Powerful tool to change file timestamps (including ctimes)
 sys-apps/superdiag 1.8.0.20230310: Provides the capability to determine the health of Supermicro servers components
-sys-apps/syd 3.47.0 3.48.0: seccomp and landlock based application sandbox with support for namespaces
+sys-apps/syd 3.47.0 3.48.0 3.48.1: seccomp and landlock based application sandbox with support for namespaces
 sys-apps/syd-tui 0.2.2: Syd's Terminal User Interface
 sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
@@ -17519,7 +17520,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251204 13.4.1_p20251211 13.4.1_p20251218 13.4.1_p20251225 13.4.1_p20260101 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251205 14.3.1_p20251212 14.3.1_p20251219 14.3.1_p20251226 14.3.1_p20260102 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.2.1_p20251206 15.2.1_p20251213 15.2.1_p20251220 15.2.1_p20251227 15.2.1_p20260103 15.3.9999 16.0.0_p20251123 16.0.0_p20251130 16.0.0_p20251207 16.0.0_p20251214 16.0.0_p20251221 16.0.0_p20251228 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251204 13.4.1_p20251211 13.4.1_p20251218 13.4.1_p20251225 13.4.1_p20260101 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251205 14.3.1_p20251212 14.3.1_p20251219 14.3.1_p20251226 14.3.1_p20260102 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.2.1_p20251206 15.2.1_p20251213 15.2.1_p20251220 15.2.1_p20251227 15.2.1_p20260103 15.3.9999 16.0.0_p20251123 16.0.0_p20251130 16.0.0_p20251207 16.0.0_p20251214 16.0.0_p20251221 16.0.0_p20251228 16.0.0_p20260104 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -17711,7 +17712,7 @@ sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-
 sys-kernel/gentoo-kernel 5.10.246 5.10.247 5.15.196 5.15.197 6.1.158 6.1.159 6.6.116 6.6.117 6.6.118 6.6.119 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.1 6.18.2 6.18.2_p1 6.18.3: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.246 5.10.247 5.15.196 5.15.197 6.1.158 6.1.159 6.6.116 6.6.117 6.6.118 6.6.119 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.1 6.18.2 6.18.2_p1 6.18.3: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3: Full sources including the Gentoo patchset for the 6.18 kernel tree
-sys-kernel/git-sources 6.19_rc1 6.19_rc2 6.19_rc3: The very latest -git version of the Linux kernel
+sys-kernel/git-sources 6.19_rc1 6.19_rc2 6.19_rc3 6.19_rc4: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 50 60 62 63 65 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
 sys-kernel/kergen 0.1.5-r1: Kernel config generator
@@ -18911,7 +18912,7 @@ x11-plugins/wmwifi 0.6-r1: wireless network interface monitor dockapp
 x11-plugins/wmwork 0.2.5-r1: a dockapp that lets you easily track time spent on different projects
 x11-plugins/wmxkb 1.2.2-r1: Dockable keyboard layout switcher for Window Maker
 x11-plugins/wmxres 1.2-r1 1.4: Dock application to select your display mode among those possible
-x11-terms/alacritty 0.15.1 0.16.1 9999: GPU-accelerated terminal emulator
+x11-terms/alacritty 0.16.1 9999: GPU-accelerated terminal emulator
 x11-terms/ghostty 1.1.3 1.2.0 1.2.1 1.2.3: Fast, feature-rich, and cross-platform terminal emulator
 x11-terms/ghostty-terminfo 1.1.3 1.2.0 1.2.1 1.2.3: Terminfo for ghostty, a fast, feature-rich, and cross-platform terminal emulator
 x11-terms/gnome-terminal 3.56.3 3.58.0: A terminal emulator for GNOME
