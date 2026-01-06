@@ -9179,7 +9179,7 @@ dev-python/pyscard 2.3.0 2.3.1: Smart card support in python
 dev-python/pyscreenshot 3.1: Python screenshot library
 dev-python/pysdl2 0.9.17: Python (ctypes) bindings for SDL2 libraries
 dev-python/pyserial 3.5-r2 3.5-r3: Python Serial Port extension
-dev-python/pyside 6.10.1-r3 6.9999: Python bindings for the Qt framework
+dev-python/pyside 6.10.1-r4 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.0 7.0.1 7.0.2: Python bindings for simdjson
 dev-python/pysmi 1.6.2: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
 dev-python/pysnmp 7.1.21 7.1.22: Python SNMP library
@@ -11523,7 +11523,7 @@ games-emulation/mupen64plus-video-rice 2.6.0: A fork of Mupen64 Nintendo 64 emul
 games-emulation/nestopia 1.53.2: Portable Nintendo Entertainment System emulator written in C++
 games-emulation/nestopia-jg 1.53.2 9999: Jolly Good Fork of Nestopia
 games-emulation/openmsx 19.1 20.0-r2: MSX emulator that aims for perfection
-games-emulation/pcsx2 2.4.0-r1 2.6.0 9999: PlayStation 2 emulator
+games-emulation/pcsx2 2.4.0-r1 2.6.0 2.6.1 9999: PlayStation 2 emulator
 games-emulation/pcsx2_patches 0_p20241020 0_p20251228 9999: Collection of game patches for use with PCSX2 (e.g. widescreen hacks)
 games-emulation/ppsspp 1.19.3 1.19.3-r1: A PSP emulator written in C++
 games-emulation/prosystem-jg 1.5.3 9999: Jolly Good Fork of ProSystem
@@ -15557,9 +15557,9 @@ net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable fi
 net-p2p/retroshare 0.6.7-r4: Friend to Friend secure communication and sharing application
 net-p2p/rtorrent 0.15.7 0.16.5 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.13.0a_p0 0.14.0a_p0: TUI and CLI for the BitTorrent client Transmission
-net-p2p/syncthing 1.29.5 2.0.10 2.0.11 2.0.12 2.0.12-r2: Open Source Continuous File Synchronization
+net-p2p/syncthing 1.29.5 2.0.10 2.0.11 2.0.12 2.0.12-r2 2.0.13: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
-net-p2p/transmission 4.0.5-r2 4.0.6-r6 4.1.0_beta2-r1 4.1.0_beta3 4.1.0_beta4 9999: A fast, easy, and free BitTorrent client
+net-p2p/transmission 4.0.5-r2 4.0.6-r6 4.1.0_beta2-r1 4.1.0_beta3 4.1.0_beta4 4.1.0_beta5 9999: A fast, easy, and free BitTorrent client
 net-p2p/transmission-remote-gtk 1.5.1-r1 1.6.0: GTK+ client for management of the Transmission BitTorrent client, over HTTP RPC
 net-p2p/tremc 0.9.3_p20230506: Ncurses interface for the Transmission BitTorrent client
 net-p2p/tvrss 1.8_beta: TV RSS is a tool for automating torrent downloads
