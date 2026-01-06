@@ -886,7 +886,7 @@ acct-user/zookeeper 0-r2: A user for sys-cluster/zookeeper-bin
 app-accessibility/accerciser 3.46.2 3.48.0: Interactive Python accessibility explorer
 app-accessibility/at-spi2-atk 2.46.0: Gtk module for bridging AT-SPI to Atk
 app-accessibility/at-spi2-core 2.56.5: D-Bus accessibility specifications and registration daemon
-app-accessibility/brltty 6.6-r1 6.6-r2 6.7: Daemon that provides access to the Linux/Unix console for a blind person
+app-accessibility/brltty 6.7: Daemon that provides access to the Linux/Unix console for a blind person
 app-accessibility/caribou 0.4.21-r8: Input assistive technology intended for switch and pointer users
 app-accessibility/edbrowse 3.8.13 3.8.15: Combination editor, browser, and mail client that is 100% text based
 app-accessibility/emacspeak 56.0-r1 60.0-r1 9999: The emacspeak audio desktop
@@ -922,7 +922,7 @@ app-admin/apg 2.3.0b_p20150129-r1 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.707.0 1.2.764.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.43.5 1.43.10 1.43.15 1.44.4 1.44.7 1.44.11: Universal Command Line Environment for AWS
+app-admin/awscli 1.43.5 1.43.10 1.43.15 1.44.4 1.44.7 1.44.11 1.44.12: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.10.0 2025.12.0: Bitwarden password manager desktop client
@@ -1161,7 +1161,7 @@ app-arch/innoextract 1.10_pre20250206 1.10_pre20250206-r1: A tool to unpack inst
 app-arch/lbzip2 2.5_p20181227-r3: Parallel bzip2 utility
 app-arch/lcab 1.0_beta12: CAB file creation tool
 app-arch/lha 114i_p20250112: Utility for creating and opening lzh archives
-app-arch/libarchive 3.8.1 3.8.2 3.8.3 3.8.4: Multi-format archive and compression library
+app-arch/libarchive 3.8.3 3.8.4 3.8.5: Multi-format archive and compression library
 app-arch/libdeflate 1.23 1.24 1.25 9999: Heavily optimized DEFLATE/zlib/gzip (de)compression
 app-arch/libpar2 0.4-r1: A library for par2, extracted from par2cmdline
 app-arch/lrzip 0.651 0.651-r1: Long Range ZIP or Lzma RZIP optimized for compressing large files
@@ -3853,7 +3853,7 @@ dev-build/rocm-cmake 6.3.3 6.4.3 7.0.2 7.1.0: Radeon Open Compute CMake Modules
 dev-build/samurai 1.2-r3 9999: ninja-compatible build tool written in C
 dev-build/scons 4.10.1: Extensible Python-based build utility
 dev-build/slibtool 0.6.1 0.7.0 0.7.1 0.7.2 0.7.3 0.7.4 9999: A strong libtool implementation, written in C
-dev-build/steve 1.3.1 1.4.0 9999: A load-balancing jobserver for Gentoo
+dev-build/steve 1.4.0 9999: A load-balancing jobserver for Gentoo
 dev-build/tinycmmc 0.1.0 9999: Tiny CMake Module Collections
 dev-build/xfce4-dev-tools 4.20.0 4.21.0: A set of scripts and m4/autoconf macros that ease build system maintenance
 dev-cpp/ETL 1.4.1: Multi-platform class and template library
@@ -3971,7 +3971,7 @@ dev-db/cdb 0.75-r4 0.75-r5: Fast, reliable, simple package for creating and read
 dev-db/citus 12.1.9 12.1.10 13.0.4 13.0.5 13.1.0 13.1.1 13.2.0 9999: Open-source postgresql extension for clustering/multi-node setups
 dev-db/cockroach 2.1.5-r1 19.1.1-r1: open source database for building cloud services
 dev-db/datadraw 3.1.1 3.1.1-r1: feature rich database generator for high performance C applications
-dev-db/dbeaver-bin 25.3.1 25.3.2: Free universal database tool (community edition)
+dev-db/dbeaver-bin 25.3.1-r1 25.3.2-r1: Free universal database tool (community edition)
 dev-db/duckdb 1.4.2 1.4.3: high-performance analytical database system
 dev-db/etcd 3.4.31 3.5.12 3.5.15 3.5.17 3.5.18: Highly-available key value store for shared configuration and service discovery
 dev-db/freetds 1.5 1.5.6: Tabular Datastream Library
@@ -8212,8 +8212,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.41.5 1.42.4 1.42.9 1.42.14 1.42.17 1.42.21: The AWS SDK for Python
-dev-python/botocore 1.41.5 1.42.4 1.42.9 1.42.14 1.42.17 1.42.21: Low-level, data-driven core of boto 3
+dev-python/boto3 1.41.5 1.42.4 1.42.9 1.42.14 1.42.17 1.42.21 1.42.22: The AWS SDK for Python
+dev-python/botocore 1.41.5 1.42.4 1.42.9 1.42.14 1.42.17 1.42.21 1.42.22: Low-level, data-driven core of boto 3
 dev-python/bottle 0.12.25-r1 0.13.3 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.5.0 1.6.0_rc1 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.25 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8239,7 +8239,7 @@ dev-python/cerberus 1.3.7 1.3.8: A lightweight and extensible data-validation li
 dev-python/certifi 3024.7.22: A certifi hack to use system trust store on Linux/FreeBSD
 dev-python/cffi 1.17.1 2.0.0: Foreign Function Interface for Python calling C code
 dev-python/cfgv 3.4.0 3.5.0: Validate configuration and produce human-readable error messages
-dev-python/cfn-lint 1.39.1 1.40.4 1.41.0 1.42.0 1.42.1 1.43.0 1.43.1 1.43.2: CloudFormation Linter
+dev-python/cfn-lint 1.39.1 1.40.4 1.41.0 1.42.1 1.43.2: CloudFormation Linter
 dev-python/cftime 1.6.4_p1 1.6.5: Time-handling functionality from netcdf4-python
 dev-python/chainstream 1.0.1 1.0.2: Chain I/O-Streams together into a single stream
 dev-python/chameleon 4.6.0: Fast HTML/XML template compiler for Python
@@ -8366,7 +8366,7 @@ dev-python/django-debug-toolbar 6.1.0: A configurable set of panels that display
 dev-python/django-filter 25.2: Django app allowing declarative dynamic QuerySet filtering from URL parameters
 dev-python/django-js-asset 3.1.2: Script tag with additional attributes for django.forms.Media
 dev-python/django-otp 1.6.3: Django framework adding two-factor authentication using one-time passwords
-dev-python/django-polymorphic 4.5.1 4.5.2 4.6.0: Seamless Polymorphic Inheritance for Django Models
+dev-python/django-polymorphic 4.6.0: Seamless Polymorphic Inheritance for Django Models
 dev-python/django-prometheus 2.4.1: Library to export Django metrics for Prometheus
 dev-python/django-redis 6.0.0: Full featured redis cache backend for Django
 dev-python/django-registration 5.2.1: user-registration application for Django
@@ -8512,7 +8512,7 @@ dev-python/gitpython 3.1.45 3.1.46: Library used to interact with Git repositori
 dev-python/gmpy2 2.2.1 2.2.2 2.3.0_alpha3: Python bindings for GMP, MPC, MPFR and MPIR libraries
 dev-python/google-api-core 2.25.1 2.25.2 2.26.0 2.27.0 2.28.0 2.28.1: Core Library for Google Client Libraries
 dev-python/google-api-python-client 2.184.0 2.185.0 2.186.0 2.187.0: Google API Client for Python
-dev-python/google-auth 2.41.1 2.43.0 2.45.0: Google Authentication Library
+dev-python/google-auth 2.41.1 2.43.0 2.45.0 2.46.0: Google Authentication Library
 dev-python/google-auth-httplib2 0.2.1 0.3.0: httplib2 Transport for Google Auth
 dev-python/google-auth-oauthlib 1.2.3: Google Authentication Library
 dev-python/google-i18n-address 3.1.1: Google's i18n address metadata repository
@@ -8572,7 +8572,7 @@ dev-python/hvac 2.3.0 2.4.0: HashiCorp Vault API client
 dev-python/hypercorn 0.17.3 0.18.0: A ASGI Server based on Hyper libraries and inspired by Gunicorn
 dev-python/hyperframe 6.1.0: HTTP/2 framing layer for Python
 dev-python/hyperlink 21.0.0-r1: A featureful, correct URL for Python
-dev-python/hypothesis 6.147.0 6.148.5 6.148.7 6.148.8 6.148.9 6.148.11 6.148.12 6.149.0: A library for property based testing
+dev-python/hypothesis 6.147.0 6.148.5 6.148.7 6.148.8 6.148.9 6.148.11 6.148.12 6.149.0 6.149.1: A library for property based testing
 dev-python/hypothesis-gentoo 3 4: Plugin to create 'gentoo' hypothesis profile, disabling health checks
 dev-python/icalendar 6.3.1 6.3.2: Package used for parsing and generating iCalendar files (RFC 2445)
 dev-python/id 1.5.0: A tool for generating OIDC identities
@@ -8608,7 +8608,7 @@ dev-python/ipdb 0.13.13: IPython-enabled pdb
 dev-python/ipy 1.01-r1: Class and tools for handling of IPv4 and IPv6 addresses and networks
 dev-python/ipykernel 6.30.1 6.30.1-r1 6.31.0 7.0.0 7.0.1 7.1.0: IPython Kernel for Jupyter
 dev-python/ipyparallel 9.0.1 9.0.2: Interactive Parallel Computing with IPython
-dev-python/ipython 8.37.0 9.3.0 9.4.0 9.5.0 9.6.0 9.7.0 9.8.0: Advanced interactive shell for Python
+dev-python/ipython 8.37.0 9.4.0 9.7.0 9.8.0 9.9.0: Advanced interactive shell for Python
 dev-python/ipython-genutils 0.2.0-r4: Vestigial utilities from IPython
 dev-python/ipython-pygments-lexers 1.1.1: Pygments lexers for syntax-highlighting IPython code and sessions
 dev-python/ipywidgets 8.1.7 8.1.7-r1 8.1.8: IPython HTML widgets for Jupyter
@@ -8945,7 +8945,7 @@ dev-python/patch-ng 1.18.1 1.19.0: Library to parse and apply unified diffs, for
 dev-python/path 17.1.0 17.1.1: A module wrapper for os.path
 dev-python/path-and-address 2.0.1-r2: Functions for server CLI applications used by humans
 dev-python/pathable 0.4.4 0.5.0_beta1 0.5.0_beta2: Object-oriented paths
-dev-python/pathspec 0.12.1: Utility library for gitignore style pattern matching of file paths
+dev-python/pathspec 0.12.1 1.0.0: Utility library for gitignore style pattern matching of file paths
 dev-python/pathvalidate 3.3.0: A Python library to sanitize/validate a string such as filenames/file-paths/etc
 dev-python/patiencediff 0.2.15 0.2.18: Python implementation of the patiencediff algorithm
 dev-python/patsy 1.0.1 1.0.1-r1 1.0.2: Python module to describe statistical models and design matrices
@@ -9040,8 +9040,8 @@ dev-python/pyaml 25.7.0: PyYAML-based module to produce pretty and readable YAML
 dev-python/pyarrow 20.0.0 21.0.0 22.0.0 9999: Python library for Apache Arrow
 dev-python/pyasn1 0.6.1: ASN.1 library for Python
 dev-python/pyasn1-modules 0.4.2: pyasn1 modules
-dev-python/pyasynchat 1.0.4: Make asynchat available for Python 3.12 onwards
-dev-python/pyasyncore 1.0.4: Make asyncore available for Python 3.12 onwards
+dev-python/pyasynchat 1.0.4 1.0.5: Make asynchat available for Python 3.12 onwards
+dev-python/pyasyncore 1.0.4 1.0.5: Make asyncore available for Python 3.12 onwards
 dev-python/pyatspi 2.46.1: Python client bindings for D-Bus AT-SPI
 dev-python/pyaudio 0.2.14: Python bindings for PortAudio
 dev-python/pybind11 2.13.6 3.0.0-r1 3.0.1: AST-based Python refactoring library
@@ -10037,7 +10037,7 @@ dev-ruby/fakefs 2.5.0 2.7.1 3.0.3 3.0.4 3.2.0: A fake filesystem. Use it in your
 dev-ruby/faker 3.5.1 3.5.2 3.5.3: A library for generating fake data such as names, addresses, and phone numbers
 dev-ruby/faraday 1.10.3 2.13.2 2.13.3 2.13.4 2.14.0: HTTP/REST API client library with pluggable components
 dev-ruby/faraday-follow_redirects 0.3.0 0.4.0 0.5.0: Perform multipart-post requests using Faraday
-dev-ruby/faraday-gzip 3.0.4: Faraday plugin to set compression headers and decompress responses.
+dev-ruby/faraday-gzip 3.0.4 3.1.0: Faraday plugin to set compression headers and decompress responses.
 dev-ruby/faraday-httpclient 1.0.1: Faraday adapter for HTTPClient
 dev-ruby/faraday-multipart 1.1.0 1.1.1 1.2.0: Perform multipart-post requests using Faraday
 dev-ruby/faraday-net_http 1.0.1 2.1.0 3.2.0 3.4.0 3.4.1 3.4.2: Faraday adapter for Net::HTTP
@@ -10063,7 +10063,7 @@ dev-ruby/filesize 0.2.0-r1: Small class for handling filesizes with both the SI 
 dev-ruby/fileutils 1.7.3 1.8.0: Several file utility methods for copying, moving, removing, etc
 dev-ruby/filigree 0.4.1-r1: New classes and extensions to core library classes
 dev-ruby/flexmock 2.4.2 3.0.2: Simple mock object library for Ruby unit testing
-dev-ruby/flog 4.8.0 4.9.0 4.9.1 4.9.2: Flog reports the most tortured code in an easy to read pain report
+dev-ruby/flog 4.8.0 4.9.0 4.9.1 4.9.2 4.9.3: Flog reports the most tortured code in an easy to read pain report
 dev-ruby/font-awesome-rails 4.7.0.9: Font-awesome for the asset pipeline
 dev-ruby/forgery 0.8.1-r1: Easy and customizable generation of forged data
 dev-ruby/forwardable 1.3.3 1.4.0: Provides delegation of specified methods to a designated object
@@ -10157,7 +10157,7 @@ dev-ruby/log4r 1.1.10-r3: A comprehensive and flexible logging library written i
 dev-ruby/logger 1.6.6 1.7.0: Provides a simple logging utility for outputting messages
 dev-ruby/loofah 2.24.0 2.24.1 2.25.0: Library for manipulating and transforming HTML/XML documents and fragments.
 dev-ruby/loquacious 1.9.1-r4: Descriptive configuration files for Ruby written in Ruby
-dev-ruby/lumberjack 1.3.4 1.4.2 2.0.3: A simple, powerful, and very fast logging utility
+dev-ruby/lumberjack 1.3.4 1.4.2 2.0.3 2.0.4: A simple, powerful, and very fast logging utility
 dev-ruby/mab 0.0.3-r2: Markup as Ruby
 dev-ruby/magic 0.2.9-r2: Ruby FFI bindings to libmagic
 dev-ruby/mail 2.8.1 2.9.0: An email handling library
@@ -10819,7 +10819,7 @@ dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semanti
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.4 2025.2.5: A complete toolset for C and C++ development
 dev-util/cloc 1.96 2.00: Count Lines of Code
-dev-util/cmocka 1.1.5-r1 1.1.7 1.1.8: Unit testing framework for C
+dev-util/cmocka 1.1.5-r1 1.1.7 1.1.8 2.0.1: Unit testing framework for C
 dev-util/coccigrep 1.21: A semantic grep for the C language
 dev-util/coccinelle 1.1.1-r6 1.3.0: Program matching and transformation engine
 dev-util/codeblocks 20.03_p13518-r2 25.03-r1 25.03-r2 9999: The open source, cross platform, free C, C++ and Fortran IDE
@@ -11069,7 +11069,7 @@ dev-util/sel 0.08.4-r2: A filemanager for shell scripts
 dev-util/selenium-manager 4.26.0-r1 4.34.0 4.35.0 4.36.0 4.37.0 4.38.0 4.39.0: CLI tool that manages the browser/driver infrastructure required by Selenium
 dev-util/serialtalk 1.3 9999: simple command-line tool to talk to serial devices
 dev-util/sh 3.11.0: A shell parser, formatter, and interpreter with bash support
-dev-util/shadowman 4: Unified compiler shadow link directory updater
+dev-util/shadowman 4 5: Unified compiler shadow link directory updater
 dev-util/shards 0.19.1: Dependency manager for the Crystal language
 dev-util/shc 4.0.3: A (shell-) script compiler/scrambler
 dev-util/shellcheck 0.9.0-r2: Shell script analysis tool
@@ -11264,7 +11264,7 @@ games-action/noiz2sa 0.51a-r2: Abstract Shooting Game
 games-action/orbital-eunuchs-sniper 1.30-r1: Snipe terrorists from your orbital base
 games-action/postalplus 1-r1: Ultraviolent and controversial game featuring the Postal Dude
 games-action/powermanga 0.93.1-r1: Arcade 2D shoot-em-up game
-games-action/prismlauncher 9.1-r1 9.4 9999: Custom, open source Minecraft launcher
+games-action/prismlauncher 9.1-r1 9.4-r1 9999: Custom, open source Minecraft launcher
 games-action/psychonauts-gog 2.0.0.4: A mind-bending platforming adventure from Double Fine Productions
 games-action/psychonauts-hb 20130506: A mind-bending platforming adventure from Double Fine Productions
 games-action/psychonauts2-hb 1097251: Platform-adventure game with cinematic style and customizable psychic powers
@@ -15671,8 +15671,8 @@ net-vpn/nstx 1.1_beta6-r3: IP over DNS tunnel
 net-vpn/ocserv 1.3.0-r2 1.3.0-r11 9999: Openconnect SSL VPN server
 net-vpn/openconnect 9.12-r1 9.12-r2 9999: Free client for Cisco AnyConnect SSL VPN software
 net-vpn/openfortivpn 1.23.1: Fortinet compatible VPN client
-net-vpn/openvpn 2.6.12-r1 2.6.14 2.6.17 9999: Robust and highly flexible tunneling application compatible with many OSes
-net-vpn/ovpn-dco 0.2.20230426 0.2.20231117 0.2.20241216 9999: OpenVPN Data Channel Offload in the linux kernel
+net-vpn/openvpn 2.6.12-r1 2.6.14 2.6.17-r1 9999: Robust and highly flexible tunneling application compatible with many OSes
+net-vpn/ovpn-dco 0.2.20230426 0.2.20231117 0.2.20241216 0.2.20251017 9999: OpenVPN Data Channel Offload in the linux kernel
 net-vpn/pptpd 1.4.0-r5: Linux Point-to-Point Tunnelling Protocol Server
 net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client powered by Bitmask
 net-vpn/strongswan 5.9.13 5.9.14 5.9.14-r2 6.0.1 6.0.1-r1 6.0.1-r2 6.0.2 6.0.3: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
@@ -17022,13 +17022,13 @@ sys-apps/colorized-logs 2.6 2.7: Tools for logs with ANSI color
 sys-apps/config-site 0 99999999: config.site to load dropins from config.site.d
 sys-apps/consolation 0.0.7: libinput based console mouse daemon
 sys-apps/conspy 1.16: Remote control for Linux virtual consoles
-sys-apps/coreutils 9.7 9.8-r1 9.9 9.9-r10 9999: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
+sys-apps/coreutils 9.7 9.8-r1 9.9 9.9-r1 9.9-r11 9999: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
 sys-apps/cpint 2.5.3: Linux/390 Interface to z/VM's Control Program
 sys-apps/cpu-x 5.3.1 5.4.0: A Free software that gathers information on CPU, motherboard and more
 sys-apps/cpuid 20250513: Linux tool to dump x86 CPUID information about the CPUs
 sys-apps/cracklib-words 2.10.2 2.10.3: Large set of crack/cracklib dictionaries
 sys-apps/crazydiskinfo 1.1.0-r1: Interactive TUI S.M.A.R.T viewer
-sys-apps/cyme 2.2.7 2.2.8: List system USB buses and devices; a modern cross-platform `lsusb`
+sys-apps/cyme 2.2.8 2.2.9: List system USB buses and devices; a modern cross-platform `lsusb`
 sys-apps/daemonize 1.7.8-r2: Runs a command as a Unix daemon
 sys-apps/daisydog 2014.05.30-r1 2024.07.12: A very simple /dev/watchdog daemon
 sys-apps/dbus 1.16.2: A message bus system, a simple way for applications to talk to each other
@@ -17597,7 +17597,7 @@ sys-fs/cryptsetup 2.8.1-r1 2.8.3: Tool to setup encrypted devices with dm-crypt
 sys-fs/ctmg 1.2: Simple wrapper around cryptsetup for encrypted containers
 sys-fs/davl 1.2.4-r2: Visualizes the fragmentation status of ext2/3 filesystems
 sys-fs/dd-rescue 1.99.13-r1 1.99.17 1.99.20 1.99.21 1.99.22 9999: Similar to dd but can copy from source with errors
-sys-fs/ddrescue 1.29.1: Copy data from one file or block device to another with read-error recovery
+sys-fs/ddrescue 1.29.1 1.30: Copy data from one file or block device to another with read-error recovery
 sys-fs/dfc 3.1.1: A simple CLI tool that display file system usage, with colors
 sys-fs/diskdev_cmds 332.14_p1-r4: HFS and HFS+ utils ported from OSX, supplies mkfs and fsck
 sys-fs/dislocker 0.7.3_p20250513: Dislocker is used to read BitLocker encrypted partitions
@@ -17691,7 +17691,7 @@ sys-fs/ubi_reader 0.8.5-r1 0.8.5-r2: Collection of Python scripts for extracting
 sys-fs/udev-init-scripts 35 9999: udev startup scripts for openrc
 sys-fs/udftools 2.3: Ben Fennema's tools for packet writing and the UDF filesystem
 sys-fs/udiskie 2.5.7-r1 2.5.8 2.5.8-r1: An automatic disk mounting service using udisks
-sys-fs/udisks 2.10.2 2.11.0: Daemon providing interfaces to work with storage devices
+sys-fs/udisks 2.10.2-r1 2.11.0-r1: Daemon providing interfaces to work with storage devices
 sys-fs/unionfs-fuse 3.7 9999: Self-syncing tree-merging file system based on FUSE
 sys-fs/vhba 20240202 20240917 20250329: Virtual (SCSI) Host Bus Adapter kernel module for the CDEmu suite
 sys-fs/vzquota 3.1: OpenVZ VPS disk quota utility
@@ -18519,7 +18519,7 @@ x11-misc/cdm 0.7: The Console Display Manager
 x11-misc/chgres 0.1-r3: A very simple command line utility for changing X resolutions
 x11-misc/clipmenu 6.2.0-r1 9999: Clipboard management
 x11-misc/clipnotify 1.0.2: Notify on new X clipboard events
-x11-misc/colord 1.4.8: System service to accurately color manage input and output devices
+x11-misc/colord 1.4.8-r1: System service to accurately color manage input and output devices
 x11-misc/compose-tables 1.8.12: X.Org Compose Key tables from libX11
 x11-misc/copyq 13.0.0: Clipboard manager with advanced features
 x11-misc/dclock 2.2.2_p12: Digital clock for the X window system
