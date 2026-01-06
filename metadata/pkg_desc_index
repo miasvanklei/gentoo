@@ -2984,6 +2984,7 @@ app-office/abiword-docs 3.0.2-r1: Fully featured yet light and fast cross platfo
 app-office/auto-multiple-choice 1.6.0: Create and manage multiple choice questionnaries, including automated marking
 app-office/calcurse 4.8.1-r1 4.8.2: A text-based calendar and scheduling application
 app-office/calligra 25.12.0: KDE Office Suite
+app-office/calligraplan 4.0.0: Project management application
 app-office/denaro 2024.2.0: A personal finance manager
 app-office/dia 0.97.3-r4 0.98_pre20250913: Diagram/flowchart creation program
 app-office/dia2code 1.0.0-r2: Convert UML diagrams produced with Dia to various source code flavours
@@ -10907,7 +10908,7 @@ dev-util/gitchangelog 3.2.0: Creates a nicely formatted changelog from git log h
 dev-util/github-cli 2.76.2 2.78.0 2.81.0 9999: GitHub CLI
 dev-util/gitlab-ci-linter 2.4.0: linter for .gitlab-ci.yml files
 dev-util/gitlab-cli 1.65.0 1.72.0: the official gitlab command line interface
-dev-util/gitlab-runner 18.4.0 18.5.0 18.6.2: The official GitLab Runner, written in Go
+dev-util/gitlab-runner 18.5.0 18.6.6 18.7.1: The official GitLab Runner, written in Go
 dev-util/glade 3.40.0-r3: A user interface designer for GTK+ and GNOME
 dev-util/glib-utils 2.82.5 2.84.4 2.86.1: Build utilities for GLib using projects
 dev-util/global 6.6.14: Tag system to find an object location in various sources
@@ -13902,7 +13903,7 @@ media-plugins/x42-avldrums 0.7.3 9999: AVLinux Drumkits
 media-plugins/x42-plugins 20240611 99999999: Collection of LV2 plugins
 media-plugins/xsynth-dssi 0.9.4: A software synthesizer plugin for the DSSI Soft Synth Interface
 media-plugins/zam-plugins 4.2: Collection of LV2/LADSPA/VST/JACK audio plugins for high quality processing
-media-radio/adifmerg 31-r2: A small conversion and check utility for ADIF files
+media-radio/adifmerg 31-r2 9999 20250112: A small conversion and check utility for ADIF files
 media-radio/ax25-apps 0.0.8_rc5-r1: Basic AX.25 (Amateur Radio) user tools, additional daemons
 media-radio/ax25-tools 0.0.10_rc5-r1: Basic AX.25 (Amateur Radio) administrative tools and daemons
 media-radio/chirp 20240606-r1: A free, open-source tool for programming your radio
@@ -15634,7 +15635,7 @@ net-proxy/tsocks 1.8_beta5-r9: Transparent SOCKS v4 proxying library
 net-proxy/wwwoffle 2.9j: Web caching proxy suitable for non-permanent Internet connections
 net-proxy/ziproxy 3.3.2-r1: Forwarding, non-caching, compressing web proxy server
 net-voip/mumble 1.5.735-r2 1.6.0_pre20250920-r1 9999: Mumble is an open source, low-latency, high quality voice chat software
-net-voip/murmur 1.5.735 1.6.0_pre20250920-r1 9999: Mumble is an open source, low-latency, high quality voice chat software
+net-voip/murmur 1.5.735 1.6.0_pre20250920-r2 9999: Mumble is an open source, low-latency, high quality voice chat software
 net-voip/sipvicious 0.3.4-r1: SIPVicious is a SIP security package
 net-voip/umurmur 0.3.1: Minimalistic Murmur (Mumble server)
 net-voip/yate 6.2.0: The Yate AV Suite
@@ -15676,7 +15677,7 @@ net-vpn/ovpn-dco 0.2.20230426 0.2.20231117 0.2.20241216 0.2.20251017 9999: OpenV
 net-vpn/pptpd 1.4.0-r5: Linux Point-to-Point Tunnelling Protocol Server
 net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client powered by Bitmask
 net-vpn/strongswan 5.9.13 5.9.14 5.9.14-r2 6.0.1 6.0.1-r1 6.0.1-r2 6.0.2 6.0.3: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
-net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6 1.92.1: Tailscale vpn client
+net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6 1.92.1 1.92.4: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
 net-vpn/tor 0.4.8.21 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 0.10.13 0.10.14 0.10.15: Launch applications via VPN tunnels using temporary network namespaces
@@ -16274,7 +16275,7 @@ sci-libs/profnet 1.0.22: Neural network architecture for profacc
 sci-libs/profphd-utils 1.0.10-r1: Additional utils for profphd
 sci-libs/proj 9.4.1 9.6.2 9.7.0 9999: PROJ coordinate transformation software
 sci-libs/punc 1.5-r1: Portable Understructure for Numerical Computing
-sci-libs/pyshp 2.4.1 3.0.2_p1: Pure Python read/write support for ESRI Shapefile format
+sci-libs/pyshp 2.4.1 3.0.2_p1 3.0.3: Pure Python read/write support for ESRI Shapefile format
 sci-libs/qd 2.3.24: Quad-double and double-double float arithmetics
 sci-libs/qfits 6.2.0-r1: ESO stand-alone C library offering easy access to FITS files
 sci-libs/qrupdate 1.1.2-r2: Library for updating of QR and Cholesky decompositions
@@ -17466,14 +17467,14 @@ sys-cluster/keepalived 2.2.7 2.2.8 2.3.3: A strong & robust keepalive facility t
 sys-cluster/knem 1.1.4_p20250126 9999: High-Performance Intra-Node MPI Communication
 sys-cluster/kops 1.28.2 1.30.0: Kubernetes Operations
 sys-cluster/kronosnet 1.19 1.19-r1 1.23 1.25: Network abstraction layer designed for High Availability use cases
-sys-cluster/kube-apiserver 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes API server
-sys-cluster/kube-controller-manager 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Controller Manager
-sys-cluster/kube-proxy 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Proxy service
+sys-cluster/kube-apiserver 1.32.9 1.32.10 1.32.11 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes API server
+sys-cluster/kube-controller-manager 1.32.9 1.32.10 1.32.11 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Controller Manager
+sys-cluster/kube-proxy 1.32.9 1.32.10 1.32.11 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Proxy service
 sys-cluster/kube-router 1.5.0 1.6.0: A turnkey solution for Kubernetes networking
-sys-cluster/kube-scheduler 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Scheduler
-sys-cluster/kubeadm 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: CLI to Easily bootstrap a secure Kubernetes cluster
-sys-cluster/kubectl 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: CLI to run commands against Kubernetes clusters
-sys-cluster/kubelet 1.32.9 1.32.10 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Node Agent
+sys-cluster/kube-scheduler 1.32.9 1.32.10 1.32.11 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Scheduler
+sys-cluster/kubeadm 1.32.9 1.32.10 1.32.11 1.33.5 1.33.6 1.34.1 1.34.2: CLI to Easily bootstrap a secure Kubernetes cluster
+sys-cluster/kubectl 1.32.9 1.32.10 1.32.11 1.33.5 1.33.6 1.34.1 1.34.2: CLI to run commands against Kubernetes clusters
+sys-cluster/kubelet 1.32.9 1.32.10 1.32.11 1.33.5 1.33.6 1.34.1 1.34.2: Kubernetes Node Agent
 sys-cluster/kubeletctl 1.12 1.13: A client for kubelet
 sys-cluster/kubelogin 1.34.0 1.34.2: kubectl plugin for Kubernetes OpenID Connect authentication
 sys-cluster/kubeseal 0.30.0 0.32.2: Client-side utility for one-way encrypted secrets in kubernetes
