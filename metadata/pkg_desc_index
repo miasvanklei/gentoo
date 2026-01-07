@@ -987,7 +987,7 @@ app-admin/graylog 4.2.7: Free and open source log management
 app-admin/gtkdiskfree 2.0.4_p20200224-r2: Graphical tool to show free disk space like df
 app-admin/hardinfo 0.6_alpha_pre20240320: System information and benchmark tool for Linux systems
 app-admin/haskell-updater 1.3.2-r1 1.3.3 1.4.0.0 1.4.1.0 9999: Rebuild Haskell dependencies in Gentoo
-app-admin/hcloud 1.51.0 1.58.0: A command-line interface for Hetzner Cloud
+app-admin/hcloud 1.51.0 1.59.0: A command-line interface for Hetzner Cloud
 app-admin/hddtemp 0.3_beta15-r29: A simple utility to read the temperature of SMART capable hard drives
 app-admin/helm 3.17.2 3.18.6 3.19.0 3.19.2: Kubernetes Package Manager
 app-admin/ide-smart 1.4-r3: A tool to read SMART information from harddiscs
@@ -5603,7 +5603,7 @@ dev-libs/libnl 3.10.0 3.11.0 9999: Libraries providing APIs to netlink protocol 
 dev-libs/libnop 2021.11.03: C++ Native Object Protocols
 dev-libs/libnsfb 0.2.2-r1: C library for framebuffer abstraction
 dev-libs/libnsutils 0.1.1 9999: C library for base64 and time
-dev-libs/libofx 0.10.9: Library to support the Open Financial eXchange XML format
+dev-libs/libofx 0.10.9 0.10.9-r1: Library to support the Open Financial eXchange XML format
 dev-libs/liboil 0.3.17-r5: Library of simple functions that are optimized for various CPUs
 dev-libs/libopenrazer 0.4.0: Qt wrapper around the D-Bus API from OpenRazer
 dev-libs/liborcus 0.19.2-r1 0.20.0 9999: Standalone file import filter library for spreadsheet documents
@@ -10064,7 +10064,7 @@ dev-ruby/filesize 0.2.0-r1: Small class for handling filesizes with both the SI 
 dev-ruby/fileutils 1.7.3 1.8.0: Several file utility methods for copying, moving, removing, etc
 dev-ruby/filigree 0.4.1-r1: New classes and extensions to core library classes
 dev-ruby/flexmock 2.4.2 3.0.2: Simple mock object library for Ruby unit testing
-dev-ruby/flog 4.8.0 4.9.0 4.9.1 4.9.2 4.9.3: Flog reports the most tortured code in an easy to read pain report
+dev-ruby/flog 4.8.0 4.9.0 4.9.1 4.9.2 4.9.3 4.9.4: Flog reports the most tortured code in an easy to read pain report
 dev-ruby/font-awesome-rails 4.7.0.9: Font-awesome for the asset pipeline
 dev-ruby/forgery 0.8.1-r1: Easy and customizable generation of forged data
 dev-ruby/forwardable 1.3.3 1.4.0: Provides delegation of specified methods to a designated object
@@ -10471,7 +10471,7 @@ dev-ruby/stream 0.5.5: Module Stream defines an interface for external iterators
 dev-ruby/stringex 2.8.6: Extensions for Ruby's String class
 dev-ruby/stringio 3.1.6 3.1.7 3.1.8 3.1.9 3.2.0: Pseudo IO class from/to String.
 dev-ruby/strptime 0.2.5-r2: A fast strptime/strftime engine which uses VM
-dev-ruby/strscan 3.1.2 3.1.5 3.1.6: Provides lexical scanning operations on a String
+dev-ruby/strscan 3.1.5 3.1.6 3.1.7: Provides lexical scanning operations on a String
 dev-ruby/sus 0.32.0 0.33.1 0.34.0: A fast and scalable test runner
 dev-ruby/sus-fixtures-async 0.2.0-r1: Convenient fixture for testing async components in a reactor
 dev-ruby/sus-fixtures-console 0.3.1 0.4.1 0.5.0: Test fixtures for capturing Console output
@@ -10495,7 +10495,7 @@ dev-ruby/test_construct 2.0.2-r1: Creates temporary files and directories for te
 dev-ruby/test_declarative 0.0.6-r1: Simply adds a declarative test method syntax to test/unit
 dev-ruby/text 1.3.1-r1: A collection of text algorithms
 dev-ruby/text-hyphen 1.5.0: Hyphenates words according to the rules of the language the word is written in
-dev-ruby/thor 1.3.2 1.4.0: Simple and efficient tool for building self-documenting command line utilities
+dev-ruby/thor 1.3.2 1.4.0 1.5.0: Simple and efficient tool for building self-documenting command line utilities
 dev-ruby/thread_order 1.1.1: Test helper for ordering threaded code
 dev-ruby/thread_safe 0.3.6-r3: A collection of thread-safe versions of common core Ruby classes
 dev-ruby/tidy_table 0.0.5-r6: Tool to convert an array of struct into an HTML table
@@ -17189,7 +17189,7 @@ sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives
 sys-apps/pnputils 0.1-r1: Plug and Play BIOS utilities
 sys-apps/policycoreutils 3.8.1 9999: SELinux core utilities
 sys-apps/polychromatic 0.9.5 0.9.6 9999: RGB lighting management software for GNU/Linux powered by OpenRazer
-sys-apps/portage 3.0.69.3-r3 3.0.72-r1 3.0.73-r2 3.0.74 9999: The package management and distribution system for Gentoo
+sys-apps/portage 3.0.69.3-r3 3.0.72-r1 3.0.73-r2 3.0.74 3.0.75 9999: The package management and distribution system for Gentoo
 sys-apps/powerpc-utils 1.1.3.18-r4: PowerPC utilities and additional OldWorld apps
 sys-apps/ppc64-diag 2.7.9: Diagnostic tools for PowerLinux
 sys-apps/prctl 1.6-r1: Tool to query and modify process behavior

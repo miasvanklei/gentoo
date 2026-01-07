@@ -20,7 +20,7 @@ SRC_URI="https://github.com/rails/${PN}/archive/v${PV}.tar.gz -> ${PN}-git-${PV}
 
 LICENSE="MIT"
 SLOT="$(ver_cut 1)"
-KEYWORDS="~alpha amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~s390 ~sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86"
 IUSE="doc"
 
 # For initial target porting (new rubies), we can make these test deps
@@ -52,17 +52,11 @@ all_ruby_prepare() {
 
 	# Avoid specs depending on git, bug 724058
 	rm -f spec/quality_spec.rb || die
-
-	# Avoid currently broken readline specs (already fixed upstream)
-	rm -f spec/line_editor/readline_spec.rb spec/line_editor_spec.rb || die
-
-	# Avoid spec failing on whitespace difference in error message
-	sed -i -e '/raises an error for unknown switches/askip "whitespace differences"' spec/parser/options_spec.rb || die
 }
 
 each_ruby_test() {
 	case ${RUBY} in
-		*ruby35)
+		*ruby40)
 			einfo "Skipping tests due to circular dependencies"
 			;;
 		*)
