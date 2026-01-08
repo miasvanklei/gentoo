@@ -3834,7 +3834,7 @@ dev-build/gtk-doc-am 1.34.0: Automake files from gtk-doc
 dev-build/guildmaster 0_pre20250712 9999: FIFO-like jobserver node via CUSE
 dev-build/gyp 20200512145953-r1 99999999999999: GYP (Generate Your Projects) meta-build system
 dev-build/icmake 9.03.01-r1: Hybrid between a make utility and a shell scripting language
-dev-build/just 1.43.0 1.43.1 1.45.0: Just a command runner (with syntax inspired by 'make')
+dev-build/just 1.45.0 1.46.0: Just a command runner (with syntax inspired by 'make')
 dev-build/kas 4.5-r2 4.8.2 5.1: Setup tool for bitbake based projects
 dev-build/kbuild 0.1.9998.3499-r4 0.1.9998.3592 0.1.9998.3660-r1 9999: A makefile framework for writing simple makefiles for complex tasks
 dev-build/libtool 2.5.4 2.6.0 9999: A shared library tool for developers
@@ -5203,7 +5203,7 @@ dev-lang/fuzion 0.092: A language with a focus on simplicity, safety and correct
 dev-lang/gdl 1.0.4-r2: GNU Data Language
 dev-lang/gforth 0.7.3-r2: GNU Forth is a fast and portable implementation of the ANSI Forth language
 dev-lang/ghc 9.0.2-r4 9.2.8: The Glasgow Haskell Compiler
-dev-lang/gleam 1.13.0: A friendly language for building type-safe, scalable systems!
+dev-lang/gleam 1.13.0 1.14.0: A friendly language for building type-safe, scalable systems!
 dev-lang/gnucobol 3.2-r2: A free/libre COBOL compiler
 dev-lang/gnuprologjava 0.2.6-r2: GNU Prolog for Java is an implementation of ISO Prolog as a Java library
 dev-lang/go 1.24.11 1.25.5 9999: A concurrent garbage collected and typesafe programming language
@@ -10117,7 +10117,7 @@ dev-ruby/idn-ruby 0.1.5: LibIDN Ruby Bindings
 dev-ruby/image_processing 1.13.0 1.14.0: High-level image processing helper methods with libvips and ImageMagick
 dev-ruby/imagesize 0.1.1_p20100902-r2: Measure image size (GIF, PNG, JPEG, etc)
 dev-ruby/immutable-ruby 0.2.0: Efficient, immutable, thread-safe collection classes for Ruby
-dev-ruby/importmap-rails 1.2.3 2.1.0 2.2.0 2.2.2: Use ESM with importmap to manage JavaScript in Rails
+dev-ruby/importmap-rails 1.2.3 2.2.2 2.2.3: Use ESM with importmap to manage JavaScript in Rails
 dev-ruby/instance_storage 1.0.0-r2 2.0.0-r1: Manage class instances with dictionary
 dev-ruby/introspection 0.0.4-r2: Dynamic inspection of the hierarchy of method definitions on a Ruby object
 dev-ruby/io-console 0.8.0 0.8.1 0.8.2: add console capabilities to IO instances
@@ -10567,7 +10567,7 @@ dev-ruby/yard 0.9.37 0.9.38: Documentation generation tool for the Ruby programm
 dev-ruby/zeitwerk 2.7.0 2.7.2 2.7.3: Efficient and thread-safe code loader for Ruby
 dev-ruby/zentest 4.12.2: Testing tools: zentest, unit_diff, autotest, multiruby, and Test::Rails
 dev-ruby/zlib 3.2.1 3.2.2: Ruby interface for the zlib compression/decompression library
-dev-ruby/zstd-ruby 1.5.7.0 1.5.7.1 2.0.3 2.0.4: Ruby binding for zstd (Zstandard - Fast real-time compression algorithm).
+dev-ruby/zstd-ruby 1.5.7.0 1.5.7.1 2.0.3 2.0.4 2.0.5: Ruby binding for zstd (Zstandard - Fast real-time compression algorithm).
 dev-scheme/akku 1.1.0-r100: Language package manager for Scheme
 dev-scheme/bigloo 4.5b-r1: Practical Scheme Compiler with many extensions
 dev-scheme/bytestructures 2.0.2-r100: Structured access to bytevector contents
