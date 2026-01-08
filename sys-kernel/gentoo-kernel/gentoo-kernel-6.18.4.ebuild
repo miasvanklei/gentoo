@@ -3,18 +3,19 @@
 
 EAPI=8
 
+KERNEL_IUSE_GENERIC_UKI=1
 KERNEL_IUSE_MODULES_SIGN=1
 
 inherit kernel-build toolchain-funcs verify-sig
 
 BASE_P=linux-${PV%.*}
 PATCH_PV=${PV%_p*}
-PATCHSET=linux-gentoo-patches-5.15.195
+PATCHSET=linux-gentoo-patches-6.18.4
 # https://koji.fedoraproject.org/koji/packageinfo?packageID=8
 # forked to https://github.com/projg2/fedora-kernel-config-for-gentoo
-CONFIG_VER=6.1.102-gentoo
-GENTOO_CONFIG_VER=g17
-SHA256SUM_DATE=20251207
+CONFIG_VER=6.18.3-gentoo
+GENTOO_CONFIG_VER=g18
+SHA256SUM_DATE=20260108
 
 DESCRIPTION="Linux kernel built with Gentoo patches"
 HOMEPAGE="
@@ -43,6 +44,10 @@ SRC_URI+="
 		https://raw.githubusercontent.com/projg2/fedora-kernel-config-for-gentoo/${CONFIG_VER}/kernel-ppc64le-fedora.config
 			-> kernel-ppc64le-fedora.config.${CONFIG_VER}
 	)
+	riscv? (
+		https://raw.githubusercontent.com/projg2/fedora-kernel-config-for-gentoo/${CONFIG_VER}/kernel-riscv64-fedora.config
+			-> kernel-riscv64-fedora.config.${CONFIG_VER}
+	)
 	x86? (
 		https://raw.githubusercontent.com/projg2/fedora-kernel-config-for-gentoo/${CONFIG_VER}/kernel-i686-fedora.config
 			-> kernel-i686-fedora.config.${CONFIG_VER}
@@ -50,8 +55,8 @@ SRC_URI+="
 "
 S=${WORKDIR}/${BASE_P}
 
-KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc x86"
-IUSE="debug experimental hardened"
+KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
+IUSE="debug hardened"
 REQUIRED_USE="
 	arm? ( savedconfig )
 	hppa? ( savedconfig )
@@ -92,16 +97,7 @@ src_unpack() {
 src_prepare() {
 	local patch
 	eapply "${WORKDIR}/patch-${PATCH_PV}"
-	for patch in "${WORKDIR}/${PATCHSET}"/*.patch; do
-		eapply "${patch}"
-		# non-experimental patches always finish with Gentoo Kconfig
-		# when ! use experimental, stop applying after it
-		if [[ ${patch} == *Add-Gentoo-Linux-support-config-settings* ]] &&
-			! use experimental
-		then
-			break
-		fi
-	done
+	eapply "${WORKDIR}/${PATCHSET}"
 
 	default
 
@@ -113,7 +109,7 @@ src_prepare() {
 
 	# prepare the default config
 	case ${ARCH} in
-		arm | hppa | sparc)
+		arm | hppa | loong | sparc)
 			> .config || die
 		;;
 		amd64)
@@ -132,6 +128,9 @@ src_prepare() {
 			cp "${DISTDIR}/kernel-ppc64le-fedora.config.${CONFIG_VER}" .config || die
 			biendian=true
 			;;
+		riscv)
+			cp "${DISTDIR}/kernel-riscv64-fedora.config.${CONFIG_VER}" .config || die
+			;;
 		x86)
 			cp "${DISTDIR}/kernel-i686-fedora.config.${CONFIG_VER}" .config || die
 			;;
@@ -148,6 +147,7 @@ src_prepare() {
 	local merge_configs=(
 		"${T}"/version.config
 		"${dist_conf_path}"/base.config
+		"${dist_conf_path}"/6.12+.config
 	)
 	use debug || merge_configs+=(
 		"${dist_conf_path}"/no-debug.config
@@ -167,7 +167,10 @@ src_prepare() {
 		merge_configs+=( "${dist_conf_path}/big-endian.config" )
 	fi
 
-	use secureboot && merge_configs+=( "${dist_conf_path}/secureboot.config" )
+	use secureboot && merge_configs+=(
+		"${dist_conf_path}/secureboot.config"
+		"${dist_conf_path}/zboot.config"
+	)
 
 	kernel-build_merge_configs "${merge_configs[@]}"
 }
