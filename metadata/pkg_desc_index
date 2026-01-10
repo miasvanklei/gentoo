@@ -3996,7 +3996,7 @@ dev-db/m17n-db 1.8.10: Database for the m17n library
 dev-db/mariadb 10.6.22 10.6.22-r1 10.6.23-r1 10.6.23-r2 10.6.24 10.6.24-r1 10.11.13 10.11.13-r1 10.11.14-r1 10.11.14-r2 10.11.15 10.11.15-r1 11.4.7-r1 11.4.7-r2 11.4.8-r1 11.4.8-r2 11.4.8-r3 11.4.9 11.4.9-r1 11.8.3-r2 11.8.3-r3 11.8.3-r4 11.8.5 11.8.5-r1 12.0.2-r1 12.0.2-r2: An enhanced, drop-in replacement for MySQL
 dev-db/mariadb-connector-c 3.3.8 3.3.15 3.3.17 3.4.5-r1 3.4.7 9999: C client library for MariaDB/MySQL
 dev-db/mariadb-connector-odbc 3.1.18 3.2.7-r1: MariaDB Connector/ODBC
-dev-db/mongodb 5.0.30 5.0.31 6.0.22 6.0.25 7.0.18 7.0.23 8.0.8 8.0.12: A high-performance, open source, schema-free document-oriented database
+dev-db/mongodb 5.0.30 5.0.31 5.0.32 6.0.22 6.0.25 6.0.27 7.0.18 7.0.23 7.0.28 8.0.8 8.0.12: A high-performance, open source, schema-free document-oriented database
 dev-db/mongodb-compass-bin 1.48.1 1.48.2: GUI for MongoDB
 dev-db/mycli 1.41.2 1.42.0: CLI for MySQL Database with auto-completion and syntax highlighting
 dev-db/mydumper 0.20.1.2 0.21.2.2: A high-performance multi-threaded backup (and restore) toolset for MySQL
@@ -8227,7 +8227,7 @@ dev-python/btrfsutil 6.14 6.15 6.16 6.16.1 6.17 6.17.1: Library for managing Btr
 dev-python/build 1.3.0 1.4.0: A simple, correct PEP517 package builder
 dev-python/cachecontrol 0.14.3: httplib2 caching for requests
 dev-python/cachelib 0.13.0: Collection of cache libraries in the same API interface. Extracted from werkzeug
-dev-python/cachetools 6.2.2 6.2.3: Extensible memoizing collections and decorators
+dev-python/cachetools 6.2.2 6.2.3 6.2.4: Extensible memoizing collections and decorators
 dev-python/cairocffi 1.7.1 1.7.1-r1: CFFI-based drop-in replacement for Pycairo
 dev-python/calver 2025.4.17 2025.10.20: Setuptools extension for CalVer package versions
 dev-python/cangjie 1.3-r2 1.5.0: Python wrapper for libcangjie
@@ -8880,7 +8880,7 @@ dev-python/nox 2025.10.16 2025.11.12: Flexible test automation for Python
 dev-python/ntplib 0.4.0-r1: Python NTP library
 dev-python/nuitka 2.8.6 2.8.7 2.8.9: Python to native compiler
 dev-python/numexpr 2.11.0 2.12.1 2.13.1 2.14.1: Fast numerical array expression evaluator for Python and NumPy
-dev-python/numpy 1.26.4 2.2.6 2.3.1 2.3.2 2.3.2-r1 2.3.3 2.3.4 2.3.5 2.4.0_rc1 2.4.0: Fast array and numerical python library
+dev-python/numpy 1.26.4 2.2.6 2.3.1 2.3.2 2.3.2-r1 2.3.3 2.3.4 2.3.5 2.4.0_rc1 2.4.0 2.4.1: Fast array and numerical python library
 dev-python/numpydoc 1.9.0-r1 1.10.0: Sphinx extension to support docstrings in Numpy format
 dev-python/nvidia-ml-py 12.575.51 13.590.44: Python bindings to the NVIDIA Management Library
 dev-python/oauthlib 3.3.1: Spec-compliant and thorough implementation of the OAuth request-signing logic
@@ -8909,7 +8909,7 @@ dev-python/orderly-set 5.4.1 5.5.0: A package containing multiple implementation
 dev-python/orjson 3.11.3 3.11.4 3.11.4-r1 3.11.5: Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
 dev-python/os-client-config 2.3.0: OpenStack Client Configuation Library
 dev-python/os-service-types 1.8.0 1.8.1 1.8.2: A library to handle official service types for OpenStack and it's aliases
-dev-python/osc-lib 4.2.0: A package of common support modules for writing OSC plugins
+dev-python/osc-lib 4.2.0 4.3.0: A package of common support modules for writing OSC plugins
 dev-python/oslo-concurrency 7.2.0 7.3.0: Oslo Concurrency library
 dev-python/oslo-config 10.1.0 10.2.0: Oslo Configuration API
 dev-python/oslo-context 6.1.0 6.2.0: Helpers to maintain useful information about a request context
@@ -8947,7 +8947,7 @@ dev-python/path 17.1.0 17.1.1: A module wrapper for os.path
 dev-python/path-and-address 2.0.1-r2: Functions for server CLI applications used by humans
 dev-python/pathable 0.4.4 0.5.0_beta1 0.5.0_beta2: Object-oriented paths
 dev-python/pathspec 0.12.1 1.0.0 1.0.1 1.0.2 1.0.3: Utility library for gitignore style pattern matching of file paths
-dev-python/pathvalidate 3.3.0: A Python library to sanitize/validate a string such as filenames/file-paths/etc
+dev-python/pathvalidate 3.3.0 3.3.1: A Python library to sanitize/validate a string such as filenames/file-paths/etc
 dev-python/patiencediff 0.2.15 0.2.18: Python implementation of the patiencediff algorithm
 dev-python/patsy 1.0.1 1.0.1-r1 1.0.2: Python module to describe statistical models and design matrices
 dev-python/pbkdf2 1.3-r2: Implementation of PBKDF2, specified in RSA PKCS#5 v2.0
@@ -9746,7 +9746,7 @@ dev-python/webcolors 24.11.1 25.10.0: Color names and value formats defined by t
 dev-python/webencodings 0.5.1-r2: Character encoding aliases for legacy web content
 dev-python/webob 1.8.9: WSGI request and response object
 dev-python/websocket-client 1.8.0 1.9.0: WebSocket client for python with hybi13 support
-dev-python/websockets 15.0.1: Library for building WebSocket servers and clients in Python
+dev-python/websockets 15.0.1 16.0: Library for building WebSocket servers and clients in Python
 dev-python/websockify 0.13.0: WebSockets support for any application/server
 dev-python/webtest 3.0.6 3.0.7: Helper to test WSGI applications
 dev-python/werkzeug 3.1.4 3.1.5: Collection of various utilities for WSGI applications
@@ -10386,9 +10386,9 @@ dev-ruby/ruby-filemagic 0.7.3: Ruby binding to libmagic
 dev-ruby/ruby-gdk3 4.2.4 4.2.9: Ruby GDK-3.x bindings
 dev-ruby/ruby-gdkpixbuf2 4.2.4 4.2.9: Ruby GdkPixbuf2 bindings
 dev-ruby/ruby-gettext 3.5.0: Native Language Support Library and Tools modeled after GNU gettext package
-dev-ruby/ruby-gio2 4.2.4 4.2.9: Ruby binding of gio-2
-dev-ruby/ruby-glib2 4.2.4 4.2.9: Ruby Glib2 bindings
-dev-ruby/ruby-gobject-introspection 4.2.4 4.2.9: Ruby GObjectIntrospection bindings
+dev-ruby/ruby-gio2 4.2.4 4.2.9 4.3.4: Ruby binding of gio-2
+dev-ruby/ruby-glib2 4.2.4 4.2.9 4.3.4: Ruby Glib2 bindings
+dev-ruby/ruby-gobject-introspection 4.2.4 4.2.9 4.3.4: Ruby GObjectIntrospection bindings
 dev-ruby/ruby-gtk3 4.2.4 4.2.9: Ruby Gtk2 bindings
 dev-ruby/ruby-hmac 0.4.0-r2: A common interface to HMAC functionality as documented in RFC2104
 dev-ruby/ruby-ldap 0.9.20-r5: A Ruby interface to some LDAP libraries
@@ -10797,9 +10797,9 @@ dev-util/byacc 20241231: The best variant of the Yacc parser generator
 dev-util/cargo-audit 0.21.1 0.21.2 0.22.0: Audit Cargo.lock for crates with security vulnerabilities
 dev-util/cargo-c 0.10.13-r1 0.10.14 0.10.15 0.10.16 0.10.18 0.10.19: Helper program to build and install c-like libraries
 dev-util/cargo-license 0.6.1-r1 0.7.0: Cargo subcommand to see license of dependencies
-dev-util/cargo-nextest 0.9.106 0.9.108 0.9.111 0.9.114 0.9.117: Next-generation test runner for Rust
+dev-util/cargo-nextest 0.9.114 0.9.117 0.9.120: Next-generation test runner for Rust
 dev-util/cargo-pgrx 0.12.7 0.12.9 0.13.1 0.14.3 0.15.0 0.16.0 0.16.1: pgrx: A Rust framework for creating Postgres extensions
-dev-util/cargo-tarpaulin 0.32.8 0.33.0 0.34.1: Cargo-Tarpaulin is a tool to determine code coverage achieved via tests
+dev-util/cargo-tarpaulin 0.32.8 0.33.0 0.34.1 0.35.0: Cargo-Tarpaulin is a tool to determine code coverage achieved via tests
 dev-util/cargo-vendor-filterer 0.5.18: Tool to 'cargo vendor' with filtering
 dev-util/catalyst 4.0.0 4.0.1 4.1.0 9999: Release metatool used for creating releases based on Gentoo Linux
 dev-util/catfish 4.20.0 4.20.1-r1: A frontend for find, (s)locate, doodle, tracker, beagle, strigi and pinot
@@ -13211,10 +13211,10 @@ media-libs/a52dec 0.7.4-r9: Library for decoding ATSC A/52 streams used in DVD
 media-libs/aalib 1.4_rc5-r10 1.4_rc5-r11: A ASCII-Graphics Library
 media-libs/aften 0.0.8-r3: A/52 (AC-3) audio encoder
 media-libs/allegro 4.4.3.1-r1 5.2.10.1: Cross-platform library aimed at video game and multimedia programming
-media-libs/alsa-lib 1.2.13-r3 1.2.14 1.2.15-r3 1.2.15.1 1.2.15.1-r1: Advanced Linux Sound Architecture Library
+media-libs/alsa-lib 1.2.13-r3 1.2.14 1.2.15-r3 1.2.15.1 1.2.15.1-r1 1.2.15.2: Advanced Linux Sound Architecture Library
 media-libs/alsa-oss 1.1.8: Advanced Linux Sound Architecture OSS compatibility layer
 media-libs/alsa-topology-conf 1.2.5.1: ALSA topology configuration files
-media-libs/alsa-ucm-conf 1.2.14 1.2.15 1.2.15.1: ALSA ucm configuration files
+media-libs/alsa-ucm-conf 1.2.14 1.2.15 1.2.15.1 1.2.15.2: ALSA ucm configuration files
 media-libs/alure 1.2-r4: The OpenAL Utility Toolkit
 media-libs/amdgpu-pro-vulkan 22.40.6.1580631-r1 23.40.0.1741713 24.30.2125445 25.10.2194696: AMD's closed source vulkan driver, from Radeon Software for Linux
 media-libs/amf-headers 1.4.33 1.4.34 1.4.35 1.4.36 1.4.36-r2: The Advanced Media Framework (AMF) SDK
@@ -13943,7 +13943,7 @@ media-sound/alac_decoder 0.2.0-r2: Basic decoder for Apple Lossless Audio Codec 
 media-sound/alacenc 0.4.1: Encodes audio into the Apple Lossless Audio Codec (ALAC) format
 media-sound/alsa-scarlett-gui 0.5.1: A UI for Focusrite Scarlett and Clarett audio interfaces
 media-sound/alsa-tools 1.2.11-r1 1.2.14 1.2.15: Advanced Linux Sound Architecture tools
-media-sound/alsa-utils 1.2.13-r2 1.2.14 1.2.15 1.2.15.1: Advanced Linux Sound Architecture Utils (alsactl, alsamixer, etc.)
+media-sound/alsa-utils 1.2.13-r2 1.2.14 1.2.15 1.2.15.1 1.2.15.2: Advanced Linux Sound Architecture Utils (alsactl, alsamixer, etc.)
 media-sound/alsamixer-app 0.1-r1: simple alsa mixer dockapp
 media-sound/alsamixergui 0.9.0.1.2-r5: FLTK based amixer Frontend
 media-sound/alsaplayer 0.99.82-r1: A heavily multi-threaded pluggable audio player
