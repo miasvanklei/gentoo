@@ -3825,7 +3825,7 @@ dev-build/bazel-buildtools 8.2.1: Tools for working with Google's Bazel BUILD fi
 dev-build/bazelisk 1.25.0 1.27.0: A user-friendly launcher for Bazel written in Go
 dev-build/bmake 20250414 20250618 20250804 20251111: NetBSD's portable make
 dev-build/boost-m4 0.4_p20221019: Another set of autoconf macros for compiling against boost
-dev-build/cmake 3.31.9-r1 3.31.10 4.1.2-r1 4.1.3 4.1.4 4.2.1 9999: Cross platform Make
+dev-build/cmake 3.31.9-r1 3.31.10 4.1.2-r1 4.1.3 4.1.4 4.2.1-r1 9999: Cross platform Make
 dev-build/corrosion 0.5.2: Marrying Rust and CMake - Easy Rust and C/C++ Integration!
 dev-build/dagger 0.9.8: ci/cd as code that runs anywhere
 dev-build/dolphin-plugins-makefileactions 25.08.3 25.12.1: Dolphin plugin for Makefile targets integration
@@ -4342,7 +4342,7 @@ dev-haskell/base64 0.4.2.4: A modern RFC 4648-compliant Base64 library
 dev-haskell/base64-bytestring 1.0.0.3 1.2.1.0: Fast base64 encoding and decoding for ByteStrings
 dev-haskell/basement 0.0.12 0.0.16: Foundation scrap box of array & string
 dev-haskell/bencode 0.6.1.1: Parser and printer for bencoded data
-dev-haskell/bifunctors 5.5.11 5.5.15: The Bifunctors package authored by Edward Kmett
+dev-haskell/bifunctors 5.5.11 5.5.15 5.6.3: Haskell 98 bifunctors, bifoldables and bitraversables
 dev-haskell/binary 0.8.8.0-r1 0.8.9.0-r1: Binary serialisation for Haskell values using lazy ByteStrings
 dev-haskell/binary-orphans 1.0.2 1.0.4.1: Compatibility package for binary; provides instances
 dev-haskell/bitvec 1.1.3.0: Space-efficient bit vectors
@@ -4377,7 +4377,7 @@ dev-haskell/colour 2.3.5 2.3.6: A model for human colour/color perception
 dev-haskell/commonmark 0.2.2 0.2.3: Pure Haskell commonmark parser
 dev-haskell/commonmark-extensions 0.2.3.2 0.2.3.5: Pure Haskell commonmark parser
 dev-haskell/commonmark-pandoc 0.2.1.2 0.2.1.3: Bridge between commonmark and pandoc AST
-dev-haskell/comonad 5.0.8-r1: The Comonads package authored by Edward Kmett
+dev-haskell/comonad 5.0.10: Provides comonads, the categorical dual of monads
 dev-haskell/concurrent-output 1.10.11 1.10.19: Ungarble output from several threads or commands
 dev-haskell/conduit 1.3.4.2 1.3.4.3: Streaming data processing library
 dev-haskell/conduit-combinators 1.3.0: Commonly used conduit functions, for both chunked and unchunked data
@@ -4456,7 +4456,7 @@ dev-haskell/filemanip 0.3.6.3: Expressive file and directory manipulation for Ha
 dev-haskell/filepath-bytestring 1.4.2.1.9: Library for manipulating RawFilePaths in a cross platform way
 dev-haskell/findbin 0.0.5-r1: Locate directory of original program
 dev-haskell/fingertree 0.1.4.2 0.1.5.0: Generic finger-tree structure, with example instances
-dev-haskell/foldable1-classes-compat 0.1: Compatibility package for the Foldable1 and Bifoldable1 type classes
+dev-haskell/foldable1-classes-compat 0.1.3: Compatibility package for the Foldable1 and Bifoldable1 type classes
 dev-haskell/foldl 1.4.12-r1 1.4.15: Composable, streaming, and efficient left folds
 dev-haskell/foundation 0.0.26.1 0.0.30: Alternative prelude with batteries and no dependencies
 dev-haskell/free 5.1.9 5.2: Monads for free
@@ -4531,7 +4531,7 @@ dev-haskell/httpd-shed 0.4.1.1-r1: A simple web-server with an interact style AP
 dev-haskell/hunit 1.6.2.0 1.6.2.0-r1: A unit testing framework for Haskell
 dev-haskell/ieee754 0.7.8 0.8.0: Utilities for dealing with IEEE floating point numbers
 dev-haskell/ifelse 0.85-r1: Anaphoric and miscellaneous useful control-flow
-dev-haskell/indexed-traversable 0.1.2 0.1.2.1: FunctorWithIndex, FoldableWithIndex, TraversableWithIndex
+dev-haskell/indexed-traversable 0.1.4: FunctorWithIndex, FoldableWithIndex, TraversableWithIndex
 dev-haskell/indexed-traversable-instances 0.1 0.1.1.2: More instances of FunctorWithIndex, FoldableWithIndex, TraversableWithIndex
 dev-haskell/integer-logarithms 1.0.3.1-r2: Integer logarithms
 dev-haskell/invariant 0.5.5 0.6.2: Haskell98 invariant functors
@@ -4738,7 +4738,7 @@ dev-haskell/text-icu 0.7.1.0 0.8.0.2: Bindings to the ICU library
 dev-haskell/text-short 0.1.5-r1: Memory-efficient representation of Unicode text strings
 dev-haskell/text-show 3.9.7 3.10.4: Efficient conversion of values into Text
 dev-haskell/tf-random 0.5: High-quality splittable pseudorandom number generator
-dev-haskell/th-abstraction 0.4.3.0 0.4.5.0: Nicer interface for reified information about data types
+dev-haskell/th-abstraction 0.4.3.0 0.4.5.0 0.7.2.0: Nicer interface for reified information about data types
 dev-haskell/th-compat 0.1.3 0.1.4: Backward- (and forward-)compatible Quote and Code types
 dev-haskell/th-lift 0.8.2 0.8.4: Derive Template Haskell's Lift class for datatypes
 dev-haskell/th-lift-instances 0.1.19 0.1.20: Lift instances for template-haskell for common data types
@@ -5583,7 +5583,7 @@ dev-libs/liblzw 0.3-r1: small C library for reading LZW compressed files (.Z)
 dev-libs/libmaa 1.3.2-r1 1.4.7: Library with low-level data structures which are helpful for writing compilers
 dev-libs/libmacaroons 0.3.0-r2: C library for generation and use of macaroons authorization credentials
 dev-libs/libmanette 0.2.12 0.2.13: Simple GObject game controller library
-dev-libs/libmateweather 1.28.0-r1 1.28.0-r2 1.28.1-r1: MATE library to access weather information from online services
+dev-libs/libmateweather 1.28.0-r1 1.28.0-r2 1.28.1-r2: MATE library to access weather information from online services
 dev-libs/libmaxminddb 1.11.0 1.12.2 9999: C library for the MaxMind DB file format
 dev-libs/libmba 0.9.1-r5: A library of generic C modules
 dev-libs/libmcfp 1.3.5 1.4.2: A library that can collect configuration options from command line arguments
@@ -17580,6 +17580,7 @@ sys-fs/autorun 3.17: auto cdrom mounter for the lazy user
 sys-fs/avfs 1.1.5: Virtual filesystem that allows browsing of compressed files
 sys-fs/bashmount 4.3.2-r2: Bash script that uses udisks to mount removable devices without GUI
 sys-fs/bcache-tools 1.1_p20230217-r2 9999: Tools for bcache
+sys-fs/bcachefs-kmod 1.34.0 9999: Linux bcachefs kernel module for sys-fs/bcachefs-tools
 sys-fs/bcachefs-tools 1.20.0 1.25.0 1.25.1 1.25.2 1.25.3 1.31.5 1.34.0 9999: Tools for bcachefs
 sys-fs/bees 0.10-r1 0.11 9999: Best-Effort Extent-Same, a btrfs dedup agent
 sys-fs/bindfs 1.17.7 1.18.0 1.18.1 1.18.3: FUSE filesystem for bind mounting with altered permissions
@@ -19084,7 +19085,7 @@ x11-wm/matwm2 0.1.2_pre3-r2 0.1.2_pre3-r3: Simple EWMH compatible window manager
 x11-wm/metacity 3.54.0-r1 3.56.0 3.58.1: GNOME Flashback window manager
 x11-wm/muffin 6.4.1: Compositing window manager forked from Mutter for use with Cinnamon
 x11-wm/musca 0.9.24_p20100226-r4: A simple dynamic window manager, with features nicked from ratpoison and dwm
-x11-wm/mutter 47.8.1 47.9 48.4 48.5 48.6 9999: GNOME compositing window manager based on Clutter
+x11-wm/mutter 47.8.1 47.9 48.4 48.5 48.6 48.6-r1 9999: GNOME compositing window manager based on Clutter
 x11-wm/notion 4.0.4 9999: Notion is a tiling, tabbed window manager for the X window system
 x11-wm/openbox 3.6.1-r11 9999: Standards compliant, fast, light-weight, extensible window manager
 x11-wm/oroborus 2.0.20-r2: Small and fast window manager

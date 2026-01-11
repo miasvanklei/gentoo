@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -22,7 +22,7 @@ CMAKE_QA_COMPAT_SKIP=1 # bug #964514; cmake itself is the last pkg we worry abou
 # ... but seems fine as of 3.22.3?
 # TODO ... but bootstrap sometimes(?) fails with ninja now. bug #834759.
 CMAKE_MAKEFILE_GENERATOR="emake"
-CMAKE_REMOVE_MODULES_LIST=( none )
+CMAKE_REMOVE_MODULES_LIST=()
 inherit bash-completion-r1 cmake flag-o-matic multiprocessing \
 	toolchain-funcs xdg-utils
 
@@ -98,7 +98,6 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-3.27.0_rc1-0001-Don-t-use-.so-for-modules-on-darwin-macos.-Use-.bund.patch
 	"${FILESDIR}"/${PN}-3.27.0_rc1-0002-Set-some-proper-paths-to-make-cmake-find-our-tools.patch
 	# Misc
-	"${FILESDIR}"/${PN}-3.31.6-Prefer-pkgconfig-in-FindBLAS.patch
 	"${FILESDIR}"/${PN}-3.27.0_rc1-0004-Ensure-that-the-correct-version-of-Qt-is-always-used.patch
 	"${FILESDIR}"/${PN}-3.27.0_rc1-0005-Respect-Gentoo-s-Python-eclasses.patch
 	# Cuda
