@@ -4414,7 +4414,7 @@ dev-haskell/data-default-class 0.1.2.0: A class for types with a default value
 dev-haskell/data-default-instances-containers 0.0.1: Default instances for types in containers
 dev-haskell/data-default-instances-dlist 0.0.1: Default instances for types in dlist
 dev-haskell/data-default-instances-old-locale 0.0.1: Default instances for types in old-locale
-dev-haskell/data-fix 0.3.2-r1: Fixpoint data types
+dev-haskell/data-fix 0.3.4: Fixpoint data types
 dev-haskell/data-ordlist 0.4.7.0: Set and bag operations on ordered lists
 dev-haskell/dav 1.3.4: RFC 4918 WebDAV support
 dev-haskell/dbus 1.2.27 1.3.0: A client library for the D-Bus IPC system
@@ -4461,7 +4461,7 @@ dev-haskell/foldl 1.4.12-r1 1.4.15: Composable, streaming, and efficient left fo
 dev-haskell/foundation 0.0.26.1 0.0.30: Alternative prelude with batteries and no dependencies
 dev-haskell/free 5.1.9 5.2: Monads for free
 dev-haskell/generic-deriving 1.14.1 1.14.5: Generic programming library for generalised deriving
-dev-haskell/generically 0.1.1-r1: Generically newtype to use with DerivingVia
+dev-haskell/generically 0.1.1-r2: Generically newtype to use with DerivingVia
 dev-haskell/generics-sop 0.5.1.1 0.5.1.3: Generic Programming using True Sums of Products
 dev-haskell/getopt-generics 0.13.0.4: Create command line interfaces with ease
 dev-haskell/ghc-byteorder 4.11.0.0.10: "GHC.ByteOrder" API Compatibility Layer
@@ -4474,7 +4474,7 @@ dev-haskell/gtk2hs-buildtools 0.13.10.0: Tools to build the Gtk2Hs suite of User
 dev-haskell/hackage-security 0.6.1.0 0.6.2.3-r2: Hackage security library
 dev-haskell/haddock-library 1.10.0-r2: Library exposing some functionality of Haddock
 dev-haskell/happy 1.19.12 1.20.1.1: Happy is a parser generator for Haskell
-dev-haskell/hashable 1.4.0.2-r1 1.4.2.0-r2: A class for types that can be converted to a hash value
+dev-haskell/hashable 1.4.0.2-r1 1.4.2.0-r2 1.4.7.0: A class for types that can be converted to a hash value
 dev-haskell/hashtables 1.3.1: Mutable hash tables in the ST monad
 dev-haskell/haskeline 0.8.2-r1: A command-line interface for user input, written in Haskell
 dev-haskell/haskell-lexer 1.1: A fully compliant Haskell 98 lexer
@@ -4605,6 +4605,7 @@ dev-haskell/only 0.1: The 1-tuple type or single-value "collection"
 dev-haskell/options 1.2.1.1 1.2.1.2: Powerful and easy command-line option parser
 dev-haskell/optparse-applicative 0.16.1.0 0.18.1.0: Utilities and combinators for parsing command line options
 dev-haskell/ordered-containers 0.2.3: Set- and Map-like types that remember the order elements were inserted
+dev-haskell/os-string 2.0.7 2.0.8: Library for manipulating Operating system strings
 dev-haskell/pandoc 3.1.8-r2: Conversion between markup formats
 dev-haskell/pandoc-lua-engine 0.2.1.2: Lua engine to power custom pandoc conversions
 dev-haskell/pandoc-lua-marshal 0.1.6 0.2.2: Use pandoc types in Lua
@@ -5582,7 +5583,7 @@ dev-libs/liblzw 0.3-r1: small C library for reading LZW compressed files (.Z)
 dev-libs/libmaa 1.3.2-r1 1.4.7: Library with low-level data structures which are helpful for writing compilers
 dev-libs/libmacaroons 0.3.0-r2: C library for generation and use of macaroons authorization credentials
 dev-libs/libmanette 0.2.12 0.2.13: Simple GObject game controller library
-dev-libs/libmateweather 1.28.0-r1 1.28.0-r2 1.28.1: MATE library to access weather information from online services
+dev-libs/libmateweather 1.28.0-r1 1.28.0-r2 1.28.1-r1: MATE library to access weather information from online services
 dev-libs/libmaxminddb 1.11.0 1.12.2 9999: C library for the MaxMind DB file format
 dev-libs/libmba 0.9.1-r5: A library of generic C modules
 dev-libs/libmcfp 1.3.5 1.4.2: A library that can collect configuration options from command line arguments
@@ -10074,7 +10075,7 @@ dev-ruby/getoptlong 0.2.1: Allows you to parse command line options similarly to
 dev-ruby/gettext-setup 1.1.0: A gem to ease i18n
 dev-ruby/gettext_i18n_rails 1.13.0 2.1.0: FastGettext / Rails integration
 dev-ruby/gist 6.0.0-r1: Potentially the best command line gister
-dev-ruby/git 1.19.1 2.3.3 3.1.1 4.0.6 4.0.7 4.1.0 4.1.1: Library for using Git in Ruby
+dev-ruby/git 1.19.1 2.3.3 3.1.1 4.0.6 4.0.7 4.1.0 4.1.1 4.1.2: Library for using Git in Ruby
 dev-ruby/globalid 1.2.1 1.2.1-r1 1.3.0: Reference models by URI
 dev-ruby/gnuplot 2.6.2-r4: Gnuplot drawing library - Ruby Bindings
 dev-ruby/google-protobuf 3.25.6 4.28.0 4.28.3 4.29.5 4.30.2 4.31.1 4.32.1 4.33.0 4.33.1: Protocol Buffers are Google's data interchange format
@@ -10316,7 +10317,7 @@ dev-ruby/rantly 2.0.0-r1 3.0.0: Ruby Imperative Random Data Generator and Quickc
 dev-ruby/rash_alt 0.4.12: Rash alt version for Hashie's own Rash
 dev-ruby/rb-inotify 0.11.1: A thorough inotify wrapper for Ruby using FFI
 dev-ruby/rb-readline 0.5.5-r1: Ruby implementation of the GNU readline C library
-dev-ruby/rb_sys 0.9.116 0.9.117 0.9.119 0.9.123: Easily build Ruby native extensions in Rust
+dev-ruby/rb_sys 0.9.116 0.9.117 0.9.119 0.9.123 0.9.124: Easily build Ruby native extensions in Rust
 dev-ruby/rbnacl 7.1.2: Provides a high-level toolkit for building cryptographic systems and protocols
 dev-ruby/rbpdf 1.21.3: Ruby on Rails RBPDF plugin
 dev-ruby/rbpdf-font 1.19.1-r2: Font files for the Ruby on Rails RBPDF plugin
@@ -16471,7 +16472,7 @@ sci-ml/ideep 3.5.3_p2 3.5.3_p3: Intel Optimization for Chainer
 sci-ml/jiwer 3.0.3-r1: Evaluate an automatic speech recognition system
 sci-ml/kineto 0.4.0_p20250214-r2 0.4.0_p20250617-r2: part of the PyTorch Profiler
 sci-ml/oneDNN 3.5.3 3.6.2 3.7.1 3.10.2: oneAPI Deep Neural Network Library
-sci-ml/onnx 1.17.0-r1 1.18.0-r1 1.20.0: Open Neural Network Exchange (ONNX)
+sci-ml/onnx 1.17.0-r1 1.18.0-r1 1.20.1: Open Neural Network Exchange (ONNX)
 sci-ml/pytorch 2.8.0 2.9.1: Tensors and Dynamic neural networks in Python
 sci-ml/safetensors 0.6.2 0.7.0: Simple, safe way to store and distribute tensors
 sci-ml/sentencepiece 0.2.0-r3: Text tokenizer for Neural Network-based text generation
@@ -17236,7 +17237,7 @@ sys-apps/sparc-utils 1.9-r7: Various sparc utilities from Debian GNU/Linux
 sys-apps/spu-tools 2.3.0.136: CELL spu ps and top alike utilities
 sys-apps/stroke 0.1.3-r3: Powerful tool to change file timestamps (including ctimes)
 sys-apps/superdiag 1.8.0.20230310: Provides the capability to determine the health of Supermicro servers components
-sys-apps/syd 3.47.0 3.48.0 3.48.1 3.48.2: seccomp and landlock based application sandbox with support for namespaces
+sys-apps/syd 3.48.1 3.48.4: seccomp and landlock based application sandbox with support for namespaces
 sys-apps/syd-tui 0.2.2: Syd's Terminal User Interface
 sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
