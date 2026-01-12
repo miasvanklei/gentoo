@@ -991,7 +991,7 @@ app-admin/hcloud 1.51.0 1.59.0: A command-line interface for Hetzner Cloud
 app-admin/hddtemp 0.3_beta15-r29: A simple utility to read the temperature of SMART capable hard drives
 app-admin/helm 3.17.2 3.18.6 3.19.0 3.19.2: Kubernetes Package Manager
 app-admin/ide-smart 1.4-r3: A tool to read SMART information from harddiscs
-app-admin/ig 0.47.0: Tools and framework for data collection and system inspection using eBPF
+app-admin/ig 0.48.0: Tools and framework for data collection and system inspection using eBPF
 app-admin/integrit 4.2_rc1: file integrity verification program
 app-admin/keepass 2.57: A free, open source, light-weight and easy-to-use password manager
 app-admin/keepassxc 2.7.11 9999: KeePassXC - KeePass Cross-platform Community Edition
@@ -5342,7 +5342,7 @@ dev-libs/bitshuffle 0.3.5-r1: Bitshuffle C library
 dev-libs/blake3 1.5.0 1.5.1 1.5.3 1.8.2 1.8.2-r1: a fast cryptographic hash function
 dev-libs/blazesym_c 0.1.1 0.1.5: C bindings for blazesym, a library for address symbolization and related tasks
 dev-libs/boehm-gc 8.2.8 8.2.10 8.2.10-r1: The Boehm-Demers-Weiser conservative garbage collector
-dev-libs/boost 1.88.0-r1 1.89.0: Boost Libraries for C++
+dev-libs/boost 1.88.0-r1 1.89.0 1.90.0: Boost Libraries for C++
 dev-libs/boron 2.1.0: A scripting language similar to REBOL
 dev-libs/botan 2.19.5 3.8.1 3.9.0 3.10.0: C++ crypto library
 dev-libs/boxfort 0.1.4-r1 0.1.4-r2 0.1.5: Convenient & cross-platform sandboxing C library
@@ -5652,7 +5652,7 @@ dev-libs/libspt 1.1-r4 1.1-r5: Library for handling root privilege
 dev-libs/libstroke 0.5.1-r2: Stroke and Gesture recognition Library
 dev-libs/libstrophe 0.13.1-r1 0.14.0: A simple, lightweight C library for writing XMPP clients
 dev-libs/libtar 1.2.20-r6: C library for manipulating tar archives
-dev-libs/libtasn1 4.19.0 4.20.0: ASN.1 library
+dev-libs/libtasn1 4.19.0 4.20.0 4.21.0: ASN.1 library
 dev-libs/libtecla 1.6.3-r1: Tecla command-line editing library
 dev-libs/libtermkey 0.22-r1 0.22-r2: Library for easy processing of keyboard entry from terminal-based programs
 dev-libs/libthreadar 1.6.1: Threading library used by dar archiver
@@ -16643,7 +16643,7 @@ sec-keys/openpgp-keys-libass 20220515 20250608: OpenPGP keys used to sign libass
 sec-keys/openpgp-keys-libevent 0: OpenPGP keys used by the libevent project
 sec-keys/openpgp-keys-libidn 20250414: OpenPGP keys used to sign libidn releases
 sec-keys/openpgp-keys-libmicrohttpd 201906 999999: OpenPGP keys used to sign GNU libmicrohttpd releases
-sec-keys/openpgp-keys-libtasn1 20220824 20250209: OpenPGP keys used by GNU Libtasn1
+sec-keys/openpgp-keys-libtasn1 20220824 20250209 20260112: OpenPGP keys used by GNU Libtasn1
 sec-keys/openpgp-keys-libuv 20240209: OpenPGP keys used by libuv
 sec-keys/openpgp-keys-libvirt 20210401 20250830: OpenPGP keys used by libvirt
 sec-keys/openpgp-keys-lighttpd 20231008 20250325: OpenPGP keys used to sign lighttpd
@@ -17523,7 +17523,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251204 13.4.1_p20251211 13.4.1_p20251218 13.4.1_p20251225 13.4.1_p20260101 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251205 14.3.1_p20251212 14.3.1_p20251219 14.3.1_p20251226 14.3.1_p20260102 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.2.1_p20251206 15.2.1_p20251213 15.2.1_p20251220 15.2.1_p20251227 15.2.1_p20260103 15.3.9999 16.0.0_p20251123 16.0.0_p20251130 16.0.0_p20251207 16.0.0_p20251214 16.0.0_p20251221 16.0.0_p20251228 16.0.0_p20260104 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251204 13.4.1_p20251211 13.4.1_p20251218 13.4.1_p20251225 13.4.1_p20260101 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251205 14.3.1_p20251212 14.3.1_p20251219 14.3.1_p20251226 14.3.1_p20260102 14.3.1_p20260109 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.2.1_p20251206 15.2.1_p20251213 15.2.1_p20251220 15.2.1_p20251227 15.2.1_p20260103 15.2.1_p20260110 15.3.9999 16.0.0_p20251123 16.0.0_p20251130 16.0.0_p20251207 16.0.0_p20251214 16.0.0_p20251221 16.0.0_p20251228 16.0.0_p20260104 16.0.0_p20260111 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
