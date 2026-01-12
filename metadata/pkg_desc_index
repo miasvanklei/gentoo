@@ -1477,7 +1477,7 @@ app-crypt/keybase 6.0.2 6.2.4 9999: Keybase client
 app-crypt/keylookup 2.2-r1: A tool to fetch PGP keys from keyservers
 app-crypt/keysmith 25.08.3 25.12.1: OTP client for Plasma Mobile and Desktop
 app-crypt/kstart 4.3: Modified versions of kinit for refreshing kerberos tickets automatically
-app-crypt/lego 4.28.1 4.29.0 4.30.1 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
+app-crypt/lego 4.30.1 4.31.0 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/libb2 0.98.1-r3: C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
 app-crypt/libmd 1.0.4 1.1.0: Message Digest functions from BSD systems
 app-crypt/libscrypt 1.22-r3: Shared library to implement the scrypt algorithm
@@ -2755,7 +2755,7 @@ app-misc/enum 1.1-r1: Replacement for GNU seq and BSD jot
 app-misc/esekeyd 1.2.7-r2: Multimedia key daemon that uses the Linux event interface
 app-misc/evtest 1.35 1.36: Test program for capturing input device events
 app-misc/faq 0.0.7: Format agnostic jQ
-app-misc/fastfetch 0.1.9999 0.2.9999 2.55.1 2.56.1: Fast neofetch-like system information tool
+app-misc/fastfetch 0.1.9999 0.2.9999 2.55.1 2.56.1 2.57.0: Fast neofetch-like system information tool
 app-misc/fdupes 2.3.2 2.4.0 9999: Identify/delete duplicate files residing within specified directories
 app-misc/fdutils 5.6_p2: Utilities for configuring and debugging the Linux floppy driver
 app-misc/fhem 6.3: A GPL'd perl server for house automation
@@ -10959,7 +10959,7 @@ dev-util/jenkins-bin 2.516.3 2.528 2.528.1 2.528.2 2.528.3 2.541: The leading op
 dev-util/jfrog-cli 1.54.1 2.54.0 2.72.1 2.72.2 2.72.3 2.73.2: Command line utility for operations on container images and image repositories
 dev-util/kafkactl 5.5.0 5.7.0 5.9.0: CLI for interacting with Kafka
 dev-util/kcov 43 9999: Kcov is a code coverage tester for compiled languages, Python and Bash
-dev-util/kdevelop 25.08.3 25.12.1 25.12.1-r1: Integrated Development Environment, supporting KF6/Qt, C/C++ and much more
+dev-util/kdevelop 25.08.3-r1 25.12.1-r1: Integrated Development Environment, supporting KF6/Qt, C/C++ and much more
 dev-util/kdevelop-pg-qt 2.4.0: LL(1) parser generator used mainly by KDevelop language plugins
 dev-util/kdevelop-php 25.08.3 25.12.1: PHP plugin for KDevelop
 dev-util/kdevelop-python 25.08.3 25.12.1: Python plugin for KDevelop
@@ -17011,7 +17011,7 @@ sys-apps/biosdisk 1.01: FreeDOS based BIOS updating utility for Dell machines
 sys-apps/bleachbit 4.6.0-r1 4.6.2 5.0.0: Clean junk to free disk space and to maintain privacy
 sys-apps/bolt 0.9.8-r1 0.9.9 0.9.10: Userspace system daemon to enable security levels for Thunderbolt 3
 sys-apps/bubblewrap 0.8.0 0.9.0 0.10.0 0.11.0: Unprivileged sandboxing tool, namespaces-powered chroot-like solution
-sys-apps/busybox 1.36.1-r3 9999: Utilities for rescue and embedded systems
+sys-apps/busybox 1.36.1-r3 1.36.1-r4 9999: Utilities for rescue and embedded systems
 sys-apps/byld 1.0.3-r1: Build a Linux distribution on a single floppy
 sys-apps/cciss_vol_status 1.12a-r1: Shows status of logical drives attached to HP SmartArray controllers
 sys-apps/ccs-tools 1.8.3_p20130214: TOMOYO Linux tools
