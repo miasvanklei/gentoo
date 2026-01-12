@@ -4344,8 +4344,8 @@ dev-haskell/basement 0.0.12 0.0.16: Foundation scrap box of array & string
 dev-haskell/bencode 0.6.1.1: Parser and printer for bencoded data
 dev-haskell/bifunctors 5.5.11 5.5.15 5.6.3: Haskell 98 bifunctors, bifoldables and bitraversables
 dev-haskell/binary 0.8.8.0-r1 0.8.9.0-r1: Binary serialisation for Haskell values using lazy ByteStrings
-dev-haskell/binary-orphans 1.0.2 1.0.4.1: Compatibility package for binary; provides instances
-dev-haskell/bitvec 1.1.3.0: Space-efficient bit vectors
+dev-haskell/binary-orphans 1.0.5: Compatibility package for binary; provides instances
+dev-haskell/bitvec 1.1.5.0: Space-efficient bit vectors
 dev-haskell/blaze-builder 0.4.2.1 0.4.2.2: Efficient buffered output
 dev-haskell/blaze-html 0.9.1.2-r2: A blazingly fast HTML combinator library for Haskell
 dev-haskell/blaze-markup 0.8.2.8-r1: A blazingly fast markup combinator library for Haskell
@@ -4601,7 +4601,7 @@ dev-haskell/network-uri 2.6.4.1 2.6.4.2: URI manipulation
 dev-haskell/nothunks 0.1.4-r1: Examine values for unexpected thunks
 dev-haskell/old-locale 1.0.0.7: locale library
 dev-haskell/old-time 1.1.0.3-r1: Time library
-dev-haskell/onetuple 0.3.1 0.4.1.1: Singleton Tuple
+dev-haskell/onetuple 0.3.1 0.4.2.1: Singleton Tuple
 dev-haskell/only 0.1: The 1-tuple type or single-value "collection"
 dev-haskell/options 1.2.1.1 1.2.1.2: Powerful and easy command-line option parser
 dev-haskell/optparse-applicative 0.16.1.0 0.18.1.0: Utilities and combinators for parsing command line options
@@ -4653,9 +4653,9 @@ dev-haskell/recv 0.1.0: Efficient network recv
 dev-haskell/reducers 3.12.3-r1 3.12.4: Semigroups, specialized containers and a general map/reduce framework
 dev-haskell/reflection 2.1.6: Reifies arbitrary terms into types that can be reflected back into terms
 dev-haskell/regex-applicative 0.3.3.1: Regex-based parsing with applicative interface
-dev-haskell/regex-base 0.94.0.1 0.94.0.2: Common "Text.Regex.*" API for Regex matching
+dev-haskell/regex-base 0.94.0.3: Common "Text.Regex.*" API for Regex matching
 dev-haskell/regex-compat 0.95.2.1-r1: Replaces/enhances "Text.Regex"
-dev-haskell/regex-posix 0.96.0.0 0.96.0.1: POSIX Backend for "Text.Regex" (regex-base)
+dev-haskell/regex-posix 0.96.0.2: POSIX Backend for "Text.Regex" (regex-base)
 dev-haskell/regex-tdfa 1.3.2 1.3.2.2: Pure Haskell Tagged DFA Backend for "Text.Regex" (regex-base)
 dev-haskell/resolv 0.1.2.0-r1: Domain Name Service (DNS) lookup via the libresolv standard library routines
 dev-haskell/resource-pool 0.2.3.2 0.4.0.0: A high-performance striped resource pooling implementation
@@ -11527,7 +11527,7 @@ games-emulation/mupen64plus-video-rice 2.6.0: A fork of Mupen64 Nintendo 64 emul
 games-emulation/nestopia 1.53.2: Portable Nintendo Entertainment System emulator written in C++
 games-emulation/nestopia-jg 1.53.2 9999: Jolly Good Fork of Nestopia
 games-emulation/openmsx 19.1 20.0-r2: MSX emulator that aims for perfection
-games-emulation/pcsx2 2.4.0-r1 2.6.0 2.6.1 9999: PlayStation 2 emulator
+games-emulation/pcsx2 2.4.0-r1 2.6.0 2.6.1 2.6.2 9999: PlayStation 2 emulator
 games-emulation/pcsx2_patches 0_p20241020 0_p20251228 9999: Collection of game patches for use with PCSX2 (e.g. widescreen hacks)
 games-emulation/ppsspp 1.19.3 1.19.3-r1: A PSP emulator written in C++
 games-emulation/prosystem-jg 1.5.3 9999: Jolly Good Fork of ProSystem
@@ -11549,7 +11549,7 @@ games-engines/frotz 2.55-r1: Interpreter for Z-code based text games
 games-engines/gargoyle 2019.1.1: An Interactive Fiction (IF) player supporting all major formats
 games-engines/love 0.7.2-r100 0.8.0-r100 11.4 11.5-r1 9999: A framework for 2D games in Lua
 games-engines/minetest 5.9.1 5.11.0: A free open-source voxel game engine with easy modding and game creation
-games-engines/odamex 11.0.0 12.1.0: Online multiplayer free software engine for DOOM
+games-engines/odamex 12.1.0: Online multiplayer free software engine for DOOM
 games-engines/openmw 0.49.0 0.50.0 9999: Open source reimplementation of TES III: Morrowind
 games-engines/openxcom 1.0.0_p20250905 9999: Open-source reimplementation of the popular UFO: Enemy Unknown
 games-engines/qtads 3.4.0: Multimedia interpreter for TADS text adventures
@@ -13076,7 +13076,7 @@ media-gfx/imagemagick 6.9.13.29-r1 6.9.13.30 7.1.2.3-r1 7.1.2.5 7.1.2.10 9999: A
 media-gfx/imageworsener 1.3.5: Utility for image scaling and processing
 media-gfx/img2pdf 0.4.4-r1 0.5.1 0.6.1: Losslessly convert raster images to PDF
 media-gfx/imv 4.5.0 5.0.0 5.0.1: Minimal image viewer designed for tiling window manager users
-media-gfx/inkscape 1.4.2 9999: SVG based generic vector-drawing program
+media-gfx/inkscape 1.4.2 1.4.3 9999: SVG based generic vector-drawing program
 media-gfx/iscan 2.30.4.2-r5 2.30.4.2-r6 3.65.0-r2: EPSON Image Scan v3 for Linux
 media-gfx/iscan-data 1.39.0.1: Image Scan! for Linux data files
 media-gfx/iscan-plugin-esdip 1.0.0.5-r1: Plugin for 'epkowa' backend for image manipulation
@@ -17246,7 +17246,7 @@ sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
 sys-apps/system-monitoring-center 2.26.0-r1 9999: Multi-featured system monitor GUI written in Python
 sys-apps/systemctl-tui 0.4.0: A simple TUI for interacting with systemd services and their logs
-sys-apps/systemd 257.9 257.10 258.2 258.3 259_rc2 259_rc3 9999: System and service manager for Linux
+sys-apps/systemd 257.9 257.10 258.2 258.3 259 9999: System and service manager for Linux
 sys-apps/systemd-readahead 216: Split of readahead systemd implementation
 sys-apps/systemd-utils 254.24 254.26 255.18 255.21 256.17: Utilities split out from systemd for OpenRC users
 sys-apps/sysvinit 3.09 3.14 3.15: /sbin/init - parent of all processes
