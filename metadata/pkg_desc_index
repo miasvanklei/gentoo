@@ -2563,7 +2563,7 @@ app-i18n/librime 1.13.1 1.14.0 1.15.0: RIME (Rime Input Method Engine) core libr
 app-i18n/librime-lua 20240819212322-r1 99999999999999: Lua module for RIME
 app-i18n/libskk 1.0.5_p20210830: GObject-based library to deal with Japanese kana-to-kanji conversion method
 app-i18n/man-pages-ja 20180315-r2: Collection of manual pages translated into Japanese
-app-i18n/man-pages-l10n 4.27.0-r1 4.28.0: A somewhat comprehensive collection of man page translations
+app-i18n/man-pages-l10n 4.27.0-r1 4.28.0 4.29.1: A somewhat comprehensive collection of man page translations
 app-i18n/man-pages-ru 5.03.2390.2390.20191017-r1: A collection of Russian translations of Linux manual pages
 app-i18n/man-pages-zh_CN 1.6.4.2: A somewhat comprehensive collection of Chinese Linux man pages
 app-i18n/mecab-skkserv 0.03-r1: mecab-skkserv is a Kana-Kanji conversion server using MeCab
@@ -3916,7 +3916,7 @@ dev-cpp/highway 1.2.0 1.3.0 9999: Performance-portable, length-agnostic SIMD wit
 dev-cpp/htmlcxx 0.87: A simple non-validating CSS 1 and HTML parser for C++
 dev-cpp/json11 1.0.0-r1: A tiny JSON library for C++11
 dev-cpp/jsoncons 1.4.3 1.5.0: C++ header-only library for JSON and JSON-like data formats
-dev-cpp/jwt-cpp 0.6.0: header only library for creating and validating JSON Web Tokens in C++11
+dev-cpp/jwt-cpp 0.6.0 0.7.1: header only library for creating and validating JSON Web Tokens in C++11
 dev-cpp/kokkos 4.0.1-r1 4.3.1-r1 4.6.2-r1 4.6.2-r2 9999: C++ Performance Portability Programming EcoSystem
 dev-cpp/libcmis 0.6.2-r2 9999: C++ client library for the CMIS interface
 dev-cpp/libjson-rpc-cpp 1.4.0 1.4.0-r1: JSON-RPC (1.0 & 2.0) framework for C++
@@ -3944,7 +3944,7 @@ dev-cpp/range-v3 0.12.0 0.12.0-r1: Range library for C++14/17/20, basis for C++2
 dev-cpp/rapidfuzz-cpp 3.3.3: Rapid fuzzy string matching in C++
 dev-cpp/rapidyaml 0.9.0 0.10.0: Library to parse and emit YAML, and do it fast
 dev-cpp/robin-map 1.3.0 1.4.0-r1 9999: C++ fast hash map and hash set using robin hood hashing
-dev-cpp/scitokens-cpp 1.1.0-r1 1.1.1 1.1.2 1.1.3: C++ implementation of the SciTokens library with a C library interface
+dev-cpp/scitokens-cpp 1.1.0-r1 1.1.1 1.1.2 1.1.3 1.2.0: C++ implementation of the SciTokens library with a C library interface
 dev-cpp/sdbus-c++ 2.1.0: High-level C++ D-Bus library
 dev-cpp/simdutf 7.3.4 7.7.0 7.7.1: Unicode validation and transcoding at billions of characters per second
 dev-cpp/simpleini 4.22-r1 4.25: C++ library providing a simple API to read and write INI-style files
@@ -6072,7 +6072,7 @@ dev-ml/lablgtk-sourceview 3.1.5: OCaml bindings to GTK-3
 dev-ml/labltk 8.06.12-r2 8.06.15-r1: OCaml interface to the Tcl/Tk GUI framework
 dev-ml/lambda-term 3.1.0 3.3.1-r1 3.3.2: Terminal manipulation library for OCaml
 dev-ml/libvirt-ocaml 0.6.1.7: OCaml language binding for libvirt native C API
-dev-ml/llvm 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: OCaml bindings for LLVM
+dev-ml/llvm 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: OCaml bindings for LLVM
 dev-ml/logs 0.7.0-r1 0.8.0 0.9.0: Logging infrastructure for OCaml
 dev-ml/luv 0.5.11-r2 0.5.14-r1: Binding to libuv: cross-platform asynchronous I/O
 dev-ml/lwt 5.7.0 5.9.0 5.9.1-r1 5.9.2: Cooperative light-weight thread library for OCaml
@@ -8258,7 +8258,7 @@ dev-python/cheroot 11.0.0 11.1.1 11.1.2: High-performance, pure-Python HTTP serv
 dev-python/cherrypy 18.10.0: CherryPy is a pythonic, object-oriented HTTP framework
 dev-python/chump 1.6.0-r2: API wrapper for Pushover
 dev-python/cjkwrap 2.2-r2: A library for wrapping and filling UTF-8 CJK text
-dev-python/clang 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Python bindings for llvm-core/clang
+dev-python/clang 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Python bindings for llvm-core/clang
 dev-python/cleo 2.1.0: Python tool for building testable command-line interfaces
 dev-python/cli-helpers 2.6.0 2.7.0 9999: Python helpers for common CLI tasks
 dev-python/cli-ui 0.19.0: Python library for better command line interfaces
@@ -8737,7 +8737,7 @@ dev-python/line-profiler 4.2.0 5.0.0: Line-by-line profiler
 dev-python/linkify-it-py 2.0.3: Links recognition library with full unicode support
 dev-python/linode-metadata 0.3.3: Python bindings for the Linode Metadata Service
 dev-python/linuxdoc 20240924 99999999: Sphinx-doc extensions for sophisticated C developer
-dev-python/lit 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: A stand-alone install of the LLVM suite testing tool
+dev-python/lit 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: A stand-alone install of the LLVM suite testing tool
 dev-python/littleutils 0.2.4: Small personal collection of Python utility functions
 dev-python/livereload 2.7.1: livereload server in Python
 dev-python/llfuse 1.5.1 1.5.2: Python bindings for the low-level FUSE API
@@ -11019,7 +11019,7 @@ dev-util/patchelf 0.17.2-r1 0.18.0: Small utility to modify the dynamic linker a
 dev-util/patchutils 0.4.2 0.4.4-r1: Collection of tools that operate on patch files
 dev-util/patdiff 0.16.0 0.17.0: Colored patience diffs with word-level refinement
 dev-util/peg 0.1.19 0.1.20: Recursive-descent parser generators for C
-dev-util/perf 6.14 6.16 6.16-r1 6.17 6.18-r1: Userland tools for Linux Performance Counters
+dev-util/perf 6.14 6.16 6.16-r1 6.17 6.18-r1 6.18.5: Userland tools for Linux Performance Counters
 dev-util/pixi 0.62.1 0.62.2: A package management and workflow tool
 dev-util/pkgcheck 0.10.37-r1 0.10.39 9999: pkgcore-based QA utility for ebuild repos
 dev-util/pkgconf 2.3.0 2.4.3 2.5.1 9999: pkg-config compatible replacement with no dependencies other than C99
@@ -11088,7 +11088,7 @@ dev-util/smem 1.5-r3: A tool that can give numerous reports on memory usage on L
 dev-util/snakeviz 2.2.0 2.2.2: A web-based viewer for Python profiler output
 dev-util/source-highlight 3.1.9-r2: Generate highlighted source code as an (x)html document
 dev-util/spirv-headers 1.4.321.0 1.4.328.0 1.4.335.0 9999: Machine-readable files for the SPIR-V Registry
-dev-util/spirv-llvm-translator 15.0.15 15.0.18 15.0.19 16.0.15 16.0.18 16.0.19 17.0.15 17.0.18 17.0.19 18.1.15 18.1.18 18.1.19 19.1.10 19.1.13 19.1.14 20.1.5 20.1.8 20.1.9 21.1.3 22.0.0_pre20251107 22.0.0_pre20251123: Bi-directional translator between SPIR-V and LLVM IR
+dev-util/spirv-llvm-translator 15.0.15 15.0.18 15.0.19 16.0.15 16.0.18 16.0.19 17.0.15 17.0.18 17.0.19 18.1.15 18.1.18 18.1.19 19.1.10 19.1.13 19.1.14 20.1.5 20.1.8 20.1.9 21.1.3 22.0.0_pre20251123 22.0.0_pre20260112: Bi-directional translator between SPIR-V and LLVM IR
 dev-util/spirv-tools 1.4.321.0 1.4.328.0 1.4.335.0 9999: Provides an API and commands for processing SPIR-V modules
 dev-util/splint 3.1.2-r3: Check C programs for vulnerabilities and programming mistakes
 dev-util/squashdelta 0.1.2: Efficient (partially uncompressed) SquashFS binary delta tool
@@ -12588,35 +12588,35 @@ kde-plasma/spectacle 6.5.4 6.5.4-r1: Screenshot capture utility
 kde-plasma/systemsettings 6.5.4: Control Center to configure KDE Plasma desktop
 kde-plasma/wacomtablet 6.5.4: Wacom system settings module that supports different button/pen layout profiles
 kde-plasma/xdg-desktop-portal-kde 6.5.4 6.5.4-r1: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
-llvm-core/clang 15.0.7-r3 16.0.6-r1 17.0.6-r1 18.1.8-r7 19.1.7-r1 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: C language family frontend for LLVM
-llvm-core/clang-common 15.0.7-r10 16.0.6-r6 17.0.6-r10 18.1.8-r3 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Common files shared between multiple slots of clang
+llvm-core/clang 15.0.7-r3 16.0.6-r1 17.0.6-r1 18.1.8-r7 19.1.7-r1 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: C language family frontend for LLVM
+llvm-core/clang-common 15.0.7-r10 16.0.6-r6 17.0.6-r10 18.1.8-r3 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Common files shared between multiple slots of clang
 llvm-core/clang-linker-config 16 17 18 19 20 21 22: Default linker configuration for clang
 llvm-core/clang-toolchain-symlinks 15-r2 16-r2 17 18 19 20 21 22: Symlinks to use Clang on GCC-free system
-llvm-core/flang 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: LLVM's Fortran frontend
-llvm-core/libclc 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: OpenCL C library
-llvm-core/lld 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: The LLVM linker (link editor)
+llvm-core/flang 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: LLVM's Fortran frontend
+llvm-core/libclc 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: OpenCL C library
+llvm-core/lld 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: The LLVM linker (link editor)
 llvm-core/lld-toolchain-symlinks 15-r2 16-r2 17 18 19 20 21 22: Symlinks to use LLD on binutils-free system
-llvm-core/lldb 15.0.7 16.0.6-r1 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: The LLVM debugger
-llvm-core/llvm 15.0.7-r7 16.0.6-r5 17.0.6-r3 18.1.8-r6 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Low Level Virtual Machine
-llvm-core/llvm-common 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Common files shared between multiple slots of LLVM
+llvm-core/lldb 15.0.7 16.0.6-r1 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: The LLVM debugger
+llvm-core/llvm 15.0.7-r7 16.0.6-r5 17.0.6-r3 18.1.8-r6 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Low Level Virtual Machine
+llvm-core/llvm-common 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Common files shared between multiple slots of LLVM
 llvm-core/llvm-toolchain-symlinks 15-r1 16-r1 17-r1 18-r1 19 20-r1 21 22: Symlinks to use LLVM on binutils-free system
 llvm-core/llvmgold 15 16 17 18 19 20 21 22: LLVMgold plugin symlink for autoloading
-llvm-core/mlir 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Multi-Level Intermediate Representation (library only)
-llvm-core/polly 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Polyhedral optimizations for LLVM
+llvm-core/mlir 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Multi-Level Intermediate Representation (library only)
+llvm-core/polly 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Polyhedral optimizations for LLVM
 llvm-runtimes/clang-rtlib-config 16 17 18 19 20 21 22: Default rtlib configuration for clang
 llvm-runtimes/clang-runtime 15.0.7 16.0.6 16.0.6-r1 17.0.6 17.0.6-r1 18.1.8 18.1.8-r1 19.1.7 19.1.7-r1 20.1.8 20.1.8-r1 21.1.8 22: Meta-ebuild for clang runtime libraries
 llvm-runtimes/clang-stdlib-config 16 17 18 19 20 21 22: Default C++ library configuration for clang
 llvm-runtimes/clang-unwindlib-config 16 17 18 19 20 21 22: Default unwindlib configuration for clang
-llvm-runtimes/compiler-rt 15.0.7-r2 16.0.6-r6 17.0.6-r2 18.1.8-r2 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Compiler runtime library for clang (built-in part)
-llvm-runtimes/compiler-rt-sanitizers 15.0.7-r1 16.0.6-r1 17.0.6-r1 18.1.8-r6 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Compiler runtime libraries for clang (sanitizers & xray)
-llvm-runtimes/flang-rt 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: LLVM's Fortran runtime
+llvm-runtimes/compiler-rt 15.0.7-r2 16.0.6-r6 17.0.6-r2 18.1.8-r2 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Compiler runtime library for clang (built-in part)
+llvm-runtimes/compiler-rt-sanitizers 15.0.7-r1 16.0.6-r1 17.0.6-r1 18.1.8-r6 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Compiler runtime libraries for clang (sanitizers & xray)
+llvm-runtimes/flang-rt 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: LLVM's Fortran runtime
 llvm-runtimes/libatomic-stub 0: Stub library which allows compiler-rt to replace libatomic
-llvm-runtimes/libcxx 15.0.7-r1 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: New implementation of the C++ standard library, targeting C++11
-llvm-runtimes/libcxxabi 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Low level support for a standard C++ library
-llvm-runtimes/libgcc 19.1.7 19.1.7-r1 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: Compiler runtime library for clang, compatible with libgcc_s
-llvm-runtimes/libunwind 15.0.7 16.0.6-r1 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: C++ runtime stack unwinder from LLVM
-llvm-runtimes/offload 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: OpenMP offloading support
-llvm-runtimes/openmp 15.0.7-r6 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0.9999: OpenMP runtime library for LLVM/clang compiler
+llvm-runtimes/libcxx 15.0.7-r1 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: New implementation of the C++ standard library, targeting C++11
+llvm-runtimes/libcxxabi 15.0.7 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Low level support for a standard C++ library
+llvm-runtimes/libgcc 19.1.7 19.1.7-r1 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: Compiler runtime library for clang, compatible with libgcc_s
+llvm-runtimes/libunwind 15.0.7 16.0.6-r1 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: C++ runtime stack unwinder from LLVM
+llvm-runtimes/offload 19.1.7 20.1.8-r1 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: OpenMP offloading support
+llvm-runtimes/openmp 15.0.7-r6 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.0.0_pre20260103 22.0.0_pre20260106 22.0.0_pre20260113 22.0.0.9999: OpenMP runtime library for LLVM/clang compiler
 lxde-base/lxappearance 0.6.4-r2: LXDE GTK+ theme switcher
 lxde-base/lxappearance-obconf 0.2.3-r3: LXAppearance plugin for configuring OpenBox
 lxde-base/lxde-common 0.99.2-r1: LXDE Session default configuration files and nuoveXT2 iconset
@@ -16088,7 +16088,7 @@ sci-geosciences/qmapshack 1.18.2 1.19.0: GPS mapping utility
 sci-geosciences/readosm 1.1.0a: Library to extract valid data from an Open Street Map input file
 sci-geosciences/routino 3.4.3: Routing application based on openstreetmap data
 sci-geosciences/tcd-utils 20240222: Utilities for working with Tidal Constituent Databases
-sci-geosciences/viking 1.10 1.10-r1: GPS data editor and analyzer
+sci-geosciences/viking 1.10 1.10-r1 1.11: GPS data editor and analyzer
 sci-geosciences/xtide 2.15.5: XTide provides tide and current predictions in a wide variety of formats
 sci-geosciences/xyzservices 2025.4.0 2025.11.0: Source of XYZ tiles providers
 sci-libs/adolc 2.7.2-r1 9999: Automatic differentiation system for C/C++
@@ -16493,7 +16493,7 @@ sci-physics/fastjet 3.4.3 3.5.1 3.5.1-r2 9999: A software package for jet findin
 sci-physics/fastjet-contrib 1.053 1.055 1.100-r1 1.101-r1 1.101-r2 9999: 3rd party extensions of FastJet.
 sci-physics/geant 4.11.3.2-r2 4.11.4.0: Toolkit for simulation of passage of particles through matter
 sci-physics/geant-data 4.11.3 4.11.4: Data files for Geant4 physical processes
-sci-physics/geant4_vmc 6.3_p2-r1 6.5 6.6_p1 6.7 9999: Virtual Monte Carlo Geant4 implementation
+sci-physics/geant4_vmc 6.6_p1 6.7 6.7_p1 9999: Virtual Monte Carlo Geant4 implementation
 sci-physics/hepmc 2.06.11 3.2.7 3.3.1 9999: Event Record for Monte Carlo Generators
 sci-physics/heppdt 3.04.01-r2: Data about each particle from the Review of Particle Properties
 sci-physics/herwig 6.5.21-r2: High Energy Physics Event Generator
@@ -16503,10 +16503,10 @@ sci-physics/looptools 2.15 2.15-r1 2.16: Tools for evaluation of scalar and tens
 sci-physics/pythia 8.3.16-r1 9999: Lund Monte Carlo high-energy physics event generator
 sci-physics/reduze 2.4-r1: Program for reducing Feynman integrals
 sci-physics/rivet 3.1.11-r1 4.1.2 9999: Robust Independent Validation of Experiment and Theory toolkit
-sci-physics/root 6.34.10 6.34.9999 6.36.04 6.36.9999 6.38.00 9999: C++ data analysis framework and interpreter from CERN
+sci-physics/root 6.36.06 6.36.9999 6.38.00 9999: C++ data analysis framework and interpreter from CERN
 sci-physics/siscone 3.0.6 3.1.0 3.1.2 3.1.2-r1 9999: Hadron Seedless Infrared-Safe Cone jet algorithm
 sci-physics/thepeg 2.2.3-r3 2.3.0-r4: Toolkit for High Energy Physics Event Generation
-sci-physics/vgm 5.2-r1 9999: Virtual Geometry Model for High Energy Physics Experiments
+sci-physics/vgm 5.2-r1 5.4 9999: Virtual Geometry Model for High Energy Physics Experiments
 sci-physics/vmc 1.1_p1-r1 2.0-r1 2.1 9999: The Virtual Monte Carlo core library
 sci-physics/xfoil 6.99-r1: Design and analysis of subsonic isolated airfoils
 sci-physics/yoda 1.9.10 2.1.2 9999: Yet more Objects for (High Energy Physics) Data Analysis
@@ -16519,7 +16519,7 @@ sci-visualization/g3data 1.5.4: Tool for extracting data from graphs
 sci-visualization/gcalc 3.1_rc1-r4: Java Mathematical Graphing System
 sci-visualization/ggobi 2.1.11-r1 2.1.12-r1: Visualization program for exploring high-dimensional data
 sci-visualization/gle 4.3.8-r1: Graphics Layout Engine
-sci-visualization/gnuplot 5.4.10-r2 6.0.2-r2 6.0.3 6.1.9999: Command-line driven interactive plotting program
+sci-visualization/gnuplot 5.4.10-r2 6.0.3 6.0.4 6.1.9999: Command-line driven interactive plotting program
 sci-visualization/gr 0.73.6-r1: Universal framework for cross-platform visualization applications
 sci-visualization/grace 5.1.25_p17 5.1.25_p18: Motif based XY-plotting tool
 sci-visualization/gwyddion 2.67-r1 2.69: Framework for Scanning Mode Microscopy data analysis
@@ -17716,7 +17716,7 @@ sys-kernel/dracut-crypt-ssh 1.0.8-r1: Early unlocking of encrypted systems via s
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 9999: Gentoo automatic kernel building scripts
 sys-kernel/gentoo-kernel 5.10.247 5.15.197 6.1.159 6.6.119 6.6.120 6.12.63 6.12.64 6.12.65 6.18.4 6.18.5: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.247 5.15.197 6.1.159 6.6.119 6.6.120 6.12.63 6.12.64 6.12.65 6.18.4 6.18.5: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4: Full sources including the Gentoo patchset for the 6.18 kernel tree
+sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.1.160 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.6.120 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.12.65 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4 6.18.5: Full sources including the Gentoo patchset for the 6.18 kernel tree
 sys-kernel/git-sources 6.19_rc1 6.19_rc2 6.19_rc3 6.19_rc4 6.19_rc5: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 60 63 65 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
@@ -17737,7 +17737,7 @@ sys-kernel/scx-loader 1.0.18 1.0.19: DBUS on-demand loader of sched-ext schedule
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 5.10.247 5.10.9999 5.15.197 5.15.9999 6.1.159 6.1.9999 6.6.119 6.6.120 6.6.9999 6.12.63 6.12.64 6.12.65 6.12.9999 6.18.4 6.18.5: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 5.4.302 5.10.247 5.15.197 6.1.159 6.6.119 6.12.64 6.16.12 6.17.13 6.18.4: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 5.4.302 5.10.247 5.15.197 6.1.160 6.6.120 6.12.65 6.16.12 6.17.13 6.18.5: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.18.2 6.18.3: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
@@ -18179,7 +18179,7 @@ www-client/elinks 0.18.0 9999: Advanced and well-established text-mode web brows
 www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.3 25.12.1: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.6.0 146.0 146.0.1 147.0: Firefox Web Browser
+www-client/firefox 140.6.0 140.7.0 146.0 146.0.1 147.0: Firefox Web Browser
 www-client/firefox-bin 140.6.0 146.0.1 147.0: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.169: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31: The web browser from Google
