@@ -1392,7 +1392,7 @@ app-containers/lxc-templates 3.0.4_p20240917: Old style template scripts for LXC
 app-containers/lxd 5.21.1-r1 5.21.4 6.3 6.5: Modern, secure and powerful system container and virtual machine manager
 app-containers/nerdctl 2.0.2 2.0.3: Docker-compatible CLI for containerd, with support for Compose
 app-containers/netavark 1.14.1 1.15.2 1.16.1 1.17.0 1.17.1 9999: A container network stack
-app-containers/nvidia-container-toolkit 1.17.8 1.18.0 9999: NVIDIA container runtime toolkit
+app-containers/nvidia-container-toolkit 1.18.0 1.18.1 9999: NVIDIA container runtime toolkit
 app-containers/podman 5.7.0 5.7.1 9999: A tool for managing OCI containers and pods with Docker-compatible CLI
 app-containers/podman-compose 1.5.0: A script to run docker-compose.yml using Podman
 app-containers/podman-tui 1.5.0 1.6.1 1.9.0 9999: Terminal UI frontend for Podman
@@ -2388,7 +2388,7 @@ app-emulation/libspectrum 1.5.0: Spectrum emulation library
 app-emulation/libvirt 11.6.0-r2 11.8.0 11.9.0 11.10.0 9999: C toolkit to manipulate virtual machines
 app-emulation/libvirt-glib 4.0.0-r1 5.0.0-r1: GLib and GObject mappings for libvirt
 app-emulation/nemu 3.1.0-r1 3.3.0-r1: Ncurses interface for QEMU
-app-emulation/open-vm-tools 12.4.5-r1 12.4.5-r3 12.5.0 12.5.0-r3 12.5.0-r5 13.0.5-r1: Tools for VMware guests
+app-emulation/open-vm-tools 12.5.0-r3 12.5.0-r5 13.0.5-r1: Tools for VMware guests
 app-emulation/open-vmdk 0.3.12: Tools for creating and converting OVA virtual appliance files
 app-emulation/pcem 17_p20241210-r2: A PC emulator that specializes in running old operating systems and software
 app-emulation/plus42 1.3.10 1.3.12: An Enhanced HP-42S Calculator Simulator
@@ -2504,7 +2504,7 @@ app-forensics/sleuthkit 4.12.1-r2: A collection of file system and media managem
 app-forensics/unhide 20220611: Forensic tool to find hidden processes and TCP/UDP ports by rootkits/LKMs
 app-forensics/volatility3 2.11.0-r1 2.26.2: Framework for analyzing volatile memory
 app-forensics/yara 4.5.4 4.5.5 9999: A malware identification and classification tool
-app-forensics/yara-x 1.8.1 1.10.0-r1: A malware identification and classification tool
+app-forensics/yara-x 1.8.1 1.10.0-r1 1.11.0: A malware identification and classification tool
 app-forensics/zzuf 0.15_p20190208 0.15_p20220529: Transparent application input fuzzer
 app-i18n/anthy 9100h-r3: Anthy -- free and secure Japanese input system
 app-i18n/bidiv 1.5_p4: A commandline tool displaying logical Hebrew/Arabic
@@ -4004,7 +4004,7 @@ dev-db/mydumper 0.20.1.2 0.21.2.2: A high-performance multi-threaded backup (and
 dev-db/myodbc 8.0.32: ODBC driver for MySQL
 dev-db/mysql 8.0.42 8.0.43 8.0.44 8.4.6 8.4.7: Fast, multi-threaded, multi-user SQL database server
 dev-db/mysql++ 3.3.0: C++ API interface to the MySQL database
-dev-db/mysql-connector-c 8.0.36 8.0.41: C client library for MariaDB/MySQL
+dev-db/mysql-connector-c 8.0.36-r1 8.0.41-r1: C client library for MariaDB/MySQL
 dev-db/mysql-connector-c++ 9.4.0: MySQL database connector for C++ (mimics JDBC 4.0 API)
 dev-db/mysql-init-scripts 2.3-r8: Gentoo MySQL init scripts
 dev-db/mysql-workbench 8.0.42-r1 8.0.43 8.0.44: MySQL Workbench
@@ -4080,7 +4080,7 @@ dev-debug/gprofng-gui 2.0 2.1 2.2 9999: Full-fledged graphical interface to oper
 dev-debug/hotspot 1.5.1_p20250907 9999: Linux perf GUI for performance analysis
 dev-debug/kdbg 3.1.0_p20250406 3.1.0_p20250406-r1 3.2.0: Graphical debugger interface
 dev-debug/leaktracer 2.4-r3: Trace and analyze memory leaks in C++ programs
-dev-debug/ltrace 0.7.91_pre20221216-r1: trace library calls made at runtime
+dev-debug/ltrace 0.7.91_pre20221216-r1 0.8.1: trace library calls made at runtime
 dev-debug/peda 1.2 9999: Python Exploit Development Assistance for GDB
 dev-debug/pwndbg 20250418-r1 20250530-r3 20251010-r3 20251020-r3 99999999: A GDB plug-in that makes debugging with GDB suck less
 dev-debug/rr 5.8.0 5.9.0-r1 9999: Record and Replay Framework
@@ -4198,7 +4198,7 @@ dev-erlang/stun 1.2.12 1.2.14 1.2.15 1.2.17 1.2.21: STUN and TURN library for Er
 dev-erlang/xmpp 1.8.1 1.8.3 1.9.0 1.10.1 1.11.2: XMPP parsing and serialization library on top of Fast XML
 dev-erlang/yconf 1.0.15 1.0.16 1.0.18 1.0.22: YAML configuration processor
 dev-games/KXL 1.1.7_p17: Development Library for making games for X
-dev-games/aseprite 1.3.5-r1 1.3.13: Animated sprite editor & pixel art tool
+dev-games/aseprite 1.3.5-r1 1.3.13 1.3.16.1: Animated sprite editor & pixel art tool
 dev-games/clanlib 0.8.1-r3 2.3.7-r4 4.1.0-r1 4.2.0: Multi-platform game development library
 dev-games/flatzebra 0.2.0: Generic game engine for 2D double-buffering animation
 dev-games/freecell-solver 6.14.0: C library for automatically solving Freecell and some other solitaire variants
@@ -5340,7 +5340,7 @@ dev-libs/bemenu 0.6.10-r1 0.6.14 0.6.15 0.6.16 0.6.21 0.6.23 9999: dmenu clone f
 dev-libs/bglibs 2.04-r4 2.04-r5: Bruce Guenter's Libraries Collection
 dev-libs/bitset 2.8.4-r3: A compressed bitset with supporting data structures and algorithms
 dev-libs/bitshuffle 0.3.5-r1: Bitshuffle C library
-dev-libs/blake3 1.5.0 1.5.1 1.5.3 1.8.2 1.8.2-r1: a fast cryptographic hash function
+dev-libs/blake3 1.8.2-r1 1.8.3: a fast cryptographic hash function
 dev-libs/blazesym_c 0.1.1 0.1.5: C bindings for blazesym, a library for address symbolization and related tasks
 dev-libs/boehm-gc 8.2.8 8.2.10 8.2.10-r1: The Boehm-Demers-Weiser conservative garbage collector
 dev-libs/boost 1.88.0-r1 1.89.0 1.90.0: Boost Libraries for C++
@@ -5354,7 +5354,7 @@ dev-libs/c-siphash 1.1.0-r1: Streaming-capable SipHash Implementation
 dev-libs/c-stdaux 1.6.0: Auxiliary macros and functions for the C standard library
 dev-libs/cJSON 1.7.18 1.7.19: Ultralightweight JSON parser in ANSI C
 dev-libs/capnproto 0.9.1 0.10.2 0.10.4-r1 1.0.2 1.1.0: RPC/Serialization system with capabilities support
-dev-libs/capstone 5.0.6-r1 6.0.0_alpha4-r1 6.0.0_alpha5-r1 9999: disassembly/disassembler framework + bindings
+dev-libs/capstone 5.0.6-r1 6.0.0_alpha4-r1 6.0.0_alpha5-r1 6.0.0_alpha6 9999: disassembly/disassembler framework + bindings
 dev-libs/castxml 0.6.13: C-family abstract syntax tree XML output tool
 dev-libs/cdk 5.0.20230201 5.0.20230201-r2 5.0.20240331-r1 5.0.20240619-r2 5.0.20250116-r1 5.0.20251014: A library of curses widgets
 dev-libs/cereal 1.3.2-r2: Header-only C++11 serialization library
@@ -5564,6 +5564,7 @@ dev-libs/libgweather 4.4.2-r1 4.4.4: Location and timezone database and weather-
 dev-libs/libhid 0.2.17-r1: Provides a generic and flexible way to access and interact with USB HID devices
 dev-libs/libical 3.0.20-r2: Implementation of basic iCAL protocols
 dev-libs/libiconv 1.17 1.18: GNU charset conversion library for libc which doesn't implement it
+dev-libs/libigloo 0.9.5: Generic framework for C development - used by the Icecast project
 dev-libs/libinjection 3.10.0_p20250228: A SQL/SQLI tokenizer parser analyzer
 dev-libs/libinput 1.28.1 1.29.1 1.29.2 1.30.0 1.30.1: Library to handle input devices in Wayland
 dev-libs/libintl 0.21.1 0.22.5 0.23.1 0.23.2 0.25.1 0.26: the GNU international library (split out of gettext)
@@ -11068,7 +11069,7 @@ dev-util/ruff 0.13.1 0.14.6 0.14.7 0.14.8 0.14.9 0.14.10-r1 0.14.11: An extremel
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
-dev-util/sccache 0.10.0-r1 0.11.0 0.12.0: ccache/distcc like tool with support for rust and cloud storage
+dev-util/sccache 0.12.0 0.13.0: ccache/distcc like tool with support for rust and cloud storage
 dev-util/schroot 1.6.13_p7-r1 1.6.13_p7-r2: Utility to execute commands in a chroot environment
 dev-util/sdl-jstest 0.2.2 9999: Simple SDL joystick test application for the console
 dev-util/seer 2.5-r1 2.6 9999: GUI frontend to gdb
@@ -13048,7 +13049,7 @@ media-gfx/frogr 1.8.1-r1: flickr applications for GNOME
 media-gfx/geeqie 2.5-r2 2.6-r3 2.6.1-r1 9999: A lightweight GTK image viewer forked from GQview
 media-gfx/gif2png 2.5.14: Converts images from gif format to png format
 media-gfx/gifsicle 1.93 1.94 1.95: Create, manipulate, and optimize GIF images and animations
-media-gfx/gimp 2.10.38-r3 3.0.6 3.2.0_rc1 3.2.0_rc2 9999: GNU Image Manipulation Program
+media-gfx/gimp 2.10.38-r3 3.0.6 3.2.0_rc2 9999: GNU Image Manipulation Program
 media-gfx/gimp-arrow-brushes 20190407: Brushes for GIMP with the styles arrow, handpointer, button arrow and cursor
 media-gfx/gnofract4d 4.4: A program for drawing beautiful mathematically-based images known as fractals
 media-gfx/gnome-font-viewer 48.0 49.0: Font viewer utility for GNOME
@@ -13227,7 +13228,7 @@ media-libs/aubio 0.4.9-r4 0.4.9-r5: Library for audio labelling
 media-libs/audiofile 0.3.6-r6: An elegant API for accessing audio files
 media-libs/avidemux-core 2.8.1_p20251019: Core libraries for simple video cutting, filtering and encoding tasks
 media-libs/avidemux-plugins 2.8.1_p20251019: Plugins for Avidemux video editor
-media-libs/babl 0.1.116 0.1.118 9999: A dynamic, any to any, pixel format conversion library
+media-libs/babl 0.1.116 0.1.118 0.1.120 9999: A dynamic, any to any, pixel format conversion library
 media-libs/bcg729 1.1.1-r1: Encoder and decoder of the ITU G729 Annex A/B speech codec
 media-libs/bio2jack 0.9-r2: Library for porting blocked I/O OSS/ALSA audio applications to JACK
 media-libs/blib 1.1.7-r3 1.1.7-r4: Library full of useful things to hack the Blinkenlights
@@ -14753,7 +14754,7 @@ net-dns/nsd 4.12.0 4.14.0 9999: An authoritative only, high performance, open so
 net-dns/opendnssec 2.1.13-r2: An open-source turn-key solution for DNSSEC
 net-dns/openresolv 3.16.5 3.17.0 3.17.3 3.17.4: A framework for managing DNS information
 net-dns/pdns 5.0.1 5.0.2: The PowerDNS Daemon
-net-dns/pdns-recursor 5.3.3: The PowerDNS Recursor
+net-dns/pdns-recursor 5.3.3 5.3.4: The PowerDNS Recursor
 net-dns/pdnsd 1.2.9a-r2: Proxy DNS server with permanent caching
 net-dns/rbldnsd 0.998b-r3 0.998b-r4: DNS server designed to serve blacklist zones
 net-dns/redis-knot 3.5.1 3.5.2: Redis module for Knot DNS
@@ -14837,7 +14838,7 @@ net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensibl
 net-im/element-desktop-bin 1.12.7: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
 net-im/fractal 12.1-r1 13: Matrix messaging app for GNOME written in Rust
-net-im/gajim 2.2.0 2.4.0 2.4.1: GTK XMPP Client
+net-im/gajim 2.2.0 2.4.1 2.4.2: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
 net-im/kaidan 0.13.0: Modern XMPP chat app for every device
 net-im/libcommuni 3.7.0-r2: A cross-platform IRC framework written with Qt
@@ -14998,7 +14999,7 @@ net-libs/libnetfilter_log 1.0.2-r1: Interface to packets that have been logged b
 net-libs/libnetfilter_queue 1.0.5: API to packets that have been queued by the kernel packet filter
 net-libs/libnfnetlink 1.0.2: The low-level library for netfilter related kernel/userspace communication
 net-libs/libnftnl 1.2.8 1.2.9 1.3.0 1.3.1 9999: Netlink API to the in-kernel nf_tables subsystem
-net-libs/libnice 0.1.22-r1: Implementation of the Interactice Connectivity Establishment standard (ICE)
+net-libs/libnice 0.1.22-r1 0.1.23: Implementation of the Interactice Connectivity Establishment standard (ICE)
 net-libs/libnids 1.26-r2: An implementation of an E-component of Network Intrusion Detection System
 net-libs/libnma 1.10.6-r2: NetworkManager GUI library
 net-libs/libnpupnp 6.2.1 6.2.3: A C++ base UPnP library, derived from Portable UPnP, a.k.a libupnp
@@ -15279,7 +15280,7 @@ net-misc/hurl 7.0.0: Hurl, run and test HTTP requests
 net-misc/hylafaxplus 7.0.6-r4: Enterprise client-server fax package for class 1 and 2 fax modems
 net-misc/iaxmodem 1.3.3: Software modem that uses an IAX channel instead of a traditional phone line
 net-misc/icaclient 24.2.0.65-r1 24.11.0.85-r1 25.05.0.44-r1: ICA Client for Citrix Presentation servers
-net-misc/icecast 2.4.4-r3: Opensource alternative to shoutcast that supports mp3, ogg and aac streaming
+net-misc/icecast 2.4.4-r3 2.5.0: Opensource alternative to shoutcast that supports mp3, ogg and aac streaming
 net-misc/ices 2.0.2-r3: Icecast OGG streaming client, supports on the fly re-encoding
 net-misc/icingadb 1.2.0 1.4.0: Icinga configuration and state database supporting multiple environments
 net-misc/ifenslave 1.1.0-r6 1.1.0-r7: Attach and detach slave interfaces to a bonding device
@@ -15302,6 +15303,7 @@ net-misc/kea 2.6.3 2.6.4 3.0.1-r1 3.0.2 3.0.2-r1 9999: High-performance producti
 net-misc/keychain 2.8.5-r2: Agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
 net-misc/kio-zeroconf 25.08.3 25.12.1: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
 net-misc/knock 0.8: Simple port-knocking daemon
+net-misc/ktls-utils 1.3.0: Kernel TLS helper utilities
 net-misc/l7-filter-userspace 0.12_beta1-r1: Userspace utilities for layer 7 iptables QoS
 net-misc/l7-protocols 2009.05.28-r1: Protocol definitions of l7-filter kernel modules
 net-misc/lambdamoo 1.8.1-r4: networked mud that can be used for different types of collaborative software
@@ -15629,7 +15631,7 @@ net-proxy/sshuttle 1.3.1: Transparent proxy server that works as a poor man's VP
 net-proxy/tayga 0.9.2-r4 0.9.6: Out-of-kernel stateless NAT64 implementation based on TUN
 net-proxy/tinyproxy 1.11.2 1.11.2-r1: A lightweight HTTP/SSL proxy
 net-proxy/torsocks 2.4.0-r2 2.5.0: Use most socks-friendly applications with Tor
-net-proxy/trojan 1.16.0-r3: An unidentifiable mechanism that helps you bypass GFW
+net-proxy/trojan 1.16.0-r4: An unidentifiable mechanism that helps you bypass GFW
 net-proxy/tsocks 1.8_beta5-r9 1.8_beta5-r10: Transparent SOCKS v4 proxying library
 net-proxy/wwwoffle 2.9j: Web caching proxy suitable for non-permanent Internet connections
 net-proxy/ziproxy 3.3.2-r1: Forwarding, non-caching, compressing web proxy server
@@ -15651,7 +15653,7 @@ net-vpn/gsocket 1.4.43 1.4.43-r1 9999: Allow firewalled/NATed host to establish 
 net-vpn/headscale 0.26.1 0.27.1: An open source, self-hosted implementation of the Tailscale control server
 net-vpn/httptunnel 3.3_p20230508: httptunnel can create IP tunnels through firewalls/proxies using HTTP
 net-vpn/i2p 2.10.0: A privacy-centric, anonymous network
-net-vpn/i2pd 2.56.0-r1 2.57.0 2.58.0: A C++ daemon for accessing the I2P anonymous network
+net-vpn/i2pd 2.56.0-r1 2.58.0: A C++ daemon for accessing the I2P anonymous network
 net-vpn/iodine 0.7.0-r3 0.7.0-r4: IP over DNS tunnel
 net-vpn/isatapd 0.9.7-r2: Creates and maintains an ISATAP tunnel (rfc5214)
 net-vpn/libreswan 4.15 5.1-r1 5.2 5.3: IPsec implementation for Linux, fork of Openswan
@@ -17331,7 +17333,7 @@ sys-auth/skey 1.1.5-r14: Linux Port of OpenBSD Single-key Password System
 sys-auth/solo1 0.1.1-r1: CLI and Python library for SoloKeys Solo 1
 sys-auth/ssh-import-id 5.11-r1: Utility to securely retrieve an SSH public key and install it locally
 sys-auth/ssh-ldap-pubkey 1.4.0-r1: Utility to manage SSH public keys stored in LDAP
-sys-auth/sssd 2.9.7 2.11.1: System Security Services Daemon provides access to identity and authentication
+sys-auth/sssd 2.9.7 2.12.0: System Security Services Daemon provides access to identity and authentication
 sys-auth/thinkfinger 0.3-r3: Support for the UPEK/SGS Thomson fingerprint reader, common in Thinkpads
 sys-auth/ykclient 2.15: Yubico C client library
 sys-auth/ykpers 1.20.0-r1: Library and tool for personalization of Yubico's YubiKey
@@ -17733,7 +17735,7 @@ sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX in
 sys-kernel/vanilla-kernel 5.10.247 5.10.9999 5.15.197 5.15.9999 6.1.159 6.1.9999 6.6.119 6.6.120 6.6.9999 6.12.63 6.12.64 6.12.65 6.12.9999 6.18.4 6.18.5: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 5.4.302 5.10.247 5.15.197 6.1.160 6.6.120 6.12.65 6.16.12 6.17.13 6.18.5: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38: Quickly build and run kernels inside a virtualized snapshot of your live system
-sys-kernel/zen-sources 6.18.2 6.18.3: The Zen Kernel Live Sources
+sys-kernel/zen-sources 6.18.3 6.18.4 6.18.5: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
 sys-libs/basu 0.2.1: The sd-bus library, extracted from systemd
 sys-libs/binutils-libs 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r3 2.44-r2 2.45 2.45-r1 2.45.1 9999: Core binutils libraries (libbfd, libopcodes, libiberty) for external packages
@@ -17763,7 +17765,7 @@ sys-libs/libieee1284 0.2.11-r9: Library to query devices using IEEE1284
 sys-libs/libixp 0.5_p20110208-r3: A stand-alone client/server 9P library including ixpc client
 sys-libs/libmodulemd 2.15.0-r1 2.15.2 9999: C Library for manipulating Fedora Modularity metadata files
 sys-libs/libnbd 1.18.1-r3 1.22.5-r1 1.23.4-r2 1.23.9-r1: NBD client library in userspace
-sys-libs/libnvidia-container 1.17.8 1.18.0 9999: NVIDIA container runtime library
+sys-libs/libnvidia-container 1.18.0 1.18.1 9999: NVIDIA container runtime library
 sys-libs/libnvme 1.11.1-r1 1.12-r1 1.13-r1 1.14 1.15 1.16.1: C Library for NVM Express on Linux
 sys-libs/libosinfo 1.11.0-r1 1.12.0-r1: GObject library for managing information about real and virtual OSes
 sys-libs/libraw1394 2.1.2-r1: Library that provides direct access to the IEEE 1394 bus
