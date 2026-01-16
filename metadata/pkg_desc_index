@@ -4930,7 +4930,7 @@ dev-java/httpcomponents-client 4.5.13-r3: Apache HttpComponents Client
 dev-java/httpcore 4.4.14-r2: Apache HttpComponents Core (blocking I/O)
 dev-java/icedtea-sound 1.0.1-r2: Plugins for javax.sound
 dev-java/icedtea-web 1.8.8-r2: FOSS Java browser plugin and Web Start implementation
-dev-java/icu4j 77.1 78.1 78.2: A set of Java libraries providing Unicode and Globalization support
+dev-java/icu4j 77.1 78.2: A set of Java libraries providing Unicode and Globalization support
 dev-java/identicon 1.0: Visual representation of a hash value
 dev-java/incap 1.0.0: Helper library for building incremental annotation processors
 dev-java/injection-api 2.0.1: Jakarta Dependency Injection
@@ -5137,7 +5137,7 @@ dev-java/system-rules 1.19.0: A collection of JUnit rules for testing code which
 dev-java/tapestry-json 5.8.7-r1: Tapestry JSON
 dev-java/testng 6.11-r3 7.11.0: Testing framework inspired by JUnit and NUnit with new features
 dev-java/testparameterinjector 1.19: TestParameterInjector For JUnit4
-dev-java/tomcat-native 1.3.1 2.0.9-r1: Allows Tomcat to use certain native resources for better performance
+dev-java/tomcat-native 1.3.1 2.0.9-r1 2.0.12: Allows Tomcat to use certain native resources for better performance
 dev-java/tomcat-servlet-api 4.1.40-r1: Tomcat's Servlet API 2.3/JSP API 1.2 implementation
 dev-java/treelayout 1.0.3-r1: Efficient and customizable TreeLayout Algorithm in Java.
 dev-java/truth 1.4.5: Fluent assertions for Java and Android
@@ -10114,7 +10114,7 @@ dev-ruby/http-cookie 1.0.8 1.1.0: A ruby library to handle HTTP cookies
 dev-ruby/http-form_data 2.3.0-r1: Utility-belt to build form data request bodies
 dev-ruby/http-parser 1.2.3-r1: A super fast http parser for ruby
 dev-ruby/http_parser_rb 0.8.0 0.8.1: Simple callback-based HTTP request/response parser
-dev-ruby/httparty 0.23.1 0.23.2 0.24.0: Makes http fun! Also, makes consuming restful web services dead easy
+dev-ruby/httparty 0.23.1 0.23.2 0.24.0 0.24.2: Makes http fun! Also, makes consuming restful web services dead easy
 dev-ruby/httpauth 0.2.1-r1: Library implementing the full HTTP Authentication protocol (RFC 2617)
 dev-ruby/httpclient 2.8.3-r3 2.9.0: 'httpclient' gives something like the functionality of libwww-perl (LWP) in Ruby
 dev-ruby/i18n 1.14.7 1.14.8: Add Internationalization support to your Ruby application
@@ -10154,7 +10154,7 @@ dev-ruby/levenshtein 0.2.2-r3: Levenshtein distance algorithm
 dev-ruby/libusb 0.7.2: binding that gives Ruby programmers access to arbitrary USB devices
 dev-ruby/liquid 4.0.4 5.8.6 5.8.7 5.9.0 5.10.0 5.11.0: Template engine for Ruby
 dev-ruby/liquid-c 4.2.0: Liquid performance extension in C
-dev-ruby/listen 3.9.0: Listens to file modifications and notifies you about the changes
+dev-ruby/listen 3.9.0 3.10.0: Listens to file modifications and notifies you about the changes
 dev-ruby/little-plugger 1.1.4-r1: Module that provides Gem based plugin management
 dev-ruby/llhttp-ffi 0.5.1-r1: Ruby FFI bindings for llhttp
 dev-ruby/locale 2.1.4: A pure ruby library which provides basic APIs for localization
@@ -10389,7 +10389,7 @@ dev-ruby/ruby-cairo-gobject 4.2.4 4.2.9 4.3.4: Ruby cairo-gobject bindings
 dev-ruby/ruby-dict 0.9.4-r5: RFC 2229 client in Ruby
 dev-ruby/ruby-feedparser 0.11.3 0.11.4: Ruby library to parse ATOM/RSS feeds
 dev-ruby/ruby-filemagic 0.7.3: Ruby binding to libmagic
-dev-ruby/ruby-gdk3 4.2.4 4.2.9: Ruby GDK-3.x bindings
+dev-ruby/ruby-gdk3 4.2.4 4.2.9 4.3.4: Ruby GDK-3.x bindings
 dev-ruby/ruby-gdkpixbuf2 4.2.4 4.2.9 4.3.4: Ruby GdkPixbuf2 bindings
 dev-ruby/ruby-gettext 3.5.0: Native Language Support Library and Tools modeled after GNU gettext package
 dev-ruby/ruby-gio2 4.2.4 4.2.9 4.3.4 4.3.4-r1: Ruby binding of gio-2
@@ -14378,7 +14378,7 @@ media-video/oxine 0.7.1-r6: OSD frontend for Xine
 media-video/parole 4.18.2 4.20.0: A simple Xfce4 media player using GStreamer
 media-video/peek 1.5.1-r2: Simple animated Gif screen recorder
 media-video/pgmfindclip 1.13: automatically find a clipping border for a sequence of pgm images
-media-video/pipewire 1.4.9-r1 1.4.9-r3 1.4.9999 9999: Multimedia processing graphs
+media-video/pipewire 1.4.9-r1 1.4.9-r3 1.4.10 1.4.9999 9999: Multimedia processing graphs
 media-video/pitivi 2023.03-r2: A non-linear video editor using the GStreamer multimedia framework
 media-video/popcorntime-bin 0.5.1-r4: BitTorrent client that includes an integrated media player
 media-video/projectx 0.91.0.10-r6: Converts, splits and demuxes DVB and other MPEG recordings
@@ -15107,7 +15107,7 @@ net-mail/courier-imap 5.2.11-r2 5.3.1: An IMAP daemon designed specifically for 
 net-mail/cyrus-imapd 3.4.5-r3 3.4.9: The Cyrus IMAP Server
 net-mail/dbmail 3.2.3-r5 3.2.5-r2 3.3.1 3.4.1 3.5.4 3.5.5: Fast and scalable sql based email services
 net-mail/dot-forward 0.71-r5: Reads sendmail's .forward files under qmail
-net-mail/dovecot 2.3.21.1-r1 2.4.2 2.4.2-r1: An IMAP and POP3 server written with security primarily in mind
+net-mail/dovecot 2.3.21.1-r1 2.4.2 2.4.2-r1 2.4.2-r2: An IMAP and POP3 server written with security primarily in mind
 net-mail/email 3.1.3-r2: Advanced CLI tool for sending email
 net-mail/eps 1.7-r1: Inter7 Email Processing and mht System library
 net-mail/ezmlm-idx 7.2.2-r1: Simple yet powerful mailing list manager for qmail
@@ -17250,7 +17250,7 @@ sys-apps/system-monitoring-center 2.26.0-r1 9999: Multi-featured system monitor 
 sys-apps/systemctl-tui 0.4.0: A simple TUI for interacting with systemd services and their logs
 sys-apps/systemd 257.9 257.10 258.2 258.3 259 9999: System and service manager for Linux
 sys-apps/systemd-readahead 216: Split of readahead systemd implementation
-sys-apps/systemd-utils 254.24 254.26 255.18 255.21 256.17 259-r1: Utilities split out from systemd for OpenRC users
+sys-apps/systemd-utils 254.24 254.26 255.18 255.21 256.17 259-r2: Utilities split out from systemd for OpenRC users
 sys-apps/sysvinit 3.09 3.14 3.15: /sbin/init - parent of all processes
 sys-apps/tas 1.9.0.240925: Supermicro Thin-Agent Service for monitoring through the BMC/IPMI
 sys-apps/tcp-wrappers 7.6.31-r2: TCP Wrappers
@@ -17377,7 +17377,7 @@ sys-block/mpt-status 1.2.0-r2: Query tool to access the running configuration an
 sys-block/ms-sys 2.7.0: A command-line program for writing Microsoft compatible boot records
 sys-block/mtx 1.3.12-r1: Utilities for controlling SCSI media changers and tape drives
 sys-block/nbd 3.25-r1 9999: Userland client/server for kernel network block device
-sys-block/nbdkit 1.32.4 1.36.1 1.42.0 1.44.1 1.44.3: NBD server with stable plugin ABI and permissive license
+sys-block/nbdkit 1.44.3 1.46.0: NBD server with stable plugin ABI and permissive license
 sys-block/ndctl 71.1-r2 76.1 77-r2: Helper tools and libraries for managing non-volatile memory on Linux
 sys-block/open-iscsi 2.1.10-r1 2.1.11: A performant, transport independent, multi-platform implementation of RFC3720
 sys-block/open-isns 0.101 0.102 0.103: iSNS server and client for Linux
@@ -17769,7 +17769,7 @@ sys-libs/libhx 4.27 5.0 5.1 5.2: Platform independent library providing basic sy
 sys-libs/libieee1284 0.2.11-r9: Library to query devices using IEEE1284
 sys-libs/libixp 0.5_p20110208-r3: A stand-alone client/server 9P library including ixpc client
 sys-libs/libmodulemd 2.15.0-r1 2.15.2 9999: C Library for manipulating Fedora Modularity metadata files
-sys-libs/libnbd 1.18.1-r3 1.22.5-r1 1.23.4-r2 1.23.9-r1: NBD client library in userspace
+sys-libs/libnbd 1.18.1-r3 1.22.5-r1 1.23.9-r1 1.24.0: NBD client library in userspace
 sys-libs/libnvidia-container 1.18.0 1.18.1 9999: NVIDIA container runtime library
 sys-libs/libnvme 1.11.1-r1 1.12-r1 1.13-r1 1.14 1.15 1.16.1: C Library for NVM Express on Linux
 sys-libs/libosinfo 1.11.0-r1 1.12.0-r1: GObject library for managing information about real and virtual OSes
