@@ -922,7 +922,7 @@ app-admin/apg 2.3.0b_p20150129-r1 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.707.0 1.2.764.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.43.15 1.44.4 1.44.7 1.44.11 1.44.15 1.44.16 1.44.17 1.44.18 1.44.19: Universal Command Line Environment for AWS
+app-admin/awscli 1.43.15 1.44.4 1.44.7 1.44.11 1.44.15 1.44.20: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.10.0 2025.12.0: Bitwarden password manager desktop client
@@ -8100,7 +8100,7 @@ dev-python/a2wsgi 1.10.10: Convert WSGI app to ASGI app or ASGI app to WSGI app
 dev-python/absl-py 2.3.1: Abseil Python Common Libraries
 dev-python/accessible-pygments 0.0.5: A collection of accessible pygments styles
 dev-python/adblock 0.6.0-r1: Python wrapper for Brave's adblocking library, which is written in Rust
-dev-python/agate 1.14.0: A Python data analysis library that is optimized for humans instead of machines
+dev-python/agate 1.14.0 1.14.1: A Python data analysis library that is optimized for humans instead of machines
 dev-python/agate-dbf 0.2.3 0.2.4: Adds read support for DBF files to agate
 dev-python/agate-excel 0.4.1 0.4.2: Adds read support for Excel files (xls and xlsx) to agate
 dev-python/agate-sql 0.7.2 0.7.3: Adds SQL read/write support to agate
@@ -8219,8 +8219,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.42.9 1.42.14 1.42.17 1.42.21 1.42.25 1.42.26 1.42.27 1.42.28 1.42.29: The AWS SDK for Python
-dev-python/botocore 1.42.9 1.42.14 1.42.17 1.42.21 1.42.25 1.42.26 1.42.27 1.42.28 1.42.29: Low-level, data-driven core of boto 3
+dev-python/boto3 1.42.9 1.42.14 1.42.17 1.42.21 1.42.25 1.42.30: The AWS SDK for Python
+dev-python/botocore 1.42.9 1.42.14 1.42.17 1.42.21 1.42.25 1.42.30: Low-level, data-driven core of boto 3
 dev-python/bottle 0.12.25-r1 0.13.3 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.5.0 1.6.0_rc1 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.25 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8373,7 +8373,7 @@ dev-python/django-debug-toolbar 6.1.0: A configurable set of panels that display
 dev-python/django-filter 25.2: Django app allowing declarative dynamic QuerySet filtering from URL parameters
 dev-python/django-js-asset 3.1.2: Script tag with additional attributes for django.forms.Media
 dev-python/django-otp 1.6.3 1.7.0: Django framework adding two-factor authentication using one-time passwords
-dev-python/django-polymorphic 4.9.0 4.9.1 4.10.2: Seamless Polymorphic Inheritance for Django Models
+dev-python/django-polymorphic 4.9.0 4.9.1 4.10.2 4.10.3: Seamless Polymorphic Inheritance for Django Models
 dev-python/django-prometheus 2.4.1: Library to export Django metrics for Prometheus
 dev-python/django-redis 6.0.0: Full featured redis cache backend for Django
 dev-python/django-registration 5.2.1: user-registration application for Django
@@ -8535,8 +8535,8 @@ dev-python/greenstalk 2.1.0 2.1.1: Python 3 client for the beanstalkd work queue
 dev-python/griddataformats 1.0.2: Reading and writing of data on regular grids in Python
 dev-python/griffe 1.14.0 1.15.0: Signature generator for Python programs
 dev-python/griffe-inherited-docstrings 1.1.2: Griffe extension for inheriting docstrings
-dev-python/grpcio 1.73.1 1.74.0 1.75.0 1.75.1 1.76.0: HTTP/2-based RPC framework
-dev-python/grpcio-status 1.75.1 1.76.0: Reference package for GRPC Python status proto mapping
+dev-python/grpcio 1.76.0: HTTP/2-based RPC framework
+dev-python/grpcio-status 1.76.0: Reference package for GRPC Python status proto mapping
 dev-python/grpclib 0.4.8 0.4.9: Pure-Python gRPC implementation for asyncio
 dev-python/gsd 4.1.0 4.2.0: GSD - file format specification and a library to read and write it
 dev-python/gssapi 1.9.0 1.10.0 1.10.1: Low and high level wrappers around the GSSAPI C libraries
@@ -8553,7 +8553,7 @@ dev-python/hatch-jupyter-builder 0.9.1 0.9.1-r1: A hatch plugin to help build Ju
 dev-python/hatch-nodejs-version 0.4.0: Hatch plugin for versioning from a package.json file
 dev-python/hatch-vcs 0.5.0: Hatch plugin for versioning with your preferred VCS
 dev-python/hatchling 1.27.0 1.28.0: Modern, extensible Python build backend
-dev-python/hcloud 2.11.1 2.12.0 2.13.0 2.14.0: Official Hetzner Cloud python library
+dev-python/hcloud 2.12.0 2.13.0 2.14.0 2.15.0: Official Hetzner Cloud python library
 dev-python/helpdev 0.7.1-r1: Helping users and developers to get information about the environment
 dev-python/hidapi 0.14.0_p4 0.15.0: A Cython interface to HIDAPI library
 dev-python/hiredis 3.2.1 3.3.0: Python extension that wraps hiredis
@@ -8655,7 +8655,7 @@ dev-python/jinja2-time 0.2.0-r1: Jinja2 Extension for Dates and Times
 dev-python/jmespath 1.0.1: JSON Matching Expressions
 dev-python/joblib 1.5.2 1.5.3: Tools to provide lightweight pipelining in Python
 dev-python/josepy 2.0.0 2.1.0 2.2.0: JOSE protocol implementation in Python
-dev-python/jq 1.8.0 1.9.1 1.10.0: Python bindings for jq
+dev-python/jq 1.8.0 1.10.0 1.11.0: Python bindings for jq
 dev-python/js2py 0.74-r2: JavaScript to Python Translator & JavaScript interpreter in Python
 dev-python/jschema-to-python 1.2.3-r1: Generate source code for Python classes from a JSON schema
 dev-python/jsmin 3.0.1: JavaScript minifier
@@ -8795,7 +8795,7 @@ dev-python/merge3 0.0.15 0.0.16: Python implementation of 3-way merge
 dev-python/mergedeep 1.3.4-r1: A deep merge tool for Python
 dev-python/mergedict 1.0.0-r1: A Python 'dict' with a merge() method
 dev-python/meshio 5.3.5-r1: Input/output for many mesh formats
-dev-python/meson-python 0.18.0-r1: Meson PEP 517 Python build backend
+dev-python/meson-python 0.18.0-r1 0.19.0: Meson PEP 517 Python build backend
 dev-python/metakernel 0.30.3 0.30.4: Metakernel for Jupyter
 dev-python/micawber 0.5.6 0.6.2: A small library for extracting rich content from urls
 dev-python/mido 1.3.3: MIDI Objects, a library for working with MIDI messages and ports
@@ -8851,7 +8851,7 @@ dev-python/mygpoclient 1.10: A gpodder.net client library
 dev-python/mypy 1.18.1 1.18.2 1.19.0 1.19.1: Optional static typing for Python
 dev-python/mypy-extensions 1.1.0: Type system extensions for programs checked with mypy
 dev-python/mysqlclient 2.2.6 2.2.7: Python interface to MySQL
-dev-python/myst-parser 4.0.1 4.0.1-r1: Extended commonmark compliant parser, with bridges to Sphinx
+dev-python/myst-parser 4.0.1-r1 5.0.0: Extended commonmark compliant parser, with bridges to Sphinx
 dev-python/nagiosplugin 1.3.3 1.4.0: A class library for writing nagios-compatible plugins
 dev-python/nanobind 2.9.2 2.10.2: Tiny and efficient C++/Python bindings
 dev-python/narwhals 2.14.0 2.15.0: Extremely lightweight compatibility layer between dataframe libraries
@@ -8860,7 +8860,7 @@ dev-python/nautilus-python 4.0.1: Python bindings for the Nautilus file manager
 dev-python/nbclassic 1.3.1 1.3.2 1.3.3: Jupyter Notebook as a Jupyter Server Extension
 dev-python/nbclient 0.10.2 0.10.2-r1 0.10.3 0.10.4: A client library for executing Jupyter notebooks
 dev-python/nbconvert 7.16.6 7.16.6-r1: Converting Jupyter Notebooks
-dev-python/nbdime 4.0.2: Diff and merge of Jupyter Notebooks
+dev-python/nbdime 4.0.2 4.0.3: Diff and merge of Jupyter Notebooks
 dev-python/nbformat 5.10.4: Reference implementation of the Jupyter Notebook format
 dev-python/nbsphinx 0.9.6 0.9.8: Jupyter Notebook Tools for Sphinx
 dev-python/nbval 0.11.0: A pytest plugin to validate Jupyter notebooks
@@ -8972,7 +8972,7 @@ dev-python/pelican-minify 2.0.0: An HTML minification plugin for Pelican, the st
 dev-python/pexpect 4.9.0: Python module for spawning child apps and responding to expected patterns
 dev-python/pgspecial 2.2.1: Python implementation of PostgreSQL meta commands
 dev-python/pgzero 1.2.1-r2: A zero-boilerplate games programming framework based on Pygame
-dev-python/phonenumbers 9.0.18 9.0.19 9.0.20 9.0.21: Python port of Google's libphonenumber
+dev-python/phonenumbers 9.0.20 9.0.21 9.0.22: Python port of Google's libphonenumber
 dev-python/phply 1.2.6: Lexer and parser for PHP source implemented using PLY
 dev-python/pickleshare 0.7.5-r1: A small 'shelve' like datastore with concurrency support
 dev-python/picobox 4.0.0: Dependency injection framework designed with Python in mind
@@ -9045,7 +9045,7 @@ dev-python/pyalsa 1.2.14: Python bindings for ALSA library
 dev-python/pyamg 5.2.1 5.3.0: Algebraic multigrid solvers in Python
 dev-python/pyaml 25.7.0: PyYAML-based module to produce pretty and readable YAML-serialized data
 dev-python/pyarrow 20.0.0 21.0.0 22.0.0 9999: Python library for Apache Arrow
-dev-python/pyasn1 0.6.1: ASN.1 library for Python
+dev-python/pyasn1 0.6.1 0.6.2: ASN.1 library for Python
 dev-python/pyasn1-modules 0.4.2: pyasn1 modules
 dev-python/pyasynchat 1.0.4 1.0.5: Make asynchat available for Python 3.12 onwards
 dev-python/pyasyncore 1.0.4 1.0.5: Make asyncore available for Python 3.12 onwards
@@ -9364,7 +9364,7 @@ dev-python/pyyaml 6.0.2 6.0.3: YAML parser and emitter for Python
 dev-python/pyyaml-env-tag 1.1: A custom YAML tag for referencing environment variables in YAML files
 dev-python/pyzbar 0.1.9: Read one-dimensional barcodes and QR codes from Python
 dev-python/pyzmq 26.4.0 27.0.0 27.0.1 27.0.2 27.1.0: Lightweight and super-fast messaging library built on top of the ZeroMQ library
-dev-python/pyzotero 1.7.5 1.7.6: A Python client for the Zotero API
+dev-python/pyzotero 1.7.6 1.8.0: A Python client for the Zotero API
 dev-python/pyzstd 0.18.0 0.19.0 0.19.1: Support for Zstandard (zstd) compression
 dev-python/qdarkstyle 3.2.3: A dark style sheet for QtWidgets application
 dev-python/qiskit 2.2.3 2.3.0_rc1 2.3.0: An open-source SDK for working with quantum computers
@@ -9377,7 +9377,7 @@ dev-python/qtawesome 1.3.1 1.4.0: Enables iconic fonts such as Font Awesome in P
 dev-python/qtconsole 5.5.2 5.6.1 5.7.0: Qt-based console for Jupyter with support for rich media output
 dev-python/qtpy 2.4.3 2.4.3-r1: Abstraction layer on top of PyQt and PySide with additional custom QWidgets
 dev-python/qtsass 0.4.0: Compile SASS files to Qt stylesheets
-dev-python/quantities 0.16.2: Support for physical quantities with units, based on numpy
+dev-python/quantities 0.16.2 0.16.4: Support for physical quantities with units, based on numpy
 dev-python/quart 0.20.0: A Python ASGI web microframework with the same API as Flask
 dev-python/quart-trio 0.12.0: A Quart extension to provide trio support
 dev-python/radon 6.0.1-r2: Code Metrics in Python
@@ -9402,7 +9402,7 @@ dev-python/regex 2025.11.3 2026.1.15: Alternative regular expression module to r
 dev-python/regress 2025.5.1 2025.10.1: Python bindings to the Rust regress crate
 dev-python/rencode 1.0.8-r1: Serialization similar to bencode from the BitTorrent project
 dev-python/reno 4.1.0: Release notes manager, storing release notes in a git repo and building docs
-dev-python/reportlab 4.4.5 4.4.6 4.4.7: Tools for generating printable PDF documents from any data source
+dev-python/reportlab 4.4.5 4.4.6 4.4.7 4.4.9: Tools for generating printable PDF documents from any data source
 dev-python/repoze-lru 0.7-r3: A tiny LRU cache implementation and decorator
 dev-python/requests 2.32.4 2.32.5: HTTP library for human beings
 dev-python/requests-cache 1.2.1: Persistent cache for requests library
@@ -9456,7 +9456,7 @@ dev-python/ruamel-yaml-clib 0.2.14 0.2.15: C-based reader/scanner and emitter fo
 dev-python/ruamel-yaml-clibz 0.3.7: C-based reader/scanner and emitter for dev-python/ruamel-yaml
 dev-python/rustworkx 0.16.0 0.17.1: A high performance Python graph library implemented in Rust
 dev-python/s3transfer 0.14.0 0.15.0 0.16.0: An Amazon S3 Transfer Manager
-dev-python/sabctools 8.2.6 9.1.0 9.2.0 9.2.1 9.3.0: Module providing raw yEnc encoding/decoding for SABnzbd
+dev-python/sabctools 8.2.6 9.1.0 9.2.0 9.2.1 9.3.0 9.3.1: Module providing raw yEnc encoding/decoding for SABnzbd
 dev-python/sarge 0.1.7_p1: Wrapper for subprocess which provides command pipeline functionality
 dev-python/sarif-om 1.0.4-r1: Classes implementing the SARIF 2.1.0 object model
 dev-python/schema 0.7.7 0.7.8: Simple data validation library
@@ -9559,7 +9559,7 @@ dev-python/sphinxcontrib-httpdomain 1.8.1: Sphinx domain for documenting HTTP AP
 dev-python/sphinxcontrib-jquery 4.1: Extension to include jQuery on newer Sphinx releases
 dev-python/sphinxcontrib-jsmath 1.0.1-r4: Sphinx extension which renders display math in HTML via JavaScript
 dev-python/sphinxcontrib-log-cabinet 1.0.1-r1: Organize changelog directives in Sphinx docs
-dev-python/sphinxcontrib-mermaid 1.2.2: Sphinx spelling extension
+dev-python/sphinxcontrib-mermaid 1.2.2 2.0.0: Sphinx spelling extension
 dev-python/sphinxcontrib-plantuml 0.30 0.31: Sphinx extensions for PlantUML
 dev-python/sphinxcontrib-programoutput 0.18: Extension to sphinx to include program output
 dev-python/sphinxcontrib-qthelp 2.0.0-r1: Sphinx extension which outputs QtHelp documents
@@ -9595,7 +9595,7 @@ dev-python/stestr 4.2.0: A parallel Python test runner built around subunit
 dev-python/stevedore 5.5.0 5.6.0: Manage dynamic plugins for Python applications
 dev-python/stomp-py 8.1.2: Python client library for the STOMP messaging protocol
 dev-python/strict-rfc3339 0.7-r2: Strict, simple, lightweight RFC3339 functions
-dev-python/stripe 13.2.0 14.0.1 14.1.0: Stripe Python bindings
+dev-python/stripe 14.0.1 14.1.0: Stripe Python bindings
 dev-python/structlog 25.4.0 25.5.0: Structured Logging for Python
 dev-python/subprocess-tee 0.4.2: subprocess.run replacement with tee(1)-like output
 dev-python/suds-community 1.2.0: Lightweight SOAP client
@@ -11022,7 +11022,7 @@ dev-util/patchutils 0.4.2 0.4.4-r1: Collection of tools that operate on patch fi
 dev-util/patdiff 0.16.0 0.17.0: Colored patience diffs with word-level refinement
 dev-util/peg 0.1.19 0.1.20: Recursive-descent parser generators for C
 dev-util/perf 6.14 6.16 6.16-r1 6.17 6.18-r1 6.18.5: Userland tools for Linux Performance Counters
-dev-util/pixi 0.62.2 0.63.0: A package management and workflow tool
+dev-util/pixi 0.62.2 0.63.0 0.63.1: A package management and workflow tool
 dev-util/pkgcheck 0.10.37-r1 0.10.39 9999: pkgcore-based QA utility for ebuild repos
 dev-util/pkgconf 2.3.0 2.4.3 2.5.1 9999: pkg-config compatible replacement with no dependencies other than C99
 dev-util/pkgcruft 0.0.16 0.0.18 0.0.18-r1 9999: QA library and tools based on pkgcraft
@@ -14842,7 +14842,7 @@ net-im/gajim 2.2.0 2.4.1 2.4.2: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
 net-im/kaidan 0.13.0: Modern XMPP chat app for every device
 net-im/libcommuni 3.7.0-r2: A cross-platform IRC framework written with Qt
-net-im/mattermost-desktop-bin 5.13.2 5.13.3_rc1 6.0.2 6.0.3_rc1: Mattermost Desktop application
+net-im/mattermost-desktop-bin 5.13.2 5.13.3_rc1 6.0.3: Mattermost Desktop application
 net-im/neochat 25.08.3 25.12.1: Client for Matrix, the decentralized communication protocol
 net-im/openmittsu 0.10.3.0: Open source chat client for Threema-style end-to-end encrypted chat networks
 net-im/pidgin 2.14.14-r2 2.14.14-r3: GTK Instant Messenger client
@@ -16260,7 +16260,7 @@ sci-libs/oc 2.0-r1: Network Data Access Protocol client C library
 sci-libs/octomap 1.10.0 1.10.0-r1: Efficient Probabilistic 3D Mapping Framework Based on Octrees
 sci-libs/ogdi 4.1.0-r1: Open Geographical Datastore Interface, a GIS support library
 sci-libs/ondselsolver 1.0.1_p20241024 1.0.1_p20241127-r1: Assembly Constraints and Multibody Dynamics code
-sci-libs/openblas 0.3.29 0.3.30-r5: Optimized BLAS library based on GotoBLAS2
+sci-libs/openblas 0.3.30-r5 0.3.31: Optimized BLAS library based on GotoBLAS2
 sci-libs/opencascade 7.8.1 7.8.1-r1 9999: Development platform for CAD/CAE, 3D surface/solid modeling and data exchange
 sci-libs/openlibm 0.8.3: High quality system independent, open source libm
 sci-libs/orocos-bfl 0.8.0: Bayesian Filtering Library
@@ -17729,7 +17729,7 @@ sys-kernel/linux-headers 3.18-r1 4.4-r1 4.9-r1 4.14-r2 4.19-r1 5.4-r2 5.10-r2 5.
 sys-kernel/linux-next 9999: Linux kernel and patches aimed at the next kernel merge window
 sys-kernel/mips-sources 4.19.325 5.4.294: Kernel.org sources for MIPS-based machines
 sys-kernel/modprobed-db 2.47 2.48: Keeps track of EVERY kernel module ever used - useful for make localmodconfig
-sys-kernel/pf-sources 6.17_p4 6.18_p2 6.18_p3 6.18_p4: Linux kernel fork that includes the pf-kernel patchset and Gentoo's genpatches
+sys-kernel/pf-sources 6.17_p4 6.18_p2 6.18_p3 6.18_p4 6.18_p5: Linux kernel fork that includes the pf-kernel patchset and Gentoo's genpatches
 sys-kernel/raspberrypi-image 5.15.32_p20220331 6.1.21_p20230405 6.6.28_p20240424 6.6.31_p20240529 6.6.47_p20240902 6.12.47_p20250915 9999: Raspberry Pi (all versions) kernel and modules
 sys-kernel/raspberrypi-sources 5.15.76_p20221104 5.15.84_p20230106 6.1.21_p20230405 6.6.31_p20240529 6.6.47_p20240902 6.12.47_p20250916: Raspberry Pi kernel sources
 sys-kernel/rt-sources 4.14.336_p159 4.19.325_p140 5.4.293_p98 5.10.239_p133 5.15.185_p86 6.0.5_p14 6.1.134_p51 6.1.141_p52 6.5.2_p8 6.6.94_p56 6.12.28_p10: Full Linux 6.12 kernel sources with the CONFIG_PREEMPT_RT patch
@@ -17916,8 +17916,8 @@ sys-process/wait_on_pid 0.0.2-r2: Small utility to wait for an arbitrary process
 sys-process/watchpid 0.1-r2: Watches a process for termination
 sys-process/xjobs 20241010: Reads commands line by line and executes them in parallel
 virtual/acl 0-r2: Virtual for acl support (sys/acl.h)
-virtual/blas 3.8 3.8-r1: Virtual for FORTRAN 77 BLAS implementation
-virtual/cblas 3.8 3.8-r1: Virtual for BLAS C implementation
+virtual/blas 3.8-r1: Virtual for FORTRAN 77 BLAS implementation
+virtual/cblas 3.8-r1: Virtual for BLAS C implementation
 virtual/checkpassword 0-r2: Virtual for checkpassword compatible applications
 virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
@@ -17944,8 +17944,8 @@ virtual/jpeg 100-r1: Virtual to select between libjpeg-turbo and IJG jpeg for so
 virtual/jpeg-compat 62: A virtual for the libjpeg.so.62 ABI for binary-only programs
 virtual/jre 1.8.0-r3 11-r2 17 21 25 26 27: Virtual for Java Runtime Environment (JRE)
 virtual/krb5 0-r1: Virtual for Kerberos V implementation
-virtual/lapack 3.10 3.10-r1: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
-virtual/lapacke 3.8-r1 3.8-r2: Virtual for LAPACK C implementation
+virtual/lapack 3.10-r1: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
+virtual/lapacke 3.8-r2: Virtual for LAPACK C implementation
 virtual/latex-base 1.0: Virtual for basic LaTeX binaries
 virtual/ldb 2.9.2 2.10.0 2.11.0: Virtual for samba project's ldb
 virtual/libc 1-r1: Virtual for the C library
@@ -18181,7 +18181,7 @@ www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.3 25.12.1: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.6.0 140.7.0 146.0 146.0.1 147.0: Firefox Web Browser
-www-client/firefox-bin 140.6.0 140.7.0 146.0.1 147.0: Firefox Web Browser
+www-client/firefox-bin 140.6.0 140.7.0 146.0.1 147.0 147.0.1: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.169 144.0.7559.59: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31 145.0.7632.5: The web browser from Google
 www-client/google-chrome-unstable 146.0.7635.0: The web browser from Google
@@ -18200,7 +18200,7 @@ www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secu
 www-client/opera-developer 126.0.5744.0 126.0.5748.0 127.0.5776.0: A fast and secure web browser
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.6.1-r1 3.6.2 3.6.3 9999: Keyboard-driven, vim-like browser based on Python and Qt
-www-client/seamonkey 2.53.20 2.53.21 2.53.22: Seamonkey Web Browser
+www-client/seamonkey 2.53.20 2.53.21 2.53.22 2.53.23: Seamonkey Web Browser
 www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.3 3.4: Web browser designed to organize and run Web applications
@@ -19095,7 +19095,7 @@ x11-wm/notion 4.0.4 9999: Notion is a tiling, tabbed window manager for the X wi
 x11-wm/openbox 3.6.1-r11 9999: Standards compliant, fast, light-weight, extensible window manager
 x11-wm/oroborus 2.0.20-r2: Small and fast window manager
 x11-wm/page 1.9.10 1.9.10-r1: A mouse friendly tiling window manager
-x11-wm/pekwm 0.3.0 0.3.2 0.4.1: A lightweight window manager initially based on aewm++
+x11-wm/pekwm 0.3.0 0.3.2 0.4.1 0.4.2: A lightweight window manager initially based on aewm++
 x11-wm/qtile 0.33.0 0.34.0-r1 0.34.1: A full-featured, hackable tiling window manager written in Python
 x11-wm/ratpoison 1.4.9-r3 9999: window manager without mouse dependency
 x11-wm/selectwm 0.4.1-r2: window manager selector tool
