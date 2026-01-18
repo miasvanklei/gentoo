@@ -11189,13 +11189,13 @@ dev-vcs/gitolite-gentoo 3.6.6.1-r3 3.6.13.1: Highly flexible server for git dire
 dev-vcs/gitstats 0_pre20201124: Statistics generator for git
 dev-vcs/gitui 0.28.0: blazing fast terminal-ui for git
 dev-vcs/guilt 0.36-r1: A series of bash scripts which add a quilt-like interface to git
-dev-vcs/hg-evolve 11.1.9: enables the changeset evolution feature of Mercurial
+dev-vcs/hg-evolve 11.1.9 11.1.10: enables the changeset evolution feature of Mercurial
 dev-vcs/hg-git 1.2.0-r1: push to and pull from a Git repository using Mercurial
 dev-vcs/hub 2.14.2-r1: Command-line wrapper for git that makes you better at GitHub
 dev-vcs/jj 0.36.0 0.37.0: Jujutsu - an experimental version control system
 dev-vcs/kdesvn 2.1.0_p20250525: Frontend to the subversion vcs
 dev-vcs/lab 0.25.1: Lab wraps Git or Hub, making it simple to interact with repositories on GitLab
-dev-vcs/mercurial 6.7.4-r2 6.7.4-r3 6.8.2 6.9.4 7.0.3 7.1.2 9999: Scalable distributed SCM
+dev-vcs/mercurial 6.7.4-r2 6.7.4-r3 6.8.2 6.9.4 7.0.3 7.1.2-r1 9999: Scalable distributed SCM
 dev-vcs/mergiraf 0.16.1: Syntax-aware git merge driver
 dev-vcs/mr 1.20180726: Multiple Repository management tool
 dev-vcs/pkgcruft-git 0.0.3 0.0.5 0.0.5-r2 9999: QA support for verifying git commits via pkgcruft
@@ -12045,7 +12045,7 @@ gnome-extra/gnome-shell-extension-bluetooth-quick-connect 45: Allow to connect b
 gnome-extra/gnome-shell-extension-control-blur-effect-on-lock-screen 20241110: Control the blur effect on gnome-shell lock screen
 gnome-extra/gnome-shell-extension-dash-to-panel 68 70 72: An icon taskbar for the Gnome Shell
 gnome-extra/gnome-shell-extension-desktop-icons-ng 47.0.13 49.0.4 49.0.5: Desktop icon support for GNOME Shell
-gnome-extra/gnome-shell-extension-gsconnect 67 71: KDE Connect implementation for GNOME
+gnome-extra/gnome-shell-extension-gsconnect 71: KDE Connect implementation for GNOME
 gnome-extra/gnome-shell-extension-pop-shell 1.2.0_p20250301 1.2.0_p20250710: Keyboard-driven layer for GNOME Shell with tiling support
 gnome-extra/gnome-shell-extension-weather-in-the-clock 20221024-r4: Display the current weather in the clock
 gnome-extra/gnome-shell-extension-weather-oclock 47.0 49.0: Display the current weather inside the pill next to the clock
@@ -12725,7 +12725,7 @@ mail-mta/msmtp 1.8.30 1.8.31-r1 1.8.32: An SMTP client and SMTP plugin for mail 
 mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, simple message transfer agent
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
-mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0: Lightweight but featured SMTP daemon from OpenBSD
+mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0 7.8.0_p0: Lightweight but featured SMTP daemon from OpenBSD
 mail-mta/postfix 3.10.4 3.10.6 3.10.7 3.11.0_rc3-r1 3.12_pre20260111: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
@@ -14411,7 +14411,7 @@ media-video/tivodecode 0.2_pre4: TiVo File Decoder
 media-video/totem 43.1 43.2: Media player for GNOME
 media-video/tsmuxer 2.7.0: Utility to create and demux TS and M2TS files
 media-video/ttcut 0.19.6_p2-r1: Tool for cutting MPEG files especially for removing commercials
-media-video/untrunc 0_pre20240814: Restore truncated mp4/mov files
+media-video/untrunc 0_pre20240814 0_pre20260112: Restore truncated mp4/mov files
 media-video/ushare 2.1 2.1_p20250817: uShare is a UPnP (TM) A/V & DLNA Media Server
 media-video/v4l2loopback 0.13.1 0.15.0 0.15.1 0.15.3 9999: v4l2 loopback device whose output is its own input
 media-video/vamps 0.99.2-r2: Very fast requantisizing tool for backup DVDs
@@ -14483,7 +14483,7 @@ net-analyzer/fprobe 1.1-r6 1.1-r7: libpcap-based tool to collect network traffic
 net-analyzer/fragroute 1.2.6-r5: Testing of network intrusion detection systems, firewalls and TCP/IP stacks
 net-analyzer/ftester 1.0: Firewall and Intrusion Detection System testing tool
 net-analyzer/fwlogwatch 1.5-r1: A packet filter and firewall log analyzer
-net-analyzer/gnome-nettool 42.0: Graphical front-ends to various networking command-line
+net-analyzer/gnome-nettool 42.0 42.0-r1: Graphical front-ends to various networking command-line
 net-analyzer/goaccess 1.8.1 1.9.3 9999: A real-time web log analyzer and interactive viewer in a terminal
 net-analyzer/gr-fosphor 0.0_p20210108-r3 9999: gnuradio fosphor block (GPU spectrum display)
 net-analyzer/greenbone-feed-sync 25.1.0: New script for syncing the Greenbone Community Feed
@@ -15951,7 +15951,7 @@ sci-calculators/speedcrunch 0.12.0_p20241202: Fast and usable calculator for pow
 sci-calculators/tiemu 3.03-r2: Texas Instruments hand-helds emulator
 sci-calculators/tilp2 1.18-r1: Communication program for Texas Instruments calculators
 sci-calculators/transcalc 0.14-r3 0.14.1: Microwave and RF transmission line calculator
-sci-calculators/units 2.24: Unit conversion program
+sci-calculators/units 2.24 2.25: Unit conversion program
 sci-calculators/wcalc 2.5: A flexible command-line scientific calculator
 sci-calculators/xsv 0.13.0-r1: A fast CSV command line toolkit written in Rust
 sci-chemistry/GromacsWrapper 0.9.1: Python framework for Gromacs
