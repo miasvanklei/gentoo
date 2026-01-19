@@ -2967,7 +2967,7 @@ app-misc/xmind 3.7.6_p201801311814: Brainstorming and mind mapping software tool
 app-misc/yq 3.4.3: Command-line YAML processor - jq wrapper for YAML documents
 app-misc/yq-go 4.48.2 4.49.2 4.50.1: yq is a lightweight and portable command-line YAML, JSON and XML processor
 app-misc/ytree 2.09 2.10: Curses-based file manager
-app-misc/zellij 0.42.2 0.43.1: A terminal workspace with batteries included
+app-misc/zellij 0.42.2 0.43.1 0.43.1-r1: A terminal workspace with batteries included
 app-misc/zisofs-tools 1.0.8-r1: User utilities for zisofs
 app-mobilephone/adebar 2.4.2: Android DEvice Backup And Report, using Bash and ADB
 app-mobilephone/anyremote 6.7.3: Bluetooth, infrared or cable remote control service
@@ -11934,7 +11934,7 @@ games-strategy/war1gus 3.3.2: Warcraft: Orcs & Humans for the Stratagus game eng
 games-strategy/wargus 3.3.2: Warcraft II for the Stratagus game engine
 games-strategy/warmux 11.04.1-r3: A free Worms clone
 games-strategy/warzone2100 4.4.2 4.5.5-r1 4.6.1: 3D real-time strategy game
-games-strategy/wesnoth 1.18.5 1.19.13 1.19.18: Battle for Wesnoth - A fantasy turn-based strategy game
+games-strategy/wesnoth 1.18.6 1.19.18 1.19.19: Battle for Wesnoth - A fantasy turn-based strategy game
 games-strategy/widelands 1.2.1 1.3 9999: Game similar to Settlers 2
 games-strategy/xbattleai 1.2.2-r3: A multi-player game of strategy and coordination
 games-util/acc 1.60: ACS script compiler for use with ZDoom and Hexen
@@ -13281,7 +13281,7 @@ media-libs/giblib 1.2.4-r2: A graphics library built on top of imlib2
 media-libs/giflib 5.2.2: Library to handle, display and manipulate GIF images
 media-libs/glew 1.6.0-r101 1.10.0-r101 2.2.0-r1: The OpenGL Extension Wrangler Library
 media-libs/glfw 3.3.8 3.3.9 3.4: Portable OpenGL FrameWork
-media-libs/glm 1.0.1: OpenGL Mathematics
+media-libs/glm 1.0.1 1.0.2: OpenGL Mathematics
 media-libs/glpng 1.47: OpenGL PNG image library
 media-libs/glu 9.0.3 9999: The OpenGL Utility Library
 media-libs/glycin-loaders 1.2.4 2.0.7 2.1_alpha: Loaders for glycin clients (glycin crate or libglycin)
@@ -15248,7 +15248,7 @@ net-misc/ethertypes 0: Maps ethernet frame ids to symbolic names
 net-misc/eventd 0.29.0-r2: A small daemon to act on remote or local events
 net-misc/exabgp 4.2.23 4.2.25: The BGP swiss army knife of networking
 net-misc/fakeidentd 2.6-r1: A static, secure identd. One source file only!
-net-misc/freerdp 2.11.7-r1 2.9999 3.14.1 3.16.0 3.17.1 3.17.2-r1 9999: Free implementation of the Remote Desktop Protocol
+net-misc/freerdp 2.11.7-r1 2.9999 3.14.1 3.16.0 3.17.1 3.17.2-r1 3.21.0 9999: Free implementation of the Remote Desktop Protocol
 net-misc/frr 10.1.3 10.2.2 10.2.3 10.3.1 10.4.1 10.5.0: The FRRouting Protocol Suite
 net-misc/gallery-dl 1.30.10 1.31.2 1.31.3 9999: Download image galleries and collections from several image hosting sites
 net-misc/geckodriver 0.36.0: Proxy for using WebDriver clients to interact with Gecko-based browsers
@@ -15641,7 +15641,7 @@ net-voip/sipvicious 0.3.4-r1: SIPVicious is a SIP security package
 net-voip/umurmur 0.3.1: Minimalistic Murmur (Mumble server)
 net-voip/yate 6.2.0: The Yate AV Suite
 net-vpn/6tunnel 0.13-r1: TCP proxy for applications that don't speak IPv6
-net-vpn/candy 6.1.3 6.1.4: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/candy 6.1.4 6.1.6: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflared 2025.10.1: A command-line client and tunneling daemon for Cloudflare Tunnel
 net-vpn/corkscrew 2.0-r1: a tool for tunneling SSH through HTTP proxies
 net-vpn/derper 1.86.5 1.92.1 1.92.4: DERP server for tailscale network
@@ -17247,7 +17247,7 @@ sys-apps/sensei-raw-ctl 0.0_pre20180729-r1: SteelSeries Sensei Raw configuration
 sys-apps/servicelog 1.1.15 1.1.16: Provides utilities for logging service-related events
 sys-apps/setserial 2.17-r6: Configure your serial ports with it
 sys-apps/sg3_utils 1.47 1.47-r1 1.47-r2 1.48: Apps for querying the sg SCSI interface
-sys-apps/shadow 4.14.8 4.14.8-r1 4.14.8-r2 4.19.0_rc1: Utilities to deal with user accounts
+sys-apps/shadow 4.14.8 4.14.8-r1 4.14.8-r2 4.19.2: Utilities to deal with user accounts
 sys-apps/smartmontools 7.5-r1 9999: Tools to monitor storage systems to provide advanced warning of disk degradation
 sys-apps/smc-sum 2.14.0.20240215: Updates the BIOS and IPMI firmware and system settings on Supermicro mainboards
 sys-apps/smcipmitool 2.29.0.250214: An out-of-band utility for interfacing with SuperBlade and IPMI devices via CLI
