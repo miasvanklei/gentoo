@@ -3369,7 +3369,7 @@ app-text/pspdftool 0.03: Tool for prepress preparation of PDF and PostScript doc
 app-text/pspresent 1.3-r2: A tool to display full-screen PostScript presentations
 app-text/pstotext 1.9-r5: Extract ASCII text from a PostScript or PDF file
 app-text/psutils 1.17-r5 2.09 3.3.11: Utilities for manipulating PostScript documents
-app-text/qpdf 12.0.0 12.1.0 12.2.0 12.3.0: Command-line tool for structural, content-preserving transformation of PDF files
+app-text/qpdf 12.0.0 12.1.0 12.2.0 12.3.0 12.3.1: Command-line tool for structural, content-preserving transformation of PDF files
 app-text/qpdfview 0.5_p20240423: Tabbed document viewer
 app-text/rarian 0.8.4 0.8.6-r1: A documentation metadata library
 app-text/recode 3.7.14: Convert files between various character sets
@@ -9899,7 +9899,7 @@ dev-ruby/airbrussh 1.5.3 1.6.0: A replacement log formatter for SSHKit
 dev-ruby/amatch 0.4.1 0.4.2 0.5.0 0.6.0: Approximate Matching Extension for Ruby
 dev-ruby/ammeter 1.1.7: Write specs for your Rails 3+ generators
 dev-ruby/amq-client 1.0.4-r1: A fully-featured, low-level AMQP 0.9.1 client
-dev-ruby/amq-protocol 2.3.3 2.3.4 2.4.0 2.5.0: An AMQP 0.9.1 serialization library for Ruby
+dev-ruby/amq-protocol 2.3.3 2.3.4 2.4.0 2.5.0 2.5.1: An AMQP 0.9.1 serialization library for Ruby
 dev-ruby/ansi 1.5.0-r2: The Ruby ANSI project is collection of ANSI escape codes for Ruby
 dev-ruby/appraisal 2.5.0: Ruby library for testing your library against different versions of dependencies
 dev-ruby/arel-helpers 2.16.0 2.17.0: Tools to help construct database queries
@@ -10437,7 +10437,7 @@ dev-ruby/sawyer 0.9.2 0.9.3: Secret User Agent of HTTP
 dev-ruby/sdoc 1.1.0-r1 2.6.1 2.6.2 2.6.4 2.6.5: rdoc generator html with javascript search index
 dev-ruby/securerandom 0.4.1: Interface for secure random number generator
 dev-ruby/seed-fu 2.3.9-r1: Advanced seed data handling for Rails
-dev-ruby/selenium-webdriver 4.1.0-r1 4.11.0 4.31.0 4.33.0 4.35.0 4.38.0 4.39.0: This gem provides Ruby bindings for WebDriver
+dev-ruby/selenium-webdriver 4.1.0-r1 4.11.0 4.31.0 4.33.0 4.35.0 4.38.0 4.39.0 4.40.0: This gem provides Ruby bindings for WebDriver
 dev-ruby/semantic_puppet 1.1.1: Library of tools for working with Semantic Versions and module dependencies
 dev-ruby/sequel 5.93.0 5.95.1 5.96.0 5.97.0 5.99.0 5.100.0: A lightweight database toolkit for Ruby
 dev-ruby/serialport 1.4.0: a library for serial port (rs232) access in ruby
@@ -15170,8 +15170,8 @@ net-mail/sendEmail 1.56-r4: Command line based, SMTP email agent
 net-mail/serialmail 0.75-r5: A serialmail is a collection of tools for passing mail across serial links
 net-mail/signify 1.14-r2: A (semi-)random e-mail signature rotator
 net-mail/smtptools 0.2.3-r1: A collection of tools to send or receive mails with SMTP
-net-mail/stalwart-cli 0.10.7 0.11.8 0.12.4 0.13.4 0.14.1 0.15.1 0.15.3: Stalwart Mail Server command line utility
-net-mail/stalwart-mail 0.11.8-r1 0.12.4 0.13.4 0.14.1 0.15.1 0.15.3: Stalwart Mail Server
+net-mail/stalwart-cli 0.10.7 0.11.8 0.12.4 0.13.4 0.14.1 0.15.3 0.15.4: Stalwart Mail Server command line utility
+net-mail/stalwart-mail 0.11.8-r1 0.12.4 0.13.4 0.14.1 0.15.3 0.15.4: Stalwart Mail Server
 net-mail/swaks 20240103.0: Swiss Army Knife SMTP; Command line SMTP testing, including TLS and AUTH
 net-mail/t-prot 3.4: TOFU protection - display filter for RFC822 messages
 net-mail/tlsrpt-reporter 0.5.0: tools and daemons to implement TLSRPT services
@@ -16344,7 +16344,7 @@ sci-mathematics/dataplot 20131220: Program for scientific visualization and stat
 sci-mathematics/dsfmt 2.2.4: Double precision SIMD-oriented Fast Mersenne Twister library
 sci-mathematics/dunshire 0.1.3-r2: Python library to solve linear games over symmetric cones
 sci-mathematics/easycrypt 2025.10 2025.11: Computer-Aided Cryptographic Proofs
-sci-mathematics/eclib 20250122 20250627: Programs for elliptic curves defined over the rational numbers
+sci-mathematics/eclib 20250627: Programs for elliptic curves defined over the rational numbers
 sci-mathematics/ent 101202: Random number sequence test and entropy calculation
 sci-mathematics/eprover 3.0.03 3.2.5: Automated theorem prover for full first-order logic with equality
 sci-mathematics/euler 1.61.0-r1: Mathematical programming environment
@@ -16403,7 +16403,7 @@ sci-mathematics/pari-data 20191216: Additional dataset packages for PARI
 sci-mathematics/petsc 3.22.2 3.23.3 3.23.4: Portable, Extensible Toolkit for Scientific Computation
 sci-mathematics/picosat 965: SAT solver with proof and core support
 sci-mathematics/planarity 3.0.2.0 4.0.0.0: The edge addition planarity suite of graph algorithms
-sci-mathematics/plfit 0.9.5 1.0.1: Fit power-law distributions to empirical data
+sci-mathematics/plfit 1.0.1: Fit power-law distributions to empirical data
 sci-mathematics/polymake 4.13 4.14 4.15: Tool for polyhedral geometry and combinatorics
 sci-mathematics/primecount 7.13-r1 8.0: Highly optimized CLI and library to count primes
 sci-mathematics/primesieve 12.3: CLI and library for quickly generating prime numbers
@@ -17730,9 +17730,9 @@ sys-kernel/dkms 3.2.2 3.3.0 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 106-r2 108-r5 109-r1 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r1: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 5.10.247 5.15.197 6.1.159 6.6.119 6.6.120 6.6.121 6.12.63 6.12.64 6.12.65 6.12.66 6.18.4 6.18.5 6.18.6: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 5.10.247 5.15.197 6.1.159 6.6.119 6.6.120 6.6.121 6.12.63 6.12.64 6.12.65 6.12.66 6.18.4 6.18.5 6.18.6: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.1.160 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.6.120 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.12.65 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4 6.18.5: Full sources including the Gentoo patchset for the 6.18 kernel tree
+sys-kernel/gentoo-kernel 5.10.247 5.10.248 5.15.197 5.15.198 6.1.159 6.1.161 6.6.119 6.6.120 6.6.121 6.12.63 6.12.64 6.12.65 6.12.66 6.18.4 6.18.5 6.18.6: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 5.10.247 5.10.248 5.15.197 5.15.198 6.1.159 6.1.161 6.6.119 6.6.120 6.6.121 6.12.63 6.12.64 6.12.65 6.12.66 6.18.4 6.18.5 6.18.6: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 5.15.198 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.1.160 6.1.161 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.6.120 6.6.121 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.12.65 6.12.66 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4 6.18.5 6.18.6: Full sources including the Gentoo patchset for the 6.18 kernel tree
 sys-kernel/git-sources 6.19_rc1 6.19_rc2 6.19_rc3 6.19_rc4 6.19_rc5 6.19_rc6: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 60 63 65 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
@@ -17752,7 +17752,7 @@ sys-kernel/scx 1.0.15 1.0.16 1.0.18 1.0.19: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.0.18 1.0.19: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 5.10.247 5.10.9999 5.15.197 5.15.9999 6.1.159 6.1.9999 6.6.119 6.6.120 6.6.121 6.6.9999 6.12.63 6.12.64 6.12.65 6.12.66 6.12.9999 6.18.4 6.18.5 6.18.6: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 5.10.247 5.10.248 5.10.9999 5.15.197 5.15.198 5.15.9999 6.1.159 6.1.161 6.1.9999 6.6.119 6.6.120 6.6.121 6.6.9999 6.12.63 6.12.64 6.12.65 6.12.66 6.12.9999 6.18.4 6.18.5 6.18.6: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 5.4.302 5.10.248 5.15.198 6.1.161 6.6.121 6.12.66 6.16.12 6.17.13 6.18.6: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.18.3 6.18.4 6.18.5: The Zen Kernel Live Sources
@@ -17938,7 +17938,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 5.10.247 5.15.197 6.1.159 6.6.119 6.6.120 6.6.121 6.12.63 6.12.64 6.12.65 6.12.66 6.18.4 6.18.5 6.18.6: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 5.10.247 5.10.248 5.15.197 5.15.198 6.1.159 6.1.161 6.6.119 6.6.120 6.6.121 6.12.63 6.12.64 6.12.65 6.12.66 6.18.4 6.18.5 6.18.6: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0: Virtual for .NET SDK
 virtual/editor 0-r7: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
