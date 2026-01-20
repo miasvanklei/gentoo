@@ -1768,7 +1768,7 @@ app-doc/execline-man-pages 2.9.6.1.1: mdoc port of the HTML documentation for th
 app-doc/geant-docs 4.11.4: User documentation for Geant4 physics simulation toolkit
 app-doc/gimp-help 2.10.34-r2 3.0.0: GNU Image Manipulation Program help files
 app-doc/gnu-c-intro-ref 0_pre20240831 0.1 9999: GNU C Language Intro and Reference Manual
-app-doc/gnucash-docs 5.10 5.11 5.12: Documentation package for GnuCash
+app-doc/gnucash-docs 5.10 5.11 5.12 5.14: Documentation package for GnuCash
 app-doc/info-manual 30.2: Manual for the Info reader in GNU Emacs
 app-doc/jargon 4.4.7-r2: A compendium of hacker slang illuminating many aspects of hackish tradition
 app-doc/kicad-doc 8.0.9 9.0.0 9.0.5 9.0.6: Electronic Schematic and PCB design tools manuals
@@ -2992,7 +2992,7 @@ app-office/dia2code 1.0.0-r2: Convert UML diagrams produced with Dia to various 
 app-office/drawio-desktop-bin 24.7.17 25.0.2 26.2.2: draw.io diagramming and whiteboarding desktop app
 app-office/endeavour 43.0-r1 9999: Personal task manager
 app-office/glabels 3.4.1-r2: Program for creating labels and business cards
-app-office/gnucash 5.10-r1 5.11 5.12: Personal finance manager
+app-office/gnucash 5.10-r1 5.11 5.12 5.14: Personal finance manager
 app-office/gnumeric 1.12.59-r1: The GNOME Spreadsheet
 app-office/grisbi 3.0.4-r1: Grisbi is a personal accounting application for Linux
 app-office/homebank 5.9.5 5.9.7: Free, easy, personal accounting for everyone
@@ -8211,7 +8211,7 @@ dev-python/bitstring 4.3.1: A pure Python module for creation and analysis of bi
 dev-python/black 25.1.0 25.9.0 25.11.0 25.12.0 26.1.0: The uncompromising Python code formatter
 dev-python/blake3 1.0.7 1.0.8: Python bindings for the BLAKE3 cryptographic hash function
 dev-python/bleach 6.2.0 6.3.0: An easy whitelist-based HTML-sanitizing tool
-dev-python/blessed 1.23.0 1.25.0: Library for making terminal apps using colors, keyboard input and positioning
+dev-python/blessed 1.23.0 1.25.0 1.27.0: Library for making terminal apps using colors, keyboard input and positioning
 dev-python/blinker 1.9.0: Fast, simple object-to-object and broadcast signaling
 dev-python/blockbuster 1.5.25 1.5.26: Utility to detect blocking calls in the async event loop
 dev-python/blosc 1.11.3 1.11.4: High performance compressor optimized for binary data
@@ -8625,7 +8625,7 @@ dev-python/isal 1.7.2-r1 1.8.0: Faster zlib and gzip via the ISA-L library
 dev-python/iso8601 2.1.0: Simple module to parse ISO 8601 dates
 dev-python/isodate 0.6.1-r1 0.7.2: ISO 8601 date/time/duration parser and formatter
 dev-python/isoduration 20.11.0-r1: Operations with ISO 8601 durations
-dev-python/isort 6.1.0 7.0.0: A python utility/library to sort imports
+dev-python/isort 7.0.0 7.0.0-r1: A python utility/library to sort imports
 dev-python/iterable-io 1.0.0 1.0.1: Adapt generators and other iterables to a file-like interface
 dev-python/itsdangerous 2.2.0: Various helpers to pass trusted data to untrusted environments and back
 dev-python/itunespy 1.6.1: A simple library to fetch data from the iTunes Store API
@@ -9122,7 +9122,7 @@ dev-python/pylatexenc 2.10: Simple LaTeX parser providing latex-to-unicode and u
 dev-python/pylev 1.4.0-r1: Python Levenshtein implementation
 dev-python/pylibacl 0.7.2 0.7.3: POSIX ACLs (Access Control Lists) for Python
 dev-python/pylibmc 1.6.3-r2: Libmemcached wrapper written as a Python extension
-dev-python/pylint 4.0.3 4.0.4: Python code static checker
+dev-python/pylint 4.0.4 4.0.4-r1: Python code static checker
 dev-python/pylint-venv 3.0.4: Init-hook to use the same Pylint with different virtual environments
 dev-python/pylru 1.2.1: A least recently used (LRU) cache for Python
 dev-python/pyls-spyder 0.4.0-r3: Spyder extensions for the python language server
@@ -16657,6 +16657,7 @@ sec-keys/openpgp-keys-llvm 21.1.4: OpenPGP keys used to sign LLVM releases
 sec-keys/openpgp-keys-m4 20220407: OpenPGP keys used by GNU m4
 sec-keys/openpgp-keys-madler 20220328: OpenPGP keys used by Mark Adler
 sec-keys/openpgp-keys-make 20220407: OpenPGP keys used by GNU make
+sec-keys/openpgp-keys-martinmares 20260120: OpenPGP key used by Martin Mareš
 sec-keys/openpgp-keys-mathieudesnoyers 20250909: OpenPGP keys used by Mathieu Desnoyers
 sec-keys/openpgp-keys-midipix 20250517: OpenPGP keys used to sign midipix releases
 sec-keys/openpgp-keys-miniupnp 20201006: OpenPGP keys used to sign miniupnp* packages
@@ -16685,6 +16686,7 @@ sec-keys/openpgp-keys-openwall 20210107: OpenPGP keys used to sign Openwall soft
 sec-keys/openpgp-keys-openzfs 20210419: OpenPGP keys used to sign OpenZFS releases
 sec-keys/openpgp-keys-pam 20230330: OpenPGP keys used by the linux-pam project
 sec-keys/openpgp-keys-patch 20220407 20250206: OpenPGP keys used by GNU patch
+sec-keys/openpgp-keys-pevik 20260120: OpenPGP key used by Petr Vorel (pevik)
 sec-keys/openpgp-keys-philiphazel 20220416: OpenPGP keys used by Philip Hazel
 sec-keys/openpgp-keys-pottlinger 20251006: OpenPGP keys used by creadur.apache.org
 sec-keys/openpgp-keys-processone 20220316: OpenPGP keys used by processone/ejabberd
