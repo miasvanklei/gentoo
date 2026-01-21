@@ -5345,7 +5345,7 @@ dev-libs/blazesym_c 0.1.1 0.1.5: C bindings for blazesym, a library for address 
 dev-libs/boehm-gc 8.2.8 8.2.10 8.2.10-r1: The Boehm-Demers-Weiser conservative garbage collector
 dev-libs/boost 1.88.0-r1 1.89.0 1.90.0: Boost Libraries for C++
 dev-libs/boron 2.1.0: A scripting language similar to REBOL
-dev-libs/botan 2.19.5 3.8.1 3.9.0 3.10.0: C++ crypto library
+dev-libs/botan 2.19.5 3.9.0 3.10.0: C++ crypto library
 dev-libs/boxfort 0.1.4-r1 0.1.4-r2 0.1.5: Convenient & cross-platform sandboxing C library
 dev-libs/c-blosc 1.21.6-r1: Blocking, shuffling and lossless compression library
 dev-libs/c-blosc2 2.21.2 2.21.3 2.22.0: Blocking, shuffling and lossless compression library
@@ -11238,7 +11238,7 @@ games-action/brutal-legend-hb 20130615-r3: Rock-themed action-adventure that mar
 games-action/bzflag 2.4.30-r1: 3D tank combat simulator game
 games-action/chickens 0.2.4-r1: Target chickens with rockets and shotguns. Funny
 games-action/chromium-bsu 0.9.16.1: Fast paced, arcade-style, top-scrolling space shooter
-games-action/clanbomber 2.2.0: Bomberman-like multiplayer game
+games-action/clanbomber 2.3_p20220703: Bomberman-like multiplayer game
 games-action/crimsonland 1.3.5: A top-down shooter with a touch of RPG
 games-action/deathchase3d 0.9-r1: Remake of the Sinclair Spectrum game of the same name
 games-action/descent1-data 1.4a-r1: Data files for Descent 1
@@ -15445,7 +15445,7 @@ net-misc/sslh 2.1.4 2.3.0 9999: Port multiplexer - accept both HTTPS and SSH con
 net-misc/sstp-client 1.0.18-r2: Client implementation of Secure Socket Tunneling Protocol (SSTP)
 net-misc/streamlink 7.6.0 8.1.0 8.1.2 9999: CLI for extracting streams from websites to a video player of your choice
 net-misc/streamtuner 0.99.99-r8: Stream directory browser for browsing internet radio streams
-net-misc/stunnel 5.71-r1 5.74 5.75 5.76: TLS/SSL - Port Wrapper
+net-misc/stunnel 5.75 5.76: TLS/SSL - Port Wrapper
 net-misc/stuntman 1.2.16: Open source implementation of the STUN protocol
 net-misc/suite3270 4.3_p6 4.4_p6 4.5_p5: Complete 3270 (S390) access package
 net-misc/sunshine 2025.628.4510-r1 2025.924.154138 9999: Self-hosted game stream host for Moonlight
@@ -15554,7 +15554,7 @@ net-p2p/mktorrent 1.1_p20210130-r1: Simple command line utility to create BitTor
 net-p2p/mldonkey 3.2.1: Multi-network P2P application written in Ocaml, with Gtk, web & telnet interface
 net-p2p/ncdc 1.25: Lightweight direct connect client with a friendly ncurses interface
 net-p2p/nicotine+ 3.3.7 3.3.10: Graphical client for the Soulseek peer to peer network written in Python
-net-p2p/qbittorrent 5.0.5 5.1.2 9999: BitTorrent client in C++ and Qt
+net-p2p/qbittorrent 5.0.5-r1 5.1.2-r1 9999: BitTorrent client in C++ and Qt
 net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable file synchronization tool
 net-p2p/retroshare 0.6.7-r4: Friend to Friend secure communication and sharing application
 net-p2p/rtorrent 0.15.7 0.16.6 9999: BitTorrent Client using libtorrent
@@ -16158,7 +16158,7 @@ sci-libs/dsdp 5.8-r4: Software for interior-point for semidefinite programming
 sci-libs/fetk 1.5: The Finite Element ToolKit - Meta package
 sci-libs/fflas-ffpack 2.5.0-r1: Library for dense linear algebra over word-size finite fields
 sci-libs/fftw 3.3.10 3.3.10-r1 9999: Fast C library for the Discrete Fourier Transform
-sci-libs/flann 1.9.2_p20221027 1.9.2_p20221027-r1: Fast approximate nearest neighbor searches in high dimensional spaces
+sci-libs/flann 1.9.2_p20221027-r1: Fast approximate nearest neighbor searches in high dimensional spaces
 sci-libs/flexiblas 3.5.0 9999: A BLAS and LAPACK wrapper library with runtime exchangable backends
 sci-libs/fplll 5.5.0: Implementations of the floating-point LLL reduction algorithm
 sci-libs/galib 2.4.7-r2: Library for genetic algorithms in C++ programs
@@ -16686,6 +16686,7 @@ sec-keys/openpgp-keys-openssl 20220316-r1 20221101 20230207 20230801 20240424 20
 sec-keys/openpgp-keys-openvpn 20260119: OpenPGP keys used for OpenVPN releases
 sec-keys/openpgp-keys-openwall 20210107: OpenPGP keys used to sign Openwall software releases
 sec-keys/openpgp-keys-openzfs 20210419: OpenPGP keys used to sign OpenZFS releases
+sec-keys/openpgp-keys-p11-kit 20260120: OpenPGP key used to sign p11-kit releases
 sec-keys/openpgp-keys-pam 20230330: OpenPGP keys used by the linux-pam project
 sec-keys/openpgp-keys-patch 20220407 20250206: OpenPGP keys used by GNU patch
 sec-keys/openpgp-keys-pevik 20260120: OpenPGP key used by Petr Vorel (pevik)
@@ -16710,6 +16711,7 @@ sec-keys/openpgp-keys-stellarium 20221229: OpenPGP keys used to sign Stellarium 
 sec-keys/openpgp-keys-strace 20151021 20251218: OpenPGP keys used by the strace project
 sec-keys/openpgp-keys-streamlink 20260118: OpenPGP keys used for streamlink releases
 sec-keys/openpgp-keys-strongswan 20260119: OpenPGP keys used for strongswan releases
+sec-keys/openpgp-keys-stunnel 20260120: OpenPGP key used by stunnel
 sec-keys/openpgp-keys-sudo 20220321: OpenPGP keys used by the sudo project
 sec-keys/openpgp-keys-syncthing 20250904: OpenPGP key used to sign Syncthing releases
 sec-keys/openpgp-keys-sysvinit 20220413: OpenPGP keys used by the sysvinit project
