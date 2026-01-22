@@ -5908,7 +5908,7 @@ dev-libs/xbyak 5.73 7.28: JIT assembler for x86(IA-32)/x64(AMD64, x86-64)
 dev-libs/xerces-c 3.2.5 3.3.0 9999: Validating XML parser written in a portable subset of C++
 dev-libs/xmlrpc-c 1.54.05-r4 1.54.06-r2 1.59.03 1.59.03-r1 1.59.03-r3: A lightweight RPC library based on XML and HTTP
 dev-libs/xmlsec 1.3.7-r1: Command line tool for signing, verifying, encrypting and decrypting XML
-dev-libs/xxhash 0.8.2 0.8.3 0.8.3-r1: Extremely fast non-cryptographic hash algorithm
+dev-libs/xxhash 0.8.3 0.8.3-r2: Extremely fast non-cryptographic hash algorithm
 dev-libs/yajl 2.1.0-r6: Small event-driven (SAX-style) JSON parser
 dev-libs/yaz 5.34.0-r1 5.34.2-r1 5.34.4-r1 5.35.1-r1: C/C++ toolkit for Z39.50v3 clients and servers
 dev-libs/yyjson 0.12.0: Fast JSON library in C
@@ -11212,7 +11212,7 @@ dev-vcs/reposurgeon 5.3: Tool for editing VCS repositories and translating among
 dev-vcs/rsvndump 0.6.1-r1 0.6.2: Dump a remote Subversion repository
 dev-vcs/sourcegit 2025.35 2025.38 2025.39 2025.40 2025.41: Open Source Git GUI client using .NET AvaloniaUI
 dev-vcs/stagit 1.2: Generates static HTML pages for a Git repository
-dev-vcs/stgit 2.5.3 2.5.4 2.5.5: Stack-based patch management for Git
+dev-vcs/stgit 2.5.5: Stack-based patch management for Git
 dev-vcs/subversion 1.14.5-r2 1.14.5-r3: Advanced version control system
 dev-vcs/svn2cl 0.12 0.14: Create a GNU-style ChangeLog from subversion's svn log --xml output
 dev-vcs/svn2git 1.0.20 9999: Tool for one-time conversion from svn to git
@@ -12688,7 +12688,7 @@ mail-filter/libopensmtpd 0.8 1.0: Library for creating OpenSMTPD filters
 mail-filter/libsieve 2.2.7: A library for parsing, sorting and filtering your mail
 mail-filter/libspf2 1.2.11 1.2.11-r1: implementation of Sender Policy Framework (SPF)
 mail-filter/libsrs2 1.0.18-r1: libsrs2 is the next generation Sender Rewriting Scheme library
-mail-filter/maildrop 3.1.8-r1 3.2.1-r1: Mail delivery agent/filter
+mail-filter/maildrop 3.1.8-r1 3.2.1-r1 3.3.0: Mail delivery agent/filter
 mail-filter/mailfilter 0.8.9: Mailfilter is a utility to get rid of unwanted spam mails
 mail-filter/mapson 3.3.1: A challenge/response-based white-list spam filter
 mail-filter/milter-regex 2.7-r3: A milter-based regular expression filter
@@ -13015,7 +13015,7 @@ media-gfx/curtail 1.13.0 1.14.0: Image compressor, supporting PNG, JPEG and WebP
 media-gfx/darktable 5.2.0 5.2.1 5.4.0: A virtual lighttable and darkroom for photographers
 media-gfx/dcraw 9.28.0-r4: Command-line decoder for raw digital photos
 media-gfx/digikam 8.8.0: Digital photo management application
-media-gfx/displaycal-py3 3.9.16: Modernize the DisplayCAL code including Python 3 support
+media-gfx/displaycal-py3 3.9.16 3.9.17: Modernize the DisplayCAL code including Python 3 support
 media-gfx/ditaa 0.11.0-r1: A utility that converts ascii-art diagrams to bitmap diagrams
 media-gfx/dmtx-utils 0.7.6: Tools for reading and writing Data Matrix barcodes
 media-gfx/dpic 20200901: Converts PIC plots into pstricks, PGF/TikZ, PostScript, MetaPost and TeX
@@ -15105,7 +15105,7 @@ net-mail/b4 0.14.3: Utility for fetching patchsets from public-inbox
 net-mail/checkpassword 0.90-r5: A uniform password checking interface for root applications
 net-mail/checkpassword-pam 0.99-r3: checkpassword-compatible authentication program w/pam support
 net-mail/courier-common 3.1.5: Mail delivery agent/filter
-net-mail/courier-imap 5.2.11-r2 5.3.1: An IMAP daemon designed specifically for maildirs
+net-mail/courier-imap 5.2.11-r2 5.3.1 5.3.2: An IMAP daemon designed specifically for maildirs
 net-mail/cyrus-imapd 3.4.5-r3 3.4.9: The Cyrus IMAP Server
 net-mail/dbmail 3.2.3-r5 3.2.5-r2 3.3.1 3.4.1 3.5.4 3.5.5: Fast and scalable sql based email services
 net-mail/dot-forward 0.71-r5: Reads sendmail's .forward files under qmail
@@ -15646,7 +15646,7 @@ net-vpn/6tunnel 0.13-r1: TCP proxy for applications that don't speak IPv6
 net-vpn/candy 6.1.4 6.1.6: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflared 2025.10.1 2026.1.1: A command-line client and tunneling daemon for Cloudflare Tunnel
 net-vpn/corkscrew 2.0-r1: a tool for tunneling SSH through HTTP proxies
-net-vpn/derper 1.86.5 1.92.1 1.92.4: DERP server for tailscale network
+net-vpn/derper 1.92.4: DERP server for tailscale network
 net-vpn/eduvpn-client 4.5.1 4.6.0 9999: Linux client and Python client API for eduVPN
 net-vpn/eduvpn-common 2.1.0 3.0.0 4.0.0: Linux client and Python client API for eduVPN
 net-vpn/fp-multiuser 0.0.2: A frp server plugin to support multiple users for frp
