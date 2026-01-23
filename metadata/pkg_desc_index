@@ -2610,6 +2610,7 @@ app-i18n/zinnia 0.06-r3: Zinnia - Online hand recognition system with machine le
 app-i18n/zinnia-tomoe 0.6.0_p20080911: Handwriting model files trained with Tomoe data
 app-laptop/dispad 0.3.1-r1: Daemon to disable trackpads while typing
 app-laptop/framework-laptop-kmod 0_pre20240506: Kernel module to expose more Framework Laptop stuff
+app-laptop/framework-tool-tui 0.7.6: TUI for controlling and monitoring Framework Computers hardware built in Rust
 app-laptop/framework_tool 0.4.3 0.4.5 0.5.0: Tool to control Framework Computer systems
 app-laptop/hdaps-gl 0.0.7: OpenGL visualization for HDAPS data
 app-laptop/hdapsd 20141203-r3: IBM ThinkPad Hard Drive Active Protection System (HDAPS) daemon
@@ -9257,7 +9258,7 @@ dev-python/pytest-rerunfailures 15.1 16.0.1 16.1: pytest plugin to re-run tests 
 dev-python/pytest-reserial 0.5.1 0.6.0 0.6.1: Pytest plugin for recording and replaying serial port traffic during tests
 dev-python/pytest-salt-factories 1.0.0_rc29 1.0.1: The new generation of the pytest-salt Plugin
 dev-python/pytest-services 2.2.2: Collection of fixtures and utility functions to run service processes for pytest
-dev-python/pytest-shell-utilities 1.9.7: pytest plugin: fixtures and code to help with running shell commands on tests
+dev-python/pytest-shell-utilities 1.9.7 1.9.7-r1: pytest plugin: fixtures and code to help with running shell commands on tests
 dev-python/pytest-skip-markers 1.5.2: A Pytest plugin which implements a few useful skip markers
 dev-python/pytest-socket 0.7.0-r1: Pytest Plugin to disable socket calls during tests
 dev-python/pytest-subprocess 1.5.3: A plugin to fake subprocess for pytest
@@ -14679,6 +14680,7 @@ net-analyzer/trafshow 5.2.3-r1: Full screen visualization of the network traffic
 net-analyzer/trippy 0.12.2 0.13.0: A network diagnostic tool
 net-analyzer/tsung 1.8.0: Erlang's multi-protocol distributed load testing tool
 net-analyzer/ttcp 1.12-r3: Tool to test TCP and UDP throughput
+net-analyzer/ttl 0.13.3: Modern traceroute/mtr-style TUI with hop stats and optional ASN/geo enrichment
 net-analyzer/upnpscan 0.4-r3: Scans the network for UPnP capable devices
 net-analyzer/vnstat 2.13 2.13-r2 9999: Console-based network traffic monitor that keeps statistics of network usage
 net-analyzer/webfuzzer 0.2.0-r2: Poor man's web vulnerability scanner
@@ -16451,7 +16453,7 @@ sci-misc/ncview 2.1.8: X-based viewer for netCDF files
 sci-misc/netlogo-bin 6.2.2: Programming language and IDE for agent-based modelling
 sci-misc/oww 0.86.5 0.86.5-r2: A one-wire weather station for Dallas Semiconductor
 sci-misc/vitables 3.1.0: A graphical tool for browsing / editing files in both PyTables and HDF5 formats
-sci-ml/FBGEMM 0.4.1.2023.12.04-r1 1.2.0.2025.05.20-r1 1.3.0.2025.09.05: Facebook GEneral Matrix Multiplication
+sci-ml/FBGEMM 0.4.1.2023.12.04-r1 1.2.0.2025.05.20-r1 1.3.0.2025.09.05 1.4.0: Facebook GEneral Matrix Multiplication
 sci-ml/FP16 2024.05.27-r1 2024.06.20: conversion to/from half-precision floating point formats
 sci-ml/NNPACK 2020.12.22-r4: acceleration package for neural network computations
 sci-ml/XNNPACK 2024.11.08-r1 2024.12.03: library of floating-point neural network inference operators
@@ -17367,7 +17369,7 @@ sys-auth/skey 1.1.5-r14: Linux Port of OpenBSD Single-key Password System
 sys-auth/solo1 0.1.1-r1: CLI and Python library for SoloKeys Solo 1
 sys-auth/ssh-import-id 5.11-r1: Utility to securely retrieve an SSH public key and install it locally
 sys-auth/ssh-ldap-pubkey 1.4.0-r1: Utility to manage SSH public keys stored in LDAP
-sys-auth/sssd 2.9.7 2.12.0: System Security Services Daemon provides access to identity and authentication
+sys-auth/sssd 2.9.7 2.9.8 2.12.0: System Security Services Daemon provides access to identity and authentication
 sys-auth/thinkfinger 0.3-r3: Support for the UPEK/SGS Thomson fingerprint reader, common in Thinkpads
 sys-auth/ykclient 2.15: Yubico C client library
 sys-auth/ykpers 1.20.0-r1: Library and tool for personalization of Yubico's YubiKey
