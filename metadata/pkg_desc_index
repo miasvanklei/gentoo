@@ -922,7 +922,7 @@ app-admin/apg 2.3.0b_p20150129-r1 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.707.0 1.2.764.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.43.15 1.44.4 1.44.7 1.44.11 1.44.15 1.44.20 1.44.21 1.44.22 1.44.23: Universal Command Line Environment for AWS
+app-admin/awscli 1.43.15 1.44.4 1.44.7 1.44.11 1.44.15 1.44.20 1.44.21 1.44.22 1.44.23 1.44.24: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.10.0 2025.12.0: Bitwarden password manager desktop client
@@ -1869,8 +1869,8 @@ app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clo
 app-editors/vim 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9.1.1652-r3 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r1 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.107.1 1.108.0 1.108.1: Multiplatform Visual Studio Code from Microsoft
-app-editors/vscodium 1.105.17075 1.106.27818 1.106.37943: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscode 1.107.1 1.108.1 1.108.2: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscodium 1.106.37943 1.108.10359: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
 app-editors/xemacs 21.5.36-r3 21.5.36-r6 21.5.9999: highly customizable open source text editor and application development system
@@ -2910,7 +2910,7 @@ app-misc/screenie 20120406: A small and lightweight screen wrapper
 app-misc/scrub 2.6.1-r2: Overwrite files with iterative patterns
 app-misc/sdate 0.7: Never ending September date
 app-misc/selecta 0.0.7-r1: A fuzzy text selector for files and anything else you need to select
-app-misc/siegfried 1.11.1 1.11.2: Signature-based file format identification
+app-misc/siegfried 1.11.2 1.11.4: Signature-based file format identification
 app-misc/skim 0.20.5 1.5.1: Command-line fuzzy finder
 app-misc/sl 5.02-r1: Sophisticated graphical program which corrects your miss typing
 app-misc/smtm 1.6.10-r2: Stock ticker, profit/loss calculator and chart tool
@@ -4056,7 +4056,7 @@ dev-db/spatialite-tools 5.0.1-r2: A collection of CLI tools supporting SpatiaLit
 dev-db/sqlcipher 4.6.1: Full Database Encryption for SQLite
 dev-db/sqlcl-bin 25.2.2.199.0918: Oracle SQLcl is the new SQL*Plus
 dev-db/sqldeveloper 23.1.1.345.2114: Oracle SQL Developer is a graphical tool for database development
-dev-db/sqlite 3.50.4 3.51.1 9999: SQL database engine
+dev-db/sqlite 3.50.4 3.51.1 3.51.2 9999: SQL database engine
 dev-db/sqlitebrowser 3.13.1_p20250502-r1 9999: Light GUI editor for SQLite databases
 dev-db/sqlitestudio 4.0.0_pre20251207: Powerful cross-platform SQLite database manager
 dev-db/sqlmap 1.9.10 1.9.12 1.10 9999: An automatic SQL injection and database takeover tool
@@ -5086,7 +5086,7 @@ dev-java/objenesis 3.4: A library for instantiating Java objects
 dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
-dev-java/openjdk 8.472_p08 11.0.29_p7 17.0.17_p10 21.0.9_p10 25.0.1_p8-r1 25.0.2_p10 26_beta28 27_alpha3: Open source implementation of the Java programming language
+dev-java/openjdk 8.472_p08 11.0.29_p7 17.0.17_p10 21.0.9_p10 21.0.10_p7 25.0.1_p8-r1 25.0.2_p10 26_beta28 27_alpha3: Open source implementation of the Java programming language
 dev-java/openjdk-bin 8.472_p08 11.0.29_p7 17.0.17_p10 21.0.9_p10 25.0.1_p8 26_beta29 27_alpha3: Prebuilt Java JDK binaries provided by Eclipse Temurin
 dev-java/openjdk-jre-bin 8.462_p08 11.0.28_p6 17.0.16_p8 21.0.8_p9: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 8.1000-r2 11.0.11_p1-r5: Java OpenJFX client application platform
@@ -5895,6 +5895,7 @@ dev-libs/utfcpp 3.2.1 4.0.6 9999: UTF-8 C++ library
 dev-libs/uthash 2.3.0-r1: An easy-to-use hash implementation for C programmers
 dev-libs/uulib 0.5.20-r3: Library that supports Base64 (MIME), uuencode, xxencode and binhex coding
 dev-libs/vala-common 0.56.16 0.56.17 0.56.18: Build infrastructure for packages that use Vala
+dev-libs/vali 0.1.1: C library and code generator for Varlink
 dev-libs/vc 1.4.5: SIMD Vector Class Library for C++
 dev-libs/vectorscan 5.4.11 5.4.12: A portable fork of the high-performance regular expression matching library
 dev-libs/voikko-fi 2.5-r2: Finnish dictionary for libvoikko based spell checkers (vvfst format)
@@ -8222,8 +8223,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.42.9 1.42.14 1.42.17 1.42.21 1.42.25 1.42.30 1.42.31 1.42.32 1.42.33: The AWS SDK for Python
-dev-python/botocore 1.42.9 1.42.14 1.42.17 1.42.21 1.42.25 1.42.30 1.42.31 1.42.32 1.42.33: Low-level, data-driven core of boto 3
+dev-python/boto3 1.42.9 1.42.14 1.42.17 1.42.21 1.42.25 1.42.30 1.42.31 1.42.32 1.42.33 1.42.34: The AWS SDK for Python
+dev-python/botocore 1.42.9 1.42.14 1.42.17 1.42.21 1.42.25 1.42.30 1.42.31 1.42.32 1.42.33 1.42.34: Low-level, data-driven core of boto 3
 dev-python/bottle 0.12.25-r1 0.13.3 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.5.0 1.6.0_rc1 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.25 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8533,7 +8534,7 @@ dev-python/gpgmepy 2.0.0-r1: GnuPG Made Easy is a library for making GnuPG easie
 dev-python/gpt-image 0.9.0 0.9.1: Tool to create GPT disk image files
 dev-python/graph-tool 2.75 9999: An efficient python module for manipulation and statistical analysis of graphs
 dev-python/graphviz 0.21: Simple Python interface for Graphviz
-dev-python/greenlet 3.2.4 3.3.0: Lightweight in-process concurrent programming
+dev-python/greenlet 3.3.0 3.3.1: Lightweight in-process concurrent programming
 dev-python/greenstalk 2.1.0 2.1.1: Python 3 client for the beanstalkd work queue
 dev-python/griddataformats 1.0.2 1.1.0: Reading and writing of data on regular grids in Python
 dev-python/griffe 1.14.0 1.15.0: Signature generator for Python programs
@@ -8556,7 +8557,7 @@ dev-python/hatch-jupyter-builder 0.9.1 0.9.1-r1: A hatch plugin to help build Ju
 dev-python/hatch-nodejs-version 0.4.0: Hatch plugin for versioning from a package.json file
 dev-python/hatch-vcs 0.5.0: Hatch plugin for versioning with your preferred VCS
 dev-python/hatchling 1.27.0 1.28.0: Modern, extensible Python build backend
-dev-python/hcloud 2.12.0 2.13.0 2.14.0 2.15.0: Official Hetzner Cloud python library
+dev-python/hcloud 2.13.0 2.14.0 2.15.0 2.16.0: Official Hetzner Cloud python library
 dev-python/helpdev 0.7.1-r1: Helping users and developers to get information about the environment
 dev-python/hidapi 0.14.0_p4 0.15.0: A Cython interface to HIDAPI library
 dev-python/hiredis 3.2.1 3.3.0: Python extension that wraps hiredis
@@ -8582,7 +8583,7 @@ dev-python/hvac 2.3.0 2.4.0: HashiCorp Vault API client
 dev-python/hypercorn 0.17.3 0.18.0: A ASGI Server based on Hyper libraries and inspired by Gunicorn
 dev-python/hyperframe 6.1.0: HTTP/2 framing layer for Python
 dev-python/hyperlink 21.0.0-r1: A featureful, correct URL for Python
-dev-python/hypothesis 6.147.0 6.148.5 6.148.7 6.148.8 6.148.9 6.148.11 6.148.12 6.149.0 6.149.1 6.150.0 6.150.1 6.150.2: A library for property based testing
+dev-python/hypothesis 6.148.7 6.148.12 6.149.1 6.150.2 6.150.3: A library for property based testing
 dev-python/hypothesis-gentoo 3 4: Plugin to create 'gentoo' hypothesis profile, disabling health checks
 dev-python/icalendar 6.3.1 6.3.2: Package used for parsing and generating iCalendar files (RFC 2445)
 dev-python/id 1.5.0: A tool for generating OIDC identities
@@ -8691,7 +8692,7 @@ dev-python/jupyter-server 2.17.0 2.17.0-r1: Core services, APIs, and REST endpoi
 dev-python/jupyter-server-mathjax 0.2.6 0.2.6-r1: MathJax resources as a Jupyter Server Extension
 dev-python/jupyter-server-proxy 4.4.0: Jupyter notebook server extension to proxy web services
 dev-python/jupyter-server-terminals 0.5.3 0.5.3-r1 0.5.4: A Jupyter Server Extension Providing Terminals
-dev-python/jupyterlab 4.4.10 4.5.0 4.5.1 4.5.2: JupyterLab computational environment
+dev-python/jupyterlab 4.4.10 4.5.1 4.5.2 4.5.3: JupyterLab computational environment
 dev-python/jupyterlab-lsp 5.1.0: Coding assistance for JupyterLab with Language Server Protocol
 dev-python/jupyterlab-pygments 0.3.0: Pygments theme making use of JupyterLab CSS variables
 dev-python/jupyterlab-server 2.27.3 2.28.0: Server components for JupyterLab and JupyterLab like applications
@@ -8778,7 +8779,7 @@ dev-python/markdown-it-py 3.0.0 4.0.0: Python port of markdown-it, Markdown pars
 dev-python/markdown2 2.5.3 2.5.4: Python Markdown language reimplementation
 dev-python/markups 4.1.1: A wrapper around various text markups
 dev-python/markupsafe 3.0.2 3.0.3: Implements a XML/HTML/XHTML Markup safe string for Python
-dev-python/marshmallow 3.26.2 4.1.2 4.2.0: A library for converting to and from native Python datatypes
+dev-python/marshmallow 3.26.2 4.2.0 4.2.1: A library for converting to and from native Python datatypes
 dev-python/matplotlib 3.10.3 3.10.7-r1 3.10.8-r1: Pure python plotting library with matlab like syntax
 dev-python/matplotlib-inline 0.1.7 0.2.1: Inline Matplotlib backend for Jupyter
 dev-python/matplotlib-venn 1.1.2: Plot area-proportional two- and three-way Venn diagrams in matplotlib
@@ -8887,7 +8888,7 @@ dev-python/notebook-shim 0.2.4: A shim layer for notebook traits and config
 dev-python/notify2 0.3.1-r3: Python interface to DBus notifications
 dev-python/nox 2025.10.16 2025.11.12: Flexible test automation for Python
 dev-python/ntplib 0.4.0-r1: Python NTP library
-dev-python/nuitka 2.8.6 2.8.7 2.8.9: Python to native compiler
+dev-python/nuitka 2.8.9 2.8.10: Python to native compiler
 dev-python/numexpr 2.14.1: Fast numerical array expression evaluator for Python and NumPy
 dev-python/numpy 1.26.4 2.2.6 2.3.1 2.3.2 2.3.2-r1 2.3.3 2.3.4 2.3.5 2.4.0_rc1 2.4.0 2.4.1: Fast array and numerical python library
 dev-python/numpydoc 1.9.0-r1 1.10.0: Sphinx extension to support docstrings in Numpy format
@@ -8963,7 +8964,7 @@ dev-python/pbkdf2 1.3-r2: Implementation of PBKDF2, specified in RSA PKCS#5 v2.0
 dev-python/pbr 7.0.1 7.0.2 7.0.3: Inject some useful and sensible default behaviors into setuptools
 dev-python/pbs-installer 2025.12.5 2025.12.17 2026.1.13 2026.1.14: Installer for Python Build Standalone
 dev-python/pdfrw 0.4_p1-r1: PDF file reader/writer library
-dev-python/pdm 2.26.4: Python package and dependency manager supporting the latest PEP standards
+dev-python/pdm 2.26.4 2.26.6: Python package and dependency manager supporting the latest PEP standards
 dev-python/pdm-backend 2.4.5 2.4.6: A PEP 517 backend for PDM that supports PEP 621 metadata
 dev-python/pdoc3 0.11.6: Auto-generate API documentation for Python projects
 dev-python/peachpy 2022.11.13-r3: Portable Efficient Assembly Code-generator in Higher-level Python
@@ -9132,7 +9133,7 @@ dev-python/pyls-spyder 0.4.0-r3: Spyder extensions for the python language serve
 dev-python/pylsqpack 0.3.22 0.3.23: Python wrapper for the ls-qpack QPACK library
 dev-python/pymacaroons 0.13.0-r1: A Python implementation of Macaroons
 dev-python/pymad 0.11.3: Python wrapper for libmad MP3 decoding in python
-dev-python/pymdown-extensions 10.17.2 10.18 10.19.1 10.20: Extensions for Python Markdown
+dev-python/pymdown-extensions 10.18 10.19.1 10.20 10.20.1: Extensions for Python Markdown
 dev-python/pymdown-lexers 0_pre20210902: Additional lexers for use in Pygments
 dev-python/pymdstat 0.4.3: Python library to parse Linux /proc/mdstat
 dev-python/pymediainfo 7.0.1: A Python wrapper for the MediaInfo library
@@ -9580,7 +9581,7 @@ dev-python/spyder-line-profiler 0.4.2: Plugin to run the python line profiler fr
 dev-python/spyder-notebook 0.7.1: Jupyter notebook integration with Spyder
 dev-python/spyder-terminal 1.3.0: Run system terminals inside Spyder
 dev-python/spyder-unittest 0.7.1: Plugin for Spyder to run tests and view the results
-dev-python/sqlalchemy 1.4.54 2.0.45 2.0.46: Python SQL toolkit and Object Relational Mapper
+dev-python/sqlalchemy 1.4.54 2.0.45 2.0.46 2.1.0_beta1: Python SQL toolkit and Object Relational Mapper
 dev-python/sqlalchemy-rqlite 2.0: A SQLAlchemy dialect for rqlite
 dev-python/sqlglot 27.29.0 28.6.0: An easily customizable SQL parser and transpiler
 dev-python/sqlitedict 2.1.0: Persistent dict in Python, backed by SQLite and pickle
@@ -9688,7 +9689,7 @@ dev-python/typer 0.20.0 0.20.1 0.21.0: Build great CLIs. Easy to code. Based on 
 dev-python/types-docutils 0.22.2.20251006 0.22.3.20251115: Typing stubs for docutils
 dev-python/types-gdb 16.3.0.20250920 16.3.0.20260109: Typing stubs for gdb
 dev-python/types-psutil 7.1.3.20251211 7.2.0.20251228 7.2.1.20251231 7.2.1.20260116: Typing stubs for psutil
-dev-python/types-setuptools 80.9.0.20250822 80.9.0.20251221 80.9.0.20251223: Typing stubs for setuptools
+dev-python/types-setuptools 80.9.0.20250822 80.9.0.20251221 80.9.0.20251223 80.10.0.20260124: Typing stubs for setuptools
 dev-python/typing-extensions 4.14.1 4.15.0: Backported and Experimental Type Hints for Python 3.7+
 dev-python/typing-inspection 0.4.1 0.4.2: Runtime typing introspection tools
 dev-python/typogrify 2.1.0: Filters for web typography, supporting Django & Jinja templates
@@ -9749,7 +9750,7 @@ dev-python/watchdog 6.0.0: Python API and shell utilities to monitor file system
 dev-python/watchfiles 1.1.0 1.1.1: Simple, modern file watching and code reload in Python
 dev-python/wcag-contrast-ratio 0.9-r1: A library for computing contrast ratios, as required by WCAG 2.0
 dev-python/wcmatch 10.1: Wildcard/glob file name matcher
-dev-python/wcwidth 0.2.14 0.3.0 0.3.1: Measures number of Terminal column cells of wide-character codes
+dev-python/wcwidth 0.2.14 0.3.0 0.3.1 0.3.2: Measures number of Terminal column cells of wide-character codes
 dev-python/weasyprint 67.0 68.0: Visual rendering engine for HTML and CSS that can export to PDF
 dev-python/webcolors 24.11.1 25.10.0: Color names and value formats defined by the HTML and CSS specifications
 dev-python/webencodings 0.5.1-r2: Character encoding aliases for legacy web content
@@ -12135,7 +12136,7 @@ gui-apps/gnome-console 48.1 49.1: A simple user-friendly terminal emulator for t
 gui-apps/grim 1.5.0 9999: Grab images from a Wayland compositor
 gui-apps/gtkgreet 0.7 0.8 9999: gtk based greeter for greetd
 gui-apps/input-leap 3.0.2-r1 3.0.3 9999: Share a mouse and keyboard between computers (fork of Barrier)
-gui-apps/kanshi 1.8.0-r1: dynamic display configuration (autorandr for wayland)
+gui-apps/kanshi 1.8.0-r1 1.9.0: dynamic display configuration (autorandr for wayland)
 gui-apps/lavalauncher 2.1.1 9999: Simple launcher for wayland
 gui-apps/liquidshell 1.10.0 1.10.1: Basic desktop shell using QtWidgets
 gui-apps/mako 1.8.0 1.9.0 1.10.0 9999: A lightweight notification daemon for Wayland. Works on Sway
@@ -15242,7 +15243,7 @@ net-misc/dropbear 2025.89: Small SSH 2 client/server designed for small memory e
 net-misc/dropbox 232.4.5988 234.4.5591 235.4.5905 236.4.5918 237.4.5655 238.4.6075 240.4.8493: Dropbox daemon (pretends to be GUI-less)
 net-misc/dropbox-cli 2024.04.17-r1: Cli interface for dropbox (python), part of nautilus-dropbox
 net-misc/efax 0.9a_p19_p1: A simple fax program for single-user systems
-net-misc/electrum 4.6.2: User friendly Bitcoin client
+net-misc/electrum 4.6.2 4.7.0: User friendly Bitcoin client
 net-misc/email-validator 1.1.0: Basic syntax and deliverability checks on email addresses
 net-misc/ena-driver 2.15.0 2.16.0 2.16.1: Amazon EC2 Elastic Network Adapter (ENA) kernel driver
 net-misc/endlessh 1.1-r2: SSH tarpit that slowly sends and endless banner
@@ -16250,7 +16251,7 @@ sci-libs/mc 1.5-r1: 2D/3D AFEM code for nonlinear geometric PDE
 sci-libs/med 4.1.1-r4 5.0.0: Library to store and exchange meshed data or computation results
 sci-libs/metis 5.2.1-r2: A package for unstructured serial graph partitioning
 sci-libs/miopen 6.3.3 6.4.3-r1 7.0.2 7.1.0-r1: AMD's Machine Intelligence Library
-sci-libs/mkl 2025.3.0.461: Intel Math Kernel Library
+sci-libs/mkl 2025.3.0.461 2025.3.1.8: Intel Math Kernel Library
 sci-libs/mpfi 1.5.4_p20220401: Multiple precision interval arithmetic library based on MPFR
 sci-libs/mumps 5.3.5-r1: MUltifrontal Massively Parallel sparse direct matrix Solver
 sci-libs/nanoflann 1.7.1 9999: C++ header-only library for Nearest Neighbor (NN) search wih KD-trees
@@ -17176,7 +17177,7 @@ sys-apps/lssbus 0.1-r1: Small utility for Linux/SPARC that list devices on SBUS
 sys-apps/lsvpd 1.7.14: Utility to List Device Vital Product Data (VPD)
 sys-apps/makedev 3.23.1-r3: Program used for creating device files in /dev
 sys-apps/man-db 2.13.1 9999: A man replacement that utilizes dbm instead of flat files
-sys-apps/man-pages 6.05.01 6.06 6.10 6.16-r1 9999: A somewhat comprehensive collection of Linux man pages
+sys-apps/man-pages 6.05.01 6.06 6.10 6.16-r2 9999: A somewhat comprehensive collection of Linux man pages
 sys-apps/man-pages-posix 2013a 2017a-r1: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g-r2: Standard commands to read man pages
 sys-apps/mawk 1.3.4_p20240905 1.3.4_p20250131: An (often faster than gawk) awk-interpreter
@@ -18295,7 +18296,7 @@ www-servers/caddy 2.9.1 2.10.2 2.10.2-r1 9999: Fast and extensible multi-platfor
 www-servers/civetweb 1.16: Embedded C/C++ web server
 www-servers/fnord 1.11-r3: Yet another small httpd
 www-servers/gatling 0.16-r6: High performance web server
-www-servers/gunicorn 23.0.0 24.0.0: A WSGI HTTP Server for UNIX
+www-servers/gunicorn 23.0.0 24.0.0 24.1.1: A WSGI HTTP Server for UNIX
 www-servers/h2o 2.3.0_pre20250130 9999: H2O - the optimized HTTP/1, HTTP/2 server
 www-servers/kore 4.3.0_rc4: Web application platform for writing scalable, concurrent web based processes
 www-servers/lighttpd 1.4.79-r1 1.4.82 9999: Lightweight high-performance web server
