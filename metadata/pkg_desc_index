@@ -2434,7 +2434,7 @@ app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet 
 app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.0 10.4.1: Replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.2d 10.0.3 9999: Valve Software's fork of Wine
 app-emulation/wine-staging 10.20 11.0 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
-app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 10.20 11.0 9999: Free implementation of Windows(tm) on Unix, without external patchsets
+app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 10.20 11.0 11.1 9999: Free implementation of Windows(tm) on Unix, without external patchsets
 app-emulation/winetricks 20250102 20250102-r1 99999999: Easy way to install DLLs needed to work around problems in Wine
 app-emulation/x48 0.6.4-r3: HP48 Calculator Emulator
 app-emulation/xcpc 0.37.0-r1: XCPC is a portable Amstrad CPC 464/664/6128 emulator written in C
@@ -16474,14 +16474,14 @@ sci-ml/hf_xet 1.2.0: xet client tech, used in huggingface_hub
 sci-ml/huggingface_hub 0.36.0-r1 1.0.1 1.1.6: a client library to interact with the Hugging Face Hub
 sci-ml/ideep 3.5.3_p2 3.5.3_p3: Intel Optimization for Chainer
 sci-ml/jiwer 3.0.3-r1: Evaluate an automatic speech recognition system
-sci-ml/kineto 0.4.0_p20250214-r2 0.4.0_p20250617-r2: part of the PyTorch Profiler
+sci-ml/kineto 0.4.0_p20250214-r2 0.4.0_p20250617-r2 0.4.0_p20251121: part of the PyTorch Profiler
 sci-ml/oneDNN 3.5.3 3.6.2 3.7.1 3.10.2: oneAPI Deep Neural Network Library
 sci-ml/onnx 1.17.0-r1 1.18.0-r1 1.20.1: Open Neural Network Exchange (ONNX)
 sci-ml/pytorch 2.8.0 2.9.1: Tensors and Dynamic neural networks in Python
 sci-ml/safetensors 0.6.2 0.7.0: Simple, safe way to store and distribute tensors
 sci-ml/sentencepiece 0.2.0-r3: Text tokenizer for Neural Network-based text generation
 sci-ml/seqeval 1.2.2-r4: Python framework for sequence labeling evaluation
-sci-ml/tensorpipe 2022.05.13-r1: provides a tensor-aware channel
+sci-ml/tensorpipe 2022.05.13-r1 2025.11.05: provides a tensor-aware channel
 sci-ml/tokenizers 0.22.1: Implementation of today's most used tokenizers
 sci-ml/torchdata 0.11.0: A repo for data loading and utilities on PyTorch domain libraries.
 sci-ml/torchvision 0.23.0-r1 0.24.1: Datasets, transforms and models to specific to computer vision
@@ -17172,7 +17172,7 @@ sys-apps/lssbus 0.1-r1: Small utility for Linux/SPARC that list devices on SBUS
 sys-apps/lsvpd 1.7.14: Utility to List Device Vital Product Data (VPD)
 sys-apps/makedev 3.23.1-r3: Program used for creating device files in /dev
 sys-apps/man-db 2.13.0 2.13.1 9999: A man replacement that utilizes dbm instead of flat files
-sys-apps/man-pages 6.05.01 6.06 6.10 6.16 9999: A somewhat comprehensive collection of Linux man pages
+sys-apps/man-pages 6.05.01 6.06 6.10 6.16-r1 9999: A somewhat comprehensive collection of Linux man pages
 sys-apps/man-pages-posix 2013a 2017a-r1: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g-r2: Standard commands to read man pages
 sys-apps/mawk 1.3.4_p20240905 1.3.4_p20250131: An (often faster than gawk) awk-interpreter
@@ -17223,7 +17223,7 @@ sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives
 sys-apps/pnputils 0.1-r1: Plug and Play BIOS utilities
 sys-apps/policycoreutils 3.8.1 9999: SELinux core utilities
 sys-apps/polychromatic 0.9.5 0.9.6 9999: RGB lighting management software for GNU/Linux powered by OpenRazer
-sys-apps/portage 3.0.69.3-r3 3.0.72-r1 3.0.73-r2 3.0.74 3.0.75 3.0.76 3.0.76-r1 9999: The package management and distribution system for Gentoo
+sys-apps/portage 3.0.69.3-r3 3.0.72-r1 3.0.73-r2 3.0.74 3.0.75 3.0.76 3.0.76-r1 3.0.77 9999: The package management and distribution system for Gentoo
 sys-apps/powerpc-utils 1.1.3.18-r4: PowerPC utilities and additional OldWorld apps
 sys-apps/ppc64-diag 2.7.9: Diagnostic tools for PowerLinux
 sys-apps/prctl 1.6-r1: Tool to query and modify process behavior
@@ -17822,7 +17822,7 @@ sys-libs/liburing 2.9 2.10-r1 2.11 2.12 2.13 9999: Efficient I/O with io_uring
 sys-libs/libutempter 1.2.1: Library that allows non-privileged apps to write utmp (login) info
 sys-libs/libuuid 1.0.3-r1: Portable uuid C library
 sys-libs/libvpd 2.2.9: Library implementation for listing Vital Product Data
-sys-libs/libxcrypt 4.4.38: Extended crypt library for descrypt, md5crypt, bcrypt, and others
+sys-libs/libxcrypt 4.4.38 4.4.38-r1: Extended crypt library for descrypt, md5crypt, bcrypt, and others
 sys-libs/lwp 2.8-r1: Light-weight process library (used by Coda)
 sys-libs/minizip-ng 4.0.10 4.0.10-r1: Fork of the popular zip manipulation library found in the zlib distribution
 sys-libs/mtdev 1.1.7: Multitouch Protocol Translation Library
