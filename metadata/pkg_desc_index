@@ -1907,7 +1907,7 @@ app-emacs/avy-embark-collect 1.1 9999: Use avy to jump to Embark Collect entries
 app-emacs/bbdb 3.2.2d_p20231122 3.2.2d_p20231122-r1: The Insidious Big Brother Database
 app-emacs/biblio 0.3: Browse and import bibliographic references with Emacs
 app-emacs/binclock 1.11: Display the current time using a binary clock
-app-emacs/bind-chord 2.4.4: Key-chord binding helper for use-package-chords
+app-emacs/bind-chord 2.4.4-r1: Key-chord binding helper for use-package-chords
 app-emacs/bind-key 2.4.4: Simple way to manage personal keybindings
 app-emacs/bison-mode 0.3-r1: Emacs major mode for Bison, Yacc and Lex grammars
 app-emacs/blogmax 20170321: Blogging in Emacs
@@ -2394,7 +2394,7 @@ app-emulation/open-vm-tools 12.5.0-r3 12.5.0-r5 13.0.5-r1: Tools for VMware gues
 app-emulation/open-vmdk 0.3.12 0.3.13: Tools for creating and converting OVA virtual appliance files
 app-emulation/pcem 17_p20241210-r2: A PC emulator that specializes in running old operating systems and software
 app-emulation/plus42 1.3.10 1.3.12: An Enhanced HP-42S Calculator Simulator
-app-emulation/protontricks 1.10.5-r1 1.12.1 1.13.0 1.13.1: app-emulation/winetricks wrapper for Proton (Steam Play) games
+app-emulation/protontricks 1.13.1: app-emulation/winetricks wrapper for Proton (Steam Play) games
 app-emulation/punes 0.111-r1 0.111-r2: Nintendo Entertainment System (NES) emulator
 app-emulation/q4wine 1.4.2: Qt GUI configuration tool for Wine
 app-emulation/qemu 9.1.3-r2 9.2.3-r3 9.2.4 10.0.5 10.0.7 10.1.2 10.1.3-r1 10.2.0 10.2.0-r1 9999: QEMU + Kernel-based Virtual Machine userland tools
@@ -2539,16 +2539,16 @@ app-i18n/ibus-handwrite 3.0.0-r2: Hand write recognition/input for IBus
 app-i18n/ibus-hangul 1.5.5: Korean Hangul engine for IBus
 app-i18n/ibus-input-pad 1.4.99_pre20140916: Input Pad for IBus
 app-i18n/ibus-libpinyin 1.15.8: Intelligent Pinyin and Bopomofo input methods based on LibPinyin for IBus
-app-i18n/ibus-m17n 1.4.36: M17N engine for IBus
+app-i18n/ibus-m17n 1.4.36 1.4.37: M17N engine for IBus
 app-i18n/ibus-pinyin 1.5.1: Chinese Pinyin and Bopomofo engines for IBus
 app-i18n/ibus-rime 1.5.1 1.6.0: Chinese Rime Input Method Engine for IBus
 app-i18n/ibus-skk 1.4.3: Japanese SKK engine for IBus
-app-i18n/ibus-table 1.17.16: Tables engines for IBus
+app-i18n/ibus-table 1.17.16 1.17.17: Tables engines for IBus
 app-i18n/ibus-table-chinese 1.8.14: Chinese tables for IBus-Table
 app-i18n/ibus-table-extraphrase 1.3.9.20110826-r1: Chinese extra phrases for IBus-Table
 app-i18n/ibus-table-latin 1.2.0.20100305-r1: Latin tables for IBus-Table
 app-i18n/ibus-table-others 1.3.21: Various tables for IBus-Table
-app-i18n/ibus-typing-booster 2.28.3 2.28.4 2.28.6: Completion input method for IBus
+app-i18n/ibus-typing-booster 2.28.6 2.30.0: Completion input method for IBus
 app-i18n/ibus-unikey 0.7.0_beta1: Vietnamese UniKey engine for IBus
 app-i18n/im-chooser 1.7.3: Desktop Input Method configuration tool
 app-i18n/imsettings 1.8.2-r1: Delivery framework for general Input Method configuration
@@ -3000,7 +3000,7 @@ app-office/gnumeric 1.12.59-r1: The GNOME Spreadsheet
 app-office/grisbi 3.0.4-r1: Grisbi is a personal accounting application for Linux
 app-office/homebank 5.9.5 5.9.7: Free, easy, personal accounting for everyone
 app-office/impressive 0.13.2: Stylish way of giving presentations with Python
-app-office/joplin-desktop 3.5.7 3.5.9 3.5.12: Secure note taking and to-do app with synchronization capabilities
+app-office/joplin-desktop 3.5.7 3.5.9 3.6.2: Secure note taking and to-do app with synchronization capabilities
 app-office/kmymoney 5.2.1-r2: Personal finance manager based on KDE Frameworks
 app-office/kraft 2.0.0: Quotes and invoices manager for small enterprises
 app-office/ktimetracker 6.0.0: Todo management and time tracker
@@ -3360,7 +3360,7 @@ app-text/pdftk 3.3.3_p20231025 9999: A port of pdftk into java
 app-text/pelican 4.8.0 4.9.1 4.11.0: A tool to generate a static blog, with restructured text or markdown input files
 app-text/pep 2.8-r2: General purpose filter and file cleaning program
 app-text/pinfo 0.6.13: Hypertext info and man viewer based on (n)curses
-app-text/po4a 0.73-r1 0.74-r1: Tools to ease the translation of documentation
+app-text/po4a 0.74-r1: Tools to ease the translation of documentation
 app-text/podofo 0.9.8-r1 0.10.1-r2 0.10.3-r1: PoDoFo is a C++ library to work with the PDF file format
 app-text/poppler 25.12.0 26.01.0 9999: PDF rendering library based on the xpdf-3.0 code base
 app-text/poppler-data 0.4.12: Data files for poppler to support uncommon encodings without xpdfrc
@@ -5188,9 +5188,9 @@ dev-lang/clips 6.40-r1: Tool for building Expert Systems (native version)
 dev-lang/clipsjni 6.40-r1: Tool for building Expert Systems (Java version)
 dev-lang/cll1h 0.6-r1: C<<1 programming language system
 dev-lang/clojure 1.12.3 1.12.4: General-purpose programming language with an emphasis on functional programming
-dev-lang/closure-compiler-bin 20250820 20251216 20260106 20260120: JavaScript optimizing compiler
+dev-lang/closure-compiler-bin 20250820 20251216 20260106 20260121: JavaScript optimizing compiler
 dev-lang/coffee-script 2.7.0: A little language that compiles into javascript
-dev-lang/crystal 1.18.2: The Crystal Programming Language
+dev-lang/crystal 1.18.2 1.19.1: The Crystal Programming Language
 dev-lang/cue 0.14.1: open-source data validation language and inference engine
 dev-lang/cxprolog 0.98.2-r3: A WAM based Prolog system
 dev-lang/dafny 4.10.0 4.11.0: Dafny is a verification-aware programming language
@@ -11083,7 +11083,7 @@ dev-util/selenium-manager 4.26.0-r1 4.34.0 4.35.0 4.36.0 4.37.0 4.38.0 4.39.0 4.
 dev-util/serialtalk 1.3 9999: simple command-line tool to talk to serial devices
 dev-util/sh 3.11.0: A shell parser, formatter, and interpreter with bash support
 dev-util/shadowman 4 5: Unified compiler shadow link directory updater
-dev-util/shards 0.19.1: Dependency manager for the Crystal language
+dev-util/shards 0.19.1 0.20.0: Dependency manager for the Crystal language
 dev-util/shc 4.0.3: A (shell-) script compiler/scrambler
 dev-util/shellcheck 0.9.0-r2: Shell script analysis tool
 dev-util/shellcheck-bin 0.11.0: Shell script analysis tool (binary package)
@@ -13438,7 +13438,7 @@ media-libs/libogg 1.3.5-r1 1.3.5-r2 1.3.6: The Ogg media file format library
 media-libs/liboggz 1.1.1-r1 1.1.3: A simple programming interface for reading and writing Ogg files and streams
 media-libs/libopenaptx 0.2.0-r1 0.2.1-r1 9999: Reverse-engineered aptX and aptX HD library
 media-libs/libopenglrecorder 0.1.0-r1: Library for asynchronous OpenGL recording with audio
-media-libs/libopenmpt 0.7.13 0.8.3: Library to decode tracked music files (modules)
+media-libs/libopenmpt 0.7.13 0.8.3 0.8.4: Library to decode tracked music files (modules)
 media-libs/libopenraw 0.3.7-r3: RAW image formats decoding library
 media-libs/libopusenc 0.2.1-r1: High-level API for encoding .opus files
 media-libs/libpagemaker 0.0.4-r1 9999: C++ Library that parses the file format of Aldus/Adobe PageMaker documents
@@ -14146,7 +14146,7 @@ media-sound/normalize 0.7.7-r1 0.7.7-r2: Audio file volume normalizer
 media-sound/ogg2mp3 0.6.1-r1: Perl script to convert Ogg Vorbis files to MP3 files
 media-sound/oggtst 0.0: A tool for calculating ogg-vorbis playing time
 media-sound/ogmtools 1.5-r3: Information, extraction or creation for OGG media streams
-media-sound/openmpt123 0.8.3: libopenmpt-based command line player for tracked music files (modules)
+media-sound/openmpt123 0.8.4: libopenmpt-based command line player for tracked music files (modules)
 media-sound/opus-tools 0.2-r1: Royalty-free, highly versatile audio codec
 media-sound/orpheus 1.6-r4: Command line MP3 player
 media-sound/owntone 28.12 29.0: DAAP (iTunes) and MPD media server
@@ -15255,7 +15255,7 @@ net-misc/exabgp 4.2.23 4.2.25: The BGP swiss army knife of networking
 net-misc/fakeidentd 2.6-r1: A static, secure identd. One source file only!
 net-misc/freerdp 2.11.7-r1 2.9999 3.14.1 3.16.0 3.17.1 3.17.2-r1 3.21.0 9999: Free implementation of the Remote Desktop Protocol
 net-misc/frr 10.1.3 10.2.2 10.2.3 10.3.1 10.4.1 10.5.0: The FRRouting Protocol Suite
-net-misc/gallery-dl 1.30.10 1.31.2 1.31.3 9999: Download image galleries and collections from several image hosting sites
+net-misc/gallery-dl 1.30.10 1.31.2 1.31.3 1.31.4 9999: Download image galleries and collections from several image hosting sites
 net-misc/geckodriver 0.36.0: Proxy for using WebDriver clients to interact with Gecko-based browsers
 net-misc/gensio 2.8.5: General Stream I/O
 net-misc/geoipupdate 6.1.0 7.1.0: Performs automatic updates of GeoIP2 and GeoIP Legacy binary databases
@@ -17789,7 +17789,7 @@ sys-libs/fortify-headers 1.1 9999: Standalone implementation of fortify source
 sys-libs/freeipmi 1.6.15 1.6.16: Provides Remote-Console and System Management Software as per IPMI v1.5/2.0
 sys-libs/fts-standalone 1.2.7 1.2.7-r1: Standalone fts library for use with musl
 sys-libs/gdbm 1.24 1.25 1.26: Standard GNU database libraries
-sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r6 2.41-r9 2.42-r4 2.43 9999: GNU libc C library
+sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r6 2.41-r9 2.42-r4 2.42-r5 2.43 9999: GNU libc C library
 sys-libs/gpm 1.20.7-r6: Console-based mouse driver
 sys-libs/gwenhywfar 5.12.1-r2 5.14.1: Multi-platform helper library for other libraries
 sys-libs/kpmcore 25.08.3 25.12.1: Library for managing partitions
@@ -18241,8 +18241,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.3 3.4: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 7.7.3851.66 7.7.3851.67: A browser for our friends
-www-client/vivaldi-snapshot 7.8.3916.3 7.8.3921.9: A browser for our friends
+www-client/vivaldi 7.7.3851.67: A browser for our friends
+www-client/vivaldi-snapshot 7.8.3921.9 7.8.3925.33: A browser for our friends
 www-client/w3m 0.5.3_p20230121 0.5.3_p20240916: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
