@@ -987,7 +987,7 @@ app-admin/graylog 4.2.7: Free and open source log management
 app-admin/gtkdiskfree 2.0.4_p20200224-r2: Graphical tool to show free disk space like df
 app-admin/hardinfo 0.6_alpha_pre20240320: System information and benchmark tool for Linux systems
 app-admin/haskell-updater 1.3.2-r1 1.3.3 1.4.0.0 1.4.1.0 9999: Rebuild Haskell dependencies in Gentoo
-app-admin/hcloud 1.51.0 1.60.0: A command-line interface for Hetzner Cloud
+app-admin/hcloud 1.51.0 1.61.0: A command-line interface for Hetzner Cloud
 app-admin/hddtemp 0.3_beta15-r29: A simple utility to read the temperature of SMART capable hard drives
 app-admin/helm 3.17.2 3.18.6 3.19.0 3.19.2: Kubernetes Package Manager
 app-admin/ide-smart 1.4-r3: A tool to read SMART information from harddiscs
@@ -1443,7 +1443,7 @@ app-crypt/dehydrated 0.7.1-r1 0.7.1-r2 0.7.2: A client for signing certificates 
 app-crypt/dieharder 3.31.1-r4: An advanced suite for testing the randomness of RNGs
 app-crypt/easy-rsa 3.2.1 3.2.4 3.2.5: Small RSA key management package, based on OpenSSL
 app-crypt/efitools 1.9.2-r1: Tools for manipulating UEFI secure boot platforms
-app-crypt/eid-mw 5.1.26 9999: Electronic Identity Card middleware supplied by the Belgian Federal Government
+app-crypt/eid-mw 5.1.28 9999: Electronic Identity Card middleware supplied by the Belgian Federal Government
 app-crypt/ekeyd 1.1.5-r101: Entropy Key userspace daemon
 app-crypt/elettra 1.0: Plausible deniable file cryptography
 app-crypt/envchain 1.0.1: Save environment variables in a secret vault
@@ -1873,7 +1873,7 @@ app-editors/vscode 1.107.1 1.108.1 1.108.2: Multiplatform Visual Studio Code fro
 app-editors/vscodium 1.106.37943 1.108.10359: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
-app-editors/xemacs 21.5.36-r3 21.5.36-r6 21.5.9999: highly customizable open source text editor and application development system
+app-editors/xemacs 21.5.36-r6 21.5.9999: highly customizable open source text editor and application development system
 app-editors/xmlcopyeditor 1.3.1.0-r4: XML Copy Editor is a fast, free, validating XML editor
 app-editors/xvile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clone
 app-editors/yudit 3.1.0: Free (Y)unicode text editor for all unices
@@ -4868,7 +4868,7 @@ dev-java/cglib 3.3.0-r3: cglib is a powerful, high performance and quality Code 
 dev-java/checker-framework-qual 3.51.1 3.52.1: Annotations for type-checking by the Checker Framework
 dev-java/commons-beanutils 1.9.4-r2 1.11.0: Provides easy-to-use wrappers around Reflection and Introspection APIs
 dev-java/commons-cli 1.10.0: A Java library for working with the command line arguments and options
-dev-java/commons-codec 1.19.0: Implementations of common encoders and decoders in Java
+dev-java/commons-codec 1.19.0 1.20.0: Implementations of common encoders and decoders in Java
 dev-java/commons-collections 3.2.2-r2 4.5.0: Extends the JCF classes with new interfaces, implementations and utilities
 dev-java/commons-compress 1.28.0: Java API for working with archive files
 dev-java/commons-csv 1.14.1-r1: Simple interface for reading and writing CSV files of various types
@@ -5055,7 +5055,7 @@ dev-java/jul-to-slf4j 2.0.3: JUL to SLF4J bridge
 dev-java/junit 3.8.2-r2 4.13.2_p20240222 5.10.3-r1: Simple framework to write repeatable tests
 dev-java/junit-clptr 1.2.2-r1: ClassLoader per Test runner for JUnit 4.12+
 dev-java/junit-dataprovider 2.9: The common core for a TestNG like dataprovider runner for JUnit
-dev-java/junit-pioneer 1.9.1-r1: JUnit 5 Extension Pack
+dev-java/junit-pioneer 1.9.1-r1 1.9.1-r2: JUnit 5 Extension Pack
 dev-java/junit-quickcheck 1.0: Property-based testing, JUnit-style
 dev-java/junitparams 1.1.1-r2: Better parameterised tests for JUnit
 dev-java/jzlib 1.1.3-r3: JZlib is a re-implementation of zlib in pure Java
@@ -9895,7 +9895,7 @@ dev-ruby/activemodel 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Toolkit for building model
 dev-ruby/activemodel-serializers-xml 1.0.3: XML serialization for your Active Model objects and Active Record models
 dev-ruby/activerecord 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Implements the ActiveRecord pattern (Fowler, PoEAA) for ORM
 dev-ruby/activestorage 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Attach cloud and local files in Rails applications
-dev-ruby/activesupport 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Utility Classes and Extension to the Standard Library
+dev-ruby/activesupport 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Utility Classes and Extension to the Standard Library
 dev-ruby/acts_as_list 1.2.4 1.2.6: Capabilities for sorting and reordering a number of objects in a list
 dev-ruby/addressable 2.8.7 2.8.8: A replacement for the URI implementation that is part of Ruby's standard library
 dev-ruby/ae 1.8.2-r1: Assertive Expressive is an assertions library designed for reuse
@@ -12144,7 +12144,7 @@ gui-apps/nm-tray 0.5.1: A simple Qt-based NetworkManager front-end
 gui-apps/qt6ct 0.11: Qt6 Configuration Tool (for DE/WM without Qt integration)
 gui-apps/railway 2.8.2 2.9.4: Travel with all your train information in one place
 gui-apps/sddm-gentoo-config 0: Gentoo defaults for SDDM (Simple Desktop Display Manager)
-gui-apps/slurp 1.5.0: Select a region in a Wayland compositor and print it to the standard output
+gui-apps/slurp 1.5.0 1.6.0: Select a region in a Wayland compositor and print it to the standard output
 gui-apps/swappy 1.5.1 9999: A Wayland native snapshot and editor tool, inspired by Snappy on macOS
 gui-apps/swaybg 1.2.0 1.2.1 9999: A wallpaper utility for Wayland
 gui-apps/swayidle 1.8.0 9999: Idle management daemon for Wayland
@@ -14690,7 +14690,7 @@ net-analyzer/wtfis 0.13.0 0.14.0 9999: Passive hostname, domain and IP lookup to
 net-analyzer/xnetload 1.11.3-r1: Displays a count and a graph of the traffic over a specified network connection
 net-analyzer/xprobe 0.3-r1 0.3-r2: Active OS fingerprinting tool - this is Xprobe2
 net-analyzer/yersinia 0.8.2_p20221119: A framework for layer 2 attacks
-net-analyzer/zabbix 6.0.41 6.0.42 7.0.18 7.0.19 7.0.20 7.2.12 7.2.13 7.2.14 7.4.2 7.4.3 7.4.4: ZABBIX is software for monitoring of your applications, network and servers
+net-analyzer/zabbix 6.0.41 6.0.43 7.0.18 7.0.22 7.2.12 7.2.15 7.4.2 7.4.3 7.4.6: ZABBIX is software for monitoring of your applications, network and servers
 net-analyzer/zmap 4.3.2: Fast network scanner designed for Internet-wide network surveys
 net-analyzer/zniper 1.0-r3: Displays and kill active TCP connections seen by the selected interface
 net-dialup/accel-ppp 1.12.0_p20220830-r1 1.12.0_p20230609 9999: High performance PPTP, PPPoE and L2TP server
@@ -16549,7 +16549,7 @@ sec-keys/openpgp-keys-andresimon 20240906 20250911: OpenPGP keys used by Andre S
 sec-keys/openpgp-keys-andrewtridgell 20250329: OpenPGP keys used by Andrew Tridgell
 sec-keys/openpgp-keys-antoniodiazdiaz 20220406: OpenPGP keys used by Antonio Diaz Diaz
 sec-keys/openpgp-keys-apache-ant 20230104: OpenPGP keys used by ant.apache.org
-sec-keys/openpgp-keys-apache-commons 20221022: OpenPGP keys used by commons.apache.org
+sec-keys/openpgp-keys-apache-commons 20221022 20251102: OpenPGP keys used by commons.apache.org
 sec-keys/openpgp-keys-apache-commons-httpclient 20220903: OpenPGP keys used by httpclient.commons.apache.org
 sec-keys/openpgp-keys-apache-creadur 20230123: OpenPGP keys used by creadur.apache.org
 sec-keys/openpgp-keys-apache-felix 20200125: OpenPGP keys used by felix.apache.org
