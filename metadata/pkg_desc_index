@@ -1384,7 +1384,7 @@ app-containers/earthly 0.8.16: Build automation tool that executes in containers
 app-containers/flannel 0.26.3: An etcd backed network fabric for containers
 app-containers/grype 0.59.1 0.61.0 0.72.0 0.73.0 0.79.3 0.86.1: A vulnerability scanner for container images and filesystems
 app-containers/img 0.5.11: Standalone daemon-less unprivileged Dockerfile and OCI container image builder
-app-containers/incus 6.0.3-r1 6.0.4-r1 6.0.5 6.14-r1 6.14-r2 6.14-r4 6.15 6.17 6.18 6.19.1 9999: Modern, secure and powerful system container and virtual machine manager
+app-containers/incus 6.0.5 6.0.5-r1 6.19.1 9999: Modern, secure and powerful system container and virtual machine manager
 app-containers/k3d 5.8.3: k3d creates k3s clusters in docker
 app-containers/kompose 1.35.0: Tool to move from docker-compose to Kubernetes
 app-containers/lxc 5.0.3 6.0.3 6.0.4-r1 6.0.5: A userspace interface for the Linux kernel containment features
@@ -1799,7 +1799,7 @@ app-editors/aee 2.2.22: An easy to use text editor
 app-editors/bluefish 2.2.17 2.2.17-r1 2.2.19: GTK HTML editor for the experienced web designer or programmer
 app-editors/bvi 1.4.2 1.5.0: Display-oriented editor for binary files, based on the vi texteditor
 app-editors/curses-hexedit 0.9.7-r1: full screen curses hex editor (with insert/delete support)
-app-editors/cursor 2.3.41-r1: Cursor App - AI-first coding environment
+app-editors/cursor 2.4.21: Cursor App - AI-first coding environment
 app-editors/dav 0.9.0: Minimal console text editor
 app-editors/dhex 0.69: ncurses-based hex-editor with diff mode
 app-editors/diakonos 0.9.12: A Linux editor for the masses
@@ -4911,8 +4911,8 @@ dev-java/felix-resolver 2.0.4-r2: Provide OSGi resolver service.
 dev-java/felix-utils 1.11.8-r1: Utility classes for OSGi
 dev-java/findbugs-annotations 3.0.1: Annotation defined by the FindBugs tool
 dev-java/fishbowl 1.4.1: Use the AAA pattern for writing tests for code that throws an exception
-dev-java/fontbox 2.0.32 3.0.6: An open source Java library for parsing font files
-dev-java/fop 2.10-r1: XML Graphics Format Object Processor All-In-One
+dev-java/fontbox 2.0.32-r1 3.0.6: An open source Java library for parsing font files
+dev-java/fop 2.10-r2: XML Graphics Format Object Processor All-In-One
 dev-java/freenet-ext 29-r1: Freenet REference Daemon
 dev-java/generics-resolver 3.0.3: Java generics runtime resolver
 dev-java/gnu-regexp 1.1.4-r4: GNU regular expression package for Java
@@ -5099,7 +5099,7 @@ dev-java/osgi-service-log 1.3.0: OSGi Companion Code for org.osgi.service.log
 dev-java/osgi-service-subsystem 1.1.0: OSGi Companion Code for org.osgi.service.subsystem
 dev-java/owasp-java-encoder 1.4.0: OWASP Java Encoder
 dev-java/parboiled 1.4.1: Elegant parsing in Java and Scala - lightweight, easy-to-use, powerful
-dev-java/pdfbox 2.0.32 3.0.6: Java library and utilities for working with PDF documents
+dev-java/pdfbox 2.0.32-r1 3.0.6: Java library and utilities for working with PDF documents
 dev-java/pebble 3.1.6: Templating engine for Java
 dev-java/picocli 4.6.3-r1: Java command line parser with both an annotations API and a programmatic API
 dev-java/plexus-classworlds 2.7.0-r1 2.9.0: The class loader framework of the Plexus project
@@ -5164,7 +5164,7 @@ dev-java/xmlunit 1.6-r2: XMLUnit extends JUnit and NUnit to enable unit testing 
 dev-java/xmlunit-assertj 2.9.1: XMLUnit with AssertJ fluent API
 dev-java/xmlunit-core 2.9.1 2.11.0: XMLUnit extends JUnit and NUnit to enable unit testing of XML
 dev-java/xmlunit-matchers 2.9.1: XMLUnit for Java Hamcrest Matchers
-dev-java/xmpbox 2.0.32 3.0.6: An open source Java tool that implements Adobe's XMP(TM) specification
+dev-java/xmpbox 2.0.32-r1 3.0.6: An open source Java tool that implements Adobe's XMP(TM) specification
 dev-java/xom 1.3.9: XML Object Model
 dev-java/xpp2 2.1.10-r4: A streaming pull XML parser used to quickly process input elements
 dev-java/xpp3 1.1.4c-r6: An implementation of XMLPULL V1 API
@@ -12665,7 +12665,7 @@ mail-client/geary 44.1-r2 46.0-r1: A lightweight, easy-to-use, feature-rich emai
 mail-client/hap 3.7-r1: A terminal mail notification program (replacement for biff)
 mail-client/mailx 8.1.2.20220412: The $ mail program, which is used to send mail via shell scripts
 mail-client/mailx-support 20060102-r3: Provides lockspool utility
-mail-client/mutt 2.2.14-r1 2.2.16: A small but very powerful text-based mail client
+mail-client/mutt 2.2.14-r1 2.2.16 2.3.0: A small but very powerful text-based mail client
 mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomutt and isync
 mail-client/neomutt 20240201 20250510 20251211-r1 20260105 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.7 1.6.7-r1 1.6.10 1.6.11 1.6.12 1.7_beta2 1.7_rc 1.7_rc2 9999: Browser-based multilingual IMAP client with an application-like user interface
