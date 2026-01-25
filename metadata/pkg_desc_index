@@ -5005,12 +5005,12 @@ dev-java/jclasslib 4.3.1: Java bytecode viewer
 dev-java/jcommander 1.64-r1 1.82-r1 1.83: Command line parsing framework for Java
 dev-java/jctools-core 4.0.5-r1: Java Concurrency Tools Core Library
 dev-java/jdbc-mysql 9.5.0: JDBC Type 4 driver for MySQL
-dev-java/jdbc-postgresql 42.7.7: Java JDBC 4.2 (JRE 8+) driver for PostgreSQL database
+dev-java/jdbc-postgresql 42.7.7 42.7.8: Java JDBC 4.2 (JRE 8+) driver for PostgreSQL database
 dev-java/jdepend 2.10-r1: Traverses Java class file directories and generates design quality metrics
 dev-java/jdisasm 1.0.6: A disassembler for Java .class files
 dev-java/jdom 1.1.3-r2 2.0.6.1: Java-based solution for accessing, manipulating, and outputting XML data
 dev-java/jeromq 0.6.0-r1: Pure Java implementation of libzmq
-dev-java/jetbrains-annotations 26.0.2: Annotations for JVM-based languages
+dev-java/jetbrains-annotations 26.0.2 26.0.2.1: Annotations for JVM-based languages
 dev-java/jettison 1.5.4: A StAX implementation for JSON
 dev-java/jffi 1.3.13: Java Foreign Function Interface
 dev-java/jflex 1.9.1-r1: JFlex is a lexical analyzer generator for Java
@@ -5104,6 +5104,7 @@ dev-java/pebble 3.1.6: Templating engine for Java
 dev-java/picocli 4.6.3-r1: Java command line parser with both an annotations API and a programmatic API
 dev-java/plexus-classworlds 2.7.0-r1 2.9.0: The class loader framework of the Plexus project
 dev-java/poi 5.2.5: Maven build of Apache POI for Sonar checks
+dev-java/powermock-reflect 2.0.9: Various utilities for accessing internals of a class
 dev-java/protobuf-java 4.33.0 4.33.2: Core Protocol Buffers library
 dev-java/qdox 1.12.1-r8 2.2.0-r1: Parser for extracting class/interface/method definitions
 dev-java/randomized-runner 2.8.3: JUnit test runner and plugins for running JUnit tests with pseudo-randomness
@@ -5117,7 +5118,7 @@ dev-java/saxon 9.2.0.6-r6: A XSLT and XQuery Processor
 dev-java/sbt 0.13.18-r1: sbt is a build tool for Scala and Java projects that aims to do the basics well
 dev-java/sbt-bin 1.8.0: sbt, a build tool for Scala
 dev-java/scala-cli-bin 1.8.0 1.9.1 1.10.1: CLI to interact with Scala and Java
-dev-java/scram 3.1: SCRAM (RFC 5802) Java implementation
+dev-java/scram 3.1 3.2: SCRAM (RFC 5802) Java implementation
 dev-java/shrinkwrap-api 1.2.6: Client View of the ShrinkWrap Project
 dev-java/shrinkwrap-impl-base 1.2.6: Common Base for Implementations of the ShrinkWrap Project
 dev-java/shrinkwrap-spi 1.2.6-r1: Generic Service Provider Contract of the ShrinkWrap Project
@@ -5149,7 +5150,7 @@ dev-java/typesafe-config 1.4.5: A library of arguably useful Java utilities
 dev-java/unbescape 1.1.6: Advanced yet easy-to-use escape/unescape library for Java
 dev-java/univocity-parsers 2.9.1: A collection of extremely fast and reliable parsers for Java
 dev-java/velocity 2.4.1: Apache Velocity is a general purpose template engine
-dev-java/waffle-jna 3.3.0-r1: Enable drop-in Windows Single Sign On for popular Java web servers
+dev-java/waffle-jna 3.3.0-r1 3.5.1: Enable drop-in Windows Single Sign On for popular Java web servers
 dev-java/woodstox-core 7.1.0: An XML processor that implements Stax (JSR-173), SAX2 and Stax2 APIs
 dev-java/wsdl4j 1.6.3: Web Services Description Language for Java Toolkit (WSDL4J)
 dev-java/xalan 2.7.3-r3: Transforming XML documents into HTML, text, or other XML document types
@@ -5203,7 +5204,7 @@ dev-lang/elixir 1.15.7 1.15.8 1.16.2 1.16.3 1.17.2 1.17.3 1.18.4 1.19.0 1.19.4: 
 dev-lang/elpi 1.19.6-r1 2.0.7: Embeddable Lambda Prolog Interpreter in OCaml
 dev-lang/erlang 26.2.1-r1 26.2.5.16 27.3.4.6 28.1 28.2 28.3: Erlang programming language, runtime environment and libraries (OTP)
 dev-lang/esco 0.513: Combine interpreter of esoteric languages
-dev-lang/execline 2.9.7.0 2.9.8.0: A non-interactive scripting language
+dev-lang/execline 2.9.7.0 2.9.8.0 2.9.8.1: A non-interactive scripting language
 dev-lang/f2c 20240312: Fortran to C converter
 dev-lang/fennel 1.4.2-r1 1.5.3 1.6.0 1.6.1: Lisp-like language that compiles to Lua
 dev-lang/fpc 3.2.2: Free Pascal Compiler
@@ -5823,7 +5824,7 @@ dev-libs/sexpp 0.9.2: S-expressions parser and generator library in C++
 dev-libs/shhopt 1.1.7-r3: library for parsing command line options
 dev-libs/simde 0.8.2: Header-only library providing implementations of SIMD instruction sets
 dev-libs/simdjson 3.12.1-r2 3.13.0-r1 4.1.0-r1 4.2.3-r1 4.2.4: SIMD accelerated C++ JSON library
-dev-libs/skalibs 2.14.4.0 2.14.5.0: General-purpose libraries from skarnet.org
+dev-libs/skalibs 2.14.4.0 2.14.5.0 2.14.5.1: General-purpose libraries from skarnet.org
 dev-libs/sleef 3.8 3.9.0: Implements vectorized versions of C standard math functions
 dev-libs/sltdl 0.5.1 0.5.2 9999: A surrogate ltdl implementation
 dev-libs/snowball-stemmer 2.2.0 3.0.1: Snowball compiler and stemming algorithms
@@ -10534,7 +10535,6 @@ dev-ruby/tty-prompt 0.23.1-r1: A beautiful and powerful interactive command line
 dev-ruby/tty-reader 0.9.0-r1: Methods for processing keyboard input in character, line and multiline modes
 dev-ruby/tty-screen 0.8.2: Terminal screen size detection which works on Linux, OS X and Windows/Cygwin
 dev-ruby/tty-which 0.5.0: Platform independent implementation of Unix which command
-dev-ruby/twitter 8.2.0: Ruby wrapper around the Twitter API
 dev-ruby/twitter-text 3.1.0-r2: Text handling for Twitter
 dev-ruby/typed-array 0.1.2-r2: Gem provides enforced-type functionality to Arrays
 dev-ruby/typeprof 0.30.1-r1 0.31.0 0.31.1: Performs a type analysis of non-annotated Ruby code
@@ -14134,7 +14134,7 @@ media-sound/munt-mt32emu-alsadrv 2.6.1: ALSA MIDI driver for emulating the Rolan
 media-sound/mup 6.9-r1: Program for printing music scores
 media-sound/muse 0.9.2_p20161002: Multiple Streaming Engine, an icecast source streamer
 media-sound/musepack-tools 495: Musepack SV8 libraries and utilities
-media-sound/musescore 4.6.3 4.6.4 4.6.5 9999: WYSIWYG Music Score Typesetter
+media-sound/musescore 4.6.5 9999: WYSIWYG Music Score Typesetter
 media-sound/music-file-organizer 1.0.3-r1: Organizes audio files into directories based on metadata tags
 media-sound/musique 1.12.1_p20240628: Qt music player
 media-sound/ncmpc 0.51 0.52: Ncurses client for the Music Player Daemon (MPD)
@@ -14196,7 +14196,7 @@ media-sound/rexima 1.4-r2: A curses-based interactive mixer which can also be us
 media-sound/rhythmbox 3.4.8-r2 3.4.9: Music management and playback software for GNOME
 media-sound/rip 1.07-r3: Command-line based audio CD ripper and mp3 encoder
 media-sound/ripperx 2.7.3 3.0.2: GTK program to rip CD audio tracks to Ogg, MP3 or FLAC
-media-sound/rosegarden 24.12.1 25.06-r1 25.12: MIDI and audio sequencer and notation editor
+media-sound/rosegarden 25.12: MIDI and audio sequencer and notation editor
 media-sound/saydate 0.3.0: A Linux shell program that talks the date and system uptime
 media-sound/schismtracker 20250208: Free implementation of Impulse Tracker, a tool used to create high quality music
 media-sound/scmpc 0.4.1: a client for MPD which submits your tracks to last.fm
@@ -15418,7 +15418,7 @@ net-misc/rwhoisd 1.5.9.6_p2: ARIN rwhois daemon
 net-misc/rygel 0.42.6-r1 0.44.2 45.0: Rygel is an open source UPnP/DLNA MediaServer
 net-misc/s3cmd 2.4.0: Command line client for Amazon S3
 net-misc/s4cmd 2.1.0-r3: Super S3 command line tool
-net-misc/s6-networking 2.7.1.0 2.7.2.0: Suite of small networking utilities for Unix systems
+net-misc/s6-networking 2.7.1.0 2.7.2.0 2.7.2.1: Suite of small networking utilities for Unix systems
 net-misc/samplicator 1.3.6-r1 1.3.8_rc1-r1: UDP packets forwarder and duplicator
 net-misc/scponly 4.8-r9: A tiny pseudoshell which only permits scp and sftp
 net-misc/seafile 9.0.13 9.0.15: File syncing and sharing software with file encryption and group sharing
@@ -17256,11 +17256,12 @@ sys-apps/rng-tools 6.16-r2 6.17-r1: Daemon to use hardware random number generat
 sys-apps/roccat-tools 5.9.0-r102: Utility for advanced configuration of Roccat devices
 sys-apps/rootlesskit 2.0.2: Linux-native "fake root" for implementing rootless containers
 sys-apps/s390-tools 2.9.0 2.12.0-r1 2.27.0-r1 2.40.0-r1: User space utilities for the zSeries (s390) Linux kernel and device drivers
-sys-apps/s6 2.13.2.0 2.14.0.0: skarnet.org's small and secure supervision software suite
+sys-apps/s6 2.13.2.0 2.14.0.0 2.14.0.1: skarnet.org's small and secure supervision software suite
+sys-apps/s6-frontend 0.0.1.1-r1: Frontend to the s6 init system
 sys-apps/s6-linux-init 1.1.3.0 1.2.0.0: Generates an init binary for s6-based init systems
 sys-apps/s6-linux-utils 2.6.3.0 2.6.4.0: Set of tiny linux utilities
 sys-apps/s6-portable-utils 2.3.1.0 2.3.1.1: Set of tiny portable unix utilities
-sys-apps/s6-rc 0.5.6.0: Service manager for the s6 supervision suite
+sys-apps/s6-rc 0.5.6.0 0.6.0.0: Service manager for the s6 supervision suite
 sys-apps/sandbox 2.39 2.46 9999: sandbox'd LD_PRELOAD hack
 sys-apps/sdparm 1.12 1.12-r1: Utility to output and modify parameters on a SCSI device, like hdparm
 sys-apps/secilc 3.8.1 9999: SELinux Common Intermediate Language (CIL) Compiler
