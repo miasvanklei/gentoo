@@ -2182,7 +2182,7 @@ app-emacs/noflet 0.0.15_p20141102-r1: Dynamic, local advice for Emacs-Lisp code
 app-emacs/nxml-docbook5-schemas 5.1: Add support for DocBook 5 schemas to NXML
 app-emacs/nxml-gentoo-schemas 20241116: Extension for nxml-mode with Gentoo-specific schemas
 app-emacs/nxml-libvirt-schemas 11.10.0 12.0.0: Extension for nxml-mode with libvirt schemas
-app-emacs/nxml-svg-schemas 1.1.20081123-r1: Extension for nxml-mode with SVG 1.1 schemas
+app-emacs/nxml-svg-schemas 1.1.20081123-r2: Extension for nxml-mode with SVG 1.1 schemas
 app-emacs/oauth2 0.18.3: OAuth 2.0 authorization protocol
 app-emacs/ocaml-mode 4.05.0-r1: Emacs mode for OCaml
 app-emacs/orderless 1.4 1.5: Completion style that matches multiple regexps in any order
@@ -3319,7 +3319,7 @@ app-text/lowdown 2.0.2 2.0.2-r1 2.0.4: Markdown translator producing HTML5, roff
 app-text/lv 4.51-r5: Powerful Multilingual File Viewer
 app-text/mandoc 1.14.6 1.14.6-r1: Suite of tools compiling mdoc and man
 app-text/manpager 1: Enable colorization of man pages
-app-text/marknote 1.4.0: Markdown editor with a wide range of formating options for everyday notes
+app-text/marknote 1.4.0 1.4.1: Markdown editor with a wide range of formating options for everyday notes
 app-text/master-pdf-editor 5.9.94: A complete solution for viewing and editing PDF files
 app-text/mathtex 1.05: Lets you easily embed LaTeX math in your own html pages, blogs, wikis, etc
 app-text/mdbook 0.4.52 0.5.1 0.5.2: Create a book from markdown files
@@ -8050,7 +8050,7 @@ dev-php/pecl-apcu 5.1.24 5.1.27: Stripped down version of APC supporting only us
 dev-php/pecl-brotli 0.15.0 0.16.0 9999: Brotli compression extension for PHP
 dev-php/pecl-dio 0.2.1: Direct I/O functions for PHP
 dev-php/pecl-event 3.1.4: PHP wrapper for libevent2
-dev-php/pecl-http 4.2.6: Extended HTTP Support for PHP
+dev-php/pecl-http 4.2.6 4.3.1: Extended HTTP Support for PHP
 dev-php/pecl-imagick 3.7.0-r3 3.7.0-r4 3.8.1: PHP wrapper for the ImageMagick library
 dev-php/pecl-mailparse 3.1.6: PHP extension for parsing and working with RFC822 and MIME compliant messages
 dev-php/pecl-memcached 3.3.0 3.4.0: Interface PHP with memcached via libmemcached library
@@ -15977,7 +15977,7 @@ sci-chemistry/elem 1.0.3-r3: periodic table of the elements
 sci-chemistry/gelemental 2.0.0-r1 2.0.2: Periodic table viewer with detailed information on the chemical elements
 sci-chemistry/gnome-chemistry-utils 0.14.17_p6-r4: Programs and library containing GTK widgets and C++ classes related to chemistry
 sci-chemistry/gperiodic 3.0.3 3.0.3-r1: Periodic table application for Linux
-sci-chemistry/gromacs 2023.5 2024.6 2025.3 2025.4 2025.9999 2026_rc 2026.9999 9999: The ultimate molecular dynamics simulation package
+sci-chemistry/gromacs 2023.5 2024.6 2025.3 2025.4 2025.9999 2026.0 2026.9999 9999: The ultimate molecular dynamics simulation package
 sci-chemistry/ksdssp 040728-r1: An open source implementation of sci-chemistry/dssp
 sci-chemistry/mdtraj 1.10.3: Read, write and analyze MD trajectories with only a few lines of Python code
 sci-chemistry/moldy 2.16e-r2: Molecular dynamics simulations platform
