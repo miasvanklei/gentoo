@@ -4867,7 +4867,7 @@ dev-java/cal10n 0.8.1: java library for writing localized messages using resourc
 dev-java/cdi-api 4.0.1-r4: APIs for CDI (Contexts and Dependency Injection for Java)
 dev-java/cglib 3.3.0-r3: cglib is a powerful, high performance and quality Code Generation Library
 dev-java/checker-framework-qual 3.51.1 3.52.1: Annotations for type-checking by the Checker Framework
-dev-java/commons-beanutils 1.9.4-r2 1.11.0: Provides easy-to-use wrappers around Reflection and Introspection APIs
+dev-java/commons-beanutils 1.11.0: Provides easy-to-use wrappers around Reflection and Introspection APIs
 dev-java/commons-cli 1.10.0 1.11.0: A Java library for working with the command line arguments and options
 dev-java/commons-codec 1.19.0 1.20.0: Implementations of common encoders and decoders in Java
 dev-java/commons-collections 3.2.2-r2 4.5.0: Extends the JCF classes with new interfaces, implementations and utilities
@@ -4886,7 +4886,7 @@ dev-java/commons-math 3.6.1-r2: Lightweight, self-contained mathematics and stat
 dev-java/commons-net 3.12.0: Client-oriented Java library to implement many Internet protocols
 dev-java/commons-nullanalysis 1.2.17: Annotations and utility classes for ECLIPSE annotation-base null analysis
 dev-java/commons-rng 1.6: Apache Commons Random Numbers Generators
-dev-java/commons-text 1.14.0: Apache Commons Text is a library focused on algorithms working on strings
+dev-java/commons-text 1.14.0 1.15.0: Apache Commons Text is a library focused on algorithms working on strings
 dev-java/commons-validator 1.9.0 1.10.0: Commons component to validate user input, or data input
 dev-java/commons-vfs 2.0-r4: A single API for accessing various different file systems
 dev-java/compile-testing 0.23.0-r1: Testing tools for javac and annotation processors
@@ -9544,7 +9544,7 @@ dev-python/sphinx-epytext 0.0.4-r2: Sphinx epytext extension
 dev-python/sphinx-gallery 0.19.0 0.20.0: Sphinx extension to automatically generate an examples gallery
 dev-python/sphinx-inline-tabs 2023.4.21-r1: A sphinx extension for inline tabs
 dev-python/sphinx-issues 5.0.1: Sphinx extension for linking to your project's issue tracker
-dev-python/sphinx-lv2-theme 1.4.2 1.4.4 1.4.6: Minimal pure-CSS Sphinx theme using the LV2 plugin documentation style
+dev-python/sphinx-lv2-theme 1.4.6: Minimal pure-CSS Sphinx theme using the LV2 plugin documentation style
 dev-python/sphinx-multiversion 0.2.4-r1: Add support for multiple versions to sphinx
 dev-python/sphinx-notfound-page 1.1.0: Create a custom 404 page with absolute URLs hardcoded
 dev-python/sphinx-panels 0.6.0-r1: A sphinx extension for creating panels in a grid layout
@@ -9884,19 +9884,19 @@ dev-ruby/abbrev 0.1.2: Calculates a set of unique abbreviations for a given set 
 dev-ruby/abstract 1.0.0-r5: Library which enable you to define abstract method in Ruby
 dev-ruby/acme-client 2.0.27 2.0.28 2.0.29 2.0.30: A Ruby client for the letsencrypt's ACME protocol
 dev-ruby/action_text-trix 2.1.15 2.1.16: A rich text editor for everyday writing
-dev-ruby/actioncable 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Integrated WebSockets for Rails
-dev-ruby/actionmailbox 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Framework for designing email-service layers
-dev-ruby/actionmailer 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Framework for designing email-service layers
+dev-ruby/actioncable 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Integrated WebSockets for Rails
+dev-ruby/actionmailbox 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Framework for designing email-service layers
+dev-ruby/actionmailer 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Framework for designing email-service layers
 dev-ruby/actionpack 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Eases web-request routing, handling, and response
 dev-ruby/actionpack-xml_parser 2.0.1-r4: XML parameters parser for Action Pack (removed from core in Rails 4.0)
-dev-ruby/actiontext 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Edit and display rich text in Rails applications
+dev-ruby/actiontext 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Edit and display rich text in Rails applications
 dev-ruby/actionview 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Simple, battle-tested conventions and helpers for building web pages
 dev-ruby/activejob 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Job framework with pluggable queues
 dev-ruby/activeldap 7.2.2: ActiveLDAP provides an activerecord inspired object oriented interface to LDAP
 dev-ruby/activemodel 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Toolkit for building modeling frameworks like Active Record and Active Resource
 dev-ruby/activemodel-serializers-xml 1.0.3: XML serialization for your Active Model objects and Active Record models
 dev-ruby/activerecord 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Implements the ActiveRecord pattern (Fowler, PoEAA) for ORM
-dev-ruby/activestorage 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: Attach cloud and local files in Rails applications
+dev-ruby/activestorage 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Attach cloud and local files in Rails applications
 dev-ruby/activesupport 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: Utility Classes and Extension to the Standard Library
 dev-ruby/acts_as_list 1.2.4 1.2.6: Capabilities for sorting and reordering a number of objects in a list
 dev-ruby/addressable 2.8.7 2.8.8: A replacement for the URI implementation that is part of Ruby's standard library
@@ -10317,7 +10317,7 @@ dev-ruby/rack-session 1.0.1 2.1.0 2.1.1: A session implementation for Rack
 dev-ruby/rack-test 2.2.0: Rack::Test is a small, simple testing API for Rack apps
 dev-ruby/rackup 2.2.1-r1 2.3.1: A general server command for Rack applications
 dev-ruby/radius 0.8.0: Powerful tag-based template system
-dev-ruby/rails 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1: ruby on rails is a web-application and persistence framework
+dev-ruby/rails 7.1.5.1 7.1.6 7.2.3 8.0.4 8.1.1 8.1.2: ruby on rails is a web-application and persistence framework
 dev-ruby/rails-dom-testing 2.2.0 2.3.0: Compare doms and assert certain elements exists in doms using Nokogiri
 dev-ruby/rails-html-sanitizer 1.6.2: Sanitize HTML fragments in Rails applications
 dev-ruby/railties 7.1.5.1 7.1.6 7.1.6-r1 7.2.3 7.2.3-r1 8.0.4 8.1.1 8.1.2: Tools for creating, working with, and running Rails applications
@@ -10828,7 +10828,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.14 2.1.20: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.14 2.1.20-r1: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.4 2025.2.5: A complete toolset for C and C++ development
@@ -11538,7 +11538,7 @@ games-emulation/nestopia-jg 1.53.2 9999: Jolly Good Fork of Nestopia
 games-emulation/openmsx 19.1 20.0-r2: MSX emulator that aims for perfection
 games-emulation/pcsx2 2.4.0-r1 2.6.0 2.6.1 2.6.2 9999: PlayStation 2 emulator
 games-emulation/pcsx2_patches 0_p20241020 0_p20251228 9999: Collection of game patches for use with PCSX2 (e.g. widescreen hacks)
-games-emulation/ppsspp 1.19.3 1.19.3-r1: A PSP emulator written in C++
+games-emulation/ppsspp 1.19.3-r1: A PSP emulator written in C++
 games-emulation/prosystem-jg 1.5.3 9999: Jolly Good Fork of ProSystem
 games-emulation/rmg 0.8.5 0.8.7 0.8.8 9999: Rosalie's Mupen GUI
 games-emulation/sameboy-jg 1.0.2 9999: Jolly Good Port of SameBoy
@@ -14100,7 +14100,7 @@ media-sound/meterbridge 0.9.3: Software meterbridge for the UNIX based JACK audi
 media-sound/mhwaveedit 1.4.24-r1: GTK+ Sound file editor (wav, and a few others.)
 media-sound/mikmod 3.2.8-r1 3.2.9: Console MOD-Player based on libmikmod
 media-sound/milkytracker 1.05.01: FastTracker 2 inspired music tracker
-media-sound/mixxx 2.5.3 2.5.4 9999: Advanced Digital DJ tool based on Qt
+media-sound/mixxx 2.5.4 9999: Advanced Digital DJ tool based on Qt
 media-sound/mmix 0.3-r1: Soundcard mixer for the OSS driver
 media-sound/moc 2.6_alpha3-r7 2.6_alpha3-r8: Music On Console - ncurses interface for playing audio files
 media-sound/modplugtools 0.5.3: libmodplug based module players modplug123 and modplugplay
@@ -14692,7 +14692,7 @@ net-analyzer/wtfis 0.13.0 0.14.0 9999: Passive hostname, domain and IP lookup to
 net-analyzer/xnetload 1.11.3-r1: Displays a count and a graph of the traffic over a specified network connection
 net-analyzer/xprobe 0.3-r1 0.3-r2: Active OS fingerprinting tool - this is Xprobe2
 net-analyzer/yersinia 0.8.2_p20221119: A framework for layer 2 attacks
-net-analyzer/zabbix 6.0.41 6.0.43 7.0.18 7.0.22 7.2.12 7.2.15 7.4.2 7.4.3 7.4.6: ZABBIX is software for monitoring of your applications, network and servers
+net-analyzer/zabbix 6.0.41 6.0.43 7.0.18 7.0.22 7.2.12 7.2.15 7.4.2 7.4.6: ZABBIX is software for monitoring of your applications, network and servers
 net-analyzer/zmap 4.3.2: Fast network scanner designed for Internet-wide network surveys
 net-analyzer/zniper 1.0-r3: Displays and kill active TCP connections seen by the selected interface
 net-dialup/accel-ppp 1.12.0_p20220830-r1 1.12.0_p20230609 9999: High performance PPTP, PPPoE and L2TP server
@@ -14867,7 +14867,7 @@ net-im/signal-desktop-bin 7.83.0 7.83.0-r1: Allows you to send and receive messa
 net-im/slack 4.47.59 4.47.72: Team collaboration tool
 net-im/spectrum2 2.2.1 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
-net-im/synapse 1.141.0-r1 1.142.1-r1 1.143.0-r1 1.144.0-r1 1.145.0: Reference implementation of Matrix homeserver
+net-im/synapse 1.141.0-r1 1.142.1-r1 1.143.0-r1 1.144.0-r1 1.145.0 1.146.0: Reference implementation of Matrix homeserver
 net-im/telegram-desktop 6.2.4 6.3.8 6.4.2: Official desktop client for Telegram
 net-im/telegram-desktop-bin 6.4.0 6.4.1 6.4.2: Official desktop client for Telegram (binary package)
 net-im/telepathy-logger 0.8.2-r2 0.8.2_p4-r1: Daemon that centralizes the communication logging within the Telepathy framework
@@ -15542,7 +15542,7 @@ net-p2p/airdcpp-webclient 2.12.2 2.13.3 2.14.0: Cross-platform Direct Connect cl
 net-p2p/amule 2.3.3-r7 9999: aMule, the all-platform eMule p2p client
 net-p2p/arti 1.5.0 1.8.0 9999: Implementation of Tor in Rust
 net-p2p/automatic 0.9.0-r1: RSS downloader for Tranmission
-net-p2p/biglybt 3.9.0.0-r1: Feature-filled Bittorrent client based on Azureus
+net-p2p/biglybt 3.9.0.0-r1 4.0.0.0: Feature-filled Bittorrent client based on Azureus
 net-p2p/bitcoin-core 29.0 29.2 30.2: Reference implementation of the Bitcoin cryptocurrency
 net-p2p/bitflu 1.52-r1: BitTorrent client, written in Perl and is designed to run as a daemon
 net-p2p/cpuminer-opt 26.1 9999: Optimized multi algo CPU miner
@@ -16265,7 +16265,7 @@ sci-libs/nfft 3.5.3: library for nonequispaced discrete Fourier transformations
 sci-libs/nlopt 2.7.1-r100 2.10.0-r1: Non-linear optimization library
 sci-libs/numkit 1.3.1: Numerical first aid kit (with numpy/scipy)
 sci-libs/oc 2.0-r1: Network Data Access Protocol client C library
-sci-libs/octomap 1.10.0 1.10.0-r1: Efficient Probabilistic 3D Mapping Framework Based on Octrees
+sci-libs/octomap 1.10.0-r1: Efficient Probabilistic 3D Mapping Framework Based on Octrees
 sci-libs/ogdi 4.1.0-r1: Open Geographical Datastore Interface, a GIS support library
 sci-libs/ondselsolver 1.0.1_p20241024 1.0.1_p20241127-r1: Assembly Constraints and Multibody Dynamics code
 sci-libs/openblas 0.3.30-r5 0.3.31: Optimized BLAS library based on GotoBLAS2
@@ -16297,7 +16297,7 @@ sci-libs/rocSPARSE 6.3.3 6.4.3-r1 7.0.2 7.1.0: Basic Linear Algebra Subroutines 
 sci-libs/rocThrust 6.3.3 6.4.3 7.0.2 7.1.0: HIP back-end for the parallel algorithm library Thrust
 sci-libs/rocWMMA 6.3.3 6.4.3 7.0.2 7.1.0: library for accelerating mixed precision matrix multiply-accumulate operations
 sci-libs/rpp 6.3.3 6.4.3 7.0.2 7.1.0: AMD ROCm Performance Primitives (RPP) high-performance computer vision library
-sci-libs/rtabmap 0.21.4 0.21.13 9999: Real-Time Appearance-Based Mapping (RGB-D Graph SLAM)
+sci-libs/rtabmap 0.21.13 9999: Real-Time Appearance-Based Mapping (RGB-D Graph SLAM)
 sci-libs/scalapack 2.2.0_p20240704: Subset of LAPACK routines redesigned for heterogenous (MPI) computing
 sci-libs/scotch 7.0.1-r1 7.0.8: Software for graph, mesh and hypergraph partitioning
 sci-libs/shapelib 1.6.0: Library for manipulating ESRI Shapefiles
@@ -18180,7 +18180,7 @@ www-apps/klaus 2.0.3 3.0.1: A simple, easy-to-set-up Git web viewer
 www-apps/lidarr-bin 3.1.2.4902: Looks and smells like Sonarr but made for music
 www-apps/liquid_feedback_core 4.2.2: Internet platforms for proposition development and decision making
 www-apps/liquid_feedback_frontend 4.0.0: Internet platforms for proposition development and decision making
-www-apps/mediawiki 1.43.5 1.43.6 1.44.2 1.44.3 1.45.1: The MediaWiki wiki web application (as used on wikipedia.org)
+www-apps/mediawiki 1.43.6 1.44.3 1.45.1: The MediaWiki wiki web application (as used on wikipedia.org)
 www-apps/miniflux 2.2.9 2.2.14: Minimalist and opinionated feed reader
 www-apps/mirmon 2.11-r2: Simple webapp to monitor the status of mirrors
 www-apps/moodle 4.4.12 4.5.8 5.0.4: The Moodle Course Management System
@@ -18320,7 +18320,7 @@ www-servers/servefile 0.5.4-r2 0.5.4-r3: Serve a single file via HTTP
 www-servers/sniproxy 0.6.1: Proxies incoming HTTP and TLS connections based on the hostname
 www-servers/spawn-fcgi 1.6.5 1.6.6: A FCGI spawner for lighttpd and cherokee and other webservers
 www-servers/thin 1.8.2 2.0.0 2.0.1: A fast and very simple Ruby web server
-www-servers/tomcat 9.0.113 9.0.115 10.1.50 11.0.15: Tomcat Servlet-6.1/JSP-4.0/EL-6.0/WebSocket-2.2/JASPIC-3.1 Container
+www-servers/tomcat 9.0.113 9.0.115 10.1.50 11.0.15 11.0.18: Tomcat Servlet-6.1/JSP-4.0/EL-6.0/WebSocket-2.2/JASPIC-3.1 Container
 www-servers/uwsgi 2.0.23-r1 2.0.27-r1: uWSGI server for Python web applications
 www-servers/varnish 7.5.0 7.7.1 7.7.3 8.0.0: Varnish is a state-of-the-art, high-performance HTTP accelerator
 www-servers/webfs 1.21: Lightweight HTTP server for static content
