@@ -1452,7 +1452,7 @@ app-crypt/freepg 2.5.14 2.5.16 2.5.16-r1: Cross-distro GnuPG fork focused on Ope
 app-crypt/gcr 3.41.2-r2 4.2.1 4.3.0 4.3.1 4.4.0.1-r1: Libraries for cryptographic UIs and accessing PKCS#11 modules
 app-crypt/gifshuffle 2.0-r1: GIF colourmap steganography
 app-crypt/glep63-check 11-r1: GLEP 63 compliance checker for OpenPGP keys
-app-crypt/gnupg 2.4.9 2.5.16 2.5.16-r1: The GNU Privacy Guard, a GPL OpenPGP implementation
+app-crypt/gnupg 2.4.9 2.5.16 2.5.16-r1 2.5.17: The GNU Privacy Guard, a GPL OpenPGP implementation
 app-crypt/gnupg-pkcs11-scd 0.11.0 9999: PKCS#11 support for GnuPG
 app-crypt/gocryptfs 2.6.1 2.6.1-r1: Encrypted overlay filesystem written in Go
 app-crypt/gorilla 1.4-r2: Password Safe in secure way with GUI interface
@@ -1923,7 +1923,7 @@ app-emacs/bui 1.2.1_p20210108: Buffer interface library for Emacs
 app-emacs/burly 0.2 0.3: Save and restore frames and windows with their buffers in Emacs
 app-emacs/buttercup 1.38 9999: Behaviour-driven Elisp testing
 app-emacs/calfw 1.6-r1 2.0: A calendar framework for Emacs
-app-emacs/cape 2.3 2.4 2.5 9999: Completion At Point Extensions
+app-emacs/cape 2.3 2.4 2.5 2.6 9999: Completion At Point Extensions
 app-emacs/cask 0.9.0: Project management for Emacs package development
 app-emacs/cask-mode 0.1: Major mode for editing Cask files for Emacs
 app-emacs/cdlatex 4.18.5: Fast input methods for LaTeX environments and math
@@ -1985,7 +1985,7 @@ app-emacs/dircolors 1.0-r2: Provide the same facility of ls --color inside Emacs
 app-emacs/dired-hacks 0.0.1_p20230621: Collection of useful dired additions for GNU Emacs
 app-emacs/dired-sort-menu 1.26-r1: Sort entries in Dired mode
 app-emacs/distel 4.1.1-r2: Distributed Emacs Lisp for Erlang
-app-emacs/docker 2.4.0: Emacs integration for Docker
+app-emacs/docker 2.4.0 2.5.0: Emacs integration for Docker
 app-emacs/docker-tramp 0.1.1: Emacs TRAMP integration for docker containers
 app-emacs/dockerfile-mode 1.8-r1 1.9: GNU Emacs mode for handling Dockerfiles
 app-emacs/doctest-mode 0.4: An Emacs major mode for editing Python source
@@ -2151,7 +2151,7 @@ app-emacs/macrostep-geiser 0.2.0_p20210717: Emacs macrostep back-end powered by 
 app-emacs/magit 4.4.2 4.5.0 9999: A Git porcelain inside Emacs
 app-emacs/magit-popup 2.13.3-r1: Define prefix-infix-suffix command combos
 app-emacs/mailcrypt 3.5.9-r3: Provides a simple interface to public key cryptography with OpenPGP
-app-emacs/marginalia 2.5 2.6 2.7 2.8: Marginalia in the minibuffer
+app-emacs/marginalia 2.5 2.7 2.8: Marginalia in the minibuffer
 app-emacs/markdown-mode 2.7: Major mode for editing Markdown-formatted text files
 app-emacs/mastodon 2.0.5 2.0.7 9999: Emacs client for Mastodon, federated microblogging social network
 app-emacs/math-symbol-lists 1.3: Lists of Unicode mathematical symbols and latex commands
@@ -2186,7 +2186,7 @@ app-emacs/nxml-libvirt-schemas 11.10.0 12.0.0: Extension for nxml-mode with libv
 app-emacs/nxml-svg-schemas 1.1.20081123-r2: Extension for nxml-mode with SVG 1.1 schemas
 app-emacs/oauth2 0.18.3: OAuth 2.0 authorization protocol
 app-emacs/ocaml-mode 4.05.0-r1: Emacs mode for OCaml
-app-emacs/orderless 1.4 1.5: Completion style that matches multiple regexps in any order
+app-emacs/orderless 1.4 1.5 1.6: Completion style that matches multiple regexps in any order
 app-emacs/org-appear 0.3.1: Toggle Org mode element visibility upon entering and leaving
 app-emacs/org-contrib 0.7: Contributed packages to Org
 app-emacs/org-mode 9.7.39 9999: An Emacs mode for notes and project planning
@@ -2194,7 +2194,7 @@ app-emacs/org-modern 1.10 1.11 1.12 9999: Modern style for your GNU Emacs Org bu
 app-emacs/org-roam 2.2.2-r3 2.3.0 2.3.1 9999: Rudimentary Roam replica with Org-mode
 app-emacs/org-static-blog 1.6.0 1.7.0 9999: Static site generator using Emacs's org-mode
 app-emacs/org-superstar-mode 1.5.0: Prettify headings and plain lists in Org mode (use UTF8 bullets)
-app-emacs/osm 1.9 1.12 2.0 2.1 9999: OpenStreetMap tile-based viewer for GNU Emacs
+app-emacs/osm 1.9 2.0 2.1 2.2 9999: OpenStreetMap tile-based viewer for GNU Emacs
 app-emacs/outline-magic 0.9: Outline mode extensions for Emacs
 app-emacs/package-build 4.0.0: Tools for assembling a package archive
 app-emacs/package-lint 0.26: Linting library for Emacs Lisp package metadata
@@ -2221,7 +2221,7 @@ app-emacs/polymode 0.2.2_p20220322: Framework for Multiple Major Modes in Emacs
 app-emacs/popup 0.5.9: Visual popup interface library for Emacs
 app-emacs/popwin 1.0.0 1.0.2: Popup window manager for Emacs
 app-emacs/pos-tip 0.4.7: Show tooltip at point
-app-emacs/posframe 1.4.4 1.5.0: Pop up a frame at point
+app-emacs/posframe 1.5.0 1.5.1: Pop up a frame at point
 app-emacs/pov-mode 3.3-r1: Major mode for Povray scene files
 app-emacs/powerline 2.5_p20221110: GNU Emacs version of the Vim powerline
 app-emacs/powershell 0.3_pre20220402 0.3_pre20220805: GNU Emacs mode for editing and running PowerShell code
@@ -2295,7 +2295,7 @@ app-emacs/system-packages 1.1.1 1.1.2: Manage your installed packages with Emacs
 app-emacs/systemd-mode 1.6: Major mode for editing systemd units in GNU Emacs
 app-emacs/tablist 1.1: Extended tabulated-list mode fro Emacs
 app-emacs/teco 7-r2: TECO interpreter for GNU Emacs
-app-emacs/tempel 1.9 1.10 9999: Templates with in-buffer field editing for GNU Emacs
+app-emacs/tempel 1.9 1.10 1.11 9999: Templates with in-buffer field editing for GNU Emacs
 app-emacs/template 3.3b: Use templates, decorate comments, auto-update buffers
 app-emacs/tempo-snippets 0.1.5-r1: Visual insertion of tempo templates
 app-emacs/thinks 1.12: Insert text in a think bubble
@@ -2436,7 +2436,7 @@ app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.0 10.4.1: Rep
 app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.3 10.0.4 9999: Valve Software's fork of Wine
 app-emulation/wine-staging 10.20 11.0 11.1 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
 app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 10.20 11.0 11.1 9999: Free implementation of Windows(tm) on Unix, without external patchsets
-app-emulation/winetricks 20250102 20250102-r1 99999999: Easy way to install DLLs needed to work around problems in Wine
+app-emulation/winetricks 20250102-r1 20260125 99999999: Easy way to install DLLs needed to work around problems in Wine
 app-emulation/x48 0.6.4-r3: HP48 Calculator Emulator
 app-emulation/xcpc 0.37.0-r1: XCPC is a portable Amstrad CPC 464/664/6128 emulator written in C
 app-emulation/xe-guest-utilities 6.2.0_p1120-r1: XenServer Virtual Machine Tools
@@ -5765,7 +5765,7 @@ dev-libs/openobex 1.7.2-r3: Implementation of the OBEX protocol used for transfe
 dev-libs/openpace 1.1.3: Cryptographic library for EAC version 2
 dev-libs/opensc 0.26.1 9999: Libraries and applications to access smartcards
 dev-libs/openspecfun 0.5.3 0.5.5: A collection of special mathematical functions
-dev-libs/openssl 1.0.2u-r1 1.1.1w 3.0.18 3.0.9999 3.2.6 3.2.9999 3.3.5 3.3.9999 3.4.3 3.4.9999 3.5.4 3.5.9999 3.6.0 3.6.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
+dev-libs/openssl 1.0.2u-r1 1.1.1w 3.0.18 3.0.19 3.0.9999 3.2.6 3.2.9999 3.3.5 3.3.6 3.3.9999 3.4.3 3.4.4 3.4.9999 3.5.4 3.5.5 3.5.9999 3.6.0 3.6.1 3.6.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
 dev-libs/openssl-compat 1.0.2u-r2 1.1.1u: Full-strength general purpose cryptography library (including SSL and TLS)
 dev-libs/optix 7.4.0 7.5.0 8.1.0-r1 9.0.0-r1: NVIDIA Ray Tracing Engine
 dev-libs/ossp-uuid 1.6.2-r7 1.6.2-r8: An ISO-C:1999 API with CLI for generating DCE, ISO/IEC and RFC compliant UUID
@@ -9380,7 +9380,7 @@ dev-python/qpageview 1.0.0 1.0.2: Page-based viewer widget for Qt5/PyQt5
 dev-python/qrcode 8.2: QR Code generator on top of PIL
 dev-python/qscintilla 2.14.1-r3: Python bindings for QScintilla
 dev-python/qstylizer 0.2.4: Stylesheet Generator for PyQt5/PySide2
-dev-python/qtawesome 1.3.1 1.4.0: Enables iconic fonts such as Font Awesome in PyQt
+dev-python/qtawesome 1.3.1 1.4.0 1.4.1: Enables iconic fonts such as Font Awesome in PyQt
 dev-python/qtconsole 5.5.2 5.6.1 5.7.0: Qt-based console for Jupyter with support for rich media output
 dev-python/qtpy 2.4.3 2.4.3-r1: Abstraction layer on top of PyQt and PySide with additional custom QWidgets
 dev-python/qtsass 0.4.0: Compile SASS files to Qt stylesheets
@@ -10828,7 +10828,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.14: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.14 2.1.20: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.4 2025.2.5: A complete toolset for C and C++ development
@@ -14978,7 +14978,7 @@ net-libs/libflowmanager 3.0.0-r1: A library that measures and reports on packet 
 net-libs/libgadu 1.11.4 1.12.2-r1: Client-side library for the Gadu-Gadu protocol
 net-libs/libgrss 0.7.0-r2: Library for easy management of RSS/Atom/Pie feeds
 net-libs/libgsasl 1.10.0: The GNU SASL library
-net-libs/libgssglue 0.9: Exports a gssapi interface which calls other random gssapi libraries
+net-libs/libgssglue 0.9 0.9-r1: Exports a gssapi interface which calls other random gssapi libraries
 net-libs/libhackrf 2023.01.1 2024.02.1 2024.02.1-r1 2026.01.1 2026.01.2 9999: library for communicating with HackRF SDR platform
 net-libs/libhtp 0.5.49: Security-aware parser for the HTTP protocol and the related bits and pieces
 net-libs/libhubbub 0.3.8: HTML5 compliant parsing library, written in C
@@ -15649,6 +15649,7 @@ net-voip/umurmur 0.3.1: Minimalistic Murmur (Mumble server)
 net-voip/yate 6.2.0: The Yate AV Suite
 net-vpn/6tunnel 0.13-r1: TCP proxy for applications that don't speak IPv6
 net-vpn/candy 6.1.4 6.1.6: A reliable, low-latency, and anti-censorship virtual private network
+net-vpn/cloudflare-warp 2025.10.186.0: Cloudflare Warp Client
 net-vpn/cloudflared 2025.10.1 2026.1.1: A command-line client and tunneling daemon for Cloudflare Tunnel
 net-vpn/corkscrew 2.0-r1: a tool for tunneling SSH through HTTP proxies
 net-vpn/derper 1.92.4: DERP server for tailscale network
@@ -16333,7 +16334,7 @@ sci-mathematics/alt-ergo 2.4.3-r3: Automatic theorem prover
 sci-mathematics/arb 2.23.0: C library for arbitrary-precision interval arithmetic
 sci-mathematics/bertini 1.4 1.6: Software for Numerical Algebraic Geometry
 sci-mathematics/btor2tools 1.0.0_pre20220518-r1: Generic parser and tools for the BTOR2 format
-sci-mathematics/cadabra 2.4.5.7: Field-theory motivated approach to computer algebra
+sci-mathematics/cadabra 2.4.5.7 2.5.14_p1: Field-theory motivated approach to computer algebra
 sci-mathematics/cadical 1.9.5 2.0.0: Simplified Satisfiability Solver
 sci-mathematics/calc 2.13.0.1: Arbitrary precision C-like arithmetic system
 sci-mathematics/cgal 5.6 5.6.1 6.0 6.0.1 6.1: C++ library for geometric algorithms and data structures
@@ -16630,6 +16631,7 @@ sec-keys/openpgp-keys-gnutls 20220320 20221017 20231129 20240415 20240415-r1 202
 sec-keys/openpgp-keys-gocryptfs 20250728 20250916: OpenPGP keys used to sign gocryptfs
 sec-keys/openpgp-keys-grep 20220407: OpenPGP keys used by GNU Grep
 sec-keys/openpgp-keys-grub 20251028: OpenPGP keys used for GRUB releases
+sec-keys/openpgp-keys-gsasl 20260127: OpenPGP keys used by the GNU SASL Library
 sec-keys/openpgp-keys-guillemjover 20220331: OpenPGP keys used by Guillem Jover
 sec-keys/openpgp-keys-gzip 20220406: OpenPGP keys used by GNU Gzip
 sec-keys/openpgp-keys-hughsie 20260124: OpenPGP key used by Richard Hughes (hughsie)
@@ -16657,9 +16659,11 @@ sec-keys/openpgp-keys-less 20260115: OpenPGP keys used by less
 sec-keys/openpgp-keys-libarchive 20221209 20251118: OpenPGP keys used by the libarchive project
 sec-keys/openpgp-keys-libass 20220515 20250608: OpenPGP keys used to sign libass releases
 sec-keys/openpgp-keys-libevent 0: OpenPGP keys used by the libevent project
+sec-keys/openpgp-keys-libgssglue 20260127: OpenPGP keys used by net-libs/libgssglue
 sec-keys/openpgp-keys-libidn 20250414: OpenPGP keys used to sign libidn releases
 sec-keys/openpgp-keys-libjpeg-turbo 20260124: OpenPGP key used by media-libs/libjpeg-turbo
 sec-keys/openpgp-keys-libmicrohttpd 201906 999999: OpenPGP keys used to sign GNU libmicrohttpd releases
+sec-keys/openpgp-keys-libntlm 20260127: OpenPGP keys used by net-libs/libntlm
 sec-keys/openpgp-keys-libseccomp 20260122: OpenPGP key used for sys-libs/libseccomp
 sec-keys/openpgp-keys-libssh 20260121: OpenPGP key used by net-libs/libssh
 sec-keys/openpgp-keys-libtasn1 20220824 20250209 20260112: OpenPGP keys used by GNU Libtasn1
