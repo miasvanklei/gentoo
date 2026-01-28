@@ -1242,7 +1242,7 @@ app-backup/backuppc 3.3.1-r6 4.4.0-r1 4.4.0-r2 4.4.0-r3: High-performance backup
 app-backup/bacula 15.0.3-r3: Featureful client/server network backup suite
 app-backup/bareos 21.1.11 22.1.7 22.1.8 23.1.3-r1 23.1.4 23.1.5 24.0.5 24.0.7 9999: Featureful client/server network backup suite
 app-backup/borgbackup 1.4.1-r1 1.4.2-r1 1.4.3: Deduplicating backup program with compression and authenticated encryption
-app-backup/borgmatic 2.0.7 2.0.13 2.1.0: Automatically create, prune and verify backups with borgbackup
+app-backup/borgmatic 2.0.7 2.0.13 2.1.0 2.1.1: Automatically create, prune and verify backups with borgbackup
 app-backup/btrbk 0.32.6-r1 0.32.6-r2 9999: Tool for creating snapshots and remote backups of btrfs subvolumes
 app-backup/burp 3.1.4 3.1.4-r1: Network backup and restore client and server for Unix and Windows
 app-backup/ccollect 0.8-r2 2.10: Pseudo incremental backup with different exclude lists using hardlinks and rsync
@@ -1302,7 +1302,7 @@ app-benchmarks/pmbw 0.6.3: Parallel Memory Bandwidth Measurement / Benchmark Too
 app-benchmarks/ramspeed 3.5.0-r2: Benchmarking for memory and cache
 app-benchmarks/siege 4.1.7: HTTP regression testing and benchmarking utility
 app-benchmarks/stress 1.0.7: A deliberately simple workload generator for POSIX systems
-app-benchmarks/stress-ng 0.19.06: Stress test for a computer system with various selectable ways
+app-benchmarks/stress-ng 0.20.00: Stress test for a computer system with various selectable ways
 app-benchmarks/sysbench 1.0.20-r101: A scriptable multi-threaded benchmark tool based on LuaJIT
 app-benchmarks/tiobench 0.5.0: Portable, robust, fully-threaded I/O benchmark program
 app-benchmarks/wrk 4.2.0: A HTTP benchmarking tool
@@ -2362,7 +2362,7 @@ app-emulation/diskimage-builder 3.32.0 3.33.0 9999: Golden Disk Image builder
 app-emulation/dosemu 1.4.1_pre20130107-r7: DOS Emulator
 app-emulation/dxvk 2.3.1-r1 2.4.1 2.5.3 2.6.2 2.7.1 9999: Vulkan-based implementation of D3D9, D3D10 and D3D11 for Linux / Wine
 app-emulation/dynamips 0.2.23: Cisco 7200/3600 Simulator
-app-emulation/faudio 25.11 25.12: Accuracy-focused XAudio reimplementation for open platforms
+app-emulation/faudio 25.12 26.01: Accuracy-focused XAudio reimplementation for open platforms
 app-emulation/fex-xtajit 2506 2507.1 2509 2510 2512 2601: A wine emulation dll for running x86 application on an arm64 host
 app-emulation/firecracker-bin 1.13.1 1.14.0: Secure and fast microVMs for serverless computing (static build)
 app-emulation/free42 3.1.9 3.3.8 3.3.10: An HP-42S Calculator Simulator
@@ -3179,7 +3179,7 @@ app-text/antixls 0.3b: Print out an XLS file with minimal formatting, or extract
 app-text/apvlv 0.4.0-r3: Alf's PDF/DJVU/EPUB Viewer like Vim
 app-text/asa 1.1-r1: ASA Carriage control conversion for ouput by Fortran programs
 app-text/asciidoc 10.2.1: A plain text human readable/writable document format
-app-text/aspell 0.60.8.1-r1: Free and Open Source spell checker designed to replace Ispell
+app-text/aspell 0.60.8.1-r1 0.60.8.2: Free and Open Source spell checker designed to replace Ispell
 app-text/atril 1.28.1-r1: Atril document viewer for MATE
 app-text/bact 0.13-r2: Boosting Algorithm for Classification of Trees
 app-text/barcode 0.99-r2: barcode generator
@@ -5089,7 +5089,7 @@ dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/openjdk 8.472_p08 8.482_p08 11.0.29_p7 11.0.30_p7 17.0.17_p10 17.0.18_p8 21.0.9_p10 21.0.10_p7 25.0.1_p8-r1 25.0.2_p10 26_beta32 27_alpha6: Open source implementation of the Java programming language
-dev-java/openjdk-bin 8.472_p08 11.0.29_p7 17.0.17_p10 21.0.9_p10 25.0.1_p8 26_beta29 27_alpha3: Prebuilt Java JDK binaries provided by Eclipse Temurin
+dev-java/openjdk-bin 8.472_p08 11.0.29_p7 17.0.17_p10 21.0.9_p10 21.0.10_p7 25.0.1_p8 26_beta32 27_alpha6: Prebuilt Java JDK binaries provided by Eclipse Temurin
 dev-java/openjdk-jre-bin 8.462_p08 11.0.28_p6 17.0.16_p8 21.0.8_p9: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 8.1000-r2 11.0.11_p1-r5: Java OpenJFX client application platform
 dev-java/opentelemetry-java 1.49.0: OpenTelemetry Context (Incubator)
@@ -5460,7 +5460,7 @@ dev-libs/input-pad 1.0.99_pre20140916-r1: On-screen input pad to send characters
 dev-libs/intel-compute-runtime 24.35.30872.32-r2 24.35.30872.36 25.31.34666.3 25.35.35096.9 25.40.35563.4: Intel Graphics Compute Runtime for oneAPI Level Zero and OpenCL Driver
 dev-libs/intel-metrics-discovery 1.14.182 1.14.183: A user mode library that provides access to GPU performance data
 dev-libs/intel-metrics-library 1.0.200 1.0.209: User mode driver helper library that provides access to GPU performance counters
-dev-libs/intel-vc-intrinsics 0.23.4 0.24.1: A set of new intrinsics on top of core LLVM IR instructions
+dev-libs/intel-vc-intrinsics 0.24.1 0.24.3: A set of new intrinsics on top of core LLVM IR instructions
 dev-libs/isa-l 2.31.1-r2: Intelligent Storage Acceleration Library
 dev-libs/isa-l_crypto 2.25.0: Intelligent Storage Acceleration Library - cryptographic components
 dev-libs/isl 0.26 0.27: A library for manipulating integer points bounded by linear constraints
@@ -11860,7 +11860,7 @@ games-rpg/wasteland2 1.9.0.13-r2: Sequel to 1988 Wasteland, post-apocalyptic com
 games-rpg/xu4 1.4.3: A remake of the computer game Ultima IV
 games-rpg/zsdx 1.12.3: Free 2D Zelda fangame
 games-rpg/zsxd 1.12.2: Free 2D Zelda fangame parody
-games-server/bedrock-server 1.21.124.2 1.21.130.4 1.21.131.1: The official bedrock (non-java) based server for the sandbox video game
+games-server/bedrock-server 1.21.131.1 1.21.132.3: The official bedrock (non-java) based server for the sandbox video game
 games-server/crossfire-server 1.71.0-r2 1.75.0-r1: Server for the crossfire clients
 games-server/etqw-ded 1.5-r1: Enemy Territory: Quake Wars dedicated server
 games-server/mednafen-server 0.5.2-r3: Server for Mednafen emulator
@@ -11879,7 +11879,7 @@ games-simulation/gl117 1.3.2-r1: Action flight simulator
 games-simulation/lincity 1.13.1-r4: City simulation game for X
 games-simulation/lincity-ng 2.9_beta-r1 2.13.1 9999: City simulation game
 games-simulation/micropolis 1.0_p20250628: Free version of the well-known city building simulation
-games-simulation/openrct2 0.4.27 0.4.28 0.4.29: An open source re-implementation of Chris Sawyer's RollerCoaster Tycoon 2
+games-simulation/openrct2 0.4.27 0.4.28 0.4.29 0.4.30: An open source re-implementation of Chris Sawyer's RollerCoaster Tycoon 2
 games-simulation/openttd 14.1 15.0 15.1 9999: A clone of Transport Tycoon Deluxe
 games-simulation/pmars-sdl 0.9.2e-r1 0.9.2e-r2: Portable redcode simulator's sdl port for core war
 games-simulation/searchandrescue 1.7.0-r1: Helicopter based air rescue flight simulator
@@ -11892,7 +11892,7 @@ games-simulation/slime-rancher 1.4.1c_p34605: Cute game where you cultivate slim
 games-simulation/train-valley 1.3.31403: Build railroads in order to connect cities, tunnels, and bridges
 games-sports/billardgl 1.75-r2: An OpenGL billards game
 games-sports/bygfoot 2.3.2-r2: GTK+2 Soccer Management Game
-games-sports/dustrac 2.1.1_p20250924: Tile-based, cross-platform 2D racing game
+games-sports/dustrac 2.2.0: Tile-based, cross-platform 2D racing game
 games-sports/foobillard 3.0a-r2: 8ball, 9ball, snooker and carambol game
 games-sports/skatebird 14: Skateboarding game where you play as a bird
 games-sports/speed-dreams 2.3.0-r1: Fork of the famous open racing car simulator TORCS
@@ -12169,7 +12169,7 @@ gui-libs/aquamarine 0.8.0-r1 0.9.2 0.9.3 9999: Aquamarine is a very light linux 
 gui-libs/display-manager-init 1.1.2-r3: RC init files for starting display and login managers
 gui-libs/egl-gbm 1.1.2.1 1.1.3: NVIDIA GBM EGL external platform library
 gui-libs/egl-wayland 1.1.20 1.1.21: NVIDIA wayland EGL external platform library
-gui-libs/egl-wayland2 1.0.0_rc 1.0.1_pre20251124 1.0.1_pre20251231: NVIDIA wayland EGL external platform library, version 2
+gui-libs/egl-wayland2 1.0.0_rc 1.0.1_pre20251231: NVIDIA wayland EGL external platform library, version 2
 gui-libs/egl-x11 1.0.3 1.0.4: NVIDIA X11/XCB EGL external platform library
 gui-libs/eglexternalplatform 1.2.1: EGL External Platform interface
 gui-libs/gdk-pixbuf-loader-webp 0.2.7: WebP GDK Pixbuf Loader library
@@ -13854,7 +13854,7 @@ media-plugins/vdr-femon 2.4.0-r1 2.4.0_p20240910-r1 2.4.0_p20240910-r2: VDR Plug
 media-plugins/vdr-ffnetdev 0.1.3: VDR Plugin: Provides an easy way of connecting possible streaming clients to VDR
 media-plugins/vdr-filebrowser 0.2.3_p20210521-r1: VDR plugin: file manager plugin for moving or renaming files in VDR
 media-plugins/vdr-freecell 0.0.2-r5: VDR plugin: play 'Freecell' on the On Screen Display
-media-plugins/vdr-fritzbox 1.5.4 1.5.6 1.5.8: VDR Plugin: Inform about incoming phone-calls and use the fritz!box phonebook
+media-plugins/vdr-fritzbox 1.5.8: VDR Plugin: Inform about incoming phone-calls and use the fritz!box phonebook
 media-plugins/vdr-graphlcd 1.0.7 1.0.8: VDR Plugin: support output on Graphical LCD
 media-plugins/vdr-imonlcd 1.0.3-r1: VDR Plugin: shows information about the current state of VDR on iMON LCD
 media-plugins/vdr-iptv 2.2.1-r1 2.4.0: VDR plugin: Add a logical device capable of receiving IPTV
@@ -14111,7 +14111,6 @@ media-sound/mp3blaster 3.2.6-r2: Text console based program for playing audio fi
 media-sound/mp3c 0.31-r1 0.31-r2: console based mp3 ripper, with cddb support
 media-sound/mp3cat 0.5: Reads and writes MP3 files
 media-sound/mp3check 0.8.7: Checks mp3 files for consistency and prints several errors and warnings
-media-sound/mp3diags 1.5.03: Qt-based MP3 diagnosis and repair tool
 media-sound/mp3gain 1.6.2: Analyze and adjust MP3 files to same volume
 media-sound/mp3info 0.8.5a-r1: An MP3 technical info viewer and ID3 1.x tag editor
 media-sound/mp3report 1.0.2: Perl script to create an HTML report of MP3 files in a directory
@@ -14162,7 +14161,7 @@ media-sound/pavucontrol-qt 2.2.0 2.3.0: Qt GUI Pulseaudio Mixer
 media-sound/pavumeter 0.9.3-r2: PulseAudio Volume Meter, simple GTK volume meter for PulseAudio
 media-sound/peercast 0.1218-r2: A client and server for Peercast P2P-radio network
 media-sound/pianobar 2022.04.01 2022.04.01-r1 9999: A console-based replacement for Pandora's flash player
-media-sound/picard 2.13.3-r1 3.0_pre20260126 9999: Cross-platform music tagger
+media-sound/picard 2.13.3-r1 3.0.0_alpha1 9999: Cross-platform music tagger
 media-sound/picoxine 0.0.7: Very small xine frontend for playing audio events
 media-sound/pithos 1.6.2: Pandora.com client for the GNOME desktop
 media-sound/playerctl 2.3.1 2.4.1-r1: A CLI utility to control media players over MPRIS
@@ -15899,7 +15898,7 @@ sci-biology/maq 0.7.1-r4: Mapping and Assembly with Qualities, mapping NGS reads
 sci-biology/maqview 0.2.5-r5: GUI for sci-biology/maq, a short read mapping assembler
 sci-biology/mcl 14.137: A Markov Cluster Algorithm implementation
 sci-biology/mosaik 2.2.30: A reference-guided aligner for next-generation sequencing technologies
-sci-biology/mothur 1.48.0 1.48.2: Suite of algorithms for ecological bioinformatics
+sci-biology/mothur 1.48.2: Suite of algorithms for ecological bioinformatics
 sci-biology/mrbayes 3.1.2-r2 3.2.7: Bayesian Inference of Phylogeny
 sci-biology/mummer 3.23-r1: A rapid whole genome aligner
 sci-biology/muscle 3.8.31 5.1.0: Multiple sequence comparison by log-expectation
@@ -15966,7 +15965,7 @@ sci-chemistry/GromacsWrapper 0.9.1: Python framework for Gromacs
 sci-chemistry/MDAnalysis 2.9.0: A python library to analyze and manipulate molecular dynamics trajectories
 sci-chemistry/ParmEd 4.3.0: Parameter and topology file editor and molecular mechanical simulator engine
 sci-chemistry/autodock 4.2.6-r1: A suite of automated docking tools
-sci-chemistry/autodock_vina 1.2.5 1.2.7: Program for drug discovery, molecular docking and virtual screening
+sci-chemistry/autodock_vina 1.2.7: Program for drug discovery, molecular docking and virtual screening
 sci-chemistry/avogadro2 1.101.0 1.102.1: Advanced molecule editor and visualizer 2
 sci-chemistry/bodr 10: The Blue Obelisk Data Repository listing element and isotope properties
 sci-chemistry/cara-bin 1.8.4-r2: Analysis of NMR spectra and Computer Aided Resonance Assignment
@@ -17246,7 +17245,7 @@ sys-apps/progress 0.15-r1 0.17: Coreutils Viewer: show progress for cp, rm, dd, 
 sys-apps/proot 5.3.0 5.4.0: User-space implementation of chroot, mount --bind, and binfmt_misc
 sys-apps/pv 1.9.42 1.10.2 1.10.3 9999: Pipe Viewer: a tool for monitoring the progress of data through a pipe
 sys-apps/qcontrol 0.4.2-r101: Send commands to some microcontrollers, e.g., to change LEDs or sound a buzzer
-sys-apps/qdirstat 1.9_p20250726-r1: Qt-based directory statistics
+sys-apps/qdirstat 1.9_p20250726-r1 2.0: Qt-based directory statistics
 sys-apps/qingy 1.0.0-r6: A DirectFB getty replacement
 sys-apps/radeontool 1.6.3_p20181127-r1: Utility to get/set registers and controlling backlight on radeon based GPUs
 sys-apps/razer-cli 2.3.0: Command line interface for controlling Razer devices on Linux
@@ -18226,7 +18225,7 @@ www-client/elinks 0.18.0 9999: Advanced and well-established text-mode web brows
 www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.3 25.12.1: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.6.0 140.7.0 146.0 146.0.1 147.0 147.0.1: Firefox Web Browser
+www-client/firefox 140.6.0 140.7.0 146.0 146.0.1 147.0 147.0.1 147.0.2: Firefox Web Browser
 www-client/firefox-bin 140.6.0 140.7.0 146.0.1 147.0 147.0.1 147.0.2: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.169 144.0.7559.96: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31 145.0.7632.5: The web browser from Google
@@ -18321,7 +18320,7 @@ www-servers/servefile 0.5.4-r2 0.5.4-r3: Serve a single file via HTTP
 www-servers/sniproxy 0.6.1: Proxies incoming HTTP and TLS connections based on the hostname
 www-servers/spawn-fcgi 1.6.5 1.6.6: A FCGI spawner for lighttpd and cherokee and other webservers
 www-servers/thin 1.8.2 2.0.0 2.0.1: A fast and very simple Ruby web server
-www-servers/tomcat 9.0.113 9.0.115 10.1.50 11.0.15 11.0.18: Tomcat Servlet-6.1/JSP-4.0/EL-6.0/WebSocket-2.2/JASPIC-3.1 Container
+www-servers/tomcat 9.0.113 9.0.115 10.1.50 10.1.52 11.0.15 11.0.18: Tomcat Servlet-6.1/JSP-4.0/EL-6.0/WebSocket-2.2/JASPIC-3.1 Container
 www-servers/uwsgi 2.0.23-r1 2.0.27-r1: uWSGI server for Python web applications
 www-servers/varnish 7.5.0 7.7.1 7.7.3 8.0.0: Varnish is a state-of-the-art, high-performance HTTP accelerator
 www-servers/webfs 1.21: Lightweight HTTP server for static content
@@ -18414,7 +18413,7 @@ x11-base/xorg-proto 2024.1 2025.1 9999: X.Org combined protocol headers
 x11-base/xorg-server 21.1.20 21.1.21 9999: X.Org X servers
 x11-base/xorg-sgml-doctools 1.12.1: SGML entities and XML/CSS stylesheets used in X.Org docs
 x11-base/xwayland 24.1.9 9999: Standalone X server running under Wayland
-x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.274.02 535.288.01 570.207 570.211.01 580.94.16 580.95.05 580.126.09 590.48.01-r1: NVIDIA Accelerated Graphics Driver
+x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 570.211.01 580.94.16 580.126.09 590.48.01-r1: NVIDIA Accelerated Graphics Driver
 x11-drivers/xf86-input-elographics 1.4.4: Elographics input driver
 x11-drivers/xf86-input-evdev 2.11.0: Generic Linux input driver
 x11-drivers/xf86-input-joystick 1.6.4: X.Org driver for joystick input devices
@@ -18578,7 +18577,7 @@ x11-misc/devilspie 0.23-r2: Window matching utility similar to Sawfish's Matched
 x11-misc/devilspie2 0.45-r1: Window matching utility with Lua scripting
 x11-misc/dex 0.9.0 0.10.1: DesktopEntry eXecution - tool to manage and launch autostart entries
 x11-misc/dmenu 5.4 9999: a generic, highly customizable, and efficient menu for the X Window System
-x11-misc/dunst 1.13.0-r1 9999: Lightweight replacement for common notification daemons
+x11-misc/dunst 1.13.0-r1 1.13.1 9999: Lightweight replacement for common notification daemons
 x11-misc/dxpc 3.9.2-r3: Differential X Protocol Compressor
 x11-misc/dzen 0.9.5_p2: General purpose messaging, notification, and menu utility
 x11-misc/e16-keyedit 0.10: Key binding editor for Enlightenment DR16
