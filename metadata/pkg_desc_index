@@ -991,7 +991,7 @@ app-admin/hcloud 1.51.0 1.61.0: A command-line interface for Hetzner Cloud
 app-admin/hddtemp 0.3_beta15-r29: A simple utility to read the temperature of SMART capable hard drives
 app-admin/helm 3.17.2 3.18.6 3.19.0 3.19.2: Kubernetes Package Manager
 app-admin/ide-smart 1.4-r3: A tool to read SMART information from harddiscs
-app-admin/ig 0.48.1: Tools and framework for data collection and system inspection using eBPF
+app-admin/ig 0.49.0: Tools and framework for data collection and system inspection using eBPF
 app-admin/integrit 4.2_rc1: file integrity verification program
 app-admin/keepass 2.57: A free, open source, light-weight and easy-to-use password manager
 app-admin/keepassxc 2.7.10-r2 2.7.11 2.7.11-r1 9999: KeePassXC - KeePass Cross-platform Community Edition
@@ -3798,8 +3798,8 @@ dev-ada/e3-testsuite 26.0-r2: Generic testsuite framework in Python
 dev-ada/gnatcoll-bindings 25.0.0-r1 26.0.0: GNAT Component Collection
 dev-ada/gnatcoll-core 25.0.0-r2 26.0.0: GNAT Component Collection Core packages
 dev-ada/gnatcoll-db 25.0.0-r2 26.0.0: GNAT Component Collection
-dev-ada/gnatdoc 25.0.0-r6 25.2.0 26.0.0: GNAT Documentation Generation Tool
-dev-ada/gnatformat 25.0.0-r2 26.0.0-r1: Opinionated code formatter for the Ada language
+dev-ada/gnatdoc 25.0.0-r7 25.2.0-r1 26.0.0-r1: GNAT Documentation Generation Tool
+dev-ada/gnatformat 25.0.0-r3 26.0.0-r2: Opinionated code formatter for the Ada language
 dev-ada/gnatmem 2021-r6: Monitors dynamic allocation and deallocation activity in a program
 dev-ada/gnatsymbolize 2021-r5: Translates addresses into filename, line number, and function names
 dev-ada/gpr 24.0.0-r3 24.2.0-r1 25.0.0-r4 26.0.0: LibGPR2 - Parser for GPR Project files
@@ -3810,12 +3810,12 @@ dev-ada/lal-refactor 25.0.0-r2 26.0.0: Refactoring tools for the Ada programming
 dev-ada/langkit 24.0.0-r2 25.0.0-r7 26.0.0: A Python framework to generate language parsers
 dev-ada/langkit-contrib 25.0.0-r2 26.0.0: A Python framework to generate language parsers - Contrib
 dev-ada/libadalang 25.0.0-r1 26.0.0: high performance semantic engine for the Ada programming language
-dev-ada/libadalang-tools 25.0.0-r3 26.0.0: Libadalang-based tools: gnatpp, gnatmetric and gnatstub
+dev-ada/libadalang-tools 25.0.0-r4 26.0.0-r1: Libadalang-based tools: gnatpp, gnatmetric and gnatstub
 dev-ada/libgpr 25.0.0-r3 26.0.0: Ada library to handle GPRbuild project files
 dev-ada/markdown 25.0.0-r2 26.0.0-r1: Provides a markdown parser written in Ada
 dev-ada/prettier-ada 25.0.0-r4 26.0.0: Port of the Prettier formatter to the Ada programming language
 dev-ada/spawn 25.0.0-r4 26.0.0: Simple API to spawn processes
-dev-ada/templates-parser 24.0.0-r1 25.0.0-r4 26.0.0: A template engine
+dev-ada/templates-parser 24.0.0-r2 25.0.0-r5 26.0.0-r1: A template engine
 dev-ada/vss-extra 26.0.0: A high level string and text processing library
 dev-ada/vss-text 25.0.0-r1 26.0.0: A high level string and text processing library
 dev-ada/xmlada 25.0.0-r5 26.0.0: Set of modules that provide a simple manipulation of XML streams
@@ -14232,7 +14232,7 @@ media-sound/spek 0.8.5-r2 0.8.5-r3: Analyse your audio files by showing their sp
 media-sound/splay 0.9.5.2-r2: An audio player, primarily for the console
 media-sound/split2flac 122 9999: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
 media-sound/spotify 1.2.77: Spotify is a social music platform
-media-sound/strawberry 1.2.15 1.2.16 1.2.17 9999: Modern music player and library organizer based on Clementine and Qt
+media-sound/strawberry 1.2.15 1.2.16 1.2.17 1.2.18 9999: Modern music player and library organizer based on Clementine and Qt
 media-sound/streamripper 1.64.6-r1: Extracts and records individual MP3 file tracks from shoutcast streams
 media-sound/streamtranscoder 3.1.11-r2: Commandline program to transcode shoutcast/icecast streams to different bitrates
 media-sound/subsonic-bin 6.1.6: Subsonic is a complete, personal media streaming solution
@@ -15571,7 +15571,7 @@ net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable fi
 net-p2p/retroshare 0.6.7-r4: Friend to Friend secure communication and sharing application
 net-p2p/rtorrent 0.15.7 0.16.6 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.13.0a_p0 0.14.0a_p0: TUI and CLI for the BitTorrent client Transmission
-net-p2p/syncthing 1.29.5 2.0.10 2.0.11 2.0.12 2.0.12-r2 2.0.13: Open Source Continuous File Synchronization
+net-p2p/syncthing 1.29.5 2.0.10 2.0.13 2.0.14: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
 net-p2p/transmission 4.0.5-r2 4.0.6-r6 4.1.0_beta2-r1 4.1.0_beta3 4.1.0_beta4 4.1.0_beta5 4.1.0 9999: A fast, easy, and free BitTorrent client
 net-p2p/transmission-remote-gtk 1.5.1-r1 1.6.0: GTK+ client for management of the Transmission BitTorrent client, over HTTP RPC
