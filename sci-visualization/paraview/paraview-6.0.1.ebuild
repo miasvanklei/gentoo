@@ -1,9 +1,9 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..12} )
+PYTHON_COMPAT=( python3_{11..14} )
 DOCS_BUILDER="doxygen"
 inherit cmake flag-o-matic desktop docs python-single-r1 qmake-utils toolchain-funcs xdg
 
@@ -82,7 +82,8 @@ RDEPEND="
 	)
 	sqlite? ( dev-db/sqlite:3 )
 	tk? ( dev-lang/tk:0= )
-	webengine? ( dev-qt/qtwebengine:6[widgets] )"
+	webengine? ( dev-qt/qtwebengine:6[widgets] )
+"
 DEPEND="${RDEPEND}
 	${PYTHON_DEPS}
 	boost? (
@@ -91,16 +92,13 @@ DEPEND="${RDEPEND}
 		')
 	)
 "
-
 BDEPEND="
 	openmp? ( virtual/fortran )
 "
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-5.5.0-allow_custom_build_type.patch
-	"${FILESDIR}"/${PN}-5.13.0-cmake-3.31-compat.patch
-	"${FILESDIR}"/${PN}-5.13.0-fix_compilation.patch
-	"${FILESDIR}"/${PN}-5.13.0-fix_compilation-2.patch
+	"${FILESDIR}"/${P}-avoid_file_collisions.patch
+	"${FILESDIR}"/${P}-qt-6.10.patch # bug #967029
 )
 
 # false positive when checking for available HDF5 interface, bug #904731
@@ -148,6 +146,9 @@ src_configure() {
 
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_LIBDIR="${PVLIBDIR}"
+		# paraview-6.0.0 onwards expects a relative path for documentation
+		-DCMAKE_INSTALL_DOCDIR="share/doc/${PF}"
+
 		-UBUILD_SHARED_LIBS
 		-DPARAVIEW_BUILD_SHARED_LIBS=ON
 		-DCMAKE_VERBOSE_MAKEFILE=ON
