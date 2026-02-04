@@ -1114,7 +1114,7 @@ app-alternatives/awk 4: /bin/awk and /usr/bin/awk symlinks
 app-alternatives/bc 0: bc symlink
 app-alternatives/bzip2 1: bzip2 symlink
 app-alternatives/cpio 0: CPIO symlink
-app-alternatives/gpg 0-r2 0-r3 1-r2 1-r3: gpg symlink
+app-alternatives/gpg 1-r3: gpg symlink
 app-alternatives/gzip 0 1: gzip symlinks
 app-alternatives/lex 0-r1: lex symlinks
 app-alternatives/lzip 0: lzip symlinks
@@ -1454,7 +1454,7 @@ app-crypt/freepg 2.5.14 2.5.16 2.5.16-r1 2.5.17: Cross-distro GnuPG fork focused
 app-crypt/gcr 3.41.2-r2 4.2.1 4.3.0 4.3.1 4.4.0.1-r1: Libraries for cryptographic UIs and accessing PKCS#11 modules
 app-crypt/gifshuffle 2.0-r1: GIF colourmap steganography
 app-crypt/glep63-check 11-r1: GLEP 63 compliance checker for OpenPGP keys
-app-crypt/gnupg 2.4.9 2.5.16 2.5.16-r1 2.5.17: The GNU Privacy Guard, a GPL OpenPGP implementation
+app-crypt/gnupg 2.4.9 2.5.17: The GNU Privacy Guard, a GPL OpenPGP implementation
 app-crypt/gnupg-pkcs11-scd 0.11.0 9999: PKCS#11 support for GnuPG
 app-crypt/gocryptfs 2.6.1 2.6.1-r1: Encrypted overlay filesystem written in Go
 app-crypt/gorilla 1.4-r2: Password Safe in secure way with GUI interface
@@ -3109,7 +3109,7 @@ app-portage/ufed 0.96 9999: Gentoo Linux USE flags editor
 app-portage/unsymlink-lib 20: Convert your system to SYMLINK_LIB=no
 app-shells/atuin 18.8.0 18.10.0 18.11.0: Shell history manager supporting encrypted synchronisation
 app-shells/autojump 22.5.3-r4: change directory command that learns
-app-shells/bash 2.05b_p13 3.0_p22 3.1_p23 3.2_p57 4.0_p44 4.1_p17 4.2_p53 4.3_p48-r2 4.4_p23-r2 5.0_p18-r3 5.1_p16-r14 5.2_p37-r5 5.3_p3-r3 5.3_p8 5.3_p9 5.4_alpha_pre20251027 5.4_alpha_pre20251119 5.4_alpha_pre20251124 5.4_alpha_pre20251202 9999: The standard GNU Bourne again shell
+app-shells/bash 2.05b_p13 3.0_p22 3.1_p23 3.2_p57 4.0_p44 4.1_p17 4.2_p53 4.3_p48-r2 4.4_p23-r2 5.0_p18-r3 5.1_p16-r14 5.2_p37-r5 5.3_p9 5.4_alpha_pre20251202 9999: The standard GNU Bourne again shell
 app-shells/bash-completion 2.14.0-r1 2.15.0 2.16.0 2.16.0-r1 2.16.0-r2 2.16.0-r3 2.17.0 9999: Programmable Completion for bash
 app-shells/bashdb 5.0.1.1.2-r1 5.1_pre20240617: bash source code debugging
 app-shells/bashish 2.2.4: Text console theme engine
@@ -3819,7 +3819,7 @@ dev-ada/templates-parser 24.0.0-r2 25.0.0-r5 26.0.0-r1: A template engine
 dev-ada/vss-extra 26.0.0: A high level string and text processing library
 dev-ada/vss-text 25.0.0-r1 26.0.0: A high level string and text processing library
 dev-ada/xmlada 25.0.0-r5 26.0.0: Set of modules that provide a simple manipulation of XML streams
-dev-build/autoconf 2.13-r8 2.69-r10 2.71-r6 2.71-r8 2.72-r1 2.72-r4 2.72-r6 9999: Used to create autoconfiguration files
+dev-build/autoconf 2.13-r8 2.69-r10 2.71-r8 2.72-r6 2.72.90 9999: Used to create autoconfiguration files
 dev-build/autoconf-archive 2023.02.20 2024.10.16-r1 2024.10.16-r2: GNU Autoconf Macro Archive
 dev-build/autoconf-dickey 2.52_p20230114 2.52_p20231210 2.52_p20240618 2.52_p20250126: Fork of dev-build/autoconf for Thomas Dickey's packages
 dev-build/autoconf-vanilla 2.13 2.69-r1 2.71-r1 2.72-r1 9999: Used to create autoconfiguration files
@@ -10810,7 +10810,7 @@ dev-util/buildbot-worker 3.11.0 3.11.1 3.11.9 4.1.0 9999: BuildBot Worker (slave
 dev-util/buildbot-wsgi-dashboards 3.11.0 3.11.1 3.11.9 4.1.0: Buildbot plugin to integrate flask or bottle dashboards to buildbot UI
 dev-util/buildbot-www 3.11.0 3.11.1 3.11.9 4.1.0: BuildBot base web interface, use with buildbot-{console-view,waterfall-view}...
 dev-util/buildbot-www-react 3.11.0 3.11.1 3.11.9: BuildBot base web interface, use with buildbot-react-{console-view,grid-view}...
-dev-util/byacc 20241231: The best variant of the Yacc parser generator
+dev-util/byacc 20241231 20260126: The best variant of the Yacc parser generator
 dev-util/cargo-audit 0.21.1 0.21.2 0.22.0: Audit Cargo.lock for crates with security vulnerabilities
 dev-util/cargo-c 0.10.13-r1 0.10.14 0.10.15 0.10.16 0.10.18 0.10.19 0.10.20: Helper program to build and install c-like libraries
 dev-util/cargo-license 0.6.1-r1 0.7.0: Cargo subcommand to see license of dependencies
@@ -11010,7 +11010,7 @@ dev-util/meld 3.22.2-r1 3.22.3: A graphical diff and merge tool
 dev-util/memprof 0.6.2-r2: Profiling and leak detection tool
 dev-util/mesa_clc 25.0.7 25.1.9 25.2.5 25.2.6 25.2.7 25.2.8 25.3.0 25.3.1 25.3.2 25.3.3 9999: mesa_clc tool used for building OpenCL C to SPIR-V
 dev-util/min-cscope 16.1.0-r2: Interactively examine a C program
-dev-util/mingw64-runtime 12.0.0 13.0.0: Free Win64 runtime and import library definitions
+dev-util/mingw64-runtime 13.0.0: Free Win64 runtime and import library definitions
 dev-util/mingw64-toolchain 13.0.0 13.0.0_p1: All-in-one mingw64 toolchain intended for building Wine without crossdev
 dev-util/mk-configure 0.38.3: Lightweight replacement for GNU autotools
 dev-util/nihtest 1.9.1 1.10.0 1.10.1: A testing tool for command line utilities
@@ -11076,7 +11076,7 @@ dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0: Callback/Activity Library for Perfor
 dev-util/ropper 1.13.10 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rpmdevtools 9.6: Collection of rpm packaging related utilities
 dev-util/rt-tests 2.8 2.9: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.13.1 0.14.9 0.14.10-r1 0.14.11 0.14.14: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.13.1 0.14.9 0.14.10-r1 0.14.11 0.14.14 0.15.0: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -12328,7 +12328,7 @@ kde-apps/kiten 25.08.3 25.12.1: KDE Japanese dictionary and reference
 kde-apps/kitinerary 25.12.1-r1: Data Model and Extraction System for Travel Reservation information
 kde-apps/kjumpingcube 25.08.3 25.12.1: Tactical one or two player game
 kde-apps/kldap 25.12.1-r1: Library for interacting with LDAP servers
-kde-apps/kleopatra 25.12.1-r1: Certificate manager and GUI for OpenPGP and CMS cryptography
+kde-apps/kleopatra 25.12.1-r2: Certificate manager and GUI for OpenPGP and CMS cryptography
 kde-apps/klettres 25.08.3 25.12.1: Alphabet learning application
 kde-apps/klickety 25.08.3 25.12.1: An adaptation of the Clickomania game
 kde-apps/klines 25.08.3 25.12.1: A little KDE game about balls and how to get rid of them
@@ -12884,6 +12884,7 @@ media-fonts/jomolhari 0.003c-r1: Bhutanese style dbu-can font for Tibetan/Dzongk
 media-fonts/joypixels 6.6.0: A font for better emoji and unicode support
 media-fonts/jsmath 1.0: Raster fonts for jsmath
 media-fonts/jsmath-extra-dark 1.0: Extra raster fonts for jsmath, dark version
+media-fonts/juliamono 0.062: JuliaMono - a monospaced font for scientific and technical computing
 media-fonts/kacst-fonts 2.01: KACST Arabic TrueType Fonts
 media-fonts/kanjistrokeorders 4.004 4.005: Font for viewing stroke order diagrams for kanji, kana and other characters
 media-fonts/khmer 5.0-r1: Fonts for the Khmer language of Cambodia
@@ -14242,7 +14243,7 @@ media-sound/synaesthesia 2.4-r2: Nice graphical accompaniment to music
 media-sound/taginfo 1.2-r3: A simple ID3 tag reader for use in shell scripts
 media-sound/tagtool 0.12.3-r2: Audio Tag Tool Ogg/Mp3 Tagger
 media-sound/tap-reverbed 0-r2: Standalone JACK counterpart of LADSPA plugin TAP Reverberator
-media-sound/teamspeak-client 6.0.0_beta2-r1: A client software for quality voice communication via the internet
+media-sound/teamspeak-client 6.0.0_beta2-r1 6.0.0_beta3-r4: A client software for quality voice communication via the internet
 media-sound/teamspeak-server 3.13.7: A server software for hosting quality voice communication via the internet
 media-sound/tempest_for_eliza 1.0.5-r2: Listen to music on the radio generated by images on your screen
 media-sound/terminatorx 4.2.0-r3: Realtime audio synthesizer allowing you to 'scratch' on sampled audio data
@@ -15508,7 +15509,7 @@ net-misc/xmrig 6.22.2 6.25.0 9999: RandomX, CryptoNight, KawPow, AstroBWT, and A
 net-misc/yandex-disk 0.1.6.1080_p1: CLI to access Yandex Disk file storage service
 net-misc/you-get 0.4.1650-r1 0.4.1700: Utility to download media contents from the web
 net-misc/youtube-viewer 3.11.2-r1 3.11.3-r1 9999: A command line utility for viewing youtube-videos in Mplayer
-net-misc/yt-dlp 2025.12.08 2026.01.29 2026.01.31 9999: youtube-dl fork with additional features and fixes
+net-misc/yt-dlp 2025.12.08 2026.01.29 2026.01.31 2026.02.04 9999: youtube-dl fork with additional features and fixes
 net-misc/ytmdl 2024.08.15.1-r2: Simple app to get songs from youtube in mp3 format
 net-misc/zerotier 1.14.2-r2 1.16.0-r2: A software-based managed Ethernet switch for planet Earth
 net-misc/zssh 1.5c-r3: SSH wrapper enabling zmodem up/download in ssh
@@ -16595,6 +16596,7 @@ sec-keys/openpgp-keys-chetramey 20220406: OpenPGP keys used by Chet Ramey
 sec-keys/openpgp-keys-cjwatson 20260124: OpenPGP key used by Colin Watson
 sec-keys/openpgp-keys-colordiff 20260118: OpenPGP keys used to sign colordiff releases
 sec-keys/openpgp-keys-coreutils 20220407 20250806: OpenPGP keys used by GNU coreutils
+sec-keys/openpgp-keys-craigsmall 20260203: OpenPGP key used by Craig Small
 sec-keys/openpgp-keys-crypto++ 20210416: OpenPGP keys used to sign crypto++ releases
 sec-keys/openpgp-keys-danielstenberg 20220330: OpenPGP keys used by Daniel Stenberg
 sec-keys/openpgp-keys-danielveillard 20210514: OpenPGP keys used by Daniel Veillard
@@ -16625,7 +16627,7 @@ sec-keys/openpgp-keys-fwknop 20240208: OpenPGP key used to sign fwknop releases
 sec-keys/openpgp-keys-gawk 20220407: OpenPGP keys used by GNU Awk
 sec-keys/openpgp-keys-gdbm 20220407 20250323: OpenPGP keys used by GNU dbm
 sec-keys/openpgp-keys-gentoo-auth 20240703 20260125: Gentoo Authority Keys (GLEP 79)
-sec-keys/openpgp-keys-gentoo-developers 20250915 20251027 20251103 20251229 20260105 20260112 99999999: Gentoo Authority Keys (GLEP 79)
+sec-keys/openpgp-keys-gentoo-developers 20250915 20251027 20251103 20251229 20260105 20260112 20260112-r1 99999999: Gentoo Authority Keys (GLEP 79)
 sec-keys/openpgp-keys-gentoo-release 20250806 20260125: OpenPGP keys used for Gentoo releases (snapshots, stages)
 sec-keys/openpgp-keys-gettext 20220407 20250608: OpenPGP keys used by GNU gettext
 sec-keys/openpgp-keys-ggregory 20250720: OpenPGP keys used by commons.apache.org
@@ -16749,7 +16751,7 @@ sec-keys/openpgp-keys-tcpdump 20210416 20240308 20240901 20260104: OpenPGP keys 
 sec-keys/openpgp-keys-teemutoivola 20210426: OpenPGP keys used by Teemu Toivola
 sec-keys/openpgp-keys-tenable 20220718: OpenPGP keys used to sign Tenable Inc. software packages
 sec-keys/openpgp-keys-terminator 20210306: OpenPGP keys used to sign x11-terms/terminator package
-sec-keys/openpgp-keys-thomasdickey 20220428 20230810 20240114: OpenPGP keys used by Thomas Dickey
+sec-keys/openpgp-keys-thomasdickey 20240114 20260204: OpenPGP keys used by Thomas Dickey
 sec-keys/openpgp-keys-thomashaller 20260124: OpenPGP key used by Thomas Haller
 sec-keys/openpgp-keys-tor 20230727 20250713: OpenPGP keys used by the Tor project
 sec-keys/openpgp-keys-tytso 20260115: OpenPGP keys used by Theodore Ts'o
@@ -17042,7 +17044,7 @@ sys-apps/apmd 3.2.2_p14-r3: Advanced Power Management Daemon
 sys-apps/apparmor 3.1.4-r2 4.0.3: Userspace utils and init scripts for the AppArmor application security system
 sys-apps/apparmor-utils 3.1.4-r1 4.0.3-r1: Additional userspace utils to assist with AppArmor profile management
 sys-apps/apply-default-acl 0.4.4: Apply default POSIX ACLs to files and directories
-sys-apps/arch-chroot 28 29: Wraps the chroot command while ensuring that important filesystems are mounted
+sys-apps/arch-chroot 29 31: Wraps the chroot command while ensuring that important filesystems are mounted
 sys-apps/arrayprobe 2.0-r3: Utility to report status of an HP (Compaq) array controller (both IDA & CCISS)
 sys-apps/asahi-bless 0.3.0-r1 0.4.1: CLI boot disk selector for Apple Silicon Macs
 sys-apps/asahi-configs 1.0 2: Asahi Linux configurations
@@ -17183,7 +17185,7 @@ sys-apps/linux-misc-apps 5.8-r1 6.16: Misc tools bundled with kernel sources
 sys-apps/lm-sensors 3.6.2: Hardware Monitoring user-space utilities
 sys-apps/lnxhc 1.2-r2: Linux Health Checker
 sys-apps/locale-gen 3.8 3.9-r2 3.10 9999: Generate locales based upon the config file /etc/locale.gen
-sys-apps/logwatch 7.12 7.13 9999: Analyzes and Reports on system logs
+sys-apps/logwatch 7.12 7.13 7.14 9999: Analyzes and Reports on system logs
 sys-apps/lsadb 0.1.3-r1: Prints out information on all devices attached to the ADB bus
 sys-apps/lsb-release 3.3: LSB version query program
 sys-apps/lsd 1.1.3-r2 1.2.0: An ls command with a lot of pretty colors and some other stuff.
@@ -17195,7 +17197,7 @@ sys-apps/man-db 2.13.1 9999: A man replacement that utilizes dbm instead of flat
 sys-apps/man-pages 6.05.01 6.06 6.10 6.16-r2 9999: A somewhat comprehensive collection of Linux man pages
 sys-apps/man-pages-posix 2013a 2017a-r1: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g-r2: Standard commands to read man pages
-sys-apps/mawk 1.3.4_p20240905 1.3.4_p20250131: An (often faster than gawk) awk-interpreter
+sys-apps/mawk 1.3.4_p20250131 1.3.4_p20260129: An (often faster than gawk) awk-interpreter
 sys-apps/mcstrans 3.6 3.7-r1 3.8.1 9999: SELinux context translation to human readable names
 sys-apps/memtest86+ 6.20-r1 7.00 7.20 8.00: Memory tester based on PCMemTest
 sys-apps/memtest86-bin 11.6: Stand alone memory testing software for x86 EFI hardware
@@ -17577,20 +17579,20 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20251204 13.4.1_p20251211 13.4.1_p20251218 13.4.1_p20251225 13.4.1_p20260101 13.4.1_p20260115 13.4.1_p20260122 13.4.1_p20260129 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20251205 14.3.1_p20251212 14.3.1_p20251219 14.3.1_p20251226 14.3.1_p20260102 14.3.1_p20260109 14.3.1_p20260116 14.3.1_p20260123 14.3.1_p20260130 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20251129 15.2.1_p20251206 15.2.1_p20251213 15.2.1_p20251220 15.2.1_p20251227 15.2.1_p20260103 15.2.1_p20260110 15.2.1_p20260117 15.2.1_p20260124 15.2.1_p20260131 15.3.9999 16.0.0_p20251123 16.0.0_p20251130 16.0.0_p20251207 16.0.0_p20251214 16.0.0_p20251221 16.0.0_p20251228 16.0.0_p20260104 16.0.0_p20260111 16.0.0_p20260111-r1 16.0.1_p20260118 16.0.1_p20260125 16.0.1_p20260201 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
 sys-devel/icecream 1.4-r1: Distributed compiler with a central scheduler to share build load
 sys-devel/kgcc64 10.5.0 11.5.0 12.5.0 13.4.0 14.3.0 15.2.0: 64bit kernel compiler
 sys-devel/m4 1.4.19-r2 1.4.20: GNU macro processor
-sys-devel/mold 2.39.1-r1 2.40.4 9999: A Modern Linker
+sys-devel/mold 2.39.1-r1 2.40.4 2.40.4-r1 9999: A Modern Linker
 sys-devel/multilib-gcc-wrapper 0-r2: Wrappers for gcc tools to be used on non-native CHOSTs
 sys-devel/native-cctools 5-r1 5-r2: Host OS native assembler as and static linker ld
 sys-devel/nvptx-tools 0_pre20240809 9999: Collection of tools for use with nvptx-none GCC toolchains
 sys-devel/patch 2.7.6-r6 2.7.6-r8 2.8-r1 9999: Utility to apply diffs to files
 sys-devel/qbe 1.1-r1 1.2 9999: Pure-C embeddable compiler backend
-sys-devel/reflex 20241231: This is a variant of the flex fast lexical scanner
+sys-devel/reflex 20241231 20260131: This is a variant of the flex fast lexical scanner
 sys-devel/rust-std 1.74.1 1.75.0 1.77.1 1.79.0 1.80.1 1.81.0 1.82.0 1.83.0 1.84.1 1.85.0 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0: Rust standard library, standalone (for crossdev)
 sys-devel/smatch 1.72-r2 1.73-r1 9999: Static analysis tool for C
 sys-devel/sparse 0.6.4-r3 9999: C semantic parser
@@ -17649,7 +17651,7 @@ sys-fs/copyfs 1.0.1-r1: fuse-based filesystem for maintaining configuration file
 sys-fs/cramfs 2.1: Linux filesystem designed to be simple, small, and to compress things well
 sys-fs/cryfs 1.0.1-r1 1.0.3: Encrypted FUSE filesystem that conceals metadata
 sys-fs/cryptmount 6.3.0: A utility for management and user-mode mounting of encrypted filesystems
-sys-fs/cryptsetup 2.8.3-r1: Tool to setup encrypted devices with dm-crypt
+sys-fs/cryptsetup 2.8.3-r1 2.8.4: Tool to setup encrypted devices with dm-crypt
 sys-fs/ctmg 1.2: Simple wrapper around cryptsetup for encrypted containers
 sys-fs/davl 1.2.4-r2: Visualizes the fragmentation status of ext2/3 filesystems
 sys-fs/dd-rescue 1.99.13-r1 1.99.17 1.99.20 1.99.21 1.99.22 9999: Similar to dd but can copy from source with errors
@@ -17686,7 +17688,7 @@ sys-fs/fuse-overlayfs 1.14-r1 1.15 1.16: FUSE implementation for overlayfs
 sys-fs/fuse-zip 0.7.2: FUSE file system to navigate, extract, create and modify ZIP archives
 sys-fs/fuseiso 20070708-r3: Fuse module to mount ISO9660
 sys-fs/genext2fs 1.5.0 1.5.0-r1: generate ext2 file systems
-sys-fs/genfstab 28-r1 29: Genfstab - generate output suitable for addition to an fstab file
+sys-fs/genfstab 29 31: Genfstab - generate output suitable for addition to an fstab file
 sys-fs/genimage 19 9999: Tool to generate multiple filesystem and flash images from a tree
 sys-fs/go-mtpfs 1.0.0 1.0.0-r1: a simple FUSE filesystem for mounting Android devices as a MTP device
 sys-fs/google-drive-ocamlfuse 0.7.32: FUSE filesystem over Google Drive
@@ -17862,7 +17864,7 @@ sys-libs/pam_wrapper 1.1.5 1.1.8: A tool to test PAM applications and PAM module
 sys-libs/pkgcraft 0.0.16-r1 9999: C library for pkgcraft
 sys-libs/pwdb 0.62-r2: Password database
 sys-libs/queue-standalone 0.1-r1: Install <sys/queue.h> from glibc
-sys-libs/readline 8.2_p13-r1 8.3_p1 8.3_p3 8.4_alpha_pre20251007 9999: Another cute console display library
+sys-libs/readline 8.2_p13-r1 8.3_p3 8.4_alpha_pre20251007 9999: Another cute console display library
 sys-libs/rpmatch-standalone 1.0-r1: Standalone rpmatch library for use with musl
 sys-libs/scallop 5.3.9.20251212 9999: Fork of bash enabling integration into pkgcraft
 sys-libs/slang 2.3.3-r1 2.3.3-r2: Multi-platform library designed to allow a developer to create robust software
@@ -17948,7 +17950,7 @@ sys-process/parallel 20250722 20250722-r1: Shell tool for executing jobs in para
 sys-process/pkill-darwin 1.0-r1: pgrep(1) and pkill(1) for Darwin
 sys-process/prll 0.6.4: Utility for parallelizing execution of shell functions
 sys-process/procenv 0.51 0.51-r1: command-line utility to show process environment
-sys-process/procps 4.0.5-r3 4.0.5-r4: Standard informational utilities and process-handling tools
+sys-process/procps 4.0.5-r3 4.0.5-r4 4.0.6: Standard informational utilities and process-handling tools
 sys-process/procs 0.14.6-r1 0.14.9: Modern replacement for ps
 sys-process/psinfo 0.12-r1 0.12-r2: Process information and statistics using the kernel /proc interface
 sys-process/psmisc 23.6 23.7: A set of tools that use the proc filesystem
