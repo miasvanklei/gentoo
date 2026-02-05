@@ -1105,7 +1105,7 @@ app-admin/watchfolder 0.3.3-r2: Watches directories and processes files
 app-admin/webalizer 2.23.08-r1: Webserver log file analyzer
 app-admin/webapp-config 1.55-r4 1.56 9999: Gentoo's installer for web-based applications
 app-admin/whowatch 1.8.6-r2: Displays information about users currently logged on in real time
-app-admin/winbox 4.0_beta47: Management Software for MikroTik RouterOS
+app-admin/winbox 4.0_rc1: Management Software for MikroTik RouterOS
 app-admin/xkcdpass 1.20.0 1.30.0: Password generator inspired by XKCD 936
 app-admin/xstow 1.1.1: Replacement for GNU stow with extensions
 app-admin/xtail 2.1_p8: Tail multiple logfiles at once, even if rotated
@@ -18239,7 +18239,7 @@ www-client/elinks 0.18.0 9999: Advanced and well-established text-mode web brows
 www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.3 25.12.1: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.6.0 140.7.0 146.0 146.0.1 147.0 147.0.1 147.0.2: Firefox Web Browser
+www-client/firefox 140.6.0 140.7.0 146.0 146.0.1 147.0 147.0.1 147.0.2 147.0.3: Firefox Web Browser
 www-client/firefox-bin 140.7.0 147.0.2 147.0.3: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.169 144.0.7559.109: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31 145.0.7632.26: The web browser from Google
