@@ -17,12 +17,11 @@ SRC_URI="
 LICENSE="LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
-IUSE="amdgpu +archive bash-completion bluetooth cbor elogind flashrom gnutls gtk-doc introspection lzma minimal modemmanager nvme policykit protobuf seccomp spi synaptics systemd test tpm uefi"
+IUSE="amdgpu +archive bash-completion bluetooth cbor elogind flashrom gnutls gtk-doc introspection lzma minimal modemmanager nvme policykit protobuf spi synaptics systemd test tpm uefi"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
 	^^ ( elogind minimal systemd )
 	minimal? ( !introspection )
 	spi? ( lzma )
-	seccomp? ( systemd )
 	synaptics? ( gnutls )
 	test? ( archive )
 	uefi? ( gnutls )
@@ -75,7 +74,6 @@ COMMON_DEPEND="${PYTHON_DEPS}
 	lzma? ( app-arch/xz-utils )
 	modemmanager? ( >=net-misc/modemmanager-1.22.0[mbim,qmi] )
 	policykit? ( >=sys-auth/polkit-0.114 )
-	seccomp? ( sys-apps/systemd[seccomp] )
 	dev-db/sqlite
 	systemd? ( >=sys-apps/systemd-249 )
 	uefi? (
@@ -140,7 +138,6 @@ src_configure() {
 		$(meson_feature introspection)
 		$(meson_feature policykit polkit)
 		$(meson_feature systemd)
-		$(meson_use seccomp systemd_syscall_filter)
 		$(meson_use test tests)
 
 		${plugins[@]}
