@@ -928,7 +928,7 @@ app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarde
 app-admin/bitwarden-desktop-bin 2025.10.0 2025.12.0: Bitwarden password manager desktop client
 app-admin/bpftune 0.4_p2: BPF driven auto-tuning
 app-admin/btrfs-assistant 2.2: GUI management tool to make managing a Btrfs filesystem easier
-app-admin/calamares 3.3.14-r1 3.3.14-r3 3.3.14-r4: Distribution-independent installer framework
+app-admin/calamares 3.3.14-r1 3.3.14-r3 3.3.14-r4 3.3.14-r5: Distribution-independent installer framework
 app-admin/cancd 0.1.0-r6: CA NetConsole Daemon receives output from the Linux netconsole driver
 app-admin/ccze 0.2.1-r5: A flexible and fast logfile colorizer
 app-admin/cdist 7.0.0-r1: A usable configuration management system
@@ -2400,7 +2400,7 @@ app-emulation/plus42 1.3.10 1.3.12: An Enhanced HP-42S Calculator Simulator
 app-emulation/protontricks 1.13.1: app-emulation/winetricks wrapper for Proton (Steam Play) games
 app-emulation/punes 0.111-r2: Nintendo Entertainment System (NES) emulator
 app-emulation/q4wine 1.4.2: Qt GUI configuration tool for Wine
-app-emulation/qemu 9.1.3-r2 9.2.3-r3 9.2.4 10.0.5 10.0.7 10.1.2 10.1.3-r1 10.2.0 10.2.0-r1 9999: QEMU + Kernel-based Virtual Machine userland tools
+app-emulation/qemu 9.1.3-r2 9.2.3-r3 9.2.4 10.0.5 10.0.7 10.1.3-r1 10.2.0-r1 9999: QEMU + Kernel-based Virtual Machine userland tools
 app-emulation/qemu-guest-agent 8.2.0 9.2.0: QEMU Guest Agent (qemu-ga) for use when running inside a VM
 app-emulation/qemu-init-scripts 0.3.0-r1: Kvm and qemu init scripts
 app-emulation/qtrvsim 0.9.8-r1: RISC-V CPU simulator for education
@@ -10676,8 +10676,8 @@ dev-tcltk/tls 1.7.22-r1: TLS OpenSSL extension to Tcl
 dev-tcltk/togl 2.0-r5: A Tk widget for OpenGL rendering
 dev-tcltk/vtcl 1.6.0-r2 1.6.1_alpha1: Visual Tcl is a high-quality application development environment
 dev-tex/abntex 0.9_beta2-r1: LaTeX macros for writing documents following the ABNT norms
-dev-tex/biber 2.20-r3: A BibTeX replacement for users of biblatex
-dev-tex/biblatex 3.20 3.20-r1: Reimplementation of the bibliographic facilities provided by LaTeX
+dev-tex/biber 2.20-r3 2.21: A BibTeX replacement for users of biblatex
+dev-tex/biblatex 3.20 3.20-r1 3.21: Reimplementation of the bibliographic facilities provided by LaTeX
 dev-tex/biblatex-gost 1.17: Biblatex styles for Russian GOST 7.0.5-2008 bibliography standard
 dev-tex/bibtex2html 1.99: A bibtex to HTML converter
 dev-tex/bibtexu 3.71_p20210325 3.72_p20230311 3.72_p20240311: 8-bit Implementation of BibTeX 0.99 with a Very Large Capacity
@@ -14713,7 +14713,7 @@ net-dialup/linux-atm 2.5.2-r1 2.5.2-r2: Tools for ATM
 net-dialup/lrzsz 0.12.20-r10: Communication package providing the X, Y, and ZMODEM file transfer protocols
 net-dialup/mgetty 1.2.1-r4: A programm for sending and receiving fax and voice
 net-dialup/mingetty 1.08-r3: A compact getty program for virtual consoles only
-net-dialup/minicom 2.10: Serial Communication Program
+net-dialup/minicom 2.10 2.10-r1: Serial Communication Program
 net-dialup/moserial 3.0.21: A clean and friendly gtk-based serial terminal
 net-dialup/mwavem 2.0-r3: User level application for IBM Mwave modem
 net-dialup/neocon 20110228-r1: Simple serial console utility that tries to open ttys repeatedly
@@ -14899,7 +14899,7 @@ net-irc/ircii 20240111 20240918 20260115: An IRC and ICB client that runs under 
 net-irc/ircmap 0.99-r1: Scripts to treate diagrams of IRC networks using the LINKS command
 net-irc/ircstats 1.2: IRCStats is a Linux log analyzer
 net-irc/irker 2.24 2.24-r1: Submission tools for IRC notifications
-net-irc/iroffer-dinoex 3.32-r3 3.33 3.34: IRC fileserver using DCC
+net-irc/iroffer-dinoex 3.32-r3 3.33 3.34-r1: IRC fileserver using DCC
 net-irc/irssi 1.4.5 1.4.5-r1 1.4.5-r2 9999: A modular textUI IRC client with IPv6 support
 net-irc/irssi-xmpp 0.54-r1: Irssi plugin providing Jabber/XMPP support
 net-irc/irssistats 0.75-r3: Generates HTML IRC stats based on irssi logs
@@ -16629,8 +16629,9 @@ sec-keys/openpgp-keys-freenet 20250830: OpenPGP keys used by freenetproject.org
 sec-keys/openpgp-keys-fwknop 20240208: OpenPGP key used to sign fwknop releases
 sec-keys/openpgp-keys-gawk 20220407: OpenPGP keys used by GNU Awk
 sec-keys/openpgp-keys-gdbm 20220407 20250323: OpenPGP keys used by GNU dbm
-sec-keys/openpgp-keys-gentoo-auth 20240703 20260125: Gentoo Authority Keys (GLEP 79)
-sec-keys/openpgp-keys-gentoo-developers 20250915 20251027 20251103 20251229 20260105 20260112 20260112-r1 99999999: Gentoo Authority Keys (GLEP 79)
+sec-keys/openpgp-keys-gentoo-auth 20240703 20260125 20260206: Gentoo Authority Keys (GLEP 79)
+sec-keys/openpgp-keys-gentoo-developers 20250915 20251027 20251103 20251229 20260105 20260112 20260112-r1 20260202 99999999: Gentoo Authority Keys (GLEP 79)
+sec-keys/openpgp-keys-gentoo-infrastructure 20260202 99999999: Gentoo Authority Keys (GLEP 79)
 sec-keys/openpgp-keys-gentoo-release 20250806 20260125: OpenPGP keys used for Gentoo releases (snapshots, stages)
 sec-keys/openpgp-keys-gettext 20220407 20250608: OpenPGP keys used by GNU gettext
 sec-keys/openpgp-keys-ggregory 20250720: OpenPGP keys used by commons.apache.org
@@ -17777,8 +17778,8 @@ sys-kernel/dkms 3.2.2 3.3.0 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 108-r5 109-r1 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 5.10.247 5.10.248 5.15.197 5.15.198 6.1.159 6.1.161 6.6.119 6.6.120 6.6.121 6.6.122 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 5.10.247 5.10.248 5.15.197 5.15.198 6.1.159 6.1.161 6.6.119 6.6.120 6.6.121 6.6.122 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-kernel 5.10.247 5.10.248 5.10.249 5.15.197 5.15.198 5.15.199 6.1.159 6.1.161 6.1.162 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 5.10.247 5.10.248 5.10.249 5.15.197 5.15.198 5.15.199 6.1.159 6.1.161 6.1.162 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.10.248 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 5.15.198 5.15.199 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.1.160 6.1.161 6.1.162 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9: Full sources including the Gentoo patchset for the 6.18 kernel tree
 sys-kernel/git-sources 6.19_rc1 6.19_rc2 6.19_rc3 6.19_rc4 6.19_rc5 6.19_rc6 6.19_rc7 6.19_rc8: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 63 65 9999: Gentoo fork of installkernel script from debianutils
@@ -17799,7 +17800,7 @@ sys-kernel/scx 1.0.15 1.0.16 1.0.18 1.0.19: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.0.18 1.0.19: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 5.10.247 5.10.248 5.10.9999 5.15.197 5.15.198 5.15.9999 6.1.159 6.1.161 6.1.9999 6.6.119 6.6.120 6.6.121 6.6.122 6.6.9999 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.9999 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 5.10.247 5.10.248 5.10.249 5.10.9999 5.15.197 5.15.198 5.15.199 5.15.9999 6.1.159 6.1.161 6.1.162 6.1.9999 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.6.9999 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.12.9999 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 5.4.302 5.10.249 5.15.199 6.1.162 6.6.123 6.12.69 6.16.12 6.17.13 6.18.9: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.18.5 6.18.6: The Zen Kernel Live Sources
@@ -17985,7 +17986,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 5.10.247 5.10.248 5.15.197 5.15.198 6.1.159 6.1.161 6.6.119 6.6.120 6.6.121 6.6.122 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 5.10.247 5.10.248 5.10.249 5.15.197 5.15.198 5.15.199 6.1.159 6.1.161 6.1.162 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0: Virtual for .NET SDK
 virtual/editor 0-r7: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
@@ -18726,7 +18727,7 @@ x11-misc/sxcs 0.7.3 1.0.0 1.1.0: Color picker and magnifier for X11
 x11-misc/sxhkd 0.6.3: Simple X hotkey daemon
 x11-misc/tabbed 0.9: Simple generic tabbed fronted to xembed aware applications
 x11-misc/tdrop 0.5.0 9999: WM-Independent Dropdown Creator
-x11-misc/tint2 17.0.2 17.1.3: Lightweight panel/taskbar for Linux
+x11-misc/tint2 17.0.2 17.1.3-r1: Lightweight panel/taskbar for Linux
 x11-misc/tinynotify-send 1.2.1-r1: A notification sending utility (using libtinynotify)
 x11-misc/touchcal 0.80: Touchscreen calibration utility
 x11-misc/trayer 1.0-r5: Lightweight GTK+ based systray for UNIX desktop
