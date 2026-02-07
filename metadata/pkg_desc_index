@@ -2099,7 +2099,7 @@ app-emacs/graphviz-dot-mode 0.4 0.4.20181118: Emacs mode for editing and preview
 app-emacs/groovy-emacs-modes 2.1: Groovy major mode, grails minor mode, and a groovy inferior mode
 app-emacs/gruvbox-theme 1.30.2 9999: Gruvbox is a retro groove color scheme, now in Emacs
 app-emacs/h4x0r 0.13-r1: Aid in writing like a script kiddie does
-app-emacs/haskell-mode 17.4 17.5 9999: Mode for editing (and running) Haskell programs in Emacs
+app-emacs/haskell-mode 17.4 17.5 17.5_p20260206 9999: Mode for editing (and running) Haskell programs in Emacs
 app-emacs/haxe-mode 0.3.3: Major mode for editing Haxe files
 app-emacs/helm 4.0.6: Emacs incremental completion and selection narrowing framework
 app-emacs/helm-system-packages 1.10.2: A Helm interface to the package manager of your operating system
@@ -4099,7 +4099,7 @@ dev-dotnet/avalonia-ilspy 7.2_rc-r2: Avalonia-based .NET Decompiler, port of ILS
 dev-dotnet/cake 5.1.0: Cake (C# Make) is a cross platform build automation system with a C# DSL
 dev-dotnet/coco 2014.12.25 2014.12.25-r1: The compiler generator Coco/R for C#
 dev-dotnet/csharp-gentoodotnetinfo 2.0.0 2.0.0-r1 2.9999: .NET information tool for Gentoo
-dev-dotnet/csharp-language-server 0.19.0 0.20.0 0.21.0: Roslyn-based LSP language server for C#
+dev-dotnet/csharp-language-server 0.20.0 0.21.0 0.22.0: Roslyn-based LSP language server for C#
 dev-dotnet/csharprepl 0.6.7: A command line C# REPL with syntax highlighting
 dev-dotnet/dotnet-outdated 4.6.4-r1 4.6.4-r2 4.6.9: Display and update outdated NuGet packages in a project
 dev-dotnet/dotnet-runtime-nugets 6.0.25-r1 6.0.33 6.0.36 7.0.14-r1 7.0.20 8.0.8 8.0.18 8.0.21 8.0.22 8.0.23 9.0.10 9.0.11 9.0.12 10.0.1 10.0.2: .NET runtime nugets
@@ -11582,6 +11582,7 @@ games-fps/alephone-marathon 20240822 20250302: Aleph One - Marathon (M1A1)
 games-fps/alienarena 7.66-r1: Fast-paced multiplayer deathmatch game
 games-fps/blackshades 20070723-r1: You control a psychic bodyguard, and try to protect the VIP
 games-fps/chocolate-doom 3.1.1: A Doom source port that is minimalist and historically accurate
+games-fps/crispy-doom 7.1: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
 games-fps/darkplaces 20140513-r2: Enhanced engine for iD Software's Quake 1
 games-fps/doom-data 1.9: The IWAD used by the shareware version of Doom
 games-fps/doom-data-gog 1.9: Data files for The Ultimate DOOM from gog.com
@@ -14846,7 +14847,7 @@ net-im/centerim 5.0.1-r2: Ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/Liv
 net-im/coturn 4.6.2 9999: coturn TURN server project
 net-im/cpop 0.0.4-r2: GTK+ network popup message client. Compatible with the jpop protocol
 net-im/dino 0.5.0 0.5.1 9999: Modern Jabber/XMPP Client using GTK+/Vala
-net-im/discord 0.0.119-r1 0.0.120 0.0.122: All-in-one voice and text chat for gamers
+net-im/discord 0.0.119-r1 0.0.120 0.0.122 0.0.123: All-in-one voice and text chat for gamers
 net-im/ejabberd 24.02-r1 24.07 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
 net-im/element-desktop-bin 1.12.9: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
@@ -17594,7 +17595,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
