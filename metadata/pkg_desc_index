@@ -1197,7 +1197,7 @@ app-arch/plzip 1.12: Parallel lzip compressor
 app-arch/pure-sfv 0.3-r2: utility to test and create .sfv files and create .par files
 app-arch/pxz 5.0_pre20220509-r1: Parallel implementation of the XZ compression utility
 app-arch/qpress 20220819: A portable file archiver using QuickLZ algorithm
-app-arch/rar 7.01 7.12: RAR compressor/uncompressor
+app-arch/rar 7.01 7.12 7.20: RAR compressor/uncompressor
 app-arch/rpm 4.20.1-r2 6.0.0-r1 6.0.1: The RPM Package Manager
 app-arch/rpm2targz 2021.03.16: Convert a .rpm file to a .tar.gz archive
 app-arch/rzip 2.1-r5: Compression program for large files
@@ -1217,7 +1217,7 @@ app-arch/unace 2.5-r6: ACE unarchiver
 app-arch/unadf 0.7.12-r2 0.9.0: Extract files from Amiga adf disk images
 app-arch/unar 1.10.8: Unpacker for various archiving formats, e.g. rar v3
 app-arch/unp 2.0: Script for unpacking various file formats
-app-arch/unrar 7.2.1 7.2.2 7.2.3: Uncompress rar files
+app-arch/unrar 7.2.3 7.2.4: Uncompress rar files
 app-arch/unrpa 2.3.0-r1: Ren'Py's RPA data file extractor
 app-arch/unshield 1.6.2-r1: InstallShield CAB file extractor
 app-arch/unzip 6.0_p27-r1 6.0_p29: unzipper for pkzip-compressed files
@@ -2353,7 +2353,7 @@ app-emacs/yatex 1.84: Yet Another TeX mode for Emacs
 app-emacs/zenburn 20110907-r2: Zenburn color theme for Emacs
 app-emacs/zenburn-theme 2.8.0: Zenburn color theme for Emacs
 app-emacs/zenirc 2.112-r1: A full-featured scriptable IRC client for the Emacs text editor
-app-emulation/86Box 5.2-r1 5.3: Emulator of x86-based machines based on PCem
+app-emulation/86Box 5.3: Emulator of x86-based machines based on PCem
 app-emulation/aranym 1.1.0-r1: Atari Running on Any Machine, VM running Atari ST/TT/Falcon OS and TOS/GEM apps
 app-emulation/bochs 3.0 9999: LGPL-ed pc emulator
 app-emulation/cloud-init 24.4-r4 25.1 9999: Cloud instance initialisation magic
@@ -2364,7 +2364,7 @@ app-emulation/diskimage-builder 3.32.0 3.33.0 9999: Golden Disk Image builder
 app-emulation/dosemu 1.4.1_pre20130107-r7: DOS Emulator
 app-emulation/dxvk 2.3.1-r1 2.4.1 2.5.3 2.6.2 2.7.1 9999: Vulkan-based implementation of D3D9, D3D10 and D3D11 for Linux / Wine
 app-emulation/dynamips 0.2.23: Cisco 7200/3600 Simulator
-app-emulation/faudio 25.12 26.01: Accuracy-focused XAudio reimplementation for open platforms
+app-emulation/faudio 26.01 26.02: Accuracy-focused XAudio reimplementation for open platforms
 app-emulation/fex-xtajit 2506 2507.1 2509 2510 2512 2601: A wine emulation dll for running x86 application on an arm64 host
 app-emulation/firecracker-bin 1.13.1 1.14.0: Secure and fast microVMs for serverless computing (static build)
 app-emulation/free42 3.1.9 3.3.8 3.3.10: An HP-42S Calculator Simulator
@@ -4014,7 +4014,7 @@ dev-db/mysql-connector-c 8.0.36-r1 8.0.41-r1: C client library for MariaDB/MySQL
 dev-db/mysql-connector-c++ 9.4.0: MySQL database connector for C++ (mimics JDBC 4.0 API)
 dev-db/mysql-init-scripts 2.3-r8: Gentoo MySQL init scripts
 dev-db/mysql-workbench 8.0.42-r1 8.0.43 8.0.44: MySQL Workbench
-dev-db/mysqltuner 2.6.0-r1 2.7.0: Makes recommendations for increased performance and stability for MySQL
+dev-db/mysqltuner 2.7.0 2.8.35: Makes recommendations for increased performance and stability for MySQL
 dev-db/mytop 1.9.1-r2: Clone of top for MySQL
 dev-db/ocp 0.3 9999: Oracle copy tool
 dev-db/opendbx 1.4.6-r6: OpenDBX - A database abstraction layer
@@ -5490,7 +5490,7 @@ dev-libs/kpublictransport 25.12.1-r1 25.12.2: Library for accessing public trans
 dev-libs/ktextaddons 1.8.0: Various text handling addons
 dev-libs/kweathercore 25.08.3 25.12.2: Library for retrieval of weather information including forecasts and alerts
 dev-libs/lager 0.1.1-r1: Library to assist value-oriented design
-dev-libs/level-zero 1.24.2 1.24.3 1.26.0 1.26.1 1.26.3: oneAPI Level Zero headers, loader and validation layer
+dev-libs/level-zero 1.24.2 1.24.3 1.26.3 1.28.0: oneAPI Level Zero headers, loader and validation layer
 dev-libs/leveldb 1.23-r6: A fast key-value storage library written at Google
 dev-libs/libIDL 0.8.14-r4: CORBA tree builder
 dev-libs/libaio 0.3.113-r1 0.3.113-r2 0.3.113_p8 9999: Asynchronous input/output library that uses the kernels native interface
@@ -5529,7 +5529,7 @@ dev-libs/libdex 0.10.1 1.0.0: Dex provides Future-based programming for GLib-bas
 dev-libs/libdispatch 5.8 6.1.1: Library for concurrent code execution on multicore hardware
 dev-libs/libdivecomputer 0.6.0-r1 9999: Library for communication with dive computers from various manufacturers
 dev-libs/libdivsufsort 2.0.1-r2: Suffix-sorting library (for BWT)
-dev-libs/libdnet 1.18.0-r1 1.18.0-r2 1.18.0-r3 1.18.2_pre20260126: Simplified, portable interface to several low-level networking routines
+dev-libs/libdnet 1.18.0-r1 1.18.0-r2 1.18.0-r3 1.18.2: Simplified, portable interface to several low-level networking routines
 dev-libs/libdnsres 0.1a-r4 0.1a-r5: A non-blocking DNS resolver library
 dev-libs/libdshconfig 0.20.13: Library for parsing dsh.style configuration files
 dev-libs/libdwarf 2.1.0 2.2.0 2.3.0: Library intended to simplify reading (and writing) applications using DWARF
@@ -5727,7 +5727,7 @@ dev-libs/marisa 0.2.6 9999: Matching Algorithm with Recursively Implemented Stor
 dev-libs/mathjax 2.7.7-r1 3.2.2-r2: JavaScript display engine for LaTeX, MathML and AsciiMath
 dev-libs/md4c 0.5.2: C Markdown parser. Fast, SAX-like interface, CommonMark Compliant.
 dev-libs/mdns 1.4.3: Public domain mDNS/DNS-SD library in C
-dev-libs/metee 6.0.2 6.1.0: Cross-platform access library for Intel CSME HECI interface
+dev-libs/metee 6.1.0 6.2.1: Cross-platform access library for Intel CSME HECI interface
 dev-libs/mimalloc 2.1.9 3.1.5: A compact general purpose allocator with excellent performance
 dev-libs/mimetic 0.9.8: C++ MIME library designed to be easy to use and integrate, fast and efficient
 dev-libs/miniaudio 0.11.15 0.11.21: Single file library for audio playback and capture
@@ -5945,7 +5945,7 @@ dev-lisp/uiop 3.3.5: UIOP is a portability layer spun off ASDF3
 dev-lua/LuaBitOp 1.0.2-r1: Bit Operations Library for the Lua Programming Language
 dev-lua/basexx 0.4.1: A base2, base16, base32, base64 and base85 library for Lua
 dev-lua/binaryheap 0.4: Binary heap implementation in pure Lua
-dev-lua/busted 2.2.0: Elegant Lua unit testing
+dev-lua/busted 2.2.0 2.3.0: Elegant Lua unit testing
 dev-lua/busted-htest 1.0.0-r1: Pretty output handler for Busted
 dev-lua/compat53 0.14.4-r1: Compatibility module providing Lua-5.3-style APIs for Lua 5.2 and 5.1
 dev-lua/cqueues 20200726_p20241204: Stackable Continuation Queues
@@ -5971,19 +5971,19 @@ dev-lua/lua-resty-string 0.16: String utilities and common hash functions for th
 dev-lua/lua-term 0.8: Terminal operations for Lua
 dev-lua/lua-unbound 1.0.0: A binding to libunbound for Lua
 dev-lua/lua-utf8 0.1.5: A UTF-8 support module for Lua and LuaJIT
-dev-lua/lua-zlib 1.2-r1 1.3: Simple streaming interface to zlib for Lua
+dev-lua/lua-zlib 1.3 1.4: Simple streaming interface to zlib for Lua
 dev-lua/lua_cliargs 3.0.2: A command-line argument parsing module for Lua
 dev-lua/luacheck 1.2.0: A tool for linting and static analysis of Lua code
-dev-lua/luacov 0.16.0: A simple coverage analyzer for Lua scripts
+dev-lua/luacov 0.16.0 0.17.0: A simple coverage analyzer for Lua scripts
 dev-lua/luadbi 0.7.4: A database interface library for Lua
 dev-lua/luaevent 0.4.6-r1: Binding of libevent for Lua
 dev-lua/luaexpat 1.5.2: A SAX XML parser based on the Expat library
-dev-lua/luafilesystem 1.8.0-r101: File System Library for the Lua programming language
+dev-lua/luafilesystem 1.8.0-r101 1.9.0: File System Library for the Lua programming language
 dev-lua/luajson 1.3.4 1.3.4-r1: JSON Parser/Constructor for Lua
 dev-lua/lualdap 1.4.0: A lua binding for the OpenLDAP client libraries
 dev-lua/luaossl 20250929: Most comprehensive OpenSSL module in the Lua universe
 dev-lua/luaposix 36.3: Bindings for POSIX APIs
-dev-lua/luarocks 3.11.1-r1 3.12.2 3.12.2-r1: A package manager for the Lua programming language
+dev-lua/luarocks 3.12.2-r1 3.13.0: A package manager for the Lua programming language
 dev-lua/luasec 1.3.2: Lua binding for OpenSSL library to provide TLS/SSL communication
 dev-lua/luasocket 3.1.0: Networking support for the Lua language
 dev-lua/luassert 1.9.0: Assertion library for Lua
@@ -5994,7 +5994,7 @@ dev-lua/md5 1.3-r1: Offers basic cryptographic facilities for Lua
 dev-lua/mediator_lua 1.1.2_p0-r1: Mediator pattern implementation for pub-sub management
 dev-lua/messagepack 0.5.4: pure Lua implementation of the MessagePack serialization format
 dev-lua/mpack 1.0.12 1.0.13: Lua bindings for libmpack
-dev-lua/penlight 1.14.0: Lua utility libraries loosely based on the Python standard libraries
+dev-lua/penlight 1.14.0 1.15.0: Lua utility libraries loosely based on the Python standard libraries
 dev-lua/readline 3.3: A simple interface to the readline and history libraries
 dev-lua/say 1.4.1: Lua String Hashing/Indexing Library
 dev-lua/toluapp 1.0.93_p20190513-r101: Tool to integrate C/C++ code with Lua
@@ -11102,7 +11102,7 @@ dev-util/smem 1.5-r3: A tool that can give numerous reports on memory usage on L
 dev-util/snakeviz 2.2.0 2.2.2: A web-based viewer for Python profiler output
 dev-util/source-highlight 3.1.9-r2: Generate highlighted source code as an (x)html document
 dev-util/spirv-headers 1.4.321.0 1.4.328.0 1.4.335.0 9999: Machine-readable files for the SPIR-V Registry
-dev-util/spirv-llvm-translator 15.0.15 15.0.18 15.0.19 16.0.15 16.0.18 16.0.19 17.0.15 17.0.18 17.0.19 18.1.15 18.1.18 18.1.19 19.1.10 19.1.13 19.1.14 20.1.5 20.1.8 20.1.9 21.1.3 22.0.0_pre20251123 22.0.0_pre20260112: Bi-directional translator between SPIR-V and LLVM IR
+dev-util/spirv-llvm-translator 15.0.15 15.0.18 15.0.19 16.0.18 16.0.19 17.0.18 17.0.19 18.1.18 18.1.19 19.1.13 19.1.14 20.1.8 20.1.9 21.1.3 22.0.0_pre20251123 22.0.0_pre20260112: Bi-directional translator between SPIR-V and LLVM IR
 dev-util/spirv-tools 1.4.321.0 1.4.328.0 1.4.335.0 9999: Provides an API and commands for processing SPIR-V modules
 dev-util/splint 3.1.2-r3: Check C programs for vulnerabilities and programming mistakes
 dev-util/squashdelta 0.1.2: Efficient (partially uncompressed) SquashFS binary delta tool
@@ -11885,7 +11885,7 @@ games-simulation/gl117 1.3.2-r1: Action flight simulator
 games-simulation/lincity 1.13.1-r4: City simulation game for X
 games-simulation/lincity-ng 2.9_beta-r1 2.13.1 9999: City simulation game
 games-simulation/micropolis 1.0_p20250628: Free version of the well-known city building simulation
-games-simulation/openrct2 0.4.27 0.4.28 0.4.29 0.4.30: An open source re-implementation of Chris Sawyer's RollerCoaster Tycoon 2
+games-simulation/openrct2 0.4.30 0.4.31: An open source re-implementation of Chris Sawyer's RollerCoaster Tycoon 2
 games-simulation/openttd 14.1 15.0 15.1 9999: A clone of Transport Tycoon Deluxe
 games-simulation/pmars-sdl 0.9.2e-r1 0.9.2e-r2: Portable redcode simulator's sdl port for core war
 games-simulation/searchandrescue 1.7.0-r1: Helicopter based air rescue flight simulator
@@ -13840,21 +13840,21 @@ media-plugins/vco-plugins 0.3.0-r1: SAW-VCO ladspa plugin package. Anti-aliased 
 media-plugins/vdr-actuator 1.2.1 2.4.1_pre20181025: VDR plugin: control a horz. or vert. actuator attached through the parallel port
 media-plugins/vdr-avards 0.2.6: VDR Plugin: Automatic Video Aspect Ratio Detection and Signaling
 media-plugins/vdr-beep 0.1.2: VDR plugin: Use the PC speaker to signalize some events (shutdown, cut done ...)
-media-plugins/vdr-calc 0.0.1_rc5 0.0.1_rc6: VDR Plugin: OSD Calculator
+media-plugins/vdr-calc 0.0.1_rc6: VDR Plugin: OSD Calculator
 media-plugins/vdr-cdplayer 1.2.2: VDR Plugin: CD-PLAYER
 media-plugins/vdr-cinebars 0.0.5: VDR Plugin: Show black bars to hide station logo
-media-plugins/vdr-clock 1.0.0-r2 1.0.2: VDR Plugin: Tea clock, On-Screen clock
+media-plugins/vdr-clock 1.0.2: VDR Plugin: Tea clock, On-Screen clock
 media-plugins/vdr-ddci2 1.0.4 1.0.5 9999: VDR plugin: DDCI2 - Digital Devices CI support
-media-plugins/vdr-devstatus 0.4.1-r1 0.5.0: VDR plugin: display the usage status of the available DVB devices
+media-plugins/vdr-devstatus 0.5.0: VDR plugin: display the usage status of the available DVB devices
 media-plugins/vdr-dummydevice 2.0.0: VDR Plugin: dummy output device ,for recording server without any output devices
 media-plugins/vdr-duplicates 1.0.1-r1: VDR Plugin: show duplicated records
 media-plugins/vdr-dvbapi 2.2.5 2.2.6_p20230121: VDR Plugin: allows connect VDR to OScam
 media-plugins/vdr-dvbhddevice 2.2.0_p20180420-r1: VDR Plugin: output device for the 'Full Featured' TechnoTrend S2-6400 DVB Card
 media-plugins/vdr-dvbsddevice 2.2.0-r2: VDR Plugin: output device for the 'Full Featured' SD DVB Card
-media-plugins/vdr-dvd 0.3.7_pre20090106-r4 0.3.7: VDR Plugin: DVD-Player
+media-plugins/vdr-dvd 0.3.7: VDR Plugin: DVD-Player
 media-plugins/vdr-dvdswitch 0.2.3-r1 0.2.4: VDR Plugin: to play dvds and dvd file structures
 media-plugins/vdr-epgsearch 2.4.4 2.4.5: VDR plugin: create timers from epg content based on saved search expressions
-media-plugins/vdr-epgsync 1.0.1 1.0.2: VDR Plugin: Import the EPG of another VDR via vdr-svdrpservice
+media-plugins/vdr-epgsync 1.0.2: VDR Plugin: Import the EPG of another VDR via vdr-svdrpservice
 media-plugins/vdr-exec 0.0.3: VDR plugin: Exec commands like timers at defined times
 media-plugins/vdr-extrecmenu 1.2.4-r2 2.0.12 2.0.12-r1: VDR Plugin: Extended recordings menu (NG)
 media-plugins/vdr-femon 2.4.0-r1 2.4.0_p20240910-r1 2.4.0_p20240910-r2: VDR Plugin: DVB Frontend Status Monitor (signal strength/noise)
@@ -13862,7 +13862,7 @@ media-plugins/vdr-ffnetdev 0.1.3: VDR Plugin: Provides an easy way of connecting
 media-plugins/vdr-filebrowser 0.2.3_p20210521-r1: VDR plugin: file manager plugin for moving or renaming files in VDR
 media-plugins/vdr-freecell 0.0.2-r5: VDR plugin: play 'Freecell' on the On Screen Display
 media-plugins/vdr-fritzbox 1.5.8: VDR Plugin: Inform about incoming phone-calls and use the fritz!box phonebook
-media-plugins/vdr-graphlcd 1.0.7 1.0.8: VDR Plugin: support output on Graphical LCD
+media-plugins/vdr-graphlcd 1.0.8: VDR Plugin: support output on Graphical LCD
 media-plugins/vdr-imonlcd 1.0.3-r1: VDR Plugin: shows information about the current state of VDR on iMON LCD
 media-plugins/vdr-iptv 2.2.1-r1 2.4.0: VDR plugin: Add a logical device capable of receiving IPTV
 media-plugins/vdr-joystick 0.0.3: VDR plugin: allows using a joystick as a remote control for VDR
@@ -13878,44 +13878,44 @@ media-plugins/vdr-mplayer 0.10.2-r2: VDR Plugin: Play video files not supported 
 media-plugins/vdr-newsticker 0.0.4 0.0.4-r1: VDR plugin: Show rdf Newsticker on TV
 media-plugins/vdr-noepg 0.0.5: VDR Plugin: will replace the noepg-patch with the new cEpgHandler
 media-plugins/vdr-osdserver 0.1.3-r1: VDR plugin: VDR OSD access for ext. programs through a TCP/IP socket connection
-media-plugins/vdr-osdteletext 2.3.1_p20211217 2.3.1_p20211217-r1: VDR Plugin: Osd-Teletext displays the teletext/videotext on the OSD
+media-plugins/vdr-osdteletext 2.3.1_p20211217-r1: VDR Plugin: Osd-Teletext displays the teletext/videotext on the OSD
 media-plugins/vdr-peer 0.0.1-r1: VDR Plugin: peer-to-peer between multiple VDRs
 media-plugins/vdr-permashift 1.0.1-r1 1.0.4_pre20220818: VDR Plugin: permanent timeshift by recording live TV on RAM
 media-plugins/vdr-pin 0.1.18: VDR plugin: enable/disable parentalrating in records
 media-plugins/vdr-powermate 0.0.5: VDR PLUGIN: support the Powermate device
 media-plugins/vdr-pvr350 1.7.5 2.0.0: VDR plugin: use a PVR350 as output device
-media-plugins/vdr-radio 1.1.0-r1 1.1.0-r2: VDR plugin: show background image for radio and decode RDS Text
-media-plugins/vdr-rcu 2.2.0 2.2.1: VDR plugin: Remote Control Unit consists mainly of an IR receiver, PIC 16C84
+media-plugins/vdr-radio 1.1.0-r2: VDR plugin: show background image for radio and decode RDS Text
+media-plugins/vdr-rcu 2.2.1: VDR plugin: Remote Control Unit consists mainly of an IR receiver, PIC 16C84
 media-plugins/vdr-recsearch 0.3.7: VDR Plugin: Search through your recordings and find the one you are looking for
 media-plugins/vdr-remote 0.7.0-r2 0.7.1: VDR Plugin: use various devices for controlling vdr (keyboards, lirc...)
-media-plugins/vdr-remoteosd 1.0.1 1.0.1-r1: VDR Plugin: server/client remoteosd
+media-plugins/vdr-remoteosd 1.0.1-r1: VDR Plugin: server/client remoteosd
 media-plugins/vdr-rssreader 2.4.0-r2: VDR Plugin: RSS reader
 media-plugins/vdr-satip 2.2.5 2.4.1: VDR Plugin: integrates SAT>IP network devices seamlessly into VDR
 media-plugins/vdr-scheduler 0.1.6-r1: VDR plugin: allows to control externel jobs from within VDR
-media-plugins/vdr-screenshot 0.0.15 0.0.16: VDR Plugin: takes screenshots of the current video or tv screen
+media-plugins/vdr-screenshot 0.0.16: VDR Plugin: takes screenshots of the current video or tv screen
 media-plugins/vdr-serial 0.0.6a-r3: VDR Plugin: attach some buttons with diodes to the serial port
 media-plugins/vdr-skincurses 2.2.0-r1: VDR plugin: show content of menu in a shell window
 media-plugins/vdr-skinelchi 0.3.0-r3: VDR Skin Plugin: skinelchi
 media-plugins/vdr-skinelchihd 1.2.9: VDR Skin Plugin: skinelchihd
-media-plugins/vdr-skinsoppalusikka 2.4.0 2.4.0_p20210314: VDR Skin Plugin: soppalusikka
+media-plugins/vdr-skinsoppalusikka 2.4.0_p20210314: VDR Skin Plugin: soppalusikka
 media-plugins/vdr-sleeptimer 0.8.3: VDR Plugin: Sleeptimer
 media-plugins/vdr-sndctl 0.1.5.1-r1: VDR plugin: Control the vol level of diff controls of your soundcard
 media-plugins/vdr-solitaire 0.0.3: VDR Plugin: Solitaire game
 media-plugins/vdr-span 0.0.7-r1: VDR plugin: Spectrum Analyzer (SpAn)
-media-plugins/vdr-streamdev 0.6.3 0.6.4: VDR Plugin: Client/Server and http streaming plugin
+media-plugins/vdr-streamdev 0.6.4: VDR Plugin: Client/Server and http streaming plugin
 media-plugins/vdr-suspendoutput 2.1.0: VDR Plugin: Show still image instead of live tv to save cpu
-media-plugins/vdr-svdrposd 1.0.0 1.0.0-r1: VDR plugin: export OSD via TCP to vdr-remoteosd
-media-plugins/vdr-svdrpservice 1.0.0-r1 1.0.0-r2: VDR Plugin: offers SVDRP connections as a service to other plugins
+media-plugins/vdr-svdrposd 1.0.0-r1: VDR plugin: export OSD via TCP to vdr-remoteosd
+media-plugins/vdr-svdrpservice 1.0.0-r2: VDR Plugin: offers SVDRP connections as a service to other plugins
 media-plugins/vdr-systeminfo 0.1.5: VDR Plugin: systeminfo
 media-plugins/vdr-ttxtsubs 0.3.0-r3 0.3.0_p20160207: VDR Plugin: displaying, recording and replaying teletext based subtitles
-media-plugins/vdr-undelete 2.3.1_pre1 2.3.1_pre1-r1: VDR Plugin: Recover deleted recordings of VDR
-media-plugins/vdr-vcd 0.9-r4 0.9-r5: VDR plugin: play video cds
+media-plugins/vdr-undelete 2.3.1_pre1-r1: VDR Plugin: Recover deleted recordings of VDR
+media-plugins/vdr-vcd 0.9-r5: VDR plugin: play video cds
 media-plugins/vdr-vdrmanager 0.15: VDR Plugin: remote programming VDR using VDR-Manager running on Android devices
-media-plugins/vdr-vompserver 0.5.1 0.5.1-r1: VDR Plugin: server part for MediaMVP device
+media-plugins/vdr-vompserver 0.5.1-r1: VDR Plugin: server part for MediaMVP device
 media-plugins/vdr-weatherng 0.0.8_pre3-r1: VDR plugin: show weather for specified place
-media-plugins/vdr-wirbelscan 2024.09.15 2024.09.15-r1: VDR Plugin: Scan for channels on DVB-? and on PVR*-Cards
-media-plugins/vdr-xineliboutput 2.2.0-r5 2.3.0 9999: VDR Plugin: Xinelib PlugIn
-media-plugins/vdr-zappilot 0.0.5-r2 0.0.6: VDR Plugin: browse fast the EPG information without being to switch to a channel
+media-plugins/vdr-wirbelscan 2024.09.15-r1: VDR Plugin: Scan for channels on DVB-? and on PVR*-Cards
+media-plugins/vdr-xineliboutput 2.3.0: VDR Plugin: Xinelib PlugIn
+media-plugins/vdr-zappilot 0.0.6: VDR Plugin: browse fast the EPG information without being to switch to a channel
 media-plugins/x42-avldrums 0.7.3 9999: AVLinux Drumkits
 media-plugins/x42-plugins 20240611 99999999: Collection of LV2 plugins
 media-plugins/xsynth-dssi 0.9.4: A software synthesizer plugin for the DSSI Soft Synth Interface
@@ -14832,7 +14832,7 @@ net-ftp/lftp 4.9.3 9999: A sophisticated ftp/sftp/http/https/torrent client and 
 net-ftp/linksys-tftp 1.2.1-r4: TFTP client suitable for uploading to the Linksys WRT54G Wireless Router
 net-ftp/ncftp 3.3.0: An extremely configurable ftp client
 net-ftp/proftpd 1.3.8b-r1 1.3.9-r1 1.3.9-r2 1.3.9-r3: An advanced and very configurable FTP server
-net-ftp/pure-ftpd 1.0.52 9999: Fast, production-quality, standard-conformant FTP server
+net-ftp/pure-ftpd 1.0.52 1.0.53 9999: Fast, production-quality, standard-conformant FTP server
 net-ftp/pureadmin 0.4-r3: GUI tool used to make the management of Pure-FTPd a little easier
 net-ftp/tftp-hpa 5.2-r4: Port of the OpenBSD TFTP server
 net-ftp/tnftp 20210827 20230507: NetBSD FTP client with several advanced features
@@ -14862,7 +14862,7 @@ net-im/openmittsu 0.10.3.0: Open source chat client for Threema-style end-to-end
 net-im/pidgin 2.14.14-r2 2.14.14-r3: GTK Instant Messenger client
 net-im/poezio 0.15.1-r1 9999: Console XMPP client that looks like most famous IRC clients
 net-im/profanity 0.15.0 0.15.1: A console based XMPP client inspired by Irssi
-net-im/prosody 13.0.2: Prosody is a modern XMPP communication server
+net-im/prosody 13.0.2 13.0.4: Prosody is a modern XMPP communication server
 net-im/prosody-modules 0_pre20241231 9999: A collection of community-maintained modules for Prosody
 net-im/purple-events 0.99.2: Allows a fine-grained control over libpurple events
 net-im/qtox 1.18.3-r1 9999: Instant messaging client using the encrypted p2p Tox protocol
@@ -14872,7 +14872,7 @@ net-im/sendxmpp-scala 1.2.0 1.2.1 9999: Send XMPP (Jabber) messages via command 
 net-im/signal-cli-bin 0.13.9 0.13.19: Send and receive messages of Signal Messenger over a command line interface
 net-im/signal-desktop-bin 7.83.0 7.83.0-r1: Allows you to send and receive messages of Signal Messenger on your computer
 net-im/slack 4.47.59 4.47.72: Team collaboration tool
-net-im/spectrum2 2.2.1 2.2.1-r1: An open source instant messaging transport
+net-im/spectrum2 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
 net-im/synapse 1.141.0-r1 1.142.1-r1 1.143.0-r1 1.144.0-r1 1.145.0 1.146.0: Reference implementation of Matrix homeserver
 net-im/talk-desktop-bin 2.0.5: Nextcloud Talk Desktop client
@@ -15053,7 +15053,7 @@ net-libs/libtlsrpt 0.5.0 9999: library to implement TLSRPT
 net-libs/libtorrent 0.15.7 0.16.6 9999: BitTorrent library written in C++ for *nix
 net-libs/libtorrent-rasterbar 2.0.10: C++ BitTorrent implementation focusing on efficiency and scalability
 net-libs/libtrace 4.0.21 4.0.22 4.0.26 4.0.28: A library and tools for trace processing
-net-libs/libupnp 1.14.24 1.14.25: An Portable Open Source UPnP Development Kit
+net-libs/libupnp 1.14.24 1.14.25 1.14.26: An Portable Open Source UPnP Development Kit
 net-libs/libupnpp 1.0.2 1.0.3: The libupnpp C++ library wraps libupnp for easier use by upmpdcli and upplay
 net-libs/libvncserver 0.9.15-r1: library for creating vnc servers
 net-libs/libwebsockets 4.4.1-r1 4.5.2: A flexible pure-C library for implementing network protocols
@@ -16099,7 +16099,7 @@ sci-geosciences/qgis 3.44.6 9999: User friendly Geographic Information System
 sci-geosciences/qmapshack 1.18.2 1.19.0: GPS mapping utility
 sci-geosciences/readosm 1.1.0a: Library to extract valid data from an Open Street Map input file
 sci-geosciences/routino 3.4.3: Routing application based on openstreetmap data
-sci-geosciences/s2geometry 0.13.1: Computational geometry and spatial indexing on the sphere
+sci-geosciences/s2geometry 0.13.1-r1: Computational geometry and spatial indexing on the sphere
 sci-geosciences/tcd-utils 20240222: Utilities for working with Tidal Constituent Databases
 sci-geosciences/viking 1.10 1.10-r1 1.11: GPS data editor and analyzer
 sci-geosciences/xtide 2.15.5: XTide provides tide and current predictions in a wide variety of formats
@@ -17318,9 +17318,9 @@ sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
 sys-apps/system-monitoring-center 2.26.0-r1 9999: Multi-featured system monitor GUI written in Python
 sys-apps/systemctl-tui 0.4.0: A simple TUI for interacting with systemd services and their logs
-sys-apps/systemd 257.9 257.10 258.2 258.3 259 9999: System and service manager for Linux
+sys-apps/systemd 257.9 257.10 258.2 258.3 259 259.1 9999: System and service manager for Linux
 sys-apps/systemd-readahead 216: Split of readahead systemd implementation
-sys-apps/systemd-utils 254.24 254.26 255.18 255.21 256.17 259-r3: Utilities split out from systemd for OpenRC users
+sys-apps/systemd-utils 254.24 254.26 255.18 255.21 256.17 259-r3 259.1: Utilities split out from systemd for OpenRC users
 sys-apps/sysvinit 3.09 3.14 3.15: /sbin/init - parent of all processes
 sys-apps/tas 1.9.0.240925: Supermicro Thin-Agent Service for monitoring through the BMC/IPMI
 sys-apps/tcp-wrappers 7.6.31-r2: TCP Wrappers
@@ -17361,7 +17361,7 @@ sys-apps/xmbmon 2.0.5-r2: Mother Board Monitor Program for X Window System
 sys-apps/yarn 1.22.22: Fast, reliable, and secure node dependency management
 sys-apps/zorroutils 0.05: Zorro bus utility for Amigas running 2.1 and later kernels
 sys-apps/zram-generator 1.1.2-r1 1.2.1: Systemd unit generator for zram swap devices
-sys-auth/AusweisApp 2.3.2 2.4.0: Official authentication app for German ID cards and residence permits
+sys-auth/AusweisApp 2.4.0 2.4.1: Official authentication app for German ID cards and residence permits
 sys-auth/docker_auth 1.9.0: Docker Registry 2 authentication server
 sys-auth/elogind 252.9-r3 255.17-r1 255.22 255.22-r1: The systemd project's logind, extracted to a standalone package
 sys-auth/fprintd 1.94.2-r1 1.94.3-r1 1.94.5: D-Bus service to access fingerprint readers
@@ -17595,7 +17595,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.15-r5 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.2.1_p20260207 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -17870,7 +17870,7 @@ sys-libs/musl-nscd 1.1.1-r1 9999: musl-nscd is an implementation of the NSCD pro
 sys-libs/native-uuid 1.0-r1: .pc file for uuid
 sys-libs/ncurses 6.5_p20250329 6.5_p20250531-r1 6.5_p20250802 6.5_p20251220: Console display library
 sys-libs/ncurses-compat 6.4_p20230401 6.4_p20240330 6.4_p20240414: Console display library (ABI version 5)
-sys-libs/newlib 4.3.0.20230120-r2 4.4.0.20231231 4.5.0.20241231 4.5.0.20241231-r1 9999: Newlib is a C library intended for use on embedded systems
+sys-libs/newlib 4.3.0.20230120-r2 4.4.0.20231231 4.5.0.20241231 4.5.0.20241231-r1 4.6.0.20260123 9999: Newlib is a C library intended for use on embedded systems
 sys-libs/nss-usrfiles 2.18.1: NSS module to read passwd/group files from CoreOS /usr location
 sys-libs/nss_wrapper 1.1.15 1.1.16: Wrapper for the user, group and hosts NSS API
 sys-libs/obstack-standalone 1.2.3: A standalone library to implement GNU libc's obstack
