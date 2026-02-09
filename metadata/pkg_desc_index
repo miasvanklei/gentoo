@@ -3997,7 +3997,7 @@ dev-db/libodbc++ 0.2.5-r3: Provides a subset of the well-known JDBC 2.0(tm) and 
 dev-db/libzdb 3.2.3 3.4.0 3.4.1 3.5.0: A thread safe high level multi-database connection pool library
 dev-db/litecli 1.15.0 9999: CLI for SQLite with auto-completion and syntax highlighting
 dev-db/litedb 5.0.17-r4 5.0.21: .NET NoSQL Document Store in a single data file
-dev-db/lmdb 0.9.33: An ultra-fast, ultra-compact key-value embedded data store
+dev-db/lmdb 0.9.33 0.9.35: An ultra-fast, ultra-compact key-value embedded data store
 dev-db/lmdb++ 1.0.0-r1: C++11 wrapper for the LMDB database library
 dev-db/m17n-db 1.8.10: Database for the m17n library
 dev-db/mariadb 10.6.22 10.6.22-r1 10.6.23-r1 10.6.23-r2 10.6.24 10.6.24-r1 10.11.13 10.11.13-r1 10.11.14-r1 10.11.14-r2 10.11.15 10.11.15-r1 11.4.7-r1 11.4.7-r2 11.4.8-r1 11.4.8-r2 11.4.8-r3 11.4.9 11.4.9-r1 11.8.3-r2 11.8.3-r3 11.8.3-r4 11.8.5 11.8.5-r1 12.0.2-r1 12.0.2-r2: An enhanced, drop-in replacement for MySQL
@@ -9192,7 +9192,7 @@ dev-python/pyscard 2.3.0 2.3.1: Smart card support in python
 dev-python/pyscreenshot 3.1: Python screenshot library
 dev-python/pysdl2 0.9.17: Python (ctypes) bindings for SDL2 libraries
 dev-python/pyserial 3.5-r2 3.5-r3: Python Serial Port extension
-dev-python/pyside 6.10.1-r5 6.10.2 6.9999: Python bindings for the Qt framework
+dev-python/pyside 6.10.1-r6 6.10.2 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.0 7.0.1 7.0.2: Python bindings for simdjson
 dev-python/pysmi 1.6.2 1.6.3: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
 dev-python/pysnmp 7.1.21 7.1.22: Python SNMP library
@@ -14766,7 +14766,7 @@ net-dns/resolv_wrapper 1.1.8: Wrapper for DNS name resolving or DNS faking
 net-dns/resolvconf-symlink 0: Make /etc/resolv.conf a symlink to a runtime-writable location
 net-dns/s6-dns 2.4.1.0 2.4.1.1: Suite of DNS client programs and libraries for Unix systems
 net-dns/smartdns 47 47.1: A local DNS server returns the fastest access results
-net-dns/unbound 1.23.0-r1 1.24.1-r1: A validating, recursive and caching DNS resolver
+net-dns/unbound 1.23.0-r1 1.24.1-r1 1.24.2: A validating, recursive and caching DNS resolver
 net-dns/updatedd 2.6-r8: Dynamic DNS client with plugins for several dynamic dns services
 net-dns/valtz 0.8: Validation tool for tinydns-data zone files
 net-firewall/arno-iptables-firewall 2.1.1a 2.1.2a: Arno's iptables firewall script
@@ -15611,7 +15611,7 @@ net-proxy/adzapper 20110915-r2: Redirector for squid to intercept advertising, p
 net-proxy/cntlm 0.93_beta5-r4: Cntlm is an NTLM/NTLMv2 authenticating HTTP proxy
 net-proxy/dante 1.4.1-r6 1.4.3: A free socks4,5 and msproxy implementation
 net-proxy/dnsproxy 1.17-r1: The dnsproxy daemon is a proxy for DNS queries
-net-proxy/haproxy 2.8.11 2.8.17 2.8.18 2.8.9999 3.0.5 3.0.13 3.0.14 3.0.9999 3.2.9 3.2.10 3.2.9999 3.3.0 3.3.1 3.3.9999 9999: A TCP/HTTP reverse proxy for high availability environments
+net-proxy/haproxy 2.8.11 2.8.17 2.8.18 2.8.9999 3.0.5 3.0.13 3.0.14 3.0.15 3.0.9999 3.2.9 3.2.10 3.2.11 3.2.9999 3.3.0 3.3.1 3.3.2 3.3.9999 9999: A TCP/HTTP reverse proxy for high availability environments
 net-proxy/haproxy-dataplaneapi 3.0.3 3.1.5: haproxy dataplane api / sidecar
 net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying of HAProxy status
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
