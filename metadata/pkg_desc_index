@@ -1504,7 +1504,7 @@ app-crypt/onak 0.6.3 0.6.4: onak is an OpenPGP keyserver
 app-crypt/ophcrack 3.8.0-r2: A time-memory-trade-off-cracker
 app-crypt/ophcrack-tables 1.0-r2: Tables available for ophcrack
 app-crypt/osslsigncode 2.9: Platform-independent tool for Authenticode signing of EXE/CAB files
-app-crypt/p11-kit 0.25.5 0.25.10: Provides a standard configuration setup for installing PKCS#11
+app-crypt/p11-kit 0.25.5 0.25.10 0.26.2: Provides a standard configuration setup for installing PKCS#11
 app-crypt/paperkey 1.6: OpenPGP key archiver
 app-crypt/pdfcrack 0.20-r1 0.21: Tool for recovering passwords and content from PDF-files
 app-crypt/pesign 116: Tools for manipulating signed PE-COFF binaries
@@ -4091,7 +4091,7 @@ dev-debug/peda 1.2 9999: Python Exploit Development Assistance for GDB
 dev-debug/pwndbg 20250418-r1 20250530-r3 20251010-r3 20251020-r3 99999999: A GDB plug-in that makes debugging with GDB suck less
 dev-debug/rr 5.8.0 5.9.0-r1 9999: Record and Replay Framework
 dev-debug/scap-driver 0.20.0: Kernel module for dev-debug/sysdig
-dev-debug/strace 6.16 6.17 6.18 9999: Useful diagnostic, instructional, and debugging tool
+dev-debug/strace 6.16 6.17 6.18 6.19 9999: Useful diagnostic, instructional, and debugging tool
 dev-debug/sysdig 0.40.1-r1: A system exploration and troubleshooting tool
 dev-debug/systemtap 5.3-r1 5.4 9999: Linux trace/probe tool
 dev-debug/valgrind 3.25.1 3.26.0 3.26.0_p1 9999: An open-source memory debugger for GNU/Linux
@@ -5515,7 +5515,7 @@ dev-libs/libcdio-paranoia 2.0.1 2.0.2: Advanced CDDA reader with error correctio
 dev-libs/libcec 7.0.0 7.1.1: Library for communicating with the Pulse-Eight USB HDMI-CEC Adaptor
 dev-libs/libcgroup 3.1.0 3.2.0: Tools and libraries to configure and manage kernel control groups
 dev-libs/libclthreads 2.4.2: POSIX threads C++ access library
-dev-libs/libconfig 1.8.1: Libconfig is a simple library for manipulating structured configuration files
+dev-libs/libconfig 1.8.1 1.8.2: Libconfig is a simple library for manipulating structured configuration files
 dev-libs/libcpuid 0.8.0 0.8.1: A small C library for x86 (and x86_64) CPU detection and feature extraction
 dev-libs/libcroco 0.6.13-r2: Generic Cascading Style Sheet (CSS) parsing and manipulation toolkit
 dev-libs/libcss 0.9.2 9999: CSS parser and selection engine, written in C
@@ -10827,7 +10827,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.37: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.38: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.4 2025.2.5: A complete toolset for C and C++ development
@@ -14668,7 +14668,7 @@ net-analyzer/tcptraceroute 1.5_beta7-r3: tcptraceroute is a traceroute implement
 net-analyzer/tcptrack 1.4.2-r1: Passive per-connection tcp bandwidth monitor
 net-analyzer/telegraf 1.18.3 1.26.3-r1: The plugin-driven server agent for collecting & reporting metrics
 net-analyzer/termshark 2.4.0: A terminal UI for tshark, inspired by Wireshark
-net-analyzer/testssl 3.0.10 3.2.2: Tool to check TLS/SSL cipher support
+net-analyzer/testssl 3.0.10 3.0.10-r1 3.2.2 3.2.2-r1: Tool to check TLS/SSL cipher support
 net-analyzer/thc-ipv6 3.8 3.8_p20250914 9999: Complete tool set to attack the inherent protocol weaknesses of IPV6 and ICMP6
 net-analyzer/thrulay 0.9-r1: Measure the capacity of a network by sending a bulk TCP stream over it
 net-analyzer/tleds 1.05_beta11-r2: Blinks keyboard LEDs indicating outgoing and incoming network packets
@@ -14802,7 +14802,7 @@ net-fs/ksmbd-tools 3.5.3: cifsd/ksmbd kernel server userspace utilities
 net-fs/libnfs 5.0.2 5.0.3 9999: Client library for accessing NFS shares over a network
 net-fs/mc 2025.07.21.05.28.08 2025.08.13.08.35.41: Minio client provides alternatives for ls, cat on cloud storage and filesystems
 net-fs/netatalk 3.1.18: Open Source AFP server
-net-fs/nfs-utils 2.6.4-r12 2.7.1-r1: NFS client and server daemons
+net-fs/nfs-utils 2.6.4-r12 2.7.1-r1 2.8.5: NFS client and server daemons
 net-fs/nfs4-acl-tools 0.3.7-r1 0.4.2 0.4.3_rc1: Commandline and GUI tools that deal directly with NFSv4 ACLs
 net-fs/openafs 1.8.13-r1 1.8.13-r2 1.8.13.1 1.8.13.1-r1 1.8.13.2 1.8.13.2-r1 1.8.14: The OpenAFS distributed file system
 net-fs/s3backer 2.1.3 2.1.6: A filesystem that contains a single file backed by Amazon S3
@@ -14942,7 +14942,7 @@ net-libs/freaklabs-chibiarduino 1.0.8_p20190329 9999: freaklabs fork of the ligh
 net-libs/glib-networking 2.80.1: Network-related giomodules for glib
 net-libs/gloox 1.0.24-r1 1.0.28: A portable high-level Jabber/XMPP client library for C++
 net-libs/gnome-online-accounts 3.54.6 3.54.8 3.56.2: GNOME framework for accessing online accounts
-net-libs/gnutls 3.8.9-r1 3.8.10 3.8.10-r1 3.8.11: Secure communications library implementing the SSL, TLS and DTLS protocols
+net-libs/gnutls 3.8.9-r1 3.8.10 3.8.10-r1 3.8.11 3.8.12: Secure communications library implementing the SSL, TLS and DTLS protocols
 net-libs/google-cloud-cpp 2.19.0 2.30.0: Google Cloud Client Library for C++
 net-libs/grpc 1.71.0 1.72.0 1.75.1: Modern open source high performance RPC framework
 net-libs/gsoap 2.8.114-r1 2.8.130 2.8.130-r1: A cross-platform open source C and C++ SDK for SOAP/XML Web services
@@ -16750,6 +16750,7 @@ sec-keys/openpgp-keys-tcpdump 20210416 20240308 20240901 20260104: OpenPGP keys 
 sec-keys/openpgp-keys-teemutoivola 20210426: OpenPGP keys used by Teemu Toivola
 sec-keys/openpgp-keys-tenable 20220718: OpenPGP keys used to sign Tenable Inc. software packages
 sec-keys/openpgp-keys-terminator 20210306: OpenPGP keys used to sign x11-terms/terminator package
+sec-keys/openpgp-keys-testssl 20260210: OpenPGP keys used by testssl.sh
 sec-keys/openpgp-keys-texinfo 20260206 20260210: OpenPGP keys used by GNU texinfo
 sec-keys/openpgp-keys-thomasdickey 20240114 20260204: OpenPGP keys used by Thomas Dickey
 sec-keys/openpgp-keys-thomashaller 20260124: OpenPGP key used by Thomas Haller
@@ -17710,7 +17711,7 @@ sys-fs/loop-aes 3.8e 3.8g: Linux kernel module to encrypt disk partitions with A
 sys-fs/lsscsi 0.32-r1: SCSI sysfs query tool
 sys-fs/lufis 0.3-r1: Wrapper to use lufs modules with fuse kernel support
 sys-fs/lufs 0.9.7-r4: User-mode filesystem implementation
-sys-fs/lvm2 2.03.22-r7: User-land utilities for LVM2 (device-mapper) software
+sys-fs/lvm2 2.03.22-r7 2.03.37: User-land utilities for LVM2 (device-mapper) software
 sys-fs/lxcfs 5.0.4-r2 6.0.4 6.0.5: FUSE filesystem for LXC
 sys-fs/mac-fdisk 0.1_p18 0.1_p18-r1: Mac/PowerMac disk partitioning utility
 sys-fs/mdadm 4.4: Tool for running RAID systems - replacement for the raidtools
@@ -17722,7 +17723,7 @@ sys-fs/mp3fs 1.1.1-r5: Read-only FUSE filesystem which transcodes FLAC audio fil
 sys-fs/mtd-utils 2.1.6-r2 2.2.1-r1: MTD userspace tools (NFTL, JFFS2, NAND, FTL, UBI)
 sys-fs/mtools 4.0.46 4.0.47 4.0.48 4.0.49: Utilities to access MS-DOS disks from Unix without mounting them
 sys-fs/mtpfs 1.1-r6: A FUSE filesystem providing access to MTP devices
-sys-fs/multipath-tools 0.9.8-r1: Device mapper target autoconfig
+sys-fs/multipath-tools 0.9.8-r1 0.14.3: Device mapper target autoconfig
 sys-fs/ncdu 1.21 1.22 2.9.1 2.9.1-r1 2.9.2: NCurses Disk Usage
 sys-fs/ncdu-bin 2.9.1: NCurses Disk Usage
 sys-fs/nilfs-utils 2.2.9: A New Implementation of a Log-structured File System for Linux
@@ -18137,7 +18138,7 @@ www-apache/mod_maxminddb 1.2.0-r1 1.3.0: MaxMind DB Apache Module
 www-apache/mod_musicindex 1.4.1-r4: mod_musicindex allows nice displaying of directories containing music files
 www-apache/mod_nss 1.0.18: SSL/TLS module for the Apache HTTP server
 www-apache/mod_perl 2.0.13-r1 2.0.13-r2: An embedded Perl interpreter for Apache2
-www-apache/mod_qos 11.76: A QOS module for the apache webserver
+www-apache/mod_qos 11.76 11.77: A QOS module for the apache webserver
 www-apache/mod_rpaf 0.8.4: Reverse proxy add forward module
 www-apache/mod_security 2.9.8-r1 2.9.12: Application firewall and intrusion detection for Apache
 www-apache/mod_tls 0.14.0 0.14.0-r1: A module that uses rustls to provide a memory safe TLS implementation in Rust.
