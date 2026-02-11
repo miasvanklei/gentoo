@@ -2914,7 +2914,7 @@ app-misc/scrub 2.6.1-r2: Overwrite files with iterative patterns
 app-misc/sdate 0.7: Never ending September date
 app-misc/selecta 0.0.7-r1: A fuzzy text selector for files and anything else you need to select
 app-misc/siegfried 1.11.2 1.11.4: Signature-based file format identification
-app-misc/skim 0.20.5 1.5.1 1.9.1: Command-line fuzzy finder
+app-misc/skim 0.20.5 1.5.1 1.9.1 2.0.2: Command-line fuzzy finder
 app-misc/sl 5.02-r1: Sophisticated graphical program which corrects your miss typing
 app-misc/smtm 1.6.10-r2: Stock ticker, profit/loss calculator and chart tool
 app-misc/socnetv 3.2: Qt Social Network Visualizer
@@ -3117,7 +3117,7 @@ app-shells/ccsh 0.0.4-r5: UNIX Shell for people already familiar with the C lang
 app-shells/ctypes-sh 1.2_p20240626: Foreign function interface for bash
 app-shells/dash 0.5.12-r1 0.5.13.1 9999: Debian Almquist Shell
 app-shells/dsh 0.25.10-r2: Distributed Shell
-app-shells/fish 4.1.2 4.2.0 4.2.1 4.3.0 4.3.2 4.3.3 4.4.0 9999: Friendly Interactive SHell
+app-shells/fish 4.3.3 4.4.0 9999: Friendly Interactive SHell
 app-shells/fsh 1.0.0_p20220816-r2: F# Shell with integrated F# scripting
 app-shells/fzf 0.67.0: General-purpose command-line fuzzy finder, written in Golang
 app-shells/gash 0.3.0-r100: POSIX-compatible shell written in Guile Scheme
@@ -5204,9 +5204,9 @@ dev-lang/deno-bin 2.6.6 2.6.7 2.6.8 2.6.9: Modern runtime for JavaScript and Typ
 dev-lang/duktape 2.7.0-r3: Embeddable Javascript engine
 dev-lang/dzaima-bqn 0.2.1 0.2.2 9999: A BQN language implementation written in Java, also know as dbqn
 dev-lang/eisl 5.61 5.62: Interpreter and compiler compatible with the ISLisp standard
-dev-lang/elixir 1.15.7 1.15.8 1.16.2 1.16.3 1.17.2 1.17.3 1.18.4 1.19.0 1.19.4: Elixir programming language
+dev-lang/elixir 1.15.7 1.15.8 1.16.2 1.16.3 1.17.2 1.17.3 1.18.4 1.19.4 1.19.5: Elixir programming language
 dev-lang/elpi 1.19.6-r1 2.0.7: Embeddable Lambda Prolog Interpreter in OCaml
-dev-lang/erlang 26.2.1-r1 26.2.5.16 27.3.4.6 28.1 28.2 28.3: Erlang programming language, runtime environment and libraries (OTP)
+dev-lang/erlang 26.2.1-r1 26.2.5.16 27.3.4.6 28.1 28.2 28.3 28.3.1: Erlang programming language, runtime environment and libraries (OTP)
 dev-lang/esco 0.513: Combine interpreter of esoteric languages
 dev-lang/execline 2.9.7.0 2.9.8.0 2.9.8.1: A non-interactive scripting language
 dev-lang/f2c 20240312: Fortran to C converter
@@ -5520,6 +5520,7 @@ dev-libs/libcpuid 0.8.0 0.8.1: A small C library for x86 (and x86_64) CPU detect
 dev-libs/libcroco 0.6.13-r2: Generic Cascading Style Sheet (CSS) parsing and manipulation toolkit
 dev-libs/libcss 0.9.2 9999: CSS parser and selection engine, written in C
 dev-libs/libdaemon 0.14-r4: Simple library for creating daemon processes in C
+dev-libs/libdatrie 0.2.14 0.2.14-r1: Double-Array Trie Library
 dev-libs/libdazzle 3.44.0: Experimental new features for GTK+ and GLib
 dev-libs/libdbh 5.0.22: A small library to create and manage 64-bit disk based hash tables
 dev-libs/libdbusmenu 16.04.0-r4: Library to pass menu structure across DBus
@@ -5595,7 +5596,7 @@ dev-libs/liblzw 0.3-r1: small C library for reading LZW compressed files (.Z)
 dev-libs/libmaa 1.3.2-r1 1.4.7: Library with low-level data structures which are helpful for writing compilers
 dev-libs/libmacaroons 0.3.0-r2: C library for generation and use of macaroons authorization credentials
 dev-libs/libmanette 0.2.12 0.2.13: Simple GObject game controller library
-dev-libs/libmateweather 1.28.0-r1 1.28.0-r2 1.28.1-r2: MATE library to access weather information from online services
+dev-libs/libmateweather 1.28.0-r1 1.28.0-r2 1.28.1-r2 1.28.2: MATE library to access weather information from online services
 dev-libs/libmaxminddb 1.11.0 1.12.2 9999: C library for the MaxMind DB file format
 dev-libs/libmba 0.9.1-r5: A library of generic C modules
 dev-libs/libmcfp 1.3.5 1.4.2: A library that can collect configuration options from command line arguments
@@ -5649,7 +5650,7 @@ dev-libs/libretls 3.8.1: Port of libtls from LibreSSL to OpenSSL
 dev-libs/librevenge 0.0.5 9999: Helper library for REVerse ENGineered formats filters
 dev-libs/libsass 3.6.5-r1 3.6.6 9999: A C/C++ implementation of a Sass CSS compiler
 dev-libs/libscfg 0.1.1 0.2.0: C library for a simple configuration file format
-dev-libs/libsecp256k1 0.5.1 0.6.0 0.7.0: Optimized C library for EC operations on curve secp256k1
+dev-libs/libsecp256k1 0.5.1 0.7.0 0.7.1: Optimized C library for EC operations on curve secp256k1
 dev-libs/libserdes 5.4.0-r1 5.4.0-r2: Avro SerializationDeserialization w/ Confluent schema-registry support
 dev-libs/libserialport 0.1.1-r1 0.1.2-r1 9999: Cross platform serial port access library
 dev-libs/libsigc++ 2.12.1 3.6.0 3.8.0: Typesafe callback system for standard C++
@@ -5664,6 +5665,7 @@ dev-libs/libtar 1.2.20-r6: C library for manipulating tar archives
 dev-libs/libtasn1 4.19.0 4.20.0 4.21.0: ASN.1 library
 dev-libs/libtecla 1.6.3-r1: Tecla command-line editing library
 dev-libs/libtermkey 0.22-r1 0.22-r2: Library for easy processing of keyboard entry from terminal-based programs
+dev-libs/libthai 0.1.30 0.1.30-r1: A a set of Thai language support routines
 dev-libs/libthreadar 1.6.1: Threading library used by dar archiver
 dev-libs/libtimezonemap 0.4.6-r1: GTK+3 timezone map widget
 dev-libs/libtomcrypt 1.18.2-r4: LibTomCrypt is a comprehensive, modular and portable cryptographic toolkit
@@ -5866,9 +5868,9 @@ dev-libs/tree-sitter-javascript 0.23.0 0.23.1 0.25.0: JavaScript grammar for Tre
 dev-libs/tree-sitter-jsdoc 0.19.0 0.25.0: JSDoc grammar for Tree-sitter
 dev-libs/tree-sitter-json 0.23.0 0.24.8: JSON grammar for Tree-sitter
 dev-libs/tree-sitter-julia 0.22.0 0.23.1 0.25.0: Julia grammar for Tree-sitter
-dev-libs/tree-sitter-lua 0.3.0 0.4.0: Lua grammar for Tree-sitter
-dev-libs/tree-sitter-markdown 0.2.3 0.3.2 0.4.1 0.5.0 0.5.1: Markdown grammar for Tree-sitter
-dev-libs/tree-sitter-markdown-inline 0.2.3: Markdown-inline grammar for Tree-sitter
+dev-libs/tree-sitter-lua 0.3.0 0.4.0 0.4.1: Lua grammar for Tree-sitter
+dev-libs/tree-sitter-markdown 0.4.1 0.5.0 0.5.1 0.5.2: Markdown grammar for Tree-sitter
+dev-libs/tree-sitter-markdown-inline 0.2.3 0.3.2: Markdown-inline grammar for Tree-sitter
 dev-libs/tree-sitter-meta 1-r5: Metapackage for Tree Sitter packages
 dev-libs/tree-sitter-ocaml 0.20.4 0.23.2 0.24.0: OCaml grammar for Tree-sitter
 dev-libs/tree-sitter-php 0.23.2 0.23.12 0.24.2: PHP grammar for Tree-sitter
@@ -10836,7 +10838,7 @@ dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code co
 dev-util/claude-code 2.1.38: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
-dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.4 2025.2.5: A complete toolset for C and C++ development
+dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.5 2025.3.1.1 2025.3.2: A complete toolset for C and C++ development
 dev-util/cloc 1.96 2.00: Count Lines of Code
 dev-util/cmocka 1.1.5-r1 1.1.7 1.1.8 2.0.1 2.0.2: Unit testing framework for C
 dev-util/coccigrep 1.21: A semantic grep for the C language
@@ -10936,7 +10938,7 @@ dev-util/gnome-builder 48.2-r1: An IDE for writing GNOME-based software
 dev-util/gnome-devel-docs 40.3: Documentation for developing for the GNOME desktop environment
 dev-util/gob 2.0.20-r1: Preprocessor for making GTK+ objects with inline C code
 dev-util/godcc 1.0: Full-fledged command-line interface to Compiler Explorer instances
-dev-util/goland 2024.3.5 2025.1.2 2025.1.4 2025.2 2025.2.4 2025.2.5: Golang IDE by JetBrains
+dev-util/goland 2024.3.5 2025.1.4 2025.2.5 2025.3.1.1: Golang IDE by JetBrains
 dev-util/google-perftools 2.15 2.16 2.17.2: Fast, multi-threaded malloc() and nifty performance analysis tools
 dev-util/gource 0.55: A software version control visualization tool
 dev-util/gperf 3.1-r2 3.2.1 3.3: A perfect hash function generator
@@ -11052,8 +11054,8 @@ dev-util/prysk 0.20.0: Functional testing framework for command line application
 dev-util/pscan 20000721-r1: A limited problem scanner for C source files
 dev-util/pwntools 4.14.1 4.15.0_beta1-r1 4.15.0 9999: CTF framework and exploit development library
 dev-util/py-spy 0.4.0 0.4.1: Sampling profiler for Python programs
-dev-util/pycharm-community 2024.2.1 2024.3.2 2024.3.5 2025.1 2025.1.3 2025.2.4 2025.2.5: Intelligent Python IDE with unique code assistance and analysis
-dev-util/pycharm-professional 2024.3.2 2024.3.5 2025.1 2025.1.3 2025.1.4 2025.2.4 2025.2.5: Intelligent Python IDE with unique code assistance and analysis
+dev-util/pycharm-community 2024.3.5 2025.1.3 2025.2.5: Intelligent Python IDE with unique code assistance and analysis
+dev-util/pycharm-professional 2024.3.5 2025.1.4 2025.2.5 2025.3.1.1: Intelligent Python IDE with unique code assistance and analysis
 dev-util/qbs 3.0.3 3.1.1 3.1.2: Modern build tool for software projects
 dev-util/qdevicemonitor 1.0.1-r4: Crossplatform log viewer for Android, iOS and text files
 dev-util/quilt 0.69 9999: quilt patch manager
@@ -11082,7 +11084,7 @@ dev-util/ruff 0.13.1 0.14.9 0.14.10-r1 0.14.11 0.14.14 0.15.0: An extremely fast
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
-dev-util/sccache 0.12.0 0.13.0: ccache/distcc like tool with support for rust and cloud storage
+dev-util/sccache 0.12.0 0.13.0 0.14.0: ccache/distcc like tool with support for rust and cloud storage
 dev-util/schroot 1.6.13_p7-r2: Utility to execute commands in a chroot environment
 dev-util/sdl-jstest 0.2.2 9999: Simple SDL joystick test application for the console
 dev-util/seer 2.5-r1 2.6 9999: GUI frontend to gdb
@@ -11528,7 +11530,7 @@ games-emulation/mednafen-jg 1.32.1.1 9999: Jolly Good Port of Mednafen
 games-emulation/mednaffe 0.9.3: Front-end (GUI) for mednafen emulator
 games-emulation/mekanix 070-r1: SG-1000, SC-3000, SF-7000, SSC, SMS, GG, COLECO, and OMV emulator
 games-emulation/melonds 1.0 1.1-r1 9999: Nintendo DS emulator, sorta
-games-emulation/melonds-jg 1.0.0 9999: Jolly Good Port of melonDS
+games-emulation/melonds-jg 1.0.0 1.1.0 9999: Jolly Good Port of melonDS
 games-emulation/mgba 0.11.0_pre20260101 9999: Game Boy Advance Emulator
 games-emulation/mgba-jg 0.10.5 9999: Jolly Good Port of mGBA
 games-emulation/mupen64plus 2.6.0: A fork of Mupen64 Nintendo 64 emulator, meta-package
@@ -11546,7 +11548,7 @@ games-emulation/pcsx2 2.4.0-r1 2.6.3 9999: PlayStation 2 emulator
 games-emulation/pcsx2_patches 0_p20241020 0_p20251228 9999: Collection of game patches for use with PCSX2 (e.g. widescreen hacks)
 games-emulation/ppsspp 1.19.3-r1: A PSP emulator written in C++
 games-emulation/prosystem-jg 1.5.3 9999: Jolly Good Fork of ProSystem
-games-emulation/rmg 0.8.5 0.8.7 0.8.8 9999: Rosalie's Mupen GUI
+games-emulation/rmg 0.8.5 0.8.7 0.8.8 0.8.9 9999: Rosalie's Mupen GUI
 games-emulation/sameboy-jg 1.0.2 9999: Jolly Good Port of SameBoy
 games-emulation/snes9x 1.63: Super Nintendo Entertainment System (SNES) emulator
 games-emulation/stella 7.0: Multi-platform Atari 2600 VCS Emulator
@@ -11613,7 +11615,7 @@ games-fps/quake2-data 3.20-r1: iD Software's Quake 2 ... the data files
 games-fps/quake2-demodata 3.14-r1: Demo data for Quake 2
 games-fps/quake2-icculus 0.16.1-r3: The icculus.org Linux port of iD's Quake 2 engine
 games-fps/quake2-textures 0_beta8-r1: High-resolution textures for Quake 2
-games-fps/red-blue-quake2 0.1-r1: Red-blue Quake II! Play quake2 with 3D glasses!
+games-fps/red-blue-quake2 0.1-r1 0.1-r2: Red-blue Quake II! Play quake2 with 3D glasses!
 games-fps/redeclipse 2.0.0-r1: First-person ego-shooter, built as a total conversion of Cube Engine 2
 games-fps/rott 1.1.2-r1: Rise of the Triad for Linux!
 games-fps/sauerbraten 2020.12.29: Sauerbraten is a FOSS game engine (Cube 2) with freeware game data (Sauerbraten)
@@ -13848,12 +13850,12 @@ media-plugins/vdr-dvbapi 2.2.5 2.2.6_p20230121: VDR Plugin: allows connect VDR t
 media-plugins/vdr-dvbhddevice 2.2.0_p20180420-r1: VDR Plugin: output device for the 'Full Featured' TechnoTrend S2-6400 DVB Card
 media-plugins/vdr-dvbsddevice 2.2.0-r2: VDR Plugin: output device for the 'Full Featured' SD DVB Card
 media-plugins/vdr-dvd 0.3.7: VDR Plugin: DVD-Player
-media-plugins/vdr-dvdswitch 0.2.3-r1 0.2.4: VDR Plugin: to play dvds and dvd file structures
-media-plugins/vdr-epgsearch 2.4.4 2.4.5: VDR plugin: create timers from epg content based on saved search expressions
+media-plugins/vdr-dvdswitch 0.2.4: VDR Plugin: to play dvds and dvd file structures
+media-plugins/vdr-epgsearch 2.4.5: VDR plugin: create timers from epg content based on saved search expressions
 media-plugins/vdr-epgsync 1.0.2: VDR Plugin: Import the EPG of another VDR via vdr-svdrpservice
 media-plugins/vdr-exec 0.0.3: VDR plugin: Exec commands like timers at defined times
 media-plugins/vdr-extrecmenu 1.2.4-r2 2.0.12 2.0.12-r1: VDR Plugin: Extended recordings menu (NG)
-media-plugins/vdr-femon 2.4.0-r1 2.4.0_p20240910-r1 2.4.0_p20240910-r2: VDR Plugin: DVB Frontend Status Monitor (signal strength/noise)
+media-plugins/vdr-femon 2.4.0_p20240910-r2: VDR Plugin: DVB Frontend Status Monitor (signal strength/noise)
 media-plugins/vdr-ffnetdev 0.1.3: VDR Plugin: Provides an easy way of connecting possible streaming clients to VDR
 media-plugins/vdr-filebrowser 0.2.3_p20210521-r1: VDR plugin: file manager plugin for moving or renaming files in VDR
 media-plugins/vdr-freecell 0.0.2-r5: VDR plugin: play 'Freecell' on the On Screen Display
@@ -13864,7 +13866,7 @@ media-plugins/vdr-iptv 2.2.1-r1 2.4.0: VDR plugin: Add a logical device capable 
 media-plugins/vdr-joystick 0.0.3: VDR plugin: allows using a joystick as a remote control for VDR
 media-plugins/vdr-launcher 0.0.4-r1: VDR Plugin: launch other plugins - even when their menu-entry is hidden
 media-plugins/vdr-lcdproc 1.0.0: VDR plugin: use LCD device for additional output
-media-plugins/vdr-live 3.5.1 3.5.2: VDR Plugin: Web Access To Settings
+media-plugins/vdr-live 3.5.2 3.5.3: VDR Plugin: Web Access To Settings
 media-plugins/vdr-loadepg 0.2.7: VDR Plugin: Load EPG from file or MediaHighWay or SkyBox Receivers
 media-plugins/vdr-markad 4.2.15 4.2.17: VDR Plugin: mark advertising in VDR recordings
 media-plugins/vdr-menuorg 0.5.2: VDR plugin: make osd menu configurable via config-file
@@ -13886,7 +13888,7 @@ media-plugins/vdr-recsearch 0.3.7: VDR Plugin: Search through your recordings an
 media-plugins/vdr-remote 0.7.0-r2 0.7.1: VDR Plugin: use various devices for controlling vdr (keyboards, lirc...)
 media-plugins/vdr-remoteosd 1.0.1-r1: VDR Plugin: server/client remoteosd
 media-plugins/vdr-rssreader 2.4.0-r2: VDR Plugin: RSS reader
-media-plugins/vdr-satip 2.2.5 2.4.1: VDR Plugin: integrates SAT>IP network devices seamlessly into VDR
+media-plugins/vdr-satip 2.4.1 2.5.1: VDR Plugin: integrates SAT>IP network devices seamlessly into VDR
 media-plugins/vdr-scheduler 0.1.6-r1: VDR plugin: allows to control externel jobs from within VDR
 media-plugins/vdr-screenshot 0.0.16: VDR Plugin: takes screenshots of the current video or tv screen
 media-plugins/vdr-serial 0.0.6a-r3: VDR Plugin: attach some buttons with diodes to the serial port
@@ -13903,7 +13905,7 @@ media-plugins/vdr-suspendoutput 2.1.0: VDR Plugin: Show still image instead of l
 media-plugins/vdr-svdrposd 1.0.0-r1: VDR plugin: export OSD via TCP to vdr-remoteosd
 media-plugins/vdr-svdrpservice 1.0.0-r2: VDR Plugin: offers SVDRP connections as a service to other plugins
 media-plugins/vdr-systeminfo 0.1.5: VDR Plugin: systeminfo
-media-plugins/vdr-ttxtsubs 0.3.0-r3 0.3.0_p20160207: VDR Plugin: displaying, recording and replaying teletext based subtitles
+media-plugins/vdr-ttxtsubs 0.3.0_p20160207: VDR Plugin: displaying, recording and replaying teletext based subtitles
 media-plugins/vdr-undelete 2.3.1_pre1-r1: VDR Plugin: Recover deleted recordings of VDR
 media-plugins/vdr-vcd 0.9-r5: VDR plugin: play video cds
 media-plugins/vdr-vdrmanager 0.15: VDR Plugin: remote programming VDR using VDR-Manager running on Android devices
@@ -14186,7 +14188,7 @@ media-sound/qjackctl 1.0.4 9999: Qt GUI to control the JACK Audio Connection Kit
 media-sound/qmidiarp 0.7.2: Arpeggiator, sequencer and MIDI LFO for ALSA
 media-sound/qmmp 2.3.0 2.3.1 9999: Qt-based audio player with winamp/xmms skins support
 media-sound/qpaeq 17.0: Equalizer interface for equalizer sinks of PulseAudio (networked sound server)
-media-sound/qpwgraph 0.9.5 9999: PipeWire Graph Qt GUI Interface
+media-sound/qpwgraph 0.9.8 9999: PipeWire Graph Qt GUI Interface
 media-sound/qsampler 1.0.0-r1 9999: Graphical frontend to the LinuxSampler engine
 media-sound/qsynth 1.0.2-r1 9999: Qt application to control FluidSynth
 media-sound/qtractor 1.5.8 1.5.11: Audio/MIDI multi-track sequencer written in C++ with the Qt framework
@@ -14425,7 +14427,7 @@ media-video/v4l2loopback 0.13.1 0.15.0 0.15.1 0.15.3 9999: v4l2 loopback device 
 media-video/vamps 0.99.2-r2: Very fast requantisizing tool for backup DVDs
 media-video/vcdimager 2.0.1-r1 2.0.1-r2: GNU VCDimager
 media-video/vcsi 7.0.16: Create thumbnail sheets from video files
-media-video/vdr 2.2.0-r7 2.6.9 2.7.3 2.7.7: Video Disk Recorder - turns a pc into a powerful set top box for DVB
+media-video/vdr 2.2.0-r7 2.7.7 2.7.9: Video Disk Recorder - turns a pc into a powerful set top box for DVB
 media-video/vdrsync 0.1.3_pre050322-r2: converting vdr-recordings to mpeg2, dvd or other similar formats
 media-video/vdrtools-genindex 0.1.3-r2: VDR: genindex Script
 media-video/videotrans 1.6.1-r2: A package to convert movies to DVD format and to build DVDs with
@@ -14481,7 +14483,7 @@ net-analyzer/dsniff 2.4_beta1_p34: A collection of tools for network auditing an
 net-analyzer/echoping 6.0.2_p434-r6: Small program to test performances of remote servers
 net-analyzer/etherape 0.9.20: A graphical network monitor for Unix modeled after etherman
 net-analyzer/ethloop 10-r4: Local simulator for testing Linux QoS disciplines
-net-analyzer/ettercap 0.8.3.1-r3 9999: Suite for man in the middle attacks
+net-analyzer/ettercap 0.8.3.1-r3 0.8.4 9999: Suite for man in the middle attacks
 net-analyzer/fail2ban 1.1.0-r3 1.1.0-r4 1.1.0-r6 9999: Scans log files and bans IPs that show malicious signs
 net-analyzer/firewalk 5.0-r3: A tool for determining a firewall's rule set
 net-analyzer/flow-tools 0.68.6-r2: library and programs to process reports from NetFlow data
@@ -14614,7 +14616,7 @@ net-analyzer/pktstat 1.8.5-r2: A network monitoring tool with bandwidth tracking
 net-analyzer/pmacct 1.7.8 9999: A network tool to gather IP traffic information
 net-analyzer/pnp4nagios 0.6.26_p20230918 0.6.26_p20241118: A performance data analyzer for nagios
 net-analyzer/poink 2.03: TCP/IP-based ping implementation
-net-analyzer/pontos 25.7.2: Common utilities and tools maintained by Greenbone Networks
+net-analyzer/pontos 25.7.2 25.8.1: Common utilities and tools maintained by Greenbone Networks
 net-analyzer/portmon 2.0-r2: Portmon is a network service monitoring daemon
 net-analyzer/portsentry 1.2-r1: Automated port scan detector and response tool
 net-analyzer/prettyping 1.0.1: Ping wrapper that produces coloured, easily readable output
@@ -15463,7 +15465,7 @@ net-misc/sysrepo 3.3.10: YANG-based configuration and operational state data sto
 net-misc/taptap 1.0-r2: Program to link two /dev/net/tun to form virtual ethernet
 net-misc/taylor-uucp 1.07-r7: Taylor UUCP
 net-misc/tcpsound 0.3.1-r1: Play sounds in response to network traffic
-net-misc/teamviewer 15.64.3 15.67.4: All-In-One Solution for Remote Access and Support over the Internet
+net-misc/teamviewer 15.64.3 15.67.4 15.73.5: All-In-One Solution for Remote Access and Support over the Internet
 net-misc/telnet-bsd 1.2-r5: Telnet and telnetd ported from OpenBSD with IPv6 support
 net-misc/throttle 1.2-r1 1.2-r3: Bandwidth limiting pipe
 net-misc/tiers 1.1: Random network topography generator
@@ -15531,7 +15533,7 @@ net-news/liferea 1.15.5-r2 1.15.8-r2 1.16.5 1.16.7: News Aggregator for RDF/RSS/
 net-news/newsboat 2.41 2.42: An RSS/Atom feed reader for text terminals
 net-news/rssguard 4.8.6: Simple (yet powerful) news feed reader
 net-news/rsstail 2.2: A tail-like RSS-reader
-net-news/sfeed 2.1 2.2: Simple RSS and Atom parser
+net-news/sfeed 2.2 2.3: Simple RSS and Atom parser
 net-news/snownews 1.9-r2: Command-line RSS feed reader
 net-news/yydecode 0.2.10-r3 0.2.10-r4: A decoder for yENC format, popular on Usenet
 net-nntp/leafnode 1.11.11-r2 1.12.0-r1: A USENET software package designed for small sites
@@ -17184,7 +17186,7 @@ sys-apps/isapnptools 1.27-r1: Tools for configuring ISA PnP devices
 sys-apps/iucode_tool 2.3.1-r1 2.3.1-r2: Tool to manipulate Intel X86 and X86-64 processor microcode update collections
 sys-apps/kbd 2.7.1 2.8.0 2.9.0 2.9.0-r1 9999: Keyboard and console utilities
 sys-apps/kcheck 0.0.2-r3: Record and check required kernel symbols are set
-sys-apps/kexec-tools 2.0.31 2.0.32 9999: Load another kernel from the currently executing Linux kernel
+sys-apps/kexec-tools 2.0.32 2.0.32-r1 9999: Load another kernel from the currently executing Linux kernel
 sys-apps/keyutils 1.6.3-r1: Linux Key Management Utilities
 sys-apps/kmod 33 34.2 9999: Library and tools for managing linux kernel modules
 sys-apps/kmscon 9.1.0 9.2.0 9.2.1 9.3.0 9.3.1: KMS/DRM based virtual Console Emulator
@@ -17204,7 +17206,7 @@ sys-apps/lshw 02.19.2b_p20220831-r1 02.20.2b-r1: Hardware Lister
 sys-apps/lssbus 0.1-r1: Small utility for Linux/SPARC that list devices on SBUS
 sys-apps/lsvpd 1.7.14: Utility to List Device Vital Product Data (VPD)
 sys-apps/makedev 3.23.1-r3: Program used for creating device files in /dev
-sys-apps/man-db 2.13.1 9999: A man replacement that utilizes dbm instead of flat files
+sys-apps/man-db 2.13.0-r1 2.13.1-r1 9999: A man replacement that utilizes dbm instead of flat files
 sys-apps/man-pages 6.05.01 6.06 6.10 6.16-r2 9999: A somewhat comprehensive collection of Linux man pages
 sys-apps/man-pages-posix 2013a 2017a-r1: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g-r2: Standard commands to read man pages
@@ -18218,7 +18220,7 @@ www-apps/piwigo 15.7.0 16.1.0 16.2.0: a photo gallery software for the web
 www-apps/postfixadmin 3.3.16: Web Based Management tool for Postfix style virtual domains and users
 www-apps/prowlarr-bin 2.3.2.5245: An indexer manager/proxy to integrate with your various PVR apps
 www-apps/radarr-bin 6.1.1.10317: A fork of Sonarr to work with movies a la Couchpotato
-www-apps/radicale 3.5.9 3.5.10: A simple CalDAV calendar server
+www-apps/radicale 3.5.10-r1: A simple CalDAV calendar server
 www-apps/readarr-bin 0.4.18.2805: An ebook and audiobook collection manager for Usenet and BitTorrent users
 www-apps/redmine 6.0.7: Flexible project management web application using the Ruby on Rails framework
 www-apps/roundup 2.3.0: Issue-tracking system with command-line, web, and e-mail interfaces
