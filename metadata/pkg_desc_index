@@ -1833,7 +1833,7 @@ app-editors/jedit 5.7.0: Programmer's editor written in Java
 app-editors/joe 4.6-r2: A free ASCII-Text Screen Editor for UNIX
 app-editors/jove 4.17.5.5: Jonathan's Own Version of Emacs, a light emacs-like editor without LISP bindings
 app-editors/jupp 3.1_p41: Portable version of Joe's Own Editor
-app-editors/kakoune 2022.10.31 2023.08.05 2024.05.18: Modal editor inspired by vim
+app-editors/kakoune 2022.10.31 2023.08.05 2024.05.18 2025.06.03 9999: Modal editor inspired by vim
 app-editors/kile 2.9.94: Latex Editor and TeX shell based on KDE Frameworks
 app-editors/leafpad 0.8.18.1-r1: Simple GTK2 text editor
 app-editors/levee 4.0: Really tiny vi clone, for things like rescue disks
@@ -1871,7 +1871,7 @@ app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clo
 app-editors/vim 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9.1.1652-r3 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r2 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.108.2 1.109.0: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscode 1.108.2 1.109.2: Multiplatform Visual Studio Code from Microsoft
 app-editors/vscodium 1.106.37943 1.108.10359: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
@@ -4038,7 +4038,7 @@ dev-db/pgpool2 4.4.7 4.4.7-r1: Connection pool server for PostgreSQL
 dev-db/pgrouting 3.6.2 3.7.0 3.7.3 3.8.0: pgRouting extends PostGIS and PostgreSQL with geospatial routing functionality
 dev-db/pgtap 1.3.3: Unit testing for PostgreSQL
 dev-db/pgxnclient 1.3.2-r1: PostgreSQL Extension Network Client
-dev-db/phpmyadmin 5.2.3: Web-based administration for MySQL database in PHP
+dev-db/phpmyadmin 5.2.3: Web-based administration for MySQL and MariaDB databases, written in PHP
 dev-db/phppgadmin 7.14.7: Web-based administration for Postgres database in php
 dev-db/plr 8.4.5 8.4.6: R language extension for postgresql database
 dev-db/postgis 3.3.7-r2 3.3.8-r1 3.4.4-r1 3.5.2-r1 3.5.3-r2 3.6.0: Geographic Objects for PostgreSQL
@@ -4096,7 +4096,7 @@ dev-debug/sysdig 0.40.1-r1: A system exploration and troubleshooting tool
 dev-debug/systemtap 5.3-r1 5.4 9999: Linux trace/probe tool
 dev-debug/valgrind 3.25.1 3.26.0 3.26.0_p1 9999: An open-source memory debugger for GNU/Linux
 dev-dotnet/avalonia-ilspy 7.2_rc-r2: Avalonia-based .NET Decompiler, port of ILSpy
-dev-dotnet/cake 5.1.0: Cake (C# Make) is a cross platform build automation system with a C# DSL
+dev-dotnet/cake 5.1.0 6.0.0: Cake (C# Make) is a cross platform build automation system with a C# DSL
 dev-dotnet/coco 2014.12.25 2014.12.25-r1: The compiler generator Coco/R for C#
 dev-dotnet/csharp-gentoodotnetinfo 2.0.0 2.0.0-r1 2.9999: .NET information tool for Gentoo
 dev-dotnet/csharp-language-server 0.20.0 0.21.0 0.22.0: Roslyn-based LSP language server for C#
@@ -4233,7 +4233,7 @@ dev-games/quake4-sdk 1.4.2-r1: Quake4 SDK
 dev-games/recastnavigation 1.6.0-r1: Navigation mesh construction toolset for games
 dev-games/simgear 2024.1.1 9999: Development library for simulation games
 dev-games/t4k-common 0.1.1-r4: Library of code shared between tuxmath and tuxtype
-dev-games/tiled 1.11.2 1.11.2_p20250614: A general purpose tile map editor
+dev-games/tiled 1.11.2_p20250614 1.11.2_p20260205: A general purpose tile map editor
 dev-gap/aclib 1.3.3: Almost-crystallographic group library and algorithms for GAP
 dev-gap/alnuth 3.2.1: Algebraic number theory and an interface to PARI/GP
 dev-gap/atlasrep 2.1.9: GAP Interface to the Atlas of Group Representations
@@ -5090,7 +5090,7 @@ dev-java/objenesis 3.4: A library for instantiating Java objects
 dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
-dev-java/openjdk 8.472_p08 8.482_p08 11.0.29_p7 11.0.30_p7 17.0.17_p10 17.0.18_p8 21.0.9_p10 21.0.10_p7 25.0.1_p8-r1 25.0.2_p10 26_beta34 27_alpha8: Open source implementation of the Java programming language
+dev-java/openjdk 8.472_p08 8.482_p08 11.0.29_p7 11.0.30_p7 17.0.17_p10 17.0.18_p8 21.0.10_p7 25.0.2_p10 26_beta34 27_alpha8: Open source implementation of the Java programming language
 dev-java/openjdk-bin 8.472_p08 8.482_p08 11.0.29_p7 11.0.30_p7 17.0.17_p10 17.0.18_p8 21.0.9_p10 21.0.10_p7 25.0.1_p8 25.0.2_p10 26_beta34 27_alpha7: Prebuilt Java JDK binaries provided by Eclipse Temurin
 dev-java/openjdk-jre-bin 8.462_p08 11.0.28_p6 17.0.16_p8 21.0.8_p9: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 8.1000-r2 11.0.11_p1-r5: Java OpenJFX client application platform
@@ -5283,9 +5283,9 @@ dev-lang/rakudo 2025.10 2025.11: A compiler for the Raku programming language
 dev-lang/rapydscript-ng 0.7.22 9999: Pythonic JavaScript that doesn't suck
 dev-lang/regina-rexx 3.9.5 3.9.6: Portable Rexx interpreter
 dev-lang/ruby 3.2.7 3.2.8 3.2.9-r1 3.2.10 3.3.8 3.3.10-r1 3.4.8 4.0.0 4.0.1: An object-oriented scripting language
-dev-lang/rust 1.74.1-r101 1.75.0-r101 1.76.0-r101 1.77.1-r101 1.78.0-r101 1.79.0-r101 1.80.1-r101 1.81.0-r101 1.82.0-r103 1.83.0-r3 1.84.0-r2 1.84.1-r2 1.85.0-r2 1.85.1-r1 1.86.0-r2 1.87.0-r1 1.88.0 1.89.0 1.90.0-r1 1.91.0 1.92.0_p1-r1 9999: Systems programming language originally developed by Mozilla
-dev-lang/rust-bin 1.74.1-r102 1.75.0-r102 1.76.0-r101 1.77.1-r102 1.78.0-r102 1.79.0-r103 1.80.1-r103 1.81.0-r103 1.82.0-r103 1.83.0-r2 1.84.0-r2 1.84.1-r2 1.85.0-r1 1.85.1 1.86.0-r1 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 9999: Systems programming language from Mozilla
-dev-lang/rust-common 1.81.0 1.82.0 1.83.0 1.84.1 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 9999: Common files shared between multiple slots of Rust
+dev-lang/rust 1.74.1-r101 1.75.0-r101 1.76.0-r101 1.77.1-r101 1.78.0-r101 1.79.0-r101 1.80.1-r101 1.81.0-r101 1.82.0-r103 1.83.0-r3 1.84.0-r2 1.84.1-r2 1.85.0-r2 1.85.1-r1 1.86.0-r2 1.87.0-r1 1.88.0 1.89.0 1.90.0-r1 1.91.0 1.92.0_p1-r1 1.93.0 1.94.0_beta20260126 9999: Systems programming language originally developed by Mozilla
+dev-lang/rust-bin 1.74.1-r102 1.75.0-r102 1.76.0-r101 1.77.1-r102 1.78.0-r102 1.79.0-r103 1.80.1-r103 1.81.0-r103 1.82.0-r103 1.83.0-r2 1.84.0-r2 1.84.1-r2 1.85.0-r1 1.85.1 1.86.0-r1 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.94.0_beta20260126 9999: Systems programming language from Mozilla
+dev-lang/rust-common 1.81.0 1.82.0 1.83.0 1.84.1 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.94.0_beta20260126 9999: Common files shared between multiple slots of Rust
 dev-lang/sassc 3.6.2: A libsass command line driver
 dev-lang/scala-bin 2.13.9-r1: The Scala Programming Language
 dev-lang/scrapscript 0.1.1 9999: Functional, content-addressable programming language
@@ -5407,7 +5407,7 @@ dev-libs/editline 1.17.1-r1 1.17.1_p20240527: line editing library for UNIX call
 dev-libs/eekboard 1.0.8_p20121001-r2: An easy to use virtual keyboard toolkit
 dev-libs/efl 1.27.0-r1 1.28.1: Enlightenment Foundation Libraries all-in-one package
 dev-libs/elfutils 0.193-r1 0.194 9999: Libraries/utilities to handle ELF objects (drop in replacement for libelf)
-dev-libs/ell 0.77 0.78 0.79 0.80 0.81 9999: Embedded Linux Library provides core, low-level functionality for system daemons
+dev-libs/ell 0.77 0.78 0.79 0.80 0.81 0.82 9999: Embedded Linux Library provides core, low-level functionality for system daemons
 dev-libs/expat 2.6.3 2.6.4 2.7.0 2.7.1 2.7.2 2.7.3 2.7.4: Stream-oriented XML parser library
 dev-libs/faxpp 0.4-r2: Small, fast and conformant XML pull parser written in C
 dev-libs/fcgi 2.4.1_pre0910052249-r2: FastCGI Developer's Kit
@@ -10903,7 +10903,7 @@ dev-util/drone 2.18.0: A Continuous Delivery platform built on Docker, written i
 dev-util/drone-cli 1.7.0: Command-line interface for Drone
 dev-util/dropwatch 1.5.4: Monitor for dropped network packets
 dev-util/dwdiff 2.1.4: diff-like program operating at word level instead of line level
-dev-util/ebuildtester 44 47: A dockerized approach to test a Gentoo package within a clean stage3 container
+dev-util/ebuildtester 47 48: A dockerized approach to test a Gentoo package within a clean stage3 container
 dev-util/edi 0.8.0-r3: An EFL-based IDE
 dev-util/editorconfig-geany 0.2.1: EditorConfig plugin for Geany
 dev-util/egypt 1.11: Devilishly simple tool for creating call graphs of C programs
@@ -11222,7 +11222,7 @@ dev-vcs/rcsi 0.5: A program to give information about RCS files
 dev-vcs/repo 2.53 2.54 2.61: Google tool for managing git, particularly multiple repos
 dev-vcs/reposurgeon 5.3: Tool for editing VCS repositories and translating among different systems
 dev-vcs/rsvndump 0.6.1-r1 0.6.2: Dump a remote Subversion repository
-dev-vcs/sourcegit 2025.40 2025.41: Open Source Git GUI client using .NET AvaloniaUI
+dev-vcs/sourcegit 2025.41: Open Source Git GUI client using .NET AvaloniaUI
 dev-vcs/stagit 1.2: Generates static HTML pages for a Git repository
 dev-vcs/stgit 2.5.5: Stack-based patch management for Git
 dev-vcs/subversion 1.14.5-r2 1.14.5-r3: Advanced version control system
@@ -13409,7 +13409,7 @@ media-libs/libiptcdata 1.0.5-r1: Library for International Press Telecommunicati
 media-libs/libirman 0.4.5: library for Irman control of Unix software
 media-libs/libjpeg-turbo 3.1.1 3.1.2 3.1.3: MMX, SSE, and SSE2 SIMD accelerated JPEG library
 media-libs/libjsw 1.5.8: provide a uniform API and user configuration for joysticks and game controllers
-media-libs/libjxl 0.11.1 9999: JPEG XL image format reference implementation
+media-libs/libjxl 0.11.1 0.11.2 9999: JPEG XL image format reference implementation
 media-libs/libkate 0.4.1-r4: Codec for karaoke and text encapsulation for Ogg
 media-libs/libkeyfinder 2.2.8: Musical key detection library for digital audio
 media-libs/liblastfm 1.1.0_pre20241124: Collection of libraries to integrate Last.fm services
@@ -14774,7 +14774,7 @@ net-dns/resolv_wrapper 1.1.8: Wrapper for DNS name resolving or DNS faking
 net-dns/resolvconf-symlink 0: Make /etc/resolv.conf a symlink to a runtime-writable location
 net-dns/s6-dns 2.4.1.0 2.4.1.1: Suite of DNS client programs and libraries for Unix systems
 net-dns/smartdns 47 47.1: A local DNS server returns the fastest access results
-net-dns/unbound 1.23.0-r1 1.24.1-r1 1.24.2: A validating, recursive and caching DNS resolver
+net-dns/unbound 1.23.0-r1 1.24.1-r1 1.24.2 1.24.2-r1: A validating, recursive and caching DNS resolver
 net-dns/updatedd 2.6-r8: Dynamic DNS client with plugins for several dynamic dns services
 net-dns/valtz 0.8: Validation tool for tinydns-data zone files
 net-firewall/arno-iptables-firewall 2.1.1a 2.1.2a: Arno's iptables firewall script
@@ -14873,7 +14873,7 @@ net-im/slack 4.47.59 4.47.72: Team collaboration tool
 net-im/spectrum2 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
 net-im/synapse 1.141.0-r1 1.142.1-r1 1.143.0-r1 1.144.0-r1 1.145.0 1.146.0: Reference implementation of Matrix homeserver
-net-im/talk-desktop-bin 2.0.5: Nextcloud Talk Desktop client
+net-im/talk-desktop-bin 2.0.5 2.0.6: Nextcloud Talk Desktop client
 net-im/telegram-desktop 6.2.4 6.3.8 6.4.2: Official desktop client for Telegram
 net-im/telegram-desktop-bin 6.4.0 6.4.1 6.4.2 6.4.2-r1 6.5.1: Official desktop client for Telegram (binary package)
 net-im/telepathy-logger 0.8.2-r2 0.8.2_p4-r1: Daemon that centralizes the communication logging within the Telepathy framework
@@ -14881,7 +14881,7 @@ net-im/telepathy-mission-control 5.16.6: An account manager and channel dispatch
 net-im/tkabber 1.1.2: A jabber client written in Tcl/Tk
 net-im/tokodon 25.08.3 25.12.2: Mastodon client for Plasma and Plasma Mobile
 net-im/toxic 0.15.1 0.16.0: A curses-based client for Tox
-net-im/whatsapp-desktop-bin 0.5.2-r5 0.5.3: Unofficial electron-based wrapper around WhatsApp Web
+net-im/whatsapp-desktop-bin 0.5.3 0.5.4: Unofficial electron-based wrapper around WhatsApp Web
 net-im/ysm 2.9.9.1-r2: A console ICQ client supporting versions 7/8
 net-im/zoom 6.6.11.6052 6.7.2.6498: Video conferencing and web conferencing service
 net-irc/anope 2.0.14 2.0.18: Anope IRC Services
@@ -15231,7 +15231,7 @@ net-misc/clockspeed 0.62-r9: Simple Network Time Protocol (NTP) client
 net-misc/clusterssh 4.16 4.18 9999: Concurrent Multi-Server Terminal Access
 net-misc/cmst 2023.03.14-r2: Qt GUI for Connman with system tray icon
 net-misc/connect 1.105: SSH Proxy Command
-net-misc/connman 1.43 1.44 1.45 9999: Provides a daemon for managing internet connections
+net-misc/connman 1.43 1.44 1.45 2.0 9999: Provides a daemon for managing internet connections
 net-misc/connman-gtk 1.1.1-r2: GTK GUI for Connman
 net-misc/connman-json-client 1.0_p20150721-r3: An ncurses UI for connman
 net-misc/connman-notify 0_pre20191003-r3: Desktop notification integration for connman
@@ -15248,7 +15248,7 @@ net-misc/dhcping 1.2-r1: Utility to send DHCP requests to DHCP servers to see if
 net-misc/dibbler 1.0.1-r4: Portable DHCPv6 implementation (server, client and relay)
 net-misc/downloader-cli 0.3.4-r1: Simple downloader with an customizable progressbar
 net-misc/dropbear 2025.89: Small SSH 2 client/server designed for small memory environments
-net-misc/dropbox 232.4.5988 234.4.5591 235.4.5905 236.4.5918 237.4.5655 238.4.6075 240.4.8493 240.4.8609 241.4.4795: Dropbox daemon (pretends to be GUI-less)
+net-misc/dropbox 232.4.5988 234.4.5591 235.4.5905 236.4.5918 237.4.5655 238.4.6075 240.4.8493 240.4.8609 241.4.4795 241.4.4853: Dropbox daemon (pretends to be GUI-less)
 net-misc/dropbox-cli 2024.04.17-r1: Cli interface for dropbox (python), part of nautilus-dropbox
 net-misc/efax 0.9a_p19_p1: A simple fax program for single-user systems
 net-misc/electrum 4.6.2 4.7.0: User friendly Bitcoin client
@@ -15736,7 +15736,7 @@ net-wireless/hostap-utils 0.4.7-r1: Utilities for Intersil Prism2/2.5/3 based IE
 net-wireless/hostapd 2.10-r3 2.11 9999: IEEE 802.11 wireless LAN Host AP daemon
 net-wireless/inspectrum 0.4.0 9999: Tool for analysing captured signals from software-defined radio receivers
 net-wireless/iw 6.9 6.17: nl80211 configuration utility for wireless devices using the mac80211 stack
-net-wireless/iwd 3.8 3.9 3.10 9999: Wireless daemon for linux
+net-wireless/iwd 3.8 3.9 3.10 3.11 9999: Wireless daemon for linux
 net-wireless/iwgtk 0.9: Lightweight, graphical wifi management utility for Linux
 net-wireless/kismet 2023.07.2 2025.09.1 9999: IEEE 802.11 wireless LAN sniffer
 net-wireless/kismetmobiledashboard 1.5_beta1-r2 9999: Mobile UI for kismet
@@ -17207,7 +17207,7 @@ sys-apps/lssbus 0.1-r1: Small utility for Linux/SPARC that list devices on SBUS
 sys-apps/lsvpd 1.7.14: Utility to List Device Vital Product Data (VPD)
 sys-apps/makedev 3.23.1-r3: Program used for creating device files in /dev
 sys-apps/man-db 2.13.0-r1 2.13.1-r1 9999: A man replacement that utilizes dbm instead of flat files
-sys-apps/man-pages 6.05.01 6.06 6.10 6.16-r2 9999: A somewhat comprehensive collection of Linux man pages
+sys-apps/man-pages 6.05.01 6.06 6.10 6.16-r2 6.17 9999: A somewhat comprehensive collection of Linux man pages
 sys-apps/man-pages-posix 2013a 2017a-r1: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g-r2: Standard commands to read man pages
 sys-apps/mawk 1.3.4_p20250131 1.3.4_p20260129: An (often faster than gawk) awk-interpreter
@@ -17606,7 +17606,7 @@ sys-devel/nvptx-tools 0_pre20240809 9999: Collection of tools for use with nvptx
 sys-devel/patch 2.7.6-r6 2.7.6-r8 2.8-r1 9999: Utility to apply diffs to files
 sys-devel/qbe 1.1-r1 1.2 9999: Pure-C embeddable compiler backend
 sys-devel/reflex 20241231 20260131: This is a variant of the flex fast lexical scanner
-sys-devel/rust-std 1.74.1 1.75.0 1.77.1 1.79.0 1.80.1 1.81.0 1.82.0 1.83.0 1.84.1 1.85.0 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0: Rust standard library, standalone (for crossdev)
+sys-devel/rust-std 1.74.1 1.75.0 1.77.1 1.79.0 1.80.1 1.81.0 1.82.0 1.83.0 1.84.1 1.85.0 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.94.0_beta20260126: Rust standard library, standalone (for crossdev)
 sys-devel/smatch 1.72-r2 1.73-r1 9999: Static analysis tool for C
 sys-devel/sparse 0.6.4-r3 9999: C semantic parser
 sys-devel/wild 0.7.0-r1 0.8.0 9999: A very fast linker for Linux
@@ -17624,7 +17624,7 @@ sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
 sys-firmware/edk2 202411 202502-r1: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/edk2-bin 202202 202408 202411: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.18: NXP i.MX firmware
-sys-firmware/intel-microcode 20250812_p20250813 20251111_p20251112: Intel IA32/IA64 microcode update data
+sys-firmware/intel-microcode 20250812_p20250813 20251111_p20251112 20260210_p20260211: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3-r1: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
 sys-firmware/ipw2200-firmware 3.1-r1: Firmware for the Intel PRO/Wireless 2200BG/2915ABG miniPCI and 2225BG PCI
 sys-firmware/ipxe 1.21.1 1.21.1_p20230601 1.21.1_p20230601-r1: Open source network boot (PXE) firmware
@@ -17852,7 +17852,7 @@ sys-libs/libtermcap-compat 2.0.8-r4: Compatibility package for old termcap-based
 sys-libs/libucontext 1.3.1 1.3.2 1.3.3: ucontext implementation featuring glibc-compatible ABI
 sys-libs/libudev-compat 186-r1: Wrapper around libudev.so.1 for packages needing the old libudev.so.0
 sys-libs/libunwind 1.8.2 1.8.2-r1 9999: Portable and efficient API to determine the call-chain of a program
-sys-libs/liburing 2.9 2.10-r1 2.11 2.12 2.13 9999: Efficient I/O with io_uring
+sys-libs/liburing 2.9 2.10-r1 2.11 2.12 2.13 2.14 9999: Efficient I/O with io_uring
 sys-libs/libutempter 1.2.1: Library that allows non-privileged apps to write utmp (login) info
 sys-libs/libuuid 1.0.3-r1: Portable uuid C library
 sys-libs/libvpd 2.2.9: Library implementation for listing Vital Product Data
@@ -18238,7 +18238,7 @@ www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.1: Wordpress PHP and MySQL based content management system (CMS)
 www-apps/xpra-html5 10.1 17.1: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
-www-client/chromium 138.0.7204.157 143.0.7499.109 144.0.7559.109 144.0.7559.132: Open-source version of Google Chrome web browser
+www-client/chromium 138.0.7204.157 143.0.7499.109 144.0.7559.109 144.0.7559.132 145.0.7632.45: Open-source version of Google Chrome web browser
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 9999: Advanced and well-established text-mode web browser
 www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
