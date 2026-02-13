@@ -922,7 +922,7 @@ app-admin/apg 2.3.0b_p20150129-r1 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.707.0 1.2.764.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.44.7 1.44.11 1.44.15 1.44.20 1.44.24 1.44.29 1.44.30 1.44.31 1.44.32 1.44.33 1.44.34 1.44.35 1.44.36 1.44.37: Universal Command Line Environment for AWS
+app-admin/awscli 1.44.7 1.44.11 1.44.15 1.44.20 1.44.24 1.44.29 1.44.30 1.44.31 1.44.32 1.44.33 1.44.34 1.44.35 1.44.36 1.44.37 1.44.38: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.10.0 2025.12.0: Bitwarden password manager desktop client
@@ -1764,7 +1764,7 @@ app-doc/devmanual 0_pre20241109 9999: The Gentoo Development Guide
 app-doc/dita-ot-bin 4.3.5 4.4: Darwin Information Typing Architecture - Open Toolkit publishing engine
 app-doc/diveintopython 3-r2: 'Dive Into Python' by Mark Pilgrim - Python 3
 app-doc/e16-docs 0.16.8.0.2-r2: The E16 online help
-app-doc/eclass-manpages 20250711 20250730 20250815 20251126 20260124 99999999: Collection of Gentoo eclass manpages
+app-doc/eclass-manpages 20260124 99999999: Collection of Gentoo eclass manpages
 app-doc/elisp-manual 18.1.03-r1 19.2.4.2-r1 20.2.5-r1 21.2.8-r3 22.2.9-r1 23.4-r1 24.5-r1 25.3-r1 26.3-r1 27.2-r1 28.2-r1 29.4-r1: The GNU Emacs Lisp Reference Manual
 app-doc/execline-man-pages 2.9.6.1.1: mdoc port of the HTML documentation for the execline suite
 app-doc/geant-docs 4.11.4: User documentation for Geant4 physics simulation toolkit
@@ -5768,7 +5768,7 @@ dev-libs/openobex 1.7.2-r3: Implementation of the OBEX protocol used for transfe
 dev-libs/openpace 1.1.3: Cryptographic library for EAC version 2
 dev-libs/opensc 0.26.1 9999: Libraries and applications to access smartcards
 dev-libs/openspecfun 0.5.3 0.5.5: A collection of special mathematical functions
-dev-libs/openssl 3.0.19 3.0.9999 3.3.6 3.3.9999 3.4.4 3.4.9999 3.5.5 3.5.9999 3.6.0 3.6.1 3.6.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
+dev-libs/openssl 3.0.19 3.0.9999 3.3.6 3.3.9999 3.4.4 3.4.9999 3.5.5 3.5.5-r1 3.5.9999 3.6.0 3.6.1-r1 3.6.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
 dev-libs/openssl-compat 1.0.2u-r2 1.1.1u: Full-strength general purpose cryptography library (including SSL and TLS)
 dev-libs/optix 7.4.0 7.5.0 8.1.0-r1 9.0.0-r1: NVIDIA Ray Tracing Engine
 dev-libs/ossp-uuid 1.6.2-r7 1.6.2-r8: An ISO-C:1999 API with CLI for generating DCE, ISO/IEC and RFC compliant UUID
@@ -8231,8 +8231,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.42.17 1.42.21 1.42.25 1.42.30 1.42.34 1.42.39 1.42.40 1.42.41 1.42.42 1.42.43 1.42.44 1.42.45 1.42.46 1.42.47: The AWS SDK for Python
-dev-python/botocore 1.42.17 1.42.21 1.42.25 1.42.30 1.42.34 1.42.39 1.42.40 1.42.41 1.42.42 1.42.43 1.42.44 1.42.45 1.42.46 1.42.47: Low-level, data-driven core of boto 3
+dev-python/boto3 1.42.17 1.42.21 1.42.25 1.42.30 1.42.34 1.42.39 1.42.40 1.42.41 1.42.42 1.42.43 1.42.44 1.42.45 1.42.46 1.42.47 1.42.48: The AWS SDK for Python
+dev-python/botocore 1.42.17 1.42.21 1.42.25 1.42.30 1.42.34 1.42.39 1.42.40 1.42.41 1.42.42 1.42.43 1.42.44 1.42.45 1.42.46 1.42.47 1.42.48: Low-level, data-driven core of boto 3
 dev-python/bottle 0.12.25-r1 0.13.3 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.5.0 1.6.0_rc1 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.25 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8330,7 +8330,7 @@ dev-python/cson 0.8-r4: A python parser for the Coffeescript Object Notation (CS
 dev-python/css-parser 1.0.10: A CSS Cascading Style Sheets library (fork of cssutils)
 dev-python/csscompressor 0.9.5-r2: A python port of YUI CSS Compressor
 dev-python/cssselect 1.3.0 1.4.0: Parse CSS3 Selectors and translate them to XPath 1.0
-dev-python/cssselect2 0.8.0: Parses CSS3 Selectors and translates them to XPath 1.0
+dev-python/cssselect2 0.8.0 0.9.0: Parses CSS3 Selectors and translates them to XPath 1.0
 dev-python/cssutils 2.11.1: A CSS Cascading Style Sheets library
 dev-python/cstruct 6.1 6.2: C-style structs for Python
 dev-python/csvkit 2.1.0-r1 2.2.0: A suite of utilities for converting to and working with CSV
@@ -8466,7 +8466,7 @@ dev-python/ffmpeg-python 0.2.0_p20220711-r1: Python bindings for FFmpeg with com
 dev-python/fido2 0.9.3-r1 2.0.0 2.1.0 2.1.1: Python based FIDO 2.0 library
 dev-python/fields 5.0.0-r3: Container class boilerplate killer
 dev-python/filebytes 0.10.2 9999: Classes/Types to read and edit executable files
-dev-python/filelock 3.20.0 3.20.1 3.20.2 3.20.3: A platform independent file lock for Python
+dev-python/filelock 3.20.1 3.20.2 3.20.3 3.21.2: A platform independent file lock for Python
 dev-python/filetype 1.2.0: Small, dependency-free, fast Python package to infer binary file types checking
 dev-python/findimports 2.7.0 2.8.0 3.0.0: Python module import analysis tool
 dev-python/findpython 0.7.0 0.7.1: A utility to find python versions on your system
@@ -8741,7 +8741,7 @@ dev-python/libcst 1.8.5 1.8.6: A concrete syntax tree with AST-like properties f
 dev-python/libevdev 0.12 0.13 0.13.1: Python wrappers for the libevdev library
 dev-python/liblarch 3.2.0: Library to handle directed acyclic graphs
 dev-python/libnacl 2.1.0: Python ctypes wrapper for libsodium
-dev-python/librt 0.7.7 0.7.8: Mypyc runtime library
+dev-python/librt 0.7.8 0.8.0: Mypyc runtime library
 dev-python/libsass 0.23.0: A straightforward binding of libsass for Python
 dev-python/libtmux 0.36.0 0.46.2 0.47.0 0.48.0_p0 0.49.0 0.50.0 0.50.1 0.51.0 0.52.1 0.53.0: Typed library that provides an ORM wrapper for tmux, a terminal multiplexer
 dev-python/libusb1 3.3.1: Python ctype-based wrapper around libusb1
@@ -8971,7 +8971,7 @@ dev-python/patiencediff 0.2.15 0.2.18: Python implementation of the patiencediff
 dev-python/patsy 1.0.1 1.0.1-r1 1.0.2: Python module to describe statistical models and design matrices
 dev-python/pbkdf2 1.3-r2: Implementation of PBKDF2, specified in RSA PKCS#5 v2.0
 dev-python/pbr 7.0.1 7.0.2 7.0.3: Inject some useful and sensible default behaviors into setuptools
-dev-python/pbs-installer 2025.12.17 2026.1.14 2026.1.27 2026.2.3: Installer for Python Build Standalone
+dev-python/pbs-installer 2025.12.17 2026.1.14 2026.1.27 2026.2.3 2026.2.11: Installer for Python Build Standalone
 dev-python/pdfrw 0.4_p1-r1: PDF file reader/writer library
 dev-python/pdm 2.26.4 2.26.6: Python package and dependency manager supporting the latest PEP standards
 dev-python/pdm-backend 2.4.6 2.4.7: A PEP 517 backend for PDM that supports PEP 621 metadata
@@ -9003,7 +9003,7 @@ dev-python/pixelmatch 0.3.0: A fast pixel-level image comparison library
 dev-python/pkgconfig 1.5.5-r1: Interface Python with pkg-config
 dev-python/pkgcraft 0.0.11 9999: Python bindings for pkgcraft
 dev-python/pkginfo 1.12.1.2: Provides an API for querying the distutils metadata written in a PKG-INFO file
-dev-python/platformdirs 4.5.0 4.5.1: A small Python module for determining appropriate platform-specific dirs
+dev-python/platformdirs 4.5.0 4.5.1 4.7.0: A small Python module for determining appropriate platform-specific dirs
 dev-python/plette 2.1.0 2.1.0-r1: Structured Pipfile and Pipfile.lock models
 dev-python/plotly 6.5.1 6.5.2: Browser-based graphing library for Python
 dev-python/plotly-geo 1.0.0-r2: Browser-based graphing library for Python
@@ -9175,7 +9175,7 @@ dev-python/pypresence 4.3.0 4.6.1: Complete Discord IPC and Rich Presence wrappe
 dev-python/pyprof2calltree 1.4.5-r1: Convert python profile data to kcachegrind calltree form
 dev-python/pyproj 3.7.1 3.7.2: Python interface to the PROJ library
 dev-python/pyproject-api 1.9.1 1.10.0: API to interact with the python pyproject.toml based projects
-dev-python/pyproject-fmt 2.11.1 2.12.1 2.14.0 2.14.1 2.15.1 2.15.2 2.15.3: Format your pyproject.toml file
+dev-python/pyproject-fmt 2.11.1 2.12.1 2.14.1 2.15.3 2.16.0: Format your pyproject.toml file
 dev-python/pyproject-hooks 1.2.0: Wrappers to build Python packages using PEP 517 hooks
 dev-python/pyproject-metadata 0.10.0 0.11.0: PEP 621 metadata parsing
 dev-python/pypugjs 5.12.0 6.0.1: Pug (Jade) syntax adapter for Django, Jinja2 and Mako templates
@@ -9416,7 +9416,7 @@ dev-python/regex 2025.11.3 2026.1.15: Alternative regular expression module to r
 dev-python/regress 2025.5.1 2025.10.1: Python bindings to the Rust regress crate
 dev-python/rencode 1.0.8-r1: Serialization similar to bencode from the BitTorrent project
 dev-python/reno 4.1.0: Release notes manager, storing release notes in a git repo and building docs
-dev-python/reportlab 4.4.5 4.4.6 4.4.7 4.4.9: Tools for generating printable PDF documents from any data source
+dev-python/reportlab 4.4.7 4.4.9 4.4.10: Tools for generating printable PDF documents from any data source
 dev-python/repoze-lru 0.7-r3: A tiny LRU cache implementation and decorator
 dev-python/requests 2.32.4 2.32.5: HTTP library for human beings
 dev-python/requests-cache 1.2.1 1.3.0: Persistent cache for requests library
@@ -9670,7 +9670,7 @@ dev-python/toolz 1.0.0 1.0.0-r1 1.1.0: List processing tools and functional util
 dev-python/toposort 1.10: Implements a topological sort algorithm
 dev-python/tornado 6.5.2 6.5.3 6.5.4: Python web framework and asynchronous networking library
 dev-python/towncrier 24.8.0 25.8.0: Building newsfiles for your project
-dev-python/tox 4.32.0 4.33.0 4.34.0 4.34.1: virtualenv-based automation of test activities
+dev-python/tox 4.32.0 4.33.0 4.34.0 4.34.1 4.35.0: virtualenv-based automation of test activities
 dev-python/tpm2-pytss 2.3.0-r2: Python bindings for TSS
 dev-python/tqdm 4.67.1 4.67.2 4.67.3: Add a progress meter to your loops in a second
 dev-python/traitlets 5.14.3: A configuration system for Python applications
@@ -16448,7 +16448,7 @@ sci-mathematics/wxmaxima 25.04.0-r2 26.01.0: Graphical frontend to Maxima, using
 sci-mathematics/yacas 1.9.1-r2: General purpose computer algebra system
 sci-mathematics/yafu 1.34.3-r2: Yet another factoring utility
 sci-mathematics/yices2 2.6.5: SMT Solver supporting SMT-LIB and Yices specification language
-sci-mathematics/z3 4.15.4 4.15.5 4.15.7: An efficient theorem prover
+sci-mathematics/z3 4.15.4 4.15.5 4.15.7 4.15.8: An efficient theorem prover
 sci-misc/ViSP-images 3.3.0 3.5.0: ViSP images data set
 sci-misc/apertium 3.8.3-r1: Shallow-transfer machine Translation engine and toolbox
 sci-misc/boinc 7.24.1-r2 8.0.2 8.2.4 9999: The Berkeley Open Infrastructure for Network Computing
@@ -16557,7 +16557,7 @@ sec-keys/openpgp-keys-alsa 20260116: OpenPGP keys used by the Alsa Project
 sec-keys/openpgp-keys-andresimon 20240906 20250911: OpenPGP keys used by Andre Simon
 sec-keys/openpgp-keys-andrewtridgell 20250329: OpenPGP keys used by Andrew Tridgell
 sec-keys/openpgp-keys-annejan 20260129: OpenPGP key used by Anne Jan Brouwer (annejan)
-sec-keys/openpgp-keys-antoniodiazdiaz 20220406: OpenPGP keys used by Antonio Diaz Diaz
+sec-keys/openpgp-keys-antoniodiazdiaz 20220406 20260213: OpenPGP keys used by Antonio Diaz Diaz
 sec-keys/openpgp-keys-apache-ant 20230104: OpenPGP keys used by ant.apache.org
 sec-keys/openpgp-keys-apache-commons 20251102: OpenPGP keys used by commons.apache.org
 sec-keys/openpgp-keys-apache-commons-httpclient 20220903: OpenPGP keys used by httpclient.commons.apache.org
@@ -17118,7 +17118,7 @@ sys-apps/dstat 0.7.4-r4: Versatile replacement for vmstat, iostat and ifstat
 sys-apps/dtc 1.7.2 1.7.2-r2 9999: Open Firmware device tree compiler
 sys-apps/duc 1.4.5 9999: Library and suite of tools for inspecting disk usage
 sys-apps/earlyoom 1.7-r1 9999: Early OOM Daemon for Linux
-sys-apps/ed 1.22.4: Your basic line editor
+sys-apps/ed 1.22.4 1.22.5: Your basic line editor
 sys-apps/edac-utils 0.18-r2: Userspace helper for Linux kernel EDAC drivers
 sys-apps/edid-fixdim 1: Tool to fix screen dimensions in EDID data dumps
 sys-apps/eless 0.7: Use Emacs as a paginator
@@ -17142,7 +17142,7 @@ sys-apps/fwts 22.03.00 23.11.00 24.03.00: Firmware Test Suite
 sys-apps/fwupd 1.9.24 2.0.1 2.0.3-r1 2.0.14 2.0.16 2.0.18: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-apps/fwupd-efi 1.6-r1 1.7 1.8: EFI executable for fwupd
 sys-apps/fxload 20081013-r1: USB firmware uploader
-sys-apps/gawk 5.3.2: GNU awk pattern-matching language
+sys-apps/gawk 5.3.2 5.3.66: GNU awk pattern-matching language
 sys-apps/gentoo-functions 0.19 1.7.4 1.7.5 1.7.6 9999: Base functions required by all Gentoo systems
 sys-apps/gentoo-systemd-integration 9 9-r1 9999: systemd integration files for Gentoo
 sys-apps/gentoo-wsl-config 0.1.14: WSL2 configuration for Gentoo Linux
@@ -17374,7 +17374,7 @@ sys-auth/libnss-nis 3.1 3.2: NSS module to provide NIS support
 sys-auth/libnss-pgsql 1.5.0_beta-r1: Name Service Switch module for use with PostgreSQL
 sys-auth/libyubikey 1.13-r1: Yubico C low-level library
 sys-auth/microsoft-identity-broker 2.0.1_p2-r2: Microsoft Authentication Broker to access a corporate environment
-sys-auth/munge 0.5.13-r2 0.5.15: An authentication service for creating and validating credentials
+sys-auth/munge 0.5.13-r2 0.5.15 0.5.18: An authentication service for creating and validating credentials
 sys-auth/nss-docker-ng 1.0.7 1.1.3: NSS plugin for finding Docker containers by their ID or name
 sys-auth/nss-mdns 0.15.1 9999: Name Service Switch module for Multicast DNS
 sys-auth/nss-myhostname 0.3-r1: Name Service Switch module for resolving the local hostname
@@ -17785,7 +17785,7 @@ sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via s
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 9999: Gentoo automatic kernel building scripts
 sys-kernel/gentoo-kernel 5.10.248 5.10.249 5.10.250 5.15.198 5.15.199 5.15.200 6.1.161 6.1.162 6.1.163 6.6.122 6.6.123 6.6.124 6.12.68 6.12.69 6.12.70 6.18.8 6.18.9 6.18.10: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.248 5.10.249 5.10.250 5.15.198 5.15.199 5.15.200 6.1.161 6.1.162 6.1.163 6.6.122 6.6.123 6.6.124 6.12.68 6.12.69 6.12.70 6.18.8 6.18.9 6.18.10: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.10.248 5.10.249 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 5.15.198 5.15.199 5.15.200 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.1.160 6.1.161 6.1.162 6.1.163 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.6.124 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.12.70 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9 6.18.10: Full sources including the Gentoo patchset for the 6.18 kernel tree
+sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.10.248 5.10.249 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 5.15.198 5.15.199 5.15.200 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.1.160 6.1.161 6.1.162 6.1.163 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.6.124 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.12.70 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9 6.18.10 6.19.0: Full sources including the Gentoo patchset for the 6.19 kernel tree
 sys-kernel/git-sources 6.19_rc1 6.19_rc2 6.19_rc3 6.19_rc4 6.19_rc5 6.19_rc6 6.19_rc7 6.19_rc8: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 63 65 66 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
