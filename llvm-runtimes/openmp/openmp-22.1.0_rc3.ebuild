@@ -30,7 +30,7 @@ DEPEND="
 "
 BDEPEND="
 	dev-lang/perl
-	fortran? ( virtual/fortran )
+	fortran? ( llvm-core/flang )
 	test? (
 		${PYTHON_DEPS}
 		$(python_gen_cond_dep '
@@ -65,7 +65,10 @@ multilib_src_configure() {
 		-DLIBOMP_USE_HWLOC=$(usex hwloc)
 		-DLIBOMP_OMPD_GDB_SUPPORT=$(multilib_native_usex gdb-plugin)
 		-DLIBOMP_OMPT_SUPPORT=$(usex ompt)
+
+		-DLIBOMP_FORTRAN_MODULES_COMPILER="${CHOST}-flang"
 		-DLIBOMP_FORTRAN_MODULES=$(usex fortran)
+		-DLIBOMP_MODULES_INSTALL_PATH="${EPREFIX}/usr/lib/llvm/${LLVM_MAJOR}/include/flang"
 
 		# do not install libgomp.so & libiomp5.so aliases
 		-DLIBOMP_INSTALL_ALIASES=OFF
