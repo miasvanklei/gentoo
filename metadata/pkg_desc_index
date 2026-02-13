@@ -1854,7 +1854,7 @@ app-editors/pluma 1.28.0-r1: Pluma text editor for the MATE desktop
 app-editors/pluma-plugins 1.28.0: A set of plugins for Pluma, the MATE text editor.
 app-editors/pyvim 3.0.3: An implementation of Vim in Python
 app-editors/qemacs 0.4.1_pre20170225-r1: QEmacs is a very small but powerful UNIX editor
-app-editors/qhexedit2 0.8.10-r1 0.8.10-r2 0.9.0: Hex editor library, Qt application written in C++ with Python bindings
+app-editors/qhexedit2 0.8.10-r1 0.8.10-r2 0.9.0-r1: Hex editor library, Qt application written in C++ with Python bindings
 app-editors/qxmledit 0.9.18-r1: Simple Qt-based XML editor
 app-editors/remarkable 1.9.0_pre20210320-r3: Fully featured markdown editor, supports github markdown dialect
 app-editors/retext 8.0.2-r1 8.1.0 9999: Simple editor for Markdown and reStructuredText
@@ -3010,7 +3010,7 @@ app-office/ktimetracker 6.0.0: Todo management and time tracker
 app-office/ledger 3.4.1: Double-entry accounting system with a command-line reporting interface
 app-office/libalkimia 8.2.1: Library with common classes and functionality used by KDE finance applications
 app-office/libreoffice 25.2.7.2-r1 9999: A full office productivity suite
-app-office/libreoffice-bin 24.8.4-r6 25.2.0-r6 25.8.4: A full office productivity suite. Binary package
+app-office/libreoffice-bin 24.8.4-r6 25.2.0-r6 25.8.4 25.8.4-r1: A full office productivity suite. Binary package
 app-office/libreoffice-l10n 25.2.7.2: Translations for the Libreoffice suite
 app-office/libreoffice-voikko 5.0-r1: Free Finnish spell checking and hyphenation for LibreOffice
 app-office/lyx 2.4.4 2.5.0_rc2: WYSIWYM (What You See Is What You Mean) document processor based on LaTeX
@@ -3020,7 +3020,7 @@ app-office/merkuro 25.12.1-r1 25.12.2: Calendar application using Akonadi
 app-office/moneydance 2024.5117: A cross-platform personal finance application
 app-office/multitalk 1.4-r1: New type of presentation program
 app-office/naps2 8.2.0 8.2.1: Document scanning application with a focus on simplicity and ease of use
-app-office/onlyoffice-bin 9.1.0-r1 9.2.0 9.2.1: A free and open source office and productivity suite (binary version)
+app-office/onlyoffice-bin 9.2.1: A free and open source office and productivity suite (binary version)
 app-office/orage 4.20.2 4.21.0: A calendar application for Xfce
 app-office/planner 0.14.91-r1 0.14.92-r1 9999: Project manager for Gnome
 app-office/projectlibre-bin 1.9.3: Open source desktop alternative to Microsoft Project
@@ -3887,7 +3887,7 @@ dev-cpp/cld3 3.0.13_p20220331: Neural network model for language identification
 dev-cpp/clhpp 2024.10.24: Khronos OpenCL C++ bindings
 dev-cpp/cli11 2.5.0 2.6.0 2.6.1: Command line parser for C++11
 dev-cpp/clucene 2.3.3.4-r9 2.3.3.4-r10 2.3.3.4-r11: High-performance, full-featured text search engine based off of lucene in C++
-dev-cpp/cpp-httplib 0.26.0 0.27.0 0.28.0 0.31.0: C++ HTTP/HTTPS server and client library
+dev-cpp/cpp-httplib 0.26.0 0.27.0 0.28.0 0.32.0: C++ HTTP/HTTPS server and client library
 dev-cpp/cppdap 0_pre20230605-r1 0_pre20240802: C++ library for the Debug Adapter Protocol
 dev-cpp/cppgir 2.0_p20250629 2.0_p20260109: GObject-Introspection C++ binding wrapper generator
 dev-cpp/cpptoml 0.1.1-r1: Header-only library for parsing TOML
@@ -3971,7 +3971,7 @@ dev-cpp/wangle 2024.11.04.00 2025.04.14.00: A framework providing common abstrac
 dev-cpp/waylandpp 1.0.0-r1 1.0.0-r2 1.0.1 9999: Wayland C++ bindings
 dev-cpp/websocketpp 0.8.2-r1: C++/Boost Asio based websocket client/server library
 dev-cpp/xsimd 13.2.0 14.0.0: C++ wrappers for SIMD intrinsics
-dev-cpp/yaml-cpp 0.8.0-r1 0.8.0-r2: YAML parser and emitter in C++
+dev-cpp/yaml-cpp 0.8.0-r2 0.9.0: YAML parser and emitter in C++
 dev-db/apgdiff 2.7.0-r1: A simple PostgreSQL diff tool that is useful for schema upgrades
 dev-db/barman 3.15.0 3.16.1: Administration tool for disaster recovery of PostgreSQL servers
 dev-db/bucardo 5.4.1: An asynchronous PostgreSQL replication system
@@ -4060,7 +4060,7 @@ dev-db/sqlcipher 4.6.1: Full Database Encryption for SQLite
 dev-db/sqlcl-bin 25.2.2.199.0918: Oracle SQLcl is the new SQL*Plus
 dev-db/sqldeveloper 23.1.1.345.2114: Oracle SQL Developer is a graphical tool for database development
 dev-db/sqlite 3.50.4 3.51.1 3.51.2 9999: SQL database engine
-dev-db/sqlitebrowser 3.13.1_p20250502-r1 9999: Light GUI editor for SQLite databases
+dev-db/sqlitebrowser 3.13.1_p20250502-r2 9999: Light GUI editor for SQLite databases
 dev-db/sqlitestudio 4.0.0_pre20251207: Powerful cross-platform SQLite database manager
 dev-db/sqlmap 1.9.10 1.9.12 1.10 9999: An automatic SQL injection and database takeover tool
 dev-db/textsearch_ja 9.0.0: Integrated Full-Text-Search for Japanese language using morphological analyze
@@ -5219,7 +5219,7 @@ dev-lang/ghc 9.0.2-r4 9.2.8: The Glasgow Haskell Compiler
 dev-lang/gleam 1.13.0 1.14.0: A friendly language for building type-safe, scalable systems!
 dev-lang/gnucobol 3.2-r2: A free/libre COBOL compiler
 dev-lang/gnuprologjava 0.2.6-r2: GNU Prolog for Java is an implementation of ISO Prolog as a Java library
-dev-lang/go 1.24.11 1.24.12 1.25.5 1.25.6 9999: A concurrent garbage collected and typesafe programming language
+dev-lang/go 1.24.11-r1 1.24.12-r1 1.25.5-r1 1.25.6-r1 9999: A concurrent garbage collected and typesafe programming language
 dev-lang/go-bootstrap 1.20.14 1.22.12: Binary bootstrap package for dev-lang/go
 dev-lang/gprolog 1.5.0-r1: Native Prolog compiler with constraint solving over finite domains (FD)
 dev-lang/grass 0.13.4: A Sass compiler written purely in Rust
@@ -5352,7 +5352,7 @@ dev-libs/blazesym_c 0.1.5 0.1.7: C bindings for blazesym, a library for address 
 dev-libs/boehm-gc 8.2.8 8.2.10 8.2.10-r1: The Boehm-Demers-Weiser conservative garbage collector
 dev-libs/boost 1.88.0-r1 1.89.0 1.90.0: Boost Libraries for C++
 dev-libs/boron 2.1.0: A scripting language similar to REBOL
-dev-libs/botan 2.19.5 3.9.0 3.10.0: C++ crypto library
+dev-libs/botan 2.19.5 3.10.0: C++ crypto library
 dev-libs/boxfort 0.1.4-r1 0.1.4-r2 0.1.5: Convenient & cross-platform sandboxing C library
 dev-libs/c-blosc 1.21.6-r1: Blocking, shuffling and lossless compression library
 dev-libs/c-blosc2 2.22.0 2.23.0: Blocking, shuffling and lossless compression library
@@ -5361,7 +5361,7 @@ dev-libs/c-siphash 1.1.0-r1: Streaming-capable SipHash Implementation
 dev-libs/c-stdaux 1.6.0: Auxiliary macros and functions for the C standard library
 dev-libs/cJSON 1.7.18 1.7.19: Ultralightweight JSON parser in ANSI C
 dev-libs/capnproto 0.9.1 0.10.2 0.10.4-r1 1.0.2 1.1.0: RPC/Serialization system with capabilities support
-dev-libs/capstone 5.0.6-r1 6.0.0_alpha4-r1 6.0.0_alpha5-r1 6.0.0_alpha6 9999: disassembly/disassembler framework + bindings
+dev-libs/capstone 5.0.6-r1 5.0.7 6.0.0_alpha4-r1 6.0.0_alpha5-r1 6.0.0_alpha6 9999: disassembly/disassembler framework + bindings
 dev-libs/castxml 0.6.13: C-family abstract syntax tree XML output tool
 dev-libs/cdk 5.0.20230201 5.0.20230201-r2 5.0.20240331-r1 5.0.20240619-r2 5.0.20250116-r1 5.0.20251014: A library of curses widgets
 dev-libs/cereal 1.3.2-r2: Header-only C++11 serialization library
@@ -12454,7 +12454,7 @@ kde-frameworks/kdbusaddons 5.116.0 6.22.0: Framework for registering services an
 kde-frameworks/kdeclarative 5.116.0 6.22.0: Framework providing integration of QML and KDE work spaces
 kde-frameworks/kded 5.116.0 6.22.0: Central daemon of KDE workspaces
 kde-frameworks/kdesu 6.22.0: Framework to handle super user actions
-kde-frameworks/kdnssd 6.22.0: Framework for network service discovery using Zeroconf
+kde-frameworks/kdnssd 6.22.0 6.22.0-r1: Framework for network service discovery using Zeroconf
 kde-frameworks/kdoctools 5.116.0-r1 6.22.0: Tools to generate documentation in various formats from DocBook files
 kde-frameworks/kf-env 6: Environment setting required for all KDE Frameworks apps to run
 kde-frameworks/kfilemetadata 6.22.0: Library for extracting file metadata
@@ -13334,7 +13334,7 @@ media-libs/kcolorpicker 0.3.1-r1: Qt based color picker with popup menu
 media-libs/kimageannotator 0.7.1 0.7.2: Tool for annotating images
 media-libs/kquickimageeditor 0.6.0: QtQuick components providing basic image editing capabilities
 media-libs/ksanecore 25.08.3 25.12.2: Qt-based interface for SANE library to control scanner hardware
-media-libs/kvazaar 2.1.0 2.2.0 2.3.0-r1 9999: Open-source HEVC encoder
+media-libs/kvazaar 2.2.0 2.3.0-r1 2.3.2 9999: Open-source HEVC encoder
 media-libs/ladspa-sdk 1.17-r2: The Linux Audio Developer's Simple Plugin API
 media-libs/lasi 1.1.3-r1: C++ library for postscript stream output
 media-libs/lcms 2.15 2.16-r1 2.17: A lightweight, speed optimized color management engine
@@ -13497,7 +13497,7 @@ media-libs/libv4l 1.32.0: v4l-utils libraries and optional utilities
 media-libs/libva 2.22.0-r1 2.23.0 9999: Video Acceleration (VA) API for Linux
 media-libs/libva-compat 1.8.3-r2 1.8.3-r3: Video Acceleration (VA) API for Linux
 media-libs/libva-intel-driver 2.4.4 2.4.5 9999: HW video decode support for Intel integrated graphics
-media-libs/libva-intel-media-driver 25.3.4 25.4.0 25.4.2 25.4.3 25.4.5 25.4.6 26.1.1 9999: Intel Media Driver for VA-API (iHD)
+media-libs/libva-intel-media-driver 25.3.4 25.4.0 25.4.2 25.4.3 25.4.5 25.4.6 26.1.1-r1 9999: Intel Media Driver for VA-API (iHD)
 media-libs/libvisio 0.1.10 9999-r1: Library parsing the file format of MS Visio documents
 media-libs/libvisual 0.4.1 0.4.2-r1: Abstraction library between applications and audio visualisation plugins
 media-libs/libvmaf 2.3.1 3.0.0 9999: C libary for Netflix's Perceptual video quality assessment
@@ -14027,7 +14027,7 @@ media-sound/dvda-author 10.06-r2: Author a DVD-Audio DVD
 media-sound/easyeffects 7.2.3 7.2.5 8.0.5 9999: Limiter, auto volume and many other plugins for PipeWire applications
 media-sound/easytag 2.4.3-r6 2.4.3-r7 2.4.3-r8 2.4.3-r9: GTK+ utility for editing MP2, MP3, MP4, FLAC, Ogg and other media tags
 media-sound/ecasound 2.9.3-r1: Package for multitrack audio processing
-media-sound/elisa 25.08.3 25.12.2: Simple music player by KDE
+media-sound/elisa 25.08.3 25.12.2-r1: Simple music player by KDE
 media-sound/erec 2.2.0.1-r1: Shared audio recording server
 media-sound/exaile 4.2.0: GTK+ based media player aiming to be similar to Amarok
 media-sound/ezstream 0.6.0-r4 1.0.2-r1: A command line source client for Icecast media streaming servers
@@ -14085,7 +14085,7 @@ media-sound/jack2 1.9.22 9999: Jackdmp jack implemention for multi-processor mac
 media-sound/jack_capture 0.9.73-r1 9999: JACK Recording utility
 media-sound/jalv 1.6.8-r1 1.6.9_pre20250802: Simple but fully featured LV2 host for Jack
 media-sound/justeport 0.2: Stream audio to your AirPort Express
-media-sound/kasts 25.08.3 25.12.2: Convergent podcast application for desktop and mobile
+media-sound/kasts 25.08.3 25.12.2-r1: Convergent podcast application for desktop and mobile
 media-sound/kid3 3.9.7: Simple tag editor based on Qt
 media-sound/klick 0.12.2-r5: An advanced command-line based metronome for JACK
 media-sound/kmetronome 1.4.0 1.4.1: MIDI based metronome using ALSA sequencer
@@ -14286,7 +14286,7 @@ media-sound/xfmpc 0.3.2: Music Player Daemon (MPD) client for the Xfce desktop e
 media-sound/xineadump 0.1-r2: Utility for Xine decoding support in transKode
 media-sound/xmms2 0.9.6: X(cross)platform Music Multiplexing System, next generation of the XMMS player
 media-sound/xwax 1.9: Digital vinyl emulation software
-media-sound/yarock 1.5.1: Qt-based music player
+media-sound/yarock 1.5.1-r1: Qt-based music player
 media-sound/yoshimi 2.3.4.1: Software synthesizer based on ZynAddSubFX
 media-sound/zynaddsubfx 3.0.6-r6: Software synthesizer capable of making a countless number of instruments
 media-tv/channeleditor 1.9.2.1-r4: Editor for VDR channels.conf
@@ -15695,7 +15695,7 @@ net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client 
 net-vpn/strongswan 6.0.3 6.0.4: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6 1.92.1 1.92.4: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
-net-vpn/tor 0.4.8.21 0.4.8.21-r1 0.4.8.22 0.4.9.4_rc 9999: Anonymizing overlay network for TCP
+net-vpn/tor 0.4.8.21 0.4.8.21-r1 0.4.8.22 0.4.9.5 0.4.9.5-r1 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 0.10.13 0.10.14 0.10.15: Launch applications via VPN tunnels using temporary network namespaces
 net-vpn/vpnc 0.5.3_p20240129 9999: IPsec (Cisco/Juniper) VPN concentrator client
 net-vpn/vpnc-scripts 20220510 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
@@ -17581,9 +17581,9 @@ sys-cluster/zookeepercli 1.0.11: Simple, lightweight, dependable CLI for ZooKeep
 sys-devel/autogen 5.18.16-r102: Program and text file generation
 sys-devel/bc 1.07.1-r6 1.08.0 1.08.1 1.08.2: Handy console-based calculator utility
 sys-devel/bin86 0.16.21-r2: Assembler and loader used to create kernel bootsector
-sys-devel/binutils 2.32-r2 2.33.1-r1 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r9 2.41-r5 2.42-r2 2.43-r2 2.44-r4 2.45 2.45-r1 2.45.1 2.45.9999 9999: Tools necessary to build programs
+sys-devel/binutils 2.32-r2 2.33.1-r1 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r9 2.41-r5 2.42-r2 2.43-r2 2.44-r4 2.45 2.45-r1 2.45.1 2.45.9999 2.46.0 9999: Tools necessary to build programs
 sys-devel/binutils-config 5.5.2 5.5.3 5.6 9999: Utility to change the binutils version being used
-sys-devel/binutils-hppa64 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r2 2.44-r3 2.45 2.45-r1 2.45.1 9999: Tools necessary to build programs
+sys-devel/binutils-hppa64 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r2 2.44-r3 2.45 2.45-r1 2.45.1 2.46.0 9999: Tools necessary to build programs
 sys-devel/bison 3.8.2-r2 3.8.2-r3: A general-purpose (yacc-compatible) parser generator
 sys-devel/bpf-toolchain 15.2.0_p1 15.2.0_p2: All-in-one bpf toolchain for building DTrace and systemd without crossdev
 sys-devel/clang-crossdev-wrappers 16 17 18 19 20 21: Symlinks to a Clang crosscompiler
@@ -17806,12 +17806,12 @@ sys-kernel/scx-loader 1.0.19 1.0.20: DBUS on-demand loader of sched-ext schedule
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 5.10.248 5.10.249 5.10.250 5.10.9999 5.15.198 5.15.199 5.15.200 5.15.9999 6.1.161 6.1.162 6.1.163 6.1.9999 6.6.122 6.6.123 6.6.124 6.6.9999 6.12.68 6.12.69 6.12.70 6.12.9999 6.18.8 6.18.9 6.18.10: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 5.4.302 5.10.250 5.15.200 6.1.163 6.6.124 6.12.70 6.16.12 6.17.13 6.18.10: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 5.4.302 5.10.250 5.15.200 6.1.163 6.6.124 6.12.70 6.16.12 6.17.13 6.18.10 6.19.0: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.18.8 6.18.9: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
 sys-libs/basu 0.2.1: The sd-bus library, extracted from systemd
-sys-libs/binutils-libs 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r3 2.44-r2 2.45 2.45-r1 2.45.1 9999: Core binutils libraries (libbfd, libopcodes, libiberty) for external packages
+sys-libs/binutils-libs 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r3 2.44-r2 2.45 2.45-r1 2.45.1 2.46.0 9999: Core binutils libraries (libbfd, libopcodes, libiberty) for external packages
 sys-libs/blocksruntime 0_pre20171027-r2: BlocksRuntime library needed for clang's -fblocks support
 sys-libs/cracklib 2.10.2 2.10.3: Password Checking Library
 sys-libs/db 4.8.30-r8 4.8.30-r9 5.3.28-r9 5.3.28-r10 5.3.28-r11 6.0.35-r4 6.0.35-r5: Oracle Berkeley DB
