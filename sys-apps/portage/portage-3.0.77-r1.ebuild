@@ -90,7 +90,7 @@ PDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}"/0001-doebuild-fix-unexported_env_vars-chown-call.patch
+	"${FILESDIR}"/0001-estrip-silence-noise-from-objcopy-if-build-ID-sectio.patch
 )
 
 pkg_pretend() {
