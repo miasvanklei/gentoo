@@ -3928,7 +3928,7 @@ dev-cpp/libcmis 0.6.2-r2 9999: C++ client library for the CMIS interface
 dev-cpp/libjson-rpc-cpp 1.4.0 1.4.0-r1: JSON-RPC (1.0 & 2.0) framework for C++
 dev-cpp/libmcpp 2.7.2_p5-r2: A portable C++ preprocessor
 dev-cpp/libxmlpp 2.42.3 5.0.4 5.4.0: C++ wrapper for the libxml2 XML parser library
-dev-cpp/lucene++ 3.0.9-r1 3.0.9-r2: C++ port of Lucene library, a high-performance, full-featured text search engine
+dev-cpp/lucene++ 3.0.9-r2: C++ port of Lucene library, a high-performance, full-featured text search engine
 dev-cpp/magic_enum 0.9.6 0.9.7: Static reflection for enums in header-only C++
 dev-cpp/mm-common 1.0.6 1.0.7: Build infrastructure and utilities for GNOME C++ bindings
 dev-cpp/ms-gsl 4.0.0 4.1.0 9999: Guideline Support Library implementation by Microsoft
@@ -4209,7 +4209,7 @@ dev-games/clanlib 0.8.1-r3 2.3.7-r4 4.1.0-r1 4.2.0: Multi-platform game developm
 dev-games/flatzebra 0.2.0: Generic game engine for 2D double-buffering animation
 dev-games/freecell-solver 6.14.0: C library for automatically solving Freecell and some other solitaire variants
 dev-games/freesolid 2.1.2-r1: Library for collision detection of three-dimensional objects
-dev-games/godot 4.3-r1 4.4.1-r1 4.5.1 4.6: Multi-platform 2D and 3D game engine with a feature-rich editor
+dev-games/godot 4.3-r1 4.4.1-r1 4.5.1 4.6 4.6.1: Multi-platform 2D and 3D game engine with a feature-rich editor
 dev-games/guichan 0.8.2-r1: Portable C++ GUI library designed for games using Allegro, SDL and/or OpenGL
 dev-games/hdl_dump 0.9.2.20180722: Game installer for PlayStation 2 HD Loader and Open PS2 Loader
 dev-games/irrlicht 1.8.4-r2 1.8.5: Open source high performance realtime 3D engine written in C++
@@ -6049,11 +6049,11 @@ dev-ml/cudf 0.10-r1: Library to parse, pretty print, and evaluate CUDF documents
 dev-ml/curses 1.0.10 1.0.11: Bindings to ncurses
 dev-ml/delimited_parsing 0.17.0: Parsing of character (e.g., comma) separated and fixed-width values
 dev-ml/dose3 7.0.0-r2: Library to perform analysis on package repositories
-dev-ml/dune 3.16.1 3.17.2 3.18.1 3.19.1 3.20.2: A composable build system for OCaml
-dev-ml/dune-build-info 3.16.0 3.16.1 3.18.1 3.19.1 3.20.2: Embed locations informations inside executable and libraries
-dev-ml/dune-configurator 3.16.0-r1 3.16.1 3.17.1 3.18.1 3.19.1 3.20.2: Helper library for gathering system configuration
+dev-ml/dune 3.16.1 3.17.2 3.18.1 3.19.1 3.20.2 3.21.1: A composable build system for OCaml
+dev-ml/dune-build-info 3.16.0 3.16.1 3.18.1 3.19.1 3.20.2 3.21.1: Embed locations informations inside executable and libraries
+dev-ml/dune-configurator 3.16.0-r1 3.16.1 3.17.1 3.18.1 3.19.1 3.20.2 3.21.1: Helper library for gathering system configuration
 dev-ml/dune-private-libs 3.16.0-r4 3.18.1 3.19.0: Private libraries of Dune
-dev-ml/dune-site 3.16.0 3.16.1 3.18.1 3.19.1 3.20.2: Embed locations informations inside executable and libraries
+dev-ml/dune-site 3.16.0 3.16.1 3.18.1 3.19.1 3.20.2 3.21.1: Embed locations informations inside executable and libraries
 dev-ml/duration 0.1.3 0.2.1: Duration - conversions to various time units
 dev-ml/easy-format 1.2.0-r1 1.3.4: Pretty-printing library for OCaml
 dev-ml/expect_test_helpers_core 0.16.0 0.17.0-r1: Helpers for writing expectation tests
@@ -6237,7 +6237,7 @@ dev-ml/uunf 15.1.0-r1 16.0.0 17.0.0: Unicode text normalization
 dev-ml/uuseg 15.0.0 16.0.0 17.0.0: Unicode text segmentation for OCaml
 dev-ml/uutf 1.0.3-r2 1.0.4-r1: Non-blocking streaming Unicode codec for OCaml
 dev-ml/variantslib 0.16.0 0.17.0-r1: OCaml variants as first class values
-dev-ml/xdg 3.16.1 3.20.2: XDG Base Directory Specification
+dev-ml/xdg 3.16.1 3.20.2 3.21.1: XDG Base Directory Specification
 dev-ml/xml-light 2.5: Minimal Xml parser and printer for OCaml
 dev-ml/xmlm 1.4.0: Streaming XML codec for OCaml
 dev-ml/yojson 2.2.2-r1 3.0.0: JSON parsing and pretty-printing library for OCaml
@@ -9847,7 +9847,7 @@ dev-qt/qtdbus 5.15.18: Qt5 module for inter-process communication over the D-Bus
 dev-qt/qtdeclarative 5.15.18-r1 6.10.1-r2 6.10.2 6.10.9999 6.11.9999 6.9999: Qt Declarative (Quick 2)
 dev-qt/qtgraphicaleffects 5.15.18: Set of QML types for adding visual effects to user interfaces
 dev-qt/qtgraphs 6.10.1 6.10.2 6.10.9999 6.11.9999 6.9999: Graphs component library for the Qt6 framework
-dev-qt/qtgui 5.15.18: The GUI module and platform plugins for the Qt5 framework
+dev-qt/qtgui 5.15.18-r1: The GUI module and platform plugins for the Qt5 framework
 dev-qt/qthelp 5.15.18: Qt5 module for integrating online documentation into applications
 dev-qt/qthttpserver 6.10.1 6.10.2 6.10.9999 6.11.9999 6.9999: HTTP server functionality for the Qt6 framework
 dev-qt/qtimageformats 5.15.18 6.10.1 6.10.2 6.10.9999 6.11.9999 6.9999: Additional format plugins for the Qt image I/O system
@@ -11912,7 +11912,7 @@ games-sports/trigger 0.6.1-r1: Free OpenGL rally car racing game
 games-sports/trophy 2.0.4-r1: 2D Racing Game
 games-sports/ultimatestunts 0.7.7-r3: Remake of the famous Stunts game
 games-sports/xmoto 0.6.3: A challenging 2D motocross platform game, where physics play an important role
-games-strategy/0ad 0.27.0-r2 0.27.1: A free, real-time strategy game
+games-strategy/0ad 0.27.1: A free, real-time strategy game
 games-strategy/augustus 3.1.0: Feature-enhanced open source re-implementation of Caesar III
 games-strategy/colobot 0.2.2_alpha 9999: A real-time strategy game, where you can program your bots
 games-strategy/colobot-data 0.2.2_alpha: Data package for colobot (Colonize with Bots)
@@ -12141,7 +12141,7 @@ gnustep-libs/performance 0.6.0: Help improve the performance of GNUstep applicat
 gnustep-libs/renaissance 0.9.0-r2: GNUstep Renaissance allows to describe user interfaces XML files
 gnustep-libs/sope 5.12.4: A set of frameworks forming a complete Web application server environment
 gnustep-libs/sqlclient 1.9.0: GNUstep lightweight database abstraction layer
-gui-apps/deskflow 1.21.2 1.24.0 1.25.0 9999: Share a mouse and keyboard between computers (FOSS version of Synergy)
+gui-apps/deskflow 1.24.0 1.25.0 1.26.0 9999: Share a mouse and keyboard between computers (FOSS version of Synergy)
 gui-apps/foot 1.16.2 1.17.0 1.17.1 1.17.2 1.18.0 1.18.1 1.19.0 1.20.0 1.20.1-r1 1.20.2 1.20.2-r2 1.21.0 1.22.0 1.22.3 1.23.0 1.23.1 1.24.0 1.25.0: Fast, lightweight and minimalistic Wayland terminal emulator
 gui-apps/foot-terminfo 1.16.2 1.17.0 1.17.1 1.17.2 1.18.0 1.18.1 1.19.0 1.20.0 1.20.1 1.20.2 1.21.0 1.22.0 1.22.3 1.23.0 1.23.1 1.24.0 1.25.0: Terminfo for foot, a fast, lightweight and minimal Wayland terminal emulator
 gui-apps/gnome-console 48.1 49.1 49.2: A simple user-friendly terminal emulator for the GNOME desktop
@@ -12214,7 +12214,7 @@ gui-libs/wpebackend-fdo 1.16.0 1.16.1: WPE backend designed for Linux desktop sy
 gui-libs/xdg-desktop-portal-lxqt 1.2.0 1.3.0: Backend implementation for xdg-desktop-portal using Qt/KF5/libfm-qt
 gui-libs/xdg-desktop-portal-wlr 0.7.1-r1 0.7.1-r2 0.8.1 9999: xdg-desktop-portal backend for wlroots
 gui-wm/dwl 0.5-r1 0.6 0.7 9999: dwm for Wayland
-gui-wm/gamescope 3.16.19: Efficient micro-compositor for running games
+gui-wm/gamescope 3.16.20: Efficient micro-compositor for running games
 gui-wm/hyprland 0.49.0 0.50.1 0.51.1 9999: A dynamic tiling Wayland compositor that doesn't sacrifice on its looks
 gui-wm/labwc 0.9.2-r1 0.9.3-r1 9999: Openbox alternative for wayland
 gui-wm/sway 1.9-r1 1.10 1.10.1 1.11 9999: i3-compatible Wayland window manager
@@ -12528,7 +12528,7 @@ kde-misc/markdownpart 25.08.3 25.12.2: Markdown viewer KParts plugin based on QT
 kde-misc/plasma-pass 1.3.0: Plasma applet to access password from pass
 kde-misc/rsibreak 0.13.0: Small utility which bothers you at certain intervals
 kde-misc/skanlite 25.08.3 25.12.2: Simple image scanning application based on libksane and KDE Frameworks
-kde-misc/tellico 4.1.4 4.1.5: Collection manager based on KDE Frameworks
+kde-misc/tellico 4.1.5 4.2: Collection manager based on KDE Frameworks
 kde-misc/zanshin 25.12.1-r1 25.12.2: Getting things done application by KDE
 kde-plasma/aurorae 6.5.5: Themeable window decoration for KWin
 kde-plasma/bluedevil 6.5.5: Bluetooth stack for KDE Plasma
@@ -13519,7 +13519,7 @@ media-libs/libzmf 0.0.2-r1 9999: Library for parsing Zoner Callisto/Draw documen
 media-libs/lilv 0.24.26: Library to make the use of LV2 plugins as simple as possible for applications
 media-libs/lsp-plugins 1.2.3-r1 1.2.6 1.2.14 9999: Linux Studio Plugins
 media-libs/lv2 1.18.10-r1 1.18.10-r2: A simple but extensible successor of LADSPA
-media-libs/lvtk 1.2.0-r3 1.2.0-r4: A set of C++ wrappers around the LV2 C API
+media-libs/lvtk 1.2.0-r4: A set of C++ wrappers around the LV2 C API
 media-libs/mesa 24.1.7-r1 25.0.7 25.2.8 25.3.3 25.3.4 25.3.5 26.0.0 9999: OpenGL-like graphic library for Linux
 media-libs/mesa-amber 21.3.9-r2 21.3.9-r3: OpenGL-like graphic library for Linux
 media-libs/mlt 7.32.0 7.34.1-r1: Open source multimedia framework for television broadcasting
@@ -14233,7 +14233,7 @@ media-sound/sonic-visualiser 5.2.1: Music audio files viewer and analyser
 media-sound/sooperlooper 1.7.8_p2-r2 1.7.8_p3: Live looping sampler with immediate loop recording
 media-sound/sound-juicer 3.40.0-r1: CD ripper for GNOME
 media-sound/soundconverter 4.0.3 4.0.5: A simple audiofile converter application for the GNOME environment
-media-sound/sox 14.4.2_p20210509-r3 14.4.4.1 14.6.0.4: The swiss army knife of sound processing programs
+media-sound/sox 14.4.2_p20210509-r3 14.4.4.1-r1 14.6.0.4-r1: The swiss army knife of sound processing programs
 media-sound/spek 0.8.5-r2 0.8.5-r3: Analyse your audio files by showing their spectrogram
 media-sound/splay 0.9.5.2-r2: An audio player, primarily for the console
 media-sound/split2flac 122 9999: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
@@ -15036,7 +15036,7 @@ net-libs/libproxy 0.5.9 0.5.11: Library for automatic proxy configuration manage
 net-libs/libpsl 0.21.5: C library for the Public Suffix List
 net-libs/libqmi 1.32.4-r1 1.36.0 9999: Qualcomm MSM (Mobile Station Modem) Interface (QMI) modem protocol library
 net-libs/libqrtr-glib 1.2.2: Qualcomm IPC Router protocol helper library
-net-libs/libquotient 0.9.5: Qt-based SDK to develop applications for Matrix
+net-libs/libquotient 0.9.5 0.9.6: Qt-based SDK to develop applications for Matrix
 net-libs/libre-graph-api-cpp-qt-client 1.0.4: API for cloud collaboration inspired by the MS Graph API
 net-libs/librist 0.2.8-r1 0.2.11: Library for Reliable Internet Stream Transport (RIST) protocol
 net-libs/librouteros 1.1.3: Library for accessing MikroTik's RouterOS via its API
@@ -17788,7 +17788,7 @@ sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via s
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scripts
 sys-kernel/gentoo-kernel 5.10.248 5.10.249 5.10.250 5.15.198 5.15.199 5.15.200 6.1.161 6.1.162 6.1.163 6.6.122 6.6.123 6.6.124 6.6.125 6.12.68 6.12.69 6.12.70 6.12.71 6.12.72 6.18.8 6.18.9 6.18.10 6.18.11: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.248 5.10.249 5.10.250 5.15.198 5.15.199 5.15.200 6.1.161 6.1.162 6.1.163 6.6.122 6.6.123 6.6.124 6.6.125 6.12.68 6.12.69 6.12.70 6.12.71 6.12.72 6.18.8 6.18.9 6.18.10 6.18.11: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.10.248 5.10.249 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 5.15.198 5.15.199 5.15.200 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.1.160 6.1.161 6.1.162 6.1.163 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.6.124 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.12.70 6.12.71 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9 6.18.10 6.19.0: Full sources including the Gentoo patchset for the 6.19 kernel tree
+sys-kernel/gentoo-sources 5.10.242 5.10.243 5.10.244 5.10.245 5.10.246 5.10.247 5.10.248 5.10.249 5.15.191 5.15.192 5.15.193 5.15.194 5.15.195 5.15.196 5.15.197 5.15.198 5.15.199 5.15.200 6.1.153 6.1.154 6.1.155 6.1.156 6.1.157 6.1.158 6.1.159 6.1.160 6.1.161 6.1.162 6.1.163 6.6.111 6.6.112 6.6.113 6.6.114 6.6.115 6.6.116 6.6.117 6.6.118 6.6.119 6.6.120 6.6.121 6.6.122 6.6.123 6.6.124 6.6.126 6.12.54 6.12.55 6.12.56 6.12.57 6.12.58 6.12.59 6.12.60 6.12.61 6.12.62 6.12.63 6.12.64 6.12.65 6.12.66 6.12.67 6.12.68 6.12.69 6.12.70 6.12.71 6.12.73 6.17.5-r1 6.17.6 6.17.7 6.17.8 6.17.9 6.17.10 6.17.11 6.17.12 6.17.13 6.18.0 6.18.1 6.18.2 6.18.2-r1 6.18.3 6.18.4 6.18.5 6.18.6 6.18.7 6.18.8 6.18.9 6.18.10 6.18.12 6.19.0 6.19.2: Full sources including the Gentoo patchset for the 6.19 kernel tree
 sys-kernel/git-sources 6.19_rc1 6.19_rc2 6.19_rc3 6.19_rc4 6.19_rc5 6.19_rc6 6.19_rc7 6.19_rc8: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 63 65 66 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
@@ -17809,7 +17809,7 @@ sys-kernel/scx-loader 1.0.19 1.0.20: DBUS on-demand loader of sched-ext schedule
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 5.10.248 5.10.249 5.10.250 5.10.9999 5.15.198 5.15.199 5.15.200 5.15.9999 6.1.161 6.1.162 6.1.163 6.1.9999 6.6.122 6.6.123 6.6.124 6.6.125 6.6.9999 6.12.68 6.12.69 6.12.70 6.12.71 6.12.72 6.12.9999 6.18.8 6.18.9 6.18.10 6.18.11: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 5.4.302 5.10.250 5.15.200 6.1.163 6.6.124 6.12.71 6.16.12 6.17.13 6.18.10 6.19.0: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 5.4.302 5.10.250 5.15.200 6.1.163 6.6.124 6.6.126 6.12.71 6.12.73 6.16.12 6.17.13 6.18.10 6.18.12 6.19.0 6.19.2: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.18.8 6.18.9: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
@@ -18275,8 +18275,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.3 3.4: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 7.8.3925.56 7.8.3925.62: A browser for our friends
-www-client/vivaldi-snapshot 7.9.3936.3 7.9.3943.3: A browser for our friends
+www-client/vivaldi 7.8.3925.62 7.8.3925.66: A browser for our friends
+www-client/vivaldi-snapshot 7.9.3943.3 7.9.3950.5: A browser for our friends
 www-client/w3m 0.5.3_p20230121 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
