@@ -5092,7 +5092,7 @@ dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/openjdk 8.482_p08 11.0.30_p7 17.0.18_p8 21.0.10_p7 25.0.2_p10 26_beta34 27_alpha8: Open source implementation of the Java programming language
-dev-java/openjdk-bin 8.472_p08 8.482_p08 11.0.29_p7 11.0.30_p7 17.0.17_p10 17.0.18_p8 21.0.9_p10 21.0.10_p7 25.0.1_p8 25.0.2_p10 26_beta34 27_alpha7: Prebuilt Java JDK binaries provided by Eclipse Temurin
+dev-java/openjdk-bin 8.472_p08 8.482_p08 11.0.29_p7 11.0.30_p7 17.0.17_p10 17.0.18_p8 21.0.9_p10 21.0.10_p7 25.0.1_p8 25.0.2_p10 26_beta35 27_alpha9: Prebuilt Java JDK binaries provided by Eclipse Temurin
 dev-java/openjdk-jre-bin 8.462_p08 11.0.28_p6 17.0.16_p8 21.0.8_p9: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 8.1000-r2 11.0.11_p1-r5: Java OpenJFX client application platform
 dev-java/opentelemetry-java 1.49.0: OpenTelemetry Context (Incubator)
@@ -5116,7 +5116,7 @@ dev-java/randomized-runner 2.8.3: JUnit test runner and plugins for running JUni
 dev-java/reflections 0.9.12-r7: Reflections - a Java runtime metadata analysis
 dev-java/relaxng-datatype 20020414: Interface between RELAX NG validators and datatype libraries
 dev-java/reload4j 1.2.22: Reload4j revives EOLed log4j 1.x
-dev-java/rhino 1.9.0-r1: Rhino JavaScript runtime jar, excludes XML, tools, and ScriptEngine wrapper
+dev-java/rhino 1.9.0-r1 1.9.1: Rhino JavaScript runtime jar, excludes XML, tools, and ScriptEngine wrapper
 dev-java/rome 0.9-r4: Java framework for RSS and Atom feeds
 dev-java/sax 2.2.1-r5: SAX: Simple API for XML in Java
 dev-java/saxon 9.2.0.6-r6: A XSLT and XQuery Processor
@@ -5146,7 +5146,7 @@ dev-java/system-rules 1.19.0: A collection of JUnit rules for testing code which
 dev-java/tapestry-json 5.8.7-r1: Tapestry JSON
 dev-java/testng 7.11.0: Testing framework inspired by JUnit and NUnit with new features
 dev-java/testparameterinjector 1.19: TestParameterInjector For JUnit4
-dev-java/tomcat-native 1.3.1 1.3.5 1.3.6 2.0.9-r1 2.0.12 2.0.13: Allows Tomcat to use certain native resources for better performance
+dev-java/tomcat-native 1.3.1 1.3.5 1.3.6 2.0.12 2.0.13: Allows Tomcat to use certain native resources for better performance
 dev-java/tomcat-servlet-api 4.1.40-r1: Tomcat's Servlet API 2.3/JSP API 1.2 implementation
 dev-java/treelayout 1.0.3-r1: Efficient and customizable TreeLayout Algorithm in Java.
 dev-java/truth 1.4.5: Fluent assertions for Java and Android
@@ -5201,7 +5201,7 @@ dev-lang/cue 0.14.1: open-source data validation language and inference engine
 dev-lang/cxprolog 0.98.2-r3: A WAM based Prolog system
 dev-lang/dafny 4.10.0 4.11.0: Dafny is a verification-aware programming language
 dev-lang/dafny-bin 4.10.0-r1 4.11.0-r1: Verification-aware programming language
-dev-lang/deno-bin 2.6.6 2.6.7 2.6.8 2.6.9: Modern runtime for JavaScript and TypeScript
+dev-lang/deno-bin 2.6.6 2.6.7 2.6.8 2.6.9 2.6.10: Modern runtime for JavaScript and TypeScript
 dev-lang/duktape 2.7.0-r3: Embeddable Javascript engine
 dev-lang/dzaima-bqn 0.2.1 0.2.2 9999: A BQN language implementation written in Java, also know as dbqn
 dev-lang/eisl 5.61 5.62: Interpreter and compiler compatible with the ISLisp standard
@@ -6049,8 +6049,8 @@ dev-ml/cudf 0.10-r1: Library to parse, pretty print, and evaluate CUDF documents
 dev-ml/curses 1.0.10 1.0.11: Bindings to ncurses
 dev-ml/delimited_parsing 0.17.0: Parsing of character (e.g., comma) separated and fixed-width values
 dev-ml/dose3 7.0.0-r2: Library to perform analysis on package repositories
-dev-ml/dune 3.16.1 3.17.2 3.18.1 3.19.1 3.20.2 3.21.1: A composable build system for OCaml
-dev-ml/dune-build-info 3.16.0 3.16.1 3.18.1 3.19.1-r1 3.20.2 3.21.1: Embed locations informations inside executable and libraries
+dev-ml/dune 3.16.1 3.17.2 3.18.1 3.19.1 3.20.2 3.21.1-r1: A composable build system for OCaml
+dev-ml/dune-build-info 3.16.0 3.18.1 3.19.1-r1 3.20.2 3.21.1: Embed locations informations inside executable and libraries
 dev-ml/dune-configurator 3.16.0-r1 3.16.1 3.17.1 3.18.1 3.19.1-r1 3.20.2 3.21.1: Helper library for gathering system configuration
 dev-ml/dune-private-libs 3.16.0-r4 3.18.1 3.19.0-r1: Private libraries of Dune
 dev-ml/dune-site 3.16.0 3.16.1 3.18.1 3.19.1-r1 3.20.2 3.21.1: Embed locations informations inside executable and libraries
@@ -11085,7 +11085,7 @@ dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0: Callback/Activity Library for Perfor
 dev-util/ropper 1.13.10 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rpmdevtools 9.6: Collection of rpm packaging related utilities
 dev-util/rt-tests 2.8 2.9: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.13.1 0.14.9 0.14.10-r1 0.14.11 0.14.14 0.15.0: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.13.1 0.14.9 0.14.10-r1 0.14.11 0.14.14 0.15.0 0.15.1: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -12684,8 +12684,8 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20251211-r1 20260105 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.11 1.6.13 1.7_rc4 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 140.6.0 140.7.0 140.7.1 146.0 146.0.1 147.0 147.0.1: Thunderbird Mail Client
-mail-client/thunderbird-bin 140.6.0 140.7.0 140.7.1 146.0 146.0.1 147.0 147.0.1: Thunderbird Mail Client
+mail-client/thunderbird 140.7.2 147.0.2: Thunderbird Mail Client
+mail-client/thunderbird-bin 140.7.2 147.0.2: Thunderbird Mail Client
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.13.1 2.14.0: High-performance interface between the MTA and content checkers
@@ -17266,7 +17266,7 @@ sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives
 sys-apps/pnputils 0.1-r1: Plug and Play BIOS utilities
 sys-apps/policycoreutils 3.8.1 9999: SELinux core utilities
 sys-apps/polychromatic 0.9.5 0.9.6 9999: RGB lighting management software for GNU/Linux powered by OpenRazer
-sys-apps/portage 3.0.72-r1 3.0.77 3.0.77-r1 3.0.77-r2 9999: The package management and distribution system for Gentoo
+sys-apps/portage 3.0.72-r1 3.0.77 3.0.77-r1 3.0.77-r3 9999: The package management and distribution system for Gentoo
 sys-apps/powerpc-utils 1.1.3.18-r4: PowerPC utilities and additional OldWorld apps
 sys-apps/ppc64-diag 2.7.9: Diagnostic tools for PowerLinux
 sys-apps/prctl 1.6-r1: Tool to query and modify process behavior
@@ -18252,7 +18252,7 @@ www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-
 www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
 www-client/falkon 25.08.3 25.12.2: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.6.0 140.7.0 146.0 146.0.1 147.0 147.0.1 147.0.2 147.0.3 147.0.4: Firefox Web Browser
+www-client/firefox 140.6.0 140.7.0 140.7.1 146.0 146.0.1 147.0 147.0.1 147.0.2 147.0.3 147.0.4: Firefox Web Browser
 www-client/firefox-bin 140.7.1 147.0.4: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.169 144.0.7559.132 145.0.7632.75: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31 145.0.7632.45 146.0.7680.0: The web browser from Google
@@ -18441,7 +18441,7 @@ x11-base/xorg-proto 2025.1 9999: X.Org combined protocol headers
 x11-base/xorg-server 21.1.21 9999: X.Org X servers
 x11-base/xorg-sgml-doctools 1.12.1: SGML entities and XML/CSS stylesheets used in X.Org docs
 x11-base/xwayland 24.1.9 9999: Standalone X server running under Wayland
-x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 570.211.01 580.94.17 580.126.09 580.126.09-r1 590.48.01-r1: NVIDIA Accelerated Graphics Driver
+x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 570.211.01 580.94.17 580.126.09 580.126.09-r1 580.126.18 590.48.01-r1: NVIDIA Accelerated Graphics Driver
 x11-drivers/xf86-input-elographics 1.4.4: Elographics input driver
 x11-drivers/xf86-input-evdev 2.11.0: Generic Linux input driver
 x11-drivers/xf86-input-joystick 1.6.4: X.Org driver for joystick input devices
