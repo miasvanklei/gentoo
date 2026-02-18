@@ -17329,7 +17329,7 @@ sys-apps/systemd-utils 255.18 255.21 256.17 259-r3 259.1: Utilities split out fr
 sys-apps/sysvinit 3.09 3.14 3.15: /sbin/init - parent of all processes
 sys-apps/tas 1.9.0.240925: Supermicro Thin-Agent Service for monitoring through the BMC/IPMI
 sys-apps/tcp-wrappers 7.6.31-r2: TCP Wrappers
-sys-apps/texinfo 7.2-r3 7.2-r4 7.2.91 9999: The GNU info program and utilities
+sys-apps/texinfo 7.2-r3 7.2-r4 7.2.92 9999: The GNU info program and utilities
 sys-apps/the_silver_searcher 2.2.0_p20201217-r4: A code-searching tool similar to ack, but faster
 sys-apps/tomoyo-tools 2.5.0_p20130214-r1: TOMOYO Linux tools
 sys-apps/toybox 0.8.12 0.8.13 9999: Common linux commands in a multicall binary
@@ -18441,7 +18441,7 @@ x11-base/xorg-proto 2025.1 9999: X.Org combined protocol headers
 x11-base/xorg-server 21.1.21 9999: X.Org X servers
 x11-base/xorg-sgml-doctools 1.12.1: SGML entities and XML/CSS stylesheets used in X.Org docs
 x11-base/xwayland 24.1.9 9999: Standalone X server running under Wayland
-x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 570.211.01 580.94.17 580.126.09 580.126.09-r1 580.126.18 590.48.01-r1: NVIDIA Accelerated Graphics Driver
+x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 570.211.01 580.94.18 580.126.09 580.126.09-r1 580.126.18 590.48.01-r1: NVIDIA Accelerated Graphics Driver
 x11-drivers/xf86-input-elographics 1.4.4: Elographics input driver
 x11-drivers/xf86-input-evdev 2.11.0: Generic Linux input driver
 x11-drivers/xf86-input-joystick 1.6.4: X.Org driver for joystick input devices
