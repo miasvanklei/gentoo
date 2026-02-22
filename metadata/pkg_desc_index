@@ -3005,7 +3005,7 @@ app-office/grisbi 3.0.4-r1: Grisbi is a personal accounting application for Linu
 app-office/homebank 5.9.5 5.9.7: Free, easy, personal accounting for everyone
 app-office/impressive 0.13.2: Stylish way of giving presentations with Python
 app-office/joplin-desktop 3.5.7 3.5.9 3.6.2: Secure note taking and to-do app with synchronization capabilities
-app-office/kmymoney 5.2.1-r2: Personal finance manager based on KDE Frameworks
+app-office/kmymoney 5.2.1-r2 5.2.2: Personal finance manager based on KDE Frameworks
 app-office/kraft 2.0.0: Quotes and invoices manager for small enterprises
 app-office/ktimetracker 6.0.0: Todo management and time tracker
 app-office/ledger 3.4.1: Double-entry accounting system with a command-line reporting interface
@@ -5546,7 +5546,7 @@ dev-libs/libev 4.33: A high-performance event loop/event model with lots of feat
 dev-libs/libevdev 1.13.6 9999: Handler library for evdev events
 dev-libs/libevent 2.1.12-r1 2.2.1-r3 2.2.1-r4 9999: Library to execute a function when a specific event occurs on a file descriptor
 dev-libs/libezV24 0.1.1-r3: Library that provides an easy API to Linux serial ports
-dev-libs/libf2c 20130927-r1 20240130: Library that converts FORTRAN to C source
+dev-libs/libf2c 20240130: Library that converts FORTRAN to C source
 dev-libs/libfastjson 1.2304.0-r1: Fork of the json-c library, which is optimized for liblognorm processing
 dev-libs/libffi 3.4.8-r3 3.5.1 3.5.2 9999: Portable, high level programming interface to various calling conventions
 dev-libs/libffi-compat 3.2.1-r3 3.3-r2: a portable, high level programming interface to various calling conventions
@@ -5624,7 +5624,7 @@ dev-libs/liboil 0.3.17-r5: Library of simple functions that are optimized for va
 dev-libs/libopenrazer 0.4.0: Qt wrapper around the D-Bus API from OpenRazer
 dev-libs/liborcus 0.19.2-r1 0.20.0 9999: Standalone file import filter library for spreadsheet documents
 dev-libs/libotf 0.9.16-r1: Library for handling OpenType fonts (OTF)
-dev-libs/libowfat 0.32-r1 0.32-r5 0.33-r1 0.34: reimplement libdjb - excellent libraries from Dan Bernstein
+dev-libs/libowfat 0.33-r1 0.34: reimplement libdjb - excellent libraries from Dan Bernstein
 dev-libs/libp11 0.4.12-r7 0.4.13 0.4.16 0.4.17: Abstraction layer to simplify PKCS#11 API
 dev-libs/libparserutils 0.2.5: C library for building efficient parsers
 dev-libs/libpcre 8.45-r4: Perl-compatible regular expression library
@@ -5775,7 +5775,7 @@ dev-libs/openssl-compat 1.0.2u-r2 1.1.1u: Full-strength general purpose cryptogr
 dev-libs/optix 7.4.0 7.5.0 8.1.0-r1 9.0.0-r1: NVIDIA Ray Tracing Engine
 dev-libs/ossp-uuid 1.6.2-r7 1.6.2-r8: An ISO-C:1999 API with CLI for generating DCE, ISO/IEC and RFC compliant UUID
 dev-libs/pakchois 0.4-r2: PaKChoiS - PKCS #11 wrapper library
-dev-libs/papi 6.0.0.1-r1 6.0.0.1-r2 7.1.0: Performance Application Programming Interface
+dev-libs/papi 7.1.0: Performance Application Programming Interface
 dev-libs/pcc-libs 1.1.0: pcc compiler support libs
 dev-libs/pcl 1.12-r2: Portable Coroutine Library
 dev-libs/pegtl 3.2.8 3.2.8-r1: Header-only library for creating parsers according to Parsing Expression Grammar
@@ -9625,7 +9625,7 @@ dev-python/swagger-spec-validator 3.0.4: Validate Swagger specs against Swagger 
 dev-python/sybil 9.2.0-r1 9.3.0: Automated testing for the examples in your documentation
 dev-python/symengine 0.14.1-r1 0.14.1-r2: Python wrappers to the symengine C++ library
 dev-python/sympy 1.14.0-r1 1.14.0-r2: Computer Algebra System in pure Python
-dev-python/tables 3.10.2 3.10.2-r1: Hierarchical datasets for Python
+dev-python/tables 3.10.2 3.10.2-r1 3.11.0: Hierarchical datasets for Python
 dev-python/tabulate 0.9.0-r1: Pretty-print tabular data
 dev-python/tagpy 2025.1-r1: Python Bindings for TagLib
 dev-python/tap-py 3.2.1: Test Anything Protocol (TAP) tools
@@ -11141,7 +11141,7 @@ dev-util/unicorn 2.1.3-r1 2.1.4 9999: A lightweight multi-platform, multi-archit
 dev-util/unifdef 2.12-r2: remove #ifdef'ed lines from a file while otherwise leaving the file alone
 dev-util/vbindiff 3.0_beta5-r1: Visual binary diff utility
 dev-util/vint 0.3.21-r1: Lint tool for Vim script language
-dev-util/visual-regexp 3.0-r1 3.1: Type the regexp and visualize it on a sample of your choice
+dev-util/visual-regexp 3.1: Type the regexp and visualize it on a sample of your choice
 dev-util/visualvm 2.2-r2: Integrates commandline JDK tools and profiling capabilities
 dev-util/vmtouch 1.3.1: Virtual Memory Toucher, portable file system cache diagnostics and control
 dev-util/vtable-dumper 1.2-r1: A tool to list content of virtual tables in a shared library
@@ -11893,7 +11893,7 @@ games-simulation/lincity-ng 2.9_beta-r1 2.13.1 9999: City simulation game
 games-simulation/micropolis 1.0_p20250628: Free version of the well-known city building simulation
 games-simulation/openrct2 0.4.30 0.4.31: An open source re-implementation of Chris Sawyer's RollerCoaster Tycoon 2
 games-simulation/openttd 14.1 15.0 15.1 9999: A clone of Transport Tycoon Deluxe
-games-simulation/pmars-sdl 0.9.2e-r1 0.9.2e-r2: Portable redcode simulator's sdl port for core war
+games-simulation/pmars-sdl 0.9.2e-r2: Portable redcode simulator's sdl port for core war
 games-simulation/searchandrescue 1.7.0-r1: Helicopter based air rescue flight simulator
 games-simulation/senken 0.3.0-r2: City simulation game
 games-simulation/simutrans 124.2.1: A free Transport Tycoon clone
@@ -13091,7 +13091,7 @@ media-gfx/hp2xx 3.4.4-r4: Convert Hewlett-Packard's HP-GL plotter language to ot
 media-gfx/hugin 2025.0.1 9999: GUI for the creation & processing of panoramic images
 media-gfx/hydrus 637 9999: A booru-like media organizer for the desktop
 media-gfx/icon-slicer 0.3-r1: Utility for generating icon themes and libXcursor cursor themes
-media-gfx/icoutils 0.32.3 0.32.3-r1: Tools to extract and convert images in icon and cursor files (.ico, .cur)
+media-gfx/icoutils 0.32.3-r1: Tools to extract and convert images in icon and cursor files (.ico, .cur)
 media-gfx/igal 3.2: Static HTML image gallery generator
 media-gfx/imagemagick 6.9.13.29-r1 6.9.13.30 7.1.2.3-r1 7.1.2.5 7.1.2.10 9999: A collection of tools and libraries for many image formats
 media-gfx/imageworsener 1.3.5: Utility for image scaling and processing
@@ -13295,7 +13295,7 @@ media-libs/ftgl 2.1.3_rc5-r1 2.1.3_rc5-r3: library to use arbitrary fonts in Ope
 media-libs/game-music-emu 0.6.4: Video game music file emulators
 media-libs/ganv 1.8.2: A GTK+ widget for interactive graph-like environments
 media-libs/gavl 1.4.0-r3: Library for handling uncompressed audio and video data
-media-libs/gd 2.3.2-r3 2.3.3-r3 2.3.3-r4: Graphics library for fast image creation
+media-libs/gd 2.3.3-r4: Graphics library for fast image creation
 media-libs/gegl 0.4.64-r1 0.4.66 9999: A graph based image processing framework
 media-libs/gexiv2 0.14.5 0.14.6: GObject-based wrapper around the Exiv2 library
 media-libs/giblib 1.2.4-r2: A graphics library built on top of imlib2
@@ -13359,7 +13359,7 @@ media-libs/libbdplus 0.2.0 9999: Blu-ray library for BD+ decryption
 media-libs/libbluray 1.3.4-r3 9999: Blu-ray playback libraries
 media-libs/libbs2b 3.1.0-r2: Bauer stereophonic-to-binaural DSP library
 media-libs/libbsb 0.0.7-r2: Portable C library for reading and writing BSB format image files
-media-libs/libcaca 0.99_beta19-r12 0.99_beta20-r1: A library that creates colored ASCII-art graphics
+media-libs/libcaca 0.99_beta20-r1: A library that creates colored ASCII-art graphics
 media-libs/libcamera 0.6.0-r1 0.7.0-r1: Complex camera support library
 media-libs/libcanberra 0.30-r8: Portable sound event library
 media-libs/libcanberra-gtk3 0.30: GTK3 bindings for libcanberra, the portable sound event library
@@ -13371,14 +13371,14 @@ media-libs/libclastfm 0.5: C API library to the last.fm web service (unofficial)
 media-libs/libcue 2.3.0: CUE Sheet Parser Library
 media-libs/libcuefile 477-r3: Cue File library from Musepack
 media-libs/libdc1394 2.2.6: Library to interface with IEEE 1394 cameras following the IIDC specification
-media-libs/libdca 0.0.7 0.0.7-r1: Library for decoding DTS Coherent Acoustics streams used in DVD
+media-libs/libdca 0.0.7-r1: Library for decoding DTS Coherent Acoustics streams used in DVD
 media-libs/libde265 1.0.15 1.0.16 9999: Open h.265 video codec implementation
 media-libs/libdiscid 0.6.4: Client library to create MusicBrainz enabled tagging applications
 media-libs/libdisplay-info 0.3.0: EDID and DisplayID library
 media-libs/libdmtx 0.7.8: Barcode data matrix reading and writing library
 media-libs/libdolbyb 1.0.1: Treat audio recordings similar to Dolby B noise reduction codecs
 media-libs/libdovi 3.3.2: Dolby Vision metadata parsing and writing
-media-libs/libdv 1.0.0-r5 1.0.0-r6: Software codec for dv-format video (camcorders etc)
+media-libs/libdv 1.0.0-r6: Software codec for dv-format video (camcorders etc)
 media-libs/libdvbcsa 1.1.0-r1: Free implementation of the DVB Common Scrambling Algorithm - DVB/CSA
 media-libs/libdvbpsi 1.3.3 1.3.3-r1: Library for MPEG TS/DVB PSI tables decoding and generation
 media-libs/libdvd-audio 1.0.0: library for extracting audio from DVD-Audio discs
@@ -13863,7 +13863,7 @@ media-plugins/vdr-dvdswitch 0.2.4: VDR Plugin: to play dvds and dvd file structu
 media-plugins/vdr-epgsearch 2.4.5: VDR plugin: create timers from epg content based on saved search expressions
 media-plugins/vdr-epgsync 1.0.2: VDR Plugin: Import the EPG of another VDR via vdr-svdrpservice
 media-plugins/vdr-exec 0.0.3: VDR plugin: Exec commands like timers at defined times
-media-plugins/vdr-extrecmenu 1.2.4-r2 2.0.12 2.0.12-r1: VDR Plugin: Extended recordings menu (NG)
+media-plugins/vdr-extrecmenu 2.0.12-r1: VDR Plugin: Extended recordings menu (NG)
 media-plugins/vdr-femon 2.4.0_p20240910-r2: VDR Plugin: DVB Frontend Status Monitor (signal strength/noise)
 media-plugins/vdr-ffnetdev 0.1.3: VDR Plugin: Provides an easy way of connecting possible streaming clients to VDR
 media-plugins/vdr-filebrowser 0.2.3_p20210521-r1: VDR plugin: file manager plugin for moving or renaming files in VDR
@@ -13882,12 +13882,12 @@ media-plugins/vdr-menuorg 0.5.2: VDR plugin: make osd menu configurable via conf
 media-plugins/vdr-mlist 1.0.2: VDR plugin: Show a history of the last OSD message
 media-plugins/vdr-mp3ng 0.0.1_pre5-r5: VDR Plugin: play mp3 and ogg on VDR
 media-plugins/vdr-mplayer 0.10.2-r2: VDR Plugin: Play video files not supported by VDR with mplayer (divx and more)
-media-plugins/vdr-newsticker 0.0.4 0.0.4-r1: VDR plugin: Show rdf Newsticker on TV
+media-plugins/vdr-newsticker 0.0.4-r1: VDR plugin: Show rdf Newsticker on TV
 media-plugins/vdr-noepg 0.0.5: VDR Plugin: will replace the noepg-patch with the new cEpgHandler
 media-plugins/vdr-osdserver 0.1.3-r1: VDR plugin: VDR OSD access for ext. programs through a TCP/IP socket connection
 media-plugins/vdr-osdteletext 2.3.1_p20211217-r1: VDR Plugin: Osd-Teletext displays the teletext/videotext on the OSD
 media-plugins/vdr-peer 0.0.1-r1: VDR Plugin: peer-to-peer between multiple VDRs
-media-plugins/vdr-permashift 1.0.1-r1 1.0.4_pre20220818: VDR Plugin: permanent timeshift by recording live TV on RAM
+media-plugins/vdr-permashift 1.0.4_pre20220818: VDR Plugin: permanent timeshift by recording live TV on RAM
 media-plugins/vdr-pin 0.1.18: VDR plugin: enable/disable parentalrating in records
 media-plugins/vdr-powermate 0.0.5: VDR PLUGIN: support the Powermate device
 media-plugins/vdr-pvr350 1.7.5 2.0.0: VDR plugin: use a PVR350 as output device
@@ -13897,7 +13897,7 @@ media-plugins/vdr-recsearch 0.3.7: VDR Plugin: Search through your recordings an
 media-plugins/vdr-remote 0.7.0-r2 0.7.1: VDR Plugin: use various devices for controlling vdr (keyboards, lirc...)
 media-plugins/vdr-remoteosd 1.0.1-r1: VDR Plugin: server/client remoteosd
 media-plugins/vdr-rssreader 2.4.0-r2: VDR Plugin: RSS reader
-media-plugins/vdr-satip 2.4.1 2.5.1: VDR Plugin: integrates SAT>IP network devices seamlessly into VDR
+media-plugins/vdr-satip 2.5.1: VDR Plugin: integrates SAT>IP network devices seamlessly into VDR
 media-plugins/vdr-scheduler 0.1.6-r1: VDR plugin: allows to control externel jobs from within VDR
 media-plugins/vdr-screenshot 0.0.16: VDR Plugin: takes screenshots of the current video or tv screen
 media-plugins/vdr-serial 0.0.6a-r3: VDR Plugin: attach some buttons with diodes to the serial port
@@ -14122,7 +14122,7 @@ media-sound/modplugtools 0.5.3: libmodplug based module players modplug123 and m
 media-sound/mp32ogg 0.11-r7: A perl script to convert MP3 files to Ogg Vorbis files
 media-sound/mp3asm 0.1.3-r2: Command line tool to clean and edit mp3 files
 media-sound/mp3blaster 3.2.6-r2: Text console based program for playing audio files
-media-sound/mp3c 0.31-r1 0.31-r2: console based mp3 ripper, with cddb support
+media-sound/mp3c 0.31-r2: console based mp3 ripper, with cddb support
 media-sound/mp3cat 0.5: Reads and writes MP3 files
 media-sound/mp3check 0.8.7: Checks mp3 files for consistency and prints several errors and warnings
 media-sound/mp3gain 1.6.2: Analyze and adjust MP3 files to same volume
@@ -15569,7 +15569,7 @@ net-p2p/freenet 0.7.5_p1505 0.7.5_p1505-r1 0.7.5_p1506: Freenet REference Daemon
 net-p2p/go-ethereum 1.16.7: Official golang implementation of the Ethereum protocol
 net-p2p/gtk-gnutella 1.2.2-r1 1.2.3: GTK+ Gnutella client
 net-p2p/gtorrentviewer 0.2b-r1: A GTK2-based viewer and editor for BitTorrent meta files
-net-p2p/ktorrent 25.08.3 25.12.2 25.12.2-r1: Powerful BitTorrent client based on KDE Frameworks
+net-p2p/ktorrent 25.08.3 25.12.2 25.12.2-r2: Powerful BitTorrent client based on KDE Frameworks
 net-p2p/kubo 0.35.0 0.36.0 0.37.0: Main implementation of IPFS
 net-p2p/mktorrent 1.1_p20210130-r1: Simple command line utility to create BitTorrent metainfo files
 net-p2p/mldonkey 3.2.1: Multi-network P2P application written in Ocaml, with Gtk, web & telnet interface
@@ -15914,7 +15914,7 @@ sci-biology/mosaik 2.2.30: A reference-guided aligner for next-generation sequen
 sci-biology/mothur 1.48.2: Suite of algorithms for ecological bioinformatics
 sci-biology/mrbayes 3.1.2-r2 3.2.7: Bayesian Inference of Phylogeny
 sci-biology/mummer 3.23-r1: A rapid whole genome aligner
-sci-biology/muscle 3.8.31 5.1.0: Multiple sequence comparison by log-expectation
+sci-biology/muscle 5.1.0: Multiple sequence comparison by log-expectation
 sci-biology/newick-utils 1.6-r3: Tools for processing phylogenetic trees
 sci-biology/pals 1.0-r2: Pairwise Aligner for Long Sequences
 sci-biology/paml 4.10.7 4.10.10: Phylogenetic Analysis by Maximum Likelihood
@@ -16141,7 +16141,7 @@ sci-libs/cholmod 3.0.13 3.0.14-r1 4.0.3: Sparse Cholesky factorization and updat
 sci-libs/clashscore-db 3.17-r1: Clashscore-db for clashlist
 sci-libs/clblas 2.12-r2: Library containing BLAS routines for OpenCL
 sci-libs/clblast 1.5.2 1.5.2-r1: Tuned OpenCL BLAS
-sci-libs/cln 1.3.6 1.3.7: Class library (C++) for numbers
+sci-libs/cln 1.3.7: Class library (C++) for numbers
 sci-libs/cmpfit 1.4: MINPACK-1 Least Squares Fitting Library in C
 sci-libs/coinasl 2.0.1-r1 2.1.0: Ampl Solver Library (ASL)
 sci-libs/coinor-alps 1.5.7: COIN-OR Framework for implementing parallel graph search algorithms
@@ -16320,7 +16320,7 @@ sci-libs/stellarsolver 2.7: Cross-platform Sextractor and Astrometry.net-Based i
 sci-libs/suitesparse 5.4.0: Metapackage for a suite of sparse matrix tools
 sci-libs/suitesparseconfig 5.4.0 7.0.0: Common configurations for all packages in suitesparse
 sci-libs/sundials 5.8.0 6.2.0 6.5.0 7.0.0 7.1.1 7.3.0 7.5.0: Suite of nonlinear solvers
-sci-libs/superlu 4.3-r2 4.3-r4 5.3.0 7.0.1: Sparse LU factorization library
+sci-libs/superlu 4.3-r4 5.3.0 7.0.1: Sparse LU factorization library
 sci-libs/superlu_mt 3.1-r1: Multithreaded sparse LU factorization library
 sci-libs/symengine 0.14.0-r3: Fast symbolic manipulation library, written in C++
 sci-libs/symmetrica 3.1.0: C library for representation theory, combinatorics, and more
@@ -16344,7 +16344,7 @@ sci-mathematics/acl2 8.5_p20240307-r1 8.6: Industrial strength theorem prover, l
 sci-mathematics/alectryon 1.4.0-r2: Toolkit for literate programming in Coq
 sci-mathematics/alt-ergo 2.4.3-r3: Automatic theorem prover
 sci-mathematics/arb 2.23.0: C library for arbitrary-precision interval arithmetic
-sci-mathematics/bertini 1.4 1.6: Software for Numerical Algebraic Geometry
+sci-mathematics/bertini 1.6: Software for Numerical Algebraic Geometry
 sci-mathematics/btor2tools 1.0.0_pre20220518-r1: Generic parser and tools for the BTOR2 format
 sci-mathematics/cadabra 2.5.14_p1: Field-theory motivated approach to computer algebra
 sci-mathematics/cadical 1.9.5 2.0.0: Simplified Satisfiability Solver
@@ -16515,7 +16515,7 @@ sci-physics/heppdt 3.04.01-r2: Data about each particle from the Review of Parti
 sci-physics/herwig 6.5.21-r2: High Energy Physics Event Generator
 sci-physics/lammps 20230802 20230802-r1 20240829: Large-scale Atomic/Molecular Massively Parallel Simulator
 sci-physics/lhapdf 6.3.0-r2 6.5.4-r1 6.5.4-r2 6.5.5 6.5.5-r1 6.5.5-r2 9999: Les Houches Parton Density Function unified library
-sci-physics/looptools 2.15 2.15-r1 2.16: Tools for evaluation of scalar and tensor one-loop integrals
+sci-physics/looptools 2.15-r1 2.16: Tools for evaluation of scalar and tensor one-loop integrals
 sci-physics/pythia 8.3.16-r1 8.3.17 9999: Lund Monte Carlo high-energy physics event generator
 sci-physics/reduze 2.4-r1: Program for reducing Feynman integrals
 sci-physics/rivet 3.1.11-r1 4.1.2 9999: Robust Independent Validation of Experiment and Theory toolkit
@@ -17153,7 +17153,7 @@ sys-apps/fwts 22.03.00 23.11.00 24.03.00: Firmware Test Suite
 sys-apps/fwupd 1.9.24 2.0.1 2.0.3-r1 2.0.14 2.0.16 2.0.18: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-apps/fwupd-efi 1.6-r1 1.7 1.8: EFI executable for fwupd
 sys-apps/fxload 20081013-r1: USB firmware uploader
-sys-apps/gawk 5.3.2 5.3.66 5.3.67: GNU awk pattern-matching language
+sys-apps/gawk 5.3.2 5.4.0: GNU awk pattern-matching language
 sys-apps/gentoo-functions 0.19 1.7.4 1.7.5 1.7.6 9999: Base functions required by all Gentoo systems
 sys-apps/gentoo-systemd-integration 9-r2 9999: systemd integration files for Gentoo
 sys-apps/gentoo-wsl-config 0.1.14: WSL2 configuration for Gentoo Linux
@@ -17163,8 +17163,8 @@ sys-apps/gptfdisk 1.0.10-r1: GPT partition table manipulator for Linux
 sys-apps/gradm 3.1.201903191516: Administrative interface for the grsecurity Role Based Access Control system
 sys-apps/grep 3.11-r1 3.12: GNU regular expression matcher
 sys-apps/grepcidr 2.0: Filter IPv4 and IPv6 addresses matching CIDR patterns
-sys-apps/groff 1.22.4 1.23.0 1.23.0-r1: Text formatter used for man pages
-sys-apps/gsmartcontrol 1.1.4-r1 2.0.1: Hard Disk Drive and SSD Health Inspection Tool
+sys-apps/groff 1.23.0-r1: Text formatter used for man pages
+sys-apps/gsmartcontrol 2.0.1: Hard Disk Drive and SSD Health Inspection Tool
 sys-apps/haveged 1.9.15 1.9.17 1.9.18 1.9.19: A simple entropy daemon using the HAVEGE algorithm
 sys-apps/hd-idle 1.05-r2 1.05-r3 1.05-r4: Utility for spinning down hard disks after a period of idle time
 sys-apps/hdparm 9.65-r2: Utility to change hard drive performance parameters
@@ -17228,7 +17228,7 @@ sys-apps/mawk 1.3.4_p20250131 1.3.4_p20260129: An (often faster than gawk) awk-i
 sys-apps/mcstrans 3.6 3.7-r1 3.8.1 9999: SELinux context translation to human readable names
 sys-apps/memtest86+ 6.20-r1 7.00 7.20 8.00: Memory tester based on PCMemTest
 sys-apps/memtest86-bin 11.6: Stand alone memory testing software for x86 EFI hardware
-sys-apps/memtester 4.6.0 4.7.1: Userspace utility for testing the memory subsystem for faults
+sys-apps/memtester 4.7.1: Userspace utility for testing the memory subsystem for faults
 sys-apps/merge-usr 6 7: Script to migrate from split-usr to merged-usr
 sys-apps/miller 5.10.2: A tool like sed, awk, cut, join, and sort for name-indexed data (CSV, JSON, ..)
 sys-apps/minijail 18 2025.07.02: helper binary and library for sandboxing & restricting privs of service
@@ -17359,8 +17359,8 @@ sys-apps/util-linux 2.41.2 2.41.3 9999: Various useful Linux utilities
 sys-apps/uutils-coreutils 0.2.2-r1 0.3.0 0.4.0 0.5.0 0.6.0 9999: GNU coreutils rewritten in Rust
 sys-apps/uutils-findutils 0.8.0 9999: GNU findutils rewritten in Rust
 sys-apps/vbetool 1.2.2: Run real-mode video BIOS code to alter hw state (i.e. reinitialize video card)
-sys-apps/watchdog 5.16 5.16-r1: A software watchdog and /dev/watchdog daemon
-sys-apps/which 2.21 2.23: Prints out location of specified executables that are in your path
+sys-apps/watchdog 5.16-r1: A software watchdog and /dev/watchdog daemon
+sys-apps/which 2.23: Prints out location of specified executables that are in your path
 sys-apps/x86info 1.31: Dave Jones' handy, informative x86 CPU diagnostic utility
 sys-apps/xdg-dbus-proxy 0.1.6: Filtering proxy for D-Bus connections
 sys-apps/xdg-desktop-portal 1.18.4-r1 1.18.4-r2 1.20.0-r2 1.20.3: Desktop integration portal
@@ -17461,7 +17461,7 @@ sys-block/nbd 3.25-r1 9999: Userland client/server for kernel network block devi
 sys-block/nbdkit 1.44.3 1.46.0: NBD server with stable plugin ABI and permissive license
 sys-block/ndctl 71.1-r2 76.1 77-r2: Helper tools and libraries for managing non-volatile memory on Linux
 sys-block/open-iscsi 2.1.10-r1 2.1.11: A performant, transport independent, multi-platform implementation of RFC3720
-sys-block/open-isns 0.101 0.102 0.103: iSNS server and client for Linux
+sys-block/open-isns 0.103: iSNS server and client for Linux
 sys-block/parted 3.6-r2: Create, destroy, resize, check, copy partitions and file systems
 sys-block/partimage 0.6.9-r4: Console-based application to efficiently save raw partition data to image file
 sys-block/partitionmanager 25.08.3 25.12.2: Utility for management of disks, partitions and file systems
@@ -17606,7 +17606,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.4.1_p20260212 13.4.1_p20260219 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.3.1_p20260213 14.3.1_p20260220 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.2.1_p20260207 15.2.1_p20260214 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.1_p20260208-r1 16.0.1_p20260215 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.4.1_p20260212 13.4.1_p20260219 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.3.1_p20260213 14.3.1_p20260220 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.2.1_p20260207 15.2.1_p20260214 15.2.1_p20260221 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.1_p20260208-r1 16.0.1_p20260215 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -17707,7 +17707,7 @@ sys-fs/fragview 0.1.1-r1 0.1.2 9999: Disk fragmentation visualizer based on FIEM
 sys-fs/fscrypt 0.3.4 0.3.6: Tool for managing Linux filesystem encryption
 sys-fs/fswatch 1.18.0 1.18.3: cross-platform file change monitor with multiple backends
 sys-fs/fuse 2.9.9-r2 3.16.2 3.17.4 3.18.1: An interface for filesystems implemented in userspace
-sys-fs/fuse-common 3.10.4 3.10.4-r2: Common files for multiple slots of sys-fs/fuse
+sys-fs/fuse-common 3.10.4-r2: Common files for multiple slots of sys-fs/fuse
 sys-fs/fuse-convmvfs 0.2.6-r1: FUSE file system to convert filename charset
 sys-fs/fuse-exfat 1.4.0-r1: exFAT filesystem FUSE module
 sys-fs/fuse-overlayfs 1.14-r1 1.15 1.16: FUSE implementation for overlayfs
