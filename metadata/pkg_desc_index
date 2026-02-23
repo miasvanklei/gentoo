@@ -927,7 +927,7 @@ app-admin/aws-session-manager-plugin 1.2.764.0 1.2.779.0: AWS Session Manager Pl
 app-admin/awscli 1.44.7 1.44.11 1.44.15 1.44.20 1.44.24 1.44.29 1.44.34 1.44.39 1.44.40 1.44.41 1.44.42 1.44.43 1.44.44: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37 2.33.21: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
-app-admin/bitwarden-desktop-bin 2025.10.0 2025.12.0: Bitwarden password manager desktop client
+app-admin/bitwarden-desktop-bin 2025.12.0 2026.1.0: Bitwarden password manager desktop client
 app-admin/bpftune 0.4_p2: BPF driven auto-tuning
 app-admin/btrfs-assistant 2.2: GUI management tool to make managing a Btrfs filesystem easier
 app-admin/calamares 3.3.14-r1 3.3.14-r4 3.3.14-r7: Distribution-independent installer framework
@@ -5551,7 +5551,7 @@ dev-libs/libfastjson 1.2304.0-r1: Fork of the json-c library, which is optimized
 dev-libs/libffi 3.4.8-r3 3.5.1 3.5.2 9999: Portable, high level programming interface to various calling conventions
 dev-libs/libffi-compat 3.2.1-r3 3.3-r2: a portable, high level programming interface to various calling conventions
 dev-libs/libfido2 1.15.0-r1 1.16.0: Provides library functionality for FIDO 2.0
-dev-libs/libfilezilla 0.51.1 0.51.1-r1 0.52.0-r1 0.53.1 0.54.0: C++ library offering some basic functionality for platform-independent programs
+dev-libs/libfilezilla 0.51.1 0.51.1-r1 0.52.0-r1 0.53.1 0.54.0 0.54.1: C++ library offering some basic functionality for platform-independent programs
 dev-libs/libfmt 9.1.0-r1 9.1.0-r2 10.1.1-r1 10.2.1-r2 11.0.2 11.1.3 11.1.4 11.2.0-r1 12.0.0 12.1.0 9999: Small, safe and fast formatting library
 dev-libs/libfstrcmp 0.7-r3: Make fuzzy comparisons of strings and byte arrays
 dev-libs/libgamin 0.1.10-r7: Library providing the FAM File Alteration Monitor API
@@ -10895,7 +10895,7 @@ dev-util/devhelp 43.0: An API documentation browser for GNOME
 dev-util/dialog 1.3.20250116-r1 1.3.20250817: Tool to display dialog boxes from a shell
 dev-util/diff-cover 9.6.0: Find diff lines that do not have test coverage
 dev-util/diffball 1.0.1-r2: Delta compression suite for using/generating binary patches
-dev-util/diffoscope 309 312: Will try to get to the bottom of what makes files or directories different
+dev-util/diffoscope 309 312 313: Will try to get to the bottom of what makes files or directories different
 dev-util/diffstat 1.67 1.68: Display a histogram of diff changes
 dev-util/difftastic 0.63.0 0.64.0 0.67.0: A structural diff that understands syntax.
 dev-util/diffuse 0.9.0-r1 0.10.0: A graphical tool to compare and merge text files
@@ -11928,7 +11928,7 @@ games-strategy/freeorion 0.5.1.1: Free turn-based space empire and galactic conq
 games-strategy/galaxyhack 1.74-r2: Multiplayer AI script based strategy game
 games-strategy/homm2-demo 0: Data files for HoMM II Demo version
 games-strategy/homm2-gold-gog 1.1.2.1.33438: Data files for HoMM II Gold from gog.com
-games-strategy/ja2-stracciatella 0.22.1: An improved, cross-platform, stable Jagged Alliance 2 runtime
+games-strategy/ja2-stracciatella 0.22.1-r1: An improved, cross-platform, stable Jagged Alliance 2 runtime
 games-strategy/ja2-stracciatella-data 1-r1: A port of Jagged Alliance 2 to SDL (data files)
 games-strategy/julius 1.7.0: Feature-faithful open source re-implementation of Caesar III
 games-strategy/knights-demo 1.32-r4: Anglo-Saxon medieval army battles and resource management
@@ -13055,7 +13055,7 @@ media-gfx/exiv2 0.28.7: EXIF, IPTC and XMP metadata C++ library and command line
 media-gfx/farbfeld 4: Farbfeld simple image format tools
 media-gfx/fbgrab 1.5: Framebuffer screenshot utility
 media-gfx/fbida 2.14_p20241216-r1: Image viewers for the framebuffer console (fbi) and X11 (ida)
-media-gfx/feh 3.10.3 3.10.3-r1 3.11.2-r1: A fast, lightweight imageviewer using imlib2
+media-gfx/feh 3.10.3 3.10.3-r1 3.11.2-r1 3.11.3: A fast, lightweight imageviewer using imlib2
 media-gfx/fig2dev 3.2.9-r5 3.2.9a 9999: Set of tools for creating TeX documents with graphics
 media-gfx/flam3 3.1.1-r1: Tools and a library for creating flame fractal images
 media-gfx/flameshot 13.1.0-r1 13.3.0: Powerful yet simple to use screenshot software
@@ -14830,7 +14830,7 @@ net-fs/sshfs 3.7.3-r2 3.7.5: Fuse-filesystem utilizing the sftp service
 net-fs/wdfs 1.4.2-r4: WebDAV filesystem with special features for accessing subversion repositories
 net-ftp/atftp 0.8.0: Advanced TFTP implementation client/server
 net-ftp/cmdftp 0.9.8: Light weight, yet robust command line FTP client with shell-likefunctions
-net-ftp/filezilla 3.69.3 3.69.5: FTP client with lots of useful features and an intuitive interface
+net-ftp/filezilla 3.69.3 3.69.5 3.69.6: FTP client with lots of useful features and an intuitive interface
 net-ftp/frox 0.7.18-r9: Transparent ftp proxy
 net-ftp/ftp 0.17.34.0.2.5.1: Standard Linux FTP client
 net-ftp/ftpbase 0.01-r6: File Transfer Protocol (FTP) base layout
@@ -14878,7 +14878,7 @@ net-im/sendxmpp 1.24: A perl-script to send xmpp (jabber), similar to what mail(
 net-im/sendxmpp-scala 1.2.0 1.2.1 9999: Send XMPP (Jabber) messages via command line
 net-im/signal-cli-bin 0.13.9 0.13.19: Send and receive messages of Signal Messenger over a command line interface
 net-im/signal-desktop-bin 7.90.0: Allows you to send and receive messages of Signal Messenger on your computer
-net-im/slack 4.47.59 4.47.72: Team collaboration tool
+net-im/slack 4.47.59 4.47.72 4.48.95: Team collaboration tool
 net-im/spectrum2 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
 net-im/synapse 1.141.0-r1 1.142.1-r1 1.143.0-r1 1.144.0-r1 1.145.0 1.146.0: Reference implementation of Matrix homeserver
@@ -15078,7 +15078,7 @@ net-libs/net6 1.3.14-r2: Network access framework for IPv4/IPv6 written in C++
 net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP protocols
 net-libs/nghttp2 1.65.0-r2 1.66.0 1.67.1 1.68.0 9999: HTTP/2 C Library
 net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 1.14.0 1.15.0 9999: HTTP/3 library written in C
-net-libs/ngtcp2 1.12.0 1.20.0 9999: Implementation of the IETF QUIC Protocol
+net-libs/ngtcp2 1.12.0 1.20.0 1.20.0-r1 9999: Implementation of the IETF QUIC Protocol
 net-libs/nodejs 20.18.2 20.19.2 20.19.5 20.19.6 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1 24.11.1-r1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
@@ -15246,7 +15246,7 @@ net-misc/connman-json-client 1.0_p20150721-r3: An ncurses UI for connman
 net-misc/connman-notify 0_pre20191003-r3: Desktop notification integration for connman
 net-misc/connman-ui 0_p20150622-r1: A full-featured GTK based trayicon UI for ConnMan
 net-misc/croc 10.2.4 10.2.5 10.2.7: Easily and securely send things from one computer to another
-net-misc/curl 8.15.0 8.16.0-r1 8.17.0 8.17.0-r1 8.18.0 9999: A Client that groks URLs
+net-misc/curl 8.15.0 8.16.0-r1 8.17.0 8.17.0-r1 8.18.0 8.19.0_rc2 9999: A Client that groks URLs
 net-misc/datapipe 1.0-r2: Bind a local port and connect it to a remote socket
 net-misc/dcetest 2.0: dcetest is a clone of the Windows rpcinfo
 net-misc/dhcdrop 0.5-r1 0.5-r2: Effectively suppresses illegal DHCP servers on the LAN
@@ -17143,7 +17143,7 @@ sys-apps/fakechroot 2.20.1_p2: Provide a faked chroot environment without requir
 sys-apps/fakeroot 1.32.2 1.33: A fake root environment by means of LD_PRELOAD and SysV IPC (or TCP) trickery
 sys-apps/fbset 2.1: A utility to set the framebuffer videomode
 sys-apps/fd 10.3.0: Alternative to find that provides sensible defaults for 80% of the use cases
-sys-apps/file 5.45-r4 5.46-r2 5.46-r3 9999: Identify a file's format by scanning binary data for patterns
+sys-apps/file 5.46-r3 9999: Identify a file's format by scanning binary data for patterns
 sys-apps/findutils 4.10.0: GNU utilities for finding files
 sys-apps/firejail 0.9.72 0.9.74 0.9.76: Security sandbox for any type of processes
 sys-apps/fix-gnustack 0.1-r1: Utility to report and remove the executable flag from an ELF object's GNU_STACK
@@ -17339,7 +17339,7 @@ sys-apps/texinfo 7.2-r3 7.2-r4 7.2.92 9999: The GNU info program and utilities
 sys-apps/the_silver_searcher 2.2.0_p20201217-r4: A code-searching tool similar to ack, but faster
 sys-apps/tomoyo-tools 2.5.0_p20130214-r1: TOMOYO Linux tools
 sys-apps/toybox 0.8.12 0.8.13 9999: Common linux commands in a multicall binary
-sys-apps/tuned 2.25.1-r1 2.26.0-r1: Daemon for monitoring and adaptive tuning of system devices
+sys-apps/tuned 2.25.1-r1 2.26.0-r1 2.27.0: Daemon for monitoring and adaptive tuning of system devices
 sys-apps/uam 0.3.2-r2: Simple udev-based automounter for removable USB media
 sys-apps/ucspi-proxy 1.1-r1: Proxy program for two connections set up by a UCSPI server and a UCSPI client
 sys-apps/ucspi-tcp 0.88-r20: Collection of tools for managing UNIX services
@@ -17855,7 +17855,7 @@ sys-libs/libosinfo 1.11.0-r1 1.12.0-r1: GObject library for managing information
 sys-libs/libraw1394 2.1.2-r1: Library that provides direct access to the IEEE 1394 bus
 sys-libs/librtas 2.0.3 2.0.6: A set of libraries for userspace access to RTAS on the PowerPC platform(s)
 sys-libs/libseccomp 2.6.0-r3 9999: High level interface to Linux seccomp filter
-sys-libs/libselinux 3.8.1-r2 9999: SELinux userland library
+sys-libs/libselinux 3.8.1-r2 3.8.1-r3 9999: SELinux userland library
 sys-libs/libsemanage 3.8.1 9999: SELinux kernel and policy management library
 sys-libs/libsepol 3.8.1 9999: SELinux binary policy representation library
 sys-libs/libservicelog 1.1.19: Provides a library for logging service-related events
@@ -17927,7 +17927,7 @@ sys-power/sandmann-bin 1.3.1 1.4.1-r1: An autosuspend and wakeup daemon
 sys-power/sispmctl 4.12: GEMBIRD SiS-PM control utility
 sys-power/suspend 1.0_p20200924: Userspace Software Suspend and S2Ram
 sys-power/switcheroo-control 2.6-r2 3.0: D-Bus service to check the availability of dual-GPU
-sys-power/thermald 2.5.9 2.5.10: Thermal daemon for Intel architectures
+sys-power/thermald 2.5.9 2.5.10 2.5.11: Thermal daemon for Intel architectures
 sys-power/throttled 0.10.0 0.11: Daemon to work around throttling issues on some Intel laptops
 sys-power/tlp 1.8.0-r1 1.9.1: Optimize laptop battery life
 sys-power/uhubctl 2.5.0: USB hub per-port power control
