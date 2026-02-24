@@ -1888,6 +1888,7 @@ app-emacs/a68-mode 1.2_p20250524: Algol68 major mode for GNU Emacs
 app-emacs/ace-window 0.10.0: Quickly switch windows in Emacs
 app-emacs/actionscript-mode 7.2.2_p20180527-r1: A major mode for GNU Emacs for editing Actionscript 3 files
 app-emacs/adaptive-wrap 0.8: Smart line-wrapping with wrap-prefix
+app-emacs/agitjo 1.0.0: Manage Forgejo PRs with AGit-Flow in Emacs
 app-emacs/all-the-icons 5.0.0_p20230316: Various icon fonts propertized for Emacs
 app-emacs/all-the-icons-dired 2.0: Display all-the-icons icon for each file in Emacs' dired buffer
 app-emacs/all-the-icons-ibuffer 1.3.0: Display all-the-icons icons for all buffers in Emacs' ibuffer
@@ -3923,7 +3924,7 @@ dev-cpp/highway 1.2.0 1.3.0 9999: Performance-portable, length-agnostic SIMD wit
 dev-cpp/htmlcxx 0.87: A simple non-validating CSS 1 and HTML parser for C++
 dev-cpp/json11 1.0.0-r1: A tiny JSON library for C++11
 dev-cpp/jsoncons 1.4.3 1.5.0: C++ header-only library for JSON and JSON-like data formats
-dev-cpp/jwt-cpp 0.6.0 0.7.1: header only library for creating and validating JSON Web Tokens in C++11
+dev-cpp/jwt-cpp 0.6.0 0.7.1 0.7.2: header only library for creating and validating JSON Web Tokens in C++11
 dev-cpp/kokkos 4.0.1-r1 4.3.1-r1 4.6.2-r1 4.6.2-r2 9999: C++ Performance Portability Programming EcoSystem
 dev-cpp/libcmis 0.6.2-r2 9999: C++ client library for the CMIS interface
 dev-cpp/libjson-rpc-cpp 1.4.0 1.4.0-r1: JSON-RPC (1.0 & 2.0) framework for C++
@@ -3951,7 +3952,7 @@ dev-cpp/range-v3 0.12.0 0.12.0-r1: Range library for C++14/17/20, basis for C++2
 dev-cpp/rapidfuzz-cpp 3.3.3: Rapid fuzzy string matching in C++
 dev-cpp/rapidyaml 0.9.0 0.10.0: Library to parse and emit YAML, and do it fast
 dev-cpp/robin-map 1.3.0 1.4.0-r1 9999: C++ fast hash map and hash set using robin hood hashing
-dev-cpp/scitokens-cpp 1.1.0-r1 1.1.1 1.1.2 1.1.3 1.2.0 1.3.0: C++ implementation of the SciTokens library with a C library interface
+dev-cpp/scitokens-cpp 1.1.0-r1 1.1.1 1.1.2 1.1.3 1.2.0 1.3.0 1.4.0: C++ implementation of the SciTokens library with a C library interface
 dev-cpp/sdbus-c++ 2.1.0: High-level C++ D-Bus library
 dev-cpp/simdutf 7.3.4 7.7.0 7.7.1: Unicode validation and transcoding at billions of characters per second
 dev-cpp/simpleini 4.22-r1 4.25: C++ library providing a simple API to read and write INI-style files
@@ -12974,7 +12975,7 @@ media-fonts/smiley-sans 1.1.1 2.0.1: Deyi Hei Smiley Sans: an open-source italic
 media-fonts/solarize 0_pre20140818: Large Linux console font (suitable for word processing)
 media-fonts/sophia-nubian 1.0: Unicode sans-serif typeface for Coptic/Nubian languages
 media-fonts/source-code-pro 2.042-r1: Monospaced font family for user interface and coding environments
-media-fonts/source-han-sans 2.004-r1: Pan-CJK OpenType/CFF font family
+media-fonts/source-han-sans 2.004-r1 2.005: Pan-CJK OpenType/CFF font family
 media-fonts/source-sans 3.052-r1: Sans serif font family for user interface environments
 media-fonts/source-serif 4.005-r1: Serif font family for user interface environments
 media-fonts/spleen 2.1.0: Monospaced bitmap fonts for consoles and terminals
@@ -14266,7 +14267,7 @@ media-sound/tk707 0.8-r2: An 7x7 type midi drum sequencer for Linux
 media-sound/toolame 02l-r4: tooLAME - an optimized mpeg 1/2 layer 2 audio encoder
 media-sound/ttaenc 3.4.1-r1: True Audio Compressor Software
 media-sound/tudor-volumed 0_pre20110427: Lightweight, desktop environment agnostic volume management daemon
-media-sound/twolame 0.4.0 0.4.0-r1: An optimised MPEG Audio Layer 2 (MP2) encoder
+media-sound/twolame 0.4.0-r1: An optimised MPEG Audio Layer 2 (MP2) encoder
 media-sound/upmpdcli 1.9.6 1.9.12: UPnP Media Renderer front-end for MPD, the Music Player Daemon
 media-sound/vb2rip 1.4: Konami VB2 sound format ripping utility
 media-sound/vbrfixc 0.24-r1: Vbrfix fixes MP3s and re-constructs VBR headers
@@ -16511,7 +16512,7 @@ sci-physics/fastjet 3.4.3 3.5.1 3.5.1-r2 9999: A software package for jet findin
 sci-physics/fastjet-contrib 1.053 1.055 1.100-r1 1.101-r1 1.101-r2 9999: 3rd party extensions of FastJet.
 sci-physics/geant 4.11.3.2-r2 4.11.4.0: Toolkit for simulation of passage of particles through matter
 sci-physics/geant-data 4.11.3 4.11.4: Data files for Geant4 physical processes
-sci-physics/geant4_vmc 6.6_p1 6.7 6.7_p1 9999: Virtual Monte Carlo Geant4 implementation
+sci-physics/geant4_vmc 6.6_p1 6.7 6.7_p1 6.8 9999: Virtual Monte Carlo Geant4 implementation
 sci-physics/hepmc 2.06.11 2.06.11-r1 3.2.7 3.3.1 9999: Event Record for Monte Carlo Generators
 sci-physics/heppdt 3.04.01-r2: Data about each particle from the Review of Particle Properties
 sci-physics/herwig 6.5.21-r2: High Energy Physics Event Generator
@@ -17741,7 +17742,7 @@ sys-fs/lsscsi 0.32-r1: SCSI sysfs query tool
 sys-fs/lufis 0.3-r1: Wrapper to use lufs modules with fuse kernel support
 sys-fs/lufs 0.9.7-r4: User-mode filesystem implementation
 sys-fs/lvm2 2.03.22-r7 2.03.37 2.03.38 9999: User-land utilities for LVM2 (device-mapper) software
-sys-fs/lxcfs 5.0.4-r2 6.0.4 6.0.5: FUSE filesystem for LXC
+sys-fs/lxcfs 5.0.4-r2 6.0.4 6.0.5 6.0.6: FUSE filesystem for LXC
 sys-fs/mac-fdisk 0.1_p18 0.1_p18-r1: Mac/PowerMac disk partitioning utility
 sys-fs/mdadm 4.4 4.5: Tool for running RAID systems - replacement for the raidtools
 sys-fs/mergerfs 2.40.2 2.41.1: A featureful union filesystem
