@@ -3,15 +3,14 @@
 
 EAPI=8
 
-FIREFOX_PATCHSET="firefox-140esr-patches-07t.tar.xz"
-FIREFOX_LOONG_PATCHSET="firefox-139-loong-patches-02.tar.xz"
+FIREFOX_PATCHSET="firefox-148-patches-01t.tar.xz"
 
-LLVM_COMPAT=( 19 20 21 )
+LLVM_COMPAT=( 20 21 )
 
 PYTHON_COMPAT=( python3_{11..14} )
 PYTHON_REQ_USE="ncurses,sqlite,ssl"
 
-RUST_MIN_VER="1.82.0"
+RUST_MIN_VER="1.87.0"
 RUST_NEEDS_LLVM=1
 
 WANT_AUTOCONF="2.1"
@@ -19,7 +18,7 @@ WANT_AUTOCONF="2.1"
 VIRTUALX_REQUIRED="manual"
 
 # Thunderbird will have separate release and esr channels, matching Firefox's rapid and esr.
-MOZ_ESR=yes
+MOZ_ESR=
 
 MOZ_PV=${PV}
 MOZ_PV_SUFFIX=
@@ -59,10 +58,7 @@ PATCH_URIS=(
 )
 
 SRC_URI="${MOZ_SRC_BASE_URI}/source/${MOZ_P}.source.tar.xz -> ${MOZ_P_DISTFILES}.source.tar.xz
-	${PATCH_URIS[@]}
-	loong? (
-		https://dev.gentoo.org/~xen0n/distfiles/www-client/${MOZ_PN}/${FIREFOX_LOONG_PATCHSET}
-	)"
+	${PATCH_URIS[@]}"
 S="${WORKDIR}/${PN}-${PV%_*}"
 
 if [[ -n ${MOZ_ESR} ]] ; then
@@ -72,16 +68,18 @@ else
 fi
 
 LICENSE="MPL-2.0 GPL-2 LGPL-2.1"
-KEYWORDS="~amd64 arm64 ~loong ~ppc64 ~x86"
+KEYWORDS="~amd64 ~arm64 ~loong ~ppc64 ~x86"
 
-IUSE="+clang debug eme-free hardened hwaccel jack libproxy pgo pulseaudio selinux sndio"
+IUSE="+clang debug eme-free hardened hwaccel jack libproxy pgo pulseaudio sndio selinux"
 IUSE+=" +system-av1 +system-harfbuzz +system-icu +system-jpeg +system-libevent +system-libvpx"
 IUSE+=" system-pipewire system-png +system-webp wayland wifi +X"
 
 # Thunderbird-only USE flags.
 IUSE+=" +system-librnp"
 
+# "-system-librnp" requires clang, bmo#2006910
 REQUIRED_USE="|| ( X wayland )
+	!system-librnp? ( clang )
 	debug? ( !system-av1 )"
 
 TB_ONLY_DEPEND="selinux? ( sec-policy/selinux-thunderbird )
@@ -99,7 +97,7 @@ BDEPEND="${PYTHON_DEPS}
 	app-alternatives/awk
 	app-arch/unzip
 	app-arch/zip
-	>=dev-util/cbindgen-0.27.0
+	>=dev-util/cbindgen-0.29.1
 	net-libs/nodejs
 	virtual/pkgconfig
 	amd64? ( >=dev-lang/nasm-2.14 )
@@ -119,8 +117,8 @@ COMMON_DEPEND="${TB_ONLY_DEPEND}
 	>=app-accessibility/at-spi2-core-2.46.0:2
 	dev-libs/glib:2
 	dev-libs/libffi:=
-	>=dev-libs/nss-3.112.3
-	>=dev-libs/nspr-4.36
+	>=dev-libs/nss-3.120.1
+	>=dev-libs/nspr-4.38
 	media-libs/alsa-lib
 	media-libs/fontconfig
 	media-libs/freetype
@@ -152,11 +150,11 @@ COMMON_DEPEND="${TB_ONLY_DEPEND}
 		>=media-gfx/graphite2-1.3.13
 		>=media-libs/harfbuzz-2.8.1:0=
 	)
-	system-icu? ( >=dev-libs/icu-76.1:= )
+	system-icu? ( >=dev-libs/icu-78.1:= )
 	system-jpeg? ( >=media-libs/libjpeg-turbo-1.2.1:= )
 	system-libevent? ( >=dev-libs/libevent-2.1.12:0=[threads(+)] )
 	system-libvpx? ( >=media-libs/libvpx-1.8.2:0=[postproc] )
-	system-pipewire? ( >=media-video/pipewire-1.4.7-r2:= )
+	system-pipewire? ( media-video/pipewire:= )
 	system-png? ( >=media-libs/libpng-1.6.45:0=[apng] )
 	system-webp? ( >=media-libs/libwebp-1.1.0:0= )
 	wayland? (
@@ -508,18 +506,16 @@ src_prepare() {
 		rm -v "${WORKDIR}"/firefox-patches/*-LTO-Only-enable-LTO-*.patch || die
 	fi
 
-	# Workaround for bgo#915651 on musl
+	# Workaround for bgo#915651 and bmo#1988166 on musl
 	if use elibc_glibc ; then
 		rm -v "${WORKDIR}"/firefox-patches/*bgo-748849-RUST_TARGET_override.patch || die
+		rm -v "${WORKDIR}"/firefox-patches/*bmo-1988166-musl-remove-nonexisting-system-header-req.patch || die
 	fi
+
+	# Enable jpeg-xl only in Firefox.
+	rm -v "${WORKDIR}"/firefox-patches/*bgo-928126-enable-jxl.patch || die
 
 	eapply "${WORKDIR}/firefox-patches"
-	use loong && eapply "${WORKDIR}/firefox-loong-patches"
-
-	# ICU's subslot change should trigger rebuild on Firefox if it is updated 77->78.
-	if use system-icu && has_version ">=dev-libs/icu-78.1" ; then
-		eapply "${FILESDIR}/firefox-146.0.1-icu78.patch" # bgo#967261
-	fi
 
 	# Allow user to apply any additional patches without modifing ebuild
 	eapply_user
@@ -726,7 +722,7 @@ src_configure() {
 	# amd64, arm, arm64 & x86.
 	# Might want to flip the logic around if Firefox is to support more arches.
 	# bug 833001, bug 903411#c8
-	if use loong || use ppc64 || use riscv ; then
+	if use loong || use ppc64 || use riscv; then
 		mozconfig_add_options_ac '' --disable-sandbox
 	else
 		mozconfig_add_options_ac '' --enable-sandbox
@@ -800,6 +796,7 @@ src_configure() {
 
 	if use hardened ; then
 		mozconfig_add_options_ac "+hardened" --enable-hardening
+		# mozconfig_add_options_ac "+hardened stl" --enable-stl-hardening # not available in TB
 		append-ldflags "-Wl,-z,relro -Wl,-z,now"
 
 		# Increase the FORTIFY_SOURCE value, #910071.
