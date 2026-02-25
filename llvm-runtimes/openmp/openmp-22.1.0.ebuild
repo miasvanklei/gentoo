@@ -66,14 +66,16 @@ multilib_src_configure() {
 		-DLIBOMP_OMPD_GDB_SUPPORT=$(multilib_native_usex gdb-plugin)
 		-DLIBOMP_OMPT_SUPPORT=$(usex ompt)
 
-		-DLIBOMP_FORTRAN_MODULES_COMPILER="${CHOST}-flang"
-		-DLIBOMP_FORTRAN_MODULES=$(usex fortran)
-		-DLIBOMP_MODULES_INSTALL_PATH="${EPREFIX}/usr/lib/llvm/${LLVM_MAJOR}/include/flang"
-
 		# do not install libgomp.so & libiomp5.so aliases
 		-DLIBOMP_INSTALL_ALIASES=OFF
 		# disable unnecessary hack copying stuff back to srcdir
 		-DLIBOMP_COPY_EXPORTS=OFF
+	)
+
+	use fortran && mycmakerargs+=(
+		-DLIBOMP_FORTRAN_MODULES_COMPILER="${CHOST}-flang"
+		-DLIBOMP_MODULES_INSTALL_PATH="${EPREFIX}/usr/lib/llvm/${LLVM_MAJOR}/include/flang"
+		-DLIBOMP_FORTRAN_MODULES=ON
 	)
 
 	use test && mycmakeargs+=(
