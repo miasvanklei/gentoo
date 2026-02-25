@@ -1868,7 +1868,7 @@ app-editors/tea 62.4.0-r1: Small, lightweight Qt text editor
 app-editors/teco 36_p19940820-r1: Classic TECO editor, Predecessor to EMACS
 app-editors/ted 2.23-r3: X-based rich text editor
 app-editors/texworks 0.6.10: Simple interface for working with TeX documents
-app-editors/uemacs-pk 4.0.15_p20180719 4.0.15_p20260224: uEmacs/PK is an enhanced version of MicroEMACS
+app-editors/uemacs-pk 4.0.15_p20180719-r1 4.0.15_p20260224: uEmacs/PK is an enhanced version of MicroEMACS
 app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clone
 app-editors/vim 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9.1.1652-r3 9999: vim and gvim shared files
@@ -3978,7 +3978,7 @@ dev-db/apgdiff 2.7.0-r1: A simple PostgreSQL diff tool that is useful for schema
 dev-db/barman 3.15.0 3.16.1: Administration tool for disaster recovery of PostgreSQL servers
 dev-db/bucardo 5.4.1: An asynchronous PostgreSQL replication system
 dev-db/cdb 0.75-r4 0.75-r5: Fast, reliable, simple package for creating and reading constant databases
-dev-db/citus 12.1.9 12.1.10 13.0.4 13.0.5 13.1.0 13.1.1 13.2.0 9999: Open-source postgresql extension for clustering/multi-node setups
+dev-db/citus 12.1.10 13.0.5 13.1.1 13.2.0 14.0.0 9999: Open-source postgresql extension for clustering/multi-node setups
 dev-db/cockroach 2.1.5-r1 19.1.1-r1: open source database for building cloud services
 dev-db/datadraw 3.1.1 3.1.1-r1: feature rich database generator for high performance C applications
 dev-db/dbeaver-bin 25.3.4 25.3.5: Free universal database tool (community edition)
@@ -4007,7 +4007,7 @@ dev-db/mariadb-connector-c 3.3.8 3.3.15 3.3.17 3.4.5-r1 3.4.7 9999: C client lib
 dev-db/mariadb-connector-odbc 3.1.18 3.2.7-r1 3.2.8: MariaDB Connector/ODBC
 dev-db/mongodb 5.0.30 5.0.31 5.0.32 6.0.22 6.0.25 6.0.27 7.0.18 7.0.23 7.0.28 8.0.8 8.0.12: A high-performance, open source, schema-free document-oriented database
 dev-db/mongodb-compass-bin 1.49.0 1.49.1: GUI for MongoDB
-dev-db/mycli 1.44.0 1.55.0 1.56.0: CLI for MySQL Database with auto-completion and syntax highlighting
+dev-db/mycli 1.44.0 1.55.0 1.56.0 1.57.0: CLI for MySQL Database with auto-completion and syntax highlighting
 dev-db/mydumper 0.20.1.2 0.21.2.2 0.21.3.1: A high-performance multi-threaded backup (and restore) toolset for MySQL
 dev-db/myodbc 8.0.32: ODBC driver for MySQL
 dev-db/mysql 8.0.43 8.0.44 8.0.45 8.4.7 8.4.8: Fast, multi-threaded, multi-user SQL database server
@@ -4066,7 +4066,7 @@ dev-db/sqlitebrowser 3.13.1_p20250502-r2 9999: Light GUI editor for SQLite datab
 dev-db/sqlitestudio 4.0.0_pre20251207: Powerful cross-platform SQLite database manager
 dev-db/sqlmap 1.9.10 1.9.12 1.10 9999: An automatic SQL injection and database takeover tool
 dev-db/textsearch_ja 9.0.0: Integrated Full-Text-Search for Japanese language using morphological analyze
-dev-db/timescaledb 2.21.4 2.22.1 2.23.1 2.24.0: Open-source time-series SQL database
+dev-db/timescaledb 2.23.1 2.24.0 2.25.1: Open-source time-series SQL database
 dev-db/tinycdb 0.81: A very fast and simple package for creating and reading constant data bases
 dev-db/tokyocabinet 1.4.48-r3: A library of routines for managing a database
 dev-db/unixODBC 2.3.12-r1 2.3.12-r2 2.3.14: Complete ODBC driver manager
@@ -5203,7 +5203,7 @@ dev-lang/cue 0.14.1: open-source data validation language and inference engine
 dev-lang/cxprolog 0.98.2-r3: A WAM based Prolog system
 dev-lang/dafny 4.10.0 4.11.0: Dafny is a verification-aware programming language
 dev-lang/dafny-bin 4.10.0-r1 4.11.0-r1: Verification-aware programming language
-dev-lang/deno-bin 2.6.6 2.6.10: Modern runtime for JavaScript and TypeScript
+dev-lang/deno-bin 2.6.10 2.7.1: Modern runtime for JavaScript and TypeScript
 dev-lang/duktape 2.7.0-r3: Embeddable Javascript engine
 dev-lang/dzaima-bqn 0.2.1 0.2.2 9999: A BQN language implementation written in Java, also know as dbqn
 dev-lang/eisl 5.62: Interpreter and compiler compatible with the ISLisp standard
@@ -5492,7 +5492,7 @@ dev-libs/kpublictransport 25.12.1-r1 25.12.2: Library for accessing public trans
 dev-libs/ktextaddons 1.8.0: Various text handling addons
 dev-libs/kweathercore 25.08.3 25.12.2: Library for retrieval of weather information including forecasts and alerts
 dev-libs/lager 0.1.1-r1 0.1.2: Library to assist value-oriented design
-dev-libs/leancrypto 1.6.0-r2 9999: Lean cryptographic library usable for bare-metal environments
+dev-libs/leancrypto 1.6.0-r3 9999: Lean cryptographic library usable for bare-metal environments
 dev-libs/level-zero 1.26.3 1.28.2: oneAPI Level Zero headers, loader and validation layer
 dev-libs/leveldb 1.23-r6: A fast key-value storage library written at Google
 dev-libs/libIDL 0.8.14-r4: CORBA tree builder
@@ -6086,7 +6086,7 @@ dev-ml/lablgtk-sourceview 3.1.5: OCaml bindings to GTK-3
 dev-ml/labltk 8.06.12-r2 8.06.15-r1: OCaml interface to the Tcl/Tk GUI framework
 dev-ml/lambda-term 3.1.0 3.3.1-r1 3.3.2: Terminal manipulation library for OCaml
 dev-ml/libvirt-ocaml 0.6.1.7: OCaml language binding for libvirt native C API
-dev-ml/llvm 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: OCaml bindings for LLVM
+dev-ml/llvm 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: OCaml bindings for LLVM
 dev-ml/logs 0.7.0-r1 0.8.0 0.9.0 0.10.0: Logging infrastructure for OCaml
 dev-ml/luv 0.5.11-r2 0.5.14-r1: Binding to libuv: cross-platform asynchronous I/O
 dev-ml/lwt 5.7.0 5.9.0 5.9.1-r1 5.9.2: Cooperative light-weight thread library for OCaml
@@ -8275,7 +8275,7 @@ dev-python/cheroot 11.0.0 11.1.1 11.1.2: High-performance, pure-Python HTTP serv
 dev-python/cherrypy 18.10.0: CherryPy is a pythonic, object-oriented HTTP framework
 dev-python/chump 1.6.0-r2: API wrapper for Pushover
 dev-python/cjkwrap 2.2-r2: A library for wrapping and filling UTF-8 CJK text
-dev-python/clang 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Python bindings for llvm-core/clang
+dev-python/clang 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Python bindings for llvm-core/clang
 dev-python/cleo 2.1.0: Python tool for building testable command-line interfaces
 dev-python/cli-helpers 2.7.0 2.8.1 2.9.0 2.10.0 2.10.1 9999: Python helpers for common CLI tasks
 dev-python/cli-ui 0.19.0: Python library for better command line interfaces
@@ -8755,7 +8755,7 @@ dev-python/line-profiler 5.0.0 5.0.2: Line-by-line profiler
 dev-python/linkify-it-py 2.0.3: Links recognition library with full unicode support
 dev-python/linode-metadata 0.3.3: Python bindings for the Linode Metadata Service
 dev-python/linuxdoc 20240924 99999999: Sphinx-doc extensions for sophisticated C developer
-dev-python/lit 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: A stand-alone install of the LLVM suite testing tool
+dev-python/lit 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: A stand-alone install of the LLVM suite testing tool
 dev-python/littleutils 0.2.4: Small personal collection of Python utility functions
 dev-python/livereload 2.7.1: livereload server in Python
 dev-python/llfuse 1.5.1 1.5.2: Python bindings for the low-level FUSE API
@@ -10668,7 +10668,7 @@ dev-tcltk/tablelist 6.15.1: Multi-Column Listbox Package
 dev-tcltk/tcl3d 0.9.5-r1: Tcl bindings to OpenGL and other 3D libraries
 dev-tcltk/tcllib 1.20 1.21 2.0: Tcl Standard Library
 dev-tcltk/tclpython 5.0-r3: Python package for Tcl
-dev-tcltk/tclreadline 2.1.0-r5 2.3.8-r2 2.4.0: Readline extension to TCL
+dev-tcltk/tclreadline 2.1.0-r5 2.3.8-r2 2.4.0 2.4.1: Readline extension to TCL
 dev-tcltk/tclx 8.6.1 8.6.3: A set of extensions to TCL
 dev-tcltk/tclxml 3.3.1-r3: Pure Tcl implementation of an XML parser
 dev-tcltk/tdom 0.9.3 0.9.5: A XML/DOM/XPath/XSLT Implementation for Tcl
@@ -10942,7 +10942,7 @@ dev-util/gitlab-runner 18.6.6 18.7.2 18.8.0: The official GitLab Runner, written
 dev-util/glade 3.40.0-r3: A user interface designer for GTK+ and GNOME
 dev-util/glib-utils 2.82.5 2.84.4 2.86.4: Build utilities for GLib using projects
 dev-util/global 6.6.14: Tag system to find an object location in various sources
-dev-util/glslang 1.4.321.0 1.4.328.0-r1 1.4.335.0 9999: Khronos reference front-end for GLSL and ESSL, and sample SPIR-V generator
+dev-util/glslang 1.4.321.0 1.4.328.0-r1 1.4.335.0 1.4.341.0 9999: Khronos reference front-end for GLSL and ESSL, and sample SPIR-V generator
 dev-util/gnome-builder 48.2-r1: An IDE for writing GNOME-based software
 dev-util/gnome-devel-docs 40.3: Documentation for developing for the GNOME desktop environment
 dev-util/gob 2.0.20-r1: Preprocessor for making GTK+ objects with inline C code
@@ -11113,9 +11113,9 @@ dev-util/shunit2 2.1.8: Unit-test framework for Bourne-based shell scripts
 dev-util/smem 1.5-r3: A tool that can give numerous reports on memory usage on Linux systems
 dev-util/snakeviz 2.2.0 2.2.2: A web-based viewer for Python profiler output
 dev-util/source-highlight 3.1.9-r2: Generate highlighted source code as an (x)html document
-dev-util/spirv-headers 1.4.321.0 1.4.328.0 1.4.335.0 9999: Machine-readable files for the SPIR-V Registry
-dev-util/spirv-llvm-translator 16.0.18 16.0.19 16.0.21 17.0.18 17.0.19 17.0.20 18.1.18 18.1.19 18.1.20 19.1.13 19.1.14 19.1.15 20.1.8 20.1.9 20.1.10 21.1.3 21.1.4 22.0.0_pre20251123 22.0.0_pre20260112 23.0.0_pre20260223: Bi-directional translator between SPIR-V and LLVM IR
-dev-util/spirv-tools 1.4.321.0 1.4.328.0 1.4.335.0 9999: Provides an API and commands for processing SPIR-V modules
+dev-util/spirv-headers 1.4.321.0 1.4.328.0 1.4.335.0 1.4.341.0 9999: Machine-readable files for the SPIR-V Registry
+dev-util/spirv-llvm-translator 16.0.18 16.0.19 16.0.21 17.0.18 17.0.19 17.0.20 18.1.18 18.1.19 18.1.20 19.1.13 19.1.14 19.1.15 20.1.8 20.1.9 20.1.10 21.1.3 21.1.4 22.0.0_pre20260112 23.0.0_pre20260223: Bi-directional translator between SPIR-V and LLVM IR
+dev-util/spirv-tools 1.4.321.0 1.4.328.0 1.4.335.0 1.4.341.0 9999: Provides an API and commands for processing SPIR-V modules
 dev-util/splint 3.1.2-r3: Check C programs for vulnerabilities and programming mistakes
 dev-util/squashdelta 0.1.2: Efficient (partially uncompressed) SquashFS binary delta tool
 dev-util/squashmerge 0.1: dev-util/squashdelta delta merge tool
@@ -11148,9 +11148,9 @@ dev-util/visual-regexp 3.1: Type the regexp and visualize it on a sample of your
 dev-util/visualvm 2.2-r2: Integrates commandline JDK tools and profiling capabilities
 dev-util/vmtouch 1.3.1: Virtual Memory Toucher, portable file system cache diagnostics and control
 dev-util/vtable-dumper 1.2-r1: A tool to list content of virtual tables in a shared library
-dev-util/vulkan-headers 1.4.321.0-r1 1.4.328.0 1.4.335.0 9999: Vulkan Header files and API registry
-dev-util/vulkan-tools 1.4.321.0-r1 1.4.328.0 1.4.335.0 9999: Official Vulkan Tools and Utilities for Windows, Linux, Android, and MacOS
-dev-util/vulkan-utility-libraries 1.4.321.0 1.4.328.0 1.4.335.0 9999: Share code across various Vulkan repositories
+dev-util/vulkan-headers 1.4.321.0-r1 1.4.328.0 1.4.335.0 1.4.341.0 9999: Vulkan Header files and API registry
+dev-util/vulkan-tools 1.4.321.0-r1 1.4.328.0 1.4.335.0 1.4.341.0 9999: Official Vulkan Tools and Utilities for Windows, Linux, Android, and MacOS
+dev-util/vulkan-utility-libraries 1.4.321.0 1.4.328.0 1.4.335.0 1.4.341.0 9999: Share code across various Vulkan repositories
 dev-util/wachy 0.1.0_alpha6-r2: A dynamic tracing profiler for Linux
 dev-util/wasm3 0.5.0: A fast WebAssembly interpreter and the most universal WASM runtime
 dev-util/watchman 2023.06.19.00-r2 2024.11.04.00 2025.04.14.00: A file watching service
@@ -11940,7 +11940,7 @@ games-strategy/liquidwar 5.6.5: Unique multiplayer wargame
 games-strategy/megaglest 3.13.0-r5: Cross-platform 3D realtime strategy game
 games-strategy/megaglest-data 3.13.0-r1: Data files for the cross-platform 3D realtime strategy game MegaGlest
 games-strategy/naev 0.12.6 0.13.3-r1: 2D space trading and combat game, in a similar vein to Escape Velocity
-games-strategy/openra 20190314-r100 20231010-r1 20231010-r2: A free RTS engine supporting games like Command & Conquer, Red Alert and Dune2k
+games-strategy/openra 20231010-r2 20250330: A free RTS engine supporting games like Command & Conquer, Red Alert and Dune2k
 games-strategy/s25rttr 0.9.5-r1: Open source remake of The Settlers II: Gold Edition (needs original data files)
 games-strategy/satellite-reign 1.13.06: Real-time, class-based strategy game set in a cyberpunk city
 games-strategy/scorched3d 44-r4: Multi-player tank battle in 3D (OpenGL)
@@ -12610,35 +12610,35 @@ kde-plasma/spectacle 6.5.5 6.6.1: Screenshot capture utility
 kde-plasma/systemsettings 6.5.5 6.6.1: Control Center to configure KDE Plasma desktop
 kde-plasma/wacomtablet 6.5.5-r1 6.6.1: Wacom system settings module that supports different button/pen layout profiles
 kde-plasma/xdg-desktop-portal-kde 6.5.5 6.6.1: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
-llvm-core/clang 16.0.6-r1 17.0.6-r1 18.1.8-r7 19.1.7-r1 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: C language family frontend for LLVM
-llvm-core/clang-common 16.0.6-r6 17.0.6-r10 18.1.8-r3 19.1.7 20.1.8-r1 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Common files shared between multiple slots of clang
+llvm-core/clang 16.0.6-r1 17.0.6-r1 18.1.8-r7 19.1.7-r1 20.1.8 21.1.8 22.1.0-r2 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: C language family frontend for LLVM
+llvm-core/clang-common 16.0.6-r6 17.0.6-r10 18.1.8-r3 19.1.7 20.1.8-r1 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Common files shared between multiple slots of clang
 llvm-core/clang-linker-config 16 17 18 19 20 21 22 23: Default linker configuration for clang
 llvm-core/clang-toolchain-symlinks 16-r2 17 18 19 20 21 22 23: Symlinks to use Clang on GCC-free system
-llvm-core/flang 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: LLVM's Fortran frontend
-llvm-core/libclc 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: OpenCL C library
-llvm-core/lld 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: The LLVM linker (link editor)
+llvm-core/flang 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: LLVM's Fortran frontend
+llvm-core/libclc 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: OpenCL C library
+llvm-core/lld 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: The LLVM linker (link editor)
 llvm-core/lld-toolchain-symlinks 16-r2 17 18 19 20 21 22 23: Symlinks to use LLD on binutils-free system
-llvm-core/lldb 16.0.6-r1 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: The LLVM debugger
-llvm-core/llvm 16.0.6-r5 17.0.6-r3 18.1.8-r6 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Low Level Virtual Machine
-llvm-core/llvm-common 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Common files shared between multiple slots of LLVM
+llvm-core/lldb 16.0.6-r1 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: The LLVM debugger
+llvm-core/llvm 16.0.6-r5 17.0.6-r3 18.1.8-r6 19.1.7 20.1.8 21.1.8 22.1.0-r2 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Low Level Virtual Machine
+llvm-core/llvm-common 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Common files shared between multiple slots of LLVM
 llvm-core/llvm-toolchain-symlinks 16-r1 17-r1 18-r1 19 20-r1 21 22 23: Symlinks to use LLVM on binutils-free system
 llvm-core/llvmgold 16 17 18 19 20 21 22 23: LLVMgold plugin symlink for autoloading
-llvm-core/mlir 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Multi-Level Intermediate Representation (library only)
-llvm-core/polly 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Polyhedral optimizations for LLVM
+llvm-core/mlir 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Multi-Level Intermediate Representation (library only)
+llvm-core/polly 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Polyhedral optimizations for LLVM
 llvm-runtimes/clang-rtlib-config 16 17 18 19 20 21 22 23: Default rtlib configuration for clang
 llvm-runtimes/clang-runtime 16.0.6 16.0.6-r1 17.0.6 17.0.6-r1 18.1.8 18.1.8-r1 19.1.7 19.1.7-r1 20.1.8 20.1.8-r1 21.1.8 22 23: Meta-ebuild for clang runtime libraries
 llvm-runtimes/clang-stdlib-config 16 17 18 19 20 21 22 23: Default C++ library configuration for clang
 llvm-runtimes/clang-unwindlib-config 16 17 18 19 20 21 22 23: Default unwindlib configuration for clang
-llvm-runtimes/compiler-rt 16.0.6-r6 17.0.6-r2 18.1.8-r2 19.1.7 20.1.8-r1 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Compiler runtime library for clang (built-in part)
-llvm-runtimes/compiler-rt-sanitizers 16.0.6-r1 17.0.6-r1 18.1.8-r6 19.1.7 20.1.8-r1 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Compiler runtime libraries for clang (sanitizers & xray)
-llvm-runtimes/flang-rt 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: LLVM's Fortran runtime
+llvm-runtimes/compiler-rt 16.0.6-r6 17.0.6-r2 18.1.8-r2 19.1.7 20.1.8-r1 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Compiler runtime library for clang (built-in part)
+llvm-runtimes/compiler-rt-sanitizers 16.0.6-r1 17.0.6-r1 18.1.8-r6 19.1.7 20.1.8-r1 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Compiler runtime libraries for clang (sanitizers & xray)
+llvm-runtimes/flang-rt 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: LLVM's Fortran runtime
 llvm-runtimes/libatomic-stub 0: Stub library which allows compiler-rt to replace libatomic
-llvm-runtimes/libcxx 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: New implementation of the C++ standard library, targeting C++11
-llvm-runtimes/libcxxabi 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Low level support for a standard C++ library
-llvm-runtimes/libgcc 19.1.7 19.1.7-r1 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Compiler runtime library for clang, compatible with libgcc_s
-llvm-runtimes/libunwind 16.0.6-r1 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: C++ runtime stack unwinder from LLVM
-llvm-runtimes/offload 19.1.7 20.1.8-r1 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: OpenMP offloading support
-llvm-runtimes/openmp 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0_rc3 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: OpenMP runtime library for LLVM/clang compiler
+llvm-runtimes/libcxx 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: New implementation of the C++ standard library, targeting C++11
+llvm-runtimes/libcxxabi 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Low level support for a standard C++ library
+llvm-runtimes/libgcc 19.1.7 19.1.7-r1 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: Compiler runtime library for clang, compatible with libgcc_s
+llvm-runtimes/libunwind 16.0.6-r1 17.0.6 18.1.8 19.1.7 20.1.8-r1 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: C++ runtime stack unwinder from LLVM
+llvm-runtimes/offload 19.1.7 20.1.8-r1 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: OpenMP offloading support
+llvm-runtimes/openmp 16.0.6 17.0.6 18.1.8 19.1.7 20.1.8 21.1.8 22.1.0 23.0.0_pre20260214 23.0.0_pre20260223 23.0.0.9999: OpenMP runtime library for LLVM/clang compiler
 lxde-base/lxappearance 0.6.4-r2: LXDE GTK+ theme switcher
 lxde-base/lxappearance-obconf 0.2.3-r3: LXAppearance plugin for configuring OpenBox
 lxde-base/lxde-common 0.99.2-r1: LXDE Session default configuration files and nuoveXT2 iconset
@@ -13606,7 +13606,7 @@ media-libs/sdl3-ttf 3.2.2: Library that allows you to use TrueType fonts in SDL 
 media-libs/sdl_audiolib 0_p20220622-r1 9999: Audio decoding, resampling and mixing library for SDL
 media-libs/sg 1.5: Socket Graphics tool for displaying polygons
 media-libs/sge 030809-r1: Graphics extensions library for SDL
-media-libs/shaderc 2025.3 2025.4 2025.5: Collection of tools, libraries and tests for shader compilation
+media-libs/shaderc 2025.3 2025.4 2025.5 2026.1: Collection of tools, libraries and tests for shader compilation
 media-libs/simage 1.8.3-r1 1.8.4 9999: Image and video texturing library
 media-libs/smpeg 0.4.4-r11 0.4.4-r12: SDL MPEG Player Library
 media-libs/smpeg2 2.0.0-r4: SDL MPEG Player Library
@@ -13643,8 +13643,8 @@ media-libs/vo-aacenc 0.1.3 9999: VisualOn AAC encoder library
 media-libs/vo-amrwbenc 0.1.3 9999: VisualOn AMR-WB encoder library
 media-libs/volpack 1.0_p7-r2: Volume rendering library
 media-libs/vpl-gpu-rt 25.2.2 25.4.3 26.1.1: Intel Video Processing Library GPU Runtime
-media-libs/vulkan-layers 1.4.321.0 1.4.328.0 1.4.335.0 9999: Vulkan Validation Layers
-media-libs/vulkan-loader 1.4.321.0 1.4.328.0-r1 1.4.335.0 1.4.335.0-r1 9999: Vulkan Installable Client Driver (ICD) Loader
+media-libs/vulkan-layers 1.4.321.0 1.4.328.0 1.4.335.0 1.4.341.0 9999: Vulkan Validation Layers
+media-libs/vulkan-loader 1.4.321.0 1.4.328.0-r1 1.4.335.0 1.4.335.0-r1 1.4.341.0 9999: Vulkan Installable Client Driver (ICD) Loader
 media-libs/waffle 1.8.1 9999: Library that allows selection of GL API and of window system at runtime
 media-libs/webrtc-audio-processing 0.3.1-r1 1.3-r3 2.1: AudioProcessing library from the webrtc.org codebase
 media-libs/woff2 1.0.2-r7: Encode/decode WOFF2 font format
@@ -14178,7 +14178,7 @@ media-sound/pavucontrol-qt 2.2.0 2.3.0: Qt GUI Pulseaudio Mixer
 media-sound/pavumeter 0.9.3-r2: PulseAudio Volume Meter, simple GTK volume meter for PulseAudio
 media-sound/peercast 0.1218-r2: A client and server for Peercast P2P-radio network
 media-sound/pianobar 2022.04.01 2022.04.01-r1 9999: A console-based replacement for Pandora's flash player
-media-sound/picard 2.13.3-r1 3.0.0_alpha2 9999: Cross-platform music tagger
+media-sound/picard 2.13.3-r1 3.0.0_alpha3 9999: Cross-platform music tagger
 media-sound/picoxine 0.0.7: Very small xine frontend for playing audio events
 media-sound/pithos 1.6.2: Pandora.com client for the GNOME desktop
 media-sound/playerctl 2.4.1-r1: A CLI utility to control media players over MPRIS
@@ -14767,7 +14767,7 @@ net-dns/https_dns_proxy 0_pre20200925 9999: Lightweight DNS-over-HTTPS proxy
 net-dns/idnkit 2.3-r2: Toolkit for Internationalized Domain Names (IDN)
 net-dns/inadyn 2.13.0: Dynamic DNS client with multiple SSL/TLS library support
 net-dns/knot 3.4.9-r1 3.5.2-r1 3.5.3: High-performance authoritative-only DNS server
-net-dns/knot-resolver 5.7.6 6.1.0: Scaleable caching DNS resolver
+net-dns/knot-resolver 5.7.6 6.2.0: Scaleable caching DNS resolver
 net-dns/ldns-tools 0.1 0.2: ldns tools: host, nslookup
 net-dns/libidn 1.42 1.43: Internationalized Domain Names (IDN) implementation
 net-dns/libidn2 2.3.7 2.3.8: An implementation of the IDNA2008 specifications (RFCs 5890, 5891, 5892, 5893)
@@ -14943,7 +14943,7 @@ net-irc/znc-palaver 1.2.2: A ZNC module which provides push notifications to Pal
 net-irc/znc-playback 20200510: A ZNC module to control buffer playback
 net-libs/accounts-qml 0.7_p20231028-r3: QML bindings for accounts-qt and signond
 net-libs/accounts-qt 1.17-r2: Qt bindings for libaccounts-glib
-net-libs/aqbanking 6.6.1 6.9.1: Generic Online Banking Interface
+net-libs/aqbanking 6.9.1: Generic Online Banking Interface
 net-libs/axtls 2.1.5-r102: Embedded client/server TLSv1 SSL library and small HTTP(S) server
 net-libs/biblesync 2.1.0-r1: A multicast protocol to support Bible software shared co-navigation
 net-libs/c-client 2007f_p7 2007f_p7-r1: UW IMAP c-client library
@@ -15428,7 +15428,7 @@ net-misc/rclone 1.72.1 1.73.0 1.73.1: A program to sync files to and from variou
 net-misc/rdate 1.11: Use TCP or UDP to retrieve the current time of another machine
 net-misc/rdesktop 1.9.0-r4: A Remote Desktop Protocol Client
 net-misc/redir 3.3-r1: Redir is a port redirector
-net-misc/remmina 1.4.40-r2 1.4.40-r3 1.4.41 1.4.41-r1 1.4.42: A GTK+ RDP, SPICE, VNC and SSH client
+net-misc/remmina 1.4.40-r2 1.4.40-r3 1.4.41 1.4.41-r1 1.4.42 1.4.43: A GTK+ RDP, SPICE, VNC and SSH client
 net-misc/rinetd 0.73 0.73-r1: redirects TCP connections from one IP address and port to another
 net-misc/rsync 3.3.0-r2 3.4.1 3.4.1-r1 3.4.1-r2 9999: File transfer program to keep remote files into sync
 net-misc/rsync-bpc 3.1.3.0 3.1.3.0-r1 3.1.3.0_p20250706: Rsync-bpc is a customized version of rsync that is used as part of BackupPC
@@ -16678,7 +16678,7 @@ sec-keys/openpgp-keys-kentoverstreet 20241012: OpenPGP keys used by Kent Overstr
 sec-keys/openpgp-keys-kernel 20250702: OpenPGP keys used to sign Linux kernel releases
 sec-keys/openpgp-keys-khali 20260204: OpenPGP key used by Jean Delvare (khali)
 sec-keys/openpgp-keys-knot 20170710-r1: OpenPGP keys used by the Knot DNS developers
-sec-keys/openpgp-keys-knot-resolver 20240304 20251203: OpenPGP keys used by the Knot Resolver developers
+sec-keys/openpgp-keys-knot-resolver 20251203: OpenPGP keys used by the Knot Resolver developers
 sec-keys/openpgp-keys-kovidgoyal 20220106: OpenPGP keys used by Kovid Goyal
 sec-keys/openpgp-keys-lassecollin 20230213 20240529 20250313-r1 20260210: OpenPGP keys used by Lasse Collin
 sec-keys/openpgp-keys-leancrypto 20260116: OpenPGP key used to sign leancrypto releases
@@ -17190,7 +17190,7 @@ sys-apps/ifd-gempc 1.0.8: GemCore based PC/SC reader drivers for pcsc-lite
 sys-apps/ifplugd 0.28-r11 0.28-r12: Brings up/down ethernet ports automatically with cable detection
 sys-apps/init-system-helpers 1.66: Helper scripts useful for both OpenRC and systemd
 sys-apps/input-utils 1.3: Small collection of linux input layer utils
-sys-apps/install-xattr 0.10-r1 0.11 9999: Wrapper to coreutils install to preserve Filesystem Extended Attributes
+sys-apps/install-xattr 0.10-r1 0.11 0.12 9999: Wrapper to coreutils install to preserve Filesystem Extended Attributes
 sys-apps/intel-sa-00075-tools 1.0-r1: Tools from Intel to detect and mitigate the AMT/MEI vulnerability
 sys-apps/intune-portal 1.2511.11: Microsoft Intune Company Portal to access a corporate environment
 sys-apps/inxi 3.3.33.1 3.3.35.1 3.3.38.1 3.3.39.1: The CLI inxi collects and prints hardware and system information
@@ -17316,7 +17316,7 @@ sys-apps/secilc 3.8.1 9999: SELinux Common Intermediate Language (CIL) Compiler
 sys-apps/sed 4.9-r1: Super-useful stream editor
 sys-apps/selinux-python 3.7-r1 3.8.1 3.8.1-r2 9999: SELinux core utilities
 sys-apps/semodule-utils 3.6 3.7 3.8.1 9999: SELinux policy module utilities
-sys-apps/sensei-raw-ctl 0.0_pre20180729-r1: SteelSeries Sensei Raw configuration tool
+sys-apps/sensei-raw-ctl 0.0_pre20180729-r1 0.0_pre20230801: SteelSeries Sensei Raw configuration tool
 sys-apps/servicelog 1.1.15 1.1.16: Provides utilities for logging service-related events
 sys-apps/setserial 2.17-r6: Configure your serial ports with it
 sys-apps/sg3_utils 1.47 1.47-r1 1.47-r2 1.48: Apps for querying the sg SCSI interface
@@ -17839,7 +17839,7 @@ sys-libs/fts-standalone 1.2.7 1.2.7-r1: Standalone fts library for use with musl
 sys-libs/gdbm 1.24 1.25 1.26: Standard GNU database libraries
 sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r10 2.42-r5 2.43 9999: GNU libc C library
 sys-libs/gpm 1.20.7-r6: Console-based mouse driver
-sys-libs/gwenhywfar 5.12.1-r2 5.14.1: Multi-platform helper library for other libraries
+sys-libs/gwenhywfar 5.14.1: Multi-platform helper library for other libraries
 sys-libs/kpmcore 25.08.3 25.12.2: Library for managing partitions
 sys-libs/ldb 2.9.2: LDAP-like embedded database
 sys-libs/libapparmor 3.1.4-r2 4.0.3 4.0.3-r2: Library to support AppArmor userspace utilities
