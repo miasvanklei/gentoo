@@ -1868,13 +1868,13 @@ app-editors/tea 62.4.0-r1: Small, lightweight Qt text editor
 app-editors/teco 36_p19940820-r1: Classic TECO editor, Predecessor to EMACS
 app-editors/ted 2.23-r3: X-based rich text editor
 app-editors/texworks 0.6.10: Simple interface for working with TeX documents
-app-editors/uemacs-pk 4.0.15_p20180719-r1 4.0.15_p20260224: uEmacs/PK is an enhanced version of MicroEMACS
+app-editors/uemacs-pk 4.0.15_p20180719-r1 4.0.15_p20210330 4.0.15_p20260224: uEmacs/PK is an enhanced version of MicroEMACS
 app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clone
 app-editors/vim 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9.1.1652-r3 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r2 9999: Modern, legacy free, simple yet efficient vim-like editor
 app-editors/vscode 1.108.2 1.109.5: Multiplatform Visual Studio Code from Microsoft
-app-editors/vscodium 1.106.37943 1.108.10359 1.109.41146: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium 1.108.10359 1.109.51242: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
 app-editors/xemacs 21.5.36-r6 21.5.9999: highly customizable open source text editor and application development system
@@ -2615,7 +2615,7 @@ app-i18n/zinnia 0.06-r3: Zinnia - Online hand recognition system with machine le
 app-i18n/zinnia-tomoe 0.6.0_p20080911: Handwriting model files trained with Tomoe data
 app-laptop/dispad 0.3.1-r1: Daemon to disable trackpads while typing
 app-laptop/framework-laptop-kmod 0_pre20240915: Kernel module to expose more Framework Laptop stuff
-app-laptop/framework-tool-tui 0.7.6: TUI for controlling and monitoring Framework Computers hardware built in Rust
+app-laptop/framework-tool-tui 0.7.6 0.8.0: TUI for controlling and monitoring Framework Computers hardware built in Rust
 app-laptop/framework_tool 0.4.3 0.4.5 0.5.0: Tool to control Framework Computer systems
 app-laptop/hdaps-gl 0.0.7: OpenGL visualization for HDAPS data
 app-laptop/hdapsd 20141203-r3: IBM ThinkPad Hard Drive Active Protection System (HDAPS) daemon
@@ -3981,7 +3981,7 @@ dev-db/citus 12.1.10 13.0.5 13.1.1 13.2.0 14.0.0 9999: Open-source postgresql ex
 dev-db/cockroach 2.1.5-r1 19.1.1-r1: open source database for building cloud services
 dev-db/datadraw 3.1.1 3.1.1-r1: feature rich database generator for high performance C applications
 dev-db/dbeaver-bin 25.3.4 25.3.5: Free universal database tool (community edition)
-dev-db/duckdb 1.4.2 1.4.3: high-performance analytical database system
+dev-db/duckdb 1.4.3 1.4.4: high-performance analytical database system
 dev-db/etcd 3.4.31 3.5.18 3.5.26 3.6.7: Highly-available key value store for shared configuration and service discovery
 dev-db/freetds 1.5 1.5.6: Tabular Datastream Library
 dev-db/futuresql 0.1.1: Non-blocking Qt database framework
@@ -4309,7 +4309,7 @@ dev-go/go-tour 0_pre20200201: A Tour of Go
 dev-go/gocov 1.1.0: Coverage testing tool for The Go Programming Language
 dev-go/gogo-protobuf 1.3.2: Protocol Buffers for Go with Gadgets
 dev-go/golangci-lint 1.64.7 2.5.0 2.6.1 2.6.2 2.7.2: Fast linters runner for Go
-dev-go/gopls 0.18.1 0.19.0 0.19.1 0.20.0 0.21.0: "Go please" is the official Go language server
+dev-go/gopls 0.18.1 0.19.0 0.19.1 0.20.0 0.21.0 0.21.1: "Go please" is the official Go language server
 dev-go/gotestsum 1.13.0: 'go test' runner with output optimized for humans
 dev-go/goversion 1.2.0-r1: Print version used to build Go executables
 dev-go/gox 1.0.1: A dead simple, no frills Go cross compile tool
@@ -9837,7 +9837,7 @@ dev-python/zxcvbn 4.5.0: Realistic password strength estimator
 dev-qt/designer 5.15.18-r1: WYSIWYG tool for designing and building graphical user interfaces with QtWidgets
 dev-qt/linguist-tools 5.15.18: Tools for working with Qt translation data files
 dev-qt/qt-creator 18.0.2 9999: Lightweight IDE for C++/QML development centering around Qt
-dev-qt/qt-docs 5.15.2_p202011130614 6.10.1_p202511161843 6.10.2_p202601261212: Qt6 documentation and examples for Qt Creator and other tools
+dev-qt/qt-docs 6.10.1_p202511161843 6.10.2_p202601261212: Qt6 documentation and examples for Qt Creator and other tools
 dev-qt/qt3d 6.10.1 6.10.2 6.10.9999 6.11.9999 6.9999: 3D rendering module for the Qt6 framework
 dev-qt/qt5compat 6.10.1 6.10.2 6.10.9999 6.11.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
 dev-qt/qtbase 6.10.1 6.10.2 6.10.9999 6.11.9999 6.9999: Cross-platform application development framework
@@ -14879,7 +14879,7 @@ net-im/rocketchat-desktop-bin 3.9.10-r1 4.1.1-r1: The Ultimate Open Source Web C
 net-im/sendxmpp 1.24: A perl-script to send xmpp (jabber), similar to what mail(1) does for mail
 net-im/sendxmpp-scala 1.2.0 1.2.1 9999: Send XMPP (Jabber) messages via command line
 net-im/signal-cli-bin 0.13.9 0.13.19: Send and receive messages of Signal Messenger over a command line interface
-net-im/signal-desktop-bin 7.90.0: Allows you to send and receive messages of Signal Messenger on your computer
+net-im/signal-desktop-bin 8.0.0: Allows you to send and receive messages of Signal Messenger on your computer
 net-im/slack 4.47.59 4.47.72 4.48.95: Team collaboration tool
 net-im/spectrum2 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
@@ -15272,7 +15272,7 @@ net-misc/ethertypes 0: Maps ethernet frame ids to symbolic names
 net-misc/eventd 0.29.0-r2: A small daemon to act on remote or local events
 net-misc/exabgp 4.2.23 4.2.25: The BGP swiss army knife of networking
 net-misc/fakeidentd 2.6-r1: A static, secure identd. One source file only!
-net-misc/freerdp 2.11.7-r1 2.9999 3.14.1 3.16.0 3.17.1 3.17.2-r1 3.21.0 3.22.0 9999: Free implementation of the Remote Desktop Protocol
+net-misc/freerdp 2.11.7-r1 2.9999 3.14.1 3.16.0 3.17.1 3.17.2-r1 3.21.0 3.22.0 3.23.0 9999: Free implementation of the Remote Desktop Protocol
 net-misc/frr 10.1.3 10.2.2 10.2.3 10.3.1 10.4.1 10.5.0: The FRRouting Protocol Suite
 net-misc/gallery-dl 1.31.2 1.31.3 1.31.4 1.31.5 1.31.6 1.31.7 9999: Download image galleries and collections from several image hosting sites
 net-misc/geckodriver 0.36.0: Proxy for using WebDriver clients to interact with Gecko-based browsers
@@ -17847,7 +17847,7 @@ sys-libs/libblockdev 3.3.1 3.4.0: Library for manipulating block devices
 sys-libs/libcap 2.71 2.76 2.77 9999: POSIX 1003.1e capabilities
 sys-libs/libcap-ng 0.8.5: POSIX 1003.1e capabilities
 sys-libs/libchipcard 5.1.6-r1: Library for accessing chip cards via chip card readers (terminals)
-sys-libs/libfaketime 0.9.6-r4 0.9.10 0.9.11 0.9.12: Report faked system time to programs
+sys-libs/libfaketime 0.9.12: Report faked system time to programs
 sys-libs/libhx 4.27 5.0 5.1 5.2 5.3: Platform independent library providing basic system functions
 sys-libs/libieee1284 0.2.11-r9: Library to query devices using IEEE1284
 sys-libs/libixp 0.5_p20110208-r3: A stand-alone client/server 9P library including ixpc client
