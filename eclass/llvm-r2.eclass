@@ -1,4 +1,4 @@
-# Copyright 2024-2025 Gentoo Authors
+# Copyright 2024-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # @ECLASS: llvm-r2.eclass
@@ -250,10 +250,6 @@ generate_llvm_config() {
 		sed -ne 's:set(LLVM_PACKAGE_VERSION \(.*\)):\1:p' "${cmake_conf}" || die
 	)
 	[[ -n ${version} ]] || die
-	local version_suffix=$(
-		sed -ne 's:set(LLVM_VERSION_SUFFIX \(.*\)):\1:p' "${cmake_conf}" || die
-	)
-	[[ -n ${version_suffix} ]] || die
 	local cppdefs=$(
 		sed -ne 's:set(LLVM_DEFINITIONS "\(.*\)"):\1:p' "${cmake_conf}" || die
 	)
@@ -277,7 +273,9 @@ generate_llvm_config() {
 	local assertions=OFF
 	[[ ${cppdefs} == *-D_DEBUG* ]] && assertions=ON
 	# major + suffix
-	local shlib_name=LLVM-${version%%.*}${version_suffix}
+	local shlib_name=LLVM-${version%%.*}
+	[[ ${version} == *git* ]] && shlib_name+="git${version##*git}"
+	[[ ${version} == *+* && ${shlib_name} != *+* ]] && shlib_name+="+${version##*+}"
 
 	local components=(
 		"${libs[@]#LLVM}" "${targets[@]}"
