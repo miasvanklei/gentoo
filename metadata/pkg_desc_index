@@ -4159,7 +4159,7 @@ dev-embedded/srecord 1.64-r1: A collection of powerful tools for manipulating EP
 dev-embedded/stlink 1.8.0 9999: stm32 discovery line linux programmer
 dev-embedded/stm32flash 0.7: Open source flash program for STM32 using the ST serial bootloader
 dev-embedded/sunxi-tools 1.4.2 9999: A collection of command line tools for ARM devices with Allwinner SoCs
-dev-embedded/u-boot-tools 2024.01-r2 2025.01-r2: utilities for working with Das U-Boot
+dev-embedded/u-boot-tools 2024.01-r2 2024.01-r3 2025.01-r2 2025.01-r3: utilities for working with Das U-Boot
 dev-embedded/uisp 20050207-r1: Tool for programming AVR microcontroller through the parallel port
 dev-embedded/upslug2 11: util for flashing NSLU2 machines remotely
 dev-embedded/urjtag 2021.03 9999: Tool for communicating over JTAG with flash chips, CPUs, and many more
@@ -14131,7 +14131,7 @@ media-sound/mp3val 0.1.8-r1: Validate and fix MPEG audio files
 media-sound/mp3wrap 0.5: Command-line utility that wraps multiple mp3 files into one large playable mp3
 media-sound/mpc 0.35: Commandline client for Music Player Daemon (media-sound/mpd)
 media-sound/mpck 0.15-r1: Checks MP3s for errors
-media-sound/mpd 0.23.15-r3 0.23.16 0.24.3 0.24.5 0.24.8: The Music Player Daemon (mpd)
+media-sound/mpd 0.23.15-r3 0.23.16 0.24.3 0.24.5 0.24.8-r1: The Music Player Daemon (mpd)
 media-sound/mpd-ynca 0.3.0: MPD client to control Yamaha AV receivers with YNCA (network control) support
 media-sound/mpdas 0.4.5: AudioScrobbler client for MPD written in C++
 media-sound/mpdscribble 0.25: An MPD client that submits information to Audioscrobbler
