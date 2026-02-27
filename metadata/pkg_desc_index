@@ -1914,7 +1914,6 @@ app-emacs/bbdb 3.2.2d_p20231122 3.2.2d_p20231122-r1: The Insidious Big Brother D
 app-emacs/biblio 0.3: Browse and import bibliographic references with Emacs
 app-emacs/binclock 1.11: Display the current time using a binary clock
 app-emacs/bind-chord 2.4.4-r1: Key-chord binding helper for use-package-chords
-app-emacs/bind-key 2.4.4: Simple way to manage personal keybindings
 app-emacs/bison-mode 0.3-r1: Emacs major mode for Bison, Yacc and Lex grammars
 app-emacs/blogmax 20170321: Blogging in Emacs
 app-emacs/bm 202506: Visible bookmarks in buffer
@@ -1962,8 +1961,6 @@ app-emacs/corfu 2.6 2.7 2.8 9999: Completion Overlay Region FUnction
 app-emacs/counsel 0.15.1: Versions of common Emacs commands customized to make the best use of ivy
 app-emacs/crontab-mode 1.20: Mode for editing crontab files
 app-emacs/crux 0.4.0 0.5.0: Collection of Ridiculously Useful eXtensions for GNU Emacs
-app-emacs/csharp-mode 2.0.0: A derived Emacs mode implementing most of the C# rules
-app-emacs/css-mode 0.11-r3: A major mode for editing Cascading Style Sheets (CSS)
 app-emacs/css-sort-buffer 0.2: Sort CSS buffer
 app-emacs/csv-mode 1.27: A major mode for editing comma-separated value files
 app-emacs/ctable 0.1.3: Table Component for Emacs Lisp
@@ -2011,7 +2008,6 @@ app-emacs/edit-list 0.3: Edit a single list
 app-emacs/edit-server 1.16: Service edit requests from a web browser for editing of textareas
 app-emacs/editorconfig-emacs 0.11.0: EditorConfig plugin for emacs
 app-emacs/ef-themes 2.0.0 2.0.1 2.1.0 9999: Colourful and legible themes for GNU Emacs
-app-emacs/eglot 1.17: A minimal Emacs LSP client for GNU Emacs
 app-emacs/eimp 1.4.0-r1: Emacs Image Manipulation Package
 app-emacs/el-mock 1.25.1: Mocking library for Emacs
 app-emacs/eldev 1.11.1 9999: Emacs Lisp Development Tool
@@ -2128,7 +2124,6 @@ app-emacs/jinx 2.4 2.5 2.6: Enchanted Spell Checker for GNU Emacs
 app-emacs/jq-mode 0.5.0_p20220610: Emacs major mode for editing jq queries
 app-emacs/js-comint 1.2.0: Run a JavaScript interpreter in an Emacs inferior process window
 app-emacs/js2-mode 20230408 20231224: Improved JavaScript editing mode for GNU Emacs
-app-emacs/jsonrpc 1.0.25: JSON-RPC library (GNU ELPA release, also part of Emacs)
 app-emacs/julia-mode 0.4_p20211023: Emacs major mode for the Julia programming language
 app-emacs/julia-repl 1.3.0_p20220225 1.5.2: Run an inferior Julia REPL in a terminal inside Emacs
 app-emacs/kaolin-themes 1.7.3 1.7.4: Set of eye pleasing themes for GNU Emacs
@@ -2235,7 +2230,6 @@ app-emacs/protbuf 1.7-r1: Protect Emacs buffers from accidental killing
 app-emacs/psgml 1.4.1: A GNU Emacs Major Mode for editing SGML and XML coded documents
 app-emacs/puppet-mode 0.4-r1: Emacs major mode for editing Puppet manifests
 app-emacs/pymacs 0.26-r6: A tool that allows both-side communication between Python and Emacs Lisp
-app-emacs/python-mode 6.3.1: An Emacs major mode for editing Python source
 app-emacs/pyvenv 1.21: Python virtual environment interface for Emacs
 app-emacs/quack 0.48: Enhances Emacs support for Scheme
 app-emacs/queue 0.2: Queue data structure
@@ -2318,7 +2312,6 @@ app-emacs/uboat 1.2-r1: Generate u-boat-death messages, patterned after Iron Cof
 app-emacs/undercover 0.8.1: Test coverage library for Emacs
 app-emacs/undo-tree 0.8.2-r1: Undo trees and visualization
 app-emacs/uptimes 3.8: Track and display emacs session uptimes
-app-emacs/use-package 2.4.6: Declaration macro for simplifying your Emacs configuration
 app-emacs/uxntal-mode 0.3: GNU Emacs major mode for the uxntal assembly language
 app-emacs/vertico 2.6 2.7 9999: Vertical interactive completion
 app-emacs/vhdl-mode 3.39.3: VHDL-mode for Emacs
@@ -2489,7 +2482,7 @@ app-eselect/eselect-wxwidgets 20230114-r1: Eselect module and wrappers for wxWid
 app-eselect/eselect-zig 2: Manages Zig versions
 app-forensics/afflib 3.7.20-r1: Library that implements the AFF image standard
 app-forensics/afl 2.57b-r2: american fuzzy lop - compile-time instrumentation fuzzer
-app-forensics/aflplusplus 4.30c 4.32c: Fork of AFL, the popular compile-time instrumentation fuzzer
+app-forensics/aflplusplus 4.30c 4.32c 4.35c: Fork of AFL, the popular compile-time instrumentation fuzzer
 app-forensics/aide 0.18.8: AIDE (Advanced Intrusion Detection Environment) is a file integrity checker
 app-forensics/chkrootkit 0.58b 0.59: Tool to locally check for signs of a rootkit
 app-forensics/cmospwd 5.1-r1: CmosPwd decrypts password stored in cmos used to access BIOS SETUP
@@ -11088,7 +11081,7 @@ dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0: Callback/Activity Library for Perfor
 dev-util/ropper 1.13.10 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rpmdevtools 9.6: Collection of rpm packaging related utilities
 dev-util/rt-tests 2.8 2.9: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.13.1 0.14.9 0.14.10-r1 0.14.11 0.14.14 0.15.0 0.15.1: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.13.1 0.14.9 0.14.14 0.15.1 0.15.4: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -17788,9 +17781,9 @@ sys-fs/xfsprogs 6.17.0-r1 6.18.0: XFS filesystem utilities
 sys-fs/xwmfs 0.92: FUSE-based X11 Window-Manager file system
 sys-fs/yaffs2utils 0.2.9-r1: tools for generating YAFFS images
 sys-fs/zerofree 1.1.1-r1: Zeroes out all free space on a filesystem
-sys-fs/zfs 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.4.0 9999: Linux kernel module and userland utilities for ZFS
+sys-fs/zfs 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.3.6 2.4.0 2.4.1 9999: Linux kernel module and userland utilities for ZFS
 sys-fs/zfs-auto-snapshot 1.2.4-r2 1.2.4-r3 9999: ZFS Automatic Snapshot Service for Linux
-sys-fs/zfs-kmod 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.4.0_rc2-r1: Linux ZFS kernel module for sys-fs/zfs
+sys-fs/zfs-kmod 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.3.6 2.4.0_rc2-r1: Linux ZFS kernel module for sys-fs/zfs
 sys-kernel/asahi-sources 6.16.4_p2 6.17.11_p1: Asahi Linux kernel sources
 sys-kernel/bliss-initramfs 9.3.0: Boot your system's rootfs from Encrypted/OpenZFS
 sys-kernel/cryptodev 1.14 9999: device that allows access to Linux kernel cryptographic drivers
@@ -17807,7 +17800,7 @@ sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
 sys-kernel/kergen 0.1.5-r1: Kernel config generator
 sys-kernel/kpatch 0.9.7 0.9.8 0.9.10 9999: Dynamic kernel patching for Linux
 sys-kernel/linux-docs 6.18: Developer documentation generated from the Linux kernel
-sys-kernel/linux-firmware 20250211 20250311 20250410 20250613-r1 20250613_p20250624 20250627 20250708 20250808 20250917 20251011 20251021 20251111 20251125 20251125_p20251202 20251125_p20251203 20251125_p20251229 20260110 99999999: Linux firmware files
+sys-kernel/linux-firmware 20250211 20250311 20250410 20250613-r1 20250613_p20250624 20250627 20250708 20250808 20250917 20251011 20251021 20251111 20251125 20251125_p20251202 20251125_p20251203 20251125_p20251229 20260110 20260221 99999999: Linux firmware files
 sys-kernel/linux-headers 3.18-r1 4.4-r1 4.9-r1 4.14-r2 4.19-r1 5.4-r2 5.10-r2 5.15-r3 6.1 6.6-r1 6.8-r1 6.9 6.10 6.11 6.12 6.13 6.14 6.15 6.16 6.16-r2 6.17-r1 6.18: Linux system headers
 sys-kernel/linux-next 9999: Linux kernel and patches aimed at the next kernel merge window
 sys-kernel/mips-sources 4.19.325 5.4.294: Kernel.org sources for MIPS-based machines
@@ -18256,7 +18249,7 @@ www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.1: Wordpress PHP and MySQL based content management system (CMS)
 www-apps/xpra-html5 10.1 17.1: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
-www-client/chromium 138.0.7204.157 144.0.7559.132 145.0.7632.109 145.0.7632.116 146.0.7680.16 147.0.7695.0: Open-source version of Google Chrome web browser
+www-client/chromium 138.0.7204.157 145.0.7632.109 145.0.7632.116 146.0.7680.16 146.0.7680.31 147.0.7695.0: Open-source version of Google Chrome web browser
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
 www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
@@ -18265,19 +18258,19 @@ www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.6.0 140.7.0 140.7.1 140.8.0 146.0 146.0.1 147.0 147.0.1 147.0.2 147.0.3 147.0.4 148.0: Firefox Web Browser
 www-client/firefox-bin 140.7.1 140.8.0 147.0.4 148.0: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.169 144.0.7559.132 145.0.7632.116: The web browser from Google
-www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31 145.0.7632.45 146.0.7680.16: The web browser from Google
+www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31 145.0.7632.45 146.0.7680.31: The web browser from Google
 www-client/google-chrome-unstable 147.0.7695.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
-www-client/microsoft-edge 145.0.3800.70: The web browser from Microsoft
+www-client/microsoft-edge 145.0.3800.82: The web browser from Microsoft
 www-client/microsoft-edge-beta 145.0.3800.58 146.0.3856.13 146.0.3856.20: The web browser from Microsoft
 www-client/microsoft-edge-dev 146.0.3856.13 146.0.3856.20 147.0.3878.0: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
-www-client/opera 127.0.5778.76: A fast and secure web browser
+www-client/opera 128.0.5807.25: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
 www-client/opera-developer 128.0.5806.0 129.0.5812.0 129.0.5818.0: A fast and secure web browser
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
@@ -18334,7 +18327,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.4: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 141.0.7390.107 142.0.7444.34_beta 142.0.7444.175 143.0.7499.40_beta 143.0.7499.169 144.0.7559.31_beta 144.0.7559.132 145.0.7632.45_beta 145.0.7632.116 146.0.7680.16_beta 147.0.7695.0_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 141.0.7390.107 142.0.7444.34_beta 142.0.7444.175 143.0.7499.40_beta 143.0.7499.169 144.0.7559.31_beta 144.0.7559.132 145.0.7632.45_beta 145.0.7632.116 146.0.7680.31_beta 147.0.7695.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.8.7-r1 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
