@@ -1068,7 +1068,7 @@ app-admin/ryzen_monitor 1.0.6_pre20220901: Monitor power information of Ryzen pr
 app-admin/ryzen_smu 0.1.5: Kernel driver for AMD Ryzen's System Management Unit
 app-admin/sagan 2.0.2: Sagan is a multi-threaded, real time system and event log monitoring system
 app-admin/sagan-rules 20210208 99999999: Rules for Sagan log analyzer
-app-admin/salt 3007.0-r1 3007.1-r1 3007.1-r2: Salt is a remote execution and configuration manager
+app-admin/salt 3007.0-r1 3007.1-r1 3007.1-r2 3007.12: Salt is a remote execution and configuration manager
 app-admin/selint 1.2.1 9999: Static code analysis of refpolicy style SELinux policy
 app-admin/serf 0.10.1-r1: Service orchestration and management tool
 app-admin/setools 4.5.1 9999: Policy Analysis Tools for SELinux
@@ -1388,7 +1388,7 @@ app-containers/earthly 0.8.16: Build automation tool that executes in containers
 app-containers/flannel 0.26.3: An etcd backed network fabric for containers
 app-containers/grype 0.59.1 0.61.0 0.72.0 0.73.0 0.79.3 0.86.1: A vulnerability scanner for container images and filesystems
 app-containers/img 0.5.11: Standalone daemon-less unprivileged Dockerfile and OCI container image builder
-app-containers/incus 6.0.5 6.0.5-r1 6.21 9999: Modern, secure and powerful system container and virtual machine manager
+app-containers/incus 6.0.5 6.0.5-r1 6.21 6.22 9999: Modern, secure and powerful system container and virtual machine manager
 app-containers/k3d 5.8.3: k3d creates k3s clusters in docker
 app-containers/kompose 1.35.0: Tool to move from docker-compose to Kubernetes
 app-containers/lxc 5.0.3 6.0.3 6.0.4-r1 6.0.5: A userspace interface for the Linux kernel containment features
@@ -3324,7 +3324,7 @@ app-text/mecab 0.996-r1 0.996-r2: Yet Another Part-of-Speech and Morphological A
 app-text/mpage 2.5.6-r1: Many to one page printing utility
 app-text/msort 8.53-r3: A program for sorting files in sophisticated ways
 app-text/multitail 7.0.0 7.1.2 7.1.5-r1: Tail with multiple windows
-app-text/mupdf 1.25.2-r1 1.25.6 1.26.3: A lightweight PDF viewer and toolkit written in portable C
+app-text/mupdf 1.25.6 1.26.3 1.27.2: A lightweight PDF viewer and toolkit written in portable C
 app-text/mythes 1.2.5: Simple thesaurus for LibreOffice
 app-text/namazu 2.0.21 2.0.22_pre8: Namazu is a full-text search engine
 app-text/nfoview 2.1: Simple viewer for NFO files, which are ASCII art in the CP437 codepage
@@ -5250,7 +5250,7 @@ dev-lang/mond 0.11.2: Mond is a scripting language for .NET Core
 dev-lang/mono 6.12.0.199-r2 6.14.1: Mono open source ECMA CLI, C# and .NET implementation
 dev-lang/mono-basic 4.8-r1: Visual Basic Compiler and Runtime
 dev-lang/mrustc 0.11.2-r1 9999: Mutabah's Rust Compiler
-dev-lang/mujs 1.3.6 1.3.7-r1: An embeddable JavaScript interpreter written in C
+dev-lang/mujs 1.3.6 1.3.7-r1 1.3.8: An embeddable JavaScript interpreter written in C
 dev-lang/nasm 2.16.03 3.01: groovy little assembler
 dev-lang/neko 2.4.0-r2 2.4.1: Neko is a high-level dynamically typed programming language
 dev-lang/nelua 20240113 99999999: Statically-typed systems programming language inspired by Lua
@@ -9263,7 +9263,7 @@ dev-python/pytest-repeat 0.9.4: pytest plugin for repeating tests
 dev-python/pytest-reraise 2.1.2: Make multi-threaded pytest test cases fail when they should
 dev-python/pytest-rerunfailures 15.1 16.0.1 16.1: pytest plugin to re-run tests to eliminate flaky failures
 dev-python/pytest-reserial 0.6.0 0.6.1: Pytest plugin for recording and replaying serial port traffic during tests
-dev-python/pytest-salt-factories 1.0.0_rc29 1.0.1: The new generation of the pytest-salt Plugin
+dev-python/pytest-salt-factories 1.0.0_rc29 1.0.1 1.0.5: The new generation of the pytest-salt Plugin
 dev-python/pytest-services 2.2.2: Collection of fixtures and utility functions to run service processes for pytest
 dev-python/pytest-shell-utilities 1.9.7 1.9.7-r1: pytest plugin: fixtures and code to help with running shell commands on tests
 dev-python/pytest-skip-markers 1.5.2: A Pytest plugin which implements a few useful skip markers
@@ -11008,7 +11008,7 @@ dev-util/makeheaders 0_p20240823: Tool that automatically generates .h files for
 dev-util/makepp 2.0.99.2: GNU make replacement
 dev-util/marksman 2025.11.25 2026.02.08: LSP language server for editing Markdown files
 dev-util/massif-visualizer 25.08.3 25.12.2: Tool visualising massif data
-dev-util/maturin 1.11.5 1.12.3 1.12.4: Build and publish crates with pyo3, rust-cpython and cffi bindings
+dev-util/maturin 1.11.5 1.12.3 1.12.4 1.12.5: Build and publish crates with pyo3, rust-cpython and cffi bindings
 dev-util/maxcso 1.13.0 9999: Fast cso compressor
 dev-util/mdds 2.1.1-r1 3.0.0 9999: Collection of multi-dimensional data structure and indexing algorithm
 dev-util/meld 3.22.2-r1 3.22.3: A graphical diff and merge tool
@@ -11414,7 +11414,7 @@ games-arcade/solarwolf 1.5_p3: Action/arcade recreation of SolarFox
 games-arcade/spout 1.3-r3: Abstract Japanese caveflier / shooter
 games-arcade/stardork 0.7-r2: ncurses-based space shooter
 games-arcade/supertransball2 1.5-r1: Thrust clone
-games-arcade/supertux 0.7.0_beta1 0.7.0_beta2 9999: A run 'n jump platforming game featuring Tux the penguin
+games-arcade/supertux 0.7.0_beta2 9999: A run 'n jump platforming game featuring Tux the penguin
 games-arcade/syobon 1.0.1-r1: Syobon Action (also known as Cat Mario or Neko Mario)
 games-arcade/tecnoballz 0.93.1: An exciting Brick Breaker
 games-arcade/thinktanks-demo 1.1-r4: Tank combat game with lighthearted, fast paced pandemonium
@@ -15113,7 +15113,7 @@ net-libs/zmqpp 4.2.0-r1: ZeroMQ 'highlevel' C++ bindings
 net-mail/altermime 0.3.12: alterMIME is a small program which is used to alter your mime-encoded mailpacks
 net-mail/amavis-logwatch 1.51.04: A log analyzer for amavisd-new
 net-mail/asmail 2.1-r4: A small mail monitor similar to xbiff
-net-mail/automx2 2025.1 2026.0: Mail User Agent (email client) configuration made easy
+net-mail/automx2 2025.1 2026.1: Mail User Agent (email client) configuration made easy
 net-mail/autorespond 2.0.4 2.0.5: Autoresponder add on package for qmailadmin
 net-mail/b4 0.14.3: Utility for fetching patchsets from public-inbox
 net-mail/checkpassword 0.90-r5 0.90-r6: A uniform password checking interface for root applications
