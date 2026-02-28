@@ -1803,7 +1803,7 @@ app-editors/aee 2.2.22: An easy to use text editor
 app-editors/bluefish 2.2.19 2.4.0: GTK HTML editor for the experienced web designer or programmer
 app-editors/bvi 1.4.2 1.5.0: Display-oriented editor for binary files, based on the vi texteditor
 app-editors/curses-hexedit 0.9.7-r1: full screen curses hex editor (with insert/delete support)
-app-editors/cursor 2.4.28: Cursor App - AI-first coding environment
+app-editors/cursor 2.5.20: Cursor App - AI-first coding environment
 app-editors/dav 0.9.0: Minimal console text editor
 app-editors/dhex 0.69: ncurses-based hex-editor with diff mode
 app-editors/diakonos 0.9.12: A Linux editor for the masses
@@ -3082,7 +3082,7 @@ app-portage/kuroneko 0.1.3-r1 0.1.4 0.1.5: Vulnerability checker using data scra
 app-portage/kuroo 1.2.4 9999: Graphical Portage frontend based on KDE Frameworks
 app-portage/metagen 0.7.4 0.7.4-r1 9999: metadata.xml generator for ebuilds
 app-portage/mgorny-dev-scripts 63 64 65 66: Handy scripts for ebuild development and more
-app-portage/mirrorselect 2.5.0 9999: Tool to help select distfiles mirrors for Gentoo
+app-portage/mirrorselect 2.5.1 2.5.4 9999: Tool to help select distfiles mirrors for Gentoo
 app-portage/nattka 0.4.2: A New Arch Tester Toolkit -- open-source stable-bot replacement
 app-portage/no-distcc-env 9999: package.env files to disable distcc on a per-package basis
 app-portage/overlint 0.5.3-r6: Simple tool for static analysis of overlays
@@ -5752,7 +5752,7 @@ dev-libs/nss 3.112.2 3.112.3 3.119 3.120 3.120.1 3.121: Mozilla's Network Securi
 dev-libs/nss-pem 1.1.0 1.1.1: PEM file reader for Network Security Services (NSS)
 dev-libs/nsync 1.25.0 1.26.0: C library that exports various synchronization primitives, such as mutexes
 dev-libs/ntl 11.5.1-r4 11.6.0: High-performance and portable C++ number theory library
-dev-libs/nwjs 0.86.0-r1 0.100.1-r1 0.104.1-r2 0.106.0: Framework that lets you call all Node.js modules directly from the DOM
+dev-libs/nwjs 0.108.0: Framework that lets you call all Node.js modules directly from the DOM
 dev-libs/olm 3.2.16-r1: Implementation of the Double Ratchet cryptographic ratchet in C++
 dev-libs/onigmo 6.2.0-r1: Onigmo is a regular expressions library forked from Oniguruma
 dev-libs/oniguruma 6.9.9 6.9.9-r1 6.9.10 9999: Regular expression library for different character encodings
@@ -10676,7 +10676,7 @@ dev-tcltk/tkpng 0.9-r2: Implements support for loading and using PNG images with
 dev-tcltk/tktable 2.10-r2 2.10.8: full-featured 2D table widget
 dev-tcltk/tktray 1.3.9-r2: System Tray Icon Support for Tk on X11
 dev-tcltk/tktreectrl 2.4.1-r1: Flexible listbox widget for Tk
-dev-tcltk/tls 1.7.22-r1: TLS OpenSSL extension to Tcl
+dev-tcltk/tls 1.7.22-r1 2.0: TLS OpenSSL extension to Tcl
 dev-tcltk/togl 2.0-r5: A Tk widget for OpenGL rendering
 dev-tcltk/vtcl 1.6.0-r2 1.6.1_alpha1: Visual Tcl is a high-quality application development environment
 dev-tex/abntex 0.9_beta2-r1: LaTeX macros for writing documents following the ABNT norms
@@ -10836,7 +10836,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.50: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.62: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.5 2025.3.1.1 2025.3.2: A complete toolset for C and C++ development
@@ -14660,10 +14660,10 @@ net-analyzer/sqlninja 0.2.6_p1-r1: A SQL Server injection & takeover tool
 net-analyzer/squid-graph 3.2-r2: Squid logfile analyzer and traffic grapher
 net-analyzer/squidsites 1.01-r2: A tool to parse Squid access log file and to generate reports
 net-analyzer/squidview 0.86: Interactive console program to analyse squid logs
-net-analyzer/ssh-audit 3.2.0 3.3.0: SSH server auditing (banner, key exchange, encryption, mac, compression, etc)
+net-analyzer/ssh-audit 3.3.0 3.3.0_p20250901: SSH server auditing (banner, key exchange, encryption, mac, compression, etc)
 net-analyzer/sshping 0.1.4-r1: ssh-based ping: measure character echo latency and bandwidth
 net-analyzer/ssldump 1.5 1.8 1.9: An SSLv3/TLS network protocol analyzer
-net-analyzer/sslscan 2.1.6 2.2.0 2.2.1: Fast SSL configuration scanner
+net-analyzer/sslscan 2.2.0 2.2.1 2.2.1-r1: Fast SSL configuration scanner
 net-analyzer/sslsplit 0.5.5-r1: Transparent SSL/TLS interception
 net-analyzer/ssmping 0.9.1: Tool for testing multicast connectivity
 net-analyzer/suricata 7.0.5-r1: High performance Network IDS, IPS and Network Security Monitoring engine
@@ -14697,7 +14697,7 @@ net-analyzer/ttl 0.13.3 0.15.3 0.16.1 0.17.0 0.18.0 0.19.0: Modern traceroute/mt
 net-analyzer/upnpscan 0.4-r3: Scans the network for UPnP capable devices
 net-analyzer/vnstat 2.13 2.13-r2 9999: Console-based network traffic monitor that keeps statistics of network usage
 net-analyzer/webfuzzer 0.2.0-r2: Poor man's web vulnerability scanner
-net-analyzer/wireshark 4.6.2-r2 4.6.3 9999: Network protocol analyzer (sniffer)
+net-analyzer/wireshark 4.6.2-r2 4.6.3 4.6.4 9999: Network protocol analyzer (sniffer)
 net-analyzer/wtfis 0.13.0 0.14.0 9999: Passive hostname, domain and IP lookup tool for non-robots
 net-analyzer/xnetload 1.11.3-r1: Displays a count and a graph of the traffic over a specified network connection
 net-analyzer/xprobe 0.3-r1 0.3-r2: Active OS fingerprinting tool - this is Xprobe2
@@ -14751,7 +14751,7 @@ net-dns/dnssec-tools 2.2.3-r3: Tools to ease the deployment of DNSSEC related te
 net-dns/dnssec-validator 2.2.3-r4: Tools to ease the validation of DNSSEC related technologies
 net-dns/dnstop 20140915-r3 20250530: Displays various tables of DNS traffic on your network
 net-dns/dnsviz 0.11.1: Tool suite for analysis and visualization of DNS and DNSSEC
-net-dns/doggo 1.0.5 1.1.2 1.1.3: Command-line DNS Client for Humans
+net-dns/doggo 1.1.3 1.1.5: Command-line DNS Client for Humans
 net-dns/ez-ipupdate 3.0.11.13.3_beta8-r5: Dynamic DNS client for lots of dynamic dns services
 net-dns/fpdns 20190131: Fingerprinting DNS servers
 net-dns/getdns 1.7.3: Modern asynchronous DNS API
@@ -14855,7 +14855,7 @@ net-im/ejabberd 24.10 25.04 25.10: Robust, scalable and extensible XMPP server
 net-im/element-desktop-bin 1.12.11: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
 net-im/fractal 12.1-r1 13: Matrix messaging app for GNOME written in Rust
-net-im/gajim 2.2.0 2.4.2 2.4.3: GTK XMPP Client
+net-im/gajim 2.2.0 2.4.3 2.4.4: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
 net-im/kaidan 0.13.0: Modern XMPP chat app for every device
 net-im/libcommuni 3.7.0-r2: A cross-platform IRC framework written with Qt
@@ -15156,7 +15156,7 @@ net-mail/mswatch 1.2.0-r1: A utility to watch mailstores for changes and initiat
 net-mail/mu 1.12.9 1.12.12 1.12.13 1.12.15: Set of tools to deal with Maildirs, in particular, searching and indexing
 net-mail/muchsync 7: Synchronizes mail messages and notmuch tags across machines
 net-mail/nmzmail 1.1-r2: Fast mail searching for mutt using namazu
-net-mail/notmuch 0.39 0.40: Thread-based e-mail indexer, supporting quick search and tagging
+net-mail/notmuch 0.39 0.40-r1: Thread-based e-mail indexer, supporting quick search and tagging
 net-mail/onionrouter 0.6.2-r1 9999: .onion discovery via SRV DNS lookups for use with postfix
 net-mail/pflogsumm 1.1.5-r1 1.1.5-r2: Pflogsumm is a log analyzer for Postfix logs
 net-mail/pfqueue 0.5.6-r2 0.5.6-r3: pfqueue is an ncurses console-based tool for managing Postfix queued messages
@@ -17636,7 +17636,7 @@ sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
 sys-firmware/edk2 202411 202502-r1: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/edk2-bin 202202 202408 202411: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.18: NXP i.MX firmware
-sys-firmware/intel-microcode 20250812_p20250813 20251111_p20251112 20260210_p20260211: Intel IA32/IA64 microcode update data
+sys-firmware/intel-microcode 20250812_p20250813 20251111_p20251112 20260210_p20260211 20260227_p20260227: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3-r1: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
 sys-firmware/ipw2200-firmware 3.1-r1: Firmware for the Intel PRO/Wireless 2200BG/2915ABG miniPCI and 2225BG PCI
 sys-firmware/ipxe 1.21.1 1.21.1_p20230601 1.21.1_p20230601-r1: Open source network boot (PXE) firmware
@@ -17789,7 +17789,7 @@ sys-kernel/asahi-sources 6.16.4_p2 6.17.11_p1: Asahi Linux kernel sources
 sys-kernel/bliss-initramfs 9.3.0: Boot your system's rootfs from Encrypted/OpenZFS
 sys-kernel/cryptodev 1.14 9999: device that allows access to Linux kernel cryptographic drivers
 sys-kernel/dkms 3.2.2 3.3.0 9999: Dynamic Kernel Module Support
-sys-kernel/dracut 108-r5 109-r1 110-r1 9999: Generic initramfs generation tool
+sys-kernel/dracut 108-r5 109-r1 110-r2 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scripts
 sys-kernel/gentoo-kernel 5.10.250 5.10.251 5.15.200 5.15.201 6.1.163 6.1.164 6.6.126 6.6.127 6.12.74 6.18.12 6.18.13 6.19.3: Linux kernel built with Gentoo patches
@@ -17815,7 +17815,7 @@ sys-kernel/scx-loader 1.0.19 1.0.20: DBUS on-demand loader of sched-ext schedule
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 5.10.250 5.10.251 5.10.9999 5.15.200 5.15.201 5.15.9999 6.1.163 6.1.164 6.1.9999 6.6.126 6.6.127 6.6.9999 6.12.74 6.12.9999 6.18.12 6.18.13 6.19.3: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 5.4.302 5.10.251 5.15.201 6.1.164 6.6.124 6.6.127 6.12.71 6.12.74 6.16.12 6.17.13 6.18.10 6.18.14 6.19.0 6.19.4: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 5.10.251 5.15.201 6.1.164 6.6.127 6.12.74 6.18.15 6.19.5: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.18.8 6.18.9: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
@@ -18232,7 +18232,7 @@ www-apps/piwigo 16.3.0: a photo gallery software for the web
 www-apps/postfixadmin 3.3.16: Web Based Management tool for Postfix style virtual domains and users
 www-apps/prowlarr-bin 2.3.2.5245: An indexer manager/proxy to integrate with your various PVR apps
 www-apps/radarr-bin 6.1.1.10317: A fork of Sonarr to work with movies a la Couchpotato
-www-apps/radicale 3.5.10-r1 3.6.0: A simple CalDAV calendar server
+www-apps/radicale 3.5.10-r1 3.6.0 3.6.1: A simple CalDAV calendar server
 www-apps/readarr-bin 0.4.18.2805: An ebook and audiobook collection manager for Usenet and BitTorrent users
 www-apps/redmine 6.0.7: Flexible project management web application using the Ruby on Rails framework
 www-apps/roundup 2.3.0: Issue-tracking system with command-line, web, and e-mail interfaces
@@ -18281,8 +18281,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.4 3.5: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 7.8.3925.66 7.8.3925.73: A browser for our friends
-www-client/vivaldi-snapshot 7.9.3943.3 7.9.3950.5: A browser for our friends
+www-client/vivaldi 7.8.3925.73 7.8.3925.74: A browser for our friends
+www-client/vivaldi-snapshot 7.9.3950.5 7.9.3960.3: A browser for our friends
 www-client/w3m 0.5.3_p20230121 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
