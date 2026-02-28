@@ -3015,7 +3015,7 @@ app-office/merkuro 25.12.1-r1 25.12.2: Calendar application using Akonadi
 app-office/moneydance 2024.5117: A cross-platform personal finance application
 app-office/multitalk 1.4-r1: New type of presentation program
 app-office/naps2 8.2.0 8.2.1: Document scanning application with a focus on simplicity and ease of use
-app-office/onlyoffice-bin 9.2.1: A free and open source office and productivity suite (binary version)
+app-office/onlyoffice-bin 9.2.1 9.3.0: A free and open source office and productivity suite (binary version)
 app-office/orage 4.20.2 4.21.0: A calendar application for Xfce
 app-office/planner 0.14.91-r1 0.14.92-r1 9999: Project manager for Gnome
 app-office/projectlibre-bin 1.9.3: Open source desktop alternative to Microsoft Project
@@ -3251,7 +3251,7 @@ app-text/fzy 1.0-r1 1.1 9999: Fuzzy text selector (interactive grep) for console
 app-text/gentoo-dtd 20230914 99999999: Document Type Definition for Gentoo-related XML files
 app-text/ghostscript-gpl 10.05.1 10.06.0: Interpreter for the PostScript language and PDF
 app-text/grip 4.6.2: Preview GitHub Markdown files like Readme locally before committing them
-app-text/groonga 13.0.1 14.0.4 14.0.9 14.1.2: An Embeddable Fulltext Search Engine
+app-text/groonga 16.0.0: An Embeddable Fulltext Search Engine
 app-text/groonga-normalizer-mysql 1.1.1-r1: Groonga plugin that provides MySQL compatible normalizers
 app-text/grutatxt 2.200.0: A converter from plain text to HTML and other markup languages
 app-text/gspell 1.14.0-r1 1.14.2: Spell check library for GTK+ applications
