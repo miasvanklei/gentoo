@@ -1848,7 +1848,7 @@ app-editors/mousepad 0.6.5-r2: GTK+-based editor for the Xfce Desktop Environmen
 app-editors/nano 8.6 8.7 8.7-r1 8.7.1 9999: GNU GPL'd Pico clone with more functionality
 app-editors/ne 3.3.3: The nice editor, easy to use for the beginner and powerful for the wizard
 app-editors/nedit 5.7-r1: Multi-purpose text editor for the X Window System
-app-editors/neovim 0.11.4-r1 0.11.5 0.11.6 9999: Vim-fork focused on extensibility and agility
+app-editors/neovim 0.11.4-r1 0.11.5 0.11.6-r1 9999: Vim-fork focused on extensibility and agility
 app-editors/ng 1.5_beta1-r3: Emacs like micro editor Ng -- based on mg2a
 app-editors/okteta 0.26.60_pre20260202: Hex editor by KDE
 app-editors/padre 1.0.0-r4: Perl Application Development and Refactoring Environment
@@ -5847,7 +5847,7 @@ dev-libs/tntnet 3.0: Modular, multithreaded web application server extensible wi
 dev-libs/tomsfastmath 0.13.1-r1: Fast public domain large integer arithmetic library
 dev-libs/totem-pl-parser 3.26.6-r2: Playlist parsing library
 dev-libs/tre 0.8.0_p20210321-r4 0.9.0-r1: Lightweight, robust, and efficient POSIX compliant regexp matching library
-dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 0.26.3 0.26.5 9999: Tree-sitter is a parser generator tool and an incremental parsing library
+dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 0.26.3 0.26.5 0.26.6 9999: Tree-sitter is a parser generator tool and an incremental parsing library
 dev-libs/tree-sitter-bash 0.21.0-r1 0.23.3 0.25.0 0.25.1: Bash grammar for Tree-sitter
 dev-libs/tree-sitter-c 0.23.3 0.23.4 0.23.5 0.24.1: C grammar for Tree-sitter
 dev-libs/tree-sitter-c-sharp 0.23.0 0.23.1: C# grammar for Tree-sitter
@@ -11009,7 +11009,7 @@ dev-util/makeheaders 0_p20240823: Tool that automatically generates .h files for
 dev-util/makepp 2.0.99.2: GNU make replacement
 dev-util/marksman 2025.11.25 2026.02.08: LSP language server for editing Markdown files
 dev-util/massif-visualizer 25.08.3 25.12.2: Tool visualising massif data
-dev-util/maturin 1.11.5 1.12.3 1.12.4 1.12.5: Build and publish crates with pyo3, rust-cpython and cffi bindings
+dev-util/maturin 1.11.5 1.12.3 1.12.4 1.12.5 1.12.6: Build and publish crates with pyo3, rust-cpython and cffi bindings
 dev-util/maxcso 1.13.0 9999: Fast cso compressor
 dev-util/mdds 2.1.1-r1 3.0.0 9999: Collection of multi-dimensional data structure and indexing algorithm
 dev-util/meld 3.22.2-r1 3.22.3: A graphical diff and merge tool
@@ -11125,7 +11125,7 @@ dev-util/tinlink 1.0.0-r2: Tool to create very small elf binary from pure binary
 dev-util/tkdiff 5.7 6.0: Graphical front end to the diff program
 dev-util/tmake 2.12-r2: Cross platform Makefile tool
 dev-util/trace-cmd 3.3.2 3.3.3 3.4: User-space front-end for Ftrace
-dev-util/tree-sitter-cli 0.24.3-r1 0.25.6 0.25.8 0.25.10: Command-line tool for creating and testing tree-sitter grammars
+dev-util/tree-sitter-cli 0.24.3-r1 0.25.6 0.25.8 0.25.10 0.26.6: Command-line tool for creating and testing tree-sitter grammars
 dev-util/treecc 0.3.10-r2 0.3.10-r3: Compiler-compiler tool for aspect-oriented programming
 dev-util/txt2regex 0.9: A Regular Expression wizard that converts human sentences to regexs
 dev-util/ty 0.0.7: An extremely fast Python type checker and language server, written in Rust
@@ -14876,7 +14876,7 @@ net-im/signal-desktop-bin 8.0.0: Allows you to send and receive messages of Sign
 net-im/slack 4.47.59 4.47.72 4.48.95: Team collaboration tool
 net-im/spectrum2 2.2.1-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
-net-im/synapse 1.141.0-r1 1.142.1-r1 1.143.0-r1 1.144.0-r1 1.145.0 1.146.0 1.148.0: Reference implementation of Matrix homeserver
+net-im/synapse 1.141.0-r1 1.142.1-r1 1.145.0 1.146.0 1.148.0: Reference implementation of Matrix homeserver
 net-im/talk-desktop-bin 2.0.5 2.0.6 2.1.1: Nextcloud Talk Desktop client
 net-im/telegram-desktop 6.2.4 6.3.8 6.4.2 6.5.1: Official desktop client for Telegram
 net-im/telegram-desktop-bin 6.4.0 6.4.1 6.4.2 6.4.2-r1 6.5.1: Official desktop client for Telegram (binary package)
