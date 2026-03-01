@@ -5347,7 +5347,7 @@ dev-libs/blazesym_c 0.1.5 0.1.7: C bindings for blazesym, a library for address 
 dev-libs/boehm-gc 8.2.8 8.2.10 8.2.10-r1 8.2.12: The Boehm-Demers-Weiser conservative garbage collector
 dev-libs/boost 1.88.0-r1 1.89.0 1.90.0: Boost Libraries for C++
 dev-libs/boron 2.1.0: A scripting language similar to REBOL
-dev-libs/botan 2.19.5 3.10.0: C++ crypto library
+dev-libs/botan 3.10.0: C++ crypto library
 dev-libs/boxfort 0.1.4-r1 0.1.4-r2 0.1.5: Convenient & cross-platform sandboxing C library
 dev-libs/c-blosc 1.21.6-r1: Blocking, shuffling and lossless compression library
 dev-libs/c-blosc2 2.22.0 2.23.0: Blocking, shuffling and lossless compression library
@@ -5847,7 +5847,7 @@ dev-libs/tntnet 3.0: Modular, multithreaded web application server extensible wi
 dev-libs/tomsfastmath 0.13.1-r1: Fast public domain large integer arithmetic library
 dev-libs/totem-pl-parser 3.26.6-r2: Playlist parsing library
 dev-libs/tre 0.8.0_p20210321-r4 0.9.0-r1: Lightweight, robust, and efficient POSIX compliant regexp matching library
-dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 9999: Tree-sitter is a parser generator tool and an incremental parsing library
+dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 0.26.3 0.26.5 9999: Tree-sitter is a parser generator tool and an incremental parsing library
 dev-libs/tree-sitter-bash 0.21.0-r1 0.23.3 0.25.0 0.25.1: Bash grammar for Tree-sitter
 dev-libs/tree-sitter-c 0.23.3 0.23.4 0.23.5 0.24.1: C grammar for Tree-sitter
 dev-libs/tree-sitter-c-sharp 0.23.0 0.23.1: C# grammar for Tree-sitter
@@ -8936,7 +8936,7 @@ dev-python/oslotest 6.0.0: Oslo test framework
 dev-python/outcome 1.3.0_p0: Capture the outcome of Python function calls
 dev-python/outputcheck 0.4.2-r2: A tool for checking the output of console programs inspired by LLVM's FileCheck
 dev-python/overrides 7.7.0-r1: A decorator to automatically detect mismatch when overriding a method.
-dev-python/ovs 2.17.1_p1 2.17.9 2.17.12 3.6.0: OVS bindings for python
+dev-python/ovs 2.17.1_p1 2.17.9 2.17.12 3.3.8 3.6.0: OVS bindings for python
 dev-python/owslib 0.34.1 0.35.0: Library for client programming with Open Geospatial Consortium web service
 dev-python/packaging 25.0 26.0_rc1 26.0_rc2 26.0_rc3 26.0: Core utilities for Python packages
 dev-python/paginate 0.5.7: Divides large result sets into pages for easier browsing
@@ -13473,7 +13473,7 @@ media-libs/librtprocess 0.12.0-r1: Algorithms for RAW processing from RawTherape
 media-libs/libsamplerate 0.2.2 9999: Secret Rabbit Code (aka libsamplerate) is a Sample Rate Converter for audio
 media-libs/libsbsms 2.3.0: A library for high quality time and pitch scale modification
 media-libs/libsdl 1.2.68 1.2.74: Simple Direct Media Layer 1.2 compatibility wrapper around SDL2
-media-libs/libsdl2 2.30.7-r1 2.30.11 2.32.0 2.32.2 2.32.4 2.32.6 2.32.8 2.32.62 2.32.64: Simple Direct Media Layer
+media-libs/libsdl2 2.30.7-r1 2.30.11 2.32.0 2.32.2 2.32.4 2.32.6 2.32.8 2.32.10 2.32.62 2.32.64: Simple Direct Media Layer
 media-libs/libsdl3 3.2.28 3.2.30 3.4.0 3.4.2: Simple Direct Media Layer
 media-libs/libsfml 2.6.2 3.0.1: Simple and Fast Multimedia Library (SFML)
 media-libs/libshout 2.4.6-r1: library for connecting and sending data to icecast servers
@@ -14501,12 +14501,12 @@ net-analyzer/goaccess 1.8.1 1.9.3 9999: A real-time web log analyzer and interac
 net-analyzer/gr-fosphor 0.0_p20210108-r3 9999: gnuradio fosphor block (GPU spectrum display)
 net-analyzer/greenbone-feed-sync 25.1.0 25.2.0: New script for syncing the Greenbone Community Feed
 net-analyzer/gsa 24.6.1 26.0.0 26.10.1: Greenbone Security Assistant
-net-analyzer/gsad 24.2.4-r1 24.5.4: Greenbone Security Assistant
+net-analyzer/gsad 24.2.4-r1 24.5.4 24.14.2: Greenbone Security Assistant
 net-analyzer/gspoof 3.2-r3: A simple GTK/command line TCP/IP packet generator
 net-analyzer/gvm 22.4-r1 25.5.0: Greenbone Vulnerability Management, previously named OpenVAS
 net-analyzer/gvm-libs 22.23.0 22.28.0 22.35.4: Greenbone Vulnerability Management (GVM) libraries
 net-analyzer/gvm-tools 25.3.0 25.4.0 25.4.5: Remote control for Greenbone Vulnerability Manager, previously named openvas-cli
-net-analyzer/gvmd 25.2.1 26.3.0: Greenbone vulnerability manager, previously named openvas-manager
+net-analyzer/gvmd 25.2.1 26.3.0 26.18.1: Greenbone vulnerability manager, previously named openvas-manager
 net-analyzer/hexinject 1.6-r2: Network packet sniffer and injector
 net-analyzer/hping 3_pre20141226: A ping-like TCP/IP packet assembler/analyzer
 net-analyzer/httping 2.9-r1: http protocol ping-like program
@@ -14765,7 +14765,7 @@ net-dns/libidn2 2.3.7 2.3.8: An implementation of the IDNA2008 specifications (R
 net-dns/maradns 3.5.0036: A security-aware DNS server
 net-dns/mdns-repeater 1.11: Multicast DNS repeater
 net-dns/ndu 0.4-r4: DNS serial number incrementer and reverse zone builder
-net-dns/nsd 4.12.0 4.14.0 9999: An authoritative only, high performance, open source name server
+net-dns/nsd 4.12.0 4.14.1 9999: An authoritative only, high performance, open source name server
 net-dns/opendnssec 2.1.13-r2: An open-source turn-key solution for DNSSEC
 net-dns/openresolv 3.16.5 3.17.0 3.17.3 3.17.4: A framework for managing DNS information
 net-dns/pdns 5.0.1 5.0.2 5.0.3: The PowerDNS Daemon
@@ -14840,7 +14840,7 @@ net-ftp/tnftp 20210827 20230507: NetBSD FTP client with several advanced feature
 net-ftp/uftpd 2.15-r1: The no nonsense TFTP/FTP server
 net-ftp/vsftpd 3.0.5-r1 3.0.5-r2: Very Secure FTP Daemon
 net-ftp/yafc 1.3.7-r2: Console ftp client with a lot of nifty features
-net-im/biboumi 9.0-r4 10.0_pre20260110: XMPP gateway to IRC
+net-im/biboumi 10.0_pre20260110: XMPP gateway to IRC
 net-im/bitlbee 3.6-r3 9999: irc to IM gateway that support multiple IM protocols
 net-im/bitlbee-facebook 1.2.2-r1 9999: Facebook protocol plugin for BitlBee
 net-im/bitlbee-steam 1.4.2 9999: Steam protocol plugin for BitlBee
@@ -15388,7 +15388,7 @@ net-misc/openrdap 0.9.1: RDAP command line client
 net-misc/openrsync 0.5.0_p20220508: BSD-licensed implementation of rsync
 net-misc/openssh 9.8_p1-r4 9.9_p2-r4 10.0_p1 10.0_p2 10.1_p1-r1 10.2_p1: Port of OpenBSD's free SSH release
 net-misc/openssh-contrib 9.7_p1-r4: Port of OpenBSD's free SSH release with HPN/X509 patches
-net-misc/openvswitch 2.17.12: Production quality, multilayer virtual switch
+net-misc/openvswitch 2.17.12 3.3.8: Production quality, multilayer virtual switch
 net-misc/owncloud-client 5.3.2.15463 6.0.2.17506 6.0.3.18040: Synchronize files from ownCloud Server with your computer
 net-misc/packETH 2.1 2.1-r1 3.0: Packet generator tool for ethernet
 net-misc/passt 2025.04.15 2025.06.11 2025.12.15 9999: User-mode networking daemons for VMs and namespaces, replacement for Slirp
@@ -15649,7 +15649,7 @@ net-proxy/trojan 1.16.0-r4: An unidentifiable mechanism that helps you bypass GF
 net-proxy/tsocks 1.8_beta5-r9 1.8_beta5-r10: Transparent SOCKS v4 proxying library
 net-proxy/wwwoffle 2.9j: Web caching proxy suitable for non-permanent Internet connections
 net-proxy/ziproxy 3.3.2-r1: Forwarding, non-caching, compressing web proxy server
-net-voip/mumble 1.5.735-r2 1.6.0_pre20250920-r2 1.6.0_pre20260215-r1 9999: Open source, low-latency, high quality voice chat software
+net-voip/mumble 1.5.735-r2 1.6.0_pre20250920-r3 1.6.0_pre20260215-r2 9999: Open source, low-latency, high quality voice chat software
 net-voip/murmur 1.5.735 1.6.0_pre20250920-r3 1.6.0_pre20260215-r1 9999: Open source, low-latency, high quality voice chat server
 net-voip/sipvicious 0.3.4-r1: SIPVicious is a SIP security package
 net-voip/umurmur 0.3.1: Minimalistic Murmur (Mumble server)
@@ -16717,6 +16717,7 @@ sec-keys/openpgp-keys-nghttp2 20260127: OpenPGP key used by net-libs/nghttp2
 sec-keys/openpgp-keys-nghttp3 20260127: OpenPGP key used by net-libs/nghttp3
 sec-keys/openpgp-keys-ngtcp2 20260127: OpenPGP key used by net-libs/ngtcp2
 sec-keys/openpgp-keys-nicholaswilson 20250209 20250910: OpenPGP keys used by Nicholas Wilson
+sec-keys/openpgp-keys-nlnetlabs 20260101: NLnet Labs releases signing key G2
 sec-keys/openpgp-keys-nmap 20210416: OpenPGP keys used to sign Nmap releases
 sec-keys/openpgp-keys-notqmail 20210223: OpenPGP keys used to sign notqmail releases
 sec-keys/openpgp-keys-ntpsec 20230919: OpenPGP keys used to sign ntpsec releases
@@ -17602,7 +17603,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.4.1_p20260212 13.4.1_p20260219 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.3.1_p20260213 14.3.1_p20260220 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.2.1_p20260207 15.2.1_p20260214 15.2.1_p20260221 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.1_p20260208-r1 16.0.1_p20260215 16.0.1_p20260222 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.4.1_p20260212 13.4.1_p20260219 13.4.1_p20260226 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.3.1_p20260213 14.3.1_p20260220 14.3.1_p20260227 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.2.1_p20260207 15.2.1_p20260214 15.2.1_p20260221 15.2.1_p20260228 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.1_p20260208-r1 16.0.1_p20260215 16.0.1_p20260222 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -17634,7 +17635,7 @@ sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
 sys-firmware/edk2 202411 202502-r1: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/edk2-bin 202202 202408 202411: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.18: NXP i.MX firmware
-sys-firmware/intel-microcode 20250812_p20250813 20251111_p20251112 20260210_p20260211 20260227_p20260227: Intel IA32/IA64 microcode update data
+sys-firmware/intel-microcode 20251111_p20251112 20260210_p20260211 20260227_p20260227: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3-r1: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
 sys-firmware/ipw2200-firmware 3.1-r1: Firmware for the Intel PRO/Wireless 2200BG/2915ABG miniPCI and 2225BG PCI
 sys-firmware/ipxe 1.21.1 1.21.1_p20230601 1.21.1_p20230601-r1: Open source network boot (PXE) firmware
@@ -18248,7 +18249,8 @@ www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.1: Wordpress PHP and MySQL based content management system (CMS)
 www-apps/xpra-html5 10.1 17.1: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
-www-client/chromium 138.0.7204.157 145.0.7632.109 145.0.7632.116 146.0.7680.16 146.0.7680.31 147.0.7695.0: Open-source version of Google Chrome web browser
+www-client/chromium 138.0.7204.157 145.0.7632.109 145.0.7632.116 145.0.7632.116-r1 146.0.7680.31-r1 147.0.7703.0: Open-source version of Google Chrome web browser
+www-client/chromium-common 1: Common configuration files for Chromium slots
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
 www-client/epiphany 48.5 49.2: GNOME webbrowser based on Webkit
@@ -18258,7 +18260,7 @@ www-client/firefox 140.6.0 140.7.0 140.7.1 140.8.0 146.0 146.0.1 147.0 147.0.1 1
 www-client/firefox-bin 140.7.1 140.8.0 147.0.4 148.0: Firefox Web Browser
 www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.169 144.0.7559.132 145.0.7632.116: The web browser from Google
 www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31 145.0.7632.45 146.0.7680.31: The web browser from Google
-www-client/google-chrome-unstable 147.0.7695.0: The web browser from Google
+www-client/google-chrome-unstable 147.0.7703.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
@@ -18326,7 +18328,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.4: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 141.0.7390.107 142.0.7444.34_beta 142.0.7444.175 143.0.7499.40_beta 143.0.7499.169 144.0.7559.31_beta 144.0.7559.132 145.0.7632.45_beta 145.0.7632.116 146.0.7680.31_beta 147.0.7695.0_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 141.0.7390.107 142.0.7444.34_beta 142.0.7444.175 143.0.7499.40_beta 143.0.7499.169 144.0.7559.31_beta 144.0.7559.132 145.0.7632.45_beta 145.0.7632.116 146.0.7680.31_beta 147.0.7703.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.8.7-r1 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
