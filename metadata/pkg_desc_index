@@ -14881,7 +14881,7 @@ net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
 net-im/synapse 1.141.0-r1 1.142.1-r1 1.145.0 1.146.0 1.148.0: Reference implementation of Matrix homeserver
 net-im/talk-desktop-bin 2.0.5 2.0.6 2.1.1: Nextcloud Talk Desktop client
 net-im/telegram-desktop 6.2.4 6.3.8 6.4.2 6.5.1: Official desktop client for Telegram
-net-im/telegram-desktop-bin 6.4.0 6.4.1 6.4.2 6.4.2-r1 6.5.1: Official desktop client for Telegram (binary package)
+net-im/telegram-desktop-bin 6.4.0 6.4.1 6.4.2 6.4.2-r1 6.5.1 6.6.2: Official desktop client for Telegram (binary package)
 net-im/telepathy-logger 0.8.2_p4-r1: Daemon that centralizes the communication logging within the Telepathy framework
 net-im/telepathy-mission-control 5.16.6: An account manager and channel dispatcher for the Telepathy framework
 net-im/tkabber 1.1.2: A jabber client written in Tcl/Tk
@@ -15209,7 +15209,7 @@ net-misc/arpsponge 3.17.11-r1: Sweeps up stray ARP queries from a peering LAN
 net-misc/asahi-btsync 0.2.0-r1: Bluetooth pairing data handoff from macOS for Apple Silicon Macs
 net-misc/asahi-wifisync 0.2.0-r1: WiFi network handoff from macOS for Apple Silicon Macs
 net-misc/asterisk 20.18.2 21.12.1 22.8.2: Asterisk: A Modular Open Source PBX System
-net-misc/asterisk-base 1 2 3: Gentoo Asterisk init scripts
+net-misc/asterisk-base 3 4: Gentoo Asterisk init scripts
 net-misc/asterisk-core-sounds 1.6.1-r1: Core sounds for asterisk
 net-misc/asterisk-extra-sounds 1.5.2: Extra sounds for asterisk
 net-misc/asterisk-g729 20.0.3.1.10-r1 20.0.3.1.11 21.0.3.1.10-r1 21.0.3.1.11 22.0.3.1.10-r1 22.0.3.1.11: G.729 codec and supporting files for asterisk
