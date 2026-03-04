@@ -894,7 +894,7 @@ app-accessibility/edbrowse 3.8.13 3.8.15: Combination editor, browser, and mail 
 app-accessibility/emacspeak 56.0-r1 60.0-r1 9999: The emacspeak audio desktop
 app-accessibility/emacspeak-ss 1.9.1-r1 1.9.1-r2: Adds support for several speech synthesizers to emacspeak
 app-accessibility/espeak-ng 1.52.0 9999: Software speech synthesizer for English, and some other languages
-app-accessibility/espeakup 0.90-r1 0.90-r3 9999: espeakup is a small lightweight connector for espeak and speakup
+app-accessibility/espeakup 0.90-r3 9999: espeakup is a small lightweight connector for espeak and speakup
 app-accessibility/flite 2.2-r1 2.2-r2 2.2-r3: Flite text to speech engine
 app-accessibility/freetts 1.2.2-r3: A speech synthesis system written entirely in Java
 app-accessibility/julius 4.2.2-r1: Large Vocabulary Continuous Speech Recognition Engine
@@ -2253,7 +2253,7 @@ app-emacs/rg 2.4.0: GNU Emacs search tool based on ripgrep
 app-emacs/riece 9.0.0-r1: A redesign of Liece IRC client
 app-emacs/rnc-mode 1.0.6-r2: An Emacs mode for editing Relax NG compact schema files
 app-emacs/rpm-spec-mode 0.16: Emacs mode to ease editing of RPM spec files
-app-emacs/rudel 0.3.1 0.3.2: Collaborative editing environment for GNU Emacs
+app-emacs/rudel 0.3.2: Collaborative editing environment for GNU Emacs
 app-emacs/rust-mode 1.0.5 1.0.6: A major emacs mode for editing Rust source code
 app-emacs/s 1.13.0: The long lost Emacs string manipulation library
 app-emacs/scad-mode 97.0 98.0: GNU Emacs mode to edit OpenSCAD files
@@ -3247,7 +3247,7 @@ app-text/fbpdf 0_p20250124: Framebuffer pdf and djvu viewer
 app-text/feathernotes 1.3.2 1.4.0 9999: Lightweight Qt Notes-Manager for Linux
 app-text/flpsed 0.7.3-r1: Pseudo PostScript editor
 app-text/foliate 3.3.0-r1: gtk ebook reader built with gjs
-app-text/fzy 1.0-r1 1.1 9999: Fuzzy text selector (interactive grep) for console
+app-text/fzy 1.1 9999: Fuzzy text selector (interactive grep) for console
 app-text/gentoo-dtd 20230914 99999999: Document Type Definition for Gentoo-related XML files
 app-text/ghostscript-gpl 10.05.1 10.06.0: Interpreter for the PostScript language and PDF
 app-text/grip 4.6.2: Preview GitHub Markdown files like Readme locally before committing them
@@ -5195,7 +5195,7 @@ dev-lang/cue 0.14.1: open-source data validation language and inference engine
 dev-lang/cxprolog 0.98.2-r3: A WAM based Prolog system
 dev-lang/dafny 4.10.0 4.11.0: Dafny is a verification-aware programming language
 dev-lang/dafny-bin 4.10.0-r1 4.11.0-r1: Verification-aware programming language
-dev-lang/deno-bin 2.6.10 2.7.1 2.7.2: Modern runtime for JavaScript and TypeScript
+dev-lang/deno-bin 2.6.10 2.7.1 2.7.2 2.7.3: Modern runtime for JavaScript and TypeScript
 dev-lang/duktape 2.7.0-r3: Embeddable Javascript engine
 dev-lang/dzaima-bqn 0.2.1 0.2.2 9999: A BQN language implementation written in Java, also know as dbqn
 dev-lang/eisl 5.62: Interpreter and compiler compatible with the ISLisp standard
@@ -11232,7 +11232,7 @@ dev-vcs/svn2cl 0.12 0.14: Create a GNU-style ChangeLog from subversion's svn log
 dev-vcs/svn2git 1.0.20 9999: Tool for one-time conversion from svn to git
 dev-vcs/svneverever 1.7.2-r1 1.7.2-r2: Tool collecting path entries across SVN history
 dev-vcs/tig 2.5.8 2.5.10 2.5.12 2.6.0 9999: text mode interface for git
-dev-vcs/tkcvs 9.3.2 9.3.3: Tcl/Tk-based graphical interface to CVS with Subversion support
+dev-vcs/tkcvs 9.3.2 9.3.3 9.4.9: Tcl/Tk-based graphical interface to CVS with Subversion support
 dev-vcs/topgit 0.19.13 0.19.14: A different patch queue manager
 dev-vcs/tortoisehg 6.9 6.9-r1 7.0.1 9999: Set of graphical tools for Mercurial
 dev-vcs/vcsh 1.20190621.4 2.0.4 2.0.8: Manage config files in $HOME via fake bare git repositories
@@ -12511,7 +12511,7 @@ kde-misc/basket 2.49b_p20251207: Multiple information organizer - a DropDrawers 
 kde-misc/colord-kde 25.12.2: Provides interfaces and session daemon to colord
 kde-misc/kclock 25.12.2: Convergent clock application for Plasma
 kde-misc/kdeconnect 25.12.2: Adds communication between KDE Plasma and your smartphone
-kde-misc/kdiff3 1.12.3: Frontend to diff3 based on KDE Frameworks
+kde-misc/kdiff3 1.12.3 1.12.4: Frontend to diff3 based on KDE Frameworks
 kde-misc/kio-fuse 5.1.1: FUSE interface for KIO
 kde-misc/kio-gdrive 25.12.2: KIO worker for Google Drive service
 kde-misc/kio-gdrive-common 25.12.2: Common files for kio-gdrive
@@ -14680,7 +14680,7 @@ net-analyzer/tcpslice 1.8: Extract and concatenate portions of pcap files
 net-analyzer/tcptrace 6.6.7_p6-r2: A Tool for analyzing network packet dumps
 net-analyzer/tcptraceroute 1.5_beta7-r3: tcptraceroute is a traceroute implementation using TCP packets
 net-analyzer/tcptrack 1.4.2-r1: Passive per-connection tcp bandwidth monitor
-net-analyzer/telegraf 1.18.3 1.26.3-r1: The plugin-driven server agent for collecting & reporting metrics
+net-analyzer/telegraf 1.26.3-r1: The plugin-driven server agent for collecting & reporting metrics
 net-analyzer/termshark 2.4.0: A terminal UI for tshark, inspired by Wireshark
 net-analyzer/testssl 3.0.10 3.0.10-r1 3.2.2 3.2.2-r1: Tool to check TLS/SSL cipher support
 net-analyzer/thc-ipv6 3.8 3.8_p20250914 9999: Complete tool set to attack the inherent protocol weaknesses of IPV6 and ICMP6
@@ -15254,7 +15254,7 @@ net-misc/dhcping 1.2-r1: Utility to send DHCP requests to DHCP servers to see if
 net-misc/dibbler 1.0.1-r4: Portable DHCPv6 implementation (server, client and relay)
 net-misc/downloader-cli 0.3.4-r1: Simple downloader with an customizable progressbar
 net-misc/dropbear 2025.89: Small SSH 2 client/server designed for small memory environments
-net-misc/dropbox 232.4.5988 234.4.5591 235.4.5905 236.4.5918 237.4.5655 238.4.6075 240.4.8493 240.4.8609 241.4.4795 241.4.4853 242.4.5815: Dropbox daemon (pretends to be GUI-less)
+net-misc/dropbox 242.4.5815 243.4.6956: Dropbox daemon (pretends to be GUI-less)
 net-misc/dropbox-cli 2024.04.17-r1: Cli interface for dropbox (python), part of nautilus-dropbox
 net-misc/efax 0.9a_p19_p1: A simple fax program for single-user systems
 net-misc/electrum 4.6.2 4.7.0 4.7.1: User friendly Bitcoin client
@@ -17221,7 +17221,7 @@ sys-apps/lssbus 0.1-r1: Small utility for Linux/SPARC that list devices on SBUS
 sys-apps/lsvpd 1.7.14: Utility to List Device Vital Product Data (VPD)
 sys-apps/makedev 3.23.1-r3: Program used for creating device files in /dev
 sys-apps/man-db 2.13.0-r1 2.13.1-r1 9999: A man replacement that utilizes dbm instead of flat files
-sys-apps/man-pages 6.10 6.16-r2 6.17 9999: A somewhat comprehensive collection of Linux man pages
+sys-apps/man-pages 6.10 6.16-r2 6.17-r1 9999: A somewhat comprehensive collection of Linux man pages
 sys-apps/man-pages-posix 2013a 2017a-r1: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g-r2: Standard commands to read man pages
 sys-apps/mawk 1.3.4_p20250131 1.3.4_p20260129: An (often faster than gawk) awk-interpreter
@@ -17385,7 +17385,7 @@ sys-auth/libnss-nis 3.1 3.2: NSS module to provide NIS support
 sys-auth/libnss-pgsql 1.5.0_beta-r1: Name Service Switch module for use with PostgreSQL
 sys-auth/libyubikey 1.13-r1: Yubico C low-level library
 sys-auth/microsoft-identity-broker 2.0.1_p2-r2: Microsoft Authentication Broker to access a corporate environment
-sys-auth/munge 0.5.13-r2 0.5.15 0.5.18: An authentication service for creating and validating credentials
+sys-auth/munge 0.5.18: An authentication service for creating and validating credentials
 sys-auth/nss-docker-ng 1.0.7 1.1.3: NSS plugin for finding Docker containers by their ID or name
 sys-auth/nss-mdns 0.15.1 9999: Name Service Switch module for Multicast DNS
 sys-auth/nss-myhostname 0.3-r1: Name Service Switch module for resolving the local hostname
@@ -17716,7 +17716,7 @@ sys-fs/fuseiso 20070708-r3: Fuse module to mount ISO9660
 sys-fs/genext2fs 1.5.0 1.5.0-r1: generate ext2 file systems
 sys-fs/genfstab 29 31: Genfstab - generate output suitable for addition to an fstab file
 sys-fs/genimage 19 9999: Tool to generate multiple filesystem and flash images from a tree
-sys-fs/go-mtpfs 1.0.0 1.0.0-r1: a simple FUSE filesystem for mounting Android devices as a MTP device
+sys-fs/go-mtpfs 1.0.0-r1: a simple FUSE filesystem for mounting Android devices as a MTP device
 sys-fs/google-drive-ocamlfuse 0.7.32: FUSE filesystem over Google Drive
 sys-fs/growpart 0.0.32-r1: A script that can grow your rootfs on first boot
 sys-fs/gt5 1.4.0-r2: a diff-capable 'du-browser'
@@ -17817,7 +17817,7 @@ sys-kernel/scx-loader 1.0.19 1.0.20: DBUS on-demand loader of sched-ext schedule
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 5.10.250 5.10.251 5.10.9999 5.15.200 5.15.201 5.15.9999 6.1.163 6.1.164 6.1.9999 6.6.126 6.6.127 6.6.9999 6.12.74 6.12.9999 6.18.12 6.18.13 6.18.15 6.19.3 6.19.5: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 5.10.251 5.15.201 6.1.164 6.6.127 6.12.74 6.18.15 6.19.5: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 5.10.252 5.15.202 6.1.165 6.6.128 6.12.75 6.18.16 6.19.6: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38 1.40: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.18.8 6.18.9: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
@@ -18791,7 +18791,7 @@ x11-misc/xdialog 2.3.1-r1: Drop-in replacement for cdialog using GTK
 x11-misc/xdiskusage 1.52-r1: User-friendly program to show you what is using up all your disk space
 x11-misc/xdo 0.5.7: Small X utility to perform elementary actions on windows
 x11-misc/xdock 0.3.0-r2: Emulates Window Maker docks (runs in any window manager)
-x11-misc/xdotool 3.20211022.1-r1 3.20211022.1-r2 4.20251130.1: Simulate keyboard input and mouse activity, move and resize windows
+x11-misc/xdotool 3.20211022.1-r2 4.20251130.1: Simulate keyboard input and mouse activity, move and resize windows
 x11-misc/xearth 1.1-r1: Set the X root window to an image of the Earth
 x11-misc/xfe 1.46.2: MS-Explorer-like minimalist file manager for X
 x11-misc/xfishtank 2.5: Turns your root window into an aquarium
