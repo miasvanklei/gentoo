@@ -1873,8 +1873,8 @@ app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clo
 app-editors/vim 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9.1.1652-r3 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r2 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.108.2 1.109.5 1.110.1: Multiplatform Visual Studio Code from Microsoft
-app-editors/vscodium 1.109.51242 1.110.11607: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscode 1.110.1 1.111.0: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscodium 1.109.51242 1.110.11631: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
 app-editors/xemacs 21.5.36-r6 21.5.9999: highly customizable open source text editor and application development system
@@ -2609,7 +2609,7 @@ app-i18n/zinnia-tomoe 0.6.0_p20080911: Handwriting model files trained with Tomo
 app-laptop/dispad 0.3.1-r1: Daemon to disable trackpads while typing
 app-laptop/framework-laptop-kmod 0_pre20240915: Kernel module to expose more Framework Laptop stuff
 app-laptop/framework-tool-tui 0.7.6 0.8.0: TUI for controlling and monitoring Framework Computers hardware built in Rust
-app-laptop/framework_tool 0.4.3 0.4.5 0.5.0: Tool to control Framework Computer systems
+app-laptop/framework_tool 0.4.3 0.4.5 0.5.0 0.6.1: Tool to control Framework Computer systems
 app-laptop/hdaps-gl 0.0.7: OpenGL visualization for HDAPS data
 app-laptop/hdapsd 20141203-r3: IBM ThinkPad Hard Drive Active Protection System (HDAPS) daemon
 app-laptop/i8kutils 1.43: Dell Inspiron and Latitude utilities
@@ -3008,7 +3008,7 @@ app-office/libreoffice 25.2.7.2-r1 9999: A full office productivity suite
 app-office/libreoffice-bin 24.8.4-r6 25.2.0-r6 25.8.4 25.8.4-r1: A full office productivity suite. Binary package
 app-office/libreoffice-l10n 25.2.7.2: Translations for the Libreoffice suite
 app-office/libreoffice-voikko 5.0-r1: Free Finnish spell checking and hyphenation for LibreOffice
-app-office/lyx 2.4.4 2.5.0_rc2 2.5.0: WYSIWYM (What You See Is What You Mean) document processor based on LaTeX
+app-office/lyx 2.4.4 2.5.0: WYSIWYM (What You See Is What You Mean) document processor based on LaTeX
 app-office/magicpoint 1.13a_p20121015-r2: X11 based presentation tool
 app-office/mdbtools 1.0.1: Set of libraries and utilities for reading Microsoft Access database (MDB) files
 app-office/merkuro 25.12.2 25.12.3: Calendar application using Akonadi
@@ -13116,7 +13116,7 @@ media-gfx/kio-mobi-thumbnailer 25.12.2 25.12.3: KIO thumbnail generator for Mobi
 media-gfx/kio-ps-thumbnailer 25.12.2 25.12.3: KIO thumbnail generator for DVI, EPS, PDF and PS files
 media-gfx/kio-raw-thumbnailer 25.12.2 25.12.3: KIO thumbnail generator for RAW files
 media-gfx/kphotoalbum 6.1.0-r1: Tool for indexing, searching, and viewing images
-media-gfx/krita 6.0.0_beta3: Free digital painting application. Digital Painting, Creative Freedom!
+media-gfx/krita 6.0.0_beta3 6.0.0_beta3-r1: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kuickshow 0.11.0: Image viewer based on KDE Frameworks
 media-gfx/kxstitch 3.0.0_pre20250110: Program to create cross stitch patterns
 media-gfx/libbgcode 0.0.20241024 0.0.20251210: Prusa Block & Binary G-code reader / writer / converter
@@ -19199,7 +19199,7 @@ x11-wm/xmonad-contrib 0.17.0 0.17.1 0.18.0: Community-maintained extensions for 
 x11-wm/xpra 6.2.5-r1 6.9999 9999: X Persistent Remote Apps (xpra) and Partitioning WM (parti) based on wimpiggy
 xfce-base/exo 4.20.0-r1 4.21.0-r1: Extensions, widgets and framework library with session support for Xfce
 xfce-base/garcon 4.20.0 4.21.0: Xfce's freedesktop.org specification compatible menu implementation library
-xfce-base/libxfce4ui 4.20.2 4.21.2 4.21.3: Unified widget and session management libs for Xfce
+xfce-base/libxfce4ui 4.20.2 4.21.2 4.21.3 4.21.4: Unified widget and session management libs for Xfce
 xfce-base/libxfce4util 4.20.1: A basic utility library for the Xfce desktop environment
 xfce-base/libxfce4windowing 4.20.4 4.20.5: Unified widget and session management libs for Xfce
 xfce-base/thunar 4.20.6 4.20.7 4.21.3 4.21.4: File manager for the Xfce desktop environment
