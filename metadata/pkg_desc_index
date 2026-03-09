@@ -1455,7 +1455,7 @@ app-crypt/fcrackzip 1.0: Zip password cracker
 app-crypt/freepg 2.5.17 2.5.18: Cross-distro GnuPG fork focused on OpenPGP compliance
 app-crypt/gcr 3.41.2-r2 4.2.1 4.3.0 4.3.1 4.4.0.1-r1: Libraries for cryptographic UIs and accessing PKCS#11 modules
 app-crypt/gifshuffle 2.0-r1: GIF colourmap steganography
-app-crypt/glep63-check 11-r1: GLEP 63 compliance checker for OpenPGP keys
+app-crypt/glep63-check 11-r1 12: GLEP 63 compliance checker for OpenPGP keys
 app-crypt/gnupg 2.4.9 2.5.17 2.5.17-r1 2.5.17-r2 2.5.18: The GNU Privacy Guard, a GPL OpenPGP implementation
 app-crypt/gnupg-pkcs11-scd 0.11.0 9999: PKCS#11 support for GnuPG
 app-crypt/gocryptfs 2.6.1-r1: Encrypted overlay filesystem written in Go
@@ -1558,7 +1558,7 @@ app-crypt/xor-analyze 0.5-r1: Program for cryptanalyzing xor 'encryption' with v
 app-crypt/yubihsm-connector 3.0.7: Server to expose YubiHSM 2 to network
 app-crypt/yubihsm-shell 2.6.0: Components used to interact with the YubiHSM 2
 app-crypt/yubikey-manager 5.8.0 5.9.0: Python library and command line tool for configuring a YubiKey
-app-crypt/yubioath-flutter-bin 7.3.0: Yubico Authenticator for TOTP
+app-crypt/yubioath-flutter-bin 7.3.0 7.3.2: Yubico Authenticator for TOTP
 app-crypt/zulucrypt 7.0.0 7.1.0: Front end to cryptsetup
 app-dicts/aspell-af 0.50.0-r1: Aspell (Afrikaans) language dictionary
 app-dicts/aspell-am 0.03.1-r1: Aspell (Amharic) language dictionary
@@ -3967,7 +3967,7 @@ dev-cpp/websocketpp 0.8.2-r1: C++/Boost Asio based websocket client/server libra
 dev-cpp/xsimd 13.2.0 14.0.0: C++ wrappers for SIMD intrinsics
 dev-cpp/yaml-cpp 0.8.0-r2 0.9.0-r1: YAML parser and emitter in C++
 dev-db/apgdiff 2.7.0-r1: A simple PostgreSQL diff tool that is useful for schema upgrades
-dev-db/barman 3.15.0 3.16.1: Administration tool for disaster recovery of PostgreSQL servers
+dev-db/barman 3.15.0 3.16.1 3.17.0: Administration tool for disaster recovery of PostgreSQL servers
 dev-db/bucardo 5.4.1: An asynchronous PostgreSQL replication system
 dev-db/cdb 0.75-r4 0.75-r5: Fast, reliable, simple package for creating and reading constant databases
 dev-db/citus 12.1.10 13.0.5 13.1.1 13.2.0 14.0.0 9999: Open-source postgresql extension for clustering/multi-node setups
@@ -5245,7 +5245,7 @@ dev-lang/mercury-extras 22.01.1: Additional libraries and tools that are not par
 dev-lang/micropython 1.23.0 1.25.0: Python implementation for microcontrollers
 dev-lang/mlton 20180207: Standard ML optimizing compiler and libraries
 dev-lang/mmix 20160804-r1 20160804-r2: Donald Knuth's MMIX Assembler and Simulator
-dev-lang/moarvm 2025.10 2025.11 9999: A 6model-based VM for NQP and Raku
+dev-lang/moarvm 2026.02 9999: A 6model-based VM for NQP and Raku
 dev-lang/mond 0.11.2: Mond is a scripting language for .NET Core
 dev-lang/mono 6.12.0.199-r2 6.14.1: Mono open source ECMA CLI, C# and .NET implementation
 dev-lang/mono-basic 4.8-r1: Visual Basic Compiler and Runtime
@@ -5256,7 +5256,7 @@ dev-lang/neko 2.4.0-r2 2.4.1: Neko is a high-level dynamically typed programming
 dev-lang/nelua 20240113 99999999: Statically-typed systems programming language inspired by Lua
 dev-lang/nim 2.2.6 2.2.8: Compiled, garbage-collected systems programming language
 dev-lang/nprolog 4.79 4.81 4.82 4.83: Interpreter and compiler to be compatible with Arity/Prolog32
-dev-lang/nqp 2025.10 2025.11 9999: Not Quite Perl, a Raku bootstrapping compiler
+dev-lang/nqp 2026.02 9999: Not Quite Perl, a Raku bootstrapping compiler
 dev-lang/ocaml 4.14.2 5.3.0-r1 5.4.0: Programming language supporting functional, imperative & object-oriented styles
 dev-lang/oorexx 5.1.0_beta12932: Open source implementation of Object Rexx
 dev-lang/orc 0.4.38 0.4.40 0.4.40-r1 0.4.41: The Oil Runtime Compiler, a just-in-time compiler for array operations
@@ -5274,7 +5274,7 @@ dev-lang/python-exec 2.4.10: Python script wrapper
 dev-lang/python-exec-conf 2.4.6: Configuration file for dev-lang/python-exec
 dev-lang/qore 1.19.2: Qore, the embeddable multithreaded scripting language
 dev-lang/qu-prolog 10.8-r1: Extended Prolog supporting quantifiers, object-variables and substitutions
-dev-lang/rakudo 2025.10 2025.11: A compiler for the Raku programming language
+dev-lang/rakudo 2026.02: A compiler for the Raku programming language
 dev-lang/rapydscript-ng 0.7.22 9999: Pythonic JavaScript that doesn't suck
 dev-lang/regina-rexx 3.9.5 3.9.6: Portable Rexx interpreter
 dev-lang/ruby 3.2.7 3.2.8 3.2.9-r1 3.2.10 3.3.8 3.3.10-r1 3.4.8 4.0.0 4.0.1: An object-oriented scripting language
@@ -12598,7 +12598,7 @@ kde-plasma/powerdevil 6.5.5 6.6.2: Power management for KDE Plasma Shell
 kde-plasma/print-manager 6.5.5 6.6.2: Manage CUPS print jobs and printers in Plasma
 kde-plasma/qqc2-breeze-style 6.5.5 6.6.2: Breeze inspired QQC2 Style
 kde-plasma/sddm-kcm 6.5.5-r1 6.6.2: KDE Plasma control module for SDDM
-kde-plasma/spectacle 6.5.5 6.6.2: Screenshot capture utility
+kde-plasma/spectacle 6.5.5 6.6.2-r1: Screenshot capture utility
 kde-plasma/systemsettings 6.5.5 6.6.2: Control Center to configure KDE Plasma desktop
 kde-plasma/wacomtablet 6.5.5-r1 6.6.2: Wacom system settings module that supports different button/pen layout profiles
 kde-plasma/xdg-desktop-portal-kde 6.5.5 6.6.2: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
@@ -14395,7 +14395,7 @@ media-video/oxine 0.7.1-r6: OSD frontend for Xine
 media-video/parole 4.18.2 4.20.0: A simple Xfce4 media player using GStreamer
 media-video/peek 1.5.1-r2: Simple animated Gif screen recorder
 media-video/pgmfindclip 1.13: automatically find a clipping border for a sequence of pgm images
-media-video/pipewire 1.4.10 1.4.9999 1.6.0 1.6.9999 9999: Multimedia processing graphs
+media-video/pipewire 1.4.10 1.4.9999 1.6.0 1.6.1 1.6.9999 9999: Multimedia processing graphs
 media-video/pitivi 2023.03-r2: A non-linear video editor using the GStreamer multimedia framework
 media-video/popcorntime-bin 0.5.1-r4: BitTorrent client that includes an integrated media player
 media-video/projectx 0.91.0.10-r6: Converts, splits and demuxes DVB and other MPEG recordings
@@ -14440,7 +14440,7 @@ media-video/videotrans 1.6.1-r2: A package to convert movies to DVD format and t
 media-video/vlc 3.0.23 3.0.9999 4.0.0_pre20260215 9999: Media player and framework with support for most multimedia files and streaming
 media-video/vobcopy 1.2.1: Copies DVD .vob files to harddisk, decrypting them on the way
 media-video/webcamoid 9.2.3 9999: Full featured webcam capture application
-media-video/wireplumber 0.5.12 0.5.13 9999: Replacement for pipewire-media-session
+media-video/wireplumber 0.5.12 0.5.13 0.5.13_p20260216 9999: Replacement for pipewire-media-session
 media-video/x264-encoder 0.0.20240513-r1 9999: A free commandline encoder for X264/AVC streams
 media-video/xine-ui 0.99.13-r1 0.99.14: Xine movie player
 media-video/xvattr 1.3-r4: X11 XVideo Querying/Setting Tool from Ogle project
@@ -17798,7 +17798,7 @@ sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-
 sys-kernel/gentoo-kernel 5.10.250 5.10.251 5.10.252 5.15.200 5.15.201 5.15.202 6.1.163 6.1.164 6.1.166 6.6.126 6.6.127 6.6.129 6.12.74 6.12.76 6.18.12 6.18.13 6.18.15 6.18.16 6.19.3 6.19.5 6.19.6: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.250 5.10.251 5.10.252 5.15.200 5.15.201 5.15.202 6.1.163 6.1.164 6.1.166 6.6.126 6.6.127 6.6.129 6.12.74 6.12.76 6.18.12 6.18.13 6.18.15 6.18.16 6.19.3 6.19.5 6.19.6: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.249 5.10.249-r1 5.10.250 5.10.250-r1 5.10.251 5.10.252 5.15.197 5.15.198 5.15.199 5.15.200 5.15.201 5.15.202 6.1.161 6.1.162 6.1.163 6.1.164 6.1.165 6.1.166 6.6.126 6.6.127 6.6.128 6.6.129 6.12.70 6.12.71 6.12.73 6.12.74 6.12.75 6.12.76 6.18.12 6.18.13 6.18.14 6.18.15 6.18.16 6.19.2 6.19.3 6.19.4 6.19.5 6.19.6: Full sources including the Gentoo patchset for the 6.19 kernel tree
-sys-kernel/git-sources 7.0_rc1 7.0_rc2: The very latest -git version of the Linux kernel
+sys-kernel/git-sources 7.0_rc1 7.0_rc2 7.0_rc3: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 63 65 66 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
 sys-kernel/kergen 0.1.5-r1: Kernel config generator
