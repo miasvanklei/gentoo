@@ -1405,7 +1405,7 @@ app-containers/runc 1.2.4 1.2.5 1.2.6 1.2.8 1.3.0 1.3.1 1.3.3 1.4.0-r1: runc con
 app-containers/s6-overlay 2.1.0.2-r1: an s6-based init system for containers
 app-containers/sen 0.8.0: Terminal User Interface for docker engine
 app-containers/skopeo 1.18.0-r1 1.19.0 1.21.0 9999: Work with remote container images registries
-app-containers/slirp4netns 1.2.0 1.3.3: User-mode networking for unprivileged network namespaces
+app-containers/slirp4netns 1.3.3: User-mode networking for unprivileged network namespaces
 app-containers/snapd 2.63: Service and tools for management of snap packages
 app-containers/syft 0.75.0 0.76.0 0.94.0 0.95.0 1.9.0 1.18.1: Generate a Software Bill of Materials from container images and filesystems
 app-containers/umoci 0.4.7: Manipulation tool for OCI images
@@ -2936,7 +2936,7 @@ app-misc/tmux 3.4-r1 3.5a 3.6a 9999: Terminal multiplexer
 app-misc/tmux-mem-cpu-load 3.8.1 9999: CPU, RAM memory, and load monitor for use with tmux
 app-misc/tmux-xpanes 4.2.0: tmux-based terminal divider
 app-misc/tmux2html 0.1.11-r1: Render full tmux windows or individual panes as HTML
-app-misc/tmuxp 1.55.0 1.62.0 1.63.1 1.64.0: tmux session manager. built on libtmux
+app-misc/tmuxp 1.55.0 1.62.0 1.63.1 1.64.0 1.66.0: tmux session manager. built on libtmux
 app-misc/todo 2.12.0-r2 2.13.0: A CLI-based TODO list manager
 app-misc/toilet 0.3-r1: The Other Implementations letters. Figlet replacement
 app-misc/tpipe 1.6-r2: Command to duplicate standard input to more than one program
@@ -5249,7 +5249,7 @@ dev-lang/moarvm 2026.02 9999: A 6model-based VM for NQP and Raku
 dev-lang/mond 0.11.2: Mond is a scripting language for .NET Core
 dev-lang/mono 6.12.0.199-r2 6.14.1: Mono open source ECMA CLI, C# and .NET implementation
 dev-lang/mono-basic 4.8-r1: Visual Basic Compiler and Runtime
-dev-lang/mrustc 0.11.2-r1 9999: Mutabah's Rust Compiler
+dev-lang/mrustc 0.11.2-r1 0.12.0 9999: Mutabah's Rust Compiler
 dev-lang/mujs 1.3.6 1.3.7-r1 1.3.8: An embeddable JavaScript interpreter written in C
 dev-lang/nasm 2.16.03 3.01: groovy little assembler
 dev-lang/neko 2.4.0-r2 2.4.1: Neko is a high-level dynamically typed programming language
@@ -5930,9 +5930,9 @@ dev-lisp/clisp 2.49.92-r1 2.49.92-r3: Portable, bytecode-compiled implementation
 dev-lisp/clozurecl 1.12.2 1.13: Common Lisp implementation, derived from Digitool's MCL product
 dev-lisp/clx 0.7.5-r1: CLX is the Common Lisp interface to the X11 protocol primarily for SBCL
 dev-lisp/cmucl 21e: CMU Common Lisp is an implementation of ANSI Common Lisp
-dev-lisp/ecl 21.2.1-r5 23.9.9-r1 24.5.10 24.5.10-r1: ECL is an embeddable Common Lisp implementation
+dev-lisp/ecl 24.5.10 24.5.10-r1: ECL is an embeddable Common Lisp implementation
 dev-lisp/flexi-streams 1.0.19: Flexible bivalent streams for Common Lisp
-dev-lisp/gcl 2.6.13_pre99 2.6.14 2.6.15_pre3: GNU Common Lisp
+dev-lisp/gcl 2.6.14 2.6.15_pre3: GNU Common Lisp
 dev-lisp/hyperspec 7.0-r3: Common Lisp ANSI-standard Hyperspec
 dev-lisp/roswell 21.10.14.111 22.12.14.113 23.10.14.114: A lisp installer and launcher for major environment
 dev-lisp/sbcl 2.5.4 2.5.11 2.6.1 2.6.2: Steel Bank Common Lisp (SBCL) is an implementation of ANSI Common Lisp
@@ -10659,7 +10659,7 @@ dev-tcltk/scwoop 4.1-r2: Simple Composite Widget Object Oriented Package
 dev-tcltk/snack 2.2.10-r14: The Snack Sound Toolkit (Tcl)
 dev-tcltk/tablelist 6.15.1: Multi-Column Listbox Package
 dev-tcltk/tcl3d 0.9.5-r2 1.0.2: Tcl bindings to OpenGL and other 3D libraries
-dev-tcltk/tcllib 1.20 1.21 2.0: Tcl Standard Library
+dev-tcltk/tcllib 1.21 2.0: Tcl Standard Library
 dev-tcltk/tclpython 5.0-r4 5.1: Python package for Tcl
 dev-tcltk/tclreadline 2.1.0-r5 2.3.8-r2 2.4.0 2.4.1: Readline extension to TCL
 dev-tcltk/tclx 8.6.1 8.6.3: A set of extensions to TCL
@@ -12433,7 +12433,7 @@ kde-frameworks/attica 6.22.0 6.23.0: Framework providing access to Open Collabor
 kde-frameworks/baloo 6.22.0 6.23.0: Framework for searching and managing metadata
 kde-frameworks/bluez-qt 6.22.0 6.23.0: Qt wrapper for Bluez 5 DBus API
 kde-frameworks/breeze-icons 6.22.0 6.23.0: Breeze SVG icon theme
-kde-frameworks/extra-cmake-modules 6.20.0 6.22.0 6.23.0: Extra modules and scripts for CMake
+kde-frameworks/extra-cmake-modules 6.22.0 6.23.0: Extra modules and scripts for CMake
 kde-frameworks/frameworkintegration 6.22.0 6.23.0: Framework for integrating Qt applications with KDE Plasma workspaces
 kde-frameworks/kapidox 6.22.0 6.23.0: Framework for building KDE API documentation in a standard format and style
 kde-frameworks/karchive 6.22.0 6.23.0: Framework for reading, creation, and manipulation of various archive formats
@@ -13116,7 +13116,7 @@ media-gfx/kio-mobi-thumbnailer 25.12.2 25.12.3: KIO thumbnail generator for Mobi
 media-gfx/kio-ps-thumbnailer 25.12.2 25.12.3: KIO thumbnail generator for DVI, EPS, PDF and PS files
 media-gfx/kio-raw-thumbnailer 25.12.2 25.12.3: KIO thumbnail generator for RAW files
 media-gfx/kphotoalbum 6.1.0-r1: Tool for indexing, searching, and viewing images
-media-gfx/krita 6.0.0_beta3 6.0.0_beta3-r1: Free digital painting application. Digital Painting, Creative Freedom!
+media-gfx/krita 6.0.0_beta3-r1: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kuickshow 0.11.0: Image viewer based on KDE Frameworks
 media-gfx/kxstitch 3.0.0_pre20250110: Program to create cross stitch patterns
 media-gfx/libbgcode 0.0.20241024 0.0.20251210: Prusa Block & Binary G-code reader / writer / converter
@@ -14395,7 +14395,7 @@ media-video/oxine 0.7.1-r6: OSD frontend for Xine
 media-video/parole 4.18.2 4.20.0: A simple Xfce4 media player using GStreamer
 media-video/peek 1.5.1-r2: Simple animated Gif screen recorder
 media-video/pgmfindclip 1.13: automatically find a clipping border for a sequence of pgm images
-media-video/pipewire 1.4.10 1.4.9999 1.6.0 1.6.1 1.6.9999 9999: Multimedia processing graphs
+media-video/pipewire 1.4.10 1.4.9999 1.6.1 1.6.9999 9999: Multimedia processing graphs
 media-video/pitivi 2023.03-r2: A non-linear video editor using the GStreamer multimedia framework
 media-video/popcorntime-bin 0.5.1-r4: BitTorrent client that includes an integrated media player
 media-video/projectx 0.91.0.10-r6: Converts, splits and demuxes DVB and other MPEG recordings
@@ -14428,7 +14428,7 @@ media-video/totem 43.1 43.2: Media player for GNOME
 media-video/tsmuxer 2.7.0: Utility to create and demux TS and M2TS files
 media-video/ttcut 0.19.6_p2-r1: Tool for cutting MPEG files especially for removing commercials
 media-video/untrunc 0_pre20260112 0_pre20260204: Restore truncated mp4/mov files
-media-video/ushare 2.1 2.1_p20250817: uShare is a UPnP (TM) A/V & DLNA Media Server
+media-video/ushare 2.1_p20250817: uShare is a UPnP (TM) A/V & DLNA Media Server
 media-video/v4l2loopback 0.13.1 0.15.0 0.15.1 0.15.3 9999: v4l2 loopback device whose output is its own input
 media-video/vamps 0.99.2-r2: Very fast requantisizing tool for backup DVDs
 media-video/vcdimager 2.0.1-r1 2.0.1-r2: GNU VCDimager
@@ -17178,7 +17178,7 @@ sys-apps/hprofile 6.1.3-r1 6.2.1: Utility to manage hardware, network, power or 
 sys-apps/hw-probe 1.6.6-r3: A tool to probe for hardware, check it's operability and find drivers
 sys-apps/hwdata 0.391 0.398 0.399 0.400: Hardware identification and configuration data
 sys-apps/hwinfo 23.2-r1: Hardware detection tool used in SuSE Linux
-sys-apps/hwloc 1.11.13-r2 2.11.2-r1 2.12.2: Displays the hardware topology in convenient formats
+sys-apps/hwloc 2.11.2-r1 2.12.2: Displays the hardware topology in convenient formats
 sys-apps/i2c-tools 4.3-r2 4.4: I2C tools for bus probing, chip dumping, EEPROM decoding, and more
 sys-apps/ibm-powerpc-utils 1.3.8-r1 1.3.10-r1 1.3.10-r2: Utilities for the maintenance of the IBM and Apple PowerPC platforms
 sys-apps/idle3-tools 0.9.3_pre20120123-r2: Set, get or disable the value of the idle3 timer found on WD HDDs
@@ -17330,9 +17330,9 @@ sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
 sys-apps/system-monitoring-center 2.26.0-r1 3.1.0 3.2.0 9999: Multi-featured system monitor GUI written in Python
 sys-apps/systemctl-tui 0.4.0: A simple TUI for interacting with systemd services and their logs
-sys-apps/systemd 258.3 259 259.1 259.2 9999: System and service manager for Linux
+sys-apps/systemd 258.3 259 259.1 259.2 259.3 9999: System and service manager for Linux
 sys-apps/systemd-readahead 216: Split of readahead systemd implementation
-sys-apps/systemd-utils 255.18 255.21 256.17 259.1: Utilities split out from systemd for OpenRC users
+sys-apps/systemd-utils 255.18 255.21 256.17 259.1 259.3: Utilities split out from systemd for OpenRC users
 sys-apps/sysvinit 3.09 3.14 3.15: /sbin/init - parent of all processes
 sys-apps/tas 1.9.0.240925: Supermicro Thin-Agent Service for monitoring through the BMC/IPMI
 sys-apps/tcp-wrappers 7.6.31-r2: TCP Wrappers
@@ -17563,7 +17563,7 @@ sys-cluster/kubelet 1.32.9 1.32.10 1.32.11 1.33.5 1.33.6 1.33.7 1.34.1 1.34.2 1.
 sys-cluster/kubeletctl 1.12 1.13: A client for kubelet
 sys-cluster/kubelogin 1.34.2 1.35.2: kubectl plugin for Kubernetes OpenID Connect authentication
 sys-cluster/kubeseal 0.30.0 0.32.2: Client-side utility for one-way encrypted secrets in kubernetes
-sys-cluster/legion 21.09.0-r1 23.03.0 9999: A data-centric parallel programming system
+sys-cluster/legion 23.03.0-r1 9999: Data-centric parallel programming system
 sys-cluster/libcircle 0.3.0: API for distributing embarrassingly parallel workloads using self-stabilization
 sys-cluster/libqb 2.0.1-r2 2.0.4-r1 2.0.8-r1: Library providing high performance logging, tracing, ipc, and poll
 sys-cluster/libquo 1.3.1-r2 9999: Run-time tuning of process binding policies made easy
@@ -18450,7 +18450,7 @@ x11-base/xorg-proto 2025.1 9999: X.Org combined protocol headers
 x11-base/xorg-server 21.1.21 9999: X.Org X servers
 x11-base/xorg-sgml-doctools 1.12.1: SGML entities and XML/CSS stylesheets used in X.Org docs
 x11-base/xwayland 24.1.9 9999: Standalone X server running under Wayland
-x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 570.211.01 580.94.18 580.126.18 590.48.01-r1 595.45.04: NVIDIA Accelerated Graphics Driver
+x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 570.211.01 580.94.18 580.126.18 590.48.01-r1 595.44.02 595.45.04: NVIDIA Accelerated Graphics Driver
 x11-drivers/xf86-input-elographics 1.4.4: Elographics input driver
 x11-drivers/xf86-input-evdev 2.11.0: Generic Linux input driver
 x11-drivers/xf86-input-joystick 1.6.4: X.Org driver for joystick input devices
