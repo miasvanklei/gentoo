@@ -2530,7 +2530,7 @@ app-i18n/fcitx-unikey 5.1.6-r1 5.1.8: Unikey (Vietnamese Input Method) engine su
 app-i18n/gnulib-l10n 20241231: Localization for gnulib
 app-i18n/ibus 1.5.29 1.5.29-r1 1.5.30-r1 1.5.31-r1: Intelligent Input Bus for Linux / Unix OS
 app-i18n/ibus-anthy 1.5.16 1.5.17: Japanese Anthy engine for IBus
-app-i18n/ibus-cangjie 2.5.0: Chinese Cangjie and Quick engines for IBus
+app-i18n/ibus-cangjie 2.5.0-r1: Chinese Cangjie and Quick engines for IBus
 app-i18n/ibus-chewing 2.1.7: Chinese Chewing engine for IBus
 app-i18n/ibus-fbterm 1.0.1: IBus client for FbTerm
 app-i18n/ibus-handwrite 3.0.0-r2: Hand write recognition/input for IBus
@@ -5278,9 +5278,9 @@ dev-lang/rakudo 2026.02: A compiler for the Raku programming language
 dev-lang/rapydscript-ng 0.7.22 9999: Pythonic JavaScript that doesn't suck
 dev-lang/regina-rexx 3.9.5 3.9.6: Portable Rexx interpreter
 dev-lang/ruby 3.2.7 3.2.8 3.2.9-r1 3.2.10 3.3.8 3.3.10-r1 3.4.8 4.0.0 4.0.1: An object-oriented scripting language
-dev-lang/rust 1.74.1-r101 1.75.0-r101 1.76.0-r101 1.77.1-r101 1.78.0-r101 1.79.0-r101 1.80.1-r101 1.81.0-r101 1.82.0-r103 1.83.0-r3 1.84.0-r2 1.84.1-r2 1.85.0-r2 1.85.1-r1 1.86.0-r2 1.87.0-r1 1.88.0 1.89.0 1.90.0-r1 1.91.0 1.92.0_p1-r1 1.93.0 1.93.1 1.94.0_beta20260126 1.94.0_beta20260213 9999: Systems programming language originally developed by Mozilla
-dev-lang/rust-bin 1.74.1-r102 1.75.0-r102 1.76.0-r101 1.77.1-r102 1.78.0-r102 1.79.0-r103 1.80.1-r103 1.81.0-r103 1.82.0-r103 1.83.0-r2 1.84.0-r2 1.84.1-r2 1.85.0-r1 1.85.1 1.86.0-r1 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.93.1 1.94.0_beta20260126 1.94.0_beta20260213 9999: Systems programming language from Mozilla
-dev-lang/rust-common 1.81.0 1.82.0 1.83.0 1.84.1 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.93.1 1.94.0_beta20260126 1.94.0_beta20260213 9999: Common files shared between multiple slots of Rust
+dev-lang/rust 1.74.1-r101 1.75.0-r101 1.76.0-r101 1.77.1-r101 1.78.0-r101 1.79.0-r101 1.80.1-r101 1.81.0-r101 1.82.0-r103 1.83.0-r3 1.84.0-r2 1.84.1-r2 1.85.0-r2 1.85.1-r1 1.86.0-r2 1.87.0-r1 1.88.0 1.89.0 1.90.0-r1 1.91.0 1.92.0_p1-r1 1.93.0 1.93.1 1.94.0 1.95.0_beta20260310 9999: Systems programming language originally developed by Mozilla
+dev-lang/rust-bin 1.74.1-r102 1.75.0-r102 1.76.0-r101 1.77.1-r102 1.78.0-r102 1.79.0-r103 1.80.1-r103 1.81.0-r103 1.82.0-r103 1.83.0-r2 1.84.0-r2 1.84.1-r2 1.85.0-r1 1.85.1 1.86.0-r1 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.93.1 1.94.0 1.95.0_beta20260310 9999: Systems programming language from Mozilla
+dev-lang/rust-common 1.81.0 1.82.0 1.83.0 1.84.1 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.93.1 1.94.0 1.95.0_beta20260310 9999: Common files shared between multiple slots of Rust
 dev-lang/sassc 3.6.2: A libsass command line driver
 dev-lang/scala-bin 2.13.9-r1: The Scala Programming Language
 dev-lang/scrapscript 0.1.1 9999: Functional, content-addressable programming language
@@ -12126,7 +12126,7 @@ gnustep-base/gnustep-base 1.31.1-r1: A library of general-purpose, non-graphical
 gnustep-base/gnustep-gui 0.32.0: Library of GUI classes written in Obj-C
 gnustep-base/gnustep-make 2.9.3-r2: GNUstep Makefile Package
 gnustep-base/gnustep-updater 0.3-r1: Helper tool to upgrade Gentoo GNUstep installations
-gnustep-base/libobjc2 2.3: GNUstep Objective-C runtime
+gnustep-base/libobjc2 2.3 2.3-r1: GNUstep Objective-C runtime
 gnustep-base/mknfonts 0.5-r3: A tool to create .nfont packages for use with gnustep-back-art
 gnustep-libs/cenonlibrary 4.0.0: Default library required to run Cenon
 gnustep-libs/dbuskit 0.1.1-r2: Framework that interfaces Objective-C applications with the D-Bus IPC service
@@ -15625,7 +15625,7 @@ net-proxy/adzapper 20110915-r2: Redirector for squid to intercept advertising, p
 net-proxy/cntlm 0.93_beta5-r4: Cntlm is an NTLM/NTLMv2 authenticating HTTP proxy
 net-proxy/dante 1.4.1-r6 1.4.3: A free socks4,5 and msproxy implementation
 net-proxy/dnsproxy 1.17-r1: The dnsproxy daemon is a proxy for DNS queries
-net-proxy/haproxy 2.8.11 2.8.18 2.8.9999 3.0.5 3.0.14 3.0.16 3.0.17 3.0.9999 3.2.9 3.2.12 3.2.13 3.2.9999 3.3.3 3.3.4 3.3.9999 9999: A TCP/HTTP reverse proxy for high availability environments
+net-proxy/haproxy 2.8.11 2.8.18 2.8.19 2.8.9999 3.0.5 3.0.14 3.0.17 3.0.18 3.0.9999 3.2.9 3.2.13 3.2.14 3.2.9999 3.3.4 3.3.5 3.3.9999 9999: A TCP/HTTP reverse proxy for high availability environments
 net-proxy/haproxy-dataplaneapi 3.0.3 3.1.5: haproxy dataplane api / sidecar
 net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying of HAProxy status
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
@@ -17621,7 +17621,7 @@ sys-devel/nvptx-tools 0_pre20240809 9999: Collection of tools for use with nvptx
 sys-devel/patch 2.7.6-r6 2.7.6-r8 2.8-r1 9999: Utility to apply diffs to files
 sys-devel/qbe 1.1-r1 1.2 9999: Pure-C embeddable compiler backend
 sys-devel/reflex 20241231 20260131: This is a variant of the flex fast lexical scanner
-sys-devel/rust-std 1.74.1 1.75.0 1.77.1 1.79.0 1.80.1 1.81.0 1.82.0 1.83.0 1.84.1 1.85.0 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.93.1 1.94.0_beta20260126 1.94.0_beta20260213: Rust standard library, standalone (for crossdev)
+sys-devel/rust-std 1.74.1 1.75.0 1.77.1 1.79.0 1.80.1 1.81.0 1.82.0 1.83.0 1.84.1 1.85.0 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.93.1 1.94.0 1.95.0_beta20260310: Rust standard library, standalone (for crossdev)
 sys-devel/smatch 1.72-r2 1.73-r1 9999: Static analysis tool for C
 sys-devel/sparse 0.6.4-r3 9999: C semantic parser
 sys-devel/wild 0.7.0-r1 0.8.0 9999: A very fast linker for Linux
