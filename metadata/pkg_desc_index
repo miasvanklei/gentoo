@@ -1165,7 +1165,7 @@ app-arch/innoextract 1.10_pre20250206-r1: A tool to unpack installers created by
 app-arch/lbzip2 2.5_p20181227-r3: Parallel bzip2 utility
 app-arch/lcab 1.0_beta12: CAB file creation tool
 app-arch/lha 114i_p20250112: Utility for creating and opening lzh archives
-app-arch/libarchive 3.8.3 3.8.4 3.8.5: Multi-format archive and compression library
+app-arch/libarchive 3.8.4 3.8.5 3.8.6: Multi-format archive and compression library
 app-arch/libdeflate 1.23 1.24 1.25 9999: Heavily optimized DEFLATE/zlib/gzip (de)compression
 app-arch/libpar2 0.4-r1: A library for par2, extracted from par2cmdline
 app-arch/lrzip 0.651 0.651-r1: Long Range ZIP or Lzma RZIP optimized for compressing large files
@@ -4912,7 +4912,7 @@ dev-java/findbugs-annotations 3.0.1: Annotation defined by the FindBugs tool
 dev-java/fishbowl 1.4.1: Use the AAA pattern for writing tests for code that throws an exception
 dev-java/fontbox 2.0.32-r1 3.0.6: An open source Java library for parsing font files
 dev-java/fop 2.10-r2: XML Graphics Format Object Processor All-In-One
-dev-java/freenet-ext 29-r2 29-r3: Freenet REference Daemon
+dev-java/freenet-ext 29-r3: Freenet REference Daemon
 dev-java/generics-resolver 3.0.3: Java generics runtime resolver
 dev-java/gnu-regexp 1.1.4-r4: GNU regular expression package for Java
 dev-java/gradle-bin 8.4 8.5 8.7 8.10.2 8.12.1 8.14.2 8.14.3 9.0.0 9.1.0 9.3.1: A project automation and build tool with a Groovy based DSL
@@ -5140,7 +5140,7 @@ dev-java/system-rules 1.19.0: A collection of JUnit rules for testing code which
 dev-java/tapestry-json 5.8.7-r1: Tapestry JSON
 dev-java/testng 7.11.0: Testing framework inspired by JUnit and NUnit with new features
 dev-java/testparameterinjector 1.19: TestParameterInjector For JUnit4
-dev-java/tomcat-native 1.3.5 1.3.6 2.0.12 2.0.13: Allows Tomcat to use certain native resources for better performance
+dev-java/tomcat-native 1.3.5 1.3.6 1.3.7 2.0.12 2.0.13 2.0.14: Allows Tomcat to use certain native resources for better performance
 dev-java/tomcat-servlet-api 4.1.40-r1: Tomcat's Servlet API 2.3/JSP API 1.2 implementation
 dev-java/treelayout 1.0.3-r1: Efficient and customizable TreeLayout Algorithm in Java.
 dev-java/truth 1.4.5: Fluent assertions for Java and Android
@@ -8174,7 +8174,7 @@ dev-python/asttokens 3.0.0-r1 3.0.1: Annotate Python AST trees with source text 
 dev-python/async-lru 2.0.5 2.1.0 2.2.0: Simple lru_cache for asyncio
 dev-python/async-timeout 4.0.3 5.0.1: Timeout context manager for asyncio programs
 dev-python/asyncssh 2.21.1 2.22.0: Asynchronous SSHv2 client and server library
-dev-python/asyncstdlib 3.13.1: The missing async toolbox
+dev-python/asyncstdlib 3.13.1 3.13.3: The missing async toolbox
 dev-python/atomicwrites 1.4.1: Atomic file writes
 dev-python/atpublic 6.0.2 7.0.0: A decorator to populate __all__ and the module globals
 dev-python/attrs 25.3.0 25.4.0: Attributes without boilerplate
@@ -8623,7 +8623,7 @@ dev-python/ioflo 2.0.3: Automated Reasoning Engine and Flow Based Programming Fr
 dev-python/ipdb 0.13.13: IPython-enabled pdb
 dev-python/ipy 1.01-r1: Class and tools for handling of IPv4 and IPv6 addresses and networks
 dev-python/ipykernel 6.30.1 6.31.0 7.1.0 7.2.0: IPython Kernel for Jupyter
-dev-python/ipyparallel 9.0.1 9.0.2: Interactive Parallel Computing with IPython
+dev-python/ipyparallel 9.0.2 9.1.0: Interactive Parallel Computing with IPython
 dev-python/ipython 9.9.0 9.10.0 9.11.0: Advanced interactive shell for Python
 dev-python/ipython-genutils 0.2.0-r4: Vestigial utilities from IPython
 dev-python/ipython-pygments-lexers 1.1.1: Pygments lexers for syntax-highlighting IPython code and sessions
@@ -8805,7 +8805,7 @@ dev-python/mergedeep 1.3.4-r1: A deep merge tool for Python
 dev-python/mergedict 1.0.0-r1: A Python 'dict' with a merge() method
 dev-python/meshio 5.3.5-r1: Input/output for many mesh formats
 dev-python/meson-python 0.18.0-r1 0.19.0: Meson PEP 517 Python build backend
-dev-python/metakernel 0.30.4: Metakernel for Jupyter
+dev-python/metakernel 0.30.4 0.32.0: Metakernel for Jupyter
 dev-python/micawber 0.5.6 0.6.2: A small library for extracting rich content from urls
 dev-python/mido 1.3.3: MIDI Objects, a library for working with MIDI messages and ports
 dev-python/mimerender 0.6.0-r1: RESTful HTTP Content Negotiation for Flask, Bottle, web.py and webapp2
@@ -8822,12 +8822,12 @@ dev-python/mkdocs-autorefs 1.4.3 1.4.4: Automatically link across pages in MkDoc
 dev-python/mkdocs-bootstrap 1.1.1-r1: Bootstrap theme for MkDocs
 dev-python/mkdocs-bootswatch 1.1-r3: Bootswatch themes for MkDocs
 dev-python/mkdocs-gen-files 0.5.0 0.6.0: MkDocs plugin to programmatically generate documentation pages during the build
-dev-python/mkdocs-get-deps 0.2.0 0.2.1: extension that lists all dependencies according to a mkdocs.yml file
+dev-python/mkdocs-get-deps 0.2.0 0.2.1 0.2.2: extension that lists all dependencies according to a mkdocs.yml file
 dev-python/mkdocs-git-authors-plugin 0.10.0: Mkdocs plugin to display git authors of a page
 dev-python/mkdocs-git-revision-date-localized-plugin 1.5.0 1.5.1: Display the localized date of the last git modification of a markdown file
 dev-python/mkdocs-htmlproofer-plugin 1.4.1 1.5.0: A MkDocs plugin that validates URLs in rendered HTML files
 dev-python/mkdocs-i18n 0.4.6: MkDocs i18n plugin
-dev-python/mkdocs-material 9.7.1 9.7.2 9.7.3 9.7.4: A Material Design theme for MkDocs
+dev-python/mkdocs-material 9.7.1 9.7.2 9.7.3 9.7.4 9.7.5: A Material Design theme for MkDocs
 dev-python/mkdocs-material-extensions 1.3.1: Extension pack for Python Markdown
 dev-python/mkdocs-minify-plugin 0.8.0: An MkDocs plugin to minify HTML and/or JS files prior to being written to disk
 dev-python/mkdocs-monorepo-plugin 1.1.2: Build multiple documentation folders in a single Mkdocs
@@ -8863,7 +8863,7 @@ dev-python/mysqlclient 2.2.7 2.2.8: Python interface to MySQL
 dev-python/myst-parser 4.0.1-r1 5.0.0: Extended commonmark compliant parser, with bridges to Sphinx
 dev-python/nagiosplugin 1.3.3 1.4.0: A class library for writing nagios-compatible plugins
 dev-python/nanobind 2.10.2 2.11.0 2.12.0: Tiny and efficient C++/Python bindings
-dev-python/narwhals 2.16.0 2.17.0: Extremely lightweight compatibility layer between dataframe libraries
+dev-python/narwhals 2.17.0 2.18.0: Extremely lightweight compatibility layer between dataframe libraries
 dev-python/natsort 8.4.0: Natural sorting for Python
 dev-python/nautilus-python 4.0.1 4.1.0: Python bindings for the Nautilus file manager
 dev-python/nbclassic 1.3.1 1.3.2 1.3.3: Jupyter Notebook as a Jupyter Server Extension
@@ -8988,7 +8988,7 @@ dev-python/picobox 4.0.0: Dependency injection framework designed with Python in
 dev-python/pid 3.0.4-r1: Pidfile featuring stale detection and file-locking
 dev-python/piexif 1.1.3-r4: Exif manipulation with pure Python
 dev-python/pika 1.3.2: Pure-Python implementation of the AMQP
-dev-python/pikepdf 9.11.0 10.0.2 10.0.3 10.1.0 10.2.0 10.3.0: Python library to work with pdf files based on qpdf
+dev-python/pikepdf 10.0.2 10.0.3 10.1.0 10.2.0 10.3.0 10.5.0: Python library to work with pdf files based on qpdf
 dev-python/pillow 11.3.0 12.0.0 12.1.0 12.1.1: Python Imaging Library (fork)
 dev-python/pip 25.3 26.0 26.0.1: The PyPA recommended tool for installing Python packages
 dev-python/pipdeptree 2.23.4 2.29.0 2.30.0 2.31.0: Utility for displaying installed packages in a dependency tree
@@ -9294,7 +9294,7 @@ dev-python/python-daemon 3.1.2: Library to implement a well-behaved Unix daemon 
 dev-python/python-dateutil 2.9.0_p0: Extensions to the standard Python datetime module
 dev-python/python-dbusmock 0.37.2 0.38.1: Easily create mock objects on D-Bus for software testing
 dev-python/python-debian 1.0.1 1.1.0: Python modules to work with Debian-related data formats
-dev-python/python-discovery 1.1.0 1.1.1 1.1.2: Python interpreter discovery
+dev-python/python-discovery 1.1.0 1.1.1 1.1.2 1.1.3: Python interpreter discovery
 dev-python/python-distutils-extra 2.47: Gettext support, themed icons and scrollkeeper-based documentation in distutils
 dev-python/python-dotenv 1.2.1 1.2.2: Manage .env files
 dev-python/python-editor 1.0.4-r2: Programmatically open an editor, capture the result
@@ -9630,7 +9630,7 @@ dev-python/tavalidate 0.0.6-r1: Utities to validate Tavern responses
 dev-python/tavern 2.17.0 3.1.0 3.2.0: A tool, library, and Pytest plugin for testing RESTful APIs
 dev-python/tblib 3.1.0 3.2.0 3.2.1 3.2.2: Traceback fiddling library for Python
 dev-python/tcolorpy 0.1.7: tcolorpy is a Python library to apply true color for terminal text
-dev-python/tekore 6.0.0 6.1.0: Spotify Web API client
+dev-python/tekore 6.0.0 6.1.0 6.1.1: Spotify Web API client
 dev-python/tempest 46.0.0 46.1.0 46.1.1: OpenStack Integration Testing
 dev-python/tempora 5.8.1: Objects and routines pertaining to date and time
 dev-python/tenacity 9.1.2-r1 9.1.3 9.1.4: General-purpose retrying library
@@ -10884,7 +10884,7 @@ dev-util/datree 1.9.19-r1: Tool to ensure K8s manifests and Helm charts follow b
 dev-util/dbus-test-runner 19.04.0-r2: Run executables under a new DBus session for testing
 dev-util/debhelper 13.2.1: Collection of programs that can be used to automate common tasks in debian/rules
 dev-util/debootstrap 1.0.128_p2 1.0.134 1.0.142: Debian/Ubuntu bootstrap scripts
-dev-util/debugedit 5.1-r3 5.2 5.2-r1: Create debuginfo and source file distributions
+dev-util/debugedit 5.2-r1 5.3: Create debuginfo and source file distributions
 dev-util/dejagnu 1.6.3: Framework for testing other programs
 dev-util/desktop-file-utils 0.27 0.27-r1 0.28: Command line utilities to work with desktop menu entries
 dev-util/devhelp 43.0: An API documentation browser for GNOME
@@ -12742,7 +12742,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, sim
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0 7.8.0_p0: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.10.4 3.10.6 3.10.7 3.10.8 3.11.0_rc5 3.12_pre20260302: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.10.4 3.10.6 3.10.7 3.10.8 3.11.1 3.12_pre20260310: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.17.1.9 8.18.1 8.18.1-r3 8.18.1.10-r4 8.18.1.15-r2 8.18.1.16-r1 8.18.2 8.18.2-r1 8.19.0.0: Widely-used Mail Transport Agent (MTA)
@@ -15076,7 +15076,7 @@ net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP
 net-libs/nghttp2 1.65.0-r2 1.66.0 1.67.1 1.68.0 9999: HTTP/2 C Library
 net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 1.14.0 1.15.0 9999: HTTP/3 library written in C
 net-libs/ngtcp2 1.12.0 1.20.0 1.20.0-r1 1.21.0 9999: Implementation of the IETF QUIC Protocol
-net-libs/nodejs 20.18.2 20.19.2 20.19.5 20.19.6 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1 24.11.1-r1 24.14.0 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
+net-libs/nodejs 20.18.2 20.19.2 20.19.5 20.19.6 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1-r1 24.14.0 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
 net-libs/paho-mqtt-c 1.3.14-r1 1.3.15: An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS.
@@ -15562,7 +15562,7 @@ net-p2p/dbhub 0.451-r3: Hub software for Direct Connect, fork of opendchub
 net-p2p/deluge 2.1.1-r5 2.1.1-r6 2.1.1-r7 2.2.0 9999: BitTorrent client with a client/server model
 net-p2p/ed2k_hash 0.4.0-r3: Tool for generating eDonkey2000 links
 net-p2p/energi3 3.0.8 3.1.0 9999: Official golang implementation of the Energi Core
-net-p2p/freenet 0.7.5_p1505 0.7.5_p1505-r1 0.7.5_p1506: Freenet REference Daemon
+net-p2p/freenet 0.7.5_p1506: Freenet REference Daemon
 net-p2p/go-ethereum 1.16.7: Official golang implementation of the Ethereum protocol
 net-p2p/gtk-gnutella 1.2.2-r1 1.2.3: GTK+ Gnutella client
 net-p2p/gtorrentviewer 0.2b-r1: A GTK2-based viewer and editor for BitTorrent meta files
@@ -16608,7 +16608,7 @@ sec-keys/openpgp-keys-crypto++ 20210416: OpenPGP keys used to sign crypto++ rele
 sec-keys/openpgp-keys-danielstenberg 20220330: OpenPGP keys used by Daniel Stenberg
 sec-keys/openpgp-keys-danielveillard 20210514: OpenPGP keys used by Daniel Veillard
 sec-keys/openpgp-keys-dealii 20230904 20240811: OpenPGP keys used by dealii
-sec-keys/openpgp-keys-debugedit 20210728: OpenPGP key used to sign debugedit releases
+sec-keys/openpgp-keys-debugedit 20210728 20260311: OpenPGP key used to sign debugedit releases
 sec-keys/openpgp-keys-dehydrated 20230716: OpenPGP keys used by dehydrated
 sec-keys/openpgp-keys-diffutils 20220407: OpenPGP keys used by GNU diffutils
 sec-keys/openpgp-keys-django 20241002: OpenPGP keys used to sign Django releases
@@ -17143,7 +17143,7 @@ sys-apps/eza 0.23.3 0.23.4: A modern, maintained replacement for ls
 sys-apps/fakechroot 2.20.1_p2: Provide a faked chroot environment without requiring root privileges
 sys-apps/fakeroot 1.32.2 1.33: A fake root environment by means of LD_PRELOAD and SysV IPC (or TCP) trickery
 sys-apps/fbset 2.1: A utility to set the framebuffer videomode
-sys-apps/fd 10.3.0 10.4.1: Alternative to find that provides sensible defaults for 80% of the use cases
+sys-apps/fd 10.3.0 10.4.1 10.4.2: Alternative to find that provides sensible defaults for 80% of the use cases
 sys-apps/file 5.46-r3 5.47-r1 9999: Identify a file's format by scanning binary data for patterns
 sys-apps/findutils 4.10.0: GNU utilities for finding files
 sys-apps/firejail 0.9.72 0.9.74 0.9.76: Security sandbox for any type of processes
@@ -18185,7 +18185,7 @@ www-apps/bugzilla 5.0.6-r2: Bugzilla is the Bug-Tracking System from the Mozilla
 www-apps/cgisysinfo 0.4.1: A small cgi utility to show basic system information
 www-apps/cgit 1.2.3_p20240802-r2 1.3 9999 9999-r1: A fast web-interface for Git repositories
 www-apps/cgp 1_p20190510-r2: A graphical web-based front-end for visualizing RRD collected by collectd
-www-apps/chromedriver-bin 141.0.7390.107 142.0.7444.175 143.0.7499.169 144.0.7559.132 145.0.7632.159: WebDriver for Chrome
+www-apps/chromedriver-bin 144.0.7559.132 145.0.7632.159 146.0.7680.71: WebDriver for Chrome
 www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20250514b: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
@@ -18254,7 +18254,7 @@ www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.2: Wordpress PHP and MySQL based content management system (CMS)
 www-apps/xpra-html5 10.1 17.1: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
-www-client/chromium 145.0.7632.159 146.0.7680.31-r2 146.0.7680.65 147.0.7703.0-r1 147.0.7719.3: Open-source version of Google Chrome web browser
+www-client/chromium 145.0.7632.159 146.0.7680.31-r2 146.0.7680.65 146.0.7680.71 147.0.7703.0-r1 147.0.7719.3: Open-source version of Google Chrome web browser
 www-client/chromium-common 2: Common configuration files for Chromium slots
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
@@ -18263,8 +18263,8 @@ www-client/falkon 25.12.2 25.12.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.6.0 140.7.0 140.7.1 140.8.0 146.0 146.0.1 147.0 147.0.1 147.0.2 147.0.3 147.0.4 148.0: Firefox Web Browser
 www-client/firefox-bin 140.7.1 140.8.0 147.0.4 148.0 148.0.2: Firefox Web Browser
-www-client/google-chrome 141.0.7390.107 142.0.7444.175 143.0.7499.169 144.0.7559.132 145.0.7632.159: The web browser from Google
-www-client/google-chrome-beta 142.0.7444.34 143.0.7499.40 144.0.7559.31 145.0.7632.45 146.0.7680.65: The web browser from Google
+www-client/google-chrome 144.0.7559.132 145.0.7632.159 146.0.7680.71: The web browser from Google
+www-client/google-chrome-beta 144.0.7559.31 145.0.7632.45 146.0.7680.65: The web browser from Google
 www-client/google-chrome-unstable 147.0.7719.3: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
@@ -18272,13 +18272,13 @@ www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in 
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
 www-client/microsoft-edge 145.0.3800.97: The web browser from Microsoft
-www-client/microsoft-edge-beta 146.0.3856.13 146.0.3856.20 146.0.3856.33: The web browser from Microsoft
+www-client/microsoft-edge-beta 146.0.3856.20 146.0.3856.33 146.0.3856.49: The web browser from Microsoft
 www-client/microsoft-edge-dev 146.0.3856.20 147.0.3878.0 147.0.3890.0: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
-www-client/opera 128.0.5807.52: A fast and secure web browser
+www-client/opera 128.0.5807.66: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
-www-client/opera-developer 129.0.5812.0 129.0.5818.0 130.0.5825.0: A fast and secure web browser
+www-client/opera-developer 129.0.5818.0 130.0.5825.0 130.0.5832.0: A fast and secure web browser
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.6.1-r1 3.6.2 3.6.3 9999: Keyboard-driven, vim-like browser based on Python and Qt
 www-client/seamonkey 2.53.23: Seamonkey Web Browser
@@ -18333,7 +18333,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.4: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 141.0.7390.107 142.0.7444.34_beta 142.0.7444.175 143.0.7499.40_beta 143.0.7499.169 144.0.7559.31_beta 144.0.7559.132 145.0.7632.45_beta 145.0.7632.159 146.0.7680.65_beta 147.0.7719.3_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 141.0.7390.107 142.0.7444.34_beta 142.0.7444.175 143.0.7499.40_beta 143.0.7499.169 144.0.7559.31_beta 144.0.7559.132 145.0.7632.45_beta 145.0.7632.159 146.0.7680.65_beta 146.0.7680.71 147.0.7719.3_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.8.7-r1 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
