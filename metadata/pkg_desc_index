@@ -3453,7 +3453,7 @@ app-text/xpdf 4.05-r2: PDF viewer and toolkit
 app-text/yamlfmt 0.13.0 0.14.0 0.15.0: An extensible command line tool or library to format yaml files
 app-text/yelp-tools 42.1-r1: Collection of tools for building and converting documentation
 app-text/yodl 4.05.00: Your Own Document Language: a pre-document language and tools to process it
-app-text/zathura 0.5.8 0.5.13 0.5.14 2026.02.09 9999: Highly customizable & functional document viewer
+app-text/zathura 0.5.8 0.5.13 0.5.14 9999: Highly customizable & functional document viewer
 app-text/zathura-cb 0.1.10 0.1.11 9999: Comic book plug-in for zathura with 7zip, rar, tar and zip support
 app-text/zathura-djvu 0.2.10 9999: DjVu plug-in for zathura
 app-text/zathura-meta 0-r1: Meta package for app-text/zathura plugins
@@ -4902,7 +4902,6 @@ dev-java/error-prone-annotations 2.45.0: Java annotations for the Error Prone st
 dev-java/escapevelocity 1.1: A reimplementation of a subset of the Apache Velocity templating system.
 dev-java/fastdoubleparser 2.0.1: A Java port of Daniel Lemire's fast_float project
 dev-java/fastinfoset 2.1.0-r1: Open Source implementation of the Fast Infoset Standard for Binary XML
-dev-java/fec 1.0.4-r5: Forward Error Correction library in Java
 dev-java/felix-framework 7.0.5-r3: Implementation of the OSGi R8 core framework specification
 dev-java/felix-gogo-runtime 1.1.6: Apache Felix Gogo Runtime
 dev-java/felix-main 7.0.5-r2: Open source OSGi framework by Apache Software Foundation
@@ -5070,7 +5069,7 @@ dev-java/lucene 2.4.1-r5: High-performance, full-featured text search engine wri
 dev-java/lz4-java 1.8.0-r6: LZ4 compression for Java
 dev-java/lzma 25.01: Java code for LZMA compression and decompression
 dev-java/lzmajio 0.95-r4: LzmaInputStream/LzmaOutputStream interacting with underlying LZMA en-/decoders
-dev-java/maven-bin 3.8.8-r1 3.9.12: Project Management and Comprehension Tool for Java
+dev-java/maven-bin 3.9.12 3.9.13: Project Management and Comprehension Tool for Java
 dev-java/mchange-commons 0.2.20: a library of arguably useful Java utilities.
 dev-java/memoryfilesystem 2.3.0-r1: An in memory implementation of a JSR-203 file system.
 dev-java/mersennetwister 0_pre23765-r3: Modified MersenneTwister java port for Freenet
@@ -5140,7 +5139,7 @@ dev-java/system-rules 1.19.0: A collection of JUnit rules for testing code which
 dev-java/tapestry-json 5.8.7-r1: Tapestry JSON
 dev-java/testng 7.11.0: Testing framework inspired by JUnit and NUnit with new features
 dev-java/testparameterinjector 1.19: TestParameterInjector For JUnit4
-dev-java/tomcat-native 1.3.5 1.3.6 1.3.7 2.0.12 2.0.13 2.0.14: Allows Tomcat to use certain native resources for better performance
+dev-java/tomcat-native 1.3.6 1.3.7 2.0.13 2.0.14: Allows Tomcat to use certain native resources for better performance
 dev-java/tomcat-servlet-api 4.1.40-r1: Tomcat's Servlet API 2.3/JSP API 1.2 implementation
 dev-java/treelayout 1.0.3-r1: Efficient and customizable TreeLayout Algorithm in Java.
 dev-java/truth 1.4.5: Fluent assertions for Java and Android
@@ -5419,7 +5418,7 @@ dev-libs/gdl 3.40.0-r2: GNOME docking library
 dev-libs/geoip 1.6.12 1.6.12-r1: GeoIP Legacy C API
 dev-libs/gf-complete 2.0.0_p20170410: Comprehensive Open Source Library for Galois Field Arithmetic
 dev-libs/gf2x 1.3.0-r1: C/C++ routines for fast arithmetic in GF(2)[x]
-dev-libs/girara 0.4.5 0.4.5-r1 2026.02.04 9999: UI library that focuses on simplicity and minimalism
+dev-libs/girara 0.4.5 0.4.5-r1 9999: UI library that focuses on simplicity and minimalism
 dev-libs/gjs 1.80.2-r1 1.82.3-r1 1.84.2-r1: Javascript bindings for GNOME
 dev-libs/glib 2.84.4 2.84.4-r1 2.84.4-r2 2.86.4: The GLib library of C routines
 dev-libs/gmime 2.6.23-r2 3.2.15-r1 3.2.15-r2: Library for creating and parsing MIME messages
@@ -16573,6 +16572,7 @@ sec-keys/openpgp-keys-apache-httpcomponents-client 220903: OpenPGP keys used by 
 sec-keys/openpgp-keys-apache-httpcomponents-httpcore 220903: OpenPGP keys used by httpcomponents-core.hc.apache.org
 sec-keys/openpgp-keys-apache-logging 20251104: OpenPGP keys used by logging.apache.org
 sec-keys/openpgp-keys-apache-lucene 20170408: OpenPGP keys used by lucene.apache.org
+sec-keys/openpgp-keys-apache-maven 20250309: OpenPGP keys used by maven.apache.org
 sec-keys/openpgp-keys-apache-pdfbox 20251111: OpenPGP keys used by pdfbox.apache.org
 sec-keys/openpgp-keys-apache-poi 20230921: OpenPGP keys used by poi.apache.org
 sec-keys/openpgp-keys-apache-tomcat 9 10 11: OpenPGP keys used by tomcat.apache.org
@@ -18255,7 +18255,7 @@ www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.4: Wordpress PHP and MySQL based content management system (CMS)
 www-apps/xpra-html5 10.1 17.1: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
-www-client/chromium 145.0.7632.159 146.0.7680.31-r2 146.0.7680.65 146.0.7680.71 147.0.7703.0-r1 147.0.7719.3: Open-source version of Google Chrome web browser
+www-client/chromium 145.0.7632.159 146.0.7680.31-r2 146.0.7680.65 146.0.7680.71 147.0.7703.0-r1 147.0.7719.3 147.0.7727.3: Open-source version of Google Chrome web browser
 www-client/chromium-common 2: Common configuration files for Chromium slots
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
