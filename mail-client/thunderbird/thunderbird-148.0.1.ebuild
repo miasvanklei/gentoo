@@ -5,7 +5,7 @@ EAPI=8
 
 FIREFOX_PATCHSET="firefox-148-patches-01t.tar.xz"
 
-LLVM_COMPAT=( 20 21 )
+LLVM_COMPAT=( 20 21 22 )
 
 PYTHON_COMPAT=( python3_{11..14} )
 PYTHON_REQ_USE="ncurses,sqlite,ssl"
