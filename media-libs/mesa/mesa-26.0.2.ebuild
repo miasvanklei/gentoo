@@ -3,7 +3,7 @@
 
 EAPI=8
 
-LLVM_COMPAT=( {18..21} )
+LLVM_COMPAT=( {18..22} )
 LLVM_OPTIONAL=1
 CARGO_OPTIONAL=1
 PYTHON_COMPAT=( python3_{11..14} )
@@ -86,10 +86,10 @@ RDEPEND="
 	unwind? ( sys-libs/libunwind[${MULTILIB_USEDEP}] )
 	llvm? (
 		$(llvm_gen_dep "
-			llvm-core/llvm:\${LLVM_SLOT}[llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}]
+			llvm-core/llvm:\${LLVM_SLOT}[${MULTILIB_USEDEP}]
 			opencl? (
 				dev-util/spirv-llvm-translator:\${LLVM_SLOT}
-				llvm-core/clang:\${LLVM_SLOT}[llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}]
+				llvm-core/clang:\${LLVM_SLOT}[${MULTILIB_USEDEP}]
 				=llvm-core/libclc-\${LLVM_SLOT}*[spirv(-)]
 			)
 		")
