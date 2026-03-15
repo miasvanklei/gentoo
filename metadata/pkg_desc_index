@@ -6027,7 +6027,7 @@ dev-ml/camlp-streams 5.0.1: Stream and Genlex libraries for use with Camlp4 and 
 dev-ml/camlp4 4.14_p1-r2 5.3_p1 5.4_p1: System for writing extensible parsers for programming languages
 dev-ml/camlp5 8.03.01-r1 8.03.06-r1 8.04.00: A preprocessor-pretty-printer of ocaml
 dev-ml/camlpdf 2.7.1 2.8.1: OCaml library for reading, writing, and modifying PDF files
-dev-ml/camlzip 1.13: Compressed file access ML library (ZIP, GZIP and JAR)
+dev-ml/camlzip 1.13 1.14: Compressed file access ML library (ZIP, GZIP and JAR)
 dev-ml/camomile 1.0.2 2.0.0: Camomile is a comprehensive Unicode library for ocaml
 dev-ml/capitalization 0.17.0-r1: Defines case conventions and functions to rename identifiers according to them
 dev-ml/charinfo_width 1.1.0-r1 2.0.0: Determine column width for a character
@@ -6040,7 +6040,7 @@ dev-ml/core_extended 0.17.0: Extra components that are not as closely vetted or 
 dev-ml/core_kernel 0.16.0 0.17.0-r1: System-independent part of Core
 dev-ml/core_unix 0.16.0-r1 0.17.0 0.17.1: Unix-specific portions of Core
 dev-ml/cppo 1.6.7-r1 1.6.8-r1 1.6.9-r1 1.7.0 1.8.0: An equivalent of the C preprocessor for OCaml programs
-dev-ml/cryptokit 1.16.1-r2 1.19 1.20.1: Cryptographic primitives library for Objective Caml
+dev-ml/cryptokit 1.16.1-r2 1.19 1.20.1 1.21.1: Cryptographic primitives library for Objective Caml
 dev-ml/csexp 1.5.2-r1: Parsing and printing of S-expressions in Canonical form
 dev-ml/cstruct 6.2.0-r1: Access C-like structures directly from OCaml
 dev-ml/cudf 0.10-r1: Library to parse, pretty print, and evaluate CUDF documents
@@ -17802,7 +17802,7 @@ sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via s
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scripts
 sys-kernel/gentoo-kernel 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.6.126 6.6.129 6.12.74 6.12.77 6.18.12 6.18.18 6.19.8: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.6.126 6.6.129 6.12.74 6.12.77 6.18.12 6.18.18 6.19.8: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-sources 5.10.249 5.10.249-r1 5.10.250 5.10.250-r1 5.10.251 5.10.252 5.15.197 5.15.198 5.15.199 5.15.200 5.15.201 5.15.202 6.1.161 6.1.162 6.1.163 6.1.164 6.1.165 6.1.166 6.6.126 6.6.127 6.6.128 6.6.129 6.12.70 6.12.71 6.12.73 6.12.74 6.12.75 6.12.76 6.18.12 6.18.13 6.18.14 6.18.15 6.18.16 6.19.2 6.19.3 6.19.4 6.19.5 6.19.6: Full sources including the Gentoo patchset for the 6.19 kernel tree
+sys-kernel/gentoo-sources 5.10.249 5.10.249-r1 5.10.250 5.10.250-r1 5.10.251 5.10.252 5.15.197 5.15.198 5.15.199 5.15.200 5.15.201 5.15.202 6.1.161 6.1.162 6.1.163 6.1.164 6.1.165 6.1.166 6.6.126 6.6.127 6.6.128 6.6.129 6.12.70 6.12.71 6.12.73 6.12.74 6.12.75 6.12.76 6.12.77 6.18.12 6.18.13 6.18.14 6.18.15 6.18.16 6.18.18 6.19.2 6.19.3 6.19.4 6.19.5 6.19.6 6.19.8: Full sources including the Gentoo patchset for the 6.19 kernel tree
 sys-kernel/git-sources 7.0_rc1 7.0_rc2 7.0_rc3: The very latest -git version of the Linux kernel
 sys-kernel/installkernel 63 65 66 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
@@ -18290,8 +18290,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.4 3.5: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 7.8.3925.74 7.8.3925.76: A browser for our friends
-www-client/vivaldi-snapshot 7.9.3966.3 7.9.3969.3: A browser for our friends
+www-client/vivaldi 7.8.3925.76 7.8.3925.81: A browser for our friends
+www-client/vivaldi-snapshot 7.9.3969.3 7.9.3970.28: A browser for our friends
 www-client/w3m 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
