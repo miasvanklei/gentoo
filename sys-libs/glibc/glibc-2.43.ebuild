@@ -507,6 +507,16 @@ setup_flags() {
 	# #829583
 	filter-lfs-flags
 
+	case ${CTARGET} in
+		*-linux*)
+			;;
+		*-gnu)
+			# -g3 confuses MIG which relies on preprocessed input
+			replace-flags -ggdb[3-9] -ggdb2
+			replace-flags -g3 -g
+			;;
+	esac
+
 	unset CBUILD_OPT CTARGET_OPT
 	if use multilib ; then
 		CTARGET_OPT=$(get_abi_CTARGET)
@@ -1000,6 +1010,9 @@ src_prepare() {
 		einfo "Applying Gentoo Glibc patchset ${patchsetname}"
 		eapply "${WORKDIR}"/patches
 		einfo "Done."
+
+		# TODO: Put into our patchset
+		eapply "${FILESDIR}"/glibc-2.43-hurd-link-helpers.patch
 	fi
 
 	case ${CTARGET} in
