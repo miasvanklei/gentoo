@@ -8240,7 +8240,7 @@ dev-python/braintree 4.41.0 4.42.0: Braintree Python Library
 dev-python/breathe 4.36.0: Sphinx Doxygen renderer
 dev-python/brotlicffi 1.2.0.0 1.2.0.1: Python binding to the Brotli library
 dev-python/btrfs 15: Python module to inspect btrfs filesystems
-dev-python/btrfsutil 6.17.1 6.19: Library for managing Btrfs filesystems
+dev-python/btrfsutil 6.17.1 6.19 6.19.1: Library for managing Btrfs filesystems
 dev-python/build 1.3.0 1.4.0: A simple, correct PEP517 package builder
 dev-python/cachecontrol 0.14.3: httplib2 caching for requests
 dev-python/cachelib 0.13.0: Collection of cache libraries in the same API interface. Extracted from werkzeug
@@ -17153,7 +17153,7 @@ sys-apps/file 5.46-r3 5.47-r1 9999: Identify a file's format by scanning binary 
 sys-apps/findutils 4.10.0: GNU utilities for finding files
 sys-apps/firejail 0.9.72 0.9.74 0.9.76: Security sandbox for any type of processes
 sys-apps/fix-gnustack 0.1-r1: Utility to report and remove the executable flag from an ELF object's GNU_STACK
-sys-apps/flashrom 1.3.0-r3 1.5.0 1.5.1 1.6.0: Utility for reading, writing, erasing and verifying flash ROM chips
+sys-apps/flashrom 1.5.1 1.6.0 1.7.0: Utility for reading, writing, erasing and verifying flash ROM chips
 sys-apps/flatpak 1.14.10 1.16.1 1.16.3: Linux application sandboxing and distribution framework
 sys-apps/fwts 22.03.00 23.11.00 24.03.00: Firmware Test Suite
 sys-apps/fwupd 1.9.24 2.0.1 2.0.3-r1 2.0.14 2.0.16 2.0.18: Aims to make updating firmware on Linux automatic, safe and reliable
@@ -17676,7 +17676,7 @@ sys-fs/bcache-tools 1.1_p20230217-r2 9999: Tools for bcache
 sys-fs/bcachefs-tools 1.20.0 1.25.0 1.25.1 1.25.2 1.25.3 1.31.5 1.34.0 1.36.1 9999: Tools for bcachefs
 sys-fs/bees 0.10-r1 0.11 9999: Best-Effort Extent-Same, a btrfs dedup agent
 sys-fs/bindfs 1.17.7 1.18.0 1.18.1 1.18.3: FUSE filesystem for bind mounting with altered permissions
-sys-fs/btrfs-progs 6.17.1 6.19 9999: Btrfs filesystem utilities
+sys-fs/btrfs-progs 6.17.1 6.19 6.19.1 9999: Btrfs filesystem utilities
 sys-fs/btrfsmaintenance 0.5.2: Scripts for btrfs maintenance tasks like periodic scrub, balance, trim or defrag
 sys-fs/cachefilesd 0.10.10-r2: Provides a caching directory on an already mounted filesystem
 sys-fs/clamfs 1.3.0: A FUSE-based user-space file system with on-access anti-virus file scanning
