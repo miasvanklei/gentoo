@@ -3320,7 +3320,7 @@ app-text/lowdown 2.0.2 2.0.2-r1 2.0.4 3.0.0: Markdown translator producing HTML5
 app-text/lv 4.51-r5: Powerful Multilingual File Viewer
 app-text/mandoc 1.14.6 1.14.6-r1: Suite of tools compiling mdoc and man
 app-text/manpager 1: Enable colorization of man pages
-app-text/marknote 1.4.1 1.5.0: Markdown editor with a wide range of formating options for everyday notes
+app-text/marknote 1.4.1 1.5.0-r1: Markdown editor with a wide range of formating options for everyday notes
 app-text/master-pdf-editor 5.9.94: A complete solution for viewing and editing PDF files
 app-text/mathtex 1.05: Lets you easily embed LaTeX math in your own html pages, blogs, wikis, etc
 app-text/mdbook 0.4.52 0.5.1 0.5.2: Create a book from markdown files
@@ -6724,9 +6724,9 @@ dev-perl/Dist-Zilla-Plugin-Run 0.48.0-r1: Run external commands and code at spec
 dev-perl/Dist-Zilla-Plugin-StaticInstall 0.12.0-r1: Identify a distribution as eligible for static installation
 dev-perl/Dist-Zilla-Plugin-SurgicalPodWeaver 0.2.300-r1: Surgically apply PodWeaver
 dev-perl/Dist-Zilla-Plugin-Test-CPAN-Changes 0.12.0-r1: release tests for your changelog
-dev-perl/Dist-Zilla-Plugin-Test-Compile 2.58.0-r1: Common tests to check syntax of your modules, using only core modules
-dev-perl/Dist-Zilla-Plugin-Test-MinimumVersion 2.0.10-r1: Release tests for minimum required versions
-dev-perl/Dist-Zilla-Plugin-Test-Perl-Critic 3.1.0-r1: Tests to check your code against best practices
+dev-perl/Dist-Zilla-Plugin-Test-Compile 2.58.0-r1 2.59.0: Common tests to check syntax of your modules, using only core modules
+dev-perl/Dist-Zilla-Plugin-Test-MinimumVersion 2.0.10-r1 2.0.11: Release tests for minimum required versions
+dev-perl/Dist-Zilla-Plugin-Test-Perl-Critic 3.1.0-r1 3.5.0: Tests to check your code against best practices
 dev-perl/Dist-Zilla-Plugin-Test-ReportPrereqs 0.28.0: Report on prerequisite versions during automated testing
 dev-perl/Dist-Zilla-Plugin-VersionFromMainModule 0.40.0-r1: Set the distribution version from your main module's $VERSION
 dev-perl/Dist-Zilla-Role-FileWatcher 0.6.0-r1: Receive notification when something changes a file's contents
@@ -6734,7 +6734,7 @@ dev-perl/Dist-Zilla-Role-ModuleMetadata 0.6.0-r1: A role for plugins that use Mo
 dev-perl/Dist-Zilla-Role-PluginBundle-PluginRemover 0.105.0-r1: Add '-remove' functionality to a bundle
 dev-perl/Dumbbench 0.505.0: More reliable benchmarking with the least amount of thinking
 dev-perl/DynaLoader-Functions 0.4.0-r1: Deconstructed Dynamic C Library Loading
-dev-perl/EV 4.340.0 4.360.0: Perl interface to libev, a high performance full-featured event loop
+dev-perl/EV 4.340.0 4.370.0: Perl interface to libev, a high performance full-featured event loop
 dev-perl/Emacs-PDE 0.2.17-r1: Perl Develop Environment in Emacs
 dev-perl/Email-Abstract 3.10.0: Unified interface to mail representations
 dev-perl/Email-Address 1.913.0: RFC 2822 Address Parsing and Creation
@@ -6780,12 +6780,12 @@ dev-perl/Exception-Warning 0.40.100-r3: Convert simple warn into real exception 
 dev-perl/Expect 1.380.0: Expect for Perl
 dev-perl/Exporter-Cluster 0.310.0-r3: Extension for easy multiple module imports
 dev-perl/Exporter-Lite 0.90.0: Lightweight exporting of variables
-dev-perl/Exporter-Tiny 1.6.2: An exporter with the features of Sub::Exporter but only core dependencies
+dev-perl/Exporter-Tiny 1.6.2 1.6.3: An exporter with the features of Sub::Exporter but only core dependencies
 dev-perl/ExtUtils-AutoInstall 0.640.0-r1: Automatic installation of dependencies via CPAN from within Makefile.PL
 dev-perl/ExtUtils-CChecker 0.120.0-r1: Configure-time utilities for using C headers
 dev-perl/ExtUtils-Config 0.10.0: Wrapper for perl's configuration
 dev-perl/ExtUtils-CppGuess 0.260.0-r1 0.270.0: Guess C++ compiler and flags
-dev-perl/ExtUtils-Depends 0.800.100-r1 0.800.200: Easily build XS extensions that depend on XS extensions
+dev-perl/ExtUtils-Depends 0.800.200: Easily build XS extensions that depend on XS extensions
 dev-perl/ExtUtils-F77 1.260.0-r1: Simple interface to F77 libs
 dev-perl/ExtUtils-HasCompiler 0.25.0: Check for the presence of a compiler
 dev-perl/ExtUtils-Helpers 0.28.0: Various portability utilities for module builders
@@ -6810,7 +6810,7 @@ dev-perl/File-BaseDir 0.90.0: Use the Freedesktop.org base directory specificati
 dev-perl/File-Copy-Link 0.200.0-r1: Perl extension for replacing a link by a copy of the linked file
 dev-perl/File-Copy-Recursive 0.450.0-r1: uses File::Copy to recursively copy dirs
 dev-perl/File-Copy-Recursive-Reduced 0.8.0: Recursive copying of files and directories within Perl 5 toolchain
-dev-perl/File-DesktopEntry 0.220.0-r1: Object to handle .desktop files
+dev-perl/File-DesktopEntry 0.220.0-r1 0.230.0: Object to handle .desktop files
 dev-perl/File-Find-Object 0.3.9-r1: An object oriented File::Find replacement
 dev-perl/File-Find-Object-Rule 0.31.300-r1: Alternative interface to File::Find::Object
 dev-perl/File-Find-Rule 0.350.0: Alternative interface to File::Find
@@ -6824,7 +6824,7 @@ dev-perl/File-LibMagic 1.230.0-r1: Perl wrapper for libmagic
 dev-perl/File-Listing 6.160.0: Parse directory listings
 dev-perl/File-MMagic 1.300.0-r3: The Perl Image-Info Module
 dev-perl/File-Map 0.710.0: Memory mapping made simple and safe
-dev-perl/File-MimeInfo 0.330.0 0.350.0: Determine file type
+dev-perl/File-MimeInfo 0.350.0 0.360.0: Determine file type
 dev-perl/File-NCopy 0.360.0-r3: Copy file, file Copy file[s] | dir[s], dir
 dev-perl/File-NFSLock 1.290.0-r1: perl module to do NFS (or not) locking
 dev-perl/File-Next 1.180.0-r2: An iterator-based module for finding files
@@ -6833,7 +6833,7 @@ dev-perl/File-Pid 1.10: Pid File Manipulation
 dev-perl/File-ReadBackwards 1.60.0-r1: Read a file backwards by lines
 dev-perl/File-Remove 1.610.0: Remove files and directories
 dev-perl/File-RsyncP 0.760.0-r3 0.760.0-r4: An rsync perl module
-dev-perl/File-Scan-ClamAV 1.950.0-r3: Connect to a local Clam Anti-Virus clamd service and send commands
+dev-perl/File-Scan-ClamAV 1.950.0-r3 1.960.0: Connect to a local Clam Anti-Virus clamd service and send commands
 dev-perl/File-SearchPath 0.70.0-r2: Search for a file in an environment variable path
 dev-perl/File-Share 0.270.0: Extend File::ShareDir to local libraries
 dev-perl/File-ShareDir 1.118.0-r1: Locate per-dist and per-module shared files
@@ -6896,7 +6896,7 @@ dev-perl/GnuPG-Interface 1.50.0-r1: Perl interface to GnuPG
 dev-perl/GooCanvas2 0.60.0-r2: Perl binding for GooCanvas2 widget using Glib::Object::Introspection
 dev-perl/GooCanvas2-CairoTypes 0.1.0-r1: Bridge between GooCanvas2 and Cairo types
 dev-perl/Google-Ads-AdWords-Client 5.8.2-r1: Google AdWords API Perl Client Library
-dev-perl/Graph 0.973.400 0.973.500: Data structure and ops for directed graphs
+dev-perl/Graph 0.973.500: Data structure and ops for directed graphs
 dev-perl/Graph-Easy 0.760.0-r1: Convert or render graphs (as ASCII, HTML, SVG or via Graphviz)
 dev-perl/GraphViz 2.260.0: Interface to AT&T's GraphViz
 dev-perl/GraphViz2 2.670.0: A wrapper for AT&T's GraphViz
@@ -6904,7 +6904,7 @@ dev-perl/Graphics-ColorNames 3.5.0-r2: Defines RGB values for common color names
 dev-perl/Graphics-ColorNames-HTML 3.3.1: HTML color names and equivalent RGB values
 dev-perl/Graphics-ColorNames-WWW 1.140.0-r1: WWW color names and equivalent RGB values
 dev-perl/Graphics-ColorObject 0.5.0-r3: Convert between color spaces
-dev-perl/Graphics-Toolkit-Color 1.710.0: Color palette constructor
+dev-perl/Graphics-Toolkit-Color 1.710.0 1.972.0: Color palette constructor
 dev-perl/Growl-GNTP 0.210.0-r2: Perl implementation of GNTP Protocol (Client Part)
 dev-perl/Gtk2 1.249.930-r1: Perl bindings for GTK2
 dev-perl/Gtk3 0.38.0-r1: Perl interface to the 3.x series of the gtk+ toolkit
@@ -6921,7 +6921,7 @@ dev-perl/HTML-FormatText-WithLinks-AndTables 0.70.0-r2: Converts HTML to text wi
 dev-perl/HTML-Formatter 2.160.0-r1: Base class for HTML Formatters
 dev-perl/HTML-FromText 2.70.0-r1: Convert plain text to HTML
 dev-perl/HTML-Gumbo 0.180.0-r1: HTML5 parser based on gumbo C library
-dev-perl/HTML-HTMLDoc 0.210.0-r1: Perl interface to the htmldoc program for producing PDF-Files from HTML-Content
+dev-perl/HTML-HTMLDoc 0.210.0-r1 0.250.0: Perl interface to the htmldoc program for producing PDF-Files from HTML-Content
 dev-perl/HTML-Highlight 0.200.0-r2: A module to highlight words or patterns in HTML documents
 dev-perl/HTML-LinkExtractor 0.130.0-r3: Bare-bone HTML parser, similar to HTML::Parser
 dev-perl/HTML-Mason 1.600.0-r1: A HTML development and delivery Perl Module
@@ -9810,7 +9810,7 @@ dev-python/yarl 1.22.0 1.23.0: Yet another URL library
 dev-python/yattag 1.16.1: Python library to generate HTML or XML in a readable, concise and pythonic way
 dev-python/yaxmldiff 0.2.0: Yet Another XML Differ
 dev-python/youtube-search-python 1.6.6-r2: Get YouTube video information using link WITHOUT YouTube Data API v3
-dev-python/yt-dlp-ejs 0.5.0 0.7.0: External JavaScript for yt-dlp supporting many runtimes
+dev-python/yt-dlp-ejs 0.5.0 0.7.0 0.8.0: External JavaScript for yt-dlp supporting many runtimes
 dev-python/ytmusicapi 1.11.4 1.11.5: Unofficial API for YouTube Music
 dev-python/zc-lockfile 3.0_p1-r1 4.0: Basic inter-process locks
 dev-python/zconfig 4.2 4.3: Configuration library supporting a hierarchical schema-driven model
@@ -12528,85 +12528,85 @@ kde-misc/krusader 2.9.0: Advanced twin-panel (commander-style) file-manager with
 kde-misc/kshutdown 6.0 6.2: Shutdown manager for desktop environments like KDE Plasma
 kde-misc/kweather 25.12.2 25.12.3: Weather forecast application for Plasma with flat and dynamic/animated views
 kde-misc/markdownpart 25.12.2 25.12.3: Markdown viewer KParts plugin based on QTextDocument
-kde-misc/plasma-pass 1.3.0 1.3.0-r1: Plasma applet to access password from pass
+kde-misc/plasma-pass 1.3.0 1.3.0-r1 1.3.1: Plasma applet to access password from pass
 kde-misc/rsibreak 0.13.0: Small utility which bothers you at certain intervals
 kde-misc/skanlite 25.12.2 25.12.3: Simple image scanning application based on libksane and KDE Frameworks
 kde-misc/tellico 4.1.5 4.2: Collection manager based on KDE Frameworks
 kde-misc/zanshin 25.12.2 25.12.3: Getting things done application by KDE
-kde-plasma/aurorae 6.5.5 6.6.2: Themeable window decoration for KWin
-kde-plasma/bluedevil 6.5.5 6.6.2: Bluetooth stack for KDE Plasma
-kde-plasma/breeze 6.5.5 6.6.2: Breeze visual style for the Plasma desktop
-kde-plasma/breeze-grub 6.5.5 6.6.2: Breeze theme for GRUB
-kde-plasma/breeze-gtk 6.5.5 6.6.2: Official GTK+ port of Plasma's Breeze widget style
-kde-plasma/breeze-plymouth 6.5.5 6.6.2: Breeze theme for Plymouth
-kde-plasma/discover 6.5.5 6.6.2: KDE Plasma resources management GUI
-kde-plasma/drkonqi 6.5.5 6.6.2: Plasma crash handler, gives the user feedback if a program crashed
+kde-plasma/aurorae 6.5.5 6.6.2 6.6.3: Themeable window decoration for KWin
+kde-plasma/bluedevil 6.5.5 6.6.2 6.6.3: Bluetooth stack for KDE Plasma
+kde-plasma/breeze 6.5.5 6.6.2 6.6.3: Breeze visual style for the Plasma desktop
+kde-plasma/breeze-grub 6.5.5 6.6.2 6.6.3: Breeze theme for GRUB
+kde-plasma/breeze-gtk 6.5.5 6.6.2 6.6.3: Official GTK+ port of Plasma's Breeze widget style
+kde-plasma/breeze-plymouth 6.5.5 6.6.2 6.6.3: Breeze theme for Plymouth
+kde-plasma/discover 6.5.5 6.6.2 6.6.3: KDE Plasma resources management GUI
+kde-plasma/drkonqi 6.5.5 6.6.2 6.6.3: Plasma crash handler, gives the user feedback if a program crashed
 kde-plasma/drkonqi-legacy 6.3.80_p20250417: Plasma crash handler, gives the user feedback if a program crashed
-kde-plasma/flatpak-kcm 6.5.5 6.6.2: Flatpak Permissions Management KCM
-kde-plasma/kactivitymanagerd 6.5.5-r1 6.6.2: System service to manage user's activities, track the usage patterns etc.
-kde-plasma/kde-cli-tools 6.5.5 6.6.2: Tools based on KDE Frameworks 6 to better interact with the system
-kde-plasma/kde-cli-tools-common 6.5.5 6.6.2: Common files for kde-cli-tools
-kde-plasma/kde-gtk-config 6.5.5 6.6.2: Syncs KDE Plasma theme settings to GTK applications
-kde-plasma/kdecoration 6.5.5 6.6.2: Plugin based library to create window decorations
-kde-plasma/kdeplasma-addons 6.5.5-r1 6.6.2: Extra Plasma applets and engines
-kde-plasma/kdesu-gui 6.5.5 6.6.2: Graphical frontend for KDE Frameworks' kdesu
-kde-plasma/keditfiletype 6.5.5 6.6.2: File Type Editor
-kde-plasma/kgamma 6.5.5 6.6.2: Screen gamma values kcontrol module
-kde-plasma/kglobalacceld 6.5.5 6.6.2: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
-kde-plasma/kinfocenter 6.5.5 6.6.2: Utility providing information about the computer hardware
-kde-plasma/kmenuedit 6.5.5 6.6.2: KDE Plasma menu editor
-kde-plasma/knighttime 6.5.5 6.6.2: Helpers for scheduling the dark-light cycle
-kde-plasma/kpipewire 6.5.5 6.6.2: Components relating to Flatpak pipewire use in Plasma
-kde-plasma/krdp 6.5.5 6.6.2: Library and examples for creating an RDP server
-kde-plasma/kscreen 6.5.5 6.5.5-r1 6.6.2: KDE Plasma screen management
-kde-plasma/kscreenlocker 6.5.5-r1 6.6.2: Library and components for secure lock screen architecture
-kde-plasma/ksshaskpass 6.5.5 6.6.2: Implementation of ssh-askpass with KDE Wallet integration
-kde-plasma/ksystemstats 6.5.5 6.6.2: Plugin-based system monitoring daemon
-kde-plasma/kwallet-pam 6.5.5 6.6.2: PAM module to not enter KWallet password again after login
-kde-plasma/kwayland 6.5.5 6.6.2: Qt-style API to interact with the wayland-client API
-kde-plasma/kwin 6.5.5-r2 6.6.2: Flexible, composited Window Manager for windowing systems on Linux
-kde-plasma/kwin-x11 6.5.5 6.6.2: Flexible, composited X window manager
-kde-plasma/kwrited 6.5.5 6.6.2: KDE Plasma daemon listening for wall and write messages
-kde-plasma/layer-shell-qt 6.5.5 6.6.2: Qt component to allow applications make use of Wayland wl-layer-shell protocol
-kde-plasma/libkscreen 6.5.5-r1 6.6.2: Plasma screen management library
-kde-plasma/libksysguard 6.5.5 6.6.2: Task management and system monitoring library
-kde-plasma/libplasma 6.5.5 6.6.2: Plasma library and runtime components based upon KF6 and Qt6
-kde-plasma/milou 6.5.5 6.6.2: Dedicated search application built on top of Baloo
-kde-plasma/ocean-sound-theme 6.5.5 6.6.2: Ocean Sound Theme for Plasma
-kde-plasma/oxygen 6.5.5 6.6.2: Oxygen visual style for the Plasma desktop
-kde-plasma/oxygen-sounds 6.5.5 6.6.2: Oxygen sound theme for the Plasma desktop
-kde-plasma/plasma-activities 6.5.5 6.6.2: Core components for KDE's Activities System
-kde-plasma/plasma-activities-stats 6.5.5 6.6.2: Library for accessing usage data collected by the activities system
-kde-plasma/plasma-browser-integration 6.5.5 6.6.2: Integrate Chrome/Firefox better into Plasma through browser extensions
-kde-plasma/plasma-desktop 6.5.5 6.6.2: KDE Plasma desktop
-kde-plasma/plasma-disks 6.5.5-r1 6.6.2: Monitors S.M.A.R.T. capable devices for imminent failure
-kde-plasma/plasma-firewall 6.5.5 6.6.2: Plasma frontend for Firewalld or UFW
-kde-plasma/plasma-integration 6.5.5 6.6.2: Qt Platform Theme integration plugins for the Plasma workspaces
-kde-plasma/plasma-keyboard 6.6.2: Virtual keyboard based on Qt Virtual Keyboard
-kde-plasma/plasma-login-manager 6.6.2: Plasma Login Manager
-kde-plasma/plasma-login-sessions 6.5.5 6.6.2: KDE Plasma login sessions
-kde-plasma/plasma-meta 6.5.5-r1 6.6.0-r1 6.6.2-r1: Merge this to pull in all Plasma 6 packages
+kde-plasma/flatpak-kcm 6.5.5 6.6.2 6.6.3: Flatpak Permissions Management KCM
+kde-plasma/kactivitymanagerd 6.5.5-r1 6.6.2 6.6.3: System service to manage user's activities, track the usage patterns etc.
+kde-plasma/kde-cli-tools 6.5.5 6.6.2 6.6.3: Tools based on KDE Frameworks 6 to better interact with the system
+kde-plasma/kde-cli-tools-common 6.5.5 6.6.2 6.6.3: Common files for kde-cli-tools
+kde-plasma/kde-gtk-config 6.5.5 6.6.2 6.6.3: Syncs KDE Plasma theme settings to GTK applications
+kde-plasma/kdecoration 6.5.5 6.6.2 6.6.3: Plugin based library to create window decorations
+kde-plasma/kdeplasma-addons 6.5.5-r1 6.6.2 6.6.3: Extra Plasma applets and engines
+kde-plasma/kdesu-gui 6.5.5 6.6.2 6.6.3: Graphical frontend for KDE Frameworks' kdesu
+kde-plasma/keditfiletype 6.5.5 6.6.2 6.6.3: File Type Editor
+kde-plasma/kgamma 6.5.5 6.6.2 6.6.3: Screen gamma values kcontrol module
+kde-plasma/kglobalacceld 6.5.5 6.6.2 6.6.3: Daemon providing Global Keyboard Shortcut (Accelerator) functionality
+kde-plasma/kinfocenter 6.5.5 6.6.2 6.6.3: Utility providing information about the computer hardware
+kde-plasma/kmenuedit 6.5.5 6.6.2 6.6.3: KDE Plasma menu editor
+kde-plasma/knighttime 6.5.5 6.6.2 6.6.3: Helpers for scheduling the dark-light cycle
+kde-plasma/kpipewire 6.5.5 6.6.2 6.6.3: Components relating to Flatpak pipewire use in Plasma
+kde-plasma/krdp 6.5.5 6.6.2 6.6.3: Library and examples for creating an RDP server
+kde-plasma/kscreen 6.5.5 6.5.5-r1 6.6.2 6.6.3: KDE Plasma screen management
+kde-plasma/kscreenlocker 6.5.5-r1 6.6.2 6.6.3: Library and components for secure lock screen architecture
+kde-plasma/ksshaskpass 6.5.5 6.6.2 6.6.3: Implementation of ssh-askpass with KDE Wallet integration
+kde-plasma/ksystemstats 6.5.5 6.6.2 6.6.3: Plugin-based system monitoring daemon
+kde-plasma/kwallet-pam 6.5.5 6.6.2 6.6.3: PAM module to not enter KWallet password again after login
+kde-plasma/kwayland 6.5.5 6.6.2 6.6.3: Qt-style API to interact with the wayland-client API
+kde-plasma/kwin 6.5.5-r2 6.6.2 6.6.3: Flexible, composited Window Manager for windowing systems on Linux
+kde-plasma/kwin-x11 6.5.5 6.6.2 6.6.3: Flexible, composited X window manager
+kde-plasma/kwrited 6.5.5 6.6.2 6.6.3: KDE Plasma daemon listening for wall and write messages
+kde-plasma/layer-shell-qt 6.5.5 6.6.2 6.6.3: Qt component to allow applications make use of Wayland wl-layer-shell protocol
+kde-plasma/libkscreen 6.5.5-r1 6.6.2 6.6.3: Plasma screen management library
+kde-plasma/libksysguard 6.5.5 6.6.2 6.6.3: Task management and system monitoring library
+kde-plasma/libplasma 6.5.5 6.6.2 6.6.3: Plasma library and runtime components based upon KF6 and Qt6
+kde-plasma/milou 6.5.5 6.6.2 6.6.3: Dedicated search application built on top of Baloo
+kde-plasma/ocean-sound-theme 6.5.5 6.6.2 6.6.3: Ocean Sound Theme for Plasma
+kde-plasma/oxygen 6.5.5 6.6.2 6.6.3: Oxygen visual style for the Plasma desktop
+kde-plasma/oxygen-sounds 6.5.5 6.6.2 6.6.3: Oxygen sound theme for the Plasma desktop
+kde-plasma/plasma-activities 6.5.5 6.6.2 6.6.3: Core components for KDE's Activities System
+kde-plasma/plasma-activities-stats 6.5.5 6.6.2 6.6.3: Library for accessing usage data collected by the activities system
+kde-plasma/plasma-browser-integration 6.5.5 6.6.2 6.6.3: Integrate Chrome/Firefox better into Plasma through browser extensions
+kde-plasma/plasma-desktop 6.5.5 6.6.2 6.6.3: KDE Plasma desktop
+kde-plasma/plasma-disks 6.5.5-r1 6.6.2 6.6.3: Monitors S.M.A.R.T. capable devices for imminent failure
+kde-plasma/plasma-firewall 6.5.5 6.6.2 6.6.3: Plasma frontend for Firewalld or UFW
+kde-plasma/plasma-integration 6.5.5 6.6.2 6.6.3: Qt Platform Theme integration plugins for the Plasma workspaces
+kde-plasma/plasma-keyboard 6.6.2 6.6.3: Virtual keyboard based on Qt Virtual Keyboard
+kde-plasma/plasma-login-manager 6.6.2 6.6.3: Plasma Login Manager
+kde-plasma/plasma-login-sessions 6.5.5 6.6.2 6.6.3: KDE Plasma login sessions
+kde-plasma/plasma-meta 6.5.5-r1 6.6.0-r1 6.6.2-r1 6.6.3: Merge this to pull in all Plasma 6 packages
 kde-plasma/plasma-mimeapps-list 3: Gentoo curated mimeapps list for KDE Plasma
-kde-plasma/plasma-nm 6.5.5 6.6.2: KDE Plasma applet for NetworkManager
-kde-plasma/plasma-pa 6.5.5 6.6.2: Plasma applet for audio volume management using PulseAudio
-kde-plasma/plasma-sdk 6.5.5 6.6.2: Useful applications for Plasma development
-kde-plasma/plasma-systemmonitor 6.5.5-r1 6.6.2: Monitor system sensors, process information and other system resources
-kde-plasma/plasma-thunderbolt 6.5.5 6.6.2: Plasma integration for controlling Thunderbolt devices
-kde-plasma/plasma-vault 6.5.5-r1 6.5.5-r2 6.6.2: Plasma applet and services for creating encrypted vaults
-kde-plasma/plasma-welcome 6.5.5-r1 6.6.2: Friendly onboarding wizard for Plasma
-kde-plasma/plasma-workspace 6.5.5-r1 6.5.5-r2 6.6.2 6.6.2-r2: KDE Plasma workspace
-kde-plasma/plasma-workspace-wallpapers 6.5.5 6.6.2: Wallpapers for the Plasma workspace
-kde-plasma/plasma5support 6.5.5 6.6.2: Support components for porting from KF5/Qt5 to KF6/Qt6
-kde-plasma/plymouth-kcm 6.5.5 6.6.2: KDE Plasma control module for Plymouth
-kde-plasma/polkit-kde-agent 6.5.5 6.6.2: PolKit agent module for KDE Plasma
-kde-plasma/powerdevil 6.5.5 6.6.2: Power management for KDE Plasma Shell
-kde-plasma/print-manager 6.5.5 6.6.2: Manage CUPS print jobs and printers in Plasma
-kde-plasma/qqc2-breeze-style 6.5.5 6.6.2: Breeze inspired QQC2 Style
-kde-plasma/sddm-kcm 6.5.5-r1 6.6.2: KDE Plasma control module for SDDM
-kde-plasma/spectacle 6.5.5 6.6.2-r1: Screenshot capture utility
-kde-plasma/systemsettings 6.5.5 6.6.2: Control Center to configure KDE Plasma desktop
-kde-plasma/wacomtablet 6.5.5-r1 6.6.2: Wacom system settings module that supports different button/pen layout profiles
-kde-plasma/xdg-desktop-portal-kde 6.5.5 6.6.2: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
+kde-plasma/plasma-nm 6.5.5 6.6.2 6.6.3: KDE Plasma applet for NetworkManager
+kde-plasma/plasma-pa 6.5.5 6.6.2 6.6.3: Plasma applet for audio volume management using PulseAudio
+kde-plasma/plasma-sdk 6.5.5 6.6.2 6.6.3: Useful applications for Plasma development
+kde-plasma/plasma-systemmonitor 6.5.5-r1 6.6.2 6.6.3: Monitor system sensors, process information and other system resources
+kde-plasma/plasma-thunderbolt 6.5.5 6.6.2 6.6.3: Plasma integration for controlling Thunderbolt devices
+kde-plasma/plasma-vault 6.5.5-r1 6.5.5-r2 6.6.2 6.6.3: Plasma applet and services for creating encrypted vaults
+kde-plasma/plasma-welcome 6.5.5-r1 6.6.2 6.6.3: Friendly onboarding wizard for Plasma
+kde-plasma/plasma-workspace 6.5.5-r1 6.5.5-r2 6.6.2 6.6.2-r2 6.6.3: KDE Plasma workspace
+kde-plasma/plasma-workspace-wallpapers 6.5.5 6.6.2 6.6.3: Wallpapers for the Plasma workspace
+kde-plasma/plasma5support 6.5.5 6.6.2 6.6.3: Support components for porting from KF5/Qt5 to KF6/Qt6
+kde-plasma/plymouth-kcm 6.5.5 6.6.2 6.6.3: KDE Plasma control module for Plymouth
+kde-plasma/polkit-kde-agent 6.5.5 6.6.2 6.6.3: PolKit agent module for KDE Plasma
+kde-plasma/powerdevil 6.5.5 6.6.2 6.6.3: Power management for KDE Plasma Shell
+kde-plasma/print-manager 6.5.5 6.6.2 6.6.3: Manage CUPS print jobs and printers in Plasma
+kde-plasma/qqc2-breeze-style 6.5.5 6.6.2 6.6.3: Breeze inspired QQC2 Style
+kde-plasma/sddm-kcm 6.5.5-r1 6.6.2 6.6.3: KDE Plasma control module for SDDM
+kde-plasma/spectacle 6.5.5 6.6.2-r1 6.6.3: Screenshot capture utility
+kde-plasma/systemsettings 6.5.5 6.6.2 6.6.3: Control Center to configure KDE Plasma desktop
+kde-plasma/wacomtablet 6.5.5-r1 6.6.2 6.6.3: Wacom system settings module that supports different button/pen layout profiles
+kde-plasma/xdg-desktop-portal-kde 6.5.5 6.6.2 6.6.3: Backend implementation for xdg-desktop-portal that is using Qt/KDE Frameworks
 llvm-core/clang 16.0.6-r1 17.0.6-r1 18.1.8-r7 19.1.7-r1 20.1.8 21.1.8 22.1.0-r2 22.1.1 23.0.0_pre20260307 23.0.0_pre20260314 23.0.0.9999: C language family frontend for LLVM
 llvm-core/clang-common 16.0.6-r6 17.0.6-r10 18.1.8-r3 19.1.7 20.1.8-r1 21.1.8 22.1.0 22.1.1 23.0.0_pre20260307 23.0.0_pre20260314 23.0.0.9999: Common files shared between multiple slots of clang
 llvm-core/clang-linker-config 16 17 18 19 20 21 22 23: Default linker configuration for clang
@@ -13340,7 +13340,7 @@ media-libs/jbigkit 2.1: data compression algorithm for bi-level high-resolution 
 media-libs/jg 1.0.0 9999: Reference Implementation of The Jolly Good API
 media-libs/kcolorpicker 0.3.1-r1: Qt based color picker with popup menu
 media-libs/kimageannotator 0.7.1 0.7.2: Tool for annotating images
-media-libs/kquickimageeditor 0.6.0: QtQuick components providing basic image editing capabilities
+media-libs/kquickimageeditor 0.6.0 0.6.1: QtQuick components providing basic image editing capabilities
 media-libs/ksanecore 25.12.2 25.12.3: Qt-based interface for SANE library to control scanner hardware
 media-libs/kvazaar 2.2.0 2.3.0-r1 2.3.2 9999: Open-source HEVC encoder
 media-libs/ladspa-sdk 1.17-r2: The Linux Audio Developer's Simple Plugin API
@@ -14971,7 +14971,7 @@ net-libs/gupnp 1.6.9: An object-oriented framework for creating UPnP devs and co
 net-libs/gupnp-av 0.14.3 0.14.4: Utility library aiming to ease the handling UPnP A/V profiles
 net-libs/gupnp-igd 1.6.0-r1: Library to handle UPnP IGD port mapping for GUPnP
 net-libs/http-parser 2.9.4-r2: HTTP request/response parser for C
-net-libs/kdsoap 2.2.0-r1: Qt-based client-side and server-side SOAP component
+net-libs/kdsoap 2.2.0-r1 2.3.0: Qt-based client-side and server-side SOAP component
 net-libs/kdsoap-ws-discovery-client 0.4.0-r2: WS-Discovery client library based on KDSoap
 net-libs/ldns 1.8.4-r1 1.9.0: Library that aims to simplify DNS programming in C
 net-libs/libaccounts-glib 1.27-r1: Accounts SSO (Single Sign-On) management library for GLib applications
@@ -15519,7 +15519,7 @@ net-misc/xmrig 6.22.2 6.25.0 9999: RandomX, CryptoNight, KawPow, AstroBWT, and A
 net-misc/yandex-disk 0.1.6.1080_p1: CLI to access Yandex Disk file storage service
 net-misc/you-get 0.4.1650-r1 0.4.1700: Utility to download media contents from the web
 net-misc/youtube-viewer 3.11.6 9999: A command line utility for viewing youtube-videos in Mplayer
-net-misc/yt-dlp 2026.03.03 2026.03.13 9999: youtube-dl fork with additional features and fixes
+net-misc/yt-dlp 2026.03.03 2026.03.13 2026.03.17 9999: youtube-dl fork with additional features and fixes
 net-misc/ytmdl 2024.08.15.1-r2: Simple app to get songs from youtube in mp3 format
 net-misc/zerotier 1.14.2-r2 1.16.0-r2: A software-based managed Ethernet switch for planet Earth
 net-misc/zssh 1.5c-r3: SSH wrapper enabling zmodem up/download in ssh
@@ -18547,7 +18547,7 @@ x11-libs/libfontenc 1.1.8 1.1.9: X.Org fontenc library
 x11-libs/libgxim 0.5.0-r1: GObject-based XIM protocol library
 x11-libs/libnotify 0.8.6 0.8.7: A library for sending desktop notifications
 x11-libs/liboglappth 1.0.0-r1: Libary for OpenGL applications with easy-to-code scene setup and selection
-x11-libs/libpciaccess 0.18.1: Library providing generic access to the PCI bus and devices
+x11-libs/libpciaccess 0.18.1 0.19: Library providing generic access to the PCI bus and devices
 x11-libs/libtinynotify 0.2.1: A lightweight implementation of Desktop Notification Spec
 x11-libs/libtinynotify-cli 1.2.1-r1: Common CLI routines for tinynotify-send & sw-notify-send
 x11-libs/libvdpau 1.5: VDPAU wrapper and trace libraries
