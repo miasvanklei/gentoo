@@ -1174,7 +1174,7 @@ app-arch/lunzip 1.15 1.16: Decompressor for the lzip format, written in C
 app-arch/lxqt-archiver 1.3.0-r1: Qt GUI File Archiver
 app-arch/lz4 1.9.4 1.10.0 1.10.0-r1: Extremely Fast Compression algorithm
 app-arch/lz5 2.0-r1: An efficient compressor with very fast decompression
-app-arch/lzip 1.25: Lossless data compressor based on the LZMA algorithm
+app-arch/lzip 1.25 1.26: Lossless data compressor based on the LZMA algorithm
 app-arch/lziprecover 1.25 1.26: Lziprecover is a data recovery tool and decompressor for lzip compressed files
 app-arch/lzlib 1.15-r1 1.16: Library for lzip compression
 app-arch/lzma 19.00-r1: LZMA Stream Compressor from the SDK
@@ -2413,7 +2413,7 @@ app-emulation/spice-protocol 0.14.4 0.14.5 9999-r1: Headers defining the SPICE p
 app-emulation/spice-vdagent 0.22.1: SPICE VD Linux Guest Agent
 app-emulation/uade 2.13-r2: Unix Amiga Delitracker Emulator - plays old Amiga tunes through UAE emulation
 app-emulation/uxn 0_p20250122 9999: An assembler and emulator for the Uxn stack-machine, written in ANSI C
-app-emulation/vagrant 2.4.0-r1 2.4.1: A tool for building and distributing development environments
+app-emulation/vagrant 2.4.0-r1 2.4.1 2.4.9: A tool for building and distributing development environments
 app-emulation/vendor-reset 0.1.1_pre20221205-r1 0.1.1_pre20221205-r2 9999: Linux kernel vendor specific hardware reset module
 app-emulation/vice 3.9 3.10: Versatile Commodore Emulator
 app-emulation/virt-firmware 24.11 25.4.1 25.10 25.12 26.2: Tools for ovmf/armvirt firmware volumes
@@ -12688,7 +12688,7 @@ mail-client/mailx-support 20060102-r3: Provides lockspool utility
 mail-client/mutt 2.2.14-r1 2.2.16 2.3.0: A small but very powerful text-based mail client
 mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomutt and isync
 mail-client/neomutt 20240201 20250510 20251211-r1 20260105 99999999: A small but very powerful text-based mail client
-mail-client/roundcube 1.6.11 1.6.13 1.7_rc4 9999: Browser-based multilingual IMAP client with an application-like user interface
+mail-client/roundcube 1.6.11 1.6.14 1.7_rc5 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
 mail-client/thunderbird 140.7.2 140.8.0 140.8.1 147.0.2 148.0 148.0.1: Thunderbird Mail Client
 mail-client/thunderbird-bin 140.7.2 140.8.0 140.8.1 147.0.2 148.0 148.0.1: Thunderbird Mail Client
@@ -15273,7 +15273,7 @@ net-misc/ethertypes 0: Maps ethernet frame ids to symbolic names
 net-misc/eventd 0.29.0-r2: A small daemon to act on remote or local events
 net-misc/exabgp 4.2.23 4.2.25: The BGP swiss army knife of networking
 net-misc/fakeidentd 2.6-r1: A static, secure identd. One source file only!
-net-misc/freerdp 3.24.0 9999: Free implementation of the Remote Desktop Protocol
+net-misc/freerdp 3.24.0 3.24.1 9999: Free implementation of the Remote Desktop Protocol
 net-misc/frr 10.1.3 10.2.2 10.2.3 10.3.1 10.4.1 10.5.0: The FRRouting Protocol Suite
 net-misc/gallery-dl 1.31.4 1.31.5 1.31.6 1.31.7 1.31.9 9999: Download image galleries and collections from several image hosting sites
 net-misc/geckodriver 0.36.0: Proxy for using WebDriver clients to interact with Gecko-based browsers
@@ -15631,7 +15631,7 @@ net-proxy/adzapper 20110915-r2: Redirector for squid to intercept advertising, p
 net-proxy/cntlm 0.93_beta5-r4: Cntlm is an NTLM/NTLMv2 authenticating HTTP proxy
 net-proxy/dante 1.4.1-r6 1.4.3: A free socks4,5 and msproxy implementation
 net-proxy/dnsproxy 1.17-r1: The dnsproxy daemon is a proxy for DNS queries
-net-proxy/haproxy 2.8.11 2.8.18 2.8.19 2.8.9999 3.0.5 3.0.14 3.0.17 3.0.18 3.0.9999 3.2.9 3.2.13 3.2.14 3.2.9999 3.3.4 3.3.5 3.3.9999 9999: A TCP/HTTP reverse proxy for high availability environments
+net-proxy/haproxy 2.8.11 2.8.18 2.8.19 2.8.9999 3.0.5 3.0.14 3.0.17 3.0.18 3.0.9999 3.2.9 3.2.13 3.2.14 3.2.9999 3.3.4 3.3.5 3.3.6 3.3.9999 9999: A TCP/HTTP reverse proxy for high availability environments
 net-proxy/haproxy-dataplaneapi 3.0.3 3.1.5: haproxy dataplane api / sidecar
 net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying of HAProxy status
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
@@ -16522,7 +16522,7 @@ sci-physics/looptools 2.15-r1 2.16: Tools for evaluation of scalar and tensor on
 sci-physics/pythia 8.3.16-r1 8.3.17 9999: Lund Monte Carlo high-energy physics event generator
 sci-physics/reduze 2.4-r1: Program for reducing Feynman integrals
 sci-physics/rivet 3.1.11-r1 4.1.2 9999: Robust Independent Validation of Experiment and Theory toolkit
-sci-physics/root 6.36.06 6.36.9999 6.38.00 9999: C++ data analysis framework and interpreter from CERN
+sci-physics/root 6.36.06 6.36.9999 6.38.00 6.38.04 9999: C++ data analysis framework and interpreter from CERN
 sci-physics/siscone 3.0.6 3.1.0 3.1.2 3.1.2-r1 9999: Hadron Seedless Infrared-Safe Cone jet algorithm
 sci-physics/thepeg 2.2.3-r3 2.3.0-r4: Toolkit for High Energy Physics Event Generation
 sci-physics/vgm 5.2-r1 5.4 9999: Virtual Geometry Model for High Energy Physics Experiments
@@ -17829,7 +17829,7 @@ sys-kernel/scx-loader 1.0.19 1.0.20 1.1.0: DBUS on-demand loader of sched-ext sc
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 5.10.250 5.10.252 5.10.9999 5.15.200 5.15.202 5.15.9999 6.1.163 6.1.166 6.1.9999 6.6.126 6.6.129 6.6.9999 6.12.74 6.12.77 6.12.9999 6.18.12 6.18.18 6.19.8: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 5.10.252 5.15.202 6.1.166 6.6.129 6.12.77 6.18.18 6.19.8: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 5.10.252 5.15.202 6.1.166 6.6.129 6.12.77 6.18.19 6.19.9: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.36 1.38 1.40: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.19.8: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
@@ -18254,7 +18254,7 @@ www-apps/rt 5.0.6-r1: RT is an enterprise-grade ticketing system
 www-apps/rutorrent 5.2.9 5.2.10 9999: ruTorrent is a front-end for the popular Bittorrent client rTorrent
 www-apps/selfoss 2.20_pre20230730: The multipurpose rss reader, live stream, mashup, aggregation web application
 www-apps/sfpg 4.11.0: A web gallery in one single PHP file
-www-apps/sonarr-bin 4.0.16.2946: Sonarr is a Smart PVR for newsgroup and bittorrent users
+www-apps/sonarr-bin 4.0.17.2952: Sonarr is a Smart PVR for newsgroup and bittorrent users
 www-apps/trickster 1.1.5: Dashboard Accelerator for Prometheus
 www-apps/tt-rss 20250417 20251216 99999999: Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX
 www-apps/ttyd 1.7.7 1.7.7-r1 9999: ttyd, a simple command-line tool for sharing terminal over the web
