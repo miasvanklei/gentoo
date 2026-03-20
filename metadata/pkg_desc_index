@@ -961,7 +961,7 @@ app-admin/drush 6.7.0-r8: Command line shell and scripting interface for Drupal
 app-admin/eclean-kernel 2.99.8 2.99.10 9999: Remove outdated built kernels
 app-admin/emacs-updater 1.19: Rebuild Emacs packages
 app-admin/entr 5.7 5.8: Run arbitrary commands when files change
-app-admin/eselect 1.4.30 1.4.31 9999: Gentoo's multi-purpose configuration and management tool
+app-admin/eselect 1.4.30 1.4.31 1.4.32 9999: Gentoo's multi-purpose configuration and management tool
 app-admin/evtxtools 1.1.1-r2: Read, decode and dump Windows Vista/2008/7 event log file
 app-admin/exo 1.93.0: Command-line tool for everything at Exoscale: compute, storage, dns
 app-admin/fam 2.7.0_p17_p3: FAM, the File Alteration Monitor
@@ -2051,7 +2051,7 @@ app-emacs/erlang-mode 27.0.1 28.1 28.3 9999: A major mode for editing Erlang
 app-emacs/erobot 2.1.0-r1: Battle-bots for Emacs!
 app-emacs/ert-async 0.1.2_p20200105: Async support for ERT
 app-emacs/ert-runner 0.8.0-r1: Opinionated Emacs Ert testing workflow
-app-emacs/eselect-mode 1.4.30 1.4.31 9999: Emacs major mode for editing eselect files
+app-emacs/eselect-mode 1.4.30 1.4.31 1.4.32 9999: Emacs major mode for editing eselect files
 app-emacs/espuds 0.3.3_p20171111: Common step definitions for Emacs Ecukes
 app-emacs/ess 25.01.0: Emacs Speaks Statistics
 app-emacs/esup 0.7.1_p20220203: Benchmark Emacs Startup time without ever leaving it
@@ -2958,7 +2958,7 @@ app-misc/uptimed 0.4.7: System uptime record daemon that keeps track of your hig
 app-misc/vcontrold 0.98.11-r1: Daemon for communication with Viessmann Vito heatings
 app-misc/vcp 2.2-r2: Copy files/directories in a curses interface
 app-misc/vifm 0.14.2 9999: Console file manager with vi(m)-like keybindings
-app-misc/vit 2.3.3: A lightweight, fast, curses-based front end to Taskwarrior
+app-misc/vit 2.3.3 2.3.4: A lightweight, fast, curses-based front end to Taskwarrior
 app-misc/vittk 1.3-r1: A front end for Taskwarrior (app-misc/task)
 app-misc/vlock 2.2.3-r2: Allows to lock one or all of the sessions of your console display
 app-misc/votrify 5-r1: Tool for community verification of Gentoo elections
@@ -3818,11 +3818,11 @@ dev-ada/templates-parser 24.0.0-r2 25.0.0-r5 26.0.0-r1: A template engine
 dev-ada/vss-extra 26.0.0: A high level string and text processing library
 dev-ada/vss-text 25.0.0-r1 26.0.0: A high level string and text processing library
 dev-ada/xmlada 25.0.0-r5 26.0.0: Set of modules that provide a simple manipulation of XML streams
-dev-build/autoconf 2.13-r8 2.69-r10 2.71-r8 2.72-r6 2.72.90 9999: Used to create autoconfiguration files
+dev-build/autoconf 2.13-r8 2.69-r10 2.71-r8 2.72-r6 2.73 9999: Used to create autoconfiguration files
 dev-build/autoconf-archive 2023.02.20 2024.10.16-r1 2024.10.16-r2: GNU Autoconf Macro Archive
 dev-build/autoconf-dickey 2.52_p20230114 2.52_p20231210 2.52_p20240618 2.52_p20250126: Fork of dev-build/autoconf for Thomas Dickey's packages
 dev-build/autoconf-vanilla 2.13 2.69-r1 2.71-r1 2.72-r1 9999: Used to create autoconfiguration files
-dev-build/autoconf-wrapper 20231224 99999999: Wrapper for autoconf to manage multiple autoconf versions
+dev-build/autoconf-wrapper 20231224 20260320 99999999: Wrapper for autoconf to manage multiple autoconf versions
 dev-build/automake 1.11.6-r4 1.17-r2 1.18.1 9999: Used to generate Makefile.in from Makefile.am
 dev-build/automake-vanilla 1.11.6 1.15.1 1.16.5 1.17 1.18 1.18.1 9999: Used to generate Makefile.in from Makefile.am
 dev-build/automake-wrapper 20240607 20250528 99999999: Wrapper for automake to manage multiple automake versions
@@ -5904,7 +5904,7 @@ dev-libs/vc 1.4.5: SIMD Vector Class Library for C++
 dev-libs/vectorscan 5.4.11 5.4.12: A portable fork of the high-performance regular expression matching library
 dev-libs/voikko-fi 2.5-r2: Finnish dictionary for libvoikko based spell checkers (vvfst format)
 dev-libs/volume_key 0.3.12-r4: Library for manipulating and storing storage volume encryption keys
-dev-libs/wayland 1.24.0 9999: Wayland protocol libraries
+dev-libs/wayland 1.24.0 1.25.0 9999: Wayland protocol libraries
 dev-libs/wayland-protocols 1.45 1.47 9999: Wayland protocol files
 dev-libs/weston 14.0.2-r1 15.0.0 9999: Wayland reference compositor
 dev-libs/xalan-c 1.12-r4: XSLT processor for transforming XML into HTML, text, or other XML types
@@ -11019,7 +11019,7 @@ dev-util/maxcso 1.13.0 9999: Fast cso compressor
 dev-util/mdds 2.1.1-r1 3.0.0 9999: Collection of multi-dimensional data structure and indexing algorithm
 dev-util/meld 3.22.2-r1 3.22.3: A graphical diff and merge tool
 dev-util/memprof 0.6.2-r2: Profiling and leak detection tool
-dev-util/mesa_clc 25.0.7 25.2.8 25.3.3 25.3.4 25.3.5 25.3.6 26.0.0 26.0.1 26.0.2 9999: mesa_clc tool used for building OpenCL C to SPIR-V
+dev-util/mesa_clc 25.0.7 25.2.8 25.3.3 25.3.4 25.3.5 25.3.6 26.0.0 26.0.1 26.0.2 26.0.3 9999: mesa_clc tool used for building OpenCL C to SPIR-V
 dev-util/mig 1.8_p20231217 9999: GNU Mach 3.0 interface generator (IDL compiler)
 dev-util/min-cscope 16.1.0-r2: Interactively examine a C program
 dev-util/mingw64-runtime 13.0.0: Free Win64 runtime and import library definitions
@@ -11154,7 +11154,7 @@ dev-util/vulkan-utility-libraries 1.4.328.0 1.4.335.0 1.4.341.0 9999: Share code
 dev-util/wachy 0.1.0_alpha6-r2: A dynamic tracing profiler for Linux
 dev-util/wasm3 0.5.0: A fast WebAssembly interpreter and the most universal WASM runtime
 dev-util/watchman 2023.06.19.00-r2 2024.11.04.00 2025.04.14.00: A file watching service
-dev-util/wayland-scanner 1.24.0 9999: wayland-scanner tool
+dev-util/wayland-scanner 1.24.0 1.25.0 9999: wayland-scanner tool
 dev-util/web_page_replay_go 20221028: A performance testing tool for recording and replaying web pages
 dev-util/webhook 2.8.1: lightweight incoming webhook server to run shell commands
 dev-util/weka 3.8.6: A Java data mining package
@@ -13529,7 +13529,7 @@ media-libs/lilv 0.24.26-r1: Library to make the use of LV2 plugins as simple as 
 media-libs/lsp-plugins 1.2.3-r1 1.2.6 1.2.14 9999: Linux Studio Plugins
 media-libs/lv2 1.18.10-r1 1.18.10-r2: A simple but extensible successor of LADSPA
 media-libs/lvtk 1.2.0-r4: A set of C++ wrappers around the LV2 C API
-media-libs/mesa 24.1.7-r1 25.0.7 25.2.8 25.3.3 25.3.4 25.3.5 25.3.6 26.0.0 26.0.1 26.0.2 9999: OpenGL-like graphic library for Linux
+media-libs/mesa 24.1.7-r1 25.0.7 25.2.8 25.3.3 25.3.4 25.3.5 25.3.6 26.0.0 26.0.1 26.0.2 26.0.3 9999: OpenGL-like graphic library for Linux
 media-libs/mesa-amber 21.3.9-r2 21.3.9-r3: OpenGL-like graphic library for Linux
 media-libs/mlt 7.32.0 7.34.1-r1: Open source multimedia framework for television broadcasting
 media-libs/mpvqt 1.1.1-r2: libmpv wrapper for QtQuick2 and QML
@@ -14674,7 +14674,7 @@ net-analyzer/ssldump 1.5 1.8 1.9: An SSLv3/TLS network protocol analyzer
 net-analyzer/sslscan 2.2.0 2.2.1 2.2.1-r1: Fast SSL configuration scanner
 net-analyzer/sslsplit 0.5.5-r1: Transparent SSL/TLS interception
 net-analyzer/ssmping 0.9.1: Tool for testing multicast connectivity
-net-analyzer/suricata 7.0.5-r1: High performance Network IDS, IPS and Network Security Monitoring engine
+net-analyzer/suricata 7.0.15: High performance Network IDS, IPS and Network Security Monitoring engine
 net-analyzer/symon 2.89 2.90: Performance and information monitoring tool
 net-analyzer/synscan 5.02: Fast asynchronous half-open TCP portscanner
 net-analyzer/syweb 0.65-r1 0.67: Web frontend to symon
@@ -14999,7 +14999,7 @@ net-libs/libgrss 0.7.0-r2: Library for easy management of RSS/Atom/Pie feeds
 net-libs/libgsasl 1.10.0: The GNU SASL library
 net-libs/libgssglue 0.9 0.9-r1: Exports a gssapi interface which calls other random gssapi libraries
 net-libs/libhackrf 2024.02.1-r1 2026.01.3 9999: library for communicating with HackRF SDR platform
-net-libs/libhtp 0.5.49: Security-aware parser for the HTTP protocol and the related bits and pieces
+net-libs/libhtp 0.5.53: Security-aware parser for the HTTP protocol and the related bits and pieces
 net-libs/libhubbub 0.3.8: HTML5 compliant parsing library, written in C
 net-libs/libident 0.32-r1 0.32-r2: Small library to interface to the Ident protocol server
 net-libs/libiio 0.26-r2 0.26-r3 9999: Library for interfacing with IIO devices
@@ -16736,7 +16736,7 @@ sec-keys/openpgp-keys-notqmail 20210223: OpenPGP keys used to sign notqmail rele
 sec-keys/openpgp-keys-ntpsec 20230919: OpenPGP keys used to sign ntpsec releases
 sec-keys/openpgp-keys-oath-toolkit 20260122: OpenPGP keys used for sys-auth/oath-toolkit
 sec-keys/openpgp-keys-ocserv 20230505: OpenPGP key for ocserv
-sec-keys/openpgp-keys-oisf 20200807: OpenPGP key used by Open InfoSec Foundation (OISF) software releases
+sec-keys/openpgp-keys-oisf 20260319: OpenPGP key used by Open InfoSec Foundation (OISF) software releases
 sec-keys/openpgp-keys-oletange 20210423: OpenPGP keys used by Ole Tange
 sec-keys/openpgp-keys-ollybetts 20260119: OpenPGP key used by Olly Betts
 sec-keys/openpgp-keys-ondrejjirman 20250216: OpenPGP keys used by Ondrej Jirman
@@ -17339,10 +17339,10 @@ sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
 sys-apps/system-monitoring-center 2.26.0-r1 3.1.0 3.2.0 9999: Multi-featured system monitor GUI written in Python
 sys-apps/systemctl-tui 0.4.0: A simple TUI for interacting with systemd services and their logs
-sys-apps/systemd 258.3 259.3-r2 259.4-r1 260 9999: System and service manager for Linux
+sys-apps/systemd 258.3 259.3-r2 259.4-r1 260-r1 9999: System and service manager for Linux
 sys-apps/systemd-initctl 2 4: initctl Compatibility Daemon
 sys-apps/systemd-readahead 216: Split of readahead systemd implementation
-sys-apps/systemd-utils 255.18 259.3 259.4: Utilities split out from systemd for OpenRC users
+sys-apps/systemd-utils 255.18 259.3 259.4 260: Utilities split out from systemd for OpenRC users
 sys-apps/sysvinit 3.09 3.14 3.15: /sbin/init - parent of all processes
 sys-apps/tas 1.9.0.240925: Supermicro Thin-Agent Service for monitoring through the BMC/IPMI
 sys-apps/tcp-wrappers 7.6.31-r2: TCP Wrappers
@@ -17887,7 +17887,7 @@ sys-libs/libxcrypt 4.4.38 4.4.38-r1: Extended crypt library for descrypt, md5cry
 sys-libs/lwp 2.8-r1: Light-weight process library (used by Coda)
 sys-libs/minizip-ng 4.0.10 4.0.10-r1: Fork of the popular zip manipulation library found in the zlib distribution
 sys-libs/mtdev 1.1.7: Multitouch Protocol Translation Library
-sys-libs/musl 1.2.5-r8 9999: Light, fast and, simple C library focused on standards-conformance and safety
+sys-libs/musl 1.2.5-r8 1.2.6 9999: Light, fast and, simple C library focused on standards-conformance and safety
 sys-libs/musl-nscd 1.1.1-r1 9999: musl-nscd is an implementation of the NSCD protocol for the musl libc
 sys-libs/native-uuid 1.0-r1: .pc file for uuid
 sys-libs/ncurses 6.5_p20250329 6.5_p20250531-r1 6.5_p20250802 6.5_p20251220: Console display library
