@@ -67,6 +67,9 @@ src_prepare() {
 	# Allow launching the ONLYOFFICE on ALSA systems via media-sound/apulse
 	sed -i -e "/^export LD_LIBRARY_PATH=/ s|$|:${EPREFIX}/usr/$(get_libdir)/apulse|" \
 		"${S}"/usr/bin/onlyoffice-desktopeditors || die
+
+	# Drop lib with unresolved soname dependencies, bug #970999
+	rm -v opt/onlyoffice/desktopeditors/platforminputcontexts/libqtvirtualkeyboardplugin.so || die
 }
 
 src_install() {
