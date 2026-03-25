@@ -3323,7 +3323,7 @@ app-text/lowdown 2.0.2 2.0.2-r1 2.0.4 3.0.1: Markdown translator producing HTML5
 app-text/lv 4.51-r5: Powerful Multilingual File Viewer
 app-text/mandoc 1.14.6 1.14.6-r1: Suite of tools compiling mdoc and man
 app-text/manpager 1: Enable colorization of man pages
-app-text/marknote 1.5.1: Markdown editor with a wide range of formating options for everyday notes
+app-text/marknote 1.5.1 1.5.2: Markdown editor with a wide range of formating options for everyday notes
 app-text/master-pdf-editor 5.9.94: A complete solution for viewing and editing PDF files
 app-text/mathtex 1.05: Lets you easily embed LaTeX math in your own html pages, blogs, wikis, etc
 app-text/mdbook 0.5.2: Create a book from markdown files
@@ -13185,7 +13185,7 @@ media-gfx/psftools 1.0.10: Utilities for manipulation of console fonts in PSF fo
 media-gfx/pstoedit 3.75: Translate PostScript and PDF graphics into other vector formats
 media-gfx/qimgv 1.0.2_p20250721: Cross-platform image viewer with webm support, written in Qt
 media-gfx/qiv 3.0.2: Quick Image Viewer
-media-gfx/qrca 25.12.2 25.12.3: Simple barcode scanner and QR code generator
+media-gfx/qrca 25.12.2 25.12.3 25.12.3-r1: Simple barcode scanner and QR code generator
 media-gfx/qrencode 4.1.1-r1: C library for encoding data in a QR Code symbol
 media-gfx/quat 1.20-r4: A 3D quaternionic fractal generator
 media-gfx/rawtherapee 5.11-r2 5.12 5.12-r1: A powerful cross-platform raw image processing program
@@ -15562,7 +15562,7 @@ net-p2p/amule 2.3.3-r7 9999: aMule, the all-platform eMule p2p client
 net-p2p/arti 1.5.0 1.8.0 9999: Implementation of Tor in Rust
 net-p2p/automatic 0.9.0-r1: RSS downloader for Tranmission
 net-p2p/biglybt 4.0.0.0: Feature-filled Bittorrent client based on Azureus
-net-p2p/bitcoin-core 29.2 29.3 30.2: Reference implementation of the Bitcoin cryptocurrency
+net-p2p/bitcoin-core 29.2 29.3 30.2 31.0_rc1: Reference implementation of the Bitcoin cryptocurrency
 net-p2p/bitflu 1.52-r1: BitTorrent client, written in Perl and is designed to run as a daemon
 net-p2p/cpuminer-opt 26.1 9999: Optimized multi algo CPU miner
 net-p2p/ctorrent 3.3.2-r4: Enhanced CTorrent is a BitTorrent console client written in C and C++
