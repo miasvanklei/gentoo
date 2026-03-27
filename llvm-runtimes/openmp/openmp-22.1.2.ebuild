@@ -73,7 +73,7 @@ multilib_src_configure() {
 		-DLIBOMP_COPY_EXPORTS=OFF
 	)
 
-	use fortran && mycmakerargs+=(
+	use fortran && mycmakeargs+=(
 		-DLIBOMP_FORTRAN_MODULES_COMPILER="${CHOST}-flang"
 		-DLIBOMP_MODULES_INSTALL_PATH="${EPREFIX}/usr/lib/llvm/${LLVM_MAJOR}/include/flang"
 		-DLIBOMP_FORTRAN_MODULES=ON
