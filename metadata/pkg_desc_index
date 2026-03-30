@@ -3865,7 +3865,7 @@ dev-build/tinycmmc 0.1.0 9999: Tiny CMake Module Collections
 dev-build/xfce4-dev-tools 4.20.0 4.21.0: A set of scripts and m4/autoconf macros that ease build system maintenance
 dev-cpp/ETL 1.4.1: Multi-platform class and template library
 dev-cpp/abseil-cpp 20250127.1 20250512.1 20250814.1: Abseil Common Libraries (C++), LTS Branch
-dev-cpp/ada 3.3.0 3.4.2: WHATWG-compliant and fast URL parser written in modern C++
+dev-cpp/ada 3.3.0 3.4.2 3.4.4: WHATWG-compliant and fast URL parser written in modern C++
 dev-cpp/aixlog 1.5.0-r1: Header-only C++ logging library
 dev-cpp/amqp-cpp 4.3.27: AMQP-CPP is a C++ library for communicating with a RabbitMQ message broker
 dev-cpp/antlr-cpp 2.7.7-r2 4.11.1 4.13.2-r1: The ANTLR 4 C++ Runtime
@@ -3888,7 +3888,7 @@ dev-cpp/cli11 2.6.1 2.6.2: Command line parser for C++11
 dev-cpp/clucene 2.3.3.4-r9 2.3.3.4-r10 2.3.3.4-r11: High-performance, full-featured text search engine based off of lucene in C++
 dev-cpp/cpp-httplib 0.26.0 0.27.0 0.28.0 0.32.0 0.37.0 0.38.0: C++ HTTP/HTTPS server and client library
 dev-cpp/cppdap 0_pre20230605-r1 0_pre20240802: C++ library for the Debug Adapter Protocol
-dev-cpp/cppgir 2.0_p20250629 2.0_p20260109 2.0_p20260226: GObject-Introspection C++ binding wrapper generator
+dev-cpp/cppgir 2.0_p20250629 2.0_p20260226 2.0_p20260321: GObject-Introspection C++ binding wrapper generator
 dev-cpp/cpptoml 0.1.1-r1: Header-only library for parsing TOML
 dev-cpp/cpptrace 1.0.4-r1: Simple, portable, and self-contained stacktrace library for C++11 and newer
 dev-cpp/ctemplate 2.4: A simple but powerful template language for C++
@@ -15074,7 +15074,7 @@ net-libs/signon-ui 0.15_p20231016-r2: Online accounts signon UI
 net-libs/signond 8.61-r102: Signon daemon for libaccounts-glib
 net-libs/socket_wrapper 1.4.0 1.4.2 1.5.0 1.5.1 1.5.2: Library passing all socket communications through unix sockets
 net-libs/srt 1.5.1 1.5.3 1.5.4 1.5.4-r1: Secure Reliable Transport (SRT) library and tools
-net-libs/tdlib 1.8.49_p20250510-r1 1.8.58 1.8.61: Cross-platform library for building Telegram clients
+net-libs/tdlib 1.8.49_p20250510-r1 1.8.61 1.8.62: Cross-platform library for building Telegram clients
 net-libs/telepathy-glib 0.24.2-r1: GLib bindings for the Telepathy D-Bus protocol
 net-libs/tox 0.2.20 0.2.22 9999: Encrypted P2P, messaging, and audio/video calling platform
 net-libs/udns 0.6: Async-capable DNS stub resolver library
@@ -16467,7 +16467,7 @@ sci-ml/tensorpipe 2022.05.13-r1 2025.11.05: provides a tensor-aware channel
 sci-ml/tokenizers 0.22.1: Implementation of today's most used tokenizers
 sci-ml/torchdata 0.11.0: A repo for data loading and utilities on PyTorch domain libraries.
 sci-ml/torchvision 0.24.1-r1 0.25.0: Datasets, transforms and models to specific to computer vision
-sci-ml/transformers 4.57.6 5.0.0 5.1.0 5.2.0: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
+sci-ml/transformers 4.57.6 5.0.0 5.1.0 5.2.0 5.3.0: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
 sci-physics/bullet 3.21 3.22b: Continuous Collision Detection and Physics Library
 sci-physics/clhep 2.4.7.1-r1 2.4.7.2: High Energy Physics C++ library
 sci-physics/espresso 4.2.2 9999: Extensible Simulation Package for Research on Soft matter
@@ -17773,7 +17773,7 @@ sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-
 sys-kernel/gentoo-kernel 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.1.167 6.6.126 6.6.129 6.6.130 6.12.74 6.12.77 6.12.78 6.12.79 6.18.12 6.18.18 6.18.19 6.18.20 6.19.8 6.19.9 6.19.10: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.1.167 6.6.126 6.6.129 6.6.130 6.12.74 6.12.77 6.12.78 6.12.79 6.18.12 6.18.18 6.18.19 6.18.20 6.19.8 6.19.9 6.19.10: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.250-r1 5.10.251 5.10.252 5.15.200 5.15.201 5.15.202 6.1.163 6.1.165 6.1.166 6.1.167 6.6.126 6.6.128 6.6.129 6.6.130 6.12.77 6.12.78 6.12.79 6.18.18 6.18.19 6.18.20 6.19.8 6.19.9 6.19.10: Full sources including the Gentoo patchset for the 6.19 kernel tree
-sys-kernel/git-sources 7.0_rc1 7.0_rc2 7.0_rc3 7.0_rc4 7.0_rc5: The very latest -git version of the Linux kernel
+sys-kernel/git-sources 7.0_rc1 7.0_rc2 7.0_rc3 7.0_rc4 7.0_rc5 7.0_rc6: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 9999: GNU Hurd is the GNU project's replacement for UNIX
 sys-kernel/installkernel 63 65 66 9999: Gentoo fork of installkernel script from debianutils
