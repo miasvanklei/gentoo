@@ -2399,7 +2399,7 @@ app-emulation/open-vm-tools 12.5.0-r3 12.5.0-r5 13.0.5-r1 13.0.10: Tools for VMw
 app-emulation/open-vmdk 0.3.12 0.3.13: Tools for creating and converting OVA virtual appliance files
 app-emulation/pcem 17_p20241210-r2: A PC emulator that specializes in running old operating systems and software
 app-emulation/plus42 1.3.10 1.3.12 1.3.13: An Enhanced HP-42S Calculator Simulator
-app-emulation/protontricks 1.13.1 1.14.0: app-emulation/winetricks wrapper for Proton (Steam Play) games
+app-emulation/protontricks 1.13.1 1.14.1: app-emulation/winetricks wrapper for Proton (Steam Play) games
 app-emulation/punes 0.111-r2: Nintendo Entertainment System (NES) emulator
 app-emulation/q4wine 1.4.2: Qt GUI configuration tool for Wine
 app-emulation/qemu 9.1.3-r2 9.2.3-r3 9.2.4 10.0.5 10.0.7 10.1.3-r1 10.2.0-r1 9999: QEMU + Kernel-based Virtual Machine userland tools
@@ -11010,7 +11010,7 @@ dev-util/mdds 2.1.1-r1 3.0.0 9999: Collection of multi-dimensional data structur
 dev-util/meld 3.22.2-r1 3.22.3: A graphical diff and merge tool
 dev-util/memprof 0.6.2-r2: Profiling and leak detection tool
 dev-util/mesa_clc 25.0.7 25.2.8 25.3.3 25.3.4 25.3.5 25.3.6 26.0.0 26.0.1 26.0.2 26.0.3 9999: mesa_clc tool used for building OpenCL C to SPIR-V
-dev-util/mig 1.8_p20231217 9999: GNU Mach 3.0 interface generator (IDL compiler)
+dev-util/mig 1.8_p20231217 1.8_p20260123 9999: GNU Mach 3.0 interface generator (IDL compiler)
 dev-util/min-cscope 16.1.0-r2: Interactively examine a C program
 dev-util/mingw64-runtime 13.0.0 14.0.0: Free Win64 runtime and import library definitions
 dev-util/mingw64-toolchain 13.0.0_p1 14.0.0: All-in-one mingw64 toolchain intended for building Wine without crossdev
@@ -13446,7 +13446,7 @@ media-libs/libogg 1.3.5-r1 1.3.5-r2 1.3.6: The Ogg media file format library
 media-libs/liboggz 1.1.1-r1 1.1.3: A simple programming interface for reading and writing Ogg files and streams
 media-libs/libopenaptx 0.2.0-r1 0.2.1-r1 9999: Reverse-engineered aptX and aptX HD library
 media-libs/libopenglrecorder 0.1.0-r1: Library for asynchronous OpenGL recording with audio
-media-libs/libopenmpt 0.7.13 0.8.3 0.8.4: Library to decode tracked music files (modules)
+media-libs/libopenmpt 0.7.13 0.8.6: Library to decode tracked music files (modules)
 media-libs/libopenraw 0.3.7-r3: RAW image formats decoding library
 media-libs/libopusenc 0.2.1-r1 0.3: High-level API for encoding .opus files
 media-libs/libpagemaker 0.0.4-r1 9999: C++ Library that parses the file format of Aldus/Adobe PageMaker documents
@@ -14147,7 +14147,7 @@ media-sound/normalize 0.7.7-r1 0.7.7-r2: Audio file volume normalizer
 media-sound/ogg2mp3 0.6.1-r1: Perl script to convert Ogg Vorbis files to MP3 files
 media-sound/oggtst 0.0: A tool for calculating ogg-vorbis playing time
 media-sound/ogmtools 1.5-r3: Information, extraction or creation for OGG media streams
-media-sound/openmpt123 0.8.4: libopenmpt-based command line player for tracked music files (modules)
+media-sound/openmpt123 0.8.6: libopenmpt-based command line player for tracked music files (modules)
 media-sound/opus-tools 0.2-r1: Royalty-free, highly versatile audio codec
 media-sound/orpheus 1.6-r4: Command line MP3 player
 media-sound/owntone 28.12 29.0: DAAP (iTunes) and MPD media server
@@ -17776,8 +17776,8 @@ sys-kernel/gentoo-kernel 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.1
 sys-kernel/gentoo-kernel-bin 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.1.167 6.6.126 6.6.129 6.6.130 6.12.74 6.12.77 6.12.78 6.12.79 6.18.12 6.18.18 6.18.19 6.18.20 6.19.8 6.19.9 6.19.10: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.250-r1 5.10.251 5.10.252 5.15.200 5.15.201 5.15.202 6.1.163 6.1.165 6.1.166 6.1.167 6.6.126 6.6.128 6.6.129 6.6.130 6.12.77 6.12.78 6.12.79 6.18.18 6.18.19 6.18.20 6.19.8 6.19.9 6.19.10: Full sources including the Gentoo patchset for the 6.19 kernel tree
 sys-kernel/git-sources 7.0_rc1 7.0_rc2 7.0_rc3 7.0_rc4 7.0_rc5 7.0_rc6: The very latest -git version of the Linux kernel
-sys-kernel/gnumach 1.8_p20260224 9999: GNU Mach microkernel, for the Hurd
-sys-kernel/hurd 0.9_p20251029 9999: GNU Hurd is the GNU project's replacement for UNIX
+sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 9999: GNU Mach microkernel, for the Hurd
+sys-kernel/hurd 0.9_p20251029 0.9_p20260331 9999: GNU Hurd is the GNU project's replacement for UNIX
 sys-kernel/installkernel 63 65 66 9999: Gentoo fork of installkernel script from debianutils
 sys-kernel/kci-dev 0.1.6: Stand alone tool to interact with KernelCI
 sys-kernel/kergen 0.1.5-r1: Kernel config generator
@@ -18188,7 +18188,7 @@ www-apps/jekyll-coffeescript 2.0.0-r1: A CoffeeScript Converter for Jekyll
 www-apps/jekyll-sass-converter 2.2.0: A basic Sass converter for Jekyll
 www-apps/jekyll-sitemap 1.4.0-r1: Automatically generate a sitemap.xml for your Jekyll site
 www-apps/jekyll-watch 2.2.1-r2: Rebuild your Jekyll site when a file changes with the --watch switch
-www-apps/jellyfin-bin 10.10.7 10.11.4 10.11.5 10.11.6: Jellyfin puts you in control of managing and streaming your media
+www-apps/jellyfin-bin 10.10.7 10.11.4 10.11.5 10.11.6 10.11.7: Jellyfin puts you in control of managing and streaming your media
 www-apps/karma-bin 0.90: Alerts dashboard for Prometheus Alertmanager
 www-apps/kibana-bin 7.17.25: Analytics and search dashboard for Elasticsearch
 www-apps/klaus 2.0.3 3.0.1: A simple, easy-to-set-up Git web viewer
@@ -18232,7 +18232,7 @@ www-apps/vaultwarden-web 2025.7.0 2025.7.1 2026.1.1: Prebuilt web vault frontend
 www-apps/webdavcgi 1.1.2: A Perl CGI for accessing and sharing files, or calendar/addressbooks via WebDAV
 www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.4: Wordpress PHP and MySQL based content management system (CMS)
-www-apps/xpra-html5 10.1 17.1: HTML5 client to connect to any xpra server
+www-apps/xpra-html5 10.1 20: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
 www-client/chromium 145.0.7632.159 146.0.7680.164 147.0.7727.15 147.0.7727.24 148.0.7743.0 148.0.7753.0: Open-source version of Google Chrome web browser
 www-client/chromium-common 2: Common configuration files for Chromium slots
