@@ -926,7 +926,7 @@ app-admin/apg 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.764.0 1.2.779.0 1.2.792.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.44.24 1.44.29 1.44.34 1.44.39 1.44.44 1.44.49 1.44.53 1.44.58 1.44.63 1.44.68 1.44.69 1.44.70: Universal Command Line Environment for AWS
+app-admin/awscli 1.44.24 1.44.29 1.44.34 1.44.39 1.44.44 1.44.49 1.44.53 1.44.58 1.44.63 1.44.68 1.44.69 1.44.70 1.44.71: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.23.2 2.31.37 2.33.21: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2025.12.0 2026.1.0: Bitwarden password manager desktop client
@@ -1875,7 +1875,7 @@ app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clo
 app-editors/vim 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.0794 9.1.1436 9.1.1436-r1 9.1.1500 9.1.1652 9.1.1652-r1 9.1.1652-r2 9.1.1652-r3 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r2 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.110.1 1.111.0 1.112.0 1.113.0: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscode 1.112.0 1.113.0 1.114.0: Multiplatform Visual Studio Code from Microsoft
 app-editors/vscodium 1.109.51242 1.110.11631: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
@@ -3395,7 +3395,7 @@ app-text/scrollkeeper-dtd 1.0-r2: DTD from the Scrollkeeper package
 app-text/sdcv 0.5.5: Console version of Stardict program
 app-text/sgml-common 0.6.3-r7: Base ISO character entities and utilities for SGML
 app-text/sgrep 1.94a-r2: Use structural criteria to grep and index text, SGML, XML and HTML and filter
-app-text/sigil 2.6.2 2.7.0: Multi-platform WYSIWYG ebook editor for ePub format
+app-text/sigil 2.7.0 2.7.6: Multi-platform WYSIWYG ebook editor for ePub format
 app-text/sloccount 2.26-r3: Tools for counting Source Lines of Code (SLOC) for a large number of languages
 app-text/spellutils 0.7-r1: spellutils includes 'newsbody' (useful for spellchecking in mails, etc.)
 app-text/sword 1.9.0-r2: Library for Bible reading software
@@ -3979,7 +3979,7 @@ dev-db/cdb 0.75-r4 0.75-r5: Fast, reliable, simple package for creating and read
 dev-db/citus 12.1.10 12.1.11 13.0.5 13.1.1 13.2.0 13.2.1 14.0.0 9999: Open-source postgresql extension for clustering/multi-node setups
 dev-db/cockroach 2.1.5-r1 19.1.1-r1: open source database for building cloud services
 dev-db/datadraw 3.1.1 3.1.1-r1: feature rich database generator for high performance C applications
-dev-db/dbeaver-bin 25.3.5 26.0.0: Free universal database tool (community edition)
+dev-db/dbeaver-bin 26.0.0 26.0.1: Free universal database tool (community edition)
 dev-db/duckdb 1.4.4 1.5.0 1.5.1: high-performance analytical database system
 dev-db/etcd 3.4.31 3.5.18 3.5.26 3.6.7: Highly-available key value store for shared configuration and service discovery
 dev-db/freetds 1.5 1.5.6: Tabular Datastream Library
@@ -4004,7 +4004,7 @@ dev-db/mariadb 10.6.22 10.6.22-r1 10.6.23-r1 10.6.23-r2 10.6.24 10.6.24-r1 10.11
 dev-db/mariadb-connector-c 3.3.8 3.3.15 3.3.17 3.4.5-r1 3.4.7 9999: C client library for MariaDB/MySQL
 dev-db/mariadb-connector-odbc 3.1.18 3.2.7-r1 3.2.8: MariaDB Connector/ODBC
 dev-db/mongodb 5.0.32 6.0.27 7.0.28 8.0.8 8.0.12: A high-performance, open source, schema-free document-oriented database
-dev-db/mongodb-compass-bin 1.49.1 1.49.2: GUI for MongoDB
+dev-db/mongodb-compass-bin 1.49.2 1.49.4: GUI for MongoDB
 dev-db/mycli 1.64.0 1.65.0: CLI for MySQL Database with auto-completion and syntax highlighting
 dev-db/mydumper 0.20.1.2 0.21.2.2 0.21.3.1: A high-performance multi-threaded backup (and restore) toolset for MySQL
 dev-db/myodbc 8.0.32: ODBC driver for MySQL
@@ -8231,8 +8231,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.42.34 1.42.39 1.42.44 1.42.49 1.42.54 1.42.59 1.42.63 1.42.68 1.42.73 1.42.78 1.42.79 1.42.80: The AWS SDK for Python
-dev-python/botocore 1.42.34 1.42.39 1.42.44 1.42.49 1.42.54 1.42.59 1.42.63 1.42.68 1.42.73 1.42.78 1.42.79 1.42.80: Low-level, data-driven core of boto 3
+dev-python/boto3 1.42.34 1.42.39 1.42.44 1.42.49 1.42.54 1.42.59 1.42.63 1.42.68 1.42.73 1.42.78 1.42.79 1.42.80 1.42.81: The AWS SDK for Python
+dev-python/botocore 1.42.34 1.42.39 1.42.44 1.42.49 1.42.54 1.42.59 1.42.63 1.42.68 1.42.73 1.42.78 1.42.79 1.42.80 1.42.81: Low-level, data-driven core of boto 3
 dev-python/bottle 0.12.25-r1 0.13.3 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.5.0 1.6.0_rc1 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.25 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8348,7 +8348,7 @@ dev-python/daemonize 2.5.0-r1: Library for writing system daemons in Python
 dev-python/dasbus 1.7: DBus library in Python 3
 dev-python/datastructclass 0.1.1: A dataclass with struct-like semantics
 dev-python/dbfread 2.0.7-r1: Read DBF Files with Python
-dev-python/dbus-fast 3.1.2 4.0.0: A faster version of dbus-next
+dev-python/dbus-fast 3.1.2 4.0.0 4.0.3: A faster version of dbus-next
 dev-python/dbus-next 0.2.3-r1: The next great DBus library for Python with asyncio support
 dev-python/dbus-python 1.4.0: Python bindings for the D-Bus messagebus
 dev-python/dbutils 3.1.1 3.1.2: Database connections for multi-threaded environments
@@ -8436,7 +8436,7 @@ dev-python/ensurepip-setuptools 79.0.1 80.9.0-r1 81.0.0 82.0.1: Shared setuptool
 dev-python/ensurepip-wheel 0.45.1-r1 0.46.2 0.46.3: Shared wheel wheel for use in pip tests
 dev-python/entrypoint2 1.1: Easy to use command-line interface for python modules
 dev-python/entrypoints 0.4: Discover and load entry points from installed packages
-dev-python/environs 14.5.0 14.6.0: Python library for simplified environment variable parsing
+dev-python/environs 14.6.0 15.0.0: Python library for simplified environment variable parsing
 dev-python/enzyme 0.5.2: Python video metadata parser
 dev-python/ephemeral-port-reserve 1.1.4: Bind to an ephemeral port, force it into the TIME_WAIT state, and unbind it
 dev-python/eradicate 3.0.0 3.0.1: Removes commented-out code from Python files
@@ -8974,7 +8974,7 @@ dev-python/pbr 7.0.1 7.0.2 7.0.3: Inject some useful and sensible default behavi
 dev-python/pbs-installer 2025.12.17 2026.2.11 2026.3.3 2026.3.10 2026.3.20 2026.3.24 2026.3.25: Installer for Python Build Standalone
 dev-python/pdfrw 0.4_p1-r1: PDF file reader/writer library
 dev-python/pdm 2.26.6 2.26.7: Python package and dependency manager supporting the latest PEP standards
-dev-python/pdm-backend 2.4.6 2.4.7: A PEP 517 backend for PDM that supports PEP 621 metadata
+dev-python/pdm-backend 2.4.6 2.4.7 2.4.8: A PEP 517 backend for PDM that supports PEP 621 metadata
 dev-python/pdoc3 0.11.6: Auto-generate API documentation for Python projects
 dev-python/peachpy 2022.11.13-r3: Portable Efficient Assembly Code-generator in Higher-level Python
 dev-python/pebble 5.1.3 5.2.0: Threading and multiprocessing eye-candy
@@ -8985,7 +8985,7 @@ dev-python/pelican-minify 2.0.0: An HTML minification plugin for Pelican, the st
 dev-python/pexpect 4.9.0: Python module for spawning child apps and responding to expected patterns
 dev-python/pgspecial 2.2.1: Python implementation of PostgreSQL meta commands
 dev-python/pgzero 1.2.1-r2: A zero-boilerplate games programming framework based on Pygame
-dev-python/phonenumbers 9.0.21 9.0.22 9.0.23 9.0.24 9.0.25 9.0.26: Python port of Google's libphonenumber
+dev-python/phonenumbers 9.0.21 9.0.22 9.0.23 9.0.24 9.0.25 9.0.26 9.0.27: Python port of Google's libphonenumber
 dev-python/phply 1.2.6: Lexer and parser for PHP source implemented using PLY
 dev-python/pickleshare 0.7.5-r1: A small 'shelve' like datastore with concurrency support
 dev-python/picobox 4.0.0: Dependency injection framework designed with Python in mind
@@ -8993,7 +8993,7 @@ dev-python/pid 3.0.4-r1: Pidfile featuring stale detection and file-locking
 dev-python/piexif 1.1.3-r4: Exif manipulation with pure Python
 dev-python/pika 1.3.2: Pure-Python implementation of the AMQP
 dev-python/pikepdf 10.0.2 10.0.3 10.1.0 10.2.0 10.3.0 10.5.0 10.5.1: Python library to work with pdf files based on qpdf
-dev-python/pillow 11.3.0 12.0.0 12.1.0 12.1.1: Python Imaging Library (fork)
+dev-python/pillow 11.3.0 12.0.0 12.1.0 12.1.1 12.2.0: Python Imaging Library (fork)
 dev-python/pip 25.3 26.0 26.0.1: The PyPA recommended tool for installing Python packages
 dev-python/pipdeptree 2.23.4 2.29.0 2.30.0 2.31.0 2.32.0 2.33.0 2.34.0: Utility for displaying installed packages in a dependency tree
 dev-python/pipenv 2024.0.2-r1: Python Development Workflow for Humans
@@ -9314,7 +9314,7 @@ dev-python/python-ldap 3.4.5: Various LDAP-related Python modules
 dev-python/python-linux-procfs 0.7.3: Python classes to extract information from the Linux kernel /proc files
 dev-python/python-lsp-black 2.0.0 2.0.0-r1 2.0.0-r2: Black plugin for the Python LSP Server
 dev-python/python-lsp-jsonrpc 1.1.2: JSON RPC 2.0 server library
-dev-python/python-lsp-ruff 2.3.0: Ruff linting plugin for the Python LSP Server
+dev-python/python-lsp-ruff 2.3.0 2.3.1: Ruff linting plugin for the Python LSP Server
 dev-python/python-lsp-server 1.13.1 1.13.2 1.14.0: Python Language Server for the Language Server Protocol
 dev-python/python-ly 0.9.9: Tool and library for manipulating LilyPond files
 dev-python/python-lzo 1.15: Python interface to lzo
@@ -9608,7 +9608,7 @@ dev-python/stestr 4.2.0 4.2.0-r1 4.2.1: A parallel Python test runner built arou
 dev-python/stevedore 5.6.0 5.7.0: Manage dynamic plugins for Python applications
 dev-python/stomp-py 8.1.2: Python client library for the STOMP messaging protocol
 dev-python/strict-rfc3339 0.7-r2: Strict, simple, lightweight RFC3339 functions
-dev-python/stripe 14.1.0 14.3.0 14.4.0 14.4.1 15.0.0: Stripe Python bindings
+dev-python/stripe 14.1.0 14.3.0 14.4.0 14.4.1 15.0.0 15.0.1: Stripe Python bindings
 dev-python/structlog 25.4.0 25.5.0: Structured Logging for Python
 dev-python/subprocess-tee 0.4.2: subprocess.run replacement with tee(1)-like output
 dev-python/suds-community 1.2.0: Lightweight SOAP client
@@ -9698,9 +9698,9 @@ dev-python/typeguard 4.4.4 4.5.0 4.5.1: Run-time type checker for Python
 dev-python/typer 0.21.0 0.23.0 0.23.1 0.24.0 0.24.1: Build great CLIs. Easy to code. Based on Python type hints
 dev-python/types-docutils 0.22.3.20251115 0.22.3.20260223 0.22.3.20260316 0.22.3.20260322: Typing stubs for docutils
 dev-python/types-gdb 16.3.0.20260109 16.3.0.20260203: Typing stubs for gdb
-dev-python/types-psutil 7.1.3.20251211 7.2.0.20251228 7.2.1.20251231 7.2.1.20260116 7.2.2.20260130: Typing stubs for psutil
-dev-python/types-python-dateutil 2.9.0.20260305 2.9.0.20260323: Typing stubs for python-dateutil
-dev-python/types-setuptools 80.9.0.20251223 80.10.0.20260124 82.0.0.20260210: Typing stubs for setuptools
+dev-python/types-psutil 7.1.3.20251211 7.2.0.20251228 7.2.1.20251231 7.2.1.20260116 7.2.2.20260130 7.2.2.20260402: Typing stubs for psutil
+dev-python/types-python-dateutil 2.9.0.20260305 2.9.0.20260323 2.9.0.20260402: Typing stubs for python-dateutil
+dev-python/types-setuptools 80.9.0.20251223 80.10.0.20260124 82.0.0.20260210 82.0.0.20260402: Typing stubs for setuptools
 dev-python/typing-extensions 4.14.1 4.15.0: Backported and Experimental Type Hints for Python 3.7+
 dev-python/typing-inspection 0.4.1 0.4.2: Runtime typing introspection tools
 dev-python/typogrify 2.1.0: Filters for web typography, supporting Django & Jinja templates
@@ -9732,8 +9732,8 @@ dev-python/urwidtrees 1.0.3-r2: Tree widgets for urwid
 dev-python/userpath 1.9.2: Cross-platform tool for adding locations to the user PATH
 dev-python/utidylib 0.10 1.0.0: TidyLib Python wrapper
 dev-python/uuid6 2025.0.1: New time-based UUID formats which are suited for use as a database key
-dev-python/uv 0.10.12 0.11.0 0.11.1 0.11.2 9999: A Python package installer and resolver, written in Rust
-dev-python/uv-build 0.10.12 0.11.0 0.11.1 0.11.2: PEP517 uv build backend
+dev-python/uv 0.10.12 0.11.0 0.11.1 0.11.2 0.11.3 9999: A Python package installer and resolver, written in Rust
+dev-python/uv-build 0.10.12 0.11.0 0.11.1 0.11.2 0.11.3: PEP517 uv build backend
 dev-python/uv-dynamic-versioning 0.13.0: Dynamic versioning based on VCS tags for uv/hatch project
 dev-python/uvicorn 0.40.0 0.41.0 0.42.0: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.21.0 0.22.1: Ultra-fast implementation of asyncio event loop on top of libuv
@@ -9834,52 +9834,52 @@ dev-python/zxcvbn 4.5.0: Realistic password strength estimator
 dev-qt/linguist-tools 5.15.18: Tools for working with Qt translation data files
 dev-qt/qlementine 1.4.2: Modern QStyle for desktop Qt6 applications.
 dev-qt/qt-creator 18.0.2 19.0.0 9999: Lightweight IDE for C++/QML development centering around Qt
-dev-qt/qt-docs 6.10.1_p202511161843 6.10.2_p202601261212 6.11.0_p202603180534: Qt6 documentation and examples for Qt Creator and other tools
-dev-qt/qt3d 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: 3D rendering module for the Qt6 framework
-dev-qt/qt5compat 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
-dev-qt/qtbase 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Cross-platform application development framework
-dev-qt/qtcharts 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Chart component library for the Qt6 framework
+dev-qt/qt-docs 6.10.1_p202511161843 6.10.2_p202601261212 6.10.3_p202603310406 6.11.0_p202603180534: Qt6 documentation and examples for Qt Creator and other tools
+dev-qt/qt3d 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: 3D rendering module for the Qt6 framework
+dev-qt/qt5compat 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
+dev-qt/qtbase 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Cross-platform application development framework
+dev-qt/qtcharts 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Chart component library for the Qt6 framework
 dev-qt/qtconcurrent 5.15.18: Multi-threading concurrence support library for the Qt5 framework
-dev-qt/qtconnectivity 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
+dev-qt/qtconnectivity 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
 dev-qt/qtcore 5.15.18: Cross-platform application development framework
 dev-qt/qtdbus 5.15.18: Qt5 module for inter-process communication over the D-Bus protocol
-dev-qt/qtdeclarative 5.15.18-r1 6.10.1-r2 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Qt Declarative (Quick 2)
+dev-qt/qtdeclarative 5.15.18-r1 6.10.1-r2 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt Declarative (Quick 2)
 dev-qt/qtgraphicaleffects 5.15.18: Set of QML types for adding visual effects to user interfaces
-dev-qt/qtgraphs 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Graphs component library for the Qt6 framework
+dev-qt/qtgraphs 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Graphs component library for the Qt6 framework
 dev-qt/qtgui 5.15.18-r1: The GUI module and platform plugins for the Qt5 framework
-dev-qt/qthttpserver 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: HTTP server functionality for the Qt6 framework
-dev-qt/qtimageformats 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Additional format plugins for the Qt image I/O system
-dev-qt/qtlanguageserver 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Implementation of the Language Server Protocol for Qt
-dev-qt/qtlocation 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Location (places, maps, navigation) library for the Qt6 framework
-dev-qt/qtmultimedia 5.15.18 6.10.1-r1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Multimedia (audio, video, radio, camera) library for the Qt6 framework
+dev-qt/qthttpserver 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: HTTP server functionality for the Qt6 framework
+dev-qt/qtimageformats 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Additional format plugins for the Qt image I/O system
+dev-qt/qtlanguageserver 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Implementation of the Language Server Protocol for Qt
+dev-qt/qtlocation 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Location (places, maps, navigation) library for the Qt6 framework
+dev-qt/qtmultimedia 5.15.18 6.10.1-r1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Multimedia (audio, video, radio, camera) library for the Qt6 framework
 dev-qt/qtnetwork 5.15.18: Network abstraction library for the Qt5 framework
-dev-qt/qtnetworkauth 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Network authorization library for the Qt6 framework
+dev-qt/qtnetworkauth 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Network authorization library for the Qt6 framework
 dev-qt/qtopengl 5.15.18: OpenGL support library for the Qt5 framework (deprecated)
 dev-qt/qtpbfimageplugin 5.2: Qt image plugin for displaying Mapbox vector tiles
-dev-qt/qtpositioning 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Physical position determination library for the Qt6 framework
+dev-qt/qtpositioning 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Physical position determination library for the Qt6 framework
 dev-qt/qtprintsupport 5.15.18: Printing support library for the Qt5 framework
-dev-qt/qtquick3d 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Qt module and API for defining 3D content in Qt QuickTools
+dev-qt/qtquick3d 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt module and API for defining 3D content in Qt QuickTools
 dev-qt/qtquickcontrols 5.15.18: Set of Qt Quick controls to create complete user interfaces (deprecated)
 dev-qt/qtquickcontrols2 5.15.18: Set of next generation Qt Quick controls for the Qt5 framework
-dev-qt/qtquicktimeline 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Qt module for keyframe-based timeline construction
-dev-qt/qtremoteobjects 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Inter-Process Communication (IPC) library for the Qt6 framework
-dev-qt/qtscxml 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: State Chart XML (SCXML) support library for the Qt6 framework
-dev-qt/qtsensors 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Hardware sensor access library for the Qt6 framework
-dev-qt/qtserialbus 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Qt module to access CAN, ModBus, and other industrial serial buses and protocols
-dev-qt/qtserialport 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Serial port abstraction library for the Qt6 framework
-dev-qt/qtshadertools 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Qt APIs and Tools for Graphics Pipelines
-dev-qt/qtspeech 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Text-to-speech library for the Qt6 framework
+dev-qt/qtquicktimeline 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt module for keyframe-based timeline construction
+dev-qt/qtremoteobjects 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Inter-Process Communication (IPC) library for the Qt6 framework
+dev-qt/qtscxml 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: State Chart XML (SCXML) support library for the Qt6 framework
+dev-qt/qtsensors 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Hardware sensor access library for the Qt6 framework
+dev-qt/qtserialbus 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt module to access CAN, ModBus, and other industrial serial buses and protocols
+dev-qt/qtserialport 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Serial port abstraction library for the Qt6 framework
+dev-qt/qtshadertools 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt APIs and Tools for Graphics Pipelines
+dev-qt/qtspeech 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Text-to-speech library for the Qt6 framework
 dev-qt/qtsql 5.15.18: SQL abstraction library for the Qt5 framework
-dev-qt/qtsvg 5.15.18 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: SVG rendering library for the Qt6 framework
+dev-qt/qtsvg 5.15.18 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: SVG rendering library for the Qt6 framework
 dev-qt/qttest 5.15.18: Unit testing library for the Qt5 framework
-dev-qt/qttools 6.10.1-r1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Qt Tools Collection
-dev-qt/qttranslations 5.15.18 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Translation files for the Qt6 framework
-dev-qt/qtvirtualkeyboard 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Customizable input framework and virtual keyboard for Qt
-dev-qt/qtwayland 5.15.18 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Toolbox for making Qt based Wayland compositors
-dev-qt/qtwebchannel 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Qt WebChannel
-dev-qt/qtwebengine 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Library for rendering dynamic web content in Qt6 C++ and QML applications
-dev-qt/qtwebsockets 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Implementation of the WebSocket protocol for the Qt6 framework
-dev-qt/qtwebview 6.10.1 6.10.2 6.10.9999 6.11.0 6.11.9999 6.9999: Module for displaying web content in a QML application using the Qt6 framework
+dev-qt/qttools 6.10.1-r1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt Tools Collection
+dev-qt/qttranslations 5.15.18 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Translation files for the Qt6 framework
+dev-qt/qtvirtualkeyboard 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Customizable input framework and virtual keyboard for Qt
+dev-qt/qtwayland 5.15.18 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Toolbox for making Qt based Wayland compositors
+dev-qt/qtwebchannel 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt WebChannel
+dev-qt/qtwebengine 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Library for rendering dynamic web content in Qt6 C++ and QML applications
+dev-qt/qtwebsockets 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Implementation of the WebSocket protocol for the Qt6 framework
+dev-qt/qtwebview 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Module for displaying web content in a QML application using the Qt6 framework
 dev-qt/qtwidgets 5.15.18: Set of components for creating classic desktop-style UIs for the Qt5 framework
 dev-qt/qtx11extras 5.15.18: Linux/X11-specific support library for the Qt5 framework
 dev-qt/qtxml 5.15.18: Implementation of SAX and DOM for the Qt5 framework
@@ -12203,7 +12203,7 @@ gui-libs/vte 0.80.4-r1 0.82.2: Library providing a virtual terminal emulator wid
 gui-libs/vte-common 0.80.4 0.82.2: Library providing a virtual terminal emulator widget
 gui-libs/wayfire-plugins-extra 0.10.0 9999: extra plugins for wayfire
 gui-libs/wf-config 0.10.0 9999: library for managing wayfire configuration files
-gui-libs/wlroots 0.17.4-r1 0.18.2 0.19.0 0.19.1 0.19.2 9999: Pluggable, composable, unopinionated modules for building a Wayland compositor
+gui-libs/wlroots 0.17.4-r1 0.18.2 0.19.0 0.19.1 0.19.2 0.20.0 9999: Pluggable, composable, unopinionated modules for building a Wayland compositor
 gui-libs/wpebackend-fdo 1.16.0 1.16.1: WPE backend designed for Linux desktop systems
 gui-libs/xdg-desktop-portal-lxqt 1.3.0: Backend implementation for xdg-desktop-portal using Qt/KF5/libfm-qt
 gui-libs/xdg-desktop-portal-wlr 0.7.1-r1 0.7.1-r2 0.8.1 9999: xdg-desktop-portal backend for wlroots
@@ -15235,7 +15235,7 @@ net-misc/dropbear 2025.89: Small SSH 2 client/server designed for small memory e
 net-misc/dropbox 243.4.6956 244.4.6580 246.4.3513: Dropbox daemon (pretends to be GUI-less)
 net-misc/dropbox-cli 2024.04.17-r1: Cli interface for dropbox (python), part of nautilus-dropbox
 net-misc/efax 0.9a_p19_p1: A simple fax program for single-user systems
-net-misc/electrum 4.6.2 4.7.0 4.7.1: User friendly Bitcoin client
+net-misc/electrum 4.7.1: User friendly Bitcoin client
 net-misc/email-validator 1.1.0: Basic syntax and deliverability checks on email addresses
 net-misc/ena-driver 2.15.0 2.16.0 2.16.1: Amazon EC2 Elastic Network Adapter (ENA) kernel driver
 net-misc/endlessh 1.1-r2: SSH tarpit that slowly sends and endless banner
@@ -18237,7 +18237,7 @@ www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.4: Wordpress PHP and MySQL based content management system (CMS)
 www-apps/xpra-html5 10.1 20: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
-www-client/chromium 145.0.7632.159 146.0.7680.164 147.0.7727.15 147.0.7727.24 148.0.7743.0 148.0.7753.0: Open-source version of Google Chrome web browser
+www-client/chromium 145.0.7632.159 146.0.7680.177 147.0.7727.15 147.0.7727.24 148.0.7743.0 148.0.7753.0: Open-source version of Google Chrome web browser
 www-client/chromium-common 2: Common configuration files for Chromium slots
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
@@ -18247,22 +18247,22 @@ www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.8.0 140.9.0 148.0.2 149.0: Firefox Web Browser
 www-client/firefox-bin 140.8.0 140.9.0 148.0.2 149.0: Firefox Web Browser
 www-client/firefox-l10n 149.0-r1: Firefox Web Browser's translation files
-www-client/google-chrome 146.0.7680.164: The web browser from Google
-www-client/google-chrome-beta 147.0.7727.24: The web browser from Google
+www-client/google-chrome 146.0.7680.177: The web browser from Google
+www-client/google-chrome-beta 147.0.7727.49: The web browser from Google
 www-client/google-chrome-unstable 148.0.7753.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
-www-client/microsoft-edge 146.0.3856.84: The web browser from Microsoft
-www-client/microsoft-edge-beta 147.0.3912.16 147.0.3912.26: The web browser from Microsoft
-www-client/microsoft-edge-dev 147.0.3912.10 148.0.3928.0: The web browser from Microsoft
+www-client/microsoft-edge 146.0.3856.97: The web browser from Microsoft
+www-client/microsoft-edge-beta 147.0.3912.26 147.0.3912.31 147.0.3912.37: The web browser from Microsoft
+www-client/microsoft-edge-dev 147.0.3912.10 148.0.3928.0 148.0.3943.0: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
 www-client/opera 129.0.5823.28: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
-www-client/opera-developer 130.0.5832.0 130.0.5839.0 130.0.5846.0: A fast and secure web browser
+www-client/opera-developer 130.0.5839.0 130.0.5846.0 131.0.5853.0: A fast and secure web browser
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.6.3 9999: Keyboard-driven, vim-like browser based on Python and Qt
 www-client/seamonkey 2.53.23: Seamonkey Web Browser
@@ -18317,7 +18317,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.4: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 146.0.7680.164 147.0.7727.24_beta 148.0.7753.0_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 146.0.7680.177 147.0.7727.49_beta 148.0.7753.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.8.7-r1 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
