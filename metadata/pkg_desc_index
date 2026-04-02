@@ -1075,7 +1075,7 @@ app-admin/selint 1.2.1 9999: Static code analysis of refpolicy style SELinux pol
 app-admin/serf 0.10.1-r1: Service orchestration and management tool
 app-admin/setools 4.5.1 9999: Policy Analysis Tools for SELinux
 app-admin/socklog 2.1.1 2.1.2: Small secure replacement for syslogd with automatic log rotation
-app-admin/spectre-meltdown-checker 0.45 0.46 9999: Spectre & Meltdown vulnerability/mitigation checker for Linux
+app-admin/spectre-meltdown-checker 0.45 0.46 26.21.0401891 9999: Spectre & Meltdown vulnerability/mitigation checker for Linux
 app-admin/sshguard 2.5.1 99999: protects hosts from brute force attacks against ssh
 app-admin/stow 2.4.1: GNU Stow is a symlink farm manager
 app-admin/su-exec 0.2: Switch user and group id and exec
@@ -1103,7 +1103,7 @@ app-admin/ttyplot 1.7.2 1.7.4: Realtime plotting utility with data input from st
 app-admin/ulogd 2.0.9: Userspace logging daemon for netfilter/iptables related logging
 app-admin/usbview 3.0 3.1: Display the topology of devices on the USB bus
 app-admin/vault 1.15.6 1.18.3 1.18.4: A tool for managing secrets
-app-admin/vaultwarden 1.34.3 1.35.3-r1 1.35.4 9999: Unofficial Bitwarden compatible password manager
+app-admin/vaultwarden 1.35.4 1.35.4-r1 9999: Unofficial Bitwarden compatible password manager
 app-admin/verynice 1.1-r3: A tool for dynamically adjusting the nice-level of processes
 app-admin/watchfolder 0.3.3-r2: Watches directories and processes files
 app-admin/webalizer 2.23.08-r1: Webserver log file analyzer
@@ -10835,7 +10835,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.85: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.90: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.5 2025.3.1.1 2025.3.2: A complete toolset for C and C++ development
@@ -15941,7 +15941,7 @@ sci-calculators/speedcrunch 0.12.0_p20241202: Fast and usable calculator for pow
 sci-calculators/tiemu 3.03-r2: Texas Instruments hand-helds emulator
 sci-calculators/tilp2 1.18-r1: Communication program for Texas Instruments calculators
 sci-calculators/transcalc 0.14-r3 0.14.1: Microwave and RF transmission line calculator
-sci-calculators/units 2.25 2.26: Unit conversion program
+sci-calculators/units 2.25 2.27: Unit conversion program
 sci-calculators/wcalc 2.5: A flexible command-line scientific calculator
 sci-calculators/xsv 0.13.0-r1: A fast CSV command line toolkit written in Rust
 sci-chemistry/GromacsWrapper 0.9.1: Python framework for Gromacs
