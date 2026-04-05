@@ -3362,7 +3362,7 @@ app-text/pdfpc 4.7.0-r2: Presenter console with multi-monitor support for PDF fi
 app-text/pdfsandwich 0.1.7-r1: generator of sandwich OCR pdf files
 app-text/pdftk 3.3.3_p20231025 9999: A port of pdftk into java
 app-text/pelican 4.8.0 4.9.1 4.11.0: A tool to generate a static blog, with restructured text or markdown input files
-app-text/pep 2.8-r2: General purpose filter and file cleaning program
+app-text/pep 2.8-r2 2.8-r3: General purpose filter and file cleaning program
 app-text/pinfo 0.6.13: Hypertext info and man viewer based on (n)curses
 app-text/po4a 0.74-r1: Tools to ease the translation of documentation
 app-text/podofo 0.9.8-r1 0.10.1-r2 0.10.3-r1: PoDoFo is a C++ library to work with the PDF file format
@@ -3467,7 +3467,7 @@ app-text/zathura-meta 0-r1: Meta package for app-text/zathura plugins
 app-text/zathura-pdf-mupdf 0.4.3 0.4.4 9999: PDF support for zathura using the mupdf PDF rendering library
 app-text/zathura-pdf-poppler 0.3.3 9999: PDF plug-in for zathura
 app-text/zathura-ps 0.2.7 0.2.8 9999: PostScript plug-in for zathura
-app-text/zeal 0.8.0: Offline documentation browser inspired by Dash
+app-text/zeal 0.8.1: Offline documentation browser inspired by Dash
 app-text/zotero-bin 7.0.24 7.0.30 7.0.32 8.0.3: Helps you collect, organize, cite, and share your research sources
 app-vim/Vim-Jinja2-Syntax 0.0_pre20210604: vim plugin: Jinja2 syntax highlighting
 app-vim/ackvim 1.0.9-r2: vim plugin: run ack from vim
@@ -3849,7 +3849,7 @@ dev-build/libtool 2.5.4 2.6.0 9999: A shared library tool for developers
 dev-build/mage 1.13.0 1.15.0: make/rake like tool using go
 dev-build/make 4.4.1-r100 4.4.1-r101 4.4.1-r102 9999: Standard tool to compile source trees
 dev-build/melange 0.18.3: Build APK packages from source code using declarative pipelines
-dev-build/meson 1.9.2 1.10.2 1.11.0_rc2 9999: Open source build system
+dev-build/meson 1.9.2 1.10.2 1.11.0_rc2 1.11.0_rc3 9999: Open source build system
 dev-build/meson-format-array 0: Format shell expressions into a meson array
 dev-build/muon 0.2.0-r2 0.3.0 0.4.0 0.5.0: A meson-compatible build system
 dev-build/netsurf-buildsystem 1.10: Build system used for netsurf and its libraries
@@ -9471,7 +9471,7 @@ dev-python/ruamel-yaml 0.18.17 0.19.1: YAML parser/emitter that supports roundtr
 dev-python/ruamel-yaml-clib 0.2.15: C-based reader/scanner and emitter for dev-python/ruamel-yaml
 dev-python/ruamel-yaml-clibz 0.3.7: C-based reader/scanner and emitter for dev-python/ruamel-yaml
 dev-python/s3transfer 0.16.0: An Amazon S3 Transfer Manager
-dev-python/sabctools 8.2.6 9.3.1 9.3.2 9.4.0: Module providing raw yEnc encoding/decoding for SABnzbd
+dev-python/sabctools 8.2.6 9.3.0 9.3.1 9.3.2 9.4.0: Module providing raw yEnc encoding/decoding for SABnzbd
 dev-python/sarge 0.1.8: Wrapper for subprocess which provides command pipeline functionality
 dev-python/sarif-om 1.0.4-r1: Classes implementing the SARIF 2.1.0 object model
 dev-python/schema 0.7.8: Simple data validation library
@@ -11820,7 +11820,7 @@ games-roguelike/neon-chrome 1.1.12: A ruthless top-down cyberpunk shooter with r
 games-roguelike/nethack 3.6.7 3.6.7-r1: The ultimate old-school single player dungeon exploration game
 games-roguelike/powder 118: A game in the genre of Rogue, Nethack, and Diablo with emphasis on tactical play
 games-roguelike/scourge 0.21.1-r2: A graphical rogue-like adventure game
-games-roguelike/stone-soup 0.25.1-r104 0.26.1-r3 0.27.1-r2 0.28.0-r2 0.29.1-r1 0.30.1-r1 0.31.0-r1 0.32.1-r1 0.33.1-r1 0.34.0-r1: Role-playing roguelike game of exploration and treasure-hunting in dungeons
+games-roguelike/stone-soup 0.25.1-r104 0.26.1-r3 0.27.1-r2 0.28.0-r2 0.29.1-r1 0.30.1-r1 0.31.0-r1 0.32.1-r1 0.33.1-r1 0.34.0-r1 0.34.1: Role-playing roguelike game of exploration and treasure-hunting in dungeons
 games-roguelike/tome 2.4.0_p20251212: Fantasy adventure game, based on the works of J.R.R. Tolkien
 games-roguelike/tomenet 4.9.2: A MMORPG based on the works of J.R.R. Tolkien
 games-roguelike/wrogue 0.8.0b-r1: Gothic science fantasy roguelike game
@@ -12667,7 +12667,7 @@ lxqt-base/lxqt-sudo 2.3.0: LXQt GUI frontend for sudo
 lxqt-base/lxqt-wayland-session 0.3.0: LXQt Wayland Session Support
 mail-client/aerc 0.20.1 0.21.0 9999: Email client for your terminal
 mail-client/alot 0.11-r2 9999: Experimental terminal UI for net-mail/notmuch written in Python
-mail-client/alpine 2.26-r4 2.26-r5: An easy to use text-based based mail and news client
+mail-client/alpine 2.26-r5 2.29.9: An easy to use text-based based mail and news client
 mail-client/balsa 2.6.4-r2 2.6.4-r3 2.6.5: Email client for GNOME
 mail-client/bower 1.0: Curses terminal client for the Notmuch email system
 mail-client/claws-mail 3.21.0-r2 4.3.0-r3 4.3.1-r2 4.4.0 9999: An email client (and news reader) based on GTK+
@@ -14256,7 +14256,7 @@ media-sound/toolame 02l-r4: tooLAME - an optimized mpeg 1/2 layer 2 audio encode
 media-sound/ttaenc 3.4.1-r1: True Audio Compressor Software
 media-sound/tudor-volumed 0_pre20110427: Lightweight, desktop environment agnostic volume management daemon
 media-sound/twolame 0.4.0-r1: An optimised MPEG Audio Layer 2 (MP2) encoder
-media-sound/upmpdcli 1.9.12 1.9.14: UPnP Media Renderer front-end for MPD, the Music Player Daemon
+media-sound/upmpdcli 1.9.14 1.9.15: UPnP Media Renderer front-end for MPD, the Music Player Daemon
 media-sound/vb2rip 1.4: Konami VB2 sound format ripping utility
 media-sound/vbrfixc 0.24-r1: Vbrfix fixes MP3s and re-constructs VBR headers
 media-sound/vimpc 0.09.2_p20230330 9999: An ncurses based mpd client with vi-like key bindings
@@ -15005,7 +15005,7 @@ net-libs/libnftnl 1.2.8 1.2.9 1.3.0 1.3.1 9999: Netlink API to the in-kernel nf_
 net-libs/libnice 0.1.22-r1 0.1.23-r1: Implementation of the Interactive Connectivity Establishment standard (ICE)
 net-libs/libnids 1.26-r2: An implementation of an E-component of Network Intrusion Detection System
 net-libs/libnma 1.10.6-r2: NetworkManager GUI library
-net-libs/libnpupnp 6.2.3: A C++ base UPnP library, derived from Portable UPnP, a.k.a libupnp
+net-libs/libnpupnp 6.2.3 6.3.0: A C++ base UPnP library, derived from Portable UPnP, a.k.a libupnp
 net-libs/libnsl 0-r2 1.3.0-r2 2.0.1: Public client interface for NIS(YP) in a IPv6 ready version
 net-libs/libntlm 1.8: Microsoft's NTLM authentication (libntlm) library
 net-libs/libnxml 0.18.3-r1: A C-library for parsing and writing XML 1.0/1.1 files or streams
@@ -15041,7 +15041,7 @@ net-libs/libtorrent 0.15.7 0.16.8 9999: BitTorrent library written in C++ for *n
 net-libs/libtorrent-rasterbar 2.0.10: C++ BitTorrent implementation focusing on efficiency and scalability
 net-libs/libtrace 4.0.21 4.0.22 4.0.26 4.0.28: A library and tools for trace processing
 net-libs/libupnp 1.14.24 1.14.25 1.14.30 1.18.4: An Portable Open Source UPnP Development Kit
-net-libs/libupnpp 1.0.3: The libupnpp C++ library wraps libupnp for easier use by upmpdcli and upplay
+net-libs/libupnpp 1.0.3 1.0.4: The libupnpp C++ library wraps libupnp for easier use by upmpdcli and upplay
 net-libs/libvncserver 0.9.15-r1: library for creating vnc servers
 net-libs/libwebsockets 4.4.1-r1 4.5.8: A flexible pure-C library for implementing network protocols
 net-libs/libyang 3.12.2: YANG data modeling language library
@@ -17253,7 +17253,7 @@ sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives
 sys-apps/pnputils 0.1-r1: Plug and Play BIOS utilities
 sys-apps/policycoreutils 3.8.1 3.9 9999: SELinux core utilities
 sys-apps/polychromatic 0.9.5 0.9.6 9999: RGB lighting management software for GNU/Linux powered by OpenRazer
-sys-apps/portage 3.0.72-r1 3.0.77 3.0.77-r1 3.0.77-r3 9999: The package management and distribution system for Gentoo
+sys-apps/portage 3.0.72-r1 3.0.77 3.0.77-r1 3.0.77-r3 3.0.77-r4 9999: The package management and distribution system for Gentoo
 sys-apps/powerpc-utils 1.1.3.18-r4: PowerPC utilities and additional OldWorld apps
 sys-apps/ppc64-diag 2.7.9: Diagnostic tools for PowerLinux
 sys-apps/prctl 1.6-r1: Tool to query and modify process behavior
@@ -18194,7 +18194,7 @@ www-apps/jekyll-coffeescript 2.0.0-r1: A CoffeeScript Converter for Jekyll
 www-apps/jekyll-sass-converter 2.2.0: A basic Sass converter for Jekyll
 www-apps/jekyll-sitemap 1.4.0-r1: Automatically generate a sitemap.xml for your Jekyll site
 www-apps/jekyll-watch 2.2.1-r2: Rebuild your Jekyll site when a file changes with the --watch switch
-www-apps/jellyfin-bin 10.10.7 10.11.4 10.11.5 10.11.6 10.11.7: Jellyfin puts you in control of managing and streaming your media
+www-apps/jellyfin-bin 10.10.7 10.11.4 10.11.5 10.11.6 10.11.8: Jellyfin puts you in control of managing and streaming your media
 www-apps/karma-bin 0.90: Alerts dashboard for Prometheus Alertmanager
 www-apps/kibana-bin 7.17.25: Analytics and search dashboard for Elasticsearch
 www-apps/klaus 2.0.3 3.0.1: A simple, easy-to-set-up Git web viewer
