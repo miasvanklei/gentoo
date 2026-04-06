@@ -2438,7 +2438,7 @@ app-emulation/wine-desktop-common 20150204-r2: Various desktop menu items and ic
 app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet Explorer for Wine
 app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.1 11.0.0: Replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.3 10.0.4 9999: Valve Software's fork of Wine
-app-emulation/wine-staging 10.20 11.0 11.3 11.4 11.5 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
+app-emulation/wine-staging 10.20 11.0 11.3 11.4 11.5 11.6 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
 app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 10.20 11.0 11.3 11.4 11.5 11.6 9999: Free implementation of Windows(tm) on Unix, without external patchsets
 app-emulation/winetricks 20250102-r1 20260125 99999999: Easy way to install DLLs needed to work around problems in Wine
 app-emulation/x48 0.6.4-r3: HP48 Calculator Emulator
@@ -2571,7 +2571,7 @@ app-i18n/librime 1.13.1 1.14.0 1.15.0 1.16.1: RIME (Rime Input Method Engine) co
 app-i18n/librime-lua 20240819212322-r1 20250707183812 99999999999999: Lua module for RIME
 app-i18n/libskk 1.0.5_p20210830 1.1.1: GObject-based library to deal with Japanese kana-to-kanji conversion method
 app-i18n/man-pages-ja 20180315-r2 20260115-r2: Collection of manual pages translated into Japanese
-app-i18n/man-pages-l10n 4.29.1 4.30.0: A somewhat comprehensive collection of man page translations
+app-i18n/man-pages-l10n 4.29.1 4.30.0-r1: A somewhat comprehensive collection of man page translations
 app-i18n/man-pages-ru 5.03.2390.2390.20191017-r1: A collection of Russian translations of Linux manual pages
 app-i18n/man-pages-zh_CN 1.6.4.2-r1: A somewhat comprehensive collection of Chinese Linux man pages
 app-i18n/mecab-skkserv 0.03-r1: mecab-skkserv is a Kana-Kanji conversion server using MeCab
@@ -11991,7 +11991,7 @@ games-util/uglygs 0_rc11-r1: Quickly searches the network for game servers
 games-util/umodpack 0.5_beta16-r3: Portable (un)packer for Unreal Tournament's Umod files
 games-util/uz2unpack 0.1: UZ2 Decompressor for UT2003/UT2004
 games-util/vispatch 1.4.7: WaterVIS utility for GLQuake
-games-util/wiiload 0.5: Load homebrew apps over the network to your Wii
+games-util/wiiload 0.5.3: Load homebrew apps over the network to your Wii
 games-util/wit 3.05a: command line tools to manipulate Wii/GameCube ISO images and WBFS containers
 games-util/wxchtdecoder 1.5a-r3: Program to decode .CHT files in Snes9x and ZSNES to plain text
 games-util/xboxdrv 0.8.11: Userspace Xbox 360 Controller driver
@@ -17590,7 +17590,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260326 13.4.1_p20260402 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260403 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260404 15.3.9999 16.0.1_p20260405 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260326 13.4.1_p20260402 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260403 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260404 15.3.9999 16.0.1_p20260405-r1 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
