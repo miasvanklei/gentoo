@@ -5350,7 +5350,7 @@ dev-libs/bitshuffle 0.3.5-r1: Bitshuffle C library
 dev-libs/blake3 1.8.3 1.8.4: a fast cryptographic hash function
 dev-libs/blazesym_c 0.1.5 0.1.7: C bindings for blazesym, a library for address symbolization and related tasks
 dev-libs/boehm-gc 8.2.8 8.2.10 8.2.10-r1 8.2.12: The Boehm-Demers-Weiser conservative garbage collector
-dev-libs/boost 1.88.0-r1 1.89.0 1.90.0: Boost Libraries for C++
+dev-libs/boost 1.88.0-r1 1.89.0 1.90.0-r1: Boost Libraries for C++
 dev-libs/boron 2.1.0: A scripting language similar to REBOL
 dev-libs/botan 3.10.0 3.11.1: C++ crypto library
 dev-libs/boxfort 0.1.4-r1 0.1.4-r2 0.1.5: Convenient & cross-platform sandboxing C library
@@ -5406,7 +5406,7 @@ dev-libs/eb 4.4.3 4.4.3-r1: EB is a C library and utilities for accessing CD-ROM
 dev-libs/editline 1.17.1-r1 1.17.1_p20240527: line editing library for UNIX call compatible with the FSF readline
 dev-libs/eekboard 1.0.8_p20121001-r2: An easy to use virtual keyboard toolkit
 dev-libs/efl 1.27.0-r1 1.28.1: Enlightenment Foundation Libraries all-in-one package
-dev-libs/elfutils 0.193-r2 0.194-r1 0.194-r2 9999: Libraries/utilities to handle ELF objects (drop in replacement for libelf)
+dev-libs/elfutils 0.193-r2 0.194-r1 0.194-r3 9999: Libraries/utilities to handle ELF objects (drop in replacement for libelf)
 dev-libs/ell 0.77 0.78 0.79 0.80 0.81 0.82 0.83 9999: Embedded Linux Library provides core, low-level functionality for system daemons
 dev-libs/expat 2.7.4 2.7.5: Stream-oriented XML parser library
 dev-libs/faxpp 0.4-r2: Small, fast and conformant XML pull parser written in C
@@ -5426,7 +5426,7 @@ dev-libs/gf-complete 2.0.0_p20170410: Comprehensive Open Source Library for Galo
 dev-libs/gf2x 1.3.0-r1: C/C++ routines for fast arithmetic in GF(2)[x]
 dev-libs/girara 0.4.5 0.4.5-r1 9999: UI library that focuses on simplicity and minimalism
 dev-libs/gjs 1.80.2-r1 1.82.3-r1 1.84.2-r1: Javascript bindings for GNOME
-dev-libs/glib 2.84.4 2.84.4-r1 2.84.4-r2 2.84.4-r3 2.86.4 2.86.4-r1: The GLib library of C routines
+dev-libs/glib 2.84.4 2.84.4-r3 2.86.4-r1: The GLib library of C routines
 dev-libs/gmime 2.6.23-r2 3.2.15-r1 3.2.15-r2: Library for creating and parsing MIME messages
 dev-libs/gmp 6.3.0-r1: Library for arbitrary-precision arithmetic on different type of numbers
 dev-libs/gnulib 2025.08.27.16.03.17 2026.01.14.22.26.00 9999-r1: Gnulib is a library of common routines intended to be shared at the source level
@@ -10299,7 +10299,7 @@ dev-ruby/pluggaloid 1.7.0-r1: Pluggaloid is extensible plugin system for mikutte
 dev-ruby/podcast 0.0.4-r3: A pure Ruby library for generating podcasts from mp3 files
 dev-ruby/polyglot 0.3.5-r1: Polyglot provides support for fully-custom DSLs
 dev-ruby/power_assert 2.0.5 3.0.0 3.0.1: Shows each value of variables and method calls in the expression
-dev-ruby/pp 0.6.2 0.6.3: Provides a PrettyPrinter for Ruby objects
+dev-ruby/pp 0.6.2 0.6.3-r1: Provides a PrettyPrinter for Ruby objects
 dev-ruby/prawn 2.5.0: Fast, Nimble PDF Generation For Ruby
 dev-ruby/prawn-table 0.2.2-r2: Provides support for tables in Prawn
 dev-ruby/prettyprint 0.2.0: Implements a pretty printing algorithm for readable structure
@@ -13627,7 +13627,7 @@ media-libs/vamp-plugin-sdk 2.10: Audio processing system for plugins to extract 
 media-libs/vidstab 1.1.1 1.1.1-r1 1.1.1_p20240615 9999: Video stabilization library
 media-libs/vigra 1.11.2_p20240505 1.12.1 1.12.2 9999: C++ computer vision library emphasizing customizable algorithms and structures
 media-libs/vips 8.18.0 8.18.1 8.18.2: VIPS Image Processing Library
-media-libs/virglrenderer 1.0.1 1.1.1-r1 1.2.0 9999-r1: Library used implement a virtual 3D GPU used by qemu
+media-libs/virglrenderer 1.1.1-r1 1.2.0 9999-r1: Library used implement a virtual 3D GPU used by qemu
 media-libs/vitamtp 2.5.9_pre20160829-r1 9999: Library to interact with PS Vita's USB MTP protocol
 media-libs/vkroots 0_p20240430: Simple framework for writing Vulkan layers
 media-libs/vo-aacenc 0.1.3 9999: VisualOn AAC encoder library
@@ -15089,7 +15089,7 @@ net-libs/udns 0.6: Async-capable DNS stub resolver library
 net-libs/uhttpmock 0.5.5-r1 0.9.0 0.11.0: HTTP web service mocking library
 net-libs/usrsctp 0.9.5.0_p20250331: A cross-platform userland SCTP stack
 net-libs/wandio 4.2.3_p1-r1 4.2.3_p1-r2 4.2.4 4.2.6: C library for simple and efficient file IO
-net-libs/webkit-gtk 2.44.4-r411 2.44.4-r601 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.50.5-r410 2.50.5-r600 2.50.6-r410 2.50.6-r600: Open source web browser engine
+net-libs/webkit-gtk 2.44.4-r411 2.44.4-r601 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.50.5-r410 2.50.5-r600 2.50.6-r410 2.50.6-r600 2.52.1-r410 2.52.1-r600: Open source web browser engine
 net-libs/wslay 1.1.1_p20210115: WebSocket library in C
 net-libs/wvstreams 4.6.1_p14-r2: A network programming library in C++
 net-libs/xdp-tools 1.6.2 1.6.3: The libxdp library and various tools for use with XDP
@@ -17590,7 +17590,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.4.1_p20260212 13.4.1_p20260219 13.4.1_p20260226 13.4.1_p20260305 13.4.1_p20260312 13.4.1_p20260319 13.4.1_p20260326 13.4.1_p20260402 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.3.1_p20260213 14.3.1_p20260220 14.3.1_p20260227 14.3.1_p20260306 14.3.1_p20260313 14.3.1_p20260320 14.3.1_p20260327 14.3.1_p20260403 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.2.1_p20260207 15.2.1_p20260214 15.2.1_p20260221 15.2.1_p20260228 15.2.1_p20260307 15.2.1_p20260314 15.2.1_p20260321 15.2.1_p20260328 15.2.1_p20260404 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.1_p20260208-r1 16.0.1_p20260215 16.0.1_p20260222 16.0.1_p20260301 16.0.1_p20260308 16.0.1_p20260315 16.0.1_p20260322 16.0.1_p20260329 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260122 13.4.1_p20260129 13.4.1_p20260205 13.4.1_p20260212 13.4.1_p20260219 13.4.1_p20260226 13.4.1_p20260305 13.4.1_p20260312 13.4.1_p20260319 13.4.1_p20260326 13.4.1_p20260402 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260123 14.3.1_p20260130 14.3.1_p20260206 14.3.1_p20260213 14.3.1_p20260220 14.3.1_p20260227 14.3.1_p20260306 14.3.1_p20260313 14.3.1_p20260320 14.3.1_p20260327 14.3.1_p20260403 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251115 15.2.1_p20251122 15.2.1_p20260124 15.2.1_p20260131 15.2.1_p20260207 15.2.1_p20260214 15.2.1_p20260221 15.2.1_p20260228 15.2.1_p20260307 15.2.1_p20260314 15.2.1_p20260321 15.2.1_p20260328 15.2.1_p20260404 15.3.9999 16.0.1_p20260125 16.0.1_p20260201 16.0.1_p20260208-r1 16.0.1_p20260215 16.0.1_p20260222 16.0.1_p20260301 16.0.1_p20260308 16.0.1_p20260315 16.0.1_p20260322 16.0.1_p20260329 16.0.1_p20260405 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -17781,7 +17781,7 @@ sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-
 sys-kernel/gentoo-kernel 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.1.167 6.6.126 6.6.129 6.6.130 6.6.132 6.12.74 6.12.77 6.12.78 6.12.79 6.12.80 6.18.12 6.18.18 6.18.19 6.18.20 6.18.21 6.19.8 6.19.9 6.19.10 6.19.11: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.1.167 6.6.126 6.6.129 6.6.130 6.6.132 6.12.74 6.12.77 6.12.78 6.12.79 6.12.80 6.18.12 6.18.18 6.18.19 6.18.20 6.18.21 6.19.8 6.19.9 6.19.10 6.19.11: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.250-r1 5.10.251 5.10.252 5.15.200 5.15.201 5.15.202 6.1.163 6.1.165 6.1.166 6.1.167 6.6.126 6.6.128 6.6.129 6.6.130 6.6.132 6.12.77 6.12.78 6.12.79 6.12.80 6.18.18 6.18.19 6.18.20 6.18.21 6.19.8 6.19.9 6.19.10 6.19.11: Full sources including the Gentoo patchset for the 6.19 kernel tree
-sys-kernel/git-sources 7.0_rc1 7.0_rc2 7.0_rc3 7.0_rc4 7.0_rc5 7.0_rc6: The very latest -git version of the Linux kernel
+sys-kernel/git-sources 7.0_rc1 7.0_rc2 7.0_rc3 7.0_rc4 7.0_rc5 7.0_rc6 7.0_rc7: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 9999: GNU Hurd is the GNU project's replacement for UNIX
 sys-kernel/installkernel 63 65 66 9999: Gentoo fork of installkernel script from debianutils
@@ -17868,11 +17868,11 @@ sys-libs/ncurses 6.5_p20250329 6.5_p20250531-r1 6.5_p20250802 6.5_p20251220: Con
 sys-libs/ncurses-compat 6.4_p20240414: Console display library (ABI version 5)
 sys-libs/newlib 4.5.0.20241231-r1 4.6.0.20260123 9999: Newlib is a C library intended for use on embedded systems
 sys-libs/nss-usrfiles 2.18.1: NSS module to read passwd/group files from CoreOS /usr location
-sys-libs/nss_wrapper 1.1.15 1.1.16: Wrapper for the user, group and hosts NSS API
+sys-libs/nss_wrapper 1.1.16: Wrapper for the user, group and hosts NSS API
 sys-libs/obstack-standalone 1.2.3: A standalone library to implement GNU libc's obstack
 sys-libs/openipmi 2.0.36 2.0.37: Library interface to IPMI
 sys-libs/pam 1.7.2: Linux-PAM (Pluggable Authentication Modules)
-sys-libs/pam_wrapper 1.1.5 1.1.8: A tool to test PAM applications and PAM modules
+sys-libs/pam_wrapper 1.1.8: A tool to test PAM applications and PAM modules
 sys-libs/pkgcraft 0.0.16-r1 9999: C library for pkgcraft
 sys-libs/pwdb 0.62-r2: Password database
 sys-libs/queue-standalone 0.1-r1: Install <sys/queue.h> from glibc
@@ -17885,7 +17885,7 @@ sys-libs/talloc 2.4.2 2.4.3 2.4.4: Samba talloc library
 sys-libs/tdb 1.4.12 1.4.13 1.4.14 1.4.15: Simple database API
 sys-libs/tevent 0.16.1 0.16.2 0.17.1: Samba tevent library
 sys-libs/timezone-data 2025a-r1 2025b 2025c 2026a: Timezone data (/usr/share/zoneinfo) and utilities (tzselect/zic/zdump)
-sys-libs/uid_wrapper 1.3.0 1.3.2: Wrapper to fake privilege separation
+sys-libs/uid_wrapper 1.3.2: Wrapper to fake privilege separation
 sys-libs/zlib 1.3.1-r1 1.3.2-r1: Standard (de)compression library
 sys-libs/zlib-ng 2.2.5 2.2.5-r1 2.3.2 2.3.3: Fork of the zlib data compression library
 sys-power/RyzenAdj 0.16.0: The power management tool for mobile and desktop Ryzen APUs
@@ -18281,7 +18281,7 @@ www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple char
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
 www-misc/bookmarksync 0.3.4-r3: bookmarksync synchronizes various browser bookmark files
 www-misc/buku 4.9 5.0: Powerful command-line bookmark manager
-www-misc/fcgiwrap 1.1.0-r2 1.1.0_p20150419 1.1.0_p20150419-r2: Simple FastCGI wrapper for CGI scripts (CGI support for nginx)
+www-misc/fcgiwrap 1.1.0_p20150419-r2: Simple FastCGI wrapper for CGI scripts (CGI support for nginx)
 www-misc/litmus 0.13-r2: WebDAV server protocol compliance test suite
 www-misc/logswan 2.1.15 9999: Fast Web log analyzer using probabilistic data structures
 www-misc/mergelog 4.5-r4: A utility to merge apache logs in chronological order
