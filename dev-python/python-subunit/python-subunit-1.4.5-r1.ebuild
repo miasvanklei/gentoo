@@ -1,4 +1,4 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -12,6 +12,7 @@ MY_P=subunit-${PV}
 DESCRIPTION="A streaming protocol for test results"
 HOMEPAGE="
 	https://launchpad.net/subunit/
+	https://github.com/testing-cabal/subunit/
 	https://pypi.org/project/python-subunit/
 "
 SRC_URI="
@@ -22,7 +23,7 @@ S=${WORKDIR}/${MY_P}
 
 LICENSE="Apache-2.0 BSD"
 SLOT="0"
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 ~sparc x86"
+KEYWORDS="~alpha amd64 ~arm ~arm64 ~hppa ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 ~sparc x86"
 IUSE="static-libs test"
 RESTRICT="!test? ( test )"
 
@@ -39,11 +40,14 @@ DEPEND="
 		dev-python/fixtures[${PYTHON_USEDEP}]
 		dev-python/hypothesis[${PYTHON_USEDEP}]
 		dev-python/testscenarios[${PYTHON_USEDEP}]
+		<dev-python/testtools-2.9[${PYTHON_USEDEP}]
 	)
 "
 
 PATCHES=(
 	"${FILESDIR}/subunit-1.4.0-werror.patch"
+	# https://github.com/testing-cabal/subunit/commit/a72e9c343bd369cf840b29e074417fed5d05d59c
+	"${FILESDIR}/subunit-1.4.5-testtools-2.8.patch"
 )
 
 src_prepare() {
