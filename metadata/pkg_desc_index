@@ -13307,9 +13307,9 @@ media-libs/gmmlib 22.8.2 22.9.0 9999: Intel Graphics Memory Management Library
 media-libs/graphene 1.10.8-r1: A thin layer of types for graphic libraries
 media-libs/grilo 0.3.19: A framework for easy media discovery and browsing
 media-libs/gsound 1.0.3: Thin GObject wrapper around the libcanberra sound event library
-media-libs/gst-plugins-bad 1.24.11 1.24.13: Less plugins for GStreamer
+media-libs/gst-plugins-bad 1.24.11 1.24.13 1.24.13-r1: Less plugins for GStreamer
 media-libs/gst-plugins-base 1.24.11-r1 1.24.13 1.24.13-r1: Basepack of plugins for gstreamer
-media-libs/gst-plugins-good 1.24.11 1.24.13 1.24.13-r1: Basepack of plugins for GStreamer
+media-libs/gst-plugins-good 1.24.11 1.24.13 1.24.13-r2: Basepack of plugins for GStreamer
 media-libs/gst-plugins-ugly 1.24.11 1.24.13 1.24.13-r1: Basepack of plugins for gstreamer
 media-libs/gst-rtsp-server 1.24.11 1.24.13: A GStreamer based RTSP server
 media-libs/gstreamer 1.24.11 1.24.13: Open source multimedia framework
@@ -14986,7 +14986,7 @@ net-libs/libktorrent 25.12.3: BitTorrent library based on KDE Frameworks
 net-libs/liblockfile 1.17: Implements functions designed to lock the standard mailboxes
 net-libs/libmbim 1.28.4-r1 1.32.0: Mobile Broadband Interface Model (MBIM) modem protocol helper library
 net-libs/libmicrodns 0.2.0-r1 9999: Minimal mDNS resolver (and announcer) library
-net-libs/libmicrohttpd 0.9.77 0.9.77-r1 1.0.1 1.0.1-r1: Small C library to run an HTTP server as part of another application
+net-libs/libmicrohttpd 0.9.77 0.9.77-r1 1.0.1 1.0.1-r1 1.0.3: Small C library to run an HTTP server as part of another application
 net-libs/libmnl 1.0.5: Minimalistic netlink library
 net-libs/libmrss 0.19.2-r1: A C-library for parsing and writing RSS 0.91/0.92/1.0/2.0 files or streams
 net-libs/libnatpmp 20230423-r1: An alternative protocol to UPnP IGD specification
@@ -17128,7 +17128,7 @@ sys-apps/findutils 4.10.0: GNU utilities for finding files
 sys-apps/firejail 0.9.72 0.9.74 0.9.76: Security sandbox for any type of processes
 sys-apps/fix-gnustack 0.1-r1: Utility to report and remove the executable flag from an ELF object's GNU_STACK
 sys-apps/flashrom 1.5.1 1.6.0 1.7.0: Utility for reading, writing, erasing and verifying flash ROM chips
-sys-apps/flatpak 1.14.10 1.16.1 1.16.3: Linux application sandboxing and distribution framework
+sys-apps/flatpak 1.14.10 1.16.1 1.16.3 1.16.4: Linux application sandboxing and distribution framework
 sys-apps/fwts 22.03.00 23.11.00 24.03.00: Firmware Test Suite
 sys-apps/fwupd 1.9.24 2.0.1 2.0.3-r1 2.0.14 2.0.16 2.0.18: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-apps/fwupd-efi 1.6-r1 1.7 1.8: EFI executable for fwupd
@@ -17877,7 +17877,7 @@ sys-libs/pwdb 0.62-r2: Password database
 sys-libs/queue-standalone 0.1-r1: Install <sys/queue.h> from glibc
 sys-libs/readline 8.2_p13-r1 8.3_p3 8.4_alpha_pre20251007 9999: Another cute console display library
 sys-libs/rpmatch-standalone 1.0-r1: Standalone rpmatch library for use with musl
-sys-libs/scallop 5.3.9.20251212 9999: Fork of bash enabling integration into pkgcraft
+sys-libs/scallop 5.3.9.20251212-r1 9999: Fork of bash enabling integration into pkgcraft
 sys-libs/slang 2.3.3-r1 2.3.3-r2: Multi-platform library designed to allow a developer to create robust software
 sys-libs/snapd-glib 1.65-r102 1.67-r1 1.70: glib library for communicating with snapd
 sys-libs/talloc 2.4.2 2.4.3 2.4.4: Samba talloc library
