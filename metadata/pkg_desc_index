@@ -5078,7 +5078,6 @@ dev-java/lzmajio 0.95-r4: LzmaInputStream/LzmaOutputStream interacting with unde
 dev-java/maven-bin 3.9.12 3.9.14: Project Management and Comprehension Tool for Java
 dev-java/mchange-commons 0.2.20: a library of arguably useful Java utilities.
 dev-java/memoryfilesystem 2.3.0-r1: An in memory implementation of a JSR-203 file system.
-dev-java/mersennetwister 0_pre23765-r3: Modified MersenneTwister java port for Freenet
 dev-java/metainf-services 1.11: Generates META-INF/services files automatically
 dev-java/miglayout 5.3: MiGLayout - Java Layout Manager for Swing, SWT and JavaFX
 dev-java/mill-bin 0.11.12 0.12.10: A Java/Scala build tool
@@ -5213,7 +5212,7 @@ dev-lang/f2c 20240312: Fortran to C converter
 dev-lang/fennel 1.4.2-r1 1.5.3 1.6.0 1.6.1: Lisp-like language that compiles to Lua
 dev-lang/fpc 3.2.2: Free Pascal Compiler
 dev-lang/fuzion 0.092: A language with a focus on simplicity, safety and correctness
-dev-lang/gdl 1.0.4-r3: GNU Data Language
+dev-lang/gdl 1.0.4-r4: GNU Data Language
 dev-lang/gforth 0.7.3-r2: GNU Forth is a fast and portable implementation of the ANSI Forth language
 dev-lang/ghc 9.0.2-r4 9.2.8: The Glasgow Haskell Compiler
 dev-lang/gleam 1.13.0 1.14.0: A friendly language for building type-safe, scalable systems!
@@ -8875,7 +8874,7 @@ dev-python/natsort 8.4.0: Natural sorting for Python
 dev-python/nautilus-python 4.0.1 4.1.0: Python bindings for the Nautilus file manager
 dev-python/nbclassic 1.3.3: Jupyter Notebook as a Jupyter Server Extension
 dev-python/nbclient 0.10.2-r1 0.10.3 0.10.4: A client library for executing Jupyter notebooks
-dev-python/nbconvert 7.16.6-r1 7.17.0 7.17.1: Converting Jupyter Notebooks
+dev-python/nbconvert 7.17.1: Converting Jupyter Notebooks
 dev-python/nbdime 4.0.2 4.0.3 4.0.4: Diff and merge of Jupyter Notebooks
 dev-python/nbformat 5.10.4: Reference implementation of the Jupyter Notebook format
 dev-python/nbsphinx 0.9.8: Jupyter Notebook Tools for Sphinx
@@ -15297,7 +15296,7 @@ net-misc/iputils 20250605-r3 99999999: Network monitoring tools including ping a
 net-misc/ipv6calc 4.3.2-r1 4.4.0: IPv6 address calculator
 net-misc/jlj 2.12-r1: Simple console LiveJournal entry system
 net-misc/jwhois 4.0-r2: Advanced Internet Whois client capable of recursive queries
-net-misc/kafka-bin 3.9.1 4.0.1 4.1.1 4.2.0: A high-throughput distributed messaging system
+net-misc/kafka-bin 3.9.2 4.0.2 4.1.2 4.2.0: A high-throughput distributed messaging system
 net-misc/kafkacat 1.7.1: Generic command line non-JVM Apache Kafka producer and consumer
 net-misc/kea 3.0.2-r1 3.0.2-r2 3.0.2-r3 3.0.3 9999: High-performance production grade DHCPv4 & DHCPv6 server
 net-misc/keychain 2.8.5-r2 2.9.8: Agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
@@ -18247,7 +18246,7 @@ www-client/epiphany 48.5 49.3: GNOME webbrowser based on Webkit
 www-client/falkon 25.12.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.8.0 140.9.0 148.0.2 149.0: Firefox Web Browser
-www-client/firefox-bin 140.8.0 140.9.0 148.0.2 149.0: Firefox Web Browser
+www-client/firefox-bin 140.8.0 140.9.0 148.0.2 149.0 149.0.2: Firefox Web Browser
 www-client/firefox-l10n 149.0-r1: Firefox Web Browser's translation files
 www-client/google-chrome 146.0.7680.177: The web browser from Google
 www-client/google-chrome-beta 147.0.7727.49: The web browser from Google
