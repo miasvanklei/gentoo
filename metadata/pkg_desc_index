@@ -3083,7 +3083,7 @@ app-portage/gentoolkit 0.6.8 0.6.11 0.7.1 9999: Collection of administration scr
 app-portage/gentoopm 0.5.0 9999: A common interface to Gentoo package managers
 app-portage/getuto 1.15-r1 9999: Standalone Gentoo gpg trust anchor generation tool for binpkgs
 app-portage/golop 0.2.1-r1: A pure Go re-implementation of genlop
-app-portage/gpyutils 0.15.3: Utitilies for maintaining Python packages
+app-portage/gpyutils 0.15.3 0.15.4: Utitilies for maintaining Python packages
 app-portage/gverify 2: gentoo.git signature verification tool
 app-portage/hackport 0.7.2.2 0.8.4.0 9999: Hackage and Portage integration tool
 app-portage/iwdevtools 0.13.1 9999: Small tools to aid with Gentoo development, primarily intended for QA
@@ -3165,7 +3165,6 @@ app-shells/squirrelsh 1.2.7-r1: Cross-platform object-oriented scripting shell u
 app-shells/starship 1.23.0 1.24.0 1.24.1 1.24.2: The minimal, blazing-fast, and infinitely customizable prompt for any shell
 app-shells/tcsh 6.24.15 6.24.16: Enhanced version of the Berkeley C shell (csh)
 app-shells/thefuck 3.32-r2: Magnificent app which corrects your previous console command
-app-shells/tmux-bash-completion 9999: bash-completion scripts for tmux
 app-shells/ugit 0.4.5 0.4.5.1: PowerShell wrapper for git, automate repos and output git as objects
 app-shells/yash 2.60 2.61: Yash is a POSIX-compliant command line shell
 app-shells/zoxide 0.9.4-r1 0.9.6-r1 0.9.7 0.9.8 0.9.9: A smarter cd command for your terminal
@@ -5268,7 +5267,7 @@ dev-lang/orc 0.4.41 0.4.42: The Oil Runtime Compiler, a just-in-time compiler fo
 dev-lang/parrot 8.1.0-r4: Virtual machine designed to compile and execute bytecode for dynamic languages
 dev-lang/pcc 1.1.0-r2: pcc portable c compiler
 dev-lang/perl 5.40.0-r1 5.40.1 5.40.2 5.42.0 5.42.0-r1: Larry Wall's Practical Extraction and Report Language
-dev-lang/php 8.2.29 8.2.30 8.3.26 8.3.29 8.3.30-r1 8.4.18-r1 8.5.3-r1: The PHP language runtime engine
+dev-lang/php 8.2.29 8.2.30 8.3.26 8.3.29 8.3.30-r1 8.4.20 8.5.5: The PHP language runtime engine
 dev-lang/pico8 0.2.6b 0.2.7: Fantasy console for making and playing tiny games and other computer programs
 dev-lang/polyml 5.9.1 5.9.2-r1: Poly/ML is a full implementation of Standard ML
 dev-lang/pypy 2.7.7.3.20 2.7.7.3.21 3.11.7.3.20_p2 3.11.7.3.21: A fast, compliant alternative implementation of the Python (3.11) language
@@ -8187,7 +8186,7 @@ dev-python/atpublic 7.0.0: A decorator to populate __all__ and the module global
 dev-python/attrs 25.4.0 26.1.0: Attributes without boilerplate
 dev-python/audioop-lts 0.2.2: An LTS port of Python's audioop module
 dev-python/audioread 3.0.1-r1: Wrapper for audio file decoding using FFmpeg or GStreamer
-dev-python/authlib 1.6.9: A Python library in building OAuth and OpenID Connect servers and clients
+dev-python/authlib 1.6.9-r1: A Python library in building OAuth and OpenID Connect servers and clients
 dev-python/authres 1.2.0-r1: Parse and generate Authentication-Results headers
 dev-python/autobahn 24.4.2 25.10.2 25.11.1: WebSocket and WAMP for Twisted and Asyncio
 dev-python/automat 25.4.16: Self-service finite-state machines for the programmer on the go
@@ -8247,7 +8246,7 @@ dev-python/btrfs 15: Python module to inspect btrfs filesystems
 dev-python/btrfsutil 6.19.1: Library for managing Btrfs filesystems
 dev-python/build 1.3.0 1.4.0 1.4.1 1.4.2 1.4.3: A simple, correct PEP517 package builder
 dev-python/cachecontrol 0.14.3: httplib2 caching for requests
-dev-python/cachelib 0.13.0: Collection of cache libraries in the same API interface. Extracted from werkzeug
+dev-python/cachelib 0.13.0 0.13.0-r1: Collection of cache libraries in the same API interface. Extracted from werkzeug
 dev-python/cachetools 6.2.6 7.0.1 7.0.2 7.0.3 7.0.4 7.0.5: Extensible memoizing collections and decorators
 dev-python/cairocffi 1.7.1-r1: CFFI-based drop-in replacement for Pycairo
 dev-python/calver 2025.10.20: Setuptools extension for CalVer package versions
@@ -8481,7 +8480,7 @@ dev-python/flasgger 0.9.7.1: Easy OpenAPI specs and Swagger UI for your Flask AP
 dev-python/flask 3.1.3: A microframework based on Werkzeug, Jinja2 and good intentions
 dev-python/flask-api 3.1-r2: Browsable web APIs for Flask
 dev-python/flask-babel 4.0.0: i18n and l10n support for Flask based on Babel and pytz
-dev-python/flask-caching 2.3.1: Adds caching support to Flask applications
+dev-python/flask-caching 2.3.1 2.3.1-r1: Adds caching support to Flask applications
 dev-python/flask-compress 1.23 1.24: Compress responses in your Flask app with gzip
 dev-python/flask-cors 6.0.2: A Flask extension for Cross Origin Resource Sharing (CORS)
 dev-python/flask-debug 0.4.3-r2: Flask extension that displays various debugging insights during development
@@ -8563,7 +8562,6 @@ dev-python/h11 0.16.0: A pure-Python implementation of HTTP/1.1 inspired by hype
 dev-python/h2 4.3.0: HTTP/2 State-Machine based protocol implementation
 dev-python/h5py 3.15.1 3.16.0: Simple Python interface to HDF5 files
 dev-python/hashin 1.0.5: Adds hashed entries for packages to requirements.txt
-dev-python/hatch 1.14.1: Modern, extensible Python project management
 dev-python/hatch-fancy-pypi-readme 25.1.0: Fancy PyPI READMEs with Hatch
 dev-python/hatch-jupyter-builder 0.9.1-r1: A hatch plugin to help build Jupyter packages
 dev-python/hatch-nodejs-version 0.4.0: Hatch plugin for versioning from a package.json file
@@ -8912,7 +8910,7 @@ dev-python/octave-kernel 1.0.1 1.0.2 1.0.3: Jupyter kernel for octave
 dev-python/odfpy 1.4.2: Python API and tools to manipulate OpenDocument files
 dev-python/olefile 0.47: Python package to parse, read and write Microsoft OLE2 files
 dev-python/omemo-dr 1.2.0: OMEMO Crypto Library
-dev-python/opcodes 0.3.14-r2: Opcodes Project
+dev-python/opcodes 0.3.14-r3: Opcodes Project
 dev-python/openapi-core 0.22.0 0.23.0 0.23.1: Client-side and server-side support for the OpenAPI Specification v3
 dev-python/openapi-schema-validator 0.6.3 0.7.2 0.8.1: OpenAPI schema validation for Python
 dev-python/openapi-spec-validator 0.7.2 0.8.0 0.8.4: OpenAPI 2.0 (aka Swagger) and OpenAPI 3.0 spec validator
@@ -9477,7 +9475,7 @@ dev-python/sarif-om 1.0.4-r1: Classes implementing the SARIF 2.1.0 object model
 dev-python/schema 0.7.8: Simple data validation library
 dev-python/scikit-build 0.19.0: Improved build system generator for Python C/C++/Fortran/Cython extensions
 dev-python/scikit-build-core 0.12.2: Build backend for CMake based projects
-dev-python/scikit-image 0.26.0_rc1 0.26.0_rc2 0.26.0: Image processing routines for SciPy
+dev-python/scikit-image 0.26.0: Image processing routines for SciPy
 dev-python/scikit-learn 1.8.0: Machine learning library for Python
 dev-python/scipy 1.16.3 1.17.0 1.17.1: Scientific algorithms library for Python
 dev-python/scripttest 2.0_p1: Helper to test command-line scripts
@@ -15432,7 +15430,7 @@ net-misc/sntpd 3.1-r1: A NTP (RFC-1305 and RFC-4330) client and server for unix-
 net-misc/socat 1.8.1.1: Multipurpose relay (SOcket CAT)
 net-misc/sock 1.1-r2: Shell interface to network sockets
 net-misc/socket 1.5: Shell-level interface to TCP sockets
-net-misc/socket-burst-dampener 1.3.1-r1 1.3.4: A daemon that spawns one command per connection, and dampens connection bursts
+net-misc/socket-burst-dampener 1.3.4: A daemon that spawns one command per connection, and dampens connection bursts
 net-misc/spice-gtk 0.42-r4 9999-r1: Set of GObject and Gtk objects for connecting to Spice servers and a client GUI
 net-misc/spiped 1.6.4: secure pipe daemon
 net-misc/ssh-askpass-fullscreen 1.2: A small SSH Askpass replacement written with GTK2
@@ -15738,7 +15736,7 @@ net-wireless/neard 0.19: Near Field Communication (NFC) management daemon
 net-wireless/osmo-fl2k 0.2.0 9999: turns FL2000-based USB 3.0 to VGA adapters into low cost DACs
 net-wireless/portapack-firmware 20190405: Firmware and scripts for controlling the Portapack from Sharebrained
 net-wireless/portapack-havoc 0.0_p20180612: Custom firmware for the HackRF SDR + PortaPack H1 addon
-net-wireless/qdmr 0.13.3 0.14.0 9999: GUI application for configuring and programming cheap DMR radios
+net-wireless/qdmr 0.13.3 0.14.0 0.14.1 9999: GUI application for configuring and programming cheap DMR radios
 net-wireless/reaver 1.6.5: Brute force attack against Wifi Protected Setup
 net-wireless/rtl-sdr 2.0.2-r3 9999: Turns your Realtek RTL2832 based DVB dongle into a SDR receiver
 net-wireless/rtl-sdr-blog 1.3.6-r2: Modified Osmocom drivers with enhancements for RTL-SDR Blog V3 and V4 units
