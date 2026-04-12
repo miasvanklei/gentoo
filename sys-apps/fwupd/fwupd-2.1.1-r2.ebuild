@@ -17,27 +17,73 @@ SRC_URI="
 LICENSE="LGPL-2.1+"
 SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86"
-IUSE="amdgpu +archive bash-completion bluetooth cbor elogind flashrom gnutls gtk-doc introspection lzma minimal modemmanager nvme policykit seccomp spi synaptics systemd test tpm uefi"
-REQUIRED_USE="${PYTHON_REQUIRED_USE}
-	^^ ( elogind minimal systemd )
+IUSE="amdgpu bash-completion bluetooth cbor elogind flashrom gnutls gtk-doc introspection minimal modemmanager policykit seccomp systemd test tpm readline uefi"
+REQUIRED_USE="
+	${PYTHON_REQUIRED_USE}
+	?? ( elogind systemd )
 	minimal? ( !introspection )
-	spi? ( lzma )
 	seccomp? ( systemd )
-	synaptics? ( gnutls )
-	test? ( archive )
 	uefi? ( gnutls )
 "
 # DBus permission failures in 2.0.20 and then other new issues in 2.1.1
 # Likely needs wrangling for ebuild environment
 RESTRICT="!test? ( test ) test"
 
-BDEPEND="$(vala_depend)
+COMMON_DEPEND="
+	${PYTHON_DEPS}
+	>=app-arch/gcab-1.0
+	app-arch/xz-utils
+	dev-db/sqlite:3
+	>=dev-libs/glib-2.72:2
+	>=dev-libs/libjcat-0.2.0[pkcs7]
+	>=dev-libs/libxmlb-0.3.19:=[introspection?]
+	$(python_gen_cond_dep '
+		dev-python/pygobject:3[${PYTHON_USEDEP}]
+	')
+	net-libs/libmnl:=
+	>=net-misc/curl-7.62.0
+	sys-apps/util-linux
+	virtual/libusb:1
+	virtual/zlib:=
+
+	amdgpu? (
+		>=x11-libs/libdrm-2.4.113[video_cards_amdgpu]
+	)
+	cbor? ( >=dev-libs/libcbor-0.7.0:= )
+	elogind? ( >=sys-auth/elogind-211 )
+	flashrom? ( >=sys-apps/flashrom-1.2-r3 )
+	gnutls? ( >=net-libs/gnutls-3.6.0:= )
+	modemmanager? ( >=net-misc/modemmanager-1.22.0[mbim,qmi] )
+	policykit? ( >=sys-auth/polkit-0.114 )
+	readline? ( sys-libs/readline:= )
+	seccomp? ( sys-apps/systemd[seccomp] )
+	systemd? ( >=sys-apps/systemd-249:= )
+	tpm? ( app-crypt/tpm2-tss:= )
+	uefi? (
+		sys-apps/fwupd-efi
+		sys-boot/efibootmgr
+		sys-fs/udisks
+		sys-libs/efivar
+	)
+"
+RDEPEND="
+	${COMMON_DEPEND}
+	sys-apps/dbus
+"
+
+DEPEND="
+	${COMMON_DEPEND}
+	x11-libs/pango[introspection]
+	virtual/os-headers
+"
+BDEPEND="
+	$(vala_depend)
 	$(python_gen_cond_dep '
 		dev-python/jinja2[${PYTHON_USEDEP}]
 	')
 	>=dev-build/meson-1.3.2
-	virtual/pkgconfig
 	sys-apps/hwdata
+	virtual/pkgconfig
 	gtk-doc? (
 		$(python_gen_cond_dep '
 			>=dev-python/markdown-3.2[${PYTHON_USEDEP}]
@@ -56,47 +102,6 @@ BDEPEND="$(vala_depend)
 	)
 	verify-sig? ( sec-keys/openpgp-keys-hughsie )
 "
-COMMON_DEPEND="${PYTHON_DEPS}
-	>=app-arch/gcab-1.0
-	app-arch/xz-utils
-	>=dev-libs/glib-2.72:2
-	>=dev-libs/libjcat-0.2.0[pkcs7]
-	>=dev-libs/libxmlb-0.3.19:=[introspection?]
-	$(python_gen_cond_dep '
-		dev-python/pygobject:3[${PYTHON_USEDEP}]
-	')
-	>=net-misc/curl-7.62.0
-	cbor? ( >=dev-libs/libcbor-0.7.0:= )
-	elogind? ( >=sys-auth/elogind-211 )
-	flashrom? ( >=sys-apps/flashrom-1.2-r3 )
-	gnutls? ( >=net-libs/gnutls-3.6.0 )
-	virtual/libusb:1
-	lzma? ( app-arch/xz-utils )
-	modemmanager? ( >=net-misc/modemmanager-1.22.0[mbim,qmi] )
-	policykit? ( >=sys-auth/polkit-0.114 )
-	seccomp? ( sys-apps/systemd[seccomp] )
-	dev-db/sqlite
-	systemd? ( >=sys-apps/systemd-249 )
-	uefi? (
-		sys-apps/fwupd-efi
-		sys-boot/efibootmgr
-		sys-fs/udisks
-		sys-libs/efivar
-	)
-"
-RDEPEND="
-	${COMMON_DEPEND}
-	sys-apps/dbus
-"
-
-DEPEND="
-	${COMMON_DEPEND}
-	x11-libs/pango[introspection]
-	sys-kernel/linux-headers
-	amdgpu? (
-		x11-libs/libdrm[video_cards_amdgpu]
-	)
-"
 
 src_prepare() {
 	default
@@ -106,28 +111,40 @@ src_prepare() {
 	sed -i -e "/install_dir.*'doc'/s/doc/gtk-doc/" \
 		docs/meson.build || die
 
-	# Fails with DBus permission error
-	#sed -i -e "/g_test_add_data_func.*plugin-gtypes/d" \
-	#	src/fu-self-test.c || die
-
 	python_fix_shebang "${S}"/contrib/*.py
 }
 
 src_configure() {
+	# Automagic dependency on sys-apps/uswid for SBOMs
+	local native_file="${T}"/meson.${CHOST}.${ABI}.ini.local
+	cat >> ${native_file} <<-EOF || die
+	[binaries]
+	uswid='uswid-falseified'
+	EOF
+
 	local plugins=(
 		$(meson_feature flashrom plugin_flashrom)
+		$(meson_feature amdgpu libdrm)
 		$(meson_feature modemmanager plugin_modem_manager)
+		$(meson_feature tpm hsi)
 		$(meson_use uefi plugin_uefi_capsule_splash)
 	)
 
 	local emesonargs=(
+		--native-file "${native_file}"
 		--localstatedir "${EPREFIX}"/var
+
 		-Dbuild="$(usex minimal standalone all)"
+		-Dblkid=enabled
 		-Defi_binary="false"
 		-Defi_os_dir="gentoo"
 		-Dman="true"
 		-Dsupported_build="enabled"
 		-Dsystemd_unit_user=""
+		# Unpackaged dependency
+		-Dpassim=disabled
+		-Dlibmnl=enabled
+
 		$(meson_use bash-completion bash_completion)
 		$(meson_feature bluetooth bluez)
 		$(meson_feature cbor)
@@ -135,6 +152,8 @@ src_configure() {
 		$(meson_feature gtk-doc docs)
 		$(meson_feature introspection)
 		$(meson_feature policykit polkit)
+		$(meson_feature readline)
+		$(meson_feature systemd)
 		$(meson_use test tests)
 
 		${plugins[@]}

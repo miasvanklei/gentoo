@@ -1912,7 +1912,7 @@ app-emacs/autoconf-mode 2.72: Emacs major modes for editing autoconf and autotes
 app-emacs/autocrypt 0.4.2_pre20260126: Generic autocrypt implementation for Emacs
 app-emacs/autothemer 0.2.18 9999: Conveniently define themes for GNU Emacs
 app-emacs/avy 0.5.0: Jump to arbitrary positions in visible text and quickly select
-app-emacs/avy-embark-collect 1.1 9999: Use avy to jump to Embark Collect entries
+app-emacs/avy-embark-collect 1.1 1.2 9999: Use avy to jump to Embark Collect entries
 app-emacs/bbdb 3.2.2d_p20231122 3.2.2d_p20231122-r1: The Insidious Big Brother Database
 app-emacs/biblio 0.3: Browse and import bibliographic references with Emacs
 app-emacs/binclock 1.11: Display the current time using a binary clock
@@ -1928,7 +1928,7 @@ app-emacs/browse-kill-ring 2.0.0: An improved interface to kill-ring
 app-emacs/bubblet 0.74-r1: A bubble-popping game
 app-emacs/bui 1.2.1_p20210108: Buffer interface library for Emacs
 app-emacs/burly 0.2 0.3: Save and restore frames and windows with their buffers in Emacs
-app-emacs/buttercup 1.38 9999: Behaviour-driven Elisp testing
+app-emacs/buttercup 1.38 1.39 9999: Behaviour-driven Elisp testing
 app-emacs/calfw 1.6-r1 2.0: A calendar framework for Emacs
 app-emacs/cape 2.6 9999: Completion At Point Extensions
 app-emacs/cask 0.9.0 0.9.1: Project management for Emacs package development
@@ -2041,8 +2041,8 @@ app-emacs/emacs-w3m 1.4.632_p20230801: emacs-w3m is an interface program of w3m 
 app-emacs/emacs-websearch 2.1.0 9999: Query search engines from Emacs
 app-emacs/emacs-wget 0.5.0-r1: Wget interface for Emacs
 app-emacs/emacsql 4.3.1 4.3.3 4.3.6: A high-level Emacs Lisp RDBMS front-end
-app-emacs/embark 1.1 9999: Conveniently act on minibuffer completions inside GNU Emacs
-app-emacs/embark-consult 1.1 9999: Consult integration for Embark
+app-emacs/embark 1.1 1.2 9999: Conveniently act on minibuffer completions inside GNU Emacs
+app-emacs/embark-consult 1.1 1.2 9999: Consult integration for Embark
 app-emacs/emhacks 20070920-r2: Useful Emacs Lisp libraries, including gdiff, jjar, jmaker, swbuff, and tabbar
 app-emacs/emms 24: The Emacs Multimedia System
 app-emacs/emojify 1.2_p20210309: Display emojis in Emacs, like :smile: or plain ASCII ones like :)
@@ -4013,7 +4013,7 @@ dev-db/mysql++ 3.3.0: C++ API interface to the MySQL database
 dev-db/mysql-connector-c 8.0.36-r1 8.0.41-r1: C client library for MariaDB/MySQL
 dev-db/mysql-connector-c++ 9.4.0 9.6.0: MySQL database connector for C++ (mimics JDBC 4.0 API)
 dev-db/mysql-init-scripts 2.3-r8: Gentoo MySQL init scripts
-dev-db/mysql-workbench 8.0.42-r1 8.0.43 8.0.44: MySQL Workbench
+dev-db/mysql-workbench 8.0.42-r1 8.0.44 8.0.46: MySQL Workbench
 dev-db/mysqltuner 2.8.40: Makes recommendations for increased performance and stability for MySQL
 dev-db/mytop 1.9.1-r2: Clone of top for MySQL
 dev-db/ocp 0.3 9999: Oracle copy tool
@@ -5463,7 +5463,7 @@ dev-libs/isa-l_crypto 2.25.0: Intelligent Storage Acceleration Library - cryptog
 dev-libs/isl 0.26 0.27: A library for manipulating integer points bounded by linear constraints
 dev-libs/ivykis 0.42.4 0.43.1 0.43.2: Library for asynchronous I/O readiness notification
 dev-libs/jansson 2.14-r1 2.14-r2 2.14.1: C library for encoding, decoding and manipulating JSON data
-dev-libs/jemalloc 5.3.0-r1 5.3.0-r2: Jemalloc is a general-purpose scalable concurrent allocator
+dev-libs/jemalloc 5.3.0-r2 5.3.0-r3: Jemalloc is a general-purpose scalable concurrent allocator
 dev-libs/jerasure 2.0.0_p20170410: Library in C facilitating Erasure Coding for storage applications
 dev-libs/jose 14: C-language implementation of Javascript Object Signing and Encryption
 dev-libs/json-c 0.18 9999: A JSON implementation in C
@@ -5505,7 +5505,7 @@ dev-libs/libbson 1.24.4-r1: Library routines related to building,parsing and ite
 dev-libs/libbulletml 0.0.6-r1: A Library of Bullet Markup Language
 dev-libs/libburn 1.5.6-r2: Open-source library for reading, mastering and writing optical discs
 dev-libs/libbytesize 2.11 2.12: Tiny library providing a C "class" for working with arbitrary big byte sizes
-dev-libs/libcbor 0.11.0 0.12.0 0.13.0: CBOR protocol implementation for C and others
+dev-libs/libcbor 0.13.0: CBOR protocol implementation for C and others
 dev-libs/libcdada 0.6.1: Basic data structures in C
 dev-libs/libcdio 2.1.0-r2 2.2.0: A library to encapsulate CD-ROM reading and control
 dev-libs/libcdio-paranoia 2.0.1 2.0.2: Advanced CDDA reader with error correction
@@ -5886,7 +5886,7 @@ dev-libs/trio 1.17.1: Portable string functions, focus on the *printf() and *sca
 dev-libs/tvision 2.2.3 2.2.3-r1: Text User Interface that implements the well known CUA widgets
 dev-libs/tvmet 1.7.2-r2 1.7.2-r3: Tiny Vector Matrix library using Expression Templates
 dev-libs/ucl 1.03-r1: the UCL Compression Library
-dev-libs/udis86 1.7.2-r1: Disassembler library for the x86/-64 architecture sets
+dev-libs/udis86 1.7.2-r2: Disassembler library for the x86/-64 architecture sets
 dev-libs/unibilium 2.1.1-r1 2.1.2: A very basic terminfo library
 dev-libs/unittest++ 2.0.0-r3 2.0.0-r4: A lightweight unit testing framework for C++
 dev-libs/univalue 1.0.5 9999: C++ universal value object and JSON library
@@ -8609,7 +8609,7 @@ dev-python/iminuit 2.32.0: Minuit numerical function minimization in Python
 dev-python/immutabledict 4.3.1: An immutable wrapper around dictionaries
 dev-python/immutables 0.21: A high-performance immutable mapping type for Python
 dev-python/importlib-metadata 8.7.1 8.8.0 8.9.0 9.0.0: Read metadata from Python packages
-dev-python/importlib-resources 6.5.2: Read resources from Python packages
+dev-python/importlib-resources 6.5.2 7.0.0: Read resources from Python packages
 dev-python/incremental 24.11.0: Incremental is a small library that versions your Python projects
 dev-python/indexed-gzip 1.10.3: Fast random access of gzip files in Python
 dev-python/inflect 7.5.0: Correctly inflect words and numbers
@@ -13049,7 +13049,7 @@ media-gfx/exiv2 0.28.8: EXIF, IPTC and XMP metadata C++ library and command line
 media-gfx/farbfeld 4: Farbfeld simple image format tools
 media-gfx/fbgrab 1.5: Framebuffer screenshot utility
 media-gfx/fbida 2.14_p20241216-r1: Image viewers for the framebuffer console (fbi) and X11 (ida)
-media-gfx/feh 3.11.2-r1 3.11.3 3.11.4: A fast, lightweight imageviewer using imlib2
+media-gfx/feh 3.11.2-r1 3.11.3 3.11.4 3.12.1: A fast, lightweight imageviewer using imlib2
 media-gfx/fig2dev 3.2.9-r5 3.2.9a 9999: Set of tools for creating TeX documents with graphics
 media-gfx/flam3 3.1.1-r1: Tools and a library for creating flame fractal images
 media-gfx/flameshot 13.1.0-r1 13.3.0: Powerful yet simple to use screenshot software
@@ -13149,7 +13149,7 @@ media-gfx/pencil 0.7.0 0.7.0_p20260127: 2D animation and drawing program based o
 media-gfx/photopc 3.07: Utility to control digital cameras based on Sierra Imaging firmware
 media-gfx/photoqt 4.9.2 5.0: Simple but powerful Qt-based image viewer
 media-gfx/phototonic 3.1.0 3.2.0: Image viewer and organizer
-media-gfx/pinta 3.0: Pinta is a free, open source program for drawing and image editing
+media-gfx/pinta 3.0 3.1.2: Pinta is a free, open source program for drawing and image editing
 media-gfx/pixels2pgf 0.1-r1 9999: Convert pixel images (e.g. QRCode) to PGF/Tikz rectangles
 media-gfx/plantuml 1.2026.1: Draw UML diagrams using a simple and human readable text description
 media-gfx/png2ico 2002.12.08: PNG to icon converter
@@ -17129,7 +17129,7 @@ sys-apps/fix-gnustack 0.1-r1: Utility to report and remove the executable flag f
 sys-apps/flashrom 1.5.1 1.6.0 1.7.0: Utility for reading, writing, erasing and verifying flash ROM chips
 sys-apps/flatpak 1.14.10 1.16.1 1.16.3 1.16.6: Linux application sandboxing and distribution framework
 sys-apps/fwts 22.03.00 23.11.00 24.03.00: Firmware Test Suite
-sys-apps/fwupd 2.0.16 2.0.18 2.0.20 2.1.1: Aims to make updating firmware on Linux automatic, safe and reliable
+sys-apps/fwupd 2.0.16 2.0.18 2.0.20 2.1.1-r2: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-apps/fwupd-efi 1.7 1.8: EFI executable for fwupd
 sys-apps/fxload 20081013-r1: USB firmware uploader
 sys-apps/gawk 5.3.2 5.4.0-r1 5.4.0-r2: GNU awk pattern-matching language
@@ -17588,7 +17588,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260326 13.4.1_p20260402 13.4.1_p20260409 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260403 14.3.1_p20260410 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260404 15.3.9999 16.0.1_p20260405-r1 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260326 13.4.1_p20260402 13.4.1_p20260409 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260403 14.3.1_p20260410 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260404 15.2.1_p20260411 15.3.9999 16.0.1_p20260405-r1 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -18175,7 +18175,7 @@ www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20250514b: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
 www-apps/drupal 7.102 10.3.14 10.4.5 11.0.13 11.1.5: PHP-based open-source platform and content management system
 www-apps/element 1.12.10 1.12.13 1.12.15: A glossy Matrix collaboration client for the web
-www-apps/gitea 1.25.1 1.25.3: A painless self-hosted Git service
+www-apps/gitea 1.25.1 1.25.3 1.25.5: A painless self-hosted Git service
 www-apps/grafana-bin 12.1.8 12.2.6 12.3.4 12.4.0: Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
 www-apps/haunt 0.3.0: Haunt is a simple, functional, hackable static site generator
 www-apps/hugo 0.147.7 0.148.2: Fast static HTML and CSS website generator
