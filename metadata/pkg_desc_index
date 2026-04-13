@@ -5775,7 +5775,7 @@ dev-libs/pcl 1.12-r2: Portable Coroutine Library
 dev-libs/pegtl 3.2.8 3.2.8-r1: Header-only library for creating parsers according to Parsing Expression Grammar
 dev-libs/pfs 0.10.0: Production grade, very easy to use, procfs parsing library in C++
 dev-libs/pkcs11-helper 1.29.0-r1 1.30.0 1.31.0: PKCS#11 helper library
-dev-libs/plasma-wayland-protocols 1.19.0 1.20.0: Plasma Specific Protocols for Wayland
+dev-libs/plasma-wayland-protocols 1.20.0: Plasma Specific Protocols for Wayland
 dev-libs/pmdk 2.1.1: Persistent Memory Development Kit
 dev-libs/pocketfft 2024.11.30: PocketFFT for C++
 dev-libs/pocl 6.0 7.0-r2 7.0-r3 7.1: Portable Computing Language (an implementation of OpenCL)
@@ -13022,7 +13022,7 @@ media-gfx/cairosvg 2.9.0: CLI and library to export SVG to PDF, PostScript, and 
 media-gfx/cellwriter 1.3.6-r1: Grid-entry natural handwriting input panel
 media-gfx/chafa 1.18.0 1.18.1: versatile and fast Unicode/ASCII/ANSI graphics renderer
 media-gfx/clockphoto 1.2-r1: Adjusts photo timestamps based on clock photos
-media-gfx/converseen 0.12.2.4 0.15.0.3: Batch image converter and resizer based on ImageMagick
+media-gfx/converseen 0.12.2.4 0.15.0.3 0.15.2.2: Batch image converter and resizer based on ImageMagick
 media-gfx/cropgui 0.9: GUI for lossless cropping of jpeg images
 media-gfx/crwinfo 0.2: Canon raw image (CRW) information and thumbnail extractor
 media-gfx/curtail 1.13.0 1.14.0 1.15.0 1.15.1: Image compressor, supporting PNG, JPEG and WebP
@@ -14577,7 +14577,7 @@ net-analyzer/netpipe 3.7.2-r1: network protocol independent performance evaluato
 net-analyzer/netselect 0.4-r2 9999: Ultrafast implementation of ping
 net-analyzer/nettop 0.2.3-r2: top-like program for network activity
 net-analyzer/netwatch 1.3.0.1-r5 1.3.0.1-r6: Ethernet/PPP IP Packet Monitor
-net-analyzer/nfdump 1.7.6 1.7.7: A set of tools to collect and process netflow data
+net-analyzer/nfdump 1.7.6 1.7.7-r1: A set of tools to collect and process netflow data
 net-analyzer/ngrep 1.47-r2 1.47_p20241209: A grep for network layers
 net-analyzer/nikto 2.1.6_p20220602 2.5.0: Web server vulnerability scanner
 net-analyzer/nload 0.7.5_pre20180309: Real time network traffic monitor for the command line interface
@@ -15090,7 +15090,7 @@ net-libs/wandio 4.2.3_p1-r1 4.2.3_p1-r2 4.2.4 4.2.6: C library for simple and ef
 net-libs/webkit-gtk 2.44.4-r411 2.44.4-r601 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.50.5-r410 2.50.5-r600 2.50.6-r410 2.50.6-r600 2.52.1-r410 2.52.1-r600: Open source web browser engine
 net-libs/wslay 1.1.1_p20210115: WebSocket library in C
 net-libs/wvstreams 4.6.1_p14-r2 4.6.1_p14-r3: A network programming library in C++
-net-libs/xdp-tools 1.6.2 1.6.3: The libxdp library and various tools for use with XDP
+net-libs/xdp-tools 1.6.2 1.6.3-r1: The libxdp library and various tools for use with XDP
 net-libs/xrootd 5.8.2 5.8.3 5.8.4 5.9.1 5.9.2 9999: Extended ROOT remote file server
 net-libs/zeromq 4.3.5-r1: High-performance asynchronous messaging library
 net-libs/zmqpp 4.2.0-r1: ZeroMQ 'highlevel' C++ bindings
@@ -15629,8 +15629,8 @@ net-proxy/trojan 1.16.0-r4: An unidentifiable mechanism that helps you bypass GF
 net-proxy/tsocks 1.8_beta5-r9 1.8_beta5-r10: Transparent SOCKS v4 proxying library
 net-proxy/wwwoffle 2.9j: Web caching proxy suitable for non-permanent Internet connections
 net-proxy/ziproxy 3.3.2-r1: Forwarding, non-caching, compressing web proxy server
-net-voip/mumble 1.5.735-r2 1.6.0_pre20250920-r3 1.6.0_pre20260215-r2 9999: Open source, low-latency, high quality voice chat software
-net-voip/murmur 1.5.735 1.6.0_pre20250920-r3 1.6.0_pre20260215-r1 9999: Open source, low-latency, high quality voice chat server
+net-voip/mumble 1.6.0_pre20250920-r3 1.6.0_pre20260215-r2 9999: Open source, low-latency, high quality voice chat software
+net-voip/murmur 1.6.0_pre20250920-r3 1.6.0_pre20260215-r1 9999: Open source, low-latency, high quality voice chat server
 net-voip/sipvicious 0.3.4-r1: SIPVicious is a SIP security package
 net-voip/umurmur 0.3.1: Minimalistic Murmur (Mumble server)
 net-voip/yate 6.2.0: The Yate AV Suite
@@ -17590,7 +17590,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260326 13.4.1_p20260402 13.4.1_p20260409 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260403 14.3.1_p20260410 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260404 15.2.1_p20260411 15.3.9999 16.0.1_p20260405-r1 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260326 13.4.1_p20260402 13.4.1_p20260409 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260403 14.3.1_p20260410 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260404 15.2.1_p20260411 15.3.9999 16.0.1_p20260405-r1 16.0.1_p20260412 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -18222,7 +18222,7 @@ www-apps/piwigo 16.3.0: a photo gallery software for the web
 www-apps/postfixadmin 3.3.16: Web Based Management tool for Postfix style virtual domains and users
 www-apps/prowlarr-bin 2.3.5.5327: An indexer manager/proxy to integrate with your various PVR apps
 www-apps/radarr-bin 6.1.2.10359: A fork of Sonarr to work with movies a la Couchpotato
-www-apps/radicale 3.6.1-r1 3.7.0: A simple CalDAV calendar server
+www-apps/radicale 3.6.1-r1 3.7.1: A simple CalDAV calendar server
 www-apps/readarr-bin 0.4.18.2805: An ebook and audiobook collection manager for Usenet and BitTorrent users
 www-apps/redmine 6.0.7: Flexible project management web application using the Ruby on Rails framework
 www-apps/roundup 2.3.0: Issue-tracking system with command-line, web, and e-mail interfaces
@@ -18545,7 +18545,7 @@ x11-libs/pango 1.52.2 1.54.0 1.56.3 1.56.4 1.56.4-r1 1.56.4-r2 1.57.0: Internati
 x11-libs/pixman 0.46.4 9999: Low-level pixel manipulation routines
 x11-libs/qscintilla 2.14.1-r2: Qt port of Neil Hodgson's Scintilla C++ editor control
 x11-libs/qtermwidget 2.3.0 9999: Qt terminal emulator widget
-x11-libs/qwt 6.2.0-r5 6.3.0: 2D plotting library for Qt
+x11-libs/qwt 6.2.0-r5 6.3.0-r1: 2D plotting library for Qt
 x11-libs/spread-sheet-widget 0.8 0.10: GNU Spread Sheet Widget
 x11-libs/startup-notification 0.12-r2: Application startup notification and feedback library
 x11-libs/tslib 1.23-r1: Touchscreen Access Library
