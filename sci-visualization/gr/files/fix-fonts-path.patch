@@ -19,7 +19,7 @@
    endif()
    install(
 -    DIRECTORY lib/gks/fonts
--    DESTINATION ${CMAKE_INSTALL_PREFIX}/
+-    DESTINATION ./
 +    DIRECTORY lib/gks/fonts/
 +    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/fonts/gks/
      USE_SOURCE_PERMISSIONS
