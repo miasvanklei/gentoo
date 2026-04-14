@@ -40,7 +40,7 @@ SRC_URI+=" !vanilla? ( https://dev.gentoo.org/~sam/distfiles/${CATEGORY}/${PN}/$
 
 LICENSE="GPL-3+"
 SLOT="0"
-IUSE="acl caps gmp hostname kill multicall nls +openssl selinux +split-usr static test test-full vanilla xattr"
+IUSE="acl caps gmp hostname kill multicall nls +openssl selinux +split-usr static systemd test test-full vanilla xattr"
 RESTRICT="!test? ( test )"
 
 LIB_DEPEND="
@@ -52,6 +52,7 @@ LIB_DEPEND="
 "
 RDEPEND="
 	!static? ( ${LIB_DEPEND//\[static-libs]} )
+	systemd? ( sys-apps/systemd )
 	selinux? ( sys-libs/libselinux )
 	nls? ( virtual/libintl )
 "
@@ -152,9 +153,6 @@ src_configure() {
 	}
 	EOF
 
-	# TODO: in future (>9.4?), we may want to wire up USE=systemd:
-	# still experimental at the moment, but:
-	# https://git.savannah.gnu.org/cgit/coreutils.git/commit/?id=85edb4afbd119fb69a0d53e1beb71f46c9525dd0
 	local myconf=(
 		--with-packager-version="${PVR} (p${PATCH_VER:-0})"
 		# kill/uptime - procps
@@ -165,6 +163,7 @@ src_configure() {
 		$(use_enable nls)
 		$(use_enable acl)
 		$(use_enable multicall single-binary)
+		$(use_enable systemd)
 		$(use_enable xattr)
 		$(use_with gmp libgmp)
 		$(use_with openssl)
