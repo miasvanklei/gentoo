@@ -5,7 +5,7 @@
  {% if not minimal %}
  session		optional	pam_motd.so motd=/etc/motd
 -session		optional	pam_lastlog.so never showfailed {{ debug }}
-+session		optional	pam_lastlog2.so never showfailed {{ debug }}
++session		optional	pam_lastlog2.so {{ debug }}
  session		optional	pam_mail.so
  {% endif %}
  
