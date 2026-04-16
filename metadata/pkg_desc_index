@@ -4882,7 +4882,7 @@ dev-java/commons-httpclient 3.1-r3: The Jakarta Commons HttpClient library
 dev-java/commons-imaging 1.0_alpha3-r2: Apache Commons Imaging (previously Sanselan) is a pure-Java image library.
 dev-java/commons-io 2.18.0 2.20.0 2.21.0: Utility classes, stream implementations, file filters, and much more
 dev-java/commons-junit4 1.2.17: Assertions etc. for those who write tests with JUNIT 4
-dev-java/commons-lang 3.17.0 3.19.0 3.20.0: Commons components to manipulate core java classes
+dev-java/commons-lang 3.17.0 3.19.0 3.20.0-r1: Commons components to manipulate core java classes
 dev-java/commons-logging 1.3.5 1.3.6: Thin adapter allowing configurable bridging to other well known logging systems
 dev-java/commons-math 3.6.1-r2: Lightweight, self-contained mathematics and statistics components
 dev-java/commons-net 3.12.0: Client-oriented Java library to implement many Internet protocols
@@ -9542,7 +9542,7 @@ dev-python/speg 0.3_p20180819-r2: A PEG-based parser interpreter with memoizatio
 dev-python/sphinx 9.1.0: Python documentation generator
 dev-python/sphinx-argparse 0.5.2: Sphinx extension that automatically documents argparse commands and options
 dev-python/sphinx-autoapi 3.7.0 3.8.0: A new approach to API documentation in Sphinx
-dev-python/sphinx-autodoc-typehints 3.8.0 3.9.11 3.10.0 3.10.1: Type hints support for the Sphinx autodoc extension
+dev-python/sphinx-autodoc-typehints 3.8.0 3.9.11 3.10.0 3.10.1 3.10.2: Type hints support for the Sphinx autodoc extension
 dev-python/sphinx-basic-ng 1.0.0_beta2: A modern skeleton for Sphinx themes
 dev-python/sphinx-bootstrap-theme 0.8.1: Sphinx theme integrates the Bootstrap CSS / JavaScript framework
 dev-python/sphinx-celery 2.1.3: Celery Sphinx Theme and Utilities
@@ -9643,7 +9643,7 @@ dev-python/test2ref 1.2.3: Testing Against Learned Reference Data
 dev-python/testfixtures 10.0.0 11.0.0: A collection of helpers and mock objects for unit tests and doc tests
 dev-python/testpath 0.6.0: Test utilities for code working with files and commands
 dev-python/testresources 2.0.2: A pyunit extension for managing expensive test resources
-dev-python/testscenarios 0.5.0-r3: A pyunit extension for dependency injection
+dev-python/testscenarios 0.5.0-r3 0.6: A pyunit extension for dependency injection
 dev-python/testtools 2.7.2-r1 2.8.2 2.8.7 2.9.0: Extensions to the Python standard library unit testing framework
 dev-python/text-unidecode 1.3-r1: The most basic port of the Text::Unidecode Perl library
 dev-python/textdistance 4.6.3: Compute distance between the two texts
@@ -9733,8 +9733,8 @@ dev-python/urwidtrees 1.0.3-r2: Tree widgets for urwid
 dev-python/userpath 1.9.2: Cross-platform tool for adding locations to the user PATH
 dev-python/utidylib 1.0.0: TidyLib Python wrapper
 dev-python/uuid6 2025.0.1: New time-based UUID formats which are suited for use as a database key
-dev-python/uv 0.10.12 0.11.0 0.11.1 0.11.2 0.11.3 0.11.5 0.11.6 9999: A Python package installer and resolver, written in Rust
-dev-python/uv-build 0.10.12 0.11.0 0.11.1 0.11.2 0.11.3 0.11.5 0.11.6: PEP517 uv build backend
+dev-python/uv 0.10.12 0.11.0 0.11.1 0.11.2 0.11.3 0.11.5 0.11.6 0.11.7 9999: A Python package installer and resolver, written in Rust
+dev-python/uv-build 0.10.12 0.11.0 0.11.1 0.11.2 0.11.3 0.11.5 0.11.6 0.11.7: PEP517 uv build backend
 dev-python/uv-dynamic-versioning 0.13.0: Dynamic versioning based on VCS tags for uv/hatch project
 dev-python/uvicorn 0.41.0 0.42.0 0.43.0 0.44.0: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.22.1: Ultra-fast implementation of asyncio event loop on top of libuv
@@ -10836,7 +10836,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.4 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.96: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.110: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.5 2025.3.1.1 2025.3.2: A complete toolset for C and C++ development
@@ -17785,7 +17785,7 @@ sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via s
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scripts
 sys-kernel/gentoo-kernel 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.1.167 6.1.168 6.6.130 6.6.133 6.6.134 6.12.77 6.12.79 6.12.80 6.12.81 6.18.18 6.18.19 6.18.20 6.18.21 6.18.22 6.19.11 6.19.12: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.250 5.10.252 5.15.200 5.15.202 6.1.163 6.1.166 6.1.167 6.1.168 6.6.130 6.6.133 6.6.134 6.12.77 6.12.79 6.12.80 6.12.81 6.18.18 6.18.19 6.18.20 6.18.21 6.18.22 6.19.11 6.19.12: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-sources 5.10.250-r1 5.10.251 5.10.252 5.15.200 5.15.201 5.15.202 6.1.163 6.1.165 6.1.166 6.1.167 6.1.168 6.6.126 6.6.128 6.6.129 6.6.130 6.6.132 6.6.133 6.6.134 6.12.77 6.12.78 6.12.79 6.12.80 6.12.81 6.18.18 6.18.19 6.18.20 6.18.21 6.18.22 6.19.8 6.19.9 6.19.10 6.19.11 6.19.12: Full sources including the Gentoo patchset for the 6.19 kernel tree
+sys-kernel/gentoo-sources 5.10.250-r1 5.10.251 5.10.252 5.15.200 5.15.201 5.15.202 6.1.163 6.1.165 6.1.166 6.1.167 6.1.168 6.6.126 6.6.128 6.6.129 6.6.130 6.6.132 6.6.133 6.6.134 6.12.77 6.12.78 6.12.79 6.12.80 6.12.81 6.18.18 6.18.19 6.18.20 6.18.21 6.18.22 6.19.8 6.19.9 6.19.10 6.19.11 6.19.12 7.0.0: Full sources including the Gentoo patchset for the 7.0 kernel tree
 sys-kernel/git-sources 7.0_rc1 7.0_rc2 7.0_rc3 7.0_rc4 7.0_rc5 7.0_rc6 7.0_rc7: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 9999: GNU Hurd is the GNU project's replacement for UNIX
