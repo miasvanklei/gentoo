@@ -1486,7 +1486,7 @@ app-crypt/keysmith 25.12.3 26.04.0: OTP client for Plasma Mobile and Desktop
 app-crypt/kstart 4.3: Modified versions of kinit for refreshing kerberos tickets automatically
 app-crypt/lego 4.32.0 4.33.0 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/libb2 0.98.1-r3: C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
-app-crypt/libmd 1.0.4 1.1.0: Message Digest functions from BSD systems
+app-crypt/libmd 1.1.0: Message Digest functions from BSD systems
 app-crypt/libscrypt 1.22-r3: Shared library to implement the scrypt algorithm
 app-crypt/libsecret 0.21.4-r2 0.21.7 0.21.7-r1: GObject library for accessing the freedesktop.org Secret Service API
 app-crypt/libu2f-host 1.1.10-r1: Yubico Universal 2nd Factor (U2F) Host C Library
@@ -2439,7 +2439,7 @@ app-emulation/wine-desktop-common 20150204-r2: Various desktop menu items and ic
 app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet Explorer for Wine
 app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.1 11.0.0: Replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.3 10.0.4 11.0.1_beta1 9999: Valve Software's fork of Wine
-app-emulation/wine-staging 10.20 11.0 11.3 11.4 11.5 11.6 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
+app-emulation/wine-staging 11.0 11.4 11.5 11.6 11.7 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
 app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 11.0 11.4 11.5 11.6 11.7 9999: Free implementation of Windows(tm) on Unix, without external patchsets
 app-emulation/winetricks 20250102-r1 20260125 99999999: Easy way to install DLLs needed to work around problems in Wine
 app-emulation/x48 0.6.4-r3: HP48 Calculator Emulator
@@ -3118,7 +3118,7 @@ app-shells/bashdb 5.0.1.1.2-r1 5.1_pre20240617: bash source code debugging
 app-shells/bashish 2.2.4: Text console theme engine
 app-shells/ccsh 0.0.4-r5: UNIX Shell for people already familiar with the C language
 app-shells/ctypes-sh 1.2_p20240626: Foreign function interface for bash
-app-shells/dash 0.5.12-r1 0.5.13.2 9999: Debian Almquist Shell
+app-shells/dash 0.5.12-r1 0.5.13.2 0.5.13.3 9999: Debian Almquist Shell
 app-shells/dsh 0.25.10-r2: Distributed Shell
 app-shells/fish 4.4.0 4.5.0-r2 4.6.0 9999: Friendly Interactive SHell
 app-shells/fsh 1.0.0_p20220816-r2: F# Shell with integrated F# scripting
@@ -5766,7 +5766,7 @@ dev-libs/openpace 1.1.3 1.1.4: Cryptographic library for EAC version 2
 dev-libs/opensc 0.26.1 9999: Libraries and applications to access smartcards
 dev-libs/openspecfun 0.5.5: A collection of special mathematical functions
 dev-libs/openssl 3.0.19 3.0.20 3.0.9999 3.3.6 3.3.7 3.3.9999 3.4.4 3.4.5 3.4.9999 3.5.5-r2 3.5.6 3.5.9999 3.6.2 3.6.9999 4.0.0 4.0.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
-dev-libs/openssl-compat 1.0.2u-r2 1.1.1u: Full-strength general purpose cryptography library (including SSL and TLS)
+dev-libs/openssl-compat 1.0.2u-r2 1.1.1u 3.6.2: Full-strength general purpose cryptography library (including SSL and TLS)
 dev-libs/optix 7.4.0 7.5.0 8.1.0-r1 9.0.0-r1: NVIDIA Ray Tracing Engine
 dev-libs/ossp-uuid 1.6.2-r7 1.6.2-r8: An ISO-C:1999 API with CLI for generating DCE, ISO/IEC and RFC compliant UUID
 dev-libs/pakchois 0.4-r2: PaKChoiS - PKCS #11 wrapper library
@@ -8187,7 +8187,7 @@ dev-python/atpublic 7.0.0: A decorator to populate __all__ and the module global
 dev-python/attrs 25.4.0 26.1.0: Attributes without boilerplate
 dev-python/audioop-lts 0.2.2: An LTS port of Python's audioop module
 dev-python/audioread 3.0.1-r1: Wrapper for audio file decoding using FFmpeg or GStreamer
-dev-python/authlib 1.6.9-r1 1.6.10 1.6.11: A Python library in building OAuth and OpenID Connect servers and clients
+dev-python/authlib 1.6.9-r1 1.6.10 1.6.11 1.7.0: A Python library in building OAuth and OpenID Connect servers and clients
 dev-python/authres 1.2.0-r1: Parse and generate Authentication-Results headers
 dev-python/autobahn 24.4.2 25.10.2 25.11.1: WebSocket and WAMP for Twisted and Asyncio
 dev-python/automat 25.4.16: Self-service finite-state machines for the programmer on the go
@@ -8670,6 +8670,7 @@ dev-python/jinja2-time 0.2.0-r1: Jinja2 Extension for Dates and Times
 dev-python/jmespath 1.1.0: JSON Matching Expressions
 dev-python/joblib 1.5.3: Tools to provide lightweight pipelining in Python
 dev-python/josepy 2.2.0: JOSE protocol implementation in Python
+dev-python/joserfc 1.6.4: A Python library for JOSE RFCs: JWS, JWE, JWK, JWA, JWT
 dev-python/jq 1.8.0 1.10.0 1.11.0: Python bindings for jq
 dev-python/js2py 0.74-r2: JavaScript to Python Translator & JavaScript interpreter in Python
 dev-python/jschema-to-python 1.2.3-r1: Generate source code for Python classes from a JSON schema
@@ -8769,7 +8770,7 @@ dev-python/loky 3.5.6: Robust and reusable Executor for joblib
 dev-python/looseversion 1.3.0: A backwards/forwards-compatible fork of distutils.version.LooseVersion
 dev-python/lrcalc 2.1-r2: Python bindings for sci-mathematics/lrcalc
 dev-python/lsprotocol 2025.0.0: Language Server Protocol types code generator packages
-dev-python/lxml 6.0.2 6.0.4: A Pythonic binding for the libxml2 and libxslt libraries
+dev-python/lxml 6.0.2 6.0.4 6.1.0: A Pythonic binding for the libxml2 and libxslt libraries
 dev-python/lxml-html-clean 0.4.4: Separate project for HTML cleaning functionalities copied from lxml.html.clean
 dev-python/lz4 4.4.5: LZ4 Bindings for Python
 dev-python/m2crypto 0.47.0: A Python crypto and SSL toolkit
@@ -9206,7 +9207,7 @@ dev-python/pyserial 3.5-r3: Python Serial Port extension
 dev-python/pyside 6.10.2 6.10.3 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.2: Python bindings for simdjson
 dev-python/pysmi 1.6.3 1.6.3-r1: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
-dev-python/pysnmp 7.1.22 7.1.23: Python SNMP library
+dev-python/pysnmp 7.1.22 7.1.23 7.1.24: Python SNMP library
 dev-python/pysnmp-mibs 0.1.6-r1: SNMP framework in Python - MIBs
 dev-python/pysnmpcrypto 0.0.4: Strong cryptography support for PySNMP (SNMP library for Python)
 dev-python/pysocks 1.7.1-r2: SOCKS client module
@@ -9517,7 +9518,7 @@ dev-python/simber 0.2.6: Simple, minimal and powerful logging library for Python
 dev-python/simpervisor 1.0.0-r1: Simple Python3 Supervisor library
 dev-python/simple-websocket 1.1.0: Simple WebSocket server and client for Python
 dev-python/simpleeval 1.0.3 1.0.4 1.0.5 1.0.6 1.0.7: A simple, safe single expression evaluator library
-dev-python/simplejson 3.20.2: Simple, fast, extensible JSON encoder/decoder for Python
+dev-python/simplejson 3.20.2 4.0.1: Simple, fast, extensible JSON encoder/decoder for Python
 dev-python/simplekml 1.3.6: Enables you to generate KML with as little effort as possible
 dev-python/simpy 4.1.1: Object-oriented, process-based discrete-event simulation language
 dev-python/simsimd 6.5.16: Fastest SIMD-Accelerated Vector Similarity Functions for x86 and Arm
@@ -12038,7 +12039,7 @@ gnome-extra/evolution-data-server 3.56.2-r1 3.58.2 3.58.3 3.60.1: Evolution grou
 gnome-extra/evolution-ews 3.56.2-r1 3.58.2 3.58.3 3.60.1: Evolution module for connecting to Microsoft Exchange Web Services
 gnome-extra/gnome-boxes 48.0 49.1: Simple GNOME application to access remote or virtual systems
 gnome-extra/gnome-browser-connector 42.1 42.1-r1: OS-native connector counterpart for GNOME Shell browser extension
-gnome-extra/gnome-calculator 48.1 49.2: A calculator application for GNOME
+gnome-extra/gnome-calculator 48.1 49.2-r1: A calculator application for GNOME
 gnome-extra/gnome-calendar 48.1 49.0.1 49.1: Manage your calendars with simple and modern interface
 gnome-extra/gnome-characters 48.0 49.1: Unicode character map viewer and library
 gnome-extra/gnome-clocks 48.0 49.0: Clocks application for GNOME
@@ -13569,7 +13570,7 @@ media-libs/ptex 2.4.2: Per-Face Texture Mapping for Production Rendering
 media-libs/pulseaudio-qt 1.7.0 1.8.1: Qt bindings for libpulse
 media-libs/qhull 2020.2.8.1_alpha6: Geometry library
 media-libs/quarter 1.2.2 1.2.3: GUI binding for using Coin/Open Inventor with Qt
-media-libs/quesoglc 0.7.2-r1: Free implementation of the OpenGL Character Renderer (GLC)
+media-libs/quesoglc 0.7.2-r2: Free implementation of the OpenGL Character Renderer (GLC)
 media-libs/quirc 1.2-r3 9999: QR decoder library
 media-libs/raptor 2.0.16-r1: The RDF Parser Toolkit
 media-libs/resid 0.16_p2-r2: C++ library to emulate the C64 SID chip
@@ -16605,6 +16606,7 @@ sec-keys/openpgp-keys-eduvpn 20231208 20240307: OpenPGP keys used by eduVPN deve
 sec-keys/openpgp-keys-electrum 4.5.8: OpenPGP keys for net-misc/electrum releases
 sec-keys/openpgp-keys-elfutils 20220427 20240301: OpenPGP key used to sign elfutils releases
 sec-keys/openpgp-keys-emersion 20260206: OpenPGP key used by Simon Ser
+sec-keys/openpgp-keys-erwinwaterlander 20260418: OpenPGP key used by Erwin Waterlander
 sec-keys/openpgp-keys-eschwartz 20250723-r1: OpenPGP keys used by Eli Schwartz
 sec-keys/openpgp-keys-evenrouault 20250913: OpenPGP keys used by Even Rouault
 sec-keys/openpgp-keys-fche 20260119: OpenPGP key used by Frank Ch. Eigler (fche)
@@ -16739,6 +16741,7 @@ sec-keys/openpgp-keys-python 20221025: OpenPGP keys used to sign CPython release
 sec-keys/openpgp-keys-qbittorrent 20161227: OpenPGP keys used by qBittorrent
 sec-keys/openpgp-keys-qutebrowser 20251024: OpenPGP keys used by Qutebrowser
 sec-keys/openpgp-keys-roddhjav 20260129: OpenPGP key used by Alexandre Pujol (roddhjav)
+sec-keys/openpgp-keys-roymarples 20260418: OpenPGP key used by Roy Marples
 sec-keys/openpgp-keys-rust 20210504: Rust Language Tag and Release Signing Key
 sec-keys/openpgp-keys-sed 20220407: OpenPGP keys used by GNU sed
 sec-keys/openpgp-keys-sendmail 20250220 20251229: OpenPGP keys used by Sendmail
@@ -17598,7 +17601,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260326 13.4.1_p20260402 13.4.1_p20260409 13.4.1_p20260416 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260403 14.3.1_p20260410 14.3.1_p20260417 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260404 15.2.1_p20260411 15.3.9999 16.0.1_p20260405-r1 16.0.1_p20260412 16.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260326 13.4.1_p20260402 13.4.1_p20260409 13.4.1_p20260416 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260403 14.3.1_p20260410 14.3.1_p20260417 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260404 15.2.1_p20260411 15.2.1_p20260418 15.3.9999 16.0.1_p20260405-r1 16.0.1_p20260412 16.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -18252,7 +18255,7 @@ www-client/chromium 146.0.7680.177 147.0.7727.55 147.0.7727.101 148.0.7778.5 148
 www-client/chromium-common 2: Common configuration files for Chromium slots
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
-www-client/epiphany 48.5 49.3 49.7: GNOME webbrowser based on Webkit
+www-client/epiphany 48.5 49.3 49.8.1: GNOME webbrowser based on Webkit
 www-client/falkon 25.12.3 26.04.0: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.8.0 140.9.0 140.9.1 148.0.2 149.0 149.0.2: Firefox Web Browser
@@ -18260,7 +18263,7 @@ www-client/firefox-bin 140.8.0 140.9.0 140.9.1 148.0.2 149.0 149.0.2: Firefox We
 www-client/firefox-l10n 149.0-r1 149.0.2: Firefox Web Browser's translation files
 www-client/google-chrome 146.0.7680.177 147.0.7727.101: The web browser from Google
 www-client/google-chrome-beta 147.0.7727.49 148.0.7778.40: The web browser from Google
-www-client/google-chrome-unstable 149.0.7779.3: The web browser from Google
+www-client/google-chrome-unstable 149.0.7795.2: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
@@ -18283,7 +18286,7 @@ www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.4 3.5: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
 www-client/vivaldi 7.9.3970.50 7.9.3970.55: A browser for our friends
-www-client/vivaldi-snapshot 7.10.4001.3 7.10.4007.3: A browser for our friends
+www-client/vivaldi-snapshot 7.10.4007.3 7.10.4009.3: A browser for our friends
 www-client/w3m 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
@@ -18329,7 +18332,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.4: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 146.0.7680.177 147.0.7727.49_beta 147.0.7727.101 148.0.7778.40_beta 149.0.7779.3_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 146.0.7680.177 147.0.7727.49_beta 147.0.7727.101 148.0.7778.40_beta 149.0.7795.2_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
