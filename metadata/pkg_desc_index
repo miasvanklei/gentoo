@@ -1094,7 +1094,7 @@ app-admin/system-config-printer 1.5.18-r3: Graphical user interface for CUPS adm
 app-admin/systemdgenie 0.100.0_pre20241202: Systemd managment utility
 app-admin/tenshi 0.18: Log parsing and notification program
 app-admin/terraform 1.11.2 1.12.1 1.13.4 1.13.5 1.14.8: A tool for building, changing, and combining infrastructure safely
-app-admin/testdisk 7.2: Checks and undeletes partitions + PhotoRec, signature based recovery tool
+app-admin/testdisk 7.2 7.2-r1: Checks and undeletes partitions + PhotoRec, signature based recovery tool
 app-admin/tmpreaper 1.6.17: A utility for removing files based on when they were last accessed
 app-admin/tmpwatch 2.11-r3: Files which haven't been accessed are removed from specified directories
 app-admin/tpm 1.3.3 9999: Tiny password manager
@@ -12729,7 +12729,7 @@ mate-extra/caja-actions 1.28.0-r1: Caja Actions
 mate-extra/caja-admin 0.0.5: Caja Admin Extension
 mate-extra/caja-dropbox 1.28.0: Store, Sync and Share Files Online
 mate-extra/caja-extensions 1.28.0: Several Caja extensions
-mate-extra/mate-calc 1.28.0-r1: Calculator for MATE
+mate-extra/mate-calc 1.28.0-r1 1.28.0-r2: Calculator for MATE
 mate-extra/mate-indicator-applet 1.28.0: MATE indicator applet
 mate-extra/mate-media 1.28.1-r2: Multimedia related programs for the MATE desktop
 mate-extra/mate-polkit 1.28.1-r2: A MATE specific DBUS service that is used to bring up authentication dialogs
@@ -13955,7 +13955,7 @@ media-sound/aylet 0.5: Aylet plays music files in the .ay format
 media-sound/baudline 1.08-r2: A time-frequency browser designed for visualization of spectral domains
 media-sound/beets 1.7.0_pre20240501-r1 2.2.0-r1 2.3.1 9999: Media library management system for obsessive music geeks
 media-sound/bitmeter 1.2-r2: Diagnosis tool for JACK audio software
-media-sound/bluez-alsa 4.2.0 4.3.1-r1 9999: Bluetooth Audio ALSA Backend
+media-sound/bluez-alsa 4.3.1-r2 9999: Bluetooth Audio ALSA Backend
 media-sound/bplay 0.991: No-frills command-line buffered player and recorder
 media-sound/bpmdetect 0.7.1: Automatic BPM detection utility
 media-sound/bristol 0.60.11-r4: Synthesizer keyboard emulation package: Moog, Hammond and others
@@ -14401,7 +14401,7 @@ media-video/vdr 2.7.7 2.7.9: Video Disk Recorder - turns a pc into a powerful se
 media-video/vdrsync 0.1.3_pre050322-r2: converting vdr-recordings to mpeg2, dvd or other similar formats
 media-video/vdrtools-genindex 0.1.3-r2: VDR: genindex Script
 media-video/videotrans 1.6.1-r2: A package to convert movies to DVD format and to build DVDs with
-media-video/vlc 3.0.23 3.0.9999 4.0.0_pre20260320 9999: Media player and framework with support for most multimedia files and streaming
+media-video/vlc 3.0.23 3.0.9999 4.0.0_pre20260320 4.0.0_pre20260418 9999: Media player and framework with support for most multimedia files and streaming
 media-video/vobcopy 1.2.1: Copies DVD .vob files to harddisk, decrypting them on the way
 media-video/webcamoid 9.2.3 9999: Full featured webcam capture application
 media-video/wireplumber 0.5.12 0.5.13 0.5.13_p20260216 0.5.14 9999: Replacement for pipewire-media-session
@@ -14874,7 +14874,7 @@ net-irc/onis 0.8.2-r2: onis not irc stats
 net-irc/pisg 0.73-r1: Perl IRC Statistics Generator
 net-irc/polari 46.0: An IRC client for GNOME
 net-irc/psybnc 2.4.3-r1: A multi-user and multi-server gateway to IRC networks
-net-irc/quassel 0.14.0-r8 9999: Qt IRC client supporting a remote daemon for 24/7 connectivity
+net-irc/quassel 0.14.0-r8 9999: Qt/KDE IRC client supporting a remote daemon for 24/7 connectivity
 net-irc/rbot 0.9.15_p20210609: A ruby IRC bot
 net-irc/rhapsody 0.28b-r1: IRC client intended to be displayed on a text console
 net-irc/scrollz 2.3.1: Advanced IRC client based on ircII
