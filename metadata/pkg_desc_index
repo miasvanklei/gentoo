@@ -1458,7 +1458,7 @@ app-crypt/freepg 2.5.17 2.5.18: Cross-distro GnuPG fork focused on OpenPGP compl
 app-crypt/gcr 3.41.2-r2 4.2.1 4.3.0 4.3.1 4.4.0.1-r1: Libraries for cryptographic UIs and accessing PKCS#11 modules
 app-crypt/gifshuffle 2.0-r1: GIF colourmap steganography
 app-crypt/glep63-check 12: GLEP 63 compliance checker for OpenPGP keys
-app-crypt/gnupg 2.4.9 2.5.17 2.5.17-r1 2.5.17-r2 2.5.18 2.5.19: The GNU Privacy Guard, a GPL OpenPGP implementation
+app-crypt/gnupg 2.4.9 2.5.17-r2 2.5.18 2.5.19: The GNU Privacy Guard, a GPL OpenPGP implementation
 app-crypt/gnupg-pkcs11-scd 0.11.0 9999: PKCS#11 support for GnuPG
 app-crypt/gocryptfs 2.6.1-r1: Encrypted overlay filesystem written in Go
 app-crypt/gorilla 1.4-r2: Password Safe in secure way with GUI interface
@@ -3919,7 +3919,7 @@ dev-cpp/gtest 1.14.0-r2 1.17.0 9999: Google C++ Testing Framework
 dev-cpp/gtkmm 2.24.5-r2 3.24.9 3.24.10 4.14.0-r1 4.18.0-r1 4.20.0: C++ interface for GTK+
 dev-cpp/gtksourceviewmm 3.18.0-r2: C++ bindings for gtksourceview
 dev-cpp/gulrak-filesystem 1.5.14: Header-only single-file std::filesystem compatible helper library
-dev-cpp/highway 1.2.0 1.3.0 9999: Performance-portable, length-agnostic SIMD with runtime dispatch
+dev-cpp/highway 1.2.0 1.3.0 1.4.0 9999: Performance-portable, length-agnostic SIMD with runtime dispatch
 dev-cpp/htmlcxx 0.87-r1: A simple non-validating CSS 1 and HTML parser for C++
 dev-cpp/json11 1.0.0-r1: A tiny JSON library for C++11
 dev-cpp/jsoncons 1.4.3 1.5.0 1.6.0: C++ header-only library for JSON and JSON-like data formats
@@ -15511,7 +15511,7 @@ net-p2p/bitflu 1.52-r1: BitTorrent client, written in Perl and is designed to ru
 net-p2p/cpuminer-opt 26.1 9999: Optimized multi algo CPU miner
 net-p2p/ctorrent 3.3.2-r4: Enhanced CTorrent is a BitTorrent console client written in C and C++
 net-p2p/dbhub 0.451-r3: Hub software for Direct Connect, fork of opendchub
-net-p2p/deluge 2.1.1-r5 2.1.1-r6 2.1.1-r7 2.2.0 9999: BitTorrent client with a client/server model
+net-p2p/deluge 2.1.1-r8 2.1.1-r9 2.2.0-r1 9999: BitTorrent client with a client/server model
 net-p2p/ed2k_hash 0.4.0-r3: Tool for generating eDonkey2000 links
 net-p2p/energi3 3.0.8 3.1.0 9999: Official golang implementation of the Energi Core
 net-p2p/freenet 0.7.5_p1506: Freenet REference Daemon
