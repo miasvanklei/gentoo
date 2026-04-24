@@ -25,7 +25,7 @@ RDEPEND="${DEPEND}"
 multilib_src_configure() {
 	local emesonargs=(
 		-Ddefault_library=shared
-		-Dgl_provider=glvnd
+		-Dgl_provider=gl
 	)
 	meson_src_configure
 }
