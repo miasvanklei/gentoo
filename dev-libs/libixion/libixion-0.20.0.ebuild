@@ -14,7 +14,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://gitlab.com/ixion/ixion.git"
 	inherit git-r3
 else
-	MDDS_SLOT="1/2.1"
+	MDDS_SLOT="1/3.0"
 	# Invalid as of 0.20.0, serves HTML
 	#SRC_URI="https://kohei.us/files/ixion/src/${P}.tar.xz"
 	SRC_URI="https://gitlab.com/api/v4/projects/ixion%2Fixion/packages/generic/source/${PV}/${P}.tar.xz"
