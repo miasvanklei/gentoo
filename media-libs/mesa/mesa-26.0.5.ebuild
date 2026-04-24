@@ -386,10 +386,10 @@ multilib_src_configure() {
 		$(meson_use test build-tests)
 		-Dexpat=enabled
 		$(meson_use opengl)
+		-Dglvnd=disabled
 		$(meson_feature opengl gbm)
 		$(meson_feature opengl gles1)
 		$(meson_feature opengl gles2)
-		$(meson_feature opengl glvnd)
 		$(meson_feature opengl egl)
 		$(meson_feature llvm)
 		$(meson_feature lm-sensors lmsensors)
