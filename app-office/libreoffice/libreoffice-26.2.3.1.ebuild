@@ -51,7 +51,7 @@ ADDONS_SRC=(
 	# not packaged in Gentoo, https://github.com/serge-sans-paille/frozen
 	"${ADDONS_URI}/frozen-1.2.0.tar.gz"
 	# not packaged in Gentoo, https://skia.org/
-	"${ADDONS_URI}/skia-m130-3c64459d5df2fa9794b277f0959ed8a92552bf4c.tar.xz"
+	"${ADDONS_URI}/skia-m142-f4ed99d2443962782cf5f8b4dd27179f131e7cbe.tar.xz"
 
 	"base? (
 		${ADDONS_URI}/ba2930200c9f019c2d93a8c88c651a0f-flow-engine-0.9.4.zip
@@ -138,7 +138,7 @@ COMMON_DEPEND="${PYTHON_DEPS}
 	dev-libs/icu:=
 	dev-libs/libassuan:=
 	dev-libs/libgpg-error
-	>=dev-libs/liborcus-0.18.0:0/0.18
+	>=dev-libs/liborcus-0.21.0:0/0.21
 	dev-libs/librevenge
 	dev-libs/libxml2:=
 	dev-libs/libxslt
@@ -237,7 +237,7 @@ DEPEND="${COMMON_DEPEND}
 	dev-perl/Archive-Zip
 	>=dev-util/cppunit-1.14.0
 	>=dev-util/gperf-3.1
-	dev-util/mdds:1/2.1
+	dev-util/mdds:1/3.0
 	media-libs/glm
 	x11-base/xorg-proto
 	x11-libs/libXt
@@ -270,6 +270,7 @@ RDEPEND="${COMMON_DEPEND}
 BDEPEND="
 	app-alternatives/lex
 	app-alternatives/yacc
+	dev-cpp/fast_float
 	dev-util/intltool
 	sys-apps/which
 	sys-devel/gettext
@@ -292,22 +293,9 @@ PATCHES=(
 	"${FILESDIR}/${PN}-24.2-qtdetect.patch"
 	"${FILESDIR}/${PN}-25.2-cflags.patch"
 
-	# git master
-	"${FILESDIR}/${PN}-25.2-unused-qt6network.patch"
-	"${FILESDIR}/${PN}-25.2.4.3-gcc16.patch"
-	"${FILESDIR}/${PN}-25.2.6.2-poppler-25.09.patch"
-	"${FILESDIR}/${P}-poppler-25.10.patch"
-	"${FILESDIR}/${P}-icu-77.1.patch"
-	"${FILESDIR}/${P}-icu-78.1.patch"
-	"${FILESDIR}/${P}-poppler-26.01.patch"
-	"${FILESDIR}/${P}-poppler-26.02.patch"
-
 	# add qt6 backend as possible fallback for gtk-based desktop environments:
 	# https://bugs.gentoo.org/950170
 	"${FILESDIR}/${PN}-25.2-vcl-backend-fallback.patch"
-
-	# bug #971474
-	"${FILESDIR}/${PN}-25.2.7.2-skia-clang22.patch"
 )
 
 _check_reqs() {
