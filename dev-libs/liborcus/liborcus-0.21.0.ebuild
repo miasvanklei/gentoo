@@ -22,7 +22,7 @@ else
 fi
 
 LICENSE="MIT"
-SLOT="0/0.20" # based on SONAME of liborcus.so
+SLOT="0/0.21" # based on SONAME of liborcus.so
 IUSE="python +spreadsheet-model test tools"
 
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
@@ -32,16 +32,12 @@ RDEPEND="
 	dev-libs/boost:=[zlib(+)]
 	virtual/zlib:=
 	python? ( ${PYTHON_DEPS} )
-	spreadsheet-model? ( dev-libs/libixion:${SLOT} )
+	spreadsheet-model? ( dev-libs/libixion:0/0.20 )
 "
 DEPEND="
 	${RDEPEND}
 	dev-util/mdds:${MDDS_SLOT}
 "
-
-PATCHES=(
-	"${FILESDIR}"/${PN}-0.19.2-boost-m4.patch
-)
 
 pkg_setup() {
 	use python && python-single-r1_pkg_setup
