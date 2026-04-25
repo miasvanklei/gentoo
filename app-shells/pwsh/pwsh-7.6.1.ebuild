@@ -164,7 +164,7 @@ IUSE="gui vanilla"
 
 RDEPEND="
 	>=dev-libs/libpsl-native-7.4.0:=
-	dev-libs/openssl-compat:1.0.0
+	dev-libs/openssl
 	sys-libs/pam:0/0
 	gui? (
 		dev-util/desktop-file-utils
