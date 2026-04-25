@@ -10937,7 +10937,7 @@ dev-util/indent 2.2.13-r1: Indent program source files
 dev-util/intel-graphics-compiler 2.23.0 2.31.2: LLVM-based OpenCL compiler for OpenCL targetting Intel Gen graphics hardware
 dev-util/intel-graphics-system-controller 1.0.2: Intel graphics system controller firmware update library
 dev-util/intel-ocl-sdk 18.1.0.015-r1: Intel's implementation of the OpenCL standard
-dev-util/intellij-idea 2026.1: A complete toolset for web, mobile and enterprise development
+dev-util/intellij-idea 2026.1.1: A complete toolset for web, mobile and enterprise development
 dev-util/intltool 0.51.0-r3: Internationalization Tool Collection
 dev-util/its4 1.1.1-r2: ITS4: Software Security Tool
 dev-util/itstool 2.0.7-r2 2.0.7_p20250326: Translation tool for XML documents that uses gettext files and ITS rules
@@ -17569,7 +17569,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260416 13.4.1_p20260422 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260417 14.3.1_p20260423 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260418 15.3.9999 16.0.1_p20260419 16.0.1_p20260423 16.0.1_p20260424 16.0.9999 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260416 13.4.1_p20260422 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260417 14.3.1_p20260423 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260418 15.2.1_p20260424 15.3.9999 16.0.1_p20260419 16.0.1_p20260423 16.0.1_p20260424 16.0.9999 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
