@@ -2059,7 +2059,7 @@ app-emacs/espuds 0.3.3_p20171111: Common step definitions for Emacs Ecukes
 app-emacs/ess 25.01.0: Emacs Speaks Statistics
 app-emacs/esup 0.7.1_p20220203: Benchmark Emacs Startup time without ever leaving it
 app-emacs/evil 1.14.2-r1: Extensible vi layer for Emacs
-app-emacs/exec-path-from-shell 2.2: Ensure environment variables inside Emacs are the same as in shell
+app-emacs/exec-path-from-shell 2.2 2.3: Ensure environment variables inside Emacs are the same as in shell
 app-emacs/exheres-mode 1.10: Major mode for editing files in exheres format
 app-emacs/expand-region 1.0.0-r1: Emacs extension to increase selected region by semantic units
 app-emacs/external-completion 0.1: Let external tools control completion style in GNU Emacs
@@ -2103,7 +2103,7 @@ app-emacs/gruvbox-theme 1.30.2 9999: Gruvbox is a retro groove color scheme, now
 app-emacs/h4x0r 0.13-r1: Aid in writing like a script kiddie does
 app-emacs/haskell-mode 17.4 17.5 17.5_p20260206 9999: Mode for editing (and running) Haskell programs in Emacs
 app-emacs/haxe-mode 0.3.3: Major mode for editing Haxe files
-app-emacs/helm 4.0.6: Emacs incremental completion and selection narrowing framework
+app-emacs/helm 4.0.6 4.0.7: Emacs incremental completion and selection narrowing framework
 app-emacs/helm-system-packages 1.10.2: A Helm interface to the package manager of your operating system
 app-emacs/hexrgb 0_p1019: Functions to manipulate colors, including RGB hex strings
 app-emacs/highlight-indentation 0.7.0_p20210221: Minor modes to highlight indentation guides in Emacs
@@ -2276,7 +2276,7 @@ app-emacs/session 2.4b-r1: When you start Emacs, Session restores various variab
 app-emacs/setnu 1.06: Display line numbers in Emacs buffers
 app-emacs/setup 1.4.0 1.5.0: Macro to simplify repetitive configuration patterns
 app-emacs/sharper 1.0_p20230129-r1: .NET SDK CLI wrapper for GNU Emacs using Transient
-app-emacs/shell-maker 0.89.1 0.89.2: Interaction mode for making comint shells for GNU Emacs
+app-emacs/shell-maker 0.89.2 0.90.1 9999: Interaction mode for making comint shells for GNU Emacs
 app-emacs/shell-split-string 0.1: Split Strings Using Shell-Like Syntax
 app-emacs/shrink-path 0.3.1: Fish-style path truncation for GNU Emacs
 app-emacs/shut-up 0.3.3: Reduce Emacs output of messages
@@ -2306,7 +2306,7 @@ app-emacs/template 3.3b: Use templates, decorate comments, auto-update buffers
 app-emacs/tempo-snippets 0.1.5-r1: Visual insertion of tempo templates
 app-emacs/thinks 1.12 1.13: Insert text in a think bubble
 app-emacs/tp 0.8: Utilities to create transient menus for POSTing to an API for GNU Emacs
-app-emacs/transient 0.12.0-r1 9999: Transient commands abstraction for GNU Emacs
+app-emacs/transient 0.12.0-r1 0.13.0 9999: Transient commands abstraction for GNU Emacs
 app-emacs/treemacs 3.2: Tree style project file explorer
 app-emacs/treemacs-all-the-icons 3.2: GNU Emacs all-the-icons integration for treemacs
 app-emacs/treepy 0.1.2-r1 0.1.3: Generic tree traversing tools for Emacs Lisp
@@ -5259,7 +5259,7 @@ dev-lang/mujs 1.3.6 1.3.7-r1 1.3.8: An embeddable JavaScript interpreter written
 dev-lang/nasm 2.16.03 3.01: groovy little assembler
 dev-lang/neko 2.4.0-r2 2.4.1: Neko is a high-level dynamically typed programming language
 dev-lang/nelua 20240113 99999999: Statically-typed systems programming language inspired by Lua
-dev-lang/nim 2.2.6 2.2.8: Compiled, garbage-collected systems programming language
+dev-lang/nim 2.2.8: Compiled, garbage-collected systems programming language
 dev-lang/nprolog 4.84 4.90 4.93 5.00 5.11 5.15 5.16: Interpreter and compiler to be compatible with Arity/Prolog32
 dev-lang/nqp 2026.02 9999: Not Quite Perl, a Raku bootstrapping compiler
 dev-lang/ocaml 4.14.2 5.3.0-r1 5.4.0: Programming language supporting functional, imperative & object-oriented styles
@@ -10810,6 +10810,7 @@ dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semanti
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.5 2025.3.1.1 2025.3.2: A complete toolset for C and C++ development
 dev-util/cloc 1.96 2.00: Count Lines of Code
+dev-util/clojure-tools 1.12.4.1629: Development tools for the Clojure programming language
 dev-util/cmocka 1.1.8 2.0.2: Unit testing framework for C
 dev-util/coccigrep 1.21: A semantic grep for the C language
 dev-util/coccinelle 1.1.1-r6 1.3.0 1.3.1: Program matching and transformation engine
@@ -11843,7 +11844,7 @@ games-server/bedrock-server 1.21.131.1 1.26.1.1 1.26.12.2: The official bedrock 
 games-server/crossfire-server 1.71.0-r2 1.75.0-r1: Server for the crossfire clients
 games-server/etqw-ded 1.5-r1: Enemy Territory: Quake Wars dedicated server
 games-server/mednafen-server 0.5.2-r3: Server for Mednafen emulator
-games-server/minecraft-server 26.1.1: The official server for the sandbox video game
+games-server/minecraft-server 26.1.2: The official server for the sandbox video game
 games-server/monopd 0.10.4: Server for the GtkAtlantic board game
 games-server/mtavc 0.5-r2: dedicated server for GTA3 multiplayer
 games-server/steamcmd 1.0-r4: This is the command-line version of the Steam client for dedicated servers
@@ -15159,8 +15160,8 @@ net-misc/anydesk 7.1.3 7.1.4: Feature rich multi-platform remote desktop applica
 net-misc/apt-cacher-ng 3.7.4_p1-r2 9999: Yet another caching HTTP proxy for Debian/Ubuntu software packages
 net-misc/aria2 1.37.0: A download utility with segmented downloading with BitTorrent support
 net-misc/arpsponge 3.17.11-r1: Sweeps up stray ARP queries from a peering LAN
-net-misc/asahi-btsync 0.2.0-r1: Bluetooth pairing data handoff from macOS for Apple Silicon Macs
-net-misc/asahi-wifisync 0.2.0-r1: WiFi network handoff from macOS for Apple Silicon Macs
+net-misc/asahi-btsync 0.2.5: Bluetooth pairing data handoff from macOS for Apple Silicon Macs
+net-misc/asahi-wifisync 0.2.3: WiFi network handoff from macOS for Apple Silicon Macs
 net-misc/asterisk 20.18.2 20.19.0 21.12.2 22.8.2 22.9.0: Asterisk: A Modular Open Source PBX System
 net-misc/asterisk-base 3 4: Gentoo Asterisk init scripts
 net-misc/asterisk-core-sounds 1.6.1-r1: Core sounds for asterisk
@@ -15222,7 +15223,7 @@ net-misc/exabgp 4.2.23 4.2.25 5.0.8: The BGP swiss army knife of networking
 net-misc/fakeidentd 2.6-r1: A static, secure identd. One source file only!
 net-misc/freerdp 3.24.2 3.25.0 9999: Free implementation of the Remote Desktop Protocol
 net-misc/frr 10.1.3 10.1.4-r1 10.2.2 10.2.3 10.2.5-r1 10.3.1 10.3.3-r1 10.4.1 10.4.3-r1 10.5.0 10.5.3-r1 10.6.0-r1: The FRRouting Protocol Suite
-net-misc/gallery-dl 1.31.4 1.31.5 1.31.6 1.31.7 1.31.9 1.31.10 9999: Download image galleries and collections from several image hosting sites
+net-misc/gallery-dl 1.31.9 1.31.10 1.32.0 9999: Download image galleries and collections from several image hosting sites
 net-misc/geckodriver 0.36.0: Proxy for using WebDriver clients to interact with Gecko-based browsers
 net-misc/gensio 2.8.5: General Stream I/O
 net-misc/geoipupdate 6.1.0 7.1.0: Performs automatic updates of GeoIP2 and GeoIP Legacy binary databases
@@ -17036,9 +17037,9 @@ sys-apps/apparmor-utils 3.1.4-r1 4.0.3-r1: Additional userspace utils to assist 
 sys-apps/apply-default-acl 0.4.4: Apply default POSIX ACLs to files and directories
 sys-apps/arch-chroot 29 31: Wraps the chroot command while ensuring that important filesystems are mounted
 sys-apps/arrayprobe 2.0-r3: Utility to report status of an HP (Compaq) array controller (both IDA & CCISS)
-sys-apps/asahi-bless 0.3.0-r1 0.4.1: CLI boot disk selector for Apple Silicon Macs
+sys-apps/asahi-bless 0.4.1 0.4.3: CLI boot disk selector for Apple Silicon Macs
 sys-apps/asahi-configs 1.0 2: Asahi Linux configurations
-sys-apps/asahi-nvram 0.2.1-r1 0.2.3: Tool to read and write nvram variables on ARM Macs
+sys-apps/asahi-nvram 0.2.3 0.2.4: Tool to read and write nvram variables on ARM Macs
 sys-apps/asahi-scripts 20240822 20250426.1: Apple Silicon support scripts
 sys-apps/asahi-startup-disk 0.1.3-r1: Interface to choose the startup volume on Apple Silicon systems
 sys-apps/attr 2.5.2-r1 9999: Extended attributes tools
@@ -18449,7 +18450,7 @@ x11-libs/cairo 1.18.4-r1 9999: A vector graphics library with cross-device outpu
 x11-libs/cmrt 1.0.6-r3: Intel C for Media RunTime GPU kernel manager
 x11-libs/colord-gtk 0.3.1: GTK support library for colord
 x11-libs/dnd 1.1-r4: OffiX' Drag'n'drop library
-x11-libs/fltk 1.3.8 1.4.4-r1: Fast Light GUI Toolkit
+x11-libs/fltk 1.3.8 1.4.4-r1 1.4.5: Fast Light GUI Toolkit
 x11-libs/fox 1.6.57-r4 1.7.85 1.7.89: C++ Toolkit for developing Graphical User Interfaces easily and effectively
 x11-libs/fox-wrapper 3-r1: Wrapper for fox-config to manage multiple versions
 x11-libs/gdk-pixbuf 2.42.12: Image loading library for GTK+
@@ -18686,7 +18687,7 @@ x11-misc/rofi 1.7.9.1 2.0.0 9999: A window switcher, run dialog and dmenu replac
 x11-misc/rofi-calc 2.5.0 2.5.1: Do live calculations in rofi!
 x11-misc/rofi-file-browser-extended 1.3.1-r2: A file browser for rofi
 x11-misc/rss-glx 0.9.1-r4: Really Slick OpenGL Screensavers for XScreenSaver
-x11-misc/safeeyes 3.2.0 3.3.0 3.3.0-r1 3.3.1 3.3.2 3.3.3 3.4.0 3.4.1: Linux alternative to EyeLeo
+x11-misc/safeeyes 3.2.0 3.3.0 3.3.0-r1 3.3.1 3.3.2 3.3.3 3.4.0 3.4.1 3.5.0: Linux alternative to EyeLeo
 x11-misc/screen-message 0.28 0.29: Display a multi-line message large, fullscreen, black on white
 x11-misc/screengrab 3.1.0 3.2.0: Qt GUI Screenshot Utility
 x11-misc/screenkey 1.5_p20230109-r3 9999: A screencast tool to display your keys inspired by Screenflick
