@@ -2829,7 +2829,7 @@ app-misc/kanatest 0.4.8: Visual flashcard tool for memorizing the Japanese Hirag
 app-misc/khal 0.13.0: A CalDAV based calendar
 app-misc/khard 0.19.1: Console CardDAV client
 app-misc/klavaro 3.14: Another free touch typing tutor program
-app-misc/koleo-cli 0.2.137.30: A simple CLI for koleo.pl railway planner
+app-misc/koleo-cli 0.2.137.30 0.2.137.32: A simple CLI for koleo.pl railway planner
 app-misc/kryoflux-dtc 2.6-r3 3.50_p2-r2 3.50_p4: KryoFlux Host Software
 app-misc/ktoblzcheck 1.49-r2: Library to check account numbers and bank codes of German banks
 app-misc/lcd4linux 0.11.0_pre20170527-r9: A small program that grabs information and displays it on an external LCD
@@ -8863,7 +8863,7 @@ dev-python/netifaces 0.11.0-r2: Portable network interface information
 dev-python/netlink 0.1: Pure-Python client for the Linux NetLink interface
 dev-python/networkx 3.6.1: Python tools to manipulate graphs and complex networks
 dev-python/nextinspace 3.0.1 9999: A command-line tool for seeing the latest in space
-dev-python/nh3 0.3.3 0.3.4: Ammonia HTML sanitizer Python binding
+dev-python/nh3 0.3.3 0.3.4 0.3.5: Ammonia HTML sanitizer Python binding
 dev-python/nnpy 1.4.2-r1: cffi-based Python bindings for nanomsg
 dev-python/node-semver 0.9.0: Python version of node-semver, the semantic versioner for npm
 dev-python/nodeenv 1.10.0: Node.js virtual environment builder
@@ -8961,7 +8961,7 @@ dev-python/pelican-minify 2.0.0 2.0.2: An HTML minification plugin for Pelican, 
 dev-python/pexpect 4.9.0: Python module for spawning child apps and responding to expected patterns
 dev-python/pgspecial 2.2.1: Python implementation of PostgreSQL meta commands
 dev-python/pgzero 1.2.1-r2: A zero-boilerplate games programming framework based on Pygame
-dev-python/phonenumbers 9.0.27 9.0.28: Python port of Google's libphonenumber
+dev-python/phonenumbers 9.0.27 9.0.28 9.0.29: Python port of Google's libphonenumber
 dev-python/phply 1.2.6: Lexer and parser for PHP source implemented using PLY
 dev-python/pickleshare 0.7.5-r1: A small 'shelve' like datastore with concurrency support
 dev-python/picobox 4.0.0: Dependency injection framework designed with Python in mind
@@ -9770,11 +9770,11 @@ dev-python/xmlschema 4.3.1: An XML Schema validator and decoder
 dev-python/xmlsec 1.3.17: Python bindings for the XML Security Library
 dev-python/xmltodict 1.0.4: Makes working with XML feel like you are working with JSON
 dev-python/xvfbwrapper 0.2.21 0.2.22 0.2.23: Python wrapper for running a display inside X virtual framebuffer
-dev-python/xxhash 3.6.0: Python binding for the xxHash library
+dev-python/xxhash 3.6.0 3.7.0: Python binding for the xxHash library
 dev-python/yapf 0.43.0-r1: A formatter for Python files
 dev-python/yappi 1.6.10 1.7.6: Yet Another Python Profiler
 dev-python/yapsy 1.12.2-r2: A fat-free DIY Python plugin management toolkit
-dev-python/yara-python 4.5.4 9999: Python interface for a malware identification and classification tool
+dev-python/yara-python 4.5.4 4.5.5 9999: Python interface for a malware identification and classification tool
 dev-python/yarl 1.23.0: Yet another URL library
 dev-python/yattag 1.16.1: Python library to generate HTML or XML in a readable, concise and pythonic way
 dev-python/yaxmldiff 0.2.0: Yet Another XML Differ
@@ -9797,7 +9797,7 @@ dev-python/zope-event 6.1: Event publishing / dispatch, used by Zope Component A
 dev-python/zope-exceptions 6.0: General purpose exceptions for Zope packages
 dev-python/zope-hookable 8.2: Efficient creation of 'hookable' objects
 dev-python/zope-i18nmessageid 8.2: Zope support for i18nmessageid (tagging source of i18n strings)
-dev-python/zope-interface 8.2 8.3: Interfaces for Python
+dev-python/zope-interface 8.2 8.3 8.4: Interfaces for Python
 dev-python/zope-schema 8.1: Zope schema Architecture
 dev-python/zope-testing 6.1: Zope testing helpers
 dev-python/zstandard 0.25.0: Zstandard Bindings for Python
@@ -12827,7 +12827,7 @@ media-fonts/font-schumacher-misc 1.1.3: X.Org Schumacher fonts
 media-fonts/font-screen-cyrillic 1.0.5: X.Org Screen cyrillic fonts
 media-fonts/font-sony-misc 1.0.4: X.Org Sony fonts
 media-fonts/font-sun-misc 1.0.4: X.Org Sun fonts
-media-fonts/font-util 1.4.1: X.Org font utilities
+media-fonts/font-util 1.4.1 1.4.2: X.Org font utilities
 media-fonts/font-winitzki-cyrillic 1.0.4: X.Org Winitzki cyrillic font
 media-fonts/font-xfree86-type1 1.0.5: X.Org XFree86 Type 1 font
 media-fonts/fontawesome 6.5.1 9999: The iconic font
@@ -14456,7 +14456,7 @@ net-analyzer/dsniff 2.4_beta1_p34: A collection of tools for network auditing an
 net-analyzer/etherape 0.9.20 0.9.21: A graphical network monitor for Unix modeled after etherman
 net-analyzer/ethloop 10-r4: Local simulator for testing Linux QoS disciplines
 net-analyzer/ettercap 0.8.4.1 9999: Suite for man in the middle attacks
-net-analyzer/fail2ban 1.1.0-r6 9999: Scans log files and bans IPs that show malicious signs
+net-analyzer/fail2ban 1.1.0-r6 1.1.0-r7 9999: Scans log files and bans IPs that show malicious signs
 net-analyzer/firewalk 5.0-r3: A tool for determining a firewall's rule set
 net-analyzer/flow-tools 0.68.6-r2: library and programs to process reports from NetFlow data
 net-analyzer/flowgrind 0.8.2: Network performance measurement tool
@@ -14516,7 +14516,7 @@ net-analyzer/multimon-ng 1.3.0 9999: a fork of multimon, decodes multiple digita
 net-analyzer/multipath-tcp-tools 2018_p12_p21-r1 999999: Analysis tools for Multipath Transmission Control Protocol (MPTCP)
 net-analyzer/munin 2.0.75 2.0.76-r2 2.0.76-r3: Munin Server Monitoring Tool
 net-analyzer/munin-plugins-zfs 0.20170127-r1: A Munin plugin for monitoring ZFS on Linux
-net-analyzer/nagios 4.5.8 4.5.9: The Nagios metapackage
+net-analyzer/nagios 4.5.8 4.5.12: The Nagios metapackage
 net-analyzer/nagios-check_dnssec 0.1_p28: check_dnssec is a set of Nagios plugins to monitor DNSSEC services
 net-analyzer/nagios-check_glsa2 20120930-r1: Nagios check script for GLSAs (Gentoo Linux Security Advisories)
 net-analyzer/nagios-check_ipmi_sensor 3.13: IPMI Sensor Monitoring Plugin for Nagios/Icinga
@@ -14525,7 +14525,7 @@ net-analyzer/nagios-check_logfiles 4.0.1.3: A nagios plugin for checking logfile
 net-analyzer/nagios-check_multiple 0.0.1-r4: A Nagios plugin to execute multiple checks in parallel
 net-analyzer/nagios-check_mysql_health 2.2.2-r2: Nagios plugin for checking MySQL server health
 net-analyzer/nagios-check_rbl 1.7.0: Monitor whether or not a host is blacklisted
-net-analyzer/nagios-core 4.5.8 4.5.9: Nagios core - monitoring daemon, web GUI, and documentation
+net-analyzer/nagios-core 4.5.8 4.5.12: Nagios core - monitoring daemon, web GUI, and documentation
 net-analyzer/nagios-icinga-openvpn 0.0.1-r5: A Nagios plugin to check whether an OpenVPN server is alive
 net-analyzer/nagios-plugin-check_lm_sensors 4.1.1_p20191028: Nagios plugin to monitor the values of onboard sensors and disk temperatures
 net-analyzer/nagios-plugin-check_raid 4.0.10-r3: Nagios/Icinga plugin to check current server's RAID status
@@ -16477,7 +16477,7 @@ sci-physics/xfoil 6.99-r1: Design and analysis of subsonic isolated airfoils
 sci-physics/yoda 1.9.10 2.1.2 9999: Yet more Objects for (High Energy Physics) Data Analysis
 sci-visualization/circos 0.69.9: Circular layout visualization of genomic and other data
 sci-visualization/dash 2.18.2 3.4.0 4.1.0: Python framework for building ML & data science web apps
-sci-visualization/epix 1.2.19 1.2.19-r1: 2- and 3-D plotter for creating images (to be used in LaTeX)
+sci-visualization/epix 1.2.19 1.2.19-r1 1.2.22: 2- and 3-D plotter for creating images (to be used in LaTeX)
 sci-visualization/fig2sxd 0.23: Utility to convert files in xfig format to OpenOffice.org Draw format
 sci-visualization/fityk 1.3.2-r1: General-purpose nonlinear curve fitting and data analysis
 sci-visualization/g3data 1.5.4: Tool for extracting data from graphs
@@ -18399,7 +18399,7 @@ x11-apps/xmodmap 1.0.11: utility for modifying keymaps and pointer button mappin
 x11-apps/xmore 1.0.4: plain text display program for the X Window System
 x11-apps/xpr 1.2.0: X.Org xpr application
 x11-apps/xprop 1.2.8: property displayer for X
-x11-apps/xrandr 1.5.3: A primitive command line interface to RandR extension
+x11-apps/xrandr 1.5.3 1.5.4: A primitive command line interface to RandR extension
 x11-apps/xrdb 1.2.2: X server resource database utility
 x11-apps/xrectsel 0.3.2-r1: Print the geometry of a rectangular screen region
 x11-apps/xrefresh 1.1.0: refresh all or part of an X screen
@@ -18746,7 +18746,7 @@ x11-misc/xautomation 1.09-r2: Control X from command line and find things on scr
 x11-misc/xbatt 1.3_rc1-r1: Notebook battery indicator for X
 x11-misc/xbattbar 1.4.9: Advanced Power Management battery status display for X
 x11-misc/xbindkeys 1.8.7-r100: Tool for launching commands on keystrokes
-x11-misc/xbitmaps 1.1.3: X.Org bitmaps data
+x11-misc/xbitmaps 1.1.3 1.1.4: X.Org bitmaps data
 x11-misc/xcalendar 4.0-r3: Simple interactive calendar program with a notebook capability
 x11-misc/xcalib 0.11: Tiny monitor calibration loader for X.org
 x11-misc/xcape 1.2-r1: Utility to make modifier keys send custom key events when pressed on their own
