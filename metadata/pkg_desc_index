@@ -14008,7 +14008,7 @@ media-sound/flack 2.0.6: edit FLAC tags from command line
 media-sound/flacon 12.0.0-r2: Extracts audio tracks from an audio CD image to separate tracks
 media-sound/flake 0.11-r1: An alternative to the FLAC reference encoder
 media-sound/fluid-soundfont 3.1: The Fluid R3 soundfont
-media-sound/fluidsynth 2.4.3 2.4.6-r2 2.4.7 2.4.8 2.5.2-r1: Software real-time synthesizer based on the Soundfont 2 specifications
+media-sound/fluidsynth 2.4.3 2.4.6-r2 2.4.7 2.4.8 2.5.2-r1 2.5.4: Software real-time synthesizer based on the Soundfont 2 specifications
 media-sound/fmdrv 1.0.7: Console mode MIDI player with builtin userland OPL2 driver
 media-sound/fmtools 2.0.7: A collection of programs for controlling v4l radio card drivers
 media-sound/frescobaldi 4.0.4: A LilyPond sheet music text editor
@@ -17471,7 +17471,7 @@ sys-boot/gnu-efi 3.0.19 4.0.4: Library for build EFI Applications
 sys-boot/grub 2.12-r12 2.14-r5 9999: GNU GRUB boot loader
 sys-boot/grub-themes-gentoo 1.0-r2: Grub2 Themes for Gentoo
 sys-boot/lilo 24.2-r2 24.2-r3: LInux LOader, the original Linux bootloader
-sys-boot/limine 10.8.5 11.2.0: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
+sys-boot/limine 11.4.1 12.0.2: Limine is a modern, advanced, and portable BIOS/UEFI multiprotocol bootloader
 sys-boot/makebootfat 1.4: Command line utility able to create bootable USB disks
 sys-boot/mbr 1.1.11-r2: A replacement master boot record for IBM-PC compatible computers
 sys-boot/milo 2.4.18: The Alpha MIniLOader, for Alpha Machines without SRM
@@ -18209,7 +18209,7 @@ www-apps/radarr-bin 6.2.0.10390: A fork of Sonarr to work with movies a la Couch
 www-apps/radicale 3.6.1-r1 3.7.1: A simple CalDAV calendar server
 www-apps/readarr-bin 0.4.18.2805: An ebook and audiobook collection manager for Usenet and BitTorrent users
 www-apps/redmine 6.0.7: Flexible project management web application using the Ruby on Rails framework
-www-apps/roundup 2.3.0: Issue-tracking system with command-line, web, and e-mail interfaces
+www-apps/roundup 2.3.0 2.4.0 2.5.0: Issue-tracking system with command-line, web, and e-mail interfaces
 www-apps/rt 5.0.6-r1: RT is an enterprise-grade ticketing system
 www-apps/rutorrent 5.3.0 5.3.1 9999: ruTorrent is a front-end for the popular Bittorrent client rTorrent
 www-apps/selfoss 2.20_pre20230730: The multipurpose rss reader, live stream, mashup, aggregation web application
