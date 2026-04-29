@@ -2537,7 +2537,7 @@ app-i18n/fcitx-table-extra 5.1.8 5.1.10 5.1.11: Provides extra table for Fcitx, 
 app-i18n/fcitx-table-other 5.1.5 5.1.6: Provides some other tables for Fcitx, fork from ibus-table-others, scim-tables
 app-i18n/fcitx-unikey 5.1.8 5.1.10: Unikey (Vietnamese Input Method) engine support for Fcitx
 app-i18n/gnulib-l10n 20241231: Localization for gnulib
-app-i18n/ibus 1.5.29 1.5.29-r1 1.5.30-r1 1.5.31-r1: Intelligent Input Bus for Linux / Unix OS
+app-i18n/ibus 1.5.31-r1 1.5.33: Intelligent Input Bus for Linux / Unix OS
 app-i18n/ibus-anthy 1.5.16 1.5.18: Japanese Anthy engine for IBus
 app-i18n/ibus-cangjie 2.5.0-r1: Chinese Cangjie and Quick engines for IBus
 app-i18n/ibus-chewing 2.1.7: Chinese Chewing engine for IBus
@@ -2843,7 +2843,7 @@ app-misc/linuxspa 0.7.1-r2: Linux Serial Protocol Analyser
 app-misc/liquidctl 1.14.0 1.15.0: Cross-platform tool and drivers for liquid coolers and other devices
 app-misc/lirc 0.10.2-r2: decode and send infra-red signals of many commonly used remote controls
 app-misc/livecd-tools 2.11 2.12 9999: Gentoo LiveCD tools for autoconfiguration of hardware
-app-misc/localsearch 3.8.2 3.9.0-r1 3.10.2: Indexer and search engine that powers desktop search for core GNOME components
+app-misc/localsearch 3.8.2 3.10.2 3.10.2-r1: Indexer and search engine that powers desktop search for core GNOME components
 app-misc/lockfile-progs 0.1.19 0.2.0: Programs to safely lock/unlock files and mailboxes
 app-misc/logiops 0.3.5: An unofficial userspace driver for HID++ Logitech devices
 app-misc/lsx 0.1-r1: list executables
@@ -3082,7 +3082,7 @@ app-portage/genlop 0.30.12 9999: Nice emerge.log parser
 app-portage/gentle 1.0.2: Gentoo Lazy Entry - a metadata.xml generator
 app-portage/gentoolkit 0.6.8 0.6.11 0.7.1 0.7.2 9999: Collection of administration scripts for Gentoo
 app-portage/gentoopm 0.5.0 9999: A common interface to Gentoo package managers
-app-portage/getuto 1.15-r1 1.16 1.17 9999: Standalone Gentoo gpg trust anchor generation tool for binpkgs
+app-portage/getuto 1.15-r1 1.18 1.19.1 9999: Standalone Gentoo gpg trust anchor generation tool for binpkgs
 app-portage/golop 0.2.1-r1: A pure Go re-implementation of genlop
 app-portage/gpyutils 0.15.3 0.15.4 0.15.5: Utitilies for maintaining Python packages
 app-portage/gverify 2: gentoo.git signature verification tool
@@ -5201,7 +5201,7 @@ dev-lang/cue 0.14.1: open-source data validation language and inference engine
 dev-lang/cxprolog 0.98.2-r3: A WAM based Prolog system
 dev-lang/dafny 4.11.0: Dafny is a verification-aware programming language
 dev-lang/dafny-bin 4.11.0-r1: Verification-aware programming language
-dev-lang/deno-bin 2.6.10-r1 2.7.11 2.7.12 2.7.13: Modern runtime for JavaScript and TypeScript
+dev-lang/deno-bin 2.6.10-r1 2.7.11 2.7.12 2.7.13 2.7.14: Modern runtime for JavaScript and TypeScript
 dev-lang/duktape 2.7.0-r3: Embeddable Javascript engine
 dev-lang/dzaima-bqn 0.2.1 0.2.2 9999: A BQN language implementation written in Java, also know as dbqn
 dev-lang/eisl 5.62: Interpreter and compiler compatible with the ISLisp standard
@@ -15741,7 +15741,7 @@ net-wireless/urh 2.10.0 9999: Universal Radio Hacker: investigate wireless proto
 net-wireless/wavemon 0.9.5 0.9.6: Ncurses based monitor for IEEE 802.11 wireless LAN cards
 net-wireless/wepattack 0.1.3-r6 0.1.3-r7: WLAN tool for breaking 802.11 WEP keys
 net-wireless/wepdecrypt 0.8-r3: Enhanced version of WepAttack a tool for breaking 802.11 WEP keys
-net-wireless/wireless-regdb 20240508 20250220 20250710 20251007 20260204: Wireless Regulatory database for Linux
+net-wireless/wireless-regdb 20240508 20250220 20250710 20251007 20260204 20260318: Wireless Regulatory database for Linux
 net-wireless/wireless-tools 30_pre9-r1 30_pre9-r2: A collection of tools to configure IEEE 802.11 wireless LAN cards
 net-wireless/wpa_supplicant 2.10-r6 2.11 2.11-r3 2.11-r4 2.11-r5 9999: IEEE 802.1X/WPA supplicant for secure wireless transfers
 perl-core/CPAN 2.290.0-r4: Query, download and build perl modules from CPAN sites
@@ -16029,7 +16029,7 @@ sci-geosciences/gpsd 3.26.1-r1 3.27.5 9999: GPS daemon and library for USB/seria
 sci-geosciences/gpsprune-bin 23.2: An application for viewing, editing and converting GPS data
 sci-geosciences/gpx-viewer 0.4.0-r2: Simple program to visualize a gpx file
 sci-geosciences/gpxsee 15.10 16.5 16.6: Viewer and analyzer that supports gpx, tcx, kml, fit, igc and nmea files
-sci-geosciences/grass 8.4.1-r2 8.4.2 9999: Free GIS with raster and vector functionality, as well as 3D vizualization
+sci-geosciences/grass 8.4.1-r2 8.4.2 8.5.0_rc1 9999: Free GIS with raster and vector functionality, as well as 3D vizualization
 sci-geosciences/gshhg-gmt 2.3.7: Global Self-consistent, Hierarchical, High-resolution Geography Database
 sci-geosciences/gshhs 1.13-r1: Global Self-consistent, Hierarchical, High-resolution Shoreline programs
 sci-geosciences/gshhs-data 2.2.0: Global Self-consistent, Hierarchical, High-resolution Shoreline programs data
@@ -17389,7 +17389,7 @@ sys-auth/skey 1.1.5-r14: Linux Port of OpenBSD Single-key Password System
 sys-auth/solo1 0.1.1-r1: CLI and Python library for SoloKeys Solo 1
 sys-auth/ssh-import-id 5.11-r1: Utility to securely retrieve an SSH public key and install it locally
 sys-auth/ssh-ldap-pubkey 1.4.0-r1: Utility to manage SSH public keys stored in LDAP
-sys-auth/sssd 2.9.7 2.9.8 2.12.0-r2: System Security Services Daemon provides access to identity and authentication
+sys-auth/sssd 2.9.7 2.9.8 2.9.8-r1 2.12.0-r2 2.13.0: System Security Services Daemon provides access to identity and authentication
 sys-auth/thinkfinger 0.3-r3: Support for the UPEK/SGS Thomson fingerprint reader, common in Thinkpads
 sys-auth/ykclient 2.15: Yubico C client library
 sys-auth/ykpers 1.20.0-r1: Library and tool for personalization of Yubico's YubiKey
@@ -17498,7 +17498,7 @@ sys-boot/yaboot 1.3.17-r4: PPC Bootloader
 sys-boot/yaboot-static 1.3.17-r2: Static yaboot ppc boot loader for machines with open firmware
 sys-cluster/ampi 0_pre20140616-r1: MPI library for algorithmic differentiation
 sys-cluster/c3 4.0.1: The Cluster Command and Control (C3) tool suite
-sys-cluster/ceph 20.1.1-r1 20.2.1 20.2.1-r1: Ceph distributed filesystem
+sys-cluster/ceph 20.1.1-r1 20.2.1 20.2.1-r2: Ceph distributed filesystem
 sys-cluster/charliecloud 0.41 0.42 0.42-r1 0.43 9999: Lightweight user-defined software stacks for high-performance computing
 sys-cluster/charm 6.8.2: Message-passing parallel language and runtime system
 sys-cluster/charmdebug 6.2.0-r2: A debugger for Charm++ applications
@@ -18145,7 +18145,7 @@ www-apache/mod_tls 0.14.0 0.14.0-r1: A module that uses rustls to provide a memo
 www-apache/mod_whatkilledus 2.01-r1: Debug segmentation faults in Apache threads
 www-apache/mod_wsgi 5.0.2: An Apache2 module for running Python WSGI applications
 www-apache/mod_xsendfile 1.0_beta1-r3: Apache module that processes X-SENDFILE headers registered by the output handler
-www-apache/modsecurity-crs 3.3.7 4.16.0 4.20.0: OWASP ModSecurity Core Rule Set
+www-apache/modsecurity-crs 3.3.7 3.3.9 4.20.0 4.25.0: OWASP ModSecurity Core Rule Set
 www-apache/mpm_itk 2.4.7_p4-r2: Run virtual hosts under separate users/groups
 www-apache/passenger 6.0.27 6.1.0 6.1.1: Passenger makes deployment of Ruby on Rails applications a breeze
 www-apache/pwauth 2.3.10-r2: A Unix Web Authenticator
@@ -18324,7 +18324,7 @@ www-servers/kore 4.3.0_rc4: Web application platform for writing scalable, concu
 www-servers/lighttpd 1.4.82 9999: Lightweight high-performance web server
 www-servers/mongrel2 1.11.0-r3: A language agnostic web server focused on web applications
 www-servers/moonbridge 1.1.3-r1: Network Server for Lua Applications
-www-servers/nginx 1.26.3-r2 1.27.5-r1 1.28.2 1.28.3 1.29.5 1.29.7-r1 9999: Robust, small and high performance HTTP and reverse proxy server
+www-servers/nginx 1.26.3-r2 1.27.5-r1 1.28.2 1.28.3 1.29.5 1.29.7-r1 1.29.8 1.30.0 9999: Robust, small and high performance HTTP and reverse proxy server
 www-servers/pound 4.16 4.17 4.22: A http/https reverse-proxy and load-balancer
 www-servers/pshs 0.4.3: Pretty small HTTP server -- a command-line tool to share files
 www-servers/puma 6.6.0 6.6.1 7.1.0 7.2.0: a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack
@@ -18425,7 +18425,7 @@ x11-base/xorg-proto 2025.1 9999: X.Org combined protocol headers
 x11-base/xorg-server 21.1.21 21.1.22 9999: X.Org X servers
 x11-base/xorg-sgml-doctools 1.12.1: SGML entities and XML/CSS stylesheets used in X.Org docs
 x11-base/xwayland 24.1.9 24.1.10 24.1.11 9999: Standalone X server running under Wayland
-x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 570.211.01 580.94.18 580.126.18 580.142 590.48.01-r1 595.44.05 595.58.03: NVIDIA Accelerated Graphics Driver
+x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 535.309.01 570.211.01 580.126.18 580.142 580.159.03 590.48.01-r1 595.44.05 595.58.03 595.71.05: NVIDIA Accelerated Graphics Driver
 x11-drivers/xf86-input-elographics 1.4.4: Elographics input driver
 x11-drivers/xf86-input-evdev 2.11.0: Generic Linux input driver
 x11-drivers/xf86-input-joystick 1.6.4: X.Org driver for joystick input devices
@@ -18463,7 +18463,7 @@ x11-libs/gdk-pixbuf-xlib 2.40.2: Deprecated Xlib integration for GdkPixbuf
 x11-libs/gl2ps 1.4.2-r1: OpenGL to PostScript printing library
 x11-libs/goffice 0.10.59-r1 0.10.60: A library of document-centric objects and utilities
 x11-libs/goocanvas 2.0.4-r2 3.0.0: Canvas widget for GTK+ using the cairo 2D library for drawing
-x11-libs/gtk+ 2.24.33-r3 3.24.51: Gimp ToolKit +
+x11-libs/gtk+ 2.24.33-r3 3.24.51 3.24.52: Gimp ToolKit +
 x11-libs/gtk-mac-integration 2.0.5-r1: Menubar, doc and app bundle integration for GTK+
 x11-libs/gtkdatabox 1.0.0-r1: Gtk+ Widgets for live display of large amounts of fluctuating numerical data
 x11-libs/gtkmathview 0.8.0-r6: Rendering engine for MathML documents
@@ -18512,7 +18512,7 @@ x11-libs/libfm-extra 1.3.2: Library for file management
 x11-libs/libfm-qt 2.3.1 2.4.0: Qt Library for Building File Managers
 x11-libs/libfontenc 1.1.8 1.1.9: X.Org fontenc library
 x11-libs/libgxim 0.5.0-r1: GObject-based XIM protocol library
-x11-libs/libnotify 0.8.6 0.8.7: A library for sending desktop notifications
+x11-libs/libnotify 0.8.7 0.8.8: A library for sending desktop notifications
 x11-libs/liboglappth 1.0.0-r1: Libary for OpenGL applications with easy-to-code scene setup and selection
 x11-libs/libpciaccess 0.18.1 0.19: Library providing generic access to the PCI bus and devices
 x11-libs/libtinynotify 0.2.1: A lightweight implementation of Desktop Notification Spec
