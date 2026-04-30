@@ -119,6 +119,7 @@ fi
 
 PATCHES=(
 	"${FILESDIR}/4.4.6-lto.patch"
+	"${FILESDIR}/4.6.2-gnutls-pkcs11.patch"
 )
 
 python_check_deps() {
@@ -293,14 +294,14 @@ src_install() {
 	if use gui ; then
 		local s
 
-		for s in 16 32 48 64 256 ; do
+		for s in 16 32 48 64 128 256 512 1024 ; do
 			insinto /usr/share/icons/hicolor/${s}x${s}/apps
 			newins resources/icons/wsicon${s}.png wireshark.png
 		done
 
 		for s in 16 24 32 48 64 128 256 ; do
 			insinto /usr/share/icons/hicolor/${s}x${s}/mimetypes
-			newins resources/icons/WiresharkDoc-${s}.png application-vnd.tcpdump.pcap.png
+			newins resources/icons//WiresharkDoc-${s}.png application-vnd.tcpdump.pcap.png
 		done
 	fi
 
