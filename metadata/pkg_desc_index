@@ -10954,7 +10954,7 @@ dev-util/kubeval 0.16.1: validate kubernetes YAML or JSON configuration files
 dev-util/kup 0.3.6-r6 0.3.6-r8: kernel.org uploader tool
 dev-util/kyua 0.13-r3 0.14 0.14.1: Testing framework for infrastructure software
 dev-util/lcov 2.0-r3 2.0-r4 2.3-r1 2.3.1-r1 2.3.2 2.4 9999: A graphical front-end for GCC's coverage testing tool gcov
-dev-util/libabigail 2.8 2.9 9999: Suite of tools for checking ABI differences between ELF objects
+dev-util/libabigail 2.9 9999: Suite of tools for checking ABI differences between ELF objects
 dev-util/librnp 0.18.1: High performance C++ OpenPGP library
 dev-util/libtree 3.1.1: ldd as a tree with an option to bundle dependencies into a single folder
 dev-util/linklint 2.3.5: A Perl program that checks links on web sites
@@ -15196,7 +15196,7 @@ net-misc/datapipe 1.0-r2: Bind a local port and connect it to a remote socket
 net-misc/dcetest 2.0: dcetest is a clone of the Windows rpcinfo
 net-misc/dhcdrop 0.5-r1 0.5-r2: Effectively suppresses illegal DHCP servers on the LAN
 net-misc/dhcp 4.4.3_p1-r6: ISC Dynamic Host Configuration Protocol (DHCP) client/server
-net-misc/dhcpcd 10.2.2 10.2.2-r1 10.2.3 10.2.4 10.3.0 10.3.1 9999: A fully featured, yet light weight RFC2131 compliant DHCP client
+net-misc/dhcpcd 10.2.2 10.2.2-r1 10.2.3 10.2.4 10.3.0 10.3.1 10.3.2 9999: A fully featured, yet light weight RFC2131 compliant DHCP client
 net-misc/dhcpcd-ui 0.7.9-r1: Desktop notification and configuration for dhcpcd
 net-misc/dhcping 1.2-r1: Utility to send DHCP requests to DHCP servers to see if responding
 net-misc/dibbler 1.0.1-r4: Portable DHCPv6 implementation (server, client and relay)
@@ -17570,7 +17570,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260416 13.4.1_p20260422 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260417 14.3.1_p20260423 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260418 15.2.1_p20260424 15.3.9999 16.0.1_p20260419 16.0.1_p20260423 16.0.1_p20260424 16.0.9999 17.0.0_p20260426 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.3.9999 16.1.0 16.2.9999 17.0.0_p20260426 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -17758,9 +17758,9 @@ sys-kernel/dkms 3.2.2 3.3.0 3.4.0 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 108-r6 110-r4 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-r2 4.3.16-r3 4.3.16-r4 4.3.16-r5 4.3.17 4.3.17-r1 4.3.17-r3 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 5.10.250 5.10.253 5.10.253_p1 5.15.200 5.15.203 5.15.203_p1 6.1.168 6.1.169 6.1.169_p1 6.6.136 6.6.136_p1 6.12.84 6.12.84_p1 6.18.25 7.0.2: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 5.10.250 5.10.253 5.10.253_p1 5.15.200 5.15.203 5.15.203_p1 6.1.168 6.1.169 6.1.169_p1 6.6.136 6.6.136_p1 6.12.84 6.12.84_p1 6.18.25 7.0.2: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-sources 5.10.250-r1 5.10.252 5.10.253 5.15.200 5.15.201 5.15.202 5.15.203 6.1.163 6.1.167 6.1.168 6.1.169 6.6.126 6.6.135 6.6.136 6.12.77 6.12.81 6.12.82 6.12.83 6.12.84 6.18.18 6.18.21 6.18.22 6.18.23 6.18.24 6.18.25 6.19.11 6.19.12 6.19.13 6.19.14 7.0.0 7.0.1 7.0.2: Full sources including the Gentoo patchset for the 7.0 kernel tree
+sys-kernel/gentoo-kernel 5.10.253_p1 5.15.203_p1 6.1.169_p1 6.6.136_p1 6.12.84_p1 6.18.25 7.0.2: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 5.10.253_p1 5.15.203_p1 6.1.169_p1 6.6.136_p1 6.12.84_p1 6.18.25 7.0.2: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-sources 5.10.250-r1 5.10.252 5.10.253 5.10.254 5.15.200 5.15.201 5.15.202 5.15.203 5.15.204 6.1.163 6.1.167 6.1.168 6.1.169 6.1.170 6.6.126 6.6.135 6.6.136 6.6.137 6.12.77 6.12.81 6.12.82 6.12.83 6.12.84 6.12.85 6.18.18 6.18.21 6.18.22 6.18.23 6.18.24 6.18.25 6.18.26 6.19.11 6.19.12 6.19.13 6.19.14 7.0.0 7.0.1 7.0.2 7.0.3: Full sources including the Gentoo patchset for the 7.0 kernel tree
 sys-kernel/git-sources 7.1_rc1: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 9999: GNU Hurd is the GNU project's replacement for UNIX
@@ -17783,7 +17783,7 @@ sys-kernel/scx 1.0.16 1.0.19 1.0.20 1.1.0: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.0.19 1.0.20 1.1.0: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 5.10.250 5.10.253 5.10.9999 5.15.200 5.15.203 5.15.9999 6.1.168 6.1.169 6.1.9999 6.6.136 6.6.9999 6.12.84 6.12.9999 6.18.25 7.0.2: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 5.10.253 5.10.9999 5.15.203 5.15.9999 6.1.169 6.1.9999 6.6.136 6.6.9999 6.12.84 6.12.9999 6.18.25 7.0.2: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 5.10.254 5.15.204 6.1.170 6.6.137 6.12.85 6.18.26 6.19.14 7.0.3: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.38 1.40 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 6.19.13: The Zen Kernel Live Sources
@@ -17970,7 +17970,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 5.10.250 5.10.253 5.10.253_p1 5.15.200 5.15.203 5.15.203_p1 6.1.168 6.1.169 6.1.169_p1 6.6.136 6.6.136_p1 6.12.84 6.12.84_p1 6.18.25 7.0.2: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 5.10.253_p1 5.15.203_p1 6.1.169_p1 6.6.136_p1 6.12.84_p1 6.18.25 7.0.2: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0-r1: Virtual for .NET SDK
 virtual/editor 0-r7: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
