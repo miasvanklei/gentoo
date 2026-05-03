@@ -14352,7 +14352,7 @@ media-video/mpglen 0.1: A program to scan through a MPEG file and count the numb
 media-video/mpgtx 1.3.1-r2: Command line MPEG audio/video/system file toolbox
 media-video/mplay-sh 0.5.3-r1: mplayer wrapper script as backend for vdr-mplayer
 media-video/mplayer 1.5_p20241125-r2 9999: Media Player for Linux
-media-video/mpv 0.41.0-r1 9999: Media player for the command line
+media-video/mpv 0.41.0-r2 9999: Media player for the command line
 media-video/noad 0.8.8 0.8.8-r1: Mark commercial breaks in VDR recordings
 media-video/obs-studio 32.0.4-r1 32.1.0-r1 9999: Software for Recording and Streaming Live Video Content
 media-video/oxine 0.7.1-r6: OSD frontend for Xine
@@ -17923,7 +17923,7 @@ sys-process/daemontools 0.76-r12: Collection of tools for managing UNIX services
 sys-process/daemontools-encore 1.11-r2: Collection of tools for managing UNIX services
 sys-process/dcron 4.6: Dillon's lightweight and minimalist cron daemon
 sys-process/dumb-init 1.2.5-r1: A minimal init system for Linux containers
-sys-process/evisum 0.6.4 1.0.1 1.2.0 1.2.2: System and process monitor written with EFL
+sys-process/evisum 0.6.4 1.0.1 1.2.0 1.2.2 2.0.4: System and process monitor written with EFL
 sys-process/fcron 3.4.0 3.4.0-r1: A command scheduler with extended capabilities over cron and anacron
 sys-process/ftop 1.0-r2: Monitor open files and filesystems
 sys-process/glances 4.1.2.1 4.3.1: CLI curses based monitoring tool
