@@ -1257,7 +1257,7 @@ app-backup/cdbackup 0.7.1-r2: Allows streaming backup utilities to dump/restore 
 app-backup/cdbkup 1.0-r5: Performs full/incremental backups of local/remote filesystems onto CD-R(W)s
 app-backup/consul-backinator 1.6.6: consul backup and restore utility
 app-backup/cpdup 1.18-r1: Comprehensive filesystem mirroring program
-app-backup/dar 2.8.3 2.8.4: A full featured backup tool, aimed for disks
+app-backup/dar 2.8.4 2.8.5: A full featured backup tool, aimed for disks
 app-backup/deja-dup 44.2 48.4: Simple backup tool using duplicity back-end
 app-backup/dirvish 1.2.1-r1: Dirvish is a fast, disk based, rotating network backup system
 app-backup/duplicati 2.2.0.0.2025.10.23 2.2.0.1.2025.11.09: Backup client that securely stores encrypted, incremental, compressed backups
@@ -5506,7 +5506,7 @@ dev-libs/libbpf 1.6.3 1.7.0-r1 9999: Stand-alone build of libbpf from the Linux 
 dev-libs/libbsd 0.11.8 0.12.1: Library to provide useful functions commonly found on BSD systems
 dev-libs/libbson 1.24.4-r1: Library routines related to building,parsing and iterating BSON documents
 dev-libs/libbulletml 0.0.6-r1: A Library of Bullet Markup Language
-dev-libs/libburn 1.5.6-r2 1.5.8: Open-source library for reading, mastering and writing optical discs
+dev-libs/libburn 1.5.6-r2 1.5.8-r1: Open-source library for reading, mastering and writing optical discs
 dev-libs/libbytesize 2.11 2.12: Tiny library providing a C "class" for working with arbitrary big byte sizes
 dev-libs/libcbor 0.13.0: CBOR protocol implementation for C and others
 dev-libs/libcdada 0.6.1: Basic data structures in C
@@ -5576,7 +5576,7 @@ dev-libs/libigloo 0.9.5: Generic framework for C development - used by the Iceca
 dev-libs/libinjection 3.10.0_p20250228: A SQL/SQLI tokenizer parser analyzer
 dev-libs/libinput 1.31.0 1.31.1: Library to handle input devices in Wayland
 dev-libs/libintl 0.21.1 0.22.5 0.23.1 0.23.2 0.25.1 0.26: the GNU international library (split out of gettext)
-dev-libs/libisoburn 1.5.6-r2 1.5.8: Creation/expansion of ISO-9660 filesystems on CD/DVD media supported by libburn
+dev-libs/libisoburn 1.5.6-r2 1.5.8-r1: Creation/expansion of ISO-9660 filesystems on CD/DVD media supported by libburn
 dev-libs/libisofs 1.5.6_p1-r2 1.5.8_p1: Open-source library for reading, mastering and writing optical discs
 dev-libs/libite 2.6.1: A collection of useful BSD APIs
 dev-libs/libixion 0.19.0-r2 0.20.0 9999: General purpose formula parser & interpreter
@@ -8945,7 +8945,7 @@ dev-python/pathvalidate 3.3.1: A Python library to sanitize/validate a string su
 dev-python/patiencediff 0.2.18: Python implementation of the patiencediff algorithm
 dev-python/patsy 1.0.2: Python module to describe statistical models and design matrices
 dev-python/pbkdf2 1.3-r2: Implementation of PBKDF2, specified in RSA PKCS#5 v2.0
-dev-python/pbr 7.0.3: Inject some useful and sensible default behaviors into setuptools
+dev-python/pbr 7.0.3-r1 7.0.3-r2: Inject some useful and sensible default behaviors into setuptools
 dev-python/pbs-installer 2026.3.25 2026.4.7: Installer for Python Build Standalone
 dev-python/pdfrw 0.4_p1-r1: PDF file reader/writer library
 dev-python/pdm 2.26.7 2.26.8: Python package and dependency manager supporting the latest PEP standards
@@ -10751,7 +10751,7 @@ dev-util/bbe 0.2.2-r1: Sed-like editor for binary files
 dev-util/bcc 0.31.0-r3 0.32.0-r1 0.34.0-r1 0.35.0-r1 0.35.0-r2 0.36.0 0.36.1 0.36.1-r1: Tools for BPF-based Linux IO analysis, networking, monitoring, and more
 dev-util/bcpp 20240917: Indents C/C++ source code
 dev-util/bdelta 0.3.1-r1: Binary Delta - Efficient difference algorithm and format
-dev-util/bear 3.1.6 4.1.1: A tool that generates a compilation database for clang tooling
+dev-util/bear 3.1.6 4.1.2: A tool that generates a compilation database for clang tooling
 dev-util/bindgen 0.72.0 0.72.1: Automatically generate Rust FFI bindings to C and C++ libraries
 dev-util/bingrep 0.11.0-r1: Binary file analysis tool
 dev-util/bloaty 1.1-r1 1.1-r2 9999: A size profiler for binaries
@@ -12983,7 +12983,7 @@ media-gfx/asymptote 3.06: A vector graphics language that provides a framework f
 media-gfx/autopano-sift-C 2.5.1-r2: SIFT algorithm for automatic panorama creation in C
 media-gfx/aview 1.3.0_rc1-r3: ASCII Image Viewer
 media-gfx/blender 4.2.16 4.4.3 4.5.5 4.5.9999 5.0.0 5.0.9999 9999: 3D Creation/Animation/Publishing System
-media-gfx/blender-bin 3.6.23 4.2.16 4.5.5 5.0.0 9999: 3D Creation/Animation/Publishing System
+media-gfx/blender-bin 3.6.23 4.2.16 4.2.20 4.5.5 4.5.9 5.0.0 5.1.1 9999: 3D Creation/Animation/Publishing System
 media-gfx/brscan4 0.4.11.1-r1: Brother scanner driver
 media-gfx/brscan5 1.5.1.0: SANE driver for Brother scanners (brscan5)
 media-gfx/cairosvg 2.9.0: CLI and library to export SVG to PDF, PostScript, and PNG
@@ -15203,7 +15203,7 @@ net-misc/dhcpcd-ui 0.7.9-r1: Desktop notification and configuration for dhcpcd
 net-misc/dhcping 1.2-r1: Utility to send DHCP requests to DHCP servers to see if responding
 net-misc/dibbler 1.0.1-r4: Portable DHCPv6 implementation (server, client and relay)
 net-misc/downloader-cli 0.3.4-r1: Simple downloader with an customizable progressbar
-net-misc/dropbear 2025.89: Small SSH 2 client/server designed for small memory environments
+net-misc/dropbear 2025.89 2026.90: Small SSH 2 client/server designed for small memory environments
 net-misc/dropbox 243.4.6956 244.4.6580 246.4.3513 248.4.3576-r1 250.4.3245: Dropbox daemon (pretends to be GUI-less)
 net-misc/dropbox-cli 2024.04.17-r1 2026.03.20: Cli interface for dropbox (python), part of nautilus-dropbox
 net-misc/efax 0.9a_p19_p1: A simple fax program for single-user systems
@@ -17235,7 +17235,7 @@ sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives
 sys-apps/pnputils 0.1-r1: Plug and Play BIOS utilities
 sys-apps/policycoreutils 3.8.1 3.9 9999: SELinux core utilities
 sys-apps/polychromatic 0.9.6 0.9.7 9999: RGB lighting management software for GNU/Linux powered by OpenRazer
-sys-apps/portage 3.0.77-r4 9999: The package management and distribution system for Gentoo
+sys-apps/portage 3.0.77-r4 3.0.78 9999: The package management and distribution system for Gentoo
 sys-apps/powerpc-utils 1.1.3.18-r4: PowerPC utilities and additional OldWorld apps
 sys-apps/ppc64-diag 2.7.9: Diagnostic tools for PowerLinux
 sys-apps/prctl 1.6-r1: Tool to query and modify process behavior
