@@ -3237,7 +3237,7 @@ app-text/docbook-xsl-ns-stylesheets 1.79.1: XSL Stylesheets for Docbook
 app-text/docbook-xsl-stylesheets 1.79.1-r4: XSL Stylesheets for Docbook
 app-text/docbook2X 0.8.8-r5: Tools to convert docbook to man and info
 app-text/docx2txt 1.4: Convert MS Office docx files to plain text
-app-text/dos2unix 7.5.2 7.5.3 7.5.4 7.5.5: Convert DOS or MAC text files to UNIX format or vice versa
+app-text/dos2unix 7.5.3 7.5.5: Convert DOS or MAC text files to UNIX format or vice versa
 app-text/doxygen 1.13.2 1.14.0 1.15.0 1.15.0-r2 1.16.1 9999: Documentation system for most programming languages
 app-text/dvipng 1.18: Translate DVI files into PNG or GIF graphics
 app-text/dvipsk 2023.03.11_p66203 2024.03.11_p70015: DVI-to-PostScript translator
@@ -5488,7 +5488,7 @@ dev-libs/kpublictransport 25.12.3 26.04.0: Library for accessing public transpor
 dev-libs/ktextaddons 1.8.0 2.0.1-r1: Various text handling addons
 dev-libs/kweathercore 25.12.3 26.04.0: Library for retrieval of weather information including forecasts and alerts
 dev-libs/lager 0.1.1-r1 0.1.2: Library to assist value-oriented design
-dev-libs/leancrypto 1.7.2 1.7.2-r3 9999: Lean cryptographic library usable for bare-metal environments
+dev-libs/leancrypto 1.7.2-r3 9999: Lean cryptographic library usable for bare-metal environments
 dev-libs/level-zero 1.28.2 1.28.3: oneAPI Level Zero headers, loader and validation layer
 dev-libs/leveldb 1.23-r6: A fast key-value storage library written at Google
 dev-libs/libIDL 0.8.14-r4: CORBA tree builder
@@ -16615,6 +16615,7 @@ sec-keys/openpgp-keys-imagemagick 20260329: OpenPGP key used to sign ImageMagick
 sec-keys/openpgp-keys-inetutils 20260120: OpenPGP keys used for net-misc/inetutils
 sec-keys/openpgp-keys-irssi 20260119: OpenPGP keys used for irssi releases
 sec-keys/openpgp-keys-isc 20240213: OpenPGP keys used to sign ISC releases
+sec-keys/openpgp-keys-janwassenberg 20260503: OpenPGP key used by Jan Wassenberg
 sec-keys/openpgp-keys-jariruusu 20240521: OpenPGP key used by Jari Ruusu
 sec-keys/openpgp-keys-jberkenbilt 1: OpenPGP key of Jay Berkenbilt (QPDF maintainer)
 sec-keys/openpgp-keys-jedisct1 20210416: OpenPGP keys used by Frank Denis (jedisct1)
@@ -16712,7 +16713,7 @@ sec-keys/openpgp-keys-python 20221025: OpenPGP keys used to sign CPython release
 sec-keys/openpgp-keys-qbittorrent 20161227: OpenPGP keys used by qBittorrent
 sec-keys/openpgp-keys-qutebrowser 20251024: OpenPGP keys used by Qutebrowser
 sec-keys/openpgp-keys-roddhjav 20260129: OpenPGP key used by Alexandre Pujol (roddhjav)
-sec-keys/openpgp-keys-roymarples 20260418: OpenPGP key used by Roy Marples
+sec-keys/openpgp-keys-roymarples 20260418-r1: OpenPGP key used by Roy Marples
 sec-keys/openpgp-keys-rust 20210504: Rust Language Tag and Release Signing Key
 sec-keys/openpgp-keys-sed 20220407: OpenPGP keys used by GNU sed
 sec-keys/openpgp-keys-sendmail 20250220 20251229: OpenPGP keys used by Sendmail
@@ -18194,13 +18195,13 @@ www-apps/nanoc-cli 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexi
 www-apps/nanoc-core 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexible static site generator written in Ruby
 www-apps/nanoc-deploying 1.0.2-r1 1.0.3: Provides deploying functionality for Nanoc
 www-apps/nanoc-spec 0.0.2-r1: Provides Nanoc::Spec, containing functionality for writing tests for Nanoc
-www-apps/nextcloud 32.0.5 32.0.6 32.0.7 32.0.8 33.0.1 33.0.2: Personal cloud that runs on your own server
+www-apps/nextcloud 32.0.5 32.0.8 32.0.9 33.0.2 33.0.3: Personal cloud that runs on your own server
 www-apps/nextcloud-notify_push 1.3.1: Push daemon for Nextcloud clients
 www-apps/nikola 8.3.1-r1 8.3.3 8.3.3-r1: A static website and blog generator
 www-apps/novnc 1.4.0 1.6.0 9999: noVNC is a VNC client implemented using HTML5 technologies
 www-apps/phpBB 3.3.15: An open-source PHP-based bulletin board package
 www-apps/phpsysinfo 3.4.4 3.4.5: A customizable PHP script that displays information about your system nicely
-www-apps/piwigo 16.3.0: a photo gallery software for the web
+www-apps/piwigo 16.3.0 16.4.0: a photo gallery software for the web
 www-apps/postfixadmin 3.3.16: Web Based Management tool for Postfix style virtual domains and users
 www-apps/prowlarr-bin 2.3.6.5351: An indexer manager/proxy to integrate with your various PVR apps
 www-apps/radarr-bin 6.2.0.10390: A fork of Sonarr to work with movies a la Couchpotato
@@ -18813,7 +18814,7 @@ x11-misc/xxkb 1.11.1-r1: eXtended XKB - assign different keymaps to different wi
 x11-misc/xystray 1.0-r1: A simple implementation of freedesktop.org notification area for X
 x11-misc/yabar 0.4.0_p20190316-r1: A modern and lightweight status bar for X window managers
 x11-misc/ydotool 1.0.4-r3 1.0.4-r4: Generic command-line automation tool (no X!)
-x11-misc/zim 0.76.2 0.76.3: A desktop wiki
+x11-misc/zim 0.76.3 0.76.3-r1: A desktop wiki
 x11-plugins/allin1 0.5.0-r3: All in one monitoring dockapp: RAM, CPU, Net, Power, df, seti
 x11-plugins/asapm 3.1-r1: APM monitor for AfterStep
 x11-plugins/asclock 2.0.12-r5: Clock applet for AfterStep
