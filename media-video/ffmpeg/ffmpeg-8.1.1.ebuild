@@ -5,7 +5,7 @@ EAPI=8
 
 inherit flag-o-matic multilib-minimal toolchain-funcs udev
 
-FFMPEG_SOC_PATCH=
+FFMPEG_SOC_PATCH=ffmpeg-soc-8.1.patch
 FFMPEG_SUBSLOT=60.62.62 # avutil.avcodec.avformat SONAME
 
 if [[ ${PV} == 9999 ]]; then
@@ -320,10 +320,7 @@ DEPEND="
 	ladspa? ( media-libs/ladspa-sdk )
 	nvenc? ( >=media-libs/nv-codec-headers-12.1.14.0 )
 	opencl? ( dev-util/opencl-headers )
-	vulkan? (
-		dev-util/spirv-headers
-		>=dev-util/vulkan-headers-1.4.317
-	)
+	vulkan? ( >=dev-util/vulkan-headers-1.4.317 )
 "
 BDEPEND="
 	app-alternatives/awk
