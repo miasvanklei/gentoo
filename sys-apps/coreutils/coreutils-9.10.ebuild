@@ -152,6 +152,9 @@ src_configure() {
 	}
 	EOF
 
+	# TODO: in future (>9.4?), we may want to wire up USE=systemd:
+	# still experimental at the moment, but:
+	# https://git.savannah.gnu.org/cgit/coreutils.git/commit/?id=85edb4afbd119fb69a0d53e1beb71f46c9525dd0
 	local myconf=(
 		--with-packager-version="${PVR} (p${PATCH_VER:-0})"
 		# kill/uptime - procps
