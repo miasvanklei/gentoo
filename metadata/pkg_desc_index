@@ -4096,7 +4096,7 @@ dev-debug/scap-driver 0.20.0: Kernel module for dev-debug/sysdig
 dev-debug/strace 6.19 7.0-r1 9999: Useful diagnostic, instructional, and debugging tool
 dev-debug/sysdig 0.40.1-r1: A system exploration and troubleshooting tool
 dev-debug/systemtap 5.3-r1 5.4 9999: Linux trace/probe tool
-dev-debug/valgrind 3.26.0 3.26.0_p1 3.27.0_rc2 3.27.0 9999: An open-source memory debugger for GNU/Linux
+dev-debug/valgrind 3.26.0 3.26.0_p1 3.27.0 3.27.0_p1 9999: An open-source memory debugger for GNU/Linux
 dev-dotnet/avalonia-ilspy 7.2_rc-r2: Avalonia-based .NET Decompiler, port of ILSpy
 dev-dotnet/cake 5.1.0 6.0.0 6.1.0: Cake (C# Make) is a cross platform build automation system with a C# DSL
 dev-dotnet/coco 2014.12.25 2014.12.25-r1: The compiler generator Coco/R for C#
@@ -14263,7 +14263,7 @@ media-tv/gentoo-vdr-scripts 3.0_rc2-r1: Scripts necessary for use of VDR as a se
 media-tv/gtk-v4l 0.4-r1: A GTK+ application for controlling V4L preferences of a web cam device
 media-tv/ivtv-utils 1.4.1-r1: IVTV utilities for Hauppauge PVR PCI cards
 media-tv/ivtvplayer 0.1.3-r3: Simple IVTV command line TV and radio player with support of LIRC
-media-tv/kodi 21.2-r5 21.3 21.9999 22.0_alpha2 9999: A free and open source media-player and entertainment hub
+media-tv/kodi 21.3 21.9999 22.0_alpha2 22.0_alpha3 9999: A free and open source media-player and entertainment hub
 media-tv/linuxtv-dvb-apps 1.1.1.20140321-r2: Small utils for DVB to scan, zap, view signal strength
 media-tv/mythtv 35.0_p20251230: Open Source DVR and media center hub
 media-tv/mythtv-status 1.1.0: Displays the current status of MythTV at the command prompt
@@ -16303,7 +16303,7 @@ sci-mathematics/coq-serapi 0.20.0: Serialization library and protocol for intera
 sci-mathematics/coq-stdlib 9.0.0-r1 9.1.0: Stdlib for the Coq/Rocq Prover, used to be part of Coq
 sci-mathematics/cryptominisat 5.11.21-r2: Advanced SAT solver with C++ and command-line interfaces
 sci-mathematics/cubicle 1.2.0-r2: Model checker for verifying properties of array-based systems
-sci-mathematics/cudd 3.0.0-r1: Colorado University binary Decision Diagram library
+sci-mathematics/cudd 3.0.0-r2: Colorado University binary Decision Diagram library
 sci-mathematics/cvc4 1.8-r7: Automatic theorem prover for satisfiability modulo theories (SMT) problems
 sci-mathematics/dataplot 20131220: Program for scientific visualization and statistical analyis
 sci-mathematics/dsfmt 2.2.4: Double precision SIMD-oriented Fast Mersenne Twister library
@@ -17573,7 +17573,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.3.9999 16.1.0 16.1.1_p20260502 16.2.9999 17.0.0_p20260426 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.3.9999 16.1.0 16.1.1_p20260502 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -17764,7 +17764,7 @@ sys-kernel/genkernel 4.3.10 4.3.11 4.3.12 4.3.12-r1 4.3.14 4.3.15 4.3.16 4.3.16-
 sys-kernel/gentoo-kernel 5.10.253_p1 5.10.254 5.15.203_p1 5.15.204 6.1.169_p1 6.1.170 6.6.136_p1 6.6.137 6.12.84_p1 6.12.85 6.18.25 6.18.26 7.0.2 7.0.3: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.253_p1 5.10.254 5.15.203_p1 5.15.204 6.1.169_p1 6.1.170 6.6.136_p1 6.6.137 6.12.84_p1 6.12.85 6.18.25 6.18.26 7.0.2 7.0.3: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.250-r1 5.10.252 5.10.253 5.10.254 5.15.200 5.15.201 5.15.202 5.15.203 5.15.204 6.1.163 6.1.167 6.1.168 6.1.169 6.1.170 6.6.126 6.6.135 6.6.136 6.6.137 6.12.77 6.12.81 6.12.82 6.12.83 6.12.84 6.12.85 6.18.18 6.18.21 6.18.22 6.18.23 6.18.24 6.18.25 6.18.26 6.19.11 6.19.12 6.19.13 6.19.14 7.0.0 7.0.1 7.0.2 7.0.3: Full sources including the Gentoo patchset for the 7.0 kernel tree
-sys-kernel/git-sources 7.1_rc1: The very latest -git version of the Linux kernel
+sys-kernel/git-sources 7.1_rc1 7.1_rc2: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 9999: GNU Hurd is the GNU project's replacement for UNIX
 sys-kernel/installkernel 63 65 66 67 68 9999: Gentoo fork of installkernel script from debianutils
