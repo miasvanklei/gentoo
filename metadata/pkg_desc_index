@@ -1400,7 +1400,7 @@ app-containers/lxd 5.21.1-r1 5.21.4 6.3 6.5: Modern, secure and powerful system 
 app-containers/nerdctl 2.0.2 2.0.3 2.2.1: Docker-compatible CLI for containerd, with support for Compose
 app-containers/netavark 1.14.1 1.15.2 1.16.1 1.17.0 1.17.1 9999: A container network stack
 app-containers/nvidia-container-toolkit 1.18.0 1.18.1 1.19.0 9999: NVIDIA container runtime toolkit
-app-containers/podman 5.7.0 5.7.1 9999: A tool for managing OCI containers and pods with Docker-compatible CLI
+app-containers/podman 5.7.1 9999: A tool for managing OCI containers and pods with Docker-compatible CLI
 app-containers/podman-compose 1.5.0: A script to run docker-compose.yml using Podman
 app-containers/podman-tui 1.5.0 1.6.1 1.9.0 9999: Terminal UI frontend for Podman
 app-containers/reg 0.16.1-r1: Docker registry v2 command line client
@@ -2791,7 +2791,7 @@ app-misc/glcdprocdriver 0.1.2-r1: A glue between the graphlcd-base library from 
 app-misc/gnote 48.2 49.1 49.4: Desktop note-taking application
 app-misc/gnuit 4.9.5-r2: GNU Interactive Tools - increase speed and efficiency of most daily tasks
 app-misc/go-jira 1.0.28-r1: A simple JIRA commandline client in Go
-app-misc/gojq 0.12.16 0.12.17: Pure Go implementation of jq with yaml support
+app-misc/gojq 0.12.17: Pure Go implementation of jq with yaml support
 app-misc/golly 4.3-r2 5.0: Simulator for Conway's Game of Life and other cellular automata
 app-misc/grabcartoons 2.8.5 9999: Comic-summarizing utility
 app-misc/gramps 5.2.3 6.0.1 6.0.4: Community genealogy program aiming to be both intuitive and feature-complete
@@ -8526,7 +8526,7 @@ dev-python/gentoo-common 1: Common files shared by Python implementations in Gen
 dev-python/genty 1.3.2-r3: Allows you to run a test with multiple data sets
 dev-python/geographiclib 2.1: Python implementation of the geodesic routines
 dev-python/gfloat 0.5.2-r1: Generic floating-point types in Python
-dev-python/gherkin-official 39.0.0: Gherkin parser/compiler for Python
+dev-python/gherkin-official 39.0.0 39.1.0: Gherkin parser/compiler for Python
 dev-python/git-review 2.4.0 2.5.0 9999: Tool to submit code to Gerrit
 dev-python/gitdb 4.0.12: GitDB is a pure-Python git object database
 dev-python/github3-py 4.0.1: A wrapper for the GitHub API written in python
@@ -9837,7 +9837,7 @@ dev-qt/qtserialport 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Serial port ab
 dev-qt/qtshadertools 6.10.1 6.10.2 6.10.3 6.11.0-r1 6.11.9999 6.9999: Qt APIs and Tools for Graphics Pipelines
 dev-qt/qtspeech 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Text-to-speech library for the Qt6 framework
 dev-qt/qtsql 5.15.18: SQL abstraction library for the Qt5 framework
-dev-qt/qtsvg 5.15.18 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: SVG rendering library for the Qt6 framework
+dev-qt/qtsvg 5.15.18 6.10.1 6.10.2 6.10.3-r1 6.11.0-r1 6.11.9999 6.9999: SVG rendering library for the Qt6 framework
 dev-qt/qttest 5.15.18: Unit testing library for the Qt5 framework
 dev-qt/qttools 6.10.1-r1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Qt Tools Collection
 dev-qt/qttranslations 5.15.18 6.10.1 6.10.2 6.10.3 6.11.0 6.11.9999 6.9999: Translation files for the Qt6 framework
@@ -15650,7 +15650,7 @@ net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client 
 net-vpn/strongswan 6.0.3 6.0.4: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6 1.92.1 1.92.4 1.96.5 1.98.0: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
-net-vpn/tor 0.4.9.6 9999: Anonymizing overlay network for TCP
+net-vpn/tor 0.4.9.6 0.4.9.7 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 0.10.15 0.10.16: Launch applications via VPN tunnels using temporary network namespaces
 net-vpn/vpnc 0.5.3_p20240129 9999: IPsec (Cisco/Juniper) VPN concentrator client
 net-vpn/vpnc-scripts 20220510 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
@@ -16424,7 +16424,7 @@ sci-ml/accelerate 1.13.0-r1: Run your *raw* PyTorch training script on any kind 
 sci-ml/caffe2 2.10.0-r6 2.11.0-r3: A deep learning framework
 sci-ml/clearml 1.18.0: Auto-Magical CI/CD to streamline your AI workload
 sci-ml/cudnn-frontend 1.10.0 1.11.0 1.12.1 1.15.0 1.16.1: A c++ wrapper for the cudnn backend API
-sci-ml/datasets 3.6.0: Access and share datasets for Audio, Computer Vision, and NLP tasks
+sci-ml/datasets 3.6.0 4.0.0: Access and share datasets for Audio, Computer Vision, and NLP tasks
 sci-ml/evaluate 0.4.6: makes evaluating, comparing models and reporting their performance easier
 sci-ml/fastai 2.7.19: The fastai deep learning library
 sci-ml/fastcore 1.7.29-r1: Python supercharged for the fastai library
@@ -18313,7 +18313,7 @@ www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
 www-servers/adsf 1.5.2-r1 1.5.3: A Dead Simple Fileserver is a static file server that can launch in a directory
 www-servers/apache 2.4.66 2.4.67: The Apache Web Server
-www-servers/caddy 2.9.1 2.10.2 2.10.2-r1 9999: Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
+www-servers/caddy 2.10.2-r1 9999: Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 www-servers/civetweb 1.16: Embedded C/C++ web server
 www-servers/fnord 1.11-r3: Yet another small httpd
 www-servers/gatling 0.16-r6: High performance web server
