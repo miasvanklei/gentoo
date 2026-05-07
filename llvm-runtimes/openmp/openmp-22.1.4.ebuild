@@ -12,7 +12,7 @@ HOMEPAGE="https://openmp.llvm.org"
 LICENSE="Apache-2.0-with-LLVM-exceptions || ( UoI-NCSA MIT )"
 SLOT="0/${LLVM_SOABI}"
 KEYWORDS="~amd64 ~arm ~arm64 ~loong ~mips ~ppc64 ~riscv ~x86 ~x64-macos"
-IUSE="debug fortran gdb-plugin hwloc ompt test"
+IUSE="debug gdb-plugin hwloc ompt test"
 REQUIRED_USE="
 	gdb-plugin? ( ${PYTHON_REQUIRED_USE} )
 "
@@ -31,7 +31,6 @@ DEPEND="
 "
 BDEPEND="
 	dev-lang/perl
-	fortran? ( llvm-core/flang )
 	test? (
 		${PYTHON_DEPS}
 		$(python_gen_cond_dep '
@@ -71,12 +70,6 @@ multilib_src_configure() {
 		-DLIBOMP_INSTALL_ALIASES=OFF
 		# disable unnecessary hack copying stuff back to srcdir
 		-DLIBOMP_COPY_EXPORTS=OFF
-	)
-
-	use fortran && mycmakeargs+=(
-		-DLIBOMP_FORTRAN_MODULES_COMPILER="${CHOST}-flang"
-		-DLIBOMP_MODULES_INSTALL_PATH="${EPREFIX}/usr/lib/llvm/${LLVM_MAJOR}/include/flang"
-		-DLIBOMP_FORTRAN_MODULES=ON
 	)
 
 	use test && mycmakeargs+=(
