@@ -12,7 +12,7 @@ MY_PV="${MY_PV/_beta/.beta}"
 # Usually the tarballs are moved a lot so this should make everyone happy.
 DEV_URI="
 	https://dev-builds.libreoffice.org/pre-releases/src
-	https://download.documentfoundation.org/libreoffice/src/${MY_PV:0:5}/
+	https://download.documentfoundation.org/libreoffice/src/${MY_PV:0:6}
 	https://downloadarchive.documentfoundation.org/libreoffice/old/${MY_PV}/src
 "
 ADDONS_URI="https://dev-www.libreoffice.org/src/"
