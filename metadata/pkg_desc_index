@@ -2996,7 +2996,7 @@ app-office/abiword 3.0.7-r2 3.0.7-r3: Fully featured yet light and fast cross pl
 app-office/abiword-docs 3.0.2-r1: Fully featured yet light and fast cross platform word processor documentation
 app-office/auto-multiple-choice 1.6.0: Create and manage multiple choice questionnaries, including automated marking
 app-office/calcurse 4.8.1-r1 4.8.2: A text-based calendar and scheduling application
-app-office/calligra 25.12.3: KDE Office Suite
+app-office/calligra 25.12.3 26.04.1: KDE Office Suite
 app-office/calligraplan 4.0.1: Project management application
 app-office/denaro 2024.2.0-r1: A personal finance manager
 app-office/dia 0.97.3-r4 0.98_pre20250913: Diagram/flowchart creation program
@@ -4080,7 +4080,7 @@ dev-debug/d-feet 0.3.16-r1: D-Feet is a powerful D-Bus debugger
 dev-debug/d-spy 48.0 49.2: D-Spy is a simple tool to explore D-Bus connections
 dev-debug/ddd 3.3.12-r5 3.4.1: Graphical front-end for command-line debuggers
 dev-debug/drgn 0.0.33 0.1.0: Programmable debugger
-dev-debug/dtrace 2.0.6 9999: Dynamic BPF-based system-wide tracing tool
+dev-debug/dtrace 2.0.6 2.0.7 9999: Dynamic BPF-based system-wide tracing tool
 dev-debug/duma 2.5.15-r3: DUMA (Detect Unintended Memory Access) is a memory debugging library
 dev-debug/gdb 16.3 17.1 17.2 9999: GNU debugger
 dev-debug/gef 2023.08 2025.01 2026.01 9999: GDB Enhanced Features for exploit devs & reversers
