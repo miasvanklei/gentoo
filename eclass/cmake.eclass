@@ -587,6 +587,7 @@ cmake_src_configure() {
 		set(CMAKE_C_COMPILER "${myCC/ /;}")
 		set(CMAKE_CXX_COMPILER "${myCXX/ /;}")
 		set(CMAKE_Fortran_COMPILER "${myFC/ /;}")
+		set(CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS "clang-scan-deps")
 		set(CMAKE_AR $(type -P $(tc-getAR)) CACHE FILEPATH "Archive manager" FORCE)
 		set(CMAKE_RANLIB $(type -P $(tc-getRANLIB)) CACHE FILEPATH "Archive index generator" FORCE)
 		set(CMAKE_SYSTEM_PROCESSOR "${CHOST%%-*}")
