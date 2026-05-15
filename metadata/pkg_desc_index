@@ -927,7 +927,7 @@ app-admin/apg 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.792.0 1.2.804.0 1.2.814.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.44.78 1.44.81 1.44.86 1.45.2 1.45.6 1.45.7: Universal Command Line Environment for AWS
+app-admin/awscli 1.44.78 1.44.81 1.44.86 1.45.2 1.45.6 1.45.7 1.45.8: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.34.24 2.34.40: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2026.1.0 2026.2.1: Bitwarden password manager desktop client
@@ -2619,7 +2619,7 @@ app-i18n/zinnia-tomoe 0.6.0_p20080911: Handwriting model files trained with Tomo
 app-laptop/dispad 0.3.1-r1: Daemon to disable trackpads while typing
 app-laptop/framework-laptop-kmod 0_pre20240915: Kernel module to expose more Framework Laptop stuff
 app-laptop/framework-tool-tui 0.8.0 0.8.3: TUI for controlling and monitoring Framework Computers hardware built in Rust
-app-laptop/framework_tool 0.5.0 0.6.1 0.6.2: Tool to control Framework Computer systems
+app-laptop/framework_tool 0.5.0 0.6.1 0.6.2 0.6.3: Tool to control Framework Computer systems
 app-laptop/hdaps-gl 0.0.7: OpenGL visualization for HDAPS data
 app-laptop/hdapsd 20141203-r3: IBM ThinkPad Hard Drive Active Protection System (HDAPS) daemon
 app-laptop/i8kutils 1.43: Dell Inspiron and Latitude utilities
@@ -3092,7 +3092,7 @@ app-portage/iwdevtools 0.13.1 9999: Small tools to aid with Gentoo development, 
 app-portage/kuroneko 0.1.5: Vulnerability checker using data scraped from Gentoo Bugzilla
 app-portage/kuroo 1.2.4 9999: Graphical Portage frontend based on KDE Frameworks
 app-portage/metagen 0.7.4 0.7.4-r1 9999: metadata.xml generator for ebuilds
-app-portage/mgorny-dev-scripts 67 68 69 70 71: Handy scripts for ebuild development and more
+app-portage/mgorny-dev-scripts 67 68 69 70 71 72: Handy scripts for ebuild development and more
 app-portage/mirrorselect 2.5.1 2.5.4-r1 2.6.1 2.6.2 2.6.3 9999: Tool to help select distfiles mirrors for Gentoo
 app-portage/nattka 0.4.2-r1: A New Arch Tester Toolkit -- open-source stable-bot replacement
 app-portage/no-distcc-env 9999: package.env files to disable distcc on a per-package basis
@@ -8239,8 +8239,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.42.88 1.42.91 1.42.96 1.43.2 1.43.6 1.43.7: The AWS SDK for Python
-dev-python/botocore 1.42.88 1.42.91 1.42.96 1.43.2 1.43.6 1.43.7: Low-level, data-driven core of boto 3
+dev-python/boto3 1.42.88 1.42.91 1.42.96 1.43.2 1.43.6 1.43.7 1.43.8: The AWS SDK for Python
+dev-python/botocore 1.42.88 1.42.91 1.42.96 1.43.2 1.43.6 1.43.7 1.43.8: Low-level, data-driven core of boto 3
 dev-python/bottle 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8261,7 +8261,7 @@ dev-python/canonicaljson 2.0.0: Canonical JSON
 dev-python/capturer 3.0-r1: Easily capture stdout/stderr of the current process and subprocesses
 dev-python/casttube 0.2.1-r1: casttube provides a way to interact with the Youtube Chromecast api
 dev-python/cattrs 26.1.0: Composable complex class support for attrs and dataclasses
-dev-python/cbor2 5.9.0 6.0.1 6.1.0: CBOR (de)serializer with extensive tag support
+dev-python/cbor2 5.9.0 6.0.1 6.1.0 6.1.1: CBOR (de)serializer with extensive tag support
 dev-python/cerberus 1.3.8: A lightweight and extensible data-validation library for Python
 dev-python/certifi 3024.7.22: A certifi hack to use system trust store on Linux/FreeBSD
 dev-python/cffi 2.0.0: Foreign Function Interface for Python calling C code
@@ -8355,7 +8355,7 @@ dev-python/daemonize 2.5.0-r1: Library for writing system daemons in Python
 dev-python/dasbus 1.7: DBus library in Python 3
 dev-python/datastructclass 0.1.1: A dataclass with struct-like semantics
 dev-python/dbfread 2.0.7-r1: Read DBF Files with Python
-dev-python/dbus-fast 4.0.4: A faster version of dbus-next
+dev-python/dbus-fast 4.0.4 4.1.0: A faster version of dbus-next
 dev-python/dbus-next 0.2.3-r1: The next great DBus library for Python with asyncio support
 dev-python/dbus-python 1.4.0: Python bindings for the D-Bus messagebus
 dev-python/dbutils 3.1.2: Database connections for multi-threaded environments
@@ -8458,7 +8458,7 @@ dev-python/expects 0.9.0-r1: Expressive and extensible TDD/BDD assertion library
 dev-python/expecttest 0.3.0: golden tests
 dev-python/extras 1.0.0-r2: Useful extra bits for Python that should be in the standard library
 dev-python/eyed3 0.9.9: Module for manipulating ID3 (v1 + v2) tags in Python
-dev-python/faker 40.13.0 40.14.1: A Python package that generates fake data for you
+dev-python/faker 40.13.0 40.14.1 40.18.0: A Python package that generates fake data for you
 dev-python/fakeredis 2.34.1 2.35.0 2.35.1: Fake implementation of redis API for testing purposes
 dev-python/fastbencode 0.3.10: Implementation of bencode with Rust implementation
 dev-python/fasteners 0.20: Python package that provides useful locks
@@ -8503,7 +8503,7 @@ dev-python/flit 3.12.0: Simplified packaging of Python modules
 dev-python/flit-core 3.12.0: Simplified packaging of Python modules (core module)
 dev-python/flit-scm 1.7.0: A PEP 518 build backend combining flit with setuptools_scm
 dev-python/flufl-lock 9.0.0 9.1.0: NFS-safe file locking with timeouts for POSIX systems
-dev-python/fonttools 4.62.1: Library for manipulating TrueType, OpenType, AFM and Type1 fonts
+dev-python/fonttools 4.62.1 4.63.0: Library for manipulating TrueType, OpenType, AFM and Type1 fonts
 dev-python/forbiddenfruit 0.1.4: Patch built-in Python objects
 dev-python/fpylll 0.6.4-r1: Python bindings for sci-libs/fplll
 dev-python/fqdn 1.5.1-r2: RFC-compliant FQDN validation and manipulation for Python
@@ -8774,7 +8774,7 @@ dev-python/lz4 4.4.5: LZ4 Bindings for Python
 dev-python/lzallright 0.2.6: Python bindings for lzokay library
 dev-python/m2crypto 0.47.0: A Python crypto and SSL toolkit
 dev-python/magic-wormhole 0.23.0 0.24.0: Get Things From One Computer To Another, Safely
-dev-python/magic-wormhole-mailbox-server 0.6.0: Mailbox server for magic-wormhole
+dev-python/magic-wormhole-mailbox-server 0.6.0 0.7.0: Mailbox server for magic-wormhole
 dev-python/magic-wormhole-transit-relay 0.5.0: Transit relay server for magic-wormhole
 dev-python/makefun 1.16.0: Small library to dynamically create Python functions
 dev-python/mako 1.3.10 1.3.11 1.3.12: A Python templating language
@@ -8972,7 +8972,7 @@ dev-python/picobox 4.0.0: Dependency injection framework designed with Python in
 dev-python/pid 3.0.4-r1: Pidfile featuring stale detection and file-locking
 dev-python/piexif 1.1.3-r4: Exif manipulation with pure Python
 dev-python/pika 1.3.2: Pure-Python implementation of the AMQP
-dev-python/pikepdf 10.5.1: Python library to work with pdf files based on qpdf
+dev-python/pikepdf 10.5.1 10.6.0: Python library to work with pdf files based on qpdf
 dev-python/pillow 12.2.0 12.2.0-r1: Python Imaging Library (fork)
 dev-python/pip 26.0.1 26.1 26.1.1: The PyPA recommended tool for installing Python packages
 dev-python/pivy 0.6.10: Coin3D bindings for Python
@@ -9273,7 +9273,7 @@ dev-python/python-dateutil 2.9.0_p0: Extensions to the standard Python datetime 
 dev-python/python-dbusmock 0.38.1: Easily create mock objects on D-Bus for software testing
 dev-python/python-debian 1.1.0: Python modules to work with Debian-related data formats
 dev-python/python-discovery 1.2.2 1.3.0 1.3.1: Python interpreter discovery
-dev-python/python-distutils-extra 2.47: Gettext support, themed icons and scrollkeeper-based documentation in distutils
+dev-python/python-distutils-extra 2.47 3.3: Gettext support, themed icons and scrollkeeper-based documentation in distutils
 dev-python/python-dotenv 1.2.2: Manage .env files
 dev-python/python-editor 1.0.4-r2: Programmatically open an editor, capture the result
 dev-python/python-engineio 4.13.1: Python implementation of the Engine.IO realtime server
@@ -9285,7 +9285,7 @@ dev-python/python-ironicclient 6.0.0: Python bindings for the Ironic API
 dev-python/python-jose 3.5.0: A JavaScript Object Signing and Encryption (JOSE) implementation in Python
 dev-python/python-json-logger 4.1.0: Standard python logging to output log data as json objects
 dev-python/python-keystoneclient 5.8.0: Client Library for OpenStack Identity
-dev-python/python-ldap 3.4.5: Various LDAP-related Python modules
+dev-python/python-ldap 3.4.5 3.4.6: Various LDAP-related Python modules
 dev-python/python-linux-procfs 0.7.3 0.7.4: Python classes to extract information from the Linux kernel /proc files
 dev-python/python-lsp-black 2.0.0-r2: Black plugin for the Python LSP Server
 dev-python/python-lsp-jsonrpc 1.1.2: JSON RPC 2.0 server library
@@ -9389,7 +9389,7 @@ dev-python/rencode 1.0.8-r1: Serialization similar to bencode from the BitTorren
 dev-python/reno 4.1.0: Release notes manager, storing release notes in a git repo and building docs
 dev-python/reportlab 4.4.10 4.5.0 4.5.1: Tools for generating printable PDF documents from any data source
 dev-python/repoze-lru 0.7-r3: A tiny LRU cache implementation and decorator
-dev-python/requests 2.33.1 2.34.0 2.34.1: HTTP library for human beings
+dev-python/requests 2.33.1 2.34.0 2.34.1 2.34.2: HTTP library for human beings
 dev-python/requests-cache 1.3.1 1.3.2: Persistent cache for requests library
 dev-python/requests-credssp 2.0.0: HTTPS CredSSP authentication with the requests library
 dev-python/requests-download 0.1.2-r2: A convenient function to download to a file using requests
@@ -9623,7 +9623,7 @@ dev-python/texttable 1.7.0: Module to create simple ASCII tables
 dev-python/textx 4.3.0: Meta-language for DSL implementation inspired by Xtext
 dev-python/threadpoolctl 3.6.0: Limit the number of threads used in native libs that have their own threadpool
 dev-python/three-merge 0.1.1-r1: Simple Python library to perform a 3-way merge between strings
-dev-python/thrift 0.22.0: Python implementation of Thrift
+dev-python/thrift 0.22.0 0.23.0: Python implementation of Thrift
 dev-python/thriftpy2 0.6.0_beta1 0.6.0: Pure python approach of Apache Thrift
 dev-python/tibs 0.5.7 0.6.0 0.7.0: A sleek Python library for your binary data
 dev-python/tifffile 2026.4.11 2026.5.2: Read and write TIFF files
@@ -9647,7 +9647,7 @@ dev-python/tqdm 4.67.3: Add a progress meter to your loops in a second
 dev-python/traitlets 5.14.3 5.15.0: A configuration system for Python applications
 dev-python/trakit 0.2.5: Guess additional information from titles in media tracks
 dev-python/transitions 0.9.3: A lightweight, object-oriented state machine implementation in Python
-dev-python/translate-toolkit 3.19.4 3.19.5 3.19.6 3.19.7 3.19.8 3.19.9: Toolkit to convert between many translation formats
+dev-python/translate-toolkit 3.19.4 3.19.5 3.19.6 3.19.7 3.19.8 3.19.9 3.19.10: Toolkit to convert between many translation formats
 dev-python/tree-sitter 0.24.0 0.25.1-r1 0.25.2 0.25.2-r1: Python bindings to the Tree-sitter parsing library
 dev-python/treq 25.5.0: A requests-like API built on top of twisted.web's Agent
 dev-python/trimesh 4.11.5 4.12.1 4.12.2: Python library for loading and using triangular meshes
@@ -9666,7 +9666,7 @@ dev-python/txamqp 0.8.2-r1: Python library for communicating with AMQP peers usi
 dev-python/txredisapi 1.4.11-r1 1.4.12: Non-blocking redis client for python
 dev-python/txrequests 0.9.6-r1: Asynchronous Python HTTP for Humans
 dev-python/txtorcon 23.11.0 24.8.0-r1: Twisted-based Tor controller client, with state-tracking abstractions
-dev-python/typeguard 4.5.1: Run-time type checker for Python
+dev-python/typeguard 4.5.1 4.5.2: Run-time type checker for Python
 dev-python/typer 0.24.1 0.24.2 0.25.0 0.25.1: Build great CLIs. Easy to code. Based on Python type hints
 dev-python/types-docutils 0.22.3.20260223 0.22.3.20260316 0.22.3.20260322 0.22.3.20260408 0.22.3.20260508: Typing stubs for docutils
 dev-python/types-gdb 16.3.0.20260408 16.3.0.20260508: Typing stubs for gdb
@@ -9706,7 +9706,7 @@ dev-python/utidylib 1.0.0: TidyLib Python wrapper
 dev-python/uuid6 2025.0.1: New time-based UUID formats which are suited for use as a database key
 dev-python/uv 0.11.6 0.11.7 0.11.8 0.11.10 0.11.11 0.11.12 0.11.13 0.11.14 9999: A Python package installer and resolver, written in Rust
 dev-python/uv-build 0.11.6 0.11.7 0.11.8 0.11.10 0.11.11 0.11.12 0.11.13 0.11.14: PEP517 uv build backend
-dev-python/uvicorn 0.44.0 0.45.0 0.46.0: Lightning-fast ASGI server implementation
+dev-python/uvicorn 0.44.0 0.45.0 0.46.0 0.47.0: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.22.1: Ultra-fast implementation of asyncio event loop on top of libuv
 dev-python/validators 0.35.0: Python Data Validation for Humans
 dev-python/varlink 31.0.0: Python implementation of the Varlink protocol
@@ -11021,7 +11021,7 @@ dev-util/plan9port 0_pre20240617 0_pre20260226: Port of many Plan 9 programs and
 dev-util/ply 2.3.0: Dynamic instrumentation of the Linux kernel with BPF and kprobes
 dev-util/poke 3.3 4.0 4.1 4.1-r1 4.2 4.3 9999: Extensible editor for structured binary data
 dev-util/poke-elf 1.0 9999: A GNU poke pickle for manipulating ELF files
-dev-util/prek 0.3.6 0.3.8 0.3.9: Better `pre-commit`, re-engineered in Rust
+dev-util/prek 0.3.6 0.3.8 0.3.9 0.4.0: Better `pre-commit`, re-engineered in Rust
 dev-util/premake 4.3-r2 5.0.0_beta2 5.0.0_beta7: A makefile generation tool
 dev-util/pretrace 0.4-r2: start dynamically linked applications under debugging environment
 dev-util/promu 0.15.0 0.17.0 9999: Prometheus Utility Tool
@@ -11055,7 +11055,7 @@ dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: Callback/Activity Library for 
 dev-util/ropper 1.13.10 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rpmdevtools 9.6: Collection of rpm packaging related utilities
 dev-util/rt-tests 2.9 2.10: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.14.9 0.14.14 0.15.8 0.15.9 0.15.10 0.15.11 0.15.12: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.14.9 0.14.14 0.15.8 0.15.9 0.15.10 0.15.11 0.15.12 0.15.13: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 1.29.0 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -15288,7 +15288,7 @@ net-misc/linux-eoip 0.5: Linux support for proprietary MIkrotik EoIP protocol
 net-misc/linuxptp 4.2 4.4-r1: The Linux Precision Time Protocol (PTP) implementation
 net-misc/liveice 2000530-r3: Live Source Client For IceCast
 net-misc/lksctp-tools 1.0.19-r1 1.0.21: Tools for Linux Kernel Stream Control Transmission Protocol implementation
-net-misc/lldpd 1.0.18 1.0.19 1.0.20 1.0.21: Implementation of IEEE 802.1ab (LLDP)
+net-misc/lldpd 1.0.18 1.0.19 1.0.20 1.0.21 1.0.22: Implementation of IEEE 802.1ab (LLDP)
 net-misc/mcproxy 1.1.1-r2: Multicast proxy for IGMP/MLD
 net-misc/megatools 1.11.4 1.11.5: Command line tools and C library for accessing Mega cloud storage
 net-misc/memcached 1.6.31 1.6.38 1.6.39: High-performance, distributed memory object caching system
@@ -18232,7 +18232,7 @@ www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.4: Wordpress PHP and MySQL based content management system (CMS)
 www-apps/xpra-html5 10.1 20: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
-www-client/chromium 146.0.7680.177 147.0.7727.137 148.0.7778.96 148.0.7778.167 149.0.7815.2: Open-source version of Google Chrome web browser
+www-client/chromium 146.0.7680.177 148.0.7778.167 149.0.7815.2 149.0.7827.14: Open-source version of Google Chrome web browser
 www-client/chromium-common 2: Common configuration files for Chromium slots
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
@@ -18244,20 +18244,20 @@ www-client/firefox-bin 140.10.1-r1 140.10.2 150.0.1 150.0.2 150.0.3: Firefox Web
 www-client/firefox-l10n 150.0.1 150.0.2 150.0.3: Firefox Web Browser's translation files
 www-client/google-chrome 146.0.7680.177 147.0.7727.137 148.0.7778.167: The web browser from Google
 www-client/google-chrome-beta 148.0.7778.96 149.0.7827.3 149.0.7827.14: The web browser from Google
-www-client/google-chrome-unstable 150.0.7828.2: The web browser from Google
+www-client/google-chrome-unstable 150.0.7828.2 150.0.7838.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
 www-client/microsoft-edge 148.0.3967.54: The web browser from Microsoft
-www-client/microsoft-edge-beta 148.0.3967.42 148.0.3967.52 148.0.3967.54: The web browser from Microsoft
-www-client/microsoft-edge-dev 149.0.3993.0 149.0.4009.0 149.0.4022.4: The web browser from Microsoft
+www-client/microsoft-edge-beta 148.0.3967.52 148.0.3967.54 149.0.4022.8: The web browser from Microsoft
+www-client/microsoft-edge-dev 149.0.4009.0 149.0.4022.4 149.0.4022.8: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
-www-client/opera 131.0.5877.5: A fast and secure web browser
+www-client/opera 131.0.5877.55: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
-www-client/opera-developer 131.0.5877.0 132.0.5883.0 132.0.5889.0: A fast and secure web browser
+www-client/opera-developer 132.0.5883.0 132.0.5889.0 132.0.5898.0: A fast and secure web browser
 www-client/opera-gx 129.0.5823.49 129.0.5823.64: Opera, but for 'gamers'
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.6.3 3.7.0 9999: Keyboard-driven, vim-like browser based on Python and Qt
@@ -18267,7 +18267,7 @@ www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.5-r1: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
 www-client/vivaldi 7.9.3970.60 7.9.3970.64: A browser for our friends
-www-client/vivaldi-snapshot 7.10.4029.3 7.10.4030.3: A browser for our friends
+www-client/vivaldi-snapshot 7.10.4031.3 8.0.4033.7: A browser for our friends
 www-client/w3m 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
@@ -18313,7 +18313,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.4: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 146.0.7680.177 147.0.7727.137 148.0.7778.96_beta 148.0.7778.167 149.0.7827.3_beta 149.0.7827.14_beta 150.0.7828.2_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 146.0.7680.177 147.0.7727.137 148.0.7778.96_beta 148.0.7778.167 149.0.7827.3_beta 149.0.7827.14_beta 150.0.7828.2_alpha 150.0.7838.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
@@ -18430,7 +18430,7 @@ x11-base/xorg-proto 2025.1 9999: X.Org combined protocol headers
 x11-base/xorg-server 21.1.22 9999: X.Org X servers
 x11-base/xorg-sgml-doctools 1.12.1: SGML entities and XML/CSS stylesheets used in X.Org docs
 x11-base/xwayland 24.1.10 24.1.11 9999: Standalone X server running under Wayland
-x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 535.309.01 570.211.01 580.126.18 580.142 580.159.03-r1 590.48.01-r1 595.44.07 595.58.03 595.71.05: NVIDIA Accelerated Graphics Driver
+x11-drivers/nvidia-drivers 390.157 470.256.02-r2 535.288.01 535.309.01 570.211.01 580.126.18 580.159.03-r1 590.48.01-r1 595.44.08 595.58.03 595.71.05: NVIDIA Accelerated Graphics Driver
 x11-drivers/xf86-input-elographics 1.4.4: Elographics input driver
 x11-drivers/xf86-input-evdev 2.11.0: Generic Linux input driver
 x11-drivers/xf86-input-joystick 1.6.4: X.Org driver for joystick input devices
