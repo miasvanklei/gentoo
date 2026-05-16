@@ -3,14 +3,14 @@
 
 EAPI=8
 
-inherit kernel-build toolchain-funcs verify-sig
+KERNEL_IUSE_GENERIC_UKI=1
 
-BASE_P=linux-${PV%.*}
+inherit git-r3 kernel-build toolchain-funcs
+
 # https://koji.fedoraproject.org/koji/packageinfo?packageID=8
 # forked to git.gentoo.org:fork/fedora/kernel
-CONFIG_VER=5.10.12-gentoo
-GENTOO_CONFIG_P=gentoo-kernel-config-g17
-SHA256SUM_DATE=20260515
+CONFIG_VER=6.18.12-gentoo
+GENTOO_CONFIG_P=gentoo-kernel-config-g18
 
 DESCRIPTION="Linux kernel built from vanilla upstream sources"
 HOMEPAGE="
@@ -18,18 +18,16 @@ HOMEPAGE="
 	https://www.kernel.org/
 "
 SRC_URI+="
-	https://cdn.kernel.org/pub/linux/kernel/v$(ver_cut 1).x/${BASE_P}.tar.xz
-	https://cdn.kernel.org/pub/linux/kernel/v$(ver_cut 1).x/patch-${PV}.xz
 	https://gitweb.gentoo.org/proj/dist-kernel/gentoo-kernel-config.git/snapshot/${GENTOO_CONFIG_P}.tar.bz2
 	https://gitweb.gentoo.org/fork/fedora/kernel.git/snapshot/kernel-${CONFIG_VER}.tar.bz2
-	verify-sig? (
-		https://cdn.kernel.org/pub/linux/kernel/v$(ver_cut 1).x/sha256sums.asc
-			-> linux-$(ver_cut 1).x-sha256sums-${SHA256SUM_DATE}.asc
-	)
 "
-S=${WORKDIR}/${BASE_P}
 
-KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~ppc ~ppc64 ~sparc ~x86"
+EGIT_REPO_URI=(
+	https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git/
+	https://github.com/gregkh/linux/
+)
+EGIT_BRANCH="linux-${PV/.9999/.y}"
+
 IUSE="debug hardened"
 REQUIRED_USE="
 	arm? ( savedconfig )
@@ -39,10 +37,9 @@ REQUIRED_USE="
 
 BDEPEND="
 	debug? ( dev-util/pahole )
-	verify-sig? ( >=sec-keys/openpgp-keys-kernel-20250702 )
 "
 PDEPEND="
-	>=virtual/dist-kernel-${PV}
+	>=virtual/dist-kernel-$(ver_cut 1-2)
 "
 
 QA_FLAGS_IGNORED="
@@ -51,29 +48,19 @@ QA_FLAGS_IGNORED="
 	usr/src/linux-.*/arch/powerpc/kernel/vdso.*/vdso.*.so.dbg
 "
 
-VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/kernel.org.asc
-
 src_unpack() {
-	if use verify-sig; then
-		cd "${DISTDIR}" || die
-		verify-sig_verify_signed_checksums \
-			"linux-$(ver_cut 1).x-sha256sums-${SHA256SUM_DATE}.asc" \
-			sha256 "${BASE_P}.tar.xz patch-${PV}.xz"
-		cd "${WORKDIR}" || die
-	fi
-
+	git-r3_src_unpack
 	default
 }
 
 src_prepare() {
-	eapply "${WORKDIR}/patch-${PV}"
 	default
 
 	local biendian=false
 
 	# prepare the default config
 	case ${ARCH} in
-		arm | hppa | sparc)
+		arm | hppa | loong | sparc)
 			> .config || die
 		;;
 		amd64)
@@ -92,6 +79,9 @@ src_prepare() {
 			cp "${WORKDIR}/kernel-${CONFIG_VER}/kernel-ppc64le-fedora.config" .config || die
 			biendian=true
 			;;
+		riscv)
+			cp "${WORKDIR}/kernel-${CONFIG_VER}/kernel-riscv64-fedora.config" .config || die
+			;;
 		x86)
 			cp "${WORKDIR}/kernel-${CONFIG_VER}/kernel-i686-fedora.config" .config || die
 			;;
@@ -108,6 +98,7 @@ src_prepare() {
 	local merge_configs=(
 		"${T}"/version.config
 		"${dist_conf_path}"/base.config
+		"${dist_conf_path}"/6.12+.config
 	)
 	use debug || merge_configs+=(
 		"${dist_conf_path}"/no-debug.config
@@ -127,7 +118,10 @@ src_prepare() {
 		merge_configs+=( "${dist_conf_path}/big-endian.config" )
 	fi
 
-	use secureboot && merge_configs+=( "${dist_conf_path}/secureboot.config" )
+	use secureboot && merge_configs+=(
+		"${dist_conf_path}/secureboot.config"
+		"${dist_conf_path}/zboot.config"
+	)
 
 	kernel-build_merge_configs "${merge_configs[@]}"
 }
