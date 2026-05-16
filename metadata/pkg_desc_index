@@ -1885,7 +1885,7 @@ app-editors/xemacs 21.5.36-r6 21.5.9999: highly customizable open source text ed
 app-editors/xmlcopyeditor 1.3.1.0-r4: XML Copy Editor is a fast, free, validating XML editor
 app-editors/xvile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clone
 app-editors/yudit 3.1.0: Free (Y)unicode text editor for all unices
-app-editors/zed 0.230.1 0.232.2 0.233.7 1.1.7: The fast, collaborative code editor
+app-editors/zed 0.230.1 0.232.2 1.1.8 1.2.6: The fast, collaborative code editor
 app-editors/zile 2.6.2-r2 2.6.4: Zile is a small Emacs clone
 app-emacs/a 1.0.0: Associative data structure functions for Emacs Lisp
 app-emacs/a68-mode 1.2_p20250524: Algol68 major mode for GNU Emacs
@@ -2979,7 +2979,7 @@ app-misc/xmind 3.7.6_p201801311814: Brainstorming and mind mapping software tool
 app-misc/yq 3.4.3: Command-line YAML processor - jq wrapper for YAML documents
 app-misc/yq-go 4.48.2 4.49.2 4.50.1: yq is a lightweight and portable command-line YAML, JSON and XML processor
 app-misc/ytree 2.09 2.10: Curses-based file manager
-app-misc/zellij 0.44.1 0.44.2: A terminal workspace with batteries included
+app-misc/zellij 0.44.1 0.44.2 0.44.3: A terminal workspace with batteries included
 app-misc/zisofs-tools 1.0.8-r1: User utilities for zisofs
 app-mobilephone/adebar 2.4.2: Android DEvice Backup And Report, using Bash and ADB
 app-mobilephone/anyremote 6.7.3: Bluetooth, infrared or cable remote control service
@@ -4049,7 +4049,7 @@ dev-db/postgresql 14.22 14.23 15.17 15.18 16.13 16.14 17.9 17.10 18.3 18.4 9999:
 dev-db/pspg 5.5.4 5.5.8 5.8.1 5.8.5 5.8.7: A better pager for CLI database clients and can be used in place of psql
 dev-db/psqlodbc 16.00.0000: Official ODBC driver for PostgreSQL
 dev-db/qdbm 1.8.78-r5: Quick Database Manager
-dev-db/qt5-sqlcipher 1.1.0: Qt SQL driver plugin for SQLCipher
+dev-db/qt5-sqlcipher 1.1.0-r1: Qt SQL driver plugin for SQLCipher
 dev-db/recutils 1.9-r1: Tools and libraries to access human-editable, plain text databases
 dev-db/redict 7.3.6: A persistent caching system, key-value, and data structures database
 dev-db/redis 8.2.2 8.2.3 8.2.5 8.4.2 8.6.1: A persistent caching system, key-value, and data structures database
@@ -10906,7 +10906,7 @@ dev-util/gitlab-runner 18.6.6 18.7.2 18.8.0: The official GitLab Runner, written
 dev-util/glade 3.40.0-r3: A user interface designer for GTK+ and GNOME
 dev-util/glib-utils 2.82.5 2.84.4 2.86.4 2.86.5 2.88.0 2.88.1: Build utilities for GLib using projects
 dev-util/global 6.6.14: Tag system to find an object location in various sources
-dev-util/glslang 1.4.328.0-r1 1.4.335.0 1.4.341.0 9999: Khronos reference front-end for GLSL and ESSL, and sample SPIR-V generator
+dev-util/glslang 1.4.328.0-r1 1.4.335.0 1.4.341.0 1.4.350.0 9999: Khronos reference front-end for GLSL and ESSL, and sample SPIR-V generator
 dev-util/gnome-builder 48.2-r2 49.1: An IDE for writing GNOME-based software
 dev-util/gnome-devel-docs 40.3: Documentation for developing for the GNOME desktop environment
 dev-util/gob 2.0.20-r1: Preprocessor for making GTK+ objects with inline C code
@@ -11079,9 +11079,9 @@ dev-util/shunit2 2.1.8: Unit-test framework for Bourne-based shell scripts
 dev-util/smem 1.5-r3: A tool that can give numerous reports on memory usage on Linux systems
 dev-util/snakeviz 2.2.2: A web-based viewer for Python profiler output
 dev-util/source-highlight 3.1.9-r2: Generate highlighted source code as an (x)html document
-dev-util/spirv-headers 1.4.328.0 1.4.335.0 1.4.341.0 9999: Machine-readable files for the SPIR-V Registry
+dev-util/spirv-headers 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 9999: Machine-readable files for the SPIR-V Registry
 dev-util/spirv-llvm-translator 16.0.18 16.0.19 16.0.21 16.0.22 16.0.23 16.0.24 17.0.18 17.0.19 17.0.20 17.0.21 17.0.22 17.0.23 18.1.18 18.1.19 18.1.20 18.1.21 18.1.22 18.1.23 19.1.13 19.1.14 19.1.15 19.1.16 19.1.17 19.1.18 20.1.8 20.1.9 20.1.10 20.1.11 20.1.12 20.1.13 21.1.3 21.1.4 21.1.5 21.1.6 21.1.7 22.1.0 22.1.1 22.1.2 23.0.0_pre20260223: Bi-directional translator between SPIR-V and LLVM IR
-dev-util/spirv-tools 1.4.328.0 1.4.335.0 1.4.341.0 9999: Provides an API and commands for processing SPIR-V modules
+dev-util/spirv-tools 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 9999: Provides an API and commands for processing SPIR-V modules
 dev-util/splint 3.1.2-r3: Check C programs for vulnerabilities and programming mistakes
 dev-util/squashdelta 0.1.2: Efficient (partially uncompressed) SquashFS binary delta tool
 dev-util/squashmerge 0.1: dev-util/squashdelta delta merge tool
@@ -11114,9 +11114,9 @@ dev-util/visual-regexp 3.1: Type the regexp and visualize it on a sample of your
 dev-util/visualvm 2.2-r2: Integrates commandline JDK tools and profiling capabilities
 dev-util/vmtouch 1.3.1: Virtual Memory Toucher, portable file system cache diagnostics and control
 dev-util/vtable-dumper 1.2-r1: A tool to list content of virtual tables in a shared library
-dev-util/vulkan-headers 1.4.328.0 1.4.335.0 1.4.341.0 9999: Vulkan Header files and API registry
-dev-util/vulkan-tools 1.4.328.0 1.4.335.0 1.4.341.0 9999: Official Vulkan Tools and Utilities for Windows, Linux, Android, and MacOS
-dev-util/vulkan-utility-libraries 1.4.328.0 1.4.335.0 1.4.341.0 9999: Share code across various Vulkan repositories
+dev-util/vulkan-headers 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 9999: Vulkan Header files and API registry
+dev-util/vulkan-tools 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 9999: Official Vulkan Tools and Utilities for Windows, Linux, Android, and MacOS
+dev-util/vulkan-utility-libraries 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 9999: Share code across various Vulkan repositories
 dev-util/wachy 0.1.0_alpha6-r2: A dynamic tracing profiler for Linux
 dev-util/wasm3 0.5.0: A fast WebAssembly interpreter and the most universal WASM runtime
 dev-util/watchman 2024.11.04.00 2025.04.14.00: A file watching service
@@ -13569,7 +13569,7 @@ media-libs/sdl3-ttf 3.2.2: Library that allows you to use TrueType fonts in SDL 
 media-libs/sdl_audiolib 0_p20220622-r1 9999: Audio decoding, resampling and mixing library for SDL
 media-libs/sg 1.5: Socket Graphics tool for displaying polygons
 media-libs/sge 030809-r1: Graphics extensions library for SDL
-media-libs/shaderc 2025.4 2025.5 2026.1: Collection of tools, libraries and tests for shader compilation
+media-libs/shaderc 2025.4 2025.5 2026.1 2026.2: Collection of tools, libraries and tests for shader compilation
 media-libs/simage 1.8.3-r1 1.8.4 9999: Image and video texturing library
 media-libs/smpeg 0.4.4-r11 0.4.4-r12: SDL MPEG Player Library
 media-libs/smpeg2 2.0.0-r4: SDL MPEG Player Library
@@ -13607,8 +13607,8 @@ media-libs/vo-aacenc 0.1.3 9999: VisualOn AAC encoder library
 media-libs/vo-amrwbenc 0.1.3 9999: VisualOn AMR-WB encoder library
 media-libs/volpack 1.0_p7-r2: Volume rendering library
 media-libs/vpl-gpu-rt 25.2.2 25.4.3 26.1.1: Intel Video Processing Library GPU Runtime
-media-libs/vulkan-layers 1.4.328.0 1.4.335.0 1.4.341.0 9999: Vulkan Validation Layers
-media-libs/vulkan-loader 1.4.328.0-r1 1.4.335.0-r1 1.4.341.0 9999: Vulkan Installable Client Driver (ICD) Loader
+media-libs/vulkan-layers 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 9999: Vulkan Validation Layers
+media-libs/vulkan-loader 1.4.328.0-r1 1.4.335.0-r1 1.4.341.0 1.4.350.0 9999: Vulkan Installable Client Driver (ICD) Loader
 media-libs/waffle 1.8.1 9999: Library that allows selection of GL API and of window system at runtime
 media-libs/webrtc-audio-processing 0.3.1-r1 1.3-r3 2.1: AudioProcessing library from the webrtc.org codebase
 media-libs/woff2 1.0.2-r7: Encode/decode WOFF2 font format
@@ -14071,7 +14071,7 @@ media-sound/litestream 1.3_rc3: Litstream is a lightweight and robust shoutcast-
 media-sound/lltag 0.14.6: Automatic command-line mp3/ogg/flac file tagger and renamer
 media-sound/lollypop 1.4.45: Modern music player for GNOME
 media-sound/lxmusic 0.4.7-r2: Simple GUI XMMS2 client with minimal functionality
-media-sound/mac 4.11.4.5.7-r1 12.60 12.67 12.76: Monkey's Audio Codecs
+media-sound/mac 4.11.4.5.7-r1 12.60 12.76 12.93: Monkey's Audio Codecs
 media-sound/madplay 0.15.2b-r2: The MAD audio player
 media-sound/mangler 1.2.5-r5: Open source VOIP client capable of connecting to Ventrilo 3.x servers
 media-sound/mcdp 0.4b: Very small console cd player
@@ -14316,7 +14316,7 @@ media-video/dvdstyler 3.2.1-r2 3.2.1-r3: A cross-platform free DVD authoring app
 media-video/dvgrab 3.5-r2: Digital Video (DV) grabber for GNU/Linux
 media-video/ffcast 2.4.8: Record screencasts using ffmpeg
 media-video/ffmpeg 4.4.5-r4 4.4.6-r1 4.4.7 6.1.4 6.1.5 7.1.3 7.1.4 8.0.1 8.1 8.1.1 9999: Complete solution to record/convert/stream audio and video
-media-video/ffmpeg-chromium 137 138 140 141 142 143 144 145 146 147 148 149: FFmpeg built specifically for codec support in Chromium-based browsers
+media-video/ffmpeg-chromium 137 138 140 141 142 143 144 145 146 147 148 149 150: FFmpeg built specifically for codec support in Chromium-based browsers
 media-video/ffmpeg-compat 4.4.5-r2 4.4.6-r1 4.4.7 6.1.4 6.1.5 7.1.3 7.1.4: Complete solution to record/convert/stream audio and video
 media-video/ffmpegthumbnailer 2.2.3: Lightweight video thumbnailer that can be used by file managers
 media-video/flvstreamer 2.1c: Open source command-line RTMP client to stream audio or video flash content
@@ -14954,7 +14954,7 @@ net-libs/libhackrf 2024.02.1-r1 2026.01.3 9999: library for communicating with H
 net-libs/libhtp 0.5.53: Security-aware parser for the HTTP protocol and the related bits and pieces
 net-libs/libhubbub 0.3.8: HTML5 compliant parsing library, written in C
 net-libs/libident 0.32-r1 0.32-r2: Small library to interface to the Ident protocol server
-net-libs/libiio 0.26-r2 0.26-r3 0.26-r4 9999: Library for interfacing with IIO devices
+net-libs/libiio 0.26-r3 0.26-r5 9999: Library for interfacing with IIO devices
 net-libs/libircclient 1.10-r1: Small but powerful library implementing the client-server IRC protocol
 net-libs/libiscsi 1.20.0 9999: iscsi client library and utilities
 net-libs/libisds 0.11.2-r1 9999: Client library for accessing ISDS Soap services
@@ -17678,7 +17678,7 @@ sys-fs/extundelete 0.2.4-r2: A utility to undelete files from an ext3 or ext4 pa
 sys-fs/f2fs-tools 1.16.0-r1 1.16.0-r2 9999: Tools for Flash-Friendly File System (F2FS)
 sys-fs/fatcat 1.1.1-r2: FAT filesystems explore, extract, repair, and forensic tool
 sys-fs/fatresize 1.1.0: Resize FAT partitions using libparted
-sys-fs/fatsort 1.7.1.683 1.7.679: Sorts files on FAT16/32 partitions, ideal for basic audio players
+sys-fs/fatsort 1.7.1 1.7.679: Sorts files on FAT16/32 partitions, ideal for basic audio players
 sys-fs/fragview 0.1.1-r1 0.1.2 9999: Disk fragmentation visualizer based on FIEMAP and FIBMAP ioctls
 sys-fs/fscrypt 0.3.4 0.3.6: Tool for managing Linux filesystem encryption
 sys-fs/fswatch 1.18.0 1.18.3: cross-platform file change monitor with multiple backends
@@ -18232,7 +18232,7 @@ www-apps/webmcp 2.2.1: Web application framework written in Lua and C
 www-apps/wordpress 6.4.4 6.5.5 6.6.2 6.7.2 6.8.3 6.9.4: Wordpress PHP and MySQL based content management system (CMS)
 www-apps/xpra-html5 10.1 20: HTML5 client to connect to any xpra server
 www-apps/zeppelin-bin 0.11.2: Web-based interactive data analytics notebook launcher
-www-client/chromium 146.0.7680.177 148.0.7778.167 149.0.7815.2 149.0.7827.14: Open-source version of Google Chrome web browser
+www-client/chromium 146.0.7680.177 148.0.7778.167 149.0.7815.2 149.0.7827.14 150.0.7838.0: Open-source version of Google Chrome web browser
 www-client/chromium-common 2: Common configuration files for Chromium slots
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
@@ -18250,7 +18250,7 @@ www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
-www-client/microsoft-edge 148.0.3967.54: The web browser from Microsoft
+www-client/microsoft-edge 148.0.3967.70: The web browser from Microsoft
 www-client/microsoft-edge-beta 148.0.3967.52 148.0.3967.54 149.0.4022.8: The web browser from Microsoft
 www-client/microsoft-edge-dev 149.0.4009.0 149.0.4022.4 149.0.4022.8: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
@@ -18266,8 +18266,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.5-r1: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 7.9.3970.60 7.9.3970.64: A browser for our friends
-www-client/vivaldi-snapshot 7.10.4031.3 8.0.4033.7: A browser for our friends
+www-client/vivaldi 7.9.3970.64 7.9.3970.67: A browser for our friends
+www-client/vivaldi-snapshot 8.0.4033.7 8.0.4033.9: A browser for our friends
 www-client/w3m 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
