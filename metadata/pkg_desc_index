@@ -8640,7 +8640,7 @@ dev-python/iso8601 2.1.0: Simple module to parse ISO 8601 dates
 dev-python/isodate 0.7.2: ISO 8601 date/time/duration parser and formatter
 dev-python/isoduration 20.11.0-r1: Operations with ISO 8601 durations
 dev-python/isort 8.0.1: A python utility/library to sort imports
-dev-python/iterable-io 1.0.1 1.0.2: Adapt generators and other iterables to a file-like interface
+dev-python/iterable-io 1.0.1 1.0.2 1.0.4: Adapt generators and other iterables to a file-like interface
 dev-python/itsdangerous 2.2.0: Various helpers to pass trusted data to untrusted environments and back
 dev-python/itunespy 1.6.1-r1: A simple library to fetch data from the iTunes Store API
 dev-python/jack-client 0.5.5: JACK Audio Connection Kit client for Python
@@ -11261,7 +11261,7 @@ games-action/noiz2sa 0.51a-r2: Abstract Shooting Game
 games-action/orbital-eunuchs-sniper 1.30-r1: Snipe terrorists from your orbital base
 games-action/postalplus 1-r1: Ultraviolent and controversial game featuring the Postal Dude
 games-action/powermanga 0.93.1-r1: Arcade 2D shoot-em-up game
-games-action/prismlauncher 9.1-r1 9.4-r1 10.0.5 11.0.0 9999: Custom, open source Minecraft launcher
+games-action/prismlauncher 9.1-r1 9.4-r1 10.0.5 11.0.0 11.0.2 9999: Custom, open source Minecraft launcher
 games-action/psychonauts-gog 2.0.0.4: A mind-bending platforming adventure from Double Fine Productions
 games-action/psychonauts-hb 20130506: A mind-bending platforming adventure from Double Fine Productions
 games-action/psychonauts2-hb 1097251: Platform-adventure game with cinematic style and customizable psychic powers
@@ -17895,6 +17895,7 @@ sys-power/hibernate-script 2.0-r6: Hibernate script supporting multiple suspend 
 sys-power/iasl 20200717 20241212: Intel ACPI Source Language (ASL) compiler
 sys-power/intel-undervolt 1.7-r1: Intel CPU undervolting and throttling configuration tool
 sys-power/libacpica 0_pre20220331_p6 9999: ACPICA as a library
+sys-power/nct6687d 0_pre20260313 9999: Kernel module for the Nuvoton NCT6687-R
 sys-power/nut 2.8.4 9999: Network-UPS Tools
 sys-power/nvclock 0.8_p20110102-r2 0.8_p20110102-r3: NVIDIA Overclocking Utility
 sys-power/nvram-reboot 2004.10.03-r1: PowerOff Boot-Images for nvram-wakeup (not needed for GRUB)
