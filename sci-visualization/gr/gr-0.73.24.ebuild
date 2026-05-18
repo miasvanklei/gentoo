@@ -32,7 +32,7 @@ DEPEND="
 	ffmpeg? ( media-video/ffmpeg:= )
 	opengl? ( virtual/opengl[X] )
 	postscript? ( app-text/ghostscript-gpl )
-	qt6? ( dev-qt/qtgui:= )
+	qt6? (  dev-qt/qtbase:6=[gui,widgets] )
 	tiff? ( media-libs/tiff:= )
 	truetype? ( media-libs/freetype )
 "
