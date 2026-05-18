@@ -1034,6 +1034,7 @@ app-admin/ocsinventory-agent 2.10.0: Hardware and software inventory tool (clien
 app-admin/op-cli-bin 2.23.0: command line interface for the 1password password manager
 app-admin/openrc-settingsd 1.4.0-r1 1.5.0: System settings D-Bus service for OpenRC
 app-admin/opentofu 1.8.8 1.9.0 1.9.1 1.10.6: The open source infrastructure as code tool
+app-admin/openvox 8.27.0: OpenVox agent and apply tools for Puppet-compatible configuration management
 app-admin/pass 1.7.4-r5 9999: Stores, retrieves, generates, and synchronizes passwords securely
 app-admin/pass-import 3.5-r1: pass extension for importing data from most existing password managers
 app-admin/pass-otp 1.2.0-r3: A pass extension for managing one-time-password (OTP) tokens
@@ -5354,7 +5355,7 @@ dev-libs/bitshuffle 0.3.5-r1: Bitshuffle C library
 dev-libs/blake3 1.8.3 1.8.4 1.8.5: a fast cryptographic hash function
 dev-libs/blazesym_c 0.1.5 0.1.7: C bindings for blazesym, a library for address symbolization and related tasks
 dev-libs/boehm-gc 8.2.8 8.2.10 8.2.10-r1 8.2.12: The Boehm-Demers-Weiser conservative garbage collector
-dev-libs/boost 1.90.0-r1: Boost Libraries for C++
+dev-libs/boost 1.90.0-r1 1.91.0: Boost Libraries for C++
 dev-libs/boron 2.1.0: A scripting language similar to REBOL
 dev-libs/botan 3.10.0 3.11.1: C++ crypto library
 dev-libs/boxfort 0.1.4-r1 0.1.4-r2 0.1.5: Convenient & cross-platform sandboxing C library
@@ -10021,7 +10022,7 @@ dev-ruby/eventmachine 1.2.7-r4 1.2.7-r5: EventMachine is a fast, simple event-pr
 dev-ruby/excon 1.2.5 1.2.7 1.2.8 1.2.9 1.3.0: EXtended http(s) CONnections
 dev-ruby/execjs 2.10.0: ExecJS lets you run JavaScript code from Ruby
 dev-ruby/exifr 1.4.0 1.4.1 1.5.1: A library to read EXIF info from JPEG and TIFF images
-dev-ruby/facter 4.4.3-r1 4.5.0 4.5.1 4.5.2 4.7.0 4.7.0-r1 4.10.0: A cross-platform ruby library for retrieving facts from operating systems
+dev-ruby/facter 4.4.3-r1 4.5.0 4.5.1 4.5.2 4.7.0 4.7.0-r1 4.10.0 4.10.0-r1: A cross-platform ruby library for retrieving facts from operating systems
 dev-ruby/fake_ftp 0.3.0: Testing FTP? Use this!
 dev-ruby/fakefs 2.5.0 2.7.1 3.0.3 3.0.4 3.2.0: A fake filesystem. Use it in your tests
 dev-ruby/faker 3.5.1 3.5.2 3.5.3 3.6.0: A library for generating fake data such as names, addresses, and phone numbers
@@ -10123,6 +10124,7 @@ dev-ruby/jquery-rails 4.6.0 4.6.1: jQuery! For Rails! So great
 dev-ruby/jquery-ui-rails 7.0.0 8.0.0 8.0.0-r1: The jQuery UI assets for the Rails 3.2+ asset pipeline
 dev-ruby/jsobfu 0.4.2-r1: A Javascript code obfuscator
 dev-ruby/json 2.10.2 2.12.2 2.13.2 2.14.1 2.15.2 2.16.0 2.17.1 2.18.0 2.19.4: A JSON implementation as a Ruby extension
+dev-ruby/json-schema 5.2.2: Ruby JSON Schema Validator
 dev-ruby/json_schema 0.21.0: A JSON Schema V4 and Hyperschema V4 parser and validator
 dev-ruby/jwt 2.10.1 3.0.0 3.1.0 3.1.1 3.1.2: A Ruby implementation of JSON Web Token draft 06
 dev-ruby/kissfft 0.0.2-r1: ruby interface to kissfft
@@ -10238,6 +10240,7 @@ dev-ruby/observer 0.1.2: Implementation of the Observer object-oriented design p
 dev-ruby/octokit 10.0.0: Ruby toolkit for the Github API
 dev-ruby/omniauth 2.1.3 2.1.4: A generalized Rack framework for multiple-provider authentication
 dev-ruby/open4 1.3.4-r1: Open3::popen3 with exit status
+dev-ruby/openfact 5.6.1: OpenFact, a system inventory tool (community implementation of Facter)
 dev-ruby/openssl-ccm 1.2.3 1.3.0: OpenSSL CBC-MAC (CCM) ruby gem
 dev-ruby/openssl-cmac 2.0.2 2.1.0: Gem for RFC 4493, 4494, 4615 - The AES-CMAC Algorithm
 dev-ruby/optimist 3.2.0 3.2.1: A commandline option parser for Ruby that just gets out of your way
@@ -10419,6 +10422,7 @@ dev-ruby/sass-rails 5.1.0-r1: Official Ruby-on-Rails Integration with Sass
 dev-ruby/sassc 2.4.0-r1: Use libsass with Ruby
 dev-ruby/sassc-rails 2.1.2-r4: Integrate SassC-Ruby with Rails
 dev-ruby/sawyer 0.9.2 0.9.3: Secret User Agent of HTTP
+dev-ruby/scanf 1.0.0: Ruby implementation of the C function scanf(3)
 dev-ruby/sdoc 1.1.0-r1 2.6.1 2.6.2 2.6.4 2.6.5: rdoc generator html with javascript search index
 dev-ruby/securerandom 0.4.1: Interface for secure random number generator
 dev-ruby/seed-fu 2.3.9-r1: Advanced seed data handling for Rails
@@ -16778,7 +16782,7 @@ sec-keys/openpgp-keys-zstd 20260121: OpenPGP key used by app-arch/zstd
 sec-keys/signify-keys-opensmtpd 20181026: Signify keys used to sign OpenSMTPD portable releases
 sec-keys/signify-keys-signify 30: Signify keys used to sign signify portable releases
 sec-keys/sigstore-trusted-root 0_p20241016: trusted-root.json for dev-python/sigstore
-sec-policy/apparmor-profiles 3.1.4 4.1.1 9999: A collection of profiles for the AppArmor application security system
+sec-policy/apparmor-profiles 3.1.4 4.1.1 4.1.7 9999: A collection of profiles for the AppArmor application security system
 sec-policy/selinux-accountsd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for accountsd
 sec-policy/selinux-acct 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for acct
 sec-policy/selinux-afs 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for afs
@@ -17042,8 +17046,8 @@ sys-apps/acl 2.3.2-r3: Access control list utilities, libraries, and headers
 sys-apps/agedu 20211129: A utility for tracking down wasted disk space
 sys-apps/amdgpu_top 0.10.3 0.10.4 0.11.0 0.11.2: Tool to display AMDGPU usage
 sys-apps/apmd 3.2.2_p14-r3: Advanced Power Management Daemon
-sys-apps/apparmor 3.1.4-r2 4.0.3: Userspace utils and init scripts for the AppArmor application security system
-sys-apps/apparmor-utils 3.1.4-r1 4.0.3-r1: Additional userspace utils to assist with AppArmor profile management
+sys-apps/apparmor 3.1.4-r2 4.0.3 4.1.7: Userspace utils and init scripts for the AppArmor application security system
+sys-apps/apparmor-utils 3.1.4-r1 4.0.3-r1 4.1.7: Additional userspace utils to assist with AppArmor profile management
 sys-apps/apply-default-acl 0.4.4: Apply default POSIX ACLs to files and directories
 sys-apps/arch-chroot 29 31: Wraps the chroot command while ensuring that important filesystems are mounted
 sys-apps/arrayprobe 2.0-r3: Utility to report status of an HP (Compaq) array controller (both IDA & CCISS)
@@ -17139,7 +17143,7 @@ sys-apps/grepcidr 2.0: Filter IPv4 and IPv6 addresses matching CIDR patterns
 sys-apps/groff 1.23.0-r1 1.23.0-r2: Text formatter used for man pages
 sys-apps/gsmartcontrol 2.0.1: Hard Disk Drive and SSD Health Inspection Tool
 sys-apps/haveged 1.9.15 1.9.17 1.9.18 1.9.19: A simple entropy daemon using the HAVEGE algorithm
-sys-apps/hd-idle 1.05-r2 1.05-r3 1.05-r4: Utility for spinning down hard disks after a period of idle time
+sys-apps/hd-idle 1.05-r2 1.05-r3 1.05-r4 1.05-r5: Utility for spinning down hard disks after a period of idle time
 sys-apps/hdparm 9.65-r2: Utility to change hard drive performance parameters
 sys-apps/heirloom-tools 070715-r6 070715-r7: Heirloom toolchest - original Unix tools
 sys-apps/help2man 1.49.3: GNU utility to convert program --help output to a man page
@@ -17582,7 +17586,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -17773,7 +17777,7 @@ sys-kernel/genkernel 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scr
 sys-kernel/gentoo-kernel 5.10.256 5.15.207 5.15.207_p1 6.1.173 6.1.173_p1 6.6.139 6.12.89 6.12.90 6.18.31 6.18.32 7.0.8 7.0.9: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.256 5.15.207 5.15.207_p1 6.1.173 6.1.173_p1 6.6.139 6.12.89 6.12.90 6.18.31 6.18.32 7.0.8 7.0.9: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-sources 5.10.256 5.15.207 6.1.173 6.6.139 6.6.140 6.12.89 6.12.90 6.18.31 6.18.32 7.0.8 7.0.9: Full sources including the Gentoo patchset for the 7.0 kernel tree
-sys-kernel/git-sources 7.1_rc1 7.1_rc2 7.1_rc3: The very latest -git version of the Linux kernel
+sys-kernel/git-sources 7.1_rc1 7.1_rc2 7.1_rc3 7.1_rc4: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 9999: GNU Hurd is the GNU project's replacement for UNIX
 sys-kernel/installkernel 63 65 66 67 68 9999: Gentoo fork of installkernel script from debianutils
@@ -17816,7 +17820,7 @@ sys-libs/gpm 1.20.7-r6: Console-based mouse driver
 sys-libs/gwenhywfar 5.14.1: Multi-platform helper library for other libraries
 sys-libs/kpmcore 25.12.3 26.04.1: Library for managing partitions
 sys-libs/ldb 2.9.2: LDAP-like embedded database
-sys-libs/libapparmor 3.1.4-r2 4.0.3 4.0.3-r2: Library to support AppArmor userspace utilities
+sys-libs/libapparmor 3.1.4-r2 4.0.3 4.0.3-r2 4.1.7: Library to support AppArmor userspace utilities
 sys-libs/libavc1394 0.5.4-r2: Library for the 1394 AV/C (Audio/Video Control) Digital Interface Command Set
 sys-libs/libblockdev 3.3.1 3.4.0: Library for manipulating block devices
 sys-libs/libcap 2.77 2.78 9999: POSIX 1003.1e capabilities
@@ -17880,7 +17884,7 @@ sys-libs/timezone-data 2026a 2026b: Timezone data (/usr/share/zoneinfo) and util
 sys-libs/uid_wrapper 1.3.2: Wrapper to fake privilege separation
 sys-libs/zlib 1.3.1-r1 1.3.2-r1: Standard (de)compression library
 sys-libs/zlib-ng 2.2.5 2.2.5-r1 2.3.2 2.3.3: Fork of the zlib data compression library
-sys-power/RyzenAdj 0.16.0: The power management tool for mobile and desktop Ryzen APUs
+sys-power/RyzenAdj 0.16.0 0.19.0: The power management tool for mobile and desktop Ryzen APUs
 sys-power/acpi 1.8: Displays information about ACPI devices
 sys-power/acpi_call 1.2.2-r1 9999: A linux kernel module that enables calls to ACPI
 sys-power/acpid 2.0.34-r1: Daemon for Advanced Configuration and Power Interface
