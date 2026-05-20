@@ -2438,7 +2438,7 @@ app-emulation/vkd3d-proton 2.6-r1 2.12 2.13 2.14.1 3.0b 3.0.1 9999: Fork of VKD3
 app-emulation/wine-desktop-common 20150204-r2: Various desktop menu items and icons for wine
 app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet Explorer for Wine
 app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.1 11.0.0 11.1.0: Replacement for the .NET runtime and class libraries in Wine
-app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.3 10.0.4 11.0.1_beta1 11.0.1_beta2 9999: Valve Software's fork of Wine
+app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.3 10.0.4 11.0.1_beta1 11.0.1_beta2 11.0.1_beta5 9999: Valve Software's fork of Wine
 app-emulation/wine-staging 11.0 11.6 11.7 11.8 11.9 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
 app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 11.0 11.6 11.7 11.8 11.9 9999: Free implementation of Windows(tm) on Unix, without external patchsets
 app-emulation/winetricks 20250102-r1 20260125 99999999: Easy way to install DLLs needed to work around problems in Wine
@@ -3329,7 +3329,7 @@ app-text/manpager 1: Enable colorization of man pages
 app-text/marknote 1.5.1 1.5.2: Markdown editor with a wide range of formating options for everyday notes
 app-text/master-pdf-editor 5.9.98-r1: A complete solution for viewing and editing PDF files
 app-text/mathtex 1.05: Lets you easily embed LaTeX math in your own html pages, blogs, wikis, etc
-app-text/mdbook 0.5.2: Create a book from markdown files
+app-text/mdbook 0.5.2 0.5.3: Create a book from markdown files
 app-text/mecab 0.996-r1 0.996-r2: Yet Another Part-of-Speech and Morphological Analyzer
 app-text/mpage 2.5.6-r1: Many to one page printing utility
 app-text/msort 8.53-r3: A program for sorting files in sophisticated ways
@@ -5204,7 +5204,7 @@ dev-lang/cue 0.14.1: open-source data validation language and inference engine
 dev-lang/cxprolog 0.98.2-r3: A WAM based Prolog system
 dev-lang/dafny 4.11.0: Dafny is a verification-aware programming language
 dev-lang/dafny-bin 4.11.0-r1: Verification-aware programming language
-dev-lang/deno-bin 2.6.10-r1 2.7.11 2.7.12 2.7.13 2.7.14: Modern runtime for JavaScript and TypeScript
+dev-lang/deno-bin 2.6.10-r1 2.7.14: Modern runtime for JavaScript and TypeScript
 dev-lang/duktape 2.7.0-r3: Embeddable Javascript engine
 dev-lang/dzaima-bqn 0.2.1 0.2.2 9999: A BQN language implementation written in Java, also know as dbqn
 dev-lang/eisl 5.62 5.66: Interpreter and compiler compatible with the ISLisp standard
@@ -15375,7 +15375,7 @@ net-misc/rdesktop 1.9.0-r4: A Remote Desktop Protocol Client
 net-misc/redir 3.3-r1: Redir is a port redirector
 net-misc/remmina 1.4.40-r2 1.4.40-r3 1.4.41 1.4.41-r1 1.4.42 1.4.43: A GTK+ RDP, SPICE, VNC and SSH client
 net-misc/rinetd 0.73-r1: redirects TCP connections from one IP address and port to another
-net-misc/rsync 3.4.1-r2 3.4.1-r3 3.4.2 9999: File transfer program to keep remote files into sync
+net-misc/rsync 3.4.1-r2 3.4.1-r3 3.4.2 3.4.3 9999: File transfer program to keep remote files into sync
 net-misc/rsync-bpc 3.1.3.0_p20250706 3.1.3.0_p20251201-r1: Rsync-bpc is a customized version of rsync that is used as part of BackupPC
 net-misc/rwbs 0.27-r2: Roger Wilco base station
 net-misc/rwhoisd 1.5.9.6_p2: ARIN rwhois daemon
@@ -16169,7 +16169,7 @@ sci-libs/ldl 2.2.6 3.0.3 3.3.3: Simple but educational LDL^T matrix factorizatio
 sci-libs/lemon 1.3.1-r2: C++ template static library of common data structures and algorithms
 sci-libs/levmar 2.6-r1: Levenberg-Marquardt nonlinear least squares C library
 sci-libs/libaec 1.1.4: Adaptive Entropy Coding library
-sci-libs/libbraiding 1.3.1: Expose the functionality of cbraid as a shared library
+sci-libs/libbraiding 1.3.1 1.3.2: Expose the functionality of cbraid as a shared library
 sci-libs/libcerf 1.17 2.5: Efficient and accurate implementation of complex error functions
 sci-libs/libcifpp 9.0.5 9.0.6: Code to work with mmCIF and PDB files
 sci-libs/libdap 3.20.9-r1 3.21.1: Implementation of a C++ SDK for DAP 2.0 and 3.2
@@ -16178,7 +16178,7 @@ sci-libs/libexcelformat 101016-r1: reading, writing, and editing of XLS (BIFF8 f
 sci-libs/libgeotiff 1.7.1-r3 1.7.3 1.7.4: Library for reading TIFF files with embedded tags for geographic information
 sci-libs/libh2o 0.2.1-r1: Library of routines for IF97 water & steam properties
 sci-libs/libh2oxx 0.2-r1: C++ bindings for libh2o
-sci-libs/libhomfly 1.02.6: Library to compute the homfly polynomial of a link
+sci-libs/libhomfly 1.02.6 1.04: Library to compute the homfly polynomial of a link
 sci-libs/libigl 2.5.0: A simple C++ geometry processing library
 sci-libs/libint 1.1.6 2.9.0 2.11.0: Matrix elements (integrals) evaluation over Cartesian Gaussian functions
 sci-libs/libmuscle 3.7-r4: Library for sci-biology/mauve
@@ -17776,7 +17776,7 @@ sys-kernel/kci-dev 0.1.6 0.1.10: Stand alone tool to interact with KernelCI
 sys-kernel/kergen 0.1.5-r1: Kernel config generator
 sys-kernel/kpatch 0.9.7 0.9.8 0.9.10 9999: Dynamic kernel patching for Linux
 sys-kernel/linux-docs 6.18: Developer documentation generated from the Linux kernel
-sys-kernel/linux-firmware 20260110 20260221 20260309 20260410 99999999: Linux firmware files
+sys-kernel/linux-firmware 20260221 20260309 20260410 20260519 99999999: Linux firmware files
 sys-kernel/linux-headers 3.18-r1 4.4-r1 4.9-r1 4.14-r2 4.19-r1 5.4-r2 5.10-r2 5.15-r3 6.1 6.6-r1 6.8-r1 6.9 6.10 6.11 6.12 6.13 6.14 6.15 6.16 6.16-r2 6.17-r1 6.18 6.19: Linux system headers
 sys-kernel/linux-next 9999: Linux kernel and patches aimed at the next kernel merge window
 sys-kernel/mips-sources 4.19.325 5.4.294: Kernel.org sources for MIPS-based machines
