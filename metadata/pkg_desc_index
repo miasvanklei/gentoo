@@ -5302,7 +5302,7 @@ dev-lang/spidermonkey 115.24.0 128.14.0 140.9.1: Mozilla's JavaScript engine wri
 dev-lang/squirrel 3.2: A interpreted language mainly used for games
 dev-lang/swi-prolog 10.0.0-r1 10.0.1 10.0.2: Versatile implementation of the Prolog programming language
 dev-lang/swig 4.1.1-r1 4.2.1 4.3.1 4.4.1: Simplified Wrapper and Interface Generator
-dev-lang/tcc 0.9.27_p20211022 0.9.27_p20230223 0.9.27_p20250608 9999: A very small C compiler for ix86/amd64
+dev-lang/tcc 0.9.27_p20211022 0.9.27_p20230223 0.9.27_p20250608 0.9.27_p20250608-r1 9999: A very small C compiler for ix86/amd64
 dev-lang/tcl 8.6.16 8.6.17 9.0.3-r2: Tool Command Language
 dev-lang/teyjus 2.1-r2: Higher-order logic programming language Lambda Prolog
 dev-lang/tk 8.6.16 8.6.17 9.0.3-r2: Tk Widget Set
@@ -8354,7 +8354,7 @@ dev-python/daemonize 2.5.0-r1: Library for writing system daemons in Python
 dev-python/dasbus 1.7: DBus library in Python 3
 dev-python/datastructclass 0.1.1: A dataclass with struct-like semantics
 dev-python/dbfread 2.0.7-r1: Read DBF Files with Python
-dev-python/dbus-fast 4.0.4 4.1.0 4.2.8 4.3.0 5.0.3 5.0.4: A faster version of dbus-next
+dev-python/dbus-fast 4.0.4 4.1.0 4.2.8 4.3.0 5.0.3 5.0.4 5.0.6: A faster version of dbus-next
 dev-python/dbus-next 0.2.3-r1: The next great DBus library for Python with asyncio support
 dev-python/dbus-python 1.4.0: Python bindings for the D-Bus messagebus
 dev-python/dbutils 3.1.2: Database connections for multi-threaded environments
@@ -8739,7 +8739,7 @@ dev-python/libcst 1.8.6: A concrete syntax tree with AST-like properties for Pyt
 dev-python/libevdev 0.13.1: Python wrappers for the libevdev library
 dev-python/liblarch 3.2.0: Library to handle directed acyclic graphs
 dev-python/libnacl 2.1.0: Python ctypes wrapper for libsodium
-dev-python/librt 0.9.0 0.10.0 0.11.0: Mypyc runtime library
+dev-python/librt 0.11.0: Mypyc runtime library
 dev-python/libsass 0.23.0: A straightforward binding of libsass for Python
 dev-python/libtmux 0.46.2 0.52.1 0.53.0 0.53.1 0.55.0 0.55.1 0.56.0 0.57.1 0.58.0: Typed library that provides an ORM wrapper for tmux, a terminal multiplexer
 dev-python/libusb1 3.3.1 3.4.0: Python ctype-based wrapper around libusb1
@@ -8839,7 +8839,7 @@ dev-python/munch 4.0.0: A dot-accessible dictionary (a la JavaScript objects)
 dev-python/munkres 1.1.4-r1: Module implementing munkres algorithm for the Assignment Problem
 dev-python/musicbrainzngs 0.7.1-r1: Python bindings for the MusicBrainz NGS and the Cover Art Archive webservices
 dev-python/mygpoclient 1.10: A gpodder.net client library
-dev-python/mypy 1.18.2-r1 1.20.2 2.0.0 2.1.0: Optional static typing for Python
+dev-python/mypy 1.20.2 2.1.0: Optional static typing for Python
 dev-python/mypy-extensions 1.1.0: Type system extensions for programs checked with mypy
 dev-python/mysqlclient 2.2.8: Python interface to MySQL
 dev-python/myst-parser 5.0.0 5.1.0: Extended commonmark compliant parser, with bridges to Sphinx
@@ -9037,7 +9037,7 @@ dev-python/pyasynchat 1.0.5: Make asynchat available for Python 3.12 onwards
 dev-python/pyasyncore 1.0.5: Make asyncore available for Python 3.12 onwards
 dev-python/pyatspi 2.58.1 2.58.2: Python client bindings for D-Bus AT-SPI
 dev-python/pyaudio 0.2.14: Python bindings for PortAudio
-dev-python/pybind11 3.0.1 3.0.2 3.0.3 3.0.4: AST-based Python refactoring library
+dev-python/pybind11 3.0.1 3.0.4: AST-based Python refactoring library
 dev-python/pybtex 0.26.1: BibTeX-compatible bibliography processor
 dev-python/pybtex-docutils 1.0.3: A docutils backend for pybtex
 dev-python/pycairo 1.29.0-r1: Python bindings for the cairo library
@@ -9130,7 +9130,7 @@ dev-python/pyocr 0.8.5: An optical character recognition (OCR) tool wrapper
 dev-python/pyopencl 2025.1: Python wrapper for OpenCL
 dev-python/pyopengl 3.1.10: Python OpenGL bindings
 dev-python/pyopengl-accelerate 3.1.10: Accelerate module for PyOpenGL
-dev-python/pyopenssl 26.0.0 26.1.0 26.2.0: Python interface to the OpenSSL library
+dev-python/pyopenssl 26.1.0 26.2.0: Python interface to the OpenSSL library
 dev-python/pyotherside 1.6.2-r1: Asynchronous Python 3 Bindings for Qt
 dev-python/pyotp 2.9.0: PyOTP is a Python library for generating and verifying one-time passwords
 dev-python/pyparsing 3.3.2: Easy-to-use Python module for text parsing
@@ -9483,7 +9483,7 @@ dev-python/simple-websocket 1.1.0: Simple WebSocket server and client for Python
 dev-python/simpleeval 1.0.7: A simple, safe single expression evaluator library
 dev-python/simplejson 3.20.2 4.0.1 4.1.0 4.1.1: Simple, fast, extensible JSON encoder/decoder for Python
 dev-python/simplekml 1.3.6: Enables you to generate KML with as little effort as possible
-dev-python/simpy 4.1.1: Object-oriented, process-based discrete-event simulation language
+dev-python/simpy 4.1.1 4.1.2: Object-oriented, process-based discrete-event simulation language
 dev-python/sip 6.15.1 6.15.2 6.15.3: Python bindings generator for C/C++ libraries
 dev-python/siphash24 1.8: Streaming-capable SipHash-1-3 and SipHash-2-4 Implementation
 dev-python/six 1.17.0: Python 2 and 3 compatibility library
@@ -9495,12 +9495,12 @@ dev-python/snakeoil 0.10.11 0.11.0 9999: misc common functionality and useful op
 dev-python/snaketrace 0.3.1-r1: An strace-like tool for Python audit events
 dev-python/snapshottest 0.6.0: Snapshot Testing utils for Python
 dev-python/sniffio 1.3.1: Sniff out which async library your code is running under
-dev-python/snowballstemmer 3.0.1: Stemmer algorithms generated from Snowball algorithms
+dev-python/snowballstemmer 3.0.1 3.1.0: Stemmer algorithms generated from Snowball algorithms
 dev-python/socketio-client-nexus 0.7.6: A socket.io 2.x client library for Python
 dev-python/socksio 1.0.0: Sans-I/O implementation of SOCKS4, SOCKS4A, and SOCKS5
 dev-python/sortedcontainers 2.4.0-r1: Python library to sort collections and containers
 dev-python/soundfile 0.13.1: audio library based on libsndfile, CFFI and NumPy
-dev-python/soupsieve 2.8.3: A modern CSS selector implementation for BeautifulSoup
+dev-python/soupsieve 2.8.3 2.8.4: A modern CSS selector implementation for BeautifulSoup
 dev-python/spake2 0.8-r1 0.9: python implementation of SPAKE2 password-authenticated key exchange algorithm
 dev-python/speg 0.3_p20180819-r2: A PEG-based parser interpreter with memoization
 dev-python/sphinx 9.1.0: Python documentation generator
@@ -9555,7 +9555,7 @@ dev-python/spyder-line-profiler 0.4.2: Plugin to run the python line profiler fr
 dev-python/spyder-notebook 0.7.1: Jupyter notebook integration with Spyder
 dev-python/spyder-terminal 1.3.0: Run system terminals inside Spyder
 dev-python/spyder-unittest 0.7.1: Plugin for Spyder to run tests and view the results
-dev-python/sqlalchemy 2.0.49 2.1.0_beta2: Python SQL toolkit and Object Relational Mapper
+dev-python/sqlalchemy 2.0.49 2.0.50 2.1.0_beta2: Python SQL toolkit and Object Relational Mapper
 dev-python/sqlalchemy-rqlite 2.0: A SQLAlchemy dialect for rqlite
 dev-python/sqlglot 30.7.0 30.8.0: An easily customizable SQL parser and transpiler
 dev-python/sqlitedict 2.1.0: Persistent dict in Python, backed by SQLite and pickle
@@ -9698,7 +9698,7 @@ dev-python/utidylib 1.0.0: TidyLib Python wrapper
 dev-python/uuid6 2025.0.1: New time-based UUID formats which are suited for use as a database key
 dev-python/uv 0.11.7 0.11.8 0.11.10 0.11.11 0.11.12 0.11.13 0.11.14 0.11.15 0.11.16 9999: A Python package installer and resolver, written in Rust
 dev-python/uv-build 0.11.7 0.11.8 0.11.10 0.11.11 0.11.12 0.11.13 0.11.14 0.11.15 0.11.16: PEP517 uv build backend
-dev-python/uvicorn 0.46.0 0.47.0: Lightning-fast ASGI server implementation
+dev-python/uvicorn 0.46.0 0.47.0 0.48.0: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.22.1: Ultra-fast implementation of asyncio event loop on top of libuv
 dev-python/validators 0.35.0: Python Data Validation for Humans
 dev-python/varlink 31.0.0: Python implementation of the Varlink protocol
@@ -12735,7 +12735,7 @@ mate-extra/mate-sensors-applet 1.28.0 1.28.0-r1: MATE panel applet to display re
 mate-extra/mate-system-monitor 1.28.0-r1 1.28.1-r1: The MATE System Monitor
 mate-extra/mate-tweak 22.10.0: Tweak tool for the MATE Desktop
 mate-extra/mate-user-guide 1.28.0: User documentation for MATE Desktop
-mate-extra/mate-user-share 1.28.0-r1: Personal file sharing for the MATE desktop
+mate-extra/mate-user-share 1.28.0-r2: Personal file sharing for the MATE desktop
 mate-extra/mate-utils 1.28.0-r1: Utilities for the MATE desktop
 media-fonts/Humor-Sans 1.0-r1: Sans-serif typeface in the style of xkcd
 media-fonts/adwaita-fonts 49.0: The typefaces for GNOME
@@ -13079,7 +13079,7 @@ media-gfx/kio-mobi-thumbnailer 25.12.3 26.04.1: KIO thumbnail generator for Mobi
 media-gfx/kio-ps-thumbnailer 25.12.3 26.04.1: KIO thumbnail generator for DVI, EPS, PDF and PS files
 media-gfx/kio-raw-thumbnailer 25.12.3 26.04.1: KIO thumbnail generator for RAW files
 media-gfx/kphotoalbum 6.2.0: Tool for indexing, searching, and viewing images
-media-gfx/krita 6.0.2_pre20260509 6.0.2_pre20260521: Free digital painting application. Digital Painting, Creative Freedom!
+media-gfx/krita 6.0.1 6.0.2_pre20260521: Free digital painting application. Digital Painting, Creative Freedom!
 media-gfx/kuickshow 0.11.0: Image viewer based on KDE Frameworks
 media-gfx/kxstitch 3.0.0_pre20250110: Program to create cross stitch patterns
 media-gfx/libbgcode 0.0.20241024 0.0.20251210: Prusa Block & Binary G-code reader / writer / converter
@@ -15623,7 +15623,7 @@ net-vpn/headscale 0.27.1: An open source, self-hosted implementation of the Tail
 net-vpn/httptunnel 3.3_p20230508: httptunnel can create IP tunnels through firewalls/proxies using HTTP
 net-vpn/i2p 2.11.0 2.12.0: A privacy-centric, anonymous network
 net-vpn/i2pd 2.58.0 2.59.0: A C++ daemon for accessing the I2P anonymous network
-net-vpn/iodine 0.7.0-r3 0.7.0-r4: IP over DNS tunnel
+net-vpn/iodine 0.7.0-r5: IP over DNS tunnel
 net-vpn/isatapd 0.9.7-r2: Creates and maintains an ISATAP tunnel (rfc5214)
 net-vpn/libreswan 4.15 5.1-r1 5.2 5.3: IPsec implementation for Linux, fork of Openswan
 net-vpn/logmein-hamachi 2.1.0.203: LogMeIn Hamachi VPN tunneling engine
@@ -15642,7 +15642,7 @@ net-vpn/nstx 1.1_beta6-r3: IP over DNS tunnel
 net-vpn/ocserv 1.3.0-r11 1.4.1 9999: Openconnect SSL VPN server
 net-vpn/openconnect 9.12-r1 9.12-r2 9999: Free client for Cisco AnyConnect SSL VPN software
 net-vpn/openfortivpn 1.23.1 1.24.1: Fortinet compatible VPN client
-net-vpn/openvpn 2.6.17-r1 2.6.17-r2 2.6.20 9999: Robust and highly flexible tunneling application compatible with many OSes
+net-vpn/openvpn 2.6.17-r1 2.6.17-r2 2.6.20-r1 9999: Robust and highly flexible tunneling application compatible with many OSes
 net-vpn/ovpn-dco 0.2.20230426 0.2.20231117 0.2.20241216 0.2.20251017 9999: OpenVPN Data Channel Offload in the linux kernel
 net-vpn/pptpd 1.4.0-r5: Linux Point-to-Point Tunnelling Protocol Server
 net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client powered by Bitmask
@@ -16785,6 +16785,7 @@ sec-policy/selinux-android 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELin
 sec-policy/selinux-apache 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for apache
 sec-policy/selinux-apcupsd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for apcupsd
 sec-policy/selinux-apm 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for acpi
+sec-policy/selinux-aptcacher 2.20250618_p1 2.20260312_p1 9999: SELinux policy for aptcacher
 sec-policy/selinux-arpwatch 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for arpwatch
 sec-policy/selinux-asterisk 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for asterisk
 sec-policy/selinux-at 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for at
@@ -16799,8 +16800,12 @@ sec-policy/selinux-bind 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux 
 sec-policy/selinux-bird 2.20250618_p1 2.20260312_p1 9999: SELinux policy for bird
 sec-policy/selinux-bitcoin 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for bitcoin
 sec-policy/selinux-bitlbee 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for bitlbee
+sec-policy/selinux-blueman 2.20250618_p1 2.20260312_p1 9999: SELinux policy for blueman
 sec-policy/selinux-bluetooth 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for bluetooth
+sec-policy/selinux-boinc 2.20250618_p1 2.20260312_p1 9999: SELinux policy for boinc
 sec-policy/selinux-brctl 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for brctl
+sec-policy/selinux-bubblewrap 2.20250618_p1 2.20260312_p1 9999: SELinux policy for bubblewrap
+sec-policy/selinux-bugzilla 2.20250618_p1 2.20260312_p1 9999: SELinux policy for bugzilla
 sec-policy/selinux-cachefilesd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cachefilesd
 sec-policy/selinux-calamaris 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for calamaris
 sec-policy/selinux-canna 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for canna
@@ -16809,6 +16814,7 @@ sec-policy/selinux-ceph 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux 
 sec-policy/selinux-certbot 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for certbot
 sec-policy/selinux-cgmanager 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cgmanager
 sec-policy/selinux-cgroup 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cgroup
+sec-policy/selinux-chkrootkit 2.20250618_p1 2.20260312_p1 9999: SELinux policy for chkrootkit
 sec-policy/selinux-chromium 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for chromium
 sec-policy/selinux-chronyd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for chronyd
 sec-policy/selinux-clamav 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for clamav
@@ -16822,9 +16828,11 @@ sec-policy/selinux-courier 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELin
 sec-policy/selinux-cpucontrol 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cpucontrol
 sec-policy/selinux-cpufreqselector 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cpufreqselector
 sec-policy/selinux-crio 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cri-o
+sec-policy/selinux-cryfs 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cryfs
 sec-policy/selinux-cups 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cups
 sec-policy/selinux-cvs 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cvs
 sec-policy/selinux-cyphesis 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cyphesis
+sec-policy/selinux-cyrus 2.20250618_p1 2.20260312_p1 9999: SELinux policy for cyrus
 sec-policy/selinux-daemontools 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for daemontools
 sec-policy/selinux-dante 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for dante
 sec-policy/selinux-dbadm 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for dbadm
@@ -16845,6 +16853,7 @@ sec-policy/selinux-docker 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinu
 sec-policy/selinux-dovecot 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for dovecot
 sec-policy/selinux-dpkg 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for dpkg
 sec-policy/selinux-dracut 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for dracut
+sec-policy/selinux-drbd 2.20250618_p1 2.20260312_p1 9999: SELinux policy for drbd
 sec-policy/selinux-dropbox 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for dropbox
 sec-policy/selinux-entropyd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for entropyd
 sec-policy/selinux-evolution 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for evolution
@@ -16858,6 +16867,7 @@ sec-policy/selinux-ftp 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux p
 sec-policy/selinux-fwupd 2.20250618_p1 2.20260312_p1 9999: SELinux policy for fwupd
 sec-policy/selinux-games 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for games
 sec-policy/selinux-gatekeeper 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for gatekeeper
+sec-policy/selinux-geoclue 2.20250618_p1 2.20260312_p1 9999: SELinux policy for geoclue
 sec-policy/selinux-git 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for git
 sec-policy/selinux-gitosis 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for gitosis
 sec-policy/selinux-glusterfs 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for glusterfs
@@ -16866,17 +16876,23 @@ sec-policy/selinux-gpg 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux p
 sec-policy/selinux-gpm 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for gpm
 sec-policy/selinux-gpsd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for gpsd
 sec-policy/selinux-gssproxy 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for gssproxy
+sec-policy/selinux-haproxy 2.20250618_p1 2.20260312_p1 9999: SELinux policy for haproxy
 sec-policy/selinux-hddtemp 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for hddtemp
 sec-policy/selinux-hostapd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for hostapd
+sec-policy/selinux-hwloc 2.20250618_p1 2.20260312_p1 9999: SELinux policy for hwloc
 sec-policy/selinux-icecast 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for icecast
 sec-policy/selinux-ifplugd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ifplugd
 sec-policy/selinux-incus 2.20250618_p1 2.20260312_p1 9999: SELinux policy for incus
 sec-policy/selinux-inetd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for inetd
 sec-policy/selinux-inn 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for inn
+sec-policy/selinux-iodine 2.20250618_p1 2.20260312_p1 9999: SELinux policy for iodine
+sec-policy/selinux-ipmitool 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ipmitool
 sec-policy/selinux-ipsec 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ipsec
 sec-policy/selinux-irc 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for irc
 sec-policy/selinux-ircd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ircd
 sec-policy/selinux-irqbalance 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for irqbalance
+sec-policy/selinux-iscsi 2.20250618_p1 2.20260312_p1 9999: SELinux policy for iscsi
+sec-policy/selinux-isns 2.20250618_p1 2.20260312_p1 9999: SELinux policy for isns
 sec-policy/selinux-jabber 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for jabber
 sec-policy/selinux-java 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for java
 sec-policy/selinux-kdeconnect 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for kdeconnect
@@ -16888,6 +16904,7 @@ sec-policy/selinux-knot 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux 
 sec-policy/selinux-ksmtuned 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ksmtuned
 sec-policy/selinux-kubernetes 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for kubernetes
 sec-policy/selinux-ldap 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ldap
+sec-policy/selinux-libmtp 2.20250618_p1 2.20260312_p1 9999: SELinux policy for libmtp
 sec-policy/selinux-links 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for links
 sec-policy/selinux-lircd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for lircd
 sec-policy/selinux-loadkeys 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for loadkeys
@@ -16896,12 +16913,17 @@ sec-policy/selinux-logsentry 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SEL
 sec-policy/selinux-logwatch 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for logwatch
 sec-policy/selinux-lpd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for lpd
 sec-policy/selinux-makewhatis 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for makewhatis
+sec-policy/selinux-man2html 2.20250618_p1 2.20260312_p1 9999: SELinux policy for man2html
 sec-policy/selinux-mandb 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for mandb
 sec-policy/selinux-matrixd 2.20250213_p1-r1 2.20250618_p1-r1 2.20260312_p1 9999: SELinux policy for matrixd
 sec-policy/selinux-mcelog 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for mcelog
+sec-policy/selinux-mediawiki 2.20250618_p1 2.20260312_p1 9999: SELinux policy for mediawiki
 sec-policy/selinux-memcached 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for memcached
 sec-policy/selinux-milter 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for milter
+sec-policy/selinux-minidlna 2.20250618_p1 2.20260312_p1 9999: SELinux policy for minidlna
+sec-policy/selinux-minissdpd 2.20250618_p1 2.20260312_p1 9999: SELinux policy for minissdpd
 sec-policy/selinux-modemmanager 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for modemmanager
+sec-policy/selinux-monit 2.20250618_p1 2.20260312_p1 9999: SELinux policy for monit
 sec-policy/selinux-mono 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for mono
 sec-policy/selinux-mozilla 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for mozilla
 sec-policy/selinux-mpd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for mpd
@@ -16920,10 +16942,12 @@ sec-policy/selinux-nsd 2.20250618_p1 2.20260312_p1 9999: SELinux policy for nsd
 sec-policy/selinux-nslcd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for nslcd
 sec-policy/selinux-ntop 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ntop
 sec-policy/selinux-ntp 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ntp
+sec-policy/selinux-numad 2.20250618_p1 2.20260312_p1 9999: SELinux policy for numad
 sec-policy/selinux-nut 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for nut
 sec-policy/selinux-nx 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for nx
 sec-policy/selinux-obfs4proxy 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for obfs4proxy
 sec-policy/selinux-oddjob 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for oddjob
+sec-policy/selinux-ofono 2.20260312_p1 9999: SELinux policy for ofono
 sec-policy/selinux-oident 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for oident
 sec-policy/selinux-openct 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for openct
 sec-policy/selinux-openrc 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for openrc
@@ -16948,10 +16972,12 @@ sec-policy/selinux-psad 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux 
 sec-policy/selinux-publicfile 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for publicfile
 sec-policy/selinux-pulseaudio 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for pulseaudio
 sec-policy/selinux-puppet 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for puppet
+sec-policy/selinux-pwauth 2.20250618_p1 2.20260312_p1 9999: SELinux policy for pwauth
 sec-policy/selinux-pyzor 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for pyzor
 sec-policy/selinux-qemu 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for qemu
 sec-policy/selinux-qmail 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for qmail
 sec-policy/selinux-quota 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for quota
+sec-policy/selinux-rabbitmq 2.20250618_p1 2.20260312_p1 9999: SELinux policy for rabbitmq
 sec-policy/selinux-radius 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for radius
 sec-policy/selinux-radvd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for radvd
 sec-policy/selinux-rasdaemon 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for rasdaemon
@@ -16959,6 +16985,7 @@ sec-policy/selinux-razor 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux
 sec-policy/selinux-redis 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for redis
 sec-policy/selinux-remotelogin 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for remotelogin
 sec-policy/selinux-resolvconf 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for resolvconf
+sec-policy/selinux-rkhunter 2.20250618_p1 2.20260312_p1 9999: SELinux policy for rkhunter
 sec-policy/selinux-rngd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for rngd
 sec-policy/selinux-rootlesskit 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for rootlesskit
 sec-policy/selinux-rpc 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for rpc
@@ -16969,8 +16996,10 @@ sec-policy/selinux-rtkit 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux
 sec-policy/selinux-rtorrent 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for rtorrent
 sec-policy/selinux-salt 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for salt
 sec-policy/selinux-samba 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for samba
+sec-policy/selinux-sanlock 2.20250618_p1 2.20260312_p1 9999: SELinux policy for sanlock
 sec-policy/selinux-sasl 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for sasl
 sec-policy/selinux-screen 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for screen
+sec-policy/selinux-seatd 2.20250618_p1 2.20260312_p1 9999: SELinux policy for seatd
 sec-policy/selinux-secadm 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for secadm
 sec-policy/selinux-sendmail 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for sendmail
 sec-policy/selinux-sensord 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for sensord
@@ -16989,6 +17018,7 @@ sec-policy/selinux-sssd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux 
 sec-policy/selinux-stunnel 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for stunnel
 sec-policy/selinux-subsonic 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for subsonic
 sec-policy/selinux-sudo 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for sudo
+sec-policy/selinux-svnserve 2.20250618_p1 2.20260312_p1 9999: SELinux policy for svnserve
 sec-policy/selinux-switcheroo 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for switcheroo
 sec-policy/selinux-sxid 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for sxid
 sec-policy/selinux-syncthing 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for syncthing
@@ -17006,6 +17036,7 @@ sec-policy/selinux-tmpreaper 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SEL
 sec-policy/selinux-tor 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for tor
 sec-policy/selinux-tpm2 2.20250618_p1 2.20260312_p1 9999: SELinux policy for tpm2
 sec-policy/selinux-tripwire 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for tripwire
+sec-policy/selinux-tuned 2.20250618_p1 2.20260312_p1 9999: SELinux policy for tuned
 sec-policy/selinux-ucspitcp 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ucspitcp
 sec-policy/selinux-ulogd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for ulogd
 sec-policy/selinux-uml 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for uml
@@ -17027,6 +17058,7 @@ sec-policy/selinux-vnstatd 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELin
 sec-policy/selinux-vpn 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for vpn
 sec-policy/selinux-watchdog 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for watchdog
 sec-policy/selinux-wayland 2.20260312_p1 9999: SELinux policy for wayland
+sec-policy/selinux-wdmd 2.20250618_p1 2.20260312_p1 9999: SELinux policy for wdmd
 sec-policy/selinux-webalizer 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for webalizer
 sec-policy/selinux-wine 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for wine
 sec-policy/selinux-wireguard 2.20250213_p1 2.20250618_p1 2.20260312_p1 9999: SELinux policy for wireguard
@@ -17067,7 +17099,7 @@ sys-apps/biosdevname 0.7.3-r1: Sets BIOS-given device names instead of kernel et
 sys-apps/biosdisk 1.01: FreeDOS based BIOS updating utility for Dell machines
 sys-apps/bleachbit 4.6.0-r1 4.6.2 5.0.0 5.0.2: Clean junk to free disk space and to maintain privacy
 sys-apps/bolt 0.9.8-r1 0.9.9 0.9.10 0.9.11: Userspace system daemon to enable security levels for Thunderbolt 3
-sys-apps/bubblewrap 0.11.0 0.11.2: Unprivileged sandboxing tool, namespaces-powered chroot-like solution
+sys-apps/bubblewrap 0.11.0-r1 0.11.2-r1: Unprivileged sandboxing tool, namespaces-powered chroot-like solution
 sys-apps/busybox 1.36.1-r4 1.37.0 1.38.0 9999: Utilities for rescue and embedded systems
 sys-apps/byld 1.0.3-r1: Build a Linux distribution on a single floppy
 sys-apps/cciss_vol_status 1.12a-r1: Shows status of logical drives attached to HP SmartArray controllers
@@ -17125,7 +17157,7 @@ sys-apps/fix-gnustack 0.1-r1: Utility to report and remove the executable flag f
 sys-apps/flashrom 1.5.1 1.6.0 1.7.0: Utility for reading, writing, erasing and verifying flash ROM chips
 sys-apps/flatpak 1.16.6: Linux application sandboxing and distribution framework
 sys-apps/fwts 22.03.00 23.11.00 24.03.00: Firmware Test Suite
-sys-apps/fwupd 2.0.16 2.0.20 2.1.1-r2 2.1.2 2.1.3: Aims to make updating firmware on Linux automatic, safe and reliable
+sys-apps/fwupd 2.0.16 2.0.20 2.1.1-r2 2.1.2: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-apps/fwupd-efi 1.7 1.8: EFI executable for fwupd
 sys-apps/fxload 20081013-r1: USB firmware uploader
 sys-apps/gawk 5.3.2 5.4.0-r2: GNU awk pattern-matching language
@@ -17173,7 +17205,7 @@ sys-apps/iproute2 6.16.0 6.17.0 6.18.0 6.19.0 7.0.0 9999: kernel routing and tra
 sys-apps/irqbalance 1.9.4-r3 1.9.5: Distribute hardware interrupts across processors on a multiprocessor system
 sys-apps/isapnptools 1.27-r1: Tools for configuring ISA PnP devices
 sys-apps/iucode_tool 2.3.1-r1 2.3.1-r2: Tool to manipulate Intel X86 and X86-64 processor microcode update collections
-sys-apps/kbd 2.7.1 2.8.0 2.9.0 2.9.0-r1 9999: Keyboard and console utilities
+sys-apps/kbd 2.7.1 2.8.0 2.9.0 2.9.0-r2 9999: Keyboard and console utilities
 sys-apps/kcheck 0.0.2-r3: Record and check required kernel symbols are set
 sys-apps/kexec-tools 2.0.32 2.0.32-r1 9999: Load another kernel from the currently executing Linux kernel
 sys-apps/keyutils 1.6.3-r1: Linux Key Management Utilities
@@ -17559,7 +17591,7 @@ sys-cluster/prrte 3.0.6 3.0.7 3.0.12: PMIx Reference RunTime Environment
 sys-cluster/rdma-core 53.1 57.0 58.0 59.0 9999: Userspace components for the Linux Kernel's drivers/infiniband subsystem
 sys-cluster/resource-agents 4.12.0 4.15.1: Resources pack for Heartbeat / Pacemaker
 sys-cluster/rocm-k8s-device-plugin 0.3.0 0.5.0: AMD GPU device plugin for kubernetes
-sys-cluster/sanlock 3.8.5-r1 3.8.5-r2 4.2.0 4.2.0-r1 5.1.0: shared storage lock manager
+sys-cluster/sanlock 3.8.5-r1 3.8.5-r3 4.2.0 4.2.0-r2 5.1.0-r1: shared storage lock manager
 sys-cluster/slurm 22.05.11-r1 24.05.3-r1: A Highly Scalable Resource Manager
 sys-cluster/spark-bin 3.1.2-r1: Lightning-fast unified analytics engine
 sys-cluster/torque 6.0.4-r7: Resource manager and queuing system based on OpenPBS
@@ -17584,7 +17616,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.0_p20260524 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
