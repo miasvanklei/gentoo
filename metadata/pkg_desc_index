@@ -1877,7 +1877,7 @@ app-editors/vim 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.1652-r3 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r2 9999: Modern, legacy free, simple yet efficient vim-like editor
 app-editors/vscode 1.120.0 1.121.0: Multiplatform Visual Studio Code from Microsoft
-app-editors/vscodium 1.110.11631 1.112.01907: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
+app-editors/vscodium 1.110.11631 1.112.01907 1.116.02821: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
 app-editors/xemacs 21.5.36-r6 21.5.9999: highly customizable open source text editor and application development system
@@ -10980,7 +10980,7 @@ dev-util/maxcso 1.13.0 9999: Fast cso compressor
 dev-util/mdds 2.1.1-r1 3.0.0 9999: Collection of multi-dimensional data structure and indexing algorithm
 dev-util/meld 3.22.2-r1 3.22.3: A graphical diff and merge tool
 dev-util/memprof 0.6.2-r2: Profiling and leak detection tool
-dev-util/mesa_clc 25.3.6 26.1.1 9999: mesa_clc tool used for building OpenCL C to SPIR-V
+dev-util/mesa_clc 25.3.6 26.0.7 26.0.8 26.1.1 9999: mesa_clc tool used for building OpenCL C to SPIR-V
 dev-util/mig 1.8_p20231217 1.8_p20260123 9999: GNU Mach 3.0 interface generator (IDL compiler)
 dev-util/min-cscope 16.1.0-r2: Interactively examine a C program
 dev-util/mingw64-runtime 13.0.0 14.0.0: Free Win64 runtime and import library definitions
@@ -13487,7 +13487,7 @@ media-libs/lilv 0.24.26-r1: Library to make the use of LV2 plugins as simple as 
 media-libs/lsp-plugins 1.2.3-r1 1.2.6 1.2.14 9999: Linux Studio Plugins
 media-libs/lv2 1.18.10-r1 1.18.10-r2: A simple but extensible successor of LADSPA
 media-libs/lvtk 1.2.0-r4: A set of C++ wrappers around the LV2 C API
-media-libs/mesa 25.3.6 26.1.1 9999: OpenGL-like graphic library for Linux
+media-libs/mesa 25.3.6 26.0.7 26.0.8 26.1.1 9999: OpenGL-like graphic library for Linux
 media-libs/mesa-amber 21.3.9-r2 21.3.9-r3: OpenGL-like graphic library for Linux
 media-libs/mlt 7.34.1-r1 7.38.0: Open source multimedia framework for television broadcasting
 media-libs/mpvqt 1.1.1-r3 1.2.0: libmpv wrapper for QtQuick2 and QML
@@ -16445,7 +16445,7 @@ sci-ml/safetensors 0.7.0: Simple, safe way to store and distribute tensors
 sci-ml/sentencepiece 0.2.1: Text tokenizer for Neural Network-based text generation
 sci-ml/seqeval 1.2.2-r4: Python framework for sequence labeling evaluation
 sci-ml/tensorpipe 2025.11.05: provides a tensor-aware channel
-sci-ml/tokenizers 0.22.1 0.22.2: Implementation of today's most used tokenizers
+sci-ml/tokenizers 0.22.1 0.22.2 0.23.1: Implementation of today's most used tokenizers
 sci-ml/torchdata 0.11.0: A repo for data loading and utilities on PyTorch domain libraries
 sci-ml/torchvision 0.26.0 0.27.0: Datasets, transforms and models to specific to computer vision
 sci-ml/transformers 4.57.6 5.3.0: State-of-the-art Machine Learning for JAX, PyTorch and TensorFlow
