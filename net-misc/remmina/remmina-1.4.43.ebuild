@@ -16,7 +16,7 @@ S="${WORKDIR}/${MY_P}"
 LICENSE="GPL-2+-with-openssl-exception"
 SLOT="0"
 KEYWORDS="~amd64 ~arm64 ~riscv ~x86"
-IUSE="aad +appindicator crypt cups examples keyring gvnc kwallet nls python spice ssh rdp vnc wayland webkit zeroconf X"
+IUSE="+appindicator crypt cups examples keyring gvnc kwallet nls python spice ssh rdp vnc wayland webkit zeroconf X"
 
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} ) || ( X wayland )"
 
@@ -32,8 +32,6 @@ COMMON_DEPEND="
 		x11-libs/libX11
 		x11-libs/libxkbfile
 	)
-	aad? ( net-misc/freerdp[aad]
-		net-libs/webkit-gtk:4.1 )
 	appindicator? ( dev-libs/libayatana-appindicator )
 	crypt? ( dev-libs/libgcrypt:0= )
 	keyring? ( app-crypt/libsecret )
@@ -66,8 +64,6 @@ DOCS=( AUTHORS CHANGELOG.md README.md THANKS.md )
 
 PATCHES=(
 	"${FILESDIR}/${PN}-1.4.40-kf6wallet.patch" # bug 950750; TODO: upstream
-	"${FILESDIR}/support-avd-aad.patch"
-	"${FILESDIR}/support-avd-rdpw.patch"
 )
 
 pkg_setup() {
@@ -96,7 +92,6 @@ src_configure() {
 		-DWITH_LIBSSH=$(usex ssh)
 		-DWITH_LIBVNCSERVER=$(usex vnc)
 		-DWITH_PYTHONLIBS=$(usex python ON OFF)
-		-DWITH_RDP_AUTH_AAD=$(usex aad ON OFF)
 		-DWITH_SPICE=$(usex spice)
 		-DWITH_TRANSLATIONS=$(usex nls)
 		-DWITH_UPDATE_DESKTOP_DB=OFF
