@@ -1372,16 +1372,16 @@ app-containers/containers-storage 1.55.1 1.57.2 1.59.1 9999: Default config and 
 app-containers/cosign 2.5.0 2.6.1 3.0.3: container signing utility
 app-containers/cri-o 1.31.2 1.31.4 1.34.3: OCI-based implementation of Kubernetes Container Runtime Interface
 app-containers/cri-tools 1.33.0 1.35.0 1.36.0: CLI and validation tools for Kubelet Container Runtime (CRI)
-app-containers/crun 1.19.1 1.20 1.21 1.25.1: Fast and low-memory footprint OCI Container Runtime fully written in C
+app-containers/crun 1.19.1 1.20 1.21 1.25.1 1.28: Fast and low-memory footprint OCI Container Runtime fully written in C
 app-containers/devcontainer 0.85.0 0.86.1 0.87.0: Reference implementation of the Development Containers specification
 app-containers/distrobox 1.8.2.4 1.8.2.5 9999: Use any Linux distribution inside your terminal (powered by docker/podman)
 app-containers/distrobuilder 2.1 3.0-r1 3.1 3.2 3.3.1: System container image builder for LXC and incus
 app-containers/dive 0.13.1: terminal based UI to manage kubernetes clusters
 app-containers/docker 28.0.1 28.0.4 28.1.1 28.2.2 28.4.0 29.1.3-r1 29.5.2: The core functions you need to create Docker images and run Docker containers
 app-containers/docker-bench-security 1.6.0 1.6.1: Test for best practices around deploying docker containers
-app-containers/docker-buildx 0.11.2 0.14.0 0.19.1 0.20.1 0.21.2 9999: Docker CLI plugin for extended build capabilities with BuildKit
+app-containers/docker-buildx 0.11.2 0.14.0 0.19.1 0.20.1 0.21.2 0.34.1 9999: Docker CLI plugin for extended build capabilities with BuildKit
 app-containers/docker-cli 28.0.1 28.0.4 28.1.1 28.2.2 28.4.0 29.1.3 29.5.2: the command line binary for docker
-app-containers/docker-compose 1.29.2-r8 2.34.0-r1 2.39.3 2.40.3 5.0.1-r1: Multi-container orchestration for Docker
+app-containers/docker-compose 1.29.2-r8 2.34.0-r1 2.39.3 2.40.3 5.0.1-r1 5.1.4: Multi-container orchestration for Docker
 app-containers/docker-credential-helpers 0.8.2 0.9.2 0.9.3: Suite of programs to use native stores to keep Docker credentials safe
 app-containers/docker-pushrm 1.9.0: Docker CLI plugin to update container repository documentation
 app-containers/docker-registry 3.0.0_rc2 3.0.0_rc3: Docker Registry 2.0
@@ -1397,17 +1397,17 @@ app-containers/lxc 5.0.3 6.0.5 6.0.6 7.0.0: A userspace interface for the Linux 
 app-containers/lxc-templates 3.0.4_p20240917: Old style template scripts for LXC
 app-containers/lxd 5.21.1-r1 5.21.4 6.3 6.5: Modern, secure and powerful system container and virtual machine manager
 app-containers/nerdctl 2.0.2 2.0.3 2.2.1: Docker-compatible CLI for containerd, with support for Compose
-app-containers/netavark 1.14.1 1.15.2 1.16.1 1.17.0 1.17.1 9999: A container network stack
+app-containers/netavark 1.14.1 1.15.2 1.16.1 1.17.0 1.17.1 1.17.2 9999: A container network stack
 app-containers/nvidia-container-toolkit 1.18.0 1.18.1 1.19.0 9999: NVIDIA container runtime toolkit
 app-containers/podman 5.7.1 9999: A tool for managing OCI containers and pods with Docker-compatible CLI
 app-containers/podman-compose 1.5.0: A script to run docker-compose.yml using Podman
 app-containers/podman-tui 1.5.0 1.6.1 1.9.0 9999: Terminal UI frontend for Podman
 app-containers/reg 0.16.1-r1: Docker registry v2 command line client
-app-containers/runc 1.2.8 1.3.3 1.4.0-r1: runc container cli tools
+app-containers/runc 1.2.8 1.3.3 1.4.0-r1 1.4.2: runc container cli tools
 app-containers/s6-overlay 2.1.0.2-r1: an s6-based init system for containers
 app-containers/sen 0.8.0 0.8.1: Terminal User Interface for docker engine
 app-containers/skopeo 1.18.0-r1 1.19.0 1.21.0 1.22.0 1.22.2 9999: Work with remote container images registries
-app-containers/slirp4netns 1.3.3: User-mode networking for unprivileged network namespaces
+app-containers/slirp4netns 1.3.3 1.3.4: User-mode networking for unprivileged network namespaces
 app-containers/snapd 2.63: Service and tools for management of snap packages
 app-containers/syft 0.75.0 0.76.0 0.94.0 0.95.0 1.9.0 1.18.1: Generate a Software Bill of Materials from container images and filesystems
 app-containers/umoci 0.4.7: Manipulation tool for OCI images
@@ -1876,7 +1876,7 @@ app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clo
 app-editors/vim 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.1652-r3 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r2 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.121.0 1.122.0: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscode 1.121.0 1.122.1: Multiplatform Visual Studio Code from Microsoft
 app-editors/vscodium 1.110.11631 1.112.01907 1.116.02821: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
@@ -2556,7 +2556,7 @@ app-i18n/ibus-table-chinese 1.8.14: Chinese tables for IBus-Table
 app-i18n/ibus-table-extraphrase 1.3.9.20110826-r1: Chinese extra phrases for IBus-Table
 app-i18n/ibus-table-latin 1.2.0.20100305-r1: Latin tables for IBus-Table
 app-i18n/ibus-table-others 1.3.22: Various tables for IBus-Table
-app-i18n/ibus-typing-booster 2.30.4 2.30.6 2.30.7 2.30.8: Completion input method for IBus
+app-i18n/ibus-typing-booster 2.30.6 2.30.7 2.30.8: Completion input method for IBus
 app-i18n/ibus-unikey 0.7.0_beta1: Vietnamese UniKey engine for IBus
 app-i18n/im-chooser 1.7.3: Desktop Input Method configuration tool
 app-i18n/imsettings 1.8.2-r1: Delivery framework for general Input Method configuration
@@ -2571,7 +2571,7 @@ app-i18n/libime 1.1.13 1.1.14: Fcitx5 Next generation of fcitx
 app-i18n/libpinyin 2.8.1 9999: Libraries for handling of Hanyu Pinyin and Zhuyin Fuhao
 app-i18n/librime 1.13.1 1.14.0 1.15.0 1.16.1: RIME (Rime Input Method Engine) core library
 app-i18n/librime-lua 20240819212322-r1 20250707183812 99999999999999: Lua module for RIME
-app-i18n/libskk 1.0.5_p20210830 1.1.1: GObject-based library to deal with Japanese kana-to-kanji conversion method
+app-i18n/libskk 1.1.1: GObject-based library to deal with Japanese kana-to-kanji conversion method
 app-i18n/man-pages-ja 20180315-r2 20260115-r2: Collection of manual pages translated into Japanese
 app-i18n/man-pages-l10n 4.29.1 4.30.0-r1: A somewhat comprehensive collection of man page translations
 app-i18n/man-pages-ru 5.03.2390.2390.20191017-r1: A collection of Russian translations of Linux manual pages
@@ -2610,7 +2610,7 @@ app-i18n/uim 1.8.9-r2 1.9.6: Multilingual input method framework
 app-i18n/uim-tomoe-gtk 0.6.0: Japanese input method Tomoe IMEngine for uim
 app-i18n/unicode-cldr 47.0 48.0 48.1: Unicode Common Locale Data Repository
 app-i18n/unicode-data 15.1.0 16.0.0 17.0.0: Unicode data from unicode.org
-app-i18n/unicode-emoji 15.1 16.0 17.0.0: UTS #51 Unicode Emoji
+app-i18n/unicode-emoji 17.0.0: UTS #51 Unicode Emoji
 app-i18n/xvnkb 0.2.11 0.2.11-r1: Vietnamese input keyboard for X
 app-i18n/yaskkserv 1.1.1-r1: Yet Another SKK server
 app-i18n/yaskkserv2 0.1.7-r1: Yet Another SKK server
@@ -3169,7 +3169,7 @@ app-shells/starship 1.23.0 1.24.0 1.24.1 1.24.2 1.25.0 1.25.1: The minimal, blaz
 app-shells/tcsh 6.24.15 6.24.16: Enhanced version of the Berkeley C shell (csh)
 app-shells/thefuck 3.32-r2: Magnificent app which corrects your previous console command
 app-shells/ugit 0.4.5.1: PowerShell wrapper for git, automate repos and output git as objects
-app-shells/yash 2.60 2.61: Yash is a POSIX-compliant command line shell
+app-shells/yash 2.61: Yash is a POSIX-compliant command line shell
 app-shells/zoxide 0.9.4-r1 0.9.6-r1 0.9.7 0.9.8 0.9.9: A smarter cd command for your terminal
 app-shells/zsh 5.9-r6 5.9-r7 5.9.0.3-r2 9999: UNIX Shell similar to the Korn shell
 app-shells/zsh-completions 0.34.0 0.35.0 9999: Additional completion definitions for Zsh
@@ -3442,7 +3442,7 @@ app-text/writerperfect 0.9.6: Various formats to Open document format converter
 app-text/wscr 1.2-r2: A Lightweight and Fast Anagram Solver
 app-text/wv 1.2.9-r5: Tool for conversion of MSWord doc and rtf files to something readable
 app-text/wv2 0.4.2-r4 0.4.2-r5: Excellent MS Word filter lib, used in most Office suites
-app-text/xapers 0.9.3: Personal document indexing system
+app-text/xapers 0.9.3-r1: Personal document indexing system
 app-text/xapian-omega 1.4.29 1.4.30 1.4.31 2.0.0: An application built on Xapian, consisting of indexers and a CGI search frontend
 app-text/xchm 1.36-r1 1.37-r1: Utility for viewing Compiled HTML Help (CHM) files
 app-text/xdvik 22.87.06-r1: DVI viewer for X Window System
@@ -5080,7 +5080,7 @@ dev-java/lucene 2.4.1-r5: High-performance, full-featured text search engine wri
 dev-java/lz4-java 1.8.0-r6: LZ4 compression for Java
 dev-java/lzma 25.01: Java code for LZMA compression and decompression
 dev-java/lzmajio 0.95-r4: LzmaInputStream/LzmaOutputStream interacting with underlying LZMA en-/decoders
-dev-java/maven-bin 3.9.14 3.9.15: Project Management and Comprehension Tool for Java
+dev-java/maven-bin 3.9.15 3.9.16: Project Management and Comprehension Tool for Java
 dev-java/mchange-commons 0.2.20: a library of arguably useful Java utilities
 dev-java/memoryfilesystem 2.3.0-r1: An in memory implementation of a JSR-203 file system
 dev-java/metainf-services 1.11: Generates META-INF/services files automatically
@@ -5691,7 +5691,7 @@ dev-libs/libunistring 0.9.10-r1 1.0 1.3 1.4.2: Library for manipulating Unicode 
 dev-libs/libusb 1.0.27-r1 1.0.28 1.0.29 1.0.30: Userspace access to USB devices
 dev-libs/libusb-compat 0.1.8 0.1.9: Userspace access to USB devices (libusb-0.1 compat wrapper)
 dev-libs/libusbhp 1.0.2-r1: USB Hotplug Library
-dev-libs/libutf8proc 2.10.0 2.11.0 2.11.1 2.11.2 2.11.3: A clean C Library for processing UTF-8 Unicode data
+dev-libs/libutf8proc 2.11.3: A clean C Library for processing UTF-8 Unicode data
 dev-libs/libuv 1.52.1 9999: Cross-platform asychronous I/O
 dev-libs/libvarlink 24: C implementation of the Varlink protocol and command line tool
 dev-libs/libverto 0.3.2 0.3.2-r1: Main event loop abstraction library
@@ -8061,7 +8061,7 @@ dev-php/pear 1.10.3-r1: PEAR - PHP Extension and Application Repository
 dev-php/pecl-amqp 2.1.2 2.2.0: PHP Bindings for AMQP 0-9-1 compatible brokers
 dev-php/pecl-apcu 5.1.24 5.1.27: Stripped down version of APC supporting only user cache
 dev-php/pecl-brotli 0.15.0 0.16.0 9999: Brotli compression extension for PHP
-dev-php/pecl-dio 0.2.1: Direct I/O functions for PHP
+dev-php/pecl-dio 0.2.1 0.3.0: Direct I/O functions for PHP
 dev-php/pecl-event 3.1.4: PHP wrapper for libevent2
 dev-php/pecl-http 4.2.6 4.3.1: Extended HTTP Support for PHP
 dev-php/pecl-imagick 3.7.0-r3 3.7.0-r4 3.8.1: PHP wrapper for the ImageMagick library
@@ -10782,7 +10782,7 @@ dev-util/byacc 20241231 20260126: The best variant of the Yacc parser generator
 dev-util/cargo-audit 0.21.1 0.21.2 0.22.0 0.22.1: Audit Cargo.lock for crates with security vulnerabilities
 dev-util/cargo-c 0.10.13-r1 0.10.14 0.10.15 0.10.16 0.10.18 0.10.19 0.10.20 0.10.21 0.10.22-r1: Helper program to build and install c-like libraries
 dev-util/cargo-license 0.6.1-r1 0.7.0: Cargo subcommand to see license of dependencies
-dev-util/cargo-nextest 0.9.132 0.9.133 0.9.135: Next-generation test runner for Rust
+dev-util/cargo-nextest 0.9.132 0.9.133 0.9.135 0.9.137: Next-generation test runner for Rust
 dev-util/cargo-pgrx 0.12.7 0.12.9 0.13.1 0.14.3 0.15.0 0.16.0 0.16.1 0.18.0: pgrx: A Rust framework for creating Postgres extensions
 dev-util/cargo-tarpaulin 0.35.0 0.35.1 0.35.2: Cargo-Tarpaulin is a tool to determine code coverage achieved via tests
 dev-util/cargo-vendor-filterer 0.5.18: Tool to 'cargo vendor' with filtering
@@ -11981,7 +11981,7 @@ gnome-base/gnome-panel 3.54.0 3.56.0 3.58.1: The GNOME Flashback Panel
 gnome-base/gnome-session 48.0-r2 49.2: Gnome session manager
 gnome-base/gnome-session-openrc 49.1-r1: Gnome session leader for OpenRC
 gnome-base/gnome-settings-daemon 48.1 49.1 49.1-r1: Gnome Settings Daemon
-gnome-base/gnome-shell 48.5 48.7 48.8 49.6: Provides core UI functions for the GNOME desktop
+gnome-base/gnome-shell 48.5 48.7 48.8 49.6 49.6-r1: Provides core UI functions for the GNOME desktop
 gnome-base/gsettings-desktop-schemas 48.0 49.1: Collection of GSettings schemas for GNOME desktop
 gnome-base/gvfs 1.56.1-r3 1.58.4: Virtual filesystem implementation for GIO
 gnome-base/libglade 2.6.4-r5: Library to construct graphical interfaces at runtime
@@ -12707,7 +12707,7 @@ mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0 7.8.0_p1: Lightweight but featured
 mail-mta/postfix 3.11.2 3.11.2-r1 3.11.3 3.12_pre20260516: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
-mail-mta/sendmail 8.18.2 8.18.2-r1 8.19.0.0-r1: Widely-used Mail Transport Agent (MTA)
+mail-mta/sendmail 8.18.2 8.18.2-r1 8.19.0.0-r1 8.19.0.1: Widely-used Mail Transport Agent (MTA)
 mail-mta/ssmtp 2.64_p11-r1 2.64_p12: Extremely simple MTA to get mail off the system to a Mailhub
 mate-base/caja 1.28.0-r3: Caja file manager for the MATE desktop
 mate-base/libmatekbd 1.28.0: MATE keyboard configuration library
@@ -14514,7 +14514,7 @@ net-analyzer/multimon-ng 1.3.0 9999: a fork of multimon, decodes multiple digita
 net-analyzer/multipath-tcp-tools 2018_p12_p21-r1 999999: Analysis tools for Multipath Transmission Control Protocol (MPTCP)
 net-analyzer/munin 2.0.75 2.0.76-r2 2.0.76-r3: Munin Server Monitoring Tool
 net-analyzer/munin-plugins-zfs 0.20170127-r1: A Munin plugin for monitoring ZFS on Linux
-net-analyzer/nagios 4.5.8 4.5.12: The Nagios metapackage
+net-analyzer/nagios 4.5.8 4.5.12 4.5.13: The Nagios metapackage
 net-analyzer/nagios-check_dnssec 0.1_p28: check_dnssec is a set of Nagios plugins to monitor DNSSEC services
 net-analyzer/nagios-check_glsa2 20120930-r1: Nagios check script for GLSAs (Gentoo Linux Security Advisories)
 net-analyzer/nagios-check_ipmi_sensor 3.13: IPMI Sensor Monitoring Plugin for Nagios/Icinga
@@ -14523,7 +14523,7 @@ net-analyzer/nagios-check_logfiles 4.0.1.3: A nagios plugin for checking logfile
 net-analyzer/nagios-check_multiple 0.0.1-r4: A Nagios plugin to execute multiple checks in parallel
 net-analyzer/nagios-check_mysql_health 2.2.2-r2: Nagios plugin for checking MySQL server health
 net-analyzer/nagios-check_rbl 1.7.0: Monitor whether or not a host is blacklisted
-net-analyzer/nagios-core 4.5.8 4.5.12: Nagios core - monitoring daemon, web GUI, and documentation
+net-analyzer/nagios-core 4.5.8 4.5.12 4.5.13: Nagios core - monitoring daemon, web GUI, and documentation
 net-analyzer/nagios-icinga-openvpn 0.0.1-r6: A Nagios plugin to check whether an OpenVPN server is alive
 net-analyzer/nagios-plugin-check_lm_sensors 4.1.1_p20191028: Nagios plugin to monitor the values of onboard sensors and disk temperatures
 net-analyzer/nagios-plugin-check_raid 4.0.10-r3: Nagios/Icinga plugin to check current server's RAID status
@@ -14829,7 +14829,7 @@ net-im/rocketchat-desktop-bin 3.9.10-r1 4.1.1-r1: The Ultimate Open Source Web C
 net-im/sendxmpp 1.24: A perl-script to send xmpp (jabber), similar to what mail(1) does for mail
 net-im/sendxmpp-scala 1.2.0 1.2.1 9999: Send XMPP (Jabber) messages via command line
 net-im/signal-cli-bin 0.13.9 0.13.19 0.14.1: Send and receive messages of Signal Messenger over a command line interface
-net-im/signal-desktop-bin 8.10.0: Allows you to send and receive messages of Signal Messenger on your computer
+net-im/signal-desktop-bin 8.12.0: Allows you to send and receive messages of Signal Messenger on your computer
 net-im/slack 4.49.89 4.50.121: Team collaboration tool
 net-im/spectrum2 2.2.1-r2: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
@@ -15065,7 +15065,7 @@ net-libs/webkit-gtk 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.50.5-r410 
 net-libs/wslay 1.1.1_p20210115: WebSocket library in C
 net-libs/wvstreams 4.6.1_p14-r2 4.6.1_p14-r3: A network programming library in C++
 net-libs/xdp-tools 1.6.2 1.6.3-r1: The libxdp library and various tools for use with XDP
-net-libs/xrootd 5.8.2 5.8.3 5.8.4 5.9.1 5.9.2 5.9.3 9999: Extended ROOT remote file server
+net-libs/xrootd 5.8.2 5.9.5 9999: Extended ROOT remote file server
 net-libs/zeromq 4.3.5-r1: High-performance asynchronous messaging library
 net-libs/zmqpp 4.2.0-r1: ZeroMQ 'highlevel' C++ bindings
 net-mail/altermime 0.3.12: alterMIME is a small program which is used to alter your mime-encoded mailpacks
@@ -15175,7 +15175,7 @@ net-misc/babeld 1.13.1: a loop-free distance-vector routing protocol
 net-misc/balance 3.57-r1: TCP Load Balancing Port Forwarder
 net-misc/batctl 2022.2: BATMAN advanced control and management tool
 net-misc/bgpq4 1.8 1.15: Generate access-lists for various routers, maintained fork of bgpq3
-net-misc/bird 2.17.2 2.17.3-r1 2.17.4 2.18.1 3.1.5-r1 3.1.6 3.2.1: A routing daemon implementing OSPF, RIPv2 & BGP for IPv4 & IPv6
+net-misc/bird 2.17.2 2.17.4 2.18.1 2.19.0 3.1.6 3.2.1 3.3.0: A routing daemon implementing OSPF, RIPv2 & BGP for IPv4 & IPv6
 net-misc/bopm 3.1.3-r7: Blitzed Open Proxy Monitor
 net-misc/bridge-utils 1.7.1-r1: Tools for configuring the Linux kernel 802.1d Ethernet Bridge
 net-misc/bsdwhois 1.43.2.1-r1: FreeBSD Whois Client
@@ -15265,7 +15265,7 @@ net-misc/ipmiview 2.23.0.250519: A GUI application that allows to manage multipl
 net-misc/iprange 1.0.4: A tool capable of managing sets of IPs
 net-misc/ipsorcery 2.0.9-r2: Ipsorcery allows you to generate IP, TCP, UDP, ICMP, and IGMP packets
 net-misc/ipsvd 1.0.0-r3: Set of internet protocol service daemons for Unix
-net-misc/iputils 20250605-r3 99999999: Network monitoring tools including ping and ping6
+net-misc/iputils 20250605-r3 20250605-r4 99999999: Network monitoring tools including ping and ping6
 net-misc/ipv6calc 4.3.2-r1 4.4.0: IPv6 address calculator
 net-misc/jlj 2.12-r1: Simple console LiveJournal entry system
 net-misc/jwhois 4.0-r2: Advanced Internet Whois client capable of recursive queries
@@ -15779,6 +15779,7 @@ sci-astronomy/psfex 3.17.1: Extracts models of the Point Spread Function from FI
 sci-astronomy/pyephem 4.1.5 4.2.1: Astronomical routines for the Python programming language
 sci-astronomy/pysiril 0.0.15: Python library to interface Python to a SiriL script
 sci-astronomy/scamp 2.14.0 2.15.0: Astrometric and photometric solutions for astronomical images
+sci-astronomy/ser-player 1.8.0 9999: Video player for SER files used for solar, lunar and planetary astronomy-imaging
 sci-astronomy/sextractor 2.19.5-r1: Extract catalogs of sources from astronomical FITS images
 sci-astronomy/siril 1.2.6-r1 1.4.0-r1 1.4.2 9999: A free astronomical image processing software
 sci-astronomy/sirilic 1.15.12: Preparing acquisition files for processing with the SiriL software
@@ -16345,7 +16346,7 @@ sci-mathematics/kissat 3.1.1-r1 4.0.4: Keep-it-simple and clean bare metal SAT s
 sci-mathematics/lcalc 2.1.1: Command-line utility and library for L-function computations
 sci-mathematics/lean 4.14.0-r1 4.23.0 4.24.0: The Lean Theorem Prover
 sci-mathematics/libpoly 0.1.11: C library for manipulating polynomials
-sci-mathematics/lpsolve 5.5.2.11-r2: Mixed Integer Linear Programming (MILP) solver
+sci-mathematics/lpsolve 5.5.2.11-r2 5.5.2.14: Mixed Integer Linear Programming (MILP) solver
 sci-mathematics/lrcalc 1.2 2.1: Littlewood-Richardson Calculator
 sci-mathematics/manifold 3.1.0-r1 3.2.1 9999: Geometry library for topological robustness
 sci-mathematics/mathematica 10.3.1-r2 12.2.0 13.0.1 13.1.0-r1 13.2.1-r1 13.3.1-r2 14.0.0-r3 14.1.0-r2 14.2.1-r1 14.3.0-r1: Wolfram Mathematica
@@ -16651,7 +16652,7 @@ sec-keys/openpgp-keys-libmicrohttpd 201906 999999: OpenPGP keys used to sign GNU
 sec-keys/openpgp-keys-libntlm 20260127: OpenPGP keys used by net-libs/libntlm
 sec-keys/openpgp-keys-libseccomp 20260122 20260210: OpenPGP key used for sys-libs/libseccomp
 sec-keys/openpgp-keys-libssh 20260121: OpenPGP key used by net-libs/libssh
-sec-keys/openpgp-keys-libtasn1 20220824 20250209 20260112 20260210: OpenPGP keys used by GNU Libtasn1
+sec-keys/openpgp-keys-libtasn1 20260210-r1: OpenPGP keys used by GNU Libtasn1
 sec-keys/openpgp-keys-libusb 1.0.29: OpenPGP key used by dev-libs/libusb
 sec-keys/openpgp-keys-libuv 20240209 20260323: OpenPGP keys used by libuv
 sec-keys/openpgp-keys-libvirt 20210401 20250830: OpenPGP keys used by libvirt
@@ -17327,7 +17328,7 @@ sys-apps/sandbox 2.46 2.47 2.48 2.49 9999: sandbox'd LD_PRELOAD hack
 sys-apps/sdparm 1.12 1.12-r1: Utility to output and modify parameters on a SCSI device, like hdparm
 sys-apps/secilc 3.8.1 3.9 3.10 9999: SELinux Common Intermediate Language (CIL) Compiler
 sys-apps/sed 4.9-r1 4.10: Super-useful stream editor
-sys-apps/seedfiles 1.4 1.4.1 1.4.2 9999: Portable drop-in reimplementation of systemd-tmpfiles
+sys-apps/seedfiles 1.4 1.4.1 1.4.2 1.5 9999: Portable drop-in reimplementation of systemd-tmpfiles
 sys-apps/selinux-python 3.7-r1 3.8.1 3.8.1-r2 3.9 3.10 9999: SELinux core utilities
 sys-apps/semodule-utils 3.6 3.7 3.8.1 3.9 3.10 9999: SELinux policy module utilities
 sys-apps/sensei-raw-ctl 0.0_pre20180729-r1 0.0_pre20230801: SteelSeries Sensei Raw configuration tool
@@ -18198,7 +18199,7 @@ www-apache/mod_tls 0.14.0 0.14.0-r1: A module that uses rustls to provide a memo
 www-apache/mod_whatkilledus 2.01-r1: Debug segmentation faults in Apache threads
 www-apache/mod_wsgi 5.0.2: An Apache2 module for running Python WSGI applications
 www-apache/mod_xsendfile 1.0_beta1-r3: Apache module that processes X-SENDFILE headers registered by the output handler
-www-apache/modsecurity-crs 3.3.7 3.3.9 4.20.0 4.25.0 4.26.0: OWASP ModSecurity Core Rule Set
+www-apache/modsecurity-crs 3.3.9 4.25.0 4.26.0: OWASP ModSecurity Core Rule Set
 www-apache/mpm_itk 2.4.7_p4-r2: Run virtual hosts under separate users/groups
 www-apache/passenger 6.0.27 6.1.0 6.1.1: Passenger makes deployment of Ruby on Rails applications a breeze
 www-apache/pwauth 2.3.10-r2: A Unix Web Authenticator
@@ -18223,7 +18224,7 @@ www-apps/haunt 0.3.0: Haunt is a simple, functional, hackable static site genera
 www-apps/hugo 0.147.7 0.148.2: Fast static HTML and CSS website generator
 www-apps/icingadb-web 1.2.2: UI for Icinga DB
 www-apps/icingaweb2 2.12.4 2.12.5 9999: Icinga Web 2 - Frontend for icinga2
-www-apps/icingaweb2-module-director 1.11.7 9999: Icinga Web 2 plugin for configuration
+www-apps/icingaweb2-module-director 1.11.8 9999: Icinga Web 2 plugin for configuration
 www-apps/icingaweb2-module-graphite 1.2.1 1.2.5 9999: Icinga Web 2 plugin for Graphite
 www-apps/icingaweb2-module-incubator 0.23.0: Bleeding edge Icinga Web 2 libraries
 www-apps/icingaweb2-module-pnp4nagios 1.0.1-r1 9999: Icinga Web 2 plugin for pnp4nagios
@@ -18253,7 +18254,7 @@ www-apps/nanoc-core 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flex
 www-apps/nanoc-deploying 1.0.2-r1 1.0.3: Provides deploying functionality for Nanoc
 www-apps/nanoc-spec 0.0.2-r1: Provides Nanoc::Spec, containing functionality for writing tests for Nanoc
 www-apps/nextcloud 32.0.5 32.0.8 32.0.9 33.0.2 33.0.3: Personal cloud that runs on your own server
-www-apps/nextcloud-notify_push 1.3.1: Push daemon for Nextcloud clients
+www-apps/nextcloud-notify_push 1.3.3: Push daemon for Nextcloud clients
 www-apps/nikola 8.3.1-r1 8.3.3 8.3.3-r1: A static website and blog generator
 www-apps/novnc 1.4.0 1.6.0 9999: noVNC is a VNC client implemented using HTML5 technologies
 www-apps/phpBB 3.3.15: An open-source PHP-based bulletin board package
@@ -18378,7 +18379,7 @@ www-servers/lighttpd 1.4.82 9999: Lightweight high-performance web server
 www-servers/mongrel2 1.11.0-r3: A language agnostic web server focused on web applications
 www-servers/moonbridge 1.1.3-r1: Network Server for Lua Applications
 www-servers/nginx 1.26.3-r2 1.27.5-r1 1.29.5 1.29.7-r1 1.30.0 1.30.2 1.31.1 9999: Robust, small and high performance HTTP and reverse proxy server
-www-servers/pound 4.16 4.17 4.22: A http/https reverse-proxy and load-balancer
+www-servers/pound 4.22 4.23: A http/https reverse-proxy and load-balancer
 www-servers/pshs 0.4.3: Pretty small HTTP server -- a command-line tool to share files
 www-servers/puma 6.6.0 6.6.1 7.1.0 7.2.0: a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack
 www-servers/servefile 0.5.4-r2 0.5.4-r3: Serve a single file via HTTP
@@ -19199,7 +19200,7 @@ x11-wm/matwm2 0.1.2_pre3-r2 0.1.2_pre3-r3: Simple EWMH compatible window manager
 x11-wm/metacity 3.54.0-r1 3.56.0 3.58.1: GNOME Flashback window manager
 x11-wm/muffin 6.6.3: Compositing window manager forked from Mutter for use with Cinnamon
 x11-wm/musca 0.9.24_p20100226-r4: A simple dynamic window manager, with features nicked from ratpoison and dwm
-x11-wm/mutter 48.5 48.7 48.8 49.5 9999: GNOME compositing window manager based on Clutter
+x11-wm/mutter 48.5 48.7 48.8 49.5 49.5-r1 9999: GNOME compositing window manager based on Clutter
 x11-wm/notion 4.0.4 9999: Notion is a tiling, tabbed window manager for the X window system
 x11-wm/openbox 3.6.1-r11 9999: Standards compliant, fast, light-weight, extensible window manager
 x11-wm/oroborus 2.0.20-r2: Small and fast window manager
