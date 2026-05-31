@@ -431,6 +431,7 @@ acct-group/uucp 0-r3: System group: uucp
 acct-group/uuidd 0: System group: uuidd
 acct-group/uwsgi_exporter 0-r2: A group for app-metrics/uwsgi_exporter
 acct-group/vacation 0-r2: A group for www-apps/postfixadmin
+acct-group/valkey 0: Valkey program group
 acct-group/varnish 0-r3: group for varnish
 acct-group/vault 0-r3: System group: vault
 acct-group/vault_exporter 0-r2: A group for app-metrics/vault_exporter
@@ -865,6 +866,7 @@ acct-user/ushare 0-r2: User for uShare
 acct-user/uuidd 0: System user: uuidd
 acct-user/uwsgi_exporter 0-r2: A user for app-metrics/uwsgi_exporter
 acct-user/vacation 0-r2: A user for www-apps/postfixadmin
+acct-user/valkey 0: Valkey program user
 acct-user/varnish 0-r3: user for varnish
 acct-user/vault 0-r3: User for vault
 acct-user/vault_exporter 0-r2: A user for app-metrics/vault_exporter
@@ -4073,6 +4075,7 @@ dev-db/timescaledb 2.25.2 2.26.0 2.26.4: Open-source time-series SQL database
 dev-db/tinycdb 0.81: A very fast and simple package for creating and reading constant data bases
 dev-db/tokyocabinet 1.4.48-r3: A library of routines for managing a database
 dev-db/unixODBC 2.3.12-r1 2.3.12-r2 2.3.14: Complete ODBC driver manager
+dev-db/valkey 9.1.0: Persistent key-value store, fork of dev-db/redis
 dev-db/vsqlite++ 0.3.13-r1: VSQLite++ - A well designed and portable SQLite3 Wrapper for C++
 dev-db/wxsqlite3 4.10.6-r1: C++ wrapper around the public domain SQLite 3.x database
 dev-db/zedis 0.3.4-r1 0.4.0: Blazing-fast native Redis GUI built with Rust and GPUI
@@ -8460,6 +8463,7 @@ dev-python/extras 1.0.0-r2: Useful extra bits for Python that should be in the s
 dev-python/eyed3 0.9.9: Module for manipulating ID3 (v1 + v2) tags in Python
 dev-python/faker 40.13.0 40.14.1 40.18.0 40.19.1: A Python package that generates fake data for you
 dev-python/fakeredis 2.34.1 2.35.0 2.35.1: Fake implementation of redis API for testing purposes
+dev-python/fastapi 0.136.3: High performance framework, easy to learn, fast to code, ready for production
 dev-python/fastbencode 0.3.10: Implementation of bencode with Rust implementation
 dev-python/fasteners 0.20: Python package that provides useful locks
 dev-python/fastimport 0.9.16: Library for parsing the fastimport VCS serialization format
@@ -13044,7 +13048,7 @@ media-gfx/gphotofs 0.5-r2 1.0: FUSE file system for interfacing with digital cam
 media-gfx/gpicview 0.3.1: Lightweight image viewer
 media-gfx/graphicsmagick 1.3.46 1.3.47 9999: Collection of tools and libraries for many image formats
 media-gfx/graphite2 1.3.14_p20210810-r3 1.3.14_p20210810-r5: Library providing rendering capabilities for complex non-Roman writing systems
-media-gfx/graphviz 12.2.1-r1 14.1.3: Open Source Graph Visualization Software
+media-gfx/graphviz 14.1.3: Open Source Graph Visualization Software
 media-gfx/gscan2pdf 2.13.5: Scan documents, perform OCR, produce PDFs and DjVus
 media-gfx/gthumb 3.12.7 3.12.8.2 3.12.10: Image viewer and browser for Gnome
 media-gfx/gtkimageview 1.6.4: A simple image viewer widget for GTK
@@ -15235,6 +15239,7 @@ net-misc/gnome-remote-desktop 48.2 49.3 49.3-r1: Remote desktop server which all
 net-misc/gns3-gui 2.2.56 2.2.59: Graphical Network Simulator
 net-misc/gns3-server 2.2.56 2.2.59: GNS3 server to asynchronously manage emulators
 net-misc/gofish 1.2-r2: Gofish gopher server
+net-misc/gokrazy-rsync 0.3.3: rsync in Go!
 net-misc/gsasl 2.2.1 2.2.2 2.2.2-r1: The GNU SASL client, server, and library
 net-misc/gupnp-tools 0.12.1-r1 0.12.2: Collection of developer-oriented UPnP tools
 net-misc/gvrpcd 1.3-r1: A program for announcing VLANs using GVRP
@@ -16260,7 +16265,7 @@ sci-libs/rocWMMA 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: library for accelerating mixed p
 sci-libs/rpp 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: AMD ROCm Performance Primitives (RPP) high-performance computer vision library
 sci-libs/rtabmap 0.21.13 9999: Real-Time Appearance-Based Mapping (RGB-D Graph SLAM)
 sci-libs/scalapack 2.2.0_p20240704: Subset of LAPACK routines redesigned for heterogenous (MPI) computing
-sci-libs/scotch 7.0.1-r1 7.0.8: Software for graph, mesh and hypergraph partitioning
+sci-libs/scotch 7.0.8: Software for graph, mesh and hypergraph partitioning
 sci-libs/shapelib 1.6.0: Library for manipulating ESRI Shapefiles
 sci-libs/spglib 2.6.0-r1 2.7.0: Spglib is a C library for finding and handling crystal symmetries
 sci-libs/spqr 2.0.9-r4 3.0.3 4.3.6: Multithreaded multifrontal sparse QR factorization library
@@ -17226,7 +17231,7 @@ sys-apps/kmod 33 34.2 9999: Library and tools for managing linux kernel modules
 sys-apps/kmscon 9.3.2 9.3.3 9.3.4 9.3.5 10.0.0: KMS/DRM based virtual Console Emulator
 sys-apps/lcdsplash 0.3-r1: splash Gentoo boot information on LCD's
 sys-apps/lcdutils 0.2-r2: (Sun) Cobalt Qube/RaQ button reading and LCD writing utilities
-sys-apps/less 643-r2 668 679 685 691 692 9999: Excellent text file viewer
+sys-apps/less 643-r2 668 679 685 691 692 702 9999: Excellent text file viewer
 sys-apps/likwid 5.2.1 5.2.2 5.5.1: A performance-oriented tool suite for x86 multicore environments
 sys-apps/linux-misc-apps 5.8-r1 6.16: Misc tools bundled with kernel sources
 sys-apps/lm-sensors 3.6.2: Hardware Monitoring user-space utilities
@@ -17809,9 +17814,9 @@ sys-fs/xfsprogs 6.17.0-r1 6.18.0 6.19.0 7.0.1: XFS filesystem utilities
 sys-fs/xwmfs 0.92: FUSE-based X11 Window-Manager file system
 sys-fs/yaffs2utils 0.2.9-r1: tools for generating YAFFS images
 sys-fs/zerofree 1.1.1-r1: Zeroes out all free space on a filesystem
-sys-fs/zfs 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.3.6 2.4.0 2.4.1 9999: Linux kernel module and userland utilities for ZFS
+sys-fs/zfs 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.3.6 2.3.7 2.4.0 2.4.1 2.4.2 9999: Linux kernel module and userland utilities for ZFS
 sys-fs/zfs-auto-snapshot 1.2.4-r3: ZFS Automatic Snapshot Service for Linux
-sys-fs/zfs-kmod 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.3.6 2.4.0_rc2-r1: Linux ZFS kernel module for sys-fs/zfs
+sys-fs/zfs-kmod 2.1.16 2.2.8 2.2.9 2.3.3 2.3.4 2.3.5 2.3.6 2.3.7 2.4.0_rc2-r1: Linux ZFS kernel module for sys-fs/zfs
 sys-kernel/asahi-sources 6.19.14_p2 7.0.9_p2: Asahi Linux kernel sources
 sys-kernel/bliss-initramfs 9.3.0: Boot your system's rootfs from Encrypted/OpenZFS
 sys-kernel/cryptodev 1.14 9999: device that allows access to Linux kernel cryptographic drivers
@@ -17987,7 +17992,7 @@ sys-process/dumb-init 1.2.5-r1: A minimal init system for Linux containers
 sys-process/evisum 0.6.4 1.0.1 1.2.0 1.2.2 2.0.4 2.0.9: System and process monitor written with EFL
 sys-process/fcron 3.4.0 3.4.0-r1: A command scheduler with extended capabilities over cron and anacron
 sys-process/ftop 1.0-r2: Monitor open files and filesystems
-sys-process/glances 4.1.2.1 4.3.1: CLI curses based monitoring tool
+sys-process/glances 4.1.2.1 4.3.1 4.5.4: CLI curses based monitoring tool
 sys-process/gnome-usage 46.1 48.0: A nice way to view information about use of system resources
 sys-process/htop 3.4.1-r2 3.5.1 9999: Interactive process viewer
 sys-process/incron 0.5.12_p20171113-r1: inotify based cron daemon
