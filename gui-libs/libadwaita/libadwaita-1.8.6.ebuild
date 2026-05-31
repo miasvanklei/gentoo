@@ -11,7 +11,7 @@ HOMEPAGE="https://gnome.pages.gitlab.gnome.org/libadwaita/ https://gitlab.gnome.
 
 LICENSE="LGPL-2.1+"
 SLOT="1"
-KEYWORDS="amd64 ~arm arm64 ~loong ppc ppc64 ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~x86"
 
 IUSE="doc examples +introspection test +vala"
 REQUIRED_USE="
@@ -21,7 +21,7 @@ REQUIRED_USE="
 
 RDEPEND="
 	>=dev-libs/glib-2.80.0:2
-	>=gui-libs/gtk-4.17.5:4[introspection?]
+	>=gui-libs/gtk-4.19.4:4[introspection?]
 	dev-libs/appstream:=
 	dev-libs/fribidi
 	introspection? ( >=dev-libs/gobject-introspection-1.83.2:= )
