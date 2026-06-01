@@ -8461,7 +8461,7 @@ dev-python/expecttest 0.3.0: golden tests
 dev-python/extras 1.0.0-r2: Useful extra bits for Python that should be in the standard library
 dev-python/eyed3 0.9.9: Module for manipulating ID3 (v1 + v2) tags in Python
 dev-python/faker 40.13.0 40.14.1 40.18.0 40.19.1: A Python package that generates fake data for you
-dev-python/fakeredis 2.34.1 2.35.0 2.35.1: Fake implementation of redis API for testing purposes
+dev-python/fakeredis 2.34.1 2.35.0 2.35.1 2.36.0: Fake implementation of redis API for testing purposes
 dev-python/fastapi 0.136.3: High performance framework, easy to learn, fast to code, ready for production
 dev-python/fastbencode 0.3.10: Implementation of bencode with Rust implementation
 dev-python/fasteners 0.20: Python package that provides useful locks
@@ -9704,6 +9704,7 @@ dev-python/uv-build 0.11.7 0.11.8 0.11.10 0.11.11 0.11.12 0.11.13 0.11.14 0.11.1
 dev-python/uvicorn 0.46.0 0.47.0 0.48.0: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.22.1: Ultra-fast implementation of asyncio event loop on top of libuv
 dev-python/validators 0.35.0: Python Data Validation for Humans
+dev-python/valkey 6.1.1: Python client for Valkey forked from redis-py
 dev-python/varlink 31.0.0: Python implementation of the Varlink protocol
 dev-python/vcrpy 8.1.1: Automatically mock your HTTP interactions to simplify and speed up testing
 dev-python/vcs-versioning 1.1.1: Core VCS versioning functionality from setuptools-scm
@@ -10803,7 +10804,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.152: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.159: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.5 2025.3.1.1 2025.3.2 2025.3.4 2026.1: A complete toolset for C and C++ development
@@ -12483,7 +12484,7 @@ kde-misc/kio-stash 1.0_p20240906: KIO worker and daemon to stash discontinuous f
 kde-misc/krename 5.0.60_pre20240906: Powerful batch file renamer
 kde-misc/krunner-vscodeprojects 2.0.2: Open VSCode Project Manager projects from Krunner
 kde-misc/krusader 2.9.0: Advanced twin-panel (commander-style) file-manager with many extras
-kde-misc/kshutdown 6.0 6.2: Shutdown manager for desktop environments like KDE Plasma
+kde-misc/kshutdown 6.2: Shutdown manager for desktop environments like KDE Plasma
 kde-misc/kweather 25.12.3 26.04.1: Weather forecast application for Plasma with flat and dynamic/animated views
 kde-misc/markdownpart 25.12.3 26.04.1: Markdown viewer KParts plugin based on QTextDocument
 kde-misc/plasma-pass 1.3.1: Plasma applet to access password from pass
@@ -13385,7 +13386,7 @@ media-libs/libjsw 1.5.8: provide a uniform API and user configuration for joysti
 media-libs/libjxl 0.11.2 9999: JPEG XL image format reference implementation
 media-libs/libkate 0.4.1-r4: Codec for karaoke and text encapsulation for Ogg
 media-libs/libkeyfinder 2.2.8: Musical key detection library for digital audio
-media-libs/liblastfm 1.1.0_pre20241124: Collection of libraries to integrate Last.fm services
+media-libs/liblastfm 1.1.0_pre20241124 1.1.0_pre20250726: Collection of libraries to integrate Last.fm services
 media-libs/libldac 2.0.2.3-r2: LDAC codec library from AOSP
 media-libs/liblingoteach 0.2.3-r3: A library to support lingoteach-ui and for generic lesson development
 media-libs/liblo 0.32: Lightweight OSC (Open Sound Control) implementation
@@ -15032,8 +15033,8 @@ net-libs/neon 0.34.0: HTTP and WebDAV client library
 net-libs/net6 1.3.14-r2: Network access framework for IPv4/IPv6 written in C++
 net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP protocols
 net-libs/nghttp2 1.68.0 1.68.1 1.69.0 9999: HTTP/2 C Library
-net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 1.14.0 1.15.0 9999: HTTP/3 library written in C
-net-libs/ngtcp2 1.12.0 1.20.0 1.20.0-r1 1.21.0 1.22.0 1.22.1 9999: Implementation of the IETF QUIC Protocol
+net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 1.14.0 1.15.0 1.16.0 9999: HTTP/3 library written in C
+net-libs/ngtcp2 1.12.0 1.20.0 1.20.0-r1 1.21.0 1.22.0 1.22.1 1.23.0 9999: Implementation of the IETF QUIC Protocol
 net-libs/nodejs 20.18.2 20.19.2 20.19.5 20.19.6 22.13.1 22.16.0 22.19.0 22.20.0 22.21.1 24.1.0 24.2.0 24.7.0 24.9.0 24.11.1-r1 24.14.0 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
@@ -15041,7 +15042,7 @@ net-libs/paho-mqtt-c 1.3.15 1.3.16: An Eclipse Paho C client library for MQTT fo
 net-libs/phodav 3.0-r1: WebDav server implementation using libsoup
 net-libs/pjproject 2.15.1 2.15.1-r1 2.15.1-r3 2.16-r2 2.17: Open source SIP, Media, and NAT Traversal Library
 net-libs/ppp-defs 0: Shim header for net/ppp_defs.h on musl
-net-libs/quiche 0.24.1 0.26.1-r1 0.28.0 0.29.0 9999: Implementation of the QUIC transport protocol and HTTP/3
+net-libs/quiche 0.24.1 0.26.1-r1 0.28.0 0.29.0 0.29.1 9999: Implementation of the QUIC transport protocol and HTTP/3
 net-libs/qxmpp 1.11.3 1.15.1: Cross-platform C++ XMPP client and server library
 net-libs/rabbitmq-c 0.13.0: RabbitMQ C client
 net-libs/radcli 1.4.0: A simple RADIUS client library
@@ -15362,7 +15363,7 @@ net-misc/portfwd 0.29-r2 0.29-r3: Port Forwarding Daemon
 net-misc/portspoof 1.3-r1 9999: return SYN+ACK for every port connection attempt
 net-misc/pps-tools 1.0.2-r1 1.0.3: User-space tools for LinuxPPS
 net-misc/proxychains 4.17 4.17-r1: force any tcp connections to flow through a proxy (or proxy chain)
-net-misc/proxytunnel 1.12.3 9999: Connect stdin and stdout to a server via an HTTPS proxy
+net-misc/proxytunnel 1.12.3 1.13.0 9999: Connect stdin and stdout to a server via an HTTPS proxy
 net-misc/ps3mediaserver 1.90.1-r2: DLNA compliant UPNP server for streaming media to Playstation 3
 net-misc/pssh 2.3.5: PSSH provides parallel versions of OpenSSH and related tools
 net-misc/ptpd 2.3.1-r2: Precision Time Protocol daemon
@@ -15402,7 +15403,7 @@ net-misc/sipp 3.7.5 3.7.7: A free Open Source test tool / traffic generator for 
 net-misc/sipsak 0.9.8.1_p20230215: Small command line tool for testing SIP applications and devices
 net-misc/sitecopy 0.16.6-r4: Maintain remote web sites with ease
 net-misc/sks 1.1.6_p20200624-r3: An OpenPGP keyserver which is decentralized with highly reliable synchronization
-net-misc/smb4k 4.0.5 4.0.6: Advanced network neighborhood browser
+net-misc/smb4k 4.0.6: Advanced network neighborhood browser
 net-misc/smbc 1.2.2-r4: Text mode (ncurses) SMB network commander. Features: resume and UTF-8
 net-misc/snarf 7.0-r5: Small and fast CLI resource grabber for http, gopher, finger, ftp
 net-misc/sntpd 3.1-r1: A NTP (RFC-1305 and RFC-4330) client and server for unix-alike systems
@@ -15654,7 +15655,7 @@ net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client 
 net-vpn/strongswan 6.0.3 6.0.4 6.0.4-r1 6.0.6: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6 1.92.1 1.92.4 1.96.5 1.98.0 1.98.1 1.98.4: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
-net-vpn/tor 0.4.9.6 0.4.9.8 9999: Anonymizing overlay network for TCP
+net-vpn/tor 0.4.9.6 0.4.9.8 0.4.9.9 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 0.10.15 0.10.16: Launch applications via VPN tunnels using temporary network namespaces
 net-vpn/vpnc 0.5.3_p20240129 9999: IPsec (Cisco/Juniper) VPN concentrator client
 net-vpn/vpnc-scripts 20220510 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
@@ -15738,7 +15739,7 @@ net-wireless/tempestsdr 0.0_p20260404 9999: Remote video eavesdropping using a s
 net-wireless/ubertooth 2020.12.1-r1 9999: open source wireless development platform suitable for Bluetooth experimentation
 net-wireless/uhd 4.9.0.1 4.9.0.1-r1: Universal Software Radio Peripheral (USRP) Hardware Driver
 net-wireless/unifi 10.1.89 10.3.58: A Management Controller for Ubiquiti Networks UniFi APs
-net-wireless/urh 2.10.0 9999: Universal Radio Hacker: investigate wireless protocols like a boss
+net-wireless/urh 2.10.0-r1 9999: Universal Radio Hacker: investigate wireless protocols like a boss
 net-wireless/wavemon 0.9.5 0.9.6: Ncurses based monitor for IEEE 802.11 wireless LAN cards
 net-wireless/wepattack 0.1.3-r6 0.1.3-r7: WLAN tool for breaking 802.11 WEP keys
 net-wireless/wepdecrypt 0.8-r3: Enhanced version of WepAttack a tool for breaking 802.11 WEP keys
@@ -17825,7 +17826,7 @@ sys-kernel/genkernel 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scr
 sys-kernel/gentoo-kernel 5.10.257_p1 5.15.208_p1 6.1.174_p1 6.6.141_p1 6.12.91_p1 6.18.33_p1 7.0.10_p1: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 5.10.257_p1 5.15.208_p1 6.1.174_p1 6.6.141_p1 6.12.91_p1 6.18.33_p1 7.0.10_p1: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-kernel-modprep 7.0.10_p1: Minimal subset of gentoo-kernel-bin for building modules, for containers
-sys-kernel/gentoo-sources 5.10.257-r1 5.15.208-r1 6.1.174-r1 6.6.141-r1 6.12.91-r1 6.18.33-r1 7.0.10 7.0.10-r1: Full sources including the Gentoo patchset for the 7.0 kernel tree
+sys-kernel/gentoo-sources 5.10.257-r1 5.10.258 5.15.208-r1 5.15.209 6.1.174-r1 6.1.175 6.6.141-r1 6.6.142 6.12.91-r1 6.12.92 6.18.33-r1 6.18.34 7.0.10 7.0.10-r1 7.0.11: Full sources including the Gentoo patchset for the 7.0 kernel tree
 sys-kernel/git-sources 7.1_rc1 7.1_rc2 7.1_rc3 7.1_rc4 7.1_rc5 7.1_rc6: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 9999: GNU Hurd is the GNU project's replacement for UNIX
@@ -18189,7 +18190,7 @@ www-apache/mod_dnssd 0.6-r2: mod_dnssd is an Apache module which adds Zeroconf s
 www-apache/mod_fastcgi_handler 0.6-r3: A simple FastCGI handler module
 www-apache/mod_fcgid 2.3.9-r2: Binary-compatible alternative to mod_fastcgi with better process management
 www-apache/mod_gnutls 0.12.0-r1: mod_gnutls uses GnuTLS for SSL/TLS encryption in Apache2 (compare to mod_ssl)
-www-apache/mod_h2 2.0.41 9999: HTTP/2 module for Apache
+www-apache/mod_h2 2.0.42 9999: HTTP/2 module for Apache
 www-apache/mod_jk 1.2.50: Provides an AJP Apache2-JK-connector for the Tomcat servlet engine
 www-apache/mod_limitipconn 0.24-r4: Limit the number of simultaneous apache connections
 www-apache/mod_log_rotate 1.02: Log rotation support for mod_log_config based on strftime(3)
@@ -18244,7 +18245,7 @@ www-apps/jellyfin-bin 10.11.10: Jellyfin puts you in control of managing and str
 www-apps/karma-bin 0.90: Alerts dashboard for Prometheus Alertmanager
 www-apps/kibana-bin 7.17.25: Analytics and search dashboard for Elasticsearch
 www-apps/klaus 3.0.1: A simple, easy-to-set-up Git web viewer
-www-apps/lidarr-bin 3.1.2.4938: Looks and smells like Sonarr but made for music
+www-apps/lidarr-bin 3.1.3.4968: Looks and smells like Sonarr but made for music
 www-apps/liquid_feedback_core 4.2.2: Internet platforms for proposition development and decision making
 www-apps/liquid_feedback_frontend 4.0.0: Internet platforms for proposition development and decision making
 www-apps/mediawiki 1.43.6 1.43.8 1.44.3 1.44.5 1.45.1 1.45.3: The MediaWiki wiki web application (as used on wikipedia.org)
@@ -18266,8 +18267,8 @@ www-apps/phpBB 3.3.15: An open-source PHP-based bulletin board package
 www-apps/phpsysinfo 3.4.4 3.4.5: A customizable PHP script that displays information about your system nicely
 www-apps/piwigo 16.3.0 16.4.0: a photo gallery software for the web
 www-apps/postfixadmin 3.3.16: Web Based Management tool for Postfix style virtual domains and users
-www-apps/prowlarr-bin 2.3.7.5365: An indexer manager/proxy to integrate with your various PVR apps
-www-apps/radarr-bin 6.2.0.10390: A fork of Sonarr to work with movies a la Couchpotato
+www-apps/prowlarr-bin 2.4.0.5391: An indexer manager/proxy to integrate with your various PVR apps
+www-apps/radarr-bin 6.2.1.10437: A fork of Sonarr to work with movies a la Couchpotato
 www-apps/radicale 3.6.1-r1 3.7.1 3.7.3: A simple CalDAV calendar server
 www-apps/readarr-bin 0.4.18.2805: An ebook and audiobook collection manager for Usenet and BitTorrent users
 www-apps/redmine 6.0.7: Flexible project management web application using the Ruby on Rails framework
