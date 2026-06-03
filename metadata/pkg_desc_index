@@ -10805,7 +10805,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.159: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.162: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.5 2025.3.1.1 2025.3.2 2025.3.4 2026.1: A complete toolset for C and C++ development
@@ -10997,7 +10997,7 @@ dev-util/nsight-compute 2025.1.1.2 2025.2.0.11: performance analysis tool design
 dev-util/nsight-graphics 2025.2.0: standalone developer tool with ray-tracing support
 dev-util/nsight-systems 2025.2.1 2025.3.1: performance analysis tool designed to visualize an application's algorithms
 dev-util/numdiff 5.9.0 5.9.0-r1: File comparision, ignoring small numeric differences and formats
-dev-util/nvidia-cuda-toolkit 11.8.0-r4 12.3.2 12.4.1 12.5.1 12.6.3-r1 12.8.1-r1 12.9.1-r1: NVIDIA CUDA Toolkit (compiler and friends)
+dev-util/nvidia-cuda-toolkit 11.8.0-r4 12.3.2 12.4.1 12.5.1 12.6.3-r1 12.8.1-r1 12.8.2 12.9.1-r1 12.9.2: NVIDIA CUDA Toolkit (compiler and friends)
 dev-util/objconv 2.51: object code file converted (COFF, ELF, OMF, MACHO)
 dev-util/omake 0.10.3-r2 0.10.7-r1: Make replacement
 dev-util/open-vcdiff 0.8.4-r2: An encoder/decoder for the VCDIFF (RFC3284) format
@@ -15025,6 +15025,7 @@ net-libs/libyang 3.12.2: YANG data modeling language library
 net-libs/liquid-dsp 1.7.0 9999: digital signal processing library for software-defined radios
 net-libs/llhttp 9.2.1 9.4.1: Port of http_parser to llparse
 net-libs/loudmouth 1.5.4 1.5.4-r1: Lightweight & easy-to-use Jabber library written in C
+net-libs/lwip 2.2.1_p5 9999: Small independent implementation of the TCP/IP protocol suite
 net-libs/mbedtls 2.28.10 3.6.4 3.6.5: Cryptographic library for embedded systems
 net-libs/meanwhile 1.1.1: Meanwhile (Sametime protocol) library
 net-libs/miniupnpc 2.3.3-r1: UPnP client library and a simple UPnP client
