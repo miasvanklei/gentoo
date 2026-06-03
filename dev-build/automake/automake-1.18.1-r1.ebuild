@@ -3,23 +3,40 @@
 
 EAPI=8
 
-# Please do not apply any patches which affect the generated output from
-# `automake`, as this package is used to submit patches upstream.
+# Bumping notes:
+# * Remember to modify LAST_KNOWN_AUTOMAKE_VER 'upstream' in dev-build/automake-wrapper
+# on new automake (major) releases, as well as the dependency in RDEPEND below too.
+# * Update _WANT_AUTOMAKE and _automake_atom case statement in autotools.eclass.
 
 PYTHON_COMPAT=( python3_{11..14} )
 
-inherit python-any-r1
+inherit python-any-r1 verify-sig
 
-MY_PN=${PN/-vanilla}
-MY_P=${MY_PN}-${PV}
+MANGLED_SLOT=${PV:0:4}
 
 if [[ ${PV} == 9999 ]] ; then
-	EGIT_REPO_URI="https://git.savannah.gnu.org/r/${MY_PN}.git"
+	EGIT_MIN_CLONE_TYPE=single
+	EGIT_REPO_URI="https://git.savannah.gnu.org/r/${PN}.git"
 	inherit git-r3
 else
-	SRC_URI="mirror://gnu/${MY_PN}/${MY_P}.tar.xz"
-
-	S="${WORKDIR}/${MY_P}"
+	VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/karlberry.asc
+	if [[ $(ver_cut 3) -ge 90 ]] ; then
+		MANGLED_SLOT=$(ver_cut 1).$(($(ver_cut 2) + 1))
+		SRC_URI="
+			https://alpha.gnu.org/pub/gnu/${PN}/${P}.tar.xz
+			verify-sig? (
+				https://alpha.gnu.org/pub/gnu/${PN}/${P}.tar.xz.sig
+			)
+		"
+	else
+		SRC_URI="
+			mirror://gnu/${PN}/${P}.tar.xz
+			verify-sig? (
+				mirror://gnu/${PN}/${P}.tar.xz.sig
+			)
+		"
+		KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 ~sparc x86 ~arm64-macos ~x64-macos ~x64-solaris"
+	fi
 fi
 
 DESCRIPTION="Used to generate Makefile.in from Makefile.am"
@@ -27,31 +44,32 @@ HOMEPAGE="https://www.gnu.org/software/automake/"
 
 LICENSE="GPL-2+ FSFAP"
 # Use Gentoo versioning for slotting.
-SLOT="${PV:0:4}"
+SLOT="${MANGLED_SLOT}"
 IUSE="test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
 	>=dev-lang/perl-5.6
-	>=dev-build/automake-wrapper-11
+	>=dev-build/automake-wrapper-20250528
 	>=dev-build/autoconf-2.69:*
 	sys-devel/gnuconfig
 "
-DEPEND="${RDEPEND}"
 BDEPEND="
 	app-alternatives/gzip
 	sys-apps/help2man
+	dev-build/autoconf-wrapper
+	dev-build/autoconf
 	test? (
 		${PYTHON_DEPS}
 		dev-util/dejagnu
 		sys-devel/bison
 		sys-devel/flex
 	)
+	verify-sig? ( sec-keys/openpgp-keys-karlberry )
 "
 
 pkg_setup() {
-	# Avoid python-any-r1_pkg_setup
-	:
+	use test && python-any-r1_pkg_setup
 }
 
 src_prepare() {
@@ -70,13 +88,9 @@ src_prepare() {
 }
 
 src_configure() {
-	use test && python_setup
 	# Also used in install.
-	MY_INFODIR="${EPREFIX}/usr/share/${P}/info"
-	econf \
-		--datadir="${EPREFIX}"/usr/share/automake-vanilla-${PV} \
-		--program-suffix="-vanilla" \
-		--infodir="${MY_INFODIR}"
+	infopath="${EPREFIX}/usr/share/automake-${PV}/info"
+	econf --infodir="${infopath}"
 }
 
 src_test() {
@@ -91,11 +105,11 @@ src_install() {
 	touch "${ED}"/usr/share/${P}/info/.keepinfodir || die
 	docompress -x /usr/share/${P}/info/dir
 
-	#rm "${ED}"/usr/share/aclocal/README || die
-	#rmdir "${ED}"/usr/share/aclocal || die
+	rm "${ED}"/usr/share/aclocal/README || die
+	rmdir "${ED}"/usr/share/aclocal || die
 	rm \
-		"${ED}"/usr/bin/{aclocal,automake}-vanilla \
-		"${ED}"/usr/share/man/man1/{aclocal,automake}-vanilla.1 || die
+		"${ED}"/usr/bin/{aclocal,automake} \
+		"${ED}"/usr/share/man/man1/{aclocal,automake}.1 || die
 
 	# remove all config.guess and config.sub files replacing them
 	# w/a symlink to a specific gnuconfig version
@@ -106,15 +120,15 @@ src_install() {
 	done
 
 	# Avoid QA message about pre-compressed file in docs
-	local tarfile="${ED}/usr/share/doc/automake-vanilla-${PVR}/amhello-1.0.tar.gz"
+	local tarfile="${ED}/usr/share/doc/${PF}/amhello-1.0.tar.gz"
 	if [[ -f "${tarfile}" ]] ; then
 		gunzip "${tarfile}" || die
 	fi
 
-	pushd "${D}/${MY_INFODIR}" >/dev/null || die
+	pushd "${D}/${infopath}" >/dev/null || die
 	for f in *.info*; do
 		# Install convenience aliases for versioned Automake pages.
-		ln -s "$f" "${f/./-vanilla-${PV}.}" || die
+		ln -s "$f" "${f/./-${PV}.}" || die
 	done
 	popd >/dev/null || die
 
@@ -123,12 +137,16 @@ src_install() {
 		local minor="999"
 	else
 		local major="$(ver_cut 1)"
-		local minor="$(ver_cut 2)"
+		if [[ $(ver_cut 3) -ge 90 ]] ; then
+			local minor=$(($(ver_cut 2) + 1))
+		else
+			local minor="$(ver_cut 2)"
+		fi
 	fi
 	local idx="$((99999-(major*1000+minor)))"
-	newenvd - "07automake${idx}" <<-EOF
-	INFOPATH="${MY_INFODIR}"
+	newenvd - "06automake${idx}" <<-EOF
+	INFOPATH="${infopath}"
 	EOF
 
-	docompress "${MY_INFODIR}"
+	docompress "${infopath}"
 }

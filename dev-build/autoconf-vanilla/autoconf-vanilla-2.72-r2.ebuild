@@ -49,8 +49,8 @@ BDEPEND+="
 RDEPEND="
 	${BDEPEND}
 	>=dev-build/autoconf-wrapper-15
-	sys-devel/gnuconfig
 	!~dev-build/${P}:2.5
+	sys-devel/gnuconfig
 "
 [[ ${PV} == 9999 ]] && BDEPEND+=" >=sys-apps/texinfo-4.3"
 

@@ -3,38 +3,39 @@
 
 EAPI=8
 
-# Please do not apply any patches which affect the generated output from
-# `autoconf`, as this package is used to submit patches upstream.
+# Bumping notes:
+# * Remember to modify LAST_KNOWN_VER 'upstream' in dev-build/autoconf-wrapper
+# on new autoconf releases, as well as the dependency in RDEPEND below too.
+# * Update _WANT_AUTOCONF and _autoconf_atom case statement in autotools.eclass.
 
 if [[ ${PV} == 9999 ]] ; then
 	EGIT_REPO_URI="https://git.savannah.gnu.org/git/autoconf.git"
 	inherit git-r3
 else
-	MY_PN=${PN/-vanilla}
 	# For _beta handling replace with real version number
 	MY_PV="${PV}"
-	MY_P="${MY_PN}-${MY_PV}"
-	#PATCH_TARBALL_NAME="${MY_PN}-2.70-patches-01"
+	MY_P="${PN}-${MY_PV}"
+	#PATCH_TARBALL_NAME="${PN}-2.70-patches-01"
 
 	VERIFY_SIG_OPENPGP_KEY_PATH=/usr/share/openpgp-keys/zackweinberg.asc
 	inherit verify-sig
 
 	SRC_URI="
-		mirror://gnu/${MY_PN}/${MY_P}.tar.xz
-		https://alpha.gnu.org/pub/gnu/${MY_PN}/${MY_P}.tar.xz
-		https://meyering.net/ac/${MY_P}.tar.xz
+		mirror://gnu/${PN}/${MY_P}.tar.xz
+		https://alpha.gnu.org/pub/gnu/${PN}/${MY_P}.tar.xz
+		https://meyering.net/ac/${P}.tar.xz
 		verify-sig? ( mirror://gnu/${PN}/${MY_P}.tar.xz.sig )
 	"
-	 S="${WORKDIR}"/${MY_P}
+	S="${WORKDIR}"/${MY_P}
 
 	if [[ ${PV} != *_beta* ]] && ! [[ $(ver_cut 3) =~ [a-z] ]] ; then
-		KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~arm64-macos ~x64-macos ~x64-solaris"
+		KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 ~sparc x86 ~arm64-macos ~x64-macos ~x64-solaris"
 	fi
 
 	BDEPEND="verify-sig? ( sec-keys/openpgp-keys-zackweinberg )"
 fi
 
-inherit toolchain-autoconf
+inherit toolchain-autoconf multiprocessing
 
 DESCRIPTION="Used to create autoconfiguration files"
 HOMEPAGE="https://www.gnu.org/software/autoconf/autoconf.html"
@@ -48,17 +49,18 @@ BDEPEND+="
 "
 RDEPEND="
 	${BDEPEND}
-	>=dev-build/autoconf-wrapper-15
+	>=dev-build/autoconf-wrapper-20231224
 	sys-devel/gnuconfig
-	!~dev-build/${P}:2.5
+	!~${CATEGORY}/${P}:2.5
 "
 [[ ${PV} == 9999 ]] && BDEPEND+=" >=sys-apps/texinfo-4.3"
 
 PATCHES=(
-	"${FILESDIR}"/"${MY_P}"-conflicts.patch
+	"${FILESDIR}"/${PN}-2.72-gettext-0.25-autoreconf-Invoke-autopoint-in-more-situations.patch
+	"${FILESDIR}"/${PN}-2.72-gettext-0.25-autoreconf-Adapt-to-the-on-disk-situation-after-auto.patch
+	"${FILESDIR}"/${PN}-2.72-Port-C11-test-to-C-20.patch
+	"${FILESDIR}"/${PN}-2.72-Port-AC_SYS_LARGEFILE-to-CXX.patch
 )
-
-TC_AUTOCONF_ENVPREFIX=07
 
 src_prepare() {
 	if [[ ${PV} == *9999 ]] ; then
@@ -72,7 +74,7 @@ src_prepare() {
 
 	# usr/bin/libtool is provided by binutils-apple, need gnu libtool
 	if [[ ${CHOST} == *-darwin* ]] ; then
-		PATCHES+=( "${FILESDIR}"/${MY_PN}-2.71-darwin.patch )
+		PATCHES+=( "${FILESDIR}"/${PN}-2.71-darwin.patch )
 	fi
 
 	# Save timestamp to avoid later makeinfo call
@@ -86,7 +88,7 @@ src_prepare() {
 }
 
 src_test() {
-	emake check
+	emake check TESTSUITEFLAGS="--jobs=$(get_makeopts_jobs)"
 }
 
 src_install() {
