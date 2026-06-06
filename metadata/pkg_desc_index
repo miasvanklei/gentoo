@@ -1365,10 +1365,10 @@ app-cdr/xfburn 0.7.2 0.8.0: GTK+ based CD and DVD burning application
 app-containers/aardvark-dns 1.15.0 1.17.0 1.17.1 9999: A container-focused DNS server
 app-containers/amazon-ecr-credential-helper 0.10.1 0.11.0 0.12.0: Automatically gets credentials for Amazon ECR on docker push/docker pull
 app-containers/apptainer 1.4.5: The container system for secure high-performance computing
-app-containers/buildah 1.40.0 1.40.1 1.41.0 9999: A tool that facilitates building OCI images
+app-containers/buildah 1.40.0 1.40.1 1.41.0 1.44.0 9999: A tool that facilitates building OCI images
 app-containers/cadvisor 0.49.2 0.53.0 0.56.2: Analyzes resource usage and performance characteristics of running containers
 app-containers/catatonit 0.2.0 0.2.1 9999: A container init that is so simple it's effectively brain-dead
-app-containers/cni-plugins 1.3.0 1.5.1 1.6.1 1.6.2: Standard networking plugins for container networking
+app-containers/cni-plugins 1.3.0 1.5.1 1.6.1 1.6.2 1.9.1: Standard networking plugins for container networking
 app-containers/conmon 2.1.11 2.1.13 2.2.1 9999: An OCI container runtime monitor
 app-containers/containerd 2.0.2-r1 2.0.3-r1 2.0.4-r1 2.0.5-r1 2.0.7-r1 2.1.0-r1 2.1.1-r1 2.1.4-r1 2.1.5-r1 2.2.0-r1 2.2.1-r1 2.2.2-r1 2.3.1: A daemon to control runC
 app-containers/containers-common 0.63.0 0.64.2 9999: Common config files and docs for Containers stack
@@ -1376,7 +1376,7 @@ app-containers/containers-image 5.34.2 5.35.0 5.36.2 9999: Default config and do
 app-containers/containers-shortnames 2023.02.20 2025.03.19 9999: Configures default shortnames (aliases) for Containers
 app-containers/containers-storage 1.55.1 1.57.2 1.59.1 9999: Default config and docs related to Containers' storage
 app-containers/cosign 2.5.0 2.6.1 3.0.3: container signing utility
-app-containers/cri-o 1.31.2 1.31.4 1.34.3: OCI-based implementation of Kubernetes Container Runtime Interface
+app-containers/cri-o 1.31.2 1.31.4 1.34.3 1.36.1: OCI-based implementation of Kubernetes Container Runtime Interface
 app-containers/cri-tools 1.33.0 1.35.0 1.36.0: CLI and validation tools for Kubelet Container Runtime (CRI)
 app-containers/crun 1.19.1 1.20 1.21 1.25.1 1.28: Fast and low-memory footprint OCI Container Runtime fully written in C
 app-containers/devcontainer 0.85.0 0.86.1 0.87.0: Reference implementation of the Development Containers specification
@@ -1416,7 +1416,7 @@ app-containers/skopeo 1.18.0-r1 1.19.0 1.21.0 1.22.0 1.22.2 9999: Work with remo
 app-containers/slirp4netns 1.3.3 1.3.4: User-mode networking for unprivileged network namespaces
 app-containers/snapd 2.63: Service and tools for management of snap packages
 app-containers/syft 0.75.0 0.76.0 0.94.0 0.95.0 1.9.0 1.18.1: Generate a Software Bill of Materials from container images and filesystems
-app-containers/umoci 0.4.7: Manipulation tool for OCI images
+app-containers/umoci 0.4.7 0.6.0: Manipulation tool for OCI images
 app-crypt/acme 3.2.0-r100: An implementation of the ACME protocol
 app-crypt/acme-sh 3.1.3 9999: A pure Unix shell script implementing ACME client protocol
 app-crypt/acme-tiny 5.0.2 5.0.3: Tiny, auditable script for Let's Encrypt's ACME Protocol
@@ -1569,7 +1569,7 @@ app-crypt/yubihsm-connector 3.0.7: Server to expose YubiHSM 2 to network
 app-crypt/yubihsm-shell 2.7.2: Components used to interact with the YubiHSM 2
 app-crypt/yubikey-manager 5.8.0 5.9.0 5.9.1-r1: Python library and command line tool for configuring a YubiKey
 app-crypt/yubioath-flutter-bin 7.3.3: Yubico Authenticator for TOTP
-app-crypt/zulucrypt 7.0.0 7.1.0: Front end to cryptsetup
+app-crypt/zulucrypt 7.1.0 7.1.1: Front end to cryptsetup
 app-dicts/aspell-af 0.50.0-r1: Aspell (Afrikaans) language dictionary
 app-dicts/aspell-am 0.03.1-r1: Aspell (Amharic) language dictionary
 app-dicts/aspell-ar 1.2.0-r1: Aspell (Arabic) language dictionary
@@ -3094,14 +3094,14 @@ app-portage/gentoolkit 0.7.2 0.7.4 9999: Collection of administration scripts fo
 app-portage/gentoopm 0.5.0 9999: A common interface to Gentoo package managers
 app-portage/getuto 1.18 1.19.1 2.0 9999: Standalone Gentoo gpg trust anchor generation tool for binpkgs
 app-portage/golop 0.2.1-r1: A pure Go re-implementation of genlop
-app-portage/gpyutils 0.15.3 0.15.4 0.15.5: Utitilies for maintaining Python packages
+app-portage/gpyutils 0.15.5 0.15.6: Utitilies for maintaining Python packages
 app-portage/gverify 2: gentoo.git signature verification tool
 app-portage/hackport 0.7.2.2 0.8.4.0 9999: Hackage and Portage integration tool
 app-portage/iwdevtools 0.13.1 9999: Small tools to aid with Gentoo development, primarily intended for QA
 app-portage/kuroneko 0.1.5: Vulnerability checker using data scraped from Gentoo Bugzilla
 app-portage/kuroo 1.2.4 9999: Graphical Portage frontend based on KDE Frameworks
 app-portage/metagen 0.7.4 0.7.4-r1 9999: metadata.xml generator for ebuilds
-app-portage/mgorny-dev-scripts 67 68 69 70 71 72 73 74 76 77: Handy scripts for ebuild development and more
+app-portage/mgorny-dev-scripts 76 77 78: Handy scripts for ebuild development and more
 app-portage/mirrorselect 2.6.4 9999: Tool to help select distfiles mirrors for Gentoo
 app-portage/nattka 0.4.2-r1: A New Arch Tester Toolkit -- open-source stable-bot replacement
 app-portage/no-distcc-env 9999: package.env files to disable distcc on a per-package basis
@@ -5111,7 +5111,7 @@ dev-java/objenesis 3.4: A library for instantiating Java objects
 dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
-dev-java/openjdk 8.492_p09 11.0.31_p11 17.0.19_p10 17.0.19_p10-r1 21.0.11_p10 21.0.11_p10-r1 25.0.3_p9 25.0.3_p9-r1 26.0.1_p8 27_alpha21: Open source implementation of the Java programming language
+dev-java/openjdk 8.492_p09 11.0.31_p11 17.0.19_p10 17.0.19_p10-r1 21.0.11_p10 21.0.11_p10-r1 25.0.3_p9 25.0.3_p9-r1 25.0.4_beta4 26.0.1_p8 27_beta25 28_alpha1: Open source implementation of the Java programming language
 dev-java/openjdk-bin 8.492_p09 11.0.31_p11 17.0.19_p10 21.0.11_p10 25.0.3_p9 26.0.1_p8 27_alpha20: Prebuilt Java JDK binaries provided by Eclipse Temurin
 dev-java/openjdk-jre-bin 8.492_p09 11.0.31_p11 17.0.19_p10 21.0.11_p10 25.0.3_p9: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 8.1000-r2 11.0.11_p1-r5: Java OpenJFX client application platform
@@ -5226,7 +5226,7 @@ dev-lang/deno-bin 2.6.10-r1 2.7.14 2.8.0 2.8.1 2.8.2: Modern runtime for JavaScr
 dev-lang/duktape 2.7.0-r3: Embeddable Javascript engine
 dev-lang/dzaima-bqn 0.2.1 0.2.2 9999: A BQN language implementation written in Java, also know as dbqn
 dev-lang/eisl 5.62 5.66: Interpreter and compiler compatible with the ISLisp standard
-dev-lang/elixir 1.15.7 1.15.8 1.16.2 1.16.3 1.17.2 1.17.3 1.18.4 1.19.4 1.19.5: Elixir programming language
+dev-lang/elixir 1.16.2 1.16.3 1.17.2 1.17.3 1.18.4 1.19.4 1.19.5 1.20.0: Elixir programming language
 dev-lang/elpi 1.19.6-r1 2.0.7: Embeddable Lambda Prolog Interpreter in OCaml
 dev-lang/erlang 26.2.1-r1 26.2.5.16 26.2.5.20 27.3.4.6 27.3.4.11 28.1 28.2 28.3 28.3.1 28.5 29.0: Erlang programming language, runtime environment and libraries (OTP)
 dev-lang/esco 0.513: Combine interpreter of esoteric languages
@@ -5264,7 +5264,7 @@ dev-lang/lfe 2.2.0-r1: Lisp-flavoured Erlang, a lisp syntax front-end to the Erl
 dev-lang/lisaac 0.13.1-r2: An object prototype based language
 dev-lang/logtalk 3.47.0-r2: Open source object-oriented logic programming language
 dev-lang/lua 5.1.5-r200 5.3.6-r102 5.4.8: A powerful light-weight programming language designed for extending applications
-dev-lang/luajit 2.1.1716656478-r1 2.1.1731601260 2.1.1770848219 2.1.9999999999: Just-In-Time Compiler for the Lua programming language
+dev-lang/luajit 2.1.1716656478-r1 2.1.1731601260 2.1.1770848219 2.1.1780076327 2.1.9999999999: Just-In-Time Compiler for the Lua programming language
 dev-lang/luau 0.669 0.707: Gradually typed embeddable scripting language derived from Lua
 dev-lang/maude 3.1-r1 3.2.2 3.3.1 3.4 3.5.1: High-level specification language for equational and logic programming
 dev-lang/mercury 22.01.1-r1: Mercury is a modern general-purpose logic/functional programming language
@@ -8083,7 +8083,7 @@ dev-php/pecl-dio 0.2.1 0.3.0: Direct I/O functions for PHP
 dev-php/pecl-event 3.1.4: PHP wrapper for libevent2
 dev-php/pecl-http 4.2.6 4.3.1: Extended HTTP Support for PHP
 dev-php/pecl-imagick 3.7.0-r3 3.7.0-r4 3.8.1: PHP wrapper for the ImageMagick library
-dev-php/pecl-mailparse 3.1.6: PHP extension for parsing and working with RFC822 and MIME compliant messages
+dev-php/pecl-mailparse 3.1.6 3.2.0: PHP extension for parsing and working with RFC822 and MIME compliant messages
 dev-php/pecl-memcached 3.3.0 3.4.0: Interface PHP with memcached via libmemcached library
 dev-php/pecl-mongodb 1.16.2-r1: MongoDB database driver for PHP
 dev-php/pecl-parallel 1.2.5 1.2.6 1.2.7 1.2.7-r1: A succint parallel concurrency API for PHP
@@ -8312,7 +8312,7 @@ dev-python/clikit 0.6.2-r1: Group of utilities to build beautiful and testable c
 dev-python/clint 0.5.1-r4: Python Command-line Application Tools
 dev-python/cloudpickle 3.1.2: Extended pickling support for Python objects
 dev-python/cloudscraper 1.2.69-r1: A Python module to bypass Cloudflare's anti-bot page
-dev-python/clr-loader 0.2.9 0.3.1: Generic pure Python loader for .NET runtimes
+dev-python/clr-loader 0.3.1: Generic pure Python loader for .NET runtimes
 dev-python/cmd2 2.6.2 3.5.1 4.0.0: Extra features for standard library's cmd module
 dev-python/colorama 0.4.6: ANSI escape character sequences for colored terminal text & cursor positioning
 dev-python/colorclass 2.2.2-r1: Colorful worry-free console applications for multiple platforms
@@ -9338,7 +9338,7 @@ dev-python/python3-lxc 5.0.0: Python bindings for LXC
 dev-python/python3-saml 1.16.0: OneLogin's SAML Python Toolkit
 dev-python/python3-xapp 3.0.2: Python bindings for x11-libs/xapp
 dev-python/pythondialog 3.5.3: A Python module for making simple text/console-mode user interfaces
-dev-python/pythonnet 3.0.5-r1: Nearly seamless integration with the .NET Common Language Runtime
+dev-python/pythonnet 3.0.5-r2: Nearly seamless integration with the .NET Common Language Runtime
 dev-python/pythran 0.18.1: Ahead of Time compiler for numeric kernels
 dev-python/pytidylib 0.3.2-r2: Python wrapper for HTML Tidy (tidylib)
 dev-python/pytimeparse 1.1.8-r1: A small Python module to parse various kinds of time expressions
@@ -10252,7 +10252,7 @@ dev-ruby/octokit 10.0.0: Ruby toolkit for the Github API
 dev-ruby/omniauth 2.1.3 2.1.4: A generalized Rack framework for multiple-provider authentication
 dev-ruby/open4 1.3.4-r1: Open3::popen3 with exit status
 dev-ruby/openfact 5.6.1: OpenFact, a system inventory tool (community implementation of Facter)
-dev-ruby/openssl-ccm 1.2.3 1.3.0: OpenSSL CBC-MAC (CCM) ruby gem
+dev-ruby/openssl-ccm 1.2.3 1.3.0-r1: OpenSSL CBC-MAC (CCM) ruby gem
 dev-ruby/openssl-cmac 2.0.2 2.1.0: Gem for RFC 4493, 4494, 4615 - The AES-CMAC Algorithm
 dev-ruby/optimist 3.2.0 3.2.1: A commandline option parser for Ruby that just gets out of your way
 dev-ruby/optionable 0.2.0-r1: Robust options validation for Ruby methods
@@ -10618,7 +10618,7 @@ dev-scheme/guile-sqlite3 0.1.3-r100: Guile bindings of sqlite3
 dev-scheme/guile-ssh 0.16.4-r100 0.18.0: Library providing access to the SSH protocol for GNU Guile
 dev-scheme/guile-zlib 0.1.0-r100: GNU Guile library providing bindings to zlib
 dev-scheme/guile-zstd 0.1.1-r100: GNU Guile bindings to the zstd compression library
-dev-scheme/jscheme 7.2-r2: A Scheme dialect with a simple Java interface called Javadot notation
+dev-scheme/jscheme 7.2-r3: A Scheme dialect with a simple Java interface called Javadot notation
 dev-scheme/kawa 3.1.1-r3: Java-based Scheme system & Language Framework
 dev-scheme/mit-scheme 12.1-r1: Scheme interpreter, compiler, debugger and runtime library
 dev-scheme/owl-lisp 0.2.1 0.2.2 9999: Purely functional dialect of Scheme
@@ -14576,8 +14576,8 @@ net-analyzer/ngrep 1.47-r2 1.47_p20241209: A grep for network layers
 net-analyzer/nikto 2.1.6_p20220602 2.5.0: Web server vulnerability scanner
 net-analyzer/nload 0.7.5_pre20180309: Real time network traffic monitor for the command line interface
 net-analyzer/nmap 7.95 7.97 7.98 7.99 9999: Network exploration tool and security / port scanner
-net-analyzer/nmapsi 0.5_alpha2_p20240407: Qt frontend to nmap
-net-analyzer/nmbscan 1.2.5-r1: Scans the shares of a SMB/NetBIOS network
+net-analyzer/nmapsi 0.5_alpha2_p20240407-r1: Qt frontend to nmap
+net-analyzer/nmbscan 1.2.5-r2: Scans the shares of a SMB/NetBIOS network
 net-analyzer/notus-scanner 22.7.2: Notus is a vulnerability scanner for creating results from local security checks
 net-analyzer/nrpe 4.0.0 4.0.2 4.0.3 4.1.0: Nagios Remote Plugin Executor
 net-analyzer/nsat 1.5-r7: Network Security Analysis Tool, an application-level network security scanner
@@ -14758,7 +14758,7 @@ net-dns/smartdns 47 47.1: A local DNS server returns the fastest access results
 net-dns/unbound 1.25.1: A validating, recursive and caching DNS resolver
 net-dns/updatedd 2.6-r8: Dynamic DNS client with plugins for several dynamic dns services
 net-dns/valtz 0.8: Validation tool for tinydns-data zone files
-net-firewall/arno-iptables-firewall 2.1.1a 2.1.2a: Arno's iptables firewall script
+net-firewall/arno-iptables-firewall 2.1.1a-r1 2.1.2a-r1: Arno's iptables firewall script
 net-firewall/arptables 0.0.5-r2: Set up, maintain, and inspect the tables of ARP rules in the Linux kernel
 net-firewall/bpfilter 0.5.2 0.6.0: BPF-based packet filtering framework
 net-firewall/conntrack-tools 1.4.8-r1 1.4.9: Connection tracking userspace tools
@@ -14798,7 +14798,7 @@ net-fs/s3backer 2.1.3 2.1.6: A filesystem that contains a single file backed by 
 net-fs/s3fs 1.95-r1 1.96: Amazon S3 mounting via fuse
 net-fs/samba 4.22.5-r1 4.22.9 4.22.10 4.23.6 4.23.7 4.23.8 4.24.1 4.24.2 4.24.3: Samba Suite Version 4
 net-fs/smbnetfs 0.6.3: FUSE filesystem for SMB shares
-net-fs/sshfs 3.7.3-r2 3.7.5: Fuse-filesystem utilizing the sftp service
+net-fs/sshfs 3.7.3-r2 3.7.5 3.7.6: Fuse-filesystem utilizing the sftp service
 net-fs/wdfs 1.4.2-r4: WebDAV filesystem with special features for accessing subversion repositories
 net-ftp/atftp 0.8.0: Advanced TFTP implementation client/server
 net-ftp/cmdftp 0.9.8: Light weight, yet robust command line FTP client with shell-likefunctions
@@ -14896,7 +14896,7 @@ net-irc/pisg 0.73-r1: Perl IRC Statistics Generator
 net-irc/polari 46.0: An IRC client for GNOME
 net-irc/psybnc 2.4.3-r1: A multi-user and multi-server gateway to IRC networks
 net-irc/quassel 0.14.50_pre20260525 9999: Qt/KDE IRC client supporting a remote daemon for 24/7 connectivity
-net-irc/rbot 0.9.15_p20210609: A ruby IRC bot
+net-irc/rbot 0.9.15_p20210609-r1: A ruby IRC bot
 net-irc/rhapsody 0.28b-r1: IRC client intended to be displayed on a text console
 net-irc/scrollz 2.3.1: Advanced IRC client based on ircII
 net-irc/senpai 0.4.1: Modern terminal IRC client. NOTICE me :senpai!
@@ -15029,13 +15029,13 @@ net-libs/libssh2 1.11.1 9999: Library implementing the SSH2 protocol
 net-libs/libtelnet 0.23-r2: Simple RFC-compliant TELNET implementation as a C library
 net-libs/libtirpc 1.3.6 1.3.7 1.3.7-r2: Transport Independent RPC library (SunRPC replacement)
 net-libs/libtlsrpt 0.5.0 9999: library to implement TLSRPT
-net-libs/libtorrent 0.15.7 0.16.8 0.16.9 0.16.11 9999: BitTorrent library written in C++ for *nix
+net-libs/libtorrent 0.15.7 0.16.11 0.16.13 9999: BitTorrent library written in C++ for *nix
 net-libs/libtorrent-rasterbar 2.0.10: C++ BitTorrent implementation focusing on efficiency and scalability
 net-libs/libtrace 4.0.21 4.0.22 4.0.26 4.0.28: A library and tools for trace processing
 net-libs/libupnp 1.14.24 1.14.25 1.14.30 1.14.31 1.18.5: An Portable Open Source UPnP Development Kit
 net-libs/libupnpp 1.0.3 1.0.4: The libupnpp C++ library wraps libupnp for easier use by upmpdcli and upplay
 net-libs/libvncserver 0.9.15-r1: library for creating vnc servers
-net-libs/libwebsockets 4.4.1-r1 4.5.8: A flexible pure-C library for implementing network protocols
+net-libs/libwebsockets 4.5.8: A flexible pure-C library for implementing network protocols
 net-libs/libyang 3.12.2: YANG data modeling language library
 net-libs/liquid-dsp 1.7.0 9999: digital signal processing library for software-defined radios
 net-libs/llhttp 9.2.1 9.4.1: Port of http_parser to llparse
@@ -15549,7 +15549,7 @@ net-p2p/ncdc 1.25: Lightweight direct connect client with a friendly ncurses int
 net-p2p/nicotine+ 3.3.7 3.3.10: Graphical client for the Soulseek peer to peer network written in Python
 net-p2p/qbittorrent 5.1.2-r1 5.1.4 5.2.0 9999: BitTorrent client in C++ and Qt
 net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable file synchronization tool
-net-p2p/rtorrent 0.15.7 0.16.8 0.16.9 0.16.11 9999: BitTorrent Client using libtorrent
+net-p2p/rtorrent 0.15.7 0.16.11 0.16.13 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.14.0a_p0 0.14.2a_p0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/syncthing 1.29.5 2.0.10 2.0.14 2.0.15 2.0.16 2.1.0 2.1.1: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
@@ -16798,6 +16798,7 @@ sec-keys/openpgp-keys-yubico 20260509: OpenPGP keys used by Yubico's developers
 sec-keys/openpgp-keys-zackweinberg 20231223: OpenPGP keys used by Zack Weinberg
 sec-keys/openpgp-keys-zsh 2026.05.31: PGP keys used to sign ZSH releases
 sec-keys/openpgp-keys-zstd 20260121: OpenPGP key used by app-arch/zstd
+sec-keys/openpgp-keys-zulucrypt 20170817: OpenPGP keys used by the zuluCrypt developer
 sec-keys/signify-keys-opensmtpd 20181026: Signify keys used to sign OpenSMTPD portable releases
 sec-keys/signify-keys-signify 30: Signify keys used to sign signify portable releases
 sec-keys/sigstore-trusted-root 0_p20241016: trusted-root.json for dev-python/sigstore
@@ -17150,7 +17151,7 @@ sys-apps/colorized-logs 2.6 2.7: Tools for logs with ANSI color
 sys-apps/config-site 0 99999999: config.site to load dropins from config.site.d
 sys-apps/consolation 0.0.7: libinput based console mouse daemon
 sys-apps/conspy 1.16: Remote control for Linux virtual consoles
-sys-apps/coreutils 9.9-r12 9.10 9.11 9999: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
+sys-apps/coreutils 9.9-r12 9.10 9.11 9.11-r1 9999: Standard GNU utilities (chmod, cp, dd, ls, sort, tr, head, wc, who,...)
 sys-apps/cpint 2.5.3: Linux/390 Interface to z/VM's Control Program
 sys-apps/cpu-x 5.3.1 5.4.0: A Free software that gathers information on CPU, motherboard and more
 sys-apps/cpuid 20260220 20260503: Linux tool to dump x86 CPUID information about the CPUs
@@ -17666,7 +17667,7 @@ sys-devel/multilib-gcc-wrapper 0-r2: Wrappers for gcc tools to be used on non-na
 sys-devel/native-cctools 5-r1 5-r2: Host OS native assembler as and static linker ld
 sys-devel/nvptx-tools 0_pre20240809 0_pre20260402 9999: Collection of tools for use with nvptx-none GCC toolchains
 sys-devel/patch 2.7.6-r6 2.7.6-r8 2.8-r1 9999: Utility to apply diffs to files
-sys-devel/qbe 1.1-r1 1.2-r1 9999: Pure-C embeddable compiler backend
+sys-devel/qbe 1.2-r1 1.3 9999: Pure-C embeddable compiler backend
 sys-devel/reflex 20241231 20260131: This is a variant of the flex fast lexical scanner
 sys-devel/rust-std 1.74.1 1.75.0 1.77.1 1.79.0 1.80.1 1.81.0 1.82.0 1.83.0 1.84.1 1.85.0 1.85.1 1.86.0 1.87.0 1.88.0 1.89.0 1.90.0 1.91.0 1.92.0 1.93.0 1.93.1 1.94.0 1.94.1 1.95.0: Rust standard library, standalone (for crossdev)
 sys-devel/smatch 1.72-r2 1.73-r1 9999: Static analysis tool for C
@@ -17811,7 +17812,7 @@ sys-fs/safecopy 1.7-r1: Tool for fault-tolerant data recovery from damaged (IO-e
 sys-fs/sanoid 2.3.0-r1 2.3.0-r2 9999: Policy-driven snapshot management and replication tools for OpenZFS
 sys-fs/shake 1.0: Defragmenter that runs in userspace while the system is used
 sys-fs/simple-mtpfs 0.4.0-r1: Simple MTP fuse filesystem driver
-sys-fs/snapraid 14.4: Backup program with disk array for cold data on existing filesystems
+sys-fs/snapraid 14.6: Backup program with disk array for cold data on existing filesystems
 sys-fs/squashfs-tools 4.7.5: Tools to create and extract Squashfs filesystems
 sys-fs/squashfs-tools-ng 1.3.2 9999: A new set of tools for working with SquashFS images
 sys-fs/squashfuse 0.6.0 0.6.1: FUSE filesystem to mount squashfs archives
@@ -17980,7 +17981,7 @@ sys-power/powertop 2.15 9999: tool to diagnose issues with power consumption and
 sys-power/sandmann-bin 1.3.1 1.4.1-r1: An autosuspend and wakeup daemon
 sys-power/sispmctl 4.12: GEMBIRD SiS-PM control utility
 sys-power/suspend 1.0_p20200924: Userspace Software Suspend and S2Ram
-sys-power/switcheroo-control 2.6-r2 3.0: D-Bus service to check the availability of dual-GPU
+sys-power/switcheroo-control 3.0: D-Bus service to check the availability of dual-GPU
 sys-power/thermald 2.5.9 2.5.10 2.5.11: Thermal daemon for Intel architectures
 sys-power/throttled 0.10.0 0.11: Daemon to work around throttling issues on some Intel laptops
 sys-power/tlp 1.8.0-r1 1.9.1: Optimize laptop battery life
@@ -18072,10 +18073,10 @@ virtual/httpd-php 8.2 8.3 8.4 8.5: Virtual to provide PHP-enabled webservers
 virtual/imagemagick-tools 1: Virtual for imagemagick command line tools
 virtual/inetd 1: Virtual for the internet super-server daemon
 virtual/jack 2: Virtual for JACK Audio Connection Kit
-virtual/jdk 1.8.0-r9 11-r2 17 21 25-r1 26 27: Virtual for Java Development Kit (JDK)
+virtual/jdk 1.8.0-r9 11-r2 17 21 25-r1 26 27 28: Virtual for Java Development Kit (JDK)
 virtual/jpeg 100-r1: Virtual to select between libjpeg-turbo and IJG jpeg for source-based packages
 virtual/jpeg-compat 62: A virtual for the libjpeg.so.62 ABI for binary-only programs
-virtual/jre 1.8.0-r3 11-r2 17 21 25 26 27: Virtual for Java Runtime Environment (JRE)
+virtual/jre 1.8.0-r3 11-r2 17 21 25 26 27 28: Virtual for Java Runtime Environment (JRE)
 virtual/krb5 0-r1: Virtual for Kerberos V implementation
 virtual/lapack 3.10-r1: Virtual for Linear Algebra Package FORTRAN 77 (LAPACK) implementation
 virtual/lapacke 3.8-r2: Virtual for LAPACK C implementation
@@ -18215,9 +18216,9 @@ www-apache/mod_limitipconn 0.24-r4: Limit the number of simultaneous apache conn
 www-apache/mod_log_rotate 1.02: Log rotation support for mod_log_config based on strftime(3)
 www-apache/mod_maxminddb 1.2.0-r1 1.3.0: MaxMind DB Apache Module
 www-apache/mod_musicindex 1.4.1-r4: mod_musicindex allows nice displaying of directories containing music files
-www-apache/mod_nss 1.0.18: SSL/TLS module for the Apache HTTP server
+www-apache/mod_nss 1.0.18-r1: SSL/TLS module for the Apache HTTP server
 www-apache/mod_perl 2.0.13-r1 2.0.13-r2: An embedded Perl interpreter for Apache2
-www-apache/mod_qos 11.76 11.78: A QOS module for the apache webserver
+www-apache/mod_qos 11.76 11.79: A QOS module for the apache webserver
 www-apache/mod_rpaf 0.8.4: Reverse proxy add forward module
 www-apache/mod_security 2.9.12: Application firewall and intrusion detection for Apache
 www-apache/mod_tls 0.14.0 0.14.0-r1: A module that uses rustls to provide a memory safe TLS implementation in Rust
@@ -18296,7 +18297,7 @@ www-apps/rt 5.0.6-r1: RT is an enterprise-grade ticketing system
 www-apps/rutorrent 5.3.0 5.3.1 9999: ruTorrent is a front-end for the popular Bittorrent client rTorrent
 www-apps/selfoss 2.20_pre20230730: The multipurpose rss reader, live stream, mashup, aggregation web application
 www-apps/sfpg 4.11.0: A web gallery in one single PHP file
-www-apps/sonarr-bin 4.0.17.2967: Sonarr is a Smart PVR for newsgroup and bittorrent users
+www-apps/sonarr-bin 4.0.17.2969: Sonarr is a Smart PVR for newsgroup and bittorrent users
 www-apps/trickster 1.1.5: Dashboard Accelerator for Prometheus
 www-apps/tt-rss 20250417 20251216 99999999: Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX
 www-apps/ttyd 1.7.7 1.7.7-r1 9999: ttyd, a simple command-line tool for sharing terminal over the web
