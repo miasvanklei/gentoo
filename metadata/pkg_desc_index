@@ -4330,13 +4330,13 @@ dev-go/go-tour 0_pre20200201: A Tour of Go
 dev-go/gocov 1.1.0: Coverage testing tool for The Go Programming Language
 dev-go/gogo-protobuf 1.3.2: Protocol Buffers for Go with Gadgets
 dev-go/golangci-lint 1.64.7 2.5.0 2.6.1 2.6.2 2.7.2 2.11.4 2.12.1 2.12.2: Fast linters runner for Go
-dev-go/gopls 0.18.1 0.19.0 0.19.1 0.20.0 0.21.0 0.21.1: "Go please" is the official Go language server
+dev-go/gopls 0.18.1 0.19.0 0.19.1 0.20.0 0.21.0 0.21.1 0.22.0: "Go please" is the official Go language server
 dev-go/gotestsum 1.13.0: 'go test' runner with output optimized for humans
 dev-go/goversion 1.2.0-r1: Print version used to build Go executables
 dev-go/gox 1.0.1: A dead simple, no frills Go cross compile tool
 dev-go/licenseclassifier 2.0.0: A set of tools that analyzes text to determine type of license
 dev-go/lichen 0.1.7: Go binary license checker
-dev-go/protobuf-go 1.30.0: Go support for Google's protocol buffers
+dev-go/protobuf-go 1.30.0 1.36.11: Go support for Google's protocol buffers
 dev-go/vend 1.0.3: dependency vendor for Go programs
 dev-haskell/abstract-deque 0.3: Abstract, parameterized interface to mutable Deques
 dev-haskell/abstract-par 0.3.3-r1: Type classes generalizing the functionality of the 'monad-par' library
@@ -5799,7 +5799,7 @@ dev-libs/pcl 1.12-r2: Portable Coroutine Library
 dev-libs/pegtl 3.2.8 3.2.8-r1: Header-only library for creating parsers according to Parsing Expression Grammar
 dev-libs/pfs 0.10.0: Production grade, very easy to use, procfs parsing library in C++
 dev-libs/pkcs11-helper 1.29.0-r1 1.30.0 1.31.0: PKCS#11 helper library
-dev-libs/plasma-wayland-protocols 1.20.0 1.21.0: Plasma Specific Protocols for Wayland
+dev-libs/plasma-wayland-protocols 1.21.0: Plasma Specific Protocols for Wayland
 dev-libs/pmdk 2.1.1: Persistent Memory Development Kit
 dev-libs/pocketfft 2024.11.30 2026.04.10 9999: PocketFFT for C++
 dev-libs/pocl 6.0 7.0-r2 7.0-r3 7.1: Portable Computing Language (an implementation of OpenCL)
@@ -11054,7 +11054,7 @@ dev-util/ragel 6.10 7.0.0.12 7.0.4-r3: Compiles finite state machines from regul
 dev-util/rats 2.4-r2: RATS - Rough Auditing Tool for Security
 dev-util/rbtools 5.1.1 5.2 5.2.1 5.3: Command line tools for use with Review Board
 dev-util/re2c 3.1: Tool for generating C-based recognizers from regular expressions
-dev-util/rebar 2.6.4-r1 3.22.1-r1 3.23.0 3.24.0: A sophisticated build-tool for Erlang projects that follows OTP principles
+dev-util/rebar 2.6.4-r1 3.22.1-r1 3.23.0 3.24.0 3.27.0: A sophisticated build-tool for Erlang projects that follows OTP principles
 dev-util/redo 0.42d-r1: Smaller, easier, more powerful, and more reliable than make
 dev-util/regexxer 0.10-r2: An interactive tool for performing search and replace operations
 dev-util/rej 0.16-r1: A utility for solving diff/patch rejects
@@ -12515,7 +12515,7 @@ kde-plasma/breeze-grub 6.6.5: Breeze theme for GRUB
 kde-plasma/breeze-gtk 6.6.5: Official GTK+ port of Plasma's Breeze widget style
 kde-plasma/breeze-plymouth 6.6.5: Breeze theme for Plymouth
 kde-plasma/discover 6.6.5-r1: KDE Plasma resources management GUI
-kde-plasma/drkonqi 6.6.5 6.6.5-r1: Plasma crash handler, gives the user feedback if a program crashed
+kde-plasma/drkonqi 6.6.5-r1: Plasma crash handler, gives the user feedback if a program crashed
 kde-plasma/drkonqi-legacy 6.3.80_p20250417: Plasma crash handler, gives the user feedback if a program crashed
 kde-plasma/flatpak-kcm 6.6.5: Flatpak Permissions Management KCM
 kde-plasma/kactivitymanagerd 6.6.5-r1: System service to manage user's activities, track the usage patterns etc.
@@ -12533,7 +12533,7 @@ kde-plasma/kmenuedit 6.6.5: KDE Plasma menu editor
 kde-plasma/knighttime 6.6.5: Helpers for scheduling the dark-light cycle
 kde-plasma/kpipewire 6.6.5: Components relating to Flatpak pipewire use in Plasma
 kde-plasma/krdp 6.6.5: Library and examples for creating an RDP server
-kde-plasma/kscreen 6.6.5 6.6.5-r1: KDE Plasma screen management
+kde-plasma/kscreen 6.6.5-r1: KDE Plasma screen management
 kde-plasma/kscreenlocker 6.6.5: Library and components for secure lock screen architecture
 kde-plasma/ksshaskpass 6.6.5: Implementation of ssh-askpass with KDE Wallet integration
 kde-plasma/ksystemstats 6.6.5: Plugin-based system monitoring daemon
@@ -13173,7 +13173,7 @@ media-gfx/scantailor-advanced 1.0.19: Interactive post-processing tool for scann
 media-gfx/scour 0.38.2-r1: Take an SVG file and produce a cleaner and more concise file
 media-gfx/scrot 1.12.1 2.0.0 9999: Screen capture utility using imlib2 library
 media-gfx/sfftobmp 3.1.4_p20250813: sff to bmp converter
-media-gfx/shotwell 0.32.13 0.32.14 0.32.15: Open source photo manager for GNOME
+media-gfx/shotwell 0.32.13 0.32.15 0.32.16: Open source photo manager for GNOME
 media-gfx/simple-scan 46.0 49.1: Simple document scanning utility
 media-gfx/skanpage 26.04.1 26.04.2: Multi-page scanning application supporting image and pdf files
 media-gfx/solvespace 3.1-r1: Parametric 2d/3d CAD
@@ -14072,7 +14072,7 @@ media-sound/jack_capture 0.9.73-r1 9999: JACK Recording utility
 media-sound/jalv 1.6.8-r1 1.6.9_pre20250802: Simple but fully featured LV2 host for Jack
 media-sound/justeport 0.2: Stream audio to your AirPort Express
 media-sound/kasts 26.04.1 26.04.2: Convergent podcast application for desktop and mobile
-media-sound/kid3 3.9.7: Simple tag editor based on Qt
+media-sound/kid3 3.9.7 3.10.0: Simple tag editor based on Qt
 media-sound/klick 0.12.2-r5: An advanced command-line based metronome for JACK
 media-sound/kmetronome 1.4.0 1.4.1: MIDI based metronome using ALSA sequencer
 media-sound/kmidimon 1.4.0 1.4.1: MIDI monitor for ALSA sequencer
@@ -15060,7 +15060,7 @@ net-libs/phodav 3.0-r1: WebDav server implementation using libsoup
 net-libs/pjproject 2.15.1 2.15.1-r1 2.15.1-r3 2.16-r2 2.17: Open source SIP, Media, and NAT Traversal Library
 net-libs/ppp-defs 0: Shim header for net/ppp_defs.h on musl
 net-libs/quiche 0.24.1 0.26.1-r1 0.28.0 0.29.0 0.29.1 9999: Implementation of the QUIC transport protocol and HTTP/3
-net-libs/qxmpp 1.11.3 1.15.1: Cross-platform C++ XMPP client and server library
+net-libs/qxmpp 1.15.1: Cross-platform C++ XMPP client and server library
 net-libs/rabbitmq-c 0.13.0: RabbitMQ C client
 net-libs/radcli 1.4.0: A simple RADIUS client library
 net-libs/rest 0.9.1-r2 0.10.2: Helper library for RESTful services
@@ -16260,7 +16260,7 @@ sci-libs/pastix 6.0.3: Parallel solver for very large sparse linear systems
 sci-libs/pcl 1.14.1-r3 9999: 2D/3D image and point cloud processing
 sci-libs/pdal 2.9.2 2.10.0: C++ library for translating and manipulating point cloud data
 sci-libs/pgplot 5.2.2-r8 5.2.2-r9: FORTRAN/C device-independent scientific graphic library
-sci-libs/plplot 5.15.0_p15-r1: Multi-language scientific plotting library
+sci-libs/plplot 5.15.0_p15-r2: Multi-language scientific plotting library
 sci-libs/primegen 0.97-r3: Small, fast library to generate primes in order
 sci-libs/profnet 1.0.22: Neural network architecture for profacc
 sci-libs/profphd-utils 1.0.10-r1: Additional utils for profphd
@@ -19226,7 +19226,7 @@ x11-wm/matwm2 0.1.2_pre3-r2 0.1.2_pre3-r3: Simple EWMH compatible window manager
 x11-wm/metacity 3.54.0-r1 3.56.0 3.58.1: GNOME Flashback window manager
 x11-wm/muffin 6.6.3: Compositing window manager forked from Mutter for use with Cinnamon
 x11-wm/musca 0.9.24_p20100226-r4: A simple dynamic window manager, with features nicked from ratpoison and dwm
-x11-wm/mutter 48.5 48.7 48.8 49.5 49.5-r1 9999: GNOME compositing window manager based on Clutter
+x11-wm/mutter 48.5 48.7 48.8 49.5-r1 49.6 9999: GNOME compositing window manager based on Clutter
 x11-wm/notion 4.0.4 4.0.5 9999: Notion is a tiling, tabbed window manager for the X window system
 x11-wm/openbox 3.6.1-r11 9999: Standards compliant, fast, light-weight, extensible window manager
 x11-wm/oroborus 2.0.20-r2: Small and fast window manager
