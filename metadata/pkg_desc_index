@@ -1015,7 +1015,7 @@ app-admin/linode-cli 5.67.0 5.68.0: Official command-line interface for interact
 app-admin/lnav 0.11.2: A curses-based tool for viewing and analyzing log files
 app-admin/logcheck 1.4.3-r2 1.4.3-r5 1.4.7: Mails anomalies in the system logfiles to the administrator
 app-admin/logmon 0.4.4-r2: Split-screen terminal/ncurses based log viewer
-app-admin/logrotate 3.22.0: Rotates, compresses, and mails system logs
+app-admin/logrotate 3.22.0 3.22.0-r1 9999: Rotates, compresses, and mails system logs
 app-admin/logsentry 1.1.1-r3: Automatically monitor system logs and mail security violations
 app-admin/logstalgia 1.1.4: Replays or streams an access_log as a retro arcade game-like simulation
 app-admin/logstash-bin 7.17.25: Tool for managing events and logs
@@ -8441,7 +8441,7 @@ dev-python/dulwich 1.1.0 1.2.4 1.2.5 1.2.6: Pure-Python implementation of the Gi
 dev-python/easy-thumbnails 2.10.1: Easy thumbnails for Django
 dev-python/easyprocess 1.1-r1: Easy to use Python subprocess interface
 dev-python/ecdsa 0.19.2: ECDSA cryptographic signature library in pure Python
-dev-python/editables 0.5 0.6: A Python library for creating 'editable wheels'
+dev-python/editables 0.6: A Python library for creating 'editable wheels'
 dev-python/editorconfig 0.17.1: Clone of EditorConfig core written in Python
 dev-python/elastic-transport 9.2.1 9.4.0 9.4.1: Transport classes and utilities shared among Python Elastic client libraries
 dev-python/elasticsearch 9.3.0 9.4.0 9.4.1: Official Elasticsearch client library for Python
@@ -8502,7 +8502,7 @@ dev-python/flask-api 3.1-r2: Browsable web APIs for Flask
 dev-python/flask-babel 4.0.0: i18n and l10n support for Flask based on Babel and pytz
 dev-python/flask-caching 2.3.1 2.3.1-r1 2.4.0: Adds caching support to Flask applications
 dev-python/flask-compress 1.23 1.24: Compress responses in your Flask app with gzip
-dev-python/flask-cors 6.0.2: A Flask extension for Cross Origin Resource Sharing (CORS)
+dev-python/flask-cors 6.0.2 6.0.3: A Flask extension for Cross Origin Resource Sharing (CORS)
 dev-python/flask-debug 0.4.3-r2: Flask extension that displays various debugging insights during development
 dev-python/flask-htmlmin 3.0.0: Minimize your flask rendered html
 dev-python/flask-login 0.6.3: Login session support for Flask
@@ -8553,7 +8553,7 @@ dev-python/gmpy2 2.3.0 2.4.0_alpha0: Python bindings for GMP, MPC, MPFR and MPIR
 dev-python/google-api-core 2.30.3 2.31.0: Core Library for Google Client Libraries
 dev-python/google-api-python-client 2.196.0 2.197.0: Google API Client for Python
 dev-python/google-auth 2.52.0 2.53.0: Google Authentication Library
-dev-python/google-auth-httplib2 0.3.1 0.4.0: httplib2 Transport for Google Auth
+dev-python/google-auth-httplib2 0.4.0: httplib2 Transport for Google Auth
 dev-python/google-auth-oauthlib 1.3.1 1.4.0: Google Authentication Library
 dev-python/google-i18n-address 3.1.1: Google's i18n address metadata repository
 dev-python/google-pasta 0.2.0-r2: AST-based Python refactoring library
@@ -8712,7 +8712,7 @@ dev-python/jupyter-events 0.12.0 0.12.1: Jupyter Event System library
 dev-python/jupyter-kernel-test 0.7.0: A tool for testing Jupyter kernels
 dev-python/jupyter-lsp 2.3.1: Multi-Language Server WebSocket proxy for Jupyter Notebook/Lab
 dev-python/jupyter-packaging 0.12.3: Tools to help build and install Jupyter Python packages
-dev-python/jupyter-server 2.17.0-r1 2.18.2 2.19.0: Core services, APIs, and REST endpoints to Jupyter web applications
+dev-python/jupyter-server 2.18.2 2.19.0: Core services, APIs, and REST endpoints to Jupyter web applications
 dev-python/jupyter-server-mathjax 0.2.6-r1: MathJax resources as a Jupyter Server Extension
 dev-python/jupyter-server-proxy 4.4.0: Jupyter notebook server extension to proxy web services
 dev-python/jupyter-server-terminals 0.5.4: A Jupyter Server Extension Providing Terminals
@@ -8840,7 +8840,7 @@ dev-python/mmtf-python 1.1.3: The python implementation of the MMTF API, decoder
 dev-python/mock 5.2.0: Rolling backport of unittest.mock for all Pythons
 dev-python/moddb 0.13.0: Python scrapper to access ModDB mods, games and more as objects
 dev-python/more-itertools 11.0.2 11.1.0: More routines for operating on iterables, beyond itertools
-dev-python/moto 4.2.14 5.1.22-r1 5.2.1: Mock library for boto
+dev-python/moto 4.2.14 5.1.22-r1 5.2.1 5.2.2: Mock library for boto
 dev-python/mpdlcd 0.5.2-r2: A small tool to display the MPD status on a LCDproc server
 dev-python/mpi4py 4.0.1 4.1.2: Message Passing Interface for Python
 dev-python/mpmath 1.4.1: Python library for arbitrary-precision floating-point arithmetic
@@ -8923,7 +8923,7 @@ dev-python/orderly-set 5.5.0: A package containing multiple implementations of O
 dev-python/orjson 3.11.8 3.11.9: Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy
 dev-python/os-client-config 2.3.0: OpenStack Client Configuation Library
 dev-python/os-service-types 1.8.2: A library to handle official service types for OpenStack and it's aliases
-dev-python/osc-lib 4.5.0 4.6.0: A package of common support modules for writing OSC plugins
+dev-python/osc-lib 4.6.0: A package of common support modules for writing OSC plugins
 dev-python/oslo-concurrency 7.4.0: Oslo Concurrency library
 dev-python/oslo-config 10.3.0 10.4.0: Oslo Configuration API
 dev-python/oslo-context 6.3.0 6.4.0: Helpers to maintain useful information about a request context
@@ -9190,7 +9190,7 @@ dev-python/pyserial 3.5-r3: Python Serial Port extension
 dev-python/pyside 6.10.3 6.11.1-r1 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.2: Python bindings for simdjson
 dev-python/pysmi 2.0.0: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
-dev-python/pysnmp 7.1.25 7.1.26 7.1.27: Python SNMP library
+dev-python/pysnmp 7.1.26 7.1.27: Python SNMP library
 dev-python/pysnmp-mibs 0.1.6-r1: SNMP framework in Python - MIBs
 dev-python/pysnmpcrypto 0.0.4: Strong cryptography support for PySNMP (SNMP library for Python)
 dev-python/pysocks 1.7.1-r2: SOCKS client module
@@ -9283,7 +9283,7 @@ dev-python/python-daemon 3.1.2: Library to implement a well-behaved Unix daemon 
 dev-python/python-dateutil 2.9.0_p0: Extensions to the standard Python datetime module
 dev-python/python-dbusmock 0.38.1: Easily create mock objects on D-Bus for software testing
 dev-python/python-debian 1.1.0: Python modules to work with Debian-related data formats
-dev-python/python-discovery 1.3.1 1.3.2 1.4.0: Python interpreter discovery
+dev-python/python-discovery 1.4.0: Python interpreter discovery
 dev-python/python-distutils-extra 2.47 3.3: Gettext support, themed icons and scrollkeeper-based documentation in distutils
 dev-python/python-dotenv 1.2.2: Manage .env files
 dev-python/python-editor 1.0.4-r2: Programmatically open an editor, capture the result
@@ -9484,7 +9484,7 @@ dev-python/setuptools-rust 1.12.0 1.12.1: A plugin for setuptools to build Rust 
 dev-python/setuptools-scm 9.2.2 10.0.5: Manage versions by scm tags via setuptools
 dev-python/sexpdata 1.0.2: a simple S-expression parser/serializer
 dev-python/sgmllib3k 1.0.0-r1: Py3k port of sgmllib
-dev-python/sh 2.2.2 2.2.3: Python subprocess interface
+dev-python/sh 2.2.2 2.2.3 2.2.4: Python subprocess interface
 dev-python/shapely 2.1.2: Geometric objects, predicates, and operations
 dev-python/shellingham 1.5.4: Tool to Detect Surrounding Shell
 dev-python/shtab 1.8.0: Automagic shell tab completion for Python CLI applications
@@ -9516,7 +9516,7 @@ dev-python/snowballstemmer 3.0.1 3.1.0 3.1.1: Stemmer algorithms generated from 
 dev-python/socketio-client-nexus 0.7.6: A socket.io 2.x client library for Python
 dev-python/socksio 1.0.0: Sans-I/O implementation of SOCKS4, SOCKS4A, and SOCKS5
 dev-python/sortedcontainers 2.4.0-r1: Python library to sort collections and containers
-dev-python/soundfile 0.13.1: audio library based on libsndfile, CFFI and NumPy
+dev-python/soundfile 0.13.1 0.14.0: audio library based on libsndfile, CFFI and NumPy
 dev-python/soupsieve 2.8.3 2.8.4: A modern CSS selector implementation for BeautifulSoup
 dev-python/spake2 0.8-r1 0.9: python implementation of SPAKE2 password-authenticated key exchange algorithm
 dev-python/speg 0.3_p20180819-r2: A PEG-based parser interpreter with memoization
@@ -9591,7 +9591,7 @@ dev-python/stevedore 5.7.0 5.8.0: Manage dynamic plugins for Python applications
 dev-python/stomp-py 8.1.2: Python client library for the STOMP messaging protocol
 dev-python/strict-rfc3339 0.7-r2: Strict, simple, lightweight RFC3339 functions
 dev-python/stripe 15.1.0 15.2.0: Stripe Python bindings
-dev-python/structlog 25.5.0: Structured Logging for Python
+dev-python/structlog 25.5.0 26.1.0: Structured Logging for Python
 dev-python/subprocess-tee 0.4.2: subprocess.run replacement with tee(1)-like output
 dev-python/suds-community 1.2.0: Lightweight SOAP client
 dev-python/superqt 0.8.1 0.8.2: Missing widgets and components for PyQt/PySide
@@ -10932,7 +10932,7 @@ dev-util/gource 0.55: A software version control visualization tool
 dev-util/gperf 3.1-r2 3.2.1 3.3: A perfect hash function generator
 dev-util/gpp 2.28: A generic preprocessor
 dev-util/gprof2dot 2025.4.14 2025.4.14-r1: Converts profiling output to dot graphs
-dev-util/gtest-parallel 20220621 20250716: Run Google Test suites in parallel
+dev-util/gtest-parallel 20250716: Run Google Test suites in parallel
 dev-util/gtk-builder-convert 2.24.33: Converts Glade files to GtkBuilder XML format
 dev-util/gtk-doc 1.34.0-r2: GTK+ Documentation Generator
 dev-util/gtk-update-icon-cache 3.24.42: GTK update icon cache
@@ -16345,7 +16345,7 @@ sci-mathematics/form 4.3.1 5.0.0_beta1 5.0.0: Symbolic Manipulation System
 sci-mathematics/fricas 1.3.12 1.3.13: FriCAS is a fork of Axiom computer algebra system
 sci-mathematics/frobby 0.9.0-r4: Software system and project for computations with monomial ideals
 sci-mathematics/functions-matlab-colormaps 1.0_p20250328: Additional colormaps for octave by Ultralytics
-sci-mathematics/gap 4.15.1 4.16.0_beta2: System for computational discrete algebra. Core functionality.
+sci-mathematics/gap 4.15.1 4.16.0: System for computational discrete algebra (core functionality)
 sci-mathematics/gappa 1.4.1 1.4.2: Tool for verifying floating-point or fixed-point arithmetic
 sci-mathematics/gappalib-coq 1.5.2-r1 1.5.3: Allows the certificates Gappa generates to be imported by the Coq
 sci-mathematics/genius 1.0.27-r1 1.0.29: Genius Mathematics Tool and the GEL Language
@@ -16361,7 +16361,7 @@ sci-mathematics/gmp-ecm 7.0.6-r1: Elliptic Curve Method for Integer Factorizatio
 sci-mathematics/gp2c 0.0.12 0.0.14: A GP to C translator
 sci-mathematics/gretl 2021d: Regression, econometrics and time-series library
 sci-mathematics/gsl-shell 2.3.5: Lua interactive shell for sci-libs/gsl
-sci-mathematics/highs 1.14.0-r2: Modern solver for linear, quadratic, and mixed-integer programs
+sci-mathematics/highs 1.14.0-r3: Modern solver for linear, quadratic, and mixed-integer programs
 sci-mathematics/jags 4.3.1-r1: Just Another Gibbs Sampler for Bayesian MCMC simulation
 sci-mathematics/kind2 1.9.0: Multi-engine SMT-based automatic model checker
 sci-mathematics/kissat 3.1.1-r1 4.0.4: Keep-it-simple and clean bare metal SAT solver written in C
@@ -17250,7 +17250,7 @@ sys-apps/kmod 33 34.2 9999: Library and tools for managing linux kernel modules
 sys-apps/kmscon 9.3.2 9.3.3 9.3.4 9.3.5 10.0.0 10.0.0-r1: KMS/DRM based virtual Console Emulator
 sys-apps/lcdsplash 0.3-r1: splash Gentoo boot information on LCD's
 sys-apps/lcdutils 0.2-r2: (Sun) Cobalt Qube/RaQ button reading and LCD writing utilities
-sys-apps/less 643-r2 668 679 685 691 692 702 9999: Excellent text file viewer
+sys-apps/less 643-r2 668 679 685 691 692 702 704 9999: Excellent text file viewer
 sys-apps/likwid 5.2.1 5.2.2 5.5.1: A performance-oriented tool suite for x86 multicore environments
 sys-apps/linux-misc-apps 5.8-r1 6.16: Misc tools bundled with kernel sources
 sys-apps/lm-sensors 3.6.2: Hardware Monitoring user-space utilities
@@ -17655,7 +17655,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.4.1_p20260527 13.4.1_p20260603 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.3.1_p20260528 14.3.1_p20260604 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.2.1_p20260529 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.1.1_p20260530 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.0_p20260524 17.0.0_p20260531 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.4.1_p20260527 13.4.1_p20260603 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.3.1_p20260528 14.3.1_p20260604 14.4.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.2.1_p20260529 15.2.1_p20260605 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.1.1_p20260530 16.1.1_p20260606 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.0_p20260524 17.0.0_p20260531 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
@@ -18283,7 +18283,7 @@ www-apps/nextcloud 32.0.5 32.0.9 32.0.10 33.0.3 33.0.4 33.0.5: Personal cloud th
 www-apps/nextcloud-notify_push 1.3.3: Push daemon for Nextcloud clients
 www-apps/nikola 8.3.1-r1 8.3.3-r1: A static website and blog generator
 www-apps/novnc 1.4.0 1.6.0 9999: noVNC is a VNC client implemented using HTML5 technologies
-www-apps/phpBB 3.3.15: An open-source PHP-based bulletin board package
+www-apps/phpBB 3.3.17: An open-source PHP-based bulletin board package
 www-apps/phpsysinfo 3.4.4 3.4.5: A customizable PHP script that displays information about your system nicely
 www-apps/piwigo 16.3.0 16.4.0: a photo gallery software for the web
 www-apps/postfixadmin 3.3.16: Web Based Management tool for Postfix style virtual domains and users
