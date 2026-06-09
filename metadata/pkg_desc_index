@@ -2314,6 +2314,7 @@ app-emacs/tempel 1.12 1.13 9999: Templates with in-buffer field editing for GNU 
 app-emacs/template 3.3b: Use templates, decorate comments, auto-update buffers
 app-emacs/tempo-snippets 0.1.5-r1: Visual insertion of tempo templates
 app-emacs/thinks 1.12 1.13: Insert text in a think bubble
+app-emacs/timu-caribbean-theme 1.5 9999: Color theme with cyan as a dominant color
 app-emacs/tp 0.8 0.9: Utilities to create transient menus for POSTing to an API for GNU Emacs
 app-emacs/transient 0.12.0-r1 0.13.0 0.13.2 0.13.3 0.13.4 9999: Transient commands abstraction for GNU Emacs
 app-emacs/treemacs 3.2: Tree style project file explorer
@@ -14333,7 +14334,7 @@ media-video/gnome-video-effects 0.6.0: Effects for Cheese, the webcam video and 
 media-video/gpac 2.4.0-r1: Implementation of the MPEG-4 Systems standard developed from scratch in ANSI C
 media-video/guvcview 2.2.1 2.2.2: Simple Qt6 or GTK+3 interface for capturing and viewing video from v4l2 devices
 media-video/h264enc 10.4.7-r1: Script to encode H.264/AVC/MPEG-4 Part 10 formats
-media-video/handbrake 1.10.2 1.11.1-r1 9999: Open-source, GPL-licensed, multiplatform, multithreaded video transcoder
+media-video/handbrake 1.10.2 1.11.1-r1 1.11.2 9999: Open-source, GPL-licensed, multiplatform, multithreaded video transcoder
 media-video/haruna 1.7.1-r2 1.8.1-r1: Video player built with Qt/QML and libmpv
 media-video/harvid 0.9.1: HTTP Ardour Video Daemon
 media-video/hevc-hm 17.0: HEVC HM reference software
@@ -16552,6 +16553,7 @@ sec-keys/openpgp-keys-arnaldocarvalhodemelo 20180830: OpenPGP keys of Arnaldo Ca
 sec-keys/openpgp-keys-baldurkarlsson 20220415: OpenPGP keys used by Baldur Karlsson
 sec-keys/openpgp-keys-bcl 20210128 20230315 20260418: OpenPGP keys used by Brian C. Lane
 sec-keys/openpgp-keys-bennoschulenberg 20260119: OpenPGP key used by Benno Schulenberg
+sec-keys/openpgp-keys-binutils 20260609: OpenPGP keys used to sign GNU Binutils releases
 sec-keys/openpgp-keys-bison 20220407: OpenPGP keys used by Bison
 sec-keys/openpgp-keys-bobfriesenhahn 20220326: OpenPGP keys used by Bob Friesenhahn
 sec-keys/openpgp-keys-botan 20210416: OpenPGP keys used to sign Botan releases
@@ -17629,9 +17631,9 @@ sys-cluster/zookeepercli 1.0.11: Simple, lightweight, dependable CLI for ZooKeep
 sys-devel/autogen 5.18.16-r102: Program and text file generation
 sys-devel/bc 1.07.1-r6 1.08.0 1.08.1 1.08.2: Handy console-based calculator utility
 sys-devel/bin86 0.16.21-r2: Assembler and loader used to create kernel bootsector
-sys-devel/binutils 2.32-r2 2.33.1-r1 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r9 2.41-r5 2.42-r2 2.43-r2 2.44-r4 2.45 2.45-r1 2.45.1 2.45.9999 2.46.0 9999: Tools necessary to build programs
+sys-devel/binutils 2.32-r2 2.33.1-r1 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r9 2.41-r5 2.42-r2 2.43-r2 2.44-r4 2.45 2.45-r1 2.45.1 2.46.0 2.46.1 2.46.9999 9999: Tools necessary to build programs
 sys-devel/binutils-config 5.5.2 5.5.3 5.6 9999: Utility to change the binutils version being used
-sys-devel/binutils-hppa64 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r2 2.44-r3 2.45 2.45-r1 2.45.1 2.46.0 9999: Tools necessary to build programs
+sys-devel/binutils-hppa64 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r2 2.44-r3 2.45 2.45-r1 2.45.1 2.46.0 2.46.1 9999: Tools necessary to build programs
 sys-devel/bison 3.8.2-r2 3.8.2-r3: A general-purpose (yacc-compatible) parser generator
 sys-devel/bpf-toolchain 15.2.0_p3 16.1.0_p1: All-in-one bpf toolchain for building DTrace and systemd without crossdev
 sys-devel/clang-crossdev-wrappers 16 17 18 19 20 21 22 23: Symlinks to a Clang crosscompiler
@@ -17861,7 +17863,7 @@ sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized sn
 sys-kernel/zen-sources 7.0.9: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
 sys-libs/basu 0.2.1: The sd-bus library, extracted from systemd
-sys-libs/binutils-libs 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r3 2.44-r2 2.45 2.45-r1 2.45.1 2.46.0 9999: Core binutils libraries (libbfd, libopcodes, libiberty) for external packages
+sys-libs/binutils-libs 2.34-r2 2.35.2 2.36.1-r2 2.37_p1-r2 2.38-r2 2.39-r5 2.40-r7 2.41-r5 2.42-r2 2.43-r3 2.44-r2 2.45 2.45-r1 2.45.1 2.46.0 2.46.1 9999: Core binutils libraries (libbfd, libopcodes, libiberty) for external packages
 sys-libs/blocksruntime 0_pre20171027-r2: BlocksRuntime library needed for clang's -fblocks support
 sys-libs/cracklib 2.10.2 2.10.3: Password Checking Library
 sys-libs/db 4.8.30-r8 4.8.30-r9 5.3.28-r9 5.3.28-r10 5.3.28-r11 6.0.35-r4 6.0.35-r5: Oracle Berkeley DB
@@ -17978,7 +17980,7 @@ sys-process/acct 6.6.4-r4: GNU system accounting utilities
 sys-process/anacron 2.3-r5 2.3-r6: A periodic command scheduler
 sys-process/at 3.2.5 3.2.5-r1 3.2.5-r2: Queues jobs for later execution
 sys-process/atop 2.12.1: Resource-specific view of processes
-sys-process/audit 4.1.4-r1 4.1.4-r2: Userspace utilities for storing and processing auditing records
+sys-process/audit 4.1.4-r1 4.1.4-r3: Userspace utilities for storing and processing auditing records
 sys-process/bashtop 0.9.25: Resource monitor that shows usage and stats
 sys-process/bcron 0.11: A new cron system designed with secure operations in mind by Bruce Guenter
 sys-process/below 0.11.0-r1: An interactive tool to view and record historical system data
