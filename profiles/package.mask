@@ -297,25 +297,6 @@ dev-util/buildbot-www-react
 =sys-kernel/linux-firmware-20250917
 =sys-kernel/linux-firmware-20251011
 
-# Andreas K. Hüttel <dilfridge@gentoo.org> (2025-07-04)
-# Obsolete Perl virtuals that will be removed (the list is work in progress).
-# If you have any of these installed, just remove them; they should not be
-# required anymore.
-virtual/perl-bignum
-virtual/perl-HTTP-Tiny
-virtual/perl-IO-Zlib
-virtual/perl-Locale-Maketext
-virtual/perl-Math-BigInt-FastCalc
-virtual/perl-Math-BigRat
-virtual/perl-Math-Complex
-virtual/perl-Module-Load-Conditional
-virtual/perl-Parse-CPAN-Meta
-virtual/perl-Params-Check
-perl-core/Params-Check
-virtual/perl-Term-ReadLine
-virtual/perl-Unicode-Collate
-virtual/perl-Unicode-Normalize
-
 # Michał Górny <mgorny@gentoo.org> (2025-06-29)
 # File collision against gnome-base/gnome-keyring[pam], which is
 # required via pambase.  Masked until the maintainer determines a good
