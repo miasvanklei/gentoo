@@ -931,7 +931,7 @@ app-admin/apg 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.792.0 1.2.804.0 1.2.814.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.45.9 1.45.14 1.45.18 1.45.24 1.45.29 1.45.30: Universal Command Line Environment for AWS
+app-admin/awscli 1.45.9 1.45.14 1.45.18 1.45.24 1.45.29 1.45.30 1.45.31: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.34.24 2.34.40: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.6.1 2025.7.0 2025.12.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2026.1.0 2026.2.1: Bitwarden password manager desktop client
@@ -8257,13 +8257,13 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.43.9 1.43.14 1.43.18 1.43.24 1.43.29 1.43.30: The AWS SDK for Python
-dev-python/botocore 1.43.9 1.43.14 1.43.18 1.43.24 1.43.29 1.43.30: Low-level, data-driven core of boto 3
+dev-python/boto3 1.43.9 1.43.14 1.43.18 1.43.24 1.43.29 1.43.30 1.43.31: The AWS SDK for Python
+dev-python/botocore 1.43.9 1.43.14 1.43.18 1.43.24 1.43.29 1.43.30 1.43.31: Low-level, data-driven core of boto 3
 dev-python/bottle 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.26: Syntax highlighting and autocompletion for the Python interpreter
 dev-python/bracex 2.6: Bash style brace expansion for Python
-dev-python/braintree 4.44.0: Braintree Python Library
+dev-python/braintree 4.44.0 4.45.0: Braintree Python Library
 dev-python/breathe 4.36.0: Sphinx Doxygen renderer
 dev-python/brotlicffi 1.2.0.1: Python binding to the Brotli library
 dev-python/btrfs 15: Python module to inspect btrfs filesystems
@@ -8441,7 +8441,7 @@ dev-python/easyprocess 1.1-r1: Easy to use Python subprocess interface
 dev-python/ecdsa 0.19.2: ECDSA cryptographic signature library in pure Python
 dev-python/editables 0.6: A Python library for creating 'editable wheels'
 dev-python/editorconfig 0.17.1: Clone of EditorConfig core written in Python
-dev-python/elastic-transport 9.2.1 9.4.1: Transport classes and utilities shared among Python Elastic client libraries
+dev-python/elastic-transport 9.2.1 9.4.1 9.4.2: Transport classes and utilities shared among Python Elastic client libraries
 dev-python/elasticsearch 9.3.0 9.4.1: Official Elasticsearch client library for Python
 dev-python/electrum-aionostr 0.1.0: asyncio nostr client
 dev-python/electrum-ecc 0.0.7: Pure python ctypes wrapper for libsecp256k1
@@ -8587,7 +8587,7 @@ dev-python/html5-parser 0.4.12: Fast C based HTML 5 parsing for python
 dev-python/html5lib 1.2_pre20240221: HTML parser based on the HTML5 specification
 dev-python/httmock 1.4.0-r1: A mocking library for requests
 dev-python/httpauth 0.4.1: A WSGI middleware that secures routes using HTTP Digest Authentication
-dev-python/httpbin 0.10.2-r1: HTTP Request and Response Service
+dev-python/httpbin 0.10.2-r1 0.10.4: HTTP Request and Response Service
 dev-python/httpcore 1.0.9-r1: A minimal low-level HTTP client
 dev-python/httplib2 0.31.1: A comprehensive HTTP client library
 dev-python/httpretty 1.1.4-r3 1.1.4-r4: HTTP client mock for Python
@@ -8751,7 +8751,7 @@ dev-python/liblarch 3.2.0: Library to handle directed acyclic graphs
 dev-python/libnacl 2.1.0: Python ctypes wrapper for libsodium
 dev-python/librt 0.11.0: Mypyc runtime library
 dev-python/libsass 0.23.0: A straightforward binding of libsass for Python
-dev-python/libtmux 0.46.2 0.52.1 0.53.0 0.53.1 0.55.0 0.55.1 0.56.0 0.57.1 0.58.0: Typed library that provides an ORM wrapper for tmux, a terminal multiplexer
+dev-python/libtmux 0.46.2 0.52.1 0.53.0 0.53.1 0.55.0 0.55.1 0.56.0 0.57.1 0.58.0 0.58.1: Typed library that provides an ORM wrapper for tmux, a terminal multiplexer
 dev-python/libusb1 3.4.0: Python ctype-based wrapper around libusb1
 dev-python/libvirt-python 11.10.0 12.0.0 12.1.0 12.2.0 9999: libvirt Python bindings
 dev-python/license-expression 30.4.4: Parse, compare, simplify and normalize license expressions
@@ -8963,7 +8963,7 @@ dev-python/pdoc3 0.11.6: Auto-generate API documentation for Python projects
 dev-python/peachpy 2022.11.13-r3: Portable Efficient Assembly Code-generator in Higher-level Python
 dev-python/pebble 5.2.0: Threading and multiprocessing eye-candy
 dev-python/pecan 1.8.0: A WSGI object-dispatching web framework, lean, fast, with few dependencies
-dev-python/peewee 4.0.5 4.0.6 4.0.7 4.0.8 4.0.9: Small Python ORM
+dev-python/peewee 4.0.5 4.0.6 4.0.7 4.0.8 4.0.9 4.1.0: Small Python ORM
 dev-python/pefile 2024.8.26 9999: Module to read and work with Portable Executable (PE) files
 dev-python/pelican-minify 2.0.2: An HTML minification plugin for Pelican, the static site generator
 dev-python/pexpect 4.9.0: Python module for spawning child apps and responding to expected patterns
@@ -9025,7 +9025,7 @@ dev-python/ptyprocess 0.7.0-r1: Run a subprocess in a pseudo terminal
 dev-python/publicsuffix2 2.20191221-r2: Get a public suffix for a domain name using the Public Suffix List
 dev-python/pudb 2025.1.5: A full-screen, console-based Python debugger
 dev-python/pulsectl 24.12.0: Python high-level interface and ctypes-based bindings for PulseAudio (libpulse)
-dev-python/pulsectl-asyncio 1.2.2: Asyncio frontend for pulsectl, Python bindings of libpulse
+dev-python/pulsectl-asyncio 1.2.2 1.3.0: Asyncio frontend for pulsectl, Python bindings of libpulse
 dev-python/pure-eval 0.2.3: Safely evaluate AST nodes without side effects
 dev-python/puremagic 2.2.0: Pure python implementation of magic file detection
 dev-python/py 1.11.0-r1: library with cross-python path, ini-parsing, io, code, log facilities
@@ -9438,7 +9438,7 @@ dev-python/rtslib-fb 2.1.76 2.2.4-r1: A Python object API for managing the Linux
 dev-python/ruamel-yaml 0.19.1: YAML parser/emitter that supports roundtrip comment preservation
 dev-python/ruamel-yaml-clib 0.2.15: C-based reader/scanner and emitter for dev-python/ruamel-yaml
 dev-python/ruamel-yaml-clibz 0.3.7: C-based reader/scanner and emitter for dev-python/ruamel-yaml
-dev-python/s3transfer 0.16.1 0.17.0 0.17.1 0.18.0: An Amazon S3 Transfer Manager
+dev-python/s3transfer 0.16.1 0.17.0 0.17.1 0.18.0 0.19.0: An Amazon S3 Transfer Manager
 dev-python/sabctools 8.2.6 9.4.0 9.4.1: Module providing raw yEnc encoding/decoding for SABnzbd
 dev-python/sarge 0.1.8: Wrapper for subprocess which provides command pipeline functionality
 dev-python/sarif-om 1.0.4-r1: Classes implementing the SARIF 2.1.0 object model
@@ -9455,7 +9455,7 @@ dev-python/secretstorage 3.5.0: Python bindings to FreeDesktop.org Secret Servic
 dev-python/securesystemslib 1.3.1 1.4.0: Cryptographic routines for Secure Systems Lab projects at NYU
 dev-python/seedir 0.5.1: Package for creating, editing, and reading folder tree diagrams
 dev-python/segno 1.6.6: Python QR Code and Micro QR Code encoder
-dev-python/selenium 4.34.2 4.35.0 4.44.0: Python language binding for Selenium Remote Control
+dev-python/selenium 4.34.2 4.35.0 4.44.0 4.45.0: Python language binding for Selenium Remote Control
 dev-python/semantic-version 2.10.0: Python library providing a few tools handling SemVer in Python
 dev-python/semver 3.0.4: A Python module for semantic versioning
 dev-python/send2trash 2.1.0: Sends files to the Trash (or Recycle Bin)
@@ -9543,7 +9543,7 @@ dev-python/sphinxcontrib-jsmath 1.0.1-r4: Sphinx extension which renders display
 dev-python/sphinxcontrib-log-cabinet 1.0.1-r1: Organize changelog directives in Sphinx docs
 dev-python/sphinxcontrib-mermaid 2.0.2: Sphinx spelling extension
 dev-python/sphinxcontrib-plantuml 0.31: Sphinx extensions for PlantUML
-dev-python/sphinxcontrib-programoutput 0.19: Extension to sphinx to include program output
+dev-python/sphinxcontrib-programoutput 0.19 0.20: Extension to sphinx to include program output
 dev-python/sphinxcontrib-qthelp 2.0.0-r1: Sphinx extension which outputs QtHelp documents
 dev-python/sphinxcontrib-serializinghtml 2.0.0-r1: Sphinx extension which outputs outputs serialized HTML files
 dev-python/sphinxcontrib-spelling 8.0.2: Sphinx spelling extension
@@ -9582,7 +9582,7 @@ dev-python/suds-community 1.2.0: Lightweight SOAP client
 dev-python/superqt 0.8.2: Missing widgets and components for PyQt/PySide
 dev-python/sure 2.0.1-r1: idiomatic assertion toolkit with human-friendly failure messages
 dev-python/svg-path 7.0: SVG path objects and parser
-dev-python/svglib 1.6.0: Pure-Python library for reading and converting SVG
+dev-python/svglib 1.6.0 2.0.0: Pure-Python library for reading and converting SVG
 dev-python/svgwrite 1.4.3: Python Package to write SVG files
 dev-python/swagger-spec-validator 3.0.4: Validate Swagger specs against Swagger 1.1 or 2.0 specification
 dev-python/sybil 10.0.1 10.1.0: Automated testing for the examples in your documentation
@@ -9706,7 +9706,7 @@ dev-python/uvloop 0.22.1: Ultra-fast implementation of asyncio event loop on top
 dev-python/validators 0.35.0: Python Data Validation for Humans
 dev-python/valkey 6.1.1: Python client for Valkey forked from redis-py
 dev-python/varlink 31.0.0: Python implementation of the Varlink protocol
-dev-python/vcrpy 8.1.1 8.2.0: Automatically mock your HTTP interactions to simplify and speed up testing
+dev-python/vcrpy 8.1.1 8.2.0 8.2.1: Automatically mock your HTTP interactions to simplify and speed up testing
 dev-python/vcs-versioning 1.1.1: Core VCS versioning functionality from setuptools-scm
 dev-python/vcsgraph 0.3.0: Graph algorithms for version control systems
 dev-python/vdf 4.0: A module for (de)serialization to and from VDF, Valve's key-value text format
@@ -9717,7 +9717,7 @@ dev-python/verboselogs 1.7-r1: Verbose logging for Python's logging module
 dev-python/versioneer 0.29-r1: Easy VCS-based management of project version strings
 dev-python/versioningit 3.3.0: A setuptools plugin for versioning based on git tags
 dev-python/vine 5.1.0: Python Promises
-dev-python/virtualenv 20.39.1 21.3.3 21.4.3 21.5.0: Virtual Python Environment builder
+dev-python/virtualenv 20.39.1 21.3.3 21.4.3 21.5.0 21.5.1: Virtual Python Environment builder
 dev-python/virtualenv-clone 0.5.7: A script for cloning a non-relocatable virtualenv
 dev-python/virtualenvwrapper 6.1.1: Set of extensions to Ian Bicking's virtualenv tool
 dev-python/visitor 0.1.3-r2: A tiny pythonic visitor implementation
@@ -11061,7 +11061,7 @@ dev-util/schroot 1.6.13_p7-r2: Utility to execute commands in a chroot environme
 dev-util/sdl-jstest 0.2.2 9999: Simple SDL joystick test application for the console
 dev-util/seer 2.6 2.7 9999: GUI frontend to gdb
 dev-util/sel 0.08.4-r2: A filemanager for shell scripts
-dev-util/selenium-manager 4.43.0 4.44.0: CLI tool that manages the browser/driver infrastructure required by Selenium
+dev-util/selenium-manager 4.43.0 4.44.0 4.45.0: CLI tool that manages the browser/driver infrastructure required by Selenium
 dev-util/serialtalk 1.3 9999: simple command-line tool to talk to serial devices
 dev-util/sh 3.11.0: A shell parser, formatter, and interpreter with bash support
 dev-util/shadowman 5: Unified compiler shadow link directory updater
@@ -14723,7 +14723,7 @@ net-dns/idnkit 2.3-r2: Toolkit for Internationalized Domain Names (IDN)
 net-dns/inadyn 2.13.0: Dynamic DNS client with multiple SSL/TLS library support
 net-dns/knot 3.4.10 3.5.4 3.5.5: High-performance authoritative-only DNS server
 net-dns/knot-resolver 5.7.6 6.2.0 6.3.0: Scaleable caching DNS resolver
-net-dns/libidn 1.43: Internationalized Domain Names (IDN) implementation
+net-dns/libidn 1.43 1.44: Internationalized Domain Names (IDN) implementation
 net-dns/libidn2 2.3.8: An implementation of the IDNA2008 specifications (RFCs 5890, 5891, 5892, 5893)
 net-dns/maradns 3.5.0036: A security-aware DNS server
 net-dns/mdns-repeater 1.11: Multicast DNS repeater
@@ -15650,7 +15650,7 @@ net-vpn/openvpn 2.6.20-r1 2.7.4 9999: Robust and highly flexible tunneling appli
 net-vpn/ovpn-dco 0.2.20230426 0.2.20231117 0.2.20241216 0.2.20251017 9999: OpenVPN Data Channel Offload in the linux kernel
 net-vpn/pptpd 1.4.0-r5: Linux Point-to-Point Tunnelling Protocol Server
 net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client powered by Bitmask
-net-vpn/strongswan 6.0.3 6.0.4 6.0.4-r1 6.0.6: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
+net-vpn/strongswan 6.0.3 6.0.4 6.0.4-r1 6.0.6 6.0.7: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.82.5 1.84.3 1.86.5 1.90.6 1.92.1 1.92.4 1.96.5 1.98.0 1.98.1 1.98.4 1.100.0: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.1_pre18-r2: tinc is an easy to configure VPN implementation
 net-vpn/tor 0.4.9.8 0.4.9.9 9999: Anonymizing overlay network for TCP
@@ -16652,7 +16652,7 @@ sec-keys/openpgp-keys-libarchive 20251118: OpenPGP keys used by the libarchive p
 sec-keys/openpgp-keys-libass 20220515 20250608: OpenPGP keys used to sign libass releases
 sec-keys/openpgp-keys-libevent 0: OpenPGP keys used by the libevent project
 sec-keys/openpgp-keys-libgssglue 20260127: OpenPGP keys used by net-libs/libgssglue
-sec-keys/openpgp-keys-libidn 20250414: OpenPGP keys used to sign libidn releases
+sec-keys/openpgp-keys-libidn 20250414 20260617: OpenPGP keys used to sign libidn releases
 sec-keys/openpgp-keys-libjpeg-turbo 20260124: OpenPGP key used by media-libs/libjpeg-turbo
 sec-keys/openpgp-keys-libmicrohttpd 201906 999999: OpenPGP keys used to sign GNU libmicrohttpd releases
 sec-keys/openpgp-keys-libntlm 20260127: OpenPGP keys used by net-libs/libntlm
@@ -18366,7 +18366,7 @@ www-servers/gatling 0.16-r6: High performance web server
 www-servers/gunicorn 26.0.0: A WSGI HTTP Server for UNIX
 www-servers/h2o 2.3.0_pre20250130 2.3.0_pre20260415 9999: H2O - the optimized HTTP/1, HTTP/2 server
 www-servers/kore 4.3.0_rc4: Web application platform for writing scalable, concurrent web based processes
-www-servers/lighttpd 1.4.82 9999: Lightweight high-performance web server
+www-servers/lighttpd 1.4.82 1.4.83 9999: Lightweight high-performance web server
 www-servers/mongrel2 1.11.0-r3: A language agnostic web server focused on web applications
 www-servers/moonbridge 1.1.3-r1: Network Server for Lua Applications
 www-servers/nginx 1.26.3-r2 1.27.5-r1 1.29.5 1.29.7-r1 1.30.0 1.30.2 1.31.1 9999: Robust, small and high performance HTTP and reverse proxy server
