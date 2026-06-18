@@ -138,8 +138,6 @@ src_configure() {
 		# https://bugs.gentoo.org/927037
 		-DCMAKE_INTERPROCEDURAL_OPTIMIZATION=OFF
 
-		-DWITH_CJSON_REQUIRED=ON
-
 		-DCHANNEL_URBDRC=$(option usb)
 		-DCHANNEL_RDPECAM_CLIENT=$(option_client camera)
 		-DWITH_AAD=$(option aad)
