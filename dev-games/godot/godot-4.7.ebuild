@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..14} )
+PYTHON_COMPAT=( python3_{12..14} )
 inherit branding desktop python-any-r1 flag-o-matic scons-utils
 inherit shell-completion toolchain-funcs xdg
 
@@ -92,6 +92,7 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-4.5-scons.patch
+	"${FILESDIR}"/${P}-no-volk.patch
 )
 
 src_prepare() {
@@ -225,7 +226,7 @@ src_install() {
 	dodoc AUTHORS.md CHANGELOG.md DONORS.md README.md
 
 	if use gui; then
-		newicon icon.svg godot.svg
+		newicon misc/logo/icon.svg godot.svg
 		domenu misc/dist/linux/org.godotengine.Godot.desktop
 
 		insinto /usr/share/metainfo
