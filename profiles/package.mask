@@ -37,6 +37,12 @@
 #--- END OF EXAMPLES ---
 
 # Michał Górny <mgorny@gentoo.org> (2026-06-20)
+# No py3.14 in compat, tests lost on bump, no revdeps.
+# Removal on 2026-07-20.  Bug #973904.
+dev-python/pyx
+dev-python/sphinx-selective-exclude
+
+# Michał Górny <mgorny@gentoo.org> (2026-06-20)
 # Both packages are completely broken and do not install correctly.
 # Removal on 2026-07-20.  Bug #977003.
 sci-chemistry/GromacsWrapper
