@@ -17298,7 +17298,7 @@ sys-apps/pcsc-lite 2.4.0-r1 2.4.1: PC/SC Architecture smartcard middleware libra
 sys-apps/pcsc-slb-rf72-drv 1.1.0-r2: Schlumberger Reflex 72 Serial Smartcard Reader
 sys-apps/pcsc-tools 1.7.3-r1 1.7.4: PC/SC Architecture smartcard tools
 sys-apps/pick 4.0.0-r1: A fuzzy search tool for the command-line
-sys-apps/pkgcore 0.12.32 0.12.34 9999: a framework for package management
+sys-apps/pkgcore 0.12.32 0.12.35 9999: a framework for package management
 sys-apps/pkgcraft-tools 0.0.31-r2 9999: pkgcraft-based tools for Gentoo
 sys-apps/plocate 1.1.23 1.1.24: Posting locate is a much faster locate
 sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives the ability to mount removable devices as a user
@@ -19234,9 +19234,9 @@ xfce-base/xfce4-meta 4.20: The Xfce Desktop Environment (meta package)
 xfce-base/xfce4-panel 4.20.7 4.21.1 4.21.2: Panel for the Xfce desktop environment
 xfce-base/xfce4-power-manager 4.20.0 4.21.1: Power manager for the Xfce desktop environment
 xfce-base/xfce4-session 4.20.4 4.21.1: A session manager for the Xfce desktop environment
-xfce-base/xfce4-settings 4.20.4 4.21.1: Configuration system for the Xfce desktop environment
+xfce-base/xfce4-settings 4.20.4 4.21.1 4.21.2: Configuration system for the Xfce desktop environment
 xfce-base/xfconf 4.20.0 4.21.2: A configuration management system for Xfce
-xfce-base/xfdesktop 4.20.2: Desktop manager for the Xfce desktop environment
+xfce-base/xfdesktop 4.20.2 4.21.0: Desktop manager for the Xfce desktop environment
 xfce-base/xfwm4 4.20.0: Window manager for the Xfce desktop environment
 xfce-extra/thunar-archive-plugin 0.6.0: Archive plug-in for the Thunar filemanager
 xfce-extra/thunar-media-tags-plugin 0.6.0: Adds special features for media files to the Thunar File Manager
