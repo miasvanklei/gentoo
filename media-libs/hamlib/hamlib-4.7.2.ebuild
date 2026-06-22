@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 MY_P=${P/_rc2/~rc2}
 
 inherit autotools flag-o-matic python-single-r1
@@ -15,7 +15,7 @@ S="${WORKDIR}/${MY_P}"
 
 LICENSE="LGPL-2+ GPL-2+"
 SLOT="0/4.2"
-KEYWORDS="amd64 ~arm ~arm64 ~riscv x86"
+KEYWORDS="~amd64 ~arm ~arm64 ~riscv ~x86"
 IUSE="doc perl python tcl"
 
 RESTRICT="test"

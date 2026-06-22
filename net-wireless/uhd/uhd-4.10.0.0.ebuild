@@ -1,9 +1,9 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 IM_PV=$(ver_cut 1-3).0
 
 inherit cmake gnome2-utils python-single-r1 udev
@@ -18,7 +18,7 @@ S="${WORKDIR}/${P}/host"
 
 LICENSE="GPL-3"
 SLOT="0/$(ver_cut 1-3)"
-KEYWORDS="amd64 ~arm ~riscv ~x86"
+KEYWORDS="~amd64 ~arm ~riscv ~x86"
 IUSE="+b100 +b200 doc cpu_flags_arm_neon cpu_flags_x86_ssse3 e300 examples +mpmd octoclock test +usb +usrp1 +usrp2 +utils +x300"
 RESTRICT="!test? ( test )"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}
@@ -51,6 +51,7 @@ BDEPEND="
 
 PATCHES=(
 	"${FILESDIR}"/"${PN}"-4.8.0.0-includes.patch
+	"${FILESDIR}"/"${PN}"-4.10.0.0-manpages.patch
 )
 
 src_unpack() {
@@ -61,6 +62,9 @@ src_unpack() {
 
 src_prepare() {
 	cmake_src_prepare
+
+	# Boost no longer has a module 'system' as separate library
+	sed -i -e "s/ system/ #system/g" cmake/Modules/UHDConfig.cmake.in || die
 
 	gnome2_environment_reset #534582
 }
