@@ -35,7 +35,7 @@ fi
 RDEPEND+="
 	app-arch/zstd
 	>=dev-libs/tree-sitter-bash-0.25.1[python,${PYTHON_USEDEP}]
-	dev-python/chardet[${PYTHON_USEDEP}]
+	dev-python/charset-normalizer[${PYTHON_USEDEP}]
 	dev-python/lxml[${PYTHON_USEDEP}]
 	dev-python/pathspec[${PYTHON_USEDEP}]
 	>=dev-python/tree-sitter-0.25.2[${PYTHON_USEDEP}]
