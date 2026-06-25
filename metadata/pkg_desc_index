@@ -2511,7 +2511,7 @@ app-forensics/examiner 0.5-r3: Utilizes the objdump command to disassemble and c
 app-forensics/foremost 1.5.7-r4: Console program to recover files based on their headers and footers
 app-forensics/galleta 20040505_p1-r1: IE Cookie Parser
 app-forensics/honggfuzz 2.6: A general purpose fuzzer with feedback support
-app-forensics/lynis 3.1.7 3.1.7-r1: Security and system auditing tool
+app-forensics/lynis 3.1.7-r1: Security and system auditing tool
 app-forensics/mac-robber 1.02-r1: mac-robber is a digital forensics and incident response tool that collects data
 app-forensics/magicrescue 1.1.10-r4: Find deleted files in block devices
 app-forensics/memdump 1.01-r1: Simple memory dumper for UNIX-Like systems
@@ -14511,7 +14511,7 @@ media-video/vdr 2.7.7 2.7.9 2.8.1 2.8.2: Video Disk Recorder - turns a pc into a
 media-video/vdrsync 0.1.3_pre050322-r2: converting vdr-recordings to mpeg2, dvd or other similar formats
 media-video/vdrtools-genindex 0.1.3-r2: VDR: genindex Script
 media-video/videotrans 1.6.1-r2: A package to convert movies to DVD format and to build DVDs with
-media-video/vlc 3.0.23 3.0.23-r1 3.0.9999 4.0.0_pre20260418 4.0.0_pre20260515 9999: Media player and framework with support for most multimedia files and streaming
+media-video/vlc 3.0.23 3.0.23-r1 3.0.9999 4.0.0_pre20260515 4.0.0_pre20260625 9999: Media player and framework with support for most multimedia files and streaming
 media-video/vobcopy 1.2.1: Copies DVD .vob files to harddisk, decrypting them on the way
 media-video/webcamoid 9.2.3 9999: Full featured webcam capture application
 media-video/wireplumber 0.5.13_p20260216 0.5.14 0.5.15 9999: Replacement for pipewire-media-session
