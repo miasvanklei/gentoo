@@ -3929,7 +3929,7 @@ dev-cpp/frugally-deep 0.15.30: Header-only library for using Keras models in C++
 dev-cpp/functional-plus 0.2.22: Functional Programming Library for C++
 dev-cpp/gflags 2.2.2-r1 9999: Google's C++ argument parsing library
 dev-cpp/glaze 5.2.1 5.5.4 6.5.1: Extremely fast, in memory, JSON and interface library for modern C++
-dev-cpp/glibmm 2.66.8 2.84.0 2.88.0: C++ interface for glib2
+dev-cpp/glibmm 2.66.8 2.84.0 2.88.0 2.88.1: C++ interface for glib2
 dev-cpp/glog 0.5.0 0.6.0 0.6.0-r1 0.7.1: Google Logging library
 dev-cpp/gpgmepp 2.0.0-r1 2.1.0: GnuPG Made Easy is a library for making GnuPG easier to use (C++ bindings)
 dev-cpp/gstreamermm 1.10.0-r3: C++ interface for GStreamer
@@ -4086,7 +4086,7 @@ dev-db/spatialite-tools 5.0.1-r2: A collection of CLI tools supporting SpatiaLit
 dev-db/sqlcipher 4.6.1: Full Database Encryption for SQLite
 dev-db/sqlcl-bin 25.2.2.199.0918: Oracle SQLcl is the new SQL*Plus
 dev-db/sqldeveloper 23.1.1.345.2114: Oracle SQL Developer is a graphical tool for database development
-dev-db/sqlite 3.53.1 3.53.2-r1 9999: SQL database engine
+dev-db/sqlite 3.53.1 3.53.2-r1 3.53.3 9999: SQL database engine
 dev-db/sqlitebrowser 3.13.1_p20250502-r2 9999: Light GUI editor for SQLite databases
 dev-db/sqlitestudio 4.0.0_pre20251207: Powerful cross-platform SQLite database manager
 dev-db/sqlmap 1.10 1.10.6 9999: An automatic SQL injection and database takeover tool
@@ -5554,7 +5554,7 @@ dev-libs/gf-complete 2.0.0_p20170410: Comprehensive Open Source Library for Galo
 dev-libs/gf2x 1.3.0-r1: C/C++ routines for fast arithmetic in GF(2)[x]
 dev-libs/girara 0.4.5 0.4.5-r1 2026.02.04 9999: UI library that focuses on simplicity and minimalism
 dev-libs/gjs 1.84.2-r1 1.88.0 1.88.0-r1: Javascript bindings for GNOME
-dev-libs/glib 2.84.4 2.84.4-r5 2.86.5-r1 2.88.0-r1 2.88.1: The GLib library of C routines
+dev-libs/glib 2.84.4-r5 2.86.5-r1 2.88.1 2.88.2: The GLib library of C routines
 dev-libs/gmime 2.6.23-r2 3.2.15-r1 3.2.15-r2: Library for creating and parsing MIME messages
 dev-libs/gmp 6.3.0-r1 6.3.0-r2: Library for arbitrary-precision arithmetic on different type of numbers
 dev-libs/gnulib 2025.08.27.16.03.17 2026.01.14.22.26.00 9999-r1: Gnulib is a library of common routines intended to be shared at the source level
@@ -5893,7 +5893,7 @@ dev-libs/openobex 1.7.2-r3: Implementation of the OBEX protocol used for transfe
 dev-libs/openpace 1.1.3 1.1.4: Cryptographic library for EAC version 2
 dev-libs/opensc 0.26.1 0.27.1 9999: Libraries and applications to access smartcards
 dev-libs/openspecfun 0.5.5: A collection of special mathematical functions
-dev-libs/openssl 3.0.20 3.0.21 3.0.9999 3.3.7 3.3.9999 3.4.5 3.4.6 3.4.9999 3.5.6 3.5.7 3.5.9999 3.6.2 3.6.3 3.6.9999 4.0.0 4.0.1 4.0.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
+dev-libs/openssl 3.0.20 3.0.21 3.0.9999 3.4.5 3.4.6 3.4.9999 3.5.6 3.5.7 3.5.9999 3.6.2 3.6.3 3.6.9999 4.0.0 4.0.1 4.0.9999: Robust, full-featured Open Source Toolkit for the Transport Layer Security (TLS)
 dev-libs/openssl-compat 1.0.2u-r2 1.1.1u 3.6.2: Full-strength general purpose cryptography library (including SSL and TLS)
 dev-libs/optix 7.4.0 7.5.0 8.1.0-r1 9.0.0-r1: NVIDIA Ray Tracing Engine
 dev-libs/ossp-uuid 1.6.2-r7 1.6.2-r8: An ISO-C:1999 API with CLI for generating DCE, ISO/IEC and RFC compliant UUID
@@ -8292,7 +8292,7 @@ dev-python/apipkg 3.0.2: Namespace control and lazy-import mechanism
 dev-python/apispec 6.10.0: A pluggable API specification generator
 dev-python/appdirs 1.4.4-r3: Module for determining appropriate platform-specific dirs
 dev-python/apprise 1.9.9 1.10.0: Push Notifications that work with just about every platform
-dev-python/apscheduler 3.11.2: In-process task scheduler with Cron-like capabilities
+dev-python/apscheduler 3.11.2 3.11.3: In-process task scheduler with Cron-like capabilities
 dev-python/apsw 3.51.3.0 3.53.0.0 3.53.1.0 3.53.2.0: APSW - Another Python SQLite Wrapper
 dev-python/argcomplete 3.6.3: Bash tab completion for argparse
 dev-python/argh 0.31.3: A simple argparse wrapper
@@ -8370,7 +8370,7 @@ dev-python/botocore 1.43.14 1.43.18 1.43.24 1.43.29 1.43.34 1.43.35 1.43.36: Low
 dev-python/bottle 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.26: Syntax highlighting and autocompletion for the Python interpreter
-dev-python/bracex 2.6: Bash style brace expansion for Python
+dev-python/bracex 2.6 2.7: Bash style brace expansion for Python
 dev-python/braintree 4.44.0 4.45.0: Braintree Python Library
 dev-python/breathe 4.36.0: Sphinx Doxygen renderer
 dev-python/brotlicffi 1.2.0.1: Python binding to the Brotli library
@@ -8553,7 +8553,7 @@ dev-python/elastic-transport 9.2.1 9.4.1 9.4.2: Transport classes and utilities 
 dev-python/elasticsearch 9.3.0 9.4.1: Official Elasticsearch client library for Python
 dev-python/electrum-aionostr 0.1.0: asyncio nostr client
 dev-python/electrum-ecc 0.0.7: Pure python ctypes wrapper for libsecp256k1
-dev-python/elementpath 5.1.1 5.1.2: XPath 1.0/2.0 parsers and selectors for ElementTree and lxml
+dev-python/elementpath 5.1.1 5.1.2 5.1.3: XPath 1.0/2.0 parsers and selectors for ElementTree and lxml
 dev-python/email-validator 2.3.0: A robust email syntax and deliverability validation library
 dev-python/emcee 3.1.6: Python ensemble sampling toolkit for affine-invariant MCMC
 dev-python/emoji 2.15.0: Emoji for Python
@@ -8860,7 +8860,7 @@ dev-python/libnacl 2.1.0: Python ctypes wrapper for libsodium
 dev-python/libpass 1.9.3: Fork of passlib, a password hashing framework
 dev-python/librt 0.11.0: Mypyc runtime library
 dev-python/libsass 0.23.0-r1: A straightforward binding of libsass for Python
-dev-python/libtmux 0.46.2 0.52.1 0.53.0 0.53.1 0.55.0 0.55.1 0.56.0 0.57.1 0.58.0 0.58.1 0.59.0: Typed library that provides an ORM wrapper for tmux, a terminal multiplexer
+dev-python/libtmux 0.46.2 0.52.1 0.53.0 0.53.1 0.55.0 0.55.1 0.56.0 0.57.1 0.58.0 0.58.1 0.59.0 0.60.0: Typed library that provides an ORM wrapper for tmux, a terminal multiplexer
 dev-python/libusb1 3.4.0: Python ctype-based wrapper around libusb1
 dev-python/libvirt-python 11.10.0 12.0.0 12.1.0 12.2.0 9999: libvirt Python bindings
 dev-python/license-expression 30.4.4: Parse, compare, simplify and normalize license expressions
@@ -9039,7 +9039,7 @@ dev-python/owslib 0.35.0 0.36.0: Library for client programming with Open Geospa
 dev-python/packaging 26.1 26.2: Core utilities for Python packages
 dev-python/paho-mqtt 2.1.0: MQTT version 5.0/3.1.1 client class
 dev-python/pallets-sphinx-themes 2.5.0: Sphinx themes for Pallets and related projects
-dev-python/pandas 2.3.3 3.0.2 3.0.3: Powerful data structures for data analysis and statistics
+dev-python/pandas 2.3.3 3.0.2 3.0.3 3.0.4: Powerful data structures for data analysis and statistics
 dev-python/pandocfilters 1.5.1: Utilities for writing pandoc filters in python
 dev-python/parallax 1.0.8: Execute commands and copy files over SSH to multiple machines at once
 dev-python/parameterized 0.9.0: Parameterized testing with any Python test framework
@@ -9071,7 +9071,7 @@ dev-python/pdoc3 0.11.6: Auto-generate API documentation for Python projects
 dev-python/peachpy 2022.11.13-r3: Portable Efficient Assembly Code-generator in Higher-level Python
 dev-python/pebble 5.2.0: Threading and multiprocessing eye-candy
 dev-python/pecan 1.8.0: A WSGI object-dispatching web framework, lean, fast, with few dependencies
-dev-python/peewee 4.0.6 4.0.7 4.0.8 4.0.9 4.1.0: Small Python ORM
+dev-python/peewee 4.0.6 4.0.7 4.0.8 4.0.9 4.1.0 4.1.1: Small Python ORM
 dev-python/pefile 2024.8.26 9999: Module to read and work with Portable Executable (PE) files
 dev-python/pelican-minify 2.0.2: An HTML minification plugin for Pelican, the static site generator
 dev-python/pexpect 4.9.0: Python module for spawning child apps and responding to expected patterns
@@ -9200,7 +9200,7 @@ dev-python/pygdbmi 0.11.0.0: Library to parse gdb mi output and interact with gd
 dev-python/pyghmi 1.6.17 1.6.18: A pure python implementation of IPMI protocol
 dev-python/pygit2 1.19.2 1.19.3: Python bindings for libgit2
 dev-python/pygithub 2.9.0 2.9.1: Python library to access the Github API v3
-dev-python/pyglet 2.1.14: Cross-platform windowing and multimedia library for Python
+dev-python/pyglet 2.1.14 2.1.15: Cross-platform windowing and multimedia library for Python
 dev-python/pygments 2.19.2: Pygments is a syntax highlighting package written in Python
 dev-python/pygments-github-lexers 0.0.5-r2: Pygments Github custom lexers
 dev-python/pygobject 3.50.1 3.50.2 3.52.3 3.52.4 3.54.5 3.56.2 3.56.3: Python bindings for GObject Introspection
@@ -9482,14 +9482,14 @@ dev-python/ratelimit 2.2.1-r1: An API rate limit decorator for Python
 dev-python/rdflib 7.6.0: RDF library containing a triple store and parser/serializer
 dev-python/re-assert 1.1.0-r3: Show where your regex match assertion failed
 dev-python/readme-renderer 44.0 45.0: A library for rendering 'readme' descriptions for Warehouse
-dev-python/rebulk 3.2.0 4.1.0: Python library that performs advanced searches in strings
+dev-python/rebulk 3.2.0 4.1.0 4.2.2: Python library that performs advanced searches in strings
 dev-python/recommonmark 0.7.1-r1: Python docutils-compatibility bridge to CommonMark
 dev-python/recurring-ical-events 3.8.2: Repeat ICalendar events by RRULE, RDATE and EXDATE
 dev-python/redis 7.4.0 7.4.1 8.0.0 8.0.1: Python client for Redis key-value store
 dev-python/reedsolo 2.1.1_beta1-r2: Python Reed Solomon encoder/decoder
 dev-python/referencing 0.37.0: Cross-specification JSON referencing (JSON Schema, OpenAPI...)
 dev-python/reflink 0.2.2: Python wrapper around the reflink system calls
-dev-python/regex 2026.4.4 2026.5.9: Alternative regular expression module to replace re
+dev-python/regex 2026.5.9 2026.6.28: Alternative regular expression module to replace re
 dev-python/regress 2025.10.1: Python bindings to the Rust regress crate
 dev-python/rencode 1.0.8-r1: Serialization similar to bencode from the BitTorrent project
 dev-python/reno 4.1.0: Release notes manager, storing release notes in a git repo and building docs
@@ -10999,7 +10999,7 @@ dev-util/ftjam 2.5.3_rc2-r3: A 100% compatible, enhanced implementation of the m
 dev-util/ftnchek 3.3.1-r2: Static analyzer a la 'lint' for Fortran 77
 dev-util/fuzz 0.6-r4: Stress-tests programs by giving them random input
 dev-util/gcovr 8.3-r1: Python script for summarizing gcov data
-dev-util/gdbus-codegen 2.82.5 2.84.4 2.86.4 2.86.5 2.88.0 2.88.1: GDBus code and documentation generator
+dev-util/gdbus-codegen 2.84.4 2.86.5 2.88.1 2.88.2: GDBus code and documentation generator
 dev-util/geany 2.1: GTK+ based fast and lightweight IDE
 dev-util/geany-plugins 2.1: A collection of different plugins for Geany
 dev-util/gengetopt 2.23-r1: Tool to write command line option parsing code for C programs
@@ -11013,7 +11013,7 @@ dev-util/gitlab-ci-linter 2.4.0: linter for .gitlab-ci.yml files
 dev-util/gitlab-cli 1.65.0 1.72.0 1.100.0: the official gitlab command line interface
 dev-util/gitlab-runner 18.6.6 18.7.2 18.8.0: The official GitLab Runner, written in Go
 dev-util/glade 3.40.0-r3: A user interface designer for GTK+ and GNOME
-dev-util/glib-utils 2.82.5 2.84.4 2.86.4 2.86.5 2.88.0 2.88.1: Build utilities for GLib using projects
+dev-util/glib-utils 2.84.4 2.86.5 2.88.1 2.88.2: Build utilities for GLib using projects
 dev-util/global 6.6.14 6.6.15: Tag system to find an object location in various sources
 dev-util/glslang 1.4.328.0-r1 1.4.335.0 1.4.341.0 1.4.350.0 9999: Khronos reference front-end for GLSL and ESSL, and sample SPIR-V generator
 dev-util/gnome-builder 48.2-r2 49.1: An IDE for writing GNOME-based software
@@ -17751,7 +17751,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.4.1_p20260527 13.4.1_p20260603 13.4.1_p20260610 13.4.1_p20260617 13.4.1_p20260624 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.3.1_p20260528 14.3.1_p20260604 14.3.1_p20260611 14.3.1_p20260618 14.3.1_p20260619 14.4.0 14.5.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.2.1_p20260529 15.2.1_p20260605 15.3.0 15.3.1_p20260612 15.3.1_p20260619 15.3.1_p20260626 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.1.1_p20260530 16.1.1_p20260606 16.1.1_p20260613 16.1.1_p20260620 16.1.1_p20260627 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.0_p20260524 17.0.0_p20260531 17.0.0_p20260607 17.0.0_p20260607-r1 17.0.0_p20260614 17.0.0_p20260621 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.4.1_p20260527 13.4.1_p20260603 13.4.1_p20260610 13.4.1_p20260617 13.4.1_p20260624 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.3.1_p20260528 14.3.1_p20260604 14.3.1_p20260611 14.3.1_p20260618 14.3.1_p20260619 14.4.0 14.5.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.2.1_p20260529 15.2.1_p20260605 15.3.0 15.3.1_p20260612 15.3.1_p20260619 15.3.1_p20260626 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.1.1_p20260530 16.1.1_p20260606 16.1.1_p20260613 16.1.1_p20260620 16.1.1_p20260627 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.0_p20260524 17.0.0_p20260531 17.0.0_p20260607 17.0.0_p20260607-r1 17.0.0_p20260614 17.0.0_p20260621 17.0.0_p20260628 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
