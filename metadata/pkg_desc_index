@@ -1281,7 +1281,7 @@ app-backup/rdup 1.1.15-r1 1.1.15-r3: Generate a file list suitable for full or i
 app-backup/rear 2.7 2.9: Relax-and-Recover is a setup-and-forget bare metal disaster recovery solution
 app-backup/reoback 1.0_p3-r1: Reoback Backup Solution
 app-backup/restic 0.18.1 0.19.0: A backup program that is fast, efficient and secure
-app-backup/rsnapshot 1.4.4-r1 1.4.5-r1: A filesystem backup utility based on rsync
+app-backup/rsnapshot 1.4.5-r1 1.5.1: A filesystem backup utility based on rsync
 app-backup/sarab 1.0.0-r1: SaraB is a powerful and automated backup scheduling system based on DAR
 app-backup/simplebackup 1.8.1-r2: Cross-platform backup program
 app-backup/snapper 0.12.2-r1 0.13.0 0.13.1: Command-line program for btrfs and lvm snapshot management
@@ -9278,7 +9278,7 @@ dev-python/pyro5 5.16 5.17: Distributed object middleware for Python (RPC)
 dev-python/pyroute2 0.9.6: A pure Python netlink and Linux network configuration library
 dev-python/pyrqlite 2.2.3: Python client for rqlite
 dev-python/pyrsistent 0.20.0: Persistent/Functional/Immutable data structures
-dev-python/pyrss2gen 1.1-r2 1.1-r3: RSS feed generator written in Python
+dev-python/pyrss2gen 1.1-r3: RSS feed generator written in Python
 dev-python/pyscard 2.3.1: Smart card support in python
 dev-python/pyscreenshot 3.1: Python screenshot library
 dev-python/pysdl2 0.9.17: Python (ctypes) bindings for SDL2 libraries
@@ -9392,7 +9392,7 @@ dev-python/python-jose 3.5.0: A JavaScript Object Signing and Encryption (JOSE) 
 dev-python/python-json-logger 4.1.0: Standard python logging to output log data as json objects
 dev-python/python-keystoneclient 5.8.0: Client Library for OpenStack Identity
 dev-python/python-ldap 3.4.7: Various LDAP-related Python modules
-dev-python/python-linux-procfs 0.7.3 0.7.4: Python classes to extract information from the Linux kernel /proc files
+dev-python/python-linux-procfs 0.7.4: Python classes to extract information from the Linux kernel /proc files
 dev-python/python-lsp-black 2.0.0-r2: Black plugin for the Python LSP Server
 dev-python/python-lsp-jsonrpc 1.1.2: JSON RPC 2.0 server library
 dev-python/python-lsp-ruff 2.3.1: Ruff linting plugin for the Python LSP Server
@@ -9437,7 +9437,7 @@ dev-python/pythonnet 3.0.5-r2 3.1.0: Nearly seamless integration with the .NET C
 dev-python/pythran 0.18.1: Ahead of Time compiler for numeric kernels
 dev-python/pytidylib 0.3.2-r2: Python wrapper for HTML Tidy (tidylib)
 dev-python/pytimeparse 1.1.8-r1: A small Python module to parse various kinds of time expressions
-dev-python/pytokens 0.4.0-r1 0.4.1: A fast, spec compliant Python 3.13+ tokenizer that runs on older Pythons
+dev-python/pytokens 0.4.1: A fast, spec compliant Python 3.13+ tokenizer that runs on older Pythons
 dev-python/pytoolconfig 1.3.1: Python tool configuration
 dev-python/pytools 2026.1 2026.1.1: Collection of tools missing from the Python standard library
 dev-python/pytrie 0.4.0-r1: A pure Python implementation of the trie data structure
@@ -9480,7 +9480,7 @@ dev-python/rapidfuzz 3.14.5: Rapid fuzzy string matching in Python using various
 dev-python/rarfile 4.2: Module for RAR archive reading
 dev-python/ratelimit 2.2.1-r1: An API rate limit decorator for Python
 dev-python/rdflib 7.6.0: RDF library containing a triple store and parser/serializer
-dev-python/re-assert 1.1.0-r3: Show where your regex match assertion failed
+dev-python/re-assert 1.1.0-r3 1.1.0-r4: Show where your regex match assertion failed
 dev-python/readme-renderer 44.0 45.0: A library for rendering 'readme' descriptions for Warehouse
 dev-python/rebulk 3.2.0 4.1.0 4.2.2 6.0.0: Python library that performs advanced searches in strings
 dev-python/recommonmark 0.7.1-r1: Python docutils-compatibility bridge to CommonMark
@@ -9526,7 +9526,7 @@ dev-python/rich 14.3.4 15.0.0: Python library for rendering rich text, tables, e
 dev-python/rich-argparse 1.7.2 1.8.0: Rich help formatters for argparse and optparse
 dev-python/rich-click 1.9.7 1.9.8: Format click help output nicely with rich
 dev-python/roman 5.2: An Integer to Roman numerals converter
-dev-python/roman-numerals 4.0.0 4.1.0: Manipulate roman numerals
+dev-python/roman-numerals 4.1.0: Manipulate roman numerals
 dev-python/roman-numerals-py 4.1.0: Backwards compatibility for dev-python/roman-numerals
 dev-python/rope 1.14.0: Python refactoring library
 dev-python/ropemode 0.6.1: A helper for using rope refactoring library in IDEs
@@ -13724,7 +13724,7 @@ media-libs/volpack 1.0_p7-r2: Volume rendering library
 media-libs/vpl-gpu-rt 26.2.0 26.2.1: Intel Video Processing Library GPU Runtime
 media-libs/vulkan-layers 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 9999: Vulkan Validation Layers
 media-libs/vulkan-loader 1.4.328.0-r1 1.4.335.0-r1 1.4.341.0 1.4.350.0 9999: Vulkan Installable Client Driver (ICD) Loader
-media-libs/waffle 1.8.1 1.8.2 9999: Library that allows selection of GL API and of window system at runtime
+media-libs/waffle 1.8.1 1.8.2 1.8.3 9999: Library that allows selection of GL API and of window system at runtime
 media-libs/webrtc-audio-processing 0.3.1-r1 1.3-r3 1.3-r4 2.1: AudioProcessing library from the webrtc.org codebase
 media-libs/woff2 1.0.2-r7: Encode/decode WOFF2 font format
 media-libs/wxsvg 1.5.24-r1: C++ library to create, manipulate and render SVG files
@@ -15647,7 +15647,7 @@ net-p2p/rtorrent 0.15.7 0.16.11 0.16.13 0.16.14 0.16.15 9999: BitTorrent Client 
 net-p2p/stig 0.14.0a_p0 0.14.2a_p0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/syncthing 1.29.5 2.0.10 2.0.14 2.0.15 2.0.16 2.1.0 2.1.1: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
-net-p2p/transmission 4.0.6-r6 4.1.1 4.1.2 9999: A fast, easy, and free BitTorrent client
+net-p2p/transmission 4.0.6-r6 4.1.1 4.1.2 4.1.3 9999: A fast, easy, and free BitTorrent client
 net-p2p/transmission-remote-gtk 1.5.1-r1 1.6.0: GTK+ client for management of the Transmission BitTorrent client, over HTTP RPC
 net-p2p/tremc 0.9.3_p20230506: Ncurses interface for the Transmission BitTorrent client
 net-p2p/tvrss 1.8_beta: TV RSS is a tool for automating torrent downloads
@@ -16055,7 +16055,7 @@ sci-chemistry/elem 1.0.3-r3: periodic table of the elements
 sci-chemistry/gelemental 2.0.2 2.0.2-r1: Periodic table viewer with detailed information on the chemical elements
 sci-chemistry/gnome-chemistry-utils 0.14.17_p6-r4: Programs and library containing GTK widgets and C++ classes related to chemistry
 sci-chemistry/gperiodic 3.0.3-r1: Periodic table application for Linux
-sci-chemistry/gromacs 2023.5 2024.6 2025.3 2025.4 2026.0 2026.1 2026.2 2026.9999 9999: The ultimate molecular dynamics simulation package
+sci-chemistry/gromacs 2023.5 2024.6 2025.3 2025.4 2026.2 2026.3 2026.9999 9999: The ultimate molecular dynamics simulation package
 sci-chemistry/ksdssp 040728-r1: An open source implementation of sci-chemistry/dssp
 sci-chemistry/mdtraj 1.10.3 1.11.1_p1: Read, write and analyze MD trajectories with only a few lines of Python code
 sci-chemistry/moldy 2.16e-r2: Molecular dynamics simulations platform
@@ -18350,7 +18350,7 @@ www-apps/klaus 3.0.1: A simple, easy-to-set-up Git web viewer
 www-apps/lidarr-bin 3.1.3.4968: Looks and smells like Sonarr but made for music
 www-apps/liquid_feedback_core 4.2.2: Internet platforms for proposition development and decision making
 www-apps/liquid_feedback_frontend 4.0.0: Internet platforms for proposition development and decision making
-www-apps/mediawiki 1.43.6 1.43.8 1.44.3 1.44.5 1.45.1 1.45.3: The MediaWiki wiki web application (as used on wikipedia.org)
+www-apps/mediawiki 1.43.6 1.43.8 1.43.9 1.44.3 1.44.5 1.44.6 1.45.1 1.45.3 1.45.4: The MediaWiki wiki web application (as used on wikipedia.org)
 www-apps/miniflux 2.2.14-r1 2.2.17-r1: Minimalist and opinionated feed reader
 www-apps/mirmon 2.11-r2: Simple webapp to monitor the status of mirrors
 www-apps/moodle 4.5.12 5.0.8: The Moodle Course Management System
@@ -18536,11 +18536,11 @@ x11-apps/xditview 1.0.7: display ditroff output
 x11-apps/xdm 1.1.17: X.Org xdm application
 x11-apps/xdpyinfo 1.3.4 1.4.0: Display information utility for X
 x11-apps/xdriinfo 1.0.8: query configuration information of DRI drivers
-x11-apps/xedit 1.2.4: simple text editor for X
+x11-apps/xedit 1.2.4 1.2.5: simple text editor for X
 x11-apps/xev 1.2.6 1.2.7: Print contents of X events
 x11-apps/xeyes 1.3.1: X.Org xeyes application
 x11-apps/xfd 1.1.5: X.Org xfd application
-x11-apps/xfontsel 1.1.1: point and click selection of X11 font names
+x11-apps/xfontsel 1.1.1 1.1.2: point and click selection of X11 font names
 x11-apps/xgamma 1.0.8: Alter a monitor's gamma correction through the X server
 x11-apps/xgc 1.0.7: X graphics demo
 x11-apps/xhost 1.0.10: Controls host and/or user access to a running X server
