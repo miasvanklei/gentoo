@@ -9899,7 +9899,7 @@ dev-python/zmq-anyio 0.3.10 0.3.14: Asynchronous API for ZMQ using AnyIO
 dev-python/zope-component 7.1: Zope Component Architecture
 dev-python/zope-configuration 7.1: Zope Configuration Architecture
 dev-python/zope-deprecation 6.0: Zope Deprecation Infrastructure
-dev-python/zope-event 6.1 6.2: Event publishing / dispatch, used by Zope Component Architecture
+dev-python/zope-event 6.2: Event publishing / dispatch, used by Zope Component Architecture
 dev-python/zope-exceptions 6.0: General purpose exceptions for Zope packages
 dev-python/zope-hookable 8.2: Efficient creation of 'hookable' objects
 dev-python/zope-i18nmessageid 8.2: Zope support for i18nmessageid (tagging source of i18n strings)
@@ -14270,7 +14270,7 @@ media-sound/pulseaudio-daemon 17.0-r1 17.0-r2: Daemon component of PulseAudio (n
 media-sound/pulseeffects 4.8.7-r2: Limiter, compressor, reverberation, equalizer auto volume effects for PulseAudio
 media-sound/pulsemixer 1.5.1-r2 9999: CLI and curses mixer for PulseAudio
 media-sound/pwavecat 0.4.5-r1: Concatenates any number of audio files to stdout
-media-sound/pwvucontrol 0.5.2: Volume control applet for Pipewire
+media-sound/pwvucontrol 0.5.2-r1: Volume control applet for Pipewire
 media-sound/qastools 1.4.0: Qt GUI ALSA tools: mixer, configuration browser
 media-sound/qjackctl 1.0.4 9999: Qt GUI to control the JACK Audio Connection Kit and ALSA sequencer connections
 media-sound/qmidiarp 0.7.2: Arpeggiator, sequencer and MIDI LFO for ALSA
