@@ -9894,7 +9894,7 @@ dev-python/zenlib 3.3.0 9999: Useful python decorators and utilities
 dev-python/zeroconf 0.148.0 0.149.3 0.149.5 0.149.7 0.149.9 0.149.13 0.149.16 0.149.17 0.150.0: Pure Python Multicast DNS Service Discovery Library (Bonjour/Avahi compatible)
 dev-python/zipp 4.1.0: Backport of pathlib-compatible object wrapper for zip files
 dev-python/zipstream-ng 1.9.2: A modern and easy to use streamable zip file generator
-dev-python/zlib-ng 1.0.0: Drop-in replacement for zlib and gzip modules using zlib-ng
+dev-python/zlib-ng 1.0.0 1.0.0-r1: Drop-in replacement for zlib and gzip modules using zlib-ng
 dev-python/zmq-anyio 0.3.10 0.3.14: Asynchronous API for ZMQ using AnyIO
 dev-python/zope-component 7.1: Zope Component Architecture
 dev-python/zope-configuration 7.1: Zope Configuration Architecture
@@ -18289,7 +18289,7 @@ www-apache/mod_rpaf 0.8.4: Reverse proxy add forward module
 www-apache/mod_security 2.9.12: Application firewall and intrusion detection for Apache
 www-apache/mod_tls 0.14.0 0.14.0-r1: A module that uses rustls to provide a memory safe TLS implementation in Rust
 www-apache/mod_whatkilledus 2.01-r1: Debug segmentation faults in Apache threads
-www-apache/mod_wsgi 5.0.2 6.0.2: An Apache2 module for running Python WSGI applications
+www-apache/mod_wsgi 5.0.2 6.0.2 6.0.5: An Apache2 module for running Python WSGI applications
 www-apache/mod_xsendfile 1.0_beta1-r3: Apache module that processes X-SENDFILE headers registered by the output handler
 www-apache/modsecurity-crs 3.3.9 4.25.0 4.26.0: OWASP ModSecurity Core Rule Set
 www-apache/mpm_itk 2.4.7_p4-r2: Run virtual hosts under separate users/groups
