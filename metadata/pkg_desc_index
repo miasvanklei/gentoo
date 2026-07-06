@@ -2379,7 +2379,7 @@ app-emulation/crossover-bin 22.1.1 23.6.0 24.0.4 24.0.6 25.0.0: Commercial versi
 app-emulation/dinero 4.7-r1: Cache simulator
 app-emulation/diskimage-builder 3.32.0 3.33.0 3.41.0 9999: Golden Disk Image builder
 app-emulation/dosemu 1.4.1_pre20130107-r7: DOS Emulator
-app-emulation/dxvk 2.7.1 3.0 9999: Vulkan-based implementation of D3D9, D3D10 and D3D11 for Linux / Wine
+app-emulation/dxvk 2.7.1 3.0 3.0.1 9999: Vulkan-based implementation of D3D9, D3D10 and D3D11 for Linux / Wine
 app-emulation/dynamips 0.2.23 0.2.24: Cisco 7200/3600 Simulator
 app-emulation/faudio 26.06 26.07: Accuracy-focused XAudio reimplementation for open platforms
 app-emulation/fex-xtajit 2601 2603 2604 2605: A wine emulation dll for running x86 application on an arm64 host
@@ -2842,7 +2842,7 @@ app-misc/jpipe 0.2.0-r1: Command line interface to JMESPath
 app-misc/jq 1.7.1-r1 1.8.1 1.8.2: A lightweight and flexible command-line JSON processor
 app-misc/kanatest 0.4.8: Visual flashcard tool for memorizing the Japanese Hiragana and Katakana alphabet
 app-misc/khal 0.13.0 0.14.0: A CalDAV based calendar
-app-misc/khard 0.19.1 0.20.1: Console CardDAV client
+app-misc/khard 0.20.1 0.21.0: Console vCard address book
 app-misc/klavaro 3.14: Another free touch typing tutor program
 app-misc/koleo-cli 0.2.137.30 0.2.137.32 0.2.137.34: A simple CLI for koleo.pl railway planner
 app-misc/kryoflux-dtc 2.6-r3 3.50_p2-r2 3.50_p4: KryoFlux Host Software
@@ -14937,7 +14937,7 @@ net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
 net-im/synapse 1.151.0 1.152.1 1.155.0: Reference implementation of Matrix homeserver
 net-im/talk-desktop-bin 2.1.1 2.1.2 2.2.0: Nextcloud Talk Desktop client
 net-im/telegram-desktop 6.6.2 6.8.2 6.9.3: Official desktop client for Telegram
-net-im/telegram-desktop-bin 6.8.2 6.9.1: Official desktop client for Telegram (binary package)
+net-im/telegram-desktop-bin 6.9.1 6.9.3: Official desktop client for Telegram (binary package)
 net-im/telepathy-mission-control 5.16.6: An account manager and channel dispatcher for the Telepathy framework
 net-im/tkabber 1.1.2: A jabber client written in Tcl/Tk
 net-im/tokodon 26.04.1 26.04.2 26.04.3: Mastodon client for Plasma and Plasma Mobile
@@ -15519,7 +15519,7 @@ net-misc/streamtuner 0.99.99-r8: Stream directory browser for browsing internet 
 net-misc/stunnel 5.75 5.76 5.76-r1 5.77 5.78 5.79: TLS/SSL - Port Wrapper
 net-misc/stuntman 1.2.16: Open source implementation of the STUN protocol
 net-misc/suite3270 4.3_p6 4.4_p6 4.5_p5: Complete 3270 (S390) access package
-net-misc/sunshine 2025.924.154138 2026.516.143833-r1 9999: Self-hosted game stream host for Moonlight
+net-misc/sunshine 2026.516.143833-r1 9999: Self-hosted game stream host for Moonlight
 net-misc/sysrepo 3.3.10: YANG-based configuration and operational state data store
 net-misc/taptap 1.0-r2: Program to link two /dev/net/tun to form virtual ethernet
 net-misc/taylor-uucp 1.07-r7: Taylor UUCP
@@ -15711,7 +15711,7 @@ net-voip/yate 6.2.0: The Yate AV Suite
 net-vpn/6tunnel 0.13-r1: TCP proxy for applications that don't speak IPv6
 net-vpn/candy 6.1.7 6.1.8: A reliable, low-latency, and anti-censorship virtual private network
 net-vpn/cloudflare-warp 2026.3.846.0 2026.4.1350.0 2026.4.1390.0 2026.6.822.0: Cloudflare Warp Client
-net-vpn/cloudflared 2026.3.0 2026.6.0: A command-line client and tunneling daemon for Cloudflare Tunnel
+net-vpn/cloudflared 2026.3.0 2026.6.1: A command-line client and tunneling daemon for Cloudflare Tunnel
 net-vpn/corkscrew 2.0-r1: a tool for tunneling SSH through HTTP proxies
 net-vpn/derper 1.96.5 1.100.0: DERP server for tailscale network
 net-vpn/eduvpn-client 4.6.0 4.7.1 4.7.2 9999: Linux client and Python client API for eduVPN
@@ -17282,7 +17282,7 @@ sys-apps/fwts 22.03.00 23.11.00 24.03.00: Firmware Test Suite
 sys-apps/fwupd 2.0.16 2.0.20 2.1.1-r2 2.1.2 2.1.5: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-apps/fwupd-efi 1.7 1.8: EFI executable for fwupd
 sys-apps/fxload 20081013-r1: USB firmware uploader
-sys-apps/gawk 5.3.2 5.4.0-r2 5.4.0d: GNU awk pattern-matching language
+sys-apps/gawk 5.3.2 5.4.0-r2 5.4.0e: GNU awk pattern-matching language
 sys-apps/gentoo-functions 0.19 1.7.4 1.7.5 1.7.6 1.7.7 9999: Base functions required by all Gentoo systems
 sys-apps/gentoo-systemd-integration 9-r2 9999: systemd integration files for Gentoo
 sys-apps/gentoo-wsl-config 0.1.14: WSL2 configuration for Gentoo Linux
@@ -17437,7 +17437,7 @@ sys-apps/sandbox 2.46 2.47 2.48 2.49 9999: sandbox'd LD_PRELOAD hack
 sys-apps/sdparm 1.12 1.12-r1: Utility to output and modify parameters on a SCSI device, like hdparm
 sys-apps/secilc 3.8.1 3.9 3.10 3.11 9999: SELinux Common Intermediate Language (CIL) Compiler
 sys-apps/sed 4.9-r1 4.10: Super-useful stream editor
-sys-apps/seedfiles 1.5 1.5.1 1.6 9999: Portable drop-in reimplementation of systemd-tmpfiles
+sys-apps/seedfiles 1.5 1.5.1 1.6 1.7 9999: Portable drop-in reimplementation of systemd-tmpfiles
 sys-apps/selinux-python 3.7-r1 3.8.1 3.8.1-r2 3.9 3.10-r1 3.11-r1 9999: SELinux core utilities
 sys-apps/semodule-utils 3.6 3.7 3.8.1 3.9 3.10 3.11 9999: SELinux policy module utilities
 sys-apps/sensei-raw-ctl 0.0_pre20180729-r1 0.0_pre20230801: SteelSeries Sensei Raw configuration tool
@@ -17738,7 +17738,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.4.1_p20260527 13.4.1_p20260603 13.4.1_p20260610 13.4.1_p20260617 13.4.1_p20260624 13.4.1_p20260701 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.3.1_p20260528 14.3.1_p20260604 14.3.1_p20260611 14.3.1_p20260618 14.3.1_p20260619 14.4.0 14.5.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.2.1_p20260529 15.2.1_p20260605 15.3.0 15.3.1_p20260612 15.3.1_p20260619 15.3.1_p20260626 15.3.1_p20260703 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.1.1_p20260530 16.1.1_p20260606 16.1.1_p20260613 16.1.1_p20260620 16.1.1_p20260627 16.1.1_p20260704 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.0_p20260524 17.0.0_p20260531 17.0.0_p20260607 17.0.0_p20260607-r1 17.0.0_p20260614 17.0.0_p20260621 17.0.0_p20260628 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.4.1_p20260527 13.4.1_p20260603 13.4.1_p20260610 13.4.1_p20260617 13.4.1_p20260624 13.4.1_p20260701 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.3.1_p20260528 14.3.1_p20260604 14.3.1_p20260611 14.3.1_p20260618 14.3.1_p20260619 14.4.0 14.5.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.2.1_p20260529 15.2.1_p20260605 15.3.0 15.3.1_p20260612 15.3.1_p20260619 15.3.1_p20260626 15.3.1_p20260703 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.1.1_p20260530 16.1.1_p20260606 16.1.1_p20260613 16.1.1_p20260620 16.1.1_p20260627 16.1.1_p20260704 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.0_p20260524 17.0.0_p20260531 17.0.0_p20260607 17.0.0_p20260607-r1 17.0.0_p20260614 17.0.0_p20260621 17.0.0_p20260628 17.0.0_p20260705 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 99999999: Updated config.sub and config.guess file from GNU
