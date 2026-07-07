@@ -933,7 +933,7 @@ app-admin/apg 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
 app-admin/aws-session-manager-plugin 1.2.814.0 1.2.835.0: AWS Session Manager Plugin for aws-cli
-app-admin/awscli 1.45.18 1.45.24 1.45.29 1.45.36 1.45.40: Universal Command Line Environment for AWS
+app-admin/awscli 1.45.18 1.45.24 1.45.29 1.45.36 1.45.40 1.45.41: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.34.24 2.34.40: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2025.12.0 2026.6.0: CLI client for Bitwarden compatible servers
 app-admin/bitwarden-desktop-bin 2026.6.0 2026.6.1: Bitwarden password manager desktop client
@@ -1121,7 +1121,7 @@ app-admin/winbox 4.1 4.2_rc1: Management Software for MikroTik RouterOS
 app-admin/xkcdpass 1.20.0 1.30.0: Password generator inspired by XKCD 936
 app-admin/xstow 1.1.1: Replacement for GNU stow with extensions
 app-admin/xtail 2.1_p8: Tail multiple logfiles at once, even if rotated
-app-admin/yadm 3.2.2 3.5.0: Git based tool for managing dotfiles
+app-admin/yadm 3.5.0: Git based tool for managing dotfiles
 app-alternatives/awk 4: /bin/awk and /usr/bin/awk symlinks
 app-alternatives/bc 0: bc symlink
 app-alternatives/bzip2 1: bzip2 symlink
@@ -1282,7 +1282,7 @@ app-backup/rdumpfs 0.1: a rsync-based dump file system backup tool
 app-backup/rdup 1.1.15-r1 1.1.15-r3: Generate a file list suitable for full or incremental backups
 app-backup/rear 2.7 2.9: Relax-and-Recover is a setup-and-forget bare metal disaster recovery solution
 app-backup/reoback 1.0_p3-r1: Reoback Backup Solution
-app-backup/restic 0.18.1 0.19.0: A backup program that is fast, efficient and secure
+app-backup/restic 0.18.1 0.19.0 0.19.1: A backup program that is fast, efficient and secure
 app-backup/rsnapshot 1.4.5-r1 1.5.1: A filesystem backup utility based on rsync
 app-backup/sarab 1.0.0-r1: SaraB is a powerful and automated backup scheduling system based on DAR
 app-backup/simplebackup 1.8.1-r2: Cross-platform backup program
@@ -3908,7 +3908,7 @@ dev-cpp/cld3 3.0.13_p20220331: Neural network model for language identification
 dev-cpp/clhpp 2024.10.24: Khronos OpenCL C++ bindings
 dev-cpp/cli11 2.6.1 2.6.2: Command line parser for C++11
 dev-cpp/clucene 2.3.3.4-r9 2.3.3.4-r10 2.3.3.4-r11: High-performance, full-featured text search engine based off of lucene in C++
-dev-cpp/cpp-httplib 0.26.0 0.27.0 0.28.0 0.32.0 0.37.0 0.38.0: C++ HTTP/HTTPS server and client library
+dev-cpp/cpp-httplib 0.38.0: C++ HTTP/HTTPS server and client library
 dev-cpp/cppdap 0_pre20230605-r1 0_pre20240802: C++ library for the Debug Adapter Protocol
 dev-cpp/cppgir 2.0_p20250629 2.0_p20260226 2.0_p20260321: GObject-Introspection C++ binding wrapper generator
 dev-cpp/cpptoml 0.1.1-r1: Header-only library for parsing TOML
@@ -5834,7 +5834,7 @@ dev-libs/libxls 1.6.3: Library which can read Excel (xls) files
 dev-libs/libxlsxwriter 1.1.5-r1 1.1.6: C library for creating Excel XLSX files
 dev-libs/libxml2 2.13.9 2.14.6 2.15.0-r1 2.15.1 2.15.2 2.15.2-r1 2.15.3 9999: XML C parser and toolkit
 dev-libs/libxml2-compat 2.13.9: XML C parser and toolkit
-dev-libs/libxmlb 0.3.21 0.3.24 0.3.24-r1 0.3.25 0.3.26 0.3.27: Library to help create and query binary XML blobs
+dev-libs/libxmlb 0.3.26 0.3.27 0.3.28: Library to help create and query binary XML blobs
 dev-libs/libxslt 1.1.45 9999: XSLT libraries and tools
 dev-libs/libyaml 0.2.2 0.2.5: YAML 1.1 parser and emitter written in C
 dev-libs/libzia 4.71 4.72: Platform abstraction code for tucnak package
@@ -8367,8 +8367,8 @@ dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using corou
 dev-python/blurb 2.0.0: Tool to create and manage NEWS blurbs for CPython
 dev-python/boltons 25.0.0 26.0.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
-dev-python/boto3 1.43.18 1.43.24 1.43.29 1.43.36 1.43.40: The AWS SDK for Python
-dev-python/botocore 1.43.18 1.43.24 1.43.29 1.43.36 1.43.40: Low-level, data-driven core of boto 3
+dev-python/boto3 1.43.18 1.43.24 1.43.29 1.43.36 1.43.40 1.43.41: The AWS SDK for Python
+dev-python/botocore 1.43.18 1.43.24 1.43.29 1.43.36 1.43.40 1.43.41: Low-level, data-driven core of boto 3
 dev-python/bottle 0.13.4: A fast and simple micro-framework for small web-applications
 dev-python/bottleneck 1.6.0: Fast NumPy array functions written in C
 dev-python/bpython 0.26: Syntax highlighting and autocompletion for the Python interpreter
@@ -8391,7 +8391,7 @@ dev-python/cattrs 26.1.0: Composable complex class support for attrs and datacla
 dev-python/cbor2 6.1.2 6.1.3: CBOR (de)serializer with extensive tag support
 dev-python/cerberus 1.3.8: A lightweight and extensible data-validation library for Python
 dev-python/certifi 3024.7.22: A certifi hack to use system trust store on Linux/FreeBSD
-dev-python/cffi 2.0.0: Foreign Function Interface for Python calling C code
+dev-python/cffi 2.0.0 2.1.0: Foreign Function Interface for Python calling C code
 dev-python/cfgv 3.5.0: Validate configuration and produce human-readable error messages
 dev-python/cfn-lint 1.51.5 1.52.1: CloudFormation Linter
 dev-python/cftime 1.6.5: Time-handling functionality from netcdf4-python
@@ -8399,7 +8399,7 @@ dev-python/chainstream 1.0.2: Chain I/O-Streams together into a single stream
 dev-python/chameleon 4.6.0: Fast HTML/XML template compiler for Python
 dev-python/characteristic 14.3.0-r4: Python attributes without the boilerplate
 dev-python/chardet 6.0.0_p1: Universal encoding detector
-dev-python/charset-normalizer 3.4.7: The Real First Universal Charset Detector
+dev-python/charset-normalizer 3.4.7 3.4.8: The Real First Universal Charset Detector
 dev-python/chart-studio 1.1.0-r2: Browser-based graphing library for Python
 dev-python/cheetah3 3.4.0: Python-powered template engine and code generator
 dev-python/cheroot 11.1.2: High-performance, pure-Python HTTP server used by CherryPy
@@ -8544,15 +8544,15 @@ dev-python/doit 0.36.0-r2 0.37.0: Automation tool
 dev-python/doit-py 0.5.0-r1: doit tasks for python stuff
 dev-python/dominate 2.9.1: Library for creating and manipulating HTML documents using an elegant DOM API
 dev-python/doublex 1.9.6.1: Python test doubles
-dev-python/dulwich 1.2.6 1.2.7 1.2.8: Pure-Python implementation of the Git file formats and protocols
+dev-python/dulwich 1.2.6 1.2.7 1.2.8 1.2.10: Pure-Python implementation of the Git file formats and protocols
 dev-python/dunamai 1.26.1: Dynamic version generation
 dev-python/easy-thumbnails 2.10.1: Easy thumbnails for Django
 dev-python/easyprocess 1.1-r1: Easy to use Python subprocess interface
 dev-python/ecdsa 0.19.2: ECDSA cryptographic signature library in pure Python
 dev-python/editables 0.6: A Python library for creating 'editable wheels'
 dev-python/editorconfig 0.17.1: Clone of EditorConfig core written in Python
-dev-python/elastic-transport 9.2.1 9.4.1 9.4.2: Transport classes and utilities shared among Python Elastic client libraries
-dev-python/elasticsearch 9.3.0 9.4.1: Official Elasticsearch client library for Python
+dev-python/elastic-transport 9.4.2: Transport classes and utilities shared among Python Elastic client libraries
+dev-python/elasticsearch 9.4.1: Official Elasticsearch client library for Python
 dev-python/electrum-aionostr 0.1.0: asyncio nostr client
 dev-python/electrum-ecc 0.0.7: Pure python ctypes wrapper for libsecp256k1
 dev-python/elementpath 5.1.1 5.1.2 5.1.3: XPath 1.0/2.0 parsers and selectors for ElementTree and lxml
@@ -8595,7 +8595,7 @@ dev-python/ffmpeg-python 0.2.0_p20220711-r1: Python bindings for FFmpeg with com
 dev-python/fido2 0.9.3-r1 2.1.1 2.2.0 2.2.1: Python based FIDO 2.0 library
 dev-python/fields 5.0.0-r3: Container class boilerplate killer
 dev-python/filebytes 0.10.2 9999: Classes/Types to read and edit executable files
-dev-python/filelock 3.29.1 3.29.3 3.29.4 3.29.5: A platform independent file lock for Python
+dev-python/filelock 3.29.1 3.29.3 3.29.4 3.29.5 3.29.6: A platform independent file lock for Python
 dev-python/filetype 1.2.0: Small, dependency-free, fast Python package to infer binary file types checking
 dev-python/findimports 3.0.0: Python module import analysis tool
 dev-python/findpython 0.8.0: A utility to find python versions on your system
@@ -8643,7 +8643,7 @@ dev-python/fuzzywuzzy 0.18.0-r1: Fuzzy string matching in python
 dev-python/gast 0.6.0 0.7.0: A generic AST to represent Python2 and Python3's Abstract Syntax Tree (AST)
 dev-python/gdb-pt-dump 0.0.0_p20240401 0.0.0_p20250105 9999: Examine the address space of a QEMU-based virtual machine
 dev-python/genshi 0.7.11: Python toolkit for stream-based generation of output for the web
-dev-python/genson 1.3.0: GenSON is a powerful, user-friendly JSON Schema generator built in Python
+dev-python/genson 1.3.0 1.4.0: GenSON is a powerful, user-friendly JSON Schema generator built in Python
 dev-python/gentoo-common 1: Common files shared by Python implementations in Gentoo
 dev-python/genty 1.3.2-r3: Allows you to run a test with multiple data sets
 dev-python/geographiclib 2.1: Python implementation of the geodesic routines
@@ -8670,8 +8670,8 @@ dev-python/graphviz 0.21: Simple Python interface for Graphviz
 dev-python/greenlet 3.4.0 3.5.0 3.5.1 3.5.2 3.5.3: Lightweight in-process concurrent programming
 dev-python/greenstalk 2.1.1: Python 3 client for the beanstalkd work queue
 dev-python/griddataformats 1.2.0: Reading and writing of data on regular grids in Python
-dev-python/grpcio 1.80.0 1.81.0 1.81.1: HTTP/2-based RPC framework
-dev-python/grpcio-status 1.80.0 1.81.0 1.81.1: Reference package for GRPC Python status proto mapping
+dev-python/grpcio 1.80.0 1.81.0 1.81.1 1.82.0: HTTP/2-based RPC framework
+dev-python/grpcio-status 1.80.0 1.81.0 1.81.1 1.82.0: Reference package for GRPC Python status proto mapping
 dev-python/gsd 5.0.1: GSD - file format specification and a library to read and write it
 dev-python/gssapi 1.11.1: Low and high level wrappers around the GSSAPI C libraries
 dev-python/gst-python 1.24.13 1.26.11: A Python Interface to GStreamer
@@ -8719,7 +8719,7 @@ dev-python/id 1.6.1: A tool for generating OIDC identities
 dev-python/identify 2.6.19: File identification library for Python
 dev-python/idna 3.18: Internationalized Domain Names in Applications (IDNA)
 dev-python/ifaddr 0.2.0: Enumerate IP addresses on the local network adapters
-dev-python/ijson 3.5.0: Iterative JSON parser with a Pythonic interface
+dev-python/ijson 3.5.0 3.5.1: Iterative JSON parser with a Pythonic interface
 dev-python/imageio 2.37.3-r1: Python library for reading and writing image data
 dev-python/imageio-ffmpeg 0.6.0: FFMPEG wrapper for Python
 dev-python/imagesize 2.0.0: Pure Python module for getting image size from png/jpeg/jpeg2000/gif files
@@ -9554,7 +9554,7 @@ dev-python/sarge 0.1.8: Wrapper for subprocess which provides command pipeline f
 dev-python/sarif-om 1.0.4-r1: Classes implementing the SARIF 2.1.0 object model
 dev-python/schema 0.7.8: Simple data validation library
 dev-python/scikit-build 0.19.0 0.19.1: Improved build system generator for Python C/C++/Fortran/Cython extensions
-dev-python/scikit-build-core 0.12.2: Build backend for CMake based projects
+dev-python/scikit-build-core 0.12.2 1.0.0: Build backend for CMake based projects
 dev-python/scikit-image 0.26.0-r1: Image processing routines for SciPy
 dev-python/scikit-learn 1.8.0 1.9.0_rc1 1.9.0: Machine learning library for Python
 dev-python/scipy 1.16.3 1.17.0 1.17.1 1.18.0: Scientific algorithms library for Python
@@ -9588,7 +9588,7 @@ dev-python/shtab 1.8.0 1.8.1: Automagic shell tab completion for Python CLI appl
 dev-python/signature-dispatch 1.0.1-r1: Execute the first function that matches the given arguments
 dev-python/signedjson 1.1.4: Signs JSON objects with ED25519 signatures
 dev-python/signxml 4.4.0 4.5.1 5.0.0 5.0.1 5.1.0 9999: Python XML Signature and XAdES library
-dev-python/sigstore 4.3.0: A tool for signing Python package distributions
+dev-python/sigstore 4.3.0 4.4.0: A tool for signing Python package distributions
 dev-python/sigstore-models 0.0.6: Pydantic based models for Sigstore's protobuf specifications
 dev-python/sigstore-rekor-types 0.0.18: Python models for Rekor's API types
 dev-python/simber 0.2.6: Simple, minimal and powerful logging library for Python
@@ -9777,7 +9777,7 @@ dev-python/types-docutils 0.22.3.20260518: Typing stubs for docutils
 dev-python/types-gdb 16.3.0.20260518: Typing stubs for gdb
 dev-python/types-psutil 7.2.2.20260408 7.2.2.20260508 7.2.2.20260518: Typing stubs for psutil
 dev-python/types-python-dateutil 2.9.0.20260518: Typing stubs for python-dateutil
-dev-python/types-setuptools 82.0.0.20260408 82.0.0.20260508 82.0.0.20260518: Typing stubs for setuptools
+dev-python/types-setuptools 82.0.0.20260408 82.0.0.20260508 82.0.0.20260518 83.0.0.20260706: Typing stubs for setuptools
 dev-python/typing-extensions 4.15.0 4.16.0: Backported and Experimental Type Hints for Python 3.7+
 dev-python/typing-inspection 0.4.2: Runtime typing introspection tools
 dev-python/typogrify 2.1.0: Filters for web typography, supporting Django & Jinja templates
@@ -9808,10 +9808,10 @@ dev-python/urwidtrees 1.0.3-r2: Tree widgets for urwid
 dev-python/userpath 1.9.2: Cross-platform tool for adding locations to the user PATH
 dev-python/utidylib 1.0.0: TidyLib Python wrapper
 dev-python/uuid6 2025.0.1: New time-based UUID formats which are suited for use as a database key
-dev-python/uv 0.11.16 0.11.19 0.11.21 0.11.23 0.11.24 0.11.25 0.11.26 9999: A Python package installer and resolver, written in Rust
-dev-python/uv-build 0.11.16 0.11.19 0.11.21 0.11.23 0.11.24 0.11.25 0.11.26: PEP517 uv build backend
+dev-python/uv 0.11.16 0.11.19 0.11.21 0.11.23 0.11.24 0.11.25 0.11.26 0.11.27 9999: A Python package installer and resolver, written in Rust
+dev-python/uv-build 0.11.16 0.11.19 0.11.21 0.11.23 0.11.24 0.11.25 0.11.26 0.11.27: PEP517 uv build backend
 dev-python/uv-dynamic-versioning 0.14.0: Dynamic versioning based on VCS tags for uv/hatch project
-dev-python/uvicorn 0.49.0 0.50.0: Lightning-fast ASGI server implementation
+dev-python/uvicorn 0.49.0 0.50.0 0.50.2: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.22.1: Ultra-fast implementation of asyncio event loop on top of libuv
 dev-python/validators 0.35.0: Python Data Validation for Humans
 dev-python/valkey 6.1.1: Python client for Valkey forked from redis-py
@@ -9827,7 +9827,7 @@ dev-python/verboselogs 1.7-r1: Verbose logging for Python's logging module
 dev-python/versioneer 0.29-r1: Easy VCS-based management of project version strings
 dev-python/versioningit 3.3.0: A setuptools plugin for versioning based on git tags
 dev-python/vine 5.1.0: Python Promises
-dev-python/virtualenv 21.3.3 21.4.3 21.5.1: Virtual Python Environment builder
+dev-python/virtualenv 21.3.3 21.4.3 21.5.1 21.6.0: Virtual Python Environment builder
 dev-python/virtualenv-clone 0.5.7: A script for cloning a non-relocatable virtualenv
 dev-python/virtualenvwrapper 6.1.1: Set of extensions to Ian Bicking's virtualenv tool
 dev-python/visitor 0.1.3-r2: A tiny pythonic visitor implementation
@@ -9854,7 +9854,7 @@ dev-python/werkzeug 3.1.8: Collection of various utilities for WSGI applications
 dev-python/whatever 0.7: Easy anonymous functions by partial application of operators
 dev-python/whatthepatch 1.0.7: A patch parsing and application library
 dev-python/wheel 0.47.0: A built-package format for Python
-dev-python/whenever 0.10.0 0.10.1: Modern datetime library for Python
+dev-python/whenever 0.10.0 0.10.1 0.10.2: Modern datetime library for Python
 dev-python/whisper 1.1.10: Fixed size round-robin style database
 dev-python/whoosh 2.7.4-r2: Fast, pure-Python full text indexing, search and spell checking library
 dev-python/widgetsnbextension 4.0.15: IPython HTML widgets for Jupyter
@@ -9877,7 +9877,7 @@ dev-python/xmlschema 4.3.1 4.3.2: An XML Schema validator and decoder
 dev-python/xmlsec 1.3.17: Python bindings for the XML Security Library
 dev-python/xmltodict 1.0.4: Makes working with XML feel like you are working with JSON
 dev-python/xvfbwrapper 0.2.23 0.2.25 0.2.27: Python wrapper for running a display inside X virtual framebuffer
-dev-python/xxhash 3.7.0 3.7.1 3.8.0: Python binding for the xxHash library
+dev-python/xxhash 3.7.0 3.7.1 3.8.0 3.8.1: Python binding for the xxHash library
 dev-python/yapf 0.43.0-r1: A formatter for Python files
 dev-python/yappi 1.7.6: Yet Another Python Profiler
 dev-python/yapsy 1.12.2-r2: A fat-free DIY Python plugin management toolkit
@@ -10890,7 +10890,7 @@ dev-util/cargo-vendor-filterer 0.5.18: Tool to 'cargo vendor' with filtering
 dev-util/catalyst 4.1.0 4.1.1-r1 9999: Release metatool used for creating releases based on Gentoo Linux
 dev-util/catfish 4.20.0 4.20.1-r1: A frontend for find, (s)locate, doodle, tracker, beagle, strigi and pinot
 dev-util/cbindgen 0.29.2 0.29.3 0.29.4: A tool for generating C bindings to Rust code
-dev-util/ccache 4.12.3 4.13.2 4.13.5: Fast compiler cache
+dev-util/ccache 4.13.5: Fast compiler cache
 dev-util/cccc 3.1.6-r1 3.2.0: Source metrics (line counts, complexity, etc) for Java and C++
 dev-util/ccls 0.20250815.1 9999: C/C++/ObjC language server
 dev-util/cdecl 14.2 18.4.1: Composing and deciphering C (or C++) declarations or casts, aka "gibberish."
@@ -13290,7 +13290,7 @@ media-gfx/xli 1.17.0-r6: X Load Image: view images or load them to root window
 media-gfx/xpaint 3.1.4-r5: Image editor with tiff, jpeg and png support
 media-gfx/xsane 0.999-r6: Graphical scanning frontend
 media-gfx/xv 6.0.1 6.0.2 6.1.0-r1 6.2.0: Interactive image manipulation program supporting a wide variety of formats
-media-gfx/zbar 0.23.93-r2: Library and tools for reading barcodes from images or video
+media-gfx/zbar 0.23.93-r3: Library and tools for reading barcodes from images or video
 media-libs/Field3D 1.7.3_p20230509: A library for storing voxel data
 media-libs/SoQt 1.6.3 1.6.4: GUI binding for using Coin/Open Inventor with Qt
 media-libs/SoXt 1.4.1 1.4.2: GUI binding for using Coin/Open Inventor with Xt/Motif
@@ -13298,7 +13298,7 @@ media-libs/a52dec 0.7.4-r9: Library for decoding ATSC A/52 streams used in DVD
 media-libs/aalib 1.4_rc5-r10 1.4_rc5-r11: A ASCII-Graphics Library
 media-libs/aften 0.0.8-r3: A/52 (AC-3) audio encoder
 media-libs/allegro 4.4.3.1-r1 5.2.10.1: Cross-platform library aimed at video game and multimedia programming
-media-libs/alsa-lib 1.2.13-r3 1.2.14 1.2.15.3 1.2.16: Advanced Linux Sound Architecture Library
+media-libs/alsa-lib 1.2.15.3 1.2.16 1.2.16.1: Advanced Linux Sound Architecture Library
 media-libs/alsa-oss 1.1.8: Advanced Linux Sound Architecture OSS compatibility layer
 media-libs/alsa-topology-conf 1.2.5.1-r1: ALSA topology configuration files
 media-libs/alsa-ucm-conf 1.2.14 1.2.15.3 1.2.16: ALSA ucm configuration files
@@ -14306,7 +14306,7 @@ media-sound/spek 0.8.5-r2 0.8.5-r3: Analyse your audio files by showing their sp
 media-sound/splay 0.9.5.2-r2: An audio player, primarily for the console
 media-sound/split2flac 122-r1: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
 media-sound/spotify 1.2.92: Spotify is a social music platform
-media-sound/strawberry 1.2.19 1.2.21 9999: Modern music player and library organizer based on Clementine and Qt
+media-sound/strawberry 1.2.19 1.2.22 9999: Modern music player and library organizer based on Clementine and Qt
 media-sound/streamripper 1.64.6-r1: Extracts and records individual MP3 file tracks from shoutcast streams
 media-sound/streamtranscoder 3.1.11-r2: Commandline program to transcode shoutcast/icecast streams to different bitrates
 media-sound/subsonic-bin 6.1.6: Subsonic is a complete, personal media streaming solution
@@ -14447,7 +14447,7 @@ media-video/mjpegtools 2.2.1-r2: Tools for MJPEG video
 media-video/mjpg-streamer 0_pre20200524-r2: MJPG-streamer takes JPGs from Linux-UVC compatible webcams
 media-video/mkclean 0.8.10-r1: mkclean is a command line tool to clean and optimize Matroska files
 media-video/mkvalidator 0.5.2 0.6.0 0.6.0-r1: mkvalidator is a command line tool to verify Matroska files for spec conformance
-media-video/mkvtoolnix 97.0 98.0 99.0 9999: Tools to create, alter, and inspect Matroska files
+media-video/mkvtoolnix 98.0 99.0 100.0 9999: Tools to create, alter, and inspect Matroska files
 media-video/motion 4.5.1-r4: A software motion detector
 media-video/motiontrack 0.1.3-r2: A set of tools that detect motion between two images
 media-video/movit 1.7.1: High-performance, high-quality video filters for the GPU
@@ -15107,7 +15107,7 @@ net-libs/libsoup 2.74.3-r1 3.6.6: HTTP client/server library for GNOME
 net-libs/libsrsirc 0.0.14-r2 0.0.14.1: Lightweight, cross-platform IRC library
 net-libs/libsrtp 1.6.0-r1 2.4.2 2.6.0: Open-source implementation of the Secure Real-time Transport Protocol (SRTP)
 net-libs/libssh 0.11.4 9999: Access a working SSH implementation by means of a library
-net-libs/libssh2 1.11.1 9999: Library implementing the SSH2 protocol
+net-libs/libssh2 1.11.1 1.11.1-r1 9999: Library implementing the SSH2 protocol
 net-libs/libtelnet 0.23-r2: Simple RFC-compliant TELNET implementation as a C library
 net-libs/libtirpc 1.3.6 1.3.7 1.3.7-r2: Transport Independent RPC library (SunRPC replacement)
 net-libs/libtlsrpt 0.5.0 9999: library to implement TLSRPT
@@ -15591,7 +15591,7 @@ net-news/canto-curses 0.9.9-r1: The ncurses client for canto-daemon
 net-news/canto-daemon 0.9.8: Daemon part of Canto-NG RSS reader
 net-news/liferea 1.15.5-r2 1.15.8-r2 1.16.5 1.16.7 1.16.9: News Aggregator for RDF/RSS/CDF/Atom/Echo feeds
 net-news/newsboat 2.43 2.44: An RSS/Atom feed reader for text terminals
-net-news/rssguard 5.1.2 5.2.0 5.2.1: Simple (yet powerful) news feed reader
+net-news/rssguard 5.1.2 5.2.0 5.2.1 5.2.2: Simple (yet powerful) news feed reader
 net-news/rsstail 2.2: A tail-like RSS-reader
 net-news/sfeed 2.2 2.3 2.4: Simple RSS and Atom parser
 net-news/snownews 1.9-r2: Command-line RSS feed reader
@@ -15604,7 +15604,7 @@ net-nntp/slrn 1.0.3-r2: A s-lang based newsreader
 net-nntp/suck 4.3.5: Grab news from a remote NNTP server and feed them to another
 net-nntp/tin 2.6.4: A threaded NNTP and spool based UseNet newsreader
 net-p2p/airdcpp-webclient 2.12.2 2.13.3 2.14.0: Cross-platform Direct Connect client
-net-p2p/amule 2.3.3-r8 3.0.0 9999: aMule, the all-platform eMule p2p client
+net-p2p/amule 2.3.3-r8 3.0.0 3.0.1 9999: aMule, the all-platform eMule p2p client
 net-p2p/arti 1.5.0 1.8.0 9999: Implementation of Tor in Rust
 net-p2p/automatic 0.9.0-r1: RSS downloader for Tranmission
 net-p2p/biglybt 4.0.0.0: Feature-filled Bittorrent client based on Azureus
@@ -17975,7 +17975,7 @@ sys-libs/kpmcore 26.04.1 26.04.2 26.04.3: Library for managing partitions
 sys-libs/ldb 2.9.2: LDAP-like embedded database
 sys-libs/libapparmor 3.1.4-r2 4.0.3 4.0.3-r2 4.1.7: Library to support AppArmor userspace utilities
 sys-libs/libavc1394 0.5.4-r2: Library for the 1394 AV/C (Audio/Video Control) Digital Interface Command Set
-sys-libs/libblockdev 3.3.1 3.4.0: Library for manipulating block devices
+sys-libs/libblockdev 3.4.0 3.5.0: Library for manipulating block devices
 sys-libs/libcap 2.78 9999: POSIX 1003.1e capabilities
 sys-libs/libcap-ng 0.8.5 0.9.3: POSIX 1003.1e capabilities
 sys-libs/libchipcard 5.1.6-r1: Library for accessing chip cards via chip card readers (terminals)
