@@ -2460,7 +2460,7 @@ app-emulation/wine-desktop-common 20150204-r2: Various desktop menu items and ic
 app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet Explorer for Wine
 app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.1 11.0.0 11.1.0 11.2.0: Replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.3 10.0.4 11.0.1_beta5 11.0.1 9999: Valve Software's fork of Wine
-app-emulation/wine-staging 11.0 11.8 11.9 11.10 11.11 11.12 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
+app-emulation/wine-staging 11.0 11.10 11.11 11.12 11.13 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
 app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 11.0 11.10 11.11 11.12 11.13 9999: Free implementation of Windows(tm) on Unix, without external patchsets
 app-emulation/winetricks 20250102-r1 20260125 99999999: Easy way to install DLLs needed to work around problems in Wine
 app-emulation/x48 0.6.4-r3: HP48 Calculator Emulator
@@ -10221,7 +10221,7 @@ dev-ruby/jquery-rails 4.6.0 4.6.1: jQuery! For Rails! So great
 dev-ruby/jquery-ui-rails 7.0.0 8.0.0 8.0.0-r1: The jQuery UI assets for the Rails 3.2+ asset pipeline
 dev-ruby/jsobfu 0.4.2-r1: A Javascript code obfuscator
 dev-ruby/json 2.10.2 2.12.2 2.13.2 2.14.1 2.15.2 2.16.0 2.17.1 2.18.0 2.19.4: A JSON implementation as a Ruby extension
-dev-ruby/json-schema 5.2.2: Ruby JSON Schema Validator
+dev-ruby/json-schema 5.2.2-r1: Ruby JSON Schema Validator
 dev-ruby/json_schema 0.21.0: A JSON Schema V4 and Hyperschema V4 parser and validator
 dev-ruby/jwt 2.10.1 3.0.0 3.1.0 3.1.1 3.1.2: A Ruby implementation of JSON Web Token draft 06
 dev-ruby/kissfft 0.0.2-r1: ruby interface to kissfft
@@ -12084,7 +12084,7 @@ gnome-base/gnome-light 45.2 48.0: Meta package for GNOME-Light, merge this packa
 gnome-base/gnome-menus 3.36.0-r1 3.38.1: Library and layout configuration for the Desktop Menu fd.o specification
 gnome-base/gnome-panel 3.54.0 3.56.0 3.58.1: The GNOME Flashback Panel
 gnome-base/gnome-session 48.0-r2 49.2 49.3: Gnome session manager
-gnome-base/gnome-session-openrc 49.1-r1 49.2: Gnome session leader for OpenRC
+gnome-base/gnome-session-openrc 49.1-r2 49.2-r1: Gnome session leader for OpenRC
 gnome-base/gnome-settings-daemon 48.1 49.1 49.1-r1: Gnome Settings Daemon
 gnome-base/gnome-shell 48.5 48.7 48.8 49.6-r1 49.7 49.8: Provides core UI functions for the GNOME desktop
 gnome-base/gsettings-desktop-schemas 48.0 49.1: Collection of GSettings schemas for GNOME desktop
@@ -12106,7 +12106,7 @@ gnome-extra/cinnamon-translations 6.6.2: Translation data for Cinnamon
 gnome-extra/cjs 128.1: Linux Mint's fork of gjs for Cinnamon
 gnome-extra/eiciel 0.10.0 0.10.1: ACL editor for GNOME, with Nautilus extension
 gnome-extra/evolution-data-server 3.56.2-r1 3.58.3 3.60.1 3.60.2: Evolution groupware backend
-gnome-extra/evolution-ews 3.56.2-r1 3.58.3 3.60.1 3.60.2: Evolution module for connecting to Microsoft Exchange Web Services
+gnome-extra/evolution-ews 3.56.2-r1 3.58.3 3.60.1 3.60.2-r1: Evolution module for connecting to Microsoft Exchange Web Services
 gnome-extra/gnome-boxes 48.0 49.1: Simple GNOME application to access remote or virtual systems
 gnome-extra/gnome-browser-connector 42.1 42.1-r1: OS-native connector counterpart for GNOME Shell browser extension
 gnome-extra/gnome-calculator 48.1 49.2-r1: A calculator application for GNOME
@@ -14653,7 +14653,7 @@ net-analyzer/netcat 110.20180111-r2: The network swiss army knife
 net-analyzer/netdata 1.47.5 2.5.3 9999: Linux real time system monitoring, done right!
 net-analyzer/netdata-go-plugin 1.47.5-r1 2.5.3: Netdata plugin for collectors written in Go
 net-analyzer/netdiscover 0.10 0.20: Active/passive address reconnaissance tool
-net-analyzer/nethogs 0.8.7 0.8.8: Small 'net top' tool, grouping bandwidth by process
+net-analyzer/nethogs 0.8.7 0.8.8 0.9.0: Small 'net top' tool, grouping bandwidth by process
 net-analyzer/netperf 2.7.0-r5 2.7.0_p20210121 2.7.0_p20210121-r1: Network performance benchmark
 net-analyzer/netpipe 3.7.2-r1: network protocol independent performance evaluator
 net-analyzer/netselect 0.4-r2 9999: Ultrafast implementation of ping
@@ -15379,7 +15379,7 @@ net-misc/jlj 2.12-r1: Simple console LiveJournal entry system
 net-misc/jwhois 4.0-r2: Advanced Internet Whois client capable of recursive queries
 net-misc/kafka-bin 3.9.2 4.0.2 4.1.2 4.2.1 4.3.0: A high-throughput distributed messaging system
 net-misc/kafkacat 1.7.1: Generic command line non-JVM Apache Kafka producer and consumer
-net-misc/kea 3.0.3-r1 9999: High-performance production grade DHCPv4 & DHCPv6 server
+net-misc/kea 3.0.3-r1 3.2.0 9999: High-performance production grade DHCPv4 & DHCPv6 server
 net-misc/keychain 2.8.5-r2 2.9.8: Agent manager for OpenSSH, ssh.com, Sun SSH, and GnuPG
 net-misc/kio-zeroconf 26.04.3: KIO worker to discover file systems by DNS-SD (DNS Service Discovery)
 net-misc/knock 0.8 0.8.2: Simple port-knocking daemon
@@ -15989,7 +15989,7 @@ sci-biology/pysam 0.24.0 9999: Python interface for the SAM/BAM sequence alignme
 sci-biology/raxml 8.2.13: Sequential, Parallel & Distributed Inference of Large Phylogenetic Trees
 sci-biology/rebase 1901-r2: A restriction enzyme database
 sci-biology/recon 1.08-r1: Automated de novo identification of repeat families from genomic sequences
-sci-biology/samtools 1.20 1.23.1: Utilities for analysing and manipulating the SAM/BAM alignment formats
+sci-biology/samtools 1.23.1: Utilities for analysing and manipulating the SAM/BAM alignment formats
 sci-biology/seaview 4.6-r2: A graphical multiple sequence alignment editor
 sci-biology/seqan 3.1.0: C++ Sequence Analysis Library
 sci-biology/sibsim4 0.20: A rewrite and improvement upon sim4, a DNA-mRNA aligner
@@ -16258,7 +16258,7 @@ sci-libs/hipRAND 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: CU / ROCM agnostic hip RAND impl
 sci-libs/hipSOLVER 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: CU / ROCM agnostic marshalling library for LAPACK routines on the GPU
 sci-libs/hipSPARSE 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: ROCm SPARSE marshalling library
 sci-libs/hipsparselt 7.2.0: Sparse GEMM operations library for AMD Instinct accelerators
-sci-libs/htslib 1.20 1.23.1: C library for high-throughput sequencing data formats
+sci-libs/htslib 1.23.1: C library for high-throughput sequencing data formats
 sci-libs/hypre 2.32.0 2.33.0 3.1.0: Parallel matrix preconditioners library
 sci-libs/idlcoyote 20161220-r1 99999999: GDL library from D. Fannings IDL courses
 sci-libs/idlmarkwardt 20160319-r1: Craig Markwardt IDL procedures (MPFIT, CMSVLIB, etc)
@@ -16382,7 +16382,7 @@ sci-libs/ta-lib 0.4.0-r1: Technical Analysis Library for analyzing financial mar
 sci-libs/tamu_anova 0.2-r1: ANOVA Extensions to the GNU Scientific Library
 sci-libs/taucs 2.2.1: C library of sparse linear solvers
 sci-libs/tnt 3.0.12: Template Numerical Toolkit: C++ headers for array and matrices
-sci-libs/trilinos 14.4.0-r1 15.1.1-r1 16.2.1 17.0.0 17.1.0: Scientific library collection for large scale problems
+sci-libs/trilinos 14.4.0-r1 15.1.1-r1 16.2.1 17.0.0 17.0.0-r1 17.1.0 17.1.0-r1: Scientific library collection for large scale problems
 sci-libs/udunits 2.2.28: Library for manipulating units of physical quantities
 sci-libs/ufconfig 3.7.1: Common configuration scripts for the SuiteSparse libraries
 sci-libs/umfpack 5.7.9 5.7.9-r1 6.3.7-r1: Unsymmetric multifrontal sparse LU factorization library
@@ -17280,7 +17280,7 @@ sys-apps/fakeroot 1.32.2 1.33: A fake root environment by means of LD_PRELOAD an
 sys-apps/fbset 2.1: A utility to set the framebuffer videomode
 sys-apps/fd 10.4.2: Alternative to find that provides sensible defaults for 80% of the use cases
 sys-apps/file 5.46-r3 5.47-r1 5.47-r2 5.47-r3 5.48 9999: Identify a file's format by scanning binary data for patterns
-sys-apps/findutils 4.10.0: GNU utilities for finding files
+sys-apps/findutils 4.10.0 4.11.0: GNU utilities for finding files
 sys-apps/firejail 0.9.76 0.9.80: Security sandbox for any type of processes
 sys-apps/fix-gnustack 0.1-r1: Utility to report and remove the executable flag from an ELF object's GNU_STACK
 sys-apps/flashrom 1.5.1 1.6.0 1.7.0: Utility for reading, writing, erasing and verifying flash ROM chips
@@ -17742,7 +17742,7 @@ sys-devel/crossdev 20260326 20260501 20260501-r1 20260617 20260623 99999999: Gen
 sys-devel/crosstool-ng 1.28.0 9999: Versatile (cross-)toolchain generator
 sys-devel/dev86 1.0.1: Bruce's C compiler - Simple C compiler to generate 8086 code
 sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across several machines on a network
-sys-devel/dwz 0.16 9999: DWARF optimization and duplicate removal tool
+sys-devel/dwz 0.16 0.17 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
 sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20250807 13.4.1_p20251016 13.4.1_p20260212 13.4.1_p20260422 13.4.1_p20260429 13.4.1_p20260506 13.4.1_p20260513 13.4.1_p20260520 13.4.1_p20260527 13.4.1_p20260603 13.4.1_p20260610 13.4.1_p20260617 13.4.1_p20260624 13.4.1_p20260701 13.5.9999 14.3.1_p20250801 14.3.1_p20251017 14.3.1_p20260213 14.3.1_p20260423 14.3.1_p20260430 14.3.1_p20260507 14.3.1_p20260514 14.3.1_p20260521 14.3.1_p20260528 14.3.1_p20260604 14.3.1_p20260611 14.3.1_p20260618 14.3.1_p20260619 14.4.0 14.5.9999 15.2.1_p20251108-r1 15.2.1_p20251122 15.2.1_p20260214 15.2.1_p20260424 15.2.1_p20260501 15.2.1_p20260508 15.2.1_p20260515 15.2.1_p20260522 15.2.1_p20260529 15.2.1_p20260605 15.3.0 15.3.1_p20260612 15.3.1_p20260619 15.3.1_p20260626 15.3.1_p20260703 15.3.9999 16.1.0 16.1.1_p20260502 16.1.1_p20260509 16.1.1_p20260516 16.1.1_p20260523 16.1.1_p20260530 16.1.1_p20260606 16.1.1_p20260613 16.1.1_p20260620 16.1.1_p20260627 16.1.1_p20260704 16.2.9999 17.0.0_p20260426 17.0.0_p20260503 17.0.0_p20260510 17.0.0_p20260517 17.0.0_p20260524 17.0.0_p20260531 17.0.0_p20260607 17.0.0_p20260607-r1 17.0.0_p20260614 17.0.0_p20260621 17.0.0_p20260628 17.0.0_p20260705 17.0.9999: The GNU Compiler Collection
@@ -18810,7 +18810,6 @@ x11-misc/mgm 1.2-r2: Moaning Goat Meter: load and status meter written in Perl
 x11-misc/mixer_app 1.8.0-r1: mixer_app has volume controllers that can be configured to handle sound sources
 x11-misc/mozo 1.28.0-r1: Mozo menu editor for MATE
 x11-misc/mugshot 0.4.3-r2: A lightweight user-configuration application
-x11-misc/mygestures 2.0-r2: Mouse gestures for X
 x11-misc/netwmpager 2.05: Pager that works with Openbox and other EWMH compliant window managers
 x11-misc/nitrogen 1.6.1-r2: A background browser and setter for X
 x11-misc/notification-daemon 3.20.0-r1: Notification daemon
