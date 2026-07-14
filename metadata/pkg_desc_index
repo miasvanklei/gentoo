@@ -1002,7 +1002,7 @@ app-admin/hcloud 1.65.0: A command-line interface for Hetzner Cloud
 app-admin/hddtemp 0.3_beta15-r29: A simple utility to read the temperature of SMART capable hard drives
 app-admin/helm 3.17.2 3.18.6 3.19.0 3.19.2: Kubernetes Package Manager
 app-admin/ide-smart 1.4-r3: A tool to read SMART information from harddiscs
-app-admin/ig 0.54.0: Tools and framework for data collection and system inspection using eBPF
+app-admin/ig 0.54.1: Tools and framework for data collection and system inspection using eBPF
 app-admin/integrit 4.2_rc1: file integrity verification program
 app-admin/keepass 2.57 2.61 2.61.1: A free, open source, light-weight and easy-to-use password manager
 app-admin/keepassxc 2.8.0_pre20260504 2.8.0_pre20260629: KeePassXC - KeePass Cross-platform Community Edition
@@ -1694,9 +1694,9 @@ app-dicts/myspell-da 2.6: Danish dictionaries for myspell/hunspell
 app-dicts/myspell-de 2017.01.12-r1: German (AT,CH,DE) dictionaries for myspell/hunspell
 app-dicts/myspell-de_1901 20170622: German (traditional orthography) dictionaries for myspell/hunspell
 app-dicts/myspell-el 0.9: Greek dictionaries for myspell/hunspell
-app-dicts/myspell-en 20250401 20250901: English dictionaries for myspell/hunspell
+app-dicts/myspell-en 20250901: English dictionaries for myspell/hunspell
 app-dicts/myspell-eo 1.01: Esperanto dictionaries for myspell/hunspell
-app-dicts/myspell-es 2.6: Spanish dictionaries for myspell/hunspell
+app-dicts/myspell-es 2.6 2.9: Spanish dictionaries for myspell/hunspell
 app-dicts/myspell-et 20030606: Estonian dictionaries for myspell/hunspell
 app-dicts/myspell-fo 0.4.2: Faroese dictionaries for myspell/hunspell
 app-dicts/myspell-fr 7.0-r1: French dictionaries for myspell/hunspell
@@ -1829,7 +1829,7 @@ app-editors/fe 2.0-r1: A small and easy to use folding editor
 app-editors/featherpad 1.6.2 1.6.3 1.6.4 9999: Lightweight Qt6 Plain-Text Editor for Linux
 app-editors/focuswriter 1.8.10: Fullscreen and distraction-free word processor
 app-editors/gedit 48.1 48.2 49.0: A text editor for the GNOME desktop
-app-editors/gedit-plugins 48.1 48.2 49.0: Collection of extra plugins for the gedit Text Editor
+app-editors/gedit-plugins 48.1 48.2 49.0 49.0-r1: Collection of extra plugins for the gedit Text Editor
 app-editors/ghex 48.1 48.3 9999: GNOME hexadecimal editor
 app-editors/ghostwriter 26.04.3: Cross-platform, aesthetic, distraction-free markdown editor
 app-editors/gnome-latex 3.46.0-r1: Integrated LaTeX environment for GNOME
@@ -8962,7 +8962,7 @@ dev-python/munch 4.0.0: A dot-accessible dictionary (a la JavaScript objects)
 dev-python/munkres 1.1.4-r1: Module implementing munkres algorithm for the Assignment Problem
 dev-python/musicbrainzngs 0.7.1-r1: Python bindings for the MusicBrainz NGS and the Cover Art Archive webservices
 dev-python/mygpoclient 1.10: A gpodder.net client library
-dev-python/mypy 1.20.2 2.1.0 2.2.0: Optional static typing for Python
+dev-python/mypy 1.20.2 2.1.0 2.2.0 2.3.0: Optional static typing for Python
 dev-python/mypy-extensions 1.1.0: Type system extensions for programs checked with mypy
 dev-python/mysqlclient 2.2.8: Python interface to MySQL
 dev-python/myst-parser 5.1.0: Extended commonmark compliant parser, with bridges to Sphinx
@@ -12130,8 +12130,9 @@ gnome-extra/gnome-shell-extension-applications-overview-tooltip 24: Show tooltip
 gnome-extra/gnome-shell-extension-bing-wallpaper 52 53: Change your wallpaper daily to the bing.com background image
 gnome-extra/gnome-shell-extension-control-blur-effect-on-lock-screen 20241110: Control the blur effect on gnome-shell lock screen
 gnome-extra/gnome-shell-extension-dash-to-panel 72 73: An icon taskbar for the Gnome Shell
-gnome-extra/gnome-shell-extension-desktop-icons-ng 50.2.0 50.3.0: Desktop icon support for GNOME Shell
+gnome-extra/gnome-shell-extension-desktop-icons-ng 50.3.0: Desktop icon support for GNOME Shell
 gnome-extra/gnome-shell-extension-gsconnect 71 72: KDE Connect implementation for GNOME
+gnome-extra/gnome-shell-extension-lockscreen-studio 1.1.2: Customization extension for the gnome-shell lock screen
 gnome-extra/gnome-shell-extension-pop-shell 1.2.0_p20250710 1.2.0_p20260331: Keyboard-driven layer for GNOME Shell with tiling support
 gnome-extra/gnome-shell-extension-weather-oclock 50.3 50.4: Display the current weather inside the pill next to the clock
 gnome-extra/gnome-shell-extensions 48.3 49.0: JavaScript extensions for GNOME Shell
@@ -12153,7 +12154,7 @@ gnome-extra/nemo 6.6.4: A file manager for Cinnamon, forked from Nautilus
 gnome-extra/nemo-fileroller 6.6.0: Nemo file-roller integration
 gnome-extra/nm-applet 1.36.0: NetworkManager connection editor and applet
 gnome-extra/office-runner 1.0.3: Lighthearted tool to temporarily inhibit GNOME's suspend on lid close behavior
-gnome-extra/pch-session 48.0-r1 49.0: Unofficial gnome based session with different default settings and extensions
+gnome-extra/pch-session 48.0-r1 49.0 49.1: Unofficial gnome based session with different default settings and extensions
 gnome-extra/polkit-gnome 0.105-r2: A dbus session bus service that is used to bring up authentication dialogs
 gnome-extra/sushi 46.0: A quick previewer for Nautilus, the GNOME file manager
 gnome-extra/tecla 48.0.2 49.0: Tecla is a keyboard layout viewer
@@ -12813,7 +12814,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, sim
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0 7.8.0_p1: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.11.5 3.12_pre20260710: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.11.5 3.12_pre20260713: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.18.2 8.18.2-r1 8.19.0.0-r1 8.19.0.1: Widely-used Mail Transport Agent (MTA)
@@ -17790,7 +17791,7 @@ sys-firmware/seabios 1.16.3: Open Source implementation of a 16-bit x86 BIOS
 sys-firmware/seabios-bin 1.16.0 1.16.3: Open Source implementation of a 16-bit x86 BIOS
 sys-firmware/sgabios 0.1_pre10: serial graphics adapter bios option rom for x86
 sys-firmware/sigrok-firmware-fx2lafw 0.1.7-r2 9999: Firmware for Cypress FX2 chips for use as simple logic analyzer hardware
-sys-firmware/sof-firmware 2025.12 2025.12.1 2025.12.2: Sound Open Firmware (SOF) binary files
+sys-firmware/sof-firmware 2025.12.2: Sound Open Firmware (SOF) binary files
 sys-firmware/tt-s2-6400-firmware 0.5.1: Firmware for the Technotrend S2-6400 DVB Card
 sys-firmware/vgabios 0.7a 0.7a-r1 0.8a 0.8a-r1: VGA BIOS implementation
 sys-firmware/zd1201-firmware 0.14-r1: Firmware for ZyDAS 1201 based USB 802.11b Network WiFi devices
