@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 inherit eapi9-ver multilib meson-multilib python-any-r1 readme.gentoo-r1
 
 DESCRIPTION="A library for configuring and customizing font access"
@@ -16,7 +16,7 @@ SRC_URI="
 LICENSE="MIT"
 SLOT="1.0"
 if ! [[ $(ver_cut 3) -ge 90 ]] ; then
-	KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 ~sparc x86 ~arm64-macos ~x64-macos ~x64-solaris"
+	KEYWORDS="~amd64"
 fi
 IUSE="doc nls test"
 RESTRICT="!test? ( test )"
@@ -48,7 +48,7 @@ DEPEND="
 "
 BDEPEND="
 	${PYTHON_DEPS}
-	>=dev-build/meson-1.6.0
+	>=dev-build/meson-1.11.0
 	dev-util/gperf
 	virtual/pkgconfig
 	doc? (
@@ -56,6 +56,11 @@ BDEPEND="
 		app-text/docbook-sgml-utils[jadetex]
 	)
 	nls? ( >=sys-devel/gettext-0.19.8 )
+	test? (
+		$(python_gen_any_dep '
+			dev-python/pytest-tap[${PYTHON_USEDEP}]
+		')
+	)
 "
 PDEPEND="virtual/ttf-fonts"
 # We need app-eselect/eselect-fontconfig in IDEPEND to update ROOT
@@ -65,20 +70,22 @@ IDEPEND="app-eselect/eselect-fontconfig"
 PATCHES=(
 	# bug #130466 + make liberation default
 	"${FILESDIR}"/${PN}-2.14.0-latin-update.patch
-	# Avoid test failure (bubblewrap doesn't work within sandbox)
-	"${FILESDIR}"/${PN}-2.14.0-skip-bubblewrap-tests.patch
-	# Avoid network access and unpackaged pytest-tap
-	"${FILESDIR}"/${PN}-2.16.0-network-test.patch
+	# Fix build failure with -ggdb3
+	"${FILESDIR}"/${PN}-2.17.0-macro-preprocess.patch
 
 	# Patches from upstream (can usually be removed with next version bump)
-	"${FILESDIR}"/${PN}-2.16.0-macro-preprocess.patch
-	"${FILESDIR}"/${PN}-2.16.2-no-static.patch
 )
 
 DOC_CONTENTS="Please make fontconfig configuration changes using
 \`eselect fontconfig\`. Any changes made to /etc/fonts/fonts.conf will be
 overwritten. If you need to reset your configuration to upstream defaults,
 delete the directory ${EROOT}/etc/fonts/conf.d/ and re-emerge fontconfig."
+
+python_check_deps() {
+	use test || return 0
+
+	python_has_version "dev-python/pytest-tap[${PYTHON_USEDEP}]"
+}
 
 src_prepare() {
 	default
@@ -130,6 +137,8 @@ multilib_src_configure() {
 
 		$(meson_native_use_feature nls)
 		$(meson_feature test tests)
+		-Dtests-bwrap=disabled
+		-Dtests-external-fonts=disabled
 
 		-Dcache-build=disabled
 		-Dcache-dir="${EPREFIX}"/var/cache/fontconfig
