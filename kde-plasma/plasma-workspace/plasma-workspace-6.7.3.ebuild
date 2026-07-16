@@ -14,7 +14,7 @@ DESCRIPTION="KDE Plasma workspace"
 LICENSE="GPL-2" # TODO: CHECK
 SLOT="6"
 KEYWORDS="~amd64 ~arm64 ~ppc64 ~riscv ~x86"
-IUSE="appstream +fontconfig flatpak +ksysguard networkmanager +policykit screencast
+IUSE="appstream +fontconfig flatpak +ksysguard +policykit screencast
 +semantic-desktop systemd telemetry +wallpaper-metadata +X"
 
 REQUIRED_USE="fontconfig? ( X )"
@@ -70,6 +70,7 @@ COMMON_DEPEND="
 	>=kde-frameworks/kwidgetsaddons-${KFMIN}:6
 	>=kde-frameworks/kwindowsystem-${KFMIN}:6[X?]
 	>=kde-frameworks/kxmlgui-${KFMIN}:6
+	>=kde-frameworks/networkmanager-qt-${KFMIN}:6
 	>=kde-frameworks/prison-${KFMIN}:6[qml]
 	>=kde-frameworks/solid-${KFMIN}:6
 	>=kde-plasma/breeze-${KDE_CATV}:6
@@ -90,7 +91,6 @@ COMMON_DEPEND="
 	appstream? ( >=dev-libs/appstream-1[qt6] )
 	flatpak? ( sys-apps/flatpak )
 	ksysguard? ( >=kde-plasma/libksysguard-${KDE_CATV}:6 )
-	networkmanager? ( >=kde-frameworks/networkmanager-qt-${KFMIN}:6 )
 	policykit? ( virtual/libcrypt:= )
 	semantic-desktop? ( >=kde-frameworks/baloo-${KFMIN}:6 )
 	systemd? ( sys-apps/systemd:= )
@@ -163,7 +163,6 @@ PDEPEND="
 
 PATCHES=(
 	"${FILESDIR}/${PN}-5.22.5-krunner-cwd-at-home.patch" # TODO upstream: KDE-bug 432975, bug 767478
-	"${FILESDIR}/networkmanager-optional.patch"
 )
 
 src_prepare() {
@@ -200,7 +199,6 @@ src_configure() {
 		$(cmake_use_find_package fontconfig Fontconfig)
 		$(cmake_use_find_package fontconfig Freetype)
 		$(cmake_use_find_package ksysguard KSysGuard)
-		-DBUILD_GEOTIMEZONED=$(usex networkmanager TRUE FALSE)
 		-DBUILD_CAMERAINDICATOR=$(usex screencast)
 		$(cmake_use_find_package semantic-desktop KF6Baloo)
 		$(cmake_use_find_package telemetry KF6UserFeedback)
