@@ -2247,7 +2247,7 @@ app-emacs/posframe 1.5.1 1.5.2: Pop up a frame at point
 app-emacs/pov-mode 3.3-r1: Major mode for Povray scene files
 app-emacs/powerline 2.5_p20221110: GNU Emacs version of the Vim powerline
 app-emacs/powershell 0.3_pre20220402 0.3_pre20220805: GNU Emacs mode for editing and running PowerShell code
-app-emacs/projectile 2.9.1 3.1.0 3.2.0: A project interaction library for Emacs
+app-emacs/projectile 2.9.1 3.1.0 3.2.1: A project interaction library for Emacs
 app-emacs/proofgeneral 4.5: A generic interface for proof assistants
 app-emacs/protbuf 1.7-r1: Protect Emacs buffers from accidental killing
 app-emacs/psgml 1.4.1: A GNU Emacs Major Mode for editing SGML and XML coded documents
@@ -5399,7 +5399,7 @@ dev-lang/oorexx 5.1.0_beta12932: Open source implementation of Object Rexx
 dev-lang/orc 0.4.41 0.4.42: The Oil Runtime Compiler, a just-in-time compiler for array operations
 dev-lang/parrot 8.1.0-r4: Virtual machine designed to compile and execute bytecode for dynamic languages
 dev-lang/pcc 1.1.0-r2: pcc portable c compiler
-dev-lang/perl 5.40.2 5.42.0-r1 5.42.2 5.44.0_rc1 5.44.0_rc2: Larry Wall's Practical Extraction and Report Language
+dev-lang/perl 5.40.2 5.42.0-r1 5.42.2 5.44.0: Larry Wall's Practical Extraction and Report Language
 dev-lang/php 8.2.29 8.2.30 8.2.31 8.2.32 8.3.26 8.3.29 8.3.31 8.3.32 8.4.23 8.5.8: The PHP language runtime engine
 dev-lang/pico8 0.2.7-r1: Fantasy console for making and playing tiny games and other computer programs
 dev-lang/polyml 5.9.1 5.9.2-r1: Poly/ML is a full implementation of Standard ML
@@ -11087,7 +11087,7 @@ dev-util/maxcso 1.13.0 9999: Fast cso compressor
 dev-util/mdds 2.1.1-r1 3.0.0 9999: Collection of multi-dimensional data structure and indexing algorithm
 dev-util/meld 3.22.3 3.24.0: A graphical diff and merge tool
 dev-util/memprof 0.6.2-r2: Profiling and leak detection tool
-dev-util/mesa_clc 26.0.8 26.1.4 9999: mesa_clc tool used for building OpenCL C to SPIR-V
+dev-util/mesa_clc 26.0.8 26.1.4 26.1.5 9999: mesa_clc tool used for building OpenCL C to SPIR-V
 dev-util/mig 1.8_p20231217 1.8_p20260123 9999: GNU Mach 3.0 interface generator (IDL compiler)
 dev-util/min-cscope 16.1.0-r2: Interactively examine a C program
 dev-util/mingw64-runtime 13.0.0 14.0.0: Free Win64 runtime and import library definitions
@@ -13600,7 +13600,7 @@ media-libs/lilv 0.24.26-r1: Library to make the use of LV2 plugins as simple as 
 media-libs/lsp-plugins 1.2.3-r1 1.2.6 1.2.14 9999: Linux Studio Plugins
 media-libs/lv2 1.18.10-r1 1.18.10-r2: A simple but extensible successor of LADSPA
 media-libs/lvtk 1.2.0-r4: A set of C++ wrappers around the LV2 C API
-media-libs/mesa 26.0.8 26.1.4 9999: OpenGL-like graphic library for Linux
+media-libs/mesa 26.0.8 26.1.4 26.1.5 9999: OpenGL-like graphic library for Linux
 media-libs/mesa-amber 21.3.9-r2 21.3.9-r3 21.3.9-r4: OpenGL-like graphic library for Linux
 media-libs/mlt 7.34.1-r1 7.38.0 7.40.0: Open source multimedia framework for television broadcasting
 media-libs/mpvqt 1.1.1-r3 1.2.0: libmpv wrapper for QtQuick2 and QML
@@ -15663,7 +15663,7 @@ net-print/epson-inkjet-printer-escpr 1.2.15 1.2.15-r1 1.8.6 1.8.8: Epson Inkjet 
 net-print/fax4cups 1.29-r1: Fax backend for CUPS
 net-print/foo2zjs 20200221 99999999: Support for printing to ZjStream-based printers
 net-print/foomatic-db 4.0.20190226-r1: Printer information files for foomatic-db-engine to generate ppds
-net-print/foomatic-db-engine 4.0.12-r2: Generates ppds out of xml foomatic printer description files
+net-print/foomatic-db-engine 4.0.12-r3: Generates ppds out of xml foomatic printer description files
 net-print/foomatic-db-ppds 4.0.20190226-r1: linuxprinting.org PPD files for postscript printers
 net-print/gtklp 1.3.4: A GUI for cupsd
 net-print/gutenprint 5.3.4-r2 5.3.5: Ghostscript and cups printer drivers
@@ -17895,7 +17895,7 @@ sys-fs/multipath-tools 0.14.3: Device mapper target autoconfig
 sys-fs/ncdu 1.22 2.9.1 2.9.2: NCurses Disk Usage
 sys-fs/ncdu-bin 2.9.1: NCurses Disk Usage
 sys-fs/nilfs-utils 2.2.9: A New Implementation of a Log-structured File System for Linux
-sys-fs/ntfs3g 2026.2.25: Open source read-write NTFS driver that runs under FUSE
+sys-fs/ntfs3g 2026.2.25 2026.7.7: Open source read-write NTFS driver that runs under FUSE
 sys-fs/progsreiserfs 0.3.1_rc8-r1: Library for accessing and manipulating reiserfs partitions
 sys-fs/quota 4.09-r1 4.10 4.11: Linux quota tools
 sys-fs/quotatool 1.6.5: Command-line utility for filesystem quotas
@@ -18223,12 +18223,12 @@ virtual/perl-File-Spec 3.910.0-r1 3.940.0 3.950.0: Virtual for File-Spec
 virtual/perl-File-Temp 0.231.100-r1 0.231.200: Virtual for File-Temp
 virtual/perl-Getopt-Long 2.570.0-r1 2.580.0-r2: Virtual for Getopt-Long
 virtual/perl-IO 1.550.0-r1 1.560.0: Virtual for IO
-virtual/perl-IO-Compress 2.212.0 2.213.0 2.220.0-r1 2.223.0: Virtual for IO-Compress
+virtual/perl-IO-Compress 2.212.0 2.213.0 2.223.0-r1: Virtual for IO-Compress
 virtual/perl-IO-Socket-IP 0.420.0 0.430.0 0.440.0: Virtual for IO-Socket-IP
 virtual/perl-JSON-PP 4.160.0-r4: Virtual for JSON-PP
 virtual/perl-MIME-Base64 3.160.100_rc-r3: Virtual for MIME-Base64
 virtual/perl-Math-BigInt 2.3.2 2.5.2 2.5.3: Virtual for Math-BigInt
-virtual/perl-Module-CoreList 5.202.504.134_rc 5.202.507.20-r2 5.202.603.30 5.202.606.10 5.202.607.80: Virtual for Module-CoreList
+virtual/perl-Module-CoreList 5.202.504.134_rc 5.202.507.20-r2 5.202.603.30 5.202.607.80-r1: Virtual for Module-CoreList
 virtual/perl-Module-Load 0.360.0-r6: Virtual for Module-Load
 virtual/perl-Module-Metadata 1.0.38-r1 1.0.39: Virtual for Module-Metadata
 virtual/perl-Pod-Simple 3.450.0-r1 3.480.0: Virtual for Pod-Simple
@@ -18483,7 +18483,7 @@ www-servers/kore 4.3.0_rc4: Web application platform for writing scalable, concu
 www-servers/lighttpd 1.4.82 1.4.83 1.4.84 1.4.85 9999: Lightweight high-performance web server
 www-servers/mongrel2 1.11.0-r3: A language agnostic web server focused on web applications
 www-servers/moonbridge 1.1.3-r1: Network Server for Lua Applications
-www-servers/nginx 1.26.3-r2 1.27.5-r1 1.29.5-r1 1.29.7-r2 1.30.0-r1 1.30.2-r1 1.30.3-r1 1.31.1-r1 1.31.2-r1 9999: Robust, small and high performance HTTP and reverse proxy server
+www-servers/nginx 1.26.3-r2 1.27.5-r1 1.29.5-r1 1.29.7-r2 1.30.0-r1 1.30.2-r1 1.30.3-r1 1.30.4 1.31.1-r1 1.31.2-r1 1.31.3 9999: Robust, small and high performance HTTP and reverse proxy server
 www-servers/pound 4.22 4.23: A http/https reverse-proxy and load-balancer
 www-servers/pshs 0.4.3: Pretty small HTTP server -- a command-line tool to share files
 www-servers/puma 6.6.0 6.6.1 7.1.0 7.2.0: a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack
