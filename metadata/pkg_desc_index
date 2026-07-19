@@ -1853,7 +1853,7 @@ app-editors/leafpad 0.8.18.1-r1: Simple GTK2 text editor
 app-editors/levee 4.0: Really tiny vi clone, for things like rescue disks
 app-editors/logseq-desktop-bin 0.10.15-r1 1.0.0: A privacy-first, open-source platform for knowledge sharing and management
 app-editors/lpe 1.2.8_p20210401: A lightweight programmers editor
-app-editors/mg 20230501 20240709 20260227: MicroGnuEmacs, a port from the BSDs
+app-editors/mg 20240709 20260227 20260719: MicroGnuEmacs, a port from the BSDs
 app-editors/micro 2.0.13-r1 2.0.15: Modern and intuitive terminal-based text editor
 app-editors/moe 1.15 1.16: Powerful and user-friendly console text editor
 app-editors/mousepad 0.6.5-r2 0.7.0: GTK+-based editor for the Xfce Desktop Environment
@@ -5972,7 +5972,7 @@ dev-libs/spdlog 1.15.3 1.15.3-r1 1.16.0 1.17.0 9999: Fast C++ logging library
 dev-libs/spsdeclib 5.1-r2 5.2: Kryoflux SPS Decoder Library
 dev-libs/squareball 0.2.0 9999: A general-purpose library for C99
 dev-libs/starpu 1.3.9: Unified runtime system for heterogeneous multicore architectures
-dev-libs/stb 20240201-r1: single-file public domain (or MIT licensed) libraries for C/C++
+dev-libs/stb 20240201-r1 20260415-r1: Single-file C/C++ libraries for various purposes
 dev-libs/stfl 0.24-r6: Library which implements a curses-based widget set for text terminals
 dev-libs/teakra 20250824: Emulator, assembler, etc for XpertTeak, the DSP used by DSi/3DS
 dev-libs/template-glib 3.36.3 3.40.0: A templating library for GLib
@@ -8527,7 +8527,7 @@ dev-python/django-debug-toolbar 7.0.0: A configurable set of panels that display
 dev-python/django-filter 25.2 26.1: Django app allowing declarative dynamic QuerySet filtering from URL parameters
 dev-python/django-js-asset 4.0.1: Script tag with additional attributes for django.forms.Media
 dev-python/django-otp 1.7.0: Django framework adding two-factor authentication using one-time passwords
-dev-python/django-polymorphic 4.11.5 4.11.6: Seamless Polymorphic Inheritance for Django Models
+dev-python/django-polymorphic 4.11.6: Seamless Polymorphic Inheritance for Django Models
 dev-python/django-prometheus 2.5.0: Library to export Django metrics for Prometheus
 dev-python/django-redis 7.0.0: Full featured redis cache backend for Django
 dev-python/django-registration 5.2.1: user-registration application for Django
@@ -8670,7 +8670,7 @@ dev-python/google-auth-oauthlib 1.4.0: Google Authentication Library
 dev-python/google-i18n-address 3.1.1: Google's i18n address metadata repository
 dev-python/google-pasta 0.2.0-r2: AST-based Python refactoring library
 dev-python/googleapis-common-protos 1.75.0: Python classes generated from the common protos in the googleapis repository
-dev-python/gpep517 19: A backend script to aid installing Python packages in Gentoo
+dev-python/gpep517 19 20: A backend script to aid installing Python packages in Gentoo
 dev-python/gpgmepy 2.0.0-r1: GnuPG Made Easy is a library for making GnuPG easier to use (Python bindings)
 dev-python/gpt-image 0.9.1: Tool to create GPT disk image files
 dev-python/graph-tool 2.98 9999: An efficient python module for manipulation and statistical analysis of graphs
@@ -13594,7 +13594,7 @@ media-libs/libwebm 1.0.0.32 9999: WebM is an open, royalty-free, media file form
 media-libs/libwebp 1.4.0 1.5.0 1.6.0: A lossy image compression format
 media-libs/libwmf 0.2.13-r2 0.2.15-r1: Library for reading vector images in Microsoft's Windows Metafile Format (WMF)
 media-libs/libxmi 1.3-r1 1.3-r2: C/C++ function library for rasterizing 2-D vector graphics
-media-libs/libxmp 4.6.3: Library that renders module files to PCM data
+media-libs/libxmp 4.6.3 4.7.1: Library that renders module files to PCM data
 media-libs/libxspf 1.2.1: Playlist handling library
 media-libs/libxtract 0.6.6: A simple, portable, lightweight library of audio feature extraction functions
 media-libs/libyuv 1904-r1 1909 9999: Open source project that includes YUV scaling and conversion functionality
@@ -13665,14 +13665,14 @@ media-libs/rubberband 4.0.0-r1: An audio time-stretching and pitch-shifting libr
 media-libs/sbc 2.0 2.1: Audio codec to connect bluetooth HQ audio devices as headphones or loudspeakers
 media-libs/sdl-gfx 2.0.26-r1 2.0.26-r2: Graphics drawing primitives library for SDL
 media-libs/sdl-image 1.2.12_p20220527-r1: Image file loading library
-media-libs/sdl-mixer 1.2.12_p20240525 1.2.12_p20260511: Simple Direct Media Layer Mixer Library
+media-libs/sdl-mixer 1.2.12_p20260511: Simple Direct Media Layer Mixer Library
 media-libs/sdl-net 1.2.8_p20221010: Simple Direct Media Layer Network Support Library
 media-libs/sdl-pango 0.1.2-r2: connect the text rendering engine of GNOME to SDL
 media-libs/sdl-sound 1.0.3_p20220525: Simple Direct Media Layer Mixer Library
 media-libs/sdl-ttf 2.0.11_p20220525: Library that allows you to use TrueType fonts in SDL applications
 media-libs/sdl2-gfx 1.0.4-r1: Graphics drawing primitives library for SDL2
 media-libs/sdl2-image 2.6.3 2.6.3-r1 2.8.2 2.8.5-r1 2.8.8: Image file loading library
-media-libs/sdl2-mixer 2.6.3-r1 2.8.1-r3 2.8.2: Simple Direct Media Layer Mixer Library
+media-libs/sdl2-mixer 2.6.3-r1 2.8.1-r4 2.8.2-r1: Simple Direct Media Layer Mixer Library
 media-libs/sdl2-net 2.0.1 2.2.0: Simple Direct Media Layer Network Support Library
 media-libs/sdl2-pango 2.1.5: SDL2 port of SDL_Pango for rendering text using Pango
 media-libs/sdl2-ttf 2.20.2 2.22.0 2.24.0: Library that allows you to use TrueType fonts in SDL applications
