@@ -1117,7 +1117,7 @@ app-admin/watchfolder 0.3.3-r2: Watches directories and processes files
 app-admin/webalizer 2.23.08-r1: Webserver log file analyzer
 app-admin/webapp-config 1.56 9999: Gentoo's installer for web-based applications
 app-admin/whowatch 1.8.6-r2: Displays information about users currently logged on in real time
-app-admin/winbox 4.2 4.3_rc1: Management Software for MikroTik RouterOS
+app-admin/winbox 4.3: Management Software for MikroTik RouterOS
 app-admin/xkcdpass 1.20.0 1.30.0: Password generator inspired by XKCD 936
 app-admin/xstow 1.1.1: Replacement for GNU stow with extensions
 app-admin/xtail 2.1_p8: Tail multiple logfiles at once, even if rotated
@@ -1421,7 +1421,7 @@ app-containers/snapd 2.63: Service and tools for management of snap packages
 app-containers/syft 0.75.0 0.76.0 0.94.0 0.95.0 1.9.0 1.18.1: Generate a Software Bill of Materials from container images and filesystems
 app-containers/umoci 0.4.7 0.6.0: Manipulation tool for OCI images
 app-crypt/acme 3.2.0-r100: An implementation of the ACME protocol
-app-crypt/acme-sh 3.1.3 9999: A pure Unix shell script implementing ACME client protocol
+app-crypt/acme-sh 3.1.4 9999: A pure Unix shell script implementing ACME client protocol
 app-crypt/acme-tiny 5.0.2 5.0.3: Tiny, auditable script for Let's Encrypt's ACME Protocol
 app-crypt/acr38u 1.7.11-r4: Non CCID driver for ACR38 AC1038-based Smart Card Reader
 app-crypt/adcli 0.9.3.1: Tool for performing actions on an Active Directory domain
@@ -8816,7 +8816,7 @@ dev-python/jsonschema-specifications 2025.9.1: The JSON Schema meta-schemas and 
 dev-python/jsonxs 0.6-r1: Get/set values in JSON and Python datastructures
 dev-python/junit-xml 1.9-r1: Create JUnit XML test result documents
 dev-python/jupyter 1.1.1-r1: Jupyter metapackage. Install all the Jupyter components in one go
-dev-python/jupyter-builder 1.1.1: JupyterLab build tools
+dev-python/jupyter-builder 1.1.1-r1: JupyterLab build tools
 dev-python/jupyter-client 8.9.1: Jupyter protocol implementation and client libraries
 dev-python/jupyter-console 6.6.3-r1: A terminal-based console frontend for Jupyter kernels
 dev-python/jupyter-core 5.9.1: Core common functionality of Jupyter projects
@@ -15453,7 +15453,7 @@ net-misc/omniORB 4.3.0: A robust, high-performance CORBA 2 ORB
 net-misc/omnisync 1.0_p20200130-r1: A driver for NTPd for people who are firewall-challenged
 net-misc/onedrive 2.5.6 2.5.7-r1 2.5.9 2.5.10: Free Client for OneDrive on Linux
 net-misc/openntpd 6.2_p3-r2 6.2_p3-r3 6.8_p1-r2: Lightweight NTP server ported from OpenBSD
-net-misc/openrdap 0.9.1 0.10.0: RDAP command line client
+net-misc/openrdap 0.10.1: RDAP command line client
 net-misc/openrsync 0.5.0_p20250127 0.5.0_p20260706 9999: BSD-licensed implementation of rsync
 net-misc/openssh 9.8_p1-r4 9.9_p2-r4 10.0_p1 10.0_p2 10.1_p1-r1 10.2_p1 10.2_p1-r1 10.3_p1 10.4_p1-r1: Port of OpenBSD's free SSH release
 net-misc/openssh-contrib 9.7_p1-r4: Port of OpenBSD's free SSH release with HPN/X509 patches
@@ -16534,7 +16534,7 @@ sci-ml/FP16 2024.05.27-r1 2024.06.20: conversion to/from half-precision floating
 sci-ml/NNPACK 2020.12.22-r4: acceleration package for neural network computations
 sci-ml/XNNPACK 2024.12.03: library of floating-point neural network inference operators
 sci-ml/accelerate 1.13.0-r1: Run your *raw* PyTorch training script on any kind of device
-sci-ml/caffe2 2.11.0-r3 2.12.0-r2: A deep learning framework
+sci-ml/caffe2 2.11.0-r3 2.12.0-r2 2.13.0: A deep learning framework
 sci-ml/clearml 1.18.0: Auto-Magical CI/CD to streamline your AI workload
 sci-ml/cudnn-frontend 1.10.0 1.11.0 1.12.1 1.15.0 1.16.1: A c++ wrapper for the cudnn backend API
 sci-ml/datasets 4.8.5: Access and share datasets for Audio, Computer Vision, and NLP tasks
@@ -18092,7 +18092,7 @@ sys-process/atop 2.12.1: Resource-specific view of processes
 sys-process/audit 4.1.4-r4: Userspace utilities for storing and processing auditing records
 sys-process/bashtop 0.9.25: Resource monitor that shows usage and stats
 sys-process/bcron 0.11: A new cron system designed with secure operations in mind by Bruce Guenter
-sys-process/below 0.11.0-r1: An interactive tool to view and record historical system data
+sys-process/below 0.11.0-r1 9999: An interactive tool to view and record historical system data
 sys-process/bottom 0.11.1 0.12.3: A graphical process/system monitor with a customizable interface
 sys-process/bpytop 1.0.68-r1: Linux/OSX/FreeBSD resource monitor
 sys-process/btop 1.4.6 1.4.7: A monitor of resources
