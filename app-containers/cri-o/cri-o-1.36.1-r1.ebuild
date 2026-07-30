@@ -1,9 +1,9 @@
-# Copyright 1999-2025 Gentoo Authors
+# Copyright 1999-2026 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=8
+EAPI=9
 
-EGIT_COMMIT=067a88aedf5d7c658a2acb81afe82d6c3a367a52
+EGIT_COMMIT=75a79851f912e67647903fddddcb65ae1bfdabeb
 
 inherit go-module
 
@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm64"
 IUSE="btrfs +device-mapper selinux systemd"
 
-COMMON_DEPEND="
+DEPEND="
 	app-crypt/gpgme:=
 	app-containers/conmon
 	app-containers/runc
@@ -32,28 +32,24 @@ COMMON_DEPEND="
 	btrfs? ( sys-fs/btrfs-progs )
 	device-mapper? ( sys-fs/lvm2:= )
 	selinux? ( sys-libs/libselinux:= )
-	systemd? ( sys-apps/systemd:= )"
-DEPEND="
-	${COMMON_DEPEND}
-	dev-go/go-md2man"
-RDEPEND="${COMMON_DEPEND}
+	systemd? ( sys-apps/systemd:= )
+"
+RDEPEND="${DEPEND}
 	!<app-containers/podman-1.3.2-r1
-	selinux? ( sec-policy/selinux-crio )"
-BDEPEND="sys-apps/which"
+	selinux? ( sec-policy/selinux-crio )
+"
+BDEPEND="
+	dev-go/go-md2man
+	>=dev-lang/go-1.26.3
+	sys-apps/which
+"
 
 src_prepare() {
 	default
 
-	sed -e '/^export GOPROXY=/d' \
-		-e '/^GIT_.*/d' \
-		-e '/	git diff --exit-code/d' \
-		-e 's/$(GO) build -i/$(GO) build -v -work -x/' \
-		-e 's/\${GIT_COMMIT}/'${EGIT_COMMIT}'/' \
-		-e "s|^GIT_COMMIT := .*|GIT_COMMIT := ${EGIT_COMMIT}|" \
-		-e "s|^COMMIT_NO := .*|COMMIT_NO := ${EGIT_COMMIT}|" \
-		-i Makefile || die
-
 	echo ".NOTPARALLEL: binaries docs" >> Makefile || die
+
+	sed -e '/STRIP/d' -e 's/ -Werror / /' -i pinns/Makefile || die
 
 	sed -e 's:/usr/local/bin:/usr/bin:' \
 		-i contrib/systemd/* || die
@@ -72,12 +68,15 @@ src_compile() {
 	emake all \
 		GOBIN="${S}/bin" \
 		GO_BUILD="go build ${GOFLAGS}" \
+		BUILD_COMMIT="${EGIT_COMMIT}" \
+		SHRINKFLAGS="-w" \
 		GO_MD2MAN="$(which go-md2man)"
 }
 
 src_install() {
 	emake install install.config install.systemd \
 		DESTDIR="${D}" \
+		BUILD_COMMIT="${EGIT_COMMIT}" \
 		GO_MD2MAN="$(which go-md2man)" \
 		PREFIX="${D}${EPREFIX}/usr"
 	keepdir /etc/crio
@@ -96,4 +95,5 @@ src_install() {
 	keepdir /etc/cni/net.d
 	insinto /etc/cni/net.d
 	doins contrib/cni/99-loopback.conflist
+	dosym -r /usr/share/containers/policy.json /etc/containers/policy.json #979676
 }
