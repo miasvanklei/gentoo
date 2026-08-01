@@ -3115,7 +3115,7 @@ app-portage/iwdevtools 0.13.1 9999: Small tools to aid with Gentoo development, 
 app-portage/kuroneko 0.1.5: Vulnerability checker using data scraped from Gentoo Bugzilla
 app-portage/kuroo 1.2.4 9999: Graphical Portage frontend based on KDE Frameworks
 app-portage/metagen 0.7.4 0.7.4-r1 9999: metadata.xml generator for ebuilds
-app-portage/mgorny-dev-scripts 83 84: Handy scripts for ebuild development and more
+app-portage/mgorny-dev-scripts 83 84 85: Handy scripts for ebuild development and more
 app-portage/mirrorselect 2.6.4 2.6.5 9999: Tool to help select distfiles mirrors for Gentoo
 app-portage/nattka 0.4.2-r1 0.4.3: A New Arch Tester Toolkit -- open-source stable-bot replacement
 app-portage/no-distcc-env 9999: package.env files to disable distcc on a per-package basis
@@ -5988,7 +5988,7 @@ dev-libs/tntnet 3.0: Modular, multithreaded web application server extensible wi
 dev-libs/tomsfastmath 0.13.1-r1: Fast public domain large integer arithmetic library
 dev-libs/totem-pl-parser 3.26.6-r2 3.26.7: Playlist parsing library
 dev-libs/tre 0.8.0_p20210321-r4 0.9.0-r1: Lightweight, robust, and efficient POSIX compliant regexp matching library
-dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 0.26.3 0.26.5 0.26.6 0.26.7 0.26.8 9999: Tree-sitter is a parser generator tool and an incremental parsing library
+dev-libs/tree-sitter 0.24.3 0.25.6 0.25.8 0.25.10 0.26.3 0.26.5 0.26.6 0.26.7 0.26.8 0.26.11 9999: Tree-sitter is a parser generator tool and an incremental parsing library
 dev-libs/tree-sitter-bash 0.21.0-r1 0.23.3 0.25.0 0.25.1: Bash grammar for Tree-sitter
 dev-libs/tree-sitter-c 0.23.3 0.23.4 0.23.5 0.24.1 0.24.2: C grammar for Tree-sitter
 dev-libs/tree-sitter-c-sharp 0.23.0 0.23.1 0.23.5: C# grammar for Tree-sitter
@@ -6213,7 +6213,7 @@ dev-ml/graphics 5.1.2-r1 5.2.0-r1: The OCaml graphics library
 dev-ml/gsl-ocaml 1.24.3-r2 1.25.1: OCaml bindings for the GSL library (successor of dev-ml/ocamlgsl)
 dev-ml/hmap 0.8.1: Heterogeneous value maps for OCaml
 dev-ml/int_repr 0.16.0 0.17.0-r1: Integers of various widths
-dev-ml/integers 0.7.0: Various signed and unsigned integer types for OCaml
+dev-ml/integers 0.7.0 0.8.0: Various signed and unsigned integer types for OCaml
 dev-ml/iostream 0.3: Generic, composable IO input and output streams
 dev-ml/jane-street-headers 0.16.0 0.17.0: Jane Street header files
 dev-ml/jingoo 1.5.0 1.5.1 1.5.2: OCaml template engine almost compatible with Jinja2
@@ -8725,7 +8725,7 @@ dev-python/hvac 2.4.0: HashiCorp Vault API client
 dev-python/hypercorn 0.18.0: A ASGI Server based on Hyper libraries and inspired by Gunicorn
 dev-python/hyperframe 6.1.0: HTTP/2 framing layer for Python
 dev-python/hyperlink 21.0.0-r1: A featureful, correct URL for Python
-dev-python/hypothesis 6.155.7 6.156.1 6.156.2 6.156.4 6.156.6 6.156.9 6.157.0 6.157.2 6.160.0 6.161.0 6.161.1 6.161.5 6.161.8 6.163.0 6.164.0: A library for property based testing
+dev-python/hypothesis 6.155.7 6.156.9 6.157.2 6.161.8 6.164.0: A library for property based testing
 dev-python/hypothesis-gentoo 3 4: Plugin to create 'gentoo' hypothesis profile, disabling health checks
 dev-python/icalendar 7.1.3 7.2.2: RFC 5545 compatible parser and generator of iCalendar files
 dev-python/id 1.6.1: A tool for generating OIDC identities
@@ -9566,7 +9566,7 @@ dev-python/rtslib-fb 2.1.76 2.2.4-r1: A Python object API for managing the Linux
 dev-python/ruamel-yaml 0.19.1: YAML parser/emitter that supports roundtrip comment preservation
 dev-python/ruamel-yaml-clib 0.2.15: C-based reader/scanner and emitter for dev-python/ruamel-yaml
 dev-python/ruamel-yaml-clibz 0.3.7: C-based reader/scanner and emitter for dev-python/ruamel-yaml
-dev-python/s3transfer 0.18.0 0.19.0 0.19.1 0.19.2: An Amazon S3 Transfer Manager
+dev-python/s3transfer 0.18.0 0.19.2: An Amazon S3 Transfer Manager
 dev-python/sabctools 8.2.6 9.4.0 9.4.1 9.5.0 9.5.1 9.6.0 9.6.1 9.6.2: Module providing raw yEnc encoding/decoding for SABnzbd
 dev-python/sarge 0.1.8: Wrapper for subprocess which provides command pipeline functionality
 dev-python/sarif-om 1.0.4-r1: Classes implementing the SARIF 2.1.0 object model
@@ -11210,7 +11210,7 @@ dev-util/tinlink 1.0.0-r2: Tool to create very small elf binary from pure binary
 dev-util/tkdiff 5.7 6.0: Graphical front end to the diff program
 dev-util/tmake 2.12-r2: Cross platform Makefile tool
 dev-util/trace-cmd 3.3.2 3.3.3 3.4: User-space front-end for Ftrace
-dev-util/tree-sitter-cli 0.24.3-r1 0.25.6 0.25.8 0.25.10 0.26.6 0.26.8: Command-line tool for creating and testing tree-sitter grammars
+dev-util/tree-sitter-cli 0.24.3-r1 0.25.6 0.25.8 0.25.10 0.26.6 0.26.8 0.26.11: Command-line tool for creating and testing tree-sitter grammars
 dev-util/treecc 0.3.10-r2 0.3.10-r3: Compiler-compiler tool for aspect-oriented programming
 dev-util/txt2regex 0.9: A Regular Expression wizard that converts human sentences to regexs
 dev-util/ty 0.0.7: An extremely fast Python type checker and language server, written in Rust
