@@ -1401,7 +1401,7 @@ app-containers/earthly 0.8.16-r1: Build automation tool that executes in contain
 app-containers/flannel 0.26.3: An etcd backed network fabric for containers
 app-containers/grype 0.59.1 0.61.0 0.72.0 0.73.0 0.79.3 0.86.1: A vulnerability scanner for container images and filesystems
 app-containers/img 0.5.11: Standalone daemon-less unprivileged Dockerfile and OCI container image builder
-app-containers/incus 7.0.1 7.0.1-r1 7.2 7.3 9999: Modern, secure and powerful system container and virtual machine manager
+app-containers/incus 7.0.1 7.0.1-r1 7.2 7.3-r1 9999: Modern, secure and powerful system container and virtual machine manager
 app-containers/k3d 5.8.3 5.9.0: k3d creates k3s clusters in docker
 app-containers/kompose 1.35.0 1.38.0: Tool to move from docker-compose to Kubernetes
 app-containers/lxc 7.0.0: A userspace interface for the Linux kernel containment features
@@ -16540,7 +16540,7 @@ sci-misc/ncview 2.1.8: X-based viewer for netCDF files
 sci-misc/netlogo-bin 6.2.2: Programming language and IDE for agent-based modelling
 sci-misc/oww 0.86.5 0.86.5-r2: A one-wire weather station for Dallas Semiconductor
 sci-misc/vitables 3.1.0: A graphical tool for browsing / editing files in both PyTables and HDF5 formats
-sci-ml/FBGEMM 1.4.0.2025.12.10-r1 1.7.0: Facebook GEneral Matrix Multiplication
+sci-ml/FBGEMM 1.4.0.2025.12.10-r1 1.7.0-r1: Facebook GEneral Matrix Multiplication
 sci-ml/FP16 2024.05.27-r1 2024.06.20: conversion to/from half-precision floating point formats
 sci-ml/NNPACK 2020.12.22-r4: acceleration package for neural network computations
 sci-ml/XNNPACK 2024.12.03: library of floating-point neural network inference operators
