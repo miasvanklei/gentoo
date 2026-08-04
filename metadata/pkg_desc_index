@@ -4009,7 +4009,7 @@ dev-db/cockroach 2.1.5-r1 19.1.1-r1: open source database for building cloud ser
 dev-db/datadraw 3.1.1 3.1.1-r1: feature rich database generator for high performance C applications
 dev-db/dbeaver-bin 26.1.0 26.1.2: Free universal database tool (community edition)
 dev-db/duckdb 1.5.4 1.5.5: high-performance analytical database system
-dev-db/etcd 3.4.31 3.5.18 3.5.26 3.6.7 3.6.11: Highly-available key value store for shared configuration and service discovery
+dev-db/etcd 3.4.31 3.5.18 3.5.26 3.6.11 3.6.14: Highly-available key value store for shared configuration and service discovery
 dev-db/freetds 1.5 1.5.6: Tabular Datastream Library
 dev-db/futuresql 0.1.1: Non-blocking Qt database framework
 dev-db/gqlplus 1.16-r2: a front-end for Oracle program sqlplus with command-line editing
@@ -8403,7 +8403,7 @@ dev-python/cattrs 26.1.0: Composable complex class support for attrs and datacla
 dev-python/cbor2 6.1.2 6.1.3 6.1.4: CBOR (de)serializer with extensive tag support
 dev-python/cerberus 1.3.8: A lightweight and extensible data-validation library for Python
 dev-python/certifi 3024.7.22: A certifi hack to use system trust store on Linux/FreeBSD
-dev-python/cffi 2.0.0 2.1.0: Foreign Function Interface for Python calling C code
+dev-python/cffi 2.0.0 2.1.0 2.1.1: Foreign Function Interface for Python calling C code
 dev-python/cfgv 3.5.0: Validate configuration and produce human-readable error messages
 dev-python/cfn-lint 1.52.1 1.53.2 1.53.3: CloudFormation Linter
 dev-python/cftime 1.6.5: Time-handling functionality from netcdf4-python
