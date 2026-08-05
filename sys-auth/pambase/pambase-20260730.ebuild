@@ -40,6 +40,7 @@ REQUIRED_USE="
 MIN_PAM_REQ=1.4.0
 
 RDEPEND="
+	sys-apps/util-linux[pam]
 	>=sys-libs/pam-${MIN_PAM_REQ}
 	elogind? ( sys-auth/elogind[pam] )
 	gnome-keyring? ( gnome-base/gnome-keyring[pam] )
@@ -69,6 +70,10 @@ BDEPEND="
 		dev-python/jinja2[${PYTHON_USEDEP}]
 	')
 "
+
+PATCHES=(
+	"${FILESDIR}/use-pam_lastlog2.patch"
+)
 
 python_check_deps() {
 	python_has_version "dev-python/jinja2[${PYTHON_USEDEP}]"
