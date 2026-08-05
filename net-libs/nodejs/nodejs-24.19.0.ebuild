@@ -4,7 +4,7 @@
 EAPI=8
 
 CONFIG_CHECK="~ADVISE_SYSCALLS"
-PYTHON_COMPAT=( python3_{11..13} )
+PYTHON_COMPAT=( python3_{11..14} )
 PYTHON_REQ_USE="threads(+)"
 
 inherit bash-completion-r1 check-reqs flag-o-matic linux-info
@@ -12,20 +12,22 @@ inherit ninja-utils pax-utils python-any-r1 toolchain-funcs xdg-utils
 
 DESCRIPTION="A JavaScript runtime built on Chrome's V8 JavaScript engine"
 HOMEPAGE="https://nodejs.org/"
-LICENSE="Apache-1.1 Apache-2.0 BSD BSD-2 MIT"
+LICENSE="Apache-1.1 Apache-2.0 BlueOak-1.0.0 BSD BSD-2 MIT npm? ( Artistic-2 )"
 
 if [[ ${PV} == *9999 ]]; then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/nodejs/node"
 	SLOT="0"
 else
-	SRC_URI="https://nodejs.org/dist/v${PV}/node-v${PV}.tar.xz"
+	SRC_URI="
+		https://nodejs.org/dist/v${PV}/node-v${PV}.tar.xz
+	"
 	SLOT="0/$(ver_cut 1)"
 	KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc64 ~riscv ~x86 ~x64-macos"
 	S="${WORKDIR}/node-v${PV}"
 fi
 
-IUSE="corepack cpu_flags_x86_sse2 debug doc +icu +inspector lto npm pax-kernel +snapshot +ssl +system-icu +system-ssl test"
+IUSE="corepack cpu_flags_x86_sse2 debug doc +icu +inspector lto +npm pax-kernel +snapshot +ssl +system-icu +system-ssl test"
 REQUIRED_USE="inspector? ( icu ssl )
 	npm? ( ssl )
 	system-icu? ( icu )
@@ -34,23 +36,35 @@ REQUIRED_USE="inspector? ( icu ssl )
 
 RESTRICT="!test? ( test )"
 
-RDEPEND=">=app-arch/brotli-1.0.9:=
-	>=dev-libs/libuv-1.46.0:=
-	>=net-dns/c-ares-1.18.1:=
-	>=net-libs/nghttp2-1.41.0:=
-	>=net-libs/ngtcp2-1.1.0:=
+COMMON_DEPEND=">=app-arch/brotli-1.1.0:=
+	dev-db/sqlite:3
+	>=dev-cpp/ada-3.3.0:=
+	>=dev-cpp/simdutf-7.3.4:=
+	>=dev-libs/libuv-1.52.1:=
+	>=dev-libs/simdjson-4.6.1:=
+	>=net-dns/c-ares-1.34.5:=
+	>=net-libs/nghttp2-1.69.0:=
+	>=net-libs/nghttp3-1.14.0:=
 	virtual/zlib:=
 	corepack? ( !sys-apps/yarn )
 	system-icu? ( >=dev-libs/icu-73:= )
-	system-ssl? ( >=dev-libs/openssl-1.1.1:0= )
-	sys-devel/gcc:*"
+	system-ssl? (
+		>=net-libs/ngtcp2-1.14.0:=
+		>=dev-libs/openssl-3.5.6:0=
+	)
+	!system-ssl? ( >=net-libs/ngtcp2-1.14.0:=[-gnutls] )
+	|| (
+		sys-devel/gcc:*
+		llvm-runtimes/libatomic-stub
+	)"
 BDEPEND="${PYTHON_DEPS}
 	app-alternatives/ninja
 	sys-apps/coreutils
 	virtual/pkgconfig
 	test? ( net-misc/curl )
 	pax-kernel? ( sys-apps/elfix )"
-DEPEND="${RDEPEND}"
+DEPEND="${COMMON_DEPEND}"
+RDEPEND="${COMMON_DEPEND}"
 
 # These are measured on a loong machine with -ggdb on, and only checked
 # if debugging flags are present in CFLAGS.
@@ -61,6 +75,10 @@ DEPEND="${RDEPEND}"
 # fatter binaries and set the disk requirement to 22GiB.
 CHECKREQS_MEMORY="8G"
 CHECKREQS_DISK_BUILD="22G"
+
+PATCHES=(
+	"${FILESDIR}"/${P}-32-bit.patch
+)
 
 pkg_pretend() {
 	if [[ ${MERGE_TYPE} != "binary" ]]; then
@@ -102,7 +120,11 @@ src_prepare() {
 	fi
 
 	# We need to disable mprotect on two files when it builds Bug 694100.
-	use pax-kernel && PATCHES+=( "${FILESDIR}"/${PN}-20.6.0-paxmarking.patch )
+	use pax-kernel &&
+		PATCHES+=( "${FILESDIR}"/${PN}-24.1.0-paxmarking.patch )
+
+	use ppc64 &&
+		PATCHES+=(	"${FILESDIR}/${PN}-24.11.1-restore-ppc64be.patch" )
 
 	default
 }
@@ -112,20 +134,23 @@ src_configure() {
 
 	# LTO compiler flags are handled by configure.py itself
 	filter-lto
-	# nodejs unconditionally links to libatomic #869992
-	# specifically it requires __atomic_is_lock_free which
-	# is not yet implemented by llvm-runtimes/compiler-rt (see
-	# https://reviews.llvm.org/D85044?id=287068), therefore
-	# we depend on gcc and force using libgcc as the support lib
-	tc-is-clang && append-ldflags "--rtlib=libgcc --unwindlib=libgcc"
+	# The warnings are *so* noisy and make build.logs massive
+	append-cxxflags $(test-flags-CXX -Wno-template-id-cdtor)
+	# https://bugs.gentoo.org/931514
+	use arm64 && append-flags $(test-flags-CXX -mbranch-protection=none)
 
 	local myconf=(
 		--ninja
+		--shared-ada
 		--shared-brotli
 		--shared-cares
 		--shared-libuv
 		--shared-nghttp2
+		--shared-nghttp3
 		--shared-ngtcp2
+		--shared-simdjson
+		--shared-simdutf
+		--shared-sqlite
 		--shared-zlib
 	)
 	use debug && myconf+=( --debug )
@@ -179,13 +204,6 @@ src_install() {
 
 	pax-mark -m "${ED}"/usr/bin/node
 
-	# set up a symlink structure that node-gyp expects..
-	dodir /usr/include/node/deps/{v8,uv}
-	dosym . /usr/include/node/src
-	for var in deps/{uv,v8}/include; do
-		dosym ../.. /usr/include/node/${var}
-	done
-
 	if use doc; then
 		docinto html
 		dodoc -r "${S}"/doc/*
@@ -235,14 +253,13 @@ src_test() {
 		test/parallel/test-dns.js
 		test/parallel/test-dns-resolveany-bad-ancount.js
 		test/parallel/test-dns-setserver-when-querying.js
+		test/parallel/test-dotenv.js
 		test/parallel/test-fs-mkdir.js
 		test/parallel/test-fs-read-stream.js
 		test/parallel/test-fs-utimes-y2K38.js
 		test/parallel/test-fs-watch-recursive-add-file.js
 		test/parallel/test-http2-client-set-priority.js
 		test/parallel/test-http2-priority-event.js
-		test/parallel/test-inspector-emit-protocol-event.js
-		test/parallel/test-inspector-network-domain.js
 		test/parallel/test-process-euid-egid.js
 		test/parallel/test-process-get-builtin.mjs
 		test/parallel/test-process-initgroups.js
@@ -251,15 +268,18 @@ src_test() {
 		test/parallel/test-release-npm.js
 		test/parallel/test-socket-write-after-fin-error.js
 		test/parallel/test-strace-openat-openssl.js
-		test/parallel/test-tls-cert-regression.js
-		test/parallel/test-tls-client-getephemeralkeyinfo.js
-		test/parallel/test-tls-getcipher.js
-		test/parallel/test-tls-set-ciphers.js
-		test/parallel/test-tls-junk-closes-server.js
-		test/parallel/test-util-styletext.js
+		test/sequential/test-tls-session-timeout.js
 		test/sequential/test-util-debug.js
 	)
-	use inspector || drop_tests+=( test/sequential/test-watch-mode.mjs )
+	use inspector ||
+		drop_tests+=(
+			test/parallel/test-inspector-emit-protocol-event.js
+			test/parallel/test-inspector-network-arbitrary-data.js
+			test/parallel/test-inspector-network-domain.js
+			test/parallel/test-inspector-network-fetch.js
+			test/parallel/test-inspector-network-http.js
+			test/sequential/test-watch-mode.mjs
+		)
 	rm -f "${drop_tests[@]}" || die "disabling tests failed"
 
 	out/${BUILDTYPE}/cctest || die
@@ -269,6 +289,6 @@ src_test() {
 pkg_postinst() {
 	if use npm; then
 		ewarn "remember to run: source /etc/profile if you plan to use nodejs"
-		ewarn "	in your current shell"
+		ewarn " in your current shell"
 	fi
 }
