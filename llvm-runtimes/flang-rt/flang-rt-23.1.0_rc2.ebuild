@@ -26,7 +26,7 @@ BDEPEND="
 "
 
 LLVM_COMPONENTS=(
-	runtimes flang-rt cmake flang libc/shared llvm/{cmake,utils}
+	runtimes flang-rt openmp cmake flang libc/shared llvm/{cmake,utils}
 )
 LLVM_TEST_COMPONENTS=( third-party/unittest )
 llvm.org_set_globals
@@ -48,14 +48,19 @@ src_configure() {
 		# we may not have a runtime yet
 		-DCMAKE_Fortran_COMPILER_WORKS=TRUE
 
-		-DLLVM_ENABLE_RUNTIMES="flang-rt"
+		-DLLVM_ENABLE_RUNTIMES="flang-rt;openmp"
 		# this package forces NO_DEFAULT_PATHS
 		-DLLVM_BINARY_DIR="${ESYSROOT}/usr/lib/llvm/${LLVM_MAJOR}"
 		# set correct install paths
 		-DRUNTIMES_INSTALL_RESOURCE_PATH="${EPREFIX}/usr/lib/clang/${LLVM_MAJOR}"
 		-DLLVM_DEFAULT_TARGET_TRIPLE="${CHOST}"
+		-DLLVM_INSTALL_TOOLCHAIN_ONLY=ON
 
 		-DFLANG_RT_INCLUDE_TESTS=$(usex test)
+
+		-DLIBOMP_FORTRAN_MODULES_ONLY=ON
+		-DLIBOMP_FORTRAN_MODULES=ON
+		-DOPENMP_ENABLE_OMPT_TOOLS=OFF
 	)
 	use test && mycmakeargs+=(
 		-DLLVM_EXTERNAL_LIT="${EPREFIX}/usr/bin/lit"
