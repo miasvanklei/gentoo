@@ -12,7 +12,6 @@ S="${WORKDIR}"
 
 LICENSE="metapackage"
 SLOT="${PV}"
-KEYWORDS="~arm64 ~amd64"
 IUSE="default-compiler-rt default-lld llvm-libunwind"
 
 RDEPEND="
