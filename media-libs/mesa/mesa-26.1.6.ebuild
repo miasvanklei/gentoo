@@ -3,7 +3,7 @@
 
 EAPI=8
 
-LLVM_COMPAT=( {18..22} )
+LLVM_COMPAT=( {18..23} )
 LLVM_OPTIONAL=1
 CARGO_OPTIONAL=1
 PYTHON_COMPAT=( python3_{12..14} )
@@ -86,10 +86,10 @@ RDEPEND="
 	unwind? ( sys-libs/libunwind[${MULTILIB_USEDEP}] )
 	llvm? (
 		$(llvm_gen_dep "
-			llvm-core/llvm:\${LLVM_SLOT}[llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}]
+			llvm-core/llvm:\${LLVM_SLOT}[${MULTILIB_USEDEP}]
 			opencl? (
 				dev-util/spirv-llvm-translator:\${LLVM_SLOT}
-				llvm-core/clang:\${LLVM_SLOT}[llvm_targets_AMDGPU(+),${MULTILIB_USEDEP}]
+				llvm-core/clang:\${LLVM_SLOT}[${MULTILIB_USEDEP}]
 				=llvm-runtimes/libclc-\${LLVM_SLOT}*[spirv(-)]
 			)
 		")
@@ -386,10 +386,10 @@ multilib_src_configure() {
 		$(meson_use test build-tests)
 		-Dexpat=enabled
 		$(meson_use opengl)
+		-Dglvnd=disabled
 		$(meson_feature opengl gbm)
 		$(meson_feature opengl gles1)
 		$(meson_feature opengl gles2)
-		$(meson_feature opengl glvnd)
 		$(meson_feature opengl egl)
 		$(meson_feature llvm)
 		$(meson_feature lm-sensors lmsensors)
