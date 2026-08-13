@@ -81,8 +81,7 @@ set_login_opt() {
 
 src_configure() {
 	local myeconfargs=(
-		# Negate new upstream default of disabling for now
-		--enable-lastlog
+		--disable-lastlog
 		--disable-static
 		$(use_with kernel_linux btrfs)
 		# Use bundled replacements for readpassphrase and freezero
