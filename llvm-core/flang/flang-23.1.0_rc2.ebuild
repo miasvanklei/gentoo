@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..14} )
+PYTHON_COMPAT=( python3_{12..14} )
 inherit cmake flag-o-matic llvm.org python-any-r1 toolchain-funcs
 
 DESCRIPTION="LLVM's Fortran frontend"
@@ -24,8 +24,6 @@ RDEPEND="
 "
 PDEPEND="
 	>=llvm-runtimes/flang-rt-${PV}:${LLVM_MAJOR}
-	llvm-runtimes/flang-runtime:${LLVM_MAJOR}
-	llvm-core/flang-toolchain-symlinks:${LLVM_MAJOR}
 "
 BDEPEND="
 	clang? ( llvm-core/clang )
@@ -80,9 +78,6 @@ src_configure() {
 		-DLLVM_INSTALL_TOOLCHAIN_ONLY=ON
 		# installed by llvm-runtimes/flang-rt
 		-DFLANG_INCLUDE_RUNTIME=OFF
-
-		# Use precompiled headers
-		-DCMAKE_DISABLE_PRECOMPILE_HEADERS=OFF
 
 		# TODO: always enable to obtain reproducible tools
 		-DFLANG_INCLUDE_TESTS=$(usex test)
