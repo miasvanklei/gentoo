@@ -1888,7 +1888,7 @@ app-editors/vile 9.8z 9.8z-r1: VI Like Emacs -- yet another full-featured vi clo
 app-editors/vim 9.1.1652-r2 9999: Vim, an improved vi-style text editor
 app-editors/vim-core 9.1.1652-r3 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r2 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.131.0 1.132.0: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscode 1.131.0 1.132.0 1.133.0: Multiplatform Visual Studio Code from Microsoft
 app-editors/vscodium 1.116.02821 1.126.04524: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
@@ -11188,7 +11188,7 @@ dev-util/rocminfo 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: ROCm Application for Reporting 
 dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: Callback/Activity Library for Performance tracing AMD GPU's
 dev-util/ropper 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rt-tests 2.9 2.10: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.14.9 0.15.22 0.16.1 0.16.2: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.14.9 0.15.22 0.16.1 0.16.2 0.16.3: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 1.29.0 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -14898,7 +14898,7 @@ net-firewall/conntrack-tools 1.4.8-r1 1.4.9: Connection tracking userspace tools
 net-firewall/ebtables 2.0.11-r3: Controls Ethernet frame filtering on a Linux bridge, MAC NAT and brouting
 net-firewall/ferm 2.7: Command line util for managing firewall rules
 net-firewall/firehol 3.1.8: iptables firewall generator
-net-firewall/firewalld 2.4.0 2.4.2 2.4.4: Firewall daemon with D-Bus interface providing a dynamic firewall
+net-firewall/firewalld 2.4.0 2.4.2 2.4.4 2.5.1: Firewall daemon with D-Bus interface providing a dynamic firewall
 net-firewall/fwbuilder 6.0.0_rc1_p20230723-r1: Firewall management GUI for iptables, PF, Cisco routers and more
 net-firewall/fwknop 2.6.11-r1: Single Packet Authorization and Port Knocking application
 net-firewall/ipkungfu 0.6.1-r2: A nice iptables firewall script
@@ -17542,7 +17542,7 @@ sys-apps/usermode-utilities 20070815-r6: Tools for use with Usermode Linux virtu
 sys-apps/uswid 0.4.7 0.6.0: Pure-Python library and CLI tool for processing SBoM metadata
 sys-apps/utempter 0.5.5.6-r2: App that allows non-privileged apps to write utmp (login) info
 sys-apps/util-linux 2.41.3-r1 2.41.4-r1 2.41.5 2.42.1 2.42.2 9999: Various useful Linux utilities
-sys-apps/uutils-coreutils 0.7.0 0.8.0-r1 0.9.0 9999: GNU coreutils rewritten in Rust
+sys-apps/uutils-coreutils 0.7.0 0.8.0-r1 0.9.0 0.10.0 9999: GNU coreutils rewritten in Rust
 sys-apps/uutils-findutils 0.8.0 9999: GNU findutils rewritten in Rust
 sys-apps/vbetool 1.2.2: Run real-mode video BIOS code to alter hw state (i.e. reinitialize video card)
 sys-apps/watchdog 5.16-r1: A software watchdog and /dev/watchdog daemon
