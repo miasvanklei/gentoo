@@ -1138,7 +1138,7 @@ app-alternatives/ninja 1: ninja symlinks
 app-alternatives/sh 0: /bin/sh (POSIX shell) symlink
 app-alternatives/tar 0: Tar symlink
 app-alternatives/yacc 1-r2: yacc symlinks
-app-antivirus/clamav 0.103.12-r5 0.103.12-r6 1.4.3 1.4.4 1.4.5 1.5.3: Clam Anti-Virus Scanner
+app-antivirus/clamav 0.103.12-r6 1.4.3 1.4.4 1.4.5 1.5.3: Clam Anti-Virus Scanner
 app-antivirus/clamtk 6.18-r1 6.18-r2: A graphical front-end for ClamAV
 app-antivirus/fangfrisch 1.9.2 1.9.2-r1: Update and verify unofficial Clam Anti-Virus signatures
 app-antivirus/lkrg 0.9.8 0.9.9 9999: Linux Kernel Runtime Guard
@@ -5893,7 +5893,7 @@ dev-libs/nng 1.10.1 1.11: Light-weight brokerless messaging
 dev-libs/npth 1.8: New GNU Portable Threads Library
 dev-libs/nsgenbind 0.9: Generate Javascript-to-DOM bindings from w3c webidl files
 dev-libs/nspr 4.36 4.38.2 4.39 4.40: Netscape Portable Runtime
-dev-libs/nss 3.112.5 3.125 3.126: Mozilla's Network Security Services library that implements PKI support
+dev-libs/nss 3.112.5 3.125 3.126 3.126.1: Mozilla's Network Security Services library that implements PKI support
 dev-libs/nss-pem 1.1.1: PEM file reader for Network Security Services (NSS)
 dev-libs/nsync 1.25.0 1.26.0: C library that exports various synchronization primitives, such as mutexes
 dev-libs/ntl 11.5.1-r4 11.6.0: High-performance and portable C++ number theory library
@@ -12440,7 +12440,7 @@ kde-apps/kimap 26.04.3: Library for interacting with IMAP servers
 kde-apps/kio-extras 26.04.3: KIO plugins present a filesystem-like view of arbitrary data
 kde-apps/kiriki 26.04.3: An addictive and fun dice game
 kde-apps/kiten 26.04.3: KDE Japanese dictionary and reference
-kde-apps/kitinerary 26.04.3-r1: Data Model and Extraction System for Travel Reservation information
+kde-apps/kitinerary 26.04.3-r2: Data Model and Extraction System for Travel Reservation information
 kde-apps/kjumpingcube 26.04.3: Tactical one or two player game
 kde-apps/kldap 26.04.3: Library for interacting with LDAP servers
 kde-apps/kleopatra 26.04.3: Certificate manager and GUI for OpenPGP and CMS cryptography
