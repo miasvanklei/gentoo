@@ -5953,7 +5953,7 @@ dev-libs/redland 1.0.17-r3: High-level interface for the Resource Description Fr
 dev-libs/rinutils 0.10.3: Set of C headers containing macros and static functions
 dev-libs/rlog 1.4: A C++ logging library
 dev-libs/rocdbgapi 6.3.3 6.4.3 7.0.2 7.1.0-r1 7.2.0: AMD Debugger API
-dev-libs/rocksdb 7.9.2-r1 8.11.3 9.10.0 10.5.1: Embeddable, persistent key-value store for fast storage
+dev-libs/rocksdb 7.9.2-r1 8.11.3 9.10.0 10.5.1 11.8.1: Embeddable, persistent key-value store for fast storage
 dev-libs/rocm-comgr 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: Radeon Open Compute Code Object Manager
 dev-libs/rocm-core 7.0.2 7.1.0 7.2.0: Library that provides ROCm release version and install path information
 dev-libs/rocm-device-libs 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: Radeon Open Compute Device Libraries
@@ -9950,41 +9950,41 @@ dev-python/zstandard 0.25.0: Zstandard Bindings for Python
 dev-python/zxcvbn 4.5.0: Realistic password strength estimator
 dev-qt/qlementine 1.4.2: Modern QStyle for desktop Qt6 applications
 dev-qt/qt-creator 20.0.0 20.0.1 9999: Lightweight IDE for C++/QML development centering around Qt
-dev-qt/qt-docs 6.11.1_p202605090529: Qt6 documentation and examples for Qt Creator and other tools
-dev-qt/qt3d 6.11.1 6.11.9999 6.12.9999 6.9999: 3D rendering module for the Qt6 framework
-dev-qt/qt5compat 6.11.1 6.11.9999 6.12.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
-dev-qt/qtbase 6.11.1 6.11.9999 6.12.9999 6.9999: Cross-platform application development framework
-dev-qt/qtcharts 6.11.1 6.11.9999 6.12.9999 6.9999: Chart component library for the Qt6 framework
-dev-qt/qtconnectivity 6.11.1 6.11.9999 6.12.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
-dev-qt/qtdeclarative 6.11.1-r1 6.11.9999 6.12.9999 6.9999: Qt Declarative (Quick 2)
-dev-qt/qtgraphs 6.11.1 6.11.9999 6.12.9999 6.9999: Graphs component library for the Qt6 framework
-dev-qt/qthttpserver 6.11.1 6.11.9999 6.12.9999 6.9999: HTTP server functionality for the Qt6 framework
-dev-qt/qtimageformats 6.11.1 6.11.9999 6.12.9999 6.9999: Additional format plugins for the Qt image I/O system
-dev-qt/qtlanguageserver 6.11.1 6.11.9999 6.12.9999 6.9999: Implementation of the Language Server Protocol for Qt
-dev-qt/qtlocation 6.11.1 6.11.9999 6.12.9999 6.9999: Location (places, maps, navigation) library for the Qt6 framework
-dev-qt/qtmultimedia 6.11.1 6.11.9999 6.12.9999 6.9999: Multimedia (audio, video, radio, camera) library for the Qt6 framework
-dev-qt/qtnetworkauth 6.11.1 6.11.9999 6.12.9999 6.9999: Network authorization library for the Qt6 framework
+dev-qt/qt-docs 6.11.1_p202605090529 6.11.2_p202608131018: Qt6 documentation and examples for Qt Creator and other tools
+dev-qt/qt3d 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: 3D rendering module for the Qt6 framework
+dev-qt/qt5compat 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
+dev-qt/qtbase 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Cross-platform application development framework
+dev-qt/qtcharts 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Chart component library for the Qt6 framework
+dev-qt/qtconnectivity 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
+dev-qt/qtdeclarative 6.11.1-r1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt Declarative (Quick 2)
+dev-qt/qtgraphs 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Graphs component library for the Qt6 framework
+dev-qt/qthttpserver 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: HTTP server functionality for the Qt6 framework
+dev-qt/qtimageformats 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Additional format plugins for the Qt image I/O system
+dev-qt/qtlanguageserver 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Implementation of the Language Server Protocol for Qt
+dev-qt/qtlocation 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Location (places, maps, navigation) library for the Qt6 framework
+dev-qt/qtmultimedia 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Multimedia (audio, video, radio, camera) library for the Qt6 framework
+dev-qt/qtnetworkauth 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Network authorization library for the Qt6 framework
 dev-qt/qtpbfimageplugin 5.2: Qt image plugin for displaying Mapbox vector tiles
-dev-qt/qtpositioning 6.11.1 6.11.9999 6.12.9999 6.9999: Physical position determination library for the Qt6 framework
-dev-qt/qtquick3d 6.11.1 6.11.9999 6.12.9999 6.9999: Qt module and API for defining 3D content in Qt QuickTools
-dev-qt/qtquicktimeline 6.11.1 6.11.9999 6.12.9999 6.9999: Qt module for keyframe-based timeline construction
-dev-qt/qtremoteobjects 6.11.1 6.11.9999 6.12.9999 6.9999: Inter-Process Communication (IPC) library for the Qt6 framework
-dev-qt/qtscxml 6.11.1 6.11.9999 6.12.9999 6.9999: State Chart XML (SCXML) support library for the Qt6 framework
-dev-qt/qtsensors 6.11.1 6.11.9999 6.12.9999 6.9999: Hardware sensor access library for the Qt6 framework
-dev-qt/qtserialbus 6.11.1 6.11.9999 6.12.9999 6.9999: Qt module to access CAN, ModBus, and other industrial serial buses and protocols
-dev-qt/qtserialport 6.11.1 6.11.9999 6.12.9999 6.9999: Serial port abstraction library for the Qt6 framework
-dev-qt/qtshadertools 6.11.1 6.11.9999 6.12.9999 6.9999: Qt APIs and Tools for Graphics Pipelines
-dev-qt/qtspeech 6.11.1-r1 6.11.9999 6.12.9999 6.9999: Text-to-speech library for the Qt6 framework
-dev-qt/qtsvg 6.11.1 6.11.9999 6.12.9999 6.9999: SVG rendering library for the Qt6 framework
-dev-qt/qttasktree 6.11.1 6.11.9999 6.12.9999 6.9999: Module to compose and execute asynchronous task workflows for the Qt6 framework
-dev-qt/qttools 6.11.1 6.11.9999 6.12.9999 6.9999: Qt Tools Collection
-dev-qt/qttranslations 6.11.1 6.11.9999 6.12.9999 6.9999: Translation files for the Qt6 framework
-dev-qt/qtvirtualkeyboard 6.11.1 6.11.9999 6.12.9999 6.9999: Customizable input framework and virtual keyboard for Qt
-dev-qt/qtwayland 6.11.1 6.11.9999 6.12.9999 6.9999: Toolbox for making Qt based Wayland compositors
-dev-qt/qtwebchannel 6.11.1 6.11.9999 6.12.9999 6.9999: Qt WebChannel
-dev-qt/qtwebengine 6.11.1 6.11.9999 6.12.9999 6.9999: Library for rendering dynamic web content in Qt6 C++ and QML applications
-dev-qt/qtwebsockets 6.11.1 6.11.9999 6.12.9999 6.9999: Implementation of the WebSocket protocol for the Qt6 framework
-dev-qt/qtwebview 6.11.1 6.11.9999 6.12.9999 6.9999: Module for displaying web content in a QML application using the Qt6 framework
+dev-qt/qtpositioning 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Physical position determination library for the Qt6 framework
+dev-qt/qtquick3d 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt module and API for defining 3D content in Qt QuickTools
+dev-qt/qtquicktimeline 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt module for keyframe-based timeline construction
+dev-qt/qtremoteobjects 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Inter-Process Communication (IPC) library for the Qt6 framework
+dev-qt/qtscxml 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: State Chart XML (SCXML) support library for the Qt6 framework
+dev-qt/qtsensors 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Hardware sensor access library for the Qt6 framework
+dev-qt/qtserialbus 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt module to access CAN, ModBus, and other industrial serial buses and protocols
+dev-qt/qtserialport 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Serial port abstraction library for the Qt6 framework
+dev-qt/qtshadertools 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt APIs and Tools for Graphics Pipelines
+dev-qt/qtspeech 6.11.1-r1 6.11.2 6.11.9999 6.12.9999 6.9999: Text-to-speech library for the Qt6 framework
+dev-qt/qtsvg 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: SVG rendering library for the Qt6 framework
+dev-qt/qttasktree 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Module to compose and execute asynchronous task workflows for the Qt6 framework
+dev-qt/qttools 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt Tools Collection
+dev-qt/qttranslations 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Translation files for the Qt6 framework
+dev-qt/qtvirtualkeyboard 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Customizable input framework and virtual keyboard for Qt
+dev-qt/qtwayland 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Toolbox for making Qt based Wayland compositors
+dev-qt/qtwebchannel 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt WebChannel
+dev-qt/qtwebengine 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Library for rendering dynamic web content in Qt6 C++ and QML applications
+dev-qt/qtwebsockets 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Implementation of the WebSocket protocol for the Qt6 framework
+dev-qt/qtwebview 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Module for displaying web content in a QML application using the Qt6 framework
 dev-ruby/GeoRuby 2.5.2-r2: Ruby data holder for OGC Simple Features
 dev-ruby/abbrev 0.1.2: Calculates a set of unique abbreviations for a given set of strings
 dev-ruby/abstract 1.0.0-r5: Library which enable you to define abstract method in Ruby
@@ -14452,7 +14452,7 @@ media-video/celluloid 0.26 0.29: Simple GTK+ frontend for mpv
 media-video/chaplin 1.10-r3: This is a program to raw copy chapters from a dvd using libdvdread
 media-video/cheese 44.1-r1: A cheesy program to take pictures and videos from your webcam
 media-video/cpvts 1.2-r1: raw copy title sets from a DVD to your harddisc
-media-video/devedeng 4.21.0 4.21.2 4.21.3.1: DevedeNG is a program to create video DVDs and CDs (VCD, sVCD or CVD)
+media-video/devedeng 4.21.3.1 4.22.0: DevedeNG is a program to create video DVDs and CDs (VCD, sVCD or CVD)
 media-video/dirac 1.0.2-r2: Open Source video codec
 media-video/droidcam 2.1.3-r1 2.1.4 2.1.5: Use your phone or tablet as webcam with a v4l device driver and app
 media-video/dv2sub 0.3-r2: Extract info or subtitles from DV stream
@@ -18365,7 +18365,7 @@ www-apps/bugzilla 5.0.6-r2: Bugzilla is the Bug-Tracking System from the Mozilla
 www-apps/cgisysinfo 0.4.1: A small cgi utility to show basic system information
 www-apps/cgit 1.2.3_p20240802-r2 1.3 9999 9999-r1: A fast web-interface for Git repositories
 www-apps/cgp 1_p20190510-r2: A graphical web-based front-end for visualizing RRD collected by collectd
-www-apps/chromedriver-bin 149.0.7827.114 150.0.7871.181 151.0.7922.108: WebDriver for Chrome
+www-apps/chromedriver-bin 150.0.7871.181 151.0.7922.108 151.0.7922.137: WebDriver for Chrome
 www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20250514b 20260714b: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
@@ -18441,25 +18441,25 @@ www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-
 www-client/epiphany 48.5 49.3 49.8.1: GNOME webbrowser based on Webkit
 www-client/falkon 26.04.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.13.0 153.0.1 153.0.3 153.0.4: Firefox Web Browser
+www-client/firefox 140.13.0 153.0.1 153.0.3 153.0.4 154.0: Firefox Web Browser
 www-client/firefox-bin 140.13.0 140.14.0 153.0.1 153.0.3 153.0.4 153.1.0 154.0: Firefox Web Browser
-www-client/firefox-l10n 153.0.1 153.0.3 153.0.4: Firefox Web Browser's translation files
-www-client/google-chrome 149.0.7827.114 150.0.7871.181 151.0.7922.108: The web browser from Google
-www-client/google-chrome-beta 150.0.7871.13 151.0.7922.47 152.0.7977.30: The web browser from Google
-www-client/google-chrome-unstable 151.0.7872.0 152.0.7953.3 153.0.7993.0: The web browser from Google
+www-client/firefox-l10n 153.0.1 153.0.3 153.0.4 154.0: Firefox Web Browser's translation files
+www-client/google-chrome 150.0.7871.181 151.0.7922.108 151.0.7922.137: The web browser from Google
+www-client/google-chrome-beta 151.0.7922.47 152.0.7977.30 152.0.7977.42: The web browser from Google
+www-client/google-chrome-unstable 152.0.7953.3 153.0.7993.0 153.0.8003.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
-www-client/microsoft-edge 151.0.4129.72: The web browser from Microsoft
-www-client/microsoft-edge-beta 151.0.4129.54 151.0.4129.59 152.0.4191.10: The web browser from Microsoft
-www-client/microsoft-edge-dev 152.0.4181.1 152.0.4191.7 152.0.4191.10: The web browser from Microsoft
+www-client/microsoft-edge 151.0.4129.93: The web browser from Microsoft
+www-client/microsoft-edge-beta 151.0.4129.59 152.0.4191.10 152.0.4191.19: The web browser from Microsoft
+www-client/microsoft-edge-dev 152.0.4191.7 152.0.4191.10 153.0.4210.0: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
-www-client/opera 134.0.5954.46-r1: A fast and secure web browser
+www-client/opera 134.0.5954.56: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
-www-client/opera-developer 135.0.5960.0 135.0.5966.0 136.0.5981.0-r2: A fast and secure web browser
+www-client/opera-developer 135.0.5966.0 136.0.5981.0-r2 136.0.5988.0: A fast and secure web browser
 www-client/opera-gx 129.0.5823.49 129.0.5823.64: Opera, but for 'gamers'
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.6.3 3.7.0 9999: Keyboard-driven, vim-like browser based on Python and Qt
@@ -18468,8 +18468,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.5-r1: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 8.0.4033.48 8.0.4033.50 8.1.4087.61-r1: A browser for our friends
-www-client/vivaldi-snapshot 8.2.4116.3 8.2.4126.4: A browser for our friends
+www-client/vivaldi 8.1.4087.64 8.1.4087.66: A browser for our friends
+www-client/vivaldi-snapshot 8.2.4129.3 8.2.4133.3: A browser for our friends
 www-client/w3m 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
@@ -18515,7 +18515,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.9: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 149.0.7827.114 150.0.7871.13_beta 150.0.7871.181 151.0.7872.0_alpha 151.0.7922.47_beta 151.0.7922.108 152.0.7953.3_alpha 152.0.7977.30_beta 153.0.7993.0_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 150.0.7871.181 151.0.7922.47_beta 151.0.7922.108 151.0.7922.137 152.0.7953.3_alpha 152.0.7977.30_beta 152.0.7977.42_beta 153.0.7993.0_alpha 153.0.8003.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
