@@ -2394,7 +2394,7 @@ app-emulation/dosemu 1.4.1_pre20130107-r7: DOS Emulator
 app-emulation/dxvk 2.7.1 3.0 3.0.1 3.0.2 9999: Vulkan-based implementation of D3D9, D3D10 and D3D11 for Linux / Wine
 app-emulation/dynamips 0.2.23 0.2.24: Cisco 7200/3600 Simulator
 app-emulation/faudio 26.06 26.07: Accuracy-focused XAudio reimplementation for open platforms
-app-emulation/fex-xtajit 2601 2603 2604 2605: A wine emulation dll for running x86 application on an arm64 host
+app-emulation/fex-xtajit 2608: A wine emulation dll for running x86 application on an arm64 host
 app-emulation/firecracker-bin 1.15.1 1.16.0 1.16.1: Secure and fast microVMs for serverless computing (static build)
 app-emulation/free42 3.1.9 3.3.11 3.3.12: An HP-42S Calculator Simulator
 app-emulation/fs-uae 3.1.66 3.2.35 9999: Integrates the most accurate Amiga emulation code available from WinUAE
@@ -5706,7 +5706,7 @@ dev-libs/libglib-testing 0.1.1: Libglib-testing is a test library providing test
 dev-libs/libgnome-games-support 1.8.2 2.0.1 2.0.2: Library for code common to GNOME games
 dev-libs/libgnt 2.14.3-r1: Pidgin's GLib Ncurses Toolkit
 dev-libs/libgpg-error 1.59 1.60 1.61: Contains error handling functions used by GnuPG software
-dev-libs/libgpiod 1.6.4 1.6.5 2.2.3 2.2.4 2.3.1: C library and tools for interacting with the linux GPIO character device
+dev-libs/libgpiod 1.6.4 1.6.5 2.2.3 2.2.4 2.3.1-r1: C library and tools for interacting with the linux GPIO character device
 dev-libs/libgrapheme 2.0.2 3.0.0: Unicode string library
 dev-libs/libgudev 238-r2: GObject bindings for libudev
 dev-libs/libgusb 0.4.9: GObject wrapper for libusb
@@ -17992,7 +17992,7 @@ sys-kernel/git-sources 7.2_rc1 7.2_rc2 7.2_rc3 7.2_rc4 7.2_rc5 7.2_rc6 7.2_rc7: 
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 0.9_p20260630 9999: GNU Hurd is the GNU project's replacement for UNIX
 sys-kernel/installkernel 68-r1 69-r1 70 9999: Gentoo fork of installkernel script from debianutils
-sys-kernel/kci-dev 0.1.6 0.1.10: Stand alone tool to interact with KernelCI
+sys-kernel/kci-dev 0.1.10 0.1.11: Stand alone tool to interact with KernelCI
 sys-kernel/kpatch 0.9.10 9999: Dynamic kernel patching for Linux
 sys-kernel/linux-docs 6.18.33: Developer documentation generated from the Linux kernel
 sys-kernel/linux-firmware 20260221 20260309 20260410 20260519 20260622 20260810 99999999: Linux firmware files
@@ -18123,7 +18123,7 @@ sys-power/sispmctl 4.12: GEMBIRD SiS-PM control utility
 sys-power/suspend 1.0_p20200924: Userspace Software Suspend and S2Ram
 sys-power/switcheroo-control 3.0: D-Bus service to check the availability of dual-GPU
 sys-power/thermald 2.5.11 2.5.12: Thermal daemon for Intel architectures
-sys-power/throttled 0.11 0.12-r1: Daemon to work around throttling issues on some Intel laptops
+sys-power/throttled 0.11 0.12-r1 0.12.2: Daemon to work around throttling issues on some Intel laptops
 sys-power/tlp 1.9.1 1.9.1-r1 1.10.1: Optimize laptop battery life
 sys-power/uhubctl 2.5.0: USB hub per-port power control
 sys-power/upower 1.90.9 1.91.2 1.91.3: D-Bus abstraction for enumerating power devices, querying history and statistics
