@@ -2598,7 +2598,7 @@ app-i18n/librime 1.16.1 1.17.0: RIME (Rime Input Method Engine) core library
 app-i18n/librime-lua 20240819212322-r1 20250707183812 99999999999999: Lua module for RIME
 app-i18n/libskk 1.1.1: GObject-based library to deal with Japanese kana-to-kanji conversion method
 app-i18n/man-pages-ja 20260115-r2 20260515 20260615 20260815: Collection of manual pages translated into Japanese
-app-i18n/man-pages-l10n 4.29.1 4.30.0-r1 4.30.2: A somewhat comprehensive collection of man page translations
+app-i18n/man-pages-l10n 4.30.0-r1 4.30.2 4.31.0: A somewhat comprehensive collection of man page translations
 app-i18n/man-pages-ru 5.03.2390.2390.20191017-r1: A collection of Russian translations of Linux manual pages
 app-i18n/man-pages-zh_CN 1.6.4.2-r1: A somewhat comprehensive collection of Chinese Linux man pages
 app-i18n/mecab-skkserv 0.03-r1: mecab-skkserv is a Kana-Kanji conversion server using MeCab
@@ -12798,7 +12798,7 @@ mail-client/neomutt 20240201 20250510 20260504 20260616 99999999: A small but ve
 mail-client/roundcube 1.6.11 1.6.16 1.6.17 1.6.18 1.7.1 1.7.2 1.7.3 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
 mail-client/thunderbird 140.13.0 153.0.1 153.0.2 153.0.3: Thunderbird Mail Client
-mail-client/thunderbird-bin 140.13.0 153.0.1 153.0.2 153.0.3: Thunderbird Mail Client
+mail-client/thunderbird-bin 140.13.0 140.14.0 153.0.1 153.0.2 153.0.3 153.1.0 154.0: Thunderbird Mail Client
 mail-client/thunderbird-l10n 153.0.1 153.0.2 153.0.3: Thunderbird mail client's translation files
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
@@ -16637,7 +16637,7 @@ sci-visualization/g3data 1.5.4: Tool for extracting data from graphs
 sci-visualization/gcalc 3.1_rc1-r4: Java Mathematical Graphing System
 sci-visualization/ggobi 2.1.12-r1: Visualization program for exploring high-dimensional data
 sci-visualization/gle 4.3.8-r1 4.3.9: Graphics Layout Engine
-sci-visualization/gnuplot 5.4.10-r2 6.0.3 6.0.4 6.1.9999: Command-line driven interactive plotting program
+sci-visualization/gnuplot 5.4.10-r2 6.0.4 6.0.5 6.1.9999: Command-line driven interactive plotting program
 sci-visualization/gr 0.73.6-r1: Universal framework for cross-platform visualization applications
 sci-visualization/grace 5.1.25_p18-r1: Motif based XY-plotting tool
 sci-visualization/gwyddion 2.67-r1 2.69: Framework for Scanning Mode Microscopy data analysis
@@ -18441,7 +18441,7 @@ www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-
 www-client/epiphany 48.5 49.3 49.8.1: GNOME webbrowser based on Webkit
 www-client/falkon 26.04.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.13.0 153.0.1 153.0.3 153.0.4 153.1.0 154.0: Firefox Web Browser
+www-client/firefox 140.13.0 140.14.0 153.0.1 153.0.3 153.0.4 153.1.0 154.0: Firefox Web Browser
 www-client/firefox-bin 140.13.0 140.14.0 153.0.1 153.0.3 153.0.4 153.1.0 154.0: Firefox Web Browser
 www-client/firefox-l10n 153.0.1 153.0.3 153.0.4 153.1.0 154.0: Firefox Web Browser's translation files
 www-client/google-chrome 151.0.7922.108 151.0.7922.137 151.0.7922.169: The web browser from Google
