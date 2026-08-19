@@ -14056,7 +14056,7 @@ media-radio/fldigi 4.2.11 4.2.12 4.2.13: Sound card based multimode software mod
 media-radio/flmsg 4.0.23 4.0.24: Fldigi helper for creating radiograms
 media-radio/flrig 2.0.10-r1 2.0.12: Transceiver control program for Amateur Radio use
 media-radio/fsync-mdc1200-decode 1.0-r1 9999: Linux Fleetsync / MDC1200 decoder
-media-radio/gpredict 2.5.1 2.5.2 9999: Real-time satellite tracking and orbit prediction application
+media-radio/gpredict 2.5.1 2.5.2 2.6 9999: Real-time satellite tracking and orbit prediction application
 media-radio/grig 0.9.0: A tool for controlling amateur radios
 media-radio/ibp 0.21-r3: Shows currently transmitting beacons of the International Beacon Project (IBP)
 media-radio/js8call 3.0.1 3.0.2 3.0.3: Weak signal ham radio communication
@@ -14069,7 +14069,7 @@ media-radio/tlf 1.4.1-r6: Console-mode amateur radio contest logger
 media-radio/tqsl 2.7.3: ARRL Logbook of the World
 media-radio/tucnak 4.71 4.72: Amateur Radio VHF Contest Logbook
 media-radio/unixcw 3.6.1-r2: Collection of programs that fit together to form a morse code tutor program
-media-radio/wsjtx_improved 3.1.0_p260418 3.1.0_p260522: Weak signal ham radio communication with improvements
+media-radio/wsjtx_improved 3.1.0_p260418 3.1.0_p260522 3.2.0_p260818: Weak signal ham radio communication with improvements
 media-radio/xastir 2.2.2 2.2.4: X Amateur Station Tracking and Information Reporting
 media-radio/xdx 2.91: a GTK+ TCP/IP DX-cluster and ON4KST chat client
 media-radio/xlog 2.0.25: An amateur radio logging program
