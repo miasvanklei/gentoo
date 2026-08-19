@@ -5683,7 +5683,7 @@ dev-libs/libelf 0.8.13-r3 0.8.13-r4: ELF object file access library
 dev-libs/liberasurecode 1.6.3 1.6.5: Erasure Code API library written in C with pluggable Erasure Code backends
 dev-libs/libestr 0.1.11-r1: Library for some string essentials
 dev-libs/libev 4.33: A high-performance event loop/event model with lots of feature
-dev-libs/libevdev 1.13.6 9999: Handler library for evdev events
+dev-libs/libevdev 1.13.6 1.13.7 9999: Handler library for evdev events
 dev-libs/libevent 2.1.12-r1 2.1.13 2.2.1-r3 2.2.1-r4 2.2.2 9999: Library to execute a function when a specific event occurs on a file descriptor
 dev-libs/libezV24 0.1.1-r3: Library that provides an easy API to Linux serial ports
 dev-libs/libf2c 20240130: Library that converts FORTRAN to C source
@@ -11146,7 +11146,7 @@ dev-util/patchelf 0.17.2-r1 0.18.0 0.19.1: Small utility to modify the dynamic l
 dev-util/patchutils 0.4.2 0.4.4-r1 0.4.4-r2 0.4.5-r1: Collection of tools that operate on patch files
 dev-util/patdiff 0.16.0 0.17.0: Colored patience diffs with word-level refinement
 dev-util/peg 0.1.19 0.1.20: Recursive-descent parser generators for C
-dev-util/perf 6.19.12 7.0 7.1: Userland tools for Linux Performance Counters
+dev-util/perf 6.19.12 7.0 7.1 7.2: Userland tools for Linux Performance Counters
 dev-util/pixi 0.73.0 0.76.2: A package management and workflow tool
 dev-util/pkgcheck 0.10.42 9999: pkgcore-based QA utility for ebuild repos
 dev-util/pkgconf 2.5.1 3.0.3 3.0.4 3.0.5 9999: pkg-config compatible replacement with no dependencies other than C99
@@ -12797,9 +12797,9 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20260504 20260616 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.11 1.6.16 1.6.17 1.6.18 1.7.1 1.7.2 1.7.3 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 140.13.0 153.0.1 153.0.2 153.0.3: Thunderbird Mail Client
+mail-client/thunderbird 140.13.0 153.0.1 153.0.2 153.0.3 153.1.0 154.0: Thunderbird Mail Client
 mail-client/thunderbird-bin 140.13.0 140.14.0 153.0.1 153.0.2 153.0.3 153.1.0 154.0: Thunderbird Mail Client
-mail-client/thunderbird-l10n 153.0.1 153.0.2 153.0.3: Thunderbird mail client's translation files
+mail-client/thunderbird-l10n 153.0.1 153.0.2 153.0.3 153.1.0 154.0: Thunderbird mail client's translation files
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.13.1-r1 2.14.0-r1: High-performance interface between the MTA and content checkers
@@ -14889,7 +14889,7 @@ net-dns/resolv_wrapper 1.1.8: Wrapper for DNS name resolving or DNS faking
 net-dns/resolvconf-symlink 0: Make /etc/resolv.conf a symlink to a runtime-writable location
 net-dns/s6-dns 2.4.1.0 2.4.1.1 2.4.1.2: Suite of DNS client programs and libraries for Unix systems
 net-dns/smartdns 48.2 48.4: A local DNS server returns the fastest access results
-net-dns/unbound 1.25.1 1.25.2: A validating, recursive and caching DNS resolver
+net-dns/unbound 1.25.1 1.25.2 1.25.2-r1: A validating, recursive and caching DNS resolver
 net-dns/updatedd 2.6-r8: Dynamic DNS client with plugins for several dynamic dns services
 net-dns/valtz 0.8: Validation tool for tinydns-data zone files
 net-firewall/arno-iptables-firewall 2.1.1a-r1 2.1.2a-r1: Arno's iptables firewall script
@@ -17981,13 +17981,13 @@ sys-fs/zfs-kmod 2.1.16 2.2.8 2.2.9 2.2.10 2.3.4 2.3.6 2.3.7 2.3.8 2.4.0_rc2-r1: 
 sys-kernel/asahi-sources 6.19.14_p2 7.0.9_p2: Asahi Linux kernel sources
 sys-kernel/cryptodev 1.14 9999: device that allows access to Linux kernel cryptographic drivers
 sys-kernel/dkms 3.3.0 3.4.3 9999: Dynamic Kernel Module Support
-sys-kernel/dracut 110-r5 111-r2 9999: Generic initramfs generation tool
+sys-kernel/dracut 110-r5 111-r2 112 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scripts
 sys-kernel/gentoo-kernel 6.1.182 6.6.150 6.6.151 6.12.102 6.12.103 6.18.43 6.18.44 7.1.7 7.1.8: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 6.1.182 6.6.150 6.6.151 6.12.102 6.12.103 6.18.43 6.18.44 7.1.7 7.1.8: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-kernel-modprep 6.1.182 6.6.150 6.6.151 6.12.102 6.12.103 6.18.43 6.18.44 7.1.7 7.1.8: Minimal subset of gentoo-kernel-bin for building modules, for containers
-sys-kernel/gentoo-sources 6.1.180 6.1.182 6.6.147 6.6.148 6.6.150 6.6.151 6.12.100 6.12.101 6.12.102 6.12.103 6.18.41 6.18.42 6.18.43 6.18.44 7.1.5 7.1.6 7.1.7 7.1.8 7.2.0: Full sources including the Gentoo patchset for the 7.2 kernel tree
+sys-kernel/gentoo-sources 6.1.180 6.1.182 6.1.183 6.6.147 6.6.148 6.6.150 6.6.151 6.6.152 6.12.100 6.12.101 6.12.102 6.12.103 6.12.104 6.18.41 6.18.42 6.18.43 6.18.44 6.18.45 7.1.5 7.1.6 7.1.7 7.1.8 7.1.9 7.2.0: Full sources including the Gentoo patchset for the 7.2 kernel tree
 sys-kernel/git-sources 7.2_rc1 7.2_rc2 7.2_rc3 7.2_rc4 7.2_rc5 7.2_rc6 7.2_rc7: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 0.9_p20260630 9999: GNU Hurd is the GNU project's replacement for UNIX
@@ -18010,7 +18010,7 @@ sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2: DBUS on-demand loader of sched-ext sche
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 6.1.182 6.1.9999 6.6.150 6.6.151 6.6.9999 6.12.102 6.12.103 6.12.9999 6.18.43 6.18.44 6.18.9999 7.1.7 7.1.8: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 6.1.182 6.6.151 6.12.103 6.18.44 7.1.8 7.2.0: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 6.1.183 6.6.152 6.12.104 6.18.45 7.1.9 7.2.0: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.1.5: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
@@ -18598,7 +18598,7 @@ x11-apps/xkbevd 1.1.6: XKB event daemon
 x11-apps/xkbprint 1.0.7 1.0.8: Print an XKB keyboard description
 x11-apps/xkbutils 1.0.6 1.0.7: X.Org xkbutils application
 x11-apps/xkill 1.0.7: kill a client by its X resource
-x11-apps/xload 1.2.0 1.2.1: system load average display for X
+x11-apps/xload 1.2.0 1.2.1 1.2.2: system load average display for X
 x11-apps/xlogo 1.0.7: X Window System logo
 x11-apps/xlsatoms 1.1.4 1.1.5: list interned atoms defined on server
 x11-apps/xlsclients 1.1.5 1.1.6: X.Org xlsclients application
@@ -18608,7 +18608,7 @@ x11-apps/xman 1.2.0: Manual page display program for the X Window System
 x11-apps/xmessage 1.0.7: display a message or query in a window (X-based /bin/echo)
 x11-apps/xmodmap 1.0.11 1.0.12: utility for modifying keymaps and pointer button mappings in X
 x11-apps/xmore 1.0.4: plain text display program for the X Window System
-x11-apps/xpr 1.2.0: X.Org xpr application
+x11-apps/xpr 1.2.0 1.2.1: X.Org xpr application
 x11-apps/xprop 1.2.8: property displayer for X
 x11-apps/xrandr 1.5.3 1.5.4: A primitive command line interface to RandR extension
 x11-apps/xrdb 1.2.2 1.2.3-r2: X server resource database utility
