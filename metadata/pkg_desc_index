@@ -1826,7 +1826,7 @@ app-editors/diakonos 0.9.12: A Linux editor for the masses
 app-editors/e3 2.82: Very tiny editor in ASM with emacs, pico, wordstar, and vi keybindings
 app-editors/ecrire 0.2.0-r1: A simple Notepad-like text editor using EFL
 app-editors/ee 1.5.2-r1: An easy to use text editor. A subset of aee
-app-editors/emacs 18.59-r17 26.3-r25 27.2-r23 28.2-r21 29.4-r9 30.2-r5 31.1_rc1 31.1.9999 32.0.9999: The advanced, extensible, customizable, self-documenting editor
+app-editors/emacs 18.59-r17 27.2-r23 27.2-r24 28.2-r21 28.2-r22 29.4-r9 29.4-r10 30.2-r5 30.2-r6 31.1_rc1-r1 31.1.9999 32.0.9999: The advanced, extensible, customizable, self-documenting editor
 app-editors/emact 2.58.0-r1: EmACT, a fork of Conroy's MicroEmacs
 app-editors/enter-tex 3.49.0: TeX/LaTeX text editor
 app-editors/ersatz-emacs 20060515-r1: A very minimal imitation of the famous GNU Emacs editor
@@ -14069,7 +14069,7 @@ media-radio/tlf 1.4.1-r6: Console-mode amateur radio contest logger
 media-radio/tqsl 2.7.3: ARRL Logbook of the World
 media-radio/tucnak 4.71 4.72: Amateur Radio VHF Contest Logbook
 media-radio/unixcw 3.6.1-r2: Collection of programs that fit together to form a morse code tutor program
-media-radio/wsjtx_improved 3.1.0_p260418 3.1.0_p260522 3.2.0_p260818: Weak signal ham radio communication with improvements
+media-radio/wsjtx_improved 3.1.0_p260418 3.1.0_p260522 3.2.0_p260818-r1: Weak signal ham radio communication with improvements
 media-radio/xastir 2.2.2 2.2.4: X Amateur Station Tracking and Information Reporting
 media-radio/xdx 2.91: a GTK+ TCP/IP DX-cluster and ON4KST chat client
 media-radio/xlog 2.0.25: An amateur radio logging program
