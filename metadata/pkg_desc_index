@@ -1495,7 +1495,7 @@ app-crypt/keybase 6.0.2 6.2.4 9999: Keybase client
 app-crypt/keylookup 2.2-r1: A tool to fetch PGP keys from keyservers
 app-crypt/keysmith 26.04.3 26.08.0: OTP client for Plasma Mobile and Desktop
 app-crypt/kstart 4.3: Modified versions of kinit for refreshing kerberos tickets automatically
-app-crypt/lego 4.35.2 5.0.4 5.1.0 5.2.2 5.3.1 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
+app-crypt/lego 4.35.2 5.3.1 5.4.0 9999: Let's Encrypt/ACME client (like certbot or acme.sh) and library written in Go
 app-crypt/libb2 0.98.1-r3: C library providing BLAKE2b, BLAKE2s, BLAKE2bp, BLAKE2sp
 app-crypt/libmd 1.1.0 1.2.0: Message Digest functions from BSD systems
 app-crypt/libscrypt 1.22-r3: Shared library to implement the scrypt algorithm
@@ -2463,7 +2463,7 @@ app-emulation/wine-desktop-common 20150204-r2: Various desktop menu items and ic
 app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet Explorer for Wine
 app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.1 11.0.0 11.1.0 11.2.0 11.3.0: Replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-proton 8.0.5c 9.0.4-r2 10.0.4 11.0.1 11.0.2 9999: Valve Software's fork of Wine
-app-emulation/wine-staging 11.0 11.12 11.13 11.14 11.15 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
+app-emulation/wine-staging 11.0 11.12 11.13 11.14 11.15 11.16 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
 app-emulation/wine-vanilla 8.0.2 9.0.1-r1 10.0-r2 11.0 11.12 11.13 11.14 11.15 11.16 9999: Free implementation of Windows(tm) on Unix, without external patchsets
 app-emulation/winetricks 20260125 99999999: Easy way to install DLLs needed to work around problems in Wine
 app-emulation/x48 0.6.4-r3: HP48 Calculator Emulator
@@ -2595,7 +2595,7 @@ app-i18n/libpinyin 2.8.1 9999: Libraries for handling of Hanyu Pinyin and Zhuyin
 app-i18n/librime 1.16.1 1.17.0: RIME (Rime Input Method Engine) core library
 app-i18n/librime-lua 20240819212322-r1 20250707183812 99999999999999: Lua module for RIME
 app-i18n/libskk 1.1.1: GObject-based library to deal with Japanese kana-to-kanji conversion method
-app-i18n/man-pages-ja 20260115-r2 20260515 20260615 20260815: Collection of manual pages translated into Japanese
+app-i18n/man-pages-ja 20260615 20260815: Collection of manual pages translated into Japanese
 app-i18n/man-pages-l10n 4.30.0-r1 4.30.2 4.31.0: A somewhat comprehensive collection of man page translations
 app-i18n/man-pages-ru 5.03.2390.2390.20191017-r1: A collection of Russian translations of Linux manual pages
 app-i18n/man-pages-zh_CN 1.6.4.2-r1: A somewhat comprehensive collection of Chinese Linux man pages
@@ -5689,7 +5689,7 @@ dev-libs/libfastjson 1.2304.0-r1: Fork of the json-c library, which is optimized
 dev-libs/libffi 3.4.8-r3 3.5.1 3.5.2 3.6.0 3.7.0 3.7.1 3.8.0 9999: Portable, high level programming interface to various calling conventions
 dev-libs/libffi-compat 3.2.1-r3 3.3-r2: a portable, high level programming interface to various calling conventions
 dev-libs/libfido2 1.17.0: Provides library functionality for FIDO 2.0
-dev-libs/libfilezilla 0.54.0 0.54.1 0.55.2 0.55.5 0.56.1: C++ library offering some basic functionality for platform-independent programs
+dev-libs/libfilezilla 0.54.0 0.54.1 0.55.2 0.55.5 0.56.1 0.57.0: C++ library offering some basic functionality for platform-independent programs
 dev-libs/libfmt 9.1.0-r1 9.1.0-r2 10.1.1-r1 10.2.1-r2 11.0.2 11.1.3 11.1.4 11.2.0-r1 12.0.0 12.1.0 9999: Small, safe and fast formatting library
 dev-libs/libfstrcmp 0.7-r3: Make fuzzy comparisons of strings and byte arrays
 dev-libs/libgamin 0.1.10-r7: Library providing the FAM File Alteration Monitor API
@@ -12292,7 +12292,7 @@ gui-libs/xdg-desktop-portal-lxqt 1.3.0 1.4.0: Backend implementation for xdg-des
 gui-libs/xdg-desktop-portal-wlr 0.7.1-r1 0.7.1-r2 0.8.1 9999: xdg-desktop-portal backend for wlroots
 gui-wm/dwl 0.5-r1 0.6 0.7 9999: dwm for Wayland
 gui-wm/gamescope 3.16.25-r1: Efficient micro-compositor for running games
-gui-wm/labwc 0.9.7 0.9.8 0.20.0 0.20.1 9999: Openbox alternative for wayland
+gui-wm/labwc 0.9.8 0.20.1 0.20.2 9999: Openbox alternative for wayland
 gui-wm/sway 1.9-r1 1.10 1.10.1 1.11 1.12 9999: i3-compatible Wayland window manager
 gui-wm/tinywl 0.17.4 0.18.0 0.18.1 0.19.2 0.20.0 9999: "minimum viable product" Wayland compositor based on wlroots
 gui-wm/wayfire 0.10.1 0.11.0 9999: compiz like 3D wayland compositor
@@ -13135,7 +13135,7 @@ media-gfx/farbfeld 4: Farbfeld simple image format tools
 media-gfx/fbgrab 1.5: Framebuffer screenshot utility
 media-gfx/fbida 2.14_p20241216-r1: Image viewers for the framebuffer console (fbi) and X11 (ida)
 media-gfx/feh 3.11.3 3.11.4 3.12.1 3.12.2: A fast, lightweight imageviewer using imlib2
-media-gfx/fig2dev 3.2.9-r5 3.2.9a 9999: Set of tools for creating TeX documents with graphics
+media-gfx/fig2dev 3.2.9-r5 3.2.9a 3.2.9a-r1 9999: Set of tools for creating TeX documents with graphics
 media-gfx/flam3 3.1.1-r1: Tools and a library for creating flame fractal images
 media-gfx/flameshot 13.1.0-r1 13.3.0: Powerful yet simple to use screenshot software
 media-gfx/fondu 20060102-r1: Utilities for converting between and manipulating mac fonts and unix fonts
@@ -14902,7 +14902,7 @@ net-fs/sshfs 3.7.6: Fuse-filesystem utilizing the sftp service
 net-fs/wdfs 1.4.2-r4: WebDAV filesystem with special features for accessing subversion repositories
 net-ftp/atftp 0.8.0: Advanced TFTP implementation client/server
 net-ftp/cmdftp 0.9.8: Light weight, yet robust command line FTP client with shell-likefunctions
-net-ftp/filezilla 3.69.5 3.69.6 3.70.4 3.70.5 3.70.6: FTP client with lots of useful features and an intuitive interface
+net-ftp/filezilla 3.69.5 3.69.6 3.70.4 3.70.5 3.70.6 3.71.0: FTP client with lots of useful features and an intuitive interface
 net-ftp/frox 0.7.18-r9: Transparent ftp proxy
 net-ftp/ftp 0.17.34.0.2.5.1: Standard Linux FTP client
 net-ftp/ftpbase 0.01-r6: File Transfer Protocol (FTP) base layout
@@ -15027,7 +15027,7 @@ net-libs/dleyna 0.8.3-r2: A set of services and D-Bus APIs to simplify access to
 net-libs/enet 1.3.17 1.3.17-r1 1.3.18: Relatively thin, simple and robust network communication layer on top of UDP
 net-libs/farstream 0.2.9-r2: Audio/video conferencing framework specifically designed for instant messengers
 net-libs/freaklabs-chibiarduino 1.0.8_p20190329 9999: freaklabs fork of the lightweight wireless sensor library for Arduino
-net-libs/fzssh 1.2.1 1.3.0: A SSH/SFTP library based on libfilezilla
+net-libs/fzssh 1.2.1 1.3.0 1.4.0: A SSH/SFTP library based on libfilezilla
 net-libs/glib-networking 2.80.1: Network-related giomodules for glib
 net-libs/gloox 1.0.24-r1 1.0.28: A portable high-level Jabber/XMPP client library for C++
 net-libs/gnome-online-accounts 3.56.5: GNOME framework for accessing online accounts
@@ -15555,7 +15555,7 @@ net-misc/tinyssh 20260401 20260601 99999999: A small SSH server with state-of-th
 net-misc/tipcutils 3.0.6: Utilities for TIPC (Transparent Inter-Process Communication)
 net-misc/trurl 0.16.1 9999: Command line tool for URL parsing and manipulation
 net-misc/tuba 0.10.3 0.11.0: Browse the Fediverse (GTK client)
-net-misc/turbovnc 3.3-r1: A fast replacement for TigerVNC
+net-misc/turbovnc 3.3-r1 3.3.1: A fast replacement for TigerVNC
 net-misc/ubridge 0.9.19-r1: Bridge for UDP tunnels, Ethernet, TAP and VMnet interfaces
 net-misc/ucarp 1.5.2-r7: Portable userland implementation of Common Address Redundancy Protocol (CARP)
 net-misc/udpcast 20211207 20211207-r1: Multicast file transfer tool
@@ -15772,7 +15772,7 @@ net-vpn/strongswan 6.0.3 6.0.4 6.0.4-r1 6.0.6 6.0.7: IPsec-based VPN solution, s
 net-vpn/tailscale 1.100.0 1.102.0 1.102.2: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.0.37 1.1_pre18-r2: tinc is an easy to configure VPN implementation
 net-vpn/tor 0.4.9.11 9999: Anonymizing overlay network for TCP
-net-vpn/vopono 0.10.18 0.10.19: Launch applications via VPN tunnels using temporary network namespaces
+net-vpn/vopono 0.10.18 0.10.19 0.10.21: Launch applications via VPN tunnels using temporary network namespaces
 net-vpn/vpnc 0.5.3_p20240129 9999: IPsec (Cisco/Juniper) VPN concentrator client
 net-vpn/vpnc-scripts 20220510 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
 net-vpn/vpncloud 2.3.0-r2: High performance peer-to-peer mesh VPN
@@ -16169,7 +16169,7 @@ sci-geosciences/qgis 4.0.3 9999: User friendly Geographic Information System
 sci-geosciences/qmapshack 1.19.0 1.20.1 1.20.2 1.20.3: GPS mapping utility
 sci-geosciences/readosm 1.1.0a: Library to extract valid data from an Open Street Map input file
 sci-geosciences/routino 3.4.3: Routing application based on openstreetmap data
-sci-geosciences/s2geometry 0.13.1-r2: Computational geometry and spatial indexing on the sphere
+sci-geosciences/s2geometry 0.13.1-r3: Computational geometry and spatial indexing on the sphere
 sci-geosciences/tcd-utils 20240222: Utilities for working with Tidal Constituent Databases
 sci-geosciences/viking 1.10 1.10-r1 1.11: GPS data editor and analyzer
 sci-geosciences/xtide 2.15.5: XTide provides tide and current predictions in a wide variety of formats
@@ -16424,10 +16424,10 @@ sci-mathematics/coq-serapi 0.20.0: Serialization library and protocol for intera
 sci-mathematics/coq-stdlib 9.0.0-r1 9.1.0: Stdlib for the Coq/Rocq Prover, used to be part of Coq
 sci-mathematics/cryptominisat 5.11.21-r3: Advanced SAT solver with C++ and command-line interfaces
 sci-mathematics/cubicle 1.2.0-r2: Model checker for verifying properties of array-based systems
-sci-mathematics/cudd 3.0.0-r2: Colorado University binary Decision Diagram library
+sci-mathematics/cudd 3.0.0-r3: Colorado University binary Decision Diagram library
 sci-mathematics/cvc4 1.8-r7: Automatic theorem prover for satisfiability modulo theories (SMT) problems
 sci-mathematics/dataplot 20131220: Program for scientific visualization and statistical analyis
-sci-mathematics/dsfmt 2.2.4: Double precision SIMD-oriented Fast Mersenne Twister library
+sci-mathematics/dsfmt 2.2.4 2.2.5: Double precision SIMD-oriented Fast Mersenne Twister library
 sci-mathematics/dunshire 0.1.3-r3: Python library to solve linear games over symmetric cones
 sci-mathematics/easycrypt 2026.05 2026.06: Computer-Aided Cryptographic Proofs
 sci-mathematics/eclib 20250627: Programs for elliptic curves defined over the rational numbers
@@ -16533,7 +16533,7 @@ sci-misc/lttoolbox 3.7.1-r2 3.7.6 3.8.2: Toolbox for lexical processing, morphol
 sci-misc/nco 5.1.3-r1 5.3.9: Command line utilities for operating on netCDF files
 sci-misc/ncview 2.1.8: X-based viewer for netCDF files
 sci-misc/netlogo-bin 6.2.2: Programming language and IDE for agent-based modelling
-sci-misc/oww 0.86.5 0.86.5-r2: A one-wire weather station for Dallas Semiconductor
+sci-misc/oww 0.86.5-r2: A one-wire weather station for Dallas Semiconductor
 sci-misc/vitables 3.1.0: A graphical tool for browsing / editing files in both PyTables and HDF5 formats
 sci-ml/FBGEMM 1.4.0.2025.12.10-r1 1.7.0-r1: Facebook GEneral Matrix Multiplication
 sci-ml/FP16 2024.05.27-r1 2024.06.20: conversion to/from half-precision floating point formats
@@ -16596,7 +16596,7 @@ sci-physics/xfoil 6.99-r1: Design and analysis of subsonic isolated airfoils
 sci-physics/yoda 1.9.10 2.1.2 2.1.3 9999: Yet more Objects for (High Energy Physics) Data Analysis
 sci-visualization/circos 0.69.9: Circular layout visualization of genomic and other data
 sci-visualization/dash 4.1.0: Python framework for building ML & data science web apps
-sci-visualization/epix 1.2.19 1.2.19-r1 1.2.22: 2- and 3-D plotter for creating images (to be used in LaTeX)
+sci-visualization/epix 1.2.19-r1 1.2.22: 2- and 3-D plotter for creating images (to be used in LaTeX)
 sci-visualization/fig2sxd 0.23: Utility to convert files in xfig format to OpenOffice.org Draw format
 sci-visualization/fityk 1.3.2-r1: General-purpose nonlinear curve fitting and data analysis
 sci-visualization/g3data 1.5.4: Tool for extracting data from graphs
@@ -16614,9 +16614,9 @@ sci-visualization/pythonprop 0.30.1_p20240217-r1: Scripts to prepare and plot VO
 sci-visualization/quickplot 1.0.1_rc-r1: A fast interactive 2D plotter
 sci-visualization/spyview 2018.12.24-r2 9999: 2D and 3D data visualization and analysis program
 sci-visualization/veusz 4.0 4.2.1: Qt scientific plotting package with good Postscript output
-sci-visualization/xd3d 8.3.1-r2 8.3.1-r3: Scientific visualization tool
-sci-visualization/xgraph 12.1-r5 12.1-r6: X11 Plotting Utility
-sci-visualization/xyscan 4.6.6 4.6.8 4.7.0: Tool for extracting data points from graphs
+sci-visualization/xd3d 8.3.1-r3: Scientific visualization tool
+sci-visualization/xgraph 12.1-r6: X11 Plotting Utility
+sci-visualization/xyscan 4.6.8 4.7.0: Tool for extracting data points from graphs
 sec-keys/minisig-keys-ccache 20250914: minisig keys used for ccache
 sec-keys/minisig-keys-libsodium 20230914: OpenPGP keys used for libsodium
 sec-keys/minisig-keys-zig-software-foundation 20240330: Minisign keys used by Zig Software Foundation
@@ -18493,7 +18493,7 @@ www-servers/civetweb 1.16: Embedded C/C++ web server
 www-servers/fnord 1.11-r3: Yet another small httpd
 www-servers/gatling 0.16-r6: High performance web server
 www-servers/gunicorn 26.0.0 26.1.0: A WSGI HTTP Server for UNIX
-www-servers/h2o 2.3.0_pre20260415 9999: H2O - the optimized HTTP/1, HTTP/2 server
+www-servers/h2o 2.3.0_pre20260415 2.3.0_pre20260804 9999: H2O - the optimized HTTP/1, HTTP/2 server
 www-servers/kore 4.3.0_rc4: Web application platform for writing scalable, concurrent web based processes
 www-servers/lighttpd 1.4.85 9999: Lightweight high-performance web server
 www-servers/mongrel2 1.11.0-r3: A language agnostic web server focused on web applications
