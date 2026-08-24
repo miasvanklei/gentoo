@@ -1171,7 +1171,7 @@ app-arch/gcab 1.6: Library and tool for working with Microsoft Cabinet (CAB) fil
 app-arch/gnome-autoar 0.4.5: Automatic archives creating and extracting library
 app-arch/gtk-splitter 2.2.1-r2: Split files into smaller pieces and combine them back together
 app-arch/gxz 0.5.12: Pure golang package for reading and writing xz-compressed files
-app-arch/gzip 1.14 1.14_p20260502: Standard GNU compressor
+app-arch/gzip 1.14 1.14-r1 1.14_p20260502: Standard GNU compressor
 app-arch/hardlink 0.3.2: A tool which replaces copies of a file with hardlinks
 app-arch/innoextract 1.10_pre20250206-r1: A tool to unpack installers created by Inno Setup
 app-arch/lbzip2 2.5_p20181227-r3: Parallel bzip2 utility
@@ -3004,7 +3004,7 @@ app-misc/xmind 3.7.6_p201801311814: Brainstorming and mind mapping software tool
 app-misc/yq 3.4.3-r1 4.1.2-r1: Command-line YAML processor - jq wrapper for YAML documents
 app-misc/yq-go 4.48.2 4.49.2 4.50.1 4.53.3: yq is a lightweight and portable command-line YAML, JSON and XML processor
 app-misc/ytree 2.09 2.10: Curses-based file manager
-app-misc/zellij 0.44.1 0.44.2 0.44.3 0.45.0: A terminal workspace with batteries included
+app-misc/zellij 0.44.3 0.45.0-r1: A terminal workspace with batteries included
 app-misc/zisofs-tools 1.0.8-r1: User utilities for zisofs
 app-mobilephone/adebar 2.4.2: Android DEvice Backup And Report, using Bash and ADB
 app-mobilephone/anyremote 6.7.3: Bluetooth, infrared or cable remote control service
@@ -5689,7 +5689,7 @@ dev-libs/libfastjson 1.2304.0-r1: Fork of the json-c library, which is optimized
 dev-libs/libffi 3.4.8-r3 3.5.1 3.5.2 3.6.0 3.7.0 3.7.1 3.8.0 9999: Portable, high level programming interface to various calling conventions
 dev-libs/libffi-compat 3.2.1-r3 3.3-r2: a portable, high level programming interface to various calling conventions
 dev-libs/libfido2 1.17.0: Provides library functionality for FIDO 2.0
-dev-libs/libfilezilla 0.54.0 0.54.1 0.55.2 0.55.5 0.56.1 0.57.0: C++ library offering some basic functionality for platform-independent programs
+dev-libs/libfilezilla 0.56.1 0.57.0: C++ library offering some basic functionality for platform-independent programs
 dev-libs/libfmt 9.1.0-r1 9.1.0-r2 10.1.1-r1 10.2.1-r2 11.0.2 11.1.3 11.1.4 11.2.0-r1 12.0.0 12.1.0 9999: Small, safe and fast formatting library
 dev-libs/libfstrcmp 0.7-r3: Make fuzzy comparisons of strings and byte arrays
 dev-libs/libgamin 0.1.10-r7: Library providing the FAM File Alteration Monitor API
@@ -12253,7 +12253,7 @@ gui-apps/wf-shell 0.10.0-r1 0.11.0 9999: Compiz like 3D wayland compositor
 gui-apps/wl-clipboard 2.2.1-r1 2.3.0 9999: Wayland clipboard utilities
 gui-apps/wmenu 0.2.0 9999: dynamic menu for wlroots compositors, maintains the look and feel of dmenu
 gui-apps/wofi 1.4.1 1.5 9999: Wofi is a launcher/menu program for wlroots based wayland compositors like sway
-gui-apps/xwaylandvideobridge 0.5.0 0.5.1: Screenshare Wayland windows to XWayland apps
+gui-apps/xwaylandvideobridge 0.5.0 0.5.1 0.5.2: Screenshare Wayland windows to XWayland apps
 gui-libs/amtk 5.6.1: Actions, Menus and Toolbars Kit for GTK+ applications
 gui-libs/display-manager-init 1.1.2-r3: RC init files for starting display and login managers
 gui-libs/egl-gbm 1.1.3: NVIDIA GBM EGL external platform library
@@ -12588,7 +12588,7 @@ kde-misc/basket 2.49b_p20251207: Multiple information organizer - a DropDrawers 
 kde-misc/colord-kde 26.04.3 26.08.0: Provides interfaces and session daemon to colord
 kde-misc/kclock 26.04.3 26.08.0: Convergent clock application for Plasma
 kde-misc/kdeconnect 26.04.3-r3 26.08.0: Adds communication between KDE Plasma and your smartphone
-kde-misc/kdiff3 1.12.4 1.12.5 1.12.6: Frontend to diff3 based on KDE Frameworks
+kde-misc/kdiff3 1.12.4 1.12.6: Frontend to diff3 based on KDE Frameworks
 kde-misc/kio-fuse 5.1.1: FUSE interface for KIO
 kde-misc/kio-gdrive 26.04.3 26.08.0: KIO worker for Google Drive service
 kde-misc/kio-gopher 2.0.0: Gopher KIO worker for Konqueror
@@ -12602,7 +12602,7 @@ kde-misc/markdownpart 26.04.3 26.08.0: Markdown viewer KParts plugin based on QT
 kde-misc/plasma-pass 1.3.1: Plasma applet to access password from pass
 kde-misc/rsibreak 0.13.0: Small utility which bothers you at certain intervals
 kde-misc/skanlite 26.04.3 26.08.0: Simple image scanning application based on libksane and KDE Frameworks
-kde-misc/tellico 4.2.1: Collection manager based on KDE Frameworks
+kde-misc/tellico 4.2.1 4.2.2: Collection manager based on KDE Frameworks
 kde-misc/zanshin 26.04.3 26.08.0: Getting things done application by KDE
 kde-plasma/aurorae 6.6.6 6.6.6-r1 6.7.4-r1: Themeable window decoration for KWin
 kde-plasma/bluedevil 6.6.6 6.6.6-r1 6.7.4-r1: Bluetooth stack for KDE Plasma
@@ -14108,7 +14108,7 @@ media-sound/denemo 2.6.0-r102: A music notation editor
 media-sound/denonavr-cli 4: A simple CLI for Denon AV receivers
 media-sound/din 58.1: a software musical instrument and audio synthesizer
 media-sound/dir2ogg 0.13-r3: Converts mp3, m4a, wma, and wav files to Ogg Vorbis format
-media-sound/drumstick 2.11.0: Qt/C++ wrapper for ALSA sequencer
+media-sound/drumstick 2.11.0 2.11.1: Qt/C++ wrapper for ALSA sequencer
 media-sound/dvda-author 10.06-r2: Author a DVD-Audio DVD
 media-sound/easyeffects 7.2.3 7.2.5 8.0.5 9999: Limiter, auto volume and many other plugins for PipeWire applications
 media-sound/easytag 2.4.3-r7 2.4.3-r8 2.4.3-r9: GTK+ utility for editing MP2, MP3, MP4, FLAC, Ogg and other media tags
@@ -14902,7 +14902,7 @@ net-fs/sshfs 3.7.6: Fuse-filesystem utilizing the sftp service
 net-fs/wdfs 1.4.2-r4: WebDAV filesystem with special features for accessing subversion repositories
 net-ftp/atftp 0.8.0: Advanced TFTP implementation client/server
 net-ftp/cmdftp 0.9.8: Light weight, yet robust command line FTP client with shell-likefunctions
-net-ftp/filezilla 3.69.5 3.69.6 3.70.4 3.70.5 3.70.6 3.71.0: FTP client with lots of useful features and an intuitive interface
+net-ftp/filezilla 3.70.6 3.71.0: FTP client with lots of useful features and an intuitive interface
 net-ftp/frox 0.7.18-r9: Transparent ftp proxy
 net-ftp/ftp 0.17.34.0.2.5.1: Standard Linux FTP client
 net-ftp/ftpbase 0.01-r6: File Transfer Protocol (FTP) base layout
@@ -15027,7 +15027,7 @@ net-libs/dleyna 0.8.3-r2: A set of services and D-Bus APIs to simplify access to
 net-libs/enet 1.3.17 1.3.17-r1 1.3.18: Relatively thin, simple and robust network communication layer on top of UDP
 net-libs/farstream 0.2.9-r2: Audio/video conferencing framework specifically designed for instant messengers
 net-libs/freaklabs-chibiarduino 1.0.8_p20190329 9999: freaklabs fork of the lightweight wireless sensor library for Arduino
-net-libs/fzssh 1.2.1 1.3.0 1.4.0: A SSH/SFTP library based on libfilezilla
+net-libs/fzssh 1.3.0 1.4.0: A SSH/SFTP library based on libfilezilla
 net-libs/glib-networking 2.80.1: Network-related giomodules for glib
 net-libs/gloox 1.0.24-r1 1.0.28: A portable high-level Jabber/XMPP client library for C++
 net-libs/gnome-online-accounts 3.56.5: GNOME framework for accessing online accounts
@@ -17763,7 +17763,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 0.17 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20260603 13.4.1_p20260805 13.4.1_p20260812 13.4.1_p20260819 13.5.9999 14.3.1_p20260604 14.4.0 14.4.1_p20260716 14.4.1_p20260806 14.4.1_p20260813 14.5.9999 15.3.0 15.3.1_p20260717 15.3.1_p20260731 15.3.1_p20260814 15.3.9999 16.2.0 16.2.1_p20260808 16.2.1_p20260815 16.3.9999 17.0.0_p20260809 17.0.0_p20260816 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20260603 13.4.1_p20260805 13.4.1_p20260812 13.4.1_p20260819 13.5.9999 14.3.1_p20260604 14.4.0 14.4.1_p20260716 14.4.1_p20260806 14.4.1_p20260813 14.4.1_p20260820 14.5.9999 15.3.0 15.3.1_p20260717 15.3.1_p20260731 15.3.1_p20260814 15.3.1_p20260821 15.3.9999 16.2.0 16.2.1_p20260808 16.2.1_p20260815 16.2.1_p20260822 16.3.9999 17.0.0_p20260809 17.0.0_p20260816 17.0.0_p20260823 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 20260517 99999999: Updated config.sub and config.guess file from GNU
