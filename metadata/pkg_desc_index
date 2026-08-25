@@ -1440,7 +1440,7 @@ app-crypt/bcwipe 1.9.13: Secure file removal utility
 app-crypt/bsign 0.4.5-r1: embed secure hashes (SHA1) and digital signatures (GNU Privacy Guard) into files
 app-crypt/ccid 1.6.1 1.7.0 1.7.1: CCID free software driver
 app-crypt/ccrypt 1.11-r4: Encryption and decryption
-app-crypt/certbot 5.5.0-r1 5.6.0-r1 5.7.0 9999: Let's Encrypt client to automate deployment of X.509 certificates
+app-crypt/certbot 5.5.0-r2 5.6.0-r2 5.7.0-r1 9999: Let's Encrypt client to automate deployment of X.509 certificates
 app-crypt/certbot-apache 3.2.0-r100: Apache plugin for Certbot (Let's Encrypt client)
 app-crypt/certbot-dns-dnsimple 3.2.0-r100: DNSimple Authenticator plugin for Certbot (Let's Encrypt Client)
 app-crypt/certbot-dns-nsone 3.2.0-r100: NS1 DNS Authenticator plugin for Certbot (Let's Encrypt Client)
@@ -4119,7 +4119,7 @@ dev-debug/ddd 3.3.12-r5 3.4.1: Graphical front-end for command-line debuggers
 dev-debug/drgn 0.0.33 0.1.0: Programmable debugger
 dev-debug/dtrace 2.0.7 9999: Dynamic BPF-based system-wide tracing tool
 dev-debug/duma 2.5.15-r3: DUMA (Detect Unintended Memory Access) is a memory debugging library
-dev-debug/gdb 16.3 17.1 17.2 9999: GNU debugger
+dev-debug/gdb 16.3 17.1 17.2 17.2-r1 9999: GNU debugger
 dev-debug/gef 2023.08 2025.01 2026.01 9999: GDB Enhanced Features for exploit devs & reversers
 dev-debug/gfxreconstruct 1.4.341.0 1.4.350.0 9999: Graphics API Capture and Replay Tools
 dev-debug/gprofng-gui 2.0 2.1 2.2 9999: Full-fledged graphical interface to operate gprofng
@@ -9934,7 +9934,7 @@ dev-qt/qt-creator 20.0.0 20.0.1 9999: Lightweight IDE for C++/QML development ce
 dev-qt/qt-docs 6.11.1_p202605090529 6.11.2_p202608131018: Qt6 documentation and examples for Qt Creator and other tools
 dev-qt/qt3d 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: 3D rendering module for the Qt6 framework
 dev-qt/qt5compat 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
-dev-qt/qtbase 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Cross-platform application development framework
+dev-qt/qtbase 6.11.1 6.11.2-r1 6.11.9999 6.12.9999 6.9999: Cross-platform application development framework
 dev-qt/qtcharts 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Chart component library for the Qt6 framework
 dev-qt/qtconnectivity 6.11.1 6.11.2 6.11.9999 6.12.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
 dev-qt/qtdeclarative 6.11.1-r1 6.11.2 6.11.9999 6.12.9999 6.9999: Qt Declarative (Quick 2)
