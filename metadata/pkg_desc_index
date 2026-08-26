@@ -12765,9 +12765,9 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20260504 20260616 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.11 1.6.16 1.6.17 1.6.18 1.7.1 1.7.2 1.7.3 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 140.13.0 140.14.0 153.0.1 153.0.2 153.0.3 153.1.0 154.0: Thunderbird Mail Client
-mail-client/thunderbird-bin 140.13.0 140.14.0 153.0.1 153.0.2 153.0.3 153.1.0 154.0: Thunderbird Mail Client
-mail-client/thunderbird-l10n 153.0.1 153.0.2 153.0.3 153.1.0 154.0: Thunderbird mail client's translation files
+mail-client/thunderbird 140.14.0 153.1.0 154.0: Thunderbird Mail Client
+mail-client/thunderbird-bin 140.14.0 140.14.1 153.1.0 154.0: Thunderbird Mail Client
+mail-client/thunderbird-l10n 153.1.0 154.0: Thunderbird mail client's translation files
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.13.1-r1 2.14.0-r1: High-performance interface between the MTA and content checkers
@@ -16147,7 +16147,7 @@ sci-geosciences/gpscorrelate 2.0-r1 2.3: Tool for adjusting EXIF tags of your ph
 sci-geosciences/gpsd 3.26.1-r1 3.27.5 9999: GPS daemon and library for USB/serial GPS devices and GPS/mapping clients
 sci-geosciences/gpsprune-bin 23.2: An application for viewing, editing and converting GPS data
 sci-geosciences/gpx-viewer 0.4.0-r2: Simple program to visualize a gpx file
-sci-geosciences/gpxsee 16.11 16.12 16.13: Viewer and analyzer that supports gpx, tcx, kml, fit, igc and nmea files
+sci-geosciences/gpxsee 16.11 16.13: Viewer and analyzer that supports gpx, tcx, kml, fit, igc and nmea files
 sci-geosciences/grass 8.4.1-r2 8.4.2 8.5.0_rc1 8.5.0-r1 9999: Free GIS with raster and vector functionality, as well as 3D vizualization
 sci-geosciences/gshhg-gmt 2.3.7: Global Self-consistent, Hierarchical, High-resolution Geography Database
 sci-geosciences/gshhs 1.13-r1: Global Self-consistent, Hierarchical, High-resolution Shoreline programs
@@ -17993,7 +17993,7 @@ sys-libs/fortify-headers 1.1 9999: Standalone implementation of fortify source
 sys-libs/freeipmi 1.6.18: Provides Remote-Console and System Management Software as per IPMI v1.5/2.0
 sys-libs/fts-standalone 1.2.7 1.2.7-r1: Standalone fts library for use with musl
 sys-libs/gdbm 1.24 1.25 1.26: Standard GNU database libraries
-sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r10 2.42-r7 2.43-r2 2.43-r3 2.43.9999 2.44 2.44-r1 2.44.9999 9999: GNU libc C library
+sys-libs/glibc 2.19-r3 2.31-r7 2.32-r8 2.33-r14 2.34-r14 2.35-r11 2.36-r8 2.37-r10 2.38-r13 2.39-r11 2.40-r11 2.41-r10 2.42-r7 2.43-r2 2.43-r3 2.43-r4 2.43.9999 2.44 2.44-r1 2.44-r2 2.44.9999 9999: GNU libc C library
 sys-libs/gpm 1.20.7-r6: Console-based mouse driver
 sys-libs/gwenhywfar 5.14.1: Multi-platform helper library for other libraries
 sys-libs/kpmcore 26.04.3 26.08.0: Library for managing partitions
@@ -18410,9 +18410,9 @@ www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-
 www-client/epiphany 48.5 49.3 49.8.1: GNOME webbrowser based on Webkit
 www-client/falkon 26.04.3 26.08.0: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.13.0 140.14.0 153.0.1 153.0.3 153.0.4 153.1.0 154.0: Firefox Web Browser
-www-client/firefox-bin 140.13.0 140.14.0 153.0.1 153.0.3 153.0.4 153.1.0 154.0 154.0.1: Firefox Web Browser
-www-client/firefox-l10n 153.0.1 153.0.3 153.0.4 153.1.0 154.0: Firefox Web Browser's translation files
+www-client/firefox 140.14.0 153.1.0 154.0 154.0.1: Firefox Web Browser
+www-client/firefox-bin 140.14.0 153.1.0 154.0 154.0.1: Firefox Web Browser
+www-client/firefox-l10n 153.1.0 154.0 154.0.1: Firefox Web Browser's translation files
 www-client/google-chrome 151.0.7922.108 151.0.7922.137 151.0.7922.169: The web browser from Google
 www-client/google-chrome-beta 151.0.7922.47 152.0.7977.30 152.0.7977.42: The web browser from Google
 www-client/google-chrome-unstable 152.0.7953.3 153.0.7993.0 153.0.8003.0: The web browser from Google
