@@ -1,0 +1,33 @@
+diff --git a/configure.ac b/configure.ac
+index 2d22a00..e731ebf 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -12223,14 +12223,23 @@
+     AC_MSG_RESULT([external])
+     SYSTEM_BOX2D=TRUE
+     AC_LANG_PUSH([C++])
+-    BOX2D_VERSION=`$PKG_CONFIG --modversion box2d 2>/dev/null`
+-    BOX2D_MAJOR=`echo $BOX2D_VERSION | cut -d"." -f1`
+-    BOX2D_MINOR=`echo $BOX2D_VERSION | cut -d"." -f2`
+-    if test "$BOX2D_MAJOR" -eq "2"; then
+-        if test "$BOX2D_MINOR" -eq "4"; then
++    AC_CHECK_HEADER(box2d/types.h, [BOX2D_TYPES_FOUND='TRUE'],
++        [BOX2D_TYPES_FOUND='FALSE'])
++    if test "$BOX2D_TYPES_FOUND" = "TRUE"; then # >=3.0
++        BOX2D_MAJOR=3
++        BOX2D_MINOR=0
++        _BOX2D_LIB=box2d
++        AC_DEFINE(BOX2D_HEADER,<box2d/box2d.h>)
++    else
++        BOX2D_MAJOR=2
++        AC_CHECK_HEADER(box2d/box2d.h, [BOX2D_H_FOUND='TRUE'],
++            [BOX2D_H_FOUND='FALSE'])
++        if test "$BOX2D_H_FOUND" = "TRUE"; then # 2.4.0+
++            BOX2D_MINOR=4
+             _BOX2D_LIB=box2d
+             AC_DEFINE(BOX2D_HEADER,<box2d/box2d.h>)
+         else
++            BOX2D_MINOR=3
+             # fail this. there's no other alternative to check when we are here.
+             AC_CHECK_HEADER([Box2D/Box2D.h], [],
+                 [AC_MSG_ERROR(box2d headers not found.)])

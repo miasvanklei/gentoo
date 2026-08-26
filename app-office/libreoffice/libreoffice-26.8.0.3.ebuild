@@ -51,7 +51,7 @@ ADDONS_SRC=(
 	# not packaged in Gentoo, https://github.com/serge-sans-paille/frozen
 	"${ADDONS_URI}/frozen-1.2.0.tar.gz"
 	# not packaged in Gentoo, https://skia.org/
-	"${ADDONS_URI}/skia-m142-f4ed99d2443962782cf5f8b4dd27179f131e7cbe.tar.xz"
+	"${ADDONS_URI}/skia-m147-ad8ecedbfdef9f4ae4b1e73347b6dd56e6637d38.tar.xz"
 
 	"base? (
 		${ADDONS_URI}/ba2930200c9f019c2d93a8c88c651a0f-flow-engine-0.9.4.zip
@@ -291,12 +291,20 @@ PATCHES=(
 
 	# not upstreamable stuff
 	"${FILESDIR}/${PN}-6.1-nomancompress.patch"
-	"${FILESDIR}/${PN}-24.2-qtdetect.patch"
 	"${FILESDIR}/${PN}-25.2-cflags.patch"
 
 	# add qt6 backend as possible fallback for gtk-based desktop environments:
 	# https://bugs.gentoo.org/950170
 	"${FILESDIR}/${PN}-25.2-vcl-backend-fallback.patch"
+
+	# box2d has no pkconfig
+	"${FILESDIR}/${PN}-26.8-revert-box2d-pkgconfig.patch"
+
+	# libcxx >=23 dropped a lot of transitive includes
+	"${FILESDIR}/libreoffice-26.8-missing-includes-libcxx-23.patch"
+
+	# libreoffice and libcxx define ERA
+	"${FILESDIR}/libreoffice-26.8-fix-ERA-langinfo.patch"
 )
 
 _check_reqs() {

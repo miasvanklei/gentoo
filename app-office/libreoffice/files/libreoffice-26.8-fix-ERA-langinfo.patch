@@ -1,0 +1,89 @@
+--- a/i18npool/inc/calendar_gregorian.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/i18npool/inc/calendar_gregorian.hxx	2026-08-14 14:26:22.962521274 +0200
+@@ -20,6 +20,7 @@
+ 
+ #include "calendarImpl.hxx"
+ 
++#undef ERA // defined in langinfo.h
+ #include <com/sun/star/i18n/CalendarFieldIndex.hpp>
+ 
+ #include <unicode/calendar.h>
+--- a/sc/source/core/data/dptabsrc.cxx	2026-07-21 23:07:02.000000000 +0200
++++ b/sc/source/core/data/dptabsrc.cxx	2026-08-14 14:26:17.951346834 +0200
+@@ -53,6 +53,8 @@
+ #include <com/sun/star/sheet/TableFilterField.hpp>
+ 
+ #include <unotools/calendarwrapper.hxx>
++
++#undef ERA // defined in langinfo.h
+ #include <com/sun/star/i18n/CalendarDisplayIndex.hpp>
+ 
+ using namespace com::sun::star;
+--- a/sc/source/core/data/dputil.cxx	2026-07-21 23:07:02.000000000 +0200
++++ b/sc/source/core/data/dputil.cxx	2026-08-14 14:26:17.951346834 +0200
+@@ -23,6 +23,7 @@
+ #include <o3tl/string_view.hxx>
+ #include <osl/diagnose.h>
+ 
++#undef ERA // defined in langinfo.h
+ #include <com/sun/star/sheet/DataPilotFieldGroupBy.hpp>
+ #include <com/sun/star/i18n/CalendarDisplayIndex.hpp>
+ 
+--- a/sc/source/ui/docshell/impex.cxx	2026-07-21 23:07:02.000000000 +0200
++++ b/sc/source/ui/docshell/impex.cxx	2026-08-14 14:26:17.920236246 +0200
+@@ -22,7 +22,10 @@
+ #include <i18nutil/unicode.hxx>
+ #include <sot/formats.hxx>
+ #include <sfx2/mieclip.hxx>
++
++#undef ERA // defined in langinfo.h
+ #include <com/sun/star/i18n/CalendarFieldIndex.hpp>
++
+ #include <com/sun/star/i18n/Calendar2.hpp>
+ #include <sal/log.hxx>
+ #include <unotools/charclass.hxx>
+--- a/svl/source/numbers/zforfind.cxx	2026-07-21 23:07:02.000000000 +0200
++++ b/svl/source/numbers/zforfind.cxx	2026-08-14 14:26:17.642677629 +0200
+@@ -29,8 +29,11 @@
+ #include <unotools/charclass.hxx>
+ #include <unotools/calendarwrapper.hxx>
+ #include <unotools/localedatawrapper.hxx>
++
++#undef ERA // defined in langinfo.h
+ #include <com/sun/star/i18n/CalendarFieldIndex.hpp>
+ #include <com/sun/star/i18n/LocaleCalendar2.hpp>
++
+ #include <unotools/digitgroupingiterator.hxx>
+ #include <comphelper/sequence.hxx>
+ 
+--- a/svl/source/numbers/zformat.cxx	2026-07-21 23:07:02.000000000 +0200
++++ b/svl/source/numbers/zformat.cxx	2026-08-14 14:26:17.642677629 +0200
+@@ -32,6 +32,8 @@
+ #include <unotools/charclass.hxx>
+ #include <unotools/calendarwrapper.hxx>
+ #include <unotools/nativenumberwrapper.hxx>
++
++#undef ERA // defined in langinfo.h
+ #include <com/sun/star/i18n/CalendarFieldIndex.hpp>
+ #include <com/sun/star/i18n/CalendarDisplayIndex.hpp>
+ #include <com/sun/star/i18n/CalendarDisplayCode.hpp>
+--- a/vcl/source/control/calendar.cxx	2026-07-21 23:07:02.000000000 +0200
++++ b/vcl/source/control/calendar.cxx	2026-08-14 14:26:16.975726080 +0200
+@@ -25,6 +25,7 @@
+ #include <vcl/dockwin.hxx>
+ #include <unotools/localedatawrapper.hxx>
+ 
++#undef ERA // defined in langinfo.h
+ #include <com/sun/star/i18n/Weekdays.hpp>
+ #include <com/sun/star/i18n/CalendarDisplayIndex.hpp>
+ #include <com/sun/star/i18n/CalendarFieldIndex.hpp>
+--- a/vcl/source/control/field2.cxx	2026-07-21 23:07:02.000000000 +0200
++++ b/vcl/source/control/field2.cxx	2026-08-14 14:26:16.975726080 +0200
+@@ -36,6 +36,7 @@
+ 
+ #include <svdata.hxx>
+ 
++#undef ERA // defined in langinfo.h
+ #include <com/sun/star/i18n/XCharacterClassification.hpp>
+ #include <com/sun/star/i18n/CalendarFieldIndex.hdl>
+ 

@@ -1,0 +1,145 @@
+--- a/basic/source/comp/buffer.cxx	2026-07-21 23:07:02.000000000 +0200
++++ b/basic/source/comp/buffer.cxx	2026-08-14 14:26:23.792941482 +0200
+@@ -17,6 +17,8 @@
+  *   the License at http://www.apache.org/licenses/LICENSE-2.0 .
+  */
+ 
++#include <iterator>
++
+ #include <buffer.hxx>
+ #include <basic/sberrors.hxx>
+ 
+--- a/fpicker/source/office/contentenumeration.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/fpicker/source/office/contentenumeration.hxx	2026-08-14 14:26:22.991317162 +0200
+@@ -23,6 +23,7 @@
+ 
+ #include <memory>
+ #include <mutex>
++#include <vector>
+ 
+ #include <com/sun/star/ucb/XCommandEnvironment.hpp>
+ #include <salhelper/thread.hxx>
+--- a/include/com/sun/star/uno/Sequence.h	2026-07-21 23:07:02.000000000 +0200
++++ b/include/com/sun/star/uno/Sequence.h	2026-08-14 14:26:18.734890276 +0200
+@@ -29,6 +29,8 @@
+ #include "rtl/alloc.h"
+ 
+ #include <new>
++#include <vector>
++#include <iterator>
+ 
+ #if defined LIBO_INTERNAL_ONLY
+ #include <cassert>
+--- a/include/comphelper/sequence.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/include/comphelper/sequence.hxx	2026-08-14 14:26:18.728351490 +0200
+@@ -24,6 +24,7 @@
+ #include <osl/diagnose.h>
+ 
+ #include <vector>
++#include <iterator>
+ 
+ namespace comphelper
+ {
+--- a/include/editeng/editview.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/include/editeng/editview.hxx	2026-08-14 14:26:18.710911863 +0200
+@@ -21,6 +21,7 @@
+ #define INCLUDED_EDITENG_EDITVIEW_HXX
+ 
+ #include <memory>
++#include <vector>
+ #include <com/sun/star/i18n/WordType.hpp>
+ 
+ #include <i18nlangtag/lang.h>
+--- a/include/svl/itemset.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/include/svl/itemset.hxx	2026-08-14 14:26:18.683862338 +0200
+@@ -23,6 +23,7 @@
+ #include <cassert>
+ #include <memory>
+ #include <unordered_map>
++#include <vector>
+ 
+ #include <svl/svldllapi.h>
+ #include <svl/poolitem.hxx>
+--- a/include/xmloff/GradientStyle.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/include/xmloff/GradientStyle.hxx	2026-08-14 14:26:18.627124525 +0200
+@@ -20,6 +20,8 @@
+ #ifndef INCLUDED_XMLOFF_GRADIENTSTYLE_HXX
+ #define INCLUDED_XMLOFF_GRADIENTSTYLE_HXX
+ 
++#include <vector>
++
+ #include <sal/config.h>
+ #include <xmloff/dllapi.h>
+ #include <rtl/ustring.hxx>
+--- a/package/inc/ZipFile.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/package/inc/ZipFile.hxx	2026-08-14 14:26:18.269352549 +0200
+@@ -33,6 +33,7 @@
+ #include <optional>
+ #include <span>
+ #include <unordered_set>
++#include <vector>
+ 
+ class MemoryByteGrabber;
+ namespace com::sun::star {
+--- a/sc/inc/broadcast.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/sc/inc/broadcast.hxx	2026-08-14 14:26:18.089709786 +0200
+@@ -14,6 +14,7 @@
+ #include <map>
+ #include <variant>
+ #include <ostream>
++#include <vector>
+ 
+ class ScFormulaCell;
+ class SvtListener;
+--- a/xmloff/source/chart/SchXMLParagraphContext.hxx	2026-07-21 23:07:02.000000000 +0200
++++ b/xmloff/source/chart/SchXMLParagraphContext.hxx	2026-08-14 14:26:16.890422015 +0200
+@@ -21,6 +21,7 @@
+ #include <xmloff/xmlictxt.hxx>
+ #include <rtl/ustring.hxx>
+ #include <rtl/ustrbuf.hxx>
++#include <vector>
+ 
+ class SchXMLParagraphContext : public SvXMLImportContext
+ {
+--- a/sd/source/ui/slidesorter/inc/view/SlsLayouter.hxx	2026-08-26 21:34:02.072962456 +0200
++++ b/sd/source/ui/slidesorter/inc/view/SlsLayouter.hxx	2026-08-26 21:34:10.749001772 +0200
+@@ -23,6 +23,7 @@
+ #include <tools/gen.hxx>
+ #include <sal/types.h>
+ #include <memory>
++#include <vector>
+ 
+ namespace sd { class Window; }
+ namespace sd::slidesorter::model { class SlideSorterModel; }
+--- a/sd/source/ui/dlg/RemoteDialogClientBox.hxx	2026-08-26 21:39:21.590415539 +0200
++++ b/sd/source/ui/dlg/RemoteDialogClientBox.hxx	2026-08-26 21:39:29.710452580 +0200
+@@ -26,6 +26,7 @@
+ #include <vcl/weld/ScrolledWindow.hxx>
+ 
+ #include <memory>
++#include <vector>
+ 
+ namespace sd {
+ 
+--- a/include/vcl/weld/ComboBox.hxx	2026-08-26 20:40:56.099062101 +0200
++++ b/include/vcl/weld/ComboBox.hxx	2026-08-26 20:41:09.199114263 +0200
+@@ -13,6 +13,8 @@
+ #include <vcl/weld/EntryMessageType.hxx>
+ #include <vcl/weld/Widget.hxx>
+ 
++#include <vector>
++
+ class OutputDevice;
+ 
+ namespace vcl
+--- a/include/vcl/weld/TreeView.hxx	2026-08-26 20:41:16.971145332 +0200
++++ b/include/vcl/weld/TreeView.hxx	2026-08-26 20:41:29.479195519 +0200
+@@ -12,6 +12,8 @@
+ #include <vcl/dllapi.h>
+ #include <vcl/weld/ItemView.hxx>
+ 
++#include <vector>
++
+ class OutputDevice;
+ enum class SelectionMode;
+ enum class TxtAlign;
