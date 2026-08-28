@@ -17381,7 +17381,7 @@ sys-apps/man-pages-posix 2013a 2017a-r1: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g-r2: Standard commands to read man pages
 sys-apps/mawk 1.3.4_p20260302: An (often faster than gawk) awk-interpreter
 sys-apps/mcstrans 3.6 3.7-r1 3.8.1 3.9 3.10 3.11 9999: SELinux context translation to human readable names
-sys-apps/memtest86+ 6.20-r1 7.00 7.20 8.00 8.10: Memory tester based on PCMemTest
+sys-apps/memtest86+ 6.20-r1 7.00 7.20 8.00 8.10 8.10-r1: Memory tester based on PCMemTest
 sys-apps/memtest86-bin 11.7: Stand alone memory testing software for x86 EFI hardware
 sys-apps/memtester 4.7.1: Userspace utility for testing the memory subsystem for faults
 sys-apps/merge-usr 6 7: Script to migrate from split-usr to merged-usr
@@ -17956,7 +17956,7 @@ sys-kernel/genkernel 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scr
 sys-kernel/gentoo-kernel 6.1.182 6.1.183 6.1.184 6.1.185 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 6.1.182 6.1.183 6.1.184 6.1.185 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-kernel-modprep 6.1.182 6.1.183 6.1.184 6.1.185 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11: Minimal subset of gentoo-kernel-bin for building modules, for containers
-sys-kernel/gentoo-sources 6.1.180 6.1.182 6.1.183 6.1.184 6.1.185 6.6.147 6.6.151 6.6.152 6.6.153 6.6.154 6.12.100 6.12.103 6.12.104 6.12.105 6.12.106 6.18.41 6.18.44 6.18.45 6.18.46 6.18.47 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11 7.2.0 7.2.1: Full sources including the Gentoo patchset for the 7.2 kernel tree
+sys-kernel/gentoo-sources 6.1.180 6.1.182 6.1.183 6.1.184 6.1.185 6.1.186 6.6.147 6.6.151 6.6.152 6.6.153 6.6.154 6.6.155 6.12.100 6.12.103 6.12.104 6.12.105 6.12.106 6.12.107 6.18.41 6.18.44 6.18.45 6.18.46 6.18.47 6.18.48 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11 7.1.12 7.2.0 7.2.1 7.2.2: Full sources including the Gentoo patchset for the 7.2 kernel tree
 sys-kernel/git-sources 7.2_rc1 7.2_rc2 7.2_rc3 7.2_rc4 7.2_rc5 7.2_rc6 7.2_rc7: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 0.9_p20260630 9999: GNU Hurd is the GNU project's replacement for UNIX
