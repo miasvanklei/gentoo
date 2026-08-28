@@ -5891,7 +5891,7 @@ dev-libs/nng 1.10.1 1.11: Light-weight brokerless messaging
 dev-libs/npth 1.8: New GNU Portable Threads Library
 dev-libs/nsgenbind 0.9: Generate Javascript-to-DOM bindings from w3c webidl files
 dev-libs/nspr 4.36 4.38.2 4.39 4.40: Netscape Portable Runtime
-dev-libs/nss 3.112.5 3.125 3.126 3.126.1 3.127: Mozilla's Network Security Services library that implements PKI support
+dev-libs/nss 3.112.5 3.125 3.126 3.126.1 3.127 3.128: Mozilla's Network Security Services library that implements PKI support
 dev-libs/nss-pem 1.1.1: PEM file reader for Network Security Services (NSS)
 dev-libs/nsync 1.25.0 1.26.0: C library that exports various synchronization primitives, such as mutexes
 dev-libs/ntl 11.5.1-r4 11.6.0: High-performance and portable C++ number theory library
@@ -8687,7 +8687,7 @@ dev-python/google-auth-oauthlib 1.4.0 1.4.1: Google Authentication Library
 dev-python/google-i18n-address 3.1.1: Google's i18n address metadata repository
 dev-python/google-pasta 0.2.0-r2: AST-based Python refactoring library
 dev-python/googleapis-common-protos 1.75.0 1.75.1 1.75.2: Python classes generated from the common protos in the googleapis repository
-dev-python/gpep517 19 20: A backend script to aid installing Python packages in Gentoo
+dev-python/gpep517 19 20 22: A backend script to aid installing Python packages in Gentoo
 dev-python/gpgmepy 2.0.0-r1: GnuPG Made Easy is a library for making GnuPG easier to use (Python bindings)
 dev-python/gpt-image 0.9.1: Tool to create GPT disk image files
 dev-python/graph-tool 2.98 9999: An efficient python module for manipulation and statistical analysis of graphs
@@ -13107,7 +13107,7 @@ media-gfx/brscan4 0.4.11.1-r1: Brother scanner driver
 media-gfx/brscan5 1.6.2.0-r1: SANE driver for Brother scanners (brscan5)
 media-gfx/cairosvg 2.9.0: CLI and library to export SVG to PDF, PostScript, and PNG
 media-gfx/cellwriter 1.3.6-r1: Grid-entry natural handwriting input panel
-media-gfx/chafa 1.18.1 1.18.2: versatile and fast Unicode/ASCII/ANSI graphics renderer
+media-gfx/chafa 1.18.2: versatile and fast Unicode/ASCII/ANSI graphics renderer
 media-gfx/clockphoto 1.2-r1: Adjusts photo timestamps based on clock photos
 media-gfx/converseen 0.12.2.4 0.15.0.3 0.15.2.2: Batch image converter and resizer based on ImageMagick
 media-gfx/cropgui 0.9 0.9-r1: GUI for lossless cropping of jpeg images
@@ -13621,7 +13621,7 @@ media-libs/musicbrainz 5.1.0-r2: Client Library for accessing the latest XML bas
 media-libs/mutagen 1.47.0 1.48.0 1.48.1: Audio metadata tag reader and writer implemented in pure Python
 media-libs/nanosvg 20231202: Simple stupid single-header-file SVG parse
 media-libs/nas 1.9.5-r2: Network Audio System
-media-libs/netpbm 11.2.19 11.2.22 11.2.28 11.15.6 9999: A set of utilities for converting to/from the netpbm (and related) formats
+media-libs/netpbm 11.2.19 11.2.28 11.15.6 9999: A set of utilities for converting to/from the netpbm (and related) formats
 media-libs/noise-suppression-for-voice 1.10-r2 9999: A real-time noise suppression plugin for voice
 media-libs/nv-codec-headers 12.1.14.0 12.1.14.1 13.0.19.0 13.0.19.1 13.1.15.0: FFmpeg version of headers required to interface with Nvidias codec APIs
 media-libs/nvidia-vaapi-driver 0.0.17: A VA-API implemention using NVIDIA's NVDEC
@@ -15342,7 +15342,7 @@ net-misc/ethertypes 0: Maps ethernet frame ids to symbolic names
 net-misc/eventd 0.29.0-r2: A small daemon to act on remote or local events
 net-misc/exabgp 4.2.23 4.2.25 5.0.8 5.0.12: The BGP swiss army knife of networking
 net-misc/fakeidentd 2.6-r1: A static, secure identd. One source file only!
-net-misc/freerdp 3.29.0 3.30.0 3.31.0 9999: Free implementation of the Remote Desktop Protocol
+net-misc/freerdp 3.29.0 3.30.0 3.31.0-r1 9999: Free implementation of the Remote Desktop Protocol
 net-misc/frr 10.1.3 10.1.4-r2 10.1.5-r1 10.2.3 10.2.5-r2 10.3.1 10.3.3-r2 10.3.4-r1 10.4.3-r2 10.4.4-r1 10.5.3-r2 10.5.4-r1 10.6.1-r1: The FRRouting Protocol Suite
 net-misc/gallery-dl 1.32.6-r1 1.32.8-r1 1.32.9-r1 9999: Download image galleries and collections from several image hosting sites
 net-misc/geckodriver 0.36.0 0.37.0 0.37.1: Proxy for using WebDriver clients to interact with Gecko-based browsers
@@ -17953,10 +17953,10 @@ sys-kernel/dkms 3.3.0 3.4.3 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 110-r5 111-r2 112 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 6.1.182 6.1.183 6.1.184 6.1.185 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 6.1.182 6.1.183 6.1.184 6.1.185 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-kernel-modprep 6.1.182 6.1.183 6.1.184 6.1.185 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11: Minimal subset of gentoo-kernel-bin for building modules, for containers
-sys-kernel/gentoo-sources 6.1.180 6.1.182 6.1.183 6.1.184 6.1.185 6.1.186 6.6.147 6.6.151 6.6.152 6.6.153 6.6.154 6.6.155 6.12.100 6.12.103 6.12.104 6.12.105 6.12.106 6.12.107 6.18.41 6.18.44 6.18.45 6.18.46 6.18.47 6.18.48 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11 7.1.12 7.2.0 7.2.1 7.2.2: Full sources including the Gentoo patchset for the 7.2 kernel tree
+sys-kernel/gentoo-kernel 6.1.182 6.1.183 6.1.184 6.1.185 6.1.186 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.6.155 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.12.107 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 6.18.48 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11 7.1.12: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 6.1.182 6.1.183 6.1.184 6.1.185 6.1.186 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.6.155 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.12.107 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 6.18.48 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11 7.1.12: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-kernel-modprep 6.1.182 6.1.183 6.1.184 6.1.185 6.1.186 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.6.155 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.12.107 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 6.18.48 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11 7.1.12: Minimal subset of gentoo-kernel-bin for building modules, for containers
+sys-kernel/gentoo-sources 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12 7.2.2: Full sources including the Gentoo patchset for the 7.2 kernel tree
 sys-kernel/git-sources 7.2_rc1 7.2_rc2 7.2_rc3 7.2_rc4 7.2_rc5 7.2_rc6 7.2_rc7: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 0.9_p20260630 9999: GNU Hurd is the GNU project's replacement for UNIX
@@ -17978,7 +17978,7 @@ sys-kernel/scx 1.1.0 1.1.1 1.1.2: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 6.1.182 6.1.183 6.1.184 6.1.185 6.1.9999 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.6.9999 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.12.9999 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 6.18.9999 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 6.1.182 6.1.183 6.1.184 6.1.185 6.1.186 6.1.9999 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.6.155 6.6.9999 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.12.107 6.12.9999 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 6.18.48 6.18.9999 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11 7.1.12: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12 7.2.2: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.1.5: The Zen Kernel Live Sources
@@ -18168,7 +18168,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 6.1.182 6.1.183 6.1.184 6.1.185 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 6.1.182 6.1.183 6.1.184 6.1.185 6.1.186 6.6.150 6.6.151 6.6.152 6.6.153 6.6.154 6.6.155 6.12.102 6.12.103 6.12.104 6.12.105 6.12.106 6.12.107 6.18.43 6.18.44 6.18.45 6.18.46 6.18.47 6.18.48 7.1.7 7.1.8 7.1.9 7.1.10 7.1.11 7.1.12: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0-r1: Virtual for .NET SDK
 virtual/editor 0-r7: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
