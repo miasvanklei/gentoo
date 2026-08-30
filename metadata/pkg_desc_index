@@ -4028,7 +4028,7 @@ dev-db/libodbc++ 0.2.5-r3: Provides a subset of the well-known JDBC 2.0(tm) and 
 dev-db/libzdb 3.4.1 3.5.0 3.6.0: A thread safe high level multi-database connection pool library
 dev-db/litecli 1.17.1 9999: CLI for SQLite with auto-completion and syntax highlighting
 dev-db/litedb 5.0.17-r4 5.0.21: .NET NoSQL Document Store in a single data file
-dev-db/lmdb 0.9.35 0.9.36 1.0.1-r2: An ultra-fast, ultra-compact key-value embedded data store
+dev-db/lmdb 0.9.35 0.9.36 1.0.1-r3: An ultra-fast, ultra-compact key-value embedded data store
 dev-db/lmdb++ 1.0.0-r1: C++11 wrapper for the LMDB database library
 dev-db/m17n-db 1.8.12 1.8.14: Database for the m17n library
 dev-db/mariadb 10.6.23-r1 10.6.24-r1 10.6.27 10.11.14-r1 10.11.15-r1 10.11.18 11.4.8-r1 11.4.9-r1 11.8.3-r2 11.8.3-r5 11.8.5-r1 11.8.5-r2 11.8.6 12.0.2-r2 12.0.2-r3: An enhanced, drop-in replacement for MySQL
@@ -17420,7 +17420,7 @@ sys-apps/pcsc-lite 2.4.0-r1 2.4.1: PC/SC Architecture smartcard middleware libra
 sys-apps/pcsc-slb-rf72-drv 1.1.0-r2: Schlumberger Reflex 72 Serial Smartcard Reader
 sys-apps/pcsc-tools 1.7.3-r1 1.7.4: PC/SC Architecture smartcard tools
 sys-apps/pick 4.0.0-r1: A fuzzy search tool for the command-line
-sys-apps/pkgcore 0.12.38 0.12.39 0.12.40 9999: a framework for package management
+sys-apps/pkgcore 0.12.40 0.12.41 9999: a framework for package management
 sys-apps/pkgcraft-tools 0.0.31-r2 9999: pkgcraft-based tools for Gentoo
 sys-apps/plocate 1.1.23 1.1.24: Posting locate is a much faster locate
 sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives the ability to mount removable devices as a user
@@ -17766,7 +17766,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 0.17 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20260603 13.4.1_p20260805 13.4.1_p20260812 13.4.1_p20260819 13.5.9999 14.3.1_p20260604 14.4.0 14.4.1_p20260716 14.4.1_p20260806 14.4.1_p20260813 14.4.1_p20260820 14.5.9999 15.3.0 15.3.1_p20260717 15.3.1_p20260731 15.3.1_p20260814 15.3.1_p20260821 15.3.9999 16.2.0 16.2.1_p20260808 16.2.1_p20260815 16.2.1_p20260822 16.3.9999 17.0.0_p20260809 17.0.0_p20260816 17.0.0_p20260823 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20260603 13.4.1_p20260805 13.4.1_p20260812 13.4.1_p20260819 13.4.1_p20260826 13.5.9999 14.3.1_p20260604 14.4.0 14.4.1_p20260716 14.4.1_p20260806 14.4.1_p20260813 14.4.1_p20260820 14.4.1_p20260827 14.5.9999 15.3.0 15.3.1_p20260717 15.3.1_p20260731 15.3.1_p20260814 15.3.1_p20260821 15.3.1_p20260828 15.3.9999 16.2.0 16.2.1_p20260808 16.2.1_p20260815 16.2.1_p20260822 16.2.1_p20260829 16.3.9999 17.0.0_p20260809 17.0.0_p20260816 17.0.0_p20260823 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 20260517 99999999: Updated config.sub and config.guess file from GNU
