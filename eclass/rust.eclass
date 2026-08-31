@@ -68,6 +68,7 @@ fi
 # Definitive list of Rust slots and the associated LLVM slot, newest first.
 declare -A -g -r _RUST_LLVM_MAP=(
 	["9999"]=23
+	["1.98.0"]=23
 	["1.97.1"]=23
 	["1.96.1"]=22
 	["1.95.0"]=22
