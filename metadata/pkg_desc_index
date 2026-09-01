@@ -2204,7 +2204,7 @@ app-emacs/nix-mode 1.5.0: GNU Emacs major mode for editing Nix expressions
 app-emacs/no-littering 1.8.8 1.8.9 1.9.0: ELisp library that helps keeping Emacs configuration directory clean
 app-emacs/noflet 0.0.15_p20141102-r1: Dynamic, local advice for Emacs-Lisp code
 app-emacs/nxml-docbook5-schemas 5.1: Add support for DocBook 5 schemas to NXML
-app-emacs/nxml-gentoo-schemas 20260616: Extension for nxml-mode with Gentoo-specific schemas
+app-emacs/nxml-gentoo-schemas 20260616 20260901: Extension for nxml-mode with Gentoo-specific schemas
 app-emacs/nxml-libvirt-schemas 11.10.0 12.0.0 12.1.0 12.2.0 12.6.0: Extension for nxml-mode with libvirt schemas
 app-emacs/nxml-svg-schemas 1.1.20081123-r2: Extension for nxml-mode with SVG 1.1 schemas
 app-emacs/oauth2 0.18.3: OAuth 2.0 authorization protocol
@@ -5412,7 +5412,7 @@ dev-lang/polyml 5.9.1 5.9.2-r1: Poly/ML is a full implementation of Standard ML
 dev-lang/pypy 2.7.7.3.23 3.11.7.3.23-r1: A fast, compliant alternative implementation of the Python (3.11) language
 dev-lang/pypy3-exe 3.11.7.3.23: PyPy3.11 executable (build from source)
 dev-lang/pypy3-exe-bin 3.11.7.3.23: PyPy3.11 executable (pre-built version)
-dev-lang/python 0.3.13.14 0.3.13.15 0.3.13.9999 0.3.14.6 0.3.14.6_p1 0.3.14.7 0.3.14.9999 0.3.15.0_beta2 0.3.15.0_beta3 0.3.15.0_beta4 0.3.15.0_rc1-r1 0.3.15.9999 2.7.18_p16-r2 3.8.20_p7-r1 3.9.25 3.10.20 3.10.21 3.10.9999 3.11.15-r1 3.11.16 3.11.9999 3.12.13_p1 3.12.14 3.12.9999 3.13.14 3.13.15 3.13.9999 3.14.6 3.14.6_p1 3.14.7 3.14.9999 3.15.0_beta2 3.15.0_beta3 3.15.0_beta4 3.15.0_rc1 3.15.0_rc1_p1-r1 3.15.9999: An interpreted, interactive, object-oriented programming language
+dev-lang/python 0.3.13.14 0.3.13.15 0.3.13.9999 0.3.14.6 0.3.14.6_p1 0.3.14.7 0.3.14.9999 0.3.15.0_beta2 0.3.15.0_beta3 0.3.15.0_beta4 0.3.15.0_rc1-r1 0.3.15.0_rc2 0.3.15.9999 2.7.18_p16-r2 3.8.20_p7-r1 3.9.25 3.10.20 3.10.21 3.10.9999 3.11.15-r1 3.11.16 3.11.9999 3.12.13_p1 3.12.14 3.12.9999 3.13.14 3.13.15 3.13.9999 3.14.6 3.14.6_p1 3.14.7 3.14.9999 3.15.0_beta2 3.15.0_beta3 3.15.0_beta4 3.15.0_rc1 3.15.0_rc1_p1-r1 3.15.0_rc2 3.15.9999: An interpreted, interactive, object-oriented programming language
 dev-lang/python-exec 2.4.10: Python script wrapper
 dev-lang/python-exec-conf 2.4.6: Configuration file for dev-lang/python-exec
 dev-lang/qore 1.19.2: Qore, the embeddable multithreaded scripting language
@@ -9449,7 +9449,7 @@ dev-python/python-stdnum 2.2: A module to handle standardized numbers and codes
 dev-python/python-subunit 1.4.6: A streaming protocol for test results
 dev-python/python-swiftclient 4.10.0 4.11.0: Python bindings to the OpenStack Object Storage API
 dev-python/python-systemd 235: Python module for native access to the systemd facilities
-dev-python/python-tests 0.3.14.6 0.3.14.6_p1 0.3.14.7 0.3.14.9999 0.3.15.0_beta2 0.3.15.0_beta3 0.3.15.0_beta4 0.3.15.0_rc1 0.3.15.9999 3.12.13_p1 3.12.14 3.12.9999 3.13.14 3.13.15 3.13.9999 3.14.6 3.14.6_p1 3.14.7 3.14.9999 3.15.0_beta2 3.15.0_beta3 3.15.0_beta4 3.15.0_rc1 3.15.0_rc1_p1 3.15.9999: Test modules from dev-lang/python
+dev-python/python-tests 0.3.14.6 0.3.14.6_p1 0.3.14.7 0.3.14.9999 0.3.15.0_beta2 0.3.15.0_beta3 0.3.15.0_beta4 0.3.15.0_rc1 0.3.15.0_rc2 0.3.15.9999 3.12.13_p1 3.12.14 3.12.9999 3.13.14 3.13.15 3.13.9999 3.14.6 3.14.6_p1 3.14.7 3.14.9999 3.15.0_beta2 3.15.0_beta3 3.15.0_beta4 3.15.0_rc1 3.15.0_rc1_p1 3.15.0_rc2 3.15.9999: Test modules from dev-lang/python
 dev-python/python-tlsh 4.12.1: Fuzzy matching library - C++ extension for Python
 dev-python/python-utils 4.0.0: Collection of small Python functions & classes
 dev-python/python-vlc 3.0.21203: Python ctypes-based bindings for libvlc
@@ -13013,7 +13013,7 @@ media-fonts/mplus-fonts 2.2.4-r1: M+ Japanese bitmap fonts
 media-fonts/mplus-outline-fonts 0_pre063_p1: M+ Japanese outline fonts
 media-fonts/nanum 3.0: Korean fonts distributed by Naver
 media-fonts/nanumfont 2.5: Korean monospace font distributed by Naver
-media-fonts/noto 20260601 20260701 20260801: Google's font family that aims to support all the world's languages
+media-fonts/noto 20260701 20260801 20260901: Google's font family that aims to support all the world's languages
 media-fonts/noto-cjk 20190416: Google's CJK font family
 media-fonts/noto-emoji 20250912 20250912-r1: Google Noto Emoji fonts
 media-fonts/nunito 1.0-r1: Sans Serif font with rounded terminals
@@ -13420,7 +13420,7 @@ media-libs/jbigkit 2.1: data compression algorithm for bi-level high-resolution 
 media-libs/jg 1.0.0-r1 2.0.0 9999: Reference Implementation of The Jolly Good API
 media-libs/kcolorpicker 0.3.1-r1: Qt based color picker with popup menu
 media-libs/kimageannotator 0.7.1 0.7.2: Tool for annotating images
-media-libs/kquickimageeditor 0.6.2.1: QtQuick components providing basic image editing capabilities
+media-libs/kquickimageeditor 0.6.2.1 0.7.0: QtQuick components providing basic image editing capabilities
 media-libs/ksanecore 26.04.3 26.08.0: Qt-based interface for SANE library to control scanner hardware
 media-libs/kvazaar 2.2.0 2.3.0-r1 2.3.2 9999: Open-source HEVC encoder
 media-libs/ladspa-sdk 1.17-r2: The Linux Audio Developer's Simple Plugin API
@@ -14877,7 +14877,7 @@ net-firewall/ipt_netflow 2.6-r1 2.6_p20250317 9999: Netflow iptables module
 net-firewall/iptables 1.8.11-r1 1.8.12 1.8.13: Linux kernel (2.4+) firewall, NAT and packet mangling tools
 net-firewall/lutelwall 0.99-r1: IPTables firewall setup script
 net-firewall/nfacct 1.0.2-r2: Command line tool to create/retrieve/delete accounting objects in NetFilter
-net-firewall/nftables 1.1.1 1.1.1-r1 1.1.3 1.1.4 1.1.5 1.1.6 9999: Linux kernel firewall, NAT and packet mangling tools
+net-firewall/nftables 1.1.1 1.1.1-r1 1.1.3 1.1.4 1.1.5 1.1.6 1.1.7 9999: Linux kernel firewall, NAT and packet mangling tools
 net-firewall/nftlb 1.0.7-r1 1.0.8-r1 1.1.0: nftables load balancer
 net-firewall/psad 2.4.6-r1: Port Scanning Attack Detection daemon
 net-firewall/rtsp-conntrack 5.3-r2: RTSP conntrack module for Netfilter
@@ -14934,7 +14934,7 @@ net-im/ejabberd 24.10 25.04 25.10 26.04 26.07: Robust, scalable and extensible X
 net-im/element-desktop-bin 1.12.23: A glossy Matrix collaboration client for desktop (binary package)
 net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and maintainable
 net-im/fractal 14 14.1: Matrix messaging app for GNOME written in Rust
-net-im/gajim 2.2.0-r1 2.4.6 2.5.0: GTK XMPP Client
+net-im/gajim 2.4.6 2.5.0 2.6.0: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
 net-im/kaidan 0.13.0: Modern XMPP chat app for every device
 net-im/libcommuni 3.7.0-r2: A cross-platform IRC framework written with Qt
@@ -15095,7 +15095,7 @@ net-libs/libnetfilter_cttimeout 1.0.1: netlink interface for conntrack timeout i
 net-libs/libnetfilter_log 1.0.2-r1: Interface to packets that have been logged by the kernel packet filter
 net-libs/libnetfilter_queue 1.0.5 1.0.5-r1: API to packets that have been queued by the kernel packet filter
 net-libs/libnfnetlink 1.0.2: The low-level library for netfilter related kernel/userspace communication
-net-libs/libnftnl 1.2.8 1.2.9 1.3.0 1.3.1 9999: Netlink API to the in-kernel nf_tables subsystem
+net-libs/libnftnl 1.2.8 1.2.9 1.3.0 1.3.1 1.3.2 9999: Netlink API to the in-kernel nf_tables subsystem
 net-libs/libnice 0.1.22-r1 0.1.23-r1: Implementation of the Interactive Connectivity Establishment standard (ICE)
 net-libs/libnids 1.26-r2: An implementation of an E-component of Network Intrusion Detection System
 net-libs/libnma 1.10.6-r2: NetworkManager GUI library
@@ -15794,7 +15794,7 @@ net-wireless/bladerf-firmware 2.6.0: bladeRF FX3 firmware images
 net-wireless/bladerf-fpga 0.16.0: bladeRF FPGA bitstreams
 net-wireless/blueman 2.4.6 9999: Simple and intuitive GTK+ Bluetooth Manager
 net-wireless/bluetui 0.7.2 0.8.0 0.8.1: TUI for managing bluetooth on Linux
-net-wireless/bluez 5.86-r1 5.87: Bluetooth Tools and System Daemons for Linux
+net-wireless/bluez 5.87: Bluetooth Tools and System Daemons for Linux
 net-wireless/bluez-tools 0_p20201025-r1: Set of tools to manage bluetooth devices for Linux
 net-wireless/broadcom-sta 6.30.223.271-r11: Broadcom's IEEE 802.11a/b/g/n hybrid Linux device driver
 net-wireless/bss 0.8-r2 0.8-r3: Bluetooth stack smasher / fuzzer
@@ -17796,7 +17796,7 @@ sys-firmware/b43legacy-firmware 3.130.20.0: broadcom firmware for b43legacy/bcm4
 sys-firmware/blisp 0.0.5: Bouffalo Labs in-system-programming tool and library
 sys-firmware/bluez-firmware 1.2_p9_p20250503: Firmware for Broadcom BCM, STLC2300, and Synaptics SYN Bluetooth chips
 sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
-sys-firmware/edk2 202411 202502-r1 202511-r1 202605: TianoCore EDK II UEFI firmware for virtual machines
+sys-firmware/edk2 202511-r1 202605: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/edk2-bin 202202 202408 202411 202511 202605: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.22: NXP i.MX firmware
 sys-firmware/intel-microcode 20260210_p20260211 20260227_p20260227 20260512_p20260513 20260811_p20260811 20260812_p20260813: Intel IA32/IA64 microcode update data
@@ -17954,9 +17954,9 @@ sys-kernel/dkms 3.3.0 3.4.3 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 110-r5 111-r2 112 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-kernel-modprep 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12: Minimal subset of gentoo-kernel-bin for building modules, for containers
+sys-kernel/gentoo-kernel 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12 7.2.2: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12 7.2.2: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-kernel-modprep 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12 7.2.2: Minimal subset of gentoo-kernel-bin for building modules, for containers
 sys-kernel/gentoo-sources 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12 7.2.2: Full sources including the Gentoo patchset for the 7.2 kernel tree
 sys-kernel/git-sources 7.3_rc1: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
@@ -17979,7 +17979,7 @@ sys-kernel/scx 1.1.0 1.1.1 1.1.2: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 6.1.186 6.1.9999 6.6.155 6.6.9999 6.12.107 6.12.9999 6.18.48 6.18.9999 7.1.12: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 6.1.186 6.1.9999 6.6.155 6.6.9999 6.12.107 6.12.9999 6.18.48 6.18.9999 7.1.12 7.2.2: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12 7.2.2: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.1.5: The Zen Kernel Live Sources
@@ -18169,7 +18169,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 6.1.186 6.6.155 6.12.107 6.18.48 7.1.12 7.2.2: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0-r1: Virtual for .NET SDK
 virtual/editor 0-r7: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
