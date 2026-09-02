@@ -1777,7 +1777,7 @@ app-doc/cantera-docs 3.0.0 3.2.0: Documentation API reference for Cantera packag
 app-doc/casting-spels-emacs 19-r4: Casting SPELs in Lisp - A Comic Book (Emacs Lisp Edition)
 app-doc/cppman 0.5.9 0.6.0: C++ man pages for Linux, with source from cplusplus.com and cppreference.com
 app-doc/csound-manual 6.16: The Csound reference manual
-app-doc/devmanual 0_pre20241109 9999: The Gentoo Development Guide
+app-doc/devmanual 0_pre20241109 0_pre20260901 9999: The Gentoo Development Guide
 app-doc/dita-ot-bin 4.4 4.4.1: Darwin Information Typing Architecture - Open Toolkit publishing engine
 app-doc/diveintopython 3-r2: 'Dive Into Python' by Mark Pilgrim - Python 3
 app-doc/e16-docs 0.16.8.0.2-r2: The E16 online help
@@ -17796,8 +17796,8 @@ sys-firmware/b43legacy-firmware 3.130.20.0: broadcom firmware for b43legacy/bcm4
 sys-firmware/blisp 0.0.5: Bouffalo Labs in-system-programming tool and library
 sys-firmware/bluez-firmware 1.2_p9_p20250503: Firmware for Broadcom BCM, STLC2300, and Synaptics SYN Bluetooth chips
 sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
-sys-firmware/edk2 202511-r1 202605: TianoCore EDK II UEFI firmware for virtual machines
-sys-firmware/edk2-bin 202202 202408 202411 202511 202605: TianoCore EDK II UEFI firmware for virtual machines
+sys-firmware/edk2 202511-r1 202605 202608: TianoCore EDK II UEFI firmware for virtual machines
+sys-firmware/edk2-bin 202202 202408 202411 202511 202605 202608: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.22: NXP i.MX firmware
 sys-firmware/intel-microcode 20260210_p20260211 20260227_p20260227 20260512_p20260513 20260811_p20260811 20260812_p20260813: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3-r1: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
@@ -18412,9 +18412,9 @@ www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-
 www-client/epiphany 48.5 49.3 49.8.1: GNOME webbrowser based on Webkit
 www-client/falkon 26.04.3 26.08.0: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.14.0 153.1.0 154.0 154.0.1 155.0: Firefox Web Browser
+www-client/firefox 140.14.0 153.1.0 153.2.0 154.0 154.0.1 155.0: Firefox Web Browser
 www-client/firefox-bin 140.14.0 153.1.0 153.2.0 154.0 154.0.1 155.0: Firefox Web Browser
-www-client/firefox-l10n 153.1.0 154.0 154.0.1 155.0: Firefox Web Browser's translation files
+www-client/firefox-l10n 153.1.0 153.2.0 154.0 154.0.1 155.0: Firefox Web Browser's translation files
 www-client/google-chrome 151.0.7922.108 151.0.7922.137 151.0.7922.169: The web browser from Google
 www-client/google-chrome-beta 151.0.7922.47 152.0.7977.30 152.0.7977.42: The web browser from Google
 www-client/google-chrome-unstable 152.0.7953.3 153.0.7993.0 153.0.8003.0: The web browser from Google
