@@ -2451,13 +2451,13 @@ app-emulation/virt-viewer 11.0-r1: Graphical console client for connecting to vi
 app-emulation/virt-what 1.25: Detects if the current machine is running in a virtual machine
 app-emulation/virtio-win 0.1.266.1 0.1.271.1 0.1.285.1: VirtIO drivers for Windows virtual machines running on KVM
 app-emulation/virtiofsd 1.13.1 1.13.2 1.13.3 9999: Shared file system for virtual machines
-app-emulation/virtualbox 7.0.26-r1 7.2.8 7.2.14 7.2.16 9999: Family of powerful x86 virtualization products for enterprise and home use
-app-emulation/virtualbox-additions 7.0.26 7.2.8 7.2.14 7.2.16: CD image containing guest additions for VirtualBox
-app-emulation/virtualbox-extpack-oracle 7.0.26 7.2.8 7.2.14 7.2.16: PUEL extensions for VirtualBox
-app-emulation/virtualbox-guest-additions 7.0.26 7.2.8 7.2.14 7.2.16: VirtualBox kernel modules and user-space tools for Gentoo guests
-app-emulation/virtualbox-guest-modules 7.0.26 7.0.26-r1 7.2.8 7.2.14 7.2.16: Kernel Modules for Virtualbox Guest Additions
-app-emulation/virtualbox-kvm 7.2.8_pre20260201 7.2.14_pre20260201 7.2.16_pre20260201: Family of powerful x86 virtualization products for enterprise and home use
-app-emulation/virtualbox-modules 7.0.26 7.0.26-r1 7.2.8 7.2.14 7.2.16: Kernel Modules for Virtualbox
+app-emulation/virtualbox 7.0.26-r1 7.2.14 7.2.16 9999: Family of powerful x86 virtualization products for enterprise and home use
+app-emulation/virtualbox-additions 7.0.26 7.2.14 7.2.16: CD image containing guest additions for VirtualBox
+app-emulation/virtualbox-extpack-oracle 7.0.26 7.2.14 7.2.16: PUEL extensions for VirtualBox
+app-emulation/virtualbox-guest-additions 7.0.26 7.2.14 7.2.16: VirtualBox kernel modules and user-space tools for Gentoo guests
+app-emulation/virtualbox-guest-modules 7.0.26 7.0.26-r1 7.2.14 7.2.16: Kernel Modules for Virtualbox Guest Additions
+app-emulation/virtualbox-kvm 7.2.14_pre20260201 7.2.16_pre20260201: Family of powerful x86 virtualization products for enterprise and home use
+app-emulation/virtualbox-modules 7.0.26 7.0.26-r1 7.2.14 7.2.16: Kernel Modules for Virtualbox
 app-emulation/vkd3d-proton 2.14.1 3.0.1 9999: Fork of VKD3D, development branches for Proton's Direct3D 12 implementation
 app-emulation/wine-desktop-common 20150204-r2: Various desktop menu items and icons for wine
 app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet Explorer for Wine
@@ -2791,7 +2791,7 @@ app-misc/enum 1.1-r1: Replacement for GNU seq and BSD jot
 app-misc/esekeyd 1.2.7-r2: Multimedia key daemon that uses the Linux event interface
 app-misc/evtest 1.35 1.36: Test program for capturing input device events
 app-misc/faq 0.0.7: Format agnostic jQ
-app-misc/fastfetch 0.1.9999 0.2.9999 2.61.0 2.63.1 2.65.2 2.67.1: Fast neofetch-like system information tool
+app-misc/fastfetch 0.1.9999 0.2.9999 2.61.0 2.63.1 2.65.2 2.67.1 2.68.1: Fast neofetch-like system information tool
 app-misc/fdupes 2.3.2 2.4.0 9999: Identify/delete duplicate files residing within specified directories
 app-misc/fdutils 5.6_p2: Utilities for configuring and debugging the Linux floppy driver
 app-misc/fhem 6.3: A GPL'd perl server for house automation
@@ -11208,7 +11208,7 @@ dev-util/tree-sitter-cli 0.24.3-r1 0.25.6 0.25.8 0.25.10 0.26.6 0.26.8 0.26.11 0
 dev-util/treecc 0.3.10-r2 0.3.10-r3: Compiler-compiler tool for aspect-oriented programming
 dev-util/txt2regex 0.9: A Regular Expression wizard that converts human sentences to regexs
 dev-util/ty 0.0.7: An extremely fast Python type checker and language server, written in Rust
-dev-util/uftrace 0.17 0.18 0.18.1 0.19: Function (graph) tracer for user-space
+dev-util/uftrace 0.19 0.20: Function (graph) tracer for user-space
 dev-util/uglifyjs 3.19.3: JavaScript parser, minifier, compressor and beautifier toolkit
 dev-util/umockdev 0.19.3 0.19.4 0.19.7 0.19.7-r1 9999: Mock hardware devices for creating unit tests
 dev-util/uncrustify 0.81.0 9999: C/C++/C#/D/Java/Pawn code indenter and beautifier
@@ -13143,7 +13143,7 @@ media-gfx/geeqie 2.6.1-r1 2.6.1-r2 9999: A lightweight GTK image viewer forked f
 media-gfx/gif2png 2.5.14: Converts images from gif format to png format
 media-gfx/gifsicle 1.95 1.96: Create, manipulate, and optimize GIF images and animations
 media-gfx/gimp 2.10.38-r5 3.2.4 9999: GNU Image Manipulation Program
-media-gfx/gimp-arrow-brushes 20190407: Brushes for GIMP with the styles arrow, handpointer, button arrow and cursor
+media-gfx/gimp-arrow-brushes 20190407 20190407-r1: Brushes for GIMP with the styles arrow, handpointer, button arrow and cursor
 media-gfx/gnofract4d 4.4: A program for drawing beautiful mathematically-based images known as fractals
 media-gfx/gnome-font-viewer 48.0 49.0: Font viewer utility for GNOME
 media-gfx/gnome-photos 44.0: Access, organize and share your photos on GNOME
@@ -13611,7 +13611,7 @@ media-libs/musicbrainz 5.1.0-r2: Client Library for accessing the latest XML bas
 media-libs/mutagen 1.47.0 1.48.0 1.48.1: Audio metadata tag reader and writer implemented in pure Python
 media-libs/nanosvg 20231202: Simple stupid single-header-file SVG parse
 media-libs/nas 1.9.5-r2: Network Audio System
-media-libs/netpbm 11.2.22 11.2.28 11.15.6 9999: A set of utilities for converting to/from the netpbm (and related) formats
+media-libs/netpbm 11.2.22 11.2.29 11.15.7 9999: A set of utilities for converting to/from the netpbm (and related) formats
 media-libs/noise-suppression-for-voice 1.10-r2 9999: A real-time noise suppression plugin for voice
 media-libs/nv-codec-headers 12.1.14.0 12.1.14.1 13.0.19.0 13.0.19.1 13.1.15.0: FFmpeg version of headers required to interface with Nvidias codec APIs
 media-libs/nvidia-vaapi-driver 0.0.17 0.0.18: A VA-API implemention using NVIDIA's NVDEC
@@ -15015,7 +15015,7 @@ net-libs/cppzmq 4.9.0 4.10.0 4.11.0: High-level CPP Binding for ZeroMQ
 net-libs/cvm 0.97-r2: Credential Validation Modules by Bruce Guenter
 net-libs/czmq 4.2.1: High-level C Binding for ZeroMQ
 net-libs/daq 2.0.7 2.0.7-r1: Data Acquisition library, for packet I/O
-net-libs/davix 0.8.7 0.8.10-r2 9999: High-performance file management over WebDAV/HTTP
+net-libs/davix 0.8.10-r2 0.9.0 9999: High-performance file management over WebDAV/HTTP
 net-libs/dleyna 0.8.3-r2: A set of services and D-Bus APIs to simplify access to UPnP/DLNA media devices
 net-libs/enet 1.3.17 1.3.17-r1 1.3.18: Relatively thin, simple and robust network communication layer on top of UDP
 net-libs/farstream 0.2.9-r2: Audio/video conferencing framework specifically designed for instant messengers
@@ -15446,7 +15446,7 @@ net-misc/ntpsec 1.2.4 1.2.5 9999: The NTP reference implementation, refactored
 net-misc/nx 3.5.99.27-r2 3.5.99.27-r3: NX compression technology core libraries
 net-misc/nxplayer 7.6.2.4-r1: Client for NoMachine remote servers
 net-misc/ofono 2.14 2.18: Open Source mobile telephony (GSM/UMTS) daemon
-net-misc/oidc-agent 4.5.2 5.2.3 5.3.5 5.3.6: Agent and tools for managing OpenID Connect tokens on the command line
+net-misc/oidc-agent 4.5.2 5.2.3 5.3.6 5.3.8: Agent and tools for managing OpenID Connect tokens on the command line
 net-misc/oidentd 3.0.0-r1 3.1.0: Another (RFC1413 compliant) ident daemon
 net-misc/olsrd 0.9.8_p20241102: An implementation of the Optimized Link State Routing protocol
 net-misc/omniORB 4.3.0: A robust, high-performance CORBA 2 ORB
@@ -16041,7 +16041,7 @@ sci-chemistry/autodock_vina 1.2.7: Program for drug discovery, molecular docking
 sci-chemistry/avogadro2 1.103.0 2.0.0: Advanced molecule editor and visualizer 2
 sci-chemistry/bodr 10: The Blue Obelisk Data Repository listing element and isotope properties
 sci-chemistry/cara-bin 1.8.4-r2: Analysis of NMR spectra and Computer Aided Resonance Assignment
-sci-chemistry/chemex 2026.6.0 2026.6.1: Program to fit chemical exchange induced shift and relaxation data
+sci-chemistry/chemex 2026.6.1 2026.9.0: Program to fit chemical exchange induced shift and relaxation data
 sci-chemistry/chemical-mime-data 0.1.95_pre20171122: A collection of data files to add support for chemical MIME types
 sci-chemistry/chemtool 1.6.14-r1: A GTK program for drawing organic molecules
 sci-chemistry/clashlist 3.17-r1: Build lists of van der Waals clashes from an input PDB file
@@ -16503,7 +16503,7 @@ sci-mathematics/stp 2.3.4-r1: Simple Theorem Prover, an efficient SMT solver for
 sci-mathematics/sympow 2.023.7: Symmetric power elliptic curve L-functions
 sci-mathematics/topcom 0.17.8-r3 1.1.2: Computing Triangulations Of Point Configurations and Oriented Matroids
 sci-mathematics/twelf 1.7.1-r2: Implementation of the logical framework LF
-sci-mathematics/unuran 1.8.1 1.9.0: Universal Non-Uniform Random number generator
+sci-mathematics/unuran 1.8.1 1.9.0 1.12.0: Universal Non-Uniform Random number generator
 sci-mathematics/vampire 5.0.1: The Vampire Prover, theorem prover for first-order logic
 sci-mathematics/verifpal 0.27.0: Cryptographic protocol analysis for real-world protocols
 sci-mathematics/verit 2021.06.2: An open, trustable and efficient SMT-prover
@@ -16580,7 +16580,7 @@ sci-physics/looptools 2.15-r1 2.16: Tools for evaluation of scalar and tensor on
 sci-physics/pythia 8.3.16-r1 8.3.17 9999: Lund Monte Carlo high-energy physics event generator
 sci-physics/reduze 2.4-r1: Program for reducing Feynman integrals
 sci-physics/rivet 3.1.11-r1 4.1.2 4.1.3 9999: Robust Independent Validation of Experiment and Theory toolkit
-sci-physics/root 6.38.04 6.40.02 6.40.9999 9999: C++ data analysis framework and interpreter from CERN
+sci-physics/root 6.38.04 6.40.04 6.40.9999 9999: C++ data analysis framework and interpreter from CERN
 sci-physics/siscone 3.0.6 3.1.0 3.1.2 3.1.2-r1 9999: Hadron Seedless Infrared-Safe Cone jet algorithm
 sci-physics/thepeg 2.2.3-r3 2.3.0-r4: Toolkit for High Energy Physics Event Generation
 sci-physics/vgm 5.2-r1 5.4 9999: Virtual Geometry Model for High Energy Physics Experiments
@@ -18329,7 +18329,7 @@ www-apps/cgp 1_p20190510-r2: A graphical web-based front-end for visualizing RRD
 www-apps/chromedriver-bin 151.0.7922.108 151.0.7922.137 151.0.7922.169: WebDriver for Chrome
 www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
-www-apps/dokuwiki 20250514b 20260714b: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
+www-apps/dokuwiki 20260714c: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
 www-apps/drupal 10.5.12 10.6.11 11.2.14 11.3.12: PHP-based open-source platform and content management system
 www-apps/element 1.12.22 1.12.24 1.12.25: A glossy Matrix collaboration client for the web
 www-apps/gitea 1.26.4 1.27.3: A painless self-hosted Git service
@@ -18897,7 +18897,7 @@ x11-misc/urxvt-tabbedex 22.32: An extended version of rxvt-unicode's tabbed perl
 x11-misc/util-macros 1.20.2: X.Org autotools utility macros
 x11-misc/vdpauinfo 1.5-r1: Displays info about your card's VDPAU support
 x11-misc/viewglob 2.0.4-r1: Graphical display of directories and globs referenced at the shell prompt
-x11-misc/virtualgl 3.1.3 3.1.4: Run OpenGL applications remotely with full 3D hardware acceleration
+x11-misc/virtualgl 3.1.4 3.1.5: Run OpenGL applications remotely with full 3D hardware acceleration
 x11-misc/vym 2.9.568 9999: View Your Mind, a mindmap tool
 x11-misc/wayv 0.3-r3: Wayv is hand-writing/gesturing recognition software for X
 x11-misc/wbar 2.3.4-r3: A fast, lightweight quick launch bar
@@ -19294,7 +19294,7 @@ x11-wm/blackbox 0.77-r1 0.77-r2: A small, fast, full-featured window manager for
 x11-wm/bspwm 0.9.10 0.9.12: Tiling window manager based on binary space partitioning
 x11-wm/cwm 7.4 7.9 9999: OpenBSD fork of calmwm, a clean and lightweight window manager
 x11-wm/dwm 6.6 6.7 6.8 9999: a dynamic window manager for X11
-x11-wm/e16 1.0.31: Enlightenment Window Manager (E16)
+x11-wm/e16 1.0.31 1.0.32: Enlightenment Window Manager (E16)
 x11-wm/echinus 0.4.9: A window manager for X in the spirit of dwm
 x11-wm/enlightenment 0.27.1: Enlightenment window manager
 x11-wm/evilwm 1.4.2 1.4.3 1.5: A minimalist, no frills window manager for X
