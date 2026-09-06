@@ -898,7 +898,7 @@ acct-user/znc 0-r3: User for net-irc/znc
 acct-user/zookeeper 0-r2: A user for sys-cluster/zookeeper-bin
 app-accessibility/accerciser 3.46.2 3.48.0: Interactive Python accessibility explorer
 app-accessibility/at-spi2-atk 2.46.0: Gtk module for bridging AT-SPI to Atk
-app-accessibility/at-spi2-core 2.58.6 2.58.8 2.60.5: D-Bus accessibility specifications and registration daemon
+app-accessibility/at-spi2-core 2.58.6 2.58.8 2.60.5 2.60.6: D-Bus accessibility specifications and registration daemon
 app-accessibility/brltty 6.7 6.8 6.9 6.9.1: Daemon that provides access to the Linux/Unix console for a blind person
 app-accessibility/caribou 0.4.21-r9: Input assistive technology intended for switch and pointer users
 app-accessibility/edbrowse 3.8.13 3.8.15 3.8.17: Combination editor, browser, and mail client that is 100% text based
@@ -3031,7 +3031,7 @@ app-office/endeavour 43.0-r2: Personal task manager
 app-office/glabels 3.4.1-r2: Program for creating labels and business cards
 app-office/gnucash 5.14: Personal finance manager
 app-office/gnumeric 1.12.59-r1 1.12.60 1.12.61: The GNOME Spreadsheet
-app-office/grisbi 3.0.4-r1: Grisbi is a personal accounting application for Linux
+app-office/grisbi 3.0.4-r1 3.90.1: Grisbi is a personal accounting application for Linux
 app-office/homebank 5.9.7 5.10.2: Free, easy, personal accounting for everyone
 app-office/impressive 0.13.2: Stylish way of giving presentations with Python
 app-office/joplin-desktop 3.7.6 3.7.9 3.7.10 3.7.12: Secure note taking and to-do app with synchronization capabilities
@@ -8301,7 +8301,7 @@ dev-python/aniso8601 10.0.1: A library for parsing ISO 8601 strings
 dev-python/annotated-doc 0.0.4 0.0.5: Document parameters, variables inline, with Annotated
 dev-python/annotated-types 0.7.0 0.8.0: Reusable constraint types to use with typing.Annotated
 dev-python/ansi 0.3.7: ANSI cursor movement and graphics in Python
-dev-python/ansi2html 1.9.2 1.9.3 1.9.4: Convert text with ANSI color codes to HTML
+dev-python/ansi2html 1.9.4 1.9.5: Convert text with ANSI color codes to HTML
 dev-python/ansible-compat 26.6.0 26.8.0: Contains functions that facilitate working with various versions of Ansible
 dev-python/ansible-pygments 0.1.2: Pygments lexer and style Ansible snippets
 dev-python/ansible-pylibssh 1.4.0: Python bindings for libssh client specific to Ansible use case
@@ -11002,6 +11002,7 @@ dev-util/geany-plugins 2.1: A collection of different plugins for Geany
 dev-util/gengetopt 2.23-r1: Tool to write command line option parsing code for C programs
 dev-util/gertty 1.6.0-r3 9999: Gertty is a console-based interface to the Gerrit Code Review system
 dev-util/gi-docgen 2025.4 2025.5 2026.1: A documentation generator for GObject-based libraries
+dev-util/git-bug 0.10.1: Distributed, offline-first bug tracker embedded in git
 dev-util/git-delta 0.18.2-r3 0.19.2: Syntax-highlighting pager for git
 dev-util/git-fixup 1.6.1: Fighting the copy-paste element of your rebase workflow
 dev-util/gitchangelog 3.2.0: Creates a nicely formatted changelog from git log history
@@ -11282,7 +11283,7 @@ dev-vcs/git-tools 2022.12 2025.08: Assorted git-related scripts
 dev-vcs/gitg 44-r4 44-r5 50: git repository viewer for GNOME
 dev-vcs/gitolite 3.6.13 3.6.14: Highly flexible server for git directory version tracker
 dev-vcs/gitolite-gentoo 3.6.6.1-r3 3.6.13.1 3.6.14.1: Highly flexible server for git directory version tracker, Gentoo fork
-dev-vcs/gitstats 0_pre20201124: Statistics generator for git
+dev-vcs/gitstats 0_pre20201124 0_pre20201124-r1: Statistics generator for git
 dev-vcs/gitui 0.28.0 0.28.1: blazing fast terminal-ui for git
 dev-vcs/guilt 0.36-r1: A series of bash scripts which add a quilt-like interface to git
 dev-vcs/hg-evolve 11.1.9 11.1.10 12.0.0: enables the changeset evolution feature of Mercurial
@@ -12126,7 +12127,7 @@ gnome-extra/gnome-integration-spotify 20140907-r2: GNOME integration for Spotify
 gnome-extra/gnome-logs 43.0 45.0 49.0: Log viewer for the systemd journal
 gnome-extra/gnome-network-displays 0.97.0-r1 0.98.0 0.99.0: Stream the desktop to Wi-Fi Display capable devices
 gnome-extra/gnome-power-manager 43.0: GNOME power statistics
-gnome-extra/gnome-shell-extension-alphabetical-grid 43.0 44.0: Restore the alphabetical ordering of the app grid
+gnome-extra/gnome-shell-extension-alphabetical-grid 44.0 46.0: Restore the alphabetical ordering of the app grid
 gnome-extra/gnome-shell-extension-appindicator 64 65: Support legacy, AppIndicators and KStatusNotifierItems in Gnome
 gnome-extra/gnome-shell-extension-applications-overview-tooltip 24: Show tooltip with full name and description
 gnome-extra/gnome-shell-extension-bing-wallpaper 52 53: Change your wallpaper daily to the bing.com background image
@@ -12850,7 +12851,7 @@ mate-extra/mate-user-guide 1.28.0: User documentation for MATE Desktop
 mate-extra/mate-user-share 1.28.0-r2: Personal file sharing for the MATE desktop
 mate-extra/mate-utils 1.28.0-r1: Utilities for the MATE desktop
 media-fonts/Humor-Sans 1.0-r1: Sans-serif typeface in the style of xkcd
-media-fonts/adwaita-fonts 49.0: The typefaces for GNOME
+media-fonts/adwaita-fonts 49.0 50.0: The typefaces for GNOME
 media-fonts/ahem 1.0: Font to help test writers develop predictable tests
 media-fonts/alee-fonts 13-r1: Lee's Hangul truetype fonts
 media-fonts/alef 1: Hebrew open source multiscript font
@@ -13116,7 +13117,7 @@ media-gfx/enblend 4.2.0_p20240424 4.2.0_p20240424-r1: Image Blending with Multir
 media-gfx/engauge 12.9.1 9999: Convert an image file showing a graph or map into numbers
 media-gfx/entangle 3.0-r3 3.0-r4: Tethered Camera Control & Capture
 media-gfx/entice 0.0.1: A simple image viewer based on EFL
-media-gfx/eog 47.0 49.3 50.1: The Eye of GNOME image viewer
+media-gfx/eog 50.1 50.3: The Eye of GNOME image viewer
 media-gfx/eog-plugins 44.1 44.1-r1: Eye of GNOME plugins
 media-gfx/eom 1.28.0-r3 1.28.1: The MATE image viewer
 media-gfx/ephoto 1.6.0: Enlightenment image viewer written with EFL
@@ -14407,7 +14408,7 @@ media-video/blinkentools 2.9-r1: Provides a set of commandline utilities related
 media-video/bluray_info 1.10: Blu-ray utilities: bluray_info, bluray_copy, bluray_player
 media-video/ccextractor 0.89: Extract closed captioning subtitles from video to SRT
 media-video/cclive 0.9.3-r3: Command line tool for extracting videos from various websites
-media-video/celluloid 0.26 0.29: Simple GTK+ frontend for mpv
+media-video/celluloid 0.29 0.30: Simple GTK+ frontend for mpv
 media-video/chaplin 1.10-r3: This is a program to raw copy chapters from a dvd using libdvdread
 media-video/cheese 44.1-r1: A cheesy program to take pictures and videos from your webcam
 media-video/cpvts 1.2-r1: raw copy title sets from a DVD to your harddisc
@@ -14506,7 +14507,7 @@ media-video/tivodecode 0.2_pre4: TiVo File Decoder
 media-video/totem 43.1 43.2 43.2-r1: Media player for GNOME
 media-video/tsmuxer 2.7.0: Utility to create and demux TS and M2TS files
 media-video/ttcut 0.19.6_p2-r1: Tool for cutting MPEG files especially for removing commercials
-media-video/untrunc 0_pre20260204 0_pre20260605: Restore truncated mp4/mov files
+media-video/untrunc 0_pre20260605 0_pre20260820: Restore truncated mp4/mov files
 media-video/ushare 2.1_p20250817: uShare is a UPnP (TM) A/V & DLNA Media Server
 media-video/v4l2loopback 0.13.1 0.15.0 0.15.1 0.15.3 9999: v4l2 loopback device whose output is its own input
 media-video/vamps 0.99.2-r2: Very fast requantisizing tool for backup DVDs
@@ -18399,7 +18400,7 @@ www-client/chromium 150.0.7871.13 150.0.7871.128 150.0.7871.181 150.0.7871.186 1
 www-client/chromium-common 2: Common configuration files for Chromium slots
 www-client/dillo 3.2.0 9999: Lean FLTK based web browser
 www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-mode web browser
-www-client/epiphany 48.5 49.3 49.8.1: GNOME webbrowser based on Webkit
+www-client/epiphany 49.8.1: GNOME webbrowser based on Webkit
 www-client/falkon 26.04.3 26.08.0: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.14.0 140.15.0 153.1.0 153.2.0 154.0 154.0.1 155.0 155.0.1: Firefox Web Browser
