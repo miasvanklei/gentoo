@@ -1833,7 +1833,7 @@ app-editors/featherpad 1.6.2 1.6.3 1.6.4 9999: Lightweight Qt6 Plain-Text Editor
 app-editors/focuswriter 1.8.10: Fullscreen and distraction-free word processor
 app-editors/gedit 48.1 48.2 49.0-r1: A text editor for the GNOME desktop
 app-editors/gedit-plugins 48.1 48.2 49.0 49.0-r1: Collection of extra plugins for the gedit Text Editor
-app-editors/ghex 48.1 48.3 9999: GNOME hexadecimal editor
+app-editors/ghex 48.3 50.3 9999: GNOME hexadecimal editor
 app-editors/ghostwriter 26.04.3 26.08.0: Cross-platform, aesthetic, distraction-free markdown editor
 app-editors/gnome-text-editor 48.3 49.1 49.2: A simple text editor for the GNOME desktop
 app-editors/gummi 0.8.3: Simple LaTeX editor for GTK+ users
@@ -2444,7 +2444,7 @@ app-emulation/uxn 0_p20250122: An assembler and emulator for the Uxn stack-machi
 app-emulation/vagrant 2.4.0-r2 2.4.1-r1 2.4.9-r1: A tool for building and distributing development environments
 app-emulation/vendor-reset 0.1.1_pre20221205-r1 0.1.1_pre20221205-r2 9999: Linux kernel vendor specific hardware reset module
 app-emulation/vice 3.10: Versatile Commodore Emulator
-app-emulation/virt-firmware 26.2-r1 26.5.4 26.7.1: Tools for ovmf/armvirt firmware volumes
+app-emulation/virt-firmware 26.2-r1 26.5.4 26.7.1 26.9: Tools for ovmf/armvirt firmware volumes
 app-emulation/virt-manager 5.1.0-r1 9999: Desktop tool for managing libvirt virtual machines
 app-emulation/virt-v2v 2.6.0 2.10.0: Tool to convert guests from foreign hypervisors to run on KVM
 app-emulation/virt-viewer 11.0-r1: Graphical console client for connecting to virtual machines
@@ -3035,7 +3035,7 @@ app-office/grisbi 3.0.4-r1 3.90.1: Grisbi is a personal accounting application f
 app-office/homebank 5.9.7 5.10.2: Free, easy, personal accounting for everyone
 app-office/impressive 0.13.2: Stylish way of giving presentations with Python
 app-office/joplin-desktop 3.7.6 3.7.9 3.7.10 3.7.12: Secure note taking and to-do app with synchronization capabilities
-app-office/kmymoney 5.2.2: Personal finance manager based on KDE Frameworks
+app-office/kmymoney 5.2.2 5.2.2_p20260906: Personal finance manager based on KDE Frameworks
 app-office/kraft 2.0.0: Quotes and invoices manager for small enterprises
 app-office/ktimetracker 6.0.0: Todo management and time tracker
 app-office/ledger 3.4.1: Double-entry accounting system with a command-line reporting interface
@@ -3057,7 +3057,7 @@ app-office/planner 0.14.91-r1 0.14.92-r1 9999: Project manager for Gnome
 app-office/projectlibre-bin 1.9.3: Open source desktop alternative to Microsoft Project
 app-office/sc-im 0.8.3-r2 0.8.5: Ncurses based, vim-like spreadsheet calculator
 app-office/scribus 1.7.2 1.7.3-r1 9999: Desktop publishing (DTP) and layout program
-app-office/skrooge 26.4.0: Personal finances manager, aiming at being simple and intuitive
+app-office/skrooge 26.4.0 26.8.0: Personal finances manager, aiming at being simple and intuitive
 app-office/texmaker 6.0.1: Powerful LaTeX-IDE
 app-office/texstudio 4.9.0 4.9.5 4.9.6: Free cross-platform LaTeX editor (fork from texmakerX)
 app-office/unoconv 0.9.0-r1: Convert between document formats supported by LibreOffice
@@ -5596,7 +5596,7 @@ dev-libs/immer 0.8.1-r1: Library of persistent and immutable data structures wri
 dev-libs/inih 57-r1 58 59 60 62: inih (INI not invented here) simple .INI file parser
 dev-libs/iniparser 4.2.6: Free stand-alone ini file parsing library
 dev-libs/input-pad 1.0.99_pre20140916-r1: On-screen input pad to send characters with mouse
-dev-libs/intel-compute-runtime 24.35.30872.32-r3 24.35.30872.36-r1 26.22.38646.4-r2 26.27.39122.12: Intel Graphics Compute Runtime for oneAPI Level Zero and OpenCL Driver
+dev-libs/intel-compute-runtime 24.35.30872.32-r3 24.35.30872.36-r1 26.22.38646.4-r2 26.27.39122.12-r1: Intel Graphics Compute Runtime for oneAPI Level Zero and OpenCL Driver
 dev-libs/intel-metrics-discovery 1.16.190 1.16.193: A user mode library that provides access to GPU performance data
 dev-libs/intel-metrics-library 1.0.234 1.0.238: User mode driver helper library that provides access to GPU performance counters
 dev-libs/intel-vc-intrinsics 0.25.0: A set of new intrinsics on top of core LLVM IR instructions
@@ -5767,7 +5767,7 @@ dev-libs/libp11 0.4.12-r7 0.4.13 0.4.16 0.4.17: Abstraction layer to simplify PK
 dev-libs/libparserutils 0.2.5: C library for building efficient parsers
 dev-libs/libpcre 8.45-r4: Perl-compatible regular expression library
 dev-libs/libpcre-debian 8-r3: libpcre(posix).so.3 symlinks for compatibility with Debian
-dev-libs/libpcre2 10.47: Perl-compatible regular expression library
+dev-libs/libpcre2 10.47 10.48: Perl-compatible regular expression library
 dev-libs/libpeas 1.36.0 1.38.1 2.0.7-r1 2.2.1: A GObject plugins library
 dev-libs/libpfm 4.13.0 4.13.0_p20260328 9999: Hardware-based performance monitoring interface for Linux
 dev-libs/libphonenumber 8.13.47-r1: Library for parsing, formatting, and validating international phone numbers
@@ -12116,7 +12116,7 @@ gnome-extra/gnome-browser-connector 42.1 42.1-r1: OS-native connector counterpar
 gnome-extra/gnome-calculator 48.1 49.2-r1 50.0: A calculator application for GNOME
 gnome-extra/gnome-calendar 48.1 49.0.1 49.1: Manage your calendars with simple and modern interface
 gnome-extra/gnome-characters 48.0 49.1: Unicode character map viewer and library
-gnome-extra/gnome-clocks 48.0 49.0: Clocks application for GNOME
+gnome-extra/gnome-clocks 49.0 50.0: Clocks application for GNOME
 gnome-extra/gnome-color-manager 3.36.2-r1: GNOME color profile tools
 gnome-extra/gnome-commander 1.18.4 1.18.6 2.0.3: A graphical, full featured, twin-panel file manager
 gnome-extra/gnome-contacts 47.1.1 49.0-r1 49.0-r2: GNOME contact management application
@@ -13378,7 +13378,7 @@ media-libs/glfw 3.3.8 3.3.9 3.4: Portable OpenGL FrameWork
 media-libs/glm 1.0.1 1.0.2 1.0.3: OpenGL Mathematics
 media-libs/glpng 1.47: OpenGL PNG image library
 media-libs/glu 9.0.3 9999: The OpenGL Utility Library
-media-libs/glycin 2.1.1 2.1.1-r1: Sandboxed and extendable image loading library
+media-libs/glycin 2.1.1-r1 2.1.5: Sandboxed and extendable image loading library
 media-libs/glycin-loaders 1.2.4 2.1.1 2.1.5: Loaders for glycin clients (glycin crate or libglycin)
 media-libs/glyr 1.0.10-r1: Music related metadata searchengine, both with commandline interface and C API
 media-libs/gmmlib 22.10.0 22.10.1 9999: Intel Graphics Memory Management Library
@@ -13699,7 +13699,7 @@ media-libs/suil 0.10.22-r2: Lightweight C library for loading and wrapping LV2 p
 media-libs/svt-av1 2.1.2 3.1.2 4.0.1 4.1.0 9999: Scalable Video Technology for AV1 (SVT-AV1 Encoder)
 media-libs/svt-hevc 1.5.1 1.5.1-r1 9999: Scalable Video Technology for HEVC (SVT-HEVC Encoder)
 media-libs/t1lib 5.1.2-r5: Type 1 Font Rasterizer Library for UNIX/X11
-media-libs/taglib 1.13.1 2.3 2.3.1: Library for reading and editing audio meta data
+media-libs/taglib 1.13.1 2.3 2.3.1 2.3.2: Library for reading and editing audio meta data
 media-libs/tg_owt 0_pre20260309 0_pre20260803: WebRTC build for Telegram
 media-libs/theoraplay 0_pre20180524-r2: Simple library to make decoding of Ogg Theora videos easier
 media-libs/tiff 4.5.1 4.7.1: Tag Image File Format (TIFF) library
@@ -13717,7 +13717,7 @@ media-libs/vkroots 0_p20240430: Simple framework for writing Vulkan layers
 media-libs/vo-aacenc 0.1.3 9999: VisualOn AAC encoder library
 media-libs/vo-amrwbenc 0.1.3 9999: VisualOn AMR-WB encoder library
 media-libs/volpack 1.0_p7-r2: Volume rendering library
-media-libs/vpl-gpu-rt 26.2.0 26.2.1 26.2.3 26.2.4: Intel Video Processing Library GPU Runtime
+media-libs/vpl-gpu-rt 26.2.0 26.2.1 26.2.3 26.2.4 26.3.2: Intel Video Processing Library GPU Runtime
 media-libs/vulkan-layers 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 1.4.357.0 9999: Vulkan Validation Layers
 media-libs/vulkan-loader 1.4.328.0-r1 1.4.335.0-r1 1.4.341.0 1.4.350.0 1.4.357.0 9999: Vulkan Installable Client Driver (ICD) Loader
 media-libs/waffle 1.8.1 1.8.2 1.8.3 9999: Library that allows selection of GL API and of window system at runtime
@@ -14408,7 +14408,7 @@ media-video/blinkentools 2.9-r1: Provides a set of commandline utilities related
 media-video/bluray_info 1.10: Blu-ray utilities: bluray_info, bluray_copy, bluray_player
 media-video/ccextractor 0.89: Extract closed captioning subtitles from video to SRT
 media-video/cclive 0.9.3-r3: Command line tool for extracting videos from various websites
-media-video/celluloid 0.29 0.30: Simple GTK+ frontend for mpv
+media-video/celluloid 0.29 0.30-r1: Simple GTK+ frontend for mpv
 media-video/chaplin 1.10-r3: This is a program to raw copy chapters from a dvd using libdvdread
 media-video/cheese 44.1-r1: A cheesy program to take pictures and videos from your webcam
 media-video/cpvts 1.2-r1: raw copy title sets from a DVD to your harddisc
@@ -14772,7 +14772,7 @@ net-analyzer/wtfis 0.14.0 0.15.0 9999: Passive hostname, domain and IP lookup to
 net-analyzer/xnetload 1.11.3-r1: Displays a count and a graph of the traffic over a specified network connection
 net-analyzer/xprobe 0.3-r1 0.3-r2: Active OS fingerprinting tool - this is Xprobe2
 net-analyzer/yersinia 0.8.2_p20221119: A framework for layer 2 attacks
-net-analyzer/zabbix 6.0.46 6.0.48 7.0.26 7.0.27 7.0.29 7.0.30 7.4.10 7.4.11 7.4.13 7.4.14: ZABBIX is software for monitoring of your applications, network and servers
+net-analyzer/zabbix 6.0.46 6.0.48 7.0.27 7.0.29 7.0.30 7.4.11 7.4.13 7.4.14: ZABBIX is software for monitoring of your applications, network and servers
 net-analyzer/zmap 4.3.2: Fast network scanner designed for Internet-wide network surveys
 net-analyzer/zniper 1.0-r3: Displays and kill active TCP connections seen by the selected interface
 net-dialup/accel-ppp 1.12.0_p20230609 1.14.0 1.14.0-r2 9999: High performance PPTP/L2TP/SSTP/PPPoE/IPoE server
@@ -14927,7 +14927,7 @@ net-im/err 6.1.9: Multiprotocol chatbot designed to be easily deployable and mai
 net-im/fractal 14 14.1: Matrix messaging app for GNOME written in Rust
 net-im/gajim 2.4.6 2.5.0 2.6.0: GTK XMPP Client
 net-im/gitter-bin 5.0.1-r1 5.0.1-r2: Chat and network platform
-net-im/kaidan 0.13.0: Modern XMPP chat app for every device
+net-im/kaidan 0.16.0: Modern XMPP chat app for every device
 net-im/libcommuni 3.7.0-r2: A cross-platform IRC framework written with Qt
 net-im/mattermost-desktop-bin 5.13.7 6.2.3 6.3.0: Mattermost Desktop application
 net-im/neochat 26.04.3 26.08.0: Client for Matrix, the decentralized communication protocol
@@ -15153,7 +15153,7 @@ net-libs/phodav 3.0-r1: WebDav server implementation using libsoup
 net-libs/pjproject 2.15.1 2.15.1-r1 2.15.1-r3 2.16-r2 2.17 2.17-r1: Open source SIP, Media, and NAT Traversal Library
 net-libs/ppp-defs 0: Shim header for net/ppp_defs.h on musl
 net-libs/quiche 0.24.1 0.26.1-r1 0.28.0 0.29.0 0.29.1 0.29.2 0.29.3 9999: Implementation of the QUIC transport protocol and HTTP/3
-net-libs/qxmpp 1.15.1: Cross-platform C++ XMPP client and server library
+net-libs/qxmpp 1.15.1 1.16.3: Cross-platform C++ XMPP client and server library
 net-libs/rabbitmq-c 0.13.0: RabbitMQ C client
 net-libs/radcli 1.4.0: A simple RADIUS client library
 net-libs/rest 0.9.1-r2 0.10.2: Helper library for RESTful services
@@ -15376,7 +15376,7 @@ net-misc/ip-sentinel 0.12-r2: Prevent unauthorized usage of IP addresses
 net-misc/ipcalc 0.42_p2-r1 0.51-r1: IP Calculator prints broadcast/network/etc for an IP address and netmask
 net-misc/ipcalc-ng 1.0.3: Modern IPv4/IPv6 ipcalc tool
 net-misc/iperf 2.2.1 2.9999 3.19.1 3.19.1-r1 3.20 3.21: TCP, UDP, and SCTP network bandwidth measurement tool
-net-misc/ipmiview 2.24.0.251224: A GUI application that allows to manage multiple target systems through BMC
+net-misc/ipmiview 2.25.0.260812: A GUI application that allows to manage multiple target systems through BMC
 net-misc/iprange 1.0.4: A tool capable of managing sets of IPs
 net-misc/ipsorcery 2.0.9-r2: Ipsorcery allows you to generate IP, TCP, UDP, ICMP, and IGMP packets
 net-misc/ipsvd 1.0.0-r3: Set of internet protocol service daemons for Unix
@@ -15514,7 +15514,7 @@ net-misc/sipp 3.7.5 3.7.7: A free Open Source test tool / traffic generator for 
 net-misc/sipsak 0.9.8.1_p20230215: Small command line tool for testing SIP applications and devices
 net-misc/sitecopy 0.16.6-r4: Maintain remote web sites with ease
 net-misc/sks 1.1.6_p20200624-r3: An OpenPGP keyserver which is decentralized with highly reliable synchronization
-net-misc/smb4k 4.0.6: Advanced network neighborhood browser
+net-misc/smb4k 4.0.6 4.0.7: Advanced network neighborhood browser
 net-misc/smbc 1.2.2-r4: Text mode (ncurses) SMB network commander. Features: resume and UTF-8
 net-misc/snarf 7.0-r5: Small and fast CLI resource grabber for http, gopher, finger, ftp
 net-misc/sntpd 3.1-r1: A NTP (RFC-1305 and RFC-4330) client and server for unix-alike systems
@@ -15569,7 +15569,7 @@ net-misc/vrrpd 1.9-r1 1.15 1.18: Virtual Router Redundancy Protocol Daemon
 net-misc/wakeonlan 0.42: Client for Wake-On-LAN
 net-misc/websocat 1.13.0-r1 1.14.0 1.14.1: Command-line client for WebSockets, like netcat, with socat-like functions
 net-misc/websocketd 0.4.1-r1: Like inetd, but for WebSockets
-net-misc/wget 1.25.0-r1 1.25.0-r2: Network utility to retrieve files from the WWW
+net-misc/wget 1.25.0-r2 1.25.0-r3: Network utility to retrieve files from the WWW
 net-misc/wget2 2.2.0 2.2.1 9999: GNU Wget2 is a file and recursive website downloader
 net-misc/whatmask 1.2-r1: Little C program to compute different subnet mask notations
 net-misc/whois 5.5.23 5.6.6 9999: Improved Whois Client
@@ -17758,7 +17758,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 0.17 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20260603 13.4.1_p20260805 13.4.1_p20260812 13.4.1_p20260819 13.4.1_p20260826 13.5.9999 14.3.1_p20260604 14.4.0 14.4.1_p20260716 14.4.1_p20260806 14.4.1_p20260813 14.4.1_p20260820 14.4.1_p20260827 14.5.9999 15.3.0 15.3.1_p20260717 15.3.1_p20260731 15.3.1_p20260814 15.3.1_p20260821 15.3.1_p20260828 15.3.9999 16.2.0 16.2.1_p20260808 16.2.1_p20260815 16.2.1_p20260822 16.2.1_p20260829 16.3.9999 17.0.0_p20260809 17.0.0_p20260816 17.0.0_p20260823 17.0.0_p20260830 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20260603 13.4.1_p20260805 13.4.1_p20260812 13.4.1_p20260819 13.4.1_p20260826 13.4.1_p20260902 13.5.9999 14.3.1_p20260604 14.4.0 14.4.1_p20260716 14.4.1_p20260806 14.4.1_p20260813 14.4.1_p20260820 14.4.1_p20260827 14.4.1_p20260903 14.5.9999 15.3.0 15.3.1_p20260717 15.3.1_p20260731 15.3.1_p20260814 15.3.1_p20260821 15.3.1_p20260828 15.3.1_p20260904 15.3.9999 16.2.0 16.2.1_p20260808 16.2.1_p20260815 16.2.1_p20260822 16.2.1_p20260829 16.2.1_p20260905 16.3.9999 17.0.0_p20260809 17.0.0_p20260816 17.0.0_p20260823 17.0.0_p20260830 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20240728 20250710 20260517 99999999: Updated config.sub and config.guess file from GNU
@@ -18009,7 +18009,7 @@ sys-libs/libosinfo 1.11.0-r1 1.12.0-r1: GObject library for managing information
 sys-libs/libraw1394 2.1.2-r1: Library that provides direct access to the IEEE 1394 bus
 sys-libs/librtas 2.0.3 2.0.6: A set of libraries for userspace access to RTAS on the PowerPC platform(s)
 sys-libs/libseccomp 2.6.0-r3 2.6.1 9999: High level interface to Linux seccomp filter
-sys-libs/libselinux 3.8.1-r2 3.8.1-r3 3.9 3.10 3.10-r2 3.11 9999: SELinux userland library
+sys-libs/libselinux 3.8.1-r2 3.8.1-r3 3.9 3.10 3.10-r3 3.11-r1 9999: SELinux userland library
 sys-libs/libsemanage 3.8.1 3.9 3.10 3.11 9999: SELinux kernel and policy management library
 sys-libs/libsepol 3.8.1 3.9 3.10 3.11 9999: SELinux binary policy representation library
 sys-libs/libservicelog 1.1.19: Provides a library for logging service-related events
@@ -18190,6 +18190,7 @@ virtual/libcrypt 1-r2 2 2-r1: Virtual for libcrypt.so
 virtual/libelf 2-r1 3-r1: Virtual for libelf.so.1 provider dev-libs/elfutils
 virtual/libiconv 0-r2: Virtual for the GNU conversion library
 virtual/libintl 0-r2: Virtual for the GNU Internationalization Library
+virtual/libpcre2-internals 10.47 10.48: Virtual for dev-libs/libpcre2 internals
 virtual/libudev 251-r2 257: Virtual for libudev providers
 virtual/libusb 0-r2 1-r2: Virtual for libusb
 virtual/linux-sources 3-r8 3-r9: Virtual for Linux kernel sources
@@ -18627,7 +18628,7 @@ x11-libs/dnd 1.1-r4: OffiX' Drag'n'drop library
 x11-libs/fltk 1.3.8 1.4.4-r1 1.4.5: Fast Light GUI Toolkit
 x11-libs/fox 1.6.57-r4 1.7.85 1.7.89: C++ Toolkit for developing Graphical User Interfaces easily and effectively
 x11-libs/fox-wrapper 3-r1: Wrapper for fox-config to manage multiple versions
-x11-libs/gdk-pixbuf 2.42.12 2.44.7: Image loading library for GTK+
+x11-libs/gdk-pixbuf 2.42.12 2.44.7 2.44.8: Image loading library for GTK+
 x11-libs/gdk-pixbuf-xlib 2.40.2: Deprecated Xlib integration for GdkPixbuf
 x11-libs/gl2ps 1.4.2-r1: OpenGL to PostScript printing library
 x11-libs/goffice 0.10.59-r1 0.10.60 0.10.61 0.10.61-r1: A library of document-centric objects and utilities
@@ -19202,7 +19203,7 @@ x11-themes/gentoo-xcursors 0.3.2-r3: A high quality set of animated mouse cursor
 x11-themes/gentoo10-backgrounds 20110309: Gentoo - 10 Years Compiling Background Artwork
 x11-themes/geramik 0.27-r1: GTK+1 and GTK+2 Geramik Themes
 x11-themes/gkrellm-themes 0.1-r2: A pack of ~200 themes for GKrellM
-x11-themes/gnome-backgrounds 45.0 48.2.1 49.0: A set of backgrounds packaged with the GNOME desktop
+x11-themes/gnome-backgrounds 45.0 49.0 50.0: A set of backgrounds packaged with the GNOME desktop
 x11-themes/gnome-colors-common 5.5.1-r1: Colorized icons shared between all gnome-colors iconsets
 x11-themes/gnome-colors-themes 5.5.1: Some gnome-colors iconsets including a Gentoo one
 x11-themes/gnome-icon-theme-extras 3.12.0-r1: Extra GNOME icons for specific devices and file types
