@@ -13579,7 +13579,7 @@ media-libs/libtiger 0.3.4-r1: A rendering library for Kate streams using Pango a
 media-libs/libtimidity 0.2.7: MIDI to WAVE converter library
 media-libs/libuninameslist 20221022 20230916: Library of unicode annotation data
 media-libs/libuvc 0.0.7: A cross-platform library for USB video devices, built atop libusb
-media-libs/libv4l 1.32.0: v4l-utils libraries and optional utilities
+media-libs/libv4l 1.32.0-r1: v4l-utils libraries and optional utilities
 media-libs/libva 2.23.0 2.24.1 9999: Video Acceleration (VA) API for Linux
 media-libs/libva-compat 1.8.3-r3: Video Acceleration (VA) API for Linux
 media-libs/libva-intel-driver 2.4.5 9999: HW video decode support for Intel integrated graphics
@@ -14319,7 +14319,7 @@ media-sound/spek 0.8.5-r2 0.8.5-r3: Analyse your audio files by showing their sp
 media-sound/splay 0.9.5.2-r2: An audio player, primarily for the console
 media-sound/split2flac 122-r1: sh script to split an APE/FLAC/WV/WAV audio image with CUE sheet into tracks
 media-sound/spotify 1.2.96: Spotify is a social music platform
-media-sound/strawberry 1.2.19 1.2.25 1.2.29 9999: Modern music player and library organizer based on Clementine and Qt
+media-sound/strawberry 1.2.19 1.2.25 1.2.29 1.2.30 9999: Modern music player and library organizer based on Clementine and Qt
 media-sound/streamripper 1.64.6-r1: Extracts and records individual MP3 file tracks from shoutcast streams
 media-sound/streamtranscoder 3.1.11-r2: Commandline program to transcode shoutcast/icecast streams to different bitrates
 media-sound/subsonic-bin 6.1.6: Subsonic is a complete, personal media streaming solution
@@ -18410,7 +18410,7 @@ www-client/firefox-bin 140.14.0 140.15.0 153.1.0 153.2.0 154.0 154.0.1 155.0 155
 www-client/firefox-l10n 153.1.0 153.2.0 154.0 154.0.1 155.0 155.0.1: Firefox Web Browser's translation files
 www-client/google-chrome 151.0.7922.108 151.0.7922.137 153.0.8010.36: The web browser from Google
 www-client/google-chrome-beta 151.0.7922.47 152.0.7977.30 154.0.8037.17: The web browser from Google
-www-client/google-chrome-unstable 152.0.7953.3 153.0.7993.0 155.0.8040.2: The web browser from Google
+www-client/google-chrome-unstable 153.0.7993.0 155.0.8040.2 155.0.8048.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
@@ -18424,7 +18424,7 @@ www-client/netsurf 3.11-r1 9999: A free, open source web browser
 www-client/opera 135.0.5973.123: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
 www-client/opera-developer 136.0.6001.0 137.0.6010.1 137.0.6015.0: A fast and secure web browser
-www-client/opera-gx 134.0.5954.44 134.0.5954.55 134.0.5954.67: Opera, but for 'gamers'
+www-client/opera-gx 135.0.5973.85 135.0.5973.94 135.0.5973.126: Opera, but for 'gamers'
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.6.3 3.7.0 9999: Keyboard-driven, vim-like browser based on Python and Qt
 www-client/seamonkey 2.53.23 2.53.24: Seamonkey Web Browser
@@ -18432,8 +18432,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.5-r1: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 8.1.4087.64 8.1.4087.66: A browser for our friends
-www-client/vivaldi-snapshot 8.2.4129.3 8.2.4133.3: A browser for our friends
+www-client/vivaldi 8.2.4133.45 8.2.4133.47: A browser for our friends
+www-client/vivaldi-snapshot 8.2.4133.43 8.3.4157.3: A browser for our friends
 www-client/w3m 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
@@ -18479,7 +18479,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.9: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 151.0.7922.47_beta 151.0.7922.108 151.0.7922.137 152.0.7953.3_alpha 152.0.7977.30_beta 153.0.7993.0_alpha 153.0.8010.36 154.0.8037.17_beta 155.0.8040.2_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 151.0.7922.47_beta 151.0.7922.108 151.0.7922.137 152.0.7977.30_beta 153.0.7993.0_alpha 153.0.8010.36 154.0.8037.17_beta 155.0.8040.2_alpha 155.0.8048.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
