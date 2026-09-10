@@ -1004,7 +1004,7 @@ app-admin/hcloud 1.65.0: A command-line interface for Hetzner Cloud
 app-admin/hddtemp 0.3_beta15-r29: A simple utility to read the temperature of SMART capable hard drives
 app-admin/helm 3.17.2 3.18.6 3.19.0 3.19.2 4.2.4: Kubernetes Package Manager
 app-admin/ide-smart 1.4-r3: A tool to read SMART information from harddiscs
-app-admin/ig 0.55.1: Tools and framework for data collection and system inspection using eBPF
+app-admin/ig 0.56.0: Tools and framework for data collection and system inspection using eBPF
 app-admin/integrit 4.2_rc1: file integrity verification program
 app-admin/keepass 2.57 2.61 2.61.1: A free, open source, light-weight and easy-to-use password manager
 app-admin/keepassxc 2.8.0_pre20260504 2.8.0_pre20260629-r1: KeePassXC - KeePass Cross-platform Community Edition
@@ -1401,10 +1401,10 @@ app-containers/earthly 0.8.16-r1: Build automation tool that executes in contain
 app-containers/flannel 0.26.3: An etcd backed network fabric for containers
 app-containers/grype 0.59.1 0.61.0 0.72.0 0.73.0 0.79.3 0.86.1: A vulnerability scanner for container images and filesystems
 app-containers/img 0.5.11: Standalone daemon-less unprivileged Dockerfile and OCI container image builder
-app-containers/incus 7.0.1-r1 7.3-r1 7.4 9999: Modern, secure and powerful system container and virtual machine manager
+app-containers/incus 7.0.1-r1 7.3-r1 7.4-r1 9999: Modern, secure and powerful system container and virtual machine manager
 app-containers/k3d 5.8.3 5.9.0: k3d creates k3s clusters in docker
 app-containers/kompose 1.35.0 1.38.0: Tool to move from docker-compose to Kubernetes
-app-containers/lxc 7.0.0: A userspace interface for the Linux kernel containment features
+app-containers/lxc 7.0.0 7.0.0-r1: A userspace interface for the Linux kernel containment features
 app-containers/lxc-templates 3.0.4_p20260719: Old style template scripts for LXC
 app-containers/lxd 5.21.1-r1 5.21.4 6.3 6.5: Modern, secure and powerful system container and virtual machine manager
 app-containers/nerdctl 2.0.2 2.0.3 2.2.1 2.3.1 2.3.3 2.3.4: Docker-compatible CLI for containerd, with support for Compose
@@ -4111,7 +4111,7 @@ dev-db/vsqlite++ 0.3.13-r1: VSQLite++ - A well designed and portable SQLite3 Wra
 dev-db/wxsqlite3 4.10.6-r1: C++ wrapper around the public domain SQLite 3.x database
 dev-db/zedis 0.5.2 0.9.0: Blazing-fast native Redis GUI built with Rust and GPUI
 dev-debug/apitrace 13.0: Tool for tracing, analyzing, and debugging graphics APIs
-dev-debug/bpftrace 0.24.2 0.25.1 0.26.1 9999: High-level tracing language for eBPF
+dev-debug/bpftrace 0.24.2 0.25.1 0.26.1 0.27.0 9999: High-level tracing language for eBPF
 dev-debug/cgdb 0.8.0 9999: A curses front-end for GDB, the GNU debugger
 dev-debug/d-feet 0.3.16-r1: D-Feet is a powerful D-Bus debugger
 dev-debug/d-spy 48.0 49.2: D-Spy is a simple tool to explore D-Bus connections
@@ -5891,7 +5891,7 @@ dev-libs/nng 1.10.1 1.11: Light-weight brokerless messaging
 dev-libs/npth 1.8: New GNU Portable Threads Library
 dev-libs/nsgenbind 0.9: Generate Javascript-to-DOM bindings from w3c webidl files
 dev-libs/nspr 4.36 4.38.2 4.39 4.40: Netscape Portable Runtime
-dev-libs/nss 3.112.5 3.125 3.126 3.126.1 3.127 3.128: Mozilla's Network Security Services library that implements PKI support
+dev-libs/nss 3.112.5 3.125 3.126 3.126.1 3.127 3.128 3.129: Mozilla's Network Security Services library that implements PKI support
 dev-libs/nss-pem 1.1.1: PEM file reader for Network Security Services (NSS)
 dev-libs/nsync 1.25.0 1.26.0: C library that exports various synchronization primitives, such as mutexes
 dev-libs/ntl 11.5.1-r4 11.6.0: High-performance and portable C++ number theory library
@@ -10875,7 +10875,7 @@ dev-util/azuredatastudio 1.52.0-r1: Data management and development tool from Mi
 dev-util/babeltrace 1.5.11 2.1.2: Command-line tool and library to read and convert trace files
 dev-util/bats 1.13.0 1.14.0: Bats-core: Bash Automated Testing System
 dev-util/bbe 0.2.2-r1: Sed-like editor for binary files
-dev-util/bcc 0.31.0-r3 0.32.0-r1 0.34.0-r1 0.35.0-r1 0.35.0-r2 0.36.0 0.36.1 0.36.1-r1: Tools for BPF-based Linux IO analysis, networking, monitoring, and more
+dev-util/bcc 0.31.0-r3 0.32.0-r1 0.34.0-r1 0.35.0-r1 0.35.0-r2 0.36.0 0.36.1 0.36.1-r1 0.37.0: Tools for BPF-based Linux IO analysis, networking, monitoring, and more
 dev-util/bcpp 20240917: Indents C/C++ source code
 dev-util/bdelta 0.3.1-r1: Binary Delta - Efficient difference algorithm and format
 dev-util/bear 3.1.6 4.1.5 4.2.2: A tool that generates a compilation database for clang tooling
@@ -14268,7 +14268,7 @@ media-sound/pulseaudio-daemon 17.0-r1 17.0-r2: Daemon component of PulseAudio (n
 media-sound/pulseeffects 4.8.7-r2: Limiter, compressor, reverberation, equalizer auto volume effects for PulseAudio
 media-sound/pulsemixer 1.5.1-r2 9999: CLI and curses mixer for PulseAudio
 media-sound/pwavecat 0.4.5-r1: Concatenates any number of audio files to stdout
-media-sound/pwvucontrol 0.5.2-r1 0.5.3: Volume control applet for Pipewire
+media-sound/pwvucontrol 0.5.2-r1 0.5.3-r1: Volume control applet for Pipewire
 media-sound/qastools 1.4.0: Qt GUI ALSA tools: mixer, configuration browser
 media-sound/qjackctl 1.0.4 9999: Qt GUI to control the JACK Audio Connection Kit and ALSA sequencer connections
 media-sound/qmidiarp 0.7.2: Arpeggiator, sequencer and MIDI LFO for ALSA
@@ -16169,7 +16169,7 @@ sci-geosciences/s2geometry 0.13.1-r3: Computational geometry and spatial indexin
 sci-geosciences/tcd-utils 20240222: Utilities for working with Tidal Constituent Databases
 sci-geosciences/viking 1.10 1.10-r1 1.11: GPS data editor and analyzer
 sci-geosciences/xtide 2.15.5: XTide provides tide and current predictions in a wide variety of formats
-sci-geosciences/xyzservices 2025.11.0 2026.3.0: Source of XYZ tiles providers
+sci-geosciences/xyzservices 2026.3.0 2026.9.1: Source of XYZ tiles providers
 sci-libs/adolc 2.7.2-r1 2.7.2-r2 9999: Automatic differentiation system for C/C++
 sci-libs/alglib 3.20.0 4.07.0: Numerical analysis and data processing library
 sci-libs/amd 2.4.6-r1 3.3.4-r1: Library to order a sparse matrix prior to Cholesky factorization
@@ -16554,7 +16554,7 @@ sci-ml/huggingface_hub 1.3.7-r1 1.26.0-r1: a client library to interact with the
 sci-ml/ideep 3.10.2 3.12: Intel Optimization for Chainer
 sci-ml/jiwer 3.0.3-r1 3.0.5 3.1.0: Evaluate an automatic speech recognition system
 sci-ml/kineto 0.4.0_p20260323 0.4.0_p20260603: part of the PyTorch Profiler
-sci-ml/ollama 0.33.3: Get up and running with Llama 3, Mistral, Gemma, and other language models
+sci-ml/ollama 0.34.0: Get up and running with Llama 3, Mistral, Gemma, and other language models
 sci-ml/oneDNN 3.10.2 3.11.2 3.12: oneAPI Deep Neural Network Library
 sci-ml/onnx 1.18.0-r1 1.20.1: Open Neural Network Exchange (ONNX)
 sci-ml/pytorch 2.12.0 2.13.0-r3 2.14.0-r2: Tensors and Dynamic neural networks in Python with strong GPU acceleration
@@ -18329,7 +18329,7 @@ www-apps/bugzilla 5.0.6-r2: Bugzilla is the Bug-Tracking System from the Mozilla
 www-apps/cgisysinfo 0.4.1: A small cgi utility to show basic system information
 www-apps/cgit 1.2.3_p20240802-r2 1.3 9999 9999-r1: A fast web-interface for Git repositories
 www-apps/cgp 1_p20190510-r2: A graphical web-based front-end for visualizing RRD collected by collectd
-www-apps/chromedriver-bin 151.0.7922.108 151.0.7922.137 151.0.7922.169: WebDriver for Chrome
+www-apps/chromedriver-bin 151.0.7922.108 151.0.7922.137 153.0.8010.36: WebDriver for Chrome
 www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20260714c: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
@@ -18408,22 +18408,22 @@ www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 140.14.0 140.15.0 153.1.0 153.2.0 154.0 154.0.1 155.0 155.0.1: Firefox Web Browser
 www-client/firefox-bin 140.14.0 140.15.0 153.1.0 153.2.0 154.0 154.0.1 155.0 155.0.1: Firefox Web Browser
 www-client/firefox-l10n 153.1.0 153.2.0 154.0 154.0.1 155.0 155.0.1: Firefox Web Browser's translation files
-www-client/google-chrome 151.0.7922.108 151.0.7922.137 151.0.7922.169: The web browser from Google
-www-client/google-chrome-beta 151.0.7922.47 152.0.7977.30 152.0.7977.42: The web browser from Google
-www-client/google-chrome-unstable 152.0.7953.3 153.0.7993.0 153.0.8003.0: The web browser from Google
+www-client/google-chrome 151.0.7922.108 151.0.7922.137 153.0.8010.36: The web browser from Google
+www-client/google-chrome-beta 151.0.7922.47 152.0.7977.30 154.0.8037.17: The web browser from Google
+www-client/google-chrome-unstable 152.0.7953.3 153.0.7993.0 155.0.8040.2: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
-www-client/microsoft-edge 151.0.4129.93: The web browser from Microsoft
-www-client/microsoft-edge-beta 152.0.4191.10 152.0.4191.19 152.0.4191.35: The web browser from Microsoft
-www-client/microsoft-edge-dev 152.0.4191.10 153.0.4210.0 153.0.4224.0: The web browser from Microsoft
+www-client/microsoft-edge 152.0.4191.66: The web browser from Microsoft
+www-client/microsoft-edge-beta 153.0.4234.13 153.0.4234.19 154.0.4258.9: The web browser from Microsoft
+www-client/microsoft-edge-dev 154.0.4238.0 154.0.4251.0 155.0.4268.0: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
-www-client/opera 134.0.5954.66: A fast and secure web browser
+www-client/opera 135.0.5973.123: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
-www-client/opera-developer 135.0.5966.0 136.0.5981.0-r2 136.0.5988.0: A fast and secure web browser
+www-client/opera-developer 136.0.6001.0 137.0.6010.1 137.0.6015.0: A fast and secure web browser
 www-client/opera-gx 134.0.5954.44 134.0.5954.55 134.0.5954.67: Opera, but for 'gamers'
 www-client/pybugz 0.14 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.6.3 3.7.0 9999: Keyboard-driven, vim-like browser based on Python and Qt
@@ -18479,7 +18479,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.9: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 151.0.7922.47_beta 151.0.7922.108 151.0.7922.137 151.0.7922.169 152.0.7953.3_alpha 152.0.7977.30_beta 152.0.7977.42_beta 153.0.7993.0_alpha 153.0.8003.0_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 151.0.7922.47_beta 151.0.7922.108 151.0.7922.137 152.0.7953.3_alpha 152.0.7977.30_beta 153.0.7993.0_alpha 153.0.8010.36 154.0.8037.17_beta 155.0.8040.2_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.9.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
