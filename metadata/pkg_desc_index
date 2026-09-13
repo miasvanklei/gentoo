@@ -3048,7 +3048,7 @@ app-office/libreoffice-voikko 5.0-r1: Free Finnish spell checking and hyphenatio
 app-office/lyx 2.4.4 2.5.0 2.5.1 2.5.2: WYSIWYM (What You See Is What You Mean) document processor based on LaTeX
 app-office/magicpoint 1.13a_p20121015-r2: X11 based presentation tool
 app-office/mdbtools 1.0.1: Set of libraries and utilities for reading Microsoft Access database (MDB) files
-app-office/merkuro 26.04.3 26.08.1: Calendar application using Akonadi
+app-office/merkuro 26.04.3-r1 26.08.1-r1: Calendar application using Akonadi
 app-office/moneydance 2024.5117: A cross-platform personal finance application
 app-office/multitalk 1.4-r1: New type of presentation program
 app-office/naps2 8.2.1 8.3.2: Document scanning application with a focus on simplicity and ease of use
@@ -5941,7 +5941,7 @@ dev-libs/qqwing 1.3.4-r1: Sudoku puzzle generator and solver
 dev-libs/qr-code-generator 1.8.0 1.8.0-r1: QR Code Generator Library in Multiple Languages
 dev-libs/qtkeychain 0.16.0 0.17.0: Qt API for storing passwords securely
 dev-libs/quazip 1.5: Simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
-dev-libs/quickjs-ng 0.14.0: QuickJS, the Next Generation: a mighty JavaScript engine
+dev-libs/quickjs-ng 0.14.0 0.16.2: QuickJS, the Next Generation: a mighty JavaScript engine
 dev-libs/qxlsx 1.5.0 1.5.1.1: Excel file(*.xlsx) reader/writer library using Qt
 dev-libs/raft 0.22.1: C implementation of the Raft consensus protocol
 dev-libs/rapidjson 1.1.0-r5 1.1.0_p20250205 9999: A fast JSON parser/generator for C++ with both SAX/DOM style API
@@ -11036,7 +11036,7 @@ dev-util/heaptrack 1.5.80_pre20251017 9999: Fast heap memory profiler
 dev-util/herdtools7 7.51: The Herd toolsuite to deal with .cat memory models
 dev-util/hermes 2.9 3.1 9999: Lua based testing manager
 dev-util/hfstospell 0.5.4-r1: HFST spell checker library and command line tool
-dev-util/hip 6.3.3-r2 6.4.3-r2 7.0.2-r1 7.1.0-r1 7.2.0-r1: C++ Heterogeneous-Compute Interface for Portability
+dev-util/hip 6.3.3-r2 6.4.3-r2 7.0.2-r1 7.1.0-r1 7.2.0-r2: C++ Heterogeneous-Compute Interface for Portability
 dev-util/hipcc 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: Radeon Open Compute hipcc
 dev-util/hipify-clang 6.3.3 6.4.3-r1 7.0.2 7.1.0 7.2.0: A set of tools to translate CUDA source code into portable HIP C++
 dev-util/howdoi 2.0.20-r2: A code search tool
@@ -11191,7 +11191,7 @@ dev-util/smem 1.5-r3: A tool that can give numerous reports on memory usage on L
 dev-util/snakeviz 2.2.2: A web-based viewer for Python profiler output
 dev-util/source-highlight 3.1.9-r2: Generate highlighted source code as an (x)html document
 dev-util/spirv-headers 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 1.4.357.0 9999: Machine-readable files for the SPIR-V Registry
-dev-util/spirv-llvm-translator 17.0.18 17.0.23 17.0.25 18.1.18 18.1.23 18.1.25 19.1.13 19.1.18 19.1.20 20.1.8 20.1.13 20.1.15 21.1.3 21.1.7 21.1.9 22.1.2 22.1.4 23.1.0 24.0.0_pre20260820: Bi-directional translator between SPIR-V and LLVM IR
+dev-util/spirv-llvm-translator 17.0.18 17.0.23 17.0.25 17.0.27 18.1.18 18.1.23 18.1.25 18.1.27 19.1.13 19.1.18 19.1.20 19.1.22 20.1.8 20.1.13 20.1.15 20.1.17 21.1.3 21.1.7 21.1.9 21.1.11 22.1.2 22.1.4 22.1.6 23.1.0 23.1.1 24.0.0_pre20260820: Bi-directional translator between SPIR-V and LLVM IR
 dev-util/spirv-tools 1.4.328.0 1.4.335.0 1.4.341.0 1.4.350.0 1.4.357.0 9999: Provides an API and commands for processing SPIR-V modules
 dev-util/splint 3.1.2-r3: Check C programs for vulnerabilities and programming mistakes
 dev-util/squashdelta 0.1.2: Efficient (partially uncompressed) SquashFS binary delta tool
@@ -12086,7 +12086,7 @@ gnome-base/gnome-control-center 49.7 49.8-r1 49.9: GNOME's main interface to con
 gnome-base/gnome-core-apps 45.2 48.0: Sub-meta package for the core applications integrated with GNOME
 gnome-base/gnome-core-libs 45.2 48.0: Sub-meta package for the core libraries of GNOME
 gnome-base/gnome-desktop 44.1-r300 44.1-r400 44.4-r300 44.4-r400 44.5-r300 44.5-r400: Library with common API for various GNOME modules
-gnome-base/gnome-extra-apps 45.2 45.2-r1 48.0: Sub-meta package for the applications of GNOME
+gnome-base/gnome-extra-apps 45.2 45.2-r1 48.0 48.0-r1: Sub-meta package for the applications of GNOME
 gnome-base/gnome-flashback 3.54.0-r1 3.56.0 3.58.0 3.58.0-r1: GNOME Flashback session
 gnome-base/gnome-keyring 48.0-r1 50.0: Password and keyring managing daemon
 gnome-base/gnome-light 45.2 48.0: Meta package for GNOME-Light, merge this package to install
@@ -13152,7 +13152,7 @@ media-gfx/gimp 2.10.38-r5 3.2.4 9999: GNU Image Manipulation Program
 media-gfx/gimp-arrow-brushes 20190407 20190407-r1: Brushes for GIMP with the styles arrow, handpointer, button arrow and cursor
 media-gfx/gnofract4d 4.4: A program for drawing beautiful mathematically-based images known as fractals
 media-gfx/gnome-font-viewer 49.0 50.0: Font viewer utility for GNOME
-media-gfx/gnome-photos 44.0: Access, organize and share your photos on GNOME
+media-gfx/gnome-photos 44.0 44.0-r1: Access, organize and share your photos on GNOME
 media-gfx/gnome-screenshot 41.0-r1: Screenshot utility for GNOME
 media-gfx/gnuclad 0.2.4-r1: Cladogram tree generator mainly used by the GNU/Linux distro timeline project
 media-gfx/gozer 0.7-r5: tool for rendering arbitrary text as graphics, using ttfs and styles
@@ -13627,7 +13627,7 @@ media-libs/opencollada 1.6.68-r2: Stream based read/write library for COLLADA fi
 media-libs/opencolorio 2.4.1-r1 2.4.2: Color management framework for visual effects and animation
 media-libs/opencore-amr 0.1.6: Implementation of Adaptive Multi Rate Narrowband and Wideband speech codec
 media-libs/openctm 1.0.3-r1: OpenCTM - the Open Compressed Triangle Mesh
-media-libs/opencv 4.11.0-r1 4.12.0-r1 4.12.0-r2: A collection of algorithms and sample code for various computer vision problems
+media-libs/opencv 4.11.0-r1 4.12.0-r1 4.12.0-r2 4.14.0: A collection of algorithms and sample code for various computer vision problems
 media-libs/openexr 3.3.2-r1 3.3.3 3.3.4 3.3.5 3.4.4: ILM's OpenEXR high dynamic-range image file format libraries
 media-libs/openfec 1.4.2.12: Library of various AL-FEC codecs
 media-libs/openglide 0.09_rc9_p20191120: Glide to OpenGL wrapper
@@ -14056,7 +14056,7 @@ media-sound/amsynth 1.13.4: Virtual analogue synthesizer
 media-sound/apetag 1.12-r3: Command-line ape 2.0 tagger
 media-sound/apulse 0.1.14: PulseAudio emulation for ALSA
 media-sound/aqualung 2.0-r1: Music player for a wide range of formats designed for gapless playback
-media-sound/ardour 9.2.0 9.7.0-r1 9999: Digital Audio Workstation
+media-sound/ardour 9.2.0 9.7.0-r1 9.8.0 9999: Digital Audio Workstation
 media-sound/ario 1.6-r2: GTK client for MPD inspired by Rhythmbox but much lighter and faster
 media-sound/aseqview 0.2.8-r3: ALSA sequencer event viewer/filter
 media-sound/asunder 3.0.1-r2: Graphical Audio CD ripper and encoder with support for many output formats
@@ -16170,7 +16170,7 @@ sci-geosciences/readosm 1.1.0a: Library to extract valid data from an Open Stree
 sci-geosciences/routino 3.4.3: Routing application based on openstreetmap data
 sci-geosciences/s2geometry 0.13.1-r3: Computational geometry and spatial indexing on the sphere
 sci-geosciences/tcd-utils 20240222: Utilities for working with Tidal Constituent Databases
-sci-geosciences/viking 1.10 1.10-r1 1.11: GPS data editor and analyzer
+sci-geosciences/viking 1.10 1.10-r1 1.11-r1: GPS data editor and analyzer
 sci-geosciences/xtide 2.15.5: XTide provides tide and current predictions in a wide variety of formats
 sci-geosciences/xyzservices 2026.3.0 2026.9.1: Source of XYZ tiles providers
 sci-libs/adolc 2.7.2-r1 2.7.2-r2 9999: Automatic differentiation system for C/C++
@@ -16556,7 +16556,7 @@ sci-ml/hf_xet 1.2.0 1.5.2: xet client tech, used in huggingface_hub
 sci-ml/huggingface_hub 1.3.7-r1 1.26.0-r1: a client library to interact with the Hugging Face Hub
 sci-ml/ideep 3.10.2 3.12: Intel Optimization for Chainer
 sci-ml/jiwer 3.0.3-r1 3.0.5 3.1.0: Evaluate an automatic speech recognition system
-sci-ml/kineto 0.4.0_p20260323 0.4.0_p20260603 0.4.0_p20260805: part of the PyTorch Profiler
+sci-ml/kineto 0.4.0_p20260323 0.4.0_p20260603 0.4.0_p20260805-r1: part of the PyTorch Profiler
 sci-ml/ollama 0.34.0: Get up and running with Llama 3, Mistral, Gemma, and other language models
 sci-ml/oneDNN 3.10.2 3.11.2 3.12: oneAPI Deep Neural Network Library
 sci-ml/onnx 1.18.0-r1 1.20.1: Open Neural Network Exchange (ONNX)
