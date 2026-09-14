@@ -12822,7 +12822,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16: qmail -- a secure, reliable, efficient, sim
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0 7.8.0_p1: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.11.6 3.11.7 3.12_pre20260902: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.11.7 3.12_pre20260902: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.18.2 8.18.2-r1 8.19.0.0-r1 8.19.0.1: Widely-used Mail Transport Agent (MTA)
@@ -15283,9 +15283,9 @@ net-misc/asterisk 20.20.1 20.21.0 21.12.3 22.10.1 22.11.0 23.4.1 23.5.0: Asteris
 net-misc/asterisk-base 3 4: Gentoo Asterisk init scripts
 net-misc/asterisk-core-sounds 1.6.1-r1: Core sounds for asterisk
 net-misc/asterisk-extra-sounds 1.5.2: Extra sounds for asterisk
-net-misc/asterisk-g729 20.0.3.1.10-r2 20.0.3.1.11-r1 21.0.3.1.10-r2 21.0.3.1.11-r1 22.0.3.1.10-r2 22.0.3.1.11-r1: G.729 codec and supporting files for asterisk
+net-misc/asterisk-g729 20.0.3.1.10-r2 20.0.3.1.11-r1 20.0.3.1.12 21.0.3.1.11-r1 21.0.3.1.12 22.0.3.1.11-r1 22.0.3.1.12 23.0.3.1.12: G.729 codec and supporting files for asterisk
 net-misc/asterisk-moh-opsound 2.03-r1: asterisk moh music
-net-misc/asterisk-opus 20.0.1.3.0 21.0.1.3.0 22.0.1.3.0: OPUS codec and supporting files for asterisk
+net-misc/asterisk-opus 20.0.1.3.0 21.0.1.3.0 22.0.1.3.0 23.0.1.3.0: OPUS codec and supporting files for asterisk
 net-misc/astmanproxy 1.30.0 1.30.0-r1: Proxy for the Asterisk manager interface
 net-misc/autossh 1.4g-r2: Automatically restart SSH sessions and tunnels
 net-misc/autoupnp 0.5.1: Automatic open port forwarder using UPnP
@@ -17409,7 +17409,7 @@ sys-apps/openrazer 3.12.3 3.12.4: Drivers and user-space daemon to control Razer
 sys-apps/openrc 0.63.1 0.63.3 9999: OpenRC manages the services, startup and shutdown of a host
 sys-apps/osinfo-db 20250606 20251212: Osinfo database for virtualization provisioning tools
 sys-apps/osinfo-db-tools 1.11.0-r1 1.12.0-r1: Tools for managing the osinfo database
-sys-apps/pandora_box 0.21.0 0.22.0: Syd's log inspector & profile writer
+sys-apps/pandora_box 0.22.0 0.24.0: Syd's log inspector & profile writer
 sys-apps/paxctl 0.9: Manages various PaX related program header flags for Elf32, Elf64, binaries
 sys-apps/paxctld 1.2.5-r1: PaX flags maintenance daemon
 sys-apps/pciutils 3.14.0 3.15.0: Various utilities dealing with the PCI bus
@@ -17477,7 +17477,7 @@ sys-apps/sparc-utils 1.9-r7: Various sparc utilities from Debian GNU/Linux
 sys-apps/spu-tools 2.3.0.136: CELL spu ps and top alike utilities
 sys-apps/stroke 0.1.3-r3: Powerful tool to change file timestamps (including ctimes)
 sys-apps/superdiag 1.12.0.20260810: Provides the capability to determine the health of Supermicro servers components
-sys-apps/syd 3.57.0 3.58.0: seccomp and landlock based application sandbox with support for namespaces
+sys-apps/syd 3.58.0 3.59.0: seccomp and landlock based application sandbox with support for namespaces
 sys-apps/syd-tui 0.2.2: Syd's Terminal User Interface
 sys-apps/syscriptor 1.5.15: Display misc information about your hardware
 sys-apps/syslog-notify 0.2: Notifications for syslog entries via libnotify
@@ -17683,7 +17683,7 @@ sys-boot/yaboot 1.3.17-r4: PPC Bootloader
 sys-boot/yaboot-static 1.3.17-r2: Static yaboot ppc boot loader for machines with open firmware
 sys-cluster/ampi 0_pre20140616-r1: MPI library for algorithmic differentiation
 sys-cluster/c3 4.0.1: The Cluster Command and Control (C3) tool suite
-sys-cluster/ceph 20.1.1-r1 20.2.1-r3 20.2.1-r4 20.2.4: Ceph distributed filesystem
+sys-cluster/ceph 20.1.1-r1 20.2.1-r3 20.2.1-r4 20.2.1-r5 20.2.4 20.2.4-r1: Ceph distributed filesystem
 sys-cluster/charliecloud 0.43 0.44 9999: Lightweight user-defined software stacks for high-performance computing
 sys-cluster/charm 6.10.2: Message-passing parallel language and runtime system
 sys-cluster/charmdebug 6.2.0-r2: A debugger for Charm++ applications
@@ -17824,7 +17824,7 @@ sys-fs/autorun 3.17: auto cdrom mounter for the lazy user
 sys-fs/avfs 1.1.5: Virtual filesystem that allows browsing of compressed files
 sys-fs/bashmount 4.3.2-r2: Bash script that uses udisks to mount removable devices without GUI
 sys-fs/bcache-tools 1.1_p20230217-r2 9999: Tools for bcache
-sys-fs/bcachefs-tools 1.25.2 1.37.4-r1 1.38.2-r1 1.38.5 1.38.6 1.38.8 1.39.3 1.39.5 9999: Tools for bcachefs
+sys-fs/bcachefs-tools 1.25.2 1.37.4-r1 1.38.2-r1 1.38.5 1.38.6 1.38.8 1.39.3 1.39.5 1.39.6 9999: Tools for bcachefs
 sys-fs/bees 0.10-r1 0.11 9999: Best-Effort Extent-Same, a btrfs dedup agent
 sys-fs/bindfs 1.17.7 1.18.3 1.18.4: FUSE filesystem for bind mounting with altered permissions
 sys-fs/btrfs-progs 6.19.1 7.0 7.1 9999: Btrfs filesystem utilities
@@ -17954,7 +17954,7 @@ sys-kernel/genkernel 4.3.17-r4 4.3.18 9999: Gentoo automatic kernel building scr
 sys-kernel/gentoo-kernel 6.1.186 6.1.187 6.6.155 6.6.156 6.12.107 6.12.108 6.12.109 6.18.48 6.18.49 6.18.50 6.18.51 7.1.12 7.1.13 7.2.2 7.2.3 7.2.4 7.2.5: Linux kernel built with Gentoo patches
 sys-kernel/gentoo-kernel-bin 6.1.186 6.1.187 6.6.155 6.6.156 6.12.107 6.12.108 6.12.109 6.18.48 6.18.49 6.18.50 6.18.51 7.1.12 7.1.13 7.2.2 7.2.3 7.2.4 7.2.5: Pre-built Linux kernel with Gentoo patches
 sys-kernel/gentoo-kernel-modprep 6.1.186 6.1.187 6.6.155 6.6.156 6.12.107 6.12.108 6.12.109 6.18.48 6.18.49 6.18.50 6.18.51 7.1.12 7.1.13 7.2.2 7.2.3 7.2.4 7.2.5: Minimal subset of gentoo-kernel-bin for building modules, for containers
-sys-kernel/gentoo-sources 6.1.186 6.1.187 6.6.155 6.6.156 6.12.107 6.12.108 6.12.109 6.18.48 6.18.49 6.18.50 6.18.51 7.1.12 7.1.13 7.2.2 7.2.3 7.2.4 7.2.5: Full sources including the Gentoo patchset for the 7.2 kernel tree
+sys-kernel/gentoo-sources 6.1.186 6.1.187 6.1.188 6.6.155 6.6.156 6.6.157 6.12.107 6.12.108 6.12.109 6.12.110 6.18.48 6.18.49 6.18.50 6.18.51 6.18.52 7.1.12 7.1.13 7.2.2 7.2.3 7.2.4 7.2.5 7.2.6: Full sources including the Gentoo patchset for the 7.2 kernel tree
 sys-kernel/git-sources 7.3_rc1 7.3_rc2 7.3_rc3: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 0.9_p20260630 9999: GNU Hurd is the GNU project's replacement for UNIX
@@ -17977,7 +17977,7 @@ sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2: DBUS on-demand loader of sched-ext sche
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 6.1.186 6.1.187 6.1.9999 6.6.155 6.6.156 6.6.9999 6.12.107 6.12.108 6.12.109 6.12.9999 6.18.48 6.18.49 6.18.50 6.18.51 6.18.9999 7.1.12 7.1.13 7.2.2 7.2.3 7.2.4 7.2.5: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 6.1.187 6.6.156 6.12.109 6.18.51 7.1.13 7.2.5: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 6.1.188 6.6.157 6.12.110 6.18.52 7.1.13 7.2.6: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.1.5: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
