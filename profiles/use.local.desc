@@ -1007,6 +1007,7 @@ app-misc/note:text - Add support for text backend
 app-misc/ola:ftdi - Support FTDI devices
 app-misc/ola:http - Enable built-in Web UI
 app-misc/ola:rdm-tests - Install RDM responder tests
+app-misc/openrgb:hotplug - Use dev-libs/hidapi-hotplug instead of dev-libs/hidapi.
 app-misc/pax-utils:python - Install a more powerful/faster version of lddtree
 app-misc/recoll:camelcase - Enable indexing for camelCase sentences and words
 app-misc/recoll:chm - Enable CHM file support via dev-python/pychm
@@ -2073,6 +2074,7 @@ dev-libs/efl:xim - Enable X Input Method
 dev-libs/efl:xpresent - Enable x11-libs/libXpresent support
 dev-libs/elfutils:debuginfod - Enable debuginfod support, both the debuginfod server and the libdebuginfod client library
 dev-libs/elfutils:libarchive - Needed for debuginfod (the server) and also for --zip support in the eu-srcfiles utility. Requires app-arch/libarchive.
+dev-libs/elfutils:libpfm - Enable dev-libs/libpfm support for hardware performance counters with eu-stackprof.
 dev-libs/elfutils:lzma - Support automatic decompression of LZMA-compressed files and kernel images
 dev-libs/elfutils:stacktrace - Build experimental eu-stacktrace tool. Relies on integration with dev-util/sysprof. See https://developers.redhat.com/articles/2024/06/11/get-system-wide-profiles-binaries-without-frame-pointers.
 dev-libs/elfutils:utils - Install command-line utilities (all the eu-* programs).
@@ -5397,7 +5399,6 @@ media-video/pipewire:gsettings - Use gsettings (dev-libs/glib) to read/save used
 media-video/pipewire:jack-client - Install a plugin for running PipeWire as a JACK client
 media-video/pipewire:jack-sdk - Use PipeWire as JACK replacement
 media-video/pipewire:libcamera - Enable libcamera plugin via media-libs/libcamera
-media-video/pipewire:liblc3 - Allow loading LC3 plugins via media-sound/liblc3
 media-video/pipewire:loudness - Enable loudness normalisation according to the EBU R128 standard using media-libs/libebur128
 media-video/pipewire:lv2 - Allow loading LV2 plugins via media-libs/lv2
 media-video/pipewire:modemmanager - Combined with USE=bluetooth, allows PipeWire to perform telephony on mobile devices.
@@ -7914,7 +7915,6 @@ sys-apps/busybox:math - Enable math support in gawk (requires libm)
 sys-apps/busybox:mdev - Create the appropriate symlink in /sbin and install mdev.conf and support files
 sys-apps/busybox:sep-usr - Support a separate /usr without needing an initramfs by booting with init=/ginit
 sys-apps/busybox:static - Make the system rescue shell (/bin/bb) static so you can recover even when glibc is broken
-sys-apps/busybox:systemd - Support systemd
 sys-apps/coreutils:caps - Add Linux capabilities support in output of file utilities (ls, dir, ...) via sys-libs/libcap
 sys-apps/coreutils:hostname - Build the hostname program
 sys-apps/coreutils:kill - Build the kill program
