@@ -1,8 +1,6 @@
 name: Sync Gentoo
 
 on:
-  schedule:
-    - cron: '47 */3 * * *' # every 3 hours
   workflow_dispatch: # on button click
 
 jobs:
