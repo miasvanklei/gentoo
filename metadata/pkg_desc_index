@@ -2535,7 +2535,7 @@ app-forensics/rkhunter 1.4.6-r2: Rootkit Hunter scans for known and unknown root
 app-forensics/scalpel 2.1_pre20210326: A high performance file carver
 app-forensics/sleuthkit 4.12.1-r3: A collection of file system and media management forensic analysis tools
 app-forensics/unhide 20220611: Forensic tool to find hidden processes and TCP/UDP ports by rootkits/LKMs
-app-forensics/volatility3 2.27.0 2.28.0: Framework for analyzing volatile memory
+app-forensics/volatility3 2.28.0 2.28.2: Framework for analyzing volatile memory
 app-forensics/yara 4.5.5 4.5.8 9999: A malware identification and classification tool
 app-forensics/yara-x 1.18.0 1.19.0: A malware identification and classification tool
 app-forensics/zzuf 0.15_p20190208 0.15_p20220529: Transparent application input fuzzer
@@ -13489,7 +13489,7 @@ media-libs/libgphoto2 2.5.34-r1: Library that implements support for numerous di
 media-libs/libgpod 0.8.3-r9: Shared library to access the contents of an iPod
 media-libs/libharu 2.4.2-r1 2.4.5 2.4.5-r1 2.4.6: C/C++ library for PDF generation
 media-libs/libhdhomerun 20190621 20200521: SiliconDust HDHomeRun Utilties
-media-libs/libheif 1.20.2 1.21.2 1.23.1 9999: ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
+media-libs/libheif 1.20.2 1.21.2 1.23.1 1.23.4 9999: ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 media-libs/libicns 0.8.1-r1: A library for manipulating MacOS X .icns icon format
 media-libs/libid3tag 0.16.3 0.16.4: The MAD id3tag library, Tenacity fork
 media-libs/libiec61883 1.2.0-r2: Library for capturing video (dv or mpeg2) over the IEEE 1394 bus
