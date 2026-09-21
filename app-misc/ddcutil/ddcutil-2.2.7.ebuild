@@ -13,8 +13,8 @@ SRC_URI="https://github.com/rockowitz/ddcutil/archive/v${PV}.tar.gz -> ${P}.tar.
 
 LICENSE="GPL-2+"
 SLOT="0/5"
-KEYWORDS="amd64 arm arm64 ~loong ~ppc ppc64 ~riscv ~sparc x86"
-IUSE="usb-monitor user-permissions video_cards_nvidia X"
+KEYWORDS="~amd64 ~arm ~arm64 ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
+IUSE="+dbus systemd usb-monitor user-permissions video_cards_nvidia X"
 
 # In 2.2.0, DRM seems fairly embedded and non-optional even if the
 # build system option exists. Fails to build.
@@ -22,8 +22,15 @@ RDEPEND="
 	dev-libs/glib:2
 	>=dev-libs/jansson-2
 	sys-apps/i2c-tools
+	virtual/acl
 	virtual/udev
 	x11-libs/libdrm
+	dbus? (
+		sys-apps/dbus
+	)
+	systemd? (
+		sys-apps/systemd
+	)
 	usb-monitor? (
 		dev-libs/hidapi
 		virtual/libusb:1
@@ -33,6 +40,7 @@ RDEPEND="
 		acct-group/i2c
 	)
 	X? (
+		x11-libs/libXext
 		x11-libs/libXrandr
 		x11-libs/libX11
 	)
@@ -43,7 +51,8 @@ BDEPEND="virtual/pkgconfig"
 
 PATCHES=(
 	"${FILESDIR}"/${PN}-1.4.1-no-werror.patch
-	"${FILESDIR}"/${P}-execinfo.patch
+	"${FILESDIR}"/${PN}-2.2.7-fix-build-without-dbus.patch
+	"${FILESDIR}"/${PN}-2.2.7-fix-build-without-X.patch
 )
 
 pkg_pretend() {
@@ -69,7 +78,9 @@ src_configure() {
 	local myeconfargs=(
 		# FAILS: doxyfile: No such file or directory
 		# $(use_enable doc doxygen)
+		$(use_enable dbus)
 		--enable-drm
+		$(use_enable systemd)
 		--enable-udev
 		$(use_enable usb-monitor usb)
 		--enable-lib
