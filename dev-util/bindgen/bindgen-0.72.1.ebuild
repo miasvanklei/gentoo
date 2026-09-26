@@ -26,10 +26,6 @@ RDEPEND="${DEPEND}
 
 QA_FLAGS_IGNORED="usr/bin/bindgen"
 
-PATCHES=(
-	"${FILESDIR}/3419-attempt-to-support-self-referential-union-types.patch"
-)
-
 src_test () {
 	# required by clang during tests
 	local -x TARGET=$(rust_abi)

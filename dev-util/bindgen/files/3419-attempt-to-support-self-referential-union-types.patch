@@ -116,7 +116,7 @@ index b5b6b4a000..3d5f6a8e79 100644
 +        let popped = self.currently_loaned_items.pop();
 +        debug_assert_eq!(popped, Some(id));
 +
-         let existing = mem::replace(&mut self.items[id.0], Some(item));
+         let existing = self.items[id.0].replace(item);
          assert!(existing.is_none());
  
 @@ -1467,13 +1479,38 @@ If you encounter an error missing from this list, please file an issue or a PR!"
@@ -207,24 +207,24 @@ index 805138b7a9..8c0a2fd0df 100644
              _ => None,
          }
      }
-@@ -223,7 +223,7 @@ impl Type {
-                 TypeKind::Comp(ref ci) => ci.layout(ctx),
-                 TypeKind::Array(inner, 0) => Some(Layout::new(
-                     0,
--                    ctx.resolve_type(inner).layout(ctx)?.align,
-+                    ctx.safe_resolve_type(inner)?.layout(ctx)?.align,
-                 )),
-                 // FIXME(emilio): This is a hack for anonymous union templates.
-                 // Use the actual pointer size!
-@@ -232,7 +232,7 @@ impl Type {
-                     ctx.target_pointer_size(),
-                 )),
-                 TypeKind::ResolvedTypeRef(inner) => {
--                    ctx.resolve_type(inner).layout(ctx)
-+                    ctx.safe_resolve_type(inner)?.layout(ctx)
-                 }
-                 _ => None,
+@@ -229,7 +229,7 @@ impl Type {
+         match self.kind {
+             TypeKind::Enum(ref e) => ctx.resolve_type(e.repr()?).layout(ctx),
+             TypeKind::Alias(inner) | TypeKind::ResolvedTypeRef(inner) => {
+-                ctx.resolve_type(inner).layout(ctx)
++                ctx.safe_resolve_type(inner)?.layout(ctx)
              }
+             TypeKind::Comp(ref ci) if !has_layout => ci.layout(ctx),
+             TypeKind::Pointer(..) if !has_layout => Some(Layout::new(
+@@ -237,7 +237,7 @@ impl Type {
+                 ctx.target_pointer_size(),
+             )),
+             TypeKind::Array(inner, len) => {
+-                let layout = ctx.resolve_type(inner).layout(ctx)?;
++                let layout = ctx.safe_resolve_type(inner)?.layout(ctx)?;
+                 Some(Layout::new(len * layout.size, layout.align))
+             }
+             _ => None,
 @@ -327,10 +327,10 @@ impl Type {
              TypeKind::ResolvedTypeRef(inner) |
              TypeKind::Alias(inner) |
