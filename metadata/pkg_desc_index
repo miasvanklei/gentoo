@@ -1259,7 +1259,7 @@ app-backup/backuppc 3.3.1-r6 4.4.0-r1 4.4.0-r2 4.4.0-r3: High-performance backup
 app-backup/bacula 15.0.3-r3: Featureful client/server network backup suite
 app-backup/bareos 21.1.11 22.1.8 23.1.5 23.1.7 24.0.7 24.0.10 25.0.1 25.0.3 9999: Featureful client/server network backup suite
 app-backup/borgbackup 1.4.3 1.4.4 1.4.5: Deduplicating backup program with compression and authenticated encryption
-app-backup/borgmatic 2.0.13 2.1.5 2.1.7 2.1.8: Automatically create, prune and verify backups with borgbackup
+app-backup/borgmatic 2.0.13 2.1.5 2.1.8 2.1.9: Automatically create, prune and verify backups with borgbackup
 app-backup/btrbk 0.32.6-r1 0.32.6-r2 0.32.7 9999: Tool for creating snapshots and remote backups of btrfs subvolumes
 app-backup/burp 3.3.0-r1: Network backup and restore client and server for Unix and Windows
 app-backup/ccollect 0.8-r2 2.10: Pseudo incremental backup with different exclude lists using hardlinks and rsync
@@ -2873,7 +2873,7 @@ app-misc/linuxspa 0.7.1-r2: Linux Serial Protocol Analyser
 app-misc/liquidctl 1.15.0 1.16.0: Cross-platform tool and drivers for liquid coolers and other devices
 app-misc/lirc 0.10.2-r2 0.10.2-r3: decode and send infra-red signals of many commonly used remote controls
 app-misc/livecd-tools 2.11 2.12 9999: Gentoo LiveCD tools for autoconfiguration of hardware
-app-misc/localsearch 3.8.2 3.10.2-r1 3.11.2: Indexer and search engine that powers desktop search for core GNOME components
+app-misc/localsearch 3.8.2 3.10.2-r1 3.11.2 3.12.0: Indexer and search engine that powers desktop search for core GNOME components
 app-misc/lockfile-progs 0.1.19 0.2.0: Programs to safely lock/unlock files and mailboxes
 app-misc/logiops 0.3.5: An unofficial userspace driver for HID++ Logitech devices
 app-misc/lsx 0.1-r1: list executables
@@ -2969,7 +2969,7 @@ app-misc/terminal-colors 3.0.2 9999: A tool to display color charts for 8, 16, 8
 app-misc/timestamp 1.1-r3: A text filtering pipe that marks each line with a timestamp
 app-misc/timew 1.9.1: Tracks your time from the command line, and generates reports
 app-misc/timew-report 1.4.0-r1: An interface for Timewarrior report data
-app-misc/tinysparql 3.8.2 3.10.1 3.11.1: Low-footprint RDF triple store with SPARQL 1.1 interface
+app-misc/tinysparql 3.8.2 3.10.1 3.11.1 3.12.0: Low-footprint RDF triple store with SPARQL 1.1 interface
 app-misc/tkpasman 2.2b: Useful and reliable personal password manager, written in Tcl/Tk
 app-misc/tmate 2.4.0-r2: Instant terminal sharing
 app-misc/tmux 3.4-r1 3.5a 3.6a 3.7c 9999: Terminal multiplexer
@@ -3293,7 +3293,7 @@ app-text/grip 4.6.2: Preview GitHub Markdown files like Readme locally before co
 app-text/groonga 16.0.1 16.1.0: Embeddable Fulltext Search Engine
 app-text/groonga-normalizer-mysql 1.1.1-r1: Groonga plugin that provides MySQL compatible normalizers
 app-text/grutatxt 2.200.0: A converter from plain text to HTML and other markup languages
-app-text/gspell 1.14.4: Spell check library for GTK+ applications
+app-text/gspell 1.14.4 1.14.5: Spell check library for GTK+ applications
 app-text/gtkspell 2.0.16-r2 3.0.10-r1: Spell checking widget for GTK
 app-text/gtranslator 48.0 51.0: GNOME Translation Editor
 app-text/gv 3.7.4: Viewer for PostScript and PDF documents using Ghostscript
@@ -5654,9 +5654,9 @@ dev-libs/libbson 1.24.4-r1: Library routines related to building,parsing and ite
 dev-libs/libbulletml 0.0.6-r1: A Library of Bullet Markup Language
 dev-libs/libburn 1.5.8-r2: Open-source library for reading, mastering and writing optical discs
 dev-libs/libbytesize 2.11 2.12: Tiny library providing a C "class" for working with arbitrary big byte sizes
-dev-libs/libcbor 0.13.0: CBOR protocol implementation for C and others
+dev-libs/libcbor 0.13.0 0.14.0: CBOR protocol implementation for C and others
 dev-libs/libcdada 0.6.1 0.6.4: Basic data structures in C
-dev-libs/libcdio 2.1.0-r2 2.2.0: A library to encapsulate CD-ROM reading and control
+dev-libs/libcdio 2.1.0-r2 2.2.0 2.4.0: A library to encapsulate CD-ROM reading and control
 dev-libs/libcdio-paranoia 2.0.1 2.0.2: Advanced CDDA reader with error correction
 dev-libs/libcec 7.1.1 8.1.6 8.1.7: Library for communicating with the Pulse-Eight USB HDMI-CEC Adaptor
 dev-libs/libcgroup 3.1.0 3.2.0: Tools and libraries to configure and manage kernel control groups
@@ -9003,7 +9003,7 @@ dev-python/nagiosplugin 1.4.0: A class library for writing nagios-compatible plu
 dev-python/nanobind 2.12.0 2.15.0 3.0.1 3.1.0: Tiny and efficient C++/Python bindings
 dev-python/narwhals 2.24.0 2.25.0 2.26.0: Extremely lightweight compatibility layer between dataframe libraries
 dev-python/natsort 8.4.0: Natural sorting for Python
-dev-python/nautilus-python 4.0.1 4.1.0: Python bindings for the Nautilus file manager
+dev-python/nautilus-python 4.0.1 4.1.0 4.2.0: Python bindings for the Nautilus file manager
 dev-python/nbclassic 1.3.3: Jupyter Notebook as a Jupyter Server Extension
 dev-python/nbclient 0.11.0: A client library for executing Jupyter notebooks
 dev-python/nbconvert 7.17.1: Converting Jupyter Notebooks
@@ -11546,7 +11546,7 @@ games-board/fruit 2.1-r1: UCI-only chess engine
 games-board/gambit 1.0.6: Qt-based chess application + engine "gupta"
 games-board/gmchess 0.29.6-r3: Chinese chess with gtkmm and c++
 games-board/gnome-chess 49.2 50.1: Play the classic two-player boardgame of chess
-games-board/gnome-mahjongg 48.1 49.0.1 49.1.1: Disassemble a pile of tiles by removing matching pairs
+games-board/gnome-mahjongg 49.1.1 51.1: Disassemble a pile of tiles by removing matching pairs
 games-board/gnome-mines 48.1 49.0.1: Clear hidden mines from a minefield
 games-board/gnubg 1.08.003-r1: GNU BackGammon
 games-board/gnuchess 6.2.9-r1: Console based chess interface
@@ -14020,7 +14020,7 @@ media-plugins/xsynth-dssi 0.9.4: A software synthesizer plugin for the DSSI Soft
 media-plugins/zam-plugins 4.2: Collection of LV2/LADSPA/VST/JACK audio plugins for high quality processing
 media-radio/adifmerg 9999 20250112: A small conversion and check utility for ADIF files
 media-radio/ax25-apps 0.0.8_rc5-r1: Basic AX.25 (Amateur Radio) user tools, additional daemons
-media-radio/ax25-tools 0.0.10_rc5-r1: Basic AX.25 (Amateur Radio) administrative tools and daemons
+media-radio/ax25-tools 0.0.10_rc5-r2: Basic AX.25 (Amateur Radio) administrative tools and daemons
 media-radio/chirp 20240606-r1 20260417: A free, open-source tool for programming your radio
 media-radio/cqrlog 2.5.2: CQRLOG is an advanced ham radio logger based on MySQL database
 media-radio/cwdaemon 0.13.0: A morse daemon for the parallel or serial port
@@ -15171,7 +15171,7 @@ net-libs/quiche 0.24.1 0.26.1-r1 0.28.0 0.29.0 0.29.1 0.29.2 0.29.3 0.30.0 9999:
 net-libs/qxmpp 1.16.3: Cross-platform C++ XMPP client and server library
 net-libs/rabbitmq-c 0.13.0: RabbitMQ C client
 net-libs/radcli 1.4.0: A simple RADIUS client library
-net-libs/rest 0.9.1-r2 0.10.2: Helper library for RESTful services
+net-libs/rest 0.10.2 0.10.2-r1: Helper library for RESTful services
 net-libs/rpc2 2.37: Remote procedure call package for IP/UDP (used by Coda)
 net-libs/rpcsvc-proto 0-r1 1.4.4 1.4.4-r1: rpcsvc protocol definitions from glibc
 net-libs/rtrlib 0.8.0-r1: An open-source C implementation of the RPKI/Router Protocol client
@@ -17424,7 +17424,7 @@ sys-apps/onerng 3.7-r1: Software for the Open Hardware Random Number Generator c
 sys-apps/opal-utils 7.0: OPAL firmware utilities
 sys-apps/openrazer 3.12.3 3.12.4: Drivers and user-space daemon to control Razer devices on GNU/Linux
 sys-apps/openrc 0.63.3 0.64 0.64.1 9999: OpenRC manages the services, startup and shutdown of a host
-sys-apps/osinfo-db 20250606 20251212: Osinfo database for virtualization provisioning tools
+sys-apps/osinfo-db 20251212 20260812: Osinfo database for virtualization provisioning tools
 sys-apps/osinfo-db-tools 1.11.0-r1 1.12.0-r1: Tools for managing the osinfo database
 sys-apps/pandora_box 0.22.0 0.24.0: Syd's log inspector & profile writer
 sys-apps/paxctl 0.9: Manages various PaX related program header flags for Elf32, Elf64, binaries
