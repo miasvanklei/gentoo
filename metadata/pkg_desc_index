@@ -2020,7 +2020,7 @@ app-emacs/dune-format 0.1: Reformat OCaml's dune files automatically
 app-emacs/dwarf-mode 2.40: Emacs mode to browse DWARF information
 app-emacs/earthfile-mode 0.1.0_p20230810: GNU Emacs major mode for editing Earthly Earthfiles
 app-emacs/ebib 2.51.1: BibTeX database manager for Emacs
-app-emacs/ebuild-mode 1.79 1.84 1.85: Emacs modes for editing ebuilds and other Gentoo specific files
+app-emacs/ebuild-mode 1.79 1.84 1.85 1.86: Emacs modes for editing ebuilds and other Gentoo specific files
 app-emacs/ebuild-run-mode 20221116: Major mode for Emacs buffers where ebuild commands run
 app-emacs/ecukes 0.6.18-r1: Cucumber for Emacs
 app-emacs/edb 1.34: EDB, The Emacs Database
@@ -3087,7 +3087,7 @@ app-pda/libusbmuxd 2.1.0 2.1.1: USB multiplex daemon for use with Apple iPhone/i
 app-pda/pilot-link 0.12.5-r4 0.12.5-r5: Suite of tools for moving data between a Palm device and a desktop
 app-pda/usbmuxd 1.1.1_p20231011 1.1.1_p20240915: USB multiplex daemon for use with Apple iPhone/iPod Touch devices
 app-portage/cfg-update 1.8.9-r2 1.8.9-r3 1.8.11 1.11.0: Easy to use GUI & CLI alternative for etc-update
-app-portage/command-not-found 0.0.7-r1: Command-not-found handler for Gentoo
+app-portage/command-not-found 0.0.7-r1 0.0.8: Command-not-found handler for Gentoo
 app-portage/conf-update 1.0.3-r1: conf-update is a ncurses-based config management utility
 app-portage/cpuid2cpuflags 17 18: Tool to guess CPU_FLAGS_* flags for the host
 app-portage/diffmask 0.3.3-r5: A utility to maintain package.unmask entries up-to-date with masks
@@ -3140,7 +3140,7 @@ app-portage/tatt 0.11-r1 9999: Arch testing tool
 app-portage/time64-prep 1: A tool to prepare for (comparatively) safe time64 transition
 app-portage/ufed 0.96 9999: Gentoo Linux USE flags editor
 app-portage/unsymlink-lib 20: Convert your system to SYMLINK_LIB=no
-app-shells/atuin 18.11.0 18.12.1 18.13.5 18.14.1 18.16.0 18.16.1: Shell history manager supporting encrypted synchronisation
+app-shells/atuin 18.12.1 18.14.1 18.16.0 18.16.1 18.23.0: Shell history manager supporting encrypted synchronisation
 app-shells/autojump 22.5.3-r4: change directory command that learns
 app-shells/bash 2.05b_p13 3.0_p22 3.1_p23 3.2_p57 4.0_p44 4.1_p17 4.2_p53 4.3_p48-r2 4.4_p23-r2 5.0_p18-r3 5.1_p16-r14 5.2_p37-r5 5.3_p9 5.3_p9-r1 5.3_p9-r2 5.3_p12 5.3_p15 5.3_p20 5.4_alpha_pre20251202-r1 9999: The standard GNU Bourne again shell
 app-shells/bash-completion 2.16.0-r3 2.17.0 2.18.0 9999: Programmable Completion for bash
@@ -3710,7 +3710,7 @@ app-xemacs/dictionary 1.18: Interface to RFC2229 dictionary servers
 app-xemacs/dired 1.22: Manage file systems
 app-xemacs/docbookide 0.10: DocBook editing support
 app-xemacs/easypg 1.05: GnuPG interface for Emacs
-app-xemacs/ebuild-mode 1.84 1.85: Emacs modes for editing ebuilds and other Gentoo specific files
+app-xemacs/ebuild-mode 1.84 1.85 1.86: Emacs modes for editing ebuilds and other Gentoo specific files
 app-xemacs/ecb 1.26: Emacs source code browser
 app-xemacs/ecrypto 0.23: Crypto functionality in Emacs Lisp
 app-xemacs/ede 1.07: Emacs Development Environment
@@ -9643,7 +9643,7 @@ dev-python/slixmpp 1.15.0 1.16.0: Python 3 library for XMPP
 dev-python/smartypants 2.0.2: ASCII quote-dot-dash to HTML entity converter
 dev-python/smbus2 0.6.1: A drop-in replacement for smbus-cffi/smbus-python in pure Python
 dev-python/smmap 6.0.0: A pure Python implementation of a sliding window memory map manager
-dev-python/snakeoil 0.11.4 0.11.5 0.11.6 9999: misc common functionality and useful optimizations
+dev-python/snakeoil 0.11.6 9999: misc common functionality and useful optimizations
 dev-python/snaketrace 0.3.1-r1: An strace-like tool for Python audit events
 dev-python/snapshottest 0.6.0: Snapshot Testing utils for Python
 dev-python/sniffio 1.3.1: Sniff out which async library your code is running under
@@ -11133,10 +11133,10 @@ dev-util/patdiff 0.16.0 0.17.0: Colored patience diffs with word-level refinemen
 dev-util/peg 0.1.19 0.1.20: Recursive-descent parser generators for C
 dev-util/perf 6.19.12 7.0 7.1 7.2: Userland tools for Linux Performance Counters
 dev-util/pixi 0.80.0 0.81.0: A package management and workflow tool
-dev-util/pkgcheck 0.10.42 0.10.43 0.10.44 9999: pkgcore-based QA utility for ebuild repos
+dev-util/pkgcheck 0.10.43 0.10.44 0.10.45 9999: pkgcore-based QA utility for ebuild repos
 dev-util/pkgconf 2.5.1 3.0.3 3.0.4 3.0.5 3.0.6 3.0.7 9999: pkg-config compatible replacement with no dependencies other than C99
 dev-util/pkgcruft 0.0.18-r1 9999: QA library and tools based on pkgcraft
-dev-util/pkgdev 0.2.16 0.2.17 0.2.18 9999: Collection of tools for Gentoo development
+dev-util/pkgdev 0.2.18 9999: Collection of tools for Gentoo development
 dev-util/pkgdiff 1.8 9999: Package Changes Analyzer (pkgdiff)
 dev-util/plan9port 0_pre20240617 0_pre20260226: Port of many Plan 9 programs and libraries
 dev-util/ply 2.3.0: Dynamic instrumentation of the Linux kernel with BPF and kprobes
@@ -15160,7 +15160,7 @@ net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP
 net-libs/nghttp2 1.69.0 1.70.0 9999: HTTP/2 C Library
 net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 1.14.0 1.15.0 1.16.0 1.17.0 1.18.0 9999: HTTP/3 library written in C
 net-libs/ngtcp2 1.12.0 1.20.0 1.20.0-r1 1.21.0 1.22.0 1.22.1 1.23.0 1.24.0 1.25.0 9999: Implementation of the IETF QUIC Protocol
-net-libs/nodejs 20.18.2 20.20.2 22.13.1 22.23.2 24.14.0 24.19.0 24.21.0 26.3.0 26.8.1 26.8.2 26.8.2-r1 26.8.2-r2 26.9.0 26.10.0 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
+net-libs/nodejs 20.18.2 20.20.2 22.13.1 22.23.2 24.14.0 24.19.0 24.21.0 26.3.0 26.8.1 26.8.2 26.8.2-r1 26.8.2-r2 26.9.0 26.10.0 26.10.0-r1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
 net-libs/paho-mqtt-c 1.3.15 1.3.16: An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS
@@ -17435,7 +17435,7 @@ sys-apps/pcsc-lite 2.4.0-r1 2.4.1 2.5.1: PC/SC Architecture smartcard middleware
 sys-apps/pcsc-slb-rf72-drv 1.1.0-r2: Schlumberger Reflex 72 Serial Smartcard Reader
 sys-apps/pcsc-tools 1.7.3-r1 1.7.4: PC/SC Architecture smartcard tools
 sys-apps/pick 4.0.0-r1: A fuzzy search tool for the command-line
-sys-apps/pkgcore 0.12.40 0.12.41 0.12.42 0.12.43 9999: a framework for package management
+sys-apps/pkgcore 0.12.42 0.12.43 0.12.44 9999: a framework for package management
 sys-apps/pkgcraft-tools 0.0.31-r2 9999: pkgcraft-based tools for Gentoo
 sys-apps/plocate 1.1.23 1.1.24: Posting locate is a much faster locate
 sys-apps/pmount 0.9.99_alpha-r7 0.9.99_alpha-r8: Policy based mounter that gives the ability to mount removable devices as a user
@@ -17813,7 +17813,7 @@ sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
 sys-firmware/edk2 202511-r1 202605 202608: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/edk2-bin 202202 202408 202411 202511 202605 202608: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.22: NXP i.MX firmware
-sys-firmware/intel-microcode 20260512_p20260513 20260811_p20260811 20260812_p20260813: Intel IA32/IA64 microcode update data
+sys-firmware/intel-microcode 20260512_p20260513 20260811_p20260811 20260812_p20260813 20260925_p20260925: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3-r1: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
 sys-firmware/ipw2200-firmware 3.1-r1: Firmware for the Intel PRO/Wireless 2200BG/2915ABG miniPCI and 2225BG PCI
 sys-firmware/ipxe 1.21.1 1.21.1_p20230601 1.21.1_p20230601-r1: Open source network boot (PXE) firmware
