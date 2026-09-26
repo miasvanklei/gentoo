@@ -10928,7 +10928,7 @@ dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20241220 0_pre20251006 9999: Tool to extract code content from source files
 dev-util/claude-code 2.1.280: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.15 1.17.1-r1: Compiler plugin which allows clang to understand Qt semantics
-dev-util/clinfo 3.0.23.01.25 3.0.25.02.14 9999: A tool to display info about the system's OpenCL capabilities
+dev-util/clinfo 3.1.26.09.26 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2024.3.5-r1 2025.1.4-r1 2025.2.5 2025.3.4 2026.1.4 2026.2.0.1: A complete toolset for C and C++ development
 dev-util/cloc 1.96 2.00: Count Lines of Code
 dev-util/clojure-tools 1.12.4.1629 1.12.5.1645: Development tools for the Clojure programming language
@@ -16347,7 +16347,7 @@ sci-libs/mkl 2025.3.1.8 2026.0.0.908 2026.1.0.236: Intel Math Kernel Library
 sci-libs/mpfi 1.5.4_p20220401: Multiple precision interval arithmetic library based on MPFR
 sci-libs/mumps 5.3.5-r1: MUltifrontal Massively Parallel sparse direct matrix Solver
 sci-libs/nanoflann 1.7.1 1.12.1 9999: C++ header-only library for Nearest Neighbor (NN) search wih KD-trees
-sci-libs/netcdf 4.9.3-r2 4.10.1: Scientific library and interface for array oriented data access
+sci-libs/netcdf 4.9.3-r3 4.10.1-r1: Scientific library and interface for array oriented data access
 sci-libs/netcdf-cxx 4.2-r301 4.3.1 4.3.1-r1: C++ library for netCDF
 sci-libs/netcdf-fortran 4.5.4-r1 4.6.4: Scientific library and interface for array oriented data access
 sci-libs/nfft 3.5.3-r1: library for nonequispaced discrete Fourier transformations
