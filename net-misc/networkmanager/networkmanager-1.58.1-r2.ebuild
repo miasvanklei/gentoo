@@ -4,7 +4,7 @@
 EAPI=8
 
 MY_PN="NetworkManager"
-PYTHON_COMPAT=( python3_{11..14} )
+PYTHON_COMPAT=( python3_{12..15} )
 
 inherit linux-info meson-multilib flag-o-matic python-any-r1 \
 	readme.gentoo-r1 systemd toolchain-funcs udev vala virtualx
@@ -20,9 +20,9 @@ S="${WORKDIR}"/${MY_PN}-${PV}
 LICENSE="GPL-2+ LGPL-2.1+"
 SLOT="0"
 
-KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ppc ppc64 ~riscv ~sparc x86"
+KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~ppc ~ppc64 ~riscv ~sparc ~x86"
 
-IUSE="audit bluetooth +concheck connection-sharing debug dhclient dhcpcd elogind gnutls gtk-doc +introspection iptables iwd libedit +modemmanager nbft +nss nftables ofono ovs policykit +ppp psl resolvconf selinux syslog systemd teamd test +tools vala +wext +wifi"
+IUSE="audit bluetooth clat +concheck connection-sharing debug dhcpcd elogind gnutls gtk-doc +introspection iptables iwd libedit +modemmanager nbft +nss nftables ofono ovs policykit +ppp psl resolvconf selinux syslog systemd teamd test +tools vala +wext +wifi"
 RESTRICT="!test? ( test )"
 
 REQUIRED_USE="
@@ -35,7 +35,6 @@ REQUIRED_USE="
 	wext? ( wifi )
 	^^ ( gnutls nss )
 	?? ( elogind systemd )
-	?? ( dhclient dhcpcd )
 	?? ( syslog systemd )
 "
 
@@ -53,7 +52,6 @@ COMMON_DEPEND="
 		iptables? ( net-firewall/iptables )
 		nftables? ( net-firewall/nftables )
 	)
-	dhclient? ( >=net-misc/dhcp-4[client] )
 	dhcpcd? ( >=net-misc/dhcpcd-9.3.3 )
 	elogind? ( >=sys-auth/elogind-219 )
 	gnutls? (
@@ -79,6 +77,11 @@ COMMON_DEPEND="
 		sec-policy/selinux-networkmanager
 		sys-libs/libselinux
 	)
+	clat? (
+		>=dev-libs/libbpf-1.3.0
+		>=net-libs/libndp-1.9
+		>=dev-util/bpftool-5.6.0
+	)
 	systemd? ( >=sys-apps/systemd-209:0= )
 	teamd? (
 		>=dev-libs/jansson-2.7:=
@@ -87,6 +90,7 @@ COMMON_DEPEND="
 	tools? (
 		>=dev-libs/jansson-2.7:=
 		>=dev-libs/newt-0.52.15
+		sys-libs/slang
 		libedit? ( dev-libs/libedit )
 		!libedit? ( sys-libs/readline:= )
 	)
@@ -192,6 +196,7 @@ multilib_src_configure() {
 
 		# system paths
 		-Dsystemdsystemunitdir=$(systemd_get_systemunitdir)
+		-Dsystemdsystemgeneratordir=$(systemd_get_systemgeneratordir)
 		-Dsystem_ca_path=/etc/ssl/certs
 		-Dudev_dir=$(get_udevdir)
 		-Ddbus_conf_dir=/usr/share/dbus-1/system.d
@@ -204,16 +209,14 @@ multilib_src_configure() {
 		-Ddist_version=${PVR}
 		$(meson_native_use_bool policykit polkit)
 		$(meson_native_use_bool policykit config_auth_polkit_default)
-		-Dmodify_system=true
 		-Dpolkit_agent_helper_1=/usr/lib/polkit-1/polkit-agent-helper-1
 		$(meson_native_use_bool selinux)
 		$(meson_native_use_bool systemd systemd_journal)
 		-Dconfig_wifi_backend_default=$(multilib_native_usex iwd iwd default)
-		-Dhostname_persist=gentoo
+		-Dhostname_persist=default
 		-Dlibaudit=$(multilib_native_usex audit)
 
 		# features
-		$(meson_native_use_bool wext)
 		$(meson_native_use_bool wifi)
 		$(meson_native_use_bool iwd)
 		$(meson_native_use_bool ppp)
@@ -228,6 +231,7 @@ multilib_src_configure() {
 		$(meson_native_use_bool tools nm_cloud_setup)
 		$(meson_native_use_bool bluetooth bluez5_dun)
 		$(meson_native_use_bool nbft)
+		$(meson_native_use_bool clat)
 
 		# configuration plugins
 		-Dconfig_plugins_default=keyfile
@@ -241,7 +245,6 @@ multilib_src_configure() {
 		-Dconfig_dns_rc_manager_default=auto
 
 		# dhcp clients
-		$(meson_nm_program dhclient "" /sbin/dhclient)
 		$(meson_nm_program dhcpcd "" /sbin/dhcpcd)
 
 		# miscellaneous
@@ -281,9 +284,7 @@ multilib_src_configure() {
 		emesonargs+=( -Dconfig_logging_backend_default=default )
 	fi
 
-	if multilib_is_native_abi && use dhclient; then
-		emesonargs+=( -Dconfig_dhcp_default=dhclient )
-	elif multilib_is_native_abi && use dhcpcd; then
+	if multilib_is_native_abi && use dhcpcd; then
 		emesonargs+=( -Dconfig_dhcp_default=dhcpcd )
 	else
 		emesonargs+=( -Dconfig_dhcp_default=internal )
@@ -307,6 +308,10 @@ multilib_src_configure() {
 		PPPD_VER=${PPPD_VER#*/*-} #reduce it to ${PV}-${PR}
 		PPPD_VER=${PPPD_VER%%[_-]*} # main version without beta/pre/patch/revision
 		emesonargs+=( -Dpppd_plugin_dir=/usr/$(get_libdir)/pppd/${PPPD_VER} )
+	fi
+
+	if use wext; then
+		emesonargs+=( -Dwext=force )
 	fi
 
 	meson_src_configure
@@ -350,6 +355,15 @@ multilib_src_install_all() {
 
 	insinto /usr/lib/NetworkManager/conf.d #702476
 	doins "${S}"/examples/nm-conf.d/31-mac-addr-change.conf
+
+	if use concheck; then
+		# Needed to let the "connect" pop up to show up in captive portals
+		cat <<-EOF > "${ED}"/usr/lib/NetworkManager/conf.d/20-connectivity.conf || die
+		[connectivity]
+		uri=http://nmcheck.gnome.org/check_network_status.txt
+		interval=300
+		EOF
+	fi
 
 	if use iwd; then
 		# This goes to $nmlibdir/conf.d/ and $nmlibdir is '${prefix}'/lib/$PACKAGE, thus always lib, not get_libdir
@@ -403,16 +417,24 @@ pkg_postinst() {
 		ewarn "value to '0'."
 	fi
 
-	if use dhclient || use dhcpcd; then
-		ewarn "You have enabled USE=dhclient and/or USE=dhcpcd, but NetworkManager since"
-		ewarn "version 1.20 defaults to the internal DHCP client. If the internal client"
-		ewarn "works for you, and you're happy with, the alternative USE flags can be"
-		ewarn "disabled. If you want to use dhclient or dhcpcd, then you need to tweak"
-		ewarn "the main.dhcp configuration option to use one of them instead of internal."
+	if use dhcpcd; then
+		ewarn "You have enabled USE=dhcpcd, but NetworkManager since version 1.20 defaults to"
+		ewarn "the internal DHCP client. If the internal client works for you, and you're happy"
+		ewarn "with, the alternative USE flags can be disabled. If you want to use dhcpcd, then"
+		ewarn "you need to tweak the main.dhcp configuration option to use one of them instead"
+		ewarn "of internal."
 		# https://gitlab.freedesktop.org/NetworkManager/NetworkManager/-/merge_requests/1988
-		ewarn
-		ewarn "Note that dhclient has been deprecated and support for that will be removed"
-		ewarn "in a future release."
+	fi
+
+	if use systemd; then
+		ewarn "Systemd defaults to DNSSEC=allow-downgrade. This can break some captive portals."
+		ewarn "Until upstream solves this issue, you may need to disable it by setting DNSSEC=no"
+		ewarn "at /etc/systemd/resolved.conf"
+	fi
+
+	if use wext; then
+		ewarn "You have enabled USE=wext. Note that wext has been deprecated and support for"
+		ewarn "it will be removed in a future release."
 	fi
 }
 
