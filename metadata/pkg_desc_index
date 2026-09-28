@@ -12265,7 +12265,7 @@ gui-apps/xwaylandvideobridge 0.5.2-r1 0.5.3: Screenshare Wayland windows to XWay
 gui-libs/amtk 5.6.1: Actions, Menus and Toolbars Kit for GTK+ applications
 gui-libs/display-manager-init 1.1.2-r3: RC init files for starting display and login managers
 gui-libs/egl-gbm 1.1.3 1.1.4: NVIDIA GBM EGL external platform library
-gui-libs/egl-wayland 1.1.21 1.1.22: NVIDIA wayland EGL external platform library
+gui-libs/egl-wayland 1.1.21 1.1.22 1.1.23: NVIDIA wayland EGL external platform library
 gui-libs/egl-wayland2 1.0.1 1.0.2: NVIDIA wayland EGL external platform library, version 2
 gui-libs/egl-x11 1.0.5 1.0.6: NVIDIA X11/XCB EGL external platform library
 gui-libs/eglexternalplatform 1.2.1: EGL External Platform interface
@@ -14443,6 +14443,7 @@ media-video/ffcast 2.4.8: Record screencasts using ffmpeg
 media-video/ffmpeg 4.4.8 6.1.6 7.1.5 8.1.2 8.1.3 9.0.2 9999: Complete solution to record/convert/stream audio and video
 media-video/ffmpeg-chromium 140 142 145 148 150 150.0.7871.124 151 152: FFmpeg built specifically for codec support in Chromium-based browsers
 media-video/ffmpeg-compat 4.4.8 6.1.6 7.1.5 8.1.2 8.1.3: Complete solution to record/convert/stream audio and video
+media-video/ffmpeg-soc-udev-rules 0: Common udev rules for ffmpeg and ffmpeg-compat with USE=soc
 media-video/ffmpegthumbnailer 2.2.3: Lightweight video thumbnailer that can be used by file managers
 media-video/flvstreamer 2.1c: Open source command-line RTMP client to stream audio or video flash content
 media-video/frameworks 0.3.7-r1: A small v4l frame capture utility especially suited for stop motion animation
@@ -14524,7 +14525,7 @@ media-video/tsmuxer 2.7.0: Utility to create and demux TS and M2TS files
 media-video/ttcut 0.19.6_p2-r1: Tool for cutting MPEG files especially for removing commercials
 media-video/untrunc 0_pre20260605 0_pre20260820: Restore truncated mp4/mov files
 media-video/ushare 2.1_p20250817: uShare is a UPnP (TM) A/V & DLNA Media Server
-media-video/v4l2loopback 0.13.1 0.15.0 0.15.1 0.15.3 9999: v4l2 loopback device whose output is its own input
+media-video/v4l2loopback 0.13.1 0.15.0 0.15.1 0.15.3 0.15.4 9999: v4l2 loopback device whose output is its own input
 media-video/vamps 0.99.2-r2: Very fast requantisizing tool for backup DVDs
 media-video/vcdimager 2.0.1-r1 2.0.1-r2: GNU VCDimager
 media-video/vcsi 7.0.17: Create thumbnail sheets from video files
@@ -14963,7 +14964,7 @@ net-im/slack 4.50.143 4.51.180 4.51.191: Team collaboration tool
 net-im/spectrum2 2.2.1_p20260727-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: An elegant, secure, adaptable and intuitive XMPP Client
 net-im/synapse 1.152.1 1.155.0 1.156.0: Reference implementation of Matrix homeserver
-net-im/talk-desktop-bin 2.1.1 2.1.2 2.2.0 2.2.1 2.2.3 2.2.4: Nextcloud Talk Desktop client
+net-im/talk-desktop-bin 2.2.3 2.2.4 2.3.2: Nextcloud Talk Desktop client
 net-im/telegram-desktop 7.0.2 7.0.9 7.1.2: Official desktop client for Telegram
 net-im/telegram-desktop-bin 7.1.3 7.1.5: Official desktop client for Telegram (binary package)
 net-im/telepathy-mission-control 5.16.6: An account manager and channel dispatcher for the Telepathy framework
@@ -15707,7 +15708,7 @@ net-proxy/adzapper 20110915-r2: Redirector for squid to intercept advertising, p
 net-proxy/cntlm 0.93_beta5-r4: Cntlm is an NTLM/NTLMv2 authenticating HTTP proxy
 net-proxy/dante 1.4.1-r6 1.4.3 1.4.4: A free socks4,5 and msproxy implementation
 net-proxy/dnsproxy 1.17-r1: The dnsproxy daemon is a proxy for DNS queries
-net-proxy/haproxy 3.0.5 3.0.14 3.0.26 3.0.27 3.0.28 3.0.9999 3.2.9 3.2.22 3.2.23 3.2.24 3.2.9999 3.4.3 3.4.4 3.4.5 3.4.9999 9999: A TCP/HTTP reverse proxy for high availability environments
+net-proxy/haproxy 3.0.5 3.0.14 3.0.26 3.0.27 3.0.28 3.0.9999 3.2.9 3.2.22 3.2.23 3.2.24 3.2.9999 3.4.3 3.4.4 3.4.9999 9999: A TCP/HTTP reverse proxy for high availability environments
 net-proxy/haproxy-dataplaneapi 3.0.3 3.1.5: haproxy dataplane api / sidecar
 net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying of HAProxy status
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
