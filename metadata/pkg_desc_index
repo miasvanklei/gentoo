@@ -3942,7 +3942,7 @@ dev-cpp/frugally-deep 0.15.30: Header-only library for using Keras models in C++
 dev-cpp/functional-plus 0.2.22: Functional Programming Library for C++
 dev-cpp/gflags 2.2.2-r1 9999: Google's C++ argument parsing library
 dev-cpp/glaze 5.2.1 5.5.4 6.5.1 8.1.0: Extremely fast, in memory, JSON and interface library for modern C++
-dev-cpp/glibmm 2.66.8 2.84.0 2.88.0 2.88.1: C++ interface for glib2
+dev-cpp/glibmm 2.66.8 2.66.8-r1 2.84.0 2.88.0 2.88.1: C++ interface for glib2
 dev-cpp/glog 0.5.0 0.6.0 0.6.0-r1 0.7.1: Google Logging library
 dev-cpp/gpgmepp 2.0.0-r1 2.1.0 2.2.0: GnuPG Made Easy is a library for making GnuPG easier to use (C++ bindings)
 dev-cpp/gstreamermm 1.10.0-r3: C++ interface for GStreamer
@@ -4987,17 +4987,17 @@ dev-java/bcpg 1.84: Java cryptography APIs
 dev-java/bcpkix 1.84: Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation
 dev-java/bcprov 1.84: Java cryptography APIs
 dev-java/bcutil 1.84: Java APIs for ASN.1 extension and utility APIs used to support bcpkix and bctls
-dev-java/bnd 7.2.1 7.2.3: bndlib: A Swiss Army Knife for OSGi
-dev-java/bnd-annotation 7.2.1 7.2.3: bnd Annotations Library
-dev-java/bnd-ant 7.2.1 7.2.3: Bnd Ant Tasks
-dev-java/bnd-util 7.2.1 7.2.3: AQute Bnd Utilities
-dev-java/bndlib 7.2.1 7.2.3: bndlib: A Swiss Army Knife for OSGi
+dev-java/bnd 7.2.3: bndlib: A Swiss Army Knife for OSGi
+dev-java/bnd-annotation 7.2.3: bnd Annotations Library
+dev-java/bnd-ant 7.2.3: Bnd Ant Tasks
+dev-java/bnd-util 7.2.3: AQute Bnd Utilities
+dev-java/bndlib 7.2.3: bndlib: A Swiss Army Knife for OSGi
 dev-java/brotli-dec 0.1.2-r1: Brotli decompressor
 dev-java/browserlauncher2 1.3-r3: A library that facilitates opening a browser from a Java application
 dev-java/bsf 2.4.0-r7: Bean Script Framework
 dev-java/bsh 2.1.1-r2: A small embeddable Java source interpreter
 dev-java/byaccj 1.15-r3: A Java extension of BSD YACC-compatible parser generator
-dev-java/byte-buddy 1.18.4 1.18.10: Offers convenience for attaching an agent to the local or a remote VM
+dev-java/byte-buddy 1.18.10: Offers convenience for attaching an agent to the local or a remote VM
 dev-java/c3p0 0.9.5.5-r3: JDBC drivers with JNDI-bindable DataSources
 dev-java/cache2k-api 0.23.1: light weight and high performance Java caching library: API
 dev-java/cache2k-core 0.23.1: light weight and high performance Java caching library: core
@@ -5203,7 +5203,7 @@ dev-java/junitparams 1.1.1-r2: Better parameterised tests for JUnit
 dev-java/jzlib 1.1.3-r3: JZlib is a re-implementation of zlib in pure Java
 dev-java/kafka-clients 1.1.1-r2: Apache Kafka distributed event streaming platform
 dev-java/leiningen-bin 2.11.2 2.12.0: Automate Clojure projects without setting your hair on fire
-dev-java/libg 7.2.1 7.2.3: A library to be statically linked. Contains many small utilities
+dev-java/libg 7.2.3: A library to be statically linked. Contains many small utilities
 dev-java/lmax-disruptor 3.4.4: A High Performance Inter-Thread Messaging Library
 dev-java/log4j-12-api 2.26.0: The Apache Log4j 1.x Compatibility API
 dev-java/log4j-api 2.26.0: The Apache Log4j API
@@ -5227,9 +5227,9 @@ dev-java/objenesis 3.4: A library for instantiating Java objects
 dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
-dev-java/openjdk 8.502_p07 8.504_p01 11.0.32_p9 11.0.32.1_p1 11.0.32.1_p1-r1 17.0.20_p8 17.0.20.1_p1 17.0.20.1_p1-r1 21.0.12_p8 21.0.12.1_p1 21.0.12.1_p1-r1 25.0.4_p7 25.0.4.1_p1 27_p35 28_alpha15: Open source implementation of the Java programming language
-dev-java/openjdk-bin 8.502_p07 8.504_p01 11.0.32_p9 11.0.32.1_p1 17.0.20_p8 17.0.20.1_p1 17.0.20.1_p1-r1 21.0.12_p8 21.0.12.1_p1 21.0.12.1_p1-r1 25.0.4_p7 25.0.4.1_p1 25.0.4.1_p1-r1 27_p35 28_alpha16: Prebuilt Java JDK binaries provided by Eclipse Temurin
-dev-java/openjdk-jre-bin 8.502_p07 8.504_p01 11.0.32_p9 11.0.32.1_p1 17.0.20_p8 17.0.20.1_p1 21.0.12_p8 21.0.12.1_p1 25.0.4_p7 25.0.4.1_p1: Prebuilt Java JRE binaries provided by Eclipse Temurin
+dev-java/openjdk 8.504_p01 11.0.32.1_p1 11.0.32.1_p1-r1 17.0.20.1_p1 17.0.20.1_p1-r1 21.0.12.1_p1 21.0.12.1_p1-r1 25.0.4.1_p1 27_p35 28_alpha15: Open source implementation of the Java programming language
+dev-java/openjdk-bin 8.504_p01 11.0.32.1_p1 17.0.20.1_p1 17.0.20.1_p1-r1 21.0.12.1_p1 21.0.12.1_p1-r1 25.0.4.1_p1 25.0.4.1_p1-r1 27_p35 28_alpha16: Prebuilt Java JDK binaries provided by Eclipse Temurin
+dev-java/openjdk-jre-bin 8.504_p01 11.0.32.1_p1 17.0.20.1_p1 21.0.12.1_p1 25.0.4.1_p1: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 11.0.11_p1-r5: Java OpenJFX client application platform
 dev-java/opentelemetry-java 1.49.0: OpenTelemetry Context (Incubator)
 dev-java/opentest4j 1.3.0-r1: Open Test Alliance for the JVM
@@ -5578,7 +5578,7 @@ dev-libs/gobject-introspection-common 1.82.0 1.84.0 1.86.0: Build infrastructure
 dev-libs/gom 0.5.4 0.5.5 0.5.6: GObject to SQLite object mapper library
 dev-libs/gost-engine 3.0.1 3.0.1-r1 3.0.2 3.0.3 9999: A reference implementation of the Russian GOST crypto algorithms for OpenSSL
 dev-libs/granite 7.6.0 7.7.0 7.8.1-r1: Elementary OS library that extends GTK+
-dev-libs/gumbo 0.13.2-r1 0.14.0: The HTML5 parsing algorithm implemented as a pure C99 library
+dev-libs/gumbo 0.13.2-r1 0.14.0 0.14.1: The HTML5 parsing algorithm implemented as a pure C99 library
 dev-libs/gweather-locations 2026.2: GWeather Locations Database
 dev-libs/half 1.12.0-r1: Half-precision floating-point library
 dev-libs/heatshrink 0.4.1: A data compression/decompression library for embedded/real-time systems
@@ -8398,7 +8398,7 @@ dev-python/blockbuster 1.5.26 1.5.27 1.5.28: Utility to detect blocking calls in
 dev-python/blosc 1.11.4: High performance compressor optimized for binary data
 dev-python/bluelet 0.2.0-r1: Module for pure Python asynchronous I/O using coroutines
 dev-python/blurb 2.0.0 2.1.0: Tool to create and manage NEWS blurbs for CPython
-dev-python/boltons 26.1.0 26.2.0: Pure-python utilities in the same spirit as the standard library
+dev-python/boltons 26.2.0: Pure-python utilities in the same spirit as the standard library
 dev-python/boolean-py 5.0: Define boolean algebras, create and parse boolean expressions
 dev-python/boto3 1.43.78 1.43.83 1.43.89 1.43.93 1.43.98 1.43.103 1.43.104: The AWS SDK for Python
 dev-python/botocore 1.43.78 1.43.83 1.43.89 1.43.93 1.43.98 1.43.103 1.43.104: Low-level, data-driven core of boto 3
@@ -11172,7 +11172,7 @@ dev-util/rocminfo 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: ROCm Application for Reporting 
 dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0: Callback/Activity Library for Performance tracing AMD GPU's
 dev-util/ropper 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rt-tests 2.9 2.10: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.16.6 0.16.7 0.16.9: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.14.9 0.15.22 0.16.1 0.16.2 0.16.3 0.16.5 0.16.6 0.16.7 0.16.9: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 1.29.0 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -18406,7 +18406,7 @@ www-apps/readarr-bin 0.4.18.2805: An ebook and audiobook collection manager for 
 www-apps/redmine 6.0.7: Flexible project management web application using the Ruby on Rails framework
 www-apps/roundup 2.3.0 2.4.0 2.5.0: Issue-tracking system with command-line, web, and e-mail interfaces
 www-apps/rt 5.0.6-r1: RT is an enterprise-grade ticketing system
-www-apps/rutorrent 5.3.11 5.3.14 9999: ruTorrent is a front-end for the popular Bittorrent client rTorrent
+www-apps/rutorrent 5.3.14 5.3.15 9999: ruTorrent is a front-end for the popular Bittorrent client rTorrent
 www-apps/selfoss 2.20_pre20230730: The multipurpose rss reader, live stream, mashup, aggregation web application
 www-apps/sfpg 4.11.0: A web gallery in one single PHP file
 www-apps/sonarr-bin 4.0.19.2979: Sonarr is a Smart PVR for newsgroup and bittorrent users
