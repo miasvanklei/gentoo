@@ -15554,7 +15554,7 @@ net-misc/sysrepo 3.3.10: YANG-based configuration and operational state data sto
 net-misc/taptap 1.0-r2: Program to link two /dev/net/tun to form virtual ethernet
 net-misc/taylor-uucp 1.07-r7: Taylor UUCP
 net-misc/tcpsound 0.3.1-r1: Play sounds in response to network traffic
-net-misc/teamviewer 15.73.5 15.81.5: All-In-One Solution for Remote Access and Support over the Internet
+net-misc/teamviewer 15.73.5 15.81.5 15.82.6: All-In-One Solution for Remote Access and Support over the Internet
 net-misc/telnet-bsd 1.2-r6: Telnet and telnetd ported from OpenBSD with IPv6 support
 net-misc/throttle 1.2-r1 1.2-r3: Bandwidth limiting pipe
 net-misc/tiers 1.1: Random network topography generator
@@ -17674,7 +17674,7 @@ sys-boot/dvhtool 1.0.1-r2: Tool to copy kernel(s) into the volume header on SGI 
 sys-boot/efibootmgr 17-r1 18-r2: User-space application to modify the EFI boot manager
 sys-boot/elilo 3.16-r6: Linux boot loader for EFI-based systems such as IA-64
 sys-boot/gnu-efi 3.0.19 4.0.4: Library for build EFI Applications
-sys-boot/grub 2.12-r12 2.14-r5 2.16_rc2 2.16 9999: GNU GRUB boot loader
+sys-boot/grub 2.12-r12 2.14-r5 2.16-r1 9999: GNU GRUB boot loader
 sys-boot/grub-themes-gentoo 1.0-r2: Grub2 Themes for Gentoo
 sys-boot/lilo 24.2-r2 24.2-r3: LInux LOader, the original Linux bootloader
 sys-boot/limine 12.9.0: Modern, secure, portable, multiprotocol bootloader and boot manager
