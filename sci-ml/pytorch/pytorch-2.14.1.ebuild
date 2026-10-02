@@ -165,7 +165,7 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-2.13.0-aotriton-fixes.patch
 	"${FILESDIR}"/${PN}-2.13.0-glog.patch
 	"${FILESDIR}"/${PN}-2.13.0-mimalloc.patch
-	"${FILESDIR}"/${P}-removekineto-pr178960.patch
+	"${FILESDIR}"/${PN}-2.14.0-removekineto-pr178960.patch
 	"${FILESDIR}"/${PN}-2.13.0-rocm-assert-fix.patch
 	"${FILESDIR}"/${PN}-2.13.0-unbundle_fbgemm.patch
 	"${FILESDIR}"/${PN}-2.13.0-unbundle_flatbuffers.patch
@@ -175,10 +175,10 @@ PATCHES=(
 	"${FILESDIR}"/${PN}-2.13.0-unbundle_kineto.patch
 	"${FILESDIR}"/${PN}-2.13.0-unbundle_mkldnn.patch
 	"${FILESDIR}"/${PN}-2.13.0-unbundle_nnpack.patch
-	"${FILESDIR}"/${P}-unbundle_pocketfft.patch
+	"${FILESDIR}"/${PN}-2.14.0-unbundle_pocketfft.patch
 	"${FILESDIR}"/${PN}-2.13.0-xnnpack.patch
-	"${FILESDIR}"/${P}-license.patch
-	"${FILESDIR}"/${P}-cpp-httplib.patch
+	"${FILESDIR}"/${PN}-2.14.0-license.patch
+	"${FILESDIR}"/${PN}-2.14.0-cpp-httplib.patch
 )
 
 src_prepare() {
