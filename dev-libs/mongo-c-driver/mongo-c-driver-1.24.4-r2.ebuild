@@ -3,7 +3,7 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{11..13} pypy3_11 )
+PYTHON_COMPAT=( python3_{12..15} )
 
 inherit cmake python-any-r1
 
@@ -22,7 +22,6 @@ RESTRICT="!test? ( test )"
 RDEPEND="app-arch/snappy:=
 	app-arch/zstd:=
 	~dev-libs/libbson-${PV}[static-libs?]
-	dev-python/sphinx
 	virtual/zlib:=
 	icu? ( dev-libs/icu:= )
 	sasl? ( dev-libs/cyrus-sasl:= )
