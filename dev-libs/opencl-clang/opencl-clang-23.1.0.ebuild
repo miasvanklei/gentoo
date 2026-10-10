@@ -3,7 +3,7 @@
 
 EAPI=8
 
-LLVM_COMPAT=( 20 )
+LLVM_COMPAT=( 23 )
 
 inherit cmake llvm-r2
 
@@ -14,7 +14,7 @@ S="${WORKDIR}/${PN}-${PV}"
 
 LICENSE="UoI-NCSA"
 SLOT="$(ver_cut 1)"
-KEYWORDS="amd64 ~riscv"
+KEYWORDS="~amd64 ~riscv"
 
 RDEPEND="
 	dev-util/spirv-llvm-translator:${SLOT}=
@@ -29,10 +29,15 @@ DEPEND="${RDEPEND}"
 PATCHES=( "${FILESDIR}"/${PN}-17.0.0-clang_library_dir.patch )
 
 src_configure() {
+	# Get LLVM version
+	local llvm_version="$(best_version -d llvm-core/llvm:${LLVM_SLOT})"
+	local llvm_version="${llvm_version%%-r*}"
+
 	local mycmakeargs=(
 		-DCMAKE_INSTALL_PREFIX="$(get_llvm_prefix)"
 		-DCLANG_LIBRARY_DIRS="${EPREFIX}"/usr/lib
 		-DLLVM_VERSION_MAJOR="${LLVM_SLOT}"
+		-DPREFERRED_LLVM_VERSION="${llvm_version##*-}"
 		-DUSE_PREBUILT_LLVM="ON"
 		-Wno-dev
 	)
