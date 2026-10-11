@@ -3,12 +3,12 @@
 
 EAPI=8
 
-LLVM_COMPAT=( 18 19 20 )
+LLVM_COMPAT=( 18 19 20 21 22 )
 LLVM_OPTIONAL=1
-PYTHON_COMPAT=( python3_{10..13} )
+PYTHON_COMPAT=( python3_{11..15} )
 PYTHON_REQ_USE="xml(+)"
 
-inherit cmake flag-o-matic llvm-r2 python-any-r1
+inherit cmake flag-o-matic llvm-r2 optfeature python-any-r1
 
 DESCRIPTION="Documentation system for most programming languages"
 HOMEPAGE="https://www.doxygen.nl/"
@@ -19,7 +19,7 @@ if [[ ${PV} == *9999* ]]; then
 else
 	SRC_URI="https://doxygen.nl/files/${P}.src.tar.gz"
 	SRC_URI+=" https://downloads.sourceforge.net/doxygen/rel-${PV}/${P}.src.tar.gz"
-	KEYWORDS="~alpha amd64 arm arm64 ~hppa ~loong ~m68k ~mips ppc ppc64 ~riscv ~s390 ~sparc x86 ~x64-macos ~x64-solaris"
+	KEYWORDS="~alpha ~amd64 ~arm ~arm64 ~hppa ~loong ~m68k ~mips ~ppc ~ppc64 ~riscv ~s390 ~sparc ~x86 ~arm64-macos ~x64-macos ~x64-solaris"
 fi
 
 # GPL-2 also for bundled libmscgen
@@ -37,9 +37,9 @@ BDEPEND="
 	app-alternatives/yacc
 	app-alternatives/lex
 	${PYTHON_DEPS}
+	gui? ( dev-qt/qttools:6[linguist] )
 "
 RDEPEND="
-	app-text/ghostscript-gpl
 	dev-db/sqlite:3
 	dev-lang/perl
 	dev-libs/libfmt:=
@@ -52,24 +52,30 @@ RDEPEND="
 		')
 	)
 	dot? (
-		media-gfx/graphviz[freetype(+)]
+		media-gfx/graphviz[cairo,freetype(+)]
 	)
 	doc? (
+		app-text/ghostscript-gpl
 		dev-texlive/texlive-bibtexextra
 		dev-texlive/texlive-fontsextra
+		dev-texlive/texlive-fontsrecommended
 		dev-texlive/texlive-fontutils
 		dev-texlive/texlive-latex
 		dev-texlive/texlive-latexextra
 		dev-texlive/texlive-plaingeneric
+		media-gfx/graphviz[cairo,freetype(+)]
 	)
 	doxysearch? ( dev-libs/xapian:= )
-	gui? ( dev-qt/qtbase:6[gui,widgets,xml] )
+	gui? (
+		dev-qt/qtbase:6[gui,widgets,xml]
+		dev-qt/qtsvg:6
+	)
 "
 DEPEND="${RDEPEND}"
 
 PATCHES=(
-	"${FILESDIR}/${PN}-1.9.4-link_with_pthread.patch"
-	"${FILESDIR}/${PN}-1.9.8-suppress-unused-option-libcxx.patch"
+	"${FILESDIR}/${PN}-1.15.0-link_with_pthread.patch"
+	"${FILESDIR}/${PN}-1.16.1-suppress-unused-option-libcxx.patch"
 )
 
 DOCS=( LANGUAGE.HOWTO README.md )
@@ -81,9 +87,6 @@ pkg_setup() {
 
 src_prepare() {
 	cmake_src_prepare
-
-	# Call dot with -Teps instead of -Tps for EPS generation - bug #282150
-	sed -i -e '/addJob("ps"/ s/"ps"/"eps"/g' src/dot.cpp || die
 
 	# fix pdf doc
 	sed -i.orig -e "s:g_kowal:g kowal:" \
@@ -111,17 +114,20 @@ src_configure() {
 		-Dbuild_search=$(usex doxysearch)
 		-Dbuild_wizard=$(usex gui)
 		-Dforce_qt=Qt6
+		-Duse_sys_fmt=ON
 		-Duse_sys_spdlog=ON
 		-Duse_sys_sqlite3=ON
 		-DBUILD_SHARED_LIBS=OFF
 		-DGIT_EXECUTABLE="false"
+		# The default of 256 KiB is too small for large projects, bug #912261
+		-Denlarge_lex_buffers=1048576
 
 		# Noisy and irrelevant downstream
 		-Wno-dev
 	)
 
 	use doc && mycmakeargs+=(
-		-DDOC_INSTALL_DIR="share/doc/${P}"
+		-DDOC_INSTALL_DIR="share/doc/${PF}"
 	)
 
 	cmake_src_configure
@@ -133,12 +139,6 @@ src_compile() {
 	if use doc; then
 		export VARTEXFONTS="${T}/fonts" # bug #564944
 
-		if ! use dot; then
-			sed -i -e "s/HAVE_DOT               = YES/HAVE_DOT    = NO/" \
-				{testing/Doxyfile,doc/Doxyfile} \
-				|| die "disabling dot failed"
-		fi
-
 		# -j1 for bug #770070
 		cmake_src_compile docs -j1
 	fi
@@ -147,12 +147,13 @@ src_compile() {
 src_install() {
 	cmake_src_install
 
-	# manpages are only automatically installed when docs are
-	# https://github.com/doxygen/doxygen/pull/10647
-	doman doc/doxygen.1
-	use gui && doman doc/doxywizard.1
-	use doxysearch && {
-		doman doc/doxyindexer.1
-		doman doc/doxysearch.1
-	}
+	# The HTML manual contains SVG images, bug #913584
+	use doc && docompress -x /usr/share/doc/${PF}/html
+}
+
+pkg_postinst() {
+	optfeature "rendering formulas as images in HTML output" \
+		"app-text/ghostscript-gpl dev-texlive/texlive-latex"
+	optfeature "converting EPS images and diagrams for PDF LaTeX output" \
+		dev-texlive/texlive-fontutils
 }

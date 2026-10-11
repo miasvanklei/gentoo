@@ -3266,7 +3266,7 @@ app-text/docbook-xsl-stylesheets 1.79.1-r4: XSL Stylesheets for Docbook
 app-text/docbook2X 0.8.8-r5: Tools to convert docbook to man and info
 app-text/docx2txt 1.4: Convert MS Office docx files to plain text
 app-text/dos2unix 7.5.3 7.5.5 7.5.6 7.5.7: Convert DOS or MAC text files to UNIX format or vice versa
-app-text/doxygen 1.13.2 1.14.0 1.15.0 1.15.0-r2 1.16.1 9999: Documentation system for most programming languages
+app-text/doxygen 1.16.1 1.17.0-r1 1.18.0-r1 9999: Documentation system for most programming languages
 app-text/dvipng 1.18: Translate DVI files into PNG or GIF graphics
 app-text/dvipsk 2023.03.11_p66203 2024.03.11_p70015 2026.03.01_p77830: DVI-to-PostScript translator
 app-text/dvisvgm 2.14-r1 3.0.4 3.1 3.1.2 3.2 3.3 3.4 3.6: Converts DVI files to SVG
@@ -11209,7 +11209,7 @@ dev-util/shtool 2.0.8-r2: Set of stable and portable shell scripts
 dev-util/shunit2 2.1.8: Unit-test framework for Bourne-based shell scripts
 dev-util/smem 1.5-r3: A tool that can give numerous reports on memory usage on Linux systems
 dev-util/snakeviz 2.2.2: A web-based viewer for Python profiler output
-dev-util/source-highlight 3.1.9-r2: Generate highlighted source code as an (x)html document
+dev-util/source-highlight 3.1.9-r2 9999: Generate highlighted source code as an (x)html document
 dev-util/spirv-headers 1.4.350.0 1.4.357.0 1.4.363.0 9999: Machine-readable files for the SPIR-V Registry
 dev-util/spirv-llvm-translator 17.0.27 18.1.27 19.1.22 20.1.17 21.1.11 22.1.6 23.1.1 24.0.0_pre20260820: Bi-directional translator between SPIR-V and LLVM IR
 dev-util/spirv-tools 1.4.350.0 1.4.357.0 1.4.363.0 9999: Provides an API and commands for processing SPIR-V modules
@@ -13617,7 +13617,7 @@ media-libs/libwebm 1.0.0.32 9999: WebM is an open, royalty-free, media file form
 media-libs/libwebp 1.4.0 1.5.0 1.6.0: A lossy image compression format
 media-libs/libwmf 0.2.13-r2 0.2.15-r1 0.2.16: Library for reading vector images in Microsoft's Windows Metafile Format (WMF)
 media-libs/libxmi 1.3-r1 1.3-r2: C/C++ function library for rasterizing 2-D vector graphics
-media-libs/libxmp 4.6.3 4.7.3: Library that renders module files to PCM data
+media-libs/libxmp 4.6.3 4.7.4: Library that renders module files to PCM data
 media-libs/libxspf 1.2.1: Playlist handling library
 media-libs/libxtract 0.6.6: A simple, portable, lightweight library of audio feature extraction functions
 media-libs/libyuv 1904-r1 1909 9999: Open source project that includes YUV scaling and conversion functionality
@@ -14205,7 +14205,7 @@ media-sound/lingot 1.1.1: Accurate, easy to use, and highly configurable musical
 media-sound/linuxsampler 2.3.1-r1 9999: Software audio sampler engine with professional grade features
 media-sound/litestream 1.3_rc3: Litstream is a lightweight and robust shoutcast-compatible streaming mp3 server
 media-sound/lltag 0.14.6: Automatic command-line mp3/ogg/flac file tagger and renamer
-media-sound/lollypop 1.4.45: Modern music player for GNOME
+media-sound/lollypop 1.4.45 1.4.48: Modern music player for GNOME
 media-sound/lxmusic 0.4.7-r2: Simple GUI XMMS2 client with minimal functionality
 media-sound/mac 4.11.4.5.7-r1 13.26 13.27: Monkey's Audio Codecs
 media-sound/madplay 0.15.2b-r2: The MAD audio player
@@ -16357,7 +16357,7 @@ sci-libs/metis 5.2.1-r2: Package for unstructured serial graph partitioning
 sci-libs/miopen 6.3.3 6.4.3-r1 7.0.2 7.1.0-r1 7.2.0: AMD's Machine Intelligence Library
 sci-libs/mkl 2025.3.1.8 2026.0.0.908 2026.1.0.236: Intel Math Kernel Library
 sci-libs/mpfi 1.5.4_p20220401: Multiple precision interval arithmetic library based on MPFR
-sci-libs/mumps 5.3.5-r2 5.4.1 5.5.1: MUltifrontal Massively Parallel sparse direct matrix Solver
+sci-libs/mumps 5.3.5-r2 5.4.1 5.5.1 5.6.2: MUltifrontal Massively Parallel sparse direct matrix Solver
 sci-libs/nanoflann 1.7.1 1.12.1 9999: C++ header-only library for Nearest Neighbor (NN) search wih KD-trees
 sci-libs/netcdf 4.9.3-r3 4.10.1-r1: Scientific library and interface for array oriented data access
 sci-libs/netcdf-cxx 4.2-r301 4.3.1-r3: C++ library for netCDF
