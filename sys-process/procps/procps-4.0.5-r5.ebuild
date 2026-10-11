@@ -85,7 +85,8 @@ multilib_src_configure() {
 		$(multilib_native_enable pidof)
 		$(multilib_native_enable pidwait)
 		$(multilib_native_use_with ncurses)
-		$(multilib_native_enable w)
+		# bug #794997
+		$(multilib_native_use_enable !elibc_musl w)
 		$(use_enable nls)
 		$(use_enable selinux libselinux)
 		$(use_enable static-libs static)
