@@ -12,11 +12,11 @@ S="${WORKDIR}"
 
 LICENSE="metapackage"
 SLOT="${PV}"
+KEYWORDS="~amd64 ~arm64"
 IUSE="default-compiler-rt default-lld llvm-libunwind"
 
 RDEPEND="
         llvm-core/clang-common
-
         ~llvm-core/clang-linker-config-${SLOT}[default-lld(-)?]
         ~llvm-runtimes/clang-rtlib-config-${SLOT}[default-compiler-rt(-)?]
         ~llvm-runtimes/clang-unwindlib-config-${SLOT}[default-compiler-rt(-)?,llvm-libunwind(-)?]
