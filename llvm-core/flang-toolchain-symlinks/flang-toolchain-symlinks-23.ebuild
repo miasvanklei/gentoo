@@ -11,6 +11,7 @@ S="${WORKDIR}"
 
 LICENSE="public-domain"
 SLOT="${PV}"
+KEYWORDS="~amd64 ~arm64"
 IUSE="multilib-symlinks +native-symlinks"
 
 RDEPEND="
