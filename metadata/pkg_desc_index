@@ -932,7 +932,7 @@ app-admin/apachetop 0.23.2: A realtime Apache log analyzer
 app-admin/apg 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
 app-admin/authbind 2.1.3: Bind sockets to privileged ports without root
-app-admin/aws-session-manager-plugin 1.2.814.0 1.2.835.0: AWS Session Manager Plugin for aws-cli
+app-admin/aws-session-manager-plugin 1.2.814.0 1.2.835.0 1.2.896.0: AWS Session Manager Plugin for aws-cli
 app-admin/awscli 1.46.1 2.37.4 2.37.9 2.37.12 2.37.13 2.38.0 2.38.1: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.36.17 2.36.34: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2026.8.0 2026.9.1: CLI client for Bitwarden compatible servers
@@ -1373,7 +1373,7 @@ app-containers/catatonit 0.2.0 0.2.1 9999: A container init that is so simple it
 app-containers/cni-plugins 1.3.0 1.5.1 1.6.1 1.6.2 1.9.1: Standard networking plugins for container networking
 app-containers/conmon 2.1.11 2.1.13 2.2.1 9999: An OCI container runtime monitor
 app-containers/container-libs 0.68.0 0.68.0-r1 0.69.0: Several utilities from the containers project
-app-containers/containerd 2.2.5-r1 2.3.2-r1 2.3.3 2.3.4 2.3.5 2.4.0 2.4.1: A daemon to control runC
+app-containers/containerd 2.3.5 2.4.0 2.4.1 2.4.2: A daemon to control runC
 app-containers/containers-common 0.63.0 0.64.2 9999: Common config files and docs for Containers stack
 app-containers/containers-image 5.34.2 5.35.0 5.36.2 9999: Default config and docs related to Containers' images
 app-containers/containers-shortnames 2023.02.20 2025.03.19 2025.03.19_p20260615 9999: Configures default shortnames (aliases) for Containers
@@ -1827,7 +1827,7 @@ app-editors/emact 2.58.0-r1: EmACT, a fork of Conroy's MicroEmacs
 app-editors/enter-tex 3.49.0: TeX/LaTeX text editor
 app-editors/ersatz-emacs 20060515-r1: A very minimal imitation of the famous GNU Emacs editor
 app-editors/fe 2.0-r1: A small and easy to use folding editor
-app-editors/featherpad 1.6.2 1.6.3 1.6.4 9999: Lightweight Qt6 Plain-Text Editor for Linux
+app-editors/featherpad 1.6.4 9999: Lightweight Qt6 Plain-Text Editor for Linux
 app-editors/focuswriter 1.8.10: Fullscreen and distraction-free word processor
 app-editors/gedit 48.1 48.2 49.0-r1: A text editor for the GNOME desktop
 app-editors/gedit-plugins 48.1 48.2 49.0 49.0-r1: Collection of extra plugins for the gedit Text Editor
@@ -3191,7 +3191,7 @@ app-shells/shish 0.7_pre3-r1: The diet shell
 app-shells/smrsh 8.18.1-r1 8.18.2: Sendmail restricted shell, for use with MTAs other than Sendmail
 app-shells/soapbox 0.3.1-r2: A preload (sandbox) library to restrict filesystem writes
 app-shells/squirrelsh 1.2.7-r1: Cross-platform object-oriented scripting shell using the squirrel language
-app-shells/starship 1.25.1 1.26.0: The minimal, blazing-fast, and infinitely customizable prompt for any shell
+app-shells/starship 1.26.0 1.27.0: The minimal, blazing-fast, and infinitely customizable prompt for any shell
 app-shells/tcsh 6.24.15 6.24.16: Enhanced version of the Berkeley C shell (csh)
 app-shells/thefuck 3.32-r2: Magnificent app which corrects your previous console command
 app-shells/ugit 0.4.5.1: PowerShell wrapper for git, automate repos and output git as objects
@@ -3709,7 +3709,7 @@ app-xemacs/dictionary 1.18: Interface to RFC2229 dictionary servers
 app-xemacs/dired 1.22: Manage file systems
 app-xemacs/docbookide 0.10: DocBook editing support
 app-xemacs/easypg 1.05: GnuPG interface for Emacs
-app-xemacs/ebuild-mode 1.85 1.88: Emacs modes for editing ebuilds and other Gentoo specific files
+app-xemacs/ebuild-mode 1.85 1.88-r1: Emacs modes for editing ebuilds and other Gentoo specific files
 app-xemacs/ecb 1.26: Emacs source code browser
 app-xemacs/ecrypto 0.23: Crypto functionality in Emacs Lisp
 app-xemacs/ede 1.07: Emacs Development Environment
@@ -3863,7 +3863,7 @@ dev-build/automake-wrapper 20240607 20250528 20260920 99999999: Wrapper for auto
 dev-build/b2 5.4.2 5.4.2-r1 5.5.3: A system for large project software construction, simple to use and powerful
 dev-build/bazel-buildtools 8.5.1 10.1.0: Tools for working with Google's Bazel BUILD files
 dev-build/bazelisk 1.29.0: A user-friendly launcher for Bazel written in Go
-dev-build/bmake 20251111 20260406 20260508: NetBSD's portable make
+dev-build/bmake 20251111 20260508 20260912: NetBSD's portable make
 dev-build/boost-m4 0.4_p20221019-r1 0.4_p20250404: Another set of autoconf macros for compiling against boost
 dev-build/cmake 4.1.4 4.1.5 4.2.4 4.3.4 4.3.5 4.4.2 4.4.3 9999: Cross platform Make
 dev-build/corrosion 0.5.2 0.6.1-r1: Marrying Rust and CMake - Easy Rust and C/C++ Integration!
@@ -4100,7 +4100,7 @@ dev-db/spatialite-tools 5.0.1-r2: A collection of CLI tools supporting SpatiaLit
 dev-db/sqlcipher 4.6.1: Full Database Encryption for SQLite
 dev-db/sqlcl-bin 25.2.2.199.0918: Oracle SQLcl is the new SQL*Plus
 dev-db/sqldeveloper 23.1.1.345.2114: Oracle SQL Developer is a graphical tool for database development
-dev-db/sqlite 3.53.3 3.53.4 3.54.1 9999: SQL database engine
+dev-db/sqlite 3.53.4 3.54.1 9999: SQL database engine
 dev-db/sqlitebrowser 3.13.1_p20250502-r2 9999: Light GUI editor for SQLite databases
 dev-db/sqlitestudio 4.0.0_pre20251207: Powerful cross-platform SQLite database manager
 dev-db/sqlmap 1.10.6 1.10.8 1.10.9 9999: An automatic SQL injection and database takeover tool
@@ -4112,7 +4112,7 @@ dev-db/unixODBC 2.3.12-r1 2.3.12-r2 2.3.14: Complete ODBC driver manager
 dev-db/valkey 9.1.2: Persistent key-value store, fork of dev-db/redis
 dev-db/vsqlite++ 0.3.13-r1: VSQLite++ - A well designed and portable SQLite3 Wrapper for C++
 dev-db/wxsqlite3 4.10.6-r1: C++ wrapper around the public domain SQLite 3.x database
-dev-db/zedis 0.5.2 0.9.0 0.11.1 0.13.0: Blazing-fast native Redis GUI built with Rust and GPUI
+dev-db/zedis 0.13.0: Blazing-fast native Redis GUI built with Rust and GPUI
 dev-debug/apitrace 13.0: Tool for tracing, analyzing, and debugging graphics APIs
 dev-debug/bpftrace 0.24.2 0.25.1 0.26.1 0.27.0 9999: High-level tracing language for eBPF
 dev-debug/cgdb 0.8.0 9999: A curses front-end for GDB, the GNU debugger
@@ -4171,7 +4171,7 @@ dev-embedded/avrdude 7.2 8.2 8.3: AVR Downloader/UploaDEr
 dev-embedded/cpik 0.7.4_p4-r1: C compiler for PIC18 devices
 dev-embedded/dc-tool-ip 1.0.4-r1: Ethernet program loader for the Dreamcast
 dev-embedded/dfu-programmer 1.1.0: A Device Firmware Update based USB programmer for Atmel chips
-dev-embedded/esptool 4.10.0 4.12.0 5.3.0 5.3.1 5.4.0: Serial utility for flashing and interacting with Espressif ESP8266 and ESP32
+dev-embedded/esptool 4.10.0 4.12.0 5.3.0 5.4.0 5.6.0: Serial utility for flashing and interacting with Espressif ESP8266 and ESP32
 dev-embedded/freaklabs-boards 1.0.0: Arduino hardware definitions for freaklabs boards
 dev-embedded/gnusim8085 1.4.1: A GTK 8085 Simulator
 dev-embedded/gpsim 0.32.1-r1: A simulator for the Microchip PIC microcontrollers
@@ -4339,7 +4339,7 @@ dev-gap/toric 1.9.6: GAP package for computing with toric varieties
 dev-gap/transgrp 3.6.5: GAP transitive groups library
 dev-gap/utils 0.91 0.98: Utility functions in GAP
 dev-go/act 1.6.0: Automated Component Toolkit code generator
-dev-go/delve 1.26.0 1.26.1 1.26.3 1.27.0 1.27.1 1.27.2: A source-level debugger for the Go programming language
+dev-go/delve 1.26.3 1.27.2: A source-level debugger for the Go programming language
 dev-go/enumer 1.5.10 1.5.11: A Go tool to auto generate methods for your enums
 dev-go/go-bindata 3.1.3: A small utility which generates Go code from any file
 dev-go/go-critic 0.6.4: The most opinionated Go source code linter for code audit
@@ -4351,7 +4351,7 @@ dev-go/go-tools 0.28.0: Tools that support the Go programming language (godoc, e
 dev-go/go-tour 0_pre20200201: A Tour of Go
 dev-go/gocov 1.1.0: Coverage testing tool for The Go Programming Language
 dev-go/gogo-protobuf 1.3.2: Protocol Buffers for Go with Gadgets
-dev-go/golangci-lint 2.12.2 2.13.1 2.13.2 2.14.0: Fast linters runner for Go
+dev-go/golangci-lint 2.14.0 2.15.0: Fast linters runner for Go
 dev-go/gopls 0.22.0 0.23.0 0.24.0: "Go please" is the official Go language server
 dev-go/gotestsum 1.13.0: 'go test' runner with output optimized for humans
 dev-go/goversion 1.2.0-r1: Print version used to build Go executables
@@ -5839,7 +5839,7 @@ dev-libs/libusb 1.0.27-r1 1.0.28 1.0.29 1.0.30: Userspace access to USB devices
 dev-libs/libusb-compat 0.1.8 0.1.9: Userspace access to USB devices (libusb-0.1 compat wrapper)
 dev-libs/libusbhp 1.0.2-r1: USB Hotplug Library
 dev-libs/libutf8proc 2.11.3 2.12.0: A clean C Library for processing UTF-8 Unicode data
-dev-libs/libuv 1.52.1 9999: Cross-platform asynchronous I/O
+dev-libs/libuv 1.52.1 1.53.0 9999: Cross-platform asynchronous I/O
 dev-libs/libvarlink 24: C implementation of the Varlink protocol and command line tool
 dev-libs/libverto 0.3.2 0.3.2-r1: Main event loop abstraction library
 dev-libs/libvformat 1.13-r3: Library to read and write vcard files
@@ -6052,7 +6052,7 @@ dev-libs/univalue 1.0.5 9999: C++ universal value object and JSON library
 dev-libs/uriparser 1.0.2: Strictly RFC 3986 compliant URI parsing library in C
 dev-libs/userspace-rcu 0.15.5 0.15.6: Userspace RCU (read-copy-update) library
 dev-libs/utfcpp 3.2.1 4.0.6 9999: UTF-8 C++ library
-dev-libs/uthash 2.3.0-r1: An easy-to-use hash implementation for C programmers
+dev-libs/uthash 2.3.0-r1 2.4.0: An easy-to-use hash implementation for C programmers
 dev-libs/uulib 0.5.20-r3: Library that supports Base64 (MIME), uuencode, xxencode and binhex coding
 dev-libs/vala-common 0.56.18 0.56.19: Build infrastructure for packages that use Vala
 dev-libs/vali 0.1.1: C library and code generator for Varlink
@@ -9328,7 +9328,7 @@ dev-python/pyscreenshot 3.1: Python screenshot library
 dev-python/pysdl2 0.9.17: Python (ctypes) bindings for SDL2 libraries
 dev-python/pysequoia 0.1.34 0.1.35: Provides OpenPGP facilities using Sequoia-PGP library
 dev-python/pyserial 3.5-r3: Python Serial Port extension
-dev-python/pyside 6.11.2 6.9999: Python bindings for the Qt framework
+dev-python/pyside 6.11.2 6.12.0 6.9999: Python bindings for the Qt framework
 dev-python/pysimdjson 7.0.2: Python bindings for simdjson
 dev-python/pysmi 2.0.0: Pure-Python implementation of SNMP/SMI MIB parsing and conversion library
 dev-python/pysnmp 7.1.29 7.1.30: Python SNMP library
@@ -12062,7 +12062,7 @@ games-util/gamepick 0.35-r2: Launch opengl games with custom graphic settings
 games-util/glbsp 2.24-r1 2.24-r2: Node builder specially designed for OpenGL ports of the DOOM game engine
 games-util/grfcodec 6.1.0-r1 9999: Suite of programs to modify openttd/Transport Tycoon Deluxe's GRF files
 games-util/gslist 0.8.11a-r1: A GameSpy server browser
-games-util/heroic-bin 2.22.1 2.22.3: GOG and Epic Games Launcher for Linux
+games-util/heroic-bin 2.22.1 2.22.3 2.22.4: GOG and Epic Games Launcher for Linux
 games-util/joycond 0.1.0_p20220720-r1 0.1.0_p20250412: Daemon that uses hid-nintendo evdev devices to implement joycon pairing
 games-util/joystick 1.8.1: Joystick testing utilities
 games-util/lgogdownloader 3.19 9999: Unofficial GOG.com downloader for Linux
@@ -12771,9 +12771,9 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20260504 20260616 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.11 1.6.19 1.7.4 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 140.16.0 153.3.0 153.4.0 153.5.0 156.0 156.0.1 157.0 157.0.1 158.0: Thunderbird Mail Client
-mail-client/thunderbird-bin 140.16.0 153.3.0 153.4.0 153.5.0 156.0 156.0.1 157.0 157.0.1 158.0: Thunderbird Mail Client
-mail-client/thunderbird-l10n 153.3.0 153.4.0 153.5.0 156.0 156.0.1 157.0 157.0.1 158.0: Thunderbird mail client's translation files
+mail-client/thunderbird 153.5.0 158.0: Thunderbird Mail Client
+mail-client/thunderbird-bin 153.5.0 158.0: Thunderbird Mail Client
+mail-client/thunderbird-l10n 153.5.0 158.0: Thunderbird mail client's translation files
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.13.1-r1 2.14.0-r1: High-performance interface between the MTA and content checkers
@@ -16569,7 +16569,7 @@ sci-ml/huggingface_hub 1.3.7-r1 1.26.1 1.31.0 2.1.1: a client library to interac
 sci-ml/ideep 3.10.2 3.12: Intel Optimization for Chainer
 sci-ml/jiwer 3.0.3-r1 3.0.5 3.1.0: Evaluate an automatic speech recognition system
 sci-ml/kineto 0.4.0_p20260323 0.4.0_p20260603 0.4.0_p20260805-r1: part of the PyTorch Profiler
-sci-ml/ollama 0.40.5: Get up and running with Llama 3, Mistral, Gemma, and other language models
+sci-ml/ollama 0.40.6: Get up and running with Llama 3, Mistral, Gemma, and other language models
 sci-ml/oneDNN 3.10.2 3.11.2 3.12: oneAPI Deep Neural Network Library
 sci-ml/onnx 1.18.0-r1 1.20.1: Open Neural Network Exchange (ONNX)
 sci-ml/pytorch 2.12.0 2.13.0-r3 2.14.1: Tensors and Dynamic neural networks in Python with strong GPU acceleration
@@ -17815,7 +17815,7 @@ sys-firmware/broadcom-bt-firmware 12.0.1.1105_p4-r1: Broadcom Bluetooth firmware
 sys-firmware/edk2 202511-r1 202605 202608: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/edk2-bin 202202 202408 202411 202511 202605 202608: TianoCore EDK II UEFI firmware for virtual machines
 sys-firmware/firmware-imx 8.22: NXP i.MX firmware
-sys-firmware/intel-microcode 20260512_p20260513 20260811_p20260811 20260812_p20260813 20260925_p20260925: Intel IA32/IA64 microcode update data
+sys-firmware/intel-microcode 20260811_p20260811 20260812_p20260813 20260925_p20260925: Intel IA32/IA64 microcode update data
 sys-firmware/ipw2100-firmware 1.3-r1: Firmware for the Intel PRO/Wireless 2100 3B miniPCI adapter
 sys-firmware/ipw2200-firmware 3.1-r1: Firmware for the Intel PRO/Wireless 2200BG/2915ABG miniPCI and 2225BG PCI
 sys-firmware/ipxe 1.21.1 1.21.1_p20230601 1.21.1_p20230601-r1: Open source network boot (PXE) firmware
@@ -17892,7 +17892,7 @@ sys-fs/fuse-zip 0.7.2: FUSE file system to navigate, extract, create and modify 
 sys-fs/fuseiso 20070708-r3: Fuse module to mount ISO9660
 sys-fs/genext2fs 1.5.0 1.5.0-r1: generate ext2 file systems
 sys-fs/genfstab 29 31: Genfstab - generate output suitable for addition to an fstab file
-sys-fs/genimage 19 9999: Tool to generate multiple filesystem and flash images from a tree
+sys-fs/genimage 20 9999: Tool to generate multiple filesystem and flash images from a tree
 sys-fs/go-mtpfs 1.0.0-r1: a simple FUSE filesystem for mounting Android devices as a MTP device
 sys-fs/google-drive-ocamlfuse 0.7.32: FUSE filesystem over Google Drive
 sys-fs/growpart 0.0.32-r1: A script that can grow your rootfs on first boot
@@ -18357,7 +18357,7 @@ www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20260714c-r1: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
 www-apps/drupal 10.6.18 11.2.14 11.3.17 11.4.8: PHP-based open-source platform and content management system
-www-apps/element 1.12.27 1.12.30: A glossy Matrix collaboration client for the web
+www-apps/element 1.12.27 1.12.30 1.12.32: A glossy Matrix collaboration client for the web
 www-apps/gitea 1.26.4 1.27.3: A painless self-hosted Git service
 www-apps/grafana-bin 12.3.11 12.4.3_p2 12.4.13 13.1.8 13.2.4: Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
 www-apps/haunt 0.3.0: Haunt is a simple, functional, hackable static site generator
@@ -18393,7 +18393,7 @@ www-apps/nanoc-cli 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexi
 www-apps/nanoc-core 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexible static site generator written in Ruby
 www-apps/nanoc-deploying 1.0.2-r1 1.0.3: Provides deploying functionality for Nanoc
 www-apps/nanoc-spec 0.0.2-r1: Provides Nanoc::Spec, containing functionality for writing tests for Nanoc
-www-apps/nextcloud 33.0.5 33.0.9 34.0.4 35.0.1: Personal cloud that runs on your own server
+www-apps/nextcloud 33.0.5 33.0.9 33.0.10 34.0.4 34.0.5 35.0.1 35.0.2: Personal cloud that runs on your own server
 www-apps/nextcloud-notify_push 1.4.0: Push daemon for Nextcloud clients
 www-apps/nikola 8.3.1-r1 8.3.3-r1: A static website and blog generator
 www-apps/novnc 1.6.0 1.7.0 9999: noVNC is a VNC client implemented using HTML5 technologies
@@ -18428,9 +18428,9 @@ www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-
 www-client/epiphany 49.8.1 50.6: GNOME webbrowser based on Webkit
 www-client/falkon 26.04.3 26.08.2: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 140.16.0 153.3.0 153.4.0 153.5.0 156.0 156.0.1 157.0 157.0.1 158.0: Firefox Web Browser
-www-client/firefox-bin 140.16.0 153.3.0 153.4.0 153.5.0 156.0 156.0.1 157.0 157.0.1 158.0: Firefox Web Browser
-www-client/firefox-l10n 153.3.0 153.4.0 153.5.0 156.0 156.0.1 157.0 157.0.1 158.0: Firefox Web Browser's translation files
+www-client/firefox 153.5.0 158.0: Firefox Web Browser
+www-client/firefox-bin 153.5.0 158.0: Firefox Web Browser
+www-client/firefox-l10n 153.5.0 158.0: Firefox Web Browser's translation files
 www-client/google-chrome 154.0.8037.57 154.0.8037.92 155.0.8059.39: The web browser from Google
 www-client/google-chrome-beta 155.0.8059.12 156.0.8078.4 156.0.8078.12: The web browser from Google
 www-client/google-chrome-unstable 156.0.8063.3 156.0.8072.0 157.0.8081.0: The web browser from Google
