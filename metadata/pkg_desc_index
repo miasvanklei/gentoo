@@ -973,7 +973,7 @@ app-admin/emacs-updater 1.19: Rebuild Emacs packages
 app-admin/entr 5.8: Run arbitrary commands when files change
 app-admin/eselect 1.4.32 9999: Gentoo's multi-purpose configuration and management tool
 app-admin/evtxtools 1.1.1-r2: Read, decode and dump Windows Vista/2008/7 event log file
-app-admin/exo 1.94.0: Command-line tool for everything at Exoscale: compute, storage, dns
+app-admin/exo 1.103.2: Command-line tool for everything at Exoscale: compute, storage, dns
 app-admin/fam 2.7.0_p17_p3: FAM, the File Alteration Monitor
 app-admin/fetchlog 1.6: Displays the last new messages of a logfile
 app-admin/fifo-cronolog 1.2.3-r1 1.3.0: cronolog wrapper for use with dumb daemons like squid, varnish and so on
@@ -3442,7 +3442,7 @@ app-text/tessdata_legacy 4.0.0 4.1.0: Trained models for app-text/tesseract comp
 app-text/tesseract 5.5.2 5.5.2-r1 5.5.3 9999: An OCR Engine, originally developed at HP, now open source
 app-text/texi2html 5.0-r1: Perl script that converts Texinfo to HTML
 app-text/texlive 2023 2023-r1 2024 2026: A complete TeX distribution
-app-text/texlive-core 2023-r10 2024-r2 2026: A complete TeX distribution
+app-text/texlive-core 2023-r10 2023-r11 2024-r2 2024-r3 2026-r1: A complete TeX distribution
 app-text/tkinfo 2.11: Info Browser in TK
 app-text/tkman 2.2-r3: Graphical, hypertex man and info page browser
 app-text/tofrodos 1.7.13: Utility that converts ASCII files between the MSDOS and the Unix format
@@ -5414,7 +5414,7 @@ dev-lang/orc 0.4.41 0.4.42: The Oil Runtime Compiler, a just-in-time compiler fo
 dev-lang/parrot 8.1.0-r4: Virtual machine designed to compile and execute bytecode for dynamic languages
 dev-lang/pcc 1.1.0-r2: pcc portable c compiler
 dev-lang/perl 5.40.2 5.42.0-r1 5.42.2 5.44.0: Larry Wall's Practical Extraction and Report Language
-dev-lang/php 8.2.33 8.2.34 8.3.33 8.3.35 8.4.26 8.5.11: The PHP language runtime engine
+dev-lang/php 8.2.34 8.3.35 8.4.26 8.5.11: The PHP language runtime engine
 dev-lang/pico8 0.2.7-r1: Fantasy console for making and playing tiny games and other computer programs
 dev-lang/polyml 5.9.1 5.9.2-r1: Poly/ML is a full implementation of Standard ML
 dev-lang/pypy 2.7.7.3.23 2.7.8.0.0 2.7.8.0.0-r1 2.7.8.0.1 3.11.7.3.23-r1 3.11.8.0.0 3.11.8.0.1 3.12.8.0.0 3.12.8.0.1: A fast, compliant alternative implementation of the Python (3.12) language
@@ -6370,7 +6370,7 @@ dev-ml/sexp_pretty 0.16.0 0.17.0-r2: S-expression pretty-printer
 dev-ml/sexplib 0.16.0-r1 0.17.0-r1: Library for automated conversion of OCaml-values to and from S-expressions
 dev-ml/sexplib0 0.15.0-r2 0.15.1-r1 0.16.0 0.17.0-r2: Library for automated conversion of OCaml-values to and from S-expressions
 dev-ml/spawn 0.13.0 0.15.0-r1 0.15.1 0.17.0: Spawning sub-processes
-dev-ml/spdx_licenses 1.2.0 1.4.0: A library providing a strict SPDX License Expression parser
+dev-ml/spdx_licenses 1.4.0 1.6.0: A library providing a strict SPDX License Expression parser
 dev-ml/splittable_random 0.16.0 0.17.0-r2: PRNG that can be split into independent streams
 dev-ml/stdcompat 19-r2 21.1-r1: Compatibility module for OCaml standard library
 dev-ml/stdio 0.16.0 0.17.0-r2: Standard IO Library for OCaml
@@ -9843,8 +9843,8 @@ dev-python/urwidtrees 1.0.3-r2: Tree widgets for urwid
 dev-python/userpath 1.9.2: Cross-platform tool for adding locations to the user PATH
 dev-python/utidylib 1.0.0 1.1.0: TidyLib Python wrapper
 dev-python/uuid6 2025.0.1: New time-based UUID formats which are suited for use as a database key
-dev-python/uv 0.11.25 0.12.7 0.12.9 0.12.13 0.12.17 0.12.19 0.12.23 0.13.1 0.13.3 0.13.4 9999: A Python package installer and resolver, written in Rust
-dev-python/uv-build 0.11.25 0.12.7 0.12.9 0.12.13 0.12.17 0.12.19 0.12.23 0.13.1 0.13.3 0.13.4: PEP517 uv build backend
+dev-python/uv 0.12.17-r1 0.13.4-r1 9999: A Python package installer and resolver, written in Rust
+dev-python/uv-build 0.12.17 0.13.4: PEP517 uv build backend
 dev-python/uv-dynamic-versioning 0.14.0 0.14.1: Dynamic versioning based on VCS tags for uv/hatch project
 dev-python/uvicorn 0.52.4 0.53.0 0.54.0: Lightning-fast ASGI server implementation
 dev-python/uvloop 0.22.1 0.23.0: Ultra-fast implementation of asyncio event loop on top of libuv
@@ -9976,7 +9976,7 @@ dev-qt/qttranslations 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Translation file
 dev-qt/qtvirtualkeyboard 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Customizable input framework and virtual keyboard for Qt
 dev-qt/qtwayland 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Toolbox for making Qt based Wayland compositors
 dev-qt/qtwebchannel 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt WebChannel
-dev-qt/qtwebengine 6.11.2 6.11.9999 6.140.9999 6.9999: Library for rendering dynamic web content in Qt6 C++ and QML applications
+dev-qt/qtwebengine 6.11.2-r1 6.11.9999 6.140.9999 6.9999: Library for rendering dynamic web content in Qt6 C++ and QML applications
 dev-qt/qtwebsockets 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Implementation of the WebSocket protocol for the Qt6 framework
 dev-qt/qtwebview 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Module for displaying web content in a QML application using the Qt6 framework
 dev-ruby/GeoRuby 2.5.2-r2: Ruby data holder for OGC Simple Features
@@ -10821,7 +10821,7 @@ dev-tex/tth 4.16: Translate TEX into HTML
 dev-tex/vc 0.6: The vc (version control) bundle
 dev-texlive/texlive-basic 2023_p59159-r4 2024_p72890 2026_p72890: TeXLive Essential programs and files
 dev-texlive/texlive-bibtexextra 2023_p67386-r1 2024_p71940 2026_p75480: TeXLive BibTeX additional styles
-dev-texlive/texlive-binextra 2023_p69527-r3 2023_p69527-r4 2023_p69527-r5 2024_p72338-r1 2024_p72338-r2 2026_p77772: TeXLive TeX auxiliary programs
+dev-texlive/texlive-binextra 2023_p69527-r3 2023_p69527-r4 2023_p69527-r5 2024_p72338-r1 2024_p72338-r2 2026_p77772-r1: TeXLive TeX auxiliary programs
 dev-texlive/texlive-context 2023_p69108-r3 2023_p69108-r4 2024_p72727 2026_p75426: TeXLive ConTeXt and packages
 dev-texlive/texlive-fontsextra 2023_p69663-r2 2024_p72727 2026_p77044: TeXLive Additional fonts
 dev-texlive/texlive-fontsrecommended 2023_p54074-r1 2024_p54074 2026_p54074: TeXLive Recommended fonts
@@ -14852,7 +14852,7 @@ net-dns/libidn2 2.3.8: An implementation of the IDNA2008 specifications (RFCs 58
 net-dns/maradns 3.5.0036: A security-aware DNS server
 net-dns/mdns-repeater 1.11: Multicast DNS repeater
 net-dns/ndu 0.4-r4: DNS serial number incrementer and reverse zone builder
-net-dns/nsd 4.14.3 4.15.0 4.15.1 4.15.2 4.15.3 9999: An authoritative only, high performance, open source name server
+net-dns/nsd 4.14.3 4.15.0 4.15.1 4.15.2 4.15.3 4.15.4 9999: An authoritative only, high performance, open source name server
 net-dns/opendnssec 2.1.13-r2: An open-source turn-key solution for DNSSEC
 net-dns/openresolv 3.16.5 3.17.0 3.17.3 3.17.4: A framework for managing DNS information
 net-dns/pdns 5.1.4 5.1.4-r1: The PowerDNS Daemon
@@ -14864,7 +14864,7 @@ net-dns/resolv_wrapper 1.1.8: Wrapper for DNS name resolving or DNS faking
 net-dns/resolvconf-symlink 0: Make /etc/resolv.conf a symlink to a runtime-writable location
 net-dns/s6-dns 2.4.1.0 2.4.1.1 2.4.1.2: Suite of DNS client programs and libraries for Unix systems
 net-dns/smartdns 48.2 48.4: A local DNS server returns the fastest access results
-net-dns/unbound 1.25.1 1.25.2 1.25.2-r1 1.26.1: A validating, recursive and caching DNS resolver
+net-dns/unbound 1.25.1 1.25.2 1.25.2-r1 1.26.1 1.26.2: A validating, recursive and caching DNS resolver
 net-dns/updatedd 2.6-r8: Dynamic DNS client with plugins for several dynamic dns services
 net-dns/valtz 0.8: Validation tool for tinydns-data zone files
 net-firewall/arno-iptables-firewall 2.1.1a-r1 2.1.2a-r1: Arno's iptables firewall script
