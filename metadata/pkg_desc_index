@@ -347,7 +347,7 @@ acct-group/scanlogd 0-r2: A group for net-analyzer/scanlogd
 acct-group/scanner 0-r2: Group for media-gfx/sane-backends
 acct-group/scponly 0-r3: group for scponly
 acct-group/scsi 0-r2: System group: scsi
-acct-group/sddm 0-r1: A group for x11-misc/sddm
+acct-group/sddm 0-r1: A group for gui-apps/sddm
 acct-group/seat 0-r1: Group for sys-auth/seatd
 acct-group/serf 0-r2: A group for app-admin/serf
 acct-group/sgx 0-r2: System group: used for SGX enclaves
@@ -795,7 +795,7 @@ acct-user/sanlock 0-r3: shared storage lock manager
 acct-user/sauerbraten 0-r3: Group for Sauerbraten (FOSS game engine (Cube 2))
 acct-user/scanlogd 0-r2: A user for net-analyzer/scanlogd
 acct-user/scponly 0-r3: user for chrooted scponly
-acct-user/sddm 0-r1: A user for x11-misc/sddm
+acct-user/sddm 0-r1: A user for gui-apps/sddm
 acct-user/sendpage 0-r2: User for net-dialup/sendpage
 acct-user/serf 0-r2: A user for app-admin/serf
 acct-user/sks 0-r2: User for the SKS OpenPGP keyserver
@@ -1140,14 +1140,14 @@ app-antivirus/clamav 0.103.12-r6 1.4.3 1.4.4 1.4.5 1.4.6 1.5.3 1.5.4: Clam Anti-
 app-antivirus/clamtk 6.18-r1 6.18-r2: A graphical front-end for ClamAV
 app-antivirus/fangfrisch 1.9.2 1.9.2-r1: Update and verify unofficial Clam Anti-Virus signatures
 app-antivirus/lkrg 0.9.8 0.9.9 9999: Linux Kernel Runtime Guard
-app-arch/7zip 26.02-r1 26.03 26.04: Free file archiver for extremely high compression
+app-arch/7zip 26.02-r1 26.03 26.04 26.05: Free file archiver for extremely high compression
 app-arch/advancecomp 2.6-r1: Recompress ZIP, PNG and MNG, considerably improving compression
 app-arch/afio 2.5.2: CPIO-Archiver & backup program with fault tolerant compression
 app-arch/alien 8.95.6 8.95.9: Converts between the rpm, dpkg, stampede slp, and slackware tgz file formats
 app-arch/arc 5.21q: Create & extract files from DOS .ARC files
 app-arch/arj 3.10.22_p28-r1 3.10.22_p29: Utility for opening arj archives
 app-arch/atool 0.39.0-r1: Script for managing file archives of various types
-app-arch/brotli 1.0.9-r6 1.1.0 1.2.0 1.2.0-r1 9999: Generic-purpose lossless compression algorithm
+app-arch/brotli 1.0.9-r6 1.1.0 1.2.0 1.2.0-r2 9999: Generic-purpose lossless compression algorithm
 app-arch/bsdsfv 1.18-r3: all-in-one SFV checksum utility
 app-arch/bzip2 1.0.8-r5 9999: A high-quality data compressor used extensively by Gentoo Linux
 app-arch/bzip3 1.5.3 1.5.4: A better and stronger spiritual successor to BZip2
@@ -1802,7 +1802,7 @@ app-doc/phrack 01-r2 02-r2 03-r2 04-r2 05-r2 06-r2 07-r2 08-r2 09-r2 10-r2 11-r2
 app-doc/phrack-all 72: Hacker magazine by the community, for the community (all issues)
 app-doc/pms 9_p20260614 9999: Gentoo Package Manager Specification (draft)
 app-doc/pms-bin 9_p20260614: Gentoo Package Manager Specification
-app-doc/python-docs 2.7.18 3.8.20 3.9.25 3.10.21 3.10.22 3.11.16 3.11.17 3.12.14 3.12.15 3.13.15 3.13.16 3.14.7 3.14.8 3.15.0: HTML documentation for Python
+app-doc/python-docs 2.7.18 3.8.20 3.9.25 3.10.21 3.10.22 3.11.16 3.11.17 3.12.14 3.12.15 3.13.15 3.13.16 3.13.17 3.14.7 3.14.8 3.14.9 3.15.0 3.15.1: HTML documentation for Python
 app-doc/s6-linux-init-man-pages 1.1.2.1.1 1.2.0.0.2: mdoc port of the HTML documentation for the s6-linux-init suite
 app-doc/s6-man-pages 2.13.1.0.1 2.14.0.1.4: mdoc port of the HTML documentation for the s6 suite
 app-doc/s6-networking-man-pages 2.7.0.4.1 2.7.2.1.4: mdoc port of the HTML documentation for the s6 suite
@@ -1888,7 +1888,7 @@ app-editors/vim-classic 8.3.0 9999: Long term support Vim text editor
 app-editors/vim-classic-core 8.3.0 9999: vim-classic and gvim-classic shared files
 app-editors/vim-core 9.1.1652-r3 9.2.1119 9.2.1125 9.2.1152 9.2.1172 9.2.1202 9999: vim and gvim shared files
 app-editors/vis 0.9 0.9-r2 9999: Modern, legacy free, simple yet efficient vim-like editor
-app-editors/vscode 1.141.0 1.142.0: Multiplatform Visual Studio Code from Microsoft
+app-editors/vscode 1.141.0 1.142.0 1.143.0: Multiplatform Visual Studio Code from Microsoft
 app-editors/vscodium 1.135.06055 1.140.06880: A community-driven, freely-licensed binary distribution of Microsoft's VSCode
 app-editors/wily 1.0-r3: An emulation of ACME, Plan9's hybrid window system, shell and editor
 app-editors/wxhexeditor 0.24-r4: A cross-platform hex editor designed specially for large files
@@ -5421,7 +5421,7 @@ dev-lang/polyml 5.9.1 5.9.2-r1: Poly/ML is a full implementation of Standard ML
 dev-lang/pypy 2.7.7.3.23 2.7.8.0.0 2.7.8.0.0-r1 2.7.8.0.1 3.11.7.3.23-r1 3.11.8.0.0 3.11.8.0.1 3.12.8.0.0 3.12.8.0.1: A fast, compliant alternative implementation of the Python (3.12) language
 dev-lang/pypy3-exe 3.11.7.3.23 3.11.8.0.0 3.11.8.0.1 3.12.8.0.0 3.12.8.0.1: PyPy3.12 executable (build from source)
 dev-lang/pypy3-exe-bin 3.11.7.3.23 3.11.8.0.0 3.11.8.0.1 3.12.8.0.0 3.12.8.0.1: PyPy3.12 executable (pre-built version)
-dev-lang/python 0.3.13.15 0.3.13.9999 0.3.14.7 0.3.14.8 0.3.14.9999 0.3.15.0 0.3.15.9999 2.7.18_p16-r2 3.8.20_p7-r1 3.9.25 3.10.21 3.10.22 3.10.9999 3.11.16 3.11.17 3.11.9999 3.12.14 3.12.15 3.12.9999 3.13.15 3.13.16 3.13.9999 3.14.7 3.14.8 3.14.9999 3.15.0 3.15.9999 3.16.0_alpha1 3.16.9999: An interpreted, interactive, object-oriented programming language
+dev-lang/python 0.3.13.15 0.3.13.9999 0.3.14.7 0.3.14.8 0.3.14.9 0.3.14.9999 0.3.15.0 0.3.15.1 0.3.15.9999 2.7.18_p16-r2 3.8.20_p7-r1 3.9.25 3.10.21 3.10.22 3.10.9999 3.11.16 3.11.17 3.11.9999 3.12.14 3.12.15 3.12.9999 3.13.15 3.13.16 3.13.17 3.13.9999 3.14.7 3.14.8 3.14.9 3.14.9999 3.15.0 3.15.1 3.15.9999 3.16.0_alpha1 3.16.9999: An interpreted, interactive, object-oriented programming language
 dev-lang/python-exec 2.4.10: Python script wrapper
 dev-lang/python-exec-conf 2.4.6: Configuration file for dev-lang/python-exec
 dev-lang/qore 1.19.2: Qore, the embeddable multithreaded scripting language
@@ -8201,15 +8201,15 @@ dev-php/PEAR-Net_IMAP 1.1.4: Provides an implementation of the IMAP protocol
 dev-php/PEAR-Net_SMTP 1.12.1 1.12.2: A PHP implementation of the SMTP protocol
 dev-php/PEAR-Net_Sieve 1.4.7: An API for talking to sieve (RFC 3028) servers
 dev-php/PEAR-Net_Socket 1.2.2-r1: PHP class interface to TCP sockets
-dev-php/PEAR-PEAR 1.10.16 1.10.18: PEAR Base System
+dev-php/PEAR-PEAR 1.10.18: PEAR Base System
 dev-php/PEAR-Structures_Graph 1.2.0: Graph datastructure manipulation library
 dev-php/PEAR-XML_Util 1.4.5: XML utility class
-dev-php/PHPMailer 6.9.1: Full-featured email creation and transfer class for PHP
+dev-php/PHPMailer 7.1.1: Full-featured email creation and transfer class for PHP
 dev-php/PHP_CodeSniffer 3.6.1: Detect violations of PHP code standards
 dev-php/PHP_Timer 2.1.2-r1 5.0.3: Utility class for timing
 dev-php/SabreAMF 1.5.0: SabreAMF is a Flash Remoting server and client for PHP
 dev-php/Text_Template 2.0.4: A simple template engine
-dev-php/adodb 5.22.7: Database abstraction layer for PHP
+dev-php/adodb 5.22.7 5.22.12: Database abstraction layer for PHP
 dev-php/awl 0.64 0.65: Andrew McMillan's Web Libraries
 dev-php/ca-bundle 1.3.1: Find the system CA bundle or fall back to the Mozilla one
 dev-php/cli-prompt 1.0.4: Allows you to prompt for user input on the command line
@@ -8803,7 +8803,7 @@ dev-python/isal 1.8.0: Faster zlib and gzip via the ISA-L library
 dev-python/iso8601 2.1.0: Simple module to parse ISO 8601 dates
 dev-python/isodate 0.7.2: ISO 8601 date/time/duration parser and formatter
 dev-python/isoduration 20.11.0-r1: Operations with ISO 8601 durations
-dev-python/isort 8.0.1 9.0.0 9.0.1 9.0.2: A python utility/library to sort imports
+dev-python/isort 9.0.1-r1 9.0.2-r1: A python utility/library to sort imports
 dev-python/iterable-io 1.0.4: Adapt generators and other iterables to a file-like interface
 dev-python/itsdangerous 2.2.0-r1: Various helpers to pass trusted data to untrusted environments and back
 dev-python/itunespy 1.6.1-r1: A simple library to fetch data from the iTunes Store API
@@ -9468,7 +9468,7 @@ dev-python/python-stdnum 2.2: A module to handle standardized numbers and codes
 dev-python/python-subunit 1.4.6: A streaming protocol for test results
 dev-python/python-swiftclient 4.10.0 4.11.0: Python bindings to the OpenStack Object Storage API
 dev-python/python-systemd 235: Python module for native access to the systemd facilities
-dev-python/python-tests 0.3.14.7 0.3.14.8 0.3.14.9999 0.3.15.0 0.3.15.9999 3.12.14 3.12.15 3.12.9999 3.13.15 3.13.16 3.13.9999 3.14.7 3.14.8 3.14.9999 3.15.0 3.15.9999: Test modules from dev-lang/python
+dev-python/python-tests 0.3.14.7 0.3.14.8 0.3.14.9 0.3.14.9999 0.3.15.0 0.3.15.1 0.3.15.9999 3.12.14 3.12.15 3.12.9999 3.13.15 3.13.16 3.13.17 3.13.9999 3.14.7 3.14.8 3.14.9 3.14.9999 3.15.0 3.15.1 3.15.9999: Test modules from dev-lang/python
 dev-python/python-tlsh 4.12.1: Fuzzy matching library - C++ extension for Python
 dev-python/python-utils 4.0.0 4.1.0 4.1.1 4.1.2 4.1.3 4.1.4: Collection of small Python functions & classes
 dev-python/python-vlc 3.0.21203: Python ctypes-based bindings for libvlc
@@ -11130,7 +11130,7 @@ dev-util/patchutils 0.4.2 0.4.4-r1 0.4.4-r2 0.4.5-r1: Collection of tools that o
 dev-util/patdiff 0.16.0 0.17.0: Colored patience diffs with word-level refinement
 dev-util/peg 0.1.19 0.1.20: Recursive-descent parser generators for C
 dev-util/perf 6.19.12 7.0 7.1 7.2: Userland tools for Linux Performance Counters
-dev-util/pixi 0.81.0 0.82.0: A package management and workflow tool
+dev-util/pixi 0.82.1: A package management and workflow tool
 dev-util/pkgcheck 0.10.45 0.10.47 0.10.48 9999: pkgcore-based QA utility for ebuild repos
 dev-util/pkgconf 2.5.1 3.0.3 3.0.4 3.0.5 3.0.6 3.0.7 9999: pkg-config compatible replacement with no dependencies other than C99
 dev-util/pkgcruft 0.0.18-r1 9999: QA library and tools based on pkgcraft
@@ -12243,6 +12243,7 @@ gui-apps/mako 1.8.0 1.9.0 1.10.0 1.11.0 9999: A lightweight notification daemon 
 gui-apps/nm-tray 0.5.1: A simple Qt-based NetworkManager front-end
 gui-apps/qt6ct 0.11: Qt6 Configuration Tool (for DE/WM without Qt integration)
 gui-apps/railway 2.10.0 2.10.1: Travel with all your train information in one place
+gui-apps/sddm 0.21.0_p20260819-r1: Simple Desktop Display Manager
 gui-apps/sddm-gentoo-config 0 0-r1: Gentoo defaults for SDDM (Simple Desktop Display Manager)
 gui-apps/slurp 1.5.0: Select a region in a Wayland compositor and print it to the standard output
 gui-apps/swappy 1.5.1 9999: A Wayland native snapshot and editor tool, inspired by Snappy on macOS
@@ -15779,7 +15780,7 @@ net-vpn/ovpn-dco 0.2.20230426 0.2.20231117 0.2.20241216 0.2.20251017 9999: OpenV
 net-vpn/pptpd 1.4.0-r5: Linux Point-to-Point Tunnelling Protocol Server
 net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client powered by Bitmask
 net-vpn/strongswan 6.0.3 6.0.4 6.0.4-r1 6.0.6 6.0.7: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
-net-vpn/tailscale 1.100.0 1.102.0 1.102.2 1.102.5 1.104.1: Tailscale vpn client
+net-vpn/tailscale 1.100.0 1.102.0 1.102.2 1.102.5 1.104.1 1.104.2: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.0.37 1.1_pre18-r2: tinc is an easy to configure VPN implementation
 net-vpn/tor 0.4.9.13 0.4.9.14 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 0.10.22 1.0.1: Launch applications via VPN tunnels using temporary network namespaces
@@ -15816,7 +15817,7 @@ net-wireless/gr-ieee802154 0.0_p20210719-r5 0.0_p20230828-r1 9999: IEEE 802.15.4
 net-wireless/gr-iqbal 0.38.3 0.38.3-r1 9999: gnuradio I/Q balancing
 net-wireless/gr-osmosdr 0.2.6-r2 0.2.6_p20260130 9999: GNU Radio source block for OsmoSDR and rtlsdr and hackrf
 net-wireless/gr-paint 0.0_p20250824-r1: Paints monochrome images into the waterfall of a receiver
-net-wireless/gr-rds 0.0_p20250404-r1 9999: GNU Radio FM RDS Receiver
+net-wireless/gr-rds 0.0_p20250404-r2 9999: GNU Radio FM RDS Receiver
 net-wireless/gr-scopy 0.0_p20220602-r2 9999: Scopy IIO blocks for GNU Radio
 net-wireless/hackrf-tools 2024.02.1-r1 2026.01.3 9999: tools for communicating with HackRF SDR platform
 net-wireless/hidclient 20120728: Use your machine as a bluetooh keyboard/mouse
@@ -17973,9 +17974,9 @@ sys-kernel/dkms 3.3.0 3.4.3 3.4.4 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 110-r5 111-r2 112 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.17-r4 4.3.18 4.3.18-r1 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 6.1.190 6.6.159 6.12.113 6.18.57 7.2.11 7.2.12: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 6.1.190 6.6.159 6.12.113 6.18.57 7.2.11 7.2.12: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-kernel-modprep 6.1.190 6.6.159 6.12.113 6.18.57 7.2.11 7.2.12: Minimal subset of gentoo-kernel-bin for building modules, for containers
+sys-kernel/gentoo-kernel 6.1.190 6.6.159 6.6.160 6.12.113 6.12.114 6.18.57 6.18.58 7.2.11 7.2.12: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 6.1.190 6.6.159 6.6.160 6.12.113 6.12.114 6.18.57 6.18.58 7.2.11 7.2.12: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-kernel-modprep 6.1.190 6.6.159 6.6.160 6.12.113 6.12.114 6.18.57 6.18.58 7.2.11 7.2.12: Minimal subset of gentoo-kernel-bin for building modules, for containers
 sys-kernel/gentoo-sources 6.1.190 6.6.159 6.6.160 6.12.113 6.12.114 6.18.57 6.18.58 7.2.11 7.2.12 7.3.0: Full sources including the Gentoo patchset for the 7.3 kernel tree
 sys-kernel/git-sources 7.3_rc1 7.3_rc2 7.3_rc3 7.3_rc4 7.3_rc5 7.3_rc6 7.3_rc7: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
@@ -17998,7 +17999,7 @@ sys-kernel/scx 1.1.0 1.1.1 1.1.2 1.1.3: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2 1.1.3: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 6.1.190 6.1.9999 6.6.159 6.6.9999 6.12.113 6.12.9999 6.18.57 6.18.9999 7.2.11 7.2.12: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 6.1.190 6.1.9999 6.6.159 6.6.160 6.6.9999 6.12.113 6.12.114 6.12.9999 6.18.57 6.18.58 6.18.9999 7.2.11 7.2.12: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 6.1.190 6.6.159 6.12.114 6.18.58 7.2.12 7.3.0: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.2.7: The Zen Kernel Live Sources
@@ -18146,7 +18147,7 @@ sys-process/gnome-usage 46.1 48.0: A nice way to view information about use of s
 sys-process/htop 3.4.1-r2 3.5.1 3.5.2 3.5.3 9999: Interactive process viewer
 sys-process/incron 0.5.12_p20171113-r1: inotify based cron daemon
 sys-process/iotop 0.6_p20230124: Top-like UI used to show which process is using the I/O
-sys-process/iotop-c 1.27 1.29 1.30 1.31: top utility for IO (C port)
+sys-process/iotop-c 1.27 1.29 1.30 1.31 1.32: top utility for IO (C port)
 sys-process/latencytop 0.5-r3: Tool for identifying where in the system latency is happening
 sys-process/lsof 4.99.6 4.99.7: Lists open files for running Unix processes
 sys-process/memwatch 0.3.3-r1: Interactive memory viewer
@@ -18188,7 +18189,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 6.1.190 6.6.159 6.12.113 6.18.57 7.2.11 7.2.12: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 6.1.190 6.6.159 6.6.160 6.12.113 6.12.114 6.18.57 6.18.58 7.2.11 7.2.12: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0-r1: Virtual for .NET SDK
 virtual/editor 0-r8: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
@@ -18892,7 +18893,6 @@ x11-misc/screen-message 0.28 0.29: Display a multi-line message large, fullscree
 x11-misc/screengrab 3.2.0-r2: Qt GUI Screenshot Utility
 x11-misc/screenkey 1.5_p20230109-r3 9999: A screencast tool to display your keys inspired by Screenflick
 x11-misc/sct 0.5-r1: Set color temperature of the screen
-x11-misc/sddm 0.21.0_p20240723-r10 0.21.0_p20251101 0.21.0_p20260819 0.21.0_p20260819-r1: Simple Desktop Display Manager
 x11-misc/seetxt 0.72-r1: Clever, lightweight GUI text file and manual page viewer for X windows
 x11-misc/sent 1_p20230110: Simple plaintext presentation tool
 x11-misc/set_opacity 1.0-r1: Tool for set real compositing for windows through window's id, process' pid etc.
