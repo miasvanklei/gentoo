@@ -2205,7 +2205,7 @@ app-emacs/nix-mode 1.5.0: GNU Emacs major mode for editing Nix expressions
 app-emacs/no-littering 1.9.0 1.9.1 1.9.2: ELisp library that helps keeping Emacs configuration directory clean
 app-emacs/noflet 0.0.15_p20141102-r1: Dynamic, local advice for Emacs-Lisp code
 app-emacs/nxml-docbook5-schemas 5.1: Add support for DocBook 5 schemas to NXML
-app-emacs/nxml-gentoo-schemas 20260901 20260922: Extension for nxml-mode with Gentoo-specific schemas
+app-emacs/nxml-gentoo-schemas 20260922: Extension for nxml-mode with Gentoo-specific schemas
 app-emacs/nxml-libvirt-schemas 11.10.0 12.0.0 12.1.0 12.2.0 12.6.0 12.7.0: Extension for nxml-mode with libvirt schemas
 app-emacs/nxml-svg-schemas 1.1.20081123-r2: Extension for nxml-mode with SVG 1.1 schemas
 app-emacs/oauth2 0.18.3: OAuth 2.0 authorization protocol
@@ -4079,7 +4079,7 @@ dev-db/pgxnclient 1.3.2-r1: PostgreSQL Extension Network Client
 dev-db/phpmyadmin 5.2.3: Web-based administration for MySQL and MariaDB databases, written in PHP
 dev-db/phppgadmin 7.14.7: Web-based administration for Postgres database in php
 dev-db/plr 8.4.5 8.4.6: R language extension for postgresql database
-dev-db/postgis 3.3.7-r2 3.3.10 3.4.6 3.5.2-r1 3.5.7 3.6.4 3.7.0_rc1: Geographic Objects for PostgreSQL
+dev-db/postgis 3.3.7-r2 3.3.10 3.4.6 3.5.2-r1 3.5.7 3.6.4 3.7.0_rc3: Geographic Objects for PostgreSQL
 dev-db/postgresql 14.24 15.19 16.15 17.11 18.6 19_rc1 9999: PostgreSQL RDBMS
 dev-db/powa-archivist 5.3.0: PostgreSQL Workload Analyzer Archivist
 dev-db/powa-collector 1.3.2: PostgreSQL Workload Analyzer Collector
@@ -5264,7 +5264,7 @@ dev-java/sax 2.2.1-r5: SAX: Simple API for XML in Java
 dev-java/saxon 9.2.0.6-r6: A XSLT and XQuery Processor
 dev-java/sbt 0.13.18-r1: sbt is a build tool for Scala and Java projects that aims to do the basics well
 dev-java/sbt-bin 1.8.0: sbt, a build tool for Scala
-dev-java/scala-cli-bin 1.10.1 1.12.2 1.13.0: CLI to interact with Scala and Java
+dev-java/scala-cli-bin 1.12.2 1.13.0 1.18.0: CLI to interact with Scala and Java
 dev-java/scram 3.4: SCRAM (RFC 5802) Java implementation
 dev-java/shrinkwrap-api 1.2.6: Client View of the ShrinkWrap Project
 dev-java/shrinkwrap-impl-base 1.2.6: Common Base for Implementations of the ShrinkWrap Project
@@ -5965,7 +5965,7 @@ dev-libs/rocksdb 7.9.2-r1 8.11.3 9.10.0 10.5.1 11.8.1: Embeddable, persistent ke
 dev-libs/rocm-comgr 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Radeon Open Compute Code Object Manager
 dev-libs/rocm-core 7.0.2 7.1.0 7.2.0 10.1.0: Library that provides ROCm release version and install path information
 dev-libs/rocm-device-libs 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Radeon Open Compute Device Libraries
-dev-libs/rocm-opencl-runtime 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Radeon Open Compute OpenCL Compatible Runtime
+dev-libs/rocm-opencl-runtime 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0-r1: Radeon Open Compute OpenCL Compatible Runtime
 dev-libs/rocr-runtime 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Radeon Open Compute Runtime
 dev-libs/roct-thunk-interface 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Radeon Open Compute Thunk Interface
 dev-libs/rremove 1.0.5: A simple library to recursively delete non-empty directories
@@ -12771,9 +12771,9 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20260504 20260616 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.11 1.6.19 1.6.20 1.7.5 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 153.5.0 158.0: Thunderbird Mail Client
-mail-client/thunderbird-bin 153.5.0 158.0: Thunderbird Mail Client
-mail-client/thunderbird-l10n 153.5.0 158.0: Thunderbird mail client's translation files
+mail-client/thunderbird 153.5.0 153.5.1 158.0 158.0.1: Thunderbird Mail Client
+mail-client/thunderbird-bin 153.5.0 153.5.1 158.0 158.0.1: Thunderbird Mail Client
+mail-client/thunderbird-l10n 153.5.0 153.5.1 158.0 158.0.1: Thunderbird mail client's translation files
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.13.1-r1 2.14.0-r1: High-performance interface between the MTA and content checkers
@@ -14039,7 +14039,7 @@ media-radio/kochmorse 3.5.1_p20250730: Morse-code tutor using the Koch method
 media-radio/qlog 0.51.1 0.52.0 0.53.0 9999: Amateur radio logbook software
 media-radio/qrq 0.3.5-r2: Yet another CW trainer for Linux/Unix
 media-radio/qsstv 9.5.11_pre20250212: Amateur radio SSTV software
-media-radio/svxlink 25.05.1_p20250929-r1 26.05.1: Multi Purpose Voice Services System, including Qtel for EchoLink
+media-radio/svxlink 25.05.1_p20250929-r1 26.05.1 26.05.2: Multi Purpose Voice Services System, including Qtel for EchoLink
 media-radio/tlf 1.4.1-r6: Console-mode amateur radio contest logger
 media-radio/tqsl 2.7.3 2.8.6: ARRL Logbook of the World
 media-radio/tucnak 4.73 4.74: Amateur Radio VHF Contest Logbook
@@ -16276,7 +16276,7 @@ sci-libs/highfive 3.2.0 3.3.0: Header-only C++ interface for libhdf5
 sci-libs/hipBLAS 6.3.3 6.4.3-r1 7.0.2 7.1.0 7.2.0 10.1.0: ROCm BLAS marshalling library
 sci-libs/hipBLAS-common 6.3.2 6.3.3 6.4.1 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Common files shared by hipBLAS and hipBLASLt
 sci-libs/hipBLASLt 6.3.3 6.4.3 7.0.2-r2 7.1.0-r2 7.2.0 10.1.0: General matrix-matrix operations library for AMD Instinct accelerators
-sci-libs/hipCUB 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Wrapper of rocPRIM or CUB for GPU parallel primitives
+sci-libs/hipCUB 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0-r1: Wrapper of rocPRIM or CUB for GPU parallel primitives
 sci-libs/hipFFT 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: CU / ROCM agnostic hip FFT implementation
 sci-libs/hipRAND 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: CU / ROCM agnostic hip RAND implementation
 sci-libs/hipSOLVER 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: CU / ROCM agnostic marshalling library for LAPACK routines on the GPU
@@ -16378,8 +16378,8 @@ sci-libs/qfits 6.2.0-r1: ESO stand-alone C library offering easy access to FITS 
 sci-libs/qrupdate 1.1.2-r2 1.1.5 1.2.0: Library for updating of QR and Cholesky decompositions
 sci-libs/rocBLAS 6.3.3 6.4.3-r1 7.0.2-r1 7.1.0 7.2.0 10.1.0 9999: AMD's library for BLAS on ROCm
 sci-libs/rocFFT 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Next generation FFT implementation for ROCm
-sci-libs/rocPRIM 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: HIP parallel primitives for developing performant GPU-accelerated code on ROCm
-sci-libs/rocRAND 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Generate pseudo-random and quasi-random numbers
+sci-libs/rocPRIM 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0-r1: HIP parallel primitives for developing performant GPU-accelerated code on ROCm
+sci-libs/rocRAND 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0-r1: Generate pseudo-random and quasi-random numbers
 sci-libs/rocSOLVER 6.3.3 6.4.3 7.0.2-r1 7.1.0-r1 7.2.0 10.1.0: Implementation of a subset of LAPACK functionality on the ROCm platform
 sci-libs/rocSPARSE 6.3.3 6.4.3-r1 7.0.2 7.1.0 7.2.0 10.1.0: Basic Linear Algebra Subroutines for sparse computation
 sci-libs/rocThrust 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: HIP back-end for the parallel algorithm library Thrust
@@ -17998,7 +17998,7 @@ sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2 1.1.3: DBUS on-demand loader of sched-ex
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 6.1.190 6.1.9999 6.6.159 6.6.9999 6.12.113 6.12.9999 6.18.57 6.18.9999 7.2.11: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 6.1.190 6.6.158 6.12.113 6.18.57 7.2.11 7.3.0: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 6.1.190 6.6.159 6.12.114 6.18.58 7.2.12 7.3.0: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.2.7: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
@@ -18355,7 +18355,7 @@ www-apps/bugzilla 5.0.6-r2: Bugzilla is the Bug-Tracking System from the Mozilla
 www-apps/cgisysinfo 0.4.1: A small cgi utility to show basic system information
 www-apps/cgit 1.3 9999 9999-r1: A fast web-interface for Git repositories
 www-apps/cgp 1_p20190510-r2: A graphical web-based front-end for visualizing RRD collected by collectd
-www-apps/chromedriver-bin 154.0.8037.57 154.0.8037.92 155.0.8059.39: WebDriver for Chrome
+www-apps/chromedriver-bin 154.0.8037.57 154.0.8037.92 156.0.8078.47: WebDriver for Chrome
 www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20260714c-r1: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
@@ -18434,22 +18434,22 @@ www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 153.5.0 153.5.1 158.0 158.0.1: Firefox Web Browser
 www-client/firefox-bin 153.5.0 153.5.1 158.0 158.0.1: Firefox Web Browser
 www-client/firefox-l10n 153.5.0 153.5.1 158.0 158.0.1: Firefox Web Browser's translation files
-www-client/google-chrome 154.0.8037.57 154.0.8037.92 155.0.8059.39: The web browser from Google
-www-client/google-chrome-beta 155.0.8059.12 156.0.8078.4 156.0.8078.12: The web browser from Google
-www-client/google-chrome-unstable 156.0.8063.3 156.0.8072.0 157.0.8081.0: The web browser from Google
+www-client/google-chrome 154.0.8037.57 154.0.8037.92 156.0.8078.47: The web browser from Google
+www-client/google-chrome-beta 155.0.8059.12 156.0.8078.4 157.0.8103.6: The web browser from Google
+www-client/google-chrome-unstable 156.0.8063.3 156.0.8072.0 158.0.8106.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3: A fast and lightweight web browser running in both graphics and text mode
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
-www-client/microsoft-edge 155.0.4283.45: The web browser from Microsoft
-www-client/microsoft-edge-beta 155.0.4283.33 155.0.4283.39 156.0.4314.8: The web browser from Microsoft
-www-client/microsoft-edge-dev 156.0.4285.0 156.0.4301.0 157.0.4322.0: The web browser from Microsoft
+www-client/microsoft-edge 155.0.4283.62: The web browser from Microsoft
+www-client/microsoft-edge-beta 156.0.4314.30 156.0.4314.36 157.0.4341.10: The web browser from Microsoft
+www-client/microsoft-edge-dev 157.0.4322.0 157.0.4329.0 158.0.4344.0: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
-www-client/opera 137.0.6036.39: A fast and secure web browser
+www-client/opera 138.0.6044.24: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
-www-client/opera-developer 138.0.6038.0: A fast and secure web browser
+www-client/opera-developer 138.0.6038.0 139.0.6051.0: A fast and secure web browser
 www-client/opera-gx 135.0.5973.135 135.0.5973.153 136.0.6008.76: Opera, but for 'gamers'
 www-client/pybugz 0.14 0.15 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.6.3 3.7.0 9999: Keyboard-driven, vim-like browser based on Python and Qt
@@ -18505,7 +18505,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.9 1.0.1: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 154.0.8037.57 154.0.8037.92 155.0.8059.12_beta 155.0.8059.39 156.0.8063.3_alpha 156.0.8072.0_alpha 156.0.8078.4_beta 156.0.8078.12_beta 157.0.8081.0_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 154.0.8037.57 154.0.8037.92 155.0.8059.12_beta 156.0.8063.3_alpha 156.0.8072.0_alpha 156.0.8078.4_beta 156.0.8078.47 157.0.8103.6_beta 158.0.8106.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.9.0 0.10.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
