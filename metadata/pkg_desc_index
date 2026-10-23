@@ -4123,7 +4123,7 @@ dev-debug/ddd 3.3.12-r5 3.4.1: Graphical front-end for command-line debuggers
 dev-debug/drgn 0.0.33 0.1.0: Programmable debugger
 dev-debug/dtrace 2.0.7 9999: Dynamic BPF-based system-wide tracing tool
 dev-debug/duma 2.5.15-r3: DUMA (Detect Unintended Memory Access) is a memory debugging library
-dev-debug/gdb 16.3 17.1 17.2 17.2-r1 18.1 9999: GNU debugger
+dev-debug/gdb 16.3 17.1 17.2 17.2-r1 18.1 18.1-r1 9999: GNU debugger
 dev-debug/gef 2023.08 2025.01 2026.01 9999: GDB Enhanced Features for exploit devs & reversers
 dev-debug/gfxreconstruct 1.4.350.0 1.4.357.0 9999: Graphics API Capture and Replay Tools
 dev-debug/gprofng-gui 2.0 2.1 2.2 9999: Full-fledged graphical interface to operate gprofng
@@ -5233,8 +5233,8 @@ dev-java/objenesis 3.4 3.6: A library for instantiating Java objects
 dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
-dev-java/openjdk 8.504_p01 11.0.32.1_p1 11.0.32.1_p1-r1 17.0.20.1_p1 17.0.20.1_p1-r1 21.0.12.1_p1 21.0.12.1_p1-r1 25.0.4.1_p1 27_p35 28_alpha20: Open source implementation of the Java programming language
-dev-java/openjdk-bin 8.504_p01 11.0.32.1_p1 17.0.20.1_p1-r1 21.0.12.1_p1-r1 25.0.4.1_p1-r1 27_p35 28_alpha20: Prebuilt Java JDK binaries provided by Eclipse Temurin
+dev-java/openjdk 8.504_p01 11.0.32.1_p1 11.0.32.1_p1-r1 17.0.20.1_p1 17.0.20.1_p1-r1 17.0.21.0.2_p1 21.0.12.1_p1 21.0.12.1_p1-r1 21.0.13.0.2_p1 25.0.4.1_p1 25.0.5.0.2_p1 27.0.1.0.2_p1 28_alpha21: Open source implementation of the Java programming language
+dev-java/openjdk-bin 8.504_p01 11.0.32.1_p1 17.0.20.1_p1-r1 21.0.12.1_p1-r1 25.0.4.1_p1-r1 27_p35 28_alpha21: Prebuilt Java JDK binaries provided by Eclipse Temurin
 dev-java/openjdk-jre-bin 8.504_p01 11.0.32.1_p1 17.0.20.1_p1 21.0.12.1_p1 25.0.4.1_p1: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 11.0.11_p1-r5: Java OpenJFX client application platform
 dev-java/opentelemetry-java 1.49.0: OpenTelemetry Context (Incubator)
@@ -9949,10 +9949,10 @@ dev-qt/qt-creator 20.0.1 20.0.2 9999: Lightweight IDE for C++/QML development ce
 dev-qt/qt-docs 6.11.2_p202608131018 6.12.0_p202609280346: Qt6 documentation and examples for Qt Creator and other tools
 dev-qt/qt3d 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: 3D rendering module for the Qt6 framework
 dev-qt/qt5compat 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
-dev-qt/qtbase 6.11.2-r2 6.11.9999 6.12.0 6.12.9999 6.9999: Cross-platform application development framework
+dev-qt/qtbase 6.11.2-r2 6.11.9999 6.12.0-r1 6.12.9999 6.9999: Cross-platform application development framework
 dev-qt/qtcharts 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Chart component library for the Qt6 framework
 dev-qt/qtconnectivity 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
-dev-qt/qtdeclarative 6.11.2-r1 6.11.9999 6.12.0 6.12.9999 6.9999: Qt Declarative (Quick 2)
+dev-qt/qtdeclarative 6.11.2-r1 6.11.9999 6.12.0-r1 6.12.9999 6.9999: Qt Declarative (Quick 2)
 dev-qt/qtgraphs 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Graphs component library for the Qt6 framework
 dev-qt/qthttpserver 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: HTTP server functionality for the Qt6 framework
 dev-qt/qtimageformats 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Additional format plugins for the Qt image I/O system
@@ -11256,7 +11256,7 @@ dev-util/yamllint 1.36.2 1.37.1 1.38.0: A linter for YAML files
 dev-util/ydiff 1.4.2 1.5: Colored, side-by-side diff terminal viewer (ex. cdiff)
 dev-vcs/bfg 1.14.0: A faster alternative to git-filter-branch for removing bad data from git repos
 dev-vcs/blackbox 1.20220610: Safely store secrets in a VCS repo
-dev-vcs/breezy 3.3.20 3.3.21 3.3.22-r2: Distributed Version Control System with a Friendly UI
+dev-vcs/breezy 3.3.20 3.3.21 3.3.22-r2 3.3.23: Distributed Version Control System with a Friendly UI
 dev-vcs/colorcvs 1.4-r3: A tool based on colorgcc to beautify cvs output
 dev-vcs/colorsvn 0.3.3-r1: Subversion output colorizer
 dev-vcs/cssc 1.4.1: The GNU Project's replacement for SCCS
@@ -12277,7 +12277,7 @@ gui-libs/gtk 4.18.6-r1 4.20.3-r2 4.20.4-r1 4.22.5-r1: GTK is a multi-platform to
 gui-libs/gtk-layer-shell 0.10.0 0.10.1: Library to create desktop components for Wayland using the Layer Shell protocol
 gui-libs/gtk4-layer-shell 1.1.1-r1 1.3.0: A library for using the Layer Shell Wayland protocol with GTK4
 gui-libs/gtksourceview 5.18.0 5.20.0: A text widget implementing syntax highlighting and other features
-gui-libs/kddockwidgets 2.4.0 2.4.1: KDAB's Dock Widget Framework for Qt
+gui-libs/kddockwidgets 2.4.1 2.5.1: KDAB's Dock Widget Framework for Qt
 gui-libs/libadwaita 1.8.7 1.9.3 1.9.4: Building blocks for modern GNOME applications
 gui-libs/libdecor 0.2.5 9999: A client-side decorations library for Wayland clients
 gui-libs/libgedit-amtk 5.9.0 5.9.2 5.10.0: Actions, Menus and Toolbars Kit for GTK applications
@@ -12517,7 +12517,7 @@ kde-apps/thumbnailers 26.04.3 26.08.2: Metapackage for KIO thumbnail generators
 kde-apps/umbrello 26.04.3 26.08.2: KDE UML Modeller
 kde-apps/yakuake 26.04.3 26.08.2: Quake-style terminal emulator based on konsole
 kde-frameworks/attica 6.29.0 6.31.0: Framework providing access to Open Collaboration Services
-kde-frameworks/baloo 6.29.0 6.31.0-r1: Framework for searching and managing metadata
+kde-frameworks/baloo 6.29.0 6.31.0-r1 6.31.0-r2: Framework for searching and managing metadata
 kde-frameworks/bluez-qt 6.29.0 6.31.0: Qt wrapper for Bluez 5 DBus API
 kde-frameworks/breeze-icons 6.29.0 6.31.0: Breeze SVG icon theme
 kde-frameworks/extra-cmake-modules 6.29.0 6.31.0: Extra modules and scripts for CMake
@@ -14652,7 +14652,7 @@ net-analyzer/nagios-check_glsa2 20120930-r1: Nagios check script for GLSAs (Gent
 net-analyzer/nagios-check_ipmi_sensor 3.13: IPMI Sensor Monitoring Plugin for Nagios/Icinga
 net-analyzer/nagios-check_linux_bonding 1.4-r1: Nagios plugin to monitor bonding status of network interfaces
 net-analyzer/nagios-check_logfiles 4.0.1.3: A nagios plugin for checking logfiles
-net-analyzer/nagios-check_multiple 0.0.1-r4 0.0.1-r5: A Nagios plugin to execute multiple checks in parallel
+net-analyzer/nagios-check_multiple 0.0.1-r5: A Nagios plugin to execute multiple checks in parallel
 net-analyzer/nagios-check_mysql_health 2.2.2-r2: Nagios plugin for checking MySQL server health
 net-analyzer/nagios-check_rbl 1.7.0 1.8.1: Monitor whether or not a host is blacklisted
 net-analyzer/nagios-core 4.5.13: Nagios core - monitoring daemon, web GUI, and documentation
@@ -14827,7 +14827,7 @@ net-dns/bind 9.20.27 9.20.29 9.20.30: Berkeley Internet Name Domain - Name Serve
 net-dns/bind-tools 9.18.0-r1: bind tools: dig, nslookup, host, nsupdate, dnssec-keygen
 net-dns/c-ares 1.34.6 1.34.8 1.34.9: C library that resolves names asynchronously
 net-dns/cares-tools 0.3 0.4: c-ares tools: host, nslookup
-net-dns/coredns 1.12.2 1.13.2 1.14.3 1.14.6 9999: CoreDNS is a DNS server that chains plugins
+net-dns/coredns 1.13.2 1.14.6 1.15.0 9999: CoreDNS is a DNS server that chains plugins
 net-dns/ddclient 4.0.0: Perl client used to update dynamic DNS entries
 net-dns/djbdns 1.05-r40 1.05-r42: Collection of DNS client/server software
 net-dns/dnrd 2.20.3-r3: A caching DNS proxy server
@@ -15858,7 +15858,7 @@ net-wireless/soapyhackrf 0.3.4-r1 0.3.5 9999: SoapySDR HackRF module
 net-wireless/soapyplutosdr 0.2.2-r1 0.2.4 9999: Soapy SDR plugin for the Pluto SDR
 net-wireless/soapyremote 0.5.2 0.5.3 9999: Soapy SDR remote module
 net-wireless/soapyrtlsdr 0.3.3-r3 0.3.4 9999: SoapySDR RTL-SDR Support Module
-net-wireless/soapysdr 0.8.1-r2 0.8.1-r3 0.9.0 9999: vendor and platform neutral SDR support library
+net-wireless/soapysdr 0.8.1-r3 0.9.0 9999: vendor and platform neutral SDR support library
 net-wireless/soapysdrplay 0.5.2 0.5.3 9999: Soapy SDR plugin for SDRPlay
 net-wireless/soapyuhd 0.4.1_p20251220 0.4.1_p20251220-r1 9999: Soapy SDR plugins for UHD supported SDR devices
 net-wireless/suscan 0.3.0_p20251029-r1: a realtime DSP processing library
@@ -16674,6 +16674,7 @@ sec-keys/openpgp-keys-apache-xmlgraphics-batik 20170410: OpenPGP keys used by xm
 sec-keys/openpgp-keys-apache-xmlgraphics-commons 20150603: OpenPGP keys used by xmlgraphics.apache.org/commons
 sec-keys/openpgp-keys-apache-xmlgraphics-fop 20150603: OpenPGP keys used by xmlgraphics.apache.org/fop
 sec-keys/openpgp-keys-apache-zeppelin 20240211: OpenPGP keys used by zeppelin.apache.org
+sec-keys/openpgp-keys-apparmor 20260924: OpenPGP keys used by AppArmor
 sec-keys/openpgp-keys-arnaldocarvalhodemelo 20180830 20260703: OpenPGP keys of Arnaldo Carvalho de Melo
 sec-keys/openpgp-keys-baldurkarlsson 20220415: OpenPGP keys used by Baldur Karlsson
 sec-keys/openpgp-keys-bcl 20210128 20230315 20260418: OpenPGP keys used by Brian C. Lane
@@ -16937,7 +16938,7 @@ sec-keys/openpgp-keys-zvbi 20260217: OpenPGP keys used by the zvbi developer
 sec-keys/signify-keys-opensmtpd 20181026: Signify keys used to sign OpenSMTPD portable releases
 sec-keys/signify-keys-signify 30: Signify keys used to sign signify portable releases
 sec-keys/sigstore-trusted-root 0_p20241016: trusted-root.json for dev-python/sigstore
-sec-policy/apparmor-profiles 3.1.4 4.1.1 4.1.7 9999: A collection of profiles for the AppArmor application security system
+sec-policy/apparmor-profiles 3.1.4 4.1.1 4.1.7 5.0.2 9999: A collection of profiles for the AppArmor application security system
 sec-policy/selinux-accountsd 2.20250618_p1 2.20260312_p1 2.20260616_p1 2.20260922_p1 9999: SELinux policy for accountsd
 sec-policy/selinux-acct 2.20250618_p1 2.20260312_p1 2.20260616_p1 2.20260922_p1 9999: SELinux policy for acct
 sec-policy/selinux-afs 2.20250618_p1 2.20260312_p1 2.20260616_p1 2.20260922_p1 9999: SELinux policy for afs
@@ -17250,8 +17251,8 @@ sys-apps/acl 2.3.2-r3 2.4.0-r2 9999: Access control list utilities, libraries, a
 sys-apps/agedu 20211129: A utility for tracking down wasted disk space
 sys-apps/amdgpu_top 0.10.3 0.10.4 0.11.0 0.11.2 0.11.5: Tool to display AMDGPU usage
 sys-apps/apmd 3.2.2_p14-r3: Advanced Power Management Daemon
-sys-apps/apparmor 3.1.4-r2 4.0.3 4.1.7: Userspace utils and init scripts for the AppArmor application security system
-sys-apps/apparmor-utils 3.1.4-r1 4.0.3-r1 4.1.7: Additional userspace utils to assist with AppArmor profile management
+sys-apps/apparmor 3.1.4-r2 4.0.3 4.1.7 5.0.2: Userspace utils and init scripts for the AppArmor application security system
+sys-apps/apparmor-utils 3.1.4-r1 4.0.3-r1 4.1.7 5.0.2: Additional userspace utils to assist with AppArmor profile management
 sys-apps/apply-default-acl 0.4.4: Apply default POSIX ACLs to files and directories
 sys-apps/arch-chroot 29 31: Wraps the chroot command while ensuring that important filesystems are mounted
 sys-apps/arrayprobe 2.0-r3: Utility to report status of an HP (Compaq) array controller (both IDA & CCISS)
@@ -17985,7 +17986,7 @@ sys-kernel/git-sources 7.3_rc1 7.3_rc2 7.3_rc3 7.3_rc4 7.3_rc5 7.3_rc6 7.3_rc7: 
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 0.9_p20260630 9999: GNU Hurd is the GNU project's replacement for UNIX
 sys-kernel/installkernel 68-r1 69-r1 70 9999: Gentoo fork of installkernel script from debianutils
-sys-kernel/kci-dev 0.1.10 0.1.11: Stand alone tool to interact with KernelCI
+sys-kernel/kci-dev 0.1.11: Stand alone tool to interact with KernelCI
 sys-kernel/kpatch 0.9.10 9999: Dynamic kernel patching for Linux
 sys-kernel/linux-docs 6.18.33: Developer documentation generated from the Linux kernel
 sys-kernel/linux-firmware 20260410 20260519 20260622 20260810 20260910 20260916 20261019 99999999: Linux firmware files
@@ -18023,7 +18024,7 @@ sys-libs/gpm 1.20.7-r6: Console-based mouse driver
 sys-libs/gwenhywfar 5.14.1: Multi-platform helper library for other libraries
 sys-libs/kpmcore 26.04.3 26.08.2: Library for managing partitions
 sys-libs/ldb 2.9.2: LDAP-like embedded database
-sys-libs/libapparmor 3.1.4-r2 4.0.3 4.0.3-r2 4.1.7: Library to support AppArmor userspace utilities
+sys-libs/libapparmor 3.1.4-r2 4.0.3 4.0.3-r2 4.1.7 5.0.2: Library to support AppArmor userspace utilities
 sys-libs/libavc1394 0.5.4-r2: Library for the 1394 AV/C (Audio/Video Control) Digital Interface Command Set
 sys-libs/libblockdev 3.4.0 3.5.0: Library for manipulating block devices
 sys-libs/libcap 2.78 9999: POSIX 1003.1e capabilities
@@ -18150,7 +18151,7 @@ sys-process/gnome-usage 46.1 48.0: A nice way to view information about use of s
 sys-process/htop 3.4.1-r2 3.5.1 3.5.2 3.5.3 9999: Interactive process viewer
 sys-process/incron 0.5.12_p20171113-r1: inotify based cron daemon
 sys-process/iotop 0.6_p20230124: Top-like UI used to show which process is using the I/O
-sys-process/iotop-c 1.27 1.29 1.30 1.31 1.32: top utility for IO (C port)
+sys-process/iotop-c 1.27 1.29 1.30 1.31 1.32 1.33: top utility for IO (C port)
 sys-process/latencytop 0.5-r3: Tool for identifying where in the system latency is happening
 sys-process/lsof 4.99.6 4.99.7: Lists open files for running Unix processes
 sys-process/memwatch 0.3.3-r1: Interactive memory viewer
