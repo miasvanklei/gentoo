@@ -13,15 +13,14 @@ if [ "${PV}" = "9999" ]; then
 	EGIT_CLONE_TYPE="shallow"
 	inherit git-r3
 else
-	KEYWORDS="~amd64 ~x86"
-	COMMIT_HASH="b789d5985b900973c81c69aa04cb3c7ebe620a75"
-	SRC_URI="https://github.com/pothosware/SoapySDRPlay/archive/${COMMIT_HASH}.tar.gz -> ${P}.tar.gz"
-	S="${WORKDIR}"/SoapySDRPlay3-"${COMMIT_HASH}"
+	KEYWORDS="~amd64"
+	SRC_URI="https://github.com/pothosware/SoapySDRPlay3/archive/soapy-sdrplay3-${PV}.tar.gz -> ${P}.tar.gz"
+	S="${WORKDIR}"/SoapySDRPlay3-soapy-sdrplay3-${PV}
 fi
 
 LICENSE="Boost-1.0"
 SLOT="0"
 
 RDEPEND="net-wireless/soapysdr
-	>=net-wireless/sdrplay-3.07"
+	>=net-wireless/sdrplay-3.15.2"
 DEPEND="${RDEPEND}"
