@@ -2902,9 +2902,9 @@ app-misc/ola 0.10.9-r2: Open Lighting Architecture, a framework for lighting con
 app-misc/ondir 0.2.4: Automatically execute scripts as you traverse directories
 app-misc/oneko 1.2_p6_p14-r1: A cat, dog and others which chase the mouse or windows around the screen
 app-misc/openhab-bin 5.1.3 5.1.4-r1 5.2.1: An open-source automation software for your home
-app-misc/openrgb 1.0_rc3_p1 1.0 9999: Open source RGB lighting control
-app-misc/openrgb-plugin-effects 1.0_rc2-r1 1.0: Plugin for OpenRGB with various Effects that can be synced across devices
-app-misc/openrgb-plugin-skin 1.0_rc2-r1: Plugin for OpenRGB that allows you to customize the look and feel of OpenRGB
+app-misc/openrgb 1.0_rc3_p1 1.0 1.1 9999: Open source RGB lighting control
+app-misc/openrgb-plugin-effects 1.0_rc2-r1 1.0 1.1: Plugin for OpenRGB with various Effects that can be synced across devices
+app-misc/openrgb-plugin-skin 1.0_rc2-r1 1.0: Plugin for OpenRGB that allows you to customize the look and feel of OpenRGB
 app-misc/openrgb-plugin-visualmap 1.0_rc2-r1 1.0: Plugin for OpenRGB to create virtual devices out of multiple real ones
 app-misc/opentmux 0.1 9999: Terminal multiplexer, slop-free fork of app-misc/tmux
 app-misc/pal 0.4.3-r2: Command-line calendar program
@@ -9946,41 +9946,41 @@ dev-python/zstandard 0.25.0: Zstandard Bindings for Python
 dev-python/zxcvbn 4.5.0: Realistic password strength estimator
 dev-qt/qlementine 1.4.2: Modern QStyle for desktop Qt6 applications
 dev-qt/qt-creator 20.0.1 20.0.2 9999: Lightweight IDE for C++/QML development centering around Qt
-dev-qt/qt-docs 6.11.2_p202608131018 6.12.0_p202609280346: Qt6 documentation and examples for Qt Creator and other tools
-dev-qt/qt3d 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: 3D rendering module for the Qt6 framework
-dev-qt/qt5compat 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
-dev-qt/qtbase 6.11.2-r2 6.11.9999 6.12.0-r1 6.12.9999 6.9999: Cross-platform application development framework
-dev-qt/qtcharts 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Chart component library for the Qt6 framework
-dev-qt/qtconnectivity 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
-dev-qt/qtdeclarative 6.11.2-r1 6.11.9999 6.12.0-r1 6.12.9999 6.9999: Qt Declarative (Quick 2)
-dev-qt/qtgraphs 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Graphs component library for the Qt6 framework
-dev-qt/qthttpserver 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: HTTP server functionality for the Qt6 framework
-dev-qt/qtimageformats 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Additional format plugins for the Qt image I/O system
-dev-qt/qtlanguageserver 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Implementation of the Language Server Protocol for Qt
-dev-qt/qtlocation 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Location (places, maps, navigation) library for the Qt6 framework
-dev-qt/qtmultimedia 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Multimedia (audio, video, radio, camera) library for the Qt6 framework
-dev-qt/qtnetworkauth 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Network authorization library for the Qt6 framework
+dev-qt/qt-docs 6.11.2_p202608131018 6.11.3_p202610220312 6.12.0_p202609280346: Qt6 documentation and examples for Qt Creator and other tools
+dev-qt/qt3d 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: 3D rendering module for the Qt6 framework
+dev-qt/qt5compat 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Qt module containing the unsupported Qt 5 APIs
+dev-qt/qtbase 6.11.2-r2 6.11.3 6.12.0-r1 6.12.9999 6.9999: Cross-platform application development framework
+dev-qt/qtcharts 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Chart component library for the Qt6 framework
+dev-qt/qtconnectivity 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Bluetooth and NFC support library for the Qt6 framework
+dev-qt/qtdeclarative 6.11.2-r1 6.11.3 6.12.0-r1 6.12.9999 6.9999: Qt Declarative (Quick 2)
+dev-qt/qtgraphs 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Graphs component library for the Qt6 framework
+dev-qt/qthttpserver 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: HTTP server functionality for the Qt6 framework
+dev-qt/qtimageformats 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Additional format plugins for the Qt image I/O system
+dev-qt/qtlanguageserver 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Implementation of the Language Server Protocol for Qt
+dev-qt/qtlocation 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Location (places, maps, navigation) library for the Qt6 framework
+dev-qt/qtmultimedia 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Multimedia (audio, video, radio, camera) library for the Qt6 framework
+dev-qt/qtnetworkauth 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Network authorization library for the Qt6 framework
 dev-qt/qtpbfimageplugin 5.2-r1: Qt image plugin for displaying Mapbox vector tiles
-dev-qt/qtpositioning 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Physical position determination library for the Qt6 framework
-dev-qt/qtquick3d 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt module and API for defining 3D content in Qt QuickTools
-dev-qt/qtquicktimeline 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt module for keyframe-based timeline construction
-dev-qt/qtremoteobjects 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Inter-Process Communication (IPC) library for the Qt6 framework
-dev-qt/qtscxml 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: State Chart XML (SCXML) support library for the Qt6 framework
-dev-qt/qtsensors 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Hardware sensor access library for the Qt6 framework
-dev-qt/qtserialbus 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt module to access CAN, ModBus, and other industrial serial buses and protocols
-dev-qt/qtserialport 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Serial port abstraction library for the Qt6 framework
-dev-qt/qtshadertools 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt APIs and Tools for Graphics Pipelines
-dev-qt/qtspeech 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Text-to-speech library for the Qt6 framework
-dev-qt/qtsvg 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: SVG rendering library for the Qt6 framework
-dev-qt/qttasktree 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Module to compose and execute asynchronous task workflows for the Qt6 framework
-dev-qt/qttools 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt Tools Collection
-dev-qt/qttranslations 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Translation files for the Qt6 framework
-dev-qt/qtvirtualkeyboard 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Customizable input framework and virtual keyboard for Qt
-dev-qt/qtwayland 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Toolbox for making Qt based Wayland compositors
-dev-qt/qtwebchannel 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Qt WebChannel
-dev-qt/qtwebengine 6.11.2-r1 6.11.9999 6.140.9999 6.9999: Library for rendering dynamic web content in Qt6 C++ and QML applications
-dev-qt/qtwebsockets 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Implementation of the WebSocket protocol for the Qt6 framework
-dev-qt/qtwebview 6.11.2 6.11.9999 6.12.0 6.12.9999 6.9999: Module for displaying web content in a QML application using the Qt6 framework
+dev-qt/qtpositioning 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Physical position determination library for the Qt6 framework
+dev-qt/qtquick3d 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Qt module and API for defining 3D content in Qt QuickTools
+dev-qt/qtquicktimeline 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Qt module for keyframe-based timeline construction
+dev-qt/qtremoteobjects 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Inter-Process Communication (IPC) library for the Qt6 framework
+dev-qt/qtscxml 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: State Chart XML (SCXML) support library for the Qt6 framework
+dev-qt/qtsensors 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Hardware sensor access library for the Qt6 framework
+dev-qt/qtserialbus 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Qt module to access CAN, ModBus, and other industrial serial buses and protocols
+dev-qt/qtserialport 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Serial port abstraction library for the Qt6 framework
+dev-qt/qtshadertools 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Qt APIs and Tools for Graphics Pipelines
+dev-qt/qtspeech 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Text-to-speech library for the Qt6 framework
+dev-qt/qtsvg 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: SVG rendering library for the Qt6 framework
+dev-qt/qttasktree 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Module to compose and execute asynchronous task workflows for the Qt6 framework
+dev-qt/qttools 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Qt Tools Collection
+dev-qt/qttranslations 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Translation files for the Qt6 framework
+dev-qt/qtvirtualkeyboard 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Customizable input framework and virtual keyboard for Qt
+dev-qt/qtwayland 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Toolbox for making Qt based Wayland compositors
+dev-qt/qtwebchannel 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Qt WebChannel
+dev-qt/qtwebengine 6.11.2-r1 6.11.3 6.140.9999 6.9999: Library for rendering dynamic web content in Qt6 C++ and QML applications
+dev-qt/qtwebsockets 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Implementation of the WebSocket protocol for the Qt6 framework
+dev-qt/qtwebview 6.11.2 6.11.3 6.12.0 6.12.9999 6.9999: Module for displaying web content in a QML application using the Qt6 framework
 dev-ruby/GeoRuby 2.5.2-r2: Ruby data holder for OGC Simple Features
 dev-ruby/abbrev 0.1.2: Calculates a set of unique abbreviations for a given set of strings
 dev-ruby/abstract 1.0.0-r5: Library which enable you to define abstract method in Ruby
@@ -11173,7 +11173,7 @@ dev-util/rocminfo 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: ROCm Application for Rep
 dev-util/roctracer 6.3.3 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Callback/Activity Library for Performance tracing AMD GPU's
 dev-util/ropper 1.13.13 9999: Use to display information about binary files in different file formats
 dev-util/rt-tests 2.9 2.10: A collection of latency testing tools for the linux(-rt) kernel
-dev-util/ruff 0.14.9 0.16.5 0.16.6 0.16.7 0.16.9 0.16.10 0.17.0 0.17.1: An extremely fast Python linter, written in Rust
+dev-util/ruff 0.14.9 0.16.5 0.16.6 0.16.7 0.16.9 0.16.10 0.17.0 0.17.1 0.17.2: An extremely fast Python linter, written in Rust
 dev-util/runme 2.0.5 3.15.0: Execute your runbooks, docs and READMEs
 dev-util/rustup 1.28.2-r2 1.29.0 9999: Rust toolchain installer
 dev-util/scanmem 0.17: Locate and modify variables in executing processes
@@ -12609,6 +12609,7 @@ kde-misc/krunner-vscodeprojects 2.0.2: Open VSCode Project Manager projects from
 kde-misc/krusader 2.9.0: Advanced twin-panel (commander-style) file-manager with many extras
 kde-misc/kshutdown 6.2: Shutdown manager for desktop environments like KDE Plasma
 kde-misc/kweather 26.04.3 26.08.2: Weather forecast application for Plasma with flat and dynamic/animated views
+kde-misc/kwin-type 0.1: Autotype on KDE's KWin Wayland compositor
 kde-misc/markdownpart 26.04.3 26.08.2: Markdown viewer KParts plugin based on QTextDocument
 kde-misc/plasma-pass 1.3.1: Plasma applet to access password from pass
 kde-misc/rsibreak 0.13.0: Small utility which bothers you at certain intervals
@@ -15165,7 +15166,7 @@ net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP
 net-libs/nghttp2 1.69.0 1.70.0 9999: HTTP/2 C Library
 net-libs/nghttp3 1.8.0 1.8.0-r1 1.9.0 1.10.1 1.11.0 1.12.0 1.13.1 1.14.0 1.15.0 1.16.0 1.17.0 1.18.0 9999: HTTP/3 library written in C
 net-libs/ngtcp2 1.12.0 1.20.0 1.20.0-r1 1.21.0 1.22.0 1.22.1 1.23.0 1.24.0 1.25.0 9999: Implementation of the IETF QUIC Protocol
-net-libs/nodejs 20.18.2 20.20.2 22.13.1 22.23.4 24.22.1 24.22.1-r1 26.3.0 26.12.1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
+net-libs/nodejs 20.18.2 20.20.2 22.13.1 22.23.4 22.23.4-r1 24.22.1 24.22.1-r1 26.3.0 26.12.1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
 net-libs/paho-mqtt-c 1.3.15 1.3.16: An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS
@@ -15196,7 +15197,7 @@ net-libs/uhttpmock 0.5.5-r1 0.9.0 0.11.0: HTTP web service mocking library
 net-libs/usrsctp 0.9.5.0_p20250331: A cross-platform userland SCTP stack
 net-libs/wallet-engine-telegram 0.0.7_p20261002: Cross-platform wallet engine for TON written in Rust (Telegram patchset)
 net-libs/wandio 4.2.3_p1-r1 4.2.3_p1-r2 4.2.4 4.2.6: C library for simple and efficient file IO
-net-libs/webkit-gtk 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.52.6-r410 2.52.6-r600 2.54.0-r411 2.54.0-r601 2.54.1-r400 2.54.1-r600: Open source web browser engine
+net-libs/webkit-gtk 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.52.6-r410 2.52.6-r600 2.54.0-r411 2.54.0-r601 2.54.2-r400 2.54.2-r600: Open source web browser engine
 net-libs/wslay 1.1.1_p20210115: WebSocket library in C
 net-libs/wvstreams 4.6.1_p14-r2 4.6.1_p14-r3: A network programming library in C++
 net-libs/xdp-tools 1.6.2 1.6.3-r1: The libxdp library and various tools for use with XDP
@@ -15420,7 +15421,7 @@ net-misc/linux-eoip 0.5: Linux support for proprietary MIkrotik EoIP protocol
 net-misc/linuxptp 4.2 4.4-r1: The Linux Precision Time Protocol (PTP) implementation
 net-misc/liveice 2000530-r3: Live Source Client For IceCast
 net-misc/lksctp-tools 1.0.19-r1 1.0.21: Tools for Linux Kernel Stream Control Transmission Protocol implementation
-net-misc/lldpd 1.0.18 1.0.19 1.0.20 1.0.21 1.0.22: Implementation of IEEE 802.1ab (LLDP)
+net-misc/lldpd 1.0.22 1.0.23: Implementation of IEEE 802.1ab (LLDP)
 net-misc/magic-wormhole-rust 0.8.1: Rust implementation of Magic Wormhole, with new features and enhancements
 net-misc/mcproxy 1.1.1-r2: Multicast proxy for IGMP/MLD
 net-misc/megatools 1.11.4 1.11.5: Command line tools and C library for accessing Mega cloud storage
@@ -18009,7 +18010,7 @@ sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2 1.1.3: DBUS on-demand loader of sched-ex
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
 sys-kernel/vanilla-kernel 6.1.190 6.1.9999 6.6.159 6.6.160 6.6.9999 6.12.113 6.12.114 6.12.9999 6.18.57 6.18.58 6.18.9999 7.2.11 7.2.12: Linux kernel built from vanilla upstream sources
-sys-kernel/vanilla-sources 6.1.190 6.6.159 6.12.114 6.18.58 7.2.12 7.3.0: Full sources for the Linux kernel
+sys-kernel/vanilla-sources 6.1.190 6.6.159 6.12.114 6.18.59 7.2.13 7.3.0: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.2.7: The Zen Kernel Live Sources
 sys-libs/argp-standalone 1.5.0: Standalone argp library for use with musl
