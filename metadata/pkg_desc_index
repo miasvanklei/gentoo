@@ -5441,7 +5441,7 @@ dev-lang/smlnj 110.99.6.1 110.99.9: Standard ML of New Jersey compiler and libra
 dev-lang/snobol 1.4.1-r1: Phil Budne's port of Macro SNOBOL4 in C, for modern machines
 dev-lang/souffle 2.5-r1: Datalog compiler, synthesizes C++ program from logic specification
 dev-lang/spark 2024.01.11-r2: Software development for high-reliability applications
-dev-lang/spidermonkey 128.14.0 140.11.0 140.16.0 140.17.0 153.3.0 153.5.0 153.5.1 153.6.0: Mozilla's JavaScript engine written in C and C++
+dev-lang/spidermonkey 128.14.0 140.11.0 140.16.0 140.17.0 153.6.0: Mozilla's JavaScript engine written in C and C++
 dev-lang/squirrel 3.2: A interpreted language mainly used for games
 dev-lang/swi-prolog 10.0.2: Versatile implementation of the Prolog programming language
 dev-lang/swig 4.1.1-r1 4.2.1 4.3.1 4.4.1 4.5.1: Simplified Wrapper and Interface Generator
@@ -12650,7 +12650,7 @@ kde-plasma/ksystemstats 6.7.5 6.8.2: Plugin-based system monitoring daemon
 kde-plasma/kup 6.8.2: Backup scheduler for the Plasma desktop
 kde-plasma/kwallet-pam 6.7.5 6.8.2: PAM module to not enter KWallet password again after login
 kde-plasma/kwayland 6.7.5 6.8.2: Qt-style API to interact with the wayland-client API
-kde-plasma/kwin 6.7.5-r1 6.8.2: Flexible, composited Window Manager for windowing systems on Linux
+kde-plasma/kwin 6.7.5-r1 6.8.2 6.8.2-r1: Flexible, composited Window Manager for windowing systems on Linux
 kde-plasma/kwin-x11 6.7.5-r2: Flexible, composited X window manager
 kde-plasma/kwrited 6.7.5 6.8.2: KDE Plasma daemon listening for wall and write messages
 kde-plasma/layer-shell-qt 6.7.5 6.8.2: Qt component to allow applications make use of Wayland wl-layer-shell protocol
