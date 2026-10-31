@@ -1400,7 +1400,7 @@ app-containers/earthly 0.8.16-r1: Build automation tool that executes in contain
 app-containers/flannel 0.26.3: An etcd backed network fabric for containers
 app-containers/grype 0.59.1 0.61.0 0.72.0 0.73.0 0.79.3 0.86.1: A vulnerability scanner for container images and filesystems
 app-containers/img 0.5.11: Standalone daemon-less unprivileged Dockerfile and OCI container image builder
-app-containers/incus 7.0.2 7.5.1 9999: Modern, secure and powerful system container and virtual machine manager
+app-containers/incus 7.0.2 7.5.1 7.6 9999: Modern, secure and powerful system container and virtual machine manager
 app-containers/k3d 5.8.3 5.9.0: k3d creates k3s clusters in docker
 app-containers/kompose 1.35.0 1.38.0: Tool to move from docker-compose to Kubernetes
 app-containers/lxc 7.0.0 7.0.0-r1: A userspace interface for the Linux kernel containment features
@@ -1434,7 +1434,7 @@ app-crypt/asedriveiiie-serial 3.5: ASEDriveIIIe Serial Card Reader
 app-crypt/asedriveiiie-usb 3.5: ASEDriveIIIe USB Card Reader
 app-crypt/asekey 3.7-r1: ASEKey USB SIM Card Reader
 app-crypt/autofirma-bin 1.9.0: Spanish government certificate and digital signature manager
-app-crypt/badkeys 0.0.18 0.0.19 0.0.20 0.0.21: Check cryptographic keys for known weaknesses
+app-crypt/badkeys 0.0.21: Check cryptographic keys for known weaknesses
 app-crypt/bcwipe 1.9.13: Secure file removal utility
 app-crypt/bsign 0.4.5-r1: embed secure hashes (SHA1) and digital signatures (GNU Privacy Guard) into files
 app-crypt/ccid 1.6.1 1.7.0 1.7.1 1.8.3: CCID free software driver
@@ -4081,7 +4081,7 @@ dev-db/pgxnclient 1.3.2-r1: PostgreSQL Extension Network Client
 dev-db/phpmyadmin 5.2.3: Web-based administration for MySQL and MariaDB databases, written in PHP
 dev-db/phppgadmin 7.14.7: Web-based administration for Postgres database in php
 dev-db/plr 8.4.5 8.4.6: R language extension for postgresql database
-dev-db/postgis 3.3.7-r2 3.3.10 3.4.6 3.5.2-r1 3.5.7 3.6.4 3.7.0_rc3: Geographic Objects for PostgreSQL
+dev-db/postgis 3.3.10 3.4.6 3.5.7 3.6.4 3.7.0: Geographic Objects for PostgreSQL
 dev-db/postgresql 14.24 15.19 16.15 17.11 18.6 19_rc1 9999: PostgreSQL RDBMS
 dev-db/powa-archivist 5.3.0: PostgreSQL Workload Analyzer Archivist
 dev-db/powa-collector 1.3.2: PostgreSQL Workload Analyzer Collector
@@ -5861,7 +5861,7 @@ dev-libs/libxml2-compat 2.13.9: XML C parser and toolkit
 dev-libs/libxmlb 0.3.26 0.3.27 0.3.28 0.3.29: Library to help create and query binary XML blobs
 dev-libs/libxslt 1.1.45 9999: XSLT libraries and tools
 dev-libs/libyaml 0.2.2 0.2.5: YAML 1.1 parser and emitter written in C
-dev-libs/libzia 4.73 4.74: Platform abstraction code for tucnak package
+dev-libs/libzia 4.73 4.74 4.75: Platform abstraction code for tucnak package
 dev-libs/libzip 1.11.4-r2 1.12.1: Library for manipulating zip archives
 dev-libs/light 1.2.2-r2: A program to control backlights (and other hardware lights)
 dev-libs/link-grammar 5.12.5 5.13.0: A Syntactic English parser
@@ -12056,7 +12056,7 @@ games-util/catcodec 1.0.5: Decodes and encodes sample catalogues for OpenTTD
 games-util/datutil 2.46: Converter for dat files for Rom Managers
 games-util/deutex 5.2.2: WAD composer for Doom, Heretic, Hexen, and Strife
 games-util/dfarc 3.14-r2: Frontend and .dmod installer for GNU FreeDink
-games-util/dzip 2.9-r5: compressor/uncompressor for demo recordings from id's Quake
+games-util/dzip 3.2: compressor/uncompressor for demo recordings from id's Quake
 games-util/etswitch 0.1.14-r2: *nix minimizer for a few games
 games-util/eureka 1.27b-r1: Graphical map editor for games using the DOOM engine
 games-util/fteqcc 20250126: Quake-C compiler
@@ -14048,7 +14048,7 @@ media-radio/qsstv 9.5.11_pre20250212: Amateur radio SSTV software
 media-radio/svxlink 25.05.1_p20250929-r1 26.05.1 26.05.2: Multi Purpose Voice Services System, including Qtel for EchoLink
 media-radio/tlf 1.4.1-r6: Console-mode amateur radio contest logger
 media-radio/tqsl 2.7.3 2.8.6: ARRL Logbook of the World
-media-radio/tucnak 4.73 4.74: Amateur Radio VHF Contest Logbook
+media-radio/tucnak 4.73 4.74 4.75: Amateur Radio VHF Contest Logbook
 media-radio/unixcw 3.6.1-r2: Collection of programs that fit together to form a morse code tutor program
 media-radio/wsjtx_improved 3.2.0_p260818-r1 3.2.0_p20260908: Weak signal ham radio communication with improvements
 media-radio/xastir 2.2.2 2.2.4: X Amateur Station Tracking and Information Reporting
@@ -14813,7 +14813,7 @@ net-dialup/moserial 3.0.21: A clean and friendly gtk-based serial terminal
 net-dialup/mwavem 2.0-r3: User level application for IBM Mwave modem
 net-dialup/neocon 20110228-r1: Simple serial console utility that tries to open ttys repeatedly
 net-dialup/picocom 3.1 2024.07-r1: minimal dumb-terminal emulation program
-net-dialup/ppp 2.5.4 2.5.4-r1 9999: Point-to-Point Protocol (PPP)
+net-dialup/ppp 2.5.4-r1 2.5.5 9999: Point-to-Point Protocol (PPP)
 net-dialup/ppp-scripts 0: Common set of scripts for various PPP implementations
 net-dialup/pppconfig 2.3.25: A text menu based utility for configuring ppp
 net-dialup/pptpclient 1.10.0: Linux client for PPTP
@@ -16273,7 +16273,7 @@ sci-libs/galib 2.4.7-r2: Library for genetic algorithms in C++ programs
 sci-libs/gamer 1.5-r2: Geometry-preserving Adaptive MeshER
 sci-libs/gaul-devel 0.1849-r2: Genetic Algorithm Utility Library
 sci-libs/gdal 3.12.4 3.13.2 3.13.3: Translator library for raster geospatial data formats (includes OGR support)
-sci-libs/geos 3.12.1 3.13.0 3.13.1 3.14.0 3.14.1: Geometry engine library for Geographic Information Systems
+sci-libs/geos 3.12.1 3.13.0 3.13.1 3.14.0 3.14.1 3.15.0: Geometry engine library for Geographic Information Systems
 sci-libs/gerris 20131206-r1: Gerris Flow Solver
 sci-libs/getdata 0.11.0 0.11.0-r2: Reference implementation of the Dirfile, format for time-ordered binary data
 sci-libs/ginkgo 1.4.0-r3 1.6.0 1.8.0 1.10.0 1.11.0: Numerical linear algebra software package
@@ -17590,7 +17590,7 @@ sys-auth/pam-script 1.1.9: PAM module for running scripts during authorization, 
 sys-auth/pam_dotfile 0.7-r2: pam module to allow password-storing in $HOME/dotfiles
 sys-auth/pam_krb5 4.11: Kerberos V PAM Authentication Module
 sys-auth/pam_mktemp 1.1.1: Create per-user private temporary directories during login
-sys-auth/pam_mount 2.22: A PAM module that can mount volumes for a user session
+sys-auth/pam_mount 2.22 2.23: A PAM module that can mount volumes for a user session
 sys-auth/pam_mysql 0.8.2-r2: pam_mysql is a module for pam to authenticate users with mysql
 sys-auth/pam_p11 0.6.1: PAM module for authenticating against PKCS#11 tokens
 sys-auth/pam_require 0.7-r2: Allows you to require a special group or user to access a service
@@ -18040,7 +18040,7 @@ sys-libs/libcap 2.78 9999: POSIX 1003.1e capabilities
 sys-libs/libcap-ng 0.9.3 0.9.6: POSIX 1003.1e capabilities
 sys-libs/libchipcard 5.1.6-r1: Library for accessing chip cards via chip card readers (terminals)
 sys-libs/libfaketime 0.9.12: Report faked system time to programs
-sys-libs/libhx 5.3 5.4: Platform independent library providing basic system functions
+sys-libs/libhx 5.3 5.4 5.5: Platform independent library providing basic system functions
 sys-libs/libieee1284 0.2.11-r9: Library to query devices using IEEE1284
 sys-libs/libixp 0.5_p20110208-r3: A stand-alone client/server 9P library including ixpc client
 sys-libs/libmodulemd 2.15.2 2.15.3 9999: C Library for manipulating Fedora Modularity metadata files
