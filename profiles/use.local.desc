@@ -1527,7 +1527,8 @@ dev-db/unixODBC:minimal - Disable bundled drivers and extra libraries (most user
 dev-db/unixODBC:odbcmanual - Administrator, Internal Structure, Programmer and User documentation
 dev-db/valkey:tcmalloc - Use tcmalloc from dev-util/google-perftools for allocations.
 dev-debug/bpftrace:pcap - Enable skb_output using net-libs/libpcap
-dev-debug/drgn:debuginfod - Enable debuginfod support
+dev-debug/drgn:debuginfod - Enable debuginfod support.
+dev-debug/drgn:json - Use dev-libs/json-c for app-emulation/qemu debugging over the QEMU Machine Protocol (QMP).
 dev-debug/drgn:lzma - Support XZ-compressed debug information (MiniDebugInfo).
 dev-debug/dtrace:test-install - Install the testsuite for manual use. It is not suitable for automatic execution within the ebuild because it requires root privileges. BTF must be available for the running kernel at build-time with this flag.
 dev-debug/gdb:babeltrace - Enable dev-util/babeltrace support
@@ -2054,6 +2055,7 @@ dev-libs/cutlass:tools - Enable CUTLASS Tools
 dev-libs/cyberjack:tools - Build and install optional management tools.
 dev-libs/cyrus-sasl:authdaemond - Add Courier-IMAP authdaemond unix socket support (net-mail/courier-imap, mail-mta/courier)
 dev-libs/cyrus-sasl:ldapdb - Enable ldapdb plugin
+dev-libs/cyrus-sasl:ntlm - Enable NTLM authentication (discouraged)
 dev-libs/cyrus-sasl:openldap - Add ldap support for saslauthd
 dev-libs/cyrus-sasl:sample - Enable sample client and server
 dev-libs/cyrus-sasl:srp - Enable SRP authentication
@@ -8058,14 +8060,7 @@ sys-apps/flashrom:stlinkv3-spi - Enable SPI programmer using STLINK-V3
 sys-apps/flashrom:tools - Install ich_descriptor_tool, a tool for reading descriptor-mode SPI-flash images for Intel chipsets
 sys-apps/flashrom:usbblaster-spi - Enable support for Altera USB-Blaster dongles
 sys-apps/fwupd:amdgpu - Build and install AMD dGPU (Navi3x and above) plugin
-sys-apps/fwupd:archive - Use app-arch/libarchive for archives support
-sys-apps/fwupd:cbor - Enable CBOR support for coSWID and uSWID via dev-libs/libcbor
-sys-apps/fwupd:flashrom - Enable flashrom plugin via sys-apps/flashrom
 sys-apps/fwupd:modemmanager - Build and install Modem Manager plugin
-sys-apps/fwupd:nvme - Build and install NVMe plugin
-sys-apps/fwupd:protobuf - Enable protobuf plugins
-sys-apps/fwupd:spi - Install Intel-SPI plugin
-sys-apps/fwupd:synaptics - Install synaptics plugin
 sys-apps/fwupd:tpm - Install Trusted Platform Module plugin
 sys-apps/fwupd:uefi - Enable UEFI support
 sys-apps/gawk:mpfr - Use dev-libs/mpfr for high precision arithmetic (-M / --bignum)
@@ -8768,8 +8763,6 @@ sys-process/fcron:system-crontab - Set up fcron to respect /etc/crontab and /etc
 sys-process/htop:bfd - With USE=unwind, demangle symbol names (like for C++) in backtraces via sys-libs/binutils-libs
 sys-process/htop:delayacct - Enable Linux delay accounting support via dev-libs/libnl
 sys-process/htop:hwloc - Use sys-apps/hwloc for CPU affinity support
-sys-process/htop:openvz - Enable openvz support
-sys-process/htop:vserver - Enable vserver support
 sys-process/lsof:rpc - support looking up RPC service info
 sys-process/nvtop:unicode - Enable support for ncurses Unicode choice
 sys-process/procenv:numa - Enable NUMA support using sys-process/numactl
