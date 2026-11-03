@@ -1318,7 +1318,7 @@ app-benchmarks/pmbw 0.6.3: Parallel Memory Bandwidth Measurement / Benchmark Too
 app-benchmarks/ramspeed 3.5.0-r2: Benchmarking for memory and cache
 app-benchmarks/siege 4.1.7: HTTP regression testing and benchmarking utility
 app-benchmarks/stress 1.0.7: A deliberately simple workload generator for POSIX systems
-app-benchmarks/stress-ng 0.22.01: Stress test for a computer system with various selectable ways
+app-benchmarks/stress-ng 0.22.01 0.22.02: Stress test for a computer system with various selectable ways
 app-benchmarks/sysbench 1.0.20-r101: A scriptable multi-threaded benchmark tool based on LuaJIT
 app-benchmarks/tiobench 0.5.0: Portable, robust, fully-threaded I/O benchmark program
 app-benchmarks/wrk 4.2.0: A HTTP benchmarking tool
@@ -3247,7 +3247,7 @@ app-text/cpdf 2.7.1 2.8.1: A command line tool for manipulating PDF files
 app-text/crengine-ng 0.9.13-r1 0.9.14.1 0.9.15: Cross-platform library designed to implement e-book readers
 app-text/crf++ 0.58-r1 0.58-r2: Yet Another CRF toolkit for segmenting/labelling sequential data
 app-text/crm114 20100106-r2: A powerful text processing tool, mainly used for spam filtering
-app-text/crqt-ng 1.0.15 1.1.0: Cross-platform e-book reader
+app-text/crqt-ng 1.0.15 1.1.0-r1: Cross-platform e-book reader
 app-text/crwx-ng 0.3.1-r3: Cross-platform e-book reader
 app-text/cssmin 0.2.0-r1: Python port of the YUI CSS compression algorithm
 app-text/cwtext 0.96-r2: Text to Morse Code converter
@@ -11037,7 +11037,7 @@ dev-util/gnome-devel-docs 40.3: Documentation for developing for the GNOME deskt
 dev-util/gob 2.0.20-r1: Preprocessor for making GTK+ objects with inline C code
 dev-util/godcc 1.0: Full-fledged command-line interface to Compiler Explorer instances
 dev-util/goland 2024.3.5 2025.1.4 2025.2.5 2025.3.4 2026.1.1 2026.1.4 2026.2.0.1 2026.2.3-r1: Golang IDE by JetBrains
-dev-util/google-perftools 2.15 2.16 2.17.2: Fast, multi-threaded malloc() and nifty performance analysis tools
+dev-util/google-perftools 2.15 2.16 2.17.2 2.19.2: Fast, multi-threaded malloc() and nifty performance analysis tools
 dev-util/gource 0.55: A software version control visualization tool
 dev-util/gperf 3.1-r2 3.2.1 3.3: A perfect hash function generator
 dev-util/gpp 2.28: A generic preprocessor
@@ -12784,7 +12784,7 @@ mail-client/mutt 2.3.2 2.4.1 2.4.3: A small but very powerful text-based mail cl
 mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomutt and isync
 mail-client/neomutt 20240201 20250510 20260504 20260616 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.19 1.6.20 1.7.5 9999: Browser-based multilingual IMAP client with an application-like user interface
-mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
+mail-client/s-nail 14.9.25 14.9.25-r1: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
 mail-client/thunderbird 153.6.0 159.0: Thunderbird Mail Client
 mail-client/thunderbird-bin 153.6.0 159.0: Thunderbird Mail Client
 mail-client/thunderbird-l10n 153.6.0 159.0: Thunderbird mail client's translation files
@@ -13115,7 +13115,7 @@ media-gfx/apng2gif 1.8: Create a GIF from an APNG
 media-gfx/apngasm 3.1.10-r1: create an APNG from multiple PNG files
 media-gfx/apngdis 2.9: Extract PNG frames from an APNG
 media-gfx/apngopt 1.4-r1: Optimize APNG images
-media-gfx/argyllcms 3.4.0 3.4.1: Open source, ICC compatible color management system
+media-gfx/argyllcms 3.4.0 3.4.1 3.5.0: Open source, ICC compatible color management system
 media-gfx/arss 0.2.3-r1: Analysis & Resynthesis Sound Spectrograph
 media-gfx/asymptote 3.11 3.11-r1 3.14 3.15: A vector graphics language that provides a framework for technical drawing
 media-gfx/autopano-sift-C 2.5.1-r2: SIFT algorithm for automatic panorama creation in C
@@ -14044,7 +14044,7 @@ media-radio/fldigi 4.2.13: Sound card based multimode software modem for Amateur
 media-radio/flmsg 4.0.23 4.0.24: Fldigi helper for creating radiograms
 media-radio/flrig 2.0.12: Transceiver control program for Amateur Radio use
 media-radio/fsync-mdc1200-decode 1.0-r1 9999: Linux Fleetsync / MDC1200 decoder
-media-radio/gpredict 2.5.1 2.5.2 2.6 9999: Real-time satellite tracking and orbit prediction application
+media-radio/gpredict 2.6 2.7 9999: Real-time satellite tracking and orbit prediction application
 media-radio/grig 0.9.0: A tool for controlling amateur radios
 media-radio/ibp 0.21-r3: Shows currently transmitting beacons of the International Beacon Project (IBP)
 media-radio/js8call 3.0.3: Weak signal ham radio communication
@@ -14513,7 +14513,7 @@ media-video/rav1e 0.6.6-r1 0.7.1-r1 0.8.1 9999: The fastest and safest AV1 encod
 media-video/recmpeg 1.0.5: Simple libfame-based video encoder, compresses raw video sequences to MPEG video
 media-video/recordmydesktop 0.3.8.1-r7 0.4.0-r1 0.4.0-r2: Desktop session recorder producing Ogg video/audio files
 media-video/rovclock 0.6e-r2: Overclocking utility for ATI Radeon cards
-media-video/rtmpdump 2.4_p20210219 9999: RTMP client, librtmp library intended to stream audio or video flash content
+media-video/rtmpdump 2.4_p20210219 2.6 9999: RTMP client, librtmp library intended to stream audio or video flash content
 media-video/setpwc 1.3: Control various aspects of Philips (and compatible) webcams
 media-video/shotcut 24.09.13 25.08.16 9999: A free, open source, cross-platform video editor
 media-video/simplescreenrecorder 0.4.4_p20250125 0.4.4_p20251228 9999: Simple Screen Recorder
@@ -15056,7 +15056,7 @@ net-libs/gloox 1.0.24-r1 1.0.28: A portable high-level Jabber/XMPP client librar
 net-libs/gnome-online-accounts 3.56.5 3.58.1: GNOME framework for accessing online accounts
 net-libs/gnutls 3.8.11 3.8.12 3.8.12-r1 3.8.13: Secure communications library implementing the SSL, TLS and DTLS protocols
 net-libs/google-cloud-cpp 2.19.0 2.30.0: Google Cloud Client Library for C++
-net-libs/grpc 1.71.0 1.72.0 1.75.1 1.80.0: Modern open source high performance RPC framework
+net-libs/grpc 1.71.0 1.72.0 1.75.1 1.80.0 1.85.1: Modern open source high performance RPC framework
 net-libs/gsoap 2.8.114-r1 2.8.130 2.8.130-r1: A cross-platform open source C and C++ SDK for SOAP/XML Web services
 net-libs/gssdp 1.6.6: GObject-based API for handling resource discovery and announcement over SSDP
 net-libs/gtk-vnc 1.3.1-r1 1.5.0: VNC viewer widget for GTK
@@ -15874,7 +15874,7 @@ net-wireless/soapyremote 0.5.2 0.5.3 9999: Soapy SDR remote module
 net-wireless/soapyrtlsdr 0.3.3-r3 0.3.4 9999: SoapySDR RTL-SDR Support Module
 net-wireless/soapysdr 0.8.1-r3 0.9.0 9999: vendor and platform neutral SDR support library
 net-wireless/soapysdrplay 0.5.2 0.5.3 9999: Soapy SDR plugin for SDRPlay
-net-wireless/soapyuhd 0.4.1_p20251220 0.4.1_p20251220-r1 9999: Soapy SDR plugins for UHD supported SDR devices
+net-wireless/soapyuhd 0.4.1_p20251220-r1 9999: Soapy SDR plugins for UHD supported SDR devices
 net-wireless/suscan 0.3.0_p20251029-r1: a realtime DSP processing library
 net-wireless/suwidgets 0.3.0_p20251029: graphical library containing all SigDigger's custom widgets
 net-wireless/tempestsdr 0.0_p20260404 9999: Remote video eavesdropping using a software-defined radio platform
@@ -18442,7 +18442,7 @@ www-apps/sfpg 4.11.0: A web gallery in one single PHP file
 www-apps/sonarr-bin 4.0.19.2979-r1: Sonarr is a Smart PVR for newsgroup and bittorrent users
 www-apps/trickster 1.1.5: Dashboard Accelerator for Prometheus
 www-apps/tt-rss 20250417 20251216 20261025 99999999: Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX
-www-apps/ttyd 1.7.7-r1 1.7.7-r2 1.7.7-r3 9999: ttyd, a simple command-line tool for sharing terminal over the web
+www-apps/ttyd 1.7.7-r1 1.7.7-r3 9999: ttyd, a simple command-line tool for sharing terminal over the web
 www-apps/vaultwarden-web 2026.1.1 2026.4.1 2026.6.4 2026.7.0: Prebuilt web vault frontend for Vaultwarden
 www-apps/webdavcgi 1.1.2: A Perl CGI for accessing and sharing files, or calendar/addressbooks via WebDAV
 www-apps/webmcp 2.2.1: Web application framework written in Lua and C
