@@ -937,7 +937,7 @@ app-admin/aws-session-manager-plugin 1.2.814.0 1.2.835.0 1.2.896.0: AWS Session 
 app-admin/awscli 1.46.2 2.38.5 2.39.3: Universal Command Line Environment for AWS
 app-admin/awscli-bin 2.36.17 2.36.34: command line interface for Amazon Web Services
 app-admin/bitwarden-cli-bin 2026.8.0 2026.9.1: CLI client for Bitwarden compatible servers
-app-admin/bitwarden-desktop-bin 2026.8.0 2026.9.0: Bitwarden password manager desktop client
+app-admin/bitwarden-desktop-bin 2026.9.0 2026.10.0: Bitwarden password manager desktop client
 app-admin/bpftune 0.4_p2: BPF driven auto-tuning
 app-admin/btrfs-assistant 2.3.1 2.3.2 3.0.0: GUI management tool to make managing a Btrfs filesystem easier
 app-admin/calamares 3.3.14-r1 3.3.14-r4 3.3.14-r8 3.4.2-r1: Distribution-independent installer framework
@@ -1119,7 +1119,7 @@ app-admin/watchfolder 0.3.3-r2: Watches directories and processes files
 app-admin/webalizer 2.23.08-r1: Webserver log file analyzer
 app-admin/webapp-config 1.56 9999: Gentoo's installer for web-based applications
 app-admin/whowatch 1.8.6-r2: Displays information about users currently logged on in real time
-app-admin/winbox 4.5_rc2: Management Software for MikroTik RouterOS
+app-admin/winbox 4.5: Management Software for MikroTik RouterOS
 app-admin/xkcdpass 1.20.0 1.30.0: Password generator inspired by XKCD 936
 app-admin/xstow 1.1.1: Replacement for GNU stow with extensions
 app-admin/xtail 2.1_p8: Tail multiple logfiles at once, even if rotated
@@ -1224,7 +1224,7 @@ app-arch/stuffit 5.2.0.611-r1: Aladdin Software's StuffIt and StuffIt Expander
 app-arch/tapeutils 0.4-r1: Utilities for manipulation of tapes and tape image files
 app-arch/tar 1.35 1.35-r1: Use this to make tarballs :)
 app-arch/tardelta 1.0.1-r1: Generate a tarball of differences between two tarballs
-app-arch/tarlz 0.29 0.31: A parallel archiver combining tar and lzip
+app-arch/tarlz 0.29 0.31 0.32.2: A parallel archiver combining tar and lzip
 app-arch/tarsync 0.2.3-r1: Synchronize tarball content with file system content
 app-arch/torrentzip 1.3: Create identical zip archives over multiple systems
 app-arch/unace 2.5-r6: ACE unarchiver
@@ -1548,7 +1548,7 @@ app-crypt/sequoia-sop 0.37.3 0.38.0: Implementation of the Stateless OpenPGP Com
 app-crypt/sequoia-sq 1.3.1-r1 1.5.0: CLI of the Sequoia OpenPGP implementation
 app-crypt/sequoia-sqv 1.3.0-r1 1.5.0: A simple OpenPGP signature verification program
 app-crypt/shash 0.2.6-r4: Generate or check digests or MACs of files
-app-crypt/signify 31: Cryptographically sign and verify files
+app-crypt/signify 31 33: Cryptographically sign and verify files
 app-crypt/signing-party 2.12: Collection of several tools related to OpenPGP
 app-crypt/simple-tpm-pk11 0.06-r2: Simple PKCS11 provider for TPM chips
 app-crypt/ssdeep 2.14.1-r1: Computes context triggered piecewise hashes (fuzzy hashes)
@@ -2717,7 +2717,7 @@ app-misc/aldo 0.7.7: A morse tutor
 app-misc/anki 25.09.2: Smart spaced repetition flashcard program
 app-misc/ansiweather 1.19.0 1.19.1: Weather in terminal, with ANSI colors and Unicode symbols
 app-misc/asciicast-tools 0.0_pre20220524-r1: Tools for creating recordings of console sessions
-app-misc/asciinema 3.2.0: Terminal session recorder, streamer, and player
+app-misc/asciinema 3.2.0 3.2.1: Terminal session recorder, streamer, and player
 app-misc/astrolog 7.70: A many featured astrology chart calculation program
 app-misc/astrolog-ephemeris 20230414: ephemeris files for optional extended accuracy of astrolog's calculations
 app-misc/away 0.9.5-r2: Terminal locking program with few additional features
@@ -5683,7 +5683,7 @@ dev-libs/libdbusmenu-lxqt 0.4.0: LXQt DBusMenu Implementation
 dev-libs/libdex 1.0.0 1.2.0: Dex provides Future-based programming for GLib-based applications
 dev-libs/libdispatch 5.8 6.1.1: Library for concurrent code execution on multicore hardware
 dev-libs/libdivecomputer 0.6.0-r1 9999: Library for communication with dive computers from various manufacturers
-dev-libs/libdivsufsort 2.0.1-r2 2.0.1-r3: Suffix-sorting library (for BWT)
+dev-libs/libdivsufsort 2.0.1-r3: Suffix-sorting library (for BWT)
 dev-libs/libdnet 1.18.0-r1 1.18.0-r2 1.18.0-r3 1.18.2: Simplified, portable interface to several low-level networking routines
 dev-libs/libdnsres 0.1a-r4 0.1a-r5: A non-blocking DNS resolver library
 dev-libs/libdshconfig 0.20.13: Library for parsing dsh.style configuration files
@@ -5996,7 +5996,7 @@ dev-libs/stb 20240201-r1 20260415-r1: Single-file C/C++ libraries for various pu
 dev-libs/stfl 0.24-r6: Library which implements a curses-based widget set for text terminals
 dev-libs/teakra 20250824: Emulator, assembler, etc for XpertTeak, the DSP used by DSi/3DS
 dev-libs/template-glib 3.36.3 3.40.0: A templating library for GLib
-dev-libs/thrift 0.21.0 0.21.0-r1 0.24.0: C++ bindings for Apache Thrift
+dev-libs/thrift 0.24.0 0.25.0: C++ bindings for Apache Thrift
 dev-libs/tinyxml 2.6.2-r5: Simple and small C++ XML parser
 dev-libs/tinyxml2 11.0.0: A simple, small, efficient, C++ XML parser
 dev-libs/tllist 1.0.5-r1 1.1.0: Header-only implementation of a typed linked list in C
@@ -8604,7 +8604,7 @@ dev-python/email-validator 2.3.0: A robust email syntax and deliverability valid
 dev-python/emcee 3.1.6: Python ensemble sampling toolkit for affine-invariant MCMC
 dev-python/emoji 2.15.0 2.16.0: Emoji for Python
 dev-python/enrich 1.2.7-r1: Extend rich functionality
-dev-python/ensurepip-pip 26.2.1-r1 26.2.2-r1: Shared pip wheel for ensurepip Python module
+dev-python/ensurepip-pip 26.2.1-r1 26.2.2-r1 26.3: Shared pip wheel for ensurepip Python module
 dev-python/ensurepip-setuptools 79.0.1 84.0.0 84.2.0 84.2.1: Shared setuptools wheel for ensurepip Python module
 dev-python/ensurepip-wheel 0.47.0 0.48.0: Shared wheel wheel for use in pip tests
 dev-python/entrypoint2 1.1: Easy to use command-line interface for python modules
@@ -9136,7 +9136,7 @@ dev-python/piexif 1.1.3-r4: Exif manipulation with pure Python
 dev-python/pika 1.4.2 1.4.4: Pure-Python implementation of the AMQP
 dev-python/pikepdf 10.5.1 10.7.3 10.12.0 10.13.0_p1 10.14.0 10.15.0 10.16.0 10.17.0: Python library to work with pdf files based on qpdf
 dev-python/pillow 12.3.0 13.0.0: Python Imaging Library (fork)
-dev-python/pip 26.2.1 26.2.2: The PyPA recommended tool for installing Python packages
+dev-python/pip 26.2.1 26.2.2 26.3: The PyPA recommended tool for installing Python packages
 dev-python/pivy 0.6.10 0.6.11: Coin3D bindings for Python
 dev-python/pixelmatch 0.4.0: A fast pixel-level image comparison library
 dev-python/pkg-resources 0 81.0.0: pkg_resources package split from old setuptools
@@ -9315,10 +9315,11 @@ dev-python/pyproject-metadata 0.11.0 0.12.1: PEP 621 metadata parsing
 dev-python/pypugjs 6.0.3 7.0.0: Pug (Jade) syntax adapter for Django, Jinja2 and Mako templates
 dev-python/pypy-exe 7.3.23 8.0.0 8.0.1: PyPy executable (build from source)
 dev-python/pypy-exe-bin 7.3.23 8.0.0 8.0.1: PyPy executable (pre-built version)
-dev-python/pyqt-builder 1.19.1 1.20.1 1.20.2 1.20.3: The PEP 517 compliant PyQt build system
-dev-python/pyqt6 6.11.0-r1: Python bindings for the Qt framework
+dev-python/pyqt-builder 1.19.1 1.20.3 1.21.0: The PEP 517 compliant PyQt build system
+dev-python/pyqt6 6.11.0-r1 6.12.0: Python bindings for the Qt framework
+dev-python/pyqt6-pdf 6.11.0 6.140.0: Python bindings for QtPdf
 dev-python/pyqt6-sip 13.12.0 13.13.0: sip module support for PyQt6
-dev-python/pyqt6-webengine 6.11.0: Python bindings for QtWebEngine
+dev-python/pyqt6-webengine 6.11.0 6.140.0: Python bindings for QtWebEngine
 dev-python/pyqtgraph 0.14.0-r1: A pure-python graphics and GUI library built on PyQt and numpy
 dev-python/pyquery 2.1.0: A jQuery-like library for python
 dev-python/pyrate-limiter 4.5.0 4.5.1: Python Rate-Limiter using Leaky-Bucket Algorimth Family
@@ -9509,13 +9510,13 @@ dev-python/pyzotero 1.15.2 1.16.0: A Python client for the Zotero API
 dev-python/pyzstd 0.19.1 0.20.0: Support for Zstandard (zstd) compression
 dev-python/qdarkstyle 3.2.3: A dark style sheet for QtWidgets application
 dev-python/qemu-qmp 0.0.6: QEMU Monitor Protocol library
-dev-python/qpageview 1.0.4: Page-based viewer widget for Qt6/PyQt5
+dev-python/qpageview 1.0.4-r1: Page-based viewer widget for Qt6/PyQt5
 dev-python/qrcode 8.2: QR Code generator on top of PIL
 dev-python/qscintilla 2.14.1-r3: Python bindings for QScintilla
 dev-python/qstylizer 0.2.4: Stylesheet Generator for PyQt6/PySide2
 dev-python/qtawesome 1.4.2: Enables iconic fonts such as Font Awesome in PyQt
 dev-python/qtconsole 5.7.2: Qt-based console for Jupyter with support for rich media output
-dev-python/qtpy 2.4.3-r3: Abstraction layer on top of PyQt and PySide with additional custom QWidgets
+dev-python/qtpy 2.4.3-r4: Abstraction layer on top of PyQt and PySide with additional custom QWidgets
 dev-python/qtsass 0.4.0: Compile SASS files to Qt stylesheets
 dev-python/quantities 0.16.4: Support for physical quantities with units, based on numpy
 dev-python/quart 0.21.0 0.22.0 0.23.1: A Python ASGI web microframework with the same API as Flask
@@ -11325,7 +11326,7 @@ dev-vcs/reposurgeon 5.3: Tool for editing VCS repositories and translating among
 dev-vcs/rsvndump 0.6.1-r1 0.6.2: Dump a remote Subversion repository
 dev-vcs/sourcegit 2026.05 2026.11 2026.17 2026.22: Open Source Git GUI client using .NET AvaloniaUI
 dev-vcs/stagit 1.2: Generates static HTML pages for a Git repository
-dev-vcs/stgit 2.5.5 2.6.0 2.6.1: Stack-based patch management for Git
+dev-vcs/stgit 2.5.5 2.6.0 2.6.1 2.7.0: Stack-based patch management for Git
 dev-vcs/subversion 1.14.5-r3: Advanced version control system
 dev-vcs/svn2cl 0.12 0.14: Create a GNU-style ChangeLog from subversion's svn log --xml output
 dev-vcs/svn2git 1.0.20 9999: Tool for one-time conversion from svn to git
@@ -11687,7 +11688,7 @@ games-fps/alephone-marathon 20250302 20260930-r1: Aleph One - Marathon (M1A1)
 games-fps/alienarena 7.66-r1: Fast-paced multiplayer deathmatch game
 games-fps/blackshades 20070723-r2: You control a psychic bodyguard, and try to protect the VIP
 games-fps/chocolate-doom 3.1.1-r1: A Doom source port that is minimalist and historically accurate
-games-fps/crispy-doom 7.1 9999: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
+games-fps/crispy-doom 7.1 7.2 9999: A limit-removing enhanced-resolution Doom source port based on Chocolate Doom
 games-fps/darkplaces 20140513-r2: Enhanced engine for iD Software's Quake 1
 games-fps/doom-data 1.9: The IWAD used by the shareware version of Doom
 games-fps/doom-data-gog 1.9: Data files for The Ultimate DOOM from gog.com
@@ -12784,9 +12785,9 @@ mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomu
 mail-client/neomutt 20240201 20250510 20260504 20260616 99999999: A small but very powerful text-based mail client
 mail-client/roundcube 1.6.19 1.6.20 1.7.5 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.24 14.9.25: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
-mail-client/thunderbird 153.5.0 153.5.1 153.6.0 158.0 158.0.1 159.0: Thunderbird Mail Client
-mail-client/thunderbird-bin 153.5.0 153.5.1 153.6.0 158.0 158.0.1 159.0: Thunderbird Mail Client
-mail-client/thunderbird-l10n 153.5.0 153.5.1 153.6.0 158.0 158.0.1 159.0: Thunderbird mail client's translation files
+mail-client/thunderbird 153.6.0 159.0: Thunderbird Mail Client
+mail-client/thunderbird-bin 153.6.0 159.0: Thunderbird Mail Client
+mail-client/thunderbird-l10n 153.6.0 159.0: Thunderbird mail client's translation files
 mail-filter/MailScanner 4.84.5.2: Free Anti-Virus and Anti-Spam Filter
 mail-filter/amavisd-milter 1.7.2-r1: sendmail milter for amavisd-new
 mail-filter/amavisd-new 2.13.1-r1 2.14.0-r1: High-performance interface between the MTA and content checkers
@@ -13230,7 +13231,7 @@ media-gfx/loupe 49.2 50.0: View images
 media-gfx/lximage-qt 2.4.0: Qt Image Viewer
 media-gfx/maim 5.8.1 5.8.1-r1 5.8.2: Commandline tool to take screenshots of the desktop
 media-gfx/mandelbulber 2.33: Tool to render 3D fractals
-media-gfx/mcomix 3.1.1-r1 9999: GTK image viewer for comic book archives
+media-gfx/mcomix 3.1.1-r1 3.2.0 9999: GTK image viewer for comic book archives
 media-gfx/metapixel 1.0.2-r2 1.0.2-r3: a program for generating photomosaics
 media-gfx/mkbold-mkitalic 0.11: Make BDF fonts bold and/or italic
 media-gfx/mkgallery 1.1-r1: Creates thumbnails and a HTML index file for a directory of jpg files
@@ -13679,7 +13680,7 @@ media-libs/quarter 1.2.3-r1: GUI binding for using Coin/Open Inventor with Qt
 media-libs/quesoglc 0.7.2-r2: Free implementation of the OpenGL Character Renderer (GLC)
 media-libs/quirc 1.2-r3 9999: QR decoder library
 media-libs/raptor 2.0.16-r1: The RDF Parser Toolkit
-media-libs/raqm 0.10.5: A library for complex text layout
+media-libs/raqm 0.10.5 0.11.0: A library for complex text layout
 media-libs/resid 0.16_p2-r2: C++ library to emulate the C64 SID chip
 media-libs/rlottie 0.2_p20210405: A platform independent standalone library that plays Lottie Animations
 media-libs/rnnoise 0.4.1_p20210122-r1 0.4.1_p20250222: Recurrent neural network for audio noise reduction
@@ -14390,7 +14391,7 @@ media-sound/whipper 0.10.0-r4: A Python CD-DA ripper preferring accuracy over sp
 media-sound/wildmidi 0.4.6: MIDI processing library and player using the GUS patch set
 media-sound/wiremix 0.7.0 0.10.0-r1 0.11.0: A TUI mixer for PipeWire
 media-sound/wmsound-data 1.0.0: A bunch of sounds for WindowMaker Sound Server
-media-sound/xfmpc 0.3.2: Music Player Daemon (MPD) client for the Xfce desktop environment
+media-sound/xfmpc 0.3.2 0.4.0: Music Player Daemon (MPD) client for the Xfce desktop environment
 media-sound/xineadump 0.1-r2: Utility for Xine decoding support in transKode
 media-sound/xmms2 0.9.7: X(cross)platform Music Multiplexing System, next generation of the XMMS player
 media-sound/xwax 1.9: Digital vinyl emulation software
@@ -15082,7 +15083,7 @@ net-libs/libdmapsharing 3.9.13: A library that implements the DMAP family of pro
 net-libs/libdom 0.4.3_pre20250301-r1 9999: implementation of the W3C DOM, written in C
 net-libs/libecap 1.0.1: API for implementing ICAP content analysis and adaptation
 net-libs/libesmtp 1.1.0-r2 1.1.0-r3: Lib that implements the client side of the SMTP protocol
-net-libs/libetpan 1.9.4-r2 1.9.4-r3 1.10: A portable, efficient middleware for different kinds of mail access
+net-libs/libetpan 1.9.4-r2 1.9.4-r3 1.10 1.10.1: A portable, efficient middleware for different kinds of mail access
 net-libs/libflowmanager 3.0.0-r1: A library that measures and reports on packet flows
 net-libs/libgadu 1.11.4 1.12.2-r1: Client-side library for the Gadu-Gadu protocol
 net-libs/libgrss 0.7.0-r2: Library for easy management of RSS/Atom/Pie feeds
@@ -17663,7 +17664,7 @@ sys-block/nbdkit 1.44.3 1.46.0: NBD server with stable plugin ABI and permissive
 sys-block/ndctl 71.1-r2 76.1 77-r2: Helper tools and libraries for managing non-volatile memory on Linux
 sys-block/open-iscsi 2.1.10-r1 2.1.11: A performant, transport independent, multi-platform implementation of RFC3720
 sys-block/open-isns 0.103: iSNS server and client for Linux
-sys-block/parted 3.6-r2 3.7: Create, destroy, resize, check, copy partitions and file systems
+sys-block/parted 3.7 3.8: Create, destroy, resize, check, copy partitions and file systems
 sys-block/partimage 0.6.9-r4: Console-based application to efficiently save raw partition data to image file
 sys-block/partitionmanager 26.04.3 26.08.2: Utility for management of disks, partitions and file systems
 sys-block/perccli 7.5.007.0529-r3 7.2313.0: LINUX PERCCLI Utility For All Dell HBA/PERC Controllers
@@ -18455,9 +18456,9 @@ www-client/elinks 0.18.0 0.19.0 0.19.1 9999: Advanced and well-established text-
 www-client/epiphany 49.8.1 50.6: GNOME webbrowser based on Webkit
 www-client/falkon 26.04.3 26.08.2: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
-www-client/firefox 153.5.0 153.5.1 153.6.0 158.0 158.0.1 159.0: Firefox Web Browser
-www-client/firefox-bin 153.5.0 153.5.1 153.6.0 158.0 158.0.1 159.0: Firefox Web Browser
-www-client/firefox-l10n 153.5.0 153.5.1 153.6.0 158.0 158.0.1 159.0: Firefox Web Browser's translation files
+www-client/firefox 153.6.0 159.0: Firefox Web Browser
+www-client/firefox-bin 153.6.0 159.0 159.0.1: Firefox Web Browser
+www-client/firefox-l10n 153.6.0 159.0: Firefox Web Browser's translation files
 www-client/google-chrome 154.0.8037.92 156.0.8078.47 156.0.8078.79: The web browser from Google
 www-client/google-chrome-beta 156.0.8078.4 157.0.8103.6 158.0.8127.2: The web browser from Google
 www-client/google-chrome-unstable 156.0.8072.0 158.0.8106.0 159.0.8130.0: The web browser from Google
@@ -18746,7 +18747,7 @@ x11-libs/libxkbcommon 1.13.2: Keymap handling library for toolkits and window sy
 x11-libs/libxkbfile 1.2.0: X.Org xkbfile library
 x11-libs/libxklavier 5.4-r1: A library for the X Keyboard Extension (high-level API)
 x11-libs/libxshmfence 1.3.3: Shared memory fences using futexes
-x11-libs/motif 2.3.8-r6 2.5.2 2.5.2-r3: The Motif user interface component toolkit
+x11-libs/motif 2.3.8-r6 2.5.2-r3: The Motif user interface component toolkit
 x11-libs/neXtaw 0.15.1-r5: Athena Widgets with N*XTSTEP appearance
 x11-libs/pango 1.57.1 1.58.2: Internationalized text layout and rendering library
 x11-libs/pixman 0.46.4 9999: Low-level pixel manipulation routines
@@ -19427,7 +19428,7 @@ xfce-extra/xfce4-generic-slider 1.1.0: A visual slider widget to control user-co
 xfce-extra/xfce4-genmon-plugin 4.3.0: Cyclically spawned executable output on the panel
 xfce-extra/xfce4-hdaps 1.0.3-r1: Show the status of the IBM Hard Drive Active Protection System
 xfce-extra/xfce4-indicator-plugin 2.5.0: A panel plugin that uses indicator-applet to show new messages
-xfce-extra/xfce4-kbdleds-plugin 0.2.3: A panel plug-in to show state of Caps, Num and Scroll Lock keys
+xfce-extra/xfce4-kbdleds-plugin 0.2.3 0.3.0: A panel plug-in to show state of Caps, Num and Scroll Lock keys
 xfce-extra/xfce4-mailwatch-plugin 1.4.0: An mail notification panel plug-in for the Xfce desktop environment
 xfce-extra/xfce4-mixer 4.20.0: A volume control application and panel plugin for Xfce
 xfce-extra/xfce4-mount-plugin 1.2.0: An mount plug-in for the Xfce panel
