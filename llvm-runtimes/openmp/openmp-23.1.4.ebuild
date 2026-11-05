@@ -121,7 +121,6 @@ multilib_src_configure() {
 		-DLLVM_ENABLE_RUNTIMES=openmp
 		-DLLVM_LIBDIR_SUFFIX="${libdir#lib}"
 		-DLLVM_BINARY_DIR="${BROOT}/usr/lib/llvm/${LLVM_MAJOR}"
-		-DLLVM_DEFAULT_TARGET_TRIPLE="${CHOST}"
 
 		-DLIBOMP_USE_HWLOC=$(usex hwloc)
 		-DLIBOMP_OMPD_GDB_SUPPORT=$(multilib_native_usex gdb-plugin)
