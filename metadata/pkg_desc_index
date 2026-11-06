@@ -14661,7 +14661,7 @@ net-analyzer/multimon-ng 1.3.0 9999: a fork of multimon, decodes multiple digita
 net-analyzer/multipath-tcp-tools 2018_p12_p21-r1 999999: Analysis tools for Multipath Transmission Control Protocol (MPTCP)
 net-analyzer/munin 2.0.75 2.0.76-r2 2.0.76-r3: Munin Server Monitoring Tool
 net-analyzer/munin-plugins-zfs 0.20170127-r1: A Munin plugin for monitoring ZFS on Linux
-net-analyzer/nagios 4.5.13: The Nagios metapackage
+net-analyzer/nagios 4.5.13 4.5.14: The Nagios metapackage
 net-analyzer/nagios-check_dnssec 0.1_p28: check_dnssec is a set of Nagios plugins to monitor DNSSEC services
 net-analyzer/nagios-check_glsa2 20120930-r1: Nagios check script for GLSAs (Gentoo Linux Security Advisories)
 net-analyzer/nagios-check_ipmi_sensor 3.13: IPMI Sensor Monitoring Plugin for Nagios/Icinga
@@ -14670,7 +14670,7 @@ net-analyzer/nagios-check_logfiles 4.0.1.3: A nagios plugin for checking logfile
 net-analyzer/nagios-check_multiple 0.0.1-r5: A Nagios plugin to execute multiple checks in parallel
 net-analyzer/nagios-check_mysql_health 2.2.2-r2: Nagios plugin for checking MySQL server health
 net-analyzer/nagios-check_rbl 1.7.0 1.8.1: Monitor whether or not a host is blacklisted
-net-analyzer/nagios-core 4.5.13: Nagios core - monitoring daemon, web GUI, and documentation
+net-analyzer/nagios-core 4.5.13 4.5.14: Nagios core - monitoring daemon, web GUI, and documentation
 net-analyzer/nagios-icinga-openvpn 0.0.1-r6: A Nagios plugin to check whether an OpenVPN server is alive
 net-analyzer/nagios-plugin-check_lm_sensors 4.1.1_p20191028: Nagios plugin to monitor the values of onboard sensors and disk temperatures
 net-analyzer/nagios-plugin-check_raid 4.0.10-r3: Nagios/Icinga plugin to check current server's RAID status
@@ -14683,7 +14683,7 @@ net-analyzer/nagtrap 0.1.3-r1: Integrated snmptt visualization addon for the Nag
 net-analyzer/nast 0.2.0-r4: NAST - Network Analyzer Sniffer Tool
 net-analyzer/nbtscan 1.7.2: NBTscan is a program for scanning IP networks for NetBIOS name information
 net-analyzer/nbwmon 0.5.2: ncurses bandwidth monitor
-net-analyzer/ndoutils 2.1.4: Nagios addon to store Nagios data in a database
+net-analyzer/ndoutils 2.1.5: Nagios addon to store Nagios data in a database
 net-analyzer/ndsad 1.33-r2: Cisco netflow probe from libpcap, ULOG, tee/divert sources
 net-analyzer/nessus-agent-bin 11.2.3: A remote security scanner for Linux - agent component
 net-analyzer/nessus-bin 10.12.6: A remote security scanner for Linux
@@ -16289,7 +16289,7 @@ sci-libs/geos 3.12.1 3.13.0 3.13.1 3.14.0 3.14.1 3.15.0: Geometry engine library
 sci-libs/gerris 20131206-r1: Gerris Flow Solver
 sci-libs/getdata 0.11.0 0.11.0-r2: Reference implementation of the Dirfile, format for time-ordered binary data
 sci-libs/ginkgo 1.4.0-r3 1.6.0 1.8.0 1.10.0 1.11.0: Numerical linear algebra software package
-sci-libs/givaro 4.2.1: C++ library for arithmetic and algebraic computations
+sci-libs/givaro 4.2.1 4.2.2: C++ library for arithmetic and algebraic computations
 sci-libs/gklib 5.1.1_p20230327-r1: Helper routines and frameworks used by KarypisLab software
 sci-libs/gmsh 4.14.0 4.14.1: Three-dimensional finite element mesh generator
 sci-libs/gsl 2.7.1-r2 2.7.1-r3: The GNU Scientific Library
@@ -16325,7 +16325,7 @@ sci-libs/lemon 1.3.1-r2: C++ template static library of common data structures a
 sci-libs/levmar 2.6-r1: Levenberg-Marquardt nonlinear least squares C library
 sci-libs/libaec 1.1.4: Adaptive Entropy Coding library
 sci-libs/libbraiding 1.3.1 1.3.2-r1: Expose the functionality of cbraid as a shared library
-sci-libs/libcerf 1.17 2.5: Efficient and accurate implementation of complex error functions
+sci-libs/libcerf 1.17-r1 2.5: Efficient and accurate implementation of complex error functions
 sci-libs/libcifpp 10.0.4: Code to work with mmCIF and PDB files
 sci-libs/libdap 3.20.9-r1 3.21.1: Implementation of a C++ SDK for DAP 2.0 and 3.2
 sci-libs/libecpint 1.0.6-r1 1.0.7: Efficient evaluation of integrals over ab initio effective core potentials
@@ -16359,7 +16359,7 @@ sci-libs/linux-gpib-modules 4.3.6 4.3.7 9999: Kernel modules for GPIB (IEEE 488.
 sci-libs/lis 1.6.5-r1 2.1.3: Library of Iterative Solvers for Linear Systems
 sci-libs/lmfit 9.0-r2: library for Levenberg-Marquardt least-squares minimization and curve fitting
 sci-libs/lrslib 071b-r1 073: Reverse-search algorithm for vertex enumeration problems
-sci-libs/m4ri 20250128-r1: Method of four russian for inversion (M4RI)
+sci-libs/m4ri 20250128-r1 20260122: Method of four russian for inversion (M4RI)
 sci-libs/m4rie 20250128: Fast dense matrix arithmetic over GF(2^e) for 2 <= e <= 16
 sci-libs/mathgl 8.0.3: Math Graphics Library
 sci-libs/matio 1.5.23 1.5.28 1.5.30 1.6.0: Library for reading and writing matlab files
@@ -16537,7 +16537,7 @@ sci-mathematics/rkward 0.8.3: IDE for the R-project
 sci-mathematics/rngstreams 1.0.1: Multiple independent streams of pseudo-random numbers
 sci-mathematics/rw 0.9 0.10: Compute rank-width decompositions of graphs
 sci-mathematics/sha1-polyml 5.9: implementation of SHA1 is taken from the GNU coreutils package
-sci-mathematics/singular 4.4.1-r1: Computer algebra system for polynomial computations
+sci-mathematics/singular 4.4.1-r1 4.4.1_p5: Computer algebra system for polynomial computations
 sci-mathematics/slepc 3.22.1 3.23.1 3.24.2 3.25.1: Scalable Library for Eigenvalue Problem Computations
 sci-mathematics/smtinterpol 2.5_p20211018-r1: Interpolating SMT-solver computing Craig interpolants for various theories
 sci-mathematics/spin 6.5.2-r1: An efficient logic-model checker for the verification of multi-threaded code
@@ -17571,7 +17571,7 @@ sys-apps/watchdog 5.16-r1: A software watchdog and /dev/watchdog daemon
 sys-apps/which 2.23: Prints out location of specified executables that are in your path
 sys-apps/x86info 1.31: Dave Jones' handy, informative x86 CPU diagnostic utility
 sys-apps/xdg-dbus-proxy 0.1.9: Filtering proxy for D-Bus connections
-sys-apps/xdg-desktop-portal 1.20.4-r1 1.22.1: Desktop integration portal
+sys-apps/xdg-desktop-portal 1.20.4-r1 1.22.1-r1: Desktop integration portal
 sys-apps/xdg-desktop-portal-gnome 49.0 50.0: Backend implementation for xdg-desktop-portal using GNOME
 sys-apps/xdg-desktop-portal-gtk 1.14.1 1.15.2 1.15.3: Backend implementation for xdg-desktop-portal using GTK+
 sys-apps/xdg-desktop-portal-xapp 1.1.3: Backend implementation for xdg-desktop-portal using Cinnamon/MATE/Xfce
@@ -18003,10 +18003,10 @@ sys-kernel/dkms 3.3.0 3.4.3 3.4.4 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 110-r5 111-r2 112 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.17-r4 4.3.18 4.3.18-r1 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 6.1.191 6.6.161 6.12.115 6.18.60 7.3.1: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 6.1.191 6.6.161 6.12.115 6.18.60 7.3.1: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-kernel-modprep 6.1.191 6.6.161 6.12.115 6.18.60 7.3.1: Minimal subset of gentoo-kernel-bin for building modules, for containers
-sys-kernel/gentoo-sources 6.1.191 6.6.161 6.12.115 6.18.60 6.18.61 7.2.15 7.3.1 7.3.2: Full sources including the Gentoo patchset for the 7.3 kernel tree
+sys-kernel/gentoo-kernel 6.1.191 6.6.161 6.12.115 6.18.60 7.3.1 7.3.3: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 6.1.191 6.6.161 6.12.115 6.18.60 7.3.1 7.3.3: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-kernel-modprep 6.1.191 6.6.161 6.12.115 6.18.60 7.3.1 7.3.3: Minimal subset of gentoo-kernel-bin for building modules, for containers
+sys-kernel/gentoo-sources 6.1.191 6.1.192 6.6.161 6.6.162 6.12.115 6.12.116 6.18.60 6.18.61 6.18.62 7.2.15 7.3.1 7.3.2 7.3.3: Full sources including the Gentoo patchset for the 7.3 kernel tree
 sys-kernel/git-sources 7.4_rc1: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
 sys-kernel/hurd 0.9_p20251029 0.9_p20260331 0.9_p20260630 9999: GNU Hurd is the GNU project's replacement for UNIX
@@ -18028,7 +18028,7 @@ sys-kernel/scx 1.1.0 1.1.1 1.1.2 1.1.3 1.1.4: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2 1.1.3-r1: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 6.1.191 6.1.9999 6.6.161 6.6.9999 6.12.115 6.12.9999 6.18.60 6.18.9999 7.3.1: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 6.1.191 6.1.9999 6.6.161 6.6.9999 6.12.115 6.12.9999 6.18.60 6.18.9999 7.3.1 7.3.3: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 6.1.192 6.6.162 6.12.116 6.18.62 7.2.15 7.3.3: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.2.7: The Zen Kernel Live Sources
@@ -18218,7 +18218,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 6.1.191 6.6.161 6.12.115 6.18.60 7.3.1: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 6.1.191 6.6.161 6.12.115 6.18.60 7.3.1 7.3.3: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0-r1: Virtual for .NET SDK
 virtual/editor 0-r8: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
