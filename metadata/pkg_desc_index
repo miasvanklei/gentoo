@@ -14410,7 +14410,7 @@ media-tv/mythtv-status 1.1.0: Displays the current status of MythTV at the comma
 media-tv/plex-media-server 1.43.5.11079: Free media library that is intended for use with a plex client
 media-tv/shoutcast2vdr 0.0.8-r1: VDR script: generate shoutcast playlists
 media-tv/tvbrowser-bin 4.2.7: Themeable and easy to use TV Guide - written in Java
-media-tv/tvheadend 4.3_p20240618-r1 4.3_p20260516 9999: Tvheadend is a TV streaming server and digital video recorder
+media-tv/tvheadend 4.3_p20240618-r1 4.3_p20261106 9999: Tvheadend is a TV streaming server and digital video recorder
 media-tv/v4l-dvb-saa716x 0.0.1_p20170225-r6: driver for saa716x based dvb cards like TT S2-6400 or Skystar 2 eXpress HD
 media-tv/w_scan 20170107: Scan DVB-C/DVB-T/DVB-S channels
 media-tv/xmltv 1.0.0-r1 1.4.0-r1: Set of utilities to manage TV listings stored in the XMLTV format
@@ -17808,7 +17808,7 @@ sys-devel/distcc 3.4-r4 3.4-r6 3.4-r9: Distribute compilation of C code across s
 sys-devel/dwz 0.16 0.17 9999: DWARF optimization and duplicate removal tool
 sys-devel/elftoolchain 0.7.1_p20210319: Libraries/utilities to handle ELF objects (BSD drop in replacement for libelf)
 sys-devel/flex 2.6.4-r6: The Fast Lexical Analyzer
-sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20260603 13.5.0 14.3.1_p20260604 14.4.0 14.4.1_p20260716 14.4.1_p20261008 14.4.1_p20261029 14.4.1_p20261105 14.5.9999 15.3.0 15.3.1_p20260717 15.3.1_p20261009 15.3.1_p20261030 15.3.1_p20261106 15.3.9999 16.2.0 16.2.1_p20260926 16.2.1_p20261031 16.2.1_p20261107 16.3.9999 17.0.0_p20261025 17.0.0_p20261101 17.0.9999: The GNU Compiler Collection
+sys-devel/gcc 8.5.0-r2 9.5.0 10.5.0 11.5.0 12.5.0 13.2.0 13.4.1_p20260603 13.5.0 14.3.1_p20260604 14.4.0 14.4.1_p20260716 14.4.1_p20261008 14.4.1_p20261029 14.4.1_p20261105 14.5.9999 15.3.0 15.3.1_p20260717 15.3.1_p20261009 15.3.1_p20261030 15.3.1_p20261106 15.3.9999 16.2.0 16.2.1_p20260926 16.2.1_p20261031 16.2.1_p20261107 16.3.9999 17.0.0_p20261025 17.0.0_p20261101 17.0.0_p20261108 17.0.9999: The GNU Compiler Collection
 sys-devel/gcc-config 2.12.1 2.12.2 9999: Utility to manage compilers
 sys-devel/gettext 0.21.1 0.22.5-r2 0.23.1-r1 0.23.2 0.25.1 0.26 1.0: GNU locale utilities
 sys-devel/gnuconfig 20260517 99999999: Updated config.sub and config.guess file from GNU
