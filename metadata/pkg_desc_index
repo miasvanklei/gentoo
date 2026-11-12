@@ -205,6 +205,7 @@ acct-group/lxd 0-r3: Group for app-containers/lxd
 acct-group/mail 0-r3: Mail program group
 acct-group/man 0-r3: System group: man
 acct-group/maradns 0-r3: System group: maradns
+acct-group/mdatp 0: Group for app-antivirus/mdatp
 acct-group/memcached 0-r3: System group: memcached
 acct-group/memcached_exporter 0-r2: System group: memcached_exporter
 acct-group/messagebus 0-r3: System group: messagebus
@@ -643,6 +644,7 @@ acct-user/lxc 0-r2: User for app-containers/lxc
 acct-user/mail 0-r3: Mail program user
 acct-user/man 1-r3: System user: man
 acct-user/maradns 0-r3: System user: maradns
+acct-user/mdatp 0: User for app-antivirus/mdatp
 acct-user/memcached 0-r3: User for the memcached service
 acct-user/memcached_exporter 0-r2: user for memcached_exporter
 acct-user/messagebus 0-r3: System user: messagebus
@@ -1134,6 +1136,7 @@ app-antivirus/clamav 0.103.12-r6 1.4.3 1.4.4 1.4.5 1.4.6 1.5.3 1.5.4: Clam Anti-
 app-antivirus/clamtk 6.18-r1 6.18-r2: A graphical front-end for ClamAV
 app-antivirus/fangfrisch 1.9.2-r1 1.9.3: Update and verify unofficial Clam Anti-Virus signatures
 app-antivirus/lkrg 0.9.8 0.9.9 9999: Linux Kernel Runtime Guard
+app-antivirus/mdatp 101.26101.0000: Microsoft Defender Advanced Threat Protection for Endpoints
 app-arch/7zip 26.02-r1 26.03 26.04 26.05 26.06: Free file archiver for extremely high compression
 app-arch/advancecomp 2.6-r1: Recompress ZIP, PNG and MNG, considerably improving compression
 app-arch/afio 2.5.2: CPIO-Archiver & backup program with fault tolerant compression
@@ -1475,7 +1478,7 @@ app-crypt/hashcat 6.2.6-r1 7.1.2 7.1.2-r1 9999: World's fastest and most advance
 app-crypt/hashcat-utils 1.10: a set of small utilities that are useful in advanced password cracking
 app-crypt/heimdal 7.8.0-r3: Kerberos 5 implementation from KTH
 app-crypt/ima-evm-utils 1.7 9999: Supporting tools for IMA and EVM
-app-crypt/jacksum 4.0.0 4.0.2: Java utility for working with checksums, CRCs, and message digests (hashes)
+app-crypt/jacksum 4.0.2: Java utility for working with checksums, CRCs, and message digests (hashes)
 app-crypt/jetring 0.31 0.32: GPG keyring maintenance using changesets
 app-crypt/jitterentropy 3.6.0 3.6.3: Hardware RNG based on CPU timing jitter
 app-crypt/jitterentropy-rngd 1.2.8: Jitter RNG daemon
@@ -5015,7 +5018,7 @@ dev-java/cglib 3.3.0-r3: cglib is a powerful, high performance and quality Code 
 dev-java/checker-framework-qual 3.52.1: Annotations for type-checking by the Checker Framework
 dev-java/commons-beanutils 1.11.0-r1: Provides easy-to-use wrappers around Reflection and Introspection APIs
 dev-java/commons-cli 1.11.0: A Java library for working with the command line arguments and options
-dev-java/commons-codec 1.21.0 1.22.1 1.23.0: Implementations of common encoders and decoders in Java
+dev-java/commons-codec 1.21.0 1.23.0: Implementations of common encoders and decoders in Java
 dev-java/commons-collections 3.2.2-r2 4.5.0: Extends the JCF classes with new interfaces, implementations and utilities
 dev-java/commons-compress 1.28.0: Java API for working with archive files
 dev-java/commons-csv 1.14.1-r2: Simple interface for reading and writing CSV files of various types
@@ -5229,7 +5232,7 @@ dev-java/metainf-services 1.11: Generates META-INF/services files automatically
 dev-java/miglayout 5.3: MiGLayout - Java Layout Manager for Swing, SWT and JavaFX
 dev-java/mill-bin 0.11.12 0.12.10: A Java/Scala build tool
 dev-java/minidns-core 1.0.4: DNS library for Java and Android systems
-dev-java/mockito 1.9.5-r5 2.28.2-r1 2.28.2-r2 4.11.0 4.11.0-r1 5.21.0 5.24.0: Mockito mock objects library core API and implementation
+dev-java/mockito 1.9.5-r5 2.28.2-r1 2.28.2-r2 4.11.0-r1 5.21.0 5.24.0: Mockito mock objects library core API and implementation
 dev-java/msv 2022.7-r1: Multi-Schema Validator Core package
 dev-java/mvel 2.5.2: MVFLEX Expression Language
 dev-java/objenesis 3.6: A library for instantiating Java objects
@@ -5952,7 +5955,7 @@ dev-libs/qgpgme 2.0.0-r2 2.1.0 2.2.0-r1: GnuPG Made Easy is a library for making
 dev-libs/qhotkey 1.5.0-r1: A global shortcut/hotkey library for desktop Qt applications
 dev-libs/qqwing 1.3.4-r1: Sudoku puzzle generator and solver
 dev-libs/qr-code-generator 1.8.0-r1: QR Code Generator Library in Multiple Languages
-dev-libs/qtkeychain 0.17.0-r1 0.17.0-r2: Qt API for storing passwords securely
+dev-libs/qtkeychain 0.17.0-r1 0.17.0-r2 0.18.0: Qt API for storing passwords securely
 dev-libs/quazip 1.5: Simple C++ wrapper over Gilles Vollant's ZIP/UNZIP package
 dev-libs/quickjs-ng 0.14.0 0.16.2: QuickJS, the Next Generation: a mighty JavaScript engine
 dev-libs/qxlsx 1.5.0 1.5.1.1: Excel file(*.xlsx) reader/writer library using Qt
@@ -16482,7 +16485,7 @@ sci-mathematics/gfan 0.6.2-r7 0.6.2-r8 0.8_beta1: Compute Groebner fans and trop
 sci-mathematics/giac 1.9.0.995-r2: A free C++ Computer Algebra System library and its interfaces
 sci-mathematics/gimps 30.8.15 30.8.17 30.19.14 30.19.20: The Great Internet Mersenne Prime Search
 sci-mathematics/ginac 1.8.10: C++ library and tools for symbolic calculations
-sci-mathematics/glpk 5.0-r4 5.0-r5: GNU Linear Programming Kit
+sci-mathematics/glpk 5.0-r5: GNU Linear Programming Kit
 sci-mathematics/gmm 5.4.2: Generic C++ template library for sparse, dense and skyline matrices
 sci-mathematics/gmp-ecm 7.0.6-r1 7.0.7: Elliptic Curve Method for Integer Factorization
 sci-mathematics/gp2c 0.0.12 0.0.15: A GP to C translator
@@ -18383,7 +18386,7 @@ www-apps/bugzilla 5.0.6-r2: Bugzilla is the Bug-Tracking System from the Mozilla
 www-apps/cgisysinfo 0.4.1: A small cgi utility to show basic system information
 www-apps/cgit 1.3 9999 9999-r1: A fast web-interface for Git repositories
 www-apps/cgp 1_p20190510-r2: A graphical web-based front-end for visualizing RRD collected by collectd
-www-apps/chromedriver-bin 156.0.8078.79 157.0.8103.38 157.0.8103.50: WebDriver for Chrome
+www-apps/chromedriver-bin 157.0.8103.38 157.0.8103.50 157.0.8103.78: WebDriver for Chrome
 www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20260714c-r1: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
@@ -18459,7 +18462,7 @@ www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 153.6.0 153.7.0 159.0 159.0.1 160.0: Firefox Web Browser
 www-client/firefox-bin 153.6.0 153.7.0 159.0 159.0.1 160.0: Firefox Web Browser
 www-client/firefox-l10n 153.6.0 153.7.0 159.0 159.0.1 160.0: Firefox Web Browser's translation files
-www-client/google-chrome 156.0.8078.79 157.0.8103.38 157.0.8103.50: The web browser from Google
+www-client/google-chrome 157.0.8103.38 157.0.8103.50 157.0.8103.78: The web browser from Google
 www-client/google-chrome-beta 157.0.8103.6 158.0.8127.2 158.0.8127.18: The web browser from Google
 www-client/google-chrome-unstable 158.0.8106.0 159.0.8130.0 159.0.8144.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
@@ -18472,10 +18475,10 @@ www-client/microsoft-edge-beta 158.0.4370.7 158.0.4370.12 158.0.4370.16: The web
 www-client/microsoft-edge-dev 158.0.4357.0 159.0.4378.0 159.0.4393.0: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
-www-client/opera 140.0.6074.17: A fast and secure web browser
+www-client/opera 140.0.6074.18: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
 www-client/opera-developer 140.0.6066.0 140.0.6072.0 141.0.6079.0: A fast and secure web browser
-www-client/opera-gx 138.0.6044.45 138.0.6044.65 139.0.6053.42: Opera, but for 'gamers'
+www-client/opera-gx 138.0.6044.65 139.0.6053.42 139.0.6053.63: Opera, but for 'gamers'
 www-client/pybugz 0.14 0.15 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.7.0 9999: Keyboard-driven, vim-like browser based on Python and Qt
 www-client/seamonkey 2.53.23 2.53.24: Seamonkey Web Browser
@@ -18530,7 +18533,7 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.9 1.0.1: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 156.0.8078.79 157.0.8103.6_beta 157.0.8103.38 157.0.8103.50 158.0.8106.0_alpha 158.0.8127.2_beta 158.0.8127.18_beta 159.0.8130.0_alpha 159.0.8144.0_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 157.0.8103.6_beta 157.0.8103.38 157.0.8103.50 157.0.8103.78 158.0.8106.0_alpha 158.0.8127.2_beta 158.0.8127.18_beta 159.0.8130.0_alpha 159.0.8144.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.9.0 0.10.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
