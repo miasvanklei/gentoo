@@ -922,7 +922,7 @@ app-admin/ansible-core 2.19.2 2.19.3 2.19.3-r1 2.20.0-r1 2.20.3 2.20.5 2.21.1 2.
 app-admin/ansible-lint 25.9.0 25.11.0 26.3.0 26.8.0: Checks ansible playbooks for practices and behaviour that can be improved
 app-admin/ansible-modules-hashivault 5.2.1-r1: Ansible module for hashicorp vault
 app-admin/ansible-molecule 25.9.0 25.11.0 26.3.0: A toolkit designed to aid in the development and testing of Ansible roles
-app-admin/apache-tools 2.4.69 2.4.70: Useful Apache tools - htdigest, htpasswd, ab, htdbm
+app-admin/apache-tools 2.4.69 2.4.70 2.4.71: Useful Apache tools - htdigest, htpasswd, ab, htdbm
 app-admin/apachetop 0.23.2: A realtime Apache log analyzer
 app-admin/apg 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
@@ -3138,7 +3138,7 @@ app-portage/pycargoebuild 0.17.1 0.17.2: A generator for Rust/Cargo ebuilds writ
 app-portage/recover-broken-vdb 1.0.0-r2 9999: Check Portage's VDB for internal inconsistency on ELF metadata
 app-portage/repo-commit 0.4.1-r1 9999: A repository commit helper
 app-portage/smart-live-rebuild 1.4.1-r2 9999: Check live packages for updates and emerge them as necessary
-app-portage/tatt 0.11-r1 9999: Arch testing tool
+app-portage/tatt 0.11-r1 0.12 9999: Arch testing tool
 app-portage/time64-prep 1: A tool to prepare for (comparatively) safe time64 transition
 app-portage/ufed 0.96 9999: Gentoo Linux USE flags editor
 app-portage/unsymlink-lib 20: Convert your system to SYMLINK_LIB=no
@@ -4094,7 +4094,7 @@ dev-db/qdbm 1.8.78-r5: Quick Database Manager
 dev-db/qt5-sqlcipher 1.1.0-r1: Qt SQL driver plugin for SQLCipher
 dev-db/recutils 1.9-r1: Tools and libraries to access human-editable, plain text databases
 dev-db/redict 7.3.6: A persistent caching system, key-value, and data structures database
-dev-db/redis 8.2.2 8.2.6 8.2.7 8.2.9 8.2.10 8.4.4 8.4.6 8.4.7 8.6.4 8.6.6 8.6.7 8.8.0 8.8.2 8.8.3 8.10.1 8.10.2: A persistent caching system, key-value, and data structures database
+dev-db/redis 8.2.10 8.2.11 8.4.8 8.6.7 8.6.8 8.8.4 8.10.2 8.10.3: A persistent caching system, key-value, and data structures database
 dev-db/repmgr 5.5.0: PostgreSQL Replication Manager
 dev-db/rqlite 9.4.1: Replicated SQLite using the Raft consensus protocol
 dev-db/slony1 2.2.10-r1: A replication system for the PostgreSQL Database Management System
@@ -5432,7 +5432,7 @@ dev-lang/qu-prolog 10.8-r1: Extended Prolog supporting quantifiers, object-varia
 dev-lang/rakudo 2026.02 2026.08 2026.09: A compiler for the Raku programming language
 dev-lang/rapydscript-ng 0.7.22 9999: Pythonic JavaScript that doesn't suck
 dev-lang/regina-rexx 3.9.5 3.9.6: Portable Rexx interpreter
-dev-lang/ruby 3.2.11 3.2.11-r1 3.3.12 3.3.13 3.3.9999 3.4.10 3.4.12 3.4.9999 4.0.6 4.0.9 4.0.9999: An object-oriented scripting language
+dev-lang/ruby 3.2.11-r1 3.3.13 3.3.9999 3.4.12 3.4.9999 4.0.9 4.0.9999: An object-oriented scripting language
 dev-lang/rust 1.90.0-r1 1.91.0 1.92.0_p1-r1 1.93.1 1.94.1 1.95.0 1.96.1 1.97.1 1.98.1 1.99.0 9999: Systems programming language originally developed by Mozilla
 dev-lang/rust-bin 1.90.0 1.91.0 1.92.0 1.93.1 1.94.1 1.95.0 1.96.1 1.97.1 1.98.1 1.99.0 9999: Systems programming language from Mozilla
 dev-lang/rust-common 1.90.0 1.91.0 1.92.0 1.93.1 1.94.1 1.95.0 1.96.1 1.97.1 1.98.1 1.99.0 9999: Common files shared between multiple slots of Rust
@@ -5480,7 +5480,7 @@ dev-libs/asmjit 2024.10.25 2025.06.28-r1 2026.02.15 9999: Machine code generatio
 dev-libs/atf 0.21-r3 0.22-r1 0.23: Libraries to write tests in C, C++ and shell
 dev-libs/atk 2.38.0 2.46.0: GTK+ & GNOME Accessibility Toolkit
 dev-libs/avro-c 1.12.0 1.12.0-r1: c library for the apache avro data serialization system
-dev-libs/aws-c-auth 1.0.1 1.0.2 1.0.3: AWS C Auth: C99 library implementation of AWS client-side authentication
+dev-libs/aws-c-auth 1.0.1 1.0.2 1.0.3 1.0.4: AWS C Auth: C99 library implementation of AWS client-side authentication
 dev-libs/aws-c-cal 0.9.13 0.9.14 1.0.0: Crypto Abstraction Layer: Cross-Platform C99 wrapper for cryptography primitives
 dev-libs/aws-c-common 1.0.3 1.0.5: Core c99 package for AWS SDK for C
 dev-libs/aws-c-compression 0.3.1 0.3.2 1.0.0: AWS C Compression cross-platform algorithms
@@ -5505,7 +5505,7 @@ dev-libs/boron 2.1.0: A scripting language similar to REBOL
 dev-libs/botan 3.13.0 3.14.1: C++ crypto library
 dev-libs/boxfort 0.1.4-r1 0.1.4-r2 0.1.5: Convenient & cross-platform sandboxing C library
 dev-libs/c-blosc 1.21.6-r1 1.21.7: Blocking, shuffling and lossless compression library
-dev-libs/c-blosc2 2.23.1 3.3.5 3.4.0 3.4.1 3.5.0 3.6.0: Blocking, shuffling and lossless compression library
+dev-libs/c-blosc2 2.23.1 3.3.5 3.4.0 3.4.1 3.5.0 3.6.0 3.6.1: Blocking, shuffling and lossless compression library
 dev-libs/c-capnproto 0.3-r1: C library/compiler for the Cap'n Proto serialization/RPC protocol
 dev-libs/c-siphash 1.1.0-r1: Streaming-capable SipHash Implementation
 dev-libs/c-stdaux 1.6.0: Auxiliary macros and functions for the C standard library
@@ -5599,8 +5599,8 @@ dev-libs/hiredict 1.3.1: Minimalistic C client library for the Redict database
 dev-libs/hiredis 1.0.2-r3 1.1.0-r1 1.1.1 1.2.0 1.2.1 1.3.0 1.3.1 1.4.1: Minimalistic C client library for the Redis database
 dev-libs/http-fetcher 1.1.0-r2: Library for downloading files via HTTP using the GET method
 dev-libs/hyphen 2.8.8-r2: ALTLinux hyphenation library
-dev-libs/icinga-php-library 0.14.1 0.17.0: Icinga PHP libraries for Icinga Web 2
-dev-libs/icinga-php-thirdparty 0.12.1 0.13.1 0.15.3: Icinga PHP libraries for Icinga Web 2
+dev-libs/icinga-php-library 0.14.1 0.17.0 1.2.1: Icinga PHP libraries for Icinga Web 2
+dev-libs/icinga-php-thirdparty 0.12.1 0.13.1 0.15.3 1.1.0: Icinga PHP libraries for Icinga Web 2
 dev-libs/icu 78.3: International Components for Unicode
 dev-libs/igraph 0.10.11-r1 0.10.12-r1 0.10.15-r1: Creating and manipulating undirected and directed graphs
 dev-libs/iksemel 1.4-r2: eXtensible Markup Language parser library designed for Jabber applications
@@ -8381,7 +8381,7 @@ dev-python/b2sdk 2.13.1 2.13.2 2.13.3: Library to access Backblaze B2 cloud stor
 dev-python/babel 2.18.0: Collection of tools for internationalizing Python applications
 dev-python/babelfish 0.6.1: Python library to work with countries and languages
 dev-python/backports-zstd 1.7.0 1.8.0: Backport of PEP-784: adding Zstandard to the standard library
-dev-python/backrefs 8.0 8.1: Wrapper around re or regex that adds additional back references
+dev-python/backrefs 8.0 8.1 8.2.1: Wrapper around re or regex that adds additional back references
 dev-python/bandit 1.9.4: A security linter from OpenStack Security
 dev-python/bareos 25.0.1: python bindings for bareos network backup suite
 dev-python/base58 2.1.1: Base58 and Base58Check implementation
@@ -8391,7 +8391,7 @@ dev-python/bcrypt 5.0.0: Modern password hashing for software and servers
 dev-python/beartype 0.22.9 0.23.0 0.23.1: Unbearably fast runtime type checking in pure Python
 dev-python/beautifulsoup4 4.15.0: Pythonic idioms for iterating, searching, and modifying an HTML/XML parse tree
 dev-python/behave 1.3.3: BDD, Python style
-dev-python/beniget 0.4.2_p1 0.5.0 0.5.0-r1: Extract semantic information about static Python code
+dev-python/beniget 0.4.2_p1 0.5.0-r1 0.5.1: Extract semantic information about static Python code
 dev-python/berkeleydb 18.1.15 18.1.16 18.1.17: Python bindings for Oracle Berkeley DB
 dev-python/betamax 0.9.0: python-requests HTTP exchanges recorder
 dev-python/betamax-matchers 0.4.0-r1: A group of experimental matchers for Betamax
@@ -8469,7 +8469,7 @@ dev-python/cloudflare 5.10.0: The official Python library for the Cloudflare API
 dev-python/cloudpickle 3.1.2: Extended pickling support for Python objects
 dev-python/cloudscraper 1.2.69-r1: A Python module to bypass Cloudflare's anti-bot page
 dev-python/clr-loader 0.3.1: Generic pure Python loader for .NET runtimes
-dev-python/cmd2 4.2.4 4.3.0 4.3.1 4.4.0 4.4.1: Extra features for standard library's cmd module
+dev-python/cmd2 4.2.4 4.3.0 4.3.1 4.4.0 4.4.1 4.4.2: Extra features for standard library's cmd module
 dev-python/colorama 0.4.6: ANSI escape character sequences for colored terminal text & cursor positioning
 dev-python/colorclass 2.2.2-r1: Colorful worry-free console applications for multiple platforms
 dev-python/colored-traceback 0.4.2: Automatically color Python's uncaught exception tracebacks
@@ -8510,7 +8510,7 @@ dev-python/cssselect 1.5.0 1.6.0: Parse CSS3 Selectors and translate them to XPa
 dev-python/cssselect2 0.9.0 0.10.1: Parses CSS3 Selectors and translates them to XPath 1.0
 dev-python/cstruct 6.2: C-style structs for Python
 dev-python/csvkit 2.2.0: A suite of utilities for converting to and working with CSV
-dev-python/cucumber-expressions 20.0.0 20.1.0: Human friendly alternative to Regular Expressions
+dev-python/cucumber-expressions 20.1.0 20.2.0: Human friendly alternative to Regular Expressions
 dev-python/cucumber-tag-expressions 11.0.0 11.0.1: Cucumber tag expression parser
 dev-python/curtsies 0.4.3: Curses-like terminal wrapper, with colored strings
 dev-python/cvxopt 1.3.2 1.3.3: Python package for convex optimization
@@ -8594,7 +8594,7 @@ dev-python/easyprocess 1.1-r1: Easy to use Python subprocess interface
 dev-python/ecdsa 0.19.2: ECDSA cryptographic signature library in pure Python
 dev-python/editables 0.6: A Python library for creating 'editable wheels'
 dev-python/editorconfig 0.17.1: Clone of EditorConfig core written in Python
-dev-python/elastic-transport 9.4.2: Transport classes and utilities shared among Python Elastic client libraries
+dev-python/elastic-transport 9.4.2 9.4.3: Transport classes and utilities shared among Python Elastic client libraries
 dev-python/elasticsearch 9.5.0 9.5.1: Official Elasticsearch client library for Python
 dev-python/electrum-aionostr 0.1.0: asyncio nostr client
 dev-python/electrum-ecc 0.0.7 0.0.8: Pure python ctypes wrapper for libsecp256k1
@@ -8628,7 +8628,7 @@ dev-python/eyed3 0.9.9: Module for manipulating ID3 (v1 + v2) tags in Python
 dev-python/ezgb 0.2.1: A standalone Python library for working with git-bug repositories
 dev-python/faker 40.38.0 40.43.0 40.44.0 40.54.0: A Python package that generates fake data for you
 dev-python/fakeredis 2.35.1 2.37.1 2.38.0 2.39.0 2.40.0: Fake implementation of redis API for testing purposes
-dev-python/fastapi 0.162.2 0.162.4: High performance framework, easy to learn, fast to code, ready for production
+dev-python/fastapi 0.162.2 0.162.4 0.162.5: High performance framework, easy to learn, fast to code, ready for production
 dev-python/fastbencode 0.3.10 0.3.11 0.3.12: Implementation of bencode with Rust implementation
 dev-python/fasteners 0.20: Python package that provides useful locks
 dev-python/fastexcel 0.21.0: A fast excel file reader for Python, written in Rust
@@ -8665,7 +8665,7 @@ dev-python/flask-sphinx-themes 1.0.2-r1: Sphinx Themes for Flask related project
 dev-python/flatbuffers 25.12.19: RFC 7049 - Concise Binary Object Representation
 dev-python/flatdict 4.1.0: Python module for interacting with nested dicts
 dev-python/fleep 1.0.1-r1 9999: File format determination library for Python
-dev-python/flexmock 0.13.0: Testing library to create mocks, stubs and fakes
+dev-python/flexmock 0.13.0 0.14.0: Testing library to create mocks, stubs and fakes
 dev-python/flit 4.0.2 4.1.0 4.2.0: Simplified packaging of Python modules
 dev-python/flit-core 3.12.0 4.0.2 4.1.0 4.2.0: Simplified packaging of Python modules (core module)
 dev-python/flit-scm 1.7.0: A PEP 518 build backend combining flit with setuptools_scm
@@ -8857,7 +8857,7 @@ dev-python/jsonschema-specifications 2025.9.1: The JSON Schema meta-schemas and 
 dev-python/jsonxs 0.6-r1: Get/set values in JSON and Python datastructures
 dev-python/junit-xml 1.9-r1: Create JUnit XML test result documents
 dev-python/jupyter 1.1.1-r1: Jupyter metapackage. Install all the Jupyter components in one go
-dev-python/jupyter-builder 1.2.3 1.2.4: JupyterLab build tools
+dev-python/jupyter-builder 1.2.3 1.2.4 1.3.0: JupyterLab build tools
 dev-python/jupyter-client 8.9.1 8.10.0: Jupyter protocol implementation and client libraries
 dev-python/jupyter-console 6.6.3-r1: A terminal-based console frontend for Jupyter kernels
 dev-python/jupyter-core 5.9.1: Core common functionality of Jupyter projects
@@ -8932,7 +8932,7 @@ dev-python/lockfile 0.12.2-r3: Platform-independent file locking module
 dev-python/logbook 1.10.0 1.10.1: A logging replacement for Python
 dev-python/logfury 1.0.1-r1: Boilerplate library for logging method calls
 dev-python/logical-unification 0.4.7: Logical unification in Python
-dev-python/loguru 0.7.3: Python logging made (stupidly) simple
+dev-python/loguru 0.7.3 0.8.0: Python logging made (stupidly) simple
 dev-python/logutils 0.3.5-r1: The logutils package provides a set of handlers for the Python standard
 dev-python/loky 3.5.6 3.6.0 3.7.0: Robust and reusable Executor for joblib
 dev-python/looseversion 1.3.0: A backwards/forwards-compatible fork of distutils.version.LooseVersion
@@ -9075,12 +9075,12 @@ dev-python/orjson 3.12.0 3.13.0: Fast, correct Python JSON library supporting da
 dev-python/os-client-config 2.3.0: OpenStack Client Configuation Library
 dev-python/os-service-types 1.8.2 1.9.0: A library to handle official service types for OpenStack and it's aliases
 dev-python/osc-lib 4.6.0 4.7.0: A package of common support modules for writing OSC plugins
-dev-python/oslo-config 10.7.0 10.8.0: Oslo Configuration API
+dev-python/oslo-config 10.7.0 10.8.0 10.8.1: Oslo Configuration API
 dev-python/oslo-context 6.4.0 6.5.0: Helpers to maintain useful information about a request context
 dev-python/oslo-i18n 6.8.0 6.9.0: Oslo i18n library
 dev-python/oslo-log 8.3.0 8.3.1 8.3.2: OpenStack logging config library, configuration for all openstack projects
 dev-python/oslo-serialization 5.10.0 5.11.0: Oslo Serialization library
-dev-python/oslo-utils 10.1.1 10.2.0: Oslo Utility library
+dev-python/oslo-utils 10.2.0 10.3.0: Oslo Utility library
 dev-python/oslotest 6.1.1: Oslo test framework
 dev-python/outcome 1.3.0_p0: Capture the outcome of Python function calls
 dev-python/outputcheck 0.4.2-r2: A tool for checking the output of console programs inspired by LLVM's FileCheck
@@ -9278,7 +9278,7 @@ dev-python/pyls-spyder 0.4.0-r4: Spyder extensions for the python language serve
 dev-python/pylsqpack 0.3.24 1.0.0 1.1.0: Python wrapper for the ls-qpack QPACK library
 dev-python/pymacaroons 0.13.0-r1: A Python implementation of Macaroons
 dev-python/pymad 0.11.3: Python wrapper for libmad MP3 decoding in python
-dev-python/pymdown-extensions 12.1 12.2 12.3 13.0: Extensions for Python Markdown
+dev-python/pymdown-extensions 12.1 12.2 12.3 13.0 13.1: Extensions for Python Markdown
 dev-python/pymdown-lexers 0_pre20210902: Additional lexers for use in Pygments
 dev-python/pymdstat 0.5.1: Python library to parse Linux /proc/mdstat
 dev-python/pymediainfo 7.0.1: A Python wrapper for the MediaInfo library
@@ -9612,7 +9612,7 @@ dev-python/segno 1.6.6: Python QR Code and Micro QR Code encoder
 dev-python/selenium 4.34.2 4.35.0 4.49.0 4.50.0 4.51.0 4.52.0: Python language binding for Selenium Remote Control
 dev-python/semantic-version 2.10.0: Python library providing a few tools handling SemVer in Python
 dev-python/semver 3.1.0: A Python module for semantic versioning
-dev-python/send2trash 2.1.0: Sends files to the Trash (or Recycle Bin)
+dev-python/send2trash 2.1.0 2.2.0: Sends files to the Trash (or Recycle Bin)
 dev-python/sense-hat 2.6.0: Raspberry Pi Sense HAT python library
 dev-python/serpent 1.43: A simple serialization library based on ast.literal_eval
 dev-python/serverfiles 0.3.1-r1: Utility for accessing HTTP server and storing files locally for reuse
@@ -9727,7 +9727,7 @@ dev-python/statsmodels 0.14.6 0.15.0: Statistical computations and models for us
 dev-python/stdio-mgr 1.0.1.1: Context manager for mocking/wrapping stdin/stdout/stderr
 dev-python/stevedore 5.9.1: Manage dynamic plugins for Python applications
 dev-python/strict-rfc3339 0.7-r2: Strict, simple, lightweight RFC3339 functions
-dev-python/stripe 16.0.1 16.1.0: Stripe Python bindings
+dev-python/stripe 16.0.1 16.1.0 17.0.0: Stripe Python bindings
 dev-python/structlog 26.1.0: Structured Logging for Python
 dev-python/subprocess-tee 0.4.2: subprocess.run replacement with tee(1)-like output
 dev-python/suds-community 1.2.0: Lightweight SOAP client
@@ -9755,7 +9755,7 @@ dev-python/tempora 5.12.0-r1 5.13.0: Objects and routines pertaining to date and
 dev-python/tenacity 9.1.4 9.2.1: General-purpose retrying library
 dev-python/termcolor 3.3.0: ANSI Color formatting for output in terminal
 dev-python/terminado 0.18.1: Terminals served to term.js using Tornado websockets
-dev-python/terminaltables3 4.0.0: Generate simple tables in terminals from a nested list of strings
+dev-python/terminaltables3 4.0.0 4.1.0: Generate simple tables in terminals from a nested list of strings
 dev-python/test 0: Virtual to install 'test' package from stdlib
 dev-python/test2ref 1.2.3 1.3.0: Testing Against Learned Reference Data
 dev-python/testfixtures 12.3.0 12.4.0: A collection of helpers and mock objects for unit tests and doc tests
@@ -9765,7 +9765,7 @@ dev-python/testscenarios 0.6.1 0.7.0: A pyunit extension for dependency injectio
 dev-python/testtools 2.9.1: Extensions to the Python standard library unit testing framework
 dev-python/text-unidecode 1.3-r1: The most basic port of the Text::Unidecode Perl library
 dev-python/textdistance 4.6.3: Compute distance between the two texts
-dev-python/textile 4.0.4: A Python port of Textile, A humane web text generator
+dev-python/textile 4.0.4 4.0.5: A Python port of Textile, A humane web text generator
 dev-python/texttable 1.7.0 1.7.1 1.7.2: Module to create simple ASCII tables
 dev-python/textx 4.3.0 4.4.0: Meta-language for DSL implementation inspired by Xtext
 dev-python/threadpoolctl 3.7.0 3.8.0: Limit the number of threads used in native libs that have their own threadpool
@@ -9813,10 +9813,10 @@ dev-python/txrequests 0.9.6-r1: Asynchronous Python HTTP for Humans
 dev-python/txtorcon 26.6.0: Twisted-based Tor controller client, with state-tracking abstractions
 dev-python/type-lens 0.2.6: A library that allows for utilizing Python types at runtime
 dev-python/typeguard 4.5.2 4.6.0: Run-time type checker for Python
-dev-python/typer 0.27.3 0.28.0 0.29.0: Build great CLIs. Easy to code. Based on Python type hints
+dev-python/typer 0.27.3 0.28.0 0.29.0 0.29.1: Build great CLIs. Easy to code. Based on Python type hints
 dev-python/types-docutils 0.23.0.20260923 0.23.0.20261030 0.23.0.20261107: Typing stubs for docutils
 dev-python/types-gdb 16.3.0.20260712: Typing stubs for gdb
-dev-python/types-psutil 7.2.2.20260518 7.2.2.20260827 7.2.2.20260906: Typing stubs for psutil
+dev-python/types-psutil 7.2.2.20260906 7.2.2.20261111: Typing stubs for psutil
 dev-python/types-python-dateutil 2.9.0.20260807 2.9.0.20261021 2.9.0.20261029 2.9.0.20261104: Typing stubs for python-dateutil
 dev-python/types-setuptools 84.0.0.20260812 84.0.0.20261006 84.2.0.20261104: Typing stubs for setuptools
 dev-python/typing-extensions 4.15.0 4.16.0: Backported and Experimental Type Hints for Python 3.7+
@@ -9843,7 +9843,7 @@ dev-python/uri-template 1.3.0: URI Template expansion in strict adherence to RFC
 dev-python/uritemplate 4.2.0: Python implementation of RFC6570, URI Template
 dev-python/url-normalize 3.0.1 3.1.0: URL normalization for Python
 dev-python/urllib3 2.7.0 2.8.0: HTTP library with thread-safe connection pooling, file post, and more
-dev-python/urwid 4.2.5 5.0.0 5.0.1 5.1.0 5.1.1: Curses-based user interface library for Python
+dev-python/urwid 4.2.5 5.0.0 5.0.1 5.1.0 5.1.1 5.1.2: Curses-based user interface library for Python
 dev-python/urwid-readline 0.15.1: Text input widget for urwid that supports readline shortcuts
 dev-python/urwidtrees 1.0.3-r2: Tree widgets for urwid
 dev-python/userpath 1.9.2: Cross-platform tool for adding locations to the user PATH
@@ -9914,7 +9914,7 @@ dev-python/xlwt 1.3.0-r2: Python library to create spreadsheet files compatible 
 dev-python/xmlschema 4.3.1 4.3.2: An XML Schema validator and decoder
 dev-python/xmlsec 1.3.17-r1 1.3.18: Python bindings for the XML Security Library
 dev-python/xmltodict 1.0.4: Makes working with XML feel like you are working with JSON
-dev-python/xvfbwrapper 0.2.34 0.2.35 0.2.36 0.2.37: Python wrapper for running a display inside X virtual framebuffer
+dev-python/xvfbwrapper 0.2.35 0.2.36 0.2.37 0.2.38: Python wrapper for running a display inside X virtual framebuffer
 dev-python/xxhash 4.0.1 4.0.2 4.1.0: Python binding for the xxHash library
 dev-python/yapf 0.43.0-r1: A formatter for Python files
 dev-python/yappi 1.7.6: Yet Another Python Profiler
@@ -11212,7 +11212,7 @@ dev-util/squashmerge 0.1: dev-util/squashdelta delta merge tool
 dev-util/src-cli 4.4.0 4.5.0 5.0.2-r1 5.1.2 5.2.0: command line interface for the Sourcegraph code search tool
 dev-util/statifier 1.7.4-r3: Statifier is a tool for creating portable, self-containing Linux executables
 dev-util/stressapptest 1.0.11: Stressful Application Test
-dev-util/stripe-mock 0.203.0 0.204.0 0.205.0 0.206.0: Mock HTTP server that responds like the real Stripe API
+dev-util/stripe-mock 0.206.0: Mock HTTP server that responds like the real Stripe API
 dev-util/sysprof 48.1 49.0 50.0-r1: System-wide Linux Profiler
 dev-util/sysprof-capture 3.36.0-r2 48.1 49.0 50.0: Static library for sysprof capture data generation
 dev-util/sysprof-common 48.1 49.0 50.0: Static library for sysprof capture data generation
@@ -13518,7 +13518,7 @@ media-libs/libiptcdata 1.0.5-r1: Library for International Press Telecommunicati
 media-libs/libirman 0.4.5: library for Irman control of Unix software
 media-libs/libjpeg-turbo 3.1.3 3.1.4.1: MMX, SSE, and SSE2 SIMD accelerated JPEG library
 media-libs/libjsw 1.5.8: provide a uniform API and user configuration for joysticks and game controllers
-media-libs/libjxl 0.11.2 0.12.0 9999: JPEG XL image format reference implementation
+media-libs/libjxl 0.11.2 0.12.0 0.13.0 9999: JPEG XL image format reference implementation
 media-libs/libkate 0.4.1-r4 0.4.3: Codec for karaoke and text encapsulation for Ogg
 media-libs/libkeyfinder 2.2.8: Musical key detection library for digital audio
 media-libs/liblastfm 1.1.0_pre20250726: Collection of libraries to integrate Last.fm services
@@ -13858,7 +13858,7 @@ media-plugins/gst-plugins-x265 1.26.11: H.265 encoder plugin for GStreamer
 media-plugins/gst-plugins-ximagesrc 1.26.11: X11 video capture stream plugin for GStreamer
 media-plugins/gst-plugins-zbar 1.24.13 1.26.11: Bar codes detection in video streams for GStreamer
 media-plugins/hdx-realtime-media-engine 2.9.700.3000: HDX RealTime Media Engine plugin for Citrix Workspace App
-media-plugins/hexter 1.1.1: Yamaha DX7 modeling DSSI plugin
+media-plugins/hexter 1.1.1 1.1.1-r1: Yamaha DX7 modeling DSSI plugin
 media-plugins/imlib2_loaders 1.11.0 1.12.6 1.12.7: Additional image loaders for Imlib2
 media-plugins/ir_lv2 1.3.4-r1: LV2 convolver plugin especially for creating reverb effects
 media-plugins/kodi-audiodecoder-modplug 9999: Modplug decoder addon for Kodi
@@ -14452,7 +14452,7 @@ media-video/dvdstyler 3.2.1-r2 3.2.1-r3: A cross-platform free DVD authoring app
 media-video/dvgrab 3.5-r2: Digital Video (DV) grabber for GNU/Linux
 media-video/ffcast 2.4.8: Record screencasts using ffmpeg
 media-video/ffmpeg 4.4.8 6.1.6 7.1.5 8.1.3 9.0.2 9999: Complete solution to record/convert/stream audio and video
-media-video/ffmpeg-chromium 150.0.7871.124 151 152 153 154 155.0.8059.85 156.0.8078.35 9999: FFmpeg built specifically for codec support in Chromium-based browsers
+media-video/ffmpeg-chromium 150.0.7871.124 151 152 153 154 155.0.8059.85 156.0.8078.35 157.0.8103.39 158.0.8105.1 9999: FFmpeg built specifically for codec support in Chromium-based browsers
 media-video/ffmpeg-compat 4.4.8 6.1.6 7.1.5 8.1.3: Complete solution to record/convert/stream audio and video
 media-video/ffmpeg-soc-udev-rules 0: Common udev rules for ffmpeg and ffmpeg-compat with USE=soc
 media-video/ffmpegthumbnailer 2.2.3: Lightweight video thumbnailer that can be used by file managers
@@ -15148,7 +15148,7 @@ net-libs/libssh2 1.11.1-r2 9999: Library implementing the SSH2 protocol
 net-libs/libtelnet 0.23-r2: Simple RFC-compliant TELNET implementation as a C library
 net-libs/libtirpc 1.3.6 1.3.7 1.3.7-r2: Transport Independent RPC library (SunRPC replacement)
 net-libs/libtlsrpt 0.5.0 0.5.1 9999: library to implement TLSRPT
-net-libs/libtorrent 0.15.7 0.16.24 0.16.25 0.16.27 9999: BitTorrent library written in C++ for *nix
+net-libs/libtorrent 0.15.7 0.16.24 0.16.25 0.16.27 0.16.28 9999: BitTorrent library written in C++ for *nix
 net-libs/libtorrent-rasterbar 2.0.10 2.0.15 2.1.2: C++ BitTorrent implementation focusing on efficiency and scalability
 net-libs/libtrace 4.0.21 4.0.22 4.0.26 4.0.28: A library and tools for trace processing
 net-libs/libupnp 1.14.31 1.18.5 22.1.8 22.1.10: An Portable Open Source UPnP Development Kit
@@ -15171,7 +15171,7 @@ net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP
 net-libs/nghttp2 1.70.0 1.71.0 9999: HTTP/2 C Library
 net-libs/nghttp3 1.18.0 1.19.0 9999: HTTP/3 library written in C
 net-libs/ngtcp2 1.25.0 1.26.0 9999: Implementation of the IETF QUIC Protocol
-net-libs/nodejs 22.13.1 22.23.4 22.23.4-r1 22.23.5 22.23.5-r1 24.22.1 24.22.1-r1 24.22.2 24.22.3 24.22.3-r1 26.3.0 26.12.1 26.13.1 26.13.1-r1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
+net-libs/nodejs 22.13.1 22.23.4-r1 22.23.5 22.23.5-r1 24.22.1-r1 24.22.3 24.22.3-r1 26.3.0 26.12.1 26.13.1 26.13.1-r1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
 net-libs/paho-mqtt-c 1.3.15 1.3.16: An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS
@@ -15394,7 +15394,7 @@ net-misc/iaxmodem 1.3.3: Software modem that uses an IAX channel instead of a tr
 net-misc/icaclient 25.05.0.44-r1 26.01.0.150: ICA Client for Citrix Presentation servers
 net-misc/icecast 2.4.4-r3 2.5.0: Opensource alternative to shoutcast that supports mp3, ogg and aac streaming
 net-misc/ices 2.0.2-r3 2.0.3: Icecast OGG streaming client, supports on the fly re-encoding
-net-misc/icingadb 1.2.0 1.4.0: Icinga configuration and state database supporting multiple environments
+net-misc/icingadb 1.2.0 1.4.0 1.6.0: Icinga configuration and state database supporting multiple environments
 net-misc/ifenslave 1.1.0-r7: Attach and detach slave interfaces to a bonding device
 net-misc/igmpproxy 0.4: A multicast routing daemon which uses IGMP forwarding
 net-misc/inetutils 2.8-r2: Collection of common network programs
@@ -15668,9 +15668,9 @@ net-p2p/mktorrent 1.1_p20210130-r1: Simple command line utility to create BitTor
 net-p2p/mldonkey 3.2.1: Multi-network P2P application written in Ocaml, with Gtk, web & telnet interface
 net-p2p/ncdc 1.25: Lightweight direct connect client with a friendly ncurses interface
 net-p2p/nicotine+ 3.3.10 3.3.11: Graphical client for the Soulseek peer to peer network written in Python
-net-p2p/qbittorrent 5.1.4-r2 5.2.4-r1 5.3.0-r1 9999: BitTorrent client in C++ and Qt
+net-p2p/qbittorrent 5.1.4-r2 5.2.4-r1 5.3.0 9999: BitTorrent client in C++ and Qt
 net-p2p/resilio-sync 2.8.1.1390 3.1.1.1075 9999: Resilient, fast and scalable file synchronization tool
-net-p2p/rtorrent 0.15.7 0.16.24 0.16.25 0.16.27 9999: BitTorrent Client using libtorrent
+net-p2p/rtorrent 0.15.7 0.16.24 0.16.25 0.16.27 0.16.28 9999: BitTorrent Client using libtorrent
 net-p2p/stig 0.14.0a_p0 0.14.2a_p0: TUI and CLI for the BitTorrent client Transmission
 net-p2p/syncthing 2.0.10 2.0.16 2.1.2 2.1.3 2.1.7: Open Source Continuous File Synchronization
 net-p2p/torrentinfo 1.8.7: A torrent file parser
@@ -16189,7 +16189,7 @@ sci-geosciences/osmctools 0.9-r2: A few really fast tools to convert, filter and
 sci-geosciences/owntracks-recorder 1.0.4: Stores and accesses location data published by the OwnTracks apps
 sci-geosciences/pymap3d 3.2.0: Python 3-D coordinate conversions
 sci-geosciences/qgis 4.0.3 9999: User friendly Geographic Information System
-sci-geosciences/qmapshack 1.19.0 1.20.3 1.21.1 1.21.1-r1: GPS mapping utility
+sci-geosciences/qmapshack 1.19.0 1.21.1-r1: GPS mapping utility
 sci-geosciences/rasterio 1.5.2-r2: Rasterio reads and writes geospatial raster datasets
 sci-geosciences/readosm 1.1.0a: Library to extract valid data from an Open Street Map input file
 sci-geosciences/routino 3.4.3: Routing application based on openstreetmap data
@@ -18378,7 +18378,7 @@ www-apps/bugzilla 5.0.6-r2: Bugzilla is the Bug-Tracking System from the Mozilla
 www-apps/cgisysinfo 0.4.1: A small cgi utility to show basic system information
 www-apps/cgit 1.3 9999 9999-r1: A fast web-interface for Git repositories
 www-apps/cgp 1_p20190510-r2: A graphical web-based front-end for visualizing RRD collected by collectd
-www-apps/chromedriver-bin 156.0.8078.47 156.0.8078.79 157.0.8103.38: WebDriver for Chrome
+www-apps/chromedriver-bin 156.0.8078.79 157.0.8103.38 157.0.8103.50: WebDriver for Chrome
 www-apps/cvsweb 3.0.6-r2: WWW interface to a CVS tree
 www-apps/davical 1.1.12-r1: A CalDAV and CardDAV Server
 www-apps/dokuwiki 20260714c-r1: DokuWiki is a simple to use Wiki aimed at a small company's documentation needs
@@ -18388,10 +18388,10 @@ www-apps/gitea 1.27.3 28.3.0: A painless self-hosted Git service
 www-apps/grafana-bin 12.3.11 12.4.3_p2 12.4.13 13.1.8 13.2.4: Gorgeous metric viz, dashboards & editors for Graphite, InfluxDB & OpenTSDB
 www-apps/haunt 0.3.0: Haunt is a simple, functional, hackable static site generator
 www-apps/hugo 0.147.7 0.148.2 0.163.3: Fast static HTML and CSS website generator
-www-apps/icingadb-web 1.2.2: UI for Icinga DB
-www-apps/icingaweb2 2.12.4 2.12.5 9999: Icinga Web 2 - Frontend for icinga2
+www-apps/icingadb-web 1.2.2 1.5.0: UI for Icinga DB
+www-apps/icingaweb2 2.12.4 2.12.5 2.14.1 9999: Icinga Web 2 - Frontend for icinga2
 www-apps/icingaweb2-module-director 1.11.9 9999: Icinga Web 2 plugin for configuration
-www-apps/icingaweb2-module-graphite 1.2.1 1.2.5 9999: Icinga Web 2 plugin for Graphite
+www-apps/icingaweb2-module-graphite 1.2.1 1.2.5 1.3.1 9999: Icinga Web 2 plugin for Graphite
 www-apps/icingaweb2-module-incubator 0.23.0: Bleeding edge Icinga Web 2 libraries
 www-apps/icingaweb2-module-pnp4nagios 1.0.1-r1 9999: Icinga Web 2 plugin for pnp4nagios
 www-apps/ikiwiki 3.20200202.3-r1 3.20200202.4: A wiki compiler
@@ -18454,23 +18454,23 @@ www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 153.6.0 153.7.0 159.0 159.0.1 160.0: Firefox Web Browser
 www-client/firefox-bin 153.6.0 153.7.0 159.0 159.0.1 160.0: Firefox Web Browser
 www-client/firefox-l10n 153.6.0 153.7.0 159.0 159.0.1 160.0: Firefox Web Browser's translation files
-www-client/google-chrome 156.0.8078.47 156.0.8078.79 157.0.8103.38: The web browser from Google
+www-client/google-chrome 156.0.8078.79 157.0.8103.38 157.0.8103.50: The web browser from Google
 www-client/google-chrome-beta 157.0.8103.6 158.0.8127.2 158.0.8127.18: The web browser from Google
-www-client/google-chrome-unstable 156.0.8072.0 158.0.8106.0 159.0.8130.0: The web browser from Google
+www-client/google-chrome-unstable 158.0.8106.0 159.0.8130.0 159.0.8144.0: The web browser from Google
 www-client/httrack 3.49.5: HTTrack Website Copier, Open Source Offline Browser
 www-client/jd 2.8.9_p150226-r2: gtk2 based 2ch browser written in C++
 www-client/links 2.30-r2 2.30-r3 2.30-r4: A fast and lightweight web browser running in both graphics and text mode
 www-client/luakit 2.3.6 2.4.0: A fast, extensible, and customizable web browser
 www-client/lynx 2.9.0 2.9.2: An excellent console-based web browser with ssl support
-www-client/microsoft-edge 156.0.4314.58: The web browser from Microsoft
-www-client/microsoft-edge-beta 157.0.4341.30 157.0.4341.36 158.0.4370.1: The web browser from Microsoft
-www-client/microsoft-edge-dev 158.0.4344.0 158.0.4357.0 159.0.4378.0: The web browser from Microsoft
+www-client/microsoft-edge 157.0.4341.46: The web browser from Microsoft
+www-client/microsoft-edge-beta 158.0.4370.7 158.0.4370.12 158.0.4370.16: The web browser from Microsoft
+www-client/microsoft-edge-dev 158.0.4357.0 159.0.4378.0 159.0.4393.0: The web browser from Microsoft
 www-client/netrik 1.16.1-r3: A text based web browser with no ssl support
 www-client/netsurf 3.11-r1 9999: A free, open source web browser
-www-client/opera 139.0.6053.38: A fast and secure web browser
+www-client/opera 140.0.6074.17: A fast and secure web browser
 www-client/opera-beta 124.0.5705.51 126.0.5750.11 126.0.5750.30: A fast and secure web browser
-www-client/opera-developer 139.0.6051.0 140.0.6066.0 140.0.6072.0: A fast and secure web browser
-www-client/opera-gx 137.0.6036.65 138.0.6044.45 138.0.6044.65: Opera, but for 'gamers'
+www-client/opera-developer 140.0.6066.0 140.0.6072.0 141.0.6079.0: A fast and secure web browser
+www-client/opera-gx 138.0.6044.45 138.0.6044.65 139.0.6053.42: Opera, but for 'gamers'
 www-client/pybugz 0.14 0.15 9999: Command line interface to (Gentoo) Bugzilla
 www-client/qutebrowser 3.7.0 9999: Keyboard-driven, vim-like browser based on Python and Qt
 www-client/seamonkey 2.53.23 2.53.24: Seamonkey Web Browser
@@ -18478,8 +18478,8 @@ www-client/surf 2.1-r3 9999: A simple web browser based on WebKit/GTK+
 www-client/surfraw 2.3.0-r3 99999: A fast unix command line interface to WWW
 www-client/tangram 3.5-r1: Web browser designed to organize and run Web applications
 www-client/uget 2.2.3 2.2.3-r1 9999: Download manager using gtk+ and libcurl
-www-client/vivaldi 8.2.4133.96 8.3.4191.28: A browser for our friends
-www-client/vivaldi-snapshot 8.3.4191.15 8.3.4191.23: A browser for our friends
+www-client/vivaldi 8.3.4191.30 8.3.4191.35: A browser for our friends
+www-client/vivaldi-snapshot 8.3.4191.23 8.4.4226.3: A browser for our friends
 www-client/w3m 0.5.3_p20240916 0.5.6: Text based WWW browser, supports tables and frames
 www-client/w3mmee 0.3.2_p24-r13: A variant of w3m with support for multiple character encodings
 www-misc/awstats 7.8-r1: AWStats is short for Advanced Web Statistics
@@ -18525,16 +18525,16 @@ www-nginx/ngx-xss 0.06: Native support for cross-site scripting (XSS) in NGINX
 www-nginx/ngx_devel_kit 0.3.4: An NGINX module that adds generic tools for third-party modules
 www-nginx/njs 0.9.9 1.0.1: A subset of JavaScript language to use in NGINX
 www-plugins/browserpass 3.1.2 3.1.2-r1: WebExtension host binary for app-admin/pass, a UNIX password manager
-www-plugins/chrome-binary-plugins 156.0.8072.0_alpha 156.0.8078.47 156.0.8078.79 157.0.8103.6_beta 157.0.8103.38 158.0.8106.0_alpha 158.0.8127.2_beta 158.0.8127.18_beta 159.0.8130.0_alpha: Binary plugins from Google Chrome for use in Chromium
+www-plugins/chrome-binary-plugins 156.0.8078.79 157.0.8103.6_beta 157.0.8103.38 157.0.8103.50 158.0.8106.0_alpha 158.0.8127.2_beta 158.0.8127.18_beta 159.0.8130.0_alpha 159.0.8144.0_alpha: Binary plugins from Google Chrome for use in Chromium
 www-plugins/lightspark 0.9.0 0.10.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
 www-servers/adsf 1.5.2-r1 1.5.3: A Dead Simple Fileserver is a static file server that can launch in a directory
-www-servers/apache 2.4.69 2.4.70: The Apache Web Server
+www-servers/apache 2.4.69 2.4.70 2.4.71: The Apache Web Server
 www-servers/caddy 2.10.2-r1 2.11.8 2.11.9 9999: Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 www-servers/civetweb 1.16: Embedded C/C++ web server
 www-servers/gatling 0.16-r6 0.16-r7: High performance web server
-www-servers/gunicorn 26.1.0 26.2.0: A WSGI HTTP Server for UNIX
+www-servers/gunicorn 26.2.0 27.0.0: A WSGI HTTP Server for UNIX
 www-servers/h2o 2.3.0_pre20260804 9999: H2O - the optimized HTTP/1, HTTP/2 server
 www-servers/kore 4.3.0_rc4 4.3.0_rc5: Web application platform for writing scalable, concurrent web based processes
 www-servers/lighttpd 1.4.85 9999: Lightweight high-performance web server
