@@ -3926,7 +3926,7 @@ dev-cpp/cld3 3.0.13_p20220331: Neural network model for language identification
 dev-cpp/clhpp 2024.10.24: Khronos OpenCL C++ bindings
 dev-cpp/cli11 2.6.2 2.7.1 2.7.2: Command line parser for C++11
 dev-cpp/clucene 2.3.3.4-r9 2.3.3.4-r10 2.3.3.4-r11: High-performance, full-featured text search engine based off of lucene in C++
-dev-cpp/cpp-httplib 0.51.0 0.56.0 0.58.0 0.60.1: C++ HTTP/HTTPS server and client library
+dev-cpp/cpp-httplib 0.51.0 0.56.0 0.58.0 0.60.1 0.66.0: C++ HTTP/HTTPS server and client library
 dev-cpp/cppdap 0_pre20230605-r1 0_pre20240802: C++ library for the Debug Adapter Protocol
 dev-cpp/cppgir 2.0_p20260321 2.0_p20260518: GObject-Introspection C++ binding wrapper generator
 dev-cpp/cpptoml 0.1.1-r1: Header-only library for parsing TOML
@@ -5503,7 +5503,7 @@ dev-libs/bitshuffle 0.3.5-r1: Bitshuffle C library
 dev-libs/blake3 1.8.5 1.8.7: a fast cryptographic hash function
 dev-libs/blazesym_c 0.1.8 0.1.10: C bindings for blazesym, a library for address symbolization and related tasks
 dev-libs/boehm-gc 8.2.8 8.2.10 8.2.10-r1 8.2.12: The Boehm-Demers-Weiser conservative garbage collector
-dev-libs/boost 1.90.0-r3 1.91.0-r3 1.92.0-r1: Boost Libraries for C++
+dev-libs/boost 1.90.0-r3 1.91.0-r3 1.91.0-r4 1.92.0-r1: Boost Libraries for C++
 dev-libs/boron 2.1.0: A scripting language similar to REBOL
 dev-libs/botan 3.13.0 3.14.1: C++ crypto library
 dev-libs/boxfort 0.1.4-r1 0.1.4-r2 0.1.5: Convenient & cross-platform sandboxing C library
@@ -5715,6 +5715,7 @@ dev-libs/libgcrypt 1.12.2 1.12.3 1.12.3-r1 1.12.4: General purpose crypto librar
 dev-libs/libgcrypt-compat 1.5.6: Old version of libgcrypt needed by some binaries
 dev-libs/libgdata 0.18.1-r2: GLib-based library for accessing online service APIs using the GData protocol
 dev-libs/libgee 0.20.6-r1 0.20.8: GObject-based interfaces and classes for commonly used data structures
+dev-libs/libghostty-vt 1.0.0: Zero-dependency C library for parsing terminal sequences and managing state
 dev-libs/libgit2 1.9.2 1.9.6 1.9.7: A linkable library for Git
 dev-libs/libgit2-glib 1.2.1-r1: Git library for GLib
 dev-libs/libglib-testing 0.1.1: Libglib-testing is a test library providing test harnesses and mock classes
@@ -5916,7 +5917,7 @@ dev-libs/olm 3.2.16-r1: Implementation of the Double Ratchet cryptographic ratch
 dev-libs/onigmo 6.2.0-r1: Onigmo is a regular expressions library forked from Oniguruma
 dev-libs/oniguruma 6.9.9 6.9.9-r1 6.9.10 9999: Regular expression library for different character encodings
 dev-libs/opencl-clang 20.1.7 21.1.7 22.1.4 23.1.0: OpenCL-oriented thin wrapper library around clang
-dev-libs/opencl-icd-loader 2024.10.24 2025.07.22 2026.05.29: Official Khronos OpenCL ICD Loader
+dev-libs/opencl-icd-loader 2024.10.24 2025.07.22 2026.05.29 2026.05.29-r1: Official Khronos OpenCL ICD Loader
 dev-libs/opencryptoki 3.6.1-r1: PKCS#11 provider cryptographic hardware
 dev-libs/openct 0.6.20-r6: library for accessing smart card terminals
 dev-libs/openobex 1.7.2-r3: Implementation of the OBEX protocol used for transferring data to mobile devices
@@ -13127,7 +13128,7 @@ media-gfx/asymptote 3.15: A vector graphics language that provides a framework f
 media-gfx/autopano-sift-C 2.5.1-r2: SIFT algorithm for automatic panorama creation in C
 media-gfx/aview 1.3.0_rc1-r3: ASCII Image Viewer
 media-gfx/blender 4.5.5 4.5.9999 5.0.0 5.0.9999 9999: 3D Creation/Animation/Publishing System
-media-gfx/blender-bin 3.6.23 4.2.16 4.2.20 4.5.5 4.5.9 4.5.12 5.0.0 5.1.1 5.2.1 9999: 3D Creation/Animation/Publishing System
+media-gfx/blender-bin 4.2.23 4.3.2 4.4.3 4.5.15 5.0.1 5.1.2 5.2.3 5.3.0 9999: 3D Creation/Animation/Publishing System
 media-gfx/brscan4 0.4.11.1-r1: Brother scanner driver
 media-gfx/brscan5 1.6.2.0-r1: SANE driver for Brother scanners (brscan5)
 media-gfx/cairosvg 2.9.0 2.9.1: CLI and library to export SVG to PDF, PostScript, and PNG
@@ -15581,7 +15582,7 @@ net-misc/throttle 1.2-r1 1.2-r3: Bandwidth limiting pipe
 net-misc/tiers 1.1: Random network topography generator
 net-misc/tigervnc 1.16.2 9999: Remote desktop viewer display system
 net-misc/tigervnc-xorg-module 1.16.2: Metapackage for the xorg module provided by tigervnc
-net-misc/tinyssh 20260401 20260906 20261001 99999999: A small SSH server with state-of-the-art cryptography
+net-misc/tinyssh 20260401 20260906 20261001 20261101 99999999: A small SSH server with state-of-the-art cryptography
 net-misc/tipcutils 3.0.6: Utilities for TIPC (Transparent Inter-Process Communication)
 net-misc/trurl 0.16.1 9999: Command line tool for URL parsing and manipulation
 net-misc/tuba 0.11.0 0.11.1 0.11.1-r1: Browse the Fediverse (GTK client)
@@ -18418,7 +18419,7 @@ www-apps/liquid_feedback_frontend 4.0.0: Internet platforms for proposition deve
 www-apps/mediawiki 1.43.11 1.45.6 1.46.2: The MediaWiki wiki web application (as used on wikipedia.org)
 www-apps/miniflux 2.2.17-r2 2.3.4-r1 2.3.5: Minimalist and opinionated feed reader
 www-apps/mirmon 2.11-r2: Simple webapp to monitor the status of mirrors
-www-apps/moodle 4.5.15 5.2.4 5.3: The Moodle Course Management System
+www-apps/moodle 4.5.16 5.2.5 5.3.1: The Moodle Course Management System
 www-apps/mythweb 0.28.1-r2 34.0: PHP scripts intended to manage MythTV from a web browser
 www-apps/nanoc 4.13.5 4.14.1 4.14.3 4.14.5: nanoc is a simple but very flexible static site generator written in Ruby
 www-apps/nanoc-checking 1.0.6: Provides checking functionality for Nanoc
@@ -19194,7 +19195,7 @@ x11-plugins/wmwork 0.2.5-r1: a dockapp that lets you easily track time spent on 
 x11-plugins/wmxkb 1.2.2-r1: Dockable keyboard layout switcher for Window Maker
 x11-plugins/wmxres 1.2-r1 1.4: Dock application to select your display mode among those possible
 x11-terms/alacritty 0.16.1 0.17.0 9999: GPU-accelerated terminal emulator
-x11-terms/ghostty 1.1.3 1.2.3 1.3.0-r1 1.3.1 1.4.0: Fast, feature-rich, and cross-platform terminal emulator
+x11-terms/ghostty 1.1.3 1.2.3 1.3.0-r1 1.3.1 1.4.0 1.4.0-r1: Fast, feature-rich, and cross-platform terminal emulator
 x11-terms/ghostty-terminfo 1.1.3 1.2.3 1.3.0 1.3.1 1.4.0: Terminfo for ghostty, a fast, feature-rich, and cross-platform terminal emulator
 x11-terms/gnome-terminal 3.56.3 3.58.0: A terminal emulator for GNOME
 x11-terms/guake 3.10 3.10.1: Drop-down terminal for GNOME
