@@ -949,7 +949,7 @@ app-admin/cli53 0.8.18: A command-line tool for Amazon Route 53
 app-admin/clog 1.3.0-r2: Colorized log tail utility
 app-admin/clsync 0.4.5 9999: Live sync tool based on inotify, written in GNU C
 app-admin/clustershell 1.9.3: Python framework for efficient cluster administration
-app-admin/conky 1.22.3 1.25.3 1.26.0: An advanced, highly configurable system monitor for X
+app-admin/conky 1.22.3 1.26.0: An advanced, highly configurable system monitor for X
 app-admin/conserver 8.2.6-r3 8.2.7_p20250129 8.3.0: Serial Console Manager
 app-admin/consul 1.20.4 1.22.1: A tool for service discovery, monitoring and configuration
 app-admin/consul-replicate 0.4.0_p20211027: Consul cross-DC KV replication daemon
@@ -1136,7 +1136,7 @@ app-antivirus/clamav 0.103.12-r6 1.4.3 1.4.4 1.4.5 1.4.6 1.5.3 1.5.4: Clam Anti-
 app-antivirus/clamtk 6.18-r1 6.18-r2: A graphical front-end for ClamAV
 app-antivirus/fangfrisch 1.9.2-r1 1.9.3: Update and verify unofficial Clam Anti-Virus signatures
 app-antivirus/lkrg 0.9.8 0.9.9 9999: Linux Kernel Runtime Guard
-app-antivirus/mdatp 101.26101.0000: Microsoft Defender Advanced Threat Protection for Endpoints
+app-antivirus/mdatp 101.26101.0000-r1: Microsoft Defender Advanced Threat Protection for Endpoints
 app-arch/7zip 26.02-r1 26.03 26.04 26.05 26.06: Free file archiver for extremely high compression
 app-arch/advancecomp 2.6-r1: Recompress ZIP, PNG and MNG, considerably improving compression
 app-arch/afio 2.5.2: CPIO-Archiver & backup program with fault tolerant compression
@@ -1547,6 +1547,7 @@ app-crypt/shash 0.2.6-r4: Generate or check digests or MACs of files
 app-crypt/signify 31 33: Cryptographically sign and verify files
 app-crypt/signing-party 2.12: Collection of several tools related to OpenPGP
 app-crypt/simple-tpm-pk11 0.06-r2: Simple PKCS11 provider for TPM chips
+app-crypt/sops 3.5.0 3.13.3: Simple and flexible tool for managing secrets
 app-crypt/ssdeep 2.14.1-r1: Computes context triggered piecewise hashes (fuzzy hashes)
 app-crypt/ssss 0.5.7-r3: Shamir's Secret Sharing Scheme
 app-crypt/stan 0.4.1-r1: Stan analyzes binary streams and calculates statistical information
@@ -2774,7 +2775,7 @@ app-misc/dailystrips 1.0.28-r4: Dailystrips automatically downloads your favorit
 app-misc/dasel 2.7.0: Query, update and convert data structures from the command line
 app-misc/datefudge 1.26 1.27: A program (and preload library) to fake system date
 app-misc/dateutils 0.4.10 0.4.11: Command line date and time utilities
-app-misc/datovka 4.29.5: GUI to access the Czech data box e-government system
+app-misc/datovka 4.29.5 4.30.1: GUI to access the Czech data box e-government system
 app-misc/ddate 0.2.2_p20160627-r1: Perpetual date converter from gregorian to poee calendar
 app-misc/ddccontrol 1.0.3-r1: Control monitor parameters, like brightness, contrast, RGB color levels via DDC
 app-misc/ddccontrol-db 20240920: DDCControl monitor database
@@ -3131,7 +3132,7 @@ app-portage/mirrorselect 2.7.0 2.8.1 9998 9999: Tool to help select distfiles mi
 app-portage/nattka 0.4.3 0.5.0: A New Arch Tester Toolkit -- open-source stable-bot replacement
 app-portage/no-distcc-env 9999: package.env files to disable distcc on a per-package basis
 app-portage/overlint 0.5.3-r6 0.5.4: Simple tool for static analysis of overlays
-app-portage/pfl 3.5.3 3.6.0: Searchable online file/package database for Gentoo
+app-portage/pfl 3.6.0: Searchable online file/package database for Gentoo
 app-portage/pkg-testing-tools 0.2.6 0.2.7 0.2.8 9999: Packages testing tools for Gentoo
 app-portage/portage-utils 0.97 0.97.1 9999: Small and fast Portage helper tools written in C
 app-portage/porticron 0.7.2: cron script to sync portage and send update mails to root
@@ -4991,11 +4992,11 @@ dev-java/auto-service-annotations 1.1.1: Provider-configuration files for Servic
 dev-java/auto-value 1.11.1: Immutable value-type code generation for Java 1.7+
 dev-java/batik 1.18-r3 1.20: XML Graphics Batik
 dev-java/bcel 6.11.0: Apache Commons Bytecode Engineering Library
-dev-java/bcmail 1.84: The Bouncy Castle Java S/MIME APIs for handling S/MIME protocols
-dev-java/bcpg 1.84: Java cryptography APIs
-dev-java/bcpkix 1.84: Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation
-dev-java/bcprov 1.84: Java cryptography APIs
-dev-java/bcutil 1.84: Java APIs for ASN.1 extension and utility APIs used to support bcpkix and bctls
+dev-java/bcmail 1.84 1.86.2: The Bouncy Castle Java S/MIME APIs for handling S/MIME protocols
+dev-java/bcpg 1.84 1.86.2: Java cryptography APIs
+dev-java/bcpkix 1.84 1.86.2: Java APIs for CMS, PKCS, EAC, TSP, CMP, CRMF, OCSP, and certificate generation
+dev-java/bcprov 1.84 1.86.2: Java cryptography APIs
+dev-java/bcutil 1.84 1.86.2: Java APIs for ASN.1 extension and utility APIs used to support bcpkix and bctls
 dev-java/bnd 7.4.0: bndlib: A Swiss Army Knife for OSGi
 dev-java/bnd-annotation 7.4.0: bnd Annotations Library
 dev-java/bnd-ant 7.4.0: Bnd Ant Tasks
@@ -6217,6 +6218,7 @@ dev-ml/cudf 0.10-r1: Library to parse, pretty print, and evaluate CUDF documents
 dev-ml/curses 1.0.12: Bindings to ncurses
 dev-ml/decompress 1.6.1: Pure OCaml implementation of Zlib
 dev-ml/delimited_parsing 0.17.0: Parsing of character (e.g., comma) separated and fixed-width values
+dev-ml/digestif 1.4.2: Hashes implementations (SHA*, RIPEMD160, BLAKE2* and MD5)
 dev-ml/dose3 7.0.0-r2: Library to perform analysis on package repositories
 dev-ml/dune 3.16.1 3.17.2 3.18.1 3.19.1 3.20.2 3.21.1-r2 3.23.1: A composable build system for OCaml
 dev-ml/dune-build-info 3.16.0 3.18.1 3.19.1-r1 3.20.2 3.21.1: Embed locations informations inside executable and libraries
@@ -6225,6 +6227,7 @@ dev-ml/dune-private-libs 3.16.0-r4 3.18.1 3.19.0-r1: Private libraries of Dune
 dev-ml/dune-site 3.16.0 3.16.1 3.18.1 3.19.1-r1 3.20.2 3.21.1-r1: Embed locations informations inside executable and libraries
 dev-ml/duration 0.1.3 0.2.1 0.3.1: Duration - conversions to various time units
 dev-ml/easy-format 1.2.0-r1 1.3.4: Pretty-printing library for OCaml
+dev-ml/eqaf 0.10: Constant time equal function to avoid timing attacks in OCaml
 dev-ml/expect_test_helpers_core 0.16.0 0.17.0-r1: Helpers for writing expectation tests
 dev-ml/extlib 1.7.9-r1 1.8.0: Standard library extensions for O'Caml
 dev-ml/facile 1.1.4: OCaml constraint programming library on integer & integer set finite domains
@@ -9282,7 +9285,7 @@ dev-python/pylatex 1.4.2: A Python library for creating LaTeX files and snippets
 dev-python/pylatexenc 2.11: Simple LaTeX parser providing latex-to-unicode and unicode-to-latex conversion
 dev-python/pylev 1.4.0-r1: Python Levenshtein implementation
 dev-python/pylibacl 0.7.3: POSIX ACLs (Access Control Lists) for Python
-dev-python/pylibmc 1.6.3-r3: Libmemcached wrapper written as a Python extension
+dev-python/pylibmc 1.6.3-r3 1.7.1: Libmemcached wrapper written as a Python extension
 dev-python/pylint 4.0.8 4.0.9 4.1.1 4.1.2 4.1.3: Python code static checker
 dev-python/pylint-venv 3.0.4: Init-hook to use the same Pylint with different virtual environments
 dev-python/pylru 1.3.2 1.3.3: A least recently used (LRU) cache for Python
@@ -12084,7 +12087,7 @@ games-util/gslist 0.8.11a-r1: A GameSpy server browser
 games-util/heroic-bin 2.22.1 2.22.3 2.22.4: GOG and Epic Games Launcher for Linux
 games-util/joycond 0.1.0_p20220720-r1 0.1.0_p20250412: Daemon that uses hid-nintendo evdev devices to implement joycon pairing
 games-util/joystick 1.8.1: Joystick testing utilities
-games-util/lgogdownloader 3.19 9999: Unofficial GOG.com downloader for Linux
+games-util/lgogdownloader 3.20 9999: Unofficial GOG.com downloader for Linux
 games-util/libstrangle 0.1.1_p20220222-r1: Frame rate limiter for OpenGL/Vulkan
 games-util/linux-wbfs-manager 0.1.12: WBFS manager for Linux using GTK+
 games-util/loki_patch 20091105-r2: Loki Software binary patch tool
@@ -15713,8 +15716,8 @@ net-print/foomatic-db-engine 4.0.12-r3 4.0.20261031: Generates ppds out of xml f
 net-print/foomatic-db-ppds 4.0.20190226-r1 4.0.20261031: linuxprinting.org PPD files for postscript printers
 net-print/gtklp 1.3.4: A GUI for cupsd
 net-print/gutenprint 5.3.4-r2 5.3.5: Ghostscript and cups printer drivers
-net-print/hplip 3.26.4 3.26.6: HP Linux Imaging and Printing - Print, scan, fax drivers and service tools
-net-print/hplip-plugin 3.26.4 3.26.6: Proprietary plugins and firmware for HPLIP
+net-print/hplip 3.26.6: HP Linux Imaging and Printing - Print, scan, fax drivers and service tools
+net-print/hplip-plugin 3.26.6: Proprietary plugins and firmware for HPLIP
 net-print/ink 0.5.3: A command line utility to display the ink level of your printer
 net-print/kyocera-1x2x-mfp-driver 1.1203-r2: Printer descriptions (PPDs) and filters for Kyocera 1x2x MFP
 net-print/lexmark-upd-ppd 1.0.0.20240321: Lexmark universal printer driver PPDs
@@ -17327,7 +17330,7 @@ sys-apps/crazydiskinfo 1.1.0-r1: Interactive TUI S.M.A.R.T viewer
 sys-apps/cyme 3.0.0 3.0.1 3.0.2: List system USB buses and devices; a modern cross-platform `lsusb`
 sys-apps/daemonize 1.7.8-r2: Runs a command as a Unix daemon
 sys-apps/daisydog 2014.05.30-r1 2024.07.12: A very simple /dev/watchdog daemon
-sys-apps/dbus 1.16.2 1.16.2-r1 1.16.2-r2 1.16.4: A message bus system, a simple way for applications to talk to each other
+sys-apps/dbus 1.16.2 1.16.2-r1 1.16.2-r2 1.16.4-r1: A message bus system, a simple way for applications to talk to each other
 sys-apps/dbus-broker 33-r1 33-r2 35 36 37-r1 9999: Linux D-Bus Message Broker
 sys-apps/dcfldd 1.9.1-r2 1.9.2 1.9.2-r1 1.9.3: enhanced dd with features for forensics and security
 sys-apps/dchroot 0.12.1: Utility for managing chroots for non-root users
