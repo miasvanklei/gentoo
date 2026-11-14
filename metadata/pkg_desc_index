@@ -924,7 +924,7 @@ app-admin/ansible-core 2.19.2 2.19.3 2.19.3-r1 2.20.0-r1 2.20.3 2.20.5 2.21.1 2.
 app-admin/ansible-lint 25.9.0 25.11.0 26.3.0 26.8.0: Checks ansible playbooks for practices and behaviour that can be improved
 app-admin/ansible-modules-hashivault 5.2.1-r1: Ansible module for hashicorp vault
 app-admin/ansible-molecule 25.9.0 25.11.0 26.3.0: A toolkit designed to aid in the development and testing of Ansible roles
-app-admin/apache-tools 2.4.69 2.4.70 2.4.71: Useful Apache tools - htdigest, htpasswd, ab, htdbm
+app-admin/apache-tools 2.4.71: Useful Apache tools - htdigest, htpasswd, ab, htdbm
 app-admin/apachetop 0.23.2: A realtime Apache log analyzer
 app-admin/apg 2.3.0b_p20240821: Another Password Generator
 app-admin/augeas 1.14.1-r1: A library for changing configuration files
@@ -1683,7 +1683,7 @@ app-dicts/libydpdict 1.0.4: Library for handling the Collins Dictionary database
 app-dicts/mecab-ipadic 2.7.0.20070801-r1: IPA dictionary for MeCab
 app-dicts/mecab-naist-jdic 0.6.3b_p20111013-r1: NAIST Japanese Dictionary
 app-dicts/mecab-unidic 2.1.2-r1: IPA dictionary for MeCab
-app-dicts/migemo-dict 202402 202605: Dictionary files for the Migemo and C/Migemo
+app-dicts/migemo-dict 202605: Dictionary files for the Migemo and C/Migemo
 app-dicts/myspell-af 20080701: Afrikaans dictionaries for myspell/hunspell
 app-dicts/myspell-bg 4.3: Bulgarian dictionaries for myspell/hunspell
 app-dicts/myspell-ca 3.0.8 3.0.9: Catalan dictionaries for myspell/hunspell
@@ -2470,7 +2470,7 @@ app-emulation/wine-desktop-common 20150204-r2: Various desktop menu items and ic
 app-emulation/wine-gecko 2.47.3 2.47.4: Mozilla Gecko based version of Internet Explorer for Wine
 app-emulation/wine-mono 7.4.0 8.1.0 9.3.1 9.4.0 10.0.0 10.3.0 10.4.1 11.0.0 11.1.0 11.2.0 11.3.0: Replacement for the .NET runtime and class libraries in Wine
 app-emulation/wine-proton 9.0.4-r2 10.0.4 11.0.2e 9999: Valve Software's fork of Wine
-app-emulation/wine-staging 11.0 11.18 11.19 11.20 11.21 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
+app-emulation/wine-staging 11.0 11.18 11.19 11.20 11.21 11.22 9999: Free implementation of Windows(tm) on Unix, with Wine-Staging patchset
 app-emulation/wine-vanilla 9.0.1-r1 10.0-r2 11.0 11.18 11.19 11.20 11.21 11.22 9999: Free implementation of Windows(tm) on Unix, without external patchsets
 app-emulation/winetricks 20260125 99999999: Easy way to install DLLs needed to work around problems in Wine
 app-emulation/x48 0.6.4-r3: HP48 Calculator Emulator
@@ -2577,16 +2577,16 @@ app-i18n/ibus-handwrite 3.0.0-r2: Hand write recognition/input for IBus
 app-i18n/ibus-hangul 1.5.5: Korean Hangul engine for IBus
 app-i18n/ibus-input-pad 1.4.99_pre20140916: Input Pad for IBus
 app-i18n/ibus-libpinyin 1.15.8: Intelligent Pinyin and Bopomofo input methods based on LibPinyin for IBus
-app-i18n/ibus-m17n 1.4.40: M17N engine for IBus
+app-i18n/ibus-m17n 1.4.40 1.4.41: M17N engine for IBus
 app-i18n/ibus-pinyin 1.5.1: Chinese Pinyin and Bopomofo engines for IBus
 app-i18n/ibus-rime 1.5.1 1.6.0 1.6.1: Chinese Rime Input Method Engine for IBus
 app-i18n/ibus-skk 1.4.4: Japanese SKK engine for IBus
-app-i18n/ibus-table 1.17.18 1.18.0: Tables engines for IBus
+app-i18n/ibus-table 1.18.0 1.19.0: Tables engines for IBus
 app-i18n/ibus-table-chinese 1.8.14: Chinese tables for IBus-Table
 app-i18n/ibus-table-extraphrase 1.3.9.20110826-r1: Chinese extra phrases for IBus-Table
 app-i18n/ibus-table-latin 1.2.0.20100305-r1: Latin tables for IBus-Table
 app-i18n/ibus-table-others 1.3.22: Various tables for IBus-Table
-app-i18n/ibus-typing-booster 2.31.0 2.31.1 2.31.2: Completion input method for IBus
+app-i18n/ibus-typing-booster 2.31.1 2.31.2 2.31.4: Completion input method for IBus
 app-i18n/ibus-unikey 0.7.0_beta1: Vietnamese UniKey engine for IBus
 app-i18n/im-chooser 1.7.3: Desktop Input Method configuration tool
 app-i18n/imsettings 1.8.2-r1: Delivery framework for general Input Method configuration
@@ -2627,7 +2627,7 @@ app-i18n/scim-sayura 0.3.3-r1: Sayura Sinhala input method for SCIM
 app-i18n/scim-tables 0.5.13: Smart Common Input Method (SCIM) Generic Table Input Method Server
 app-i18n/scim-tomoe 0.6.0-r4: Japanese input method Tomoe IMEngine for SCIM
 app-i18n/scim-uim 0.2.0-r3: An input module for Smart Common Input Method (SCIM) which uses uim as backend
-app-i18n/skk-jisyo 202402 202605 999999: Jisyo (dictionary) files for the SKK Japanese-input software
+app-i18n/skk-jisyo 202605 999999: Jisyo (dictionary) files for the SKK Japanese-input software
 app-i18n/skkfep 0.87-r1: A SKK-like Japanese input method for console
 app-i18n/skktools 1.3.4-r1: SKK utilities to manage dictionaries
 app-i18n/tegaki-zinnia-japanese 0.3: Handwriting model data of Japanese
@@ -2638,7 +2638,7 @@ app-i18n/translate-shell 0.9.7.1: Online command-line translator
 app-i18n/uchardet 0.0.8: Encoding detector library
 app-i18n/uim 1.9.6-r1 1.9.9: Multilingual input method framework
 app-i18n/uim-tomoe-gtk 0.6.0: Japanese input method Tomoe IMEngine for uim
-app-i18n/unicode-cldr 47.0 48.0 48.1 49.0: Unicode Common Locale Data Repository
+app-i18n/unicode-cldr 48.1 49.0: Unicode Common Locale Data Repository
 app-i18n/unicode-data 15.1.0 16.0.0 17.0.0 18.0.0: Unicode data from unicode.org
 app-i18n/unicode-emoji 17.0.0 18.0.0: UTS #51 Unicode Emoji
 app-i18n/xvnkb 0.2.11 0.2.11-r1: Vietnamese input keyboard for X
@@ -3240,7 +3240,7 @@ app-text/chasen 2.4.5 2.4.5-r1: Japanese Morphological Analysis System, ChaSen
 app-text/cherrytree 1.6.3: A hierarchical note taking application (C++ version)
 app-text/cmark 0.31.1-r1 0.31.2: CommonMark parsing and rendering library and program in C
 app-text/cmark-gfm 0.29.0.13-r2: GitHub's fork of cmark
-app-text/cmigemo 1.3e_p20220623 1.8.0: Migemo library implementation in C
+app-text/cmigemo 1.8.0: Migemo library implementation in C
 app-text/code2html 0.9.1-r2: Converts source files to colored HTML output
 app-text/convertlit 1.8-r4: CLit converts MS ebook .lit files to .opf (xml+html+png+jpg)
 app-text/convmv 2.06: convert filenames to utf8 or any other charset
@@ -4040,7 +4040,7 @@ dev-db/litecli 1.17.1 9999: CLI for SQLite with auto-completion and syntax highl
 dev-db/litedb 5.0.17-r4 5.0.21: .NET NoSQL Document Store in a single data file
 dev-db/lmdb 0.9.36 1.0.2: An ultra-fast, ultra-compact key-value embedded data store
 dev-db/lmdb++ 1.0.0-r1: C++11 wrapper for the LMDB database library
-dev-db/m17n-db 1.8.14 1.8.15 1.8.16: Database for the m17n library
+dev-db/m17n-db 1.8.14 1.8.15 1.8.16 1.8.17: Database for the m17n library
 dev-db/mariadb 10.11.18 10.11.19 11.4.9-r1 11.4.13-r1 11.8.5-r1 11.8.6 11.8.9-r1 12.3.3-r1: An enhanced, drop-in replacement for MySQL
 dev-db/mariadb-connector-c 3.3.8 3.3.15 3.3.17 3.4.5-r1 3.4.7 3.4.9-r2 9999: C client library for MariaDB/MySQL
 dev-db/mariadb-connector-odbc 3.1.18 3.1.23 3.1.24 3.2.8 3.2.9 3.2.10: MariaDB Connector/ODBC
@@ -4087,7 +4087,7 @@ dev-db/phpmyadmin 5.2.3: Web-based administration for MySQL and MariaDB database
 dev-db/phppgadmin 7.14.7: Web-based administration for Postgres database in php
 dev-db/plr 8.4.5 8.4.6: R language extension for postgresql database
 dev-db/postgis 3.3.10 3.4.6 3.5.7 3.6.4 3.7.0: Geographic Objects for PostgreSQL
-dev-db/postgresql 14.24 14.25 15.19 15.20 16.15 16.16 17.11 17.12 18.6 18.7 19_rc2 9999: PostgreSQL RDBMS
+dev-db/postgresql 14.25 15.20 16.16 17.12 18.7 19_rc2 9999: PostgreSQL RDBMS
 dev-db/powa-archivist 5.3.0: PostgreSQL Workload Analyzer Archivist
 dev-db/powa-collector 1.3.2: PostgreSQL Workload Analyzer Collector
 dev-db/powa-web 5.1.5: PostgreSQL Workload Analyzer user interface
@@ -13191,7 +13191,7 @@ media-gfx/gozer 0.7-r5: tool for rendering arbitrary text as graphics, using ttf
 media-gfx/gphoto2 2.5.28-r2 2.5.32: Free, redistributable digital camera software application
 media-gfx/gphotofs 0.5-r2 1.0: FUSE file system for interfacing with digital cameras using gphoto2
 media-gfx/gpicview 0.3.1: Lightweight image viewer
-media-gfx/graphicsmagick 1.3.46 1.3.47 1.3.48 9999: Collection of tools and libraries for many image formats
+media-gfx/graphicsmagick 1.3.48 9999: Collection of tools and libraries for many image formats
 media-gfx/graphite2 1.3.14_p20210810-r5: Library providing rendering capabilities for complex non-Roman writing systems
 media-gfx/graphviz 15.1.0 16.1.0: Open Source Graph Visualization Software
 media-gfx/gscan2pdf 2.13.5: Scan documents, perform OCR, produce PDFs and DjVus
@@ -15532,7 +15532,7 @@ net-misc/rdesktop 1.9.0-r4: A Remote Desktop Protocol Client
 net-misc/redir 3.3-r1: Redir is a port redirector
 net-misc/remmina 1.4.40-r2 1.4.40-r3 1.4.41 1.4.41-r1 1.4.42 1.4.43: A GTK+ RDP, SPICE, VNC and SSH client
 net-misc/rinetd 0.73-r1: redirects TCP connections from one IP address and port to another
-net-misc/rsync 3.4.4 3.5.1 3.5.2 3.5.2-r1 9999: File transfer program to keep remote files into sync
+net-misc/rsync 3.5.2-r1 9999: File transfer program to keep remote files into sync
 net-misc/rsync-bpc 3.1.3.0_p20250706 3.1.3.0_p20251201-r1: Rsync-bpc is a customized version of rsync that is used as part of BackupPC
 net-misc/rwbs 0.27-r2: Roger Wilco base station
 net-misc/rwhoisd 1.5.9.6_p2: ARIN rwhois daemon
@@ -15805,7 +15805,7 @@ net-vpn/riseup-vpn 0.24.5 0.24.8 0.24.10 0.25.8: Anonymous encrypted VPN client 
 net-vpn/strongswan 6.0.3 6.0.4 6.0.4-r1 6.0.6 6.0.7: IPsec-based VPN solution, supporting IKEv1/IKEv2 and MOBIKE
 net-vpn/tailscale 1.104.4 1.104.5: Tailscale vpn client
 net-vpn/tinc 1.0.36-r1 1.0.37 1.1_pre18-r2: tinc is an easy to configure VPN implementation
-net-vpn/tor 0.4.9.13 0.4.9.13-r1 0.4.9.14 0.4.9.15 0.4.9.16 0.4.9.17 9999: Anonymizing overlay network for TCP
+net-vpn/tor 0.4.9.17 0.4.9.17-r1 9999: Anonymizing overlay network for TCP
 net-vpn/vopono 1.0.1: Launch applications via VPN tunnels using temporary network namespaces
 net-vpn/vpnc 0.5.3_p20240129 9999: IPsec (Cisco/Juniper) VPN concentrator client
 net-vpn/vpnc-scripts 20220510 20250727 99999999: Connect scripts for use with vpnc and openconnect (and similar clients)
@@ -16180,7 +16180,7 @@ sci-geosciences/gpscorrelate 2.0-r1 2.3: Tool for adjusting EXIF tags of your ph
 sci-geosciences/gpsd 3.26.1-r1 3.27.5 9999: GPS daemon and library for USB/serial GPS devices and GPS/mapping clients
 sci-geosciences/gpsprune-bin 23.2: An application for viewing, editing and converting GPS data
 sci-geosciences/gpx-viewer 0.4.0-r2: Simple program to visualize a gpx file
-sci-geosciences/gpxsee 16.11 16.17 16.19: Viewer and analyzer that supports gpx, tcx, kml, fit, igc and nmea files
+sci-geosciences/gpxsee 16.17 16.19: Viewer and analyzer that supports gpx, tcx, kml, fit, igc and nmea files
 sci-geosciences/grass 8.4.1-r2 8.4.2 8.5.0_rc1 8.5.0-r1 9999: Free GIS with raster and vector functionality, as well as 3D vizualization
 sci-geosciences/gshhg-gmt 2.3.7: Global Self-consistent, Hierarchical, High-resolution Geography Database
 sci-geosciences/gshhs 1.13-r1: Global Self-consistent, Hierarchical, High-resolution Shoreline programs
@@ -18542,7 +18542,7 @@ www-plugins/lightspark 0.9.0 0.10.0: High performance flash player
 www-plugins/passff-host 1.2.4 1.2.5: Host app for the PassFF WebExtension
 www-plugins/pdfjs 4.5.136 4.9.155 4.10.38 5.0.375: A PDF reader in JavaScript
 www-servers/adsf 1.5.2-r1 1.5.3: A Dead Simple Fileserver is a static file server that can launch in a directory
-www-servers/apache 2.4.69 2.4.70 2.4.71: The Apache Web Server
+www-servers/apache 2.4.71: The Apache Web Server
 www-servers/caddy 2.10.2-r1 2.11.8 2.11.9 9999: Fast and extensible multi-platform HTTP/1-2-3 web server with automatic HTTPS
 www-servers/civetweb 1.16: Embedded C/C++ web server
 www-servers/gatling 0.16-r6 0.16-r7: High performance web server

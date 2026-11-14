@@ -30,7 +30,7 @@ else
 	S="${WORKDIR}/${MY_PF}"
 
 	if [[ ${PV} != *_alpha* && ${PV} != *_beta* && ${PV} != *_rc* ]]; then
-		KEYWORDS="amd64 arm arm64 ~hppa ~mips ppc ppc64 ~riscv ~sparc x86"
+		KEYWORDS="~amd64 ~arm ~arm64 ~hppa ~mips ~ppc ~ppc64 ~riscv ~sparc ~x86"
 	fi
 
 	BDEPEND="verify-sig? ( >=sec-keys/openpgp-keys-tor-20250713 )"
@@ -190,8 +190,8 @@ src_install() {
 	default
 	readme.gentoo_create_doc
 
-	newconfd "${FILESDIR}"/tor.confd tor
-	newinitd "${FILESDIR}"/tor.initd-r9 tor
+	newconfd "${FILESDIR}"/tor.confd-r1 tor
+	newinitd "${FILESDIR}"/tor.initd-r10 tor
 	systemd_newunit "${FILESDIR}"/tor.service-r1 "${PN}.service"
 	systemd_newunit "${FILESDIR}"/tor_at.service "${PN}@.service"
 
@@ -201,5 +201,5 @@ src_install() {
 	fowners tor:tor /var/lib/tor
 
 	insinto /etc/tor/
-	newins "${FILESDIR}"/torrc-r2 torrc
+	newins "${FILESDIR}"/torrc-r3 torrc
 }
