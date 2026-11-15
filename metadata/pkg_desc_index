@@ -1776,7 +1776,7 @@ app-doc/casting-spels-emacs 19-r4: Casting SPELs in Lisp - A Comic Book (Emacs L
 app-doc/cppman 0.6.0 0.6.3: C++ man pages for Linux, with source from cplusplus.com and cppreference.com
 app-doc/csound-manual 6.16: The Csound reference manual
 app-doc/devmanual 0_pre20260901 9999: The Gentoo Development Guide
-app-doc/dita-ot-bin 4.4.1: Darwin Information Typing Architecture - Open Toolkit publishing engine
+app-doc/dita-ot-bin 4.4.1 4.4.2: Darwin Information Typing Architecture - Open Toolkit publishing engine
 app-doc/diveintopython 3-r2: 'Dive Into Python' by Mark Pilgrim - Python 3
 app-doc/e16-docs 0.16.8.0.2-r2: The E16 online help
 app-doc/eclass-manpages 20260904 99999999: Collection of Gentoo eclass manpages
@@ -2799,7 +2799,7 @@ app-misc/enum 1.1-r1: Replacement for GNU seq and BSD jot
 app-misc/esekeyd 1.2.7-r2: Multimedia key daemon that uses the Linux event interface
 app-misc/evtest 1.35 1.36: Test program for capturing input device events
 app-misc/faq 0.0.7: Format agnostic jQ
-app-misc/fastfetch 0.1.9999 0.2.9999 2.69.0 2.70.0: Fast neofetch-like system information tool
+app-misc/fastfetch 0.1.9999 0.2.9999 2.69.0 2.70.0 2.71.0: Fast neofetch-like system information tool
 app-misc/fdupes 2.3.2 2.4.0 9999: Identify/delete duplicate files residing within specified directories
 app-misc/fdutils 5.6_p2: Utilities for configuring and debugging the Linux floppy driver
 app-misc/fhem 6.3: A GPL'd perl server for house automation
@@ -10945,7 +10945,7 @@ dev-util/chirurgien 2.2: Chirurgien helps to understand and manipulate file form
 dev-util/chroot-wrapper 0.9.9: Wrapper for chroot to set up some bind mounts, namespaces, and control groups
 dev-util/clair 4.4.4: Vulnerability Static Analysis for Containers
 dev-util/clang-extract 0_pre20251006 9999: Tool to extract code content from source files
-dev-util/claude-code 2.1.312: Claude Code - an agentic coding tool by Anthropic
+dev-util/claude-code 2.1.325: Claude Code - an agentic coding tool by Anthropic
 dev-util/clazy 1.17.1-r1: Compiler plugin which allows clang to understand Qt semantics
 dev-util/clinfo 3.1.26.09.26 9999: A tool to display info about the system's OpenCL capabilities
 dev-util/clion 2025.3.6.3 2026.2.4 2026.2.4.1: A complete toolset for C and C++ development
@@ -11298,7 +11298,7 @@ dev-vcs/git-cliff 2.10.1 2.11.0: A highly customizable changelog generator
 dev-vcs/git-cola 4.17.1 4.18.2 4.19.0: The highly caffeinated git GUI
 dev-vcs/git-credential-manager 2.9.1 3.0.2: Secure Git credential storage supporing GitHub, Azure Repos, and other services
 dev-vcs/git-crypt 0.7.0 0.8.0: Transparent file encryption in git
-dev-vcs/git-delete-merged-branches 7.5.1 7.6.0 7.6.1 7.7.0: Command-line tool to delete merged Git branches
+dev-vcs/git-delete-merged-branches 7.5.1 7.6.0 7.6.1 7.7.0 7.7.1: Command-line tool to delete merged Git branches
 dev-vcs/git-extras 7.3.0 7.4.0: Git utilities -- repo summary, repl, changelog population, and many more
 dev-vcs/git-filter-repo 2.47.0-r1: Quickly rewrite git repository history (filter-branch replacement)
 dev-vcs/git-flow 1.12.3-r2: Git extensions to provide high-level repository operations
@@ -12259,7 +12259,7 @@ gui-apps/gnome-console 49.2 50.0: A simple user-friendly terminal emulator for t
 gui-apps/grim 1.5.0 9999: Grab images from a Wayland compositor
 gui-apps/gtkgreet 0.8 9999: gtk based greeter for greetd
 gui-apps/kanshi 1.9.0: dynamic display configuration (autorandr for wayland)
-gui-apps/labwc-menu-generator 0.2.0 9999: Simple, lightweight, Labwc/Openbox XML-menu generator
+gui-apps/labwc-menu-generator 0.2.0 0.2.2 9999: Simple, lightweight, Labwc/Openbox XML-menu generator
 gui-apps/labwc-tweaks 0.2.0 9999: Qt configuration tool for labwc
 gui-apps/lavalauncher 2.1.1 9999: Simple launcher for wayland
 gui-apps/liquidshell 1.10.0 1.10.1: Basic desktop shell using QtWidgets
@@ -14990,7 +14990,7 @@ net-im/slack 4.50.143 4.51.180 4.51.191: Team collaboration tool
 net-im/spectrum2 2.2.1_p20260727-r1: An open source instant messaging transport
 net-im/swift 4.0.3-r3: Cross-platform C++ library for implementing XMPP applications
 net-im/synapse 1.152.1 1.155.0 1.156.0: Reference implementation of Matrix homeserver
-net-im/talk-desktop-bin 2.2.3 2.2.4 2.3.2 2.3.3: Nextcloud Talk Desktop client
+net-im/talk-desktop-bin 2.2.3 2.2.4 2.3.2 2.3.3 2.3.4: Nextcloud Talk Desktop client
 net-im/telegram-desktop 7.1.2-r1 7.3.1 7.3.5: Official desktop client for Telegram
 net-im/telegram-desktop-bin 7.3.3 7.4.4: Official desktop client for Telegram (binary package)
 net-im/telepathy-mission-control 5.16.6: An account manager and channel dispatcher for the Telepathy framework
@@ -15188,7 +15188,7 @@ net-libs/netwib 5.39.0-r1: Library of Ethernet, IP, UDP, TCP, ICMP, ARP and RARP
 net-libs/nghttp2 1.70.0 1.71.0 9999: HTTP/2 C Library
 net-libs/nghttp3 1.18.0 1.19.0 9999: HTTP/3 library written in C
 net-libs/ngtcp2 1.25.0 1.26.0 9999: Implementation of the IETF QUIC Protocol
-net-libs/nodejs 22.13.1 22.23.4-r1 22.23.5 22.23.5-r1 24.22.1-r1 24.22.3 24.22.3-r1 26.3.0 26.12.1 26.13.1 26.13.1-r1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
+net-libs/nodejs 22.23.5-r1 24.22.3-r1 26.13.1-r1 99999999: A JavaScript runtime built on Chrome's V8 JavaScript engine
 net-libs/ntirpc 6.0.1: Transport Independent RPC library for nfs-ganesha
 net-libs/pacparser 1.4.3 1.4.5 1.4.6: Library to parse proxy auto-config files
 net-libs/paho-mqtt-c 1.3.15 1.3.16: An Eclipse Paho C client library for MQTT for Windows, Linux and MacOS
@@ -17654,7 +17654,7 @@ sys-block/di 4.51 4.52 4.54.0.1 6.2.2.2: Disk Information Utility
 sys-block/disktype 9-r1: Detect the content format of a disk or disk image
 sys-block/dust 1.1.1-r1 1.2.3: A more intuitive version of du
 sys-block/endpoint 0.1.0-r2: Endpoint turns a Linux machine with a firewire card into an SBP-2 device
-sys-block/f3 9.0: Utilities to detect broken or counterfeit flash storage
+sys-block/f3 9.0 10.0: Utilities to detect broken or counterfeit flash storage
 sys-block/fio 3.41: Jens Axboe's Flexible IO tester
 sys-block/flashbench 20120606: Tool for benchmarking and classifying flash memory drives
 sys-block/fwdl 1.2.3: Seagate Fibre-Channel disk firmware upgrade tool
@@ -18009,7 +18009,7 @@ sys-fs/zfs-auto-snapshot 1.2.4-r3: ZFS Automatic Snapshot Service for Linux
 sys-fs/zfs-kmod 2.2.11 2.3.9: Linux ZFS kernel module for sys-fs/zfs
 sys-kernel/asahi-sources 6.19.14_p2 7.0.9_p2: Asahi Linux kernel sources
 sys-kernel/cryptodev 1.14 9999: device that allows access to Linux kernel cryptographic drivers
-sys-kernel/dkms 3.3.0 3.4.3 3.4.4 9999: Dynamic Kernel Module Support
+sys-kernel/dkms 3.3.0 3.4.3 3.4.4 3.4.5 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 110-r5 111-r2 112 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.17-r4 4.3.18 4.3.18-r1 9999: Gentoo automatic kernel building scripts
@@ -18848,7 +18848,7 @@ x11-misc/gpaste 3.42.5: Clipboard management system
 x11-misc/grabc 1.1-r3: Identify color of a pixel on the screen by clicking on a pixel on the screen
 x11-misc/gromit 20041213-r2: GRaphics Over MIscellaneous Things, a presentation helper
 x11-misc/grsync 1.3.1: A gtk frontend to rsync
-x11-misc/grub2-theme-preview 2.9.1 2.9.1-r1 2.10.0: Preview a GRUB 2.x theme using KVM/QEMU
+x11-misc/grub2-theme-preview 2.9.1 2.9.1-r1 2.10.0 2.10.2: Preview a GRUB 2.x theme using KVM/QEMU
 x11-misc/grun 0.9.3-r1: A GTK based Run dialog resembling the Windows Run dialog, just like xexec
 x11-misc/gtkdialog 0.8.3_p20200202-r1 99999: A small utility for fast and easy GUI building
 x11-misc/gxmessage 3.4.3: A GTK+ based xmessage clone
@@ -18923,7 +18923,7 @@ x11-misc/rofi 1.7.9.1 2.0.0 9999: A window switcher, run dialog and dmenu replac
 x11-misc/rofi-calc 2.5.0 2.5.1: Do live calculations in rofi!
 x11-misc/rofi-file-browser-extended 1.3.1-r2: A file browser for rofi
 x11-misc/rss-glx 0.9.1-r4: Really Slick OpenGL Screensavers for XScreenSaver
-x11-misc/safeeyes 3.5.0 3.5.1: Linux alternative to EyeLeo
+x11-misc/safeeyes 3.5.0 3.5.1 3.6.1: Linux alternative to EyeLeo
 x11-misc/screen-message 0.28 0.29: Display a multi-line message large, fullscreen, black on white
 x11-misc/screengrab 3.2.0-r2 3.3.0: Qt GUI Screenshot Utility
 x11-misc/screenkey 1.5_p20230109-r3 9999: A screencast tool to display your keys inspired by Screenflick
