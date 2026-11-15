@@ -1132,7 +1132,7 @@ app-alternatives/ninja 1: ninja symlinks
 app-alternatives/sh 0: /bin/sh (POSIX shell) symlink
 app-alternatives/tar 0: Tar symlink
 app-alternatives/yacc 1-r2: yacc symlinks
-app-antivirus/clamav 0.103.12-r6 1.4.3 1.4.4 1.4.5 1.4.6 1.5.3 1.5.4: Clam Anti-Virus Scanner
+app-antivirus/clamav 0.103.12-r6 0.103.12-r7 1.4.3 1.4.4 1.4.5 1.4.6 1.5.3 1.5.4: Clam Anti-Virus Scanner
 app-antivirus/clamtk 6.18-r1 6.18-r2: A graphical front-end for ClamAV
 app-antivirus/fangfrisch 1.9.2-r1 1.9.3: Update and verify unofficial Clam Anti-Virus signatures
 app-antivirus/lkrg 0.9.8 0.9.9 9999: Linux Kernel Runtime Guard
@@ -17808,7 +17808,7 @@ sys-cluster/spark-bin 3.1.2-r1: Lightning-fast unified analytics engine
 sys-cluster/torque 6.0.4-r7: Resource manager and queuing system based on OpenPBS
 sys-cluster/ucx 1.18.1 1.19.0: Unified Communication X
 sys-cluster/virtctl 1.9.0 1.9.1: Control virtual machine related operations on your kubernetes cluster
-sys-cluster/zookeeper-bin 3.8.7 3.9.6: A high-performance coordination service for distributed applications
+sys-cluster/zookeeper-bin 3.8.7 3.8.8 3.9.7: A high-performance coordination service for distributed applications
 sys-cluster/zookeepercli 1.0.11: Simple, lightweight, dependable CLI for ZooKeeper
 sys-devel/autogen 5.18.16-r102: Program and text file generation
 sys-devel/bc 1.07.1-r6 1.08.0 1.08.1 1.08.2: Handy console-based calculator utility
