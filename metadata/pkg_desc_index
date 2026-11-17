@@ -1032,7 +1032,7 @@ app-admin/mongosh-bin 2.0.2 2.3.4: The MongoDB Shell
 app-admin/monit 5.34.4 5.35.2 6.0.0: Monitoring and managing daemons or similar programs running on a Unix system
 app-admin/mtail 3.0.0_rc36: A tool for extracting metrics from application logs
 app-admin/multilog-watch 1.12-r1: Watches a multilog file for irregularities
-app-admin/needrestart 3.11 9999: Restart daemons after library updates
+app-admin/needrestart 3.11 3.11.1 9999: Restart daemons after library updates
 app-admin/ngxtop 0.0.3_pre141201-r3: real-time metrics for nginx server (and others)
 app-admin/ocsinventory-agent 2.10.0: Hardware and software inventory tool (client)
 app-admin/op-cli-bin 2.23.0: command line interface for the 1password password manager
@@ -2210,7 +2210,7 @@ app-emacs/nix-mode 1.5.0: GNU Emacs major mode for editing Nix expressions
 app-emacs/no-littering 1.9.2 1.9.3: ELisp library that helps keeping Emacs configuration directory clean
 app-emacs/noflet 0.0.15_p20141102-r1: Dynamic, local advice for Emacs-Lisp code
 app-emacs/nxml-docbook5-schemas 5.1: Add support for DocBook 5 schemas to NXML
-app-emacs/nxml-gentoo-schemas 20260922: Extension for nxml-mode with Gentoo-specific schemas
+app-emacs/nxml-gentoo-schemas 20260922 20261117: Extension for nxml-mode with Gentoo-specific schemas
 app-emacs/nxml-libvirt-schemas 11.10.0 12.0.0 12.1.0 12.2.0 12.6.0 12.7.0: Extension for nxml-mode with libvirt schemas
 app-emacs/nxml-svg-schemas 1.1.20081123-r2: Extension for nxml-mode with SVG 1.1 schemas
 app-emacs/oauth2 0.18.3: OAuth 2.0 authorization protocol
@@ -5240,7 +5240,7 @@ dev-java/objenesis 3.6: A library for instantiating Java objects
 dev-java/ognl 3.1.24: Object Graph Navigation Library
 dev-java/open-test-reporting-events 0.1.0_pre1 0.2.0_pre1: Language-agnostic test reporting format and tooling
 dev-java/open-test-reporting-schema 0.1.0_pre1: Language-agnostic test reporting format and tooling
-dev-java/openjdk 8.504_p01 8.512_p09 11.0.32.1_p1 11.0.32.1_p1-r2 11.0.33_p10 17.0.20.1_p1 17.0.20.1_p1-r1 17.0.21.0.3_p1 21.0.12.1_p1 21.0.12.1_p1-r1 21.0.13.0.3_p1 25.0.4.1_p1 25.0.5.0.3_p1 27.0.1.0.3_p1 28_alpha22: Open source implementation of the Java programming language
+dev-java/openjdk 8.504_p01 8.512_p09 8.514_p01 11.0.32.1_p1 11.0.32.1_p1-r2 11.0.33_p10 11.0.33.1_p1 17.0.20.1_p1 17.0.20.1_p1-r1 17.0.21.0.3_p1 17.0.21.1_p2 21.0.12.1_p1 21.0.12.1_p1-r1 21.0.13.0.3_p1 21.0.13.1_p2 25.0.4.1_p1 25.0.5.0.3_p1 25.0.5.1_p2 27.0.1.1_p4 28_alpha24: Open source implementation of the Java programming language
 dev-java/openjdk-bin 8.504_p01 8.512_p09 11.0.32.1_p1 11.0.33_p10 17.0.20.1_p1-r1 17.0.21_p9 21.0.12.1_p1-r1 21.0.13_p9 25.0.4.1_p1-r1 25.0.5_p8 27.0.1.0.2_p1 28_alpha22: Prebuilt Java JDK binaries provided by Eclipse Temurin
 dev-java/openjdk-jre-bin 8.504_p01 8.512_p09 11.0.32.1_p1 11.0.33_p10 17.0.20.1_p1 17.0.21_p9 21.0.12.1_p1 21.0.13_p9 25.0.4.1_p1 25.0.5_p8: Prebuilt Java JRE binaries provided by Eclipse Temurin
 dev-java/openjfx 11.0.11_p1-r5: Java OpenJFX client application platform
@@ -8481,7 +8481,7 @@ dev-python/cliff 4.16.0 4.17.0: Command Line Interface Formulation Framework
 dev-python/clikit 0.6.2-r1: Group of utilities to build beautiful and testable command line interfaces
 dev-python/clint 0.5.1-r4: Python Command-line Application Tools
 dev-python/cloudflare 5.10.0: The official Python library for the Cloudflare API
-dev-python/cloudpickle 3.1.2: Extended pickling support for Python objects
+dev-python/cloudpickle 3.1.2-r1: Extended pickling support for Python objects
 dev-python/cloudscraper 1.2.69-r1: A Python module to bypass Cloudflare's anti-bot page
 dev-python/clr-loader 0.3.1: Generic pure Python loader for .NET runtimes
 dev-python/cmd2 4.2.4 4.3.0 4.3.1 4.4.0 4.4.1 4.4.2: Extra features for standard library's cmd module
@@ -12761,7 +12761,7 @@ lxde-base/lxlauncher 0.2.5-r1: Open source clone of the Asus launcher for EeePC
 lxde-base/lxmenu-data 0.1.5: Provides files needed for LXDE application menus
 lxde-base/lxpanel 0.10.1-r1 0.10.1-r2: Lightweight X11 desktop panel for LXDE
 lxde-base/lxrandr 0.3.2-r1: LXDE GUI interface to RandR extention
-lxde-base/lxsession 0.5.6: LXDE session manager
+lxde-base/lxsession 0.5.6 0.5.7: LXDE session manager
 lxde-base/lxtask 0.1.10: LXDE Task manager
 lxde-base/lxterminal 0.4.0_p20230917-r1: Lightweight vte-based tabbed terminal emulator for LXDE
 lxde-base/menu-cache 1.1.0-r1: Library to create and utilize caches to speed up freedesktop application menus
@@ -14323,7 +14323,7 @@ media-sound/quimup 2.1.1-r1 2.1.2-r1: Qt client for the music player daemon (MPD
 media-sound/quodlibet 4.6.0-r2 4.6.0-r3 4.7.1 4.7.1-r1 4.7.1-r2: audio library tagger, manager, and player for GTK+
 media-sound/rawrec 0.9.991: CLI program to play and record audiofiles
 media-sound/rcenter 0.6.2-r1: Rcenter - A program to control the EMU10K Remote Control
-media-sound/reaper-bin 7.85: Digital audio workstation
+media-sound/reaper-bin 7.86: Digital audio workstation
 media-sound/redoflacs 1.1.0: Bash commandline flac compressor, verifier, organizer, analyzer, retagger
 media-sound/rescrobbled 0.10.0: MPRIS music scrobbler daemon
 media-sound/rexima 1.4-r2: A curses-based interactive mixer which can also be used from the command-line
@@ -15214,7 +15214,7 @@ net-libs/socket_wrapper 1.4.0 1.5.0 1.5.2: Library passing all socket communicat
 net-libs/srt 1.5.1 1.5.3 1.5.4 1.5.4-r1: Secure Reliable Transport (SRT) library and tools
 net-libs/tdlib 1.8.66 1.8.68 1.8.69: Cross-platform library for building Telegram clients
 net-libs/telepathy-glib 0.24.2-r1: GLib bindings for the Telepathy D-Bus protocol
-net-libs/tox 0.2.22 0.2.23 0.2.24 9999: Encrypted P2P, messaging, and audio/video calling platform
+net-libs/tox 0.2.22 0.2.23 0.2.24 0.2.25 9999: Encrypted P2P, messaging, and audio/video calling platform
 net-libs/udns 0.6 0.7: Async-capable DNS stub resolver library
 net-libs/uhttpmock 0.5.5-r1 0.9.0 0.11.0: HTTP web service mocking library
 net-libs/usrsctp 0.9.5.0_p20250331: A cross-platform userland SCTP stack
