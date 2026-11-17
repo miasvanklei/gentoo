@@ -1253,7 +1253,7 @@ app-backup/backupninja 1.2.2: lightweight, extensible meta-backup system
 app-backup/backuppc 3.3.1-r6 4.4.0-r1 4.4.0-r2 4.4.0-r3: High-performance backups to a server's disk
 app-backup/bacula 15.0.3-r3 15.0.3-r4: Featureful client/server network backup suite
 app-backup/bareos 21.1.11 22.1.8 23.1.5 23.1.7 24.0.7 24.0.10 25.0.1 25.0.3 9999: Featureful client/server network backup suite
-app-backup/borgbackup 1.4.5: Deduplicating backup program with compression and authenticated encryption
+app-backup/borgbackup 1.4.5 1.4.6_rc1: Deduplicating backup program with compression and authenticated encryption
 app-backup/borgmatic 2.1.5 2.1.10 2.2.0: Automatically create, prune and verify backups with borgbackup
 app-backup/btrbk 0.32.7 9999: Tool for creating snapshots and remote backups of btrfs subvolumes
 app-backup/burp 3.3.0-r1: Network backup and restore client and server for Unix and Windows
@@ -15172,7 +15172,7 @@ net-libs/libtrace 4.0.21 4.0.22 4.0.26 4.0.28: A library and tools for trace pro
 net-libs/libupnp 1.14.31 1.18.5 22.1.8 22.1.10: An Portable Open Source UPnP Development Kit
 net-libs/libupnpp 1.0.3 1.0.4: The libupnpp C++ library wraps libupnp for easier use by upmpdcli and upplay
 net-libs/libvncserver 0.9.15-r1: library for creating vnc servers
-net-libs/libwebsockets 4.5.8-r1 5.0.0-r1 5.1.0: A flexible pure-C library for implementing network protocols
+net-libs/libwebsockets 4.5.8-r1 5.0.0-r1 5.1.0 5.1.0-r1: A flexible pure-C library for implementing network protocols
 net-libs/libyang 3.12.2: YANG data modeling language library
 net-libs/liquid-dsp 1.7.0 9999: digital signal processing library for software-defined radios
 net-libs/llhttp 9.4.3 9.4.4: Port of http_parser to llparse
@@ -17437,7 +17437,7 @@ sys-apps/lshw 02.19.2b_p20220831-r1 02.20.2b-r1: Hardware Lister
 sys-apps/lssbus 0.1-r1: Small utility for Linux/SPARC that list devices on SBUS
 sys-apps/lsvpd 1.7.14: Utility to List Device Vital Product Data (VPD)
 sys-apps/makedev 3.23.1-r3: Program used for creating device files in /dev
-sys-apps/man-db 2.13.0-r1 2.13.1-r1 2.13.2 9999: A man replacement that utilizes dbm instead of flat files
+sys-apps/man-db 2.13.0-r1 2.13.1-r1 2.13.3 9999: A man replacement that utilizes dbm instead of flat files
 sys-apps/man-pages 6.10 6.16-r2 6.17-r1 6.17-r2 6.19 9999: A somewhat comprehensive collection of Linux man pages
 sys-apps/man-pages-posix 2013a 2017a-r1: POSIX man-pages (0p, 1p, 3p)
 sys-apps/man2html 1.6g-r2: Standard commands to read man pages
@@ -18459,7 +18459,7 @@ www-apps/sfpg 4.11.0: A web gallery in one single PHP file
 www-apps/sonarr-bin 4.0.19.2979-r1: Sonarr is a Smart PVR for newsgroup and bittorrent users
 www-apps/trickster 1.1.5: Dashboard Accelerator for Prometheus
 www-apps/tt-rss 20250417 20251216 20261025 99999999: Tiny Tiny RSS - A web-based news feed (RSS/Atom) aggregator using AJAX
-www-apps/ttyd 1.7.7-r1 1.7.7-r3 9999: ttyd, a simple command-line tool for sharing terminal over the web
+www-apps/ttyd 1.7.7-r1 1.7.7-r3 1.7.7-r4 9999: ttyd, a simple command-line tool for sharing terminal over the web
 www-apps/vaultwarden-web 2026.1.1 2026.4.1 2026.6.4 2026.7.0: Prebuilt web vault frontend for Vaultwarden
 www-apps/webdavcgi 1.1.2: A Perl CGI for accessing and sharing files, or calendar/addressbooks via WebDAV
 www-apps/webmcp 2.2.1: Web application framework written in Lua and C
