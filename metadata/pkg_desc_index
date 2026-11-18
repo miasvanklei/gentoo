@@ -5970,7 +5970,7 @@ dev-libs/redland 1.0.17-r3: High-level interface for the Resource Description Fr
 dev-libs/rinutils 0.10.3: Set of C headers containing macros and static functions
 dev-libs/rlog 1.4: A C++ logging library
 dev-libs/rocdbgapi 6.4.3 7.0.2 7.1.0-r1 7.2.0 10.1.0: AMD Debugger API
-dev-libs/rocksdb 7.9.2-r1 8.11.3 9.10.0 10.5.1 11.8.1: Embeddable, persistent key-value store for fast storage
+dev-libs/rocksdb 7.9.2-r1 8.11.3 9.10.0 10.5.1 11.8.1 11.13.2: Embeddable, persistent key-value store for fast storage
 dev-libs/rocm-comgr 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Radeon Open Compute Code Object Manager
 dev-libs/rocm-core 7.0.2 7.1.0 7.2.0 10.1.0: Library that provides ROCm release version and install path information
 dev-libs/rocm-device-libs 6.4.3 7.0.2 7.1.0 7.2.0 10.1.0: Radeon Open Compute Device Libraries
@@ -12860,7 +12860,7 @@ mail-mta/netqmail 1.06-r14 1.06-r16 1.06-r17: qmail -- a secure, reliable, effic
 mail-mta/notqmail 1.08-r6 9999: Collaborative open-source successor to qmail
 mail-mta/nullmailer 2.2-r2: Simple relay-only local mail transport agent
 mail-mta/opensmtpd 7.5.0_p0 7.6.0_p1 7.7.0_p0 7.8.0_p1 7.9.0_p0: Lightweight but featured SMTP daemon from OpenBSD
-mail-mta/postfix 3.11.7 3.12_pre20261115: A fast and secure drop-in replacement for sendmail
+mail-mta/postfix 3.11.7 3.12_pre20261117: A fast and secure drop-in replacement for sendmail
 mail-mta/proton-mail-bridge 3.21.2: Serves Proton Mail to IMAP/SMTP clients
 mail-mta/qpsmtpd 0.95-r1 9999: qpsmtpd is a flexible smtpd daemon written in Perl
 mail-mta/sendmail 8.18.2 8.18.2-r1 8.19.0.0-r1 8.19.0.1: Widely-used Mail Transport Agent (MTA)
