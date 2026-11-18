@@ -19,7 +19,7 @@ NGINX_MODULES=(
 	+stream_{upstream_hash,upstream_least_conn,upstream_random,upstream_zone}
 	stream_{ssl,realip,geoip,ssl_preread}
 )
-NGINX_TESTS_COMMIT=ff61b0ffdb77c4279be2aab1529a5ad06bfcc119
+NGINX_TESTS_COMMIT=cf2b5bf5f98f578a0a3da13c8c507c996f5f74fe
 NGINX_MISC_FILES=(
 	nginx-{r2.logrotate,r2.service,r5.conf,r6.initd,r1.confd,r1.tmpfiles}
 )
@@ -32,12 +32,3 @@ KEYWORDS="amd64 arm arm64 ~loong ~ppc ~ppc64 ~riscv x86"
 PATCHES=(
 	"${FILESDIR}/${PN}-httpoxy-mitigation-r1.patch"
 )
-
-src_prepare() {
-	nginx_src_prepare
-
-	if use test ; then
-		# Fails with network-sandbox (bug #976129)
-		rm "${NGX_TESTS_S}"/tunnel_next_upstream.t || die
-	fi
-}
