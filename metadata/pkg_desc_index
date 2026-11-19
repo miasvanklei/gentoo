@@ -2686,6 +2686,7 @@ app-metrics/fusioninventory-agent 2.5.2: The FusionInventory agent is a generic 
 app-metrics/github-exporter 1.0.3 1.3.1: Github statistics exporter for prometheus
 app-metrics/go-carbon 0.17.3 0.18.0: Golang implementation of Graphite/Carbon server
 app-metrics/grok_exporter 1.0.0_rc5: Unstructured log data exporter for Prometheus
+app-metrics/ipmi_exporter 1.7.0 1.10.1: Remote IPMI exporter for Prometheus
 app-metrics/memcached_exporter 0.10.0 0.15.0 0.18.0: Prometheus exporter for memcached
 app-metrics/mongodb_exporter 0.43.1 0.47.1 0.51.0 0.54.0: Prometheus exporter for MongoDB
 app-metrics/mysqld_exporter 0.14.0 0.14.0_p20221209 0.14.0_p20230328 0.18.0 0.20.0: Prometheus exporter for MySQL server metrics
@@ -2848,7 +2849,7 @@ app-misc/interceptty 0.6-r3: a program that can sit between a serial port and an
 app-misc/irtrans-irclient 6.01.05-r1: ASCII Client for the IRTrans Server
 app-misc/irtrans-irserver 6.09.04-r1: Server software for IRTrans
 app-misc/jail 2.0-r4: Builds a chroot and configures all the required files, directories and libraries
-app-misc/jaq 2.2.0 2.3.0 3.0.0 3.1.0 3.1.1 3.1.2: Just another JSON query tool
+app-misc/jaq 3.1.1 3.1.2 3.2.0: Just another JSON query tool
 app-misc/jdupes 1.28.0-r1 1.31.1 1.31.2 9999: Identify duplicate files on the filesystem
 app-misc/jf 0.6.2-r2 1.0.0: A small utility to safely format and print JSON objects in the commandline
 app-misc/jo 1.9: JSON output from a shell
@@ -5647,6 +5648,7 @@ dev-libs/lager 0.1.1-r1 0.1.2: Library to assist value-oriented design
 dev-libs/leancrypto 1.7.2-r3 1.8.0 9999: Lean cryptographic library usable for bare-metal environments
 dev-libs/level-zero 1.30.0-r1 1.32.0-r1 1.33.1-r1 1.34.0 1.35.0: oneAPI Level Zero headers, loader and validation layer
 dev-libs/leveldb 1.23-r6: A fast key-value storage library written at Google
+dev-libs/lexbor 3.0.1: Modular web engine (HTML/CSS parser, renderer, ...)
 dev-libs/libIDL 0.8.14-r4: CORBA tree builder
 dev-libs/libaio 0.3.113-r2 0.3.113_p8 9999: Asynchronous input/output library that uses the kernels native interface
 dev-libs/libansilove 1.4.2-r1 1.4.3 1.4.4 1.4.5 1.4.6 9999: library to convert ANSi and artscene related file formats into PNG images
@@ -11036,7 +11038,7 @@ dev-util/gengetopt 2.23-r1: Tool to write command line option parsing code for C
 dev-util/gertty 1.6.0-r3 9999: Gertty is a console-based interface to the Gerrit Code Review system
 dev-util/gi-docgen 2025.4 2025.5 2026.1: A documentation generator for GObject-based libraries
 dev-util/git-bug 0.12.0: Distributed, offline-first bug tracker embedded in git
-dev-util/git-delta 0.18.2-r3 0.19.2: Syntax-highlighting pager for git
+dev-util/git-delta 0.18.2-r3 0.19.2 0.21.2: Syntax-highlighting pager for git
 dev-util/git-fixup 1.6.1: Fighting the copy-paste element of your rebase workflow
 dev-util/gitchangelog 3.2.0: Creates a nicely formatted changelog from git log history
 dev-util/github-cli 2.102.0 2.103.3 9999: GitHub CLI
@@ -14810,7 +14812,7 @@ net-analyzer/ttl 0.13.3 0.15.3 0.16.1 0.17.0 0.18.0 0.19.0: Modern traceroute/mt
 net-analyzer/upnpscan 0.4-r3: Scans the network for UPnP capable devices
 net-analyzer/vnstat 2.13-r2 2.13-r3 2.14 9999: Console-based network traffic monitor that keeps statistics of network usage
 net-analyzer/webfuzzer 0.2.0-r2: Poor man's web vulnerability scanner
-net-analyzer/wireshark 4.6.8 4.6.9 9999: Network protocol analyzer (sniffer)
+net-analyzer/wireshark 4.6.8 4.6.9 4.6.10 9999: Network protocol analyzer (sniffer)
 net-analyzer/wtfis 0.14.0 0.15.0 9999: Passive hostname, domain and IP lookup tool for non-robots
 net-analyzer/xnetload 1.11.3-r1: Displays a count and a graph of the traffic over a specified network connection
 net-analyzer/xprobe 0.3-r1 0.3-r2: Active OS fingerprinting tool - this is Xprobe2
@@ -15741,7 +15743,7 @@ net-proxy/haproxy 3.0.5 3.0.27 3.0.29 3.0.30 3.0.31 3.0.9999 3.2.23 3.2.25 3.2.2
 net-proxy/haproxy-dataplaneapi 3.0.3 3.1.5: haproxy dataplane api / sidecar
 net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying of HAProxy status
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
-net-proxy/lyrebird 0.6.0: An obfuscating proxy supporting Tor's pluggable transport protocol obfs4
+net-proxy/lyrebird 0.6.0 0.10.0: An obfuscating proxy supporting Tor's pluggable transport protocol obfs4
 net-proxy/microsocks 1.0.2 1.0.3: Multithreaded, small, efficient SOCKS5 server
 net-proxy/mitmproxy 12.2.3 12.3.0 12.3.1: An interactive, SSL-capable, man-in-the-middle HTTP proxy
 net-proxy/mitmproxy-linux 0.12.11 0.12.15 0.12.16: mitmproxy's Rust bits (Linux-specific part)
@@ -16808,7 +16810,7 @@ sec-keys/openpgp-keys-kamilaszewczyk 20260920 20261103: OpenPGP keys used by Kam
 sec-keys/openpgp-keys-kamildudka 20220525: OpenPGP keys used by Kamil Dudka
 sec-keys/openpgp-keys-karelzak 20220331 20230110 20230517: OpenPGP keys used by Karel Zak
 sec-keys/openpgp-keys-karlberry 20250528: OpenPGP keys used by Karl Berry
-sec-keys/openpgp-keys-kde 20261008 99999999: OpenPGP keys used for KDE releases
+sec-keys/openpgp-keys-kde 20261008 20261119 99999999: OpenPGP keys used for KDE releases
 sec-keys/openpgp-keys-keepass 20260415: OpenPGP key used by KeePass
 sec-keys/openpgp-keys-keepassxc 20261023: OpenPGP key used for KeePassXC releases
 sec-keys/openpgp-keys-kentoverstreet 20241012: OpenPGP keys used by Kent Overstreet
@@ -18560,7 +18562,7 @@ www-servers/lighttpd 1.4.85 9999: Lightweight high-performance web server
 www-servers/mongrel2 1.11.0-r3: A language agnostic web server focused on web applications
 www-servers/moonbridge 1.1.3-r1: Network Server for Lua Applications
 www-servers/nginx 1.30.7 1.31.9 9999: Robust, small and high performance HTTP and reverse proxy server
-www-servers/pound 4.22 4.23: A http/https reverse-proxy and load-balancer
+www-servers/pound 4.22 4.23 4.24: A http/https reverse-proxy and load-balancer
 www-servers/pshs 0.4.3 0.4.4: Pretty small HTTP server -- a command-line tool to share files
 www-servers/puma 6.6.0 6.6.1 7.2.0 7.2.1: a simple, fast, threaded, and highly concurrent HTTP 1.1 server for Ruby/Rack
 www-servers/servefile 0.5.4-r2 0.5.4-r3 0.5.4-r4: Serve a single file via HTTP
