@@ -12799,7 +12799,7 @@ mail-client/mailx-support 20060102-r3: Provides lockspool utility
 mail-client/mutt 2.3.2 2.4.1 2.4.3: A small but very powerful text-based mail client
 mail-client/mutt-wizard 3.3.1 9999: A system for automatically configuring neomutt and isync
 mail-client/neomutt 20260616-r1 99999999: A small but very powerful text-based mail client
-mail-client/roundcube 1.6.19 1.6.21 1.7.6 9999: Browser-based multilingual IMAP client with an application-like user interface
+mail-client/roundcube 1.6.19 1.6.21 1.6.22 1.7.6 1.7.7 9999: Browser-based multilingual IMAP client with an application-like user interface
 mail-client/s-nail 14.9.25 14.9.25-r1: Enhanced mailx-compatible mail client based on Heirloom mailx (nail)
 mail-client/thunderbird 153.6.0 153.7.0 159.0 160.0: Thunderbird Mail Client
 mail-client/thunderbird-bin 153.6.0 153.7.0 159.0 160.0: Thunderbird Mail Client
@@ -15626,7 +15626,7 @@ net-misc/wormhole-william 1.0.8: End-to-end encrypted file transfer, a magic wor
 net-misc/wput 0.6.2_p20130413_p11-r1: Tiny program like wget, to upload files/whole directories via FTP
 net-misc/x11-ssh-askpass 1.2.4.1-r2: X11-based passphrase dialog for use with OpenSSH
 net-misc/x2goserver 4.1.0.6: The X2Go server
-net-misc/xmrig 6.22.2 6.26.0-r1 9999: RandomX, CryptoNight, KawPow, AstroBWT, and Argon2 CPU/GPU miner
+net-misc/xmrig 6.22.2 6.27.0 9999: RandomX, CryptoNight, KawPow, AstroBWT, and Argon2 CPU/GPU miner
 net-misc/yandex-disk 0.1.6.1080_p1: CLI to access Yandex Disk file storage service
 net-misc/youtube-viewer 3.11.6 9999: A command line utility for viewing youtube-videos in Mplayer
 net-misc/yt-dlp 2026.10.26 9999: youtube-dl fork with additional features and fixes
@@ -17537,7 +17537,7 @@ sys-apps/sensei-raw-ctl 0.0_pre20180729-r1 0.0_pre20230801: SteelSeries Sensei R
 sys-apps/servicelog 1.1.15 1.1.16: Provides utilities for logging service-related events
 sys-apps/setserial 2.17-r6: Configure your serial ports with it
 sys-apps/sg3_utils 1.47 1.47-r1 1.47-r2 1.48: Apps for querying the sg SCSI interface
-sys-apps/shadow 4.19.4 4.20.0 4.20.2: Utilities to deal with user accounts
+sys-apps/shadow 4.19.4 4.20.0 4.20.2 4.20.4: Utilities to deal with user accounts
 sys-apps/smartmontools 7.5-r1 9999: Tools to monitor storage systems to provide advanced warning of disk degradation
 sys-apps/smc-sum 2.15.0.20251104: Updates the BIOS and IPMI firmware and system settings on Supermicro mainboards
 sys-apps/smcipmitool 2.31.0.260727: An out-of-band utility for interfacing with SuperBlade and IPMI devices via CLI
@@ -18018,9 +18018,9 @@ sys-kernel/dkms 3.3.0 3.4.3 3.4.4 3.4.5 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 110-r5 111-r2 112 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.17-r4 4.3.18 4.3.18-r1 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 6.1.192_p2 6.6.162_p2 6.12.118_p1 6.18.64_p1 7.3.5_p1: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 6.1.192_p2 6.6.162_p2 6.12.118_p1 6.18.64_p1 7.3.5_p1: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-kernel-modprep 6.1.192_p2 6.6.162_p2 6.12.118_p1 6.18.64_p1 7.3.5_p1: Minimal subset of gentoo-kernel-bin for building modules, for containers
+sys-kernel/gentoo-kernel 6.1.192_p2 6.1.193 6.6.162_p2 6.6.163 6.12.118_p1 6.12.119 6.18.64_p1 6.18.65 7.3.5_p1 7.3.6: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 6.1.192_p2 6.1.193 6.6.162_p2 6.6.163 6.12.118_p1 6.12.119 6.18.64_p1 6.18.65 7.3.5_p1 7.3.6: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-kernel-modprep 6.1.192_p2 6.1.193 6.6.162_p2 6.6.163 6.12.118_p1 6.12.119 6.18.64_p1 6.18.65 7.3.5_p1 7.3.6: Minimal subset of gentoo-kernel-bin for building modules, for containers
 sys-kernel/gentoo-sources 6.1.192-r2 6.6.162-r2 6.6.163 6.12.118-r1 6.12.119 6.18.64-r1 6.18.65 7.3.5-r1 7.3.6: Full sources including the Gentoo patchset for the 7.3 kernel tree
 sys-kernel/git-sources 7.4_rc1 7.4_rc2 7.4_rc3 7.4_rc4: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
@@ -18043,7 +18043,7 @@ sys-kernel/scx 1.1.0 1.1.1 1.1.2 1.1.3 1.1.4: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2 1.1.3-r1: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 6.1.192 6.1.9999 6.6.162 6.6.9999 6.12.118 6.12.9999 6.18.64 6.18.9999 7.3.5: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 6.1.192 6.1.193 6.1.9999 6.6.162 6.6.163 6.6.9999 6.12.118 6.12.119 6.12.9999 6.18.64 6.18.65 6.18.9999 7.3.5 7.3.6: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 6.1.193 6.6.163 6.12.119 6.18.65 7.3.6: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.3.5: The Zen Kernel Live Sources
@@ -18234,7 +18234,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 6.1.192_p2 6.6.162_p2 6.12.118_p1 6.18.64_p1 7.3.5_p1: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 6.1.192_p2 6.1.193 6.6.162_p2 6.6.163 6.12.118_p1 6.12.119 6.18.64_p1 6.18.65 7.3.5_p1 7.3.6: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0 10.0-r1 11.0: Virtual for .NET SDK
 virtual/editor 0-r8: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
@@ -18476,7 +18476,7 @@ www-client/epiphany 49.8.1 50.6: GNOME webbrowser based on Webkit
 www-client/falkon 26.08.3: Cross-platform web browser using QtWebEngine
 www-client/fetch 1.0-r4: HTTP download tool built atop the HTTP fetcher library
 www-client/firefox 153.6.0 153.7.0 159.0 159.0.1 160.0 160.0.1: Firefox Web Browser
-www-client/firefox-bin 153.6.0 153.7.0 159.0 159.0.1 160.0 160.0.1: Firefox Web Browser
+www-client/firefox-bin 153.6.0 153.7.0 159.0 159.0.1 160.0 160.0.1 161.0: Firefox Web Browser
 www-client/firefox-l10n 153.6.0 153.7.0 159.0 159.0.1 160.0 160.0.1: Firefox Web Browser's translation files
 www-client/google-chrome 157.0.8103.38 157.0.8103.50 158.0.8127.36: The web browser from Google
 www-client/google-chrome-beta 157.0.8103.6 158.0.8127.2 159.0.8154.6: The web browser from Google
@@ -19410,7 +19410,7 @@ x11-wm/xpra 6.2.5-r1 6.4.4 6.9999 9999: X Persistent Remote Apps (xpra) and Part
 xfce-base/exo 4.20.0-r1 4.21.0-r1: Extensions, widgets and framework library with session support for Xfce
 xfce-base/garcon 4.20.0 4.21.0: Xfce's freedesktop.org specification compatible menu implementation library
 xfce-base/libxfce4ui 4.20.2 4.21.7 4.21.8 4.21.9: Unified widget and session management libs for Xfce
-xfce-base/libxfce4util 4.20.1 4.21.0: A basic utility library for the Xfce desktop environment
+xfce-base/libxfce4util 4.20.1 4.21.0 4.21.1: A basic utility library for the Xfce desktop environment
 xfce-base/libxfce4windowing 4.20.6 4.20.7: Unified widget and session management libs for Xfce
 xfce-base/thunar 4.20.8 4.20.9 4.20.10 4.21.6 4.21.7-r1: File manager for the Xfce desktop environment
 xfce-base/thunar-volman 4.20.0: Daemon that enforces volume-related policies
