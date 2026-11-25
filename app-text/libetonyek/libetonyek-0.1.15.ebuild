@@ -48,7 +48,7 @@ src_prepare() {
 src_configure() {
 	local myeconfargs=(
 		--disable-werror
-		--with-mdds=2.1
+		--with-mdds=3.0
 		$(use_with doc docs)
 		$(use_enable test tests)
 	)

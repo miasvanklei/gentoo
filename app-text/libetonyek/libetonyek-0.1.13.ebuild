@@ -25,7 +25,7 @@ RDEPEND="
 	app-text/liblangtag
 	dev-libs/librevenge
 	dev-libs/libxml2:=
-	dev-util/mdds:1/3.0
+	>=dev-util/mdds-2.1:1=
 	virtual/zlib:=
 "
 DEPEND="${RDEPEND}
@@ -39,10 +39,6 @@ BDEPEND="
 	doc? ( app-text/doxygen )
 "
 
-PATCHES=(
-	"${FILESDIR}"/mdds3.patch
-)
-
 src_prepare() {
 	default
 	[[ -d m4 ]] || mkdir "m4" || die
@@ -52,7 +48,7 @@ src_prepare() {
 src_configure() {
 	local myeconfargs=(
 		--disable-werror
-		--with-mdds=3.0
+		--with-mdds=2.1
 		$(use_with doc docs)
 		$(use_enable test tests)
 	)
