@@ -113,7 +113,7 @@ QA_PREBUILT=".*"
 # for remove sdk target
 BDEPEND="
 	${BDEPEND}
-	app-misc/jq
+	app-misc/jaq
 "
 
 # Special .NET SDK environment variables.
@@ -302,8 +302,7 @@ dotnet-pkg-base_remove-global-json() {
 
 	if [[ -f "${file}" ]] ; then
 		ebegin "Removing Sdk target from global.json file"
-		jq 'del(.sdk)' "${file}" > "${file}.tmp"
-		mv "${file}.tmp" "${file}"
+		jaq -i 'del(.sdk)' "${file}"
 		eend ${?} || die "${FUNCNAME[0]}: failed to adjust ${file}"
 	fi
 }
