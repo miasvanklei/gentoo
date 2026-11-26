@@ -15741,7 +15741,7 @@ net-proxy/adzapper 20110915-r2: Redirector for squid to intercept advertising, p
 net-proxy/cntlm 0.93_beta5-r4: Cntlm is an NTLM/NTLMv2 authenticating HTTP proxy
 net-proxy/dante 1.4.1-r6 1.4.3 1.4.4: A free socks4,5 and msproxy implementation
 net-proxy/dnsproxy 1.17-r1: The dnsproxy daemon is a proxy for DNS queries
-net-proxy/haproxy 3.0.5 3.0.27 3.0.29 3.0.30 3.0.31 3.0.9999 3.2.23 3.2.25 3.2.26 3.2.27 3.2.9999 3.4.4 3.4.6 3.4.7 3.4.8 3.4.9999 9999: A TCP/HTTP reverse proxy for high availability environments
+net-proxy/haproxy 3.0.5 3.0.27 3.0.29 3.0.30 3.0.31 3.0.32 3.0.9999 3.2.23 3.2.25 3.2.26 3.2.27 3.2.28 3.2.9999 3.4.4 3.4.6 3.4.7 3.4.8 3.4.9 3.4.9999 9999: A TCP/HTTP reverse proxy for high availability environments
 net-proxy/haproxy-dataplaneapi 3.0.3 3.1.5: haproxy dataplane api / sidecar
 net-proxy/hatop 0.8.2-r1: Ncurses client and real-time monitoring and displaying of HAProxy status
 net-proxy/havp 0.92a-r3: HTTP AntiVirus Proxy
@@ -18019,9 +18019,9 @@ sys-kernel/dkms 3.3.0 3.4.3 3.4.4 3.4.5 9999: Dynamic Kernel Module Support
 sys-kernel/dracut 110-r5 111-r2 112 9999: Generic initramfs generation tool
 sys-kernel/dracut-crypt-ssh 1.0.8-r2: Early unlocking of encrypted systems via ssh for dracut
 sys-kernel/genkernel 4.3.17-r4 4.3.18 4.3.18-r1 9999: Gentoo automatic kernel building scripts
-sys-kernel/gentoo-kernel 6.1.192_p2 6.1.193 6.6.162_p2 6.6.163 6.12.118_p1 6.12.119 6.18.64_p1 6.18.65 7.3.5_p1 7.3.6: Linux kernel built with Gentoo patches
-sys-kernel/gentoo-kernel-bin 6.1.192_p2 6.1.193 6.6.162_p2 6.6.163 6.12.118_p1 6.12.119 6.18.64_p1 6.18.65 7.3.5_p1 7.3.6: Pre-built Linux kernel with Gentoo patches
-sys-kernel/gentoo-kernel-modprep 6.1.192_p2 6.1.193 6.6.162_p2 6.6.163 6.12.118_p1 6.12.119 6.18.64_p1 6.18.65 7.3.5_p1 7.3.6: Minimal subset of gentoo-kernel-bin for building modules, for containers
+sys-kernel/gentoo-kernel 6.1.193 6.6.163 6.12.119 6.18.65 7.3.6: Linux kernel built with Gentoo patches
+sys-kernel/gentoo-kernel-bin 6.1.193 6.6.163 6.12.119 6.18.65 7.3.6: Pre-built Linux kernel with Gentoo patches
+sys-kernel/gentoo-kernel-modprep 6.1.193 6.6.163 6.12.119 6.18.65 7.3.6: Minimal subset of gentoo-kernel-bin for building modules, for containers
 sys-kernel/gentoo-sources 6.1.192-r2 6.1.193 6.6.162-r2 6.6.163 6.12.118-r1 6.12.119 6.18.64-r1 6.18.65 7.3.5-r1 7.3.6: Full sources including the Gentoo patchset for the 7.3 kernel tree
 sys-kernel/git-sources 7.4_rc1 7.4_rc2 7.4_rc3 7.4_rc4: The very latest -git version of the Linux kernel
 sys-kernel/gnumach 1.8_p20260224 1.8_p20260330 1.8_p20260630 9999: GNU Mach microkernel, for the Hurd
@@ -18044,7 +18044,7 @@ sys-kernel/scx 1.1.0 1.1.1 1.1.2 1.1.3 1.1.4: sched_ext schedulers and tools
 sys-kernel/scx-loader 1.1.0 1.1.1 1.1.2 1.1.3-r1: DBUS on-demand loader of sched-ext schedulers
 sys-kernel/udev-hid-bpf 2.2.0_p20251121: Automatic HID-BPF loader based on udev events for device workarounds
 sys-kernel/ugrd 1.27.2 1.28.2 1.29.0-r1 1.31.2 2.0.2 2.2.0 9999: Python based POSIX initramfs generator with TOML definitions
-sys-kernel/vanilla-kernel 6.1.192 6.1.193 6.1.9999 6.6.162 6.6.163 6.6.9999 6.12.118 6.12.119 6.12.9999 6.18.64 6.18.65 6.18.9999 7.3.5 7.3.6: Linux kernel built from vanilla upstream sources
+sys-kernel/vanilla-kernel 6.1.193 6.1.9999 6.6.163 6.6.9999 6.12.119 6.12.9999 6.18.65 6.18.9999 7.3.6: Linux kernel built from vanilla upstream sources
 sys-kernel/vanilla-sources 6.1.193 6.6.163 6.12.119 6.18.65 7.3.6: Full sources for the Linux kernel
 sys-kernel/virtme-ng 1.41: Quickly build and run kernels inside a virtualized snapshot of your live system
 sys-kernel/zen-sources 7.3.5: The Zen Kernel Live Sources
@@ -18235,7 +18235,7 @@ virtual/commonlisp 0-r1: Virtual for Common Lisp
 virtual/cron 0-r3: Virtual for cron
 virtual/daemontools 0: Virtual for daemontools
 virtual/dev-manager 0-r2: Virtual for the device filesystem manager
-virtual/dist-kernel 6.1.192_p2 6.1.193 6.6.162_p2 6.6.163 6.12.118_p1 6.12.119 6.18.64_p1 6.18.65 7.3.5_p1 7.3.6: Virtual to depend on any Distribution Kernel
+virtual/dist-kernel 6.1.193 6.6.163 6.12.119 6.18.65 7.3.6: Virtual to depend on any Distribution Kernel
 virtual/dotnet-sdk 6.0-r2 7.0-r1 8.0 9.0 10.0 10.0-r1 11.0: Virtual for .NET SDK
 virtual/editor 0-r8: Virtual for editor
 virtual/fam 0-r1: A virtual package to choose between gamin and fam
@@ -18929,7 +18929,7 @@ x11-misc/rofi 1.7.9.1 2.0.0 9999: A window switcher, run dialog and dmenu replac
 x11-misc/rofi-calc 2.5.0 2.5.1: Do live calculations in rofi!
 x11-misc/rofi-file-browser-extended 1.3.1-r2: A file browser for rofi
 x11-misc/rss-glx 0.9.1-r4: Really Slick OpenGL Screensavers for XScreenSaver
-x11-misc/safeeyes 3.5.0 3.5.1 3.6.1: Linux alternative to EyeLeo
+x11-misc/safeeyes 3.5.0 3.5.1 3.6.1 3.6.3: Linux alternative to EyeLeo
 x11-misc/screen-message 0.28 0.29: Display a multi-line message large, fullscreen, black on white
 x11-misc/screengrab 3.2.0-r2 3.3.0: Qt GUI Screenshot Utility
 x11-misc/screenkey 1.5_p20230109-r3 9999: A screencast tool to display your keys inspired by Screenflick
