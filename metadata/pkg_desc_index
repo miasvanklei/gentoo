@@ -15223,7 +15223,7 @@ net-libs/uhttpmock 0.5.5-r1 0.9.0 0.11.0: HTTP web service mocking library
 net-libs/usrsctp 0.9.5.0_p20250331: A cross-platform userland SCTP stack
 net-libs/wallet-engine-telegram 0.0.7_p20261002: Cross-platform wallet engine for TON written in Rust (Telegram patchset)
 net-libs/wandio 4.2.3_p1-r1 4.2.3_p1-r2 4.2.4 4.2.6: C library for simple and efficient file IO
-net-libs/webkit-gtk 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.52.6-r410 2.52.6-r600 2.54.0-r411 2.54.0-r601 2.54.2-r400 2.54.2-r600 2.54.3-r410 2.54.3-r600: Open source web browser engine
+net-libs/webkit-gtk 2.48.5-r410 2.48.5-r411 2.48.5-r600 2.48.5-r601 2.52.6-r410 2.52.6-r600 2.54.3-r410 2.54.3-r600: Open source web browser engine
 net-libs/wslay 1.1.1_p20210115: WebSocket library in C
 net-libs/wvstreams 4.6.1_p14-r2 4.6.1_p14-r3: A network programming library in C++
 net-libs/xdp-tools 1.6.2 1.6.3-r1: The libxdp library and various tools for use with XDP
@@ -17371,7 +17371,7 @@ sys-apps/findutils 4.10.0 4.11.0: GNU utilities for finding files
 sys-apps/firejail 0.9.76 0.9.80: Security sandbox for any type of processes
 sys-apps/fix-gnustack 0.1-r1: Utility to report and remove the executable flag from an ELF object's GNU_STACK
 sys-apps/flashrom 1.5.1 1.6.0 1.7.0: Utility for reading, writing, erasing and verifying flash ROM chips
-sys-apps/flatpak 1.18.4: Linux application sandboxing and distribution framework
+sys-apps/flatpak 1.18.4 1.18.6: Linux application sandboxing and distribution framework
 sys-apps/fwts 22.03.00 23.11.00 24.03.00: Firmware Test Suite
 sys-apps/fwupd 2.1.7 2.1.8 2.1.9 2.1.10: Aims to make updating firmware on Linux automatic, safe and reliable
 sys-apps/fwupd-efi 1.8 1.9: EFI executable for fwupd
